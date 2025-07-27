@@ -3,9 +3,14 @@
     "main": {
       "type": "product-pdp-dermal-mist",
       "settings": {}
+    },
+    "faq": {
+      "type": "faq",
+      "settings": {}
     }
   },
   "order": [
-    "main"
+    "main",
+    "faq"
   ]
 }

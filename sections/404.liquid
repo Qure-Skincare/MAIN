@@ -1,5 +1,5 @@
 <!-- Banner with text -->
-<link href="https://qureskincaredns-main.com/sections/isolated/banner-with-text/banner-text.css" rel="stylesheet" type="text/css">
+<link href="https://qureskincaredns-main.com/sections/global/banner-with-text/banner-text.css" rel="stylesheet" type="text/css">
 <div class="qure__section banner-with-text"
     style="
     --section-padding-top: 80px;
@@ -10,16 +10,16 @@
         <div class="row custom__grid align-items-center" style="--column-gap:100px; --column-gap-mobile:32px;">
             <div class="col-md-6 custom__block">
                 <div class="banner-text--media">
-                    <img src="https://qureskincaredns-main.com/sections/isolated/banner-with-text/images/404.svg" class="img-fluid" alt="404">
+                    <img src="https://qureskincaredns-main.com/sections/global/banner-with-text/images/404.svg" class="img-fluid" alt="404">
                 </div>
             </div>
             <div class="col-md-6 custom__block">
                 <div class="banner-with-text-content text-center text-md-start">
-                    <h2 class="banner-text--heading">Oops</h2>
+                    <h2 class="banner-text--heading">{{ '404.settings.header' | t }}</h2>
                     <div class="banner-text--des" style="--text-mt: 24px; --text-mb: 32px;">
-                        <p>Looks like you took a detour on your skincare path. Navigate back to our amazing products for the perfect route to radiant skin!</p>
+                        <p>{{ '404.settings.text' | t }}</p>
                     </div>
-                    <a href="index.html" class="banner-text--button btn btn--primary">Back to Homepage</a>
+                    <a href="{{ shop.url }}" class="banner-text--button btn btn--primary">{{ '404.settings.button-label' | t }}</a>
                 </div>
             </div>
         </div>

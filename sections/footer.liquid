@@ -1,39 +1,3 @@
-<!-- Section Subscribe Form -->
-<link rel="stylesheet" href="https://qureskincaredns-main.com/sections/isolated/subscribe-form/subscribe-form.css" />
-<div class="qure__section qure__subcribe-form color-background"
-   style="--section-padding-top: 50px; --section-padding-bottom: 50px; --section-background:#212428;">
-   <div class="container" style="--column-gap:30px; --column-gap-mobile:30px;">
-      <div class="row justify-content-between custom__grid">
-         <!-- Email Signup -->
-         <div class="col-md-5 offset-md-2 custom__block">
-            <div class="qure__section_form-content text-center">
-               <div class="qure__section-header" style="--heading-size:32px; --heading-color:#fff">
-                  <h2 class="qure__section-heading">Get the latest from Qure</h2>
-               </div>
-               <form class="qure__subcribe-submit position-relative d-flex rounded-pill">
-                  <input type="email" class="qure__subcribe-input form-control rounded-pill" placeholder="Your Email">
-                  <button class="btn qure__subcribe-button" type="submit"><i
-                        class="fa-sharp fa-regular fa-arrow-right"></i></button>
-               </form>
-            </div>
-         </div>
-         <!-- Social Icons -->
-         <div class="col-md-5 custom__block">
-            <div class="qure__section-header text-center" style="--heading-size:32px;--heading-color:#fff;">
-               <h2 class="qure__section-heading">Follow Us</h2>
-            </div>
-            <div class="quer__social d-flex justify-content-center gap-5">
-               <a href="#" class="social-link"><i class="icon qure-instagram"></i></a>
-               <a href="#" class="social-link"><i class="icon qure-facebook"></i></a>
-               <a href="#" class="social-link"><i class="icon qure-tik-tok"></i></a>
-               <a href="#" class="social-link"><i class="icon qure-youtube"></i></a>
-            </div>
-         </div>
-      </div>
-   </div>
-</div>
-<!-- Section Subscribe Form End-->
-
 <!-- Footer Start -->
 <footer class="footer" style="--column-gap:20px; --column-gap-mobile:20px;">
    <div class="qure__footer-top">
@@ -50,7 +14,7 @@
                <div class="row custom__grid">
                   <div class="col-12 col-md-4 col-lg-4 custom__block">
                      <div class="qure__footer_block qure__footer_block-nav">
-                        <h3 class="qure__footer-title">Shop <span class="open-children-toggle"></span></h3>
+                        <h3 class="qure__footer-title">{{ 'footer.settings.navigation_header_1' | t }} <span class="open-children-toggle"></span></h3>
                         <div class="qure__footer-content qure__footer-nav unactive">
                            <div class="pb-20 pb-md-0">
                            <ul>
@@ -65,7 +29,7 @@
                   </div>
                   <div class="col-12 col-md-4 col-lg-4 custom__block">
                      <div class="qure__footer_block qure__footer_block-nav">
-                        <h3 class="qure__footer-title">Learn <span class="open-children-toggle"></span></h3>
+                        <h3 class="qure__footer-title">{{ 'footer.settings.navigation_header_2' | t }} <span class="open-children-toggle"></span></h3>
                         <div class="qure__footer-content qure__footer-nav unactive">
                            <div class="pb-20 pb-md-0">
                               <ul>
@@ -80,7 +44,7 @@
                   </div>
                   <div class="col-12 col-md-4 col-lg-4 custom__block">
                      <div class="qure__footer_block qure__footer_block-nav">
-                        <h3 class="qure__footer-title">Qure <span class="open-children-toggle"></span></h3>
+                        <h3 class="qure__footer-title">{{ 'footer.settings.navigation_header_3' | t }} <span class="open-children-toggle"></span></h3>
                         <div class="qure__footer-content qure__footer-nav unactive">
                            <div class="pb-20 pb-md-0">
                            <ul>
@@ -102,8 +66,8 @@
             <div class="col-md-12 col-lg-3 custom__block">
                <div class="qure__footer_block qure__footer-app">
                   <div class="qure__footer-app-header">
-                     <h3 class="qure__footer-title">Download Our App</h3>
-                     <p>Access additional features and customize your treatments.</p>
+                     <h3 class="qure__footer-title">{{ 'footer.settings.app.header' | t }}</h3>
+                     <p>{{ 'footer.settings.app.text' | t }}</p>
                   </div>
                   <div class="qure__footer-content">
                      <div class="quer__app-link">
@@ -119,15 +83,14 @@
    <div class="container">
       <div class="qure__footer-bottom">
          <div class="copyright">
-            <p>© 2025 Qure™ Skincare. All rights reserved.</p>
+            <p>{{ 'footer.settings.rights.header' | t }}</p>
             <div class="copyright-link">
                <a href="#" aria-label="Terms & Conditions">Terms & Conditions</a>
                <a href="#" aria-label="Privacy Policy">Privacy Policy</a>
                <a href="#" aria-label="Return policy">Return policy</a>
             </div>
          </div>
-         <div class="copyright-disclaimer">Our products are not intended to diagnose, cure, or prevent specific diseases of medical conditions. The Qure website is for education and information purposes only and is not intended as medical advice or a substitute for medical advice.
-         </div>
+         <div class="copyright-disclaimer">{{ 'footer.settings.rights.text' | t }}</div>
       </div>
    </div>
 </footer>

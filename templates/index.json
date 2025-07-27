@@ -1,11 +1,76 @@
 {
   "sections": {
-    "main": {
+    "index": {
       "type": "index",
+      "settings": {}
+    },
+    "index-read-our-story": {
+      "type": "index-read-our-story",
+      "settings": {}
+    },
+    "blocks": {
+      "type": "blocks",
+      "blocks": {
+        "block_card_CwMxwz": {
+          "type": "block-card",
+          "name": "t:blocks.block-card.name",
+          "settings": {
+            "heading": "Learn more and share your skincare journey",
+            "text": "Achieve your best skin yet with our simple 3-step skincare routine.",
+            "button-label": "Join Our Community",
+            "button-url": "https://m.facebook.com/groups/140594262121805/?ref=d6cb54b2-d73b-423e-8d66-3b5b3a661340"
+          },
+          "blocks": {
+            "block_card_item_eWMt8m": {
+              "type": "_block-card-item",
+              "name": "t:blocks.block-card-item.name",
+              "settings": {
+                "hash": "skin",
+                "text": "Does Drinking Water Help Clear Your Skin?",
+                "image": "shopify://shop_images/block-card-1.webp",
+                "link-url": "#"
+              },
+              "blocks": {}
+            },
+            "block_card_item_3bxMai": {
+              "type": "_block-card-item",
+              "name": "t:blocks.block-card-item.name",
+              "settings": {
+                "hash": "skincare",
+                "text": "Benefits of Peptides for the Skin",
+                "image": "shopify://shop_images/block-card-2.webp",
+                "link-url": "#"
+              },
+              "blocks": {}
+            },
+            "block_card_item_E9Aq43": {
+              "type": "_block-card-item",
+              "name": "t:blocks.block-card-item.name",
+              "settings": {
+                "hash": "light-therapy",
+                "text": "How LED Therapy Can Transform Your Skin",
+                "image": "shopify://shop_images/block-card-3.webp",
+                "link-url": "#"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "block_card_item_eWMt8m",
+            "block_card_item_3bxMai",
+            "block_card_item_E9Aq43"
+          ]
+        }
+      },
+      "block_order": [
+        "block_card_CwMxwz"
+      ],
       "settings": {}
     }
   },
   "order": [
-    "main"
+    "index",
+    "index-read-our-story",
+    "blocks"
   ]
 }

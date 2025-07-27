@@ -23,10 +23,10 @@
     {% capture seo_title %}
       {{ page_title }}
       {% if current_tags %}
-        {%- assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags -}}
+        {%- assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.tags' | t: tags: meta_tags -}}
       {% endif %}
       {% if current_page != 1 %}
-        &ndash; {{ 'general.meta.page' | t: page: current_page }}
+        &ndash; {{ 'general.page' | t: page: current_page }}
       {% endif %}
     {% endcapture %}
 
@@ -72,9 +72,7 @@
 
     {{ content_for_layout }}
 
-    {%- section 'footer' -%}
-    {%- section 'drawer' -%}
-    {%- section 'cookies' -%}
+    {% sections 'footer-group' %}
 
     <script src="https://qureskincaredns-main.com/assets/js/vendor.js" defer="defer"></script>
     <script src="https://qureskincaredns-main.com/assets/js/header.js" defer="defer"></script>

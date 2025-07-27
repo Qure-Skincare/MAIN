@@ -1,3 +1,54 @@
 {
-  
+    "general": {
+        "page": "Page {{ page }}",
+        "tags": "Tags {{ tags }}"
+    },
+    "404": {
+        "settings": {
+            "header": "Oops",
+            "text": "Looks like you took a detour on your skincare path. Navigate back to our amazing products for the perfect route to radiant skin!",
+            "button-label": "Back to Homepage"
+        }
+    },
+    "GDPR": {
+        "settings": {
+            "header": "Customize Your Cookie Preferences",
+            "text_html": "<p>We respect your privacy and give you the option to customize your cookie settings. Please select which types of cookies you are willing to accept.</p><p>For more information see our <a href='{{ privacy_policy_url }}'>Privacy Policy.</a></p>",
+            "button-label": "Save preferences",
+            "collapse_tab_1": {
+                "header": "Strictly Necessary Cookies",
+                "text": "These cookies are essential for the website to function properly. They enable basic functionalities like page navigation and access to secure areas of the website. The website cannot function properly without these cookies."
+            },
+            "collapse_tab_2": {
+                "header": "Performance Cookies",
+                "text": "These cookies help us understand how visitors interact with our website by collecting and reporting information anonymously. They enable us to improve the website's performance and user experience."
+            },
+            "collapse_tab_3": {
+                "header": "Functional Cookies",
+                "text": "These cookies allow the website to remember choices you make (such as your username, language, or the region you are in) and provide enhanced, more personal features."
+            },
+            "collapse_tab_4": {
+                "header": "Targeting/Advertising Cookies",
+                "text": "These cookies are used to deliver ads more relevant to you and your interests. They may also be used to limit the number of times you see an advertisement and help measure the effectiveness of the advertising campaign. They are usually placed by advertising networks with the website operator’s permission."
+            }
+        }
+    },
+    "footer": {
+        "settings": {
+            "subscribe_text": "Get the latest from Qure",
+            "follow_us_text": "Follow Us",
+            "email_placeholer": "Your Email",
+            "navigation_header_1": "Shop",
+            "navigation_header_2": "Learn",
+            "navigation_header_3": "Qure",
+            "app": {
+                "header": "Download Our App",
+                "text": "Access additional features and customize your treatments."
+            },
+            "rights": {
+                "header": "© 2025 Qure™ Skincare. All rights reserved.",
+                "text": "Our products are not intended to diagnose, cure, or prevent specific diseases of medical conditions. The Qure website is for education and information purposes only and is not intended as medical advice or a substitute for medical advice."
+            }
+        }
+    },
 }

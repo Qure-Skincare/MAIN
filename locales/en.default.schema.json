@@ -1,3 +1,40 @@
 {
-
+    "common": {
+        "header": "Header",
+        "text": "Text",
+        "image": "Image",
+        "button-label": "Button label",
+        "button-url": "Button url",
+        "link-url": "Link url",
+        "hash": "Hash"
+    },
+    "blocks": {
+        "block-card": {
+            "name": "Block card",
+            "settings": {}
+        },
+        "block-card-item": {
+            "name": "Block card item",
+            "settings": {}
+        }
+    },
+    "sections": {
+        "index-ready-our-story": {
+            "name": "Ready Our Story"
+        },
+        "blocks": {
+            "name": "Blocks",
+            "settings": {
+                
+            }
+        },
+        "faq": {
+            "name": "Faq"
+        }
+    },
+    "sections-group": {
+        "footer": {
+            "name": "Footer"
+        }
+    }
 }

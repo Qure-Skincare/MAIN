@@ -1,0 +1,25 @@
+{
+  "type": "footer",
+  "name": "t:sections-group.footer.name",
+  "sections": {
+    "footer-form": {
+      "type": "footer-form",
+    },
+    "footer": {
+      "type": "footer",
+    },
+    "footer-drawer": {
+      "type": "footer-drawer",
+    },
+    "footer-gdpr": {
+      "type": "footer-gdpr",
+      "disabled": true,
+    }
+  },
+  "order": [
+    "footer-form",
+    "footer",
+    "footer-drawer",
+    "footer-gdpr"
+  ]
+}
