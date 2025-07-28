@@ -86,76 +86,13 @@
         "url": "#index.html",
         "collage": "shopify://shop_images/collage.webp"
       }
-    },
-    "faq_jN3f6d": {
-      "type": "faq",
-      "blocks": {
-        "accordion_zYCA3N": {
-          "type": "accordion",
-          "settings": {
-            "heading": "What makes Dermal Mist different from other facial sprays?",
-            "text": "<p>Unlike many face mists that are fragranced or water-heavy with little skin benefit, our Dermal Mist is formulated specifically for sensitive and post-treatment skin.</p><p>Dermal Mist is powered by hypochlorous acid and enriched with chamomile, offering anti-inflammatory and antibacterial benefits without any harsh chemicals. It's pH balanced and gentle enough for all skin types, making it a versatile addition to your daily routine.</p><p>It hydrates without irritation, soothes redness, and helps your skin bounce back faster.</p>"
-          }
-        },
-        "accordion_bMmYdE": {
-          "type": "accordion",
-          "settings": {
-            "heading": "What are the benefits of Dermal Mist and hypochlorous acid?",
-            "text": "<p>Our Dermal Mist is powered by hypochlorous acid — a gentle yet effective ingredient known for its soothing, antibacterial, and barrier-supporting properties. </p><p>Hypochlorous acid (HOCl) helps soothe redness, reduce inflammation, and acceleratehealing, making it especially useful for sensitive, acne-prone, or post-treatment skin. </p><p>Unlike harsher actives, HOCl supports the skin barrier while eliminating harmful bacteria — all without causing dryness or disrupting the skin’s natural balance. It is safe for all skin types, it’s a gentle but effective way to calm, protect, and refresh the skin.</p>"
-          }
-        },
-        "accordion_XUAkGN": {
-          "type": "accordion",
-          "settings": {
-            "heading": "How should I incorporate Dermal Mist into my skincare routine?",
-            "text": "<p>You can use Dermal Mist morning and evening as a purifying step before applying treatments. It’s also great for refreshing your skin throughout the day, post-workout, or to disinfect surfaces such as your pillow and your skincare tools.</p>"
-          }
-        },
-        "accordion_X7azM9": {
-          "type": "accordion",
-          "settings": {
-            "heading": "What’s the concentration of hypochlorous acid in Dermal Mist?",
-            "text": "<p>Dermal Mist contains a precise 0.02% concentration of hypochlorous acid, which is effective enough to deliver antibacterial and anti-inflammatory benefits while remaining gentle on the skin. </p><p>We don’t add any fragrances, so you may notice the light, natural scent of hypochlorous acid. This should fade soon after spraying.</p>"
-          }
-        },
-        "accordion_UH3Y9e": {
-          "type": "accordion",
-          "settings": {
-            "heading": "Can I use Dermal Mist on sensitive skin?",
-            "text": "<p>Absolutely. Dermal Mist is dermatologically tested, hypoallergenic, and formulated specifically to be kind to even the most sensitive skin. It’s designed to soothe, purify, and protect without causing irritation. </p>"
-          }
-        },
-        "accordion_QReWQn": {
-          "type": "accordion",
-          "settings": {
-            "heading": "Is this product vegan and cruelty-free?",
-            "text": "<p>Yes, Dermal Mist is both vegan and cruelty-free. We are committed to creating products that are kind to both your skin and the environment.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "accordion_zYCA3N",
-        "accordion_bMmYdE",
-        "accordion_XUAkGN",
-        "accordion_X7azM9",
-        "accordion_UH3Y9e",
-        "accordion_QReWQn"
-      ],
-      "name": "t:sections.faq.name",
-      "settings": {
-        "heading": "Have questions?",
-        "text": "Don’t see your question?",
-        "button": "Ask us",
-        "url": "#qure_faq-main",
-        "arrow": "shopify://shop_images/arrow_right_sf.svg"
-      }
     }
   },
   "order": [
     "announcement-bar",
     "index",
-    "blocks",
     "index-read-our-story",
-    "faq_jN3f6d"
+    "blocks"
+    
   ]
 }
