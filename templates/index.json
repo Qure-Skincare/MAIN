@@ -138,7 +138,7 @@
       "name": "t:sections.faq.name",
       "settings": {
         "heading": "Have questions?",
-        "text": "What makes Dermal Mist different from other facial sprays?",
+        "text": "Don’t see your question?",
         "button": "Ask us",
         "url": "#qure_faq-main",
         "arrow": "shopify://shop_images/arrow_right.svg"
