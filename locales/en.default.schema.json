@@ -30,6 +30,9 @@
         },
         "faq": {
             "name": "Faq"
+        },
+        "compare": {
+            "name": "Compare"
         }
     },
     "sections-group": {
