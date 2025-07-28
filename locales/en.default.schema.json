@@ -20,6 +20,9 @@
         }
     },
     "sections": {
+        "announcement-bar": {
+            "name": "Announcement bar"
+        },
         "index-ready-our-story": {
             "name": "Ready Our Story"
         },
@@ -31,6 +34,9 @@
         },
         "faq": {
             "name": "Faq"
+        },
+        "compare": {
+            "name": "Compare"
         }
     },
     "sections-group": {

@@ -1,5 +1,13 @@
 {
   "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "settings": {
+        "heading": "FREE Worldwide Shipping Above $100",
+        "button-label": "Shop Now",
+        "button-url": "#"
+      }
+    },
     "index": {
       "type": "index",
       "settings": {}
@@ -69,6 +77,7 @@
     }
   },
   "order": [
+    "announcement-bar",
     "index",
     "index-read-our-story",
     "blocks"
