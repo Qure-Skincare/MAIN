@@ -19,6 +19,9 @@
         }
     },
     "sections": {
+        "announcement-bar": {
+            "name": "Announcement bar"
+        },
         "index-ready-our-story": {
             "name": "Ready Our Story"
         },
