@@ -11,12 +11,23 @@
     "common": {
         "header": "Header",
         "text": "Text",
+        "sub-text": "Sub text",
+        "alt-text": "ALT text",
+        "text-mobile": "Text mobile",
+        "rating-text": "Rating text",
+        "image-text": "Image text",
         "image": "Image",
+        "image-mobile": "Image mobile",
+        "rating-image": "Rating image",
         "button-label": "Button label",
         "button-url": "Button url",
+        "button-label-mobile": "Mobile button label",
+        "button-url-mobile": "Mobile button url",
         "link-url": "Link url",
         "hash": "Hash",
-        "accordion": "Accordion"
+        "accordion": "Accordion",
+        "slider": "Slider",
+        "carousel": "Carousel"
     },
     "blocks": {
         "block-card": {
@@ -37,8 +48,7 @@
         },
         "blocks": {
             "name": "Blocks",
-            "settings": {
-                
+            "settings": {    
             }
         },
         "faq": {
@@ -46,6 +56,97 @@
         },
         "compare": {
             "name": "Compare"
+        },
+         "index-mobile-category-slider": {
+            "name": "Mobile category slider"
+        },
+         "page-banner": {
+            "name": "Page banner"
+        },
+         "bundle-banner": {
+            "name": "Bundle banner"
+        },
+         "slider-featured-in": {
+            "name": "Slider Featured In"
+        },
+         "index-qure-products": {
+            "name": "Qure products",
+            "blocks": {
+                "hover-image": {
+                    "name": "Hover image"
+                },
+                "image-text":{
+                    "name": "Text on image"
+                },
+                "label-price":{
+                    "name": "Label price"
+                },
+                "rating-image":{
+                    "name": "Rating image"
+                }
+            }
+        },
+         "index-get-qure": {
+            "name": "Get the Qure",
+            "blocks": {
+                "listed-deal": {
+                    "name": "Listed deal"
+                }
+            }
+        },
+        "trusted-recommended": {
+            "name": "Trusted recommended",
+            "blocks": {
+                "badge": {
+                    "name": "Badge"
+                },
+                "video": {
+                    "name": "Video"
+                }
+            }
+        },
+        "trusted-reviews": {
+            "name": "Trusted reviews",
+            "blocks": {
+                "review": {
+                    "name": "Review",
+                    "settings":{
+                        "compare-image":{
+                            "name": "Compare image"
+                        },
+                        "country-image":{
+                            "name": "Country image"
+                        },
+                          "username":{
+                            "name": "Username"
+                        },
+                        "product-image":{
+                            "name": "Product image"
+                        },
+                        "product-heading":{
+                            "name": "Product heading"
+                        },
+                        "product-text":{
+                            "name": "Product text"
+                        },
+                        "product-url":{
+                            "name": "Product URL"
+                        }
+                    }
+                }
+            }
+        },
+        "text-with-image": {
+            "name": "Text with image",
+        },
+        "quiz": {
+            "name": "Quiz",
+        },
+        "our-advisors": {
+            "name": "Our advisors",
+        },
+        "video-slider": {
+            "name": "Video slider",
         }
     },
     "sections-group": {

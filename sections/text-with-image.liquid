@@ -1,0 +1,86 @@
+<div class="qure__shipping  qure__section color-background overflow-hidden"
+   style="--section-padding-top:32px;--section-padding-bottom:32px; --section-padding-top-mob:24px;--section-padding-bottom-mob:24px;">
+   <div class="container"
+      style="--column-gap:60px; --column-gap-mobile:30px;--ctm-width:50px; --ctm-width-mob:30px;">
+      <div class="row custom__grid d-none d-lg-flex">
+         {% for block in section.blocks %}
+            {% if block.type == 'carousel' %}
+               <div class="col-md-3 col-lg-3 custom__block">
+                  <div class="qure_shipping-inner d-flex align-items-center gap-4">
+                     {% if block.settings.image != blank %}
+                        <div class="qure_shipping-img ctm-width">
+                        <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" class="img-fluid" />
+                     </div>
+                     {% endif %}
+                     {% if block.settings.heading != blank  %}
+                        <div class="qure_shipping-content">{{ block.settings.heading }}</div>
+                     {% endif %}
+                  </div>
+               </div>
+            {% endif %}
+         {% endfor %}
+      </div>
+      <div class="d-flex d-lg-none">
+         <div class="d-flex qure_shipping-scroll">
+            {% for block in section.blocks %}
+               {% if block.type == 'carousel' %}
+                  <div class="qure_shipping-inner d-flex align-items-center gap-3 px-15">
+                     {% if block.settings.image != blank %}
+                        <div class="qure_shipping-img ctm-width">
+                        <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" class="img-fluid" />
+                     </div>
+                     {% endif %}
+                     {% if block.settings.heading != blank %}
+                        <div class="qure_shipping-content fs-16">{{ block.settings.heading }}</div>
+                     {% endif %}
+                  </div>
+               {% endif %}
+            {% endfor %}
+         </div>
+         <div class="d-flex qure_shipping-scroll">
+            {% for block in section.blocks %}
+               {% if block.type == 'carousel' %}
+                   <div class="qure_shipping-inner d-flex align-items-center gap-3 px-15">
+                     {% if block.settings.image != blank %}
+                         <div class="qure_shipping-img ctm-width">
+                        <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" class="img-fluid" />
+                     </div>
+                     {% endif %}
+                     {% if block.settings.heading != blank %}
+                        <div class="qure_shipping-content fs-16">{{ block.settings.heading }}</div>
+                     {% endif %}
+                  </div>
+               {% endif %}
+            {% endfor %}
+         </div>
+      </div>
+   </div>
+</div>
+{% schema %}
+{
+  "name": "t:sections.text-with-image.name",
+  "blocks": [
+    {
+    "type": "carousel",
+    "name": "t:common.carousel",
+        "settings": [
+            {
+               "type": "text",
+               "id": "heading",
+               "label": "t:common.header"
+            },
+            {
+               "type": "image_picker",
+               "id": "image",
+               "label": "t:common.image"
+            }
+        ]
+    }
+   ],
+  "presets": [
+    {
+        "name": "t:sections.text-with-image.name"
+    }
+  ]
+}
+{% endschema %}

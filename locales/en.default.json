@@ -19,6 +19,11 @@
             "button-label": "Back to Homepage"
         }
     },
+    
+    "trusted_review": {
+        "badge_text": "Verified customer",
+        "badge_image": "shopify://shop_images/reviewCheck.svg"
+    },
     "GDPR": {
         "settings": {
             "header": "Customize Your Cookie Preferences",
