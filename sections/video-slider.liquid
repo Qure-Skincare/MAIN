@@ -1,51 +1,53 @@
-   <link rel="stylesheet" href="https://qureskincaredns-main.com/sections/isolated/trusted-video/trusted-video-slider.css">
-   <div class="trusted_video_slider qure__section"
-      style="--section-padding-top: 40px; --section-padding-bottom: 40px; --section-padding-top-mob: 30px; --section-padding-bottom-mob: 30px;">
-      <div class="container">
-         <div class="swiper qure__swiper" id="qure__swiper-trusted-slider-video" data-section-id="trusted-slider-video"
-               data-autoplay="false" data-loop="false" data-mobile="1.1" data-tablet="2" data-desktop="3"
-               data-spacing="30" data-pagination-fraction="true">
-               <div class="swiper-wrapper">
-                {% for block in section.blocks %}
-                    {% if block.type == 'slider' and block.settings.heading != blank and block.settings.text != blank and block.settings.sub_text != blank and  and  %}
-                        <div class="swiper-slide">
-                            <div class="trusted_video_card d-block">
-                                <a href="#" data-bs-toggle="modal" data-bs-target="#reusableWistiaModal"
-                                {% if block.settings.url != blank %}
-                                  data-video-id="{{ block.settings.url }}" class="filter-card-item filter-card-video"></a>
-                                {% endif %}
-                                    <div class="filter-card-video-icon align-items-end px-20 py-10 d-none">
-                                       {% if block.settings.image != blank %}
-                                          <div class="align-items-center d-flex justify-content-between w-100">
-                                                <div class="text-white fs-20">{{ 'video_slider.text' | t }}</div>
-                                                <img src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt | escape }}">
-                                                </div>
-                                             </div>
-                                             <img src="{{ block.settings.image | image_url}}" alt="{{ block.settings.image.alt | escape }}" class="img-fluid" />
-                                        {% endif %}
-                                  </a>
-                                 <div class="trusted_video_content d-flex flex-column justify-content-between gap-4 p-24">
-                                       {{ block.settings.heading | replace: '<p>', ''}}
-                                          <div class="drs_rev">
-                                             {{ block.settings.text }} 
-                                             {{ block.settings.sub_text }}
-                                          </div>
-                                 </div>
-                            </div>
+<link rel="stylesheet" href="https://qureskincaredns-main.com/sections/isolated/trusted-video/trusted-video-slider.css">
+<div class="trusted_video_slider qure__section"
+   style="--section-padding-top: 40px; --section-padding-bottom: 40px; --section-padding-top-mob: 30px; --section-padding-bottom-mob: 30px;">
+   <div class="container">
+      <div class="swiper qure__swiper" id="qure__swiper-trusted-slider-video" data-section-id="trusted-slider-video"
+         data-autoplay="false" data-loop="false" data-mobile="1.1" data-tablet="2" data-desktop="3" data-spacing="30"
+         data-pagination-fraction="true">
+         <div class="swiper-wrapper">
+            {% for block in section.blocks %}
+            {% if block.type == 'slider' %}
+               <div class="swiper-slide">
+                  <div class="trusted_video_card d-block">
+                     {% if block.settings.url != blank %}
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#reusableWistiaModal"
+                           data-video-id="{{ block.settings.url }}" class="filter-card-item filter-card-video">
+                        {% endif %}
+                        <div class="filter-card-video-icon align-items-end px-20 py-10 d-none">
+                           {% if block.settings.image != blank %}
+                           <div class="align-items-center d-flex justify-content-between w-100">
+                              <div class="text-white fs-20">{{ 'sections.video-slider.text' | t }}</div>
+                                 <img src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt | escape }}">
+                              </div>
                         </div>
-                    {% endif %}
-                {% endfor %}
-               </div>
-               <div class="swiper-arrows-with-pagination d-flex align-items-center justify-content-center gap-4 mt-30">
-                  <div class="qure-swiper-button-prev qure-swiper-arrow"><i class="fa-regular fa-angle-left"></i>
+                        <img src="{{ block.settings.image | image_url}}" alt="{{ block.settings.image.alt | escape }}" class="img-fluid" />
+                     {% endif %}
+                     </a>
+                     {% if block.settings.heading != blank and block.settings.text != blank and block.settings.sub_text != blank %}
+                     <div class="trusted_video_content d-flex flex-column justify-content-between gap-4 p-24">
+                        {{ block.settings.heading | replace: '<p>', ''}}
+                           <div class="drs_rev">
+                              {{ block.settings.text }}
+                              {{ block.settings.sub_text }}
+                           </div>
+                     </div>
+                     {% endif %}
                   </div>
-                  <div class="swiper-pagination position-relative bottom-0 w-auto"></div>
-                  <div class="qure-swiper-button-next qure-swiper-arrow"><i class="fa-regular fa-angle-right"></i>
-                  </div>
                </div>
+            {% endif %}
+            {% endfor %}
          </div>
-      <div class="modal fade filter-modal" id="reusableWistiaModal" data-bs-backdrop="static"
-         data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+         <div class="swiper-arrows-with-pagination d-flex align-items-center justify-content-center gap-4 mt-30">
+            <div class="qure-swiper-button-prev qure-swiper-arrow"><i class="fa-regular fa-angle-left"></i>
+            </div>
+            <div class="swiper-pagination position-relative bottom-0 w-auto"></div>
+            <div class="qure-swiper-button-next qure-swiper-arrow"><i class="fa-regular fa-angle-right"></i>
+            </div>
+         </div>
+      </div>
+      <div class="modal fade filter-modal" id="reusableWistiaModal" data-bs-backdrop="static" data-bs-keyboard="false"
+         tabindex="-1" aria-hidden="true">
          <div class="modal-dialog modal-dialog-centered modal-md filter-dialog">
             <div class="modal-content">
                <div class="modal-header border-0">
@@ -70,51 +72,51 @@
 </script>
 {% schema %}
 {
-  "name": "t:sections.video-slider.name",
-  "settings": [
-    {
-        "type": "image_picker",
-        "id": "image",
-        "label": "t:common.image"
-    }
-  ],
-  "blocks": [
-    {
-    "type": "slider",
-    "name": "t:common.slider",
-        "settings": [
-            {
-               "type": "richtext",
-               "id": "heading",
-               "label": "t:common.header"
-            },
-            {
-               "type": "richtext",
-               "id": "text",
-               "label": "t:common.text"
-            },
-            {
-               "type": "richtext",
-               "id": "sub_text",
-               "label": "t:common.sub-text"
-            },
-            {
-               "type": "text",
-               "id": "url",
-               "label": "t:common.link-url"
-            },
-            {
-                "type": "image_picker",
-                "id": "image",
-                "label": "t:common.image"
-            }
-        ]
-    }
-   ],
-  "presets": [
-    {
-        "name": "t:sections.video-slider.name"
-    }
-  ]
+"name": "t:sections.video-slider.name",
+"settings": [
+{
+"type": "image_picker",
+"id": "image",
+"label": "t:common.image"
+}
+],
+"blocks": [
+{
+"type": "slider",
+"name": "t:common.slider",
+"settings": [
+{
+"type": "richtext",
+"id": "heading",
+"label": "t:common.header"
+},
+{
+"type": "richtext",
+"id": "text",
+"label": "t:common.text"
+},
+{
+"type": "richtext",
+"id": "sub_text",
+"label": "t:common.sub-text"
+},
+{
+"type": "text",
+"id": "url",
+"label": "t:common.link-url"
+},
+{
+"type": "image_picker",
+"id": "image",
+"label": "t:common.image"
+}
+]
+}
+],
+"presets": [
+{
+"name": "t:sections.video-slider.name"
+}
+]
 }
 {% endschema %}

@@ -15,14 +15,14 @@ style="
                     <div class="swiper-slide">
                         {% if block.settings.url != blank %}
                             <a href="{{ block.settings.url }}" class="qure__categories-list">
-                                {% endif %}
                                 {% if block.settings.image != blank %}
-                                <div class="qure__cat-img"><img src="{{ block.settings.image | image_url }}" class="img-fluid" alt="{{ block.settings.image.alt | escape }}" /></div>
+                                    <div class="qure__cat-img"><img src="{{ block.settings.image | image_url }}" class="img-fluid" alt="{{ block.settings.image.alt | escape }}" /></div>
                                 {% endif %}
                                 {% if block.settings.heading != blank %}
                                     <div class="qure__cat-desc">{{ block.settings.heading }}</div>
                                 {% endif %}  
                             </a>
+                        {% endif %}
                     </div>
                 {% endif %}
             {% endfor %}

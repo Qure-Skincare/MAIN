@@ -8,6 +8,21 @@
  * ------------------------------------------------------------
  */
 {
+    "sections":{
+        "slider-featured-in": {
+            "featured_text": "FEATURED IN"
+    },
+        "trusted-review": {
+            "badge_text": "Verified customer",
+            "badge_image": "shopify://shop_images/reviewCheck.svg"
+    },
+        "trusted-recommended": {
+            "header": "Trusted and Recommended by Experts"
+    },
+        "video-slider":{
+             "text": "Watch: How To Install"
+    }
+    },
     "general": {
         "page": "Page {{ page }}",
         "tags": "Tags {{ tags }}"
@@ -19,19 +34,7 @@
             "button-label": "Back to Homepage"
         }
     },
-    "index_bundle_banner": {
-        "bundle_text": "FEATURED IN"
-    },
-    "trusted_review": {
-        "badge_text": "Verified customer",
-        "badge_image": "shopify://shop_images/reviewCheck.svg"
-    },
-    "trusted_recommended": {
-        "header": "Trusted and Recommended by Experts"
-    },
-    "video_slider":{
-        "text": "Watch: How To Install"
-    },
+    
     "GDPR": {
         "settings": {
             "header": "Customize Your Cookie Preferences",
