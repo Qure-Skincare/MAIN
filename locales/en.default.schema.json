@@ -60,10 +60,10 @@
          "index-mobile-category-slider": {
             "name": "Mobile category slider"
         },
-         "page-banner": {
+         "index-page-banner": {
             "name": "Page banner"
         },
-         "bundle-banner": {
+         "index-bundle-banner": {
             "name": "Bundle banner"
         },
          "slider-featured-in": {
@@ -139,7 +139,7 @@
         "text-with-image": {
             "name": "Text with image",
         },
-        "quiz": {
+        "index-quiz": {
             "name": "Quiz",
         },
         "our-advisors": {

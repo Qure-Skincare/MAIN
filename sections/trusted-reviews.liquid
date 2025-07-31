@@ -36,14 +36,13 @@
                               </div>
                               {% if block.settings.heading != blank and block.settings.text != blank %}
                                   <h5 class="card-title fm-body mb-15">{{ block.settings.heading }}</h5>
-                              {{ block.settings.text | replace: '<p>', '<p class="card-text"></p>' }}
+                                  {{ block.settings.text | replace: '<p>', '<p class="card-text"></p>' }}
                               {% endif %}
                            </div>
                            {% if block.settings.link_url != blank and block.settings.product_image != blank %}
                               <a href="{{ block.settings.link_url }}" class="d-flex bg-light p-12 rounded-10 rev_slide-prd gap-3">
                               <div class="rev-prd-img">
-                                 <img src="{{ block.settings.product_image | image_url }}"
-                                    alt="{{ block.settings.product_image.alt | escape }}" />
+                                 <img src="{{ block.settings.product_image | image_url }}" alt="{{ block.settings.product_image.alt | escape }}" />
                               </div>
                            {% endif %}
                            {% if block.settings.product_heading != blank and block.settings.product_text != blank %}
@@ -136,6 +135,11 @@
             }
         ]
     }
-   ]
+   ],
+  "presets": [
+    {
+      "name": "t:sections.trusted-reviews.name"
+    }
+  ]
 }
 {% endschema %}

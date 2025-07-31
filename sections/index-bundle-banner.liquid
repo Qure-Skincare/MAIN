@@ -3,18 +3,12 @@
    <div class="bundle__banner-img">
     {% if section.settings.image != blank and section.settings.image_mobile != blank %}
         <picture>
-         <source media="(min-width:1920px)" srcset="{{ section.settings.image | image_url }}"
-            class="img-fluid" width="1440" height="557">
-         <source media="(min-width:1600px)" srcset="{{ section.settings.image | image_url }}"
-            class="img-fluid" width="1440" height="557">
-         <source media="(min-width:1100px)" srcset="{{ section.settings.image | image_url }}"
-            class="img-fluid" width="1440" height="557">
-         <source media="(min-width:767px)" srcset="{{ section.settings.image | image_url }}" class="img-fluid"
-            width="1440" height="557">
-         <source media="(min-width:540px)" srcset="{{ section.settings.image_mobile | image_url }}"
-            class="img-fluid" width="1440" height="557">
-         <img src="{{ section.settings.image_mobile | image_url }}" width="225" height="281" alt="{{ section.settings.image.alt | escape }}"
-            class="img-fluid w-100">
+         <source media="(min-width:1920px)" srcset="{{ section.settings.image | image_url }}" class="img-fluid" width="1440" height="557">
+         <source media="(min-width:1600px)" srcset="{{ section.settings.image | image_url }}" class="img-fluid" width="1440" height="557">
+         <source media="(min-width:1100px)" srcset="{{ section.settings.image | image_url }}" class="img-fluid" width="1440" height="557">
+         <source media="(min-width:767px)" srcset="{{ section.settings.image | image_url }}" class="img-fluid" width="1440" height="557">
+         <source media="(min-width:540px)" srcset="{{ section.settings.image_mobile | image_url }}" class="img-fluid" width="1440" height="557">
+         <img src="{{ section.settings.image_mobile | image_url }}" width="225" height="281" alt="{{ section.settings.image.alt | escape }}" class="img-fluid w-100">
       </picture>
     {% endif %}
    </div>
@@ -79,11 +73,6 @@
         "id": "image_mobile",
         "label": "t:common.image-mobile"
     }
-  ],
-  "presets": [
-   {
-      "name": "t:sections.bundle-banner.name"
-   }
   ]
 }
 {% endschema %}

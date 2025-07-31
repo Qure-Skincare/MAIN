@@ -7,27 +7,30 @@
                data-spacing="30" data-pagination-fraction="true">
                <div class="swiper-wrapper">
                 {% for block in section.blocks %}
-                    {% if block.type == 'slider' and block.settings.heading != blank and block.settings.text != blank and block.settings.sub_text != blank and block.settings.url != blank and block.settings.image != blank %}
+                    {% if block.type == 'slider' and block.settings.heading != blank and block.settings.text != blank and block.settings.sub_text != blank and  and  %}
                         <div class="swiper-slide">
                             <div class="trusted_video_card d-block">
                                 <a href="#" data-bs-toggle="modal" data-bs-target="#reusableWistiaModal"
-                                    data-video-id="{{ block.settings.url }}" class="filter-card-item filter-card-video">
+                                {% if block.settings.url != blank %}
+                                  data-video-id="{{ block.settings.url }}" class="filter-card-item filter-card-video"></a>
+                                {% endif %}
                                     <div class="filter-card-video-icon align-items-end px-20 py-10 d-none">
-                                        <div class="align-items-center d-flex justify-content-between w-100">
-                                            <div class="text-white fs-20">Watch: How To Install</div>
-                                            <img src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt | escape }}">
-                                        </div>
-                                    </div>
-                                    <img src="{{ block.settings.image | image_url}}" alt="{{ block.settings.image.alt | escape }}"
-                                        class="img-fluid" />
-                                </a>
-                                <div class="trusted_video_content d-flex flex-column justify-content-between gap-4 p-24">
-                                    {{ block.settings.heading | replace: '<p>', ''}}
-                                        <div class="drs_rev">
-                                            {{ block.settings.text }} 
-                                            {{ block.settings.sub_text }}
-                                        </div>
-                                </div>
+                                       {% if block.settings.image != blank %}
+                                          <div class="align-items-center d-flex justify-content-between w-100">
+                                                <div class="text-white fs-20">{{ 'video_slider.text' | t }}</div>
+                                                <img src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt | escape }}">
+                                                </div>
+                                             </div>
+                                             <img src="{{ block.settings.image | image_url}}" alt="{{ block.settings.image.alt | escape }}" class="img-fluid" />
+                                        {% endif %}
+                                  </a>
+                                 <div class="trusted_video_content d-flex flex-column justify-content-between gap-4 p-24">
+                                       {{ block.settings.heading | replace: '<p>', ''}}
+                                          <div class="drs_rev">
+                                             {{ block.settings.text }} 
+                                             {{ block.settings.sub_text }}
+                                          </div>
+                                 </div>
                             </div>
                         </div>
                     {% endif %}

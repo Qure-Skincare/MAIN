@@ -1,17 +1,19 @@
 <div class="trusted_recom qure__section"
    style="--section-padding-top: 40px; --section-padding-bottom: 40px; --section-padding-top-mob: 30px; --section-padding-bottom-mob: 30px;">
    <div class="container" style="--column-gap:35px; --column-gap-mobile:18px;">
-      <h2 class="qure__section-heading d-md-none mb-3 text-center">Trusted and Recommended by Experts</h2>
+      <h2 class="qure__section-heading d-md-none mb-3 text-center">{{ 'trusted_recommended.header' | t }}</h2>
       <div class="row align-items-center custom__grid">
          <div class="col-lg-8 custom__block order-1 order-md-0">
             <div class="trusted_left mw-680">
                <div class="section_header py-0 mw-100">
                   {% for block in section.blocks %}
-                     {% if block.type == 'badge' and block.settings.image != blank and block.settings.text != blank %}
-                         <div class="trusted_verified d-none d-md-flex">
+                     {% if block.type == 'badge' %}
+                        {% if block.settings.image != blank and block.settings.text != blank %}
+                           <div class="trusted_verified d-none d-md-flex">
                            <img src="{{ block.settings.image | image_url  }}" alt="{{ block.settings.image.alt | escape }}">
                            {{ block.settings.text | replace: '<p>', '<p class="p-0">' }}
                          </div>
+                        {% endif %}
                      {% endif %}
                   {% endfor %}
                    {% if section.settings.heading != blank and section.settings.text != blank %}

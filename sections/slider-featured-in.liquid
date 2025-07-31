@@ -3,7 +3,7 @@
    <div class="container">
       <div class="press_bl py-2 mw-mob-100">
          <div class="p_bl_header text-center mb-30 mb-md-50">
-            <p class="fs-18 fw-500 fm-body">FEATURED IN</p>
+            <p class="fs-18 fw-500 fm-body">{{ 'index_bundle_banner.bundle_text' | t }}</p>
          </div>
          <slide-with-thumbs class="qure__swiper-wrapper">
             <!-- Galler start-->
@@ -12,8 +12,10 @@
                data-autoplay="true" data-loop="true" data-spacing="0">
                <div class="swiper-wrapper" style="--perload-gap: 10px" data-nav-thumb>
                  {% for block in section.blocks %}
-                    {% if block.type == 'slider' and block.settings.heading != blank %}
+                    {% if block.type == 'slider' %}
+                      {% if block.settings.heading != blank %}
                          <div class="swiper-slide">{{ block.settings.heading }}</div>
+                      {% endif %}
                     {% endif %}
                  {% endfor %}
                </div>
@@ -27,12 +29,14 @@
                   data-autoplay="true" data-loop="false" data-spacing="40">
                   <div class="swiper-wrapper">
                     {% for block in section.blocks %}
-                        {% if block.type == 'slider' and block.settings.image != blank %}
+                        {% if block.type == 'slider' %}
+                          {% if block.settings.image != blank %}
                             <div class="swiper-slide">
                                <div class="app_press_info">
                                     <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}">
                                 </div>
                             </div>
+                          {% endif %}
                         {% endif %}     
                     {% endfor %}
                   </div>

@@ -41,7 +41,6 @@
                             <span class="quiz-stepper__desc quiz-stepper__desc--inactive">{{ section.settings.sub_text }}</span>
                         </div>
                      {% endif %}
-                     
                   </div>
                </div>
             </div>
@@ -51,7 +50,7 @@
 </div>
 {% schema %}
 {
-  "name": "t:sections.quiz.name",
+  "name": "t:sections.index-quiz.name",
   "settings": [
     {
         "type": "text",
@@ -72,7 +71,7 @@
   "blocks": [
     {
       "type": "take_quiz",
-      "name": "t:sections.quiz.name",
+      "name": "t:sections.index-quiz.name",
       "limit": 1,
       "settings": [
         {
@@ -97,11 +96,6 @@
             "default": "Take The Quiz"
         }
       ]
-    }
-  ],
-  "presets": [
-    {
-      "name": "t:sections.quiz.name"
     }
   ]
 }
