@@ -1,3 +1,7 @@
+{% doc %}
+  Renders a video slider section
+{% enddoc %}
+
 <link rel="stylesheet" href="https://qureskincaredns-main.com/sections/isolated/trusted-video/trusted-video-slider.css">
 <div class="trusted_video_slider qure__section"
    style="--section-padding-top: 40px; --section-padding-bottom: 40px; --section-padding-top-mob: 30px; --section-padding-bottom-mob: 30px;">
@@ -18,7 +22,7 @@
                            {% if block.settings.image != blank %}
                            <div class="align-items-center d-flex justify-content-between w-100">
                               <div class="text-white fs-20">{{ 'sections.video-slider.text' | t }}</div>
-                                 <img src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt | escape }}">
+                                 <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}">
                               </div>
                         </div>
                         <img src="{{ block.settings.image | image_url}}" alt="{{ block.settings.image.alt | escape }}" class="img-fluid" />
