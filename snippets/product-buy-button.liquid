@@ -1,0 +1,13 @@
+{% doc %}
+  Renders a product buy button.
+
+  @param {string} product_price - A string value.
+  @param {string} product_variant_id - A string value.
+
+  @example
+  {% render 'product-buy-button', product_price: '128$', product_variant_id: '1' %}
+{% enddoc %}
+
+<div class="qure__product-action-inner mt-30 mt-md-30 mb-10 max-w-ctm" style="--max-w-ctm:500px">
+    <button type="submit" class="add-cart-button product-form__submit btn btn--primary w-100">{{ 'product.settings.buy-button-label' | t }} – {{ product_price }}</button>
+</div>

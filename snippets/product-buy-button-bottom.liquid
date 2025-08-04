@@ -1,0 +1,38 @@
+{% doc %}
+  Renders a section under buy button.
+
+  @param {string} product_price_divided - A string value.
+  @param {string} button_link - A string value.
+
+  @example
+  {% render 'product-buy-button-bottom', product_price_divided: '128$', button_link: 'https://qureskincare.com/' %}
+{% enddoc %}
+
+<div class="product_klarna-dtls d-flex flex-wrap gap-2 align-items-center fs-14 justify-content-center max-w-ctm" style="--max-w-ctm:500px">
+    {{ 'product.settings.buy-button-bottom.heading' | t: product_price_divided: product_price_divided }}
+    <img src="https://qureskincaredns-main.com/sections/isolated/targeted-patches/images/klarna.svg" />
+    <img src="https://qureskincaredns-main.com/sections/isolated/targeted-patches/images/sezzle.svg" />
+    <img src="https://qureskincaredns-main.com/sections/isolated/targeted-patches/images/afterpay.svg" />
+</div>
+<div class=" max-w-ctm" style="--max-w-ctm:500px">
+    <div class="patch__product-certified my-15">
+        <ul class="patch-dr-list">
+            <li><img src="https://qureskincaredns-main.com/sections/isolated/targeted-patches/images/crt-1.webp" /></li>
+            <li><img src="https://qureskincaredns-main.com/sections/isolated/targeted-patches/images/crt-2.webp" /></li>
+            <li>+50</li>
+        </ul>
+        <p>{{ 'product.settings.buy-button-bottom.recommended_html' | t: button_link: button_link }}</p>
+    </div>
+</div>
+<div class="d-none d-lg-flex flex-nowrap align-items-center justify-content-center col-gap">
+    <div
+        class="icon-with-text d-flex flex-wrap flex-lg-nowrap flex-column flex-lg-row align-items-center fs-16 text-center text-lg-start">
+        <img src="https://qureskincaredns-main.com/sections/isolated/protect-your-skin/images/dermatologist.svg" alt="dermatologist" class="mr-0 mr-md-10 mb-10 mb-md-0">
+        <span>{{ 'product.settings.buy-button-bottom.guaranteed_text' | t }}</span>
+    </div>
+    <div
+        class="icon-with-text d-flex flex-wrap flex-lg-nowrap flex-column flex-lg-row align-items-center fs-16 text-center text-lg-start">
+        <img src="https://qureskincaredns-main.com/sections/isolated/protect-your-skin/images/shipping.svg" alt="shipping" class="mr-0 mr-md-10 mb-10 mb-md-0">
+        <span>{{ 'product.settings.buy-button-bottom.shipping_text' | t }}</span>
+    </div>
+</div>

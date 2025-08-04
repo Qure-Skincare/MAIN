@@ -1,14 +1,5 @@
-<!-- Announcement Bar -->
-<link rel="stylesheet" href="https://qureskincaredns-main.com/sections/isolated/announcement/announcement-bar.css" />
-<div id="announcement-bar" class="announcement-bar" style="--ans-bar-font-size:16px; --anc-bar-font-weight :400;">
-    <div class="container">
-        <div class="announcement-bar-content text-center">
-            FREE Worldwide Shipping Above $100 <a href="#">Shop Now</a>
-        </div>
-    </div>
-</div>
+{% include 'get-product-data' %}
 
-<!-- section-targeted-patches -->
 <link rel="stylesheet" href="https://qureskincaredns-main.com/sections/isolated/product-bundle/product-bundle.css" />
 <div class="qure__trageted-patches qure__section"
     style="--section-padding-top: 40px; --section-padding-bottom: 80px;">
@@ -18,46 +9,9 @@
                 <div class="qure-product-details mw" style="--mw:500px;">
                     <slide-with-thumbs class="tp-product-gallery qure__swiper-wrapper d-block d-lg-none mb-30">
                         <!-- Galler start-->
-                        <div class="swiper qure__product-gallery qure__swiper-gallery"
-                            data-section-id="tp-gallery-desktop" data-mobile="3" data-tablet="3" data-desktop="4"
-                            data-autoplay="false" data-loop="false" data-spacing="0">
+                        <div class="swiper qure__product-gallery qure__swiper-gallery" data-section-id="tp-gallery-desktop" data-mobile="3" data-tablet="3" data-desktop="4" data-autoplay="false" data-loop="false" data-spacing="0">
                             <div class="swiper-wrapper" style="--perload-gap: 10px" data-nav-thumb>
-                                <div class="swiper-slide">
-                                    <div class="slide-image"><img
-                                            src="https://qureskincaredns-main.com/sections/isolated/product-bundle/images/prod_bundle_1.webp"
-                                            alt="image" class="img-fluid" /></div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="slide-image"><img
-                                            src="https://qureskincaredns-main.com/sections/isolated/product-bundle/images/prod_bundle_2.webp"
-                                            alt="image" class="img-fluid" /></div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="slide-image"><img
-                                            src="https://qureskincaredns-main.com/sections/isolated/product-bundle/images/prod_bundle_3.webp"
-                                            alt="image" class="img-fluid" /></div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="slide-image"><img
-                                            src="https://qureskincaredns-main.com/sections/isolated/product-bundle/images/prod_bundle_4.webp"
-                                            alt="image" class="img-fluid" /></div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="slide-image"><img
-                                            src="https://qureskincaredns-main.com/sections/isolated/product-bundle/images/prod_bundle_5.webp"
-                                            alt="image" class="img-fluid" /></div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="slide-image"><img
-                                            src="https://qureskincaredns-main.com/sections/isolated/product-bundle/images/prod_bundle_6.webp"
-                                            alt="image" class="img-fluid" /></div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="slide-image"><img
-                                            src="https://qureskincaredns-main.com/sections/isolated/product-bundle/images/prod_bundle_7.webp"
-                                            alt="image" class="img-fluid" /></div>
-                                </div>
-
+                                {% render 'product-media', product_media: product.media, classname: 'slide-image', size: '720x' %}
                             </div>
                         </div>
                         <!-- Galler End-->
@@ -65,45 +19,9 @@
                             <!-- Thumbnails start-->
                             <div class="qure-swiper-arrow swiper-prev"><i class="fa-regular fa-angle-left"></i>
                             </div>
-                            <div class="swiper qure__product-gallery  tp-thumbnails-desktop qure__swiper-gallery-thumbnails"
-                                data-section-id="tp-thumbnails-desktop" data-mobile="3" data-tablet="4"
-                                data-desktop="4" data-autoplay="false" data-loop="false" data-spacing="10">
+                            <div class="swiper qure__product-gallery  tp-thumbnails-desktop qure__swiper-gallery-thumbnails" data-section-id="tp-thumbnails-desktop" data-mobile="3" data-tablet="4" data-desktop="4" data-autoplay="false" data-loop="false" data-spacing="10">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="slide-thumbnail"><img
-                                                src="https://qureskincaredns-main.com/sections/isolated/product-bundle/images/prod_bundle_1.webp"
-                                                alt="1" class="img-fluid" /></div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="slide-thumbnail"><img
-                                                src="https://qureskincaredns-main.com/sections/isolated/product-bundle/images/prod_bundle_2.webp"
-                                                alt="2" class="img-fluid" /></div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="slide-thumbnail"><img
-                                                src="https://qureskincaredns-main.com/sections/isolated/product-bundle/images/prod_bundle_3.webp"
-                                                alt="3" class="img-fluid" /></div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="slide-thumbnail"><img
-                                                src="https://qureskincaredns-main.com/sections/isolated/product-bundle/images/prod_bundle_4.webp"
-                                                alt="4" class="img-fluid" /></div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="slide-thumbnail"><img
-                                                src="https://qureskincaredns-main.com/sections/isolated/product-bundle/images/prod_bundle_5.webp"
-                                                alt="5" class="img-fluid" /></div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="slide-thumbnail"><img
-                                                src="https://qureskincaredns-main.com/sections/isolated/product-bundle/images/prod_bundle_6.webp"
-                                                alt="6" class="img-fluid" /></div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="slide-thumbnail"><img
-                                                src="https://qureskincaredns-main.com/sections/isolated/product-bundle/images/prod_bundle_7.webp"
-                                                alt="7" class="img-fluid" /></div>
-                                    </div>
+                                    {% render 'product-media', product_media: product.media, classname: 'slide-thumbnail', size: '240x' %}
                                 </div>
                             </div>
                             <div class="qure-swiper-arrow swiper-next"><i class="fa-regular fa-angle-right"></i>
@@ -112,92 +30,22 @@
                         <!-- Thumbnails End-->
                     </slide-with-thumbs>
 
-                    <div class="patch__product-rating d-inline-flex align-items-center gap-3 fs-16 mb-20">
-                        <img src="https://qureskincaredns-main.com/sections/isolated/clean-water/images/cyan_blue_rating.svg" alt="">
-                        <span><strong>4.8</strong>/5 Rated by Customers</span>
-                    </div>
-                    <h2 class="qure__product-title mb-10">{Product name}</h2>
+                    {% render 'product-rating' %}
+
+                    <h2 class="qure__product-title mb-10">{{ product_title }}</h2>
                     <div class="patch__single-shortdes mt-25 mb-25">
-                        <p>{Product description}</p>
+                        <p>{{ product_description }}</p>
                     </div>
 
                     <div class="bundle_price d-flex align-items-center justify-content-start gap-3 my-3 pb-2">
-                        <div class="bef_price text-decoration-line-through">${before price}</div>
-                        <div class="aft_price clr_orange">${sale price}</div>
-                        <div class="discount_percentage">{discount}</div>
+                        <div class="bef_price text-decoration-line-through">{{ product_before_price }}</div>
+                        <div class="aft_price clr_orange">{{ product_sale_price }}</div>
+                        <div class="discount_percentage">{{ product_discount }}%</div>
                     </div>
 
-                    <div class="qure__product-action-inner mt-30 mt-md-30 mb-10 max-w-ctm"
-                        style="--max-w-ctm:500px">
-                        <button type="submit"
-                            class="add-cart-button product-form__submit btn btn--primary w-100">Buy Now –
-                            {$dyn}</button>
-                    </div>
-                    <div class="product_klarna-dtls d-flex flex-wrap gap-2 align-items-center fs-14 justify-content-center max-w-ctm"
-                        style="--max-w-ctm:500px">
-                        OR pay 4 monthly payments of {$dyn} with
-                        <img src="https://qureskincaredns-main.com/sections/isolated/targeted-patches/images/klarna.svg" />
-                        <img src="https://qureskincaredns-main.com/sections/isolated/targeted-patches/images/sezzle.svg" />
-                        <img src="https://qureskincaredns-main.com/sections/isolated/targeted-patches/images/afterpay.svg" />
-
-                    </div>
-                    <div class=" max-w-ctm" style="--max-w-ctm:500px">
-                        <div class="patch__product-certified my-15">
-                            <ul class="patch-dr-list">
-                                <li><img src="https://qureskincaredns-main.com/sections/isolated/targeted-patches/images/crt-1.webp" /></li>
-                                <li><img src="https://qureskincaredns-main.com/sections/isolated/targeted-patches/images/crt-2.webp" /></li>
-                                <li>+50</li>
-                            </ul>
-                            <p><strong>50+ Board Certified Dermatologists</strong> recommend Qure to their patients.
-                                <a href="https://qureskincare.com/pages/derm-reviews"
-                                    class="text-black text-decoration-underline">See More</a>.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="d-none d-lg-flex flex-nowrap align-items-center justify-content-center col-gap">
-                        <div
-                            class="icon-with-text d-flex flex-wrap flex-lg-nowrap flex-column flex-lg-row align-items-center fs-16 text-center text-lg-start">
-                            <img src="https://qureskincaredns-main.com/sections/isolated/protect-your-skin/images/dermatologist.svg" alt="dermatologist"
-                                class="mr-0 mr-md-10 mb-10 mb-md-0">
-                            <span>30-Day Money-Back Guarantee </span>
-                        </div>
-                        <div
-                            class="icon-with-text d-flex flex-wrap flex-lg-nowrap flex-column flex-lg-row align-items-center fs-16 text-center text-lg-start">
-                            <img src="https://qureskincaredns-main.com/sections/isolated/protect-your-skin/images/shipping.svg" alt="shipping"
-                                class="mr-0 mr-md-10 mb-10 mb-md-0">
-                            <span>Free Shipping over {$dyn} </span>
-                        </div>
-                    </div>
-
-                    <div class="buy_bundle d-flex flex-column flex-md-row justify-content-between">
-                        <div class="d-flex flex-column flex-md-row align-items-center gap-4 mw"
-                            style="--mw:270px; --mw-mob:100%;">
-                            <p class="gift_icon">
-                                <svg width="23" height="23" viewBox="0 0 92 92" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M83.8869 27.0569H8.11099C5.49538 27.0569 3.375 29.1772 3.375 31.7929V41.2649C3.375 43.8805 5.49538 46.0008 8.11099 46.0008H83.8869C86.5025 46.0008 88.6229 43.8805 88.6229 41.2649V31.7929C88.6229 29.1772 86.5025 27.0569 83.8869 27.0569Z"
-                                        stroke="#fff" stroke-width="5" stroke-linecap="round"
-                                        stroke-linejoin="round"></path>
-                                    <path d="M46 27.0569V88.6248" stroke="#fff" stroke-width="5"
-                                        stroke-linecap="round" stroke-linejoin="round"></path>
-                                    <path
-                                        d="M79.1526 46.0012V79.1532C79.1526 81.6653 78.1546 84.0745 76.3783 85.8509C74.6019 87.6272 72.1927 88.6251 69.6806 88.6251H22.3206C19.8085 88.6251 17.3993 87.6272 15.6229 85.8509C13.8466 84.0745 12.8486 81.6653 12.8486 79.1532V46.0012"
-                                        stroke="#fff" stroke-width="5" stroke-linecap="round"
-                                        stroke-linejoin="round"></path>
-                                    <path
-                                        d="M24.6886 27.057C21.5485 27.057 18.5369 25.8096 16.3165 23.5892C14.0961 21.3688 12.8486 18.3572 12.8486 15.2171C12.8486 12.0769 14.0961 9.06535 16.3165 6.84492C18.5369 4.62449 21.5485 3.37707 24.6886 3.37707C29.2574 3.29747 33.7345 5.51423 37.5361 9.73827C41.3378 13.9623 44.2875 19.9976 46.0006 27.057C47.7137 19.9976 50.6634 13.9623 54.4651 9.73827C58.2667 5.51423 62.7438 3.29747 67.3126 3.37707C70.4527 3.37707 73.4643 4.62449 75.6847 6.84492C77.9051 9.06535 79.1526 12.0769 79.1526 15.2171C79.1526 18.3572 77.9051 21.3688 75.6847 23.5892C73.4643 25.8096 70.4527 27.057 67.3126 27.057"
-                                        stroke="#fff" stroke-width="5" stroke-linecap="round"
-                                        stroke-linejoin="round"></path>
-                                </svg>
-                            </p>
-                            <p>Save up to <strong>XX%</strong> with our curated bundles</p>
-                        </div>
-                        <button class="btn bg-white border-0 text-black mt-15 mt-md-0">Shop Now <img
-                                src="https://qureskincaredns-main.com/assets/images/arrow_right.svg" alt="arrow"></button>
-                    </div>
-
-
+                    {% render 'product-buy-button', product_price: product_sale_price, product_variant_id: product_variant_id %}
+                    {% render 'product-buy-button-bottom', product_price_divided: product_price_divided, button_link: 'https://qureskincare.com/pages/derm-reviews' %}
+                    {% render 'product-saveup', button_link: 'https://qureskincare.com/pages/exclusive-holiday-bundle-deal-new' %}
                 </div>
             </div>
             <div class="col-lg-6 custom__block">
@@ -207,41 +55,7 @@
                         data-section-id="tp-gallery-desktop" data-mobile="3" data-tablet="3" data-desktop="4"
                         data-autoplay="false" data-loop="false" data-spacing="0">
                         <div class="swiper-wrapper" style="--perload-gap: 10px" data-nav-thumb>
-                            <div class="swiper-slide">
-                                <div class="slide-image"><img
-                                        src="https://qureskincaredns-main.com/sections/isolated/product-bundle/images/prod_bundle_1.webp" alt="image"
-                                        class="img-fluid" /></div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="slide-image"><img
-                                        src="https://qureskincaredns-main.com/sections/isolated/product-bundle/images/prod_bundle_2.webp" alt="image"
-                                        class="img-fluid" /></div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="slide-image"><img
-                                        src="https://qureskincaredns-main.com/sections/isolated/product-bundle/images/prod_bundle_3.webp" alt="image"
-                                        class="img-fluid" /></div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="slide-image"><img
-                                        src="https://qureskincaredns-main.com/sections/isolated/product-bundle/images/prod_bundle_4.webp" alt="image"
-                                        class="img-fluid" /></div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="slide-image"><img
-                                        src="https://qureskincaredns-main.com/sections/isolated/product-bundle/images/prod_bundle_5.webp" alt="image"
-                                        class="img-fluid" /></div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="slide-image"><img
-                                        src="https://qureskincaredns-main.com/sections/isolated/product-bundle/images/prod_bundle_6.webp" alt="image"
-                                        class="img-fluid" /></div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="slide-image"><img
-                                        src="https://qureskincaredns-main.com/sections/isolated/product-bundle/images/prod_bundle_7.webp" alt="image"
-                                        class="img-fluid" /></div>
-                            </div>
+                            {% render 'product-media', product_media: product.media, classname: 'slide-image', size: '720x' %}
                         </div>
                     </div>
                     <!-- Galler End-->
@@ -252,41 +66,7 @@
                             data-section-id="tp-thumbnails-desktop" data-mobile="3" data-tablet="4" data-desktop="4"
                             data-autoplay="false" data-loop="false" data-spacing="10">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="slide-thumbnail"><img
-                                            src="https://qureskincaredns-main.com/sections/isolated/product-bundle/images/prod_bundle_1.webp" alt="1"
-                                            class="img-fluid" /></div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="slide-thumbnail"><img
-                                            src="https://qureskincaredns-main.com/sections/isolated/product-bundle/images/prod_bundle_2.webp" alt="2"
-                                            class="img-fluid" /></div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="slide-thumbnail"><img
-                                            src="https://qureskincaredns-main.com/sections/isolated/product-bundle/images/prod_bundle_3.webp" alt="3"
-                                            class="img-fluid" /></div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="slide-thumbnail"><img
-                                            src="https://qureskincaredns-main.com/sections/isolated/product-bundle/images/prod_bundle_4.webp" alt="4"
-                                            class="img-fluid" /></div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="slide-thumbnail"><img
-                                            src="https://qureskincaredns-main.com/sections/isolated/product-bundle/images/prod_bundle_5.webp" alt="5"
-                                            class="img-fluid" /></div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="slide-thumbnail"><img
-                                            src="https://qureskincaredns-main.com/sections/isolated/product-bundle/images/prod_bundle_6.webp" alt="6"
-                                            class="img-fluid" /></div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="slide-thumbnail"><img
-                                            src="https://qureskincaredns-main.com/sections/isolated/product-bundle/images/prod_bundle_7.webp" alt="7"
-                                            class="img-fluid" /></div>
-                                </div>
+                                {% render 'product-media', product_media: product.media, classname: 'slide-thumbnail', size: '240x' %}
                             </div>
                         </div>
                         <div class="qure-swiper-arrow swiper-next"><i class="fa-regular fa-angle-right"></i></div>
@@ -294,89 +74,18 @@
                     <!-- Thumbnails End-->
                 </slide-with-thumbs>
 
-                <div class="d-flex d-lg-none flex-nowrap align-items-start justify-content-center col-gap mt-30">
-                    <div
-                        class="col icon-with-text d-flex flex-wrap flex-lg-nowrap flex-column flex-lg-row align-items-center fs-16 text-center text-lg-start">
-                        <img src="https://qureskincaredns-main.com/sections/isolated/protect-your-skin/images/dermatologist.svg" alt="dermatologist"
-                            class="mr-0 mr-md-10 mb-10 mb-md-0">
-                        <span>30-Day Money-Back Guarantee</span>
-                    </div>
-                    <div
-                        class="col icon-with-text d-flex flex-wrap flex-lg-nowrap flex-column flex-lg-row align-items-center fs-16 text-center text-lg-start">
-                        <img src="https://qureskincaredns-main.com/sections/isolated/protect-your-skin/images/shipping.svg" alt="shipping"
-                            class="mr-0 mr-md-10 mb-10 mb-md-0">
-                        <span>Free World-Wide Shipping over {$dyn}</span>
-                    </div>
-                    <div
-                        class="col icon-with-text d-flex flex-wrap flex-lg-nowrap flex-column flex-lg-row align-items-center fs-16 text-center text-lg-start">
-                        <img src="https://qureskincaredns-main.com/sections/isolated/protect-your-skin/images/backed_science.svg" alt="dermatologist"
-                            class="mr-0 mr-md-10 mb-10 mb-md-0">
-                        <span>Backed by Science </span>
-                    </div>
-                </div>
+                {% render 'product-benefits-list' %}
 
                 <div class="accordion accordion-flush mt-15 tp-product-accordion" id="tp-product-qure">
-                    <div class="accordion-item qure__accordion-item">
-                        <button class="accordion-button collapsed qure__accordion-header" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#key-benefits" aria-expanded="false"
-                            aria-controls="key-benefits">
-                            Key Benefits
-                        </button>
-                        <div id="key-benefits" class="accordion-collapse collapse qure__accordion-content"
-                            data-bs-parent="#tp-product-qure">
-                            <div class="accordion-body">
-                                <p>Nam ex libero, ultricies eu odio at, gravida iaculis velit. Vivamus efficitur
-                                    nisi ac elit fermentum, vel ultrices metus ullamcorper.</p>
-                                <span class="mb-5 d-block">Etiam bibendum, elit vitae suscipit auctor:</span>
-                                <ul>
-                                    <li>Felis turpis bibendum sem</li>
-                                    <li>Vitae pretium mauris quam quis sem proin sagittis nisl eget </li>
-                                    <li>ex porta iaculis pellentesque at placerat augue </li>
-                                    <li>Nam pellentesque pellentesque nulla</li>
-                                </ul>
-                                <p>Fusce eget iaculis mi. Vivamus at dolor sit amet sapien consequat fermentum ac
-                                    quis nunc.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item default_list">
-                        <button class="accordion-button collapsed qure__accordion-header" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#how-it-works" aria-expanded="false"
-                            aria-controls="how-it-works">
-                            How It Works
-                        </button>
-                        <div id="how-it-works" class="accordion-collapse collapse qure__accordion-content"
-                            data-bs-parent="#tp-product-qure">
-                            <div class="accordion-body">
-                                <p>Nam eget urna id velit sollicitudin ultrices sit amet ut eros. Sed velit quam,
-                                    maximus quis tortor eget, interdum porta nulla. Mauris nunc sapien, consectetur
-                                    id tincidunt laoreet, suscipit sollicitudin tellus. Donec mattis nec leo
-                                    dignissim gravida. Vestibulum nec egestas nunc.</p>
-                                <p class="pt-20">Vivamus iaculis leo id orci pellentesque, id ultricies dolor
-                                    maximus.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item qure__accordion-item">
-                        <button class="accordion-button collapsed qure__accordion-header" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#whats-included" aria-expanded="false"
-                            aria-controls="whats-included">
-                            What’s Included
-                        </button>
-                        <div id="whats-included" class="accordion-collapse collapse qure__accordion-content"
-                            data-bs-parent="#tp-product-qure">
-                            <div class="accordion-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                                <p class="pt-20">In turpis nulla, rutrum gravida ullamcorper nec, rhoncus eleifend
-                                    velit: </p>
-                                <ul>
-                                    <li>Vestibulum magna tellus</li>
-                                    <li>Porta eget faucibus</li>
-                                    <li>Sit amet ultricies vitae mauris</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                    {% if product.metafields.custom.what_s_included != blank %}
+                        {% render 'product-collapsed-item' input: product.metafields.custom.key_benefits, index: 'first', title: 'Key Benefits' %}
+                    {% endif %}
+                    {% if product.metafields.custom.how_it_works != blank %}
+                        {% render 'product-collapsed-item' input: product.metafields.custom.how_it_works, index: 'second', title: 'How It Works' %}
+                    {% endif %}
+                    {% if product.metafields.custom.key_benefits != blank %}
+                        {% render 'product-collapsed-item' input: product.metafields.custom.what_s_included, index: 'third', title: 'What’s Included' %}
+                    {% endif %}
                 </div>
             </div>
         </div>
@@ -384,82 +93,6 @@
 </div>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-        loadScriptOnce('slider-script', 'https://qureskincaredns-main.com/assets/js/slider-with-thumb.js');
+        loadScriptOnce('slider-with-thumb', 'https://qureskincaredns-main.com/assets/js/slider-with-thumb.js');
     });
 </script>
-<!-- section-targeted-patches -->
-
-<!-- -- press slider app out start -- -->
-<link rel="stylesheet" href="https://qureskincaredns-main.com/sections/isolated/press_slider/press-slider.css">
-<div class="press_slider bg-light qure__section">
-    <div class="container">
-        <div class="press_bl py-2 mw-mob-100">
-            <div class="p_bl_header text-center mb-30 mb-md-50">
-                <p class="fs-18 fw-500 fm-body">FEATURED IN</p>
-            </div>
-            <slide-with-thumbs class="qure__swiper-wrapper">
-                <!-- Galler start-->
-                <div class="swiper qure__product-gallery qure__swiper-gallery ctm_cls_press_slider"
-                    data-section-id="tp-gallery-desktop" data-mobile="3" data-tablet="3" data-desktop="4"
-                    data-autoplay="true" data-loop="true" data-spacing="0">
-                    <div class="swiper-wrapper" style="--perload-gap: 10px" data-nav-thumb>
-                        <div class="swiper-slide">
-                            “The professional grade is the perfect addition to any at-home skincare routine.”
-                        </div>
-                        <div class="swiper-slide">
-                            “My skin actually seems considerable brighter and smoother! It’s simple, fast, and
-                            effective enough to become a daily habit.”
-                        </div>
-                        <div class="swiper-slide">
-                            “The results are blatant — my glow after using the treatment speaks for itself. You'll
-                            notice hydrated, radiant, and healthy-looking skin.”
-                        </div>
-                        <div class="swiper-slide">
-                            “The day after I used Qure, I was shocked at how firm, plump, and even my skin looked.
-                            And my dark circles? Where'd they go?”
-                        </div>
-                    </div>
-                </div>
-                <!-- Galler End-->
-                <div class="swiper-thumbnail-press-slider mt-3">
-                    <!-- Thumbnails start-->
-                    <div class="swiper qure__product-gallery tp-thumbnails-desktop qure__swiper-gallery-thumbnails qure__logo-slider"
-                        data-section-id="tp-thumbnails-desktop" data-mobile="3" data-tablet="3" data-desktop="5"
-                        data-autoplay="true" data-loop="false" data-spacing="40">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="app_press_info">
-                                    <img src="https://qureskincaredns-main.com/sections/isolated/press_slider/images/vogue-black.svg" alt="vogue">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="app_press_info">
-                                    <img src="https://qureskincaredns-main.com/sections/isolated/press_slider/images/women-health.svg"
-                                        alt="women-health">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="app_press_info">
-                                    <img src="https://qureskincaredns-main.com/sections/isolated/press_slider/images/popsugar.svg" alt="popsugar">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="app_press_info">
-                                    <img src="https://qureskincaredns-main.com/sections/isolated/press_slider/images/who-what-wear.svg"
-                                        alt="who-what-wear">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </slide-with-thumbs>
-        </div>
-    </div>
-</div>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        loadScriptOnce('slider-script', 'https://qureskincaredns-main.com/assets/js/slider-with-thumb.js');
-    });
-</script>
-
-<!-- press slider app out end -->

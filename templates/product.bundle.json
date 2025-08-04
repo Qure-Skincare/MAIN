@@ -9,12 +9,71 @@
  */
 {
   "sections": {
-    "main": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "settings": {
+        "heading": "FREE Worldwide Shipping Above $100",
+        "button-label": "Shop Now",
+        "button-url": "#"
+      }
+    },
+    "product-bundle": {
       "type": "product-bundle",
+      "settings": {}
+    },
+    "slider_featured_in_DDaUTN": {
+      "type": "slider-featured-in",
+      "blocks": {
+        "slider_rczj6t": {
+          "type": "slider",
+          "settings": {
+            "heading": "“The professional grade is the perfect addition to any at-home skincare routine.”",
+            "image": "shopify://shop_images/vogue-black_4651a572-6206-4c65-a29d-e5edf1697ad2.svg"
+          }
+        },
+        "slider_WhtWNQ": {
+          "type": "slider",
+          "settings": {
+            "heading": "“My skin actually seems considerable brighter and smoother! It’s simple, fast, and effective enough to become a daily habit.”",
+            "image": "shopify://shop_images/women-health.svg"
+          }
+        },
+        "slider_rwJFRA": {
+          "type": "slider",
+          "settings": {
+            "heading": "“The results are blatant — my glow after using the treatment speaks for itself. You'll notice hydrated, radiant, and healthy-looking skin.”",
+            "image": "shopify://shop_images/Popsugar_logo.svg"
+          }
+        },
+        "slider_GcMQyX": {
+          "type": "slider",
+          "settings": {
+            "heading": "“The combination of colors allows you to customize which lights are used, maximizing its benefits to help your skin...”",
+            "image": "shopify://shop_images/cosmopolitan_adf408aa-05b0-45c0-9349-a0f1f360ba73.svg"
+          }
+        },
+        "slider_xNnbxX": {
+          "type": "slider",
+          "settings": {
+            "heading": "“Q-Rejuvalight Pro harnesses the power of lights from blue to infrared to address nearly every skincare concern you could imagine.”",
+            "image": "shopify://shop_images/gq.svg"
+          }
+        }
+      },
+      "block_order": [
+        "slider_rczj6t",
+        "slider_WhtWNQ",
+        "slider_rwJFRA",
+        "slider_GcMQyX",
+        "slider_xNnbxX"
+      ],
+      "name": "t:sections.slider-featured-in.name",
       "settings": {}
     }
   },
   "order": [
-    "main"
+    "announcement-bar",
+    "product-bundle",
+    "slider_featured_in_DDaUTN"
   ]
 }
