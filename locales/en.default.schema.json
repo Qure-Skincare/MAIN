@@ -16,8 +16,12 @@
         "text-mobile": "Text mobile",
         "rating-text": "Rating text",
         "image-text": "Image text",
+        "image-with-text": "Image with text",
         "image": "Image",
+        "image-before": "Image before",
+        "image-after": "Image after",
         "image-mobile": "Image mobile",
+        "video-image-cover": "Video cover image",
         "rating-image": "Rating image",
         "button-label": "Button label",
         "button-url": "Button url",
@@ -27,7 +31,12 @@
         "hash": "Hash",
         "accordion": "Accordion",
         "slider": "Slider",
-        "carousel": "Carousel"
+        "video-slider": "Video slider",
+        "carousel": "Carousel",
+        "percent-value": "Percent value",
+        "percent-scale-text": "Percent scale text",
+        "heading-percent-scale": "Header percent scale",
+        "bundle": "Bundle"
     },
     "blocks": {
         "block-card": {
@@ -42,6 +51,9 @@
     "sections": {
         "announcement-bar": {
             "name": "Announcement bar"
+        },
+        "quote": {
+            "name": "Quote"
         },
         "index-read-our-story": {
             "name": "Read Our Story"
@@ -105,6 +117,47 @@
                 }
             }
         },
+        "qure-filters-offer-slider-with-text": {
+            "name": "Slider with text",
+            "blocks": {
+                "carousel": {
+                    "settings": {
+                        "tag-1": {
+                            "name": "#tag1"
+                        },
+                        "tag-2":
+                        {
+                            "name":"#tag2"
+                        },
+                        "tag-3":{
+                            "name": "#tag3"
+                        } 
+                    }
+                }
+            }
+        },
+        "clean-water": {
+            "name": "Clean water",
+            "blocks": {
+                "bundle": {
+                    "settings": {
+                        "first-image-text": {
+                            "name": "First image text"
+                        },
+                        "second-image-text":
+                        {
+                            "name":"Second image text"
+                        },
+                        "first-image":{
+                            "name": "First image"
+                        }, 
+                        "second-image":{
+                            "name": "Second image"
+                        }
+                    }
+                }
+            }
+        },
         "trusted-reviews": {
             "name": "Trusted reviews",
             "blocks": {
@@ -136,17 +189,159 @@
                 }
             }
         },
+        "trusted-reviews-image": {
+            "name": "Trusted reviews with image",
+            "blocks": {
+                "slider": {
+                    "settings":{
+                        "compare-image":{
+                            "name": "Compare image"
+                        },
+                        "country-image":{
+                            "name": "Country image"
+                        },
+                          "username":{
+                            "name": "Username"
+                        }
+                    }
+                }
+            }
+        },
+        "improve-skin-hydration": {
+            "name": "Improve skin hydration",
+            "blocks": {
+                "value": {
+                    "name": "Value"
+                }
+            }
+        },
+         "qure-filters-offer-qure-filters": {
+            "name": "Qure filters",
+            "blocks": {
+                "shower-tab": {
+                    "name": "Shower tab block (image + video)"
+                },
+                "faucet-tab": {
+                    "name": "Faucet tab block (image + video)"
+                },
+                "shower-text-with-image": {
+                    "name": "Shower tab text with image"
+                },
+                "faucet-text-with-image": {
+                    "name": "Faucet tab text with image"
+                }
+
+            }
+        },
         "text-with-image": {
-            "name": "Text with image",
+            "name": "Text with image"
         },
         "index-quiz": {
-            "name": "Quiz",
+            "name": "Quiz"
+        },
+        "trusted-recommended-image": {
+            "name": "Trusted recommended with image"
+        },
+        "fix-problem": {
+            "name": "Fix problem"
+        },
+        "logos": {
+            "name": "Logos"
         },
         "our-advisors": {
-            "name": "Our advisors",
+            "name": "Our advisors"
         },
         "video-slider": {
-            "name": "Video slider",
+            "name": "Video slider"
+        },
+        "featured-product-bundle": {
+            "name": "Featured product bundle",
+            "blocks": {
+                "claim":{
+                    "name": "Claim offer",
+                    "settings":{
+                        "first-image":{
+                            "name": "First image"
+                        },
+                        "second-image":{
+                            "name": "Second image"
+                        },
+                        "first-image-text":{
+                            "name": "First image text"
+                        },
+                        "second-image-text":{
+                            "name": "Second image text"
+                        },
+                        "heading-scale":{
+                            "name": "Heading scale"
+                        },
+                        "scale-text":{
+                            "name": "Scale text"
+                        },
+                        "scale-value":{
+                            "name": "Scale value"
+                        },
+                        "review-image":{
+                            "name": "Review image"
+                        },
+                        "shipping-image":{
+                            "name": "Shipping image"
+                        },
+                        "shipping-image-text":{
+                            "name": "Shipping image text"
+                        },
+                        "review-image-text":{
+                            "name": "Review image text"
+                        }
+                    }
+                }
+            }
+        },
+        "video-review-slider": {
+            "name": "Video review slider",
+            "blocks": {
+                "video-slider":{
+                    "settings":{
+                        "link-url-youtube":{
+                            "name": "link URL Youtube"
+                        },
+                        "link-url-wistia":{
+                            "name": "Link URL Wistia"
+                        },
+                        "youtube-cover-image":{
+                            "name": "Youtube cover image"
+                        }
+                    }
+                }
+            }
+        },
+        "information-about-water": {
+            "name": "Information about water",
+            "blocks":{
+                "image-with-text":{
+                    "name": "Image with text"
+                }
+            }
+        },
+        "qure-filters-offer-comparison-real-fake": {
+            "name": "Comparison real and fake",
+            "settings" :{
+                "heading-fake":{
+                    "name": "Heading for fake things"
+                },
+                "image-real":{
+                    "name": "image for real things"
+                }
+            },
+            "blocks":{
+                "points":{
+                    "name": "Compairing points",
+                    "settings":{
+                        "real-text": "Text for real thing",
+                        "fake-text": "Text for fake thing"
+                    }
+                }
+            }
         }
     },
     "sections-group": {

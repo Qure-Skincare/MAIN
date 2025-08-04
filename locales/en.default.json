@@ -8,6 +8,52 @@
  * ------------------------------------------------------------
  */
 {
+    "sections":{
+        "slider-featured-in": {
+            "featured_text": "FEATURED IN"
+    },
+        "trusted-review": {
+            "badge_text": "Verified customer",
+            "badge_image": "https://qureskincaredns-main.com/assets/images/reviewCheck.svg"
+    },
+        "trusted-recommended": {
+            "header": "Trusted and Recommended by Experts"
+    },
+        "video-slider":{
+             "text": "Watch: How To Install"
+    },
+        "qure-filters-offer-slider-with-text":{
+            "caused_by_text": "Caused by:"
+    },
+        "faq":{
+            "arrow_image": "https://qureskincaredns-main.com/assets/images/arrow_right.svg"
+    },
+        "comparison-real-fake":{
+            "tick_image": "https://qureskincaredns-main.com/assets/images/tick.svg",
+            "cross_image": "https://qureskincaredns-main.com/assets/images/cross.svg"
+    },
+        "trusted-recommended-image":{
+            "tick_image": "https://qureskincaredns-main.com/sections/isolated/experts/images/tick_new.svg",
+            "tick_image_mobile": "https://qureskincaredns-main.com/assets/images/tick_new.svg",
+            "text": "Dermatologist Approved",
+            "trusted-recommended-header": "Trusted and Recommended by Experts"
+    },
+        "trusted-reviews-image":{
+            "review_check": "https://qureskincaredns-main.com/assets/images/reviewCheck.svg",
+            "text": "Verified customer"
+    },
+        "improve-skin-hydration":{
+            "text_button_before": "Before",
+            "text_button_after": "After"
+    },
+        "qure-filters-offer-qure-filters":{
+            "text_button_shower": "Shower Filter",
+            "text_button_faucet": "Faucet Filter",
+            "video_play_button": "https://qureskincaredns-main.com/assets/images/play_button.svg",
+            "heading_shower_filter": "The Qure Shower Filter",
+            "heading_faucet_filter": "The Qure Faucet Filter"
+    }
+    },
     "general": {
         "page": "Page {{ page }}",
         "tags": "Tags {{ tags }}"
@@ -69,7 +115,7 @@
             "navigation_header_3": "Help Center",
             "navigation_header_4": "Learn More",
             "navigation_header_2_column_one": "Shop Devices",
-            "navigation_header_2_column_second": "Shop Skincare",
+            "navigation_header_2_column_second": "Shop Skincare"
         }
     },
     "footer": {
@@ -89,20 +135,6 @@
                 "text": "Our products are not intended to diagnose, cure, or prevent specific diseases of medical conditions. The Qure website is for education and information purposes only and is not intended as medical advice or a substitute for medical advice."
             }
         }
-    },
-    "sections":{
-        "slider-featured-in": {
-            "featured_text": "FEATURED IN"
-        },
-        "trusted-review": {
-            "badge_text": "Verified customer",
-            "badge_image": "https://qureskincaredns-main.com/assets/images/reviewCheck.svg"
-        },
-        "trusted-recommended": {
-            "header": "Trusted and Recommended by Experts"
-        },
-        "video-slider":{
-            "text": "Watch: How To Install"
-        }
     }
 }
+
