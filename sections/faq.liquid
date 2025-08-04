@@ -35,14 +35,13 @@
                 {% if section.settings.text != blank %}
                     <h6 class="fm-body fw-500 mb-0">{{ section.settings.text }}</h6>
                 {% endif %}
-                {% if section.settings.button != blank and section.settings.url != blank and section.settings.image != blank %}
-                    <a href="{{ section.settings.url }}" class="btn btn-sm btn--secondary">{{ section.settings.button }} <span><img src="{{ section.settings.image | image_url }}" alt=""></span></a>
+                {% if section.settings.button != blank and section.settings.url != blank %}
+                    <a href="{{ section.settings.url }}" class="btn btn-sm btn--secondary">{{ section.settings.button }} <span><img src="{{ 'sections.faq.arrow_image' | t }}" alt="{{ 'section.faq.arrow_image.alt' | escape }}"></span></a>
                 {% endif %}
             </div>
         </div>
     </div>
 </div>
-<!-- Faq section end -->
 {% schema %}
 {
   "name": "t:sections.faq.name",
@@ -67,11 +66,6 @@
         "type": "url",
         "id": "url",
         "label": "t:common.button-url"
-    },
-    {
-        "type": "image_picker",
-        "id": "image",
-        "label": "t:common.image"
     }
   ],
   "blocks": [
