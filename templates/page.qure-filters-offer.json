@@ -18,11 +18,6 @@
         "button-url": "#"
       }
     },
-    "main": {
-      "type": "page-qure-filters-offer",
-      "disabled": true,
-      "settings": {}
-    },
     "clean_water_KQtjt9": {
       "type": "clean-water",
       "blocks": {
@@ -739,7 +734,6 @@
   },
   "order": [
     "announcement_bar_FNAPqF",
-    "main",
     "clean_water_KQtjt9",
     "quote_zqnAHh",
     "qure_filters_offer_slider_with_text_JgnGLR",

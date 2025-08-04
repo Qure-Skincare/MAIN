@@ -15,14 +15,17 @@
         "trusted-review": {
             "badge_text": "Verified customer",
             "badge_image": "https://qureskincaredns-main.com/assets/images/reviewCheck.svg"
-        },
+    },
         "trusted-recommended": {
             "header": "Trusted and Recommended by Experts"
-        },
+    },
         "video-slider":{
              "text": "Watch: How To Install"
     },
-    "faq":{
+        "qure-filters-offer-slider-with-text":{
+            "caused_by_text": "Caused by:"
+    },
+        "faq":{
             "arrow_image": "https://qureskincaredns-main.com/assets/images/arrow_right.svg"
     },
         "comparison-real-fake":{
