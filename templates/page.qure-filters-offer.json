@@ -176,7 +176,7 @@
         "carousel_DNnAqN": {
           "type": "carousel",
           "settings": {
-            "image": "shopify://shop_images/elle_edaef4a6-052e-4c7f-a181-8b48a56a1fbe.svg"
+            "image": "shopify://shop_images/elle.svg"
           }
         },
         "carousel_gz9r8D": {
@@ -739,7 +739,6 @@
   },
   "order": [
     "announcement_bar_FNAPqF",
-    "main",
     "clean_water_KQtjt9",
     "quote_zqnAHh",
     "qure_filters_offer_slider_with_text_JgnGLR",
@@ -749,6 +748,7 @@
     "improve_skin_hydration_UDwAJ8",
     "trusted_reviews_image_b9NgPL",
     "trusted_recommended_image_awbjc8",
+    "main",
     "video_review_slider_yBjMTk",
     "qure_filters_offer_comparison_real_fake_FJifqy",
     "information_about_water_BDVnVm",
