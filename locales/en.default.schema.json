@@ -52,6 +52,9 @@
         "announcement-bar": {
             "name": "Announcement bar"
         },
+        "footer-drawer": {
+            "name": "Cart drawer"
+        },
         "quote": {
             "name": "Quote"
         },
