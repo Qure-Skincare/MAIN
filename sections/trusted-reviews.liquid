@@ -47,18 +47,18 @@
                               {% endif %}
                            </div>
                            {% if block.settings.link_url != blank and block.settings.product_image != blank %}
-                              <a href="{{ block.settings.link_url }}" class="d-flex bg-light p-12 rounded-10 rev_slide-prd gap-3">
-                              <div class="rev-prd-img">
-                                 <img src="{{ block.settings.product_image | image_url }}" alt="{{ block.settings.product_image.alt | escape }}" />
-                              </div>
+                                 <a href="{{ block.settings.link_url }}" class="d-flex bg-light p-12 rounded-10 rev_slide-prd gap-3">
+                                 <div class="rev-prd-img">
+                                    <img src="{{ block.settings.product_image | image_url }}" alt="{{ block.settings.product_image.alt | escape }}" />
+                                 </div>
                            {% endif %}
-                           {% if block.settings.product_heading != blank and block.settings.product_text != blank %}
-                              <div class="rev-prd-content">
-                                 <div class="rp-dev fs-14">{{ block.settings.product_heading }}</div>
-                                 <div class="rp-link text-decoration-underline fs-16">{{ block.settings.product_text }}</div>
-                              </div>
-                           {% endif %}
-                           </a>
+                              {% if block.settings.product_heading != blank and block.settings.product_text != blank %}
+                                 <div class="rev-prd-content">
+                                    <div class="rp-dev fs-14">{{ block.settings.product_heading }}</div>
+                                    <div class="rp-link text-decoration-underline fs-16">{{ block.settings.product_text }}</div>
+                                 </div>
+                              {% endif %}
+                              </a>
                         </div>
                      </div>
                   </div>
@@ -66,11 +66,9 @@
             {% endfor %}
          </div>
          <div class="swiper-arrows-with-pagination d-flex align-items-center justify-content-center gap-4 mt-30">
-            <div class="qure-swiper-button-prev qure-swiper-arrow trusted-slider-arrow-left"><i class="fa-regular fa-angle-left"></i>
-            </div>
+            <div class="qure-swiper-button-prev qure-swiper-arrow trusted-slider-arrow-left"><i class="fa-regular fa-angle-left"></i></div>
             <div class="swiper-pagination position-relative bottom-0 w-auto"></div>
-            <div class="qure-swiper-button-next qure-swiper-arrow trusted-slider-arrow-right"><i class="fa-regular fa-angle-right"></i>
-            </div>
+            <div class="qure-swiper-button-next qure-swiper-arrow trusted-slider-arrow-right"><i class="fa-regular fa-angle-right"></i></div>
          </div>
       </div>
    </div>

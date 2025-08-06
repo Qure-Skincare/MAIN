@@ -4,9 +4,9 @@
 
 
 <div class="qure__shipping  qure__section color-background overflow-hidden"
-   style="--section-padding-top:32px;--section-padding-bottom:32px; --section-padding-top-mob:24px;--section-padding-bottom-mob:24px;">
+   style="--section-padding-top:40px;--section-padding-bottom:40px; --section-padding-top-mob:30px;--section-padding-bottom-mob:30px;">
    <div class="container"
-      style="--column-gap:60px; --column-gap-mobile:30px;--ctm-width:50px; --ctm-width-mob:30px;">
+      style="--column-gap:100px; --column-gap-mobile:30px;--ctm-width:50px; --ctm-width-mob:30px;">
       <div class="row custom__grid d-none d-lg-flex">
          {% for block in section.blocks %}
             {% if block.type == 'carousel' %}
@@ -32,22 +32,6 @@
                   <div class="qure_shipping-inner d-flex align-items-center gap-3 px-15">
                      {% if block.settings.image != blank %}
                         <div class="qure_shipping-img ctm-width">
-                        <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" class="img-fluid" />
-                     </div>
-                     {% endif %}
-                     {% if block.settings.heading != blank %}
-                        <div class="qure_shipping-content fs-16">{{ block.settings.heading }}</div>
-                     {% endif %}
-                  </div>
-               {% endif %}
-            {% endfor %}
-         </div>
-         <div class="d-flex qure_shipping-scroll">
-            {% for block in section.blocks %}
-               {% if block.type == 'carousel' %}
-                   <div class="qure_shipping-inner d-flex align-items-center gap-3 px-15">
-                     {% if block.settings.image != blank %}
-                         <div class="qure_shipping-img ctm-width">
                         <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" class="img-fluid" />
                      </div>
                      {% endif %}

@@ -10,7 +10,7 @@
       <div class="row align-items-center custom__grid">
          <div class="col-lg-8 custom__block order-1 order-md-0">
             <div class="trusted_left mw-680">
-               <div class="section_header py-0 mw-100">
+               <div class="section_header py-0 mw" style="--mw:640px">
                   {% for block in section.blocks %}
                      {% if block.type == 'badge' %}
                         {% if block.settings.image != blank and block.settings.text != blank %}
@@ -26,6 +26,7 @@
                            <h2 class="qure__section-heading text-md-start pb-20 d-none d-md-block">{{ section.settings.heading }}</h2>
                            {{ section.settings.text
                            | replace: '<strong>', '<span style="background:#C7E5DB">' 
+                           | replace: '</strong>', '</span>'
                            }}
                       </div>
                    {% endif %}
@@ -78,7 +79,7 @@
     {
         "type": "richtext",
         "id": "text",
-        "label": "t:common.header"
+        "label": "t:common.text"
     }
   ],
   "blocks": [
