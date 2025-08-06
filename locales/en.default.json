@@ -12,6 +12,25 @@
         "slider-featured-in": {
             "featured_text": "FEATURED IN"
     },
+        "how-it-works": {
+            "aging_mode_button": "Pro-Aging Mode",
+            "breakout_mode_button": "Anti-Breakout Mode",
+            "aging_scale_text_infrared": "Infrared",
+            "aging_scale_value_infrared": "(880 nm)",
+            "aging_scale_text_deep_red": "Deep Red",
+            "aging_scale_value_deep_red": "(660 nm)",
+            "aging_scale_text_red": "Red",
+            "aging_scale_value_red": "(630 nm)",
+            "aging_scale_text_amber": "Amber",
+            "aging_scale_value_amber": "(605 nm)",
+            "breakout_scale_text_red": "Red",
+            "breakout_scale_value_red": "(630 nm)",
+            "breakout_scale_text_blue": "Blue Light",
+            "breakout_scale_value_blue": "(415 nm)"
+    },
+        "proven-results": {
+            "info_image": "https://qureskincaredns-main.com/assets/images/i.svg"
+    },
         "trusted-review": {
             "badge_text": "Verified customer",
             "badge_image": "https://qureskincaredns-main.com/assets/images/reviewCheck.svg"
@@ -52,6 +71,9 @@
             "video_play_button": "https://qureskincaredns-main.com/assets/images/play_button.svg",
             "heading_shower_filter": "The Qure Shower Filter",
             "heading_faucet_filter": "The Qure Faucet Filter"
+    },
+        "compare":{
+            "versus_text": "VS"
     }
     },
     "general": {

@@ -24,6 +24,7 @@
         "video-image-cover": "Video cover image",
         "rating-image": "Rating image",
         "button-label": "Button label",
+        "button-label-image": "Button label image",
         "button-url": "Button url",
         "button-label-mobile": "Mobile button label",
         "button-url-mobile": "Mobile button url",
@@ -36,7 +37,9 @@
         "percent-value": "Percent value",
         "percent-scale-text": "Percent scale text",
         "heading-percent-scale": "Header percent scale",
-        "bundle": "Bundle"
+        "bundle": "Bundle",
+        "wistia-url": "Wistia URL",
+        "list": "List"
     },
     "blocks": {
         "block-card": {
@@ -52,6 +55,32 @@
         "announcement-bar": {
             "name": "Announcement bar"
         },
+        "product-info": {
+            "name": "Product information"
+        },
+        "led-benefits": {
+            "name": "LED benefits"
+        },
+        "proven-results": {
+            "name": "Proven results",
+            "blocks": {
+                "text-with-progress": {
+                    "name": "Text with progress"
+                }
+            }
+        },
+        "banner-with-text": {
+            "name": "Banner with text"
+        },
+        "product-gallery-buy": {
+            "name": "Product gallery buy"
+        },
+        "device-comparison": {
+            "name": "Compare Q-Rejuvalight with Competitors"
+        },
+        "how-to-use": {
+            "name": "How to use"
+        },
         "quote": {
             "name": "Quote"
         },
@@ -66,8 +95,37 @@
         "faq": {
             "name": "Faq"
         },
+        "product-compare": {
+            "name": "Product compare"
+        },
         "compare": {
-            "name": "Compare"
+            "name": "Compare",
+            "settings": {
+                "image-compare-check": {
+                    "name": "Compare image check"
+                },
+                "image-compare-cross": {
+                    "name": "Compare image cross"
+                },
+                "heading-image-check": 
+                {
+                    "name": "Header image for check block"
+                },
+                "heading-cross": 
+                {
+                    "name": "Header for cross block"
+                }
+            },
+            "blocks": {
+                "compare": {
+                    "name": "Compare",
+                    "settings":{
+                        "check-text": "Text for check block",
+                        "cross-text": "Text for cross block",
+                        "checkbox": "Gray check (use for gray check in compare)"
+                    }
+                }
+            }
         },
          "index-mobile-category-slider": {
             "name": "Mobile category slider"
@@ -252,7 +310,38 @@
             "name": "Our advisors"
         },
         "video-slider": {
-            "name": "Video slider"
+            "name": "Video slider",
+            "settings": {
+                "youtube_url": {
+                    "name": "YouTube URL"
+                }
+            }
+        },
+        "video-slider-heading": {
+            "name": "Video slider with heading"
+        },
+        "how-it-works": {
+            "name": "How it works",
+            "settings": {
+                "image-aging": {
+                    "name": "Image for pro-aging mode"
+                },
+                "image-breakout": {
+                    "name": "Image for anti-breakout mode"
+                },
+                "heading-aging-mode": {
+                    "name": "Heading for Pro-aging mode"
+                },
+                "heading-breakout-mode": {
+                    "name": "Heading for anti-breakout mode"
+                },
+                "text-aging-mode": {
+                    "name": "Text for Pro-aging mode"
+                },
+                "text-breakout-mode": {
+                    "name": "Text for anti-breakout mode"
+                }
+            }
         },
         "featured-product-bundle": {
             "name": "Featured product bundle",

@@ -1,0 +1,64 @@
+{% doc %}
+  Renders a product-info section.
+{% enddoc %}
+
+<div id="ingredients" class="hypo_acid qure__section"
+    style="--section-padding-top: 40px; --section-padding-bottom: 80px; --section-padding-top-mob: 30px; --section-padding-bottom-mob: 30px;">
+    <div class="container">
+        <div class="row gy-4">
+            <div class="col-md-7 d-flex justify-content-center align-items-center order-mob-2">
+                <div class="hypo_acid_content pr-md-60">
+                    {% if section.settings.heading != blank %}
+                        <h2 class="qure__section-heading text-md-start pb-20">{{ section.settings.heading }}</h2>
+                    {% endif %}
+                    {% if section.settings.text != blank %}
+                        {{ section.settings.text | replace: '<em>', '<span style="background: #C7E5DB;">' | replace: '</em>', '</span>' }}
+                    {% endif %}
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="hypo_acid_img">
+                    {% if section.settings.image != blank %}
+                        <img src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt | escape }}" class="img-fluid d-none d-md-block">
+                    {% endif %}
+                    {% if section.settings.image_mobile != blank %}
+                        <img src="{{ section.settings.image_mobile | image_url }}" alt="{{ section.settings.image_mobile.alt | escape }}" class="img-fluid d-md-none">
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.product-info.name",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "t:common.header"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "t:common.text"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "t:common.image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_mobile",
+      "label": "t:common.image-mobile"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.product-info.name"
+    }
+  ]
+}
+{% endschema %}
