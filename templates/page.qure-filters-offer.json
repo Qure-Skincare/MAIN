@@ -9,15 +9,6 @@
  */
 {
   "sections": {
-    "announcement_bar_FNAPqF": {
-      "type": "announcement-bar",
-      "name": "t:sections.announcement-bar.name",
-      "settings": {
-        "heading": "FREE Worldwide Shipping Above $100",
-        "button-label": "SHOP NOW",
-        "button-url": "#"
-      }
-    },
     "main": {
       "type": "page-qure-filters-offer",
       "settings": {}
@@ -738,7 +729,6 @@
     }
   },
   "order": [
-    "announcement_bar_FNAPqF",
     "clean_water_KQtjt9",
     "quote_zqnAHh",
     "qure_filters_offer_slider_with_text_JgnGLR",

@@ -9,14 +9,6 @@
  */
 {
   "sections": {
-    "announcement-bar": {
-      "type": "announcement-bar",
-      "settings": {
-        "heading": "FREE Worldwide Shipping Above $100",
-        "button-label": "Shop Now",
-        "button-url": "#"
-      }
-    },
     "index-mobile-category-slider": {
       "type": "index-mobile-category-slider",
       "blocks": {
@@ -744,7 +736,6 @@
     }
   },
   "order": [
-    "announcement-bar",
     "index-mobile-category-slider",
     "page_banner_4Pyyhz",
     "index_bundle_banner_eEa7XN",

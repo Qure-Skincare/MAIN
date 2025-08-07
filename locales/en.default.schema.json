@@ -437,6 +437,9 @@
         }
     },
     "sections-group": {
+        "header": {
+            "name": "Header"
+        },
         "footer": {
             "name": "Footer"
         }
