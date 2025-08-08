@@ -54,6 +54,15 @@
             "button-label": "FAQs",
             "button-url": "#faq"
           }
+        },
+        "nextships_A7": {
+          "type": "nextships",
+          "settings": {
+            "date": "25 September",
+            "percent": 55,
+            "date_soldout": "28 July",
+            "date_reserved": "3 August"
+          }
         }
       },
       "block_order": [
@@ -62,7 +71,8 @@
         "jumpto_A3",
         "jumpto_A4",
         "jumpto_A5",
-        "jumpto_A6"
+        "jumpto_A6",
+        "nextships_A7"
       ],
       "settings": {
         "seo_heading": "RED LIGHT MASK Q-REJUVALIGHT PRO",
@@ -924,6 +934,28 @@
         "heading": "Q-Rejuvalight Pro LED Mask",
         "text": "203 purchased in last 48 hours"
       }
+    },
+    "1707653061bd3707e6": {
+      "type": "apps",
+      "blocks": {
+        "stamped_product_reviews_ugc_main_widget_A4ebAn": {
+          "type": "shopify://apps/stamped-reviews/blocks/main-widget/a103faaf-2125-4b0e-89fa-de5149736723",
+          "settings": {
+            "take_questions": 2,
+            "animation": true,
+            "tags_exclude": "",
+            "tags_include": "",
+            "search": "",
+            "linkify": true,
+            "use_metafields": false,
+            "sku_tagtype": "sku"
+          }
+        }
+      },
+      "block_order": [
+        "stamped_product_reviews_ugc_main_widget_A4ebAn"
+      ],
+      "settings": {}
     }
   },
   "order": [
@@ -944,6 +976,7 @@
     "device_comparison_gqa6Kh",
     "compare_FyPtUj",
     "faq_46wWyJ",
-    "sticky_cta_AFkFxe"
+    "sticky_cta_AFkFxe",
+    "1707653061bd3707e6"
   ]
 }

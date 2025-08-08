@@ -5,7 +5,26 @@
   {% render 'product-rating' %}
 {% enddoc %}
 
-<div class="patch__product-rating d-inline-flex align-items-center gap-3 fs-16 mb-20">
-    <img src="https://qureskincaredns-main.com/sections/isolated/clean-water/images/cyan_blue_rating.svg" alt="">
-    <span><strong>4.8</strong>/5 Rated by Customers</span>
-</div>
+{% assign rating_value = product.metafields.reviews.rating.value %}
+{% assign rating_count = product.metafields.reviews.rating_count.value %}
+
+{% if rating_count > 5 %}
+
+  {% assign show_rating = rating_value | slice: 0, 3 %}
+  
+  <div class="patch__product-rating d-inline-flex align-items-center gap-3 fs-16 mb-20">
+      <img src="https://qureskincaredns-main.com/sections/isolated/clean-water/images/cyan_blue_rating.svg" alt="rating">
+      <a href="#stamped-main-widget">{{ 'product.settings.product-rating.static_html' | t: rating: show_rating }}</a>
+  </div>
+{% else %}
+  <div class="patch__product-rating d-inline-flex align-items-center gap-3 fs-16 mb-20">
+      <img src="https://qureskincaredns-main.com/sections/isolated/clean-water/images/cyan_blue_rating.svg" alt="rating">
+      {{ 'product.settings.product-rating.static_html' | t: rating: '4.8' }}
+  </div>
+{% endif %}
+
+<script>
+  const rating_value = '{{ rating_value }}';      
+</script>
+
+<script src="{{ 'product-rating.js' | asset_url }}" defer="defer"></script>

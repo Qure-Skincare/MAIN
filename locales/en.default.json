@@ -94,6 +94,15 @@
             "cross-sell": {
                 "header": "Get The Best Results With",
                 "buy-button-label": "Add"
+            },
+            "product-next-ships": {
+                "header": "Next batch ships {{ date }}",
+                "text": "Due to high demand, our {{ product_title }} is sold out. Order now and secure yours from the next shipment.",
+                "soldout": "SOLD OUT",
+                "reserved": "{{ percent }}% Reserved"
+            },
+            "product-rating": {
+                "static_html": "<span><strong id='rating'>{{ rating }}</strong>/5 Rated by Customers</span>"
             }
         }
     },

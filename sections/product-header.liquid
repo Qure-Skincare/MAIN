@@ -13,11 +13,8 @@
                 <div class="qure-product-details">
 
                     {% render 'product-slider', product: product, class: 'd-block d-lg-none mb-30' %}
-                    
-                    <div class="patch__product-rating d-inline-flex align-items-center gap-3 fs-16 mb-20">
-                        <img src="https://qureskincaredns-main.com/sections/isolated/clean-water/images/cyan_blue_rating.svg" alt="">
-                        <span><strong>4.8</strong>/5 Rated by Customers</span>
-                    </div>
+                    {% render 'product-rating', product: product %}
+
                     {% if section.settings.seo_heading != blank %}
                         <p class="mb-10 fs-16 fw-400">{{ section.settings.seo_heading }}</p>
                     {% endif %}
@@ -93,6 +90,38 @@
                     "type": "url",
                     "id": "button-url",
                     "label": "t:common.button-url"
+                }
+            ]
+        },
+        {
+            "type": "nextships",
+            "name": "t:common.nextships",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "date",
+                    "label": "t:common.date"
+                },
+                {
+                    "type": "range",
+                    "id": "percent",
+                    "min": 0,
+                    "max": 100,
+                    "step": 1,
+                    "unit": "%",
+                    "label": "t:common.percent",
+                    "default": 48
+                },
+                {
+                    "type": "text",
+                    "id": "date_soldout",
+                    "label": "t:common.soldout"
+                },
+                {
+                    "type": "text",
+                    "id": "date_reserved",
+                    "label": "t:common.reserved"
                 }
             ]
         }

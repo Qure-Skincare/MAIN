@@ -4,21 +4,30 @@
   @param {object} - A section object.
 
   @example
-  {% render 'product-next-ships' product: product %}
+  {% render 'product-next-ships' section: section %}
 {% enddoc %}
 
-<div class="patch__product-batch mt-30 max-w-ctm" style="--max-w-ctm:500px">
-    <div class="patch-d-header">
-        <h4 class="fm-body fs-16 fw-600">Next batch ships {date}:</h4>
-        <p class="fs-14">Due to high demand, our {product name} is sold out. Order now and secure yours from the next shipment.</p>
-    </div>
-    <div class="progress__bar-container w-100">
-        <div class="patch-bar mb-10" role="progressbar">
-            <span class="patch__date">{Previous date}</span><span class="patch__status">SOLD OUT</span>
+{% for block in section.blocks %}
+    {% if block.type == 'nextships' %}
+        <div class="patch__product-batch mt-30 max-w-ctm" style="--max-w-ctm:500px">
+            <div class="patch-d-header">
+                <h4 class="fm-body fs-16 fw-600">{{ 'product.settings.product-next-ships.header' | t: date: block.settings.date }}</h4>
+                <p class="fs-14">{{ 'product.settings.product-next-ships.text' | t: product_title: 'product' }}</p>
+            </div>
+            <div class="progress__bar-container w-100">
+                {% if block.settings.date_soldout != blank %}
+                    <div class="patch-bar mb-10" role="progressbar">
+                        <span class="patch__date">{{ block.settings.date_soldout }}</span><span class="patch__status">{{ 'product.settings.product-next-ships.soldout' | t }}</span>
+                    </div>
+                {% endif %}
+
+                {% if block.settings.date_reserved != blank %}
+                    <div class="patch-bar" role="progressbar"
+                        style="--progress-bg:#91BAEC;--text-color:#212428;--progress-width:{{ block.settings.percent }}%">
+                        <span class="patch__date">{{ block.settings.date_reserved }}</span><span class="patch__status">{{ 'product.settings.product-next-ships.reserved' | t: percent: block.settings.percent }}</span>
+                    </div>
+                {% endif %}
+            </div>
         </div>
-        <div class="patch-bar" role="progressbar"
-            style="--progress-bg:#91BAEC;--text-color:#212428;--progress-width:48%">
-            <span class="patch__date">{date}</span><span class="patch__status">48% Reserved</span>
-        </div>
-    </div>
-</div>
+    {% endif %}
+{% endfor %}
