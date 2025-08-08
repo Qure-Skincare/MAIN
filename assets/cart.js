@@ -1,7 +1,7 @@
 //https://qureskincare.com/products/micro-infusion-1-month-bundle-2x-beta-glucan-serum?variant=43216483942639
 //https://qureskincare.com/products/micro-infusion-3-month-bundle-6x-beta-glucan-serum?variant=43216359555311
 //https://qureskincare.com/products/micro-infusion-6-month-bundle-for-wrinkles?variant=46454216163567
-//abc
+//abc 123
 
 
 document.addEventListener('DOMContentLoaded', () => {
