@@ -29,15 +29,18 @@
             "breakout_scale_value_blue": "(415 nm)"
         },
         "proven-results": {
-            "info_image": "https://qureskincaredns-main.com/assets/images/i.svg"
-        },
-        "trusted-review": {
+            "info_image": "https://qureskincaredns-main.com/assets/images/i.svg",
+            "study_text": "Study"
+    },
+        "trusted-reviews": {
             "badge_text": "Verified customer",
             "badge_image": "https://qureskincaredns-main.com/assets/images/reviewCheck.svg"
         },
         "trusted-recommended": {
-            "header": "Trusted and Recommended by Experts"
-        },
+            "badge_image": "https://qureskincaredns-main.com/sections/isolated/experts/images/tick_new.svg",
+            "badge_image_mobile": "https://qureskincaredns-main.com/assets/images/tick_new.svg",
+            "badge_text": "Dermatologist Approved",
+    },
         "video-slider":{
                 "text": "Watch: How To Install"
         },
@@ -50,17 +53,7 @@
         "comparison-real-fake":{
             "tick_image": "https://qureskincaredns-main.com/assets/images/tick.svg",
             "cross_image": "https://qureskincaredns-main.com/assets/images/cross.svg"
-        },
-        "trusted-recommended-image":{
-            "tick_image": "https://qureskincaredns-main.com/sections/isolated/experts/images/tick_new.svg",
-            "tick_image_mobile": "https://qureskincaredns-main.com/assets/images/tick_new.svg",
-            "text": "Dermatologist Approved",
-            "trusted-recommended-header": "Trusted and Recommended by Experts"
-        },
-        "trusted-reviews-image":{
-            "review_check": "https://qureskincaredns-main.com/assets/images/reviewCheck.svg",
-            "text": "Verified customer"
-        },
+    },
         "improve-skin-hydration":{
             "text_button_before": "Before",
             "text_button_after": "After"

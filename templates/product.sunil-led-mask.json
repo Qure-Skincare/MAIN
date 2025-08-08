@@ -9,9 +9,9 @@
  */
 {
   "sections": {
-    "main": {
-      "type": "product-sunil-led-mask",
-      "disabled": true,
+    "product_gallery_buy_V3N3T8": {
+      "type": "product-gallery-buy",
+      "name": "t:sections.product-gallery-buy.name",
       "settings": {}
     },
     "announcement_bar_jkkyg7": {
@@ -216,7 +216,7 @@
             "compare_image": "shopify://shop_images/anton-m_ee041758-2804-456c-9ffa-4d6ecf8a893b.webp",
             "country_image": "shopify://shop_images/australia_f_69a48b5f-3193-49ab-a443-904ca676d1db.webp",
             "username": "<p>Anton M.</p>",
-            "link_url": "",
+            "product_url": "",
             "product_heading": "",
             "product_text": ""
           }
@@ -229,7 +229,7 @@
             "compare_image": "shopify://shop_images/terry-p_ae1c5cc4-0d73-450f-98fd-a8e4ddd572c8.webp",
             "country_image": "shopify://shop_images/america_f.webp",
             "username": "<p>Terri P.</p>",
-            "link_url": "",
+            "product_url": "",
             "product_heading": "",
             "product_text": ""
           }
@@ -242,7 +242,7 @@
             "compare_image": "shopify://shop_images/ana.webp",
             "country_image": "shopify://shop_images/colombia_f.webp",
             "username": "<p>Ana L.</p>",
-            "link_url": "",
+            "product_url": "",
             "product_heading": "",
             "product_text": ""
           }
@@ -255,7 +255,7 @@
             "compare_image": "shopify://shop_images/Jessica_rejuv.webp",
             "country_image": "shopify://shop_images/america_f.webp",
             "username": "<p>Jessica K.</p>",
-            "link_url": "",
+            "product_url": "",
             "product_heading": "",
             "product_text": ""
           }
@@ -268,7 +268,7 @@
             "compare_image": "shopify://shop_images/Michelle.webp",
             "country_image": "shopify://shop_images/america_f.webp",
             "username": "<p>Michelle S.</p>",
-            "link_url": "",
+            "product_url": "",
             "product_heading": "",
             "product_text": ""
           }
@@ -281,7 +281,7 @@
             "compare_image": "shopify://shop_images/Tiffany.webp",
             "country_image": "shopify://shop_images/america_f.webp",
             "username": "<p>Tiffany L.</p>",
-            "link_url": "",
+            "product_url": "",
             "product_heading": "",
             "product_text": ""
           }
@@ -294,7 +294,7 @@
             "compare_image": "shopify://shop_images/BJN.webp",
             "country_image": "shopify://shop_images/canada_f.svg",
             "username": "<p>BJ N.</p>",
-            "link_url": "",
+            "product_url": "",
             "product_heading": "",
             "product_text": ""
           }
@@ -307,7 +307,7 @@
             "compare_image": "shopify://shop_images/Sophie.webp",
             "country_image": "shopify://shop_images/australia_f.webp",
             "username": "<p>Sophie R.</p>",
-            "link_url": "",
+            "product_url": "",
             "product_heading": "",
             "product_text": ""
           }
@@ -320,7 +320,7 @@
             "compare_image": "shopify://shop_images/Saskia.webp",
             "country_image": "shopify://shop_images/england_f.webp",
             "username": "<p>Saskia Z.</p>",
-            "link_url": "",
+            "product_url": "",
             "product_heading": "",
             "product_text": ""
           }
@@ -333,7 +333,7 @@
             "compare_image": "shopify://shop_images/Jovana.webp",
             "country_image": "shopify://shop_images/canada_f.svg",
             "username": "<p>Jovana S.</p>",
-            "link_url": "",
+            "product_url": "",
             "product_heading": "",
             "product_text": ""
           }
@@ -346,7 +346,7 @@
             "compare_image": "shopify://shop_images/Carey.webp",
             "country_image": "shopify://shop_images/america_f.webp",
             "username": "<p>Carey C.</p>",
-            "link_url": "",
+            "product_url": "",
             "product_heading": "",
             "product_text": ""
           }
@@ -359,7 +359,7 @@
             "compare_image": "shopify://shop_images/Diane.webp",
             "country_image": "shopify://shop_images/canada_f.svg",
             "username": "<p>Diane F.</p>",
-            "link_url": "",
+            "product_url": "",
             "product_heading": "",
             "product_text": ""
           }
@@ -372,7 +372,7 @@
             "compare_image": "shopify://shop_images/Rita.webp",
             "country_image": "shopify://shop_images/america_f.webp",
             "username": "<p>Rita W.</p>",
-            "link_url": "",
+            "product_url": "",
             "product_heading": "",
             "product_text": ""
           }
@@ -395,35 +395,18 @@
       ],
       "name": "t:sections.trusted-reviews.name",
       "settings": {
-        "heading": "Results you’ll see with your own eyes"
+        "heading": "Results you’ll see with your own eyes",
+        "text_mobile": ""
       }
     },
-    "trusted_recomended_Cxt4Gj": {
-      "type": "trusted-recomended",
-      "blocks": {
-        "badge_fmzQC8": {
-          "type": "badge",
-          "settings": {
-            "text": "<p>Dermatologist Reviewed</p>",
-            "image": "shopify://shop_images/tick_new.svg"
-          }
-        },
-        "video_G3PrkR": {
-          "type": "video",
-          "settings": {
-            "image": "shopify://shop_images/doctor_img_bddb1870-8487-4f88-b6dd-ab063ea346f3.webp",
-            "url": "https://www.youtube.com/watch?v=jwKN4SH4yz8"
-          }
-        }
-      },
-      "block_order": [
-        "badge_fmzQC8",
-        "video_G3PrkR"
-      ],
+    "trusted_recommended_Cxt4Gj": {
+      "type": "trusted-recommended",
       "name": "t:sections.trusted-recommended.name",
       "settings": {
         "heading": "Trusted and Recommended by Experts",
-        "text": "<p>“Of all the LED masks we’ve tried, this is <strong>the best on the market right now...</strong> It didn’t lose in any category...</p><p>There’s real science behind LED therapy, and <strong>Qure makes it easy</strong> to be consistent—which is what really drives results.”</p>"
+        "text": "<p>“Of all the LED masks we’ve tried, this is <strong>the best on the market right now...</strong> It didn’t lose in any category...</p><p>There’s real science behind LED therapy, и <strong>Qure makes it easy</strong> to be consistent—which is what really drives results.”</p>",
+        "video_cover_image": "shopify://shop_images/doctor_img_bddb1870-8487-4f88-b6dd-ab063ea346f3.webp",
+        "video_url": "https://www.youtube.com/watch?v=jwKN4SH4yz8"
       }
     },
     "video_slider_G8bjzR": {
@@ -541,72 +524,83 @@
         "text_breakout_mode": "<p>Our Anti-Breakout Mode combines blue and red light wavelengths. Blue (415 nm) targets acne-causing bacteria on the skin's surface, and red (630 nm) helps calm inflammation and soothes irritated skin.</p><p>Together, these wavelengths help reduce breakouts, prevent future flare-ups, and support clearer, healthier-looking skin.</p>"
       }
     },
-    "video_slider_heading_Qx3NMq": {
-      "type": "video-slider-heading",
+    "video_review_slider_Qx3NMq": {
+      "type": "video-review-slider",
       "blocks": {
         "slider_AH9pKk": {
           "type": "slider",
           "settings": {
+            "youtube_url": "",
             "wistia_url": "oofgzce5um"
           }
         },
         "slider_NiNYGW": {
           "type": "slider",
           "settings": {
+            "youtube_url": "",
             "wistia_url": "gw1rne236n"
           }
         },
         "slider_bbphF3": {
           "type": "slider",
           "settings": {
+            "youtube_url": "",
             "wistia_url": "vkd8so2clv"
           }
         },
         "slider_j4Jpe7": {
           "type": "slider",
           "settings": {
+            "youtube_url": "",
             "wistia_url": "ltv3wi7ayy"
           }
         },
         "slider_FxaxVF": {
           "type": "slider",
           "settings": {
+            "youtube_url": "",
             "wistia_url": "3dk53o20xw"
           }
         },
         "slider_r8WNhq": {
           "type": "slider",
           "settings": {
+            "youtube_url": "",
             "wistia_url": "i688q7ywip"
           }
         },
         "slider_zwUJCV": {
           "type": "slider",
           "settings": {
+            "youtube_url": "",
             "wistia_url": "nmgtj7w4at"
           }
         },
         "slider_WEYAWp": {
           "type": "slider",
           "settings": {
+            "youtube_url": "",
             "wistia_url": "5kh8ymubw0"
           }
         },
         "slider_CgGbjj": {
           "type": "slider",
           "settings": {
+            "youtube_url": "",
             "wistia_url": "wl5y3puch1"
           }
         },
         "slider_Rinfeh": {
           "type": "slider",
           "settings": {
+            "youtube_url": "",
             "wistia_url": "v955rlnldn"
           }
         },
         "slider_NNNQeY": {
           "type": "slider",
           "settings": {
+            "youtube_url": "",
             "wistia_url": "5vgchvxn6l"
           }
         }
@@ -624,37 +618,37 @@
         "slider_Rinfeh",
         "slider_NNNQeY"
       ],
-      "name": "t:sections.video-slider-heading.name",
+      "name": "t:sections.video-review-slider.name",
       "settings": {
         "heading": "Confident skin starts here"
       }
     },
-    "text_with_image_mfFFcV": {
-      "type": "text-with-image",
+    "carousel_mfFFcV": {
+      "type": "carousel",
       "blocks": {
-        "carousel_GiHB6n": {
-          "type": "carousel",
+        "items_GiHB6n": {
+          "type": "items",
           "settings": {
             "heading": "Free Shipping On Orders Over {$dyn}",
             "image": "shopify://shop_images/guarantee.svg"
           }
         },
-        "carousel_WrqYEc": {
-          "type": "carousel",
+        "items_WrqYEc": {
+          "type": "items",
           "settings": {
-            "heading": "Dermatologist                                               Reviewed",
+            "heading": "Dermatologist Reviewed",
             "image": "shopify://shop_images/sheild.svg"
           }
         },
-        "carousel_BjbYbB": {
-          "type": "carousel",
+        "items_BjbYbB": {
+          "type": "items",
           "settings": {
             "heading": "Buy Now, Pay Later Options Available",
             "image": "shopify://shop_images/pay-later.svg"
           }
         },
-        "carousel_trznWr": {
-          "type": "carousel",
+        "items_trznWr": {
+          "type": "items",
           "settings": {
             "heading": "Proven Results, Backed By Science",
             "image": "shopify://shop_images/proven-result.svg"
@@ -662,12 +656,12 @@
         }
       },
       "block_order": [
-        "carousel_GiHB6n",
-        "carousel_WrqYEc",
-        "carousel_BjbYbB",
-        "carousel_trznWr"
+        "items_GiHB6n",
+        "items_WrqYEc",
+        "items_BjbYbB",
+        "items_trznWr"
       ],
-      "name": "t:sections.text-with-image.name",
+      "name": "carousel",
       "settings": {}
     },
     "how_to_use_Uz9LpM": {
@@ -719,7 +713,8 @@
         "heading": "Qure mobile app",
         "text": "<p><strong>The only FDA-cleared LED light therapy mask with an app.</strong></p><p>Your skin is unique, so your treatment should be too.</p><p>Choose between <em>three treatment modes</em>, “Anti-Breakout”, “Anti-Aging” or custom treatment zones. Select a treatment mode on five different facial areas to treat and <em>target what your skin needs today</em>. </p><p>Never miss a treatment with Qure mobile app planner and phone reminders.</p>",
         "image": "shopify://shop_images/qure_mobile_app.webp",
-        "image_mobile": "shopify://shop_images/qure_mobile_app_mob.webp"
+        "image_mobile": "shopify://shop_images/qure_mobile_app_mob.webp",
+        "image_position": "right"
       }
     },
     "device_comparison_gqa6Kh": {
@@ -866,14 +861,18 @@
         "url": "#"
       }
     },
-    "product_gallery_buy_V3N3T8": {
-      "type": "product-gallery-buy",
-      "name": "t:sections.product-gallery-buy.name",
-      "settings": {}
+    "sticky_cta_AFkFxe": {
+      "type": "sticky-cta",
+      "name": "t:sections.sticky-cta.name",
+      "settings": {
+        "heading": "Q-Rejuvalight Pro LED Mask",
+        "text": "203 purchased in last 48 hours",
+        "button_label": "Buy Now",
+        "button_url": "#buy_box"
+      }
     }
   },
   "order": [
-    "main",
     "product_gallery_buy_V3N3T8",
     "announcement_bar_jkkyg7",
     "slider_featured_in_KyQXpD",
@@ -881,15 +880,16 @@
     "led_benefits_eqJTF8",
     "proven_results_CQ9FBU",
     "trusted_reviews_AXrmjM",
-    "trusted_recomended_Cxt4Gj",
+    "trusted_recommended_Cxt4Gj",
     "video_slider_G8bjzR",
     "how_it_works_4dPttU",
-    "video_slider_heading_Qx3NMq",
-    "text_with_image_mfFFcV",
+    "video_review_slider_Qx3NMq",
+    "carousel_mfFFcV",
     "how_to_use_Uz9LpM",
     "product_info_UhyUij",
     "device_comparison_gqa6Kh",
     "compare_FyPtUj",
-    "faq_46wWyJ"
+    "faq_46wWyJ",
+    "sticky_cta_AFkFxe"
   ]
 }

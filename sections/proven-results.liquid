@@ -79,7 +79,7 @@
                                             <li class="nav-item" role="presentation">
                                                 <button class="nav-link{% if slider_count == 1 %} active{% endif %}" id="tab-{{ slider_count }}" data-bs-toggle="tab" data-bs-target="#pane-{{ slider_count }}" type="button" role="tab" aria-controls="pane-{{ slider_count }}"
                                                         {% if slider_count == 1 %}aria-selected="true"{% else %}aria-selected="false"{% endif %}>
-                                                    Study {{ slider_count }}
+                                                    {{ 'sections.proven-results.study_text' | t }} {{ slider_count }}
                                                 </button>
                                             </li>
                                         {% endif %}

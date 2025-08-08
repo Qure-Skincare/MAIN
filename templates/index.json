@@ -424,32 +424,16 @@
         "text": "<p>Reclaim your confidence at any age, no matter what your skin concern is.</p>"
       }
     },
-    "trusted_recomended_KHYLQ9": {
-      "type": "trusted-recomended",
-      "blocks": {
-        "video_B6jJ4V": {
-          "type": "video",
-          "settings": {
-            "image": "shopify://shop_images/shah-maxfield.webp",
-            "url": "https://www.youtube.com/watch?v=mVdncsTAXiA"
-          }
-        },
-        "badge_3hiYTQ": {
-          "type": "badge",
-          "settings": {
-            "text": "<p>Dermatologist Reviewed</p>",
-            "image": "shopify://shop_images/tick_new.svg"
-          }
-        }
-      },
-      "block_order": [
-        "video_B6jJ4V",
-        "badge_3hiYTQ"
-      ],
-      "name": "t:sections.trusted_recommended.name",
+    "trusted_recommended_KHYLQ9": {
+      "type": "trusted-recommended",
+      "name": "t:sections.trusted-recommended.name",
       "settings": {
         "heading": "Trusted and Recommended by Experts",
-        "text": "<p>“This treatment is an at-home option for those who want to <strong>avoid the hassle or cost of going to the office”.</strong></p>"
+        "text": "<p>“This treatment is an at-home option for those who want to <strong>avoid the hassle or cost of going to the office”.</strong></p>",
+        "image": "",
+        "image_mobile": "",
+        "video_cover_image": "shopify://shop_images/shah-maxfield.webp",
+        "video_url": "https://www.youtube.com/watch?v=mVdncsTAXiA"
       }
     },
     "video_slider_MWbVWw": {
@@ -549,32 +533,32 @@
       "name": "t:sections.video-slider.name",
       "settings": {}
     },
-    "text_with_image_qXW6Gd": {
-      "type": "text-with-image",
+    "carousel_qXW6Gd": {
+      "type": "carousel",
       "blocks": {
-        "carousel_NHKMPi": {
-          "type": "carousel",
+        "items_NHKMPi": {
+          "type": "items",
           "settings": {
             "heading": "Free Shipping On Orders Over {$dyn}",
             "image": "shopify://shop_images/guarantee.svg"
           }
         },
-        "carousel_qd3AjU": {
-          "type": "carousel",
+        "items_qd3AjU": {
+          "type": "items",
           "settings": {
             "heading": "Dermatologist Reviewed",
             "image": "shopify://shop_images/sheild.svg"
           }
         },
-        "carousel_ANgYcm": {
-          "type": "carousel",
+        "items_ANgYcm": {
+          "type": "items",
           "settings": {
             "heading": "Buy Now, Pay Later Options Available",
             "image": "shopify://shop_images/pay-later.svg"
           }
         },
-        "carousel_wpmqpr": {
-          "type": "carousel",
+        "items_wpmqpr": {
+          "type": "items",
           "settings": {
             "heading": "Proven Results, Backed By Science",
             "image": "shopify://shop_images/proven-result.svg"
@@ -582,12 +566,12 @@
         }
       },
       "block_order": [
-        "carousel_NHKMPi",
-        "carousel_qd3AjU",
-        "carousel_ANgYcm",
-        "carousel_wpmqpr"
+        "items_NHKMPi",
+        "items_qd3AjU",
+        "items_ANgYcm",
+        "items_wpmqpr"
       ],
-      "name": "t:sections.text-with-image.name",
+      "name": "t:common.carousel",
       "settings": {}
     },
     "our_advisors_LPVVBm": {
@@ -743,9 +727,9 @@
     "trusted_reviews_ecfpDp",
     "index-qure-products",
     "index_get_qure_mqX6LE",
-    "trusted_recomended_KHYLQ9",
+    "trusted_recommended_KHYLQ9",
     "video_slider_MWbVWw",
-    "text_with_image_qXW6Gd",
+    "carousel_qXW6Gd",
     "our_advisors_LPVVBm",
     "index-quiz_wdnen7",
     "index-read-our-story",

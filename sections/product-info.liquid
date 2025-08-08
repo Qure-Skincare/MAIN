@@ -6,26 +6,49 @@
     style="--section-padding-top: 40px; --section-padding-bottom: 80px; --section-padding-top-mob: 30px; --section-padding-bottom-mob: 30px;">
     <div class="container">
         <div class="row gy-4">
-            <div class="col-md-7 d-flex justify-content-center align-items-center order-mob-2">
-                <div class="hypo_acid_content pr-md-60">
-                    {% if section.settings.heading != blank %}
-                        <h2 class="qure__section-heading text-md-start pb-20">{{ section.settings.heading }}</h2>
-                    {% endif %}
-                    {% if section.settings.text != blank %}
-                        {{ section.settings.text | replace: '<em>', '<span style="background: #C7E5DB;">' | replace: '</em>', '</span>' }}
-                    {% endif %}
+            {% if section.settings.image_position == 'left' %}
+                <div class="col-md-5">
+                    <div class="hypo_acid_img">
+                        {% if section.settings.image != blank %}
+                            <img src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt | escape }}" class="img-fluid d-none d-md-block">
+                        {% endif %}
+                        {% if section.settings.image_mobile != blank %}
+                            <img src="{{ section.settings.image_mobile | image_url }}" alt="{{ section.settings.image_mobile.alt | escape }}" class="img-fluid d-md-none">
+                        {% endif %}
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-5">
-                <div class="hypo_acid_img">
-                    {% if section.settings.image != blank %}
-                        <img src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt | escape }}" class="img-fluid d-none d-md-block">
-                    {% endif %}
-                    {% if section.settings.image_mobile != blank %}
-                        <img src="{{ section.settings.image_mobile | image_url }}" alt="{{ section.settings.image_mobile.alt | escape }}" class="img-fluid d-md-none">
-                    {% endif %}
+                <div class="col-md-7 d-flex justify-content-center align-items-center order-mob-2">
+                    <div class="hypo_acid_content pr-md-60">
+                        {% if section.settings.heading != blank %}
+                            <h2 class="qure__section-heading text-md-start pb-20">{{ section.settings.heading }}</h2>
+                        {% endif %}
+                        {% if section.settings.text != blank %}
+                            {{ section.settings.text | replace: '<em>', '<span style="background: #C7E5DB;">' | replace: '</em>', '</span>' }}
+                        {% endif %}
+                    </div>
                 </div>
-            </div>
+            {% else %}
+                <div class="col-md-7 d-flex justify-content-center align-items-center order-mob-2">
+                    <div class="hypo_acid_content pr-md-60">
+                        {% if section.settings.heading != blank %}
+                            <h2 class="qure__section-heading text-md-start pb-20">{{ section.settings.heading }}</h2>
+                        {% endif %}
+                        {% if section.settings.text != blank %}
+                            {{ section.settings.text | replace: '<em>', '<span style="background: #C7E5DB;">' | replace: '</em>', '</span>' }}
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="hypo_acid_img">
+                        {% if section.settings.image != blank %}
+                            <img src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt | escape }}" class="img-fluid d-none d-md-block">
+                        {% endif %}
+                        {% if section.settings.image_mobile != blank %}
+                            <img src="{{ section.settings.image_mobile | image_url }}" alt="{{ section.settings.image_mobile.alt | escape }}" class="img-fluid d-md-none">
+                        {% endif %}
+                    </div>
+                </div>
+            {% endif %}
         </div>
     </div>
 </div>
@@ -53,6 +76,16 @@
       "type": "image_picker",
       "id": "image_mobile",
       "label": "t:common.image-mobile"
+    },
+    {
+      "type": "select",
+      "id": "image_position",
+      "label": "Image position",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "right", "label": "Right" }
+      ],
+      "default": "right"
     }
   ],
   "presets": [

@@ -16,31 +16,31 @@
             data-pagination-fraction="true">
             <div class="swiper-wrapper">
                 {% for block in section.blocks %}
-                    {% if block.type == 'video_slider' %}
-                        {% if block.settings.link_url_youtube != blank %}
+                    {% if block.type == 'slider' %}
+                        {% if block.settings.youtube_url != blank %}
                             <div class="swiper-slide">
                             <div class="play_btn">
-                                <a class="popup-youtube lvideo" data-url="https://www.youtube.com/watch?v=-JELsZmxlAM">
+                                <a class="popup-youtube lvideo" data-url="{{ block.settings.youtube_url }}">
                                     <span class="justify-content-center">
-                                        {% if block.settings.youtube_cover_image != blank %}
-                                            <img src="{{ block.settings.youtube_cover_image | image_url }}" alt="{{ block.settings.youtube_cover_image.alt | escape }}" class="img-fluid">
+                                        {% if block.settings.video_cover_image != blank %}
+                                            <img src="{{ block.settings.video_cover_image | image_url }}" alt="{{ block.settings.video_cover_image.alt | escape }}" class="img-fluid">
                                         {% endif %}
                                     </span>
                                 </a>
                             </div>
                         </div>
                         {% endif %}
-                        {% if block.settings.link_url_wistia != blank %}
+                        {% if block.settings.wistia_url != blank %}
                             <div class="swiper-slide">
                                 <div class="videosQure_exernal">
                                     <div class="wistia_responsive_padding" style="position:relative;">
                                         <div class="wistia_responsive_wrapper"
                                             style="height:100%;left:0;position:absolute;top:0;width:100%;">
-                                            <div class="wistia_embed wistia_async_{{ block.settings.link_url_wistia }} popover=true seo=false videoFoam=true"
+                                            <div class="wistia_embed wistia_async_{{ block.settings.wistia_url }} popover=true seo=false videoFoam=true"
                                                 style="height:100%;position:relative;width:100%">
                                                 <div class="wistia_swatch"
                                                     style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;bottom:0;">
-                                                    <img src="https://fast.wistia.com/embed/medias/{{ block.settings.link_url_wistia }}/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" />
+                                                    <img src="https://fast.wistia.com/embed/medias/{{ block.settings.wistia_url }}/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" />
                                                 </div>
                                             </div>
                                         </div>
@@ -71,31 +71,31 @@
     "name": "t:sections.video-review-slider.name",
     "settings": [
     {
-    "type": "text",
-    "id": "heading",
-    "label": "t:common.header",
-    "default": "See why everyone's switching to filtered water"
+        "type": "text",
+        "id": "heading",
+        "label": "t:common.header",
+        "default": "See why everyone's switching to filtered water"
     }
 ],
     "blocks": [
         {
-            "type": "video_slider",
-            "name": "t:common.video-slider",
+            "type": "slider",
+            "name": "t:common.slider",
             "settings": [
                 {
                     "type": "url",
-                    "id": "link_url_youtube",
-                    "label": "t:sections.video-review-slider.blocks.video-slider.settings.link-url-youtube.name"
+                    "id": "youtube_url",
+                    "label": "t:common.youtube-url"
                 },
                 {
                     "type": "image_picker",
-                    "id": "youtube_cover_image",
-                    "label": "t:sections.video-review-slider.blocks.video-slider.settings.youtube-cover-image.name"
+                    "id": "video_cover_image",
+                    "label": "t:common.video-image-cover"
                 },
                 {
                     "type": "text",
-                    "id": "link_url_wistia",
-                    "label": "t:sections.video-review-slider.blocks.video-slider.settings.link-url-wistia.name"
+                    "id": "wistia_url",
+                    "label": "t:common.wistia-url"
                 }
     ]
     }

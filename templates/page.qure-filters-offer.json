@@ -9,9 +9,14 @@
  */
 {
   "sections": {
-    "main": {
-      "type": "page-qure-filters-offer",
-      "settings": {}
+    "announcement_bar_FNAPqF": {
+      "type": "announcement-bar",
+      "name": "t:sections.announcement-bar.name",
+      "settings": {
+        "heading": "FREE Worldwide Shipping Above $100",
+        "button-label": "SHOP NOW",
+        "button-url": "#"
+      }
     },
     "clean_water_KQtjt9": {
       "type": "clean-water",
@@ -400,8 +405,8 @@
         "image_after": "shopify://shop_images/after-gf.webp"
       }
     },
-    "trusted_reviews_image_b9NgPL": {
-      "type": "trusted-reviews-image",
+    "trusted_reviews_b9NgPL": {
+      "type": "trusted-reviews",
       "blocks": {
         "slider_6UfcXz": {
           "type": "slider",
@@ -439,69 +444,71 @@
         "slider_7mtD8L",
         "slider_KKJAJe"
       ],
-      "name": "t:sections.trusted-reviews-image.name",
+      "name": "t:sections.trusted-reviews.name",
       "settings": {
         "heading": "Your transformation awaits",
         "text_mobile": "<p>See the power of Qure filter technology, now available for your shower and faucet. </p>"
       }
     },
-    "trusted_recommended_image_awbjc8": {
-      "type": "trusted-recommended-image",
-      "name": "t:sections.trusted-recommended-image.name",
+    "trusted_recommended_awbjc8": {
+      "type": "trusted-recommended",
+      "name": "t:sections.trusted-recommended.name",
       "settings": {
         "heading": "Trusted and Recommended by Experts",
         "text": "<p>“How do you<strong> reduce the things in your water that are causing issues</strong> with your skin?</p><p>This Qure filter is incredible –<strong> it’s the only filter I personally use</strong> to [reduce] chlorine and anything else that’s going to make your water harsh for your skin.”</p>",
         "image": "shopify://shop_images/doctor_shah_desk.webp",
-        "image_mobile": "shopify://shop_images/doctor_shah_mob.webp"
+        "image_mobile": "shopify://shop_images/doctor_shah_mob.webp",
+        "video_cover_image": "",
+        "video_url": ""
       }
     },
     "video_review_slider_yBjMTk": {
       "type": "video-review-slider",
       "blocks": {
-        "video_slider_9rpWf3": {
-          "type": "video_slider",
+        "slider_9rpWf3": {
+          "type": "slider",
           "settings": {
-            "link_url_youtube": "https://www.youtube.com/watch?v=-JELsZmxlAM",
-            "youtube_cover_image": "shopify://shop_images/shwr_fau_img1.webp",
-            "link_url_wistia": ""
+            "youtube_url": "https://www.youtube.com/watch?v=-JELsZmxlAM",
+            "video_cover_image": "shopify://shop_images/shwr_fau_img1.webp",
+            "wistia_url": ""
           }
         },
-        "video_slider_crpnwp": {
-          "type": "video_slider",
+        "slider_crpnwp": {
+          "type": "slider",
           "settings": {
-            "link_url_youtube": "",
-            "link_url_wistia": "yvm1h7gbig"
+            "youtube_url": "",
+            "wistia_url": "yvm1h7gbig"
           }
         },
-        "video_slider_MatYQU": {
-          "type": "video_slider",
+        "slider_MatYQU": {
+          "type": "slider",
           "settings": {
-            "link_url_youtube": "",
-            "link_url_wistia": "altvn4hlw5"
+            "youtube_url": "",
+            "wistia_url": "altvn4hlw5"
           }
         },
-        "video_slider_piYdwq": {
-          "type": "video_slider",
+        "slider_piYdwq": {
+          "type": "slider",
           "settings": {
-            "link_url_youtube": "",
-            "link_url_wistia": "lxde2943wj"
+            "youtube_url": "",
+            "wistia_url": "lxde2943wj"
           }
         },
-        "video_slider_WzGF3y": {
-          "type": "video_slider",
+        "slider_WzGF3y": {
+          "type": "slider",
           "settings": {
-            "link_url_youtube": "https://www.youtube.com/watch?v=YulGNwbRp7w",
-            "youtube_cover_image": "shopify://shop_images/shwr_fau_img6.webp",
-            "link_url_wistia": ""
+            "youtube_url": "https://www.youtube.com/watch?v=YulGNwbRp7w",
+            "video_cover_image": "shopify://shop_images/shwr_fau_img6.webp",
+            "wistia_url": ""
           }
         }
       },
       "block_order": [
-        "video_slider_9rpWf3",
-        "video_slider_crpnwp",
-        "video_slider_MatYQU",
-        "video_slider_piYdwq",
-        "video_slider_WzGF3y"
+        "slider_9rpWf3",
+        "slider_crpnwp",
+        "slider_MatYQU",
+        "slider_piYdwq",
+        "slider_WzGF3y"
       ],
       "name": "t:sections.video-review-slider.name",
       "settings": {
@@ -729,6 +736,7 @@
     }
   },
   "order": [
+    "announcement_bar_FNAPqF",
     "clean_water_KQtjt9",
     "quote_zqnAHh",
     "qure_filters_offer_slider_with_text_JgnGLR",
@@ -736,9 +744,8 @@
     "fix_problem_ccFneR",
     "qure_filters_offer_qure_filters_MqbAF4",
     "improve_skin_hydration_UDwAJ8",
-    "trusted_reviews_image_b9NgPL",
-    "trusted_recommended_image_awbjc8",
-    "main",
+    "trusted_reviews_b9NgPL",
+    "trusted_recommended_awbjc8",
     "video_review_slider_yBjMTk",
     "qure_filters_offer_comparison_real_fake_FJifqy",
     "information_about_water_BDVnVm",

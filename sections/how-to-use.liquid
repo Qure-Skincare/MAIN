@@ -1,5 +1,5 @@
 {% doc %}
-  Renders a product-info section.
+  Renders a how to use section.
 {% enddoc %}
 
 <link rel="stylesheet" href="https://qureskincaredns-main.com/sections/isolated/target-specific/tg-icons.css" />
@@ -32,8 +32,9 @@
                 {% endif %}
             </div>
             <div class="col-md-8 col-lg-8 custom__block" style="--column-gap:40px; --column-gap-mobile:24px;">
-                <h2 class="qure__section-heading mb-50 d-none d-md-block">See how quick and easy it is to use
-                </h2>
+                 {% if section.settings.heading != blank %}
+                    <h2 class="qure__section-heading mb-30 d-block d-md-none">{{ section.settings.heading }}</h2>
+                {% endif %}
                 <div class="row custom__grid">
                     {% for block in section.blocks %}
                         {% if block.type == 'list' %}

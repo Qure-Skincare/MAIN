@@ -1,5 +1,5 @@
 {% doc %}
-  Renders a text with image section
+  Renders a carousel section
 {% enddoc %}
 
 
@@ -9,7 +9,7 @@
       style="--column-gap:100px; --column-gap-mobile:30px;--ctm-width:50px; --ctm-width-mob:30px;">
       <div class="row custom__grid d-none d-lg-flex">
          {% for block in section.blocks %}
-            {% if block.type == 'carousel' %}
+            {% if block.type == 'items' %}
                <div class="col-md-3 col-lg-3 custom__block">
                   <div class="qure_shipping-inner d-flex align-items-center gap-4">
                      {% if block.settings.image != blank %}
@@ -47,11 +47,11 @@
 </div>
 {% schema %}
 {
-  "name": "t:sections.text-with-image.name",
+  "name": "t:common.carousel",
   "blocks": [
     {
-    "type": "carousel",
-    "name": "t:common.carousel",
+    "type": "items",
+    "name": "t:common.items",
         "settings": [
             {
                "type": "text",
@@ -68,7 +68,7 @@
    ],
   "presets": [
     {
-        "name": "t:sections.text-with-image.name"
+        "name": "t:common.carousel"
     }
   ]
 }
