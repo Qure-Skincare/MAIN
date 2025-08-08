@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!-- drawer cart start -->
 <link rel="stylesheet" href="https://qureskincaredns-main.com/assets/css/component-drawer.css" />
 <div class="offcanvas offcanvas-end" tabindex="-1" id="cartCanvas" aria-labelledby="cartCanvasLabel">
@@ -162,4 +163,171 @@
     }
   ]
 }
+=======
+<!-- drawer cart start -->
+<link rel="stylesheet" href="https://qureskincaredns-main.com/assets/css/component-drawer.css" />
+<div class="offcanvas offcanvas-end" tabindex="-1" id="cartCanvas" aria-labelledby="cartCanvasLabel">
+   <cart-notification>
+      <div class="cart-countdown-time" data-countdown-time="15" data-timeout-message="Time is up!">
+         <span class="">{{ 'cart.drawer.settings.notification_html' | t }}</span>
+         <span class="cart-counter d-flex">
+            <span class="cart-counter-block countdown-timer-minute">00</span>
+            <span class="cart-counter-block countdown-timer-sec">00</span>
+         </span>
+         <span class="countdown-message"></span>
+      </div>
+   </cart-notification>
+   <div id="cart-dynamic-content" class="offcanvas-dynamic-content">
+      <div class="offcanvas-header border-btm-black">
+         <h5 class="cart-drawer-heading fs-18 fm-body fw-600 m-0">{{ 'cart.drawer.settings.header' | t }} ({{ cart.item_count }})</h5>
+         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa-regular fa-xmark"></i></button>
+      </div>
+      <div class="offcanvas-body p-0">
+         <div class="cart-content-area d-flex justify-content-between flex-column">
+            <div class="minicart-loop custom-scrollbar">
+               <div class="free_shpngBox">
+                  <div class="free-shipping-message mb-15 qure__cart-thres text-center fs-14">You’re $21 way from a FREE Silk Pillowcase (worth $79)</div>
+                  <div class="cart_shipping cart_threshold">
+                     <div class="progress-bar cart_bar_w">
+                        <div class="qure__freeshipping-icon active" style="--icon-pos:20%">
+                           <img src="https://qureskincaredns-main.com/sections/global/drawer/images/bar-check.svg" alt="" />
+                           <span class="d-block">$100</span>
+                        </div>
+                        <div class="qure__freeshipping-icon" style="--icon-pos:50%">
+                           <img src="https://qureskincaredns-main.com/sections/global/drawer/images/free-shipping.svg" alt="" />
+                           <span class="d-block">$100</span>
+                        </div>
+                        <span class="progress percent_shipping_bar" style="width: 40%;"></span>
+
+                        <div class="qure__freeshipping-icon" style="--icon-pos:80%"><img
+                              src="https://qureskincaredns-main.com/sections/global/drawer/images/pillow.svg" alt="" /><span class="d-block">$400</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               {% if cart.item_count == 0 %}
+                  <!-- Empty cart -->
+                  <div class="drawer__cart-is-empty">
+                     <div class="drawer__cart-empty-text">
+                        <h4>{{ 'cart.drawer.settings.empty-text' | t }}</h4>
+                        <p>{{ 'cart.drawer.settings.empty-subtext' | t }}</p>
+                     </div>
+                     <div class="empty-product">
+                        <div class="empty-title dekstop-empty">
+                           <img src="https://qureskincaredns-main.com/sections/global/drawer/images/empty-cart.webp" alt="" />
+                           <h6 class="mb-0">Save up to 55% on our exclusive bundles</h6>
+                        </div>
+                        <div class="empty-main">
+                           <div class="empty-content">
+                              <ul>
+                                 <li>Shop our devices & skincare at our best prices.</li>
+                                 <li>Target your skin concerns in one simple routine.</li>
+                                 <li>Get clinical results at home - no downtime.</li>
+                              </ul>
+                           </div>
+                        </div>
+                        <a class="btn btn--primary w-100 mt-18" href="/pages/microinfusion">Shop Bundles</a>
+                        <div class="empty-star-txt">
+                           <div class="product-star-txt">
+                              <img src="https://qureskincaredns-main.com/assets/images/review-stars.svg" alt="" class="img-fluid">
+                              <span class="">“Even my esthetician is hooked!</strong>
+                           </div>
+                           <div class="text-center fs-14">And I can now visit beauty clinics less often.”</div>
+                        </div>
+                     </div>
+
+                  </div>
+                  <!-- Empty cart end -->
+               {% else %}
+                  {% for item in cart.items %}
+                     {% include 'get-cart-item-data', item: item %}
+                     {% include 'footer-cart-drawer-item' %}
+                  {% endfor %}
+
+                  <!-- <div class="qure__cart-upsell">
+                     <div class="mb-16">Get The Best Results With</div>
+                     <div class="qure__upsell-products">
+                        <slide-carousel>
+                           <div class="swiper qure__swiper-carousel qure-cartUpsell" id="qure__swiper-{{ block.id }}"
+                              data-section-id="{{ block.id }}" data-autoplay="false" data-loop="false" data-mobile="1.2"
+                              data-tablet="1.2" data-desktop="1.2" data-arrow-centerimage="1" data-item-mobile="1"
+                              data-spacing="15" data-pagination-progressbar="carousel_pagination_progress">
+                              <div class="swiper-wrapper">
+                                 <div class="swiper-slide">
+                                    <div class="cart__upsell">
+                                       <div class="cart__upsell-img"><img src="https://qureskincaredns-main.com/sections/global/drawer/images/upsell-1.webp"
+                                             alt="" class="img-fluid" /></div>
+                                       <div class="cart__upsell-content">
+                                          <div class="cart__upsell-title mb-0">Micro-Infusion Targeted Patches</div>
+                                          <div class="cart__upsell-price">$79</div>
+                                       </div>
+                                       <div class="cart__upsell-btn d-flex align-items-center">
+                                          <a href="#" class="btn btn-sm btn--primary-white text-uppercase">Add</a>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="swiper-slide">
+                                    <div class="cart__upsell">
+                                       <div class="cart__upsell-img"><img src="https://qureskincaredns-main.com/sections/global/drawer/images/upsell-2.webp"
+                                             alt="" class="img-fluid" /></div>
+                                       <div class="cart__upsell-content">
+                                          <div class="cart__upsell-title mb-0">Micro-Infusion Targeted Patches</div>
+                                          <div class="cart__upsell-price">$79</div>
+                                       </div>
+                                       <div class="cart__upsell-btn d-flex align-items-center">
+                                          <a href="#" class="btn btn-sm btn--primary-white text-uppercase">Add</a>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="swiper-slide">
+                                    <div class="cart__upsell">
+                                       <div class="cart__upsell-img"><img src="https://qureskincaredns-main.com/sections/global/drawer/images/upsell-1.webp"
+                                             alt="" class="img-fluid" /></div>
+                                       <div class="cart__upsell-content">
+                                          <div class="cart__upsell-title mb-0">Micro-Infusion Targeted Patches</div>
+                                          <div class="cart__upsell-price">$79</div>
+                                       </div>
+                                       <div class="cart__upsell-btn d-flex align-items-center">
+                                          <a href="#" class="btn btn-sm btn--primary-white text-uppercase">Add</a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </slide-carousel>
+                     </div>
+                  </div> -->
+               {% endif %}
+            </div>
+            {% if cart.item_count > 0 %}
+               {% include 'footer-cart-drawer-summary' %}
+            {% endif %}
+         </div>
+      </div>
+   </div>
+</div>
+<!-- drawer cart end -->
+
+<script>const template = '{{ template }}';</script>
+<script src="{{ 'morphdom-umd.min.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'cart.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'cart-counter.js' | asset_url }}" defer="defer"></script>
+
+
+{% schema %}
+{
+  "name": "t:sections.footer-cart-drawer.name",
+  "settings": [
+
+  ],
+  "blocks": [
+
+  ],
+  "presets": [
+    {
+      "name": "t:sections.footer-cart-drawer.name"
+    }
+  ]
+}
+>>>>>>> production
 {% endschema %}

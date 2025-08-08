@@ -127,12 +127,18 @@
         "static": {
             "settings": {
                 "header": "Shopping Cart",
+                "empty-header": "Your cart is currently empty",
+                "empty-text": "Before proceed to checkout you must add some products to your shopping cart.",
+                "empty-button_html": "<a href='{{ button_link }}' class='btn btn--primary'>Start Shopping</a>",
                 "product": "Product",
                 "quantity": "Quantity",
                 "price": "Price",
                 "remove": "REMOVE",
-                "total": "Estimated total",
-                "text": "Shipping & taxes calculated at checkout.",
+                "savings": "Savings",
+                "shipping": "Shipping",
+                "free": "Free",
+                "subtotal": "Subtotal",
+                "insurance-text": "Protect your order from lost, damage and theft",
                 "checkout": "Proceed to Checkout"
             }
         },
