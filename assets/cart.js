@@ -1,3 +1,7 @@
+//https://qureskincare.com/products/micro-infusion-1-month-bundle-2x-beta-glucan-serum?variant=43216483942639
+//https://qureskincare.com/products/micro-infusion-3-month-bundle-6x-beta-glucan-serum?variant=43216359555311
+//https://qureskincare.com/products/micro-infusion-6-month-bundle-for-wrinkles?variant=46454216163567
+
 document.addEventListener('DOMContentLoaded', () => {
     bindForms();
 });
@@ -10,17 +14,26 @@ document.addEventListener('cart.requestComplete', (e) => {
 
     if (source === 'addToCart') {
         if(insurance === undefined) {
-            unsetInsurance();
+            reloadInsurance();
         }
-        reloadCart();
+        reloadCart('footer-cart-drawer', 'cart-dynamic-content');
+
+        if(template == 'cart') {
+            reloadCart('cart', 'main-cart-dynamic-content');
+        }
+
         showCart();
     }
 
     if (source === 'changeCart') {
         if(insurance === undefined) {
-            unsetInsurance();
+            reloadInsurance();
         }
-        reloadCart();
+        reloadCart('footer-cart-drawer', 'cart-dynamic-content');
+        
+        if(template == 'cart') {
+            reloadCart('cart', 'main-cart-dynamic-content');
+        }
     }
 });
 
@@ -55,12 +68,11 @@ const bindForms = () => {
     });
 }
 
-const reloadCart = () => {
-    const targetElement = 'cart-dynamic-content';
+const reloadCart = (section_id, targetElement) => {
     const currentDrawer = document.getElementById(targetElement);
     if (!currentDrawer) return;
 
-    fetch('/?section_id=footer-cart-drawer')
+    fetch('/?section_id=' + section_id)
         .then(res => res.text())
         .then(html => {
             const temp = document.createElement('div');
@@ -75,9 +87,11 @@ const reloadCart = () => {
 };
 
 const showCart = () => {
-    const cartDrawer = document.querySelector('.offcanvas-end');
-    if (cartDrawer && !cartDrawer.classList.contains('show')) {
-        document.getElementById('cartCanvasBtn')?.click();
+    if(template != 'cart') {
+        const cartDrawer = document.querySelector('.offcanvas-end');
+        if (cartDrawer && !cartDrawer.classList.contains('show')) {
+            document.getElementById('cartCanvasBtn')?.click();
+        }
     }
 };
 
@@ -96,7 +110,7 @@ const toogleInsurance = (form) => {
     });
 };
 
-const unsetInsurance = () => {
+const reloadInsurance = () => {
   return getCartState().then(cart => {
     const insuranceItem = cart.items.find(item => item.title.includes('Shipping Insurance'));
 
@@ -104,10 +118,18 @@ const unsetInsurance = () => {
       const formData = new FormData();
       formData.append('id', insuranceItem.id);
       formData.append('quantity', 0);
-      return changeCart(formData);
+      return changeCart(formData).then(() => {
+        setTimeout(() => {
+            const checkbox = document.querySelector('input[type="checkbox"]#insurance');
+            if (checkbox) {
+            checkbox.checked = true;
+            checkbox.dispatchEvent(new Event('change', { bubbles: true }));
+            }
+        }, 1000)
+      });
     }
   }).catch(error => {
-    console.error('Error unsetInsurance:', error);
+    console.error('Error reloadInsurance:', error);
   });
 };
 
@@ -142,7 +164,7 @@ const addToCart = (input, insurance = undefined) => {
 };
 
 const changeCart = (input, insurance = undefined) => {
-    fetch((window.Shopify?.routes?.root || '/') + 'cart/change.js', {
+    return fetch((window.Shopify?.routes?.root || '/') + 'cart/change.js', {
         method: 'POST',
         body: input
     })
@@ -161,6 +183,7 @@ const changeCart = (input, insurance = undefined) => {
         const event = new CustomEvent('cart.requestComplete', { detail: eventDetail });
         document.dispatchEvent(event);
         console.log('The cart was changed:', cart);
+        return cart;
     })
     .catch((error) => {
         console.error('Error cart updating:', error);
