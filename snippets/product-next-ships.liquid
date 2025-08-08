@@ -1,0 +1,24 @@
+{% doc %}
+  Renders a "Next Ships" section for the product template
+
+  @param {object} - A section object.
+
+  @example
+  {% render 'product-next-ships' product: product %}
+{% enddoc %}
+
+<div class="patch__product-batch mt-30 max-w-ctm" style="--max-w-ctm:500px">
+    <div class="patch-d-header">
+        <h4 class="fm-body fs-16 fw-600">Next batch ships {date}:</h4>
+        <p class="fs-14">Due to high demand, our {product name} is sold out. Order now and secure yours from the next shipment.</p>
+    </div>
+    <div class="progress__bar-container w-100">
+        <div class="patch-bar mb-10" role="progressbar">
+            <span class="patch__date">{Previous date}</span><span class="patch__status">SOLD OUT</span>
+        </div>
+        <div class="patch-bar" role="progressbar"
+            style="--progress-bg:#91BAEC;--text-color:#212428;--progress-width:48%">
+            <span class="patch__date">{date}</span><span class="patch__status">48% Reserved</span>
+        </div>
+    </div>
+</div>

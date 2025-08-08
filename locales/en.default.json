@@ -90,6 +90,10 @@
                 "guaranteed_text": "30-Day Money-Back Guarantee",
                 "shipping_text": "Free World-Wide Shipping over 100$",
                 "science_text": "Backed by Science"
+            },
+            "cross-sell": {
+                "header": "Get The Best Results With",
+                "buy-button-label": "Add"
             }
         }
     },

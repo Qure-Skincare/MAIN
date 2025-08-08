@@ -1,4 +1,18 @@
+{% doc %}
+  Renders a product bundle
+{% enddoc %}
+
 {% include 'get-product-data' %}
+
+{%- for block in section.blocks -%}
+    {% if block.type == 'description' %}
+        {% capture product-description %}
+            {% if block.settings.text %}
+                {{ block.settings.text }}
+            {% endif %}
+        {% endcapture %}
+    {% endif %}
+{%- endfor -%} 
 
 <link rel="stylesheet" href="https://qureskincaredns-main.com/sections/isolated/product-bundle/product-bundle.css" />
 <div class="qure__trageted-patches qure__section"
@@ -7,29 +21,7 @@
         <div class="row custom__grid">
             <div class="col-lg-6 custom__block">
                 <div class="qure-product-details mw" style="--mw:500px;">
-                    <slide-with-thumbs class="tp-product-gallery qure__swiper-wrapper d-block d-lg-none mb-30">
-                        <!-- Galler start-->
-                        <div class="swiper qure__product-gallery qure__swiper-gallery" data-section-id="tp-gallery-desktop" data-mobile="3" data-tablet="3" data-desktop="4" data-autoplay="false" data-loop="false" data-spacing="0">
-                            <div class="swiper-wrapper" style="--perload-gap: 10px" data-nav-thumb>
-                                {% render 'product-media', product_media: product.media, classname: 'slide-image', size: '720x' %}
-                            </div>
-                        </div>
-                        <!-- Galler End-->
-                        <div class="swiper-thumbnail-with-arrow mt-3">
-                            <!-- Thumbnails start-->
-                            <div class="qure-swiper-arrow swiper-prev"><i class="fa-regular fa-angle-left"></i>
-                            </div>
-                            <div class="swiper qure__product-gallery  tp-thumbnails-desktop qure__swiper-gallery-thumbnails" data-section-id="tp-thumbnails-desktop" data-mobile="3" data-tablet="4" data-desktop="4" data-autoplay="false" data-loop="false" data-spacing="10">
-                                <div class="swiper-wrapper">
-                                    {% render 'product-media', product_media: product.media, classname: 'slide-thumbnail', size: '240x' %}
-                                </div>
-                            </div>
-                            <div class="qure-swiper-arrow swiper-next"><i class="fa-regular fa-angle-right"></i>
-                            </div>
-                        </div>
-                        <!-- Thumbnails End-->
-                    </slide-with-thumbs>
-
+                    {% render 'product-slider', product: product, class: 'd-block d-lg-none mb-30' %}
                     {% render 'product-rating' %}
 
                     <h1 class="qure__product-title mb-10">{{ product_title }}</h1>
@@ -49,53 +41,13 @@
                 </div>
             </div>
             <div class="col-lg-6 custom__block">
-                <slide-with-thumbs class="tp-product-gallery qure__swiper-wrapper d-none d-lg-block">
-                    <!-- Galler start-->
-                    <div class="swiper qure__product-gallery qure__swiper-gallery"
-                        data-section-id="tp-gallery-desktop" data-mobile="3" data-tablet="3" data-desktop="4"
-                        data-autoplay="false" data-loop="false" data-spacing="0">
-                        <div class="swiper-wrapper" style="--perload-gap: 10px" data-nav-thumb>
-                            {% render 'product-media', product_media: product.media, classname: 'slide-image', size: '720x' %}
-                        </div>
-                    </div>
-                    <!-- Galler End-->
-                    <div class="swiper-thumbnail-with-arrow mt-3">
-                        <!-- Thumbnails start-->
-                        <div class="qure-swiper-arrow swiper-prev"><i class="fa-regular fa-angle-left"></i></div>
-                        <div class="swiper qure__product-gallery  tp-thumbnails-desktop qure__swiper-gallery-thumbnails"
-                            data-section-id="tp-thumbnails-desktop" data-mobile="3" data-tablet="4" data-desktop="4"
-                            data-autoplay="false" data-loop="false" data-spacing="10">
-                            <div class="swiper-wrapper">
-                                {% render 'product-media', product_media: product.media, classname: 'slide-thumbnail', size: '240x' %}
-                            </div>
-                        </div>
-                        <div class="qure-swiper-arrow swiper-next"><i class="fa-regular fa-angle-right"></i></div>
-                    </div>
-                    <!-- Thumbnails End-->
-                </slide-with-thumbs>
-
+                {% render 'product-slider', product: product, class: 'd-none d-lg-block' %}
                 {% render 'product-benefits-list' %}
-
-                <div class="accordion accordion-flush mt-15 tp-product-accordion" id="tp-product-qure">
-                    {% if product.metafields.custom.what_s_included != blank %}
-                        {% render 'product-collapsed-item' input: product.metafields.custom.key_benefits, index: 'first', title: 'Key Benefits' %}
-                    {% endif %}
-                    {% if product.metafields.custom.how_it_works != blank %}
-                        {% render 'product-collapsed-item' input: product.metafields.custom.how_it_works, index: 'second', title: 'How It Works' %}
-                    {% endif %}
-                    {% if product.metafields.custom.key_benefits != blank %}
-                        {% render 'product-collapsed-item' input: product.metafields.custom.what_s_included, index: 'third', title: 'What’s Included' %}
-                    {% endif %}
-                </div>
+                {% render 'product-collapsed', product: product %}
             </div>
         </div>
     </div>
 </div>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        loadScriptOnce('slider-with-thumb', 'https://qureskincaredns-main.com/assets/js/slider-with-thumb.js');
-    });
-</script>
 
 <script type="application/ld+json">
     {

@@ -1,0 +1,106 @@
+{% doc %}
+  Renders a product gallery buy section
+{% enddoc %}
+
+{% include 'get-product-data' %}
+
+<link rel="stylesheet" href="https://qureskincaredns-main.com/sections/isolated/targeted-patches/section-targeted-patches.css" />
+<div id="buy_box" class="qure__trageted-patches qure__section"
+    style="--section-padding-top: 40px; --section-padding-bottom: 80px;">
+    <div class="container" style="--column-gap:80px; --column-gap-mobile:30px;">
+        <div class="row custom__grid">
+            <div class="col-lg-6 custom__block">
+                <div class="qure-product-details">
+
+                    {% render 'product-slider', product: product, class: 'd-block d-lg-none mb-30' %}
+                    
+                    <div class="patch__product-rating d-inline-flex align-items-center gap-3 fs-16 mb-20">
+                        <img src="https://qureskincaredns-main.com/sections/isolated/clean-water/images/cyan_blue_rating.svg" alt="">
+                        <span><strong>4.8</strong>/5 Rated by Customers</span>
+                    </div>
+                    {% if section.settings.seo_heading != blank %}
+                        <p class="mb-10 fs-16 fw-400">{{ section.settings.seo_heading }}</p>
+                    {% endif %}
+                    {% if section.settings.heading != blank %}
+                        <h1 class="qure__product-title mb-10">{{ section.settings.heading }}</h1>
+                    {% endif %}
+
+                    <h4 class="fw-500 fm-body" style="--font-h4: 22px; --font-h4-mob: 20px;">{{ product_sale_price }}</h4>
+
+                    {% if section.settings.description != blank %}
+                        <div class="patch__single-shortdes mt-20">
+                            {{ section.settings.description }}
+                        </div>
+                    {% endif %}
+
+                    {% render 'product-buy-button', product_price: product_sale_price, product_variant_id: product_variant_id %}
+                    {% render 'product-buy-button-bottom', product_price_divided: product_price_divided, button_link: 'https://qureskincare.com/pages/derm-reviews' %}
+                    {% render 'product-next-ships', section: section %}
+
+                </div>
+            </div>
+            <div class="col-lg-6 custom__block">
+                {% render 'product-slider', product: product, class: 'd-none d-lg-block' %}
+                {% render 'product-cross-sell', product: product %}
+                {% render 'product-benefits-list' %}
+                {% render 'product-collapsed', product: product %}
+                {% render 'product-jumpto', section: section %}
+            </div>
+
+        </div>
+    </div>
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        loadScriptOnce('main-slider', 'https://qureskincaredns-main.com/assets/js/main-slider.js');
+        loadScriptOnce('youtube-popup', 'https://qureskincaredns-main.com/assets/js/yt-popup.js');
+        loadScriptOnce('slider-script', 'https://qureskincaredns-main.com/assets/js/slider-with-thumb.js');
+    });
+</script>
+
+{% schema %}
+{
+    "name": "t:sections.product-header.name",
+    "settings": [
+        {
+            "type": "text",
+            "id": "seo_heading",
+            "label": "t:common.seo_heading"
+        },
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "t:common.header"
+        },
+        {
+            "type": "richtext",
+            "id": "description",
+            "label": "t:common.description"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "jumpto",
+            "name": "t:common.jumpto",
+            "limit": 10,
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "button-label",
+                    "label": "t:common.button-label"
+                },
+                {
+                    "type": "url",
+                    "id": "button-url",
+                    "label": "t:common.button-url"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+        "name": "t:sections.product-header.name"
+        }
+    ]
+}
+{% endschema %}

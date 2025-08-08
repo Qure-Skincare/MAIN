@@ -1,17 +1,16 @@
 {% doc %}
-  Renders a product media array.
+  Renders a product media carousel array.
 
-  @param {array} product_media - A product media array.
+  @param {array} product_media_carousel - A product media carousel array.
   @param {string} classname - A string value.
   @param {string} size - A string value.
 
   @example
-  {% render 'product-media', product_media: product.media, classname: 'slide-thumbnail', size: '240x' %}
+  {% render 'product-media-carousel', product_media: product.media, classname: 'slide-thumbnail', size: '240x' %}
 {% enddoc %}
 
-
-{% if product_media %}
-    {% for media in product_media %}
+{% if product_media_carousel != blank %}
+    {% for media in product_media_carousel.image_or_video.value %}
         {% if media.media_type == 'video' %}
             {% if media.sources[1].url != blank %}
                 {% assign video_source_url = media.sources[1].url %}
