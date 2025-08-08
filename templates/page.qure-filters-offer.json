@@ -18,10 +18,6 @@
         "button-url": "#"
       }
     },
-    "main": {
-      "type": "page-qure-filters-offer",
-      "settings": {}
-    },
     "clean_water_KQtjt9": {
       "type": "clean-water",
       "blocks": {
@@ -475,6 +471,10 @@
         "video_url": ""
       }
     },
+    "main": {
+      "type": "page-qure-filters-offer",
+      "settings": {}
+    },
     "video_review_slider_yBjMTk": {
       "type": "video-review-slider",
       "blocks": {
@@ -750,7 +750,6 @@
   },
   "order": [
     "announcement_bar_FNAPqF",
-    "main",
     "clean_water_KQtjt9",
     "quote_zqnAHh",
     "qure_filters_offer_slider_with_text_JgnGLR",
@@ -760,6 +759,7 @@
     "improve_skin_hydration_UDwAJ8",
     "trusted_reviews_b9NgPL",
     "trusted_recommended_awbjc8",
+    "main",
     "video_review_slider_yBjMTk",
     "qure_filters_offer_comparison_real_fake_FJifqy",
     "information_about_water_BDVnVm",
