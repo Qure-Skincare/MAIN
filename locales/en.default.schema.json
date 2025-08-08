@@ -120,9 +120,16 @@
                 {
                     "name": "Header image for check block"
                 },
+                 "heading-image-cross": 
+                {
+                    "name": "Header image for cross block"
+                },
                 "heading-cross": 
                 {
                     "name": "Header for cross block"
+                },
+                "heading-check": {
+                    "name": "Header for check block"
                 }
             },
             "blocks": {

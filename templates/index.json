@@ -167,7 +167,7 @@
             "compare_image": "shopify://shop_images/ellie-v.webp",
             "country_image": "shopify://shop_images/america_f_3d0e5b48-9006-49eb-b959-ec7fa14baea6.webp",
             "username": "<p>Ana L.</p>",
-            "link_url": "#",
+            "product_url": "#",
             "product_heading": "Ellie uses...",
             "product_text": "Micro-Infusion Facial System",
             "product_image": "shopify://shop_images/micro-infusion-facial-system_f0e75ccc-2fd2-48d6-aea7-fe662896adaa.webp"
@@ -181,7 +181,7 @@
             "compare_image": "shopify://shop_images/anton-m.webp",
             "country_image": "shopify://shop_images/america_f_3d0e5b48-9006-49eb-b959-ec7fa14baea6.webp",
             "username": "<p>Anton M.</p>",
-            "link_url": "#",
+            "product_url": "#",
             "product_heading": "Anton uses...",
             "product_text": "Q-Rejuvalight Pro LED Mask",
             "product_image": "shopify://shop_images/q-rejuvalight-pro-led-mask.webp"
@@ -195,7 +195,7 @@
             "compare_image": "shopify://shop_images/jennifer-n.webp",
             "country_image": "shopify://shop_images/england_f_7b85ce69-2b67-4245-a148-3dd808fc574a.webp",
             "username": "<p>Jennifer N.</p>",
-            "link_url": "#",
+            "product_url": "#",
             "product_heading": "Jennifer uses...",
             "product_text": "Micro-Infusion Facial",
             "product_image": "shopify://shop_images/micro-infusion-facial-system_f0e75ccc-2fd2-48d6-aea7-fe662896adaa.webp"
@@ -209,7 +209,7 @@
             "compare_image": "shopify://shop_images/terry-p.webp",
             "country_image": "shopify://shop_images/america_f_3d0e5b48-9006-49eb-b959-ec7fa14baea6.webp",
             "username": "<p>Terri P.</p>",
-            "link_url": "#",
+            "product_url": "#",
             "product_heading": "Terri uses...",
             "product_text": "Micro-Infusion Facial System",
             "product_image": "shopify://shop_images/q-rejuvalight-pro-led-mask.webp"
@@ -223,7 +223,7 @@
             "compare_image": "shopify://shop_images/cassandra.webp",
             "country_image": "shopify://shop_images/america_f_3d0e5b48-9006-49eb-b959-ec7fa14baea6.webp",
             "username": "<p>Cassandra</p>",
-            "link_url": "#",
+            "product_url": "#",
             "product_heading": "Cassandra uses...",
             "product_text": "Micro-Infusion Targeted Patches",
             "product_image": "shopify://shop_images/micro-infusion-targeted-patches_d896fbd3-01a9-4e6b-8786-c717634936e4.webp"
@@ -237,7 +237,7 @@
             "compare_image": "shopify://shop_images/Claudia.webp",
             "country_image": "shopify://shop_images/canada_f.webp",
             "username": "<p>Claudia</p>",
-            "link_url": "#",
+            "product_url": "#",
             "product_heading": "Claudia uses...",
             "product_text": "Neck & Décolletage LED Device",
             "product_image": "shopify://shop_images/neck-decolletage-led-device.webp"
@@ -251,7 +251,7 @@
             "compare_image": "shopify://shop_images/ana.webp",
             "country_image": "shopify://shop_images/england_f_7b85ce69-2b67-4245-a148-3dd808fc574a.webp",
             "username": "<p>Ana L.</p>",
-            "link_url": "#",
+            "product_url": "#",
             "product_heading": "Ana uses...",
             "product_text": "All-In-One Serum",
             "product_image": "shopify://shop_images/all-in-one-serum.webp"
@@ -265,7 +265,7 @@
             "compare_image": "shopify://shop_images/bj-nerdi.webp",
             "country_image": "shopify://shop_images/canada_f.webp",
             "username": "<p>BJ Nardi</p>",
-            "link_url": "#",
+            "product_url": "#",
             "product_heading": "BJ uses...",
             "product_text": "Q-Rejuvalight Pro LED Mask",
             "product_image": "shopify://shop_images/q-rejuvalight-pro-led-mask.webp"
@@ -279,7 +279,7 @@
             "compare_image": "shopify://shop_images/Mary.webp",
             "country_image": "shopify://shop_images/canada_f.webp",
             "username": "<p>Mary R. M.</p>",
-            "link_url": "#",
+            "product_url": "#",
             "product_heading": "Mary uses...",
             "product_text": "Neck & Décolletage LED Device",
             "product_image": "shopify://shop_images/neck-decolletage-led-device.webp"
@@ -299,7 +299,9 @@
       ],
       "name": "t:sections.trusted-reviews.name",
       "settings": {
-        "heading": "Results you’ll see with your own eyes"
+        "background_color": "#ffffff",
+        "heading": "Results you’ll see with your own eyes",
+        "text_mobile": ""
       }
     },
     "index-qure-products": {
@@ -430,8 +432,6 @@
       "settings": {
         "heading": "Trusted and Recommended by Experts",
         "text": "<p>“This treatment is an at-home option for those who want to <strong>avoid the hassle or cost of going to the office”.</strong></p>",
-        "image": "",
-        "image_mobile": "",
         "video_cover_image": "shopify://shop_images/shah-maxfield.webp",
         "video_url": "https://www.youtube.com/watch?v=mVdncsTAXiA"
       }
@@ -446,6 +446,7 @@
             "text": "<p>Dr. Alekandra Brown</p>",
             "sub_text": "<p>Board-Certified Dermatologist</p>",
             "url": "rehxqby0fq",
+            "checkbox": false,
             "image": "shopify://shop_images/home-trusted_img_1.webp"
           }
         },
@@ -456,6 +457,7 @@
             "text": "<p>Dr. Lindsey Zubritsky</p>",
             "sub_text": "<p>Board-Certified Dermatologist</p>",
             "url": "ug1o3j3d8w",
+            "checkbox": false,
             "image": "shopify://shop_images/trusted_img_5.webp"
           }
         },
@@ -466,6 +468,7 @@
             "text": "<p>Dr. Alexis Stephens</p>",
             "sub_text": "<p>Internal Medicine Doctor</p>",
             "url": "wbf95ywhx4",
+            "checkbox": false,
             "image": "shopify://shop_images/trusted_img_6.webp"
           }
         },
@@ -476,6 +479,7 @@
             "text": "<p>Dr. Prem Tripati</p>",
             "sub_text": "<p>Facial Plastic Surgeon</p>",
             "url": "gzba345nd4",
+            "checkbox": false,
             "image": "shopify://shop_images/trusted_img_9.webp"
           }
         },
@@ -486,6 +490,7 @@
             "text": "<p>Dr. Wallace Nozile</p>",
             "sub_text": "<p>Board-Certified Dermatologist</p>",
             "url": "ypvcdsgwkx",
+            "checkbox": false,
             "image": "shopify://shop_images/trusted_img_8.webp"
           }
         },
@@ -496,6 +501,7 @@
             "text": "<p>Dr. Davin Lim</p>",
             "sub_text": "<p>Board-Certified Dermatologist</p>",
             "url": "3bud7no0j9",
+            "checkbox": false,
             "image": "shopify://shop_images/trusted_img_7.webp"
           }
         },
@@ -506,6 +512,7 @@
             "text": "<p>Dr. Wallace Nozile</p>",
             "sub_text": "<p>Board-Certified Dermatologist</p>",
             "url": "ypvcdsgwkx",
+            "checkbox": false,
             "image": "shopify://shop_images/trusted_img_8.webp"
           }
         },
@@ -516,6 +523,7 @@
             "text": "<p>Dr. Davin Lim</p>",
             "sub_text": "<p>Board-Certified Dermatologist</p>",
             "url": "3bud7no0j9",
+            "checkbox": false,
             "image": "shopify://shop_images/trusted_img_7.webp"
           }
         }
