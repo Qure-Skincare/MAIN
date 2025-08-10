@@ -15,26 +15,20 @@ document.addEventListener('cart.requestComplete', (e) => {
     document.querySelector('.cart-count').textContent = cart.item_count;
 
     if (source === 'addToCart') {
-        if(insurance === undefined) {
-            reloadInsurance();
-        }
-        reloadCart('footer-cart-drawer', 'cart-dynamic-content');
+        reloadCart('footer-cart-drawer', 'cart-dynamic-content', insurance);
 
         if(template == 'cart') {
-            reloadCart('cart', 'main-cart-dynamic-content');
+            reloadCart('cart', 'main-cart-dynamic-content', insurance);
         }
 
         showCart();
     }
 
     if (source === 'changeCart') {
-        if(insurance === undefined) {
-            reloadInsurance();
-        }
-        reloadCart('footer-cart-drawer', 'cart-dynamic-content');
+        reloadCart('footer-cart-drawer', 'cart-dynamic-content', insurance);
         
         if(template == 'cart') {
-            reloadCart('cart', 'main-cart-dynamic-content');
+            reloadCart('cart', 'main-cart-dynamic-content', insurance);
         }
     }
 });
@@ -53,6 +47,7 @@ const bindForms = () => {
             addToCart(formData);
         });
 
+        toogleGift(form);
         toogleInsurance(form);
     });
 
@@ -70,7 +65,7 @@ const bindForms = () => {
     });
 }
 
-const reloadCart = (section_id, targetElement) => {
+const reloadCart = (section_id, targetElement, insurance = undefined) => {
     const currentDrawer = document.getElementById(targetElement);
     if (!currentDrawer) return;
 
@@ -85,6 +80,10 @@ const reloadCart = (section_id, targetElement) => {
 
             morphdom(currentDrawer, newDrawer);
             bindForms();
+
+            if(insurance === undefined) {
+                reloadInsurance();
+            }
         });
 };
 
@@ -96,6 +95,32 @@ const showCart = () => {
         }
     }
 };
+
+const toogleGift = (form) => {
+    if (!form.classList.contains('footer-cart-drawer-gift')) return;
+
+    return getCartState().then(cart => {
+        const formData = new FormData(form);
+
+        const giftItem = cart.items.find(item => item.id === +(formData.get('id')) && item.properties && item.properties['_required_validation']);
+
+        if(!giftItem) {
+            if(cart.total_price >= cart_gift_price_limit) {
+                //pass second param as true to avoid to reload the insurance
+                addToCart(formData, true);
+            }
+        }
+        else {
+            if(cart.total_price < cart_gift_price_limit) {
+                formData.set('quantity', 0);
+                //pass second param as true to avoid to reload the insurance
+                changeCart(formData, true)
+            }
+        }
+    }).catch(error => {
+        console.error('Error reloadInsurance:', error);
+    });
+}
 
 const toogleInsurance = (form) => {
     const checkbox = form.querySelector('input[type="checkbox"]#insurance');
@@ -114,21 +139,28 @@ const toogleInsurance = (form) => {
 
 const reloadInsurance = () => {
   return getCartState().then(cart => {
+    const insurance_id = +(document.querySelector('#insurance_id').value);
     const insuranceItem = cart.items.find(item => item.title.includes('Shipping Insurance'));
 
     if (insuranceItem) {
-      const formData = new FormData();
-      formData.append('id', insuranceItem.id);
-      formData.append('quantity', 0);
-      return changeCart(formData).then(() => {
-        setTimeout(() => {
-            const checkbox = document.querySelector('input[type="checkbox"]#insurance');
-            if (checkbox) {
-            checkbox.checked = true;
-            checkbox.dispatchEvent(new Event('change', { bubbles: true }));
-            }
-        }, 1000)
-      });
+
+        console.log('insurance_id [' + insurance_id + ']');
+        console.log('insuranceItem [' + insuranceItem.id + ']');
+
+        if(insurance_id !== insuranceItem.id) {
+            const formData = new FormData();
+            formData.append('id', insuranceItem.id);
+            formData.append('quantity', 0);
+            return changeCart(formData).then(() => {
+                setTimeout(() => {
+                    const checkbox = document.querySelector('input[type="checkbox"]#insurance');
+                    if (checkbox) {
+                        checkbox.checked = true;
+                        checkbox.dispatchEvent(new Event('change', { bubbles: true }));
+                    }
+                }, 1000)
+            });
+        }
     }
   }).catch(error => {
     console.error('Error reloadInsurance:', error);
@@ -157,7 +189,7 @@ const addToCart = (input, insurance = undefined) => {
 
                     const event = new CustomEvent('cart.requestComplete', { detail: eventDetail });
                     document.dispatchEvent(event);
-                    console.log('The product was added to the cart:', addedItem);
+                    //console.log('The product was added to the cart:', addedItem);
                 });
         })
         .catch((error) => {
@@ -184,7 +216,7 @@ const changeCart = (input, insurance = undefined) => {
 
         const event = new CustomEvent('cart.requestComplete', { detail: eventDetail });
         document.dispatchEvent(event);
-        console.log('The cart was changed:', cart);
+        //console.log('The cart was changed:', cart);
         return cart;
     })
     .catch((error) => {
@@ -204,7 +236,7 @@ const clearCart = () => {
         .then(cart => {
             const event = new CustomEvent('cart.requestComplete', { detail: { cart: cart, source: 'clearCart' } });
             document.dispatchEvent(event);
-            console.log('Cart cleared:', cart);
+            //console.log('Cart cleared:', cart);
         })
         .catch(error => {
             console.error('Error clearing cart:', error);
@@ -215,7 +247,7 @@ const getCartState = () => {
     return fetch((window.Shopify?.routes?.root || '/') + 'cart.js')
             .then(response => response.json())
             .then(cart => {
-                console.log('Cart state:', cart);
+                //console.log('Cart state:', cart);
                 return cart; 
             })
             .catch(error => {

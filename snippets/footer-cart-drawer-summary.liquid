@@ -19,9 +19,9 @@
             <div class="insurance__switch-wrapper">
                 <form method="post" action="/cart/add" enctype="multipart/form-data">
                     <label class="switch">
-                        <input type="hidden" name="quantity" id="quantity" value="{% if insurance_exists %}0{% else %}1{% endif %}">
-                        <input type="hidden" name="id" value="{{ insurance_variant_id }}">
-                        <input type="checkbox" id="insurance" name="insurance"{% if insurance_exists %} checked{% endif %}>
+                        <input type="hidden" name="quantity" id="quantity" value="{% if summary_insurance_exists %}0{% else %}1{% endif %}">
+                        <input type="hidden" id="insurance_id" name="id" value="{{ insurance_variant_id }}">
+                        <input type="checkbox" id="insurance" name="insurance"{% if summary_insurance_exists %} checked{% endif %}>
                         <span class="slider round"></span>
                     </label>
                 </form>
@@ -29,7 +29,7 @@
         </div>
         <div class="qure__cart-summary">
 
-            {% if summary_saving_price != blank %}
+            {% if summary_saving_price != null %}
             <div class="qure__cart-box qure__cart-savings">
                 <div class="qure__cart-title">{{ 'cart.drawer.settings.savings' | t }}</div>
                 <div class="qure__cart-price">{{ summary_saving_price }}</div>
@@ -38,12 +38,18 @@
 
             <div class="qure__cart-box">
                 <div class="qure__cart-title">{{ 'cart.drawer.settings.shipping' | t }}</div>
-                <div class="qure__cart-price"><span>{{ 'cart.drawer.settings.free' | t }}</span></div>
+                <div class="qure__cart-price">
+                    {% if shippingPrice != null %}
+                        <span>{{ shippingPrice }}</span>
+                    {% else %}
+                        <span>{{ 'cart.drawer.settings.free' | t }}</span>
+                    {% endif %}
+                </div>
             </div>
             <div class="qure__cart-box ">
                 <div class="qure__cart-title">{{ 'cart.drawer.settings.subtotal' | t }}</div>
                 <div class="qure__cart-price">
-                    {% if summary_before_price != blank %}
+                    {% if summary_before_price != null %}
                     <span class="price old">{{ summary_before_price }}</span>
                     {% endif %}
                     <span class="price new">{{ summary_sale_price }}</span>

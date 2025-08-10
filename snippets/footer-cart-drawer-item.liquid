@@ -54,21 +54,24 @@
             {% endif %}
             <div class="product-price new">{{ cart_item_sale_price }}</div>
         </div>
-        <div class="product-qty">
-            <div class="qty_box d-flex align-items-center justify-content-between">
-                <form id="{{ cart_item_id }}_minus" method="post" action="/cart/change" enctype="multipart/form-data">
-                    <button class="qty-btn dec-qty"><i class="fa-regular fa-minus"></i></button>
-                    <input type="hidden" name="quantity" value="{{ cart_item_quantity_minus }}">
-                    <input type="hidden" name="id" value="{{ cart_item_key }}">
-                </form>
-                <input class="qty-input p-0" type="number" name="qty" value="{{ cart_item_quantity }}" min="0">
-                <form id="{{ cart_item_id }}_plus" method="post" action="/cart/change" enctype="multipart/form-data">
-                    <button class="qty-btn inc-qty"><i class="fa-regular fa-plus"></i></button>
-                    <input type="hidden" name="quantity" value="{{ cart_item_quantity_plus }}">
-                    <input type="hidden" name="id" value="{{ cart_item_key }}">
-                </form>
+
+        {% unless gift_exists or insurance_exists %}
+            <div class="product-qty">
+                <div class="qty_box d-flex align-items-center justify-content-between">
+                    <form id="{{ cart_item_id }}_minus" method="post" action="/cart/change" enctype="multipart/form-data">
+                        <button class="qty-btn dec-qty"><i class="fa-regular fa-minus"></i></button>
+                        <input type="hidden" name="quantity" value="{{ cart_item_quantity_minus }}">
+                        <input type="hidden" name="id" value="{{ cart_item_key }}">
+                    </form>
+                    <input class="qty-input p-0" type="number" name="qty" value="{{ cart_item_quantity }}" min="0">
+                    <form id="{{ cart_item_id }}_plus" method="post" action="/cart/change" enctype="multipart/form-data">
+                        <button class="qty-btn inc-qty"><i class="fa-regular fa-plus"></i></button>
+                        <input type="hidden" name="quantity" value="{{ cart_item_quantity_plus }}">
+                        <input type="hidden" name="id" value="{{ cart_item_key }}">
+                    </form>
+                </div>
             </div>
-        </div>
+        {% endunless %}
     </div>
     </div>
     <form id="{{ cart_item_id }}_remove" method="post" action="/cart/change" enctype="multipart/form-data">
