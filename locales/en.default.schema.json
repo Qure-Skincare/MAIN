@@ -11,6 +11,8 @@
     "common": {
         "seo_heading": "Seo header",
         "header": "Header",
+        "left-header": "Left column header",
+        "right-header": "Right column header",
         "text": "Text",
         "description": "Description",
         "jumpto": "Jump to",
@@ -22,12 +24,17 @@
         "sub-text": "Sub text",
         "text-mobile": "Text mobile",
         "rating-text": "Rating text",
+        "link-text": "Link text",
         "image-text": "Image text",
         "image-with-text": "Image with text",
+        "username": "Username",
         "image": "Image",
+        "country-image": "Country image",
         "image-before": "Image before",
         "image-after": "Image after",
         "image-mobile": "Image mobile",
+        "right-image": "Right image",
+        "left-image": "Left image",
         "video-image-cover": "Video cover image",
         "video": "Video",
         "video-mobile": "Video mobile",
@@ -65,6 +72,41 @@
     "sections": {
         "announcement-bar": {
             "name": "Announcement bar"
+        },
+        "micro-infusion-pdp-detailed-guide": {
+            "name": "Detailed guide"
+        },
+        "stock-alert": {
+            "name": "Stock alert"
+        },
+        "micro-infusion-serums": {
+            "name": "Micro infusion serums"
+        },
+        "serum-selection": {
+            "name": "Serum selection",
+            "blocks": {
+                "left-text-with-image": {
+                    "name": "Left text with image"
+                },
+                "right-text-with-image": {
+                    "name": "Right text with image"
+                },
+                "left-accordion": {
+                    "name": "Left accordion"
+                },
+                "right-accordion": {
+                    "name": "Right accordion"
+                },
+                "left-feedback": {
+                    "name": "Left feedback"
+                },
+                "right-feedback": {
+                    "name": "Right feedback"
+                }
+            }
+        },
+        "choose-treatment": {
+            "name": "Choose treatment"
         },
         "product-info": {
             "name": "Product information"
@@ -124,6 +166,10 @@
                 "image-compare-cross": {
                     "name": "Compare image cross"
                 },
+                "heading-check": 
+                {
+                    "name": "Header for check block"
+                },
                 "heading-image-check": 
                 {
                     "name": "Header image for check block"
@@ -131,6 +177,10 @@
                 "heading-cross": 
                 {
                     "name": "Header for cross block"
+                },
+                "heading-image-cross": 
+                {
+                    "name": "Header image for cross block"
                 }
             },
             "blocks": {
@@ -232,12 +282,6 @@
                     "settings":{
                         "compare-image":{
                             "name": "Compare image"
-                        },
-                        "country-image":{
-                            "name": "Country image"
-                        },
-                          "username":{
-                            "name": "Username"
                         },
                         "product-image":{
                             "name": "Product image"

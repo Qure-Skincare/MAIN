@@ -4,7 +4,7 @@
 
 <link rel="stylesheet" href="https://qureskincaredns-main.com/sections/isolated/target-specific/tg-icons.css" />
 <div id="how_to_use" class="quick-and-easy qure__section"
-    style="--section-padding-top: 80px; --section-padding-bottom: 40px; --section-padding-top-mob: 30px; --section-padding-bottom-mob: 30px;"
+    style="--section-padding-top: 80px; --section-padding-bottom: 80px; --section-padding-top-mob: 40px; --section-padding-bottom-mob: 40px;"
     id="steps">
     <div class="container">
         {% if section.settings.heading != blank %}
@@ -33,14 +33,14 @@
             </div>
             <div class="col-md-8 col-lg-8 custom__block" style="--column-gap:40px; --column-gap-mobile:24px;">
                  {% if section.settings.heading != blank %}
-                    <h2 class="qure__section-heading mb-30 d-block d-md-none">{{ section.settings.heading }}</h2>
+                    <h2 class="qure__section-heading mb-50 d-none d-md-block">{{ section.settings.heading }}</h2>
                 {% endif %}
                 <div class="row custom__grid">
                     {% for block in section.blocks %}
                         {% if block.type == 'list' %}
                             <div class="col-md-6 col-lg-4 custom__block">
                                 <div class="qe__card-block d-flex flex-nowrap flex-md-wrap" style="--bs-border-radius:10px">
-                                    <div class="img_with-number mb-md-24 overflow-hidden position-relative" data-number="1">
+                                    <div class="img_with-number mb-md-24 overflow-hidden position-relative" data-number="{{ forloop.index }}">
                                         {% if block.settings.image != blank %}
                                             <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" class="img-fluid rounded-2 d-none d-lg-block" />
                                         {% endif %}

@@ -4,7 +4,7 @@
 
 
 <link rel="stylesheet" href="https://qureskincaredns-main.com/sections/isolated/review-slider/card-slide.css" />
-<div class="qure__trusted-reviews qure__section color-background">
+<div class="qure__trusted-reviews qure__section color-background" style="background-color: {{ section.settings.background_color }};">
   <div class="container offset-container-mobile">
     <div class="qure__section-header text-center mb-30 mb-md-60">
       {% if section.settings.heading != blank %}
@@ -91,6 +91,11 @@
   "name": "t:sections.trusted-reviews.name",
   "settings": [
     {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color"
+    },
+    {
       "type": "text",
       "id": "heading",
       "label": "t:common.header"
@@ -124,12 +129,12 @@
         {
           "type": "image_picker",
           "id": "country_image",
-          "label": "t:sections.trusted-reviews.blocks.slider.settings.country-image.name"
+          "label": "t:common.country-image"
         },
         {
           "type": "richtext",
           "id": "username",
-          "label": "t:sections.trusted-reviews.blocks.slider.settings.username.name"
+          "label": "t:common.username"
         },
         {
           "type": "url",

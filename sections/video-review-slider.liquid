@@ -4,7 +4,7 @@
 
 
 <div class="review_videos qure__section color-background"
-    style="--section-padding-top: 80px; --section-padding-bottom: 80px; --section-background: #F6F6F7; --section-padding-top-mob: 50px; --section-padding-bottom-mob: 50px;">
+    style="--section-padding-top: 80px; --section-padding-bottom: 80px; --section-background: {{ section.settings.background_color | default: '#F6F6F7' }}; --section-padding-top-mob: 50px; --section-padding-bottom-mob: 50px;">
     <div class="container">
         <div class="qure__section-header text-center">
             {% if section.settings.heading != blank %}
@@ -70,13 +70,19 @@
 {
     "name": "t:sections.video-review-slider.name",
     "settings": [
-    {
-        "type": "text",
-        "id": "heading",
-        "label": "t:common.header",
-        "default": "See why everyone's switching to filtered water"
-    }
-],
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "t:common.header",
+            "default": "See why everyone's switching to filtered water"
+        },
+        {
+            "type": "color",
+            "id": "background_color",
+            "label": "Background color",
+            "default": "#F6F6F7"
+        }
+    ],
     "blocks": [
         {
             "type": "slider",
