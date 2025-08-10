@@ -3,8 +3,7 @@
 {% enddoc %}
 
 <link rel="stylesheet" href="https://qureskincaredns-main.com/sections/isolated/red-light-therapy/red-light-therapy.css">
-<div class="qure__section red_light_therapy color-background"
-    style="--section-padding-top: 80px; --section-padding-bottom: 80px; --section-padding-top-mob: 50px; --section-padding-bottom-mob: 50px;">
+<div class="qure__section red_light_therapy color-background" style="--section-padding-top: 80px; --section-padding-bottom: 80px; --section-padding-top-mob: 50px; --section-padding-bottom-mob: 50px; background-color: {{ section.settings.background_color }};">
     <div class="container">
         {% if section.settings.heading != blank %}
             <h2 class="banner-text--heading text-center mb-30 mb-md-50">{{ section.settings.heading }}</h2>
@@ -30,6 +29,11 @@
 {
   "name": "t:sections.led-benefits.name",
   "settings": [
+    {
+        "type": "color",
+        "id": "background_color",
+        "label": "Background color"
+    },
     {
         "type": "text",
         "id": "heading",

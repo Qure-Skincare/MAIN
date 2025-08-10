@@ -12,6 +12,18 @@
                     <div class="banner-text--media">
                         <img src="{{ section.settings.image | image_url }}" class="img-fluid" alt="{{ section.settings.image.alt | escape }}"></div>
                 {% endif %}
+                {% if section.settings.wistia_url != blank %}
+                <div class="treat_breakouts">
+                    <style>
+                        wistia-player[media-id='{{ section.settings.wistia_url }}']:not(:defined) {
+                            background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/{{ section.settings.wistia_url }}/swatch');
+                            display: block;
+                            filter: blur(5px);
+                            padding-top: 100.0%;
+                        }
+                    </style> <wistia-player media-id="{{ section.settings.wistia_url }}" seo="false" aspect="1.0"></wistia-player>
+                </div>
+            {% endif %}
             </div>
             <div class="col-md-6 custom__block">
                 <div class="banner-with-text-content">
@@ -29,7 +41,12 @@
         </div>
     </div>
 </div>
-
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        loadScriptOnce('wistia-script', 'https://fast.wistia.com/assets/external/E-v1.js');
+        loadScriptOnce('video-slider', 'https://qureskincaredns-main.com/sections/isolated/trusted-video/wistia-video-popup.js');
+    });
+</script>
 
 {%  schema  %}
 {
@@ -60,6 +77,11 @@
         "type": "url",
         "id": "button_url",
         "label": "t:common.button-url"
+    },
+    {
+        "type": "text",
+        "id": "wistia_url",
+        "label": "t:common.wistia-url"
     }
   ],
   "presets": [

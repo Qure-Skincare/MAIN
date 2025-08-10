@@ -461,6 +461,7 @@
       ],
       "name": "t:sections.trusted-reviews.name",
       "settings": {
+        "background_color": "",
         "heading": "Results you’ll see with your own eyes",
         "text_mobile": ""
       }
@@ -791,12 +792,25 @@
     "compare_FyPtUj": {
       "type": "compare",
       "blocks": {
+        "compare_PCEzxB": {
+          "type": "compare",
+          "settings": {
+            "check_text": "",
+            "cross_text": "",
+            "checkbox": false,
+            "heading_check": "",
+            "heading_image_check": "shopify://shop_images/logo_a2181e75-9107-4275-951d-370cb08b187b.svg",
+            "heading_cross": "<h4>Derm/<br/>Clinic Treatments</h4>"
+          }
+        },
         "compare_CHHtLt": {
           "type": "compare",
           "settings": {
             "check_text": "<p><strong>One-time</strong> investment</p>",
             "cross_text": "<p><strong>Ongoing cost</strong> per session</p>",
-            "checkbox": false
+            "checkbox": false,
+            "heading_check": "",
+            "heading_cross": ""
           }
         },
         "compare_pxikkB": {
@@ -804,7 +818,9 @@
           "settings": {
             "check_text": "<p>No appointments - use anytime at home</p>",
             "cross_text": "<p>Completed according to clinic's availability</p>",
-            "checkbox": false
+            "checkbox": false,
+            "heading_check": "",
+            "heading_cross": ""
           }
         },
         "compare_6Ttyjz": {
@@ -812,7 +828,9 @@
           "settings": {
             "check_text": "<p>Saves time with only 3 minutes a day</p>",
             "cross_text": "<p>Requires 20-30 mins per session, plus travel time</p>",
-            "checkbox": false
+            "checkbox": false,
+            "heading_check": "",
+            "heading_cross": ""
           }
         },
         "compare_PxMe7f": {
@@ -820,7 +838,9 @@
           "settings": {
             "check_text": "<p>Better results with more frequent treatments</p>",
             "cross_text": "<p>Less treatments = less consistent results</p>",
-            "checkbox": false
+            "checkbox": false,
+            "heading_check": "",
+            "heading_cross": ""
           }
         },
         "compare_U7frfb": {
@@ -828,11 +848,14 @@
           "settings": {
             "check_text": "<p>Customized approach with clinical backing</p>",
             "cross_text": "<p>Customized approach with clinical backing</p>",
-            "checkbox": true
+            "checkbox": true,
+            "heading_check": "",
+            "heading_cross": ""
           }
         }
       },
       "block_order": [
+        "compare_PCEzxB",
         "compare_CHHtLt",
         "compare_pxikkB",
         "compare_6Ttyjz",
@@ -844,9 +867,7 @@
         "heading": "The beauty of clinical results from home - without the ‘clinical’ costs",
         "text": "<p>It’s like going to a clinic, minus the on-going costs, the time commitment, the overpromises, the upselling and the hassle.</p>",
         "image_compare_check": "shopify://shop_images/rejuv_vs_1.webp",
-        "image_compare_cross": "shopify://shop_images/rejuv_vs_2.webp",
-        "heading_image_check": "shopify://shop_images/logo_a2181e75-9107-4275-951d-370cb08b187b.svg",
-        "heading_cross": "<h4>Derm/<br/>Clinic Treatments</h4>"
+        "image_compare_cross": "shopify://shop_images/rejuv_vs_2.webp"
       }
     },
     "faq_46wWyJ": {
@@ -856,56 +877,72 @@
           "type": "accordion",
           "settings": {
             "heading": "What color wavelengths does Q-Rejuvalight Pro have?",
-            "text": "<p>The Q-Rejuvalight Pro has a total of 5 clinically-proven wavelengths of lights:</p><ul><li>Infrared light (880 nm): Increases circulation, protects existing collagen and enhances product absorption.</li><li>Deep Red (660 nm): Accelerates skin healing to fade and prevent scarring Builds collagen to help reduce wrinkles.</li><li>Red (630 nm): Stimulates collagen and elastin production, firms and plumps skin, repairs skin cells and promotes hydration to help reduce inflammation, redness and rosacea.</li><li>Amber (605 nm): Reduces appearance of dark spots. Soothes skin and calms swelling and inflammation.</li><li>Blue (415 nm): Anti-bacterial, eliminates and prevents acne breakouts. Soothes and calms skin.</li></ul><p>There are two treatment modes:</p><ul><li>The Pro-Aging Treatment combines red, deep red, infrared and amber  wavelengths which is why the LED lights appear to be an orange color. This combination stimulates collagen, help reduce redness, fine lines, dark spots while encouraging the skin to heal and rejuvenate itself, for visibly smoother, firmer, younger-looking skin.</li><li>The Anti-Breakout Treatment combines red and blue wavelengths to destroy the bacteria that causes acne, regulate oil production, reduce redness and other symptoms when a flare-up occurs for clearer skin.<br/></li></ul>"
+            "text": "<p>The Q-Rejuvalight Pro has a total of 5 clinically-proven wavelengths of lights:</p><ul><li>Infrared light (880 nm): Increases circulation, protects existing collagen and enhances product absorption.</li><li>Deep Red (660 nm): Accelerates skin healing to fade and prevent scarring Builds collagen to help reduce wrinkles.</li><li>Red (630 nm): Stimulates collagen and elastin production, firms and plumps skin, repairs skin cells and promotes hydration to help reduce inflammation, redness and rosacea.</li><li>Amber (605 nm): Reduces appearance of dark spots. Soothes skin and calms swelling and inflammation.</li><li>Blue (415 nm): Anti-bacterial, eliminates and prevents acne breakouts. Soothes and calms skin.</li></ul><p>There are two treatment modes:</p><ul><li>The Pro-Aging Treatment combines red, deep red, infrared and amber  wavelengths which is why the LED lights appear to be an orange color. This combination stimulates collagen, help reduce redness, fine lines, dark spots while encouraging the skin to heal and rejuvenate itself, for visibly smoother, firmer, younger-looking skin.</li><li>The Anti-Breakout Treatment combines red and blue wavelengths to destroy the bacteria that causes acne, regulate oil production, reduce redness and other symptoms when a flare-up occurs for clearer skin.<br/></li></ul>",
+            "link_url": "",
+            "link_text": ""
           }
         },
         "accordion_HnKbr6": {
           "type": "accordion",
           "settings": {
             "heading": "How quickly will I see results?",
-            "text": "<p>Every individual may respond differently to specific wavelengths of lights and  results will depend on the goal you want to achieve.</p><p>Most users see a reduction of acne breakouts and redness quicker than they expect. Smoother lines, improved skin tone and firmness can take longer.</p><p>The day-to-day changes will be subtle, so be sure to take \"before and after\" pictures to document progress. The most important thing to remember is that results are cumulative, so consistent daily treatment is key.</p>"
+            "text": "<p>Every individual may respond differently to specific wavelengths of lights and  results will depend on the goal you want to achieve.</p><p>Most users see a reduction of acne breakouts and redness quicker than they expect. Smoother lines, improved skin tone and firmness can take longer.</p><p>The day-to-day changes will be subtle, so be sure to take \"before and after\" pictures to document progress. The most important thing to remember is that results are cumulative, so consistent daily treatment is key.</p>",
+            "link_url": "",
+            "link_text": ""
           }
         },
         "accordion_wdHAce": {
           "type": "accordion",
           "settings": {
             "heading": "Is it safe for all skin types?",
-            "text": "<p>It's crucial to note that skin types V and VI (on the Fitzpatrick Scale) are more sensitive for light therapy as they can absorb more light than other skin types. The reason is that skin type V and VI have higher levels of melanin in the skin. Melanin in the epidermis allows higher absorption of energy which increases the risk of adverse events from epidermal injury in people with skin type V and VI. This is why the FDA recommends caution for individuals with these skin types.</p><p>Based on our experience, numerous customers with skin types V and VI have successfully treated their skin with our Q-Rejuvalight Pro Facewear, reporting  positive results. </p><p>For customers with skin types V and VI, we highly recommend consulting with your dermatologist before using our Q-Rejuvalight Pro Facewear. This step is crucial as skin reactions can vary from person to person, and what works well for one individual may not be suitable for another.</p>"
+            "text": "<p>It's crucial to note that skin types V and VI (on the Fitzpatrick Scale) are more sensitive for light therapy as they can absorb more light than other skin types. The reason is that skin type V and VI have higher levels of melanin in the skin. Melanin in the epidermis allows higher absorption of energy which increases the risk of adverse events from epidermal injury in people with skin type V and VI. This is why the FDA recommends caution for individuals with these skin types.</p><p>Based on our experience, numerous customers with skin types V and VI have successfully treated their skin with our Q-Rejuvalight Pro Facewear, reporting  positive results. </p><p>For customers with skin types V and VI, we highly recommend consulting with your dermatologist before using our Q-Rejuvalight Pro Facewear. This step is crucial as skin reactions can vary from person to person, and what works well for one individual may not be suitable for another.</p>",
+            "link_url": "",
+            "link_text": ""
           }
         },
         "accordion_qHBEtT": {
           "type": "accordion",
           "settings": {
             "heading": "How often can I use the treatment?",
-            "text": "<p>You can use the mask daily. In fact, consistent daily use is recommended for best results.</p><p>Each session takes just 3 minutes, and the more regularly you use it, the more noticeable the improvements in skin tone, texture, and clarity over time.</p>"
+            "text": "<p>You can use the mask daily. In fact, consistent daily use is recommended for best results.</p><p>Each session takes just 3 minutes, and the more regularly you use it, the more noticeable the improvements in skin tone, texture, and clarity over time.</p>",
+            "link_url": "",
+            "link_text": ""
           }
         },
         "accordion_8zfMR9": {
           "type": "accordion",
           "settings": {
             "heading": "When is the best time to use this mask?",
-            "text": "<p>The Q-Rejuvalight Pro Facewear can be used day or night, ideally after cleaning and/or exfoliation.<br/><br/>After the treatment is complete, follow with your topical skincare products of  choice.</p>"
+            "text": "<p>The Q-Rejuvalight Pro Facewear can be used day or night, ideally after cleaning and/or exfoliation.<br/><br/>After the treatment is complete, follow with your topical skincare products of  choice.</p>",
+            "link_url": "",
+            "link_text": ""
           }
         },
         "accordion_fUkzzt": {
           "type": "accordion",
           "settings": {
             "heading": "Do I need to use eye protection?",
-            "text": "<p>The Q-Rejuvalight Pro has been tested and cleared for eye safety. It has  successfully passed the IEC62471 evaluation for eye safety test, which is used to determine whether a device's light output is safe for the eyes or not.</p><p>Regardless, we recommend closing your eyes and wearing protective eyewear during treatment. The light can be bright when powered on and some users may experience sensitivity, even when closing their eyes. <br/><br/>As part of our unwavering commitment to your safety, we decided to take the initiative to include FREE light blocking protective eyewear with our  Q-Rejuvalight Pro LED mask that works seamlessly during your treatment.</p>"
+            "text": "<p>The Q-Rejuvalight Pro has been tested and cleared for eye safety. It has  successfully passed the IEC62471 evaluation for eye safety test, which is used to determine whether a device's light output is safe for the eyes or not.</p><p>Regardless, we recommend closing your eyes and wearing protective eyewear during treatment. The light can be bright when powered on and some users may experience sensitivity, even when closing their eyes. <br/><br/>As part of our unwavering commitment to your safety, we decided to take the initiative to include FREE light blocking protective eyewear with our  Q-Rejuvalight Pro LED mask that works seamlessly during your treatment.</p>",
+            "link_url": "",
+            "link_text": ""
           }
         },
         "accordion_cGmM9A": {
           "type": "accordion",
           "settings": {
             "heading": "Does Q-Rejuvalight Pro come with a warranty?",
-            "text": "<p>Q-Rejuvalight Pro Facewear comes with one (1) year warranty covering any  manufacturer related problems resulting from everyday use of the product. However, this device is designed to last years! Proudly designed in Australia.</p>"
+            "text": "<p>Q-Rejuvalight Pro Facewear comes with one (1) year warranty covering any  manufacturer related problems resulting from everyday use of the product. However, this device is designed to last years! Proudly designed in Australia.</p>",
+            "link_url": "",
+            "link_text": ""
           }
         },
         "accordion_WPbiCY": {
           "type": "accordion",
           "settings": {
             "heading": "Is Q-Rejuvalight Pro FDA-cleared?",
-            "text": "<p>Yes! Our Q-Rejuvalight Pro LED mask is the world’s first customizable, FDA-cleared at-home LED mask that is proven to be an effective and safe treatment for acne, and aging skin issues. You may find more details on the FDA website (K230042).</p>"
+            "text": "<p>Yes! Our Q-Rejuvalight Pro LED mask is the world’s first customizable, FDA-cleared at-home LED mask that is proven to be an effective and safe treatment for acne, and aging skin issues. You may find more details on the FDA website (K230042).</p>",
+            "link_url": "",
+            "link_text": ""
           }
         }
       },

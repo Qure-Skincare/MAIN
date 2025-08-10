@@ -15,21 +15,29 @@
         <div class="faq_content">
             <div class="accordion accordion-flush" id="qure_faq-main">
                 {% for block in section.blocks %}
-                    {% if block.type == 'accordion' and block.settings.heading != blank and block.settings.text != blank %}
+                    {% if block.type == 'accordion' and block.settings.heading != blank %}
                         {% assign order = forloop.index %}
-                        <div class="accordion-item qure__accordion-item">
-                            <button class="accordion-button collapsed qure__accordion-header" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#qure_faq-{{ order }}" aria-expanded="false"
-                                aria-controls="qure_faq-{{ order }}">
-                                {{ block.settings.heading }}
-                            </button>
-                            <div id="qure_faq-{{ order }}" class="accordion-collapse collapse qure__accordion-content"
-                                data-bs-parent="#qure_faq-main">
-                                <div class="accordion-body">
-                                    {{ block.settings.text }}
-                                </div>
+                            <div class="accordion-item qure__accordion-item">
+                                {% if block.settings != blank %}
+                                    <button class="accordion-button collapsed qure__accordion-header" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#qure_faq-{{ order }}" aria-expanded="false"
+                                        aria-controls="qure_faq-{{ order }}">
+                                        {{ block.settings.heading }}
+                                    </button>
+                                {% endif %}
+                                <div id="qure_faq-{{ order }}" class="accordion-collapse collapse qure__accordion-content"
+                                    data-bs-parent="#qure_faq-main">
+                                    {% if block.settings.text != blank %}
+                                        {% assign link_tag = '<a href="' 
+                                            | append: block.settings.link_url 
+                                            | append: '">' 
+                                            | append: block.settings.link_text %}
+                                        <div class="accordion-body">
+                                            {{ block.settings.text | replace: '[link]', link_tag | replace: '[/link]', '</a>' }}
+                                        </div>
+                                    {% endif %}
+                                </div> 
                             </div>
-                    </div>
                     {% endif %}
                 {% endfor %} 
             </div>
@@ -84,6 +92,16 @@
                 "type": "richtext",
                 "id": "text",
                 "label": "t:common.text"
+            },
+            {
+                "type": "url",
+                "id": "link_url",
+                "label": "t:common.link-url"
+            },
+            {
+                "type": "text",
+                "id": "link_text",
+                "label": "t:common.link-text"
             }
         ]
     }

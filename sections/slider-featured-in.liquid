@@ -32,7 +32,7 @@
                   class="swiper qure__product-gallery tp-thumbnails-desktop qure__swiper-gallery-thumbnails qure__logo-slider"
                   data-section-id="tp-thumbnails-desktop" data-mobile="3" data-tablet="3" data-desktop="5"
                   data-autoplay="true" data-loop="false" data-spacing="40">
-                  <div class="swiper-wrapper">
+                  <div class="swiper-wrapper{% if section.blocks.size == 3 %} justify-content-md-center{% endif %}">
                     {% for block in section.blocks %}
                         {% if block.type == 'slider' %}
                           {% if block.settings.image != blank %}
@@ -56,10 +56,13 @@
       loadScriptOnce('slider-script', 'https://qureskincaredns-main.com/assets/js/slider-with-thumb.js');
    });
 </script>
+
+
 {% schema %}
 {
   "name": "t:sections.slider-featured-in.name",
   "settings": [
+ 
   ],
   "blocks": [
     {

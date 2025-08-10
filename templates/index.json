@@ -299,6 +299,7 @@
       ],
       "name": "t:sections.trusted-reviews.name",
       "settings": {
+        "background_color": "#ffffff",
         "heading": "Results you’ll see with your own eyes",
         "text_mobile": ""
       }
