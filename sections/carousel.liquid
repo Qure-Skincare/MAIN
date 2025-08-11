@@ -4,7 +4,7 @@
 
 
 <div class="qure__shipping  qure__section color-background overflow-hidden"
-   style="--section-padding-top:40px;--section-padding-bottom:40px; --section-padding-top-mob:30px;--section-padding-bottom-mob:30px;">
+   style="--section-padding-top:40px;--section-padding-bottom:40px; --section-padding-top-mob:20px;--section-padding-bottom-mob:20px;">
    <div class="container"
       style="--column-gap:100px; --column-gap-mobile:30px;--ctm-width:50px; --ctm-width-mob:30px;">
       <div class="row custom__grid d-none d-lg-flex">
@@ -28,7 +28,7 @@
       <div class="d-flex d-lg-none">
          <div class="d-flex qure_shipping-scroll">
             {% for block in section.blocks %}
-               {% if block.type == 'carousel' %}
+               {% if block.type == 'items' %}
                   <div class="qure_shipping-inner d-flex align-items-center gap-3 px-15">
                      {% if block.settings.image != blank %}
                         <div class="qure_shipping-img ctm-width">
