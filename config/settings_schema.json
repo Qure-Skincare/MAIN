@@ -1,10 +1,42 @@
 [
   {
     "name": "theme_info",
-    "theme_name": "Skeleton",
-    "theme_version": "0.1.0",
-    "theme_author": "Shopify",
+    "theme_name": "Qure",
+    "theme_version": "1.0.1",
+    "theme_author": "Pavel Iakushenkov",
     "theme_documentation_url": "https://help.shopify.com/manual/online-store/themes",
     "theme_support_url": "https://support.shopify.com/"
+  },
+  {
+    "name": "Cart drawer",
+    "settings": [
+      { "type": "header", "content": "Shipping" },
+      { "type": "text", "id": "shipping_title", "label": "Title" },
+      { "type": "image_picker", "id": "shipping_image", "label": "Image" },
+      { "type": "number", "id": "shipping_price", "label": "Price" },
+      { "type": "range", "id": "shipping_price_limit", "label": "Price limit", "min": 0, "max": 1000, "step": 10, "unit": "$", "default": 200 },
+
+      { "type": "header", "content": "Gift #1" },
+      { "type": "text", "id": "cart_gift1_title", "label": "Title" },
+      { "type": "product", "id": "cart_gift1_product", "label": "Product" },
+      { "type": "image_picker", "id": "cart_gift1_image", "label": "Image" },
+      { "type": "range", "id": "cart_gift1_price_limit", "label": "Price limit", "min": 0, "max": 1000, "step": 10, "unit": "$", "default": 200 },
+
+      { "type": "header", "content": "Gift #2" },
+      { "type": "text", "id": "cart_gift2_title", "label": "Title" },
+      { "type": "product", "id": "cart_gift2_product", "label": "Product" },
+      { "type": "image_picker", "id": "cart_gift2_image", "label": "Image" },
+      { "type": "range", "id": "cart_gift2_price_limit", "label": "Price limit", "min": 0, "max": 1000, "step": 10, "unit": "$", "default": 400 }
+    ]
+  },
+  {
+    "name": "Cart drawer upsells",
+    "settings": [
+      { "type": "product", "id": "cart_upsell1_product", "label": "Product #1" },
+      { "type": "product", "id": "cart_upsell2_product", "label": "Product #2" },
+      { "type": "product", "id": "cart_upsell3_product", "label": "Product #3" },
+      { "type": "product", "id": "cart_upsell4_product", "label": "Product #4" },
+      { "type": "product", "id": "cart_upsell5_product", "label": "Product #5" }
+    ]
   }
 ]

@@ -1,7 +1,7 @@
 {% doc %}
   Returns the cart item properties.
 
-  @param {string} item - An object value.
+  @param {object} item - An object value.
 
   @example
   {% include 'get-cart-item-data', item: '' %}
@@ -42,12 +42,34 @@
     {% assign cart_item_properties = item.properties %}
     {% assign cart_item_price = item.variant.price | times: item.quantity %}
     {% assign cart_item_compare_price = item.variant.compare_at_price | times: item.quantity %}
+
+
+
+    {% comment %} insurance item {% endcomment %}
+
+    {% if cart_item_title contains 'Shipping Insurance' %}
+      {% assign insurance_exists = true %}
+      {% assign summary_insurance_exists = true %}
+    {% endif %}
+
+
+
+    {% comment %} gift properties {% endcomment %}
+
+    {% if cart_item_properties['_required_validation'] %}
+      {% assign gift_exists = true %}
+      {% assign cart_item_compare_price = cart_item_price %}
+      {% assign cart_item_price = 0 %}
+    {% endif %}
+
+
+
+    {% comment %} item properties {% endcomment %}
     {% assign cart_item_sale_price = cart_item_price | money_without_trailing_zeros %}
 
     {% if cart_item_compare_price > 0 %}
         {% assign cart_item_before_price = cart_item_compare_price | money_without_trailing_zeros %}
     {% endif %}
-
 
 
     {% comment %} temporary variables {% endcomment %}
@@ -71,23 +93,6 @@
     {% if total_compare_price > total_price  %}
       {% assign summary_before_price = total_compare_price | money_without_trailing_zeros %}
       {% assign summary_saving_price = total_saving_price | money_without_trailing_zeros %}
-    {% endif %}
-
-
-
-    {% comment %} insurance item {% endcomment %}
-
-    {% if cart_item_title contains 'Shipping Insurance' %}
-      {% assign insurance_exists = true %}
-      {% assign summary_insurance_exists = true %}
-    {% endif %}
-
-
-
-    {% comment %} gift properties {% endcomment %}
-
-    {% if cart_item_properties['_required_validation'] %}
-      {% assign gift_exists = true %}
     {% endif %}
 
 {% endif %}

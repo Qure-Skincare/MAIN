@@ -21,57 +21,35 @@
       <div class="offcanvas-body p-0">
          <div class="cart-content-area d-flex justify-content-between flex-column">
             <div class="minicart-loop custom-scrollbar">
-               <div class="free_shpngBox">
-                  <div class="free-shipping-message mb-15 qure__cart-thres text-center fs-14">You’re $21 way from a FREE Silk Pillowcase (worth $79)</div>
-                  <div class="cart_shipping cart_threshold">
-                     <div class="progress-bar cart_bar_w">
-                        <div class="qure__freeshipping-icon active" style="--icon-pos:20%">
-                           <img src="https://qureskincaredns-main.com/sections/global/drawer/images/bar-check.svg" alt="" />
-                           <span class="d-block">$100</span>
-                        </div>
-                        <div class="qure__freeshipping-icon" style="--icon-pos:50%">
-                           <img src="https://qureskincaredns-main.com/sections/global/drawer/images/free-shipping.svg" alt="" />
-                           <span class="d-block">$100</span>
-                        </div>
-                        <span class="progress percent_shipping_bar" style="width: 40%;"></span>
+               {% include 'footer-cart-drawer-gift' %}
+               {% include 'footer-cart-drawer-bar' %}
 
-                        <div class="qure__freeshipping-icon" style="--icon-pos:80%"><img
-                              src="https://qureskincaredns-main.com/sections/global/drawer/images/pillow.svg" alt="" /><span class="d-block">$400</span>
-                        </div>
-                     </div>
-                  </div>
-               </div>
                {% if cart.item_count == 0 %}
                   <!-- Empty cart -->
                   <div class="drawer__cart-is-empty">
                      <div class="drawer__cart-empty-text">
-                        <h4>{{ 'cart.drawer.settings.empty-text' | t }}</h4>
-                        <p>{{ 'cart.drawer.settings.empty-subtext' | t }}</p>
+                        <h4>{{ 'cart.drawer.empty.header' | t }}</h4>
+                        <p>{{ 'cart.drawer.empty.text' | t }}</p>
                      </div>
                      <div class="empty-product">
                         <div class="empty-title dekstop-empty">
-                           <img src="https://qureskincaredns-main.com/sections/global/drawer/images/empty-cart.webp" alt="" />
-                           <h6 class="mb-0">Save up to 55% on our exclusive bundles</h6>
+                           <img src="{{ 'cart.drawer.empty.settings.image' | t }}" alt="image" />
+                           <h6 class="mb-0">{{ 'cart.drawer.empty.settings.header' | t }}</h6>
                         </div>
                         <div class="empty-main">
                            <div class="empty-content">
-                              <ul>
-                                 <li>Shop our devices & skincare at our best prices.</li>
-                                 <li>Target your skin concerns in one simple routine.</li>
-                                 <li>Get clinical results at home - no downtime.</li>
-                              </ul>
+                              {{ 'cart.drawer.empty.settings.content_html' | t }}
                            </div>
                         </div>
-                        <a class="btn btn--primary w-100 mt-18" href="/pages/microinfusion">Shop Bundles</a>
+                        <a class="btn btn--primary w-100 mt-18" href="{{ 'cart.drawer.empty.settings.button-url' | t }}">{{ 'cart.drawer.empty.settings.button-label' | t }}</a>
                         <div class="empty-star-txt">
                            <div class="product-star-txt">
                               <img src="https://qureskincaredns-main.com/assets/images/review-stars.svg" alt="" class="img-fluid">
-                              <span class="">“Even my esthetician is hooked!</strong>
+                              <span class="">{{ 'cart.drawer.empty.settings.text' | t }}</strong>
                            </div>
-                           <div class="text-center fs-14">And I can now visit beauty clinics less often.”</div>
+                           <div class="text-center fs-14">{{ 'cart.drawer.empty.settings.subtext' | t }}</div>
                         </div>
                      </div>
-
                   </div>
                   <!-- Empty cart end -->
                {% else %}
@@ -80,7 +58,7 @@
                      {% include 'footer-cart-drawer-item' %}
                   {% endfor %}
 
-                  {% render 'footer-cart-drawer-upsells' %}
+                  {% include 'footer-cart-drawer-upsells' %}
                {% endif %}
             </div>
             {% if cart.item_count > 0 %}
@@ -92,14 +70,13 @@
 </div>
 <!-- drawer cart end -->
 
-{% render 'footer-cart-drawer-gift' %}
 
 
 <script>
    const template = '{{ template }}';
 </script>
 <script src="{{ 'morphdom-umd.min.js' | asset_url }}" defer="defer"></script>
-<script src="{{ 'cart.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'footer-cart-drawer.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'cart-counter.js' | asset_url }}" defer="defer"></script>
 
 
@@ -108,14 +85,6 @@
   "name": "t:sections.footer-cart-drawer.name",
   "settings": [
 
-  ],
-  "blocks": [
-
-  ],
-  "presets": [
-    {
-      "name": "t:sections.footer-cart-drawer.name"
-    }
   ]
 }
 {% endschema %}

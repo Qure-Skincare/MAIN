@@ -7,45 +7,80 @@
   {% include 'get-cart-global-data' %}
 {% enddoc %}
 
-{% assign totalPrice = cart.total_price | divided_by: 100 %}
+{% assign global_total_price = cart.total_price %}
+{% assign global_total_price_devided = global_total_price | divided_by: 100 %}
 
 {% comment %} insurance settings {% endcomment %}
 
-{% if totalPrice > 0 and totalPrice <= 75 %}
+{% if global_total_price_devided > 0 and global_total_price_devided <= 75 %}
     {% assign insurancePrice = 150 %}
     {% assign insuranceId = 43291834220783 %}
-{% elsif totalPrice >= 76 and totalPrice <= 100 %}
+{% elsif global_total_price_devided >= 76 and global_total_price_devided <= 100 %}
     {% assign insurancePrice = 150 %}
     {% assign insuranceId = 43326164566255 %}
-{% elsif totalPrice >= 101 and totalPrice <= 200 %}
+{% elsif global_total_price_devided >= 101 and global_total_price_devided <= 200 %}
     {% assign insurancePrice = 280 %}
     {% assign insuranceId = 43326164599023 %}
-{% elsif totalPrice >= 201 and totalPrice <= 250 %}
+{% elsif global_total_price_devided >= 201 and global_total_price_devided <= 250 %}
     {% assign insurancePrice = 325 %}
     {% assign insuranceId = 43326164631791 %}
-{% elsif totalPrice >= 251 and totalPrice <= 300 %}
+{% elsif global_total_price_devided >= 251 and global_total_price_devided <= 300 %}
     {% assign insurancePrice = 390 %}
     {% assign insuranceId = 43326164664559 %}
-{% elsif totalPrice >= 301 and totalPrice <= 400 %}
+{% elsif global_total_price_devided >= 301 and global_total_price_devided <= 400 %}
     {% assign insurancePrice = 420 %}
     {% assign insuranceId = 43326164697327 %}
-{% elsif totalPrice >= 401 and totalPrice <= 1000 %}
+{% elsif global_total_price_devided >= 401 and global_total_price_devided <= 1000 %}
     {% assign insurancePrice = 420 %}
     {% assign insuranceId = 43326164697327 %}
-{% elsif totalPrice >= 1001 %}
+{% elsif global_total_price_devided >= 1001 %}
     {% assign insurancePrice = 1800 %}
     {% assign insuranceId = 43326855282927 %}
 {% endif %}
 
-{% assign insurance_price = insurancePrice | money_without_trailing_zeros %}
-{% assign insurance_variant_id = insuranceId %}
+{% assign global_insurance_price = insurancePrice | money_without_trailing_zeros %}
+{% assign global_insurance_variant_id = insuranceId %}
 
 
 
 {% comment %} shipping settings {% endcomment %}
 
-{% assign shippingPrice = 1000 | money_without_trailing_zeros %}
+{% assign global_shipping_price = settings.shipping_price | times: 100 | money_without_trailing_zeros %}
 
-{% if totalPrice > 100 %}
-    {% assign shippingPrice = null %}
+{% if settings.shipping_price_limit > 0 and global_total_price_devided > settings.shipping_price_limit %}
+    {% assign global_shipping_price = null %}
+{% endif %}
+
+
+
+{% comment %} bar settings {% endcomment %}
+ 
+
+
+{% if global_total_price_devided < 100 %}
+    {% assign global_add_more = settings.shipping_price_limit | times: 100 | minus: global_total_price | money_without_trailing_zeros %}
+    {% assign global_product_title = settings.shipping_title %}
+    {% assign global_product_price = global_shipping_price %}
+{% elsif global_total_price_devided >= 101 and global_total_price_devided <= 200 %}
+    {% assign global_add_more = settings.cart_gift1_price_limit | times: 100 | minus: global_total_price | money_without_trailing_zeros %}
+    {% assign global_product_title = settings.cart_gift1_title %}
+    {% assign global_product_price = all_products[settings.cart_gift1_product].price | money_without_trailing_zeros %}
+{% elsif global_total_price_devided >= 201 and global_total_price_devided <= 400 %}
+    {% assign global_add_more = settings.cart_gift2_price_limit | times: 100 | minus: global_total_price | money_without_trailing_zeros %}
+    {% assign global_product_title = settings.cart_gift2_title %}
+    {% assign global_product_price = all_products[settings.cart_gift2_price_limit].price | money_without_trailing_zeros %}
+{% endif %}
+
+{% assign global_product_percent = 0 %}
+
+{% if global_total_price_devided <= 100 %}
+  {% assign global_product_percent = global_total_price_devided | times: 20 | divided_by: 100 %}
+{% elsif global_total_price_devided <= 200 %}
+  {% assign extra = global_total_price_devided | minus: 100 %}
+  {% assign global_product_percent = extra | times: 30 | divided_by: 100 | plus: 20 %}
+{% elsif global_total_price_devided <= 400 %}
+  {% assign extra = global_total_price_devided | minus: 200 %}
+  {% assign global_product_percent = extra | times: 30 | divided_by: 200 | plus: 50 %}
+{% else %}
+  {% assign global_product_percent = 100 %}
 {% endif %}

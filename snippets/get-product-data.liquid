@@ -15,6 +15,7 @@
     {% assign product_id = product.id %}
     {% assign product_title = product.title %}
     {% assign product_description = product.description %}
+    {% assign product_featured_image = product.featured_image %}
     {% assign product_variant_id = product.variants.first.id %}
     {% assign product_price_divided = product.price | divided_by: 4 | money_without_trailing_zeros %}
     {% assign product_discount = product.price | times: 1.0 | divided_by: product.compare_at_price | minus: 1 | abs | times: 100 | ceil %}

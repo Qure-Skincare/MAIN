@@ -166,9 +166,9 @@
         "drawer": {
             "settings": {
                 "notification_html": "<strong>IN HIGH DEMAND</strong> | Items reserved for:",
+                "bar_header_html": "You’re {{ add_more }} way from <strong>a FREE {{ product_title }}</strong> (worth {{ product_price }})",
+                "bar_header_completed_html": "Congrats! You've unlocked your <strong>Free Gifts!</strong>",
                 "header": "Your Cart",
-                "empty-text": "Your cart is empty..",
-                "empty-subtext": "Fill it with amazing skincare.",
                 "item-text-2days": "In stock. Shipped within 2 days",
                 "savings": "Savings",
                 "shipping": "Shipping",
@@ -176,7 +176,24 @@
                 "subtotal": "Subtotal",
                 "insurance-text": "Protect your order from lost, damage and theft",
                 "guarantee-text": "Backed by our 30-Day Money-Back Guarantee",
-                "checkout": "CHECKOUT"
+                "checkout": "CHECKOUT",
+            },
+            "empty": {
+                "header": "Your cart is empty..",
+                "text": "Fill it with amazing skincare.",
+                "settings": {
+                    "header": "Save up to 55% on our exclusive bundles",
+                    "image": "https://qureskincaredns-main.com/sections/global/drawer/images/empty-cart.webp",
+                    "content_html": "<ul><li>Shop our devices & skincare at our best prices.</li><li>Target your skin concerns in one simple routine.</li><li>Get clinical results at home - no downtime.</li></ul>",
+                    "button-label": "Shop Bundles",
+                    "button-url": "/pages/microinfusion",
+                    "text": "Even my esthetician is hooked!",
+                    "subtext": "And I can now visit beauty clinics less often."
+                }
+            },
+            "upsell": {
+                "header": "Get The Best Results With",
+                "button-label": "Add"
             }
         }
     },

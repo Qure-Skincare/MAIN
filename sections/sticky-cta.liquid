@@ -11,7 +11,7 @@
                 {% if section.settings.heading != blank %}
                   <h3 class="fs-20 m-0 d-none d-md-block">{{ section.settings.heading }}</h3>
                 {% endif %}
-                <form method="post" action="/cart/add" enctype="multipart/form-data">
+                <form method="post" action="/cart/add" enctype="multipart/form-data" class="w-100 mw" style="--mw:400px;">
                   <button type="submit" class="btn btn--primary">{{ 'product.settings.buy-button-label' | t }}</button>
                   <input type="hidden" name="quantity" id="quantity" value="1">
                   <input type="hidden" name="id" value="{{ product_variant_id }}">

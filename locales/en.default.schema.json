@@ -57,7 +57,10 @@
         "bundle": "Bundle",
         "wistia-url": "Wistia URL",
         "youtube-url": "YouTube URL",
-        "list": "List"
+        "list": "List",
+        "gift": "Gift",
+        "product": "Product",
+        "price_limit": "Price limit"
     },
     "blocks": {
         "block-card": {

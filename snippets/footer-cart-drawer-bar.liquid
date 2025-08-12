@@ -1,0 +1,57 @@
+
+{% if settings.cart_gift1_price_limit > 0 or settings.cart_gift2_price_limit > 0 %}
+    <div class="free_shpngBox">
+        <div class="free-shipping-message mb-15 qure__cart-thres text-center fs-14">
+            {% if global_product_percent == 100 %}
+                {{ 'cart.drawer.settings.bar_header_completed_html' | t }}
+            {% else %}
+                {{ 'cart.drawer.settings.bar_header_html' | t: add_more: global_add_more, product_title: global_product_title, product_price: global_product_price }}
+            {% endif %}
+        </div>
+        <div class="cart_shipping cart_threshold">
+            <div class="progress-bar cart_bar_w">
+
+                {% if settings.shipping_price_limit > 0 %}
+                    <div class="qure__freeshipping-icon" style="--icon-pos:20%">
+
+                        {% if global_total_price_devided >= settings.shipping_price_limit %}
+                            <img src="https://qureskincaredns-main.com/sections/global/drawer/images/completed.svg" alt="shipping" />
+                        {% else %}
+                            <img src="{{ settings.shipping_image | image_url }}" alt="shipping" />
+                        {% endif %}
+
+                        <span class="d-block">{{ settings.shipping_price_limit | times: 100 | money_without_trailing_zeros }}</span>
+                    </div>
+                {% endif %}
+
+                {% if settings.cart_gift1_price_limit > 0 %}
+                    <div class="qure__freeshipping-icon" style="--icon-pos:{% if settings.cart_gift2_price_limit > 0 %}50{% else %}80{% endif %}%">
+
+                        {% if global_total_price_devided >= settings.cart_gift1_price_limit %}
+                            <img src="https://qureskincaredns-main.com/sections/global/drawer/images/completed.svg" alt="shipping" />
+                        {% else %}
+                            <img src="{{ settings.cart_gift1_image | image_url }}" alt="{{ settings.cart_gift1_title | escape }}" />
+                        {% endif %}
+
+                        <span class="d-block">{{ settings.cart_gift1_price_limit | times: 100 | money_without_trailing_zeros }}</span>
+                    </div>
+                {% endif %}
+
+                {% if settings.cart_gift2_price_limit > 0 %}
+                    <div class="qure__freeshipping-icon" style="--icon-pos:80%">
+
+                        {% if global_total_price_devided >= settings.cart_gift2_price_limit %}
+                            <img src="https://qureskincaredns-main.com/sections/global/drawer/images/completed.svg" alt="shipping" />
+                        {% else %}
+                            <img src="{{ settings.cart_gift2_image | image_url }}" alt="{{ settings.cart_gift2_title | escape }}" />
+                        {% endif %}
+
+                        <span class="d-block">{{ settings.cart_gift2_price_limit | times: 100 | money_without_trailing_zeros }}</span>
+                    </div>
+                {% endif %}
+
+                <span class="progress percent_shipping_bar" style="width: {{ global_product_percent }}%;"></span>
+            </div>
+        </div>
+    </div>
+{% endif %}
