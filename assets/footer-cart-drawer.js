@@ -42,6 +42,12 @@ const reloadDrawer = (array) => {
         //         __reloadInsurance(cart)
         //     }
         // }
+
+        //reload upsell carousel
+        document.querySelectorAll('slide-carousel').forEach((el) => {
+            el.QureSlideCarousel();
+        });
+
     })
     .catch(console.error);
 }
