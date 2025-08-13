@@ -7,8 +7,8 @@
     style="--section-padding-top: 80px; --section-padding-bottom: 80px; --section-padding-top-mob: 40px; --section-padding-bottom-mob: 40px;"
     id="steps">
     <div class="container">
-        {% if section.settings.heading != blank %}
-            <h2 class="qure__section-heading mb-30 d-block d-md-none">{{ section.settings.heading }}</h2>
+        {% if section.settings.heading_mobile != blank %}
+            <h2 class="qure__section-heading mb-30 d-block d-md-none">{{ section.settings.heading_mobile }}</h2>
         {% endif %}
         <div class="row custom__grid align-items-center" style="--column-gap:60px; --column-gap-mobile:30px;">
             <div class="col-md-4 col-lg-4 custom__block">
@@ -61,6 +61,11 @@
                         {% endif %}
                     {% endfor %}
                 </div>
+                {% if section.settings.button_label != blank and section.settings.button_url != blank %}
+                    <div class="text-center mt-30 mt-lg-60">
+                  <a href="{{ section.settings.button_url }}" class="btn btn--primary text-uppercase">{{ section.settings.button_label }} </a>
+               </div>
+                {% endif %}
             </div>
         </div>
     </div>
@@ -81,9 +86,24 @@
       "label": "t:common.header"
     },
     {
+        "type": "text",
+        "id": "heading_mobile",
+        "label": "t:common.header-mobile"
+    },
+    {
       "type": "text",
       "id": "wistia_url",
       "label": "t:common.wistia-url"
+    },
+    {
+        "type": "text",
+        "id": "button_label",
+        "label": "t:common.button-label"
+    },
+    {
+        "type": "url",
+        "id": "button_url",
+        "label": "t:common.button-url"
     }
   ],
   "blocks": [

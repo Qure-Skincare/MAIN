@@ -79,6 +79,12 @@
         <div class="qure-swiper-button-next qure-swiper-arrow trusted-slider-arrow-right"><i class="fa-regular fa-angle-right"></i></div>
       </div>
     </div>
+    {% if section.settings.button_label != blank and section.settings.button_url != blank %}
+      <div class="text-center pt-md-50 pt-30">
+        <a href="{{ section.settings.button_url }}" class="text-uppercase btn btn--primary">{{ section.settings.button_label }} </a>
+      </div>
+    {% endif %}
+    
   </div>
 </div>
 <script>
@@ -104,6 +110,16 @@
       "type": "richtext",
       "id": "text_mobile",
       "label": "t:common.text-mobile"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "t:common.button-label"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "t:common.button-url"
     }
   ],
   "blocks": [

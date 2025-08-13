@@ -98,7 +98,9 @@
       "name": "t:sections.led-benefits.name",
       "settings": {
         "background_color": "#ffffff",
-        "heading": "5 reasons why everyone is using the Qure Micro-Infusion System"
+        "heading": "5 reasons why everyone is using the Qure Micro-Infusion System",
+        "button_label": "",
+        "button_url": ""
       }
     },
     "banner_with_text_eeHkRc": {
@@ -107,6 +109,9 @@
       "settings": {
         "heading": "Qure’s Micro-Infusion goes where your skin cream can’t…",
         "text": "<p>Its tiny, almost painless, 24K gold plated 0.5mm microneedles penetrate beyond the skin’s surface to gently create controlled trauma in your skin which help <strong>boost the feel of firmness, smooth texture and reduce the look of fine lines and wrinkles.</strong></p><p>The invisible micro-channels then infuse science-backed serums into your skin that are tailored to <strong>treat your specific skin concerns,</strong> increasing absorption and delivering powerful active ingredients exactly where they’re needed.</p>",
+        "text_mobile": "",
+        "image_position": "left",
+        "sub_text": "",
         "button_label": "Shop Now",
         "button_url": "#buy_box",
         "wistia_url": "a1pykz2tp0"
@@ -358,7 +363,9 @@
       "settings": {
         "background_color": "",
         "heading": "Results you’ll see with your own eyes",
-        "text_mobile": ""
+        "text_mobile": "",
+        "button_label": "",
+        "button_url": ""
       }
     },
     "trusted_recommended_xrbyXH": {
@@ -716,15 +723,10 @@
       "name": "t:sections.how-to-use.name",
       "settings": {
         "heading": "See how quick and easy it is to use",
-        "wistia_url": "8ymvdqzx92"
-      }
-    },
-    "product_compare_nHrXdD": {
-      "type": "product-compare",
-      "name": "t:sections.product-compare.name",
-      "settings": {
-        "heading": "",
-        "text": ""
+        "heading_mobile": "",
+        "wistia_url": "8ymvdqzx92",
+        "button_label": "",
+        "button_url": ""
       }
     },
     "compare_yQAfAr": {
@@ -811,7 +813,9 @@
       "type": "stock-alert",
       "name": "t:sections.stock-alert.name",
       "settings": {
-        "text": "<p>Available until stocks last!</p>"
+        "text": "<p>Available until stocks last!</p>",
+        "text_mobile": "",
+        "style_color": "green"
       }
     },
     "choose_treatment_Nw8gQW": {
@@ -921,8 +925,8 @@
       "settings": {
         "heading": "Have questions?",
         "text": "Don’t see your question?",
-        "button": "Ask us",
-        "url": "#"
+        "button_label": "Ask us",
+        "button_url": ""
       }
     },
     "sticky_cta_KCAhq3": {
@@ -931,9 +935,13 @@
       "settings": {
         "heading": "Micro-Infusion Facial System",
         "text": "1,893 purchased in last 48 hours",
-        "button_label": "CHOOSE YOUR SUPPLY",
-        "button_url": "#buy_box"
+        "button_label": "CHOOSE YOUR SUPPLY"
       }
+    },
+    "device_comparison_1_HLNK7P": {
+      "type": "device-comparison-1",
+      "name": "t:sections.device-comparison-1.name",
+      "settings": {}
     }
   },
   "order": [
@@ -950,7 +958,7 @@
     "video_review_slider_rEn93k",
     "detailed_guide_YccyW7",
     "how_to_use_AXUgT4",
-    "product_compare_nHrXdD",
+    "device_comparison_1_HLNK7P",
     "compare_yQAfAr",
     "stock_alert_9g7rUD",
     "choose_treatment_Nw8gQW",

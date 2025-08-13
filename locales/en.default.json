@@ -42,7 +42,8 @@
             "badge_text": "Dermatologist Approved",
     },
         "video-slider":{
-                "text": "Watch: How To Install"
+                "text": "Watch: How To Install",
+                "play_button": "https://qureskincaredns-main.com/assets/images/play_button.svg"
     },
         "serum-selection":{
                 "or_text": "or",

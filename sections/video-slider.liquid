@@ -30,14 +30,14 @@
                                  data-video-id="{{ block.settings.url }}" class="filter-card-item filter-card-video">
                            {% endif %}
                            <div class="filter-card-video-icon align-items-end px-20 py-10 d-none">
-                           {% if block.settings.image != blank %}
                               <div class="align-items-center d-flex justify-content-between w-100">
-                                    <div class="text-white fs-20">{{ 'sections.video-slider.text' | t }}</div>
-                                       <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}">
-                                    </div>
+                                 <div class="text-white fs-20">{{ 'sections.video-slider.text' | t }}</div>
+                                 <img src="{{ 'sections.video-slider.play_button' | t }}" alt="{{ 'sections.video-slider.play_button.alt' | t|  escape }}">
                               </div>
-                              <img src="{{ block.settings.image | image_url}}" alt="{{ block.settings.image.alt | escape }}" class="img-fluid" />
-                           {% endif %}
+                           </div>
+                              {% if block.settings.image != blank %}
+                                 <img src="{{ block.settings.image | image_url}}" alt="{{ block.settings.image.alt | escape }}" class="img-fluid" />
+                              {% endif %}
                            </a>
                         {% endif %}
                         <div class="trusted_video_content d-flex flex-column justify-content-between gap-4 p-24">
