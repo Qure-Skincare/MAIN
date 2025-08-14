@@ -44,7 +44,11 @@
                 <path d="M7.0455 3.59375L4.233 6.40625L2.95459 5.12784" stroke="#212428"
                 stroke-width="0.625" stroke-linecap="round" stroke-linejoin="round"></path>
             </svg>
-            <span class="shp_quote">{{ 'cart.drawer.settings.item-text-2days' | t }}</span>
+            {% if cart_item_selling_plan_name != null %}
+                <span class="shp_quote">{{ cart_item_selling_plan_name }}</span>
+            {% else %}
+                <span class="shp_quote">{{ 'cart.drawer.settings.item-text-2days' | t }}</span>
+            {% endif %}
         </div>
     </div>
     <div class="product-footer d-flex align-items-center justify-content-between">

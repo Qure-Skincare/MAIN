@@ -206,6 +206,39 @@ const __reloadInsurance = (cart) => {
     }
 };
 
+const addToCartJson = (input, insurance = undefined, gift = undefined) => {
+    return fetch((window.Shopify?.routes?.root || '/') + 'cart/add.js', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ items: input })
+    })
+    .then(response => response.json())
+    .then((addedItem) => {
+        return getCartState().then(cart => {
+            const eventDetail = {
+                cart: cart,
+                source: 'addToCart'
+            };
+
+            if (typeof insurance !== 'undefined') {
+                eventDetail.insurance = insurance;
+            }
+
+            if (typeof gift !== 'undefined') {
+                eventDetail.gift = gift;
+            }
+
+            const event = new CustomEvent('cart.requestComplete', { detail: eventDetail });
+            document.dispatchEvent(event);
+            //console.log('The product was added to the cart:', addedItem);
+            return cart;
+        });
+    })
+    .catch((error) => {
+        console.error('Error cart adding:', error);
+    });
+};
+
 const addToCart = (input, insurance = undefined, gift = undefined) => {
     return fetch((window.Shopify?.routes?.root || '/') + 'cart/add.js', {
         method: 'POST',

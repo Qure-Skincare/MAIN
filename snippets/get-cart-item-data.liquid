@@ -26,6 +26,8 @@
     {% assign cart_item_before_price = null %}
     {% assign insurance_exists = null %}
     {% assign gift_exists = null %}
+    {% assign cart_item_selling_plan = null %}
+    {% assign cart_item_selling_plan_name = null %}
 
 
 
@@ -42,7 +44,9 @@
     {% assign cart_item_properties = item.properties %}
     {% assign cart_item_price = item.variant.price | times: item.quantity %}
     {% assign cart_item_compare_price = item.variant.compare_at_price | times: item.quantity %}
-
+    {% assign cart_item_selling_plan = item.selling_plan_allocation %}
+    {% assign cart_item_selling_plan_name = item.selling_plan_allocation.selling_plan.name %}
+    
 
 
     {% comment %} insurance item {% endcomment %}
@@ -65,10 +69,23 @@
 
 
     {% comment %} item properties {% endcomment %}
+
     {% assign cart_item_sale_price = cart_item_price | money_without_trailing_zeros %}
 
     {% if cart_item_compare_price > 0 %}
         {% assign cart_item_before_price = cart_item_compare_price | money_without_trailing_zeros %}
+    {% endif %}
+
+
+    {% comment %} selling plan properties  {% endcomment %}
+
+    {% if cart_item_selling_plan != blank %}
+        {% if cart_item_selling_plan.price == 0 %}
+          {% assign cart_item_compare_price = cart_item_selling_plan.compare_at_price %}
+          {% assign cart_item_before_price = cart_item_selling_plan.compare_at_price | money_without_trailing_zeros %}
+          {% assign cart_item_price = 0 %}
+          {% assign cart_item_sale_price = 0 %}
+        {% endif %}
     {% endif %}
 
 

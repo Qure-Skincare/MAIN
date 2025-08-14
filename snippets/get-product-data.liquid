@@ -7,6 +7,7 @@
   {% include 'get-product-data', product_handle: 'micro-infusion-6-month-bundle-for-wrinkles' %}
 {% enddoc %}
 
+
 {% if product_handle != blank %}
     {% assign product = all_products[product_handle] %}
 {% endif %}
@@ -20,10 +21,42 @@
     {% assign product_price_divided = product.price | divided_by: 4 | money_without_trailing_zeros %}
     {% assign product_discount = product.price | times: 1.0 | divided_by: product.compare_at_price | minus: 1 | abs | times: 100 | ceil %}
     {% assign product_title_tag = product.title | strip_newlines | strip | replace: ' ', '' | replace: ',', '_' | downcase %}
-    {% assign product_price = product.price | money_without_trailing_zeros %}
-    {% assign product_price_compare = product.compare_at_price | money_without_trailing_zeros %}
+    {% assign product_price_original = product.price %}
+    {% assign product_price = product_price_original | money_without_trailing_zeros %}
+    {% assign product_price_compare_original = product.compare_at_price %}
+    {% assign product_price_compare = product_price_compare_original | money_without_trailing_zeros %}
     {% assign product_sale_price = product_price %}
     {% assign product_before_price = product_price_compare %}
+    {% assign product_variants = product.variants %}
+
+
+    <script>
+      window.get_products_data = window.get_products_data || {};
+      window.get_products_data["{{ product.handle }}"] = {
+        id: {{ product_id | json }},
+        title: {{ product_title | json }},
+        description: {{ product_description | strip_newlines | json }},
+        featured_image: {{ product_featured_image | img_url: '800x' | prepend: 'https:' | json }},
+        variant_id: {{ product_variant_id | json }},
+        price_divided: '{{ product_price_divided | replace: ',', '.' }}',
+        discount: '{{ product_discount }}',
+        title_tag: {{ product_title_tag | json }},
+        price_original: {{ product_price_original | default: 0 }},
+        price: '{{ product_price | replace: ',', '.' }}',
+        compare_at_price_original: {{ product_price_compare_original | default: 0 }},
+        compare_at_price: '{{ product_price_compare | replace: ',', '.' }}',
+        sale_price: '{{ product_sale_price | replace: ',', '.' }}',
+        before_price: '{{ product_before_price | replace: ',', '.' }}',
+        variants: {
+          {% if product.variants.size > 0 %}
+            {% for variant in product_variants %}
+              {{ variant.title | json }}: {{ variant.id | json }}{% unless forloop.last %},{% endunless %}
+            {% endfor %}
+          {% endif %}
+        }
+      };
+    </script>
+
 {% endif %}
 
 <!-- product_url [https://admin.shopify.com/store/qure-skincare/products/{{ product.id }}] -->

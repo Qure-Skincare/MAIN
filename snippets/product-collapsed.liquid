@@ -2,19 +2,27 @@
   Renders a collapsed section for the product template
 
   @param {object} - A product object.
+  @param {object} - A page object.
+  @param {string} class - A string value.
 
   @example
-  {% render 'product-bundle-collapsed' product: product %}
+  {% render 'product-bundle-collapsed' product: product, page: page, class: '' %}
 {% enddoc %}
 
-<div class="accordion accordion-flush mt-15 tp-product-accordion" id="tp-product-qure">
+<div class="accordion accordion-flush {{ class }}" id="tp-product-qure">
     {% if product.metafields.custom.what_s_included != blank %}
         {% render 'product-collapsed-item' input: product.metafields.custom.key_benefits, index: 'first', title: 'Key Benefits' %}
+    {% elsif page.metafields.custom.what_s_included != blank %}
+        {% render 'product-collapsed-item' input: page.metafields.custom.key_benefits, index: 'first', title: 'Key Benefits' %}
     {% endif %}
     {% if product.metafields.custom.how_it_works != blank %}
         {% render 'product-collapsed-item' input: product.metafields.custom.how_it_works, index: 'second', title: 'How It Works' %}
+    {% elsif page.metafields.custom.how_it_works != blank %}
+        {% render 'product-collapsed-item' input: page.metafields.custom.how_it_works, index: 'second', title: 'How It Works' %}
     {% endif %}
     {% if product.metafields.custom.key_benefits != blank %}
         {% render 'product-collapsed-item' input: product.metafields.custom.what_s_included, index: 'third', title: 'What’s Included' %}
+    {% elsif page.metafields.custom.key_benefits != blank %}
+        {% render 'product-collapsed-item' input: page.metafields.custom.what_s_included, index: 'third', title: 'What’s Included' %}
     {% endif %}
 </div>

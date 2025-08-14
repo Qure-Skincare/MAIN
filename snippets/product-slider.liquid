@@ -2,19 +2,22 @@
   Renders a product slider section for the product template.
 
   @param {object} - A product object.
+  @param {object} - A page object.
   @param {string} class - A string value.
 
   @example
-  {% render 'product-slider', product: product, class: 'd-block d-lg-none mb-30' %}
+  {% render 'product-slider', product: product, page: page, class: '' %}
 {% enddoc %}
 
 
-<slide-with-thumbs class="tp-product-gallery qure__swiper-wrapper {{ class }}">
+<slide-with-thumbs class="qure__swiper-wrapper {{ class }}">
     <!-- Galler start-->
     <div class="swiper qure__product-gallery qure__swiper-gallery" data-section-id="tp-gallery-desktop" data-mobile="3" data-tablet="3" data-desktop="4" data-autoplay="false" data-loop="false" data-spacing="0">
         <div class="swiper-wrapper" style="--perload-gap: 10px" data-nav-thumb>
             {% if product.metafields.custom.carousel_media.value != blank %}
                 {% render 'product-media-carousel', product_media_carousel: product.metafields.custom.carousel_media.value, classname: 'slide-image', size: '720x' %}
+            {% elsif page.metafields.custom.carousel_media.value != blank %}
+                {% render 'product-media-carousel', product_media_carousel: page.metafields.custom.carousel_media.value, classname: 'slide-image', size: '720x' %}
             {% else %}
                 {% render 'product-media', product_media: product.media, classname: 'slide-image', size: '720x' %}
             {% endif %}
@@ -28,6 +31,8 @@
             <div class="swiper-wrapper">
                 {% if product.metafields.custom.carousel_media.value != blank %}
                     {% render 'product-media-carousel', product_media_carousel: product.metafields.custom.carousel_media.value, classname: 'slide-thumbnail', size: '240x' %}
+                {% elsif page.metafields.custom.carousel_media.value != blank %}
+                    {% render 'product-media-carousel', product_media_carousel: page.metafields.custom.carousel_media.value, classname: 'slide-thumbnail', size: '240x' %}
                 {% else %}
                     {% render 'product-media', product_media: product.media, classname: 'slide-thumbnail', size: '240x' %}
                 {% endif %}

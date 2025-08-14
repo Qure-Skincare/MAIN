@@ -12,7 +12,7 @@
             <div class="col-lg-6 custom__block">
                 <div class="qure-product-details">
 
-                    {% render 'product-slider', product: product, class: 'd-block d-lg-none mb-30' %}
+                    {% render 'product-slider', product: product, page: blank, class: 'tp-product-gallery d-block d-lg-none mb-30' %}
                     {% render 'product-rating', product: product %}
 
                     {% if section.settings.seo_heading != blank %}
@@ -37,10 +37,10 @@
                 </div>
             </div>
             <div class="col-lg-6 custom__block">
-                {% render 'product-slider', product: product, class: 'd-none d-lg-block' %}
+                {% render 'product-slider', product: product, page: blank, class: 'tp-product-gallery d-none d-lg-block' %}
                 {% render 'product-cross-sell', product: product %}
                 {% render 'product-benefits-list' %}
-                {% render 'product-collapsed', product: product %}
+                {% render 'product-collapsed', product: product, page: blank, class: 'mt-15 tp-product-accordion' %}
                 {% render 'product-jumpto', section: section %}
             </div>
 

@@ -72,7 +72,7 @@
                             </div>
                             {% if block.settings.button != blank %}
                                 <div class="qure__product-action-inner mt-30 mt-md-40 mb-10 mx-10">
-                                    <button type="submit" class="add-cart-button product-form__submit btn btn--primary w-100">{{ block.settings.button }}</button>
+                                    <a href="{{ block.settings.button-url }}" class="add-cart-button product-form__submit btn btn--primary w-100">{{ block.settings.button }}</a>
                                 </div>
                             {% endif %}
                             <div class="d-flex flex-wrap align-items-center justify-content-center col-gap"
@@ -183,6 +183,11 @@
                 "id": "button",
                 "label": "t:common.button-label",
                 "default": "Claim Offer Now"
+            },
+            {
+                "type": "url",
+                "id": "button-url",
+                "label": "t:common.button-url"
             },
             {
                 "type": "richtext",

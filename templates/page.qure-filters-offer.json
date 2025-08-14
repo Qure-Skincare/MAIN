@@ -86,7 +86,7 @@
         "heading": "Clean Water, Clearer Skin, Healthier Hair",
         "text": "<p>Your water is filled with hidden irritants and chemicals that damage your skin and hair daily.</p><p>The Qure Filter Bundle removes these at the source without adding any steps to your routine.</p>",
         "button_label": "Buy One + Get One FREE",
-        "button_url": "#",
+        "button_url": "#buy-form",
         "rating_text": "<p><strong>4.8</strong>/5 Rated by Customers</p>",
         "rating_image": "shopify://shop_images/cyan_blue_rating.svg"
       }
@@ -471,8 +471,8 @@
         "video_url": ""
       }
     },
-    "main": {
-      "type": "page-qure-filters-offer",
+    "form": {
+      "type": "page-qure-filters-form",
       "settings": {}
     },
     "video_review_slider_yBjMTk": {
@@ -666,6 +666,7 @@
             "scale_text": "<p>60% Sold</p>",
             "scale_value": "60%",
             "button": "Claim Offer Now",
+            "button-url": "#buy-form",
             "review_image_text": "<p>Dermatologist Reviewed</p>",
             "review_image": "shopify://shop_images/dermatologist_13b5a446-fc57-44bb-afea-a6d6bda4cc85.svg",
             "shipping_image_text": "<p>Free Shipping Over &lcub;$dyn&rcub;</p>",
@@ -759,7 +760,7 @@
     "improve_skin_hydration_UDwAJ8",
     "trusted_reviews_b9NgPL",
     "trusted_recommended_awbjc8",
-    "main",
+    "form",
     "video_review_slider_yBjMTk",
     "qure_filters_offer_comparison_real_fake_FJifqy",
     "information_about_water_BDVnVm",
