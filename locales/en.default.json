@@ -167,6 +167,7 @@
         "drawer": {
             "settings": {
                 "notification_html": "<strong>IN HIGH DEMAND</strong> | Items reserved for:",
+                "notification_time_end": "Time is up!",
                 "bar_header_html": "You’re {{ add_more }} way from <strong>a FREE {{ product_title }}</strong> (worth {{ product_price }})",
                 "bar_header_completed_html": "Congrats! You've unlocked your <strong>Free Gifts!</strong>",
                 "header": "Your Cart",
@@ -177,7 +178,7 @@
                 "subtotal": "Subtotal",
                 "insurance-text": "Protect your order from lost, damage and theft",
                 "guarantee-text": "Backed by our 30-Day Money-Back Guarantee",
-                "checkout": "CHECKOUT",
+                "checkout": "CHECKOUT"
             },
             "empty": {
                 "header": "Your cart is empty..",

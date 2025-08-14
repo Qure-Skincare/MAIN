@@ -3,16 +3,7 @@
 <!-- drawer cart start -->
 <link rel="stylesheet" href="https://qureskincaredns-main.com/assets/css/component-drawer.css" />
 <div class="offcanvas offcanvas-end" tabindex="-1" id="cartCanvas" aria-labelledby="cartCanvasLabel">
-   <cart-notification>
-      <div class="cart-countdown-time" data-countdown-time="15" data-timeout-message="Time is up!">
-         <span class="">{{ 'cart.drawer.settings.notification_html' | t }}</span>
-         <span class="cart-counter d-flex">
-            <span class="cart-counter-block countdown-timer-minute">00</span>
-            <span class="cart-counter-block countdown-timer-sec">00</span>
-         </span>
-         <span class="countdown-message"></span>
-      </div>
-   </cart-notification>
+   {% render 'footer-cart-drawer-timer', timer: global_timer %}
    <div id="cart-dynamic-content" class="offcanvas-dynamic-content">
       <div class="offcanvas-header border-btm-black">
          <h5 class="cart-drawer-heading fs-18 fm-body fw-600 m-0">{{ 'cart.drawer.settings.header' | t }} ({{ cart.item_count }})</h5>
@@ -25,36 +16,10 @@
                {% include 'footer-cart-drawer-bar' %}
 
                {% if cart.item_count == 0 %}
-                  <!-- Empty cart -->
-                  <div class="drawer__cart-is-empty">
-                     <div class="drawer__cart-empty-text">
-                        <h4>{{ 'cart.drawer.empty.header' | t }}</h4>
-                        <p>{{ 'cart.drawer.empty.text' | t }}</p>
-                     </div>
-                     <div class="empty-product">
-                        <div class="empty-title dekstop-empty">
-                           <img src="{{ 'cart.drawer.empty.settings.image' | t }}" alt="image" />
-                           <h6 class="mb-0">{{ 'cart.drawer.empty.settings.header' | t }}</h6>
-                        </div>
-                        <div class="empty-main">
-                           <div class="empty-content">
-                              {{ 'cart.drawer.empty.settings.content_html' | t }}
-                           </div>
-                        </div>
-                        <a class="btn btn--primary w-100 mt-18" href="{{ 'cart.drawer.empty.settings.button-url' | t }}">{{ 'cart.drawer.empty.settings.button-label' | t }}</a>
-                        <div class="empty-star-txt">
-                           <div class="product-star-txt">
-                              <img src="https://qureskincaredns-main.com/assets/images/review-stars.svg" alt="" class="img-fluid">
-                              <span class="">{{ 'cart.drawer.empty.settings.text' | t }}</strong>
-                           </div>
-                           <div class="text-center fs-14">{{ 'cart.drawer.empty.settings.subtext' | t }}</div>
-                        </div>
-                     </div>
-                  </div>
-                  <!-- Empty cart end -->
+                  {% render 'footer-cart-drawer-empty' %}
                {% else %}
                   {% for item in cart.items %}
-                     {% include 'get-cart-item-data', item: item %}
+                     {% include 'get-cart-item-data' %}
                      {% include 'footer-cart-drawer-item' %}
                   {% endfor %}
 
@@ -72,9 +37,7 @@
 
 
 
-<script>
-   const template = '{{ template }}';
-</script>
+<script> const template = '{{ template }}';</script>
 <script src="{{ 'morphdom-umd.min.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'footer-cart-drawer.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'cart-counter.js' | asset_url }}" defer="defer"></script>

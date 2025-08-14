@@ -8,7 +8,13 @@
     "theme_support_url": "https://support.shopify.com/"
   },
   {
-    "name": "Cart drawer",
+    "name": "Cart drawer timer",
+    "settings": [
+      { "type": "range", "id": "cart_timer", "label": "Timer", "min": 0, "max": 20, "step": 1, "unit": "min", "default": 15 }
+    ]
+  },
+  {
+    "name": "Cart drawer gifts",
     "settings": [
       { "type": "header", "content": "Shipping" },
       { "type": "text", "id": "shipping_title", "label": "Title" },

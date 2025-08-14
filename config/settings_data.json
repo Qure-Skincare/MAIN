@@ -9,6 +9,7 @@
  */
 {
   "current": {
+    "cart_timer": 15,
     "shipping_title": "Shipping",
     "shipping_image": "shopify://shop_images/free-shipping_575ce407-01ac-44bc-bf6e-16f88494c9ad.svg",
     "shipping_price": 10,

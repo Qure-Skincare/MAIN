@@ -7,8 +7,11 @@
   {% include 'get-cart-global-data' %}
 {% enddoc %}
 
+{% comment %} cart price settings {% endcomment %}
+
 {% assign global_total_price = cart.total_price %}
 {% assign global_total_price_devided = global_total_price | divided_by: 100 %}
+
 
 {% comment %} insurance settings {% endcomment %}
 
@@ -46,41 +49,128 @@
 {% comment %} shipping settings {% endcomment %}
 
 {% assign global_shipping_price = settings.shipping_price | times: 100 | money_without_trailing_zeros %}
+{% assign global_shipping_price_limit = settings.shipping_price_limit %}
 
-{% if settings.shipping_price_limit > 0 and global_total_price_devided > settings.shipping_price_limit %}
+{% if global_shipping_price_limit > 0 and global_total_price_devided > global_shipping_price_limit %}
     {% assign global_shipping_price = null %}
 {% endif %}
 
 
+{% comment %} define timer variables {% endcomment %}
 
-{% comment %} bar settings {% endcomment %}
+{% assign global_timer = settings.cart_timer %}
+
+
+
+{% comment %} define bar variables {% endcomment %}
  
+{% assign global_bar_shipping_limit = settings.shipping_price_limit %}
+{% assign global_bar_shipping_price = settings.shipping_price %}
+{% assign global_bar_shipping_title = settings.shipping_title %}
+{% assign global_bar_shipping_image = settings.shipping_image %}
+
+{% assign global_bar_gift1_limit = settings.cart_gift1_price_limit %}
+{% assign global_bar_gift1_handle = settings.cart_gift1_product %}
+{% assign global_bar_gift1_price = all_products[global_bar_gift1_handle].price | divided_by: 100 %}
+{% assign global_bar_gift1_variant_id = all_products[global_bar_gift1_handle].variants.first.id %}
+{% assign global_bar_gift1_title = settings.cart_gift1_title %}
+{% assign global_bar_gift1_image = settings.cart_gift1_image %}
+
+{% assign global_bar_gift2_limit = settings.cart_gift2_price_limit %}
+{% assign global_bar_gift2_handle = settings.cart_gift2_product %}
+{% assign global_bar_gift2_price = all_products[settings.cart_gift2_product].price | divided_by: 100 %}
+{% assign global_bar_gift2_variant_id = all_products[global_bar_gift2_handle].variants.first.id %}
+{% assign global_bar_gift2_title = settings.cart_gift2_title %}
+{% assign global_bar_gift2_image = settings.cart_gift2_image %}
+
+{% assign global_bar_percent = 0 %}
 
 
-{% if global_total_price_devided < 100 %}
-    {% assign global_add_more = settings.shipping_price_limit | times: 100 | minus: global_total_price | money_without_trailing_zeros %}
-    {% assign global_product_title = settings.shipping_title %}
-    {% assign global_product_price = global_shipping_price %}
-{% elsif global_total_price_devided >= 101 and global_total_price_devided <= 200 %}
-    {% assign global_add_more = settings.cart_gift1_price_limit | times: 100 | minus: global_total_price | money_without_trailing_zeros %}
-    {% assign global_product_title = settings.cart_gift1_title %}
-    {% assign global_product_price = all_products[settings.cart_gift1_product].price | money_without_trailing_zeros %}
-{% elsif global_total_price_devided >= 201 and global_total_price_devided <= 400 %}
-    {% assign global_add_more = settings.cart_gift2_price_limit | times: 100 | minus: global_total_price | money_without_trailing_zeros %}
-    {% assign global_product_title = settings.cart_gift2_title %}
-    {% assign global_product_price = all_products[settings.cart_gift2_price_limit].price | money_without_trailing_zeros %}
+
+{% comment %} progress bar text's vars defining {% endcomment %}
+
+{% assign global_bar_add_more = 0 %}
+{% assign global_bar_product_price = 0 %}
+{% assign global_bar_product_title = blank %}
+
+{% if global_total_price_devided <= global_bar_shipping_limit %}
+    {% assign global_bar_add_more = global_bar_shipping_limit | times: 100 | minus: global_total_price | money_without_trailing_zeros %}
+    {% assign global_bar_product_price = global_bar_shipping_price | times: 100 | money_without_trailing_zeros %}
+    {% assign global_bar_product_title = global_bar_shipping_title %}
 {% endif %}
 
-{% assign global_product_percent = 0 %}
+{% if global_bar_gift1_limit > 0 %}
+    {% if global_total_price_devided > global_bar_shipping_limit and global_total_price_devided <= global_bar_gift1_limit %}
+        {% assign global_bar_add_more = global_bar_gift1_limit | times: 100 | minus: global_total_price | money_without_trailing_zeros %}
+        {% assign global_bar_product_price = global_bar_gift1_price | times: 100 | money_without_trailing_zeros %}
+        {% assign global_bar_product_title = global_bar_gift1_title %}
+    {% endif %}
+{% endif %}
 
-{% if global_total_price_devided <= 100 %}
-  {% assign global_product_percent = global_total_price_devided | times: 20 | divided_by: 100 %}
-{% elsif global_total_price_devided <= 200 %}
-  {% assign extra = global_total_price_devided | minus: 100 %}
-  {% assign global_product_percent = extra | times: 30 | divided_by: 100 | plus: 20 %}
-{% elsif global_total_price_devided <= 400 %}
-  {% assign extra = global_total_price_devided | minus: 200 %}
-  {% assign global_product_percent = extra | times: 30 | divided_by: 200 | plus: 50 %}
+{% if global_bar_gift2_limit > 0 %}
+    {% if global_bar_gift1_limit > 0 %}
+        {% if global_total_price_devided > global_bar_gift1_limit and global_total_price_devided <= global_bar_gift2_limit %}
+            {% assign global_bar_add_more = global_bar_gift2_limit | times: 100 | minus: global_total_price | money_without_trailing_zeros %}
+            {% assign global_bar_product_price = global_bar_gift2_price | times: 100 | money_without_trailing_zeros %}
+            {% assign global_bar_product_title = global_bar_gift2_title %}
+        {% endif %}
+    {% else %}
+        {% if global_total_price_devided > global_bar_shipping_limit and global_total_price_devided <= global_bar_gift2_limit %}
+            {% assign global_bar_add_more = global_bar_gift2_limit | times: 100 | minus: global_total_price | money_without_trailing_zeros %}
+            {% assign global_bar_product_price = global_bar_gift2_price | times: 100 | money_without_trailing_zeros %}
+            {% assign global_bar_product_title = global_bar_gift2_title %}
+        {% endif %}
+    {% endif %}
+{% endif %}
+
+
+
+{% comment %} progress bar line's vars defining {% endcomment %}
+
+{% assign __price = 0 %}
+{% assign __limit = 0 %}
+
+{% if global_bar_gift1_limit > 0 and global_bar_gift2_limit > 0 %}
+     {% if global_total_price_devided <= global_bar_shipping_limit %}
+            {% assign global_bar_percent = global_total_price_devided | times: 20 | divided_by: global_bar_shipping_limit %}
+        {% elsif global_total_price_devided <= global_bar_gift1_limit %}
+            {% assign extra = global_total_price_devided | minus: global_bar_shipping_limit %}
+            {% assign diff = global_bar_gift1_limit | minus: global_bar_shipping_limit %}
+            {% assign global_bar_percent = extra | times: 30 | divided_by: diff | plus: 20 %}
+        {% elsif global_total_price_devided <= global_bar_gift2_limit %}
+            {% assign extra = global_total_price_devided | minus: global_bar_gift1_limit %}
+            {% assign diff = global_bar_gift2_limit | minus: global_bar_gift1_limit %}
+            {% assign global_bar_percent = extra | times: 30 | divided_by: diff | plus: 50 %}
+        {% else %}
+            {% assign global_bar_percent = 100 %}
+        {% endif %}
 {% else %}
-  {% assign global_product_percent = 100 %}
+    {% if global_bar_gift1_limit > 0 %}
+        {% assign __limit = global_bar_gift1_limit %}
+        {% assign __price = global_bar_gift1_price %}
+    {% endif %}
+
+    {% if global_bar_gift2_limit > 0 %}
+        {% assign __limit = global_bar_gift2_limit %}
+        {% assign __price = global_bar_gift2_price %}
+    {% endif %}
+
+    {% if global_total_price_devided <= global_bar_shipping_limit %}
+        {% assign global_bar_percent = global_total_price_devided | times: 20 | divided_by: global_bar_shipping_limit %}
+    {% elsif global_total_price_devided <= __limit %}
+        {% assign extra = global_total_price_devided | minus: global_bar_shipping_limit %}
+        {% assign diff = __limit | minus: global_bar_shipping_limit %}
+        {% assign global_bar_percent = extra | times: 60 | divided_by: diff | plus: 20 %}
+    {% else %}
+        {% assign global_bar_percent = 100 %}
+    {% endif %}
 {% endif %}
+
+
+{% comment %} define upsells variables {% endcomment %}
+
+{% assign global_upsell_product1_handle = settings.cart_upsell1_product %}
+{% assign global_upsell_product2_handle = settings.cart_upsell2_product %}
+{% assign global_upsell_product3_handle = settings.cart_upsell3_product %}
+{% assign global_upsell_product4_handle = settings.cart_upsell4_product %}
+{% assign global_upsell_product5_handle = settings.cart_upsell5_product %}
