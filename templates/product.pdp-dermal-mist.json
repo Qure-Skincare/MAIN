@@ -9,13 +9,327 @@
  */
 {
   "sections": {
-    "main": {
-      "type": "product-pdp-dermal-mist",
+    "product_header_c7eEXx": {
+      "type": "product-header",
+      "blocks": {
+        "jumpto_gVULpr": {
+          "type": "jumpto",
+          "settings": {
+            "button-label": "",
+            "button-url": ""
+          }
+        },
+        "jumpto_wCrT8L": {
+          "type": "jumpto",
+          "settings": {
+            "button-label": "",
+            "button-url": ""
+          }
+        },
+        "jumpto_UfjfzQ": {
+          "type": "jumpto",
+          "settings": {
+            "button-label": "",
+            "button-url": ""
+          }
+        },
+        "nextships_VCb3mM": {
+          "type": "nextships",
+          "settings": {
+            "date": "28 september",
+            "percent": 48,
+            "date_soldout": "28 July",
+            "date_reserved": "3 August"
+          }
+        }
+      },
+      "block_order": [
+        "jumpto_gVULpr",
+        "jumpto_wCrT8L",
+        "jumpto_UfjfzQ",
+        "nextships_VCb3mM"
+      ],
+      "name": "t:sections.product-header.name",
+      "settings": {
+        "seo_heading": "HYPOCHLOROUS ACID SPRAY DERMAL MIST",
+        "heading": "Purify your skin anytime, anywhere with Dermal Mist",
+        "description": "<ul><li>A hypochlorous acid mist that purifies skin, kills breakout-causing bacteria, and supports barrier repair.</li><li>Use on clean skin to calm irritation, reduce redness, or as a no-rinse refresher throughout the day.</li><li>Comes as a duo: 100ml for daily use and a travel-friendly 15ml.</li></ul>"
+      }
+    },
+    "logos_mUyKFd": {
+      "type": "logos",
+      "blocks": {
+        "carousel_X6pBbT": {
+          "type": "carousel",
+          "settings": {
+            "image": "shopify://shop_images/vogue.svg"
+          }
+        },
+        "carousel_HPeNA3": {
+          "type": "carousel",
+          "settings": {
+            "image": "shopify://shop_images/womens_health.svg"
+          }
+        },
+        "carousel_w6WCLA": {
+          "type": "carousel",
+          "settings": {
+            "image": "shopify://shop_images/elle.webp"
+          }
+        },
+        "carousel_T8QRgh": {
+          "type": "carousel",
+          "settings": {
+            "image": "shopify://shop_images/cosmopolitan.svg"
+          }
+        },
+        "carousel_iVcWiq": {
+          "type": "carousel",
+          "settings": {
+            "image": "shopify://shop_images/grazia.svg"
+          }
+        },
+        "carousel_DAY3PM": {
+          "type": "carousel",
+          "settings": {
+            "image": "shopify://shop_images/qq.svg"
+          }
+        }
+      },
+      "block_order": [
+        "carousel_X6pBbT",
+        "carousel_HPeNA3",
+        "carousel_w6WCLA",
+        "carousel_T8QRgh",
+        "carousel_iVcWiq",
+        "carousel_DAY3PM"
+      ],
+      "name": "t:sections.logos.name",
       "settings": {}
     },
-    "compare": {
-      "type": "compare",
+    "banner_with_text_3trYVA": {
+      "type": "banner-with-text",
+      "name": "t:sections.banner-with-text.name",
+      "settings": {
+        "heading": "A mist to treat breakouts, redness, and irritation",
+        "text": "<p>Powered by pure hypochlorous acid (HOCl), Dermal Mist helps calm inflammation, speed up healing, and support your skin’s natural barrier — all without irritation. </p><p>Perfect for breakouts, redness, or post-treatment care, <strong>this mist instantly soothes skin while fighting off bacteria</strong></p><p>and environmental triggers. It’s fragrance-free, non-drying, and gentle enough <strong>to use anytime, anywhere</strong> even over makeup.</p>",
+        "text_mobile": "",
+        "image_position": "left",
+        "sub_text": "",
+        "button_label": "Shop Now",
+        "button_url": "#buy_box-patches",
+        "wistia_url": "getx3xc27m"
+      }
+    },
+    "how_to_use_picture_WHyQTm": {
+      "type": "how-to-use-picture",
+      "blocks": {
+        "list_pUcded": {
+          "type": "list",
+          "settings": {
+            "heading": "Pre-Treatment Purifier",
+            "heading-mobile": "Pre-Treatment Purifier",
+            "text": "<p>Use after cleansing to hydrate and prep your skin for better absorption.</p>",
+            "text-mobile": "<p>Use after cleansing to hydrate and prep your skin for better absorption.</p>",
+            "image": "shopify://shop_images/bacteria_defence_1.webp",
+            "image-mobile": "shopify://shop_images/bacteria_defence_mob_1.webp"
+          }
+        },
+        "list_HBDgx6": {
+          "type": "list",
+          "settings": {
+            "heading": "Post-Workout Refresh ",
+            "heading-mobile": "Post-Workout Refresh",
+            "text": "<p>Mist onto skin throughout the day to reduce redness and irritation.</p>",
+            "text-mobile": "<p>Mist onto skin throughout the day to reduce redness and irritation.</p>",
+            "image": "shopify://shop_images/bacteria_defence_2.webp",
+            "image-mobile": "shopify://shop_images/bacteria_defence_mob_2.webp"
+          }
+        },
+        "list_6AjmAj": {
+          "type": "list",
+          "settings": {
+            "heading": "Pillow Protector",
+            "heading-mobile": "Pillow Protector",
+            "text": "<p>Spritz on your pillowcase at night to wake up with hydrated and calm skin.</p>",
+            "text-mobile": "<p>Spritz on your pillowcase at night to wake up with hydrated and calm skin.</p>",
+            "image": "shopify://shop_images/bacteria_defence_3.webp",
+            "image-mobile": "shopify://shop_images/bacteria_defence_mob_3.webp"
+          }
+        },
+        "list_MVwKh7": {
+          "type": "list",
+          "settings": {
+            "heading": "Device Sanitizer",
+            "heading-mobile": "Device Sanitizer",
+            "text": "<p>After using your Q-Rejuvalight Pro, a light spray and wipe inside your device keeps it clean.</p>",
+            "text-mobile": "<p>After using your Q-Rejuvalight Pro, a light spray and wipe inside your device keeps it clean.</p>",
+            "image": "shopify://shop_images/bacteria_defence_4.webp",
+            "image-mobile": "shopify://shop_images/bacteria_defence_mob_4.webp"
+          }
+        }
+      },
+      "block_order": [
+        "list_pUcded",
+        "list_HBDgx6",
+        "list_6AjmAj",
+        "list_MVwKh7"
+      ],
+      "name": "t:sections.how-to-use-picture.name",
+      "settings": {
+        "heading": "Bacteria defense that fits your day",
+        "heading-mobile": "Reset your skin with one spray",
+        "text": "<p>Clear skin, wherever you are. Dermal Mist comes in two sizes: 100ml bottle for consistent at-home use, and a 15ml travel size for breakout control on the move.</p>",
+        "text-mobile": "<p>Dermal Mist uses hypochlorous acid and electrolyzed water to calm irritation, support healing, and reinforce your skin barrier in one refreshing step.</p>",
+        "sub-text": "<p>Use it in 4 ways.</p>"
+      }
+    },
+    "trusted_recommended_8zit6t": {
+      "type": "trusted-recommended",
+      "name": "t:sections.trusted-recommended.name",
+      "settings": {
+        "heading": "Trusted and Recommended by Experts",
+        "text": "<p>“Dermal Mist is great for use after the gym, but the best use of hypocholorus acid is in combination with Qure’s Micro Infusion. <strong>Dermal Mist sanitizes and preps your skin,</strong> allowing ingredients placed on top to <strong>penetrate your skin even further.</strong>”</p>",
+        "image_text": "<p>Dr. Shah & Dr. Maxfield <strong>Board certified dermatologists</strong></p>",
+        "video_cover_image": "shopify://shop_images/dr_shah_max.webp",
+        "video_url": "",
+        "wistia_url": "zd9o2f2jp7"
+      }
+    },
+    "carousel_PjVxaQ": {
+      "type": "carousel",
+      "blocks": {
+        "items_NtkT4h": {
+          "type": "items",
+          "settings": {
+            "heading": "Free Shipping On Orders Over {$dyn}",
+            "image": "shopify://shop_images/guarantee.svg"
+          }
+        },
+        "items_bYnXxJ": {
+          "type": "items",
+          "settings": {
+            "heading": "Dermatologist Reviewed",
+            "image": "shopify://shop_images/sheild.svg"
+          }
+        },
+        "items_tLjNh8": {
+          "type": "items",
+          "settings": {
+            "heading": "Buy Now, Pay Later Options Available",
+            "image": "shopify://shop_images/pay-later.svg"
+          }
+        },
+        "items_EWjYfE": {
+          "type": "items",
+          "settings": {
+            "heading": "Proven Results, Backed By Science",
+            "image": "shopify://shop_images/proven-result.svg"
+          }
+        }
+      },
+      "block_order": [
+        "items_NtkT4h",
+        "items_bYnXxJ",
+        "items_tLjNh8",
+        "items_EWjYfE"
+      ],
+      "name": "t:common.carousel",
       "settings": {}
+    },
+    "product_info_popup_cJGGQN": {
+      "type": "product-info-popup",
+      "name": "t:sections.product-info-popup.name",
+      "settings": {
+        "heading": "Powered by Hypochlorus Acid",
+        "text": "<p><strong>Hypochlorus Acid (HOCl)</strong> a powerful molecule naturally made by your immune system to fight bacteria, calm inflammation, and speed up skin healing.</p><p>We’ve combined this with botanical extracts to create a pure, skin-safe mist to help soothe irritation, reduce <em>surface bacteria, refresh the skin</em> on-the-go.</p><p>Perfect for post-treatment sensitivity, managing breakouts, or just giving your skin a reset.</p>",
+        "image": "shopify://shop_images/hypo_acid.webp",
+        "image_mobile": "shopify://shop_images/hypo_acid_mob.webp",
+        "popup-heading": "Dermal Mist Ingredients",
+        "popup-text": "<p>Water (aqua)*, Chrysanthellum indicum flowerwater, sodium chloride, sodium phosphate, disodium phosphate, hypochlorous acid. *Ultra pure water.</p>",
+        "button-label": "View Full Ingredient List",
+        "button-url": "#exampleModalToggle"
+      }
+    },
+    "compare_8FkPMf": {
+      "type": "compare",
+      "blocks": {
+        "compare_3CP3fq": {
+          "type": "compare",
+          "settings": {
+            "check_text": "",
+            "cross_text": "",
+            "checkbox": false,
+            "heading_check": "<h4>Qure Dermal Mist</h4>",
+            "heading_cross": "<h4>Traditional Skin Mists</h4>"
+          }
+        },
+        "compare_QcqhJN": {
+          "type": "compare",
+          "settings": {
+            "check_text": "<p>Powered by Hypochlorous Acid and enriched with Chamomile</p>",
+            "cross_text": "<p>Often alcohol-based or contain added fragrances</p>",
+            "checkbox": false,
+            "heading_check": "",
+            "heading_cross": ""
+          }
+        },
+        "compare_9LDCBh": {
+          "type": "compare",
+          "settings": {
+            "check_text": "<p>Designed for face, body & anywhere your skin touches</p>",
+            "cross_text": "<p>Primarily designed for facial use only</p>",
+            "checkbox": false,
+            "heading_check": "",
+            "heading_cross": ""
+          }
+        },
+        "compare_dc6JHY": {
+          "type": "compare",
+          "settings": {
+            "check_text": "<p>Hypoallergenic and suitable for sensitive skin</p>",
+            "cross_text": "<p>May contain irritants not ideal for sensitive skin</p>",
+            "checkbox": false,
+            "heading_check": "",
+            "heading_cross": ""
+          }
+        },
+        "compare_tiPRmy": {
+          "type": "compare",
+          "settings": {
+            "check_text": "<p>Clinically proven to reduce bacteria and inflammation</p>",
+            "cross_text": "<p>Usually focused on hydration without these benefits</p>",
+            "checkbox": false,
+            "heading_check": "",
+            "heading_cross": ""
+          }
+        },
+        "compare_cFDGbr": {
+          "type": "compare",
+          "settings": {
+            "check_text": "<p>Light, natural scent that dissipates quickly</p>",
+            "cross_text": "<p>Often has a fragrance which can cause irritation</p>",
+            "checkbox": false,
+            "heading_check": "",
+            "heading_cross": ""
+          }
+        }
+      },
+      "block_order": [
+        "compare_3CP3fq",
+        "compare_QcqhJN",
+        "compare_9LDCBh",
+        "compare_dc6JHY",
+        "compare_tiPRmy",
+        "compare_cFDGbr"
+      ],
+      "name": "t:sections.compare.name",
+      "settings": {
+        "heading": "A mist that does more than refresh",
+        "text": "",
+        "image_compare_check": "shopify://shop_images/mist_img_1.webp",
+        "image_compare_cross": "shopify://shop_images/mist_img_2.webp"
+      }
     },
     "faq_RhychY": {
       "type": "faq",
@@ -24,42 +338,54 @@
           "type": "accordion",
           "settings": {
             "heading": "What makes Dermal Mist different from other facial sprays?",
-            "text": "<p>Unlike many face mists that are fragranced or water-heavy with little skin benefit, our Dermal Mist is formulated specifically for sensitive and post-treatment skin.</p><p>Dermal Mist is powered by hypochlorous acid and enriched with chamomile, offering anti-inflammatory and antibacterial benefits without any harsh chemicals. It's pH balanced and gentle enough for all skin types, making it a versatile addition to your daily routine.</p><p>It hydrates without irritation, soothes redness, and helps your skin bounce back faster.</p>"
+            "text": "<p>Unlike many face mists that are fragranced or water-heavy with little skin benefit, our Dermal Mist is formulated specifically for sensitive and post-treatment skin.</p><p>Dermal Mist is powered by hypochlorous acid and enriched with chamomile, offering anti-inflammatory and antibacterial benefits without any harsh chemicals. It's pH balanced and gentle enough for all skin types, making it a versatile addition to your daily routine.</p><p>It hydrates without irritation, soothes redness, and helps your skin bounce back faster.</p>",
+            "link_url": "",
+            "link_text": ""
           }
         },
         "accordion_ntebHQ": {
           "type": "accordion",
           "settings": {
             "heading": "What are the benefits of Dermal Mist and hypochlorous acid?",
-            "text": "<p>Our Dermal Mist is powered by hypochlorous acid — a gentle yet effective ingredient known for its soothing, antibacterial, and barrier-supporting properties. </p><p>Hypochlorous acid (HOCl) helps soothe redness, reduce inflammation, and acceleratehealing, making it especially useful for sensitive, acne-prone, or post-treatment skin. </p><p>Unlike harsher actives, HOCl supports the skin barrier while eliminating harmful bacteria — all without causing dryness or disrupting the skin’s natural balance. It is safe for all skin types, it’s a gentle but effective way to calm, protect, and refresh the skin.</p>"
+            "text": "<p>Our Dermal Mist is powered by hypochlorous acid — a gentle yet effective ingredient known for its soothing, antibacterial, and barrier-supporting properties. </p><p>Hypochlorous acid (HOCl) helps soothe redness, reduce inflammation, and acceleratehealing, making it especially useful for sensitive, acne-prone, or post-treatment skin. </p><p>Unlike harsher actives, HOCl supports the skin barrier while eliminating harmful bacteria — all without causing dryness or disrupting the skin’s natural balance. It is safe for all skin types, it’s a gentle but effective way to calm, protect, and refresh the skin.</p>",
+            "link_url": "",
+            "link_text": ""
           }
         },
         "accordion_ChNyjh": {
           "type": "accordion",
           "settings": {
             "heading": "How should I incorporate Dermal Mist into my skincare routine?",
-            "text": "<p>You can use Dermal Mist morning and evening as a purifying step before applying treatments. It’s also great for refreshing your skin throughout the day, post-workout, or to disinfect surfaces such as your pillow and your skincare tools.</p>"
+            "text": "<p>You can use Dermal Mist morning and evening as a purifying step before applying treatments. It’s also great for refreshing your skin throughout the day, post-workout, or to disinfect surfaces such as your pillow and your skincare tools.</p>",
+            "link_url": "",
+            "link_text": ""
           }
         },
         "accordion_DmeWrE": {
           "type": "accordion",
           "settings": {
             "heading": "What’s the concentration of hypochlorous acid in Dermal Mist?",
-            "text": "<p>Dermal Mist contains a precise 0.02% concentration of hypochlorous acid, which is effective enough to deliver antibacterial and anti-inflammatory benefits while remaining gentle on the skin. </p><p>We don’t add any fragrances, so you may notice the light, natural scent of hypochlorous acid. This should fade soon after spraying.</p>"
+            "text": "<p>Dermal Mist contains a precise 0.02% concentration of hypochlorous acid, which is effective enough to deliver antibacterial and anti-inflammatory benefits while remaining gentle on the skin. </p><p>We don’t add any fragrances, so you may notice the light, natural scent of hypochlorous acid. This should fade soon after spraying.</p>",
+            "link_url": "",
+            "link_text": ""
           }
         },
         "accordion_kMxmkE": {
           "type": "accordion",
           "settings": {
             "heading": "Can I use Dermal Mist on sensitive skin?",
-            "text": "<p>Absolutely. Dermal Mist is dermatologically tested, hypoallergenic, and formulated specifically to be kind to even the most sensitive skin. It’s designed to soothe, purify, and protect without causing irritation. </p>"
+            "text": "<p>Absolutely. Dermal Mist is dermatologically tested, hypoallergenic, and formulated specifically to be kind to even the most sensitive skin. It’s designed to soothe, purify, and protect without causing irritation. </p>",
+            "link_url": "",
+            "link_text": ""
           }
         },
         "accordion_zhxE3N": {
           "type": "accordion",
           "settings": {
             "heading": "Is this product vegan and cruelty-free?",
-            "text": "<p>Yes, Dermal Mist is both vegan and cruelty-free. We are committed to creating products that are kind to both your skin and the environment.</p>"
+            "text": "<p>Yes, Dermal Mist is both vegan and cruelty-free. We are committed to creating products that are kind to both your skin and the environment.</p>",
+            "link_url": "",
+            "link_text": ""
           }
         }
       },
@@ -75,15 +401,30 @@
       "settings": {
         "heading": "Have questions?",
         "text": "Don’t see your question?",
-        "button": "Ask us",
-        "url": "#",
-        "image": "shopify://shop_images/arrow_right.svg"
+        "button_label": "Ask us",
+        "button_url": "#"
+      }
+    },
+    "sticky_cta_KmhMmz": {
+      "type": "sticky-cta",
+      "name": "t:sections.sticky-cta.name",
+      "settings": {
+        "heading": "Dermal Mist",
+        "text": "93 reserved in last 48 hours",
+        "button_label": "Pre-Order now"
       }
     }
   },
   "order": [
-    "main",
-    "compare",
-    "faq_RhychY"
+    "product_header_c7eEXx",
+    "logos_mUyKFd",
+    "banner_with_text_3trYVA",
+    "how_to_use_picture_WHyQTm",
+    "trusted_recommended_8zit6t",
+    "carousel_PjVxaQ",
+    "product_info_popup_cJGGQN",
+    "compare_8FkPMf",
+    "faq_RhychY",
+    "sticky_cta_KmhMmz"
   ]
 }

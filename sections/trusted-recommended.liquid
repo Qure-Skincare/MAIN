@@ -55,12 +55,66 @@
                </div>
             </div>
          {% endif %}
+         {% if section.settings.wistia_url != blank %}
+            <div class="col-lg-4 custom__block">
+               <div class="qure-filter-cards d-block">
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#shower2"
+                        class="filter-card-item filter-card-video">
+                        <div class="filter-card-video-icon align-items-end px-20 py-10">
+                           <div class="align-items-center d-flex justify-content-between w-100">
+                              {% if section.settings.image_text != blank %}
+                                 <div class="text-white fs-20">{{ section.settings.image_text 
+                                    | replace: '<strong>', '<span class="fs-18 fw-400">' 
+                                    | replace: '</strong>', '</span>' 
+                                    | replace: '<p>', ''
+                                    | replace: '</p>', '' }}
+                                 </div>
+                              {% endif %}
+                              <img src="{{ 'sections.video-slider.play_button' | t }}" alt="{{ 'sections.video-slider.play_button.alt' | t | escape }}">
+                           </div>
+                        </div>
+                        {% if section.settings.video_cover_image != blank %}
+                           <img src="{{ section.settings.video_cover_image | image_url }}" alt="{{ section.settings.video_cover_image.alt | escape }}" class="img-fluid" />
+                        {% endif %}
+                  </a>
+                  <!-- modal start -->
+                  <div class="modal fade filter-modal" id="shower2" data-bs-backdrop="static" data-bs-keyboard="false"tabindex="-1" aria-labelledby="shower2Label" aria-hidden="true">
+                     <div class="modal-dialog modal-dialog-centered modal-md filter-dialog">
+                        <div class="modal-content">
+                           <div class="modal-header border-0">
+                                 <button type="button" class="btn btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+                           </div>
+                           {% if section.settings.wistia_url != blank %}
+                              <div class="modal-body">
+                                 <style>
+                                       wistia-player[media-id='{{ section.settings.wistia_url }}']:not(:defined) {
+                                          background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/{{ section.settings.wistia_url }}/swatch');
+                                          display: block;
+                                          filter: blur(5px);
+                                          padding-top: 177.78%;
+                                       }
+                                 </style>
+                                 <div class="filter-modal-video">
+                                       <wistia-player media-id="{{ section.settings.wistia_url }}" seo="false" aspect="0.5625"></wistia-player>
+                                 </div>
+                              </div>
+                           {% endif %}
+                        </div>
+                     </div>
+                  </div>
+                  <!-- modal end-->
+               </div>
+            </div>
+         {% endif %}
       </div>
    </div>
 </div>
 <script>
    document.addEventListener("DOMContentLoaded", function () {
       loadScriptOnce('youtube-popup', 'https://qureskincaredns-main.com/assets/js/yt-popup.js');
+      loadScriptOnce('wistia-script', 'https://fast.wistia.com/assets/external/E-v1.js');
+      loadScriptOnce('video-slider', 'https://qureskincaredns-main.com/sections/isolated/trusted-video/wistia-video-popup.js');
    });
 </script>
 {% schema %}
@@ -77,6 +131,16 @@
       "type": "richtext",
       "id": "text",
       "label": "t:common.text"
+    },
+    {
+      "type": "image_picker",
+      "id": "video_image_cover",
+      "label": "t:common.video-image-cover"
+    },
+    {
+      "type": "richtext",
+      "id": "image_text",
+      "label": "t:common.image-text"
     },
     {
       "type": "image_picker",
@@ -97,6 +161,11 @@
       "type": "url",
       "id": "video_url",
       "label": "t:common.link-url"
+    },
+    {
+      "type": "text",
+      "id": "wistia_url",
+      "label": "t:common.wistia-url"
     }
   ],
   "presets": [

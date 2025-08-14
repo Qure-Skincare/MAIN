@@ -20,6 +20,9 @@
         "left-tip": "Left tip",
         "text": "Text",
         "text-with-progress": "Text with progress",
+        "popup": "Popup",
+        "popup-header": "Popup header",
+        "popup-text": "Popup text",
         "style-color": "Style color",
         "black": "Black",
         "green": "Green",
@@ -138,6 +141,9 @@
         "product-info": {
             "name": "Product information"
         },
+        "product-info-popup": {
+            "name": "Product information with popup"
+        },
         "led-benefits": {
             "name": "LED benefits"
         },
@@ -164,6 +170,9 @@
         },
         "how-to-use": {
             "name": "How to use"
+        },
+         "how-to-use-picture": {
+            "name": "How to use with picture"
         },
         "footer-cart-drawer": {
             "name": "Cart drawer"
