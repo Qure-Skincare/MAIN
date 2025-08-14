@@ -15,22 +15,22 @@
         "jumpto_gVULpr": {
           "type": "jumpto",
           "settings": {
-            "button-label": "",
-            "button-url": ""
+            "button-label": "How to use",
+            "button-url": "#how_to_use"
           }
         },
         "jumpto_wCrT8L": {
           "type": "jumpto",
           "settings": {
-            "button-label": "",
-            "button-url": ""
+            "button-label": "Ingredients",
+            "button-url": "#ingredients"
           }
         },
         "jumpto_UfjfzQ": {
           "type": "jumpto",
           "settings": {
-            "button-label": "",
-            "button-url": ""
+            "button-label": "FAQs",
+            "button-url": "#faq"
           }
         },
         "nextships_VCb3mM": {
@@ -138,7 +138,7 @@
         "list_HBDgx6": {
           "type": "list",
           "settings": {
-            "heading": "Post-Workout Refresh ",
+            "heading": "Post-Workout Refresh",
             "heading-mobile": "Post-Workout Refresh",
             "text": "<p>Mist onto skin throughout the day to reduce redness and irritation.</p>",
             "text-mobile": "<p>Mist onto skin throughout the day to reduce redness and irritation.</p>",
