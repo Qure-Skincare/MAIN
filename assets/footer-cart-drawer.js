@@ -128,7 +128,6 @@ const showCart = () => {
     }
 };
 
-
 const toogleGift = async (cart) => {
     const forms = document.querySelectorAll('form.footer-cart-drawer-gift[action$="/cart/add"]');
 
