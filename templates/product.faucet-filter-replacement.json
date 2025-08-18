@@ -630,7 +630,7 @@
       "name": "t:sections.faq.name",
       "settings": {
         "heading": "Have questions?",
-        "text": "",
+        "text": "Don't see your question?",
         "button_label": "Ask us",
         "button_url": "https://qureskincare.com/pages/contact-us"
       }
