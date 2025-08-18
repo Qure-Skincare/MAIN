@@ -1,0 +1,217 @@
+{% doc %}
+  Renders a why it works faucet section.
+{% enddoc %}
+
+
+<link rel="stylesheet" href="https://qureskincaredns-main.com/sections/isolated/why-it-works/section-why-it-works.css">
+<link rel="stylesheet" href="https://qureskincaredns-main.com/assets/css/animate.css">
+<div class="why_it_works qure__section" style="--section-padding-top: 80px; --section-padding-bottom: 40px;">
+    <div class="container" style="--column-gap:50px; --column-gap-mobile:18px;" id="why_it_works">
+        <div class="section_header text-center mb-60">
+            {% if section.settings.heading != blank %}
+                <h2 class="title-lg mb-md-30">{{ section.settings.heading }}</h2>
+            {% endif %}
+            {% if section.settings.text != blank %}
+                {{ section.settings.text }}
+            {% endif %}
+        </div>
+        <div class="row custom__grid align-items-center">
+            <div class="col-md-6 custom__block">
+                <div style="--heading-font: 'TT Commons';" class="pr-md-30">
+                    <div class="accordion accordion-flush" id="qure_benefit-main">
+                        {% for block in section.blocks %}
+                            {% if block.type == 'accordion' %}
+                                <div class="accordion-item qure__accordion-item" {% if block.settings.image != blank %} data-img-url="{{ block.settings.image | image_url }}"{% endif %}>
+                                    <button class="accordion-button collapsed qure__accordion-header hit-header" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#qure_benefit-{{ forloop.index }}" aria-expanded="false" aria-controls="qure_benefit-{{ forloop.index }}">
+                                        <span class="mr-10 d-inline-flex">{% if block.settings.image-with-text != blank %} <img src="{{ block.settings.image-with-text | image_url }}" alt="{{ block.settings.image-with-text.alt | escape }}"> {% endif %}</span>
+                                            {% if block.settings.heading != blank %}
+                                                {{ block.settings.heading }}
+                                            {% endif %}
+                                    </button>
+                                    <div id="qure_benefit-{{ forloop.index }}" class="accordion-collapse collapse qure__accordion-content" data-bs-parent="#qure_benefit-main">
+                                        {% if block.settings.text != blank %}
+                                            <div class="accordion-body pt-0">
+                                                {{ block.settings.text}}
+                                            </div>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 order-md-0 order-first custom__block">
+                <div class="filter_points position-relative">
+                    {% if section.settings.image != blank %}
+                        <img id="benefit-image" src="{{ section.settings.image | image_url }}" class="img-fluid" alt="{{ section.settings.image.alt | escape }}">
+                    {% endif %}
+                    {% for block in section.blocks %}
+                        {% if block.type == 'items' %}
+                            <div class="point_column p_one top_0 right_0 wow fadeInDown" style="--top:68px;--top-mob:20px;">
+                                <div class="accordion-button collapsed fs-18 gap-2" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#qure_benefit-1" aria-expanded="false" aria-controls="qure_benefit-1"
+                                    {% if block.settings.image-1 != blank %}
+                                        data-img-url="{{ block.settings.image-1 | image_url }}">
+                                    {% endif %}
+                                    {% if block.settings.text-item-1 != blank %}
+                                        <span class="p_text">{{block.settings.text-item-1}}</span>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <div class="point_column p_two top_0 wow fadeInDown" data-wow-delay="0.4s" style="--top:-10px;--top-mob:0px;">
+                                <div class="accordion-button collapsed fs-18 gap-1 flex-column" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#qure_benefit-2" aria-expanded="false"
+                                    aria-controls="qure_benefit-2"
+                                    {% if block.settings.image-2 != blank %}
+                                        data-img-url="{{ block.settings.image-2 | image_url }}">
+                                    {% endif %}
+                                    {% if block.settings.text-item-2 != blank %}
+                                        <span class="p_text">{{ block.settings.text-item-2 }}</span>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <div class="point_column p_three top_0 right_0 wow fadeInDown" data-wow-delay="0.6s"
+                                style="--top:47%;--top-mob:47%; --right: 30px;">
+                                <div class="accordion-button collapsed fs-18 gap-2" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#qure_benefit-3" aria-expanded="false" aria-controls="qure_benefit-3"
+                                    {% if block.settings.image-3 != blank %}
+                                        data-img-url="{{ block.settings.image-3 | image_url }}">
+                                    {% endif %}
+                                    {% if block.settings.text-item-3 != blank %}
+                                        <span class="p_text">{{ block.settings.text-item-3 }}</span>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <div class="point_column p_four left_0 top_0 wow fadeInDown" data-wow-delay="0.6s" style="--top:95%;--top-mob:95%; --left:50px;">
+                                <div class="accordion-button collapsed fs-18 gap-1 flex-column" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#qure_benefit-4" aria-expanded="false"
+                                    aria-controls="qure_benefit-4"
+                                    {% if block.settings.image-4 != blank %}
+                                        data-img-url="{{ block.settings.image-4 | image_url }}">
+                                    {% endif %}
+                                    {% if block.settings.text-item-4 != blank %}
+                                        <span class="p_text">{{ block.settings.text-item-4 }}</span>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        loadScriptOnce('data_image', 'https://qureskincaredns-main.com/sections/isolated/why-it-works/section-why-it-works.js');
+        loadScriptOnce('wow-js', 'https://qureskincaredns-main.com/assets/js/wow.min.js', function () {
+            new WOW().init();
+        });
+    });
+</script>
+
+
+{% schema %}
+{
+  "name": "t:sections.why-it-works.name",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "t:common.header"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "t:common.text"
+    },
+    {
+        "type": "image_picker",
+        "id": "image",
+        "label": "t:common.image"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "accordion",
+      "name": "t:common.accordion",
+      "settings": [
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "t:common.header"
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "t:common.text"
+        },
+        {
+            "type": "image_picker",
+            "id": "image-with-text",
+            "label": "t:common.image-with-text"
+        },
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "t:common.image"
+        }
+      ]
+    },
+    {
+        "type": "items",
+        "name": "t:common.items",
+        "limit": 1,
+        "settings": [
+            {
+                "type": "text",
+                "id": "text-item-1",
+                "label": "t:sections.why-it-works.blocks.items.text-item-1.name"
+            },
+            {
+                "type": "image_picker",
+                "id": "image-1",
+                "label": "t:sections.why-it-works.blocks.items.image-1.name"
+            },
+            {
+                "type": "text",
+                "id": "text-item-2",
+                "label": "t:sections.why-it-works.blocks.items.text-item-2.name"
+            },
+            {
+                "type": "image_picker",
+                "id": "image-2",
+                "label": "t:sections.why-it-works.blocks.items.image-2.name"
+            },
+            {
+                "type": "text",
+                "id": "text-item-3",
+                "label": "t:sections.why-it-works.blocks.items.text-item-3.name"
+            },
+            {
+                "type": "image_picker",
+                "id": "image-3",
+                "label": "t:sections.why-it-works.blocks.items.image-3.name"
+            },
+            {
+                "type": "text",
+                "id": "text-item-4",
+                "label": "t:sections.why-it-works.blocks.items.text-item-4.name"
+            },
+            {
+                "type": "image_picker",
+                "id": "image-4",
+                "label": "t:sections.why-it-works.blocks.items.image-4.name"
+            }
+        ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.why-it-works.name"
+    }
+  ]
+}
+{% endschema %}

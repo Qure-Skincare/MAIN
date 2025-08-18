@@ -396,8 +396,10 @@
       "settings": {
         "heading": "Trusted and Recommended by Experts",
         "text": "<p>“This treatment is an at-home option for those who want to <strong>avoid the hassle or cost of going to the office”.</strong></p>",
+        "image_text": "",
         "video_cover_image": "shopify://shop_images/shah-maxfield_b22f60a0-704d-45ec-887d-9ed9c3193a54.webp",
-        "video_url": "https://www.youtube.com/watch?v=mVdncsTAXiA"
+        "video_url": "https://www.youtube.com/watch?v=mVdncsTAXiA",
+        "wistia_url": ""
       }
     },
     "video_slider_hkFqWU": {
@@ -559,12 +561,9 @@
     "compare_yQBfAr": {
       "type": "compare",
       "blocks": {
-        "compare_aGBXpK": {
-          "type": "compare",
+        "heading_En7Y4A": {
+          "type": "heading",
           "settings": {
-            "check_text": "",
-            "cross_text": "",
-            "checkbox": false,
             "heading_check": "<p>Qure Micro-Infusion System</p>",
             "heading_cross": "<p>Other At-Home Needling Devices</p>"
           }
@@ -574,9 +573,7 @@
           "settings": {
             "check_text": "<p>Stamping doesn’t over-damage skin</p>",
             "cross_text": "<p>Rolling can cause damage to skin</p>",
-            "checkbox": false,
-            "heading_check": "",
-            "heading_cross": ""
+            "checkbox": false
           }
         },
         "compare_9aCey6": {
@@ -584,9 +581,7 @@
           "settings": {
             "check_text": "<p>Little to no downtime & quick recovery</p>",
             "cross_text": "<p>Slower recovery & longer healing time</p>",
-            "checkbox": false,
-            "heading_check": "",
-            "heading_cross": ""
+            "checkbox": false
           }
         },
         "compare_7zmNT8": {
@@ -594,9 +589,7 @@
           "settings": {
             "check_text": "<p>New needle heads provide sharp, straight needles for every treatment - designed for better efficacy</p>",
             "cross_text": "<p>Needles become blunt after several uses & create unnecessary skin trauma which can lessen efficacy</p>",
-            "checkbox": false,
-            "heading_check": "",
-            "heading_cross": ""
+            "checkbox": false
           }
         },
         "compare_nx8fW9": {
@@ -604,9 +597,7 @@
           "settings": {
             "check_text": "<p>Minimized risk of infection due to disposable heads</p>",
             "cross_text": "<p>Risk of infection & irritation if not disinfected well</p>",
-            "checkbox": false,
-            "heading_check": "",
-            "heading_cross": ""
+            "checkbox": false
           }
         },
         "compare_XyCyNE": {
@@ -614,14 +605,12 @@
           "settings": {
             "check_text": "<p>Delivers serum directly to skin to help increase absorption & results</p>",
             "cross_text": "<p>Less effective absorption of serum as applied topically</p>",
-            "checkbox": false,
-            "heading_check": "",
-            "heading_cross": ""
+            "checkbox": false
           }
         }
       },
       "block_order": [
-        "compare_aGBXpK",
+        "heading_En7Y4A",
         "compare_pR4yPf",
         "compare_9aCey6",
         "compare_7zmNT8",

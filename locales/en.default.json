@@ -76,6 +76,17 @@
     },
         "compare":{
             "versus_text": "VS"
+    },
+        "beauty-benefits":{
+            "verified_text": "Verified",
+            "review_image": "https://qureskincaredns-main.com/assets/images/reviewCheck.svg"
+    },
+        "sticky-cta":{
+            "select_color_text": "Select Color",
+            "white_swatch_image": "https://qureskincaredns-main.com/sections/isolated/sticky-cta/images/white_swatch.webp",
+            "black_swatch_image": "https://qureskincaredns-main.com/sections/isolated/sticky-cta/images/black_swatch.webp",
+            "black_text": "Black",
+            "white_text": "White"
     }
     },
     "general": {

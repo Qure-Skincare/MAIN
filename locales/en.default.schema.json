@@ -24,6 +24,8 @@
         "popup-header": "Popup header",
         "popup-text": "Popup text",
         "style-color": "Style color",
+        "color-switch": "Color switch",
+        "color-switch-heading": "Color switch header",
         "black": "Black",
         "green": "Green",
         "light-green": "Light green",
@@ -62,6 +64,7 @@
         "hash": "Hash",
         "left": "Left",
         "right": "Right",
+        "lane": "Lane",
         "accordion": "Accordion",
         "slider": "Slider",
         "video-slider": "Video slider",
@@ -78,7 +81,14 @@
         "information-box": "Information box",
         "gift": "Gift",
         "product": "Product",
-        "price_limit": "Price limit"
+        "price_limit": "Price limit",
+        "layout": "Layout",
+        "mode": "Mode",
+        "default": "Default",
+        "patches": "Patches",
+        "quote": "Quote",
+        "quote-mobile": "Quote mobile",
+        "content": "Content"
     },
     "blocks": {
         "block-card": {
@@ -96,6 +106,9 @@
         },
         "get-smoother-skin": {
             "name": "Get smoother skin"
+        },
+        "beauty-benefits": {
+            "name": "Beauty benefits"
         },
         "money-back-guarantee": {
             "name": "Money back guarantee"
@@ -137,6 +150,37 @@
         },
         "choose-treatment": {
             "name": "Choose treatment"
+        },
+        "why-it-works": {
+            "name": "Why it works",
+            "blocks":{
+                "items": {
+                    "text-item-1": {
+                        "name": "Text item 1"
+                    },
+                    "text-item-2": {
+                        "name": "Text item 2"
+                    },
+                    "text-item-3": {
+                        "name": "Text item 3"
+                    },
+                    "text-item-4": {
+                        "name": "Text item 4"
+                    },
+                    "image-1": {
+                        "name": "Image 1"
+                    },
+                    "image-2": {
+                        "name": "Image 2"
+                    },
+                    "image-3": {
+                        "name": "Image 3"
+                    },
+                    "image-4": {
+                        "name": "Image 4"
+                    }
+                }
+            }
         },
         "product-info": {
             "name": "Product information"

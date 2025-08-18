@@ -2,6 +2,7 @@
   Renders a banner with text section
 {% enddoc %}
 
+
 <link href="https://qureskincaredns-main.com/sections/global/banner-with-text/banner-text.css" rel="stylesheet" type="text/css">
 <div class="qure__section banner-with-text"
     style="--section-padding-top: 80px; --section-padding-bottom: 80px; --section-padding-top-mob: 30px; --section-padding-bottom-mob: 50px;">
@@ -101,8 +102,11 @@
                         {% if section.settings.heading != blank %}
                             <h2 class="banner-text--heading ctm-width" style="--ctm-width-mob: 300px;">{{ section.settings.heading }}</h2>
                         {% endif %}
-                        {% if section.settings.text_mobile != blank %}
-                            <div class="banner-text-quotes d-none" style="--text-quote-mt:24px;--text-quote-mb: 0px;">“{{ section.settings.text_mobile | replace: '<p>', '' | replace: '</p>', '' }}</div>
+                        {% if section.settings.quote != blank %}
+                            <div class="banner-text-quotes" style="--text-quote-mt:24px;--text-quote-mb: 0px;">{{ section.settings.quote | replace: '<p>', '' | replace: '</p>', '' }}</div>
+                        {% endif %}
+                        {% if section.settings.quote-mobile != blank %}
+                            <div class="banner-text-quotes d-none" style="--text-quote-mt:24px;--text-quote-mb: 0px;">“{{ section.settings.quote-mobile | replace: '<p>', '' | replace: '</p>', '' }}</div>
                         {% endif %}
                         {% if section.settings.text != blank %}
                             <div class="banner-text--des" style="--text-mt: 24px; --text-mb: 24px;">{{ section.settings.text | replace: '<p>', '' | replace: '</p>', '' }}</div>
@@ -184,6 +188,7 @@
     });
 </script>
 
+
 {% schema %}
 {
   "name": "t:sections.banner-with-text.name",
@@ -200,8 +205,13 @@
     },
     {
         "type": "richtext",
-        "id": "text_mobile",
-        "label": "t:common.text-mobile"
+        "id": "quote",
+        "label": "t:common.quote"
+    },
+    {
+        "type": "richtext",
+        "id": "quote-mobile",
+        "label": "t:common.quote-mobile"
     },
     {
         "type": "select",

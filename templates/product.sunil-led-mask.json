@@ -11,7 +11,6 @@
   "sections": {
     "product_header_V3N3T8": {
       "type": "product-header",
-      "name": "t:sections.product-header.name",
       "blocks": {
         "jumpto_A1": {
           "type": "jumpto",
@@ -74,6 +73,7 @@
         "jumpto_A6",
         "nextships_A7"
       ],
+      "name": "t:sections.product-header.name",
       "settings": {
         "seo_heading": "RED LIGHT MASK Q-REJUVALIGHT PRO",
         "heading": "Repair & rejuvenate your skin with our Light Therapy Mask",
@@ -144,9 +144,13 @@
       "settings": {
         "heading": "All the skin firming, smoothing, clearing benefits with just 1 device",
         "text": "<p>A portable, FDA-cleared, at-home LED light therapy treatment that is scientifically <em>proven to change your skin</em> for the better.</p><p>Q-Rejuvalight Pro utilizes a combination of <em>5 market-leading light wavelengths</em> to treat a multitude of skin concerns deep within the skin, where even the best creams and serums can’t reach. </p>",
+        "text_mobile": "",
+        "image_position": "left",
+        "sub_text": "",
         "image": "shopify://shop_images/skin_firming.webp",
         "button_label": "Shop Now",
-        "button_url": "#buy_box"
+        "button_url": "#buy_box",
+        "wistia_url": ""
       }
     },
     "led_benefits_eqJTF8": {
@@ -197,7 +201,10 @@
       ],
       "name": "t:sections.led-benefits.name",
       "settings": {
-        "heading": "5 reasons why you’ll love LED Light Therapy"
+        "background_color": "",
+        "heading": "5 reasons why you’ll love LED Light Therapy",
+        "button_label": "",
+        "button_url": ""
       }
     },
     "proven_results_CQ9FBU": {
@@ -463,7 +470,9 @@
       "settings": {
         "background_color": "",
         "heading": "Results you’ll see with your own eyes",
-        "text_mobile": ""
+        "text_mobile": "",
+        "button_label": "",
+        "button_url": ""
       }
     },
     "trusted_recommended_Cxt4Gj": {
@@ -472,8 +481,10 @@
       "settings": {
         "heading": "Trusted and Recommended by Experts",
         "text": "<p>“Of all the LED masks we’ve tried, this is <strong>the best on the market right now...</strong> It didn’t lose in any category...</p><p>There’s real science behind LED therapy, и <strong>Qure makes it easy</strong> to be consistent—which is what really drives results.”</p>",
+        "image_text": "",
         "video_cover_image": "shopify://shop_images/doctor_img_bddb1870-8487-4f88-b6dd-ab063ea346f3.webp",
-        "video_url": "https://www.youtube.com/watch?v=jwKN4SH4yz8"
+        "video_url": "https://www.youtube.com/watch?v=jwKN4SH4yz8",
+        "wistia_url": ""
       }
     },
     "video_slider_G8bjzR": {
@@ -687,7 +698,8 @@
       ],
       "name": "t:sections.video-review-slider.name",
       "settings": {
-        "heading": "Confident skin starts here"
+        "heading": "Confident skin starts here",
+        "background_color": "#f6f6f7"
       }
     },
     "carousel_mfFFcV": {
@@ -770,7 +782,10 @@
       "name": "t:sections.how-to-use.name",
       "settings": {
         "heading": "See how quick and easy it is to use",
-        "wistia_url": "jlz3itwzrb"
+        "heading_mobile": "",
+        "wistia_url": "jlz3itwzrb",
+        "button_label": "",
+        "button_url": ""
       }
     },
     "product_info_UhyUij": {
@@ -781,6 +796,8 @@
         "text": "<p><strong>The only FDA-cleared LED light therapy mask with an app.</strong></p><p>Your skin is unique, so your treatment should be too.</p><p>Choose between <em>three treatment modes</em>, “Anti-Breakout”, “Anti-Aging” or custom treatment zones. Select a treatment mode on five different facial areas to treat and <em>target what your skin needs today</em>. </p><p>Never miss a treatment with Qure mobile app planner and phone reminders.</p>",
         "image": "shopify://shop_images/qure_mobile_app.webp",
         "image_mobile": "shopify://shop_images/qure_mobile_app_mob.webp",
+        "button-label": "",
+        "button-url": "",
         "image_position": "right"
       }
     },
@@ -792,15 +809,12 @@
     "compare_FyPtUj": {
       "type": "compare",
       "blocks": {
-        "compare_PCEzxB": {
-          "type": "compare",
+        "heading_hNJTiA": {
+          "type": "heading",
           "settings": {
-            "check_text": "",
-            "cross_text": "",
-            "checkbox": false,
             "heading_check": "",
-            "heading_image_check": "shopify://shop_images/logo_a2181e75-9107-4275-951d-370cb08b187b.svg",
-            "heading_cross": "<h4>Derm/<br/>Clinic Treatments</h4>"
+            "heading_image_check": "shopify://shop_images/logo_a0485ab7-7672-494a-a74a-ee82b3b2c76f.svg",
+            "heading_cross": "<p>Derm/<br/>Clinic Treatments</p>"
           }
         },
         "compare_CHHtLt": {
@@ -808,9 +822,7 @@
           "settings": {
             "check_text": "<p><strong>One-time</strong> investment</p>",
             "cross_text": "<p><strong>Ongoing cost</strong> per session</p>",
-            "checkbox": false,
-            "heading_check": "",
-            "heading_cross": ""
+            "checkbox": false
           }
         },
         "compare_pxikkB": {
@@ -818,9 +830,7 @@
           "settings": {
             "check_text": "<p>No appointments - use anytime at home</p>",
             "cross_text": "<p>Completed according to clinic's availability</p>",
-            "checkbox": false,
-            "heading_check": "",
-            "heading_cross": ""
+            "checkbox": false
           }
         },
         "compare_6Ttyjz": {
@@ -828,9 +838,7 @@
           "settings": {
             "check_text": "<p>Saves time with only 3 minutes a day</p>",
             "cross_text": "<p>Requires 20-30 mins per session, plus travel time</p>",
-            "checkbox": false,
-            "heading_check": "",
-            "heading_cross": ""
+            "checkbox": false
           }
         },
         "compare_PxMe7f": {
@@ -838,9 +846,7 @@
           "settings": {
             "check_text": "<p>Better results with more frequent treatments</p>",
             "cross_text": "<p>Less treatments = less consistent results</p>",
-            "checkbox": false,
-            "heading_check": "",
-            "heading_cross": ""
+            "checkbox": false
           }
         },
         "compare_U7frfb": {
@@ -848,14 +854,12 @@
           "settings": {
             "check_text": "<p>Customized approach with clinical backing</p>",
             "cross_text": "<p>Customized approach with clinical backing</p>",
-            "checkbox": true,
-            "heading_check": "",
-            "heading_cross": ""
+            "checkbox": true
           }
         }
       },
       "block_order": [
-        "compare_PCEzxB",
+        "heading_hNJTiA",
         "compare_CHHtLt",
         "compare_pxikkB",
         "compare_6Ttyjz",
@@ -960,8 +964,8 @@
       "settings": {
         "heading": "Have questions?",
         "text": "Don’t see your question?",
-        "button": "Ask us",
-        "url": "#"
+        "button_label": "Ask us",
+        "button_url": ""
       }
     },
     "sticky_cta_AFkFxe": {
@@ -969,7 +973,9 @@
       "name": "t:sections.sticky-cta.name",
       "settings": {
         "heading": "Q-Rejuvalight Pro LED Mask",
-        "text": "203 purchased in last 48 hours"
+        "text": "203 purchased in last 48 hours",
+        "button-label": "",
+        "button-url": ""
       }
     },
     "1707653061bd3707e6": {

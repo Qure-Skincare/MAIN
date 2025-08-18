@@ -4,95 +4,94 @@
 
 
 <link rel="stylesheet" href="https://qureskincaredns-main.com/sections/isolated/eye-patches/eye-patch.css" />
-<div class="eye-patch-care qure__section"
-    style="--section-padding-top:80px;--section-padding-bottom:80px; --section-padding-top-mob:30px;--section-padding-bottom-mob:30px;">
-    <div class="container container-small" style="--container-width:980px">
-        <div class="qure__section-header text-center mb-60">
-            {% if section.settings.heading != blank %}
-                 <h2 class="qure__section-heading mb-15">{{ section.settings.heading }}</h2>
-            {% endif %}
-            {% if section.settings.text != blank %}
-                {{ section.settings.text }}
-            {% endif %}
-        </div>
-        <div class="d-flex custom__grid" style="--column-gap:40px; --column-gap-mobile:0px;">
-            <div class="col custom__block">
+<div class="eye-patch-care qure__section" style="--section-padding-top:80px;--section-padding-bottom:80px; --section-padding-top-mob:30px;--section-padding-bottom-mob:30px;">
+  <div class="container container-small" style="--container-width:980px">
+      <div class="qure__section-header text-center mb-md-60 mb-30 mx-auto ctm-width" style="--ctm-width:740px;">
+        {% if section.settings.heading != blank %}
+          <h2 class="qure__section-heading pb-10">{{ section.settings.heading }}</h2>
+        {% endif %}
+        {% if section.settings.text != blank %}
+          {{ section.settings.text }}
+        {% endif %}
+      </div>
+      <div class="d-flex custom__grid" style="--column-gap:40px; --column-gap-mobile:0px;">
+          <div class="col custom__block">
               <div class="patch-card-block">
                 {% if section.settings.image_compare_check != blank %}
                   <div class="patch-card-img overflow-hidden position-relative">
-                      <img src="{{ section.settings.image_compare_check | image_url }}" alt="{{ section.settings.image_compare_check.alt | escape }}" class="img-fluid rounded-10 w-100">
+                    <img src="{{ section.settings.image_compare_check | image_url }}" alt="{{ section.settings.image_compare_check.alt | escape }}" class="img-fluid rounded-10 w-100">
                   </div>
                 {% endif %}
               </div>
-            </div>
-            <div class="patch-versus-col custom__block">
+          </div>
+          <div class="patch-versus-col custom__block">
               <div class="patch-versus">{{ 'sections.compare.versus_text' | t }}</div>
+          </div>
+          <div class="col custom__block">
+              <div class="patch-card-block">
+                {% if section.settings.image_compare_cross != blank %}
+                  <div class="patch-card-img overflow-hidden position-relative">
+                    <img src="{{ section.settings.image_compare_cross | image_url }}" alt="{{ section.settings.image_compare_cross.alt | escape }}" class="img-fluid rounded-10 w-100">
+                  </div>
+                {% endif %}
+              </div>
+          </div>
+      </div>
+      <div class="d-flex custom__grid patch-list-row justify-content-between patch-row" style="--column-gap:40px; --column-gap-mobile:20px;">
+        {% for block in section.blocks %}
+          {% if block.type == 'heading' %}
+            {% if block.settings.heading_check != blank %}
+              <div class="col custom__block">
+                <div class="patch-card-content">
+                  <div class="text-center my-20"><h4>{{ block.settings.heading_check | replace: '<p>', '' | replace: '</p>', ' ' }}</h4></div>
+                </div>
+              </div>
+            {% endif %}
+            {% if block.settings.heading_image_check != blank %}
+              <div class="col custom__block">
+                <div class="patch-card-content">
+                  <div class="text-center my-10"><img src="{{ block.settings.heading_image_check | image_url }}" alt="{{ block.settings.heading_image_check.alt | escape }}" style="filter: invert(1);"></div>
+                </div>
+              </div>
+            {% endif %}
+            {% if block.settings.heading_image_cross != blank %}
+              <div class="col custom__block">
+                <div class="patch-card-content">
+                  <div class="text-center my-10"><img src="{{ block.settings.heading_image_cross | image_url }}" alt="{{ block.settings.heading_image_cross.alt | escape }}" style="filter: invert(1);"></div>
+                </div>
+              </div>
+            {% endif %}
+            {% if block.settings.heading_cross != blank %}
+              <div class="col custom__block">
+                <div class="patch-card-content">
+                  <div class="text-center my-20"><h4>{{ block.settings.heading_cross | replace: '<p>', '' | replace: '</p>', ' ' }}</h4></div>
+                </div>
+              </div>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      </div>
+      {% for block in section.blocks %}
+        {% if block.type == 'compare' %}
+          <div class="d-flex custom__grid patch-list-row justify-content-between patch-row" style="--column-gap:40px; --column-gap-mobile:20px;">
+            <div class="col custom__block">
+              {% if block.settings.check_text != blank %}
+                <div class="patch-list patch-check">{{ block.settings.check_text | replace: '<p>', '' | replace: '</p>', '' }}</div>
+              {% endif %}
             </div>
             <div class="col custom__block">
-                <div class="patch-card-block">
-                    {% if section.settings.image_compare_cross != blank %}
-                      <div class="patch-card-img overflow-hidden position-relative">
-                        <img src="{{ section.settings.image_compare_cross | image_url }}" alt="{{ section.settings.image_compare_cross.alt | escape }}" class="img-fluid rounded-10 w-100">
-                      </div>
-                    {% endif %}
-                </div>
+              {% if block.settings.cross_text != blank %}
+                {% if block.settings.checkbox %}
+                  <div class="patch-list patch-check-gray">{{ block.settings.cross_text | replace: '<p>', '' | replace: '</p>', '' }}</div>
+                {% else %}
+                  <div class="patch-list patch-cross">{{ block.settings.cross_text | replace: '<p>', '' | replace: '</p>', '' }}</div>
+                {% endif %}  
+              {% endif %}
             </div>
-        </div>
-        {% for block in section.blocks %}
-            {% if block.type == 'compare' %}
-                <div class="d-flex custom__grid patch-list-row justify-content-between patch-row" style="--column-gap:40px; --column-gap-mobile:20px;">
-                  {% assign heading_check_text = block.settings.heading_check | strip_html | strip %}
-                  {% if heading_check_text != '' %}
-                    <div class="col custom__block">
-                      <div class="patch-card-content">
-                        <div class="text-center my-10"><h4>{{ block.settings.heading_check}}</h4></div>
-                      </div>
-                    </div>
-                  {% endif %}
-                  {% if block.settings.heading_image_check != blank %}
-                    <div class="col custom__block">
-                      <div class="patch-card-content">
-                        <div class="text-center my-10">
-                          <img src="{{ block.settings.heading_image_check | image_url }}" alt="{{ block.settings.heading_image_check.alt | escape }}" style="filter: invert(1);">
-                        </div>
-                      </div>
-                    </div>
-                  {% endif %}
-                  {% assign heading_cross_text = block.settings.heading_cross | strip_html | strip %}
-                  {% if heading_cross_text != '' %}
-                    <div class="col custom__block">
-                      <div class="patch-card-content">
-                        <div class="text-center my-10"><h4>{{ block.settings.heading_cross }}</h4></div>
-                      </div>
-                    </div>
-                  {% endif %}
-                  {% if block.settings.heading_image_cross != blank %}
-                    <div class="col custom__block">
-                      <div class="patch-card-content">
-                         <div class="text-center my-10">
-                           <img src="{{ block.settings.heading_image_cross | image_url }}" alt="{{ block.settings.heading_image_cross.alt | escape }}" style="filter: invert(1);">
-                         </div>
-                      </div>
-                    </div>
-                  {% endif %}
-                  {% if block.settings.check_text != blank %}
-                    <div class="col custom__block">
-                      <div class="patch-list patch-check">{{ block.settings.check_text | replace: '<p>', '' | replace: '</p>', '' }}</div>
-                    </div>
-                  {% endif %}
-                  {% if block.settings.cross_text != blank %}
-                    <div class="col custom__block">
-                      {% if block.settings.checkbox %}
-                        <div class="patch-list patch-check-gray">{{ block.settings.cross_text | replace: '<p>', '' | replace: '</p>', '' }}</div>
-                      {%  else %}
-                        <div class="patch-list patch-cross">{{ block.settings.cross_text | replace: '<p>', '' | replace: '</p>', '' }}</div>
-                      {% endif %}
-                    </div>
-                  {% endif %}
-                </div>
-            {% endif %}
-        {% endfor %}
-    </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+  </div>
 </div>
 
 
@@ -123,24 +122,10 @@
   ],
   "blocks": [
     {
-      "type": "compare",
-      "name": "t:sections.compare.blocks.compare.name",
+      "type": "heading",
+      "name": "t:common.header",
+      "limit": 1,
       "settings": [
-        {
-          "type": "richtext",
-          "id": "check_text",
-          "label": "t:sections.compare.blocks.compare.settings.check-text"
-        },
-        {
-          "type": "richtext",
-          "id": "cross_text",
-          "label": "t:sections.compare.blocks.compare.settings.cross-text"
-        },
-        {
-          "type": "checkbox",
-          "id": "checkbox",
-          "label": "t:sections.compare.blocks.compare.settings.checkbox"
-        },
         {
           "type": "richtext",
           "id": "heading_check",
@@ -160,6 +145,27 @@
           "type": "image_picker",
           "id": "heading_image_cross",
           "label": "t:sections.compare.settings.heading-image-cross.name"
+        }
+      ]
+    },
+    {
+      "type": "compare",
+      "name": "t:sections.compare.blocks.compare.name",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "check_text",
+          "label": "t:sections.compare.blocks.compare.settings.check-text"
+        },
+        {
+          "type": "richtext",
+          "id": "cross_text",
+          "label": "t:sections.compare.blocks.compare.settings.cross-text"
+        },
+        {
+          "type": "checkbox",
+          "id": "checkbox",
+          "label": "t:sections.compare.blocks.compare.settings.checkbox"
         }
       ]
     }

@@ -246,7 +246,7 @@
         "image": "shopify://shop_images/hypo_acid.webp",
         "image_mobile": "shopify://shop_images/hypo_acid_mob.webp",
         "popup-heading": "Dermal Mist Ingredients",
-        "popup-text": "<p>Water (aqua)*, Chrysanthellum indicum flowerwater, sodium chloride, sodium phosphate, disodium phosphate, hypochlorous acid. *Ultra pure water.</p>",
+        "popup-text": "<p><strong>Water (aqua)*, Chrysanthellum indicum flowerwater, sodium chloride, sodium phosphate, disodium phosphate, hypochlorous acid. *Ultra pure water.</strong></p>",
         "button-label": "View Full Ingredient List",
         "button-url": "#exampleModalToggle"
       }
@@ -254,14 +254,11 @@
     "compare_8FkPMf": {
       "type": "compare",
       "blocks": {
-        "compare_3CP3fq": {
-          "type": "compare",
+        "heading_RxAeac": {
+          "type": "heading",
           "settings": {
-            "check_text": "",
-            "cross_text": "",
-            "checkbox": false,
-            "heading_check": "<h4>Qure Dermal Mist</h4>",
-            "heading_cross": "<h4>Traditional Skin Mists</h4>"
+            "heading_check": "<p>Qure Dermal Mist</p>",
+            "heading_cross": "<p>Traditional Skin Mists</p>"
           }
         },
         "compare_QcqhJN": {
@@ -269,9 +266,7 @@
           "settings": {
             "check_text": "<p>Powered by Hypochlorous Acid and enriched with Chamomile</p>",
             "cross_text": "<p>Often alcohol-based or contain added fragrances</p>",
-            "checkbox": false,
-            "heading_check": "",
-            "heading_cross": ""
+            "checkbox": false
           }
         },
         "compare_9LDCBh": {
@@ -279,9 +274,7 @@
           "settings": {
             "check_text": "<p>Designed for face, body & anywhere your skin touches</p>",
             "cross_text": "<p>Primarily designed for facial use only</p>",
-            "checkbox": false,
-            "heading_check": "",
-            "heading_cross": ""
+            "checkbox": false
           }
         },
         "compare_dc6JHY": {
@@ -289,9 +282,7 @@
           "settings": {
             "check_text": "<p>Hypoallergenic and suitable for sensitive skin</p>",
             "cross_text": "<p>May contain irritants not ideal for sensitive skin</p>",
-            "checkbox": false,
-            "heading_check": "",
-            "heading_cross": ""
+            "checkbox": false
           }
         },
         "compare_tiPRmy": {
@@ -299,9 +290,7 @@
           "settings": {
             "check_text": "<p>Clinically proven to reduce bacteria and inflammation</p>",
             "cross_text": "<p>Usually focused on hydration without these benefits</p>",
-            "checkbox": false,
-            "heading_check": "",
-            "heading_cross": ""
+            "checkbox": false
           }
         },
         "compare_cFDGbr": {
@@ -309,14 +298,12 @@
           "settings": {
             "check_text": "<p>Light, natural scent that dissipates quickly</p>",
             "cross_text": "<p>Often has a fragrance which can cause irritation</p>",
-            "checkbox": false,
-            "heading_check": "",
-            "heading_cross": ""
+            "checkbox": false
           }
         }
       },
       "block_order": [
-        "compare_3CP3fq",
+        "heading_RxAeac",
         "compare_QcqhJN",
         "compare_9LDCBh",
         "compare_dc6JHY",
@@ -411,7 +398,8 @@
       "settings": {
         "heading": "Dermal Mist",
         "text": "93 reserved in last 48 hours",
-        "button_label": "Pre-Order now"
+        "button-label": "",
+        "button-url": ""
       }
     }
   },
