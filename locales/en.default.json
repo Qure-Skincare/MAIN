@@ -54,7 +54,9 @@
             "caused_by_text": "Caused by:"
         },
         "faq":{
-            "arrow_image": "https://qureskincaredns-main.com/assets/images/arrow_right.svg"
+            "arrow_image": "https://qureskincaredns-main.com/assets/images/arrow_right.svg",
+            "button_label": "Ask us",
+            "text_before_button": "Don’t see your question?"
         },
          "micro-infusion-pdp-detailed-guide":{
             "arrow_image": "https://qureskincaredns-main.com/assets/images/arrow_right.svg"

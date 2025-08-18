@@ -50,12 +50,12 @@ Renders a faq section.
                 {% endfor %}
             </div>
             <div class="pt-md-50 pt-40 d-flex align-items-center justify-content-center gap-3">
-                {% if section.settings.text != blank %}
-                    <h6 class="fm-body fw-500 mb-0">{{ section.settings.text }}</h6>
-                {% endif %}
-                {% if section.settings.button_label != blank and section.settings.button_url != blank %}
-                    <a href="{{ section.settings.button_url }}" class="btn btn-sm btn--secondary">{{ section.settings.button_label }} <span><img src="{{ 'sections.faq.arrow_image' | t }}" alt="{{ 'section.faq.arrow_image.alt' | escape }}"></span></a>
-                {% endif %}
+                    <h6 class="fm-body fw-500 mb-0">
+                        {% if section.settings.text != blank %}
+                            {{ section.settings.text }}
+                            {% else %}
+                            {{ 'sections.faq.text_before_button' | t }}{% endif %}</h6>
+                    <a href="{{ section.settings.button_url }}" class="btn btn-sm btn--secondary">{% if section.settings.button_label != blank %}{{ section.settings.button_label }} {% else %} {{ 'sections.faq.button_label' | t }} {% endif %}<span><img src="{{ 'sections.faq.arrow_image' | t }}" alt="{{ 'section.faq.arrow_image.alt' | escape }}"></span></a>
             </div>
         </div>
     </div>
