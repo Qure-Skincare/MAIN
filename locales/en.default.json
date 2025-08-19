@@ -124,6 +124,13 @@
         "page": "Page {{ page }}",
         "tags": "Tags {{ tags }}"
     },
+    "page": {
+        "settings": {
+            "jumpto": {
+                "header": "Jump To"
+            }
+        }
+    },
     "product": {
         "settings": {
             "buy-button-label": "Buy Now",
@@ -163,6 +170,9 @@
                 "black": "Black",
                 "button-label": "Secure Now",
                 "text": "580 Units Reserved in last 48 hours"
+            },
+            "jumpto": {
+                "header": "Jump To"
             }
         }
     },

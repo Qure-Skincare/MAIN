@@ -206,6 +206,9 @@
         "product-header": {
             "name": "Product header"
         },
+        "page-header": {
+            "name": "Page header"
+        },
         "device-comparison": {
             "name": "Compare products with Competitors"
         },

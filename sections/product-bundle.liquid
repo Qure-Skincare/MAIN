@@ -21,7 +21,7 @@
         <div class="row custom__grid">
             <div class="col-lg-6 custom__block">
                 <div class="qure-product-details mw" style="--mw:500px;">
-                    {% render 'product-slider', product: product, page: blank, class: 'tp-product-gallery d-block d-lg-none mb-30' %}
+                    {% render 'product-page-slider', product: product, page: blank, class: 'tp-product-gallery d-block d-lg-none mb-30' %}
                     {% render 'product-rating' %}
 
                     <h1 class="qure__product-title mb-10">{{ product_title }}</h1>
@@ -41,7 +41,7 @@
                 </div>
             </div>
             <div class="col-lg-6 custom__block">
-                {% render 'product-slider', product: product, class: 'tp-product-gallery d-none d-lg-block' %}
+                {% render 'product-page-slider', product: product, class: 'tp-product-gallery d-none d-lg-block' %}
                 {% render 'product-benefits-list' %}
                 {% render 'product-collapsed', product: product, page: blank, class: 'mt-15 tp-product-accordion' %}
             </div>

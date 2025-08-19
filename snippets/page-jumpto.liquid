@@ -1,10 +1,10 @@
 {% doc %}
-  Renders a "Jump To" section for the product template
+  Renders a "Jump To" section for the page template
 
   @param {object} - A section object.
 
   @example
-  {% render 'product-jumpto', section: product %}
+  {% render 'page-jumpto', section: section %}
 {% enddoc %}
 
 {% capture jumpto %}
@@ -18,7 +18,7 @@
 {% endcapture %}
 
 {% if jumpto != blank %}
-    <div class="product__label mt-40 mb-15"> {{ 'product.settings.jumpto.header' | t }} </div>
+    <div class="product__label mt-40 mb-15"> {{ 'page.settings.jumpto.header' | t }} </div>
     <div class="patch-badge-group d-flex flex-wrap gap-3">
         {{ jumpto }}
     </div>

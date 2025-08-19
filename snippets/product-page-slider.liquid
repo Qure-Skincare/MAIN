@@ -1,12 +1,12 @@
 {% doc %}
-  Renders a product slider section for the product template.
+  Renders a product/page slider section for the product/page header section.
 
   @param {object} - A product object.
   @param {object} - A page object.
   @param {string} class - A string value.
 
   @example
-  {% render 'product-slider', product: product, page: page, class: '' %}
+  {% render 'product-page-slider', product: product, page: page, class: '' %}
 {% enddoc %}
 
 
@@ -15,9 +15,9 @@
     <div class="swiper qure__product-gallery qure__swiper-gallery" data-section-id="tp-gallery-desktop" data-mobile="3" data-tablet="3" data-desktop="4" data-autoplay="false" data-loop="false" data-spacing="0">
         <div class="swiper-wrapper" style="--perload-gap: 10px" data-nav-thumb>
             {% if product.metafields.custom.carousel_media.value != blank %}
-                {% render 'product-media-carousel', product_media_carousel: product.metafields.custom.carousel_media.value, classname: 'slide-image', size: '720x' %}
+                {% render 'product-page-media-carousel', input_media_carousel: product.metafields.custom.carousel_media.value, classname: 'slide-image', size: '720x' %}
             {% elsif page.metafields.custom.carousel_media.value != blank %}
-                {% render 'product-media-carousel', product_media_carousel: page.metafields.custom.carousel_media.value, classname: 'slide-image', size: '720x' %}
+                {% render 'product-page-media-carousel', input_media_carousel: page.metafields.custom.carousel_media.value, classname: 'slide-image', size: '720x' %}
             {% else %}
                 {% render 'product-media', product_media: product.media, classname: 'slide-image', size: '720x' %}
             {% endif %}
@@ -30,9 +30,9 @@
         <div class="swiper qure__product-gallery  tp-thumbnails-desktop qure__swiper-gallery-thumbnails" data-section-id="tp-thumbnails-desktop" data-mobile="3" data-tablet="4" data-desktop="4" data-autoplay="false" data-loop="false" data-spacing="10">
             <div class="swiper-wrapper">
                 {% if product.metafields.custom.carousel_media.value != blank %}
-                    {% render 'product-media-carousel', product_media_carousel: product.metafields.custom.carousel_media.value, classname: 'slide-thumbnail', size: '240x' %}
+                    {% render 'product-page-media-carousel', input_media_carousel: product.metafields.custom.carousel_media.value, classname: 'slide-thumbnail', size: '240x' %}
                 {% elsif page.metafields.custom.carousel_media.value != blank %}
-                    {% render 'product-media-carousel', product_media_carousel: page.metafields.custom.carousel_media.value, classname: 'slide-thumbnail', size: '240x' %}
+                    {% render 'product-page-media-carousel', input_media_carousel: page.metafields.custom.carousel_media.value, classname: 'slide-thumbnail', size: '240x' %}
                 {% else %}
                     {% render 'product-media', product_media: product.media, classname: 'slide-thumbnail', size: '240x' %}
                 {% endif %}
