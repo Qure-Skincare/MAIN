@@ -36,18 +36,8 @@
                                     </div>
                                     <div class="quer-menu-item type_banner col-sm-8 offset-sm-1">
                                        <div class="quer-menu-banner">
-                                          <a href="#" class="quer-collection-content">
-                                                <div class="qc-img hover-zoom">
-                                                   <img src="https://qureskincaredns-main.com/assets/images/header_drop1_400x.webp" alt="header_drop2.webp" class="img-fluid" />
-                                                </div>
-                                                <div class="qc-title">Shop Micro-Infusion <i class="fa-regular fa-arrow-right"></i> </div>
-                                          </a>
-                                          <a href="#" class="quer-collection-content">
-                                                <div class="qc-img hover-zoom">
-                                                   <img src="https://qureskincaredns-main.com/assets/images/header_drop2.webp" alt="header_drop2_400x" class="img-fluid" />
-                                                </div>
-                                                <div class="qc-title">Discover Best Sellers <i class="fa-regular fa-arrow-right"></i> </div>
-                                          </a>
+                                          {% render 'header-menu-desktop-pages-item', title: settings.header_learn_more_menu1_title, image: settings.header_learn_more_menu1_image, url: settings.header_learn_more_menu1_url %}
+                                          {% render 'header-menu-desktop-pages-item', title: settings.header_learn_more_menu2_title, image: settings.header_learn_more_menu2_image, url: settings.header_learn_more_menu2_url %}
                                        </div>
                                     </div>
                               </div>

@@ -8,6 +8,104 @@
     "theme_support_url": "https://support.shopify.com/"
   },
   {
+    "name": "Header slider",
+    "settings": [
+      { "type": "header", "content": "Product #1" },
+      { "type": "text", "id": "header_slider1_title", "label": "Title" },
+      { "type": "image_picker", "id": "header_slider1_image", "label": "Image" },
+      { "type": "image_picker", "id": "header_slider1_thumb", "label": "Thumb" },
+      { "type": "text", "id": "header_slider1_button_label", "label": "Button label" },
+      { "type": "url", "id": "header_slider1_button_url", "label": "Button url" },
+
+      { "type": "header", "content": "Product #2" },
+      { "type": "text", "id": "header_slider2_title", "label": "Title" },
+      { "type": "image_picker", "id": "header_slider2_image", "label": "Image" },
+      { "type": "image_picker", "id": "header_slider2_thumb", "label": "Thumb" },
+      { "type": "text", "id": "header_slider2_button_label", "label": "Button label" },
+      { "type": "url", "id": "header_slider2_button_url", "label": "Button url" },
+
+      { "type": "header", "content": "Product #3" },
+      { "type": "text", "id": "header_slider3_title", "label": "Title" },
+      { "type": "image_picker", "id": "header_slider3_image", "label": "Image" },
+      { "type": "image_picker", "id": "header_slider3_thumb", "label": "Thumb" },
+      { "type": "text", "id": "header_slider3_button_label", "label": "Button label" },
+      { "type": "url", "id": "header_slider3_button_url", "label": "Button url" },
+
+      { "type": "header", "content": "Product #4" },
+      { "type": "text", "id": "header_slider4_title", "label": "Title" },
+      { "type": "image_picker", "id": "header_slider4_image", "label": "Image" },
+      { "type": "image_picker", "id": "header_slider4_thumb", "label": "Thumb" },
+      { "type": "text", "id": "header_slider4_button_label", "label": "Button label" },
+      { "type": "url", "id": "header_slider4_button_url", "label": "Button url" },
+
+      { "type": "header", "content": "Product #5" },
+      { "type": "text", "id": "header_slider5_title", "label": "Title" },
+      { "type": "image_picker", "id": "header_slider5_image", "label": "Image" },
+      { "type": "image_picker", "id": "header_slider5_thumb", "label": "Thumb" },
+      { "type": "text", "id": "header_slider5_button_label", "label": "Button label" },
+      { "type": "url", "id": "header_slider5_button_url", "label": "Button url" },
+
+      { "type": "header", "content": "Product #6" },
+      { "type": "text", "id": "header_slider6_title", "label": "Title" },
+      { "type": "image_picker", "id": "header_slider6_image", "label": "Image" },
+      { "type": "image_picker", "id": "header_slider6_thumb", "label": "Thumb" },
+      { "type": "text", "id": "header_slider6_button_label", "label": "Button label" },
+      { "type": "url", "id": "header_slider6_button_url", "label": "Button url" },
+
+      { "type": "header", "content": "Product #7" },
+      { "type": "text", "id": "header_slider7_title", "label": "Title" },
+      { "type": "image_picker", "id": "header_slider7_image", "label": "Image" },
+      { "type": "image_picker", "id": "header_slider7_thumb", "label": "Thumb" },
+      { "type": "text", "id": "header_slider7_button_label", "label": "Button label" },
+      { "type": "url", "id": "header_slider7_button_url", "label": "Button url" },
+
+      { "type": "header", "content": "Product #8" },
+      { "type": "text", "id": "header_slider8_title", "label": "Title" },
+      { "type": "image_picker", "id": "header_slider8_image", "label": "Image" },
+      { "type": "image_picker", "id": "header_slider8_thumb", "label": "Thumb" },
+      { "type": "text", "id": "header_slider8_button_label", "label": "Button label" },
+      { "type": "url", "id": "header_slider8_button_url", "label": "Button url" },
+
+      { "type": "header", "content": "Product #9" },
+      { "type": "text", "id": "header_slider9_title", "label": "Title" },
+      { "type": "image_picker", "id": "header_slider9_image", "label": "Image" },
+      { "type": "image_picker", "id": "header_slider9_thumb", "label": "Thumb" },
+      { "type": "text", "id": "header_slider9_button_label", "label": "Button label" },
+      { "type": "url", "id": "header_slider9_button_url", "label": "Button url" }
+
+    ]
+  },
+  {
+    "name": "Header \"Help center\" menu",
+    "settings": [
+      { "type": "header", "content": "Menu #1" },
+      { "type": "text", "id": "header_help_center_menu1_title", "label": "Title" },
+      { "type": "image_picker", "id": "header_help_center_menu1_image", "label": "Image" },
+      { "type": "url", "id": "header_help_center_menu1_url", "label": "Button url" },
+
+      { "type": "header", "content": "Menu #1" },
+      { "type": "text", "id": "header_help_center_menu2_title", "label": "Title" },
+      { "type": "image_picker", "id": "header_help_center_menu2_image", "label": "Image" },
+      { "type": "url", "id": "header_help_center_menu2_url", "label": "Button url" }
+    ]
+  },
+
+  {
+    "name": "Header \"Learn more\" menu",
+    "settings": [
+      { "type": "header", "content": "Menu #1" },
+      { "type": "text", "id": "header_learn_more_menu1_title", "label": "Title" },
+      { "type": "image_picker", "id": "header_learn_more_menu1_image", "label": "Image" },
+      { "type": "url", "id": "header_learn_more_menu1_url", "label": "Button url" },
+
+      { "type": "header", "content": "Menu #1" },
+      { "type": "text", "id": "header_learn_more_menu2_title", "label": "Title" },
+      { "type": "image_picker", "id": "header_learn_more_menu2_image", "label": "Image" },
+      { "type": "url", "id": "header_learn_more_menu2_url", "label": "Button url" }
+    ]
+  },
+
+  {
     "name": "Cart drawer timer",
     "settings": [
       { "type": "range", "id": "cart_timer", "label": "Timer", "min": 0, "max": 20, "step": 1, "unit": "min", "default": 15 }
