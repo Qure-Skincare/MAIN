@@ -9,28 +9,29 @@
  */
 {
   "sections": {
-    "product_header_jUJyDK": {
-      "type": "product-header",
+    "page_header_SXJyMD": {
+      "type": "page-header",
       "blocks": {
+        "video_jEEVjS": {
+          "type": "video",
+          "settings": {
+            "heading": "Watch: How To Use",
+            "image": "shopify://shop_images/how-to-use.webp",
+            "wistia_url": "8ymvdqzx92"
+          }
+        },
         "jumpto_jEyVj6": {
           "type": "jumpto",
           "settings": {
             "button-label": "The Results",
-            "button-url": "#image_text"
-          }
-        },
-        "jumpto_pQPeXk": {
-          "type": "jumpto",
-          "settings": {
-            "button-label": "How It Works",
-            "button-url": "#achieve_skincare_goals"
+            "button-url": "#video-review-slider"
           }
         },
         "jumpto_P7zN3P": {
           "type": "jumpto",
           "settings": {
             "button-label": "How To Use",
-            "button-url": "#dual_action"
+            "button-url": "#how_to_use"
           }
         },
         "jumpto_F9gpDd": {
@@ -44,30 +45,32 @@
           "type": "jumpto",
           "settings": {
             "button-label": "Expert Reviews",
-            "button-url": "#trusted_recommended_by_experts"
+            "button-url": "#trusted_recommended"
           }
         },
         "jumpto_Ybdp8V": {
           "type": "jumpto",
           "settings": {
             "button-label": "FAQs",
-            "button-url": "#faqs"
+            "button-url": "#faq"
           }
         }
       },
       "block_order": [
+        "video_jEEVjS",
         "jumpto_jEyVj6",
-        "jumpto_pQPeXk",
         "jumpto_P7zN3P",
         "jumpto_F9gpDd",
         "jumpto_GYW9XP",
         "jumpto_Ybdp8V"
       ],
-      "name": "t:sections.product-header.name",
+      "name": "t:sections.page-header.name",
       "settings": {
-        "seo_heading": "",
-        "heading": "",
-        "description": ""
+        "rating": "<p><strong>4.8</strong>/5 Rated by Customers</p>",
+        "heading": "Transform dull looking skin with Micro-Infusion Facial System",
+        "description": "<ul><li>Helps reduce appearance of fine lines, smooth texture whilst helping to infuse active ingredients into your skin.</li><li>Virtually painless and performed in the comfort and convenience of your home.</li><li>Minimal to no downtime with visible results.</li></ul>",
+        "button-label": "Get Smoother, Glowing Skin",
+        "button-url": "#purchase-form"
       }
     },
     "slider_featured_in_lVZt5L": {
@@ -1216,7 +1219,7 @@
     }
   },
   "order": [
-    "product_header_jUJyDK",
+    "page_header_SXJyMD",
     "slider_featured_in_lVZt5L",
     "banner_with_text_phJT4F",
     "stock_alert_egmbcj",

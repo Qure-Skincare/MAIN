@@ -9,12 +9,6 @@
  */
 {
   "sections": {
-    "get_smoother_skin_ayn7eq": {
-      "disabled": true,
-      "type": "get-smoother-skin",
-      "name": "t:sections.get-smoother-skin.name",
-      "settings": {}
-    },
     "page_header_jUJyDD": {
       "type": "page-header",
       "blocks": {
@@ -1064,7 +1058,6 @@
     }
   },
   "order": [
-    "get_smoother_skin_ayn7eq",
     "page_header_jUJyDD",
     "slider_featured_in_rHHg4W",
     "banner_with_text_KaMmfy",
