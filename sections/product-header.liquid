@@ -31,17 +31,17 @@
                     {% endif %}
 
                     {% render 'product-buy-button', product_price: product_sale_price, product_variant_id: product_variant_id, section: section %}
-                    {% render 'product-buy-button-bottom', product_price_divided: product_price_divided, button_link: 'https://qureskincare.com/pages/derm-reviews' %}
+                    {% render 'product-buy-button-bottom', product_price_divided: product_price_divided %}
                     {% render 'product-next-ships', section: section %}
 
                 </div>
             </div>
             <div class="col-lg-6 custom__block">
                 {% render 'product-page-slider', product: product, page: blank, class: 'tp-product-gallery d-none d-lg-block' %}
-                {% render 'product-cross-sell', product: product %}
-                {% render 'product-benefits-list' %}
-                {% render 'product-collapsed', product: product, page: blank, class: 'mt-15 tp-product-accordion' %}
-                {% render 'product-jumpto', section: section %}
+                {% render 'product-page-cross-sell', product: product %}
+                {% render 'product-page-benefits-list' %}
+                {% render 'product-page-collapsed', product: product, page: blank, class: 'mt-15 tp-product-accordion' %}
+                {% render 'product-page-jumpto', section: section %}
             </div>
 
         </div>
@@ -54,6 +54,8 @@
         loadScriptOnce('slider-script', 'https://qureskincaredns-main.com/assets/js/slider-with-thumb.js');
     });
 </script>
+
+{% render 'product-data-json', product: product %}
 
 {% schema %}
 {

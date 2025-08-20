@@ -1,11 +1,11 @@
 {% doc %}
-  Renders a section under buy button.
+  Renders a product buy button snippet for the the product-header section.
 
   @param {string} product_price_divided - A string value.
   @param {string} button_link - A string value.
 
   @example
-  {% render 'product-buy-button-bottom', product_price_divided: '128$', button_link: 'https://qureskincare.com/' %}
+  {% render 'product-buy-button-bottom', product_price_divided: '' %}
 {% enddoc %}
 
 <div class="product_klarna-dtls d-flex flex-wrap gap-2 align-items-center fs-14 justify-content-center max-w-ctm" style="--max-w-ctm:500px">
@@ -21,7 +21,7 @@
             <li><img src="https://qureskincaredns-main.com/sections/isolated/targeted-patches/images/crt-2.webp" /></li>
             <li>+50</li>
         </ul>
-        <p>{{ 'product.settings.buy-button-bottom.recommended_html' | t: button_link: button_link }}</p>
+        <p>{{ 'product.settings.buy-button-bottom.recommended_html' | t: button_link: 'https://qureskincare.com/pages/derm-reviews' }}</p>
     </div>
 </div>
 <div class="d-none d-lg-flex flex-nowrap align-items-center justify-content-center col-gap">

@@ -1,3 +1,12 @@
+{% doc %}
+  Renders a header menu item for the header section.
+
+  @param {string} class - A string value.
+
+  @example
+  {% render 'header-menu-desktop', label: '' %}
+{% enddoc %}
+
 {% for link in linklists['main-menu'].links %}
     {% if link.title == label %}
         {% if link.links.size > 0 %}
