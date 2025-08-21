@@ -7,11 +7,12 @@
   {% render 'product-page-async-section', section: product %}
 {% enddoc %}
 
+{% assign template_id = section.id | split: '__' | first  %}
 
 {% capture async-section %}
     {% for block in section.blocks %}
         {% if block.type == 'section' %}
-            <div id="async-section" data-async-section-id="{{ block.settings.section_id }}"></div>
+            <div id="async-section" data-async-section-id="{{ template_id }}__{{ block.settings.section_id }}"></div>
         {% endif %}
     {% endfor %}
 {% endcapture %}
@@ -24,7 +25,7 @@
         document.addEventListener("DOMContentLoaded", function () {
             document.querySelectorAll('[data-async-section-id]').forEach(container => {
                 const sectionId = container.getAttribute('data-async-section-id');
-                const pageUrl = window.location.pathname; // текущая страница
+                const pageUrl = window.location.pathname;
 
                 fetch(`${pageUrl}?sections=${sectionId}`)
                 .then(res => res.json())
@@ -32,11 +33,9 @@
                     if (data[sectionId]) {
                         let html = data[sectionId].trim();
 
-                        // оборачиваем ответ во временный контейнер
                         const tempWrap = document.createElement('div');
                         tempWrap.innerHTML = html;
 
-                        // если внутри есть <template>, берём его содержимое
                         const tpl = tempWrap.querySelector('template#async');
                         if (tpl) {
                         html = tpl.innerHTML.trim();
@@ -47,12 +46,10 @@
                         container.querySelectorAll("script").forEach(oldScript => {
                         const newScript = document.createElement("script");
 
-                        // скопировать все атрибуты
                         [...oldScript.attributes].forEach(attr => {
                             newScript.setAttribute(attr.name, attr.value);
                         });
 
-                        // если inline-код
                         if (!oldScript.src) {
                             newScript.textContent = oldScript.textContent;
                         }
