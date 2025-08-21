@@ -12,9 +12,91 @@
     "main": {
       "type": "product-faucet-filter-pdp",
       "settings": {}
-    }
+    },
+    "trusted_recommended_O4HbR1": {
+      "type": "trusted-recommended",
+      "name": "t:sections.trusted-recommended.name",
+      "settings": {
+        "heading": "Trusted and Recommended by Experts",
+        "text": "<p>“<strong>Harsh water can definitely damage your skin</strong> on daily basis and it impacts everything you are doing with your skincare\"</p>",
+        "image_text": "",
+        "image": "shopify://shop_images/doctor-maxfield.webp",
+        "image_mobile": "shopify://shop_images/doctor-maxfield.webp",
+        "video_url": "",
+        "wistia_url": ""
+      }
+    },
+    "why_it_works_Y3EwlJ": {
+      "type": "why-it-works",
+      "blocks": {
+        "accordion_TNzHyM": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Carbon Fiber Layer",
+            "text": "<p>Removes up to 99% of chlorine, reducing skin irritation and dryness, leaving your skin and hair healthier.</p>",
+            "image-with-text": "shopify://shop_images/carbon.svg",
+            "image": "shopify://shop_images/filter_cartiage1.webp"
+          }
+        },
+        "accordion_jpMbyt": {
+          "type": "accordion",
+          "settings": {
+            "heading": "PP Filter",
+            "text": "<p>Captures larger particles such as dirt, rust, and sediment, providing the first stage of filtration.</p>",
+            "image-with-text": "shopify://shop_images/KDF.svg",
+            "image": "shopify://shop_images/filter_cartiage2.webp"
+          }
+        },
+        "accordion_HTiiQh": {
+          "type": "accordion",
+          "settings": {
+            "heading": "NOK Ultra Filter",
+            "text": "<p>Japan-made, top-range ultra-filter that reduces microscopic particles, including bacteria and some viruses, down to 0.01μm for enhanced purification.</p>",
+            "image-with-text": "shopify://shop_images/FOF1.svg",
+            "image": "shopify://shop_images/filter_cartiage3.webp"
+          }
+        },
+        "accordion_dFMRFG": {
+          "type": "accordion",
+          "settings": {
+            "heading": "ASP-Descaler",
+            "text": "<p>Reduces limescale buildup by preventing the accumulation of hard water minerals, helping to protect your shower system.</p>",
+            "image-with-text": "shopify://shop_images/asp.svg",
+            "image": "shopify://shop_images/filter_cartiage4.webp"
+          }
+        },
+        "items_Bk8DAe": {
+          "type": "items",
+          "settings": {
+            "text-item-1": "Carbon Fiber Layer",
+            "image-1": "shopify://shop_images/filter_cartiage1.webp",
+            "text-item-2": "PP Filter",
+            "image-2": "shopify://shop_images/filter_cartiage2.webp",
+            "text-item-3": "NOK Ultra Filter",
+            "image-3": "shopify://shop_images/filter_cartiage3.webp",
+            "text-item-4": "ASP-Descaler",
+            "image-4": "shopify://shop_images/filter_cartiage4.webp"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_TNzHyM",
+        "accordion_jpMbyt",
+        "accordion_HTiiQh",
+        "accordion_dFMRFG",
+        "items_Bk8DAe"
+      ],
+      "name": "t:sections.why-it-works.name",
+      "settings": {
+        "heading": "Why It Works",
+        "text": "<p>Our triple filtration technology filters the water to remove heavy metals and purify.</p>",
+        "image": "shopify://shop_images/filter_cartiage0.webp"
+      }
+    },
   },
   "order": [
-    "main"
+    "main",
+    "trusted_recommended_O4HbR1",
+    "why_it_works_Y3EwlJ"
   ]
 }
