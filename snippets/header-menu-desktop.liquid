@@ -1,3 +1,10 @@
+{% doc %}
+  Renders a desktop header menu snippet for the header section.
+
+  @example
+  {% render 'header-menu-desktop' %}
+{% enddoc %}
+
 <nav class="navigation main-nav qure-mb-menu d-none d-lg-block">
     <ul class="horizontal-list">
         {% render 'header-menu-items' label: 'BEST SELLERS' %}
@@ -27,82 +34,7 @@
                             </div>
                         </div>
                         <div class="quer-menu-item type_banner col-sm-4">
-                            <slide-with-thumbs>
-                                <div class="qure-menu-gallery qure__swiper-wrapper">
-                                    <!-- Galler start-->
-                                    <div class="swiper qure-menu-gallery qure__swiper-gallery" data-section-id="featured-gallery-desktop" data-mobile="3" data-tablet="3" data-desktop="4" data-autoplay="false" data-loop="false" data-spacing="0">
-                                        <div class="swiper-wrapper" style="--perload-gap: 10px" data-nav-thumb>
-                                            <div class="swiper-slide">
-                                                <div class="quer-collection-content">
-                                                    <div class="slide-image">
-                                                        <img src="https://qureskincaredns-main.com/sections/global/header/images/cs-1.webp" alt="1"
-                                                            class="img-fluid w-100" />
-                                                        <div class="qc-title bottom-0">Save up to 55% on bundles <i
-                                                            class="fa-regular fa-arrow-right"></i></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="slide-image">
-                                                    <img src="https://qureskincaredns-main.com/sections/global/header/images/cs-2.webp" alt="2"
-                                                        class="img-fluid w-100" />
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="slide-image">
-                                                    <img src="https://qureskincaredns-main.com/sections/global/header/images/cs-3.webp" alt="3"
-                                                        class="img-fluid w-100" />
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="slide-image">
-                                                    <img src="https://qureskincaredns-main.com/sections/global/header/images/cs-4.webp" alt="4"
-                                                        class="img-fluid w-100" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Galler End-->
-                                    <div class="swiper-thumbnail-with-arrow swiper__menu-arrow mt-3" style="--gap:8px;">
-                                        <!-- Thumbnails start-->
-                                        <div class="qure-swiper-arrow swiper-prev"><i class="fa-regular fa-angle-left"></i></div>
-                                        <div class="swiper qure-menu-gallery qure-menu-thumbnails qure__swiper-gallery-thumbnails" data-section-id="qure-menu-thumbnails" data-mobile="3" data-tablet="4" data-desktop="4" data-autoplay="false" data-loop="false" data-spacing="8">
-                                            <div class="swiper-wrapper">
-                                                <div class="swiper-slide">
-                                                    <div class="slide-thumbnail">
-                                                        <img src="https://qureskincaredns-main.com/sections/global/header/images/sm-1.webp" alt="1"
-                                                            class="img-fluid" />
-                                                        <span class="qc__thumb-title">Breakout Control Advanced</span>
-                                                    </div>
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <div class="slide-thumbnail">
-                                                        <img src="https://qureskincaredns-main.com/sections/global/header/images/sm-2.webp" alt="2"
-                                                            class="img-fluid" />
-                                                        <span class="qc__thumb-title">Line Refine Advanced</span>
-                                                    </div>
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <div class="slide-thumbnail">
-                                                        <img src="https://qureskincaredns-main.com/sections/global/header/images/sm-3.webp" alt="3"
-                                                            class="img-fluid" />
-                                                        <span class="qc__thumb-title">Fade & Firm Advanced </span>
-                                                    </div>
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <div class="slide-thumbnail">
-                                                        <img src="https://qureskincaredns-main.com/sections/global/header/images/sm-4.webp" alt="4"
-                                                            class="img-fluid" />
-                                                        <span class="qc__thumb-title">Water Filter Family</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="qure-swiper-arrow swiper-next"><i class="fa-regular fa-angle-right"></i></div>
-                                    </div>
-                                    <!-- Thumbnails End-->
-                                </div>
-                            </slide-with-thumbs>
+                            {% render 'header-slider-desktop' %}
                         </div>
                     </div>
                 </div>
@@ -124,18 +56,8 @@
                         </div>
                         <div class="quer-menu-item type_banner col-sm-8 offset-sm-1">
                             <div class="quer-menu-banner">
-                                <a href="#" class="quer-collection-content">
-                                    <div class="qc-img hover-zoom">
-                                        <img src="https://qureskincaredns-main.com/sections/global/header/images/help-1.webp" alt="header_drop2.webp" class="img-fluid" />
-                                    </div>
-                                    <div class="qc-title">Q-Rejuvalight Pro Guide <i class="fa-regular fa-arrow-right"></i> </div>
-                                </a>
-                                <a href="#" class="quer-collection-content">
-                                    <div class="qc-img hover-zoom">
-                                        <img src="https://qureskincaredns-main.com/sections/global/header/images/help-2.webp" alt="header_drop2_400x" class="img-fluid" />
-                                    </div>
-                                    <div class="qc-title">Shop Micro-Infusion <i class="fa-regular fa-arrow-right"></i></div>
-                                </a>
+                                {% render 'header-menu-desktop-pages-item', title: settings.header_help_center_menu1_title, image: settings.header_help_center_menu1_image, url: settings.header_help_center_menu1_url %}
+                                {% render 'header-menu-desktop-pages-item', title: settings.header_help_center_menu2_title, image: settings.header_help_center_menu2_image, url: settings.header_help_center_menu2_url %}
                             </div>
                         </div>
                     </div>

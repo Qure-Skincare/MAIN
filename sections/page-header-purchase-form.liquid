@@ -1,0 +1,131 @@
+{% doc %}
+  Renders a page header purchase form section
+{% enddoc %}
+
+<template>
+    <div class="border-top  max-w-ctm my-25" style="--max-w-ctm:500px"></div>
+    <div class="product_shower-variants">
+        <div class="qure__variant-label mb-15">Select Your Serum:</div>
+        <div class="d-flex col-gap" style="--col-gap:12px; --col-gap-mb:5px">
+            <div class="col qure__variant-item">
+                <input type="radio" id="white" name="serum_main" class="variant__input">
+                <label for="white" class="qure__variant-box">
+                    <div class="qv-frame">
+                        <div class="qv-frame-inner">
+                            <img class="qv-img"
+                                src="https://qureskincaredns-main.com/sections/isolated/micro-infusion-pdp/images/serum_1.webp">
+                        </div>
+                    </div>
+                    <div class="div">Dark Spots</div>
+                </label>
+            </div>
+            <div class="col qure__variant-item">
+                <input id="black" type="radio" name="serum_main" class="variant__input">
+                <label for="black" class="qure__variant-box">
+                    <div class="qv-frame">
+                        <img class="qv-img"
+                            src="https://qureskincaredns-main.com/sections/isolated/micro-infusion-pdp/images/serum_2.webp">
+                    </div>
+                    <div class="div">Wrinkles</div>
+                </label>
+            </div>
+            <div class="col qure__variant-item">
+                <input id="silver" type="radio" name="serum_main" class="variant__input" checked>
+                <label for="silver" class="qure__variant-box">
+                    <div class="qv-frame">
+                        <img class="qv-img"
+                            src="https://qureskincaredns-main.com/sections/isolated/micro-infusion-pdp/images/serum_3.webp">
+                    </div>
+                    <div class="div">Mixed</div>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <div class="patch__product-variants max-w-ctm" style="--max-w-ctm:500px">
+        <div class="patch__variant-label mb-15 mt-20">Select Your supply:</div>
+        <div class="d-grid vp-grid" style="--col-gap:12px">
+            <div class="patch__value-pack">
+                <input type="radio" class="vp__input" name="vaule-pack" id="three-month" checked />
+                <label for="three-month" class="vp-pack vp-best-pack pt-0">
+                    <div class="vp-best-value">Best Value <i
+                            class="fa-sharp fa-solid fa-star-sharp"></i>
+                    </div>
+                    <div class="vp-img"><img
+                            src="https://qureskincaredns-main.com/sections/isolated/micro-infusion-pdp/images/3_month_mixed.webp"
+                            class="img-fluid" />
+                    </div>
+                    <div class="vp-content">
+                        <p class="mb-0">3 Months</p>
+                        <p class="fs-14 mb-15">(6 treatments)</p>
+                        <div class="vp-price">
+                            <span class="vp-price-sale">{$dyn}</span>
+                            <span class="vp-price-reg">{$dyn}</span>
+                        </div>
+                        <span class="vp-badge">{dyn}% OFF</span>
+                    </div>
+                </label>
+            </div>
+            <div class="patch__value-pack">
+                <input type="radio" class="vp__input" name="vaule-pack" id="two-month" />
+                <label for="two-month" class="vp-pack">
+                    <div class="vp-img"><img
+                            src="https://qureskincaredns-main.com/sections/isolated/micro-infusion-pdp/images/2_month_mixed.webp"
+                            class="img-fluid" />
+                    </div>
+                    <div class="vp-content">
+                        <p class="mb-0">2 Months</p>
+                        <p class="fs-14 mb-15">(4 treatments)</p>
+                        <div class="vp-price">
+                            <span class="vp-price-sale">{$dyn}</span>
+                            <span class="vp-price-reg">{$dyn}</span>
+                        </div>
+                        <span class="vp-badge">{dyn}% OFF</span>
+                    </div>
+                </label>
+            </div>
+            <div class="patch__value-pack">
+                <input type="radio" class="vp__input" name="vaule-pack" id="one-month" />
+                <label for="one-month" class="vp-pack">
+                    <div class="vp-img"><img
+                            src="https://qureskincaredns-main.com/sections/isolated/micro-infusion-pdp/images/1_month_mixed.webp"
+                            class="img-fluid" />
+                    </div>
+                    <div class="vp-content">
+                        <p class="mb-0">1 Months</p>
+                        <p class="fs-14 mb-15">(2 treatments)</p>
+                        <div class="vp-price">
+                            <span class="vp-price-sale-one-month">{$dyn}</span>
+                            <span class="vp-price-reg d-none">{$dyn}</span>
+                        </div>
+                    </div>
+                </label>
+            </div>
+
+        </div>
+    </div>
+    <div class="qure__product-action-inner mt-30 mt-md-40 mb-10 max-w-ctm" style="--max-w-ctm:500px">
+        <button type="submit" class="add-cart-button product-form__submit btn btn--primary w-100">Buy
+            Now & Save {dyn}%</button>
+    </div>
+
+    {% render 'product-buy-button-bottom', product_price_divided: '$555' %}
+</template>
+
+
+{% schema %}
+{
+    "name": "t:sections.page-header-purchase-form.name",
+    "settings": [
+
+    ],
+    "blocks": [
+
+    ],
+    "presets": [
+        {
+            "name": "t:sections.page-header-purchase-form.name"
+        }
+    ]
+}
+{% endschema %}

@@ -1,0 +1,22 @@
+<div class="border-top  max-w-ctm my-25" style="--max-w-ctm:500px"></div>
+<div class="product_shower-variants">
+    <div class="qure__variant-label mb-15">Select Your Serum:</div>
+    <div class="d-flex col-gap" style="--col-gap:12px; --col-gap-mb:5px">
+        {% render 'purchase-form-landing-type' array: __idsArray1 %}
+        {% render 'purchase-form-landing-type' array: __idsArray2 %}
+        {% render 'purchase-form-landing-type' array: __idsArray3 %}
+    </div>
+</div>
+
+{% comment %} 
+    <div class="supply_steps ">
+        <div class="step_block">
+            <p class="pb-3">Choose serums:</p>
+            <div class="step_content step_serum serum_image">
+                {% render 'purchase-form-landing-type' array: __idsArray1 %}
+                {% render 'purchase-form-landing-type' array: __idsArray2 %}
+                {% render 'purchase-form-landing-type' array: __idsArray3 %}
+            </div>
+        </div>
+    </div> 
+{% endcomment %}

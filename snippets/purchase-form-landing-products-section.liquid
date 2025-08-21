@@ -1,0 +1,58 @@
+{% capture preorder_box %}
+    {%- for block in section.blocks -%}
+        {% if block.type == 'preorder_box' %}
+            <div class="next_batch_bl next_batch_highlight mt-3 ctm_cls_next_batch_mi_lp hide preorder_box">
+                <div class="preorder_text">
+                    {% if block.settings.heading != blank %}
+                        <h5>{{ block.settings.heading }}</h5>
+                    {% endif %}
+                    
+                    {% if block.settings.text != blank %}
+                        {{ block.settings.text }}
+                    {% endif %}
+                </div>
+
+                {% if block.settings.first_option_text != blank %}
+                    <div class="batch_h batch_h_fade mt-3 mt-md-4">
+                        <div class="batch_h_month preorder_date_soldout">{{ block.settings.first_option_date }}</div>
+                        <div class="batch_h_info sold_out_h" style="--bgPercent:{{ block.settings.first_option_percent }}%;"><span>{{ block.settings.first_option_text }}</span></div>
+                    </div>
+                {% endif %}
+
+                {% if block.settings.second_option_text != blank %}
+                    <div class="batch_h my-2">
+                        <div class="batch_h_month fw-bold preorder_date_reserved">{{ block.settings.second_option_date }}</div>
+                        <div class="batch_h_info preorder_percent" style="--bgPercent:{{ block.settings.second_option_percent }}%;">{{ block.settings.second_option_text }}</div>
+                    </div>
+                {% endif %}
+
+                {% if block.settings.third_option_text != blank %}
+                    <div class="batch_h batch_h_fade">
+                        <div class="batch_h_month">{{ block.settings.third_option_date }}</div>
+                        <div class="batch_h_info" style="--bgPercent:{{ block.settings.third_option_percent }}%;"><span>{{ block.settings.third_option_text }}</span></div>
+                    </div>
+                {% endif %}
+            </div>
+        {% endif %}
+    {%- endfor -%}        
+{% endcapture %}
+
+<style>
+    .ctm_cls_next_batch_mi_lp h5{
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0.13px;
+        margin-bottom: 2px;
+    }
+</style>
+
+
+<div class="patch__product-variants max-w-ctm" style="--max-w-ctm:500px">
+    <div class="patch__variant-label mb-15 mt-20">Select Your supply:</div>
+    {% render 'purchase-form-landing-product' array: __idsArray1, preorder_box: preorder_box %}
+    {% render 'purchase-form-landing-product' array: __idsArray2, preorder_box: preorder_box %}
+    {% render 'purchase-form-landing-product' array: __idsArray3, preorder_box: preorder_box %}
+
+    <div id="{{ section.settings.form_name }}-body-{{ section.id }}"></div>
+</div>

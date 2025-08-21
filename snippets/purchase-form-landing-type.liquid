@@ -1,0 +1,42 @@
+{% if array != blank %}
+    {%- for __id in array -%}
+        {% assign block = section.blocks | where: "id", __id | first %}
+        {% if block.type == 'product_type' %}
+            {% assign product_type_title = block.settings.heading | strip_newlines | strip | replace: ' ', '' | downcase %}
+            <div class="col qure__variant-item serumBlock" id="{{ section.id }}-{{ product_type_title }}">
+                <input type="radio" class="variant__input" name="serum_{{ section.settings.form_name }}" id="{{ section.id }}-{{ block.id }}" {% if block.settings.preselected == true %} checked{% endif %}>
+                <label for="{{ section.id }}-{{ block.id }}" class="qure__variant-box">
+                    <div class="qv-frame">
+                        <div class="qv-frame-inner">
+                            <img class="qv-img" src="{{ block.settings.image | img_url: 'master' }}">
+                        </div>
+                    </div>
+                    <div class="div">{{ block.settings.heading }}</div>
+                </label>
+            </div>
+        {% endif %}
+    {%- endfor -%}
+{% endif %}
+
+
+{% comment %} 
+    {% if array != blank %}
+        {%- for __id in array -%}
+            {% assign block = section.blocks | where: "id", __id | first %}
+            {% if block.type == 'product_type' %}
+                {% assign product_type_title = block.settings.heading | strip_newlines | strip | replace: ' ', '' | downcase %}
+                <div class="serumBlock mt-0" id="{{ section.id }}-{{ product_type_title }}">
+                    <input type="radio" name="serum_{{ section.settings.form_name }}" id="{{ section.id }}-{{ block.id }}" {% if block.settings.preselected == true %} checked{% endif %}>
+                    <label class="serum_prd" for="{{ section.id }}-{{ block.id }}">
+                        <div class="serum_img">
+                            <img src="{{ block.settings.image | img_url: 'master' }}" alt="" class="img-fluid">
+                        </div>
+                        <h4 class="{% if block.settings.heading.size > 10 %}serum_ttl d-block pt-md-3 pt-2{% else %}serum_ttl flex-row gap-1{% endif %}">
+                            <span>For</span> {{ block.settings.heading | replace: '+', '+ <br />' }}
+                        </h4>
+                    </label>
+                </div>            
+            {% endif %}
+        {%- endfor -%}
+    {% endif %} 
+{% endcomment %}

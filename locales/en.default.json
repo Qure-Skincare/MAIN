@@ -130,9 +130,18 @@
         "page": "Page {{ page }}",
         "tags": "Tags {{ tags }}"
     },
+    "page": {
+        "settings": {
+            "jumpto": {
+                "header": "Jump To"
+            }
+        }
+    },
     "product": {
         "settings": {
             "buy-button-label": "Buy Now",
+            "reserved-button-label": "Reserve Now",
+            "soldout-button-label": "Soldout",
             "buy-button-bottom": {
                 "heading": "OR pay 4 monthly payments of {{ product_price_divided }} with",
                 "recommended_html": "<strong>50+ Board Certified Dermatologists</strong> recommend Qure to their patients. <a href='{{ button_link }}' class='text-black text-decoration-underline'>See More</a>.",
@@ -167,6 +176,9 @@
                 "black": "Black",
                 "button-label": "Secure Now",
                 "text": "580 Units Reserved in last 48 hours"
+            },
+            "jumpto": {
+                "header": "Jump To"
             }
         }
     },

@@ -1,10 +1,10 @@
 {% doc %}
-  Renders a save up section for the product template.
+  Renders a save up snippet for the product-bundle section.
 
   @param {string} button_link - A string value.
 
   @example
-  {% render 'product-saveup', button_link: 'https://qureskincare.com/' %}
+  {% render 'product-saveup' %}
 
 {% enddoc %}
 
@@ -32,5 +32,5 @@
         </p>
         {{ 'product.settings.saveup.heading_html' | t }}
     </div>
-    {{ 'product.settings.saveup.button_html' | t: button_link: button_link }}
+    {{ 'product.settings.saveup.button_html' | t: button_link: 'https://qureskincare.com/pages/exclusive-holiday-bundle-deal-new' }}
 </div>

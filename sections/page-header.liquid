@@ -1,0 +1,152 @@
+{% doc %}
+  Renders a page header section
+{% enddoc %}
+
+<link rel="stylesheet" href="https://qureskincaredns-main.com/sections/isolated/micro-infusion-pdp/section-micro-infusion-pdp.css" />
+<div class="qure__trageted-patches qure__section" style="--section-padding-top: 40px; --section-padding-bottom: 80px;">
+   <div class="container" style="--column-gap:80px; --column-gap-mobile:30px;">
+      <div class="row custom__grid">
+         <div class="col-lg-6 custom__block">
+            <div class="qure-product-details">
+                {% render 'product-page-slider', product: blank, page: page, class: 'tp-product-gallery d-block d-lg-none mb-30' %}
+                {% render 'page-rating', section: section %}
+
+               {% if section.settings.heading != blank %}
+                    <h1 class="qure__product-title mb-10">{{ section.settings.heading }}</h1>
+               {% endif %}
+
+               {% if section.settings.button-label != blank %}
+                    <div class="qure__product-action-inner my-30 max-w-ctm" style="--max-w-ctm:500px">
+                        <a href="{{ section.settings.button-url }}" class="add-cart-button product-form__submit btn btn--primary w-100 text-uppercase fs-md-20 fs-18" aria-label="{{ section.settings.button-label | escape }}">{{ section.settings.button-label }}</a>
+                    </div>
+               {% endif %}
+
+                {% if section.settings.description != blank %}
+                    <div class="patch__single-shortdes mt-20">
+                        {{ section.settings.description }}
+                    </div>
+                {% endif %}
+
+                {% render 'product-page-async-section', section: section %}
+                {% render 'page-video', section: section %}
+            </div>
+         </div>
+         <div class="col-lg-6 custom__block">
+            {% render 'product-page-slider', product: blank, page: page, class: 'tp-product-gallery d-none d-lg-block' %}
+            {% render 'product-page-cross-sell', product: blank, page: page %}
+            {% render 'product-page-benefits-list' %}
+            {% render 'product-page-collapsed', product: blank, page: page, class: 'mt-15 tp-product-accordion' %}
+            {% render 'product-page-jumpto', section: section %}
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- Reusable Wistia Modal (outside slider) -->
+   <div class="modal fade filter-modal" id="reusableWistiaModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-md filter-dialog">
+         <div class="modal-content">
+            <div class="modal-header border-0">
+               <button type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="Close">
+                  <i class="fa-solid fa-xmark"></i>
+               </button>
+            </div>
+            <div class="modal-body">
+               <div id="wistiaVideoContainer" class="filter-modal-video"></div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+{% schema %}
+{
+    "name": "t:sections.page-header.name",
+    "settings": [
+        {
+            "type": "richtext",
+            "id": "rating",
+            "label": "t:common.rating",
+            "default": "<p><strong>4.8</strong>/5 Rated by Customers</p>"
+        },
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "t:common.header"
+        },
+        {
+            "type": "richtext",
+            "id": "description",
+            "label": "t:common.description"
+        },
+        {
+            "type": "text",
+            "id": "button-label",
+            "label": "t:common.button-label"
+        },
+        {
+            "type": "url",
+            "id": "button-url",
+            "label": "t:common.button-url"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "section",
+            "name": "t:common.section",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "section_id",
+                    "label": "t:common.section_id"
+                }
+            ]
+        },
+        {
+            "type": "video",
+            "name": "t:common.video",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "t:common.header"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                },
+                {
+                    "type": "text",
+                    "id": "wistia_url",
+                    "label": "t:common.wistia-url"
+                }
+            ]
+        },
+        {
+            "type": "jumpto",
+            "name": "t:common.jumpto",
+            "limit": 10,
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "button-label",
+                    "label": "t:common.button-label"
+                },
+                {
+                    "type": "url",
+                    "id": "button-url",
+                    "label": "t:common.button-url"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.page-header.name"
+        }
+    ]
+}
+{% endschema %}

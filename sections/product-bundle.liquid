@@ -21,7 +21,7 @@
         <div class="row custom__grid">
             <div class="col-lg-6 custom__block">
                 <div class="qure-product-details mw" style="--mw:500px;">
-                    {% render 'product-slider', product: product, page: blank, class: 'tp-product-gallery d-block d-lg-none mb-30' %}
+                    {% render 'product-page-slider', product: product, page: blank, class: 'tp-product-gallery d-block d-lg-none mb-30' %}
                     {% render 'product-rating' %}
 
                     <h1 class="qure__product-title mb-10">{{ product_title }}</h1>
@@ -30,67 +30,31 @@
                     </div>
 
                     <div class="bundle_price d-flex align-items-center justify-content-start gap-3 my-3 pb-2">
-                        <div class="bef_price text-decoration-line-through">{{ product_before_price }}</div>
+
+                        {% if product_before_price != blank %}
+                            <div class="bef_price text-decoration-line-through">{{ product_before_price }}</div>
+                        {% endif %}
+
                         <div class="aft_price clr_orange">{{ product_sale_price }}</div>
-                        <div class="discount_percentage">{{ product_discount }}%</div>
+
+                        {% if product_discount != blank %}
+                            <div class="discount_percentage">{{ product_discount }}%</div>
+                        {% endif %}
+
                     </div>
 
-                    {% render 'product-buy-button', product_price: product_sale_price, product_variant_id: product_variant_id %}
-                    {% render 'product-buy-button-bottom', product_price_divided: product_price_divided, button_link: 'https://qureskincare.com/pages/derm-reviews' %}
-                    {% render 'product-saveup', button_link: 'https://qureskincare.com/pages/exclusive-holiday-bundle-deal-new' %}
+                    {% render 'product-buy-button', product_price: product_sale_price, product_variant_id: product_variant_id, section: blank %}
+                    {% render 'product-buy-button-bottom', product_price_divided: product_price_divided %}
+                    {% render 'product-saveup' %}
                 </div>
             </div>
             <div class="col-lg-6 custom__block">
-                {% render 'product-slider', product: product, class: 'tp-product-gallery d-none d-lg-block' %}
-                {% render 'product-benefits-list' %}
-                {% render 'product-collapsed', product: product, page: blank, class: 'mt-15 tp-product-accordion' %}
+                {% render 'product-page-slider', product: product, class: 'tp-product-gallery d-none d-lg-block' %}
+                {% render 'product-page-benefits-list' %}
+                {% render 'product-page-collapsed', product: product, page: blank, class: 'mt-15 tp-product-accordion' %}
             </div>
         </div>
     </div>
 </div>
 
-<script type="application/ld+json">
-    {
-        "@context": "http://schema.org/",
-        "@type": "Product",
-        "name": "{{ product.title | escape }}",
-        "url": "{{ shop.url }}{{ product.url }}",
-        {% if product.featured_image %}
-            {% assign image_size = product.featured_image.width | append: 'x' %}
-            "image": [
-            "https:{{ product.featured_image.src | img_url: image_size }}"
-            ],
-        {% endif %}
-        "description": "{{ product.description | strip_html | escape }}",
-        {% if current_variant.sku != blank %}
-            "sku": "{{ current_variant.sku }}",
-        {% endif %}
-        "brand": {
-            "@type": "Thing",
-            "name": "{{ product.vendor | escape }}"
-        },
-        "offers": [
-            {%- for variant in product.variants -%}
-            {
-                "@type" : "Offer",
-                {%- if variant.sku != blank -%}
-                "sku": {{ variant.sku | json }},
-                {%- endif -%}
-                {%- if variant.barcode.size == 12 -%}
-                "gtin12": {{ variant.barcode }},
-                {%- endif -%}
-                {%- if variant.barcode.size == 13 -%}
-                "gtin13": {{ variant.barcode }},
-                {%- endif -%}
-                {%- if variant.barcode.size == 14 -%}
-                "gtin14": {{ variant.barcode }},
-                {%- endif -%}
-                "availability" : "http://schema.org/{% if variant.available %}InStock{% else %}OutOfStock{% endif %}",
-                "price" : {{ variant.price | divided_by: 100.00 | json }},
-                "priceCurrency" : {{ cart.currency.iso_code | json }},
-                "url" : {{ request.origin | append: variant.url | json }}
-            }{% unless forloop.last %},{% endunless %}
-            {%- endfor -%}
-        ]
-    }
-</script>
+{% render 'product-data-json', product: product %}

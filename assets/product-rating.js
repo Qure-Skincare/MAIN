@@ -13,6 +13,6 @@
 
     let ratingElement = document.getElementById('rating');
     if (ratingElement) {
-        ratingElement.textContent = customRound(rating_value);
+        ratingElement.textContent = customRound(product_rating);
     }
 })(); 

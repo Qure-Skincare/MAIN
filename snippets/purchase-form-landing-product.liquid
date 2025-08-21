@@ -1,0 +1,226 @@
+{% if array != blank %}
+
+    <style>
+        .hide {
+            display: none; 
+        }
+    </style>
+
+    {% capture preorder-box-items %}{% endcapture %}
+
+    {%- for __id in array -%}
+        {% assign block = section.blocks | where: "id", __id | first %}
+        {% if block.type == 'product_type' %}
+            {% assign product_type_title = block.settings.heading | strip_newlines | strip | replace: ' ', '' | downcase %}
+        {% endif %}
+    {%- endfor -%}
+
+    <template id="{{ section.settings.form_name }}-source-{{ section.id }}-{{ product_type_title }}">
+        <div class="step_content" id="{{ section.id }}-{{ product_type_title }}">
+            <div class="d-grid vp-grid step_conten_blocks" style="--col-gap:12px">
+
+                {% assign array_count = array.size %}
+
+                {%- for __id in array -%}
+                    {% assign block = section.blocks | where: "id", __id | first %}
+                    {% if block.type == 'product' %}
+                        {% assign product = all_products[block.settings.product] %}
+
+                        {% if product != blank and product.available %}
+
+                            {% assign product_variant_id = product.variants.first.id %}
+                            {% assign product_price_divided = product.price | divided_by: 4 %}
+                            {% assign discount_percentage = product.price | times: 1.0 | divided_by: product.compare_at_price | minus: 1 | abs | times: 100 | ceil %}
+                            {% assign product_title_tag = block.settings.heading | strip_newlines | strip | replace: ' ', '' | downcase %}
+                            {% assign product_price = product.price | money_without_trailing_zeros %}
+                            {% assign product_price_compare = product.compare_at_price | money_without_trailing_zeros %}
+
+                            {% assign array_count = array_count |  minus: 1 %}
+                            {% assign product_type = array_count %}
+                            
+                            {% if product_price_compare == blank %}
+                                {% assign discount_percentage = blank %}
+                            {% endif %}
+
+                            {% capture data-per %}Buy now {% if discount_percentage != blank %} & SAVE {{ discount_percentage }}%{% endif %}{% endcapture %}
+
+                            {% if block.settings.preorder == true %}
+                                {% capture data-per %}Reserve now {% if discount_percentage != blank %} & SAVE {{ discount_percentage }}%{% endif %}{% endcapture %}
+                            {% endif %}
+
+                            {% if block.settings.soldout == true %}
+                                {% capture data-per %}Sold Out{% endcapture %}
+                            {% endif %}
+
+                            <div class="planBlock patch__value-pack" href="javascript:void(0)"
+                                data-pay="{{ product_price_divided | money_without_trailing_zeros }}" 
+                                data-per="{{ data-per }}" 
+                                data-product_variant_id="{{ product_variant_id }}" 
+                                data-soldout="{{ block.settings.soldout }}" 
+                                data-preorder="{{ block.settings.preorder }}" 
+                                data-type="{{ product_type }}"
+                            >
+                                <input type="radio" class="vp__input" name="monthlyPlan_{{ section.settings.form_name }}" id="{{ section.id }}-{{ product_title_tag }}" {% if block.settings.preselected == true %} checked{% endif %}>
+                                <label for="three-month" class="vp-pack vp-best-pack pt-0">
+                                    {% if product_type == 3 %}
+                                        <div class="vp-best-value">Best Value <i class="fa-sharp fa-solid fa-star-sharp"></i></div>
+                                    {% endif %}
+                                    <div class="vp-img">
+                                        <img src="https://qureskincaredns-main.com/sections/isolated/micro-infusion-pdp/images/3_month_mixed.webp" class="img-fluid" />
+                                    </div>
+                                    <div class="vp-content">
+                                        <p class="mb-0">{{ block.settings.heading }}</p>
+                                        <p class="fs-14 mb-15">{{ block.settings.subheading }}</p>
+                                        <div class="vp-price">
+                                            {% if product_price_compare != blank %}
+                                                <span data-variant-id="{{ product_variant_id }}" class="vp-price-sale regular_price">{{ product_price_compare }}</span>
+                                                <span data-variant-id="{{ product_variant_id }}" class="vp-price-reg sale_price">{{ product_price }}</span>
+                                            {% else %}
+                                                <span data-variant-id="{{ product_variant_id }}" class="vp-price-sale-one-month sale_price">{{ product_price }}</span>
+                                            {% endif %}
+                                        </div>
+                                        {% if discount_percentage != blank %}
+                                            <span class="vp-badge saved_price">{{ discount_percentage }}% OFF</span>
+                                        {% endif %}
+                                    </div>
+                                </label>
+                            </div>
+
+                            {% if block.settings.preorder == true %}
+                                
+                                {% capture preorder-box-items %}{{ preorder-box-items }}<div class="{{ section.settings.form_name }}-preorder-box-item {{ section.settings.form_name }}-preorder-box__{{ product_variant_id }}"></div>{% endcapture %}
+                                
+                                {% if block.settings.preorder_text != blank %}
+                                    <span class="{{ section.settings.form_name }}-product-preorder-text__{{ product_variant_id }} hide">{{ block.settings.preorder_text }}</span>
+                                {% endif %}
+                                {% if block.settings.preorder_date_soldout != blank %}
+                                    <span class="{{ section.settings.form_name }}-product-preorder_date_soldout__{{ product_variant_id }} hide">{{ block.settings.preorder_date_soldout }}</span>
+                                {% endif %}
+                                {% if block.settings.preorder_date_reserved != blank %}
+                                    <span class="{{ section.settings.form_name }}-product-preorder_date_reserved__{{ product_variant_id }} hide">{{ block.settings.preorder_date_reserved }}</span>
+                                {% endif %}
+                                {% if block.settings.preorder_percent != blank %}
+                                    <span class="{{ section.settings.form_name }}-product-preorder_percent__{{ product_variant_id }} hide">{{ block.settings.preorder_percent }}</span>
+                                {% endif %}
+                            {% endif %}
+
+                        {% endif %}
+                    {% endif %}
+                {%- endfor -%}
+
+
+                {{ preorder-box-items }}
+                {{ preorder_box }}    
+                            
+            </div>
+        </div>
+
+
+        {% comment %} 
+            <div class="step_content" id="{{ section.id }}-{{ product_type_title }}">
+            <div class="step_conten_blocks">
+
+                {% assign array_count = array.size %}
+
+                {%- for __id in array -%}
+                    {% assign block = section.blocks | where: "id", __id | first %}
+                    {% if block.type == 'product' %}
+                        {% assign product = all_products[block.settings.product] %}
+
+                        {% if product != blank and product.available %}
+
+                            {% assign product_variant_id = product.variants.first.id %}
+                            {% assign product_price_divided = product.price | divided_by: 4 %}
+                            {% assign discount_percentage = product.price | times: 1.0 | divided_by: product.compare_at_price | minus: 1 | abs | times: 100 | ceil %}
+                            {% assign product_title_tag = block.settings.heading | strip_newlines | strip | replace: ' ', '' | downcase %}
+                            {% assign product_price = product.price | money_without_trailing_zeros %}
+                            {% assign product_price_compare = product.compare_at_price | money_without_trailing_zeros %}
+
+                            {% assign array_count = array_count |  minus: 1 %}
+                            {% assign product_type = array_count %}
+                            
+                            {% if product_price_compare == blank %}
+                                {% assign discount_percentage = blank %}
+                            {% endif %}
+
+                            {% capture data-per %}Buy now {% if discount_percentage != blank %} & SAVE {{ discount_percentage }}%{% endif %}{% endcapture %}
+
+                            {% if block.settings.preorder == true %}
+                                {% capture data-per %}Reserve now {% if discount_percentage != blank %} & SAVE {{ discount_percentage }}%{% endif %}{% endcapture %}
+                            {% endif %}
+
+                            {% if block.settings.soldout == true %}
+                                {% capture data-per %}Sold Out{% endcapture %}
+                            {% endif %}
+
+                            <div class="planBlock ignore" href="javascript:void(0)"
+                                data-pay="{{ product_price_divided | money_without_trailing_zeros }}" 
+                                data-per="{{ data-per }}" 
+                                data-product_variant_id="{{ product_variant_id }}" 
+                                data-soldout="{{ block.settings.soldout }}" 
+                                data-preorder="{{ block.settings.preorder }}" 
+                                data-type="{{ product_type }}"
+                            >
+                                {% if product_type == 3 %}
+                                    <div class="plan_choosed">
+                                        <span>OVER 5,000 PEOPLE CHOSE THIS SUPPLY</span>
+                                    </div>                                    
+                                {% endif %}
+
+                                <input type="radio" name="monthlyPlan_{{ section.settings.form_name }}" id="{{ section.id }}-{{ product_title_tag }}" {% if block.settings.preselected == true %} checked{% endif %}>
+                                <label class="monthly_plans-new monthly_plans" for="{{ section.id }}-{{ product_title_tag }}">
+                                    <div class="plan_des">
+                                        <div class="plan_hdr">
+                                            <h3>{{ block.settings.heading }}</h3>
+
+                                            {% if discount_percentage != blank %}
+                                                <span class="saved_price">SAVE {{ discount_percentage }}%</span>
+                                            {% endif %}
+                                        </div>
+                                        <div class="plan_des">{{ block.settings.subheading }}</div>
+                                    </div>
+
+                                    {% if product_price_compare != blank %}
+                                        <div class="price">
+                                            <div data-variant-id="{{ product_variant_id }}" class="plan_prc regular_price igComparePrice">{{ product_price_compare }}</div>
+                                            <div data-variant-id="{{ product_variant_id }}" class="plan_prc sale_price igPrice">{{ product_price }}</div>
+                                        </div> 
+                                    {% else %}
+                                        <div class="price">
+                                            <div data-variant-id="{{ product_variant_id }}" class="plan_prc sale_price igPrice">{{ product_price }}</div>
+                                        </div>                                       
+                                    {% endif %}
+                                </label>
+                            </div>
+
+                            {% if block.settings.preorder == true %}
+                                
+                                {% capture preorder-box-items %}{{ preorder-box-items }}<div class="{{ section.settings.form_name }}-preorder-box-item {{ section.settings.form_name }}-preorder-box__{{ product_variant_id }}"></div>{% endcapture %}
+                                
+                                {% if block.settings.preorder_text != blank %}
+                                    <span class="{{ section.settings.form_name }}-product-preorder-text__{{ product_variant_id }} hide">{{ block.settings.preorder_text }}</span>
+                                {% endif %}
+                                {% if block.settings.preorder_date_soldout != blank %}
+                                    <span class="{{ section.settings.form_name }}-product-preorder_date_soldout__{{ product_variant_id }} hide">{{ block.settings.preorder_date_soldout }}</span>
+                                {% endif %}
+                                {% if block.settings.preorder_date_reserved != blank %}
+                                    <span class="{{ section.settings.form_name }}-product-preorder_date_reserved__{{ product_variant_id }} hide">{{ block.settings.preorder_date_reserved }}</span>
+                                {% endif %}
+                                {% if block.settings.preorder_percent != blank %}
+                                    <span class="{{ section.settings.form_name }}-product-preorder_percent__{{ product_variant_id }} hide">{{ block.settings.preorder_percent }}</span>
+                                {% endif %}
+                            {% endif %}
+
+                        {% endif %}
+                    {% endif %}
+                {%- endfor -%}
+
+
+                {{ preorder-box-items }}
+                {{ preorder_box }}    
+                            
+            </div>
+            </div> 
+        {% endcomment %}
+    </template>
+{% endif %}

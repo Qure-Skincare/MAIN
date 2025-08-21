@@ -1,5 +1,5 @@
 {% doc %}
-  Renders a product rating.
+  Renders a product rating snippet for the product-header section.
 
   @example
   {% render 'product-rating' %}
@@ -23,8 +23,11 @@
   </div>
 {% endif %}
 
-<script>
-  const rating_value = '{{ rating_value }}';      
-</script>
 
-<script src="{{ 'product-rating.js' | asset_url }}" defer="defer"></script>
+<script>
+  const product_rating = '{{ rating_value }}';      
+
+  document.addEventListener("DOMContentLoaded", function () {
+    loadScriptOnce('product-rating', '{{ 'product-rating.js' | asset_url }}');
+  });
+</script>

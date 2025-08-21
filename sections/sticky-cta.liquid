@@ -79,7 +79,7 @@
           <a href="{{ section.settings.button-url }}" class="btn btn--primary">{% if section.settings.button-label != blank %}{{ section.settings.button-label }}{% else %}{{ 'product.settings.buy-button-label' | t }}{% endif %}</a>
         {% else %}
           <form method="post" action="/cart/add" enctype="multipart/form-data" class="w-100 mw" style="--mw:400px;">
-            <button type="submit" class="btn btn--primary">{% if section.settings.button-label != blank %}{{ section.settings.button-label }}{% else %}{{ 'product.settings.buy-button-label' | t }}{% endif %}</button>
+            <button id="sticky-cta-button" type="submit" class="btn btn--primary">{% if section.settings.button-label != blank %}{{ section.settings.button-label }}{% else %}{{ 'product.settings.buy-button-label' | t }}{% endif %}</button>
             <input type="hidden" name="quantity" id="quantity" value="1">
             <input type="hidden" name="id" value="{{ product_variant_id }}">
           </form>

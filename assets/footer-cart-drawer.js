@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener('cart.requestComplete', (event) => {
-    if(template == 'cart') {
+    if(footer_cart_drawer_template == 'cart') {
         updateSection('cart', 'main-cart-dynamic-content')
         .then(() => {
             reloadDrawer(event);
@@ -120,7 +120,7 @@ const updateSection = (section_id, targetElement) => {
 };
 
 const showCart = () => {
-    if(template != 'cart') {
+    if(footer_cart_drawer_template != 'cart') {
         const cartDrawer = document.querySelector('.offcanvas-end');
         if (cartDrawer && !cartDrawer.classList.contains('show')) {
             document.getElementById('cartCanvasBtn')?.click();

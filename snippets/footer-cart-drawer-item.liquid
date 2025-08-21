@@ -1,4 +1,10 @@
-<!-- minicart item -->
+{% doc %}
+  Renders a cart item snippet for the cart drawer section
+
+  @example
+  {% include 'footer-cart-drawer-item' %}
+{% enddoc %}
+
 <div class="minicart-item d-flex">
     <div class="mini-img-wrapper">
         <img class="mini-img" src="{{ cart_item_image | img_url: 'master' }}" alt="{{ cart_item_title | escape }}">
@@ -92,4 +98,3 @@
         <input type="hidden" name="id" value="{{ cart_item_key }}">
     </form>
 </div>
-<!-- minicart item end-->

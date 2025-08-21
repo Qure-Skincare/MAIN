@@ -1,3 +1,10 @@
+{% doc %}
+  Renders a cart timer snippet for the cart drawer section
+
+  @example
+  {% include 'footer-cart-drawer-timer' %}
+{% enddoc %}
+
 {% if timer > 0 %}
     <cart-notification>
         <div class="cart-countdown-time" data-countdown-time="{{ timer }}" data-timeout-message="{{ 'cart.drawer.settings.notification_time_end' | t }}">

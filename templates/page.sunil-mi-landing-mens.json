@@ -9,10 +9,69 @@
  */
 {
   "sections": {
-    "get_smoother_skin_ayn7eq": {
-      "type": "get-smoother-skin",
-      "name": "t:sections.get-smoother-skin.name",
-      "settings": {}
+    "page_header_jUJyDD": {
+      "type": "page-header",
+      "blocks": {
+        "video_jEEVjS": {
+          "type": "video",
+          "settings": {
+            "heading": "Watch: How To Use",
+            "image": "shopify://shop_images/how_to_use_men.webp",
+            "wistia_url": "8ymvdqzx92"
+          }
+        },
+        "jumpto_jEyVj6": {
+          "type": "jumpto",
+          "settings": {
+            "button-label": "The Results",
+            "button-url": "#video-review-slider"
+          }
+        },
+        "jumpto_P7zN3P": {
+          "type": "jumpto",
+          "settings": {
+            "button-label": "How To Use",
+            "button-url": "#how_to_use"
+          }
+        },
+        "jumpto_F9gpDd": {
+          "type": "jumpto",
+          "settings": {
+            "button-label": "Serum Guide",
+            "button-url": "#science_backed"
+          }
+        },
+        "jumpto_GYW9XP": {
+          "type": "jumpto",
+          "settings": {
+            "button-label": "Expert Reviews",
+            "button-url": "#trusted_recommended"
+          }
+        },
+        "jumpto_Ybdp8V": {
+          "type": "jumpto",
+          "settings": {
+            "button-label": "FAQs",
+            "button-url": "#faq"
+          }
+        }
+      },
+      "block_order": [
+        "video_jEEVjS",
+        "jumpto_jEyVj6",
+        "jumpto_P7zN3P",
+        "jumpto_F9gpDd",
+        "jumpto_GYW9XP",
+        "jumpto_Ybdp8V"
+      ],
+      "name": "t:sections.page-header.name",
+      "settings": {
+        "rating": "<p><strong>4.8</strong>/5 Rated by Customers</p>",
+        "heading": "The go-to skin treatment for the ultimate confidence booster",
+        "description": "<ul><li>Helps reduce appearance of fine lines, smooth texture whilst helping to infuse active ingredients into your skin.</li><li>Virtually painless and performed in the comfort and convenience of your home.</li><li>Minimal to no downtime with visible results.</li></ul>",
+        "button-label": "Get Smoother Skin",
+        "button-url": "#purchase-form"
+      }
     },
     "slider_featured_in_rHHg4W": {
       "type": "slider-featured-in",
@@ -89,7 +148,6 @@
       "settings": {
         "heading": "Qure’s Micro-Infusion goes where your skin cream can’t…",
         "text": "<p>Its tiny, almost painless, microneedles penetrate beyond the skin’s surface increasing serum absorption and delivering powerful active ingredients exactly where they’re needed!</p>",
-        "text_mobile": "",
         "image_position": "left",
         "sub_text": "",
         "button_label": "",
@@ -185,12 +243,11 @@
       "settings": {
         "heading": "Introducing the Qure Micro-Infusion System",
         "text": "<ul><li>Helps reduce appearance of fine lines</li><li>Wake up with dewy looking, glowing skin</li><li>Reveal brighter looking, firmer feeling skin</li><li>Help fade appearance of dark spots and acne marks</li></ul>",
-        "text_mobile": "",
         "image_position": "right",
         "sub_text": "",
         "image": "shopify://shop_images/qure-micro-infusion_men.webp",
         "button_label": "BUY NOW & SAVE UP TO 43%",
-        "button_url": "#buy_box",
+        "button_url": "#purchase-form",
         "wistia_url": ""
       }
     },
@@ -335,7 +392,6 @@
       "settings": {
         "heading": "Dual action for twice the results",
         "text": "<p>Qure’s Micro-Infusion System has a one-two punch, making it uniquely effective.<br/><br/></p>",
-        "text_mobile": "",
         "image_position": "left",
         "sub_text": "Perfect for anyone wanting to add a fresh, dewy glowing look to their skin, especially before an event or occasion.",
         "image": "shopify://shop_images/dual-action_men.webp",
@@ -555,7 +611,7 @@
         "heading": "Results you’ll see with your own eyes",
         "text_mobile": "",
         "button_label": "BUY NOW SAVE UP TO 43%",
-        "button_url": "#buy_box"
+        "button_url": "#purchase-form"
       }
     },
     "compare_yQBfAr": {
@@ -672,7 +728,7 @@
         "heading_mobile": "How To Use",
         "wistia_url": "wxgqgsjjdr",
         "button_label": "BUY NOW & SAVE UP TO 43%",
-        "button_url": "#buy_box"
+        "button_url": "#purchase-form"
       }
     },
     "stock_alert_TMBXiB": {
@@ -1002,7 +1058,7 @@
     }
   },
   "order": [
-    "get_smoother_skin_ayn7eq",
+    "page_header_jUJyDD",
     "slider_featured_in_rHHg4W",
     "banner_with_text_KaMmfy",
     "stock_alert_TFYk6U",

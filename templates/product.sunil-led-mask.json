@@ -56,6 +56,7 @@
         },
         "nextships_A7": {
           "type": "nextships",
+          "disabled": true,
           "settings": {
             "date": "25 September",
             "percent": 55,
@@ -77,7 +78,9 @@
       "settings": {
         "seo_heading": "RED LIGHT MASK Q-REJUVALIGHT PRO",
         "heading": "Repair & rejuvenate your skin with our Light Therapy Mask",
-        "description": "<ul><li>FDA-cleared device that treats acne, fine lines, wrinkles, and dark spots.</li><li>Customizable treatment on 5 facial areas for your specific skin concerns.</li><li>Quick 3 minute, wireless daily treatments with convenient hands-free operation.</li></ul>"
+        "description": "<ul><li>FDA-cleared device that treats acne, fine lines, wrinkles, and dark spots.</li><li>Customizable treatment on 5 facial areas for your specific skin concerns.</li><li>Quick 3 minute, wireless daily treatments with convenient hands-free operation.</li></ul>",
+        "reserved": false,
+        "soldout": false
       }
     },
     "announcement_bar_jkkyg7": {
@@ -144,7 +147,8 @@
       "settings": {
         "heading": "All the skin firming, smoothing, clearing benefits with just 1 device",
         "text": "<p>A portable, FDA-cleared, at-home LED light therapy treatment that is scientifically <em>proven to change your skin</em> for the better.</p><p>Q-Rejuvalight Pro utilizes a combination of <em>5 market-leading light wavelengths</em> to treat a multitude of skin concerns deep within the skin, where even the best creams and serums can’t reach. </p>",
-        "text_mobile": "",
+        "quote": "",
+        "quote-mobile": "",
         "image_position": "left",
         "sub_text": "",
         "image": "shopify://shop_images/skin_firming.webp",
@@ -899,7 +903,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Is it safe for all skin types?",
-            "text": "<p>It's crucial to note that skin types V and VI (on the Fitzpatrick Scale) are more sensitive for light therapy as they can absorb more light than other skin types. The reason is that skin type V and VI have higher levels of melanin in the skin. Melanin in the epidermis allows higher absorption of energy which increases the risk of adverse events from epidermal injury in people with skin type V and VI. This is why the FDA recommends caution for individuals with these skin types.</p><p>Based on our experience, numerous customers with skin types V and VI have successfully treated their skin with our Q-Rejuvalight Pro Facewear, reporting  positive results. </p><p>For customers with skin types V and VI, we highly recommend consulting with your dermatologist before using our Q-Rejuvalight Pro Facewear. This step is crucial as skin reactions can vary from person to person, and what works well for one individual may not be suitable for another.</p>",
+            "text": "<p>Yes. Q-Rejuvalight Pro Facewear is safe and effective for all Fitzpatrick skin types (I–VI) when used as directed. Our device is FDA-cleared for at -home treatment of wrinkles and mild to moderate inflammatory acne, and operates at low light levels that are well within established safety limits for all skintones. We’ve seen great results across a diverse range of skin types and tones. For best outcomes, always follow the recommended treatment time, wear the included eye protection, and check with your dermatologist if you have a photosensitive condition, are taking light-sensitizing medications, or have specific concerns about your skin.</p>",
             "link_url": "",
             "link_text": ""
           }
@@ -972,6 +976,7 @@
       "type": "sticky-cta",
       "name": "t:sections.sticky-cta.name",
       "settings": {
+        "cta-mode": "default",
         "heading": "Q-Rejuvalight Pro LED Mask",
         "text": "203 purchased in last 48 hours",
         "button-label": "",

@@ -1,17 +1,46 @@
 {% doc %}
-  Renders a product buy button.
+  Renders a product buy button snippet for the product-header section.
 
   @param {string} product_price - A string value.
   @param {string} product_variant_id - A string value.
+  @param {object} section - A object value.
 
   @example
-  {% render 'product-buy-button', product_price: '128$', product_variant_id: '1' %}
+  {% render 'product-buy-button', product_price: '128$', product_variant_id: '1', section: '' %}
 {% enddoc %}
+
+{% assign reserved = null %}
+{% assign soldout = null %}
+{% capture button-label %}{{ 'product.settings.buy-button-label' | t }} – {{ product_price }}{% endcapture %}
+
+{% if section != blank %}
+  {% if section.settings.reserved != blank %}
+    {% capture button-label %}{{ 'product.settings.reserved-button-label' | t }}{% endcapture %}
+    {% assign reserved = true %}
+  {% endif %}
+  {% if section.settings.soldout != blank %}
+    {% capture button-label %}{{ 'product.settings.soldout-button-label' | t }}{% endcapture %}
+    {% assign soldout = true %}
+  {% endif %}
+{% endif %}
 
 <div class="qure__product-action-inner mt-30 mt-md-30 mb-10 max-w-ctm" style="--max-w-ctm:500px">
   <form method="post" action="/cart/add" enctype="multipart/form-data">
-    <button type="submit" class="add-cart-button product-form__submit btn btn--primary w-100">{{ 'product.settings.buy-button-label' | t }} – {{ product_price }}</button>
+    <button type="submit" class="add-cart-button product-form__submit btn btn--primary w-100"{% if soldout %} disabled{% endif %}>{{ button-label }}</button>
     <input type="hidden" name="quantity" id="quantity" value="1">
     <input type="hidden" name="id" value="{{ product_variant_id }}">
   </form>
 </div>
+
+{% if reserved or soldout %}
+  <script>
+    const product_buy_button_label = '{{ button-label }}';
+    const product_buy_button_soldout = {% if soldout %}true{% else %}false{% endif %};
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      loadScriptOnce('product-buy-button', '{{ 'product-buy-button.js' | asset_url }}');
+    });
+  </script>
+{% endif %}
