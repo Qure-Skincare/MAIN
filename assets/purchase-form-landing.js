@@ -11,20 +11,6 @@ document.querySelectorAll('.' + __section_landing + ' .serumBlock').forEach(func
     });
 });
 
-function __landing__updateProductButtonHref(product_variant_id, soldout) {
-    let button = document.querySelector('.' + __section_landing + ' .productButtonObject');
-
-    if(!product_variant_id) return;
-
-    if (button) {
-        if (soldout === 'true') {
-            button.setAttribute('href', 'javascript:void(0)');
-        } else {
-            button.setAttribute('href', '/cart/add?id=' + product_variant_id + '&quantity=1');
-        }
-    }
-}
-
 function __landing__initTemplate(source) {
     if(!source) return;
 
@@ -37,6 +23,7 @@ function __landing__initTemplate(source) {
         target.appendChild(content);
         __landing__initScripts();
         __landing__initProduct();
+        __landing__bindForm();
     }               
 }
 
@@ -82,17 +69,12 @@ function __landing__initScripts() {
 }
 
 function __landing__handlerPlanBlock () {
-    window.dispatchEvent(new CustomEvent('appPurchaseFormLanding', {
-        detail: {
-            element: this
-        }
-    }));
-
     var product_variant_id = $(this).attr("data-product_variant_id");
     var soldout = $(this).attr("data-soldout");
     var preorder = $(this).attr("data-preorder");
 
-    __landing__updateProductButtonHref(product_variant_id, soldout);
+    __landing__updateProductCheckbox(this);
+    __landing__updateProductFormButton(product_variant_id, soldout);
     __landing__clearPreorderBoxes();
     __landing__tooglePreorderBox(preorder, product_variant_id);
 
@@ -100,6 +82,52 @@ function __landing__handlerPlanBlock () {
     $('.' + __section_landing + " .total_price").find(".sale_price").text($(this).find(".sale_price:visible").text().trim());
     $('.' + __section_landing + " .btn_value").text($(this).attr("data-per"));
     $('.' + __section_landing + " .pay_today").text($(this).attr("data-pay"));
+}
+
+function __landing__updateProductCheckbox(element)
+{
+    document.querySelectorAll('.' + __section_landing + ' input.vp__input[type="radio"]').forEach(input => {
+      input.checked = false;
+    });
+
+    const input = element.querySelector('.' + __section_landing + ' input.vp__input[type="radio"]');
+    if (input) {
+      input.checked = true;
+    }
+}
+
+function __landing__updateProductFormButton(product_variant_id, soldout) {
+    const form = document.querySelector('.' + __section_landing + ' .qure__product-action-inner form[action="/cart/add"]');
+
+    if (!product_variant_id) return;
+
+    if (form) {
+        const idInput = form.querySelector('input[name="id"]');
+        const button = form.querySelector('.productButtonObject');
+
+        if (idInput) {
+            if (soldout === 'true') {
+                idInput.value = "";
+                if (button) button.disabled = true;
+            } else {
+                idInput.value = product_variant_id;
+                if (button) button.disabled = false;
+            }
+        }
+    }
+}
+
+function __landing__bindForm() {
+    const form = document.querySelector('.' + __section_landing + ' .qure__product-action-inner form[action="/cart/add"]');
+    if (!form || form.dataset.bound === '1') return;
+
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const formData = new FormData(form);
+        addToCart(formData);
+    }, { passive: false });
+
+    form.dataset.bound = '1';
 }
 
 function __landing__clearPreorderBoxes()

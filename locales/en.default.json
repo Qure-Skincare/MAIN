@@ -266,6 +266,19 @@
             }
         }
     },
+    "purchase-form": {
+        "settings": {
+            "buy-button-label": "Buy Now",
+            "reserve-button-label": "Reserve Now",
+            "soldout-button-label": "Soldout",
+            "select-type": "Select Your Serum:",
+            "select-product": "Select Your supply:",
+            "save": "& Save",
+            "off": "OFF",
+            "best": "Best Value"
+
+        }
+    },
     "header": {
         "settings": {
             "navigation_header_1": "Best Sellers",

@@ -6,9 +6,19 @@
 <div class="{{ section.id }}">
     {% render 'purchase-form-landing-types-section' section: section, __idsArray1: __idsArray1, __idsArray2: __idsArray2, __idsArray3: __idsArray3 %}
     {% render 'purchase-form-landing-products-section' section: section, __idsArray1: __idsArray1, __idsArray2: __idsArray2, __idsArray3: __idsArray3 %}
-    <a href="javascript:void(0)" class="btn btn-lg btn-primary buy_btn reserve_btn mt-3 productButtonObject" data-ajax-cart-request-button>
+
+    <div class="qure__product-action-inner mt-30 mt-md-40 mb-10 max-w-ctm" style="--max-w-ctm:500px">
+        <form method="post" action="/cart/add" enctype="multipart/form-data">
+            <button type="submit" class="add-cart-button product-form__submit btn btn--primary w-100 productButtonObject"><span class="btn_value">{{ 'purchase-form.settings.buy-button-label' | t }}</span></button>
+            <input type="hidden" name="quantity" id="quantity" value="1">
+            <input type="hidden" name="id" value="{{ product_variant_id }}">
+        </form>
+    </div>
+
+
+    {% comment %} <a href="javascript:void(0)" class="btn btn-lg btn-primary buy_btn reserve_btn mt-3 productButtonObject" data-ajax-cart-request-button>
         <span class="btn_value">Buy Now</span>
-    </a>
+    </a> {% endcomment %}
 </div>
 <!-- -- main banner end -- -->
 

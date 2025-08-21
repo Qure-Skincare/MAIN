@@ -42,14 +42,14 @@
                                 {% assign discount_percentage = blank %}
                             {% endif %}
 
-                            {% capture data-per %}Buy now {% if discount_percentage != blank %} & SAVE {{ discount_percentage }}%{% endif %}{% endcapture %}
+                            {% capture data-per %}{{ 'purchase-form.settings.buy-button-label' | t }} {% if discount_percentage != blank %} {{ 'purchase-form.settings.save' | t }} {{ discount_percentage }}%{% endif %}{% endcapture %}
 
                             {% if block.settings.preorder == true %}
-                                {% capture data-per %}Reserve now {% if discount_percentage != blank %} & SAVE {{ discount_percentage }}%{% endif %}{% endcapture %}
+                                {% capture data-per %}{{ 'purchase-form.settings.reserve-button-label' | t }} {% if discount_percentage != blank %} {{ 'purchase-form.settings.save' | t }} {{ discount_percentage }}%{% endif %}{% endcapture %}
                             {% endif %}
 
                             {% if block.settings.soldout == true %}
-                                {% capture data-per %}Sold Out{% endcapture %}
+                                {% capture data-per %}{{ 'purchase-form.settings.soldout-button-label' | t }}{% endcapture %}
                             {% endif %}
 
                             <div class="planBlock patch__value-pack" href="javascript:void(0)"
@@ -63,7 +63,7 @@
                                 <input type="radio" class="vp__input" name="monthlyPlan_{{ section.settings.form_name }}" id="{{ section.id }}-{{ product_title_tag }}" {% if block.settings.preselected == true %} checked{% endif %}>
                                 <label for="three-month" class="vp-pack vp-best-pack pt-0">
                                     {% if product_type == 3 %}
-                                        <div class="vp-best-value">Best Value <i class="fa-sharp fa-solid fa-star-sharp"></i></div>
+                                        <div class="vp-best-value">{{ 'purchase-form.settings.best' | t }} <i class="fa-sharp fa-solid fa-star-sharp"></i></div>
                                     {% endif %}
                                     <div class="vp-img">
                                         <img src="https://qureskincaredns-main.com/sections/isolated/micro-infusion-pdp/images/3_month_mixed.webp" class="img-fluid" />
@@ -80,7 +80,7 @@
                                             {% endif %}
                                         </div>
                                         {% if discount_percentage != blank %}
-                                            <span class="vp-badge saved_price">{{ discount_percentage }}% OFF</span>
+                                            <span class="vp-badge saved_price">{{ discount_percentage }}% {{ 'purchase-form.settings.off' | t }}</span>
                                         {% endif %}
                                     </div>
                                 </label>
