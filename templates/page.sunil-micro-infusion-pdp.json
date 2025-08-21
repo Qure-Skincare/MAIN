@@ -31,7 +31,7 @@
         "section_A0": {
           "type": "section",
           "settings": {
-            "section_id": "template--20022138863855__purchase-form-landing"
+            "section_id": "purchase-form-landing"
           }
         },
         "jumpto_A1": {
@@ -221,7 +221,7 @@
             "heading": "1 Month",
             "subheading": "(2 Treatments)",
             "soldout": false,
-            "preorder": false,
+            "preorder": true,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
