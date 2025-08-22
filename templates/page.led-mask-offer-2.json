@@ -15,7 +15,9 @@
       "settings": {
         "seo_heading": "",
         "heading": "",
-        "description": ""
+        "description": "",
+        "reserved": false,
+        "soldout": false
       }
     },
     "logos_GdDRJU": {
@@ -749,8 +751,8 @@
         "compare_J6mUxQ": {
           "type": "compare",
           "settings": {
-            "check_text": "<p><strong>One-time</strong>investment</p>",
-            "cross_text": "<p><strong>Ongoing cost</strong>per session</p>",
+            "check_text": "<p><strong>One-time</strong> investment</p>",
+            "cross_text": "<p><strong>Ongoing cost</strong> per session</p>",
             "checkbox": false
           }
         },

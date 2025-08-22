@@ -97,7 +97,8 @@
         "patches": "Patches",
         "quote": "Quote",
         "quote-mobile": "Quote mobile",
-        "content": "Content"
+        "content": "Content",
+        "additional-content": "Additional content"
     },
     "blocks": {
         "block-card": {
@@ -121,6 +122,17 @@
         },
         "exclusive-offer": {
             "name": "Exclusive offer"
+        },
+        "feature-tabs": {
+            "name": "Feature tabs",
+            "settings": {
+                "feature-tabs-heading": "Feature tabs header"
+            },
+            "blocks": {
+                "feature-tab": {
+                    "name": "Feature tab"
+                }
+            }
         },
         "get-smoother-skin": {
             "name": "Get smoother skin"
