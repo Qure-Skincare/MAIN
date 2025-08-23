@@ -103,7 +103,12 @@
         "patches": "Patches",
         "quote": "Quote",
         "quote-mobile": "Quote mobile",
-        "content": "Content"
+        "content": "Content",
+        "additional-content": "Additional content",
+        "mobile": "Mobile",
+        "desktop": "Desktop",
+        "both": "Both (Desktop & Mobile)",
+        "display-mode": "Display mode"
     },
     "blocks": {
         "block-card": {
@@ -128,6 +133,12 @@
         "exclusive-offer": {
             "name": "Exclusive offer"
         },
+        "feature-tabs": {
+            "name": "Feature tabs",
+            "settings": {
+                "feature-tabs-heading": "Feature tabs header"
+            }
+        },
         "get-smoother-skin": {
             "name": "Get smoother skin"
         },
@@ -137,11 +148,14 @@
         "led-mask-offer": {
             "name": "LED mask offer"
         },
-        "beauty-benefits": {
-            "name": "Beauty benefits"
+        "benefits-with-icons": {
+            "name": "Benbefits with icons"
         },
         "money-back-guarantee": {
             "name": "Money back guarantee"
+        },
+        "beauty-benefits": {
+            "name": "Beauty benefits"
         },
         "micro-infusion-pdp-detailed-guide": {
             "name": "Detailed guide"
@@ -232,6 +246,9 @@
         },
         "sticky-cta": {
             "name": "Sticky Call to Action"
+        },
+        "image-accordion": {
+            "name": "Image accordion"
         },
         "product-header": {
             "name": "Product header"
