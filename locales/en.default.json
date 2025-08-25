@@ -8,309 +8,307 @@
  * ------------------------------------------------------------
  */
 {
-    "sections":{
-        "slider-featured-in": {
-            "featured_text": "FEATURED IN"
-        },
-        "how-it-works": {
-            "aging_mode_button": "Pro-Aging Mode",
-            "breakout_mode_button": "Anti-Breakout Mode",
-            "aging_scale_text_infrared": "Infrared",
-            "aging_scale_value_infrared": "(880 nm)",
-            "aging_scale_text_deep_red": "Deep Red",
-            "aging_scale_value_deep_red": "(660 nm)",
-            "aging_scale_text_red": "Red",
-            "aging_scale_value_red": "(630 nm)",
-            "aging_scale_text_amber": "Amber",
-            "aging_scale_value_amber": "(605 nm)",
-            "breakout_scale_text_red": "Red",
-            "breakout_scale_value_red": "(630 nm)",
-            "breakout_scale_text_blue": "Blue Light",
-            "breakout_scale_value_blue": "(415 nm)"
-        },
-        "proven-results": {
-            "info_image": "https://qureskincaredns-main.com/assets/images/i.svg",
-            "study_text": "Study"
-        },
-        "exclusive-offer": {
-            "include_text": "Included free"
-        },
-        "proof-in-numbers": {
-            "study_text": "Study"
-        },
-        "trusted-reviews": {
-            "badge_text": "Verified customer",
-            "badge_image": "https://qureskincaredns-main.com/assets/images/reviewCheck.svg"
-        },
-        "trusted-recommended": {
-            "badge_image": "https://qureskincaredns-main.com/sections/isolated/experts/images/tick_new.svg",
-            "badge_image_mobile": "https://qureskincaredns-main.com/assets/images/tick_new.svg",
-            "badge_text": "Dermatologist Approved"
-        },
-        "video-slider":{
-                "text": "Watch: How To Install",
-                "play_button": "https://qureskincaredns-main.com/assets/images/play_button.svg"
-        },
-        "serum-selection":{
-                "or_text": "or",
-                "review_stars": "https://qureskincaredns-main.com/sections/isolated/serum/images/stars.webp",
-                "verified_customer_text": "Verified Customer"
-        },
-        "qure-filters-offer-slider-with-text":{
-            "caused_by_text": "Caused by:"
-        },
-        "faq":{
-            "arrow_image": "https://qureskincaredns-main.com/assets/images/arrow_right.svg",
-            "button_label": "Ask us",
-            "text_before_button": "Don’t see your question?"
-        },
-         "micro-infusion-pdp-detailed-guide":{
-            "arrow_image": "https://qureskincaredns-main.com/assets/images/arrow_right.svg"
-        },
-        "comparison-real-fake":{
-            "tick_image": "https://qureskincaredns-main.com/assets/images/tick.svg",
-            "cross_image": "https://qureskincaredns-main.com/assets/images/cross.svg"
-        },
-        "improve-skin-hydration":{
-            "text_button_before": "Before",
-            "text_button_after": "After"
-        },
-        "qure-filters-offer-qure-filters":{
-            "text_button_shower": "Shower Filter",
-            "text_button_faucet": "Faucet Filter",
-            "video_play_button": "https://qureskincaredns-main.com/assets/images/play_button.svg",
-            "heading_shower_filter": "The Qure Shower Filter",
-            "heading_faucet_filter": "The Qure Faucet Filter"
-        },
-        "compare":{
-            "versus_text": "VS"
-        },
-        "beauty-benefits":{
-            "verified_text": "Verified",
-            "review_image": "https://qureskincaredns-main.com/assets/images/reviewCheck.svg"
-     },
-        "sticky-cta":{
-            "select_color_text": "Select Color",
-            "white_swatch_image": "https://qureskincaredns-main.com/sections/isolated/sticky-cta/images/white_swatch.webp",
-            "black_swatch_image": "https://qureskincaredns-main.com/sections/isolated/sticky-cta/images/black_swatch.webp",
-            "black_text": "Black",
-            "white_text": "White"
-        },
-        "page-qure-filters-form": {
-            "settings": {
-                "limited": "Limited Time Offer",
-                "header": "Qure Shower Filter",
-                "subheader": "+ FREE Faucet Filter",
-                "warranty": "Lifetime Warranty",
-                "compatibility": "99% Fit Compatibility",
-                "text": "Repair skin and hair with dual filters that remove up to 99% of chlorine, heavy metals and contaminants.",
-                "select_color": "Select Your Color:",
-                "free": "FREE",
-                "white": "White",
-                "black": "Black",
-                "delivery": "Select Your Delivery:",
-                "best_value": "Best Value",
-                "subscribe_and_save_html": "Subscribe & <span class='qure__product-label'>SAVE 50%</span>",
-                "shower_filter_title": "Qure Shower Filter",
-                "faucet_filter_title": "Qure Faucet Filter",
-                "delivery_terms": "New filters auto-ship every 90 days.",
-                "one_time_purchase_html": "One-Time Purchase <span class='qure__product-label'>SAVE 35%</span>",
-                "button_label": "Buy now",
-                "button_label_save": "Subscribe Now & Save 50%",
-                "waranty_html": "<strong class='fw-600'>Covered by our Lifetime Warranty. </strong><br> Backed by our 30-Day Money-Back Guarantee.",
-                "dermatologist": "Dermatologist Reviewed",
-                "shipping": "Free Shipping over $100",
-                "science": "Backed by Science",
-                "discount_text": "% OFF",
-                "more_details_html": "<strong class='fw-600'>Skip pause/modify or cancel anytime.</strong> <br> <a href='' class='text-black text-decoration-underline'> See more details</a>."
-            }
-        }
+  "sections": {
+    "slider-featured-in": {
+      "featured_text": "FEATURED IN"
     },
-    "general": {
-        "page": "Page {{ page }}",
-        "tags": "Tags {{ tags }}"
+    "how-it-works": {
+      "aging_mode_button": "Pro-Aging Mode",
+      "breakout_mode_button": "Anti-Breakout Mode",
+      "aging_scale_text_infrared": "Infrared",
+      "aging_scale_value_infrared": "(880 nm)",
+      "aging_scale_text_deep_red": "Deep Red",
+      "aging_scale_value_deep_red": "(660 nm)",
+      "aging_scale_text_red": "Red",
+      "aging_scale_value_red": "(630 nm)",
+      "aging_scale_text_amber": "Amber",
+      "aging_scale_value_amber": "(605 nm)",
+      "breakout_scale_text_red": "Red",
+      "breakout_scale_value_red": "(630 nm)",
+      "breakout_scale_text_blue": "Blue Light",
+      "breakout_scale_value_blue": "(415 nm)"
     },
-    "page": {
-        "settings": {
-            "jumpto": {
-                "header": "Jump To"
-            }
-        }
+    "proven-results": {
+      "info_image": "https://qureskincaredns-main.com/assets/images/i.svg",
+      "study_text": "Study"
     },
-    "product": {
-        "settings": {
-            "buy-button-label": "Buy Now",
-            "reserved-button-label": "Reserve Now",
-            "soldout-button-label": "Soldout",
-            "buy-button-bottom": {
-                "heading": "OR pay 4 monthly payments of {{ product_price_divided }} with",
-                "recommended_html": "<strong>50+ Board Certified Dermatologists</strong> recommend Qure to their patients. <a href='{{ button_link }}' class='text-black text-decoration-underline'>See More</a>.",
-                "guaranteed_text": "30-Day Money-Back Guarantee",
-                "shipping_text": "Free Shipping over 100$"
-            },
-            "saveup": {
-                "heading_html": "<p>Save up to <strong>XX%</strong> with our curated bundles</p>",
-                "button_html": "<a href='{{ button_link }}' class='btn bg-white border-0 text-black mt-15 mt-md-0'>Shop Now <img src='https://qureskincaredns-main.com/assets/images/arrow_right.svg' alt='arrow'></a>"
-            },
-            "benefits-list": {
-                "guaranteed_text": "30-Day Money-Back Guarantee",
-                "shipping_text": "Free World-Wide Shipping over 100$",
-                "science_text": "Backed by Science"
-            },
-            "cross-sell": {
-                "header": "Get The Best Results With",
-                "buy-button-label": "Add"
-            },
-            "product-next-ships": {
-                "header": "Next batch ships",
-                "text": "Due to high demand, our {{ product_title }} is sold out. Order now and secure yours from the next shipment.",
-                "soldout": "SOLD OUT",
-                "reserved": "% Reserved"
-            },
-            "product-rating": {
-                "static_html": "<span><strong id='rating'>{{ rating }}</strong>/5 Rated by Customers</span>"
-            },
-            "product-buy-button-sticky": {
-                "color": "Set color",
-                "white": "White",
-                "black": "Black",
-                "button-label": "Secure Now",
-                "text": "580 Units Reserved in last 48 hours"
-            },
-            "jumpto": {
-                "header": "Jump To"
-            }
-        }
+    "exclusive-offer": {
+      "include_text": "Included free"
     },
-    "404": {
-        "settings": {
-            "header": "Oops",
-            "text": "Looks like you took a detour on your skincare path. Navigate back to our amazing products for the perfect route to radiant skin!",
-            "button-label": "Back to Homepage"
-        }
+    "proof-in-numbers": {
+      "study_text": "Study"
     },
-    "GDPR": {
-        "settings": {
-            "header": "Customize Your Cookie Preferences",
-            "text_html": "<p>We respect your privacy and give you the option to customize your cookie settings. Please select which types of cookies you are willing to accept.</p><p>For more information see our <a href='{{ privacy_policy_url }}'>Privacy Policy.</a></p>",
-            "button-label": "Save preferences",
-            "collapse_tab_1": {
-                "header": "Strictly Necessary Cookies",
-                "text": "These cookies are essential for the website to function properly. They enable basic functionalities like page navigation and access to secure areas of the website. The website cannot function properly without these cookies."
-            },
-            "collapse_tab_2": {
-                "header": "Performance Cookies",
-                "text": "These cookies help us understand how visitors interact with our website by collecting and reporting information anonymously. They enable us to improve the website's performance and user experience."
-            },
-            "collapse_tab_3": {
-                "header": "Functional Cookies",
-                "text": "These cookies allow the website to remember choices you make (such as your username, language, or the region you are in) and provide enhanced, more personal features."
-            },
-            "collapse_tab_4": {
-                "header": "Targeting/Advertising Cookies",
-                "text": "These cookies are used to deliver ads more relevant to you and your interests. They may also be used to limit the number of times you see an advertisement and help measure the effectiveness of the advertising campaign. They are usually placed by advertising networks with the website operator’s permission."
-            }
-        }
+    "trusted-reviews": {
+      "badge_text": "Verified customer",
+      "badge_image": "https://qureskincaredns-main.com/assets/images/reviewCheck.svg"
     },
-    "cart": {
-        "static": {
-            "settings": {
-                "header": "Shopping Cart",
-                "empty-header": "Your cart is currently empty",
-                "empty-text": "Before proceed to checkout you must add some products to your shopping cart.",
-                "empty-button_html": "<a href='{{ button_link }}' class='btn btn--primary'>Start Shopping</a>",
-                "product": "Product",
-                "quantity": "Quantity",
-                "price": "Price",
-                "remove": "REMOVE",
-                "savings": "Savings",
-                "shipping": "Shipping",
-                "free": "Free",
-                "subtotal": "Subtotal",
-                "insurance-text": "Protect your order from lost, damage and theft",
-                "checkout": "Proceed to Checkout"
-            }
-        },
-        "drawer": {
-            "settings": {
-                "notification_html": "<strong>IN HIGH DEMAND</strong> | Items reserved for:",
-                "notification_time_end": "Time is up!",
-                "bar_header_html": "You’re {{ add_more }} way from <strong>a FREE {{ product_title }}</strong> (worth {{ product_price }})",
-                "bar_header_completed_html": "Congrats! You've unlocked your <strong>Free Gifts!</strong>",
-                "header": "Your Cart",
-                "item-text-2days": "In stock. Shipped within 2 days",
-                "savings": "Savings",
-                "shipping": "Shipping",
-                "free": "Free",
-                "subtotal": "Subtotal",
-                "insurance-text": "Protect your order from lost, damage and theft",
-                "guarantee-text": "Backed by our 30-Day Money-Back Guarantee",
-                "checkout": "CHECKOUT"
-            },
-            "empty": {
-                "header": "Your cart is empty..",
-                "text": "Fill it with amazing skincare.",
-                "settings": {
-                    "header": "Save up to 55% on our exclusive bundles",
-                    "image": "https://qureskincaredns-main.com/sections/global/drawer/images/empty-cart.webp",
-                    "content_html": "<ul><li>Shop our devices & skincare at our best prices.</li><li>Target your skin concerns in one simple routine.</li><li>Get clinical results at home - no downtime.</li></ul>",
-                    "button-label": "Shop Bundles",
-                    "button-url": "/pages/microinfusion",
-                    "text": "Even my esthetician is hooked!",
-                    "subtext": "And I can now visit beauty clinics less often."
-                }
-            },
-            "upsell": {
-                "header": "Get The Best Results With",
-                "button-label": "Add"
-            }
-        }
+    "trusted-recommended": {
+      "badge_image": "https://qureskincaredns-main.com/sections/isolated/experts/images/tick_new.svg",
+      "badge_image_mobile": "https://qureskincaredns-main.com/assets/images/tick_new.svg",
+      "badge_text": "Dermatologist Approved"
     },
-    "purchase-form": {
-        "settings": {
-            "buy-button-label": "Buy Now",
-            "reserve-button-label": "Reserve Now",
-            "soldout-button-label": "Soldout",
-            "select-type": "Select Your Serum:",
-            "select-product": "Select Your supply:",
-            "save": "& Save",
-            "off": "OFF",
-            "best": "Best Value",
-            "payment-option": "Select A Payment Option",
-            "pay-full": "Pay in full",
-            "onetime-payment": "One-time payment with:",
-            "pay-today": "Pay today only",
-            "monthly-payment": "Monthly interest-free payments with:"
-
-        }
+    "video-slider": {
+      "text": "Watch: How To Install",
+      "play_button": "https://qureskincaredns-main.com/assets/images/play_button.svg"
     },
-    "header": {
-        "settings": {
-            "navigation_header_1": "Best Sellers",
-            "navigation_header_2": "Products",
-            "navigation_header_3": "Help Center",
-            "navigation_header_4": "Learn More",
-            "navigation_header_2_column_one": "Shop Devices",
-            "navigation_header_2_column_second": "Shop Skincare"
-        }
+    "serum-selection": {
+      "or_text": "or",
+      "review_stars": "https://qureskincaredns-main.com/sections/isolated/serum/images/stars.webp",
+      "verified_customer_text": "Verified Customer"
     },
-    "footer": {
-        "settings": {
-            "subscribe_text": "Get the latest from Qure",
-            "follow_us_text": "Follow Us",
-            "email_placeholer": "Your Email",
-            "navigation_header_1": "Shop",
-            "navigation_header_2": "Learn",
-            "navigation_header_3": "Qure",
-            "app": {
-                "header": "Download Our App",
-                "text": "Access additional features and customize your treatments."
-            },
-            "rights": {
-                "header": "© 2025 Qure™ Skincare. All rights reserved.",
-                "text": "Our products are not intended to diagnose, cure, or prevent specific diseases of medical conditions. The Qure website is for education and information purposes only and is not intended as medical advice or a substitute for medical advice."
-            }
-        }
+    "qure-filters-offer-slider-with-text": {
+      "caused_by_text": "Caused by:"
+    },
+    "faq": {
+      "arrow_image": "https://qureskincaredns-main.com/assets/images/arrow_right.svg",
+      "button_label": "Ask us",
+      "text_before_button": "Don’t see your question?"
+    },
+    "micro-infusion-pdp-detailed-guide": {
+      "arrow_image": "https://qureskincaredns-main.com/assets/images/arrow_right.svg"
+    },
+    "comparison-real-fake": {
+      "tick_image": "https://qureskincaredns-main.com/assets/images/tick.svg",
+      "cross_image": "https://qureskincaredns-main.com/assets/images/cross.svg"
+    },
+    "improve-skin-hydration": {
+      "text_button_before": "Before",
+      "text_button_after": "After"
+    },
+    "qure-filters-offer-qure-filters": {
+      "text_button_shower": "Shower Filter",
+      "text_button_faucet": "Faucet Filter",
+      "video_play_button": "https://qureskincaredns-main.com/assets/images/play_button.svg",
+      "heading_shower_filter": "The Qure Shower Filter",
+      "heading_faucet_filter": "The Qure Faucet Filter"
+    },
+    "compare": {
+      "versus_text": "VS"
+    },
+    "beauty-benefits": {
+      "verified_text": "Verified",
+      "review_image": "https://qureskincaredns-main.com/assets/images/reviewCheck.svg"
+    },
+    "sticky-cta": {
+      "select_color_text": "Select Color",
+      "white_swatch_image": "https://qureskincaredns-main.com/sections/isolated/sticky-cta/images/white_swatch.webp",
+      "black_swatch_image": "https://qureskincaredns-main.com/sections/isolated/sticky-cta/images/black_swatch.webp",
+      "black_text": "Black",
+      "white_text": "White"
+    },
+    "page-qure-filters-form": {
+      "settings": {
+        "limited": "Limited Time Offer",
+        "header": "Qure Shower Filter",
+        "subheader": "+ FREE Faucet Filter",
+        "warranty": "Lifetime Warranty",
+        "compatibility": "99% Fit Compatibility",
+        "text": "Repair ski111n and hair with dual filters that remove up to 99% of chlorine, heavy metals and contaminants.",
+        "select_color": "Select Your Color:",
+        "free": "FREE",
+        "white": "White",
+        "black": "Black",
+        "delivery": "Select Your Delivery:",
+        "best_value": "Best Value",
+        "subscribe_and_save_html": "Subscribe & <span class='qure__product-label'>SAVE 50%</span>",
+        "shower_filter_title": "Qure Shower Filter",
+        "faucet_filter_title": "Qure Faucet Filter",
+        "delivery_terms": "New filters auto-ship every 90 days.",
+        "one_time_purchase_html": "One-Time Purchase <span class='qure__product-label'>SAVE 35%</span>",
+        "button_label": "Buy now",
+        "button_label_save": "Subscribe Now & Save 50%",
+        "waranty_html": "<strong class='fw-600'>Covered by our Lifetime Warranty. </strong><br> Backed by our 30-Day Money-Back Guarantee.",
+        "dermatologist": "Dermatologist Reviewed",
+        "shipping": "Free Shipping over $100",
+        "science": "Backed by Science",
+        "discount_text": "% OFF",
+        "more_details_html": "<strong class='fw-600'>Skip pause/modify or cancel anytime.</strong> <br> <a href='' class='text-black text-decoration-underline'> See more details</a>."
+      }
     }
+  },
+  "general": {
+    "page": "Page {{ page }}",
+    "tags": "Tags {{ tags }}"
+  },
+  "page": {
+    "settings": {
+      "jumpto": {
+        "header": "Jump To"
+      }
+    }
+  },
+  "product": {
+    "settings": {
+      "buy-button-label": "Buy Now",
+      "reserved-button-label": "Reserve Now",
+      "soldout-button-label": "Soldout",
+      "buy-button-bottom": {
+        "heading": "OR pay 4 monthly payments of {{ product_price_divided }} with",
+        "recommended_html": "<strong>50+ Board Certified Dermatologists</strong> recommend Qure to their patients. <a href='{{ button_link }}' class='text-black text-decoration-underline'>See More</a>.",
+        "guaranteed_text": "30-Day Money-Back Guarantee",
+        "shipping_text": "Free Shipping over 100$"
+      },
+      "saveup": {
+        "heading_html": "<p>Save up to <strong>XX%</strong> with our curated bundles</p>",
+        "button_html": "<a href='{{ button_link }}' class='btn bg-white border-0 text-black mt-15 mt-md-0'>Shop Now <img src='https://qureskincaredns-main.com/assets/images/arrow_right.svg' alt='arrow'></a>"
+      },
+      "benefits-list": {
+        "guaranteed_text": "30-Day Money-Back Guarantee",
+        "shipping_text": "Free World-Wide Shipping over 100$",
+        "science_text": "Backed by Science"
+      },
+      "cross-sell": {
+        "header": "Get The Best Results With",
+        "buy-button-label": "Add"
+      },
+      "product-next-ships": {
+        "header": "Next batch ships",
+        "text": "Due to high demand, our {{ product_title }} is sold out. Order now and secure yours from the next shipment.",
+        "soldout": "SOLD OUT",
+        "reserved": "% Reserved"
+      },
+      "product-rating": {
+        "static_html": "<span><strong id='rating'>{{ rating }}</strong>/5 Rated by Customers</span>"
+      },
+      "product-buy-button-sticky": {
+        "color": "Set color",
+        "white": "White",
+        "black": "Black",
+        "button-label": "Secure Now",
+        "text": "580 Units Reserved in last 48 hours"
+      },
+      "jumpto": {
+        "header": "Jump To"
+      }
+    }
+  },
+  "404": {
+    "settings": {
+      "header": "Oops",
+      "text": "Looks like you took a detour on your skincare path. Navigate back to our amazing products for the perfect route to radiant skin!",
+      "button-label": "Back to Homepage"
+    }
+  },
+  "GDPR": {
+    "settings": {
+      "header": "Customize Your Cookie Preferences",
+      "text_html": "<p>We respect your privacy and give you the option to customize your cookie settings. Please select which types of cookies you are willing to accept.</p><p>For more information see our <a href='{{ privacy_policy_url }}'>Privacy Policy.</a></p>",
+      "button-label": "Save preferences",
+      "collapse_tab_1": {
+        "header": "Strictly Necessary Cookies",
+        "text": "These cookies are essential for the website to function properly. They enable basic functionalities like page navigation and access to secure areas of the website. The website cannot function properly without these cookies."
+      },
+      "collapse_tab_2": {
+        "header": "Performance Cookies",
+        "text": "These cookies help us understand how visitors interact with our website by collecting and reporting information anonymously. They enable us to improve the website's performance and user experience."
+      },
+      "collapse_tab_3": {
+        "header": "Functional Cookies",
+        "text": "These cookies allow the website to remember choices you make (such as your username, language, or the region you are in) and provide enhanced, more personal features."
+      },
+      "collapse_tab_4": {
+        "header": "Targeting/Advertising Cookies",
+        "text": "These cookies are used to deliver ads more relevant to you and your interests. They may also be used to limit the number of times you see an advertisement and help measure the effectiveness of the advertising campaign. They are usually placed by advertising networks with the website operator’s permission."
+      }
+    }
+  },
+  "cart": {
+    "static": {
+      "settings": {
+        "header": "Shopping Cart",
+        "empty-header": "Your cart is currently empty",
+        "empty-text": "Before proceed to checkout you must add some products to your shopping cart.",
+        "empty-button_html": "<a href='{{ button_link }}' class='btn btn--primary'>Start Shopping</a>",
+        "product": "Product",
+        "quantity": "Quantity",
+        "price": "Price",
+        "remove": "REMOVE",
+        "savings": "Savings",
+        "shipping": "Shipping",
+        "free": "Free",
+        "subtotal": "Subtotal",
+        "insurance-text": "Protect your order from lost, damage and theft",
+        "checkout": "Proceed to Checkout"
+      }
+    },
+    "drawer": {
+      "settings": {
+        "notification_html": "<strong>IN HIGH DEMAND</strong> | Items reserved for:",
+        "notification_time_end": "Time is up!",
+        "bar_header_html": "You’re {{ add_more }} way from <strong>a FREE {{ product_title }}</strong> (worth {{ product_price }})",
+        "bar_header_completed_html": "Congrats! You've unlocked your <strong>Free Gifts!</strong>",
+        "header": "Your Cart",
+        "item-text-2days": "In stock. Shipped within 2 days",
+        "savings": "Savings",
+        "shipping": "Shipping",
+        "free": "Free",
+        "subtotal": "Subtotal",
+        "insurance-text": "Protect your order from lost, damage and theft",
+        "guarantee-text": "Backed by our 30-Day Money-Back Guarantee",
+        "checkout": "CHECKOUT"
+      },
+      "empty": {
+        "header": "Your cart is empty..",
+        "text": "Fill it with amazing skincare.",
+        "settings": {
+          "header": "Save up to 55% on our exclusive bundles",
+          "image": "https://qureskincaredns-main.com/sections/global/drawer/images/empty-cart.webp",
+          "content_html": "<ul><li>Shop our devices & skincare at our best prices.</li><li>Target your skin concerns in one simple routine.</li><li>Get clinical results at home - no downtime.</li></ul>",
+          "button-label": "Shop Bundles",
+          "button-url": "/pages/microinfusion",
+          "text": "Even my esthetician is hooked!",
+          "subtext": "And I can now visit beauty clinics less often."
+        }
+      },
+      "upsell": {
+        "header": "Get The Best Results With",
+        "button-label": "Add"
+      }
+    }
+  },
+  "purchase-form": {
+    "settings": {
+      "buy-button-label": "Buy Now",
+      "reserve-button-label": "Reserve Now",
+      "soldout-button-label": "Soldout",
+      "select-type": "Select Your Serum:",
+      "select-product": "Select Your supply:",
+      "save": "& Save",
+      "off": "OFF",
+      "best": "Best Value",
+      "payment-option": "Select A Payment Option",
+      "pay-full": "Pay in full",
+      "onetime-payment": "One-time payment with:",
+      "pay-today": "Pay today only",
+      "monthly-payment": "Monthly interest-free payments with:"
+    }
+  },
+  "header": {
+    "settings": {
+      "navigation_header_1": "Best Sellers",
+      "navigation_header_2": "Products",
+      "navigation_header_3": "Help Center",
+      "navigation_header_4": "Learn More",
+      "navigation_header_2_column_one": "Shop Devices",
+      "navigation_header_2_column_second": "Shop Skincare"
+    }
+  },
+  "footer": {
+    "settings": {
+      "subscribe_text": "Get the latest from Qure",
+      "follow_us_text": "Follow Us",
+      "email_placeholer": "Your Email",
+      "navigation_header_1": "Shop",
+      "navigation_header_2": "Learn",
+      "navigation_header_3": "Qure",
+      "app": {
+        "header": "Download Our App",
+        "text": "Access additional features and customize your treatments."
+      },
+      "rights": {
+        "header": "© 2025 Qure™ Skincare. All rights reserved.",
+        "text": "Our products are not intended to diagnose, cure, or prevent specific diseases of medical conditions. The Qure website is for education and information purposes only and is not intended as medical advice or a substitute for medical advice."
+      }
+    }
+  }
 }
-
