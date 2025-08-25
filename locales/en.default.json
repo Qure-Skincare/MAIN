@@ -143,7 +143,7 @@
       "reserved-button-label": "Reserve Now",
       "soldout-button-label": "Sold Out",
       "buy-button-bottom": {
-        "heading": "OR pay 4 monthly payments of {{ product_price_divided }} with",
+        "heading_html": "OR pay 4 monthly payments of <span class='pay_today'>{{ product_price_divided }}</span> with",
         "recommended_html": "<strong>50+ Board Certified Dermatologists</strong> recommend Qure to their patients. <a href='{{ button_link }}' class='text-black text-decoration-underline'>See More</a>.",
         "guaranteed_text": "30-Day Money-Back Guarantee",
         "shipping_text": "Free Shipping over 100$"
@@ -179,6 +179,14 @@
       },
       "jumpto": {
         "header": "Jump To"
+      },
+      "limited-offer": {
+        "header": "Qure Sale Limited Time Offer",
+        "text_html": "<p class='qs-offer'>Get <span class='qs-badge'>{{ sum }} OFF</span> with code {{ code }}</p>",
+        "days": "DAYS",
+        "hours": "HOURS",
+        "minutes": "MINUTES",
+        "seconds": "SECONDS"
       }
     }
   },

@@ -5,6 +5,8 @@
         {% render 'purchase-form-landing-types' section: section, __idsArray1: __idsArray1, __idsArray2: __idsArray2, __idsArray3: __idsArray3 %}
         {% render 'purchase-form-landing-products' section: section, __idsArray1: __idsArray1, __idsArray2: __idsArray2, __idsArray3: __idsArray3 %}
         {% render 'product-page-buy-button' %}
+        {% render 'product-page-buy-button-payments' %}
+        {% render 'product-page-buy-button-bottom' %}
     </div>
     <script src="{{ 'purchase-form-landing.js' | asset_url }}" data-form="{{ section.settings.form_name }}" data-section="{{ section.id }}" defer></script>
 </template>

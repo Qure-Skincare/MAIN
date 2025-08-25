@@ -1,0 +1,53 @@
+{% doc %}
+  Renders a product limited time offer snippet for the product-header section.
+
+  @param {object} - A section object.
+
+  @example
+  {% render 'product-limited-time-offer', section: section %}
+{% enddoc %}
+
+{% for block in section.blocks %}
+    {% if block.type == 'limited-offer' %}
+        <div class="qure_sale-countdown mt-30" data-deadline="">
+            <div class="qs-container">
+                <div class="qs-card" role="group" aria-label="Qure sale countdown">
+                    <p class="qs-title">{{ 'product.settings.limited-offer.header' | t }}</p>
+                    <div class="qs-timer" role="timer" aria-live="polite">
+                        <div class="qs-unit">
+                            <div class="qs-value" data-key="days">00</div>
+                            <div class="qs-label">{{ 'product.settings.limited-offer.days' | t }}</div>
+                        </div>
+                        <div class="qs-sep" aria-hidden="true"></div>
+                        <div class="qs-unit">
+                            <div class="qs-value" data-key="hours">00</div>
+                            <div class="qs-label">{{ 'product.settings.limited-offer.hours' | t }}</div>
+                        </div>
+                        <div class="qs-sep" aria-hidden="true"></div>
+                        <div class="qs-unit">
+                            <div class="qs-value" data-key="minutes">00</div>
+                            <div class="qs-label">{{ 'product.settings.limited-offer.minutes' | t }}</div>
+                        </div>
+                        <div class="qs-sep" aria-hidden="true"></div>
+                        <div class="qs-unit">
+                            <div class="qs-value" data-key="seconds">00</div>
+                            <div class="qs-label">{{ 'product.settings.limited-offer.seconds' | t }}</div>
+                        </div>
+                    </div>
+
+                    <p class="qs-offer">{{ 'product.settings.limited-offer.text_html' | t: sum: block.settings.sum, code: block.settings.code }} </p>
+                </div>
+            </div>
+        </div>
+
+        {% if block.settings.days > 0 %}
+            <script>
+                let customDays = {{ block.settings.days }} - 1;
+
+                document.addEventListener("DOMContentLoaded", function () {
+                    loadScriptOnce('product-limited-time-offer', '{{ 'product-limited-time-offer.js' | asset_url }}');
+                });
+            </script>
+        {% endif %}
+    {% endif %}
+{% endfor %}

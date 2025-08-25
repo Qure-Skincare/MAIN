@@ -32,8 +32,9 @@
 
                     {% render 'product-page-buy-button', product_price: product_sale_price, product_variant_id: product_variant_id, section: section %}
                     {% render 'product-page-buy-button-payments', product_price_divided: product_price_divided %}
-                    {% render 'product-buy-button-bottom' %}
+                    {% render 'product-page-buy-button-bottom' %}
                     {% render 'product-page-next-ships', section: section %}
+                    {% render 'product-limited-time-offer', section: section %}
 
                 </div>
             </div>
@@ -105,6 +106,33 @@
                     "type": "url",
                     "id": "button-url",
                     "label": "t:common.button-url"
+                }
+            ]
+        },
+        {
+            "type": "limited-offer",
+            "name": "t:common.limited-offer",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "sum",
+                    "label": "t:common.sum"
+                },
+                {
+                    "type": "text",
+                    "id": "code",
+                    "label": "t:common.code"
+                },
+                {
+                    "type": "range",
+                    "id": "days",
+                    "min": 1,
+                    "max": 30,
+                    "step": 1,
+                    "unit": "day",
+                    "label": "t:common.days",
+                    "default": 5
                 }
             ]
         },
