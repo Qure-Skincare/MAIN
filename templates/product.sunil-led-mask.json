@@ -63,6 +63,14 @@
             "date_soldout": "28 July",
             "date_reserved": "3 August"
           }
+        },
+        "limited_offer_A8": {
+          "type": "limited-offer",
+          "disabled": false,
+          "settings": {
+            "sum": "$100",
+            "code": "QURE100"
+          }
         }
       },
       "block_order": [
@@ -72,7 +80,8 @@
         "jumpto_A4",
         "jumpto_A5",
         "jumpto_A6",
-        "nextships_A7"
+        "nextships_A7",
+        "limited_offer_A8"
       ],
       "name": "t:sections.product-header.name",
       "settings": {

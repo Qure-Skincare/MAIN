@@ -9,6 +9,10 @@
  */
 {
     "common": {
+        "days": "Days",
+        "limited-offer": "Limited offer",
+        "code": "Code",
+        "sum": "Sum",
         "payment": "Payment",
         "preorder": "Preorder",
         "preselect": "Preselect",

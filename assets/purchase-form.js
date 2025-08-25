@@ -120,8 +120,9 @@ document.addEventListener('DOMContentLoaded', function() {
         const btnValue = document.querySelector('.' + __section + " .btn_value");
         if (btnValue) btnValue.textContent = this.getAttribute("data-per");
 
-        const payToday = document.querySelector('.' + __section + " .pay_today");
-        if (payToday) payToday.textContent = this.getAttribute("data-pay");
+        document.querySelectorAll('.' + __section + " .pay_today").forEach(el => {
+            el.textContent = this.getAttribute("data-pay");
+        });
 
         const chosenImg = document.querySelector('.' + __section + " #choosen_image");
         if (chosenImg) chosenImg.setAttribute("src", this.getAttribute("data-image"));
