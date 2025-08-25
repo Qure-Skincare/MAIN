@@ -124,6 +124,9 @@
         "announcement-bar": {
             "name": "Announcement bar"
         },
+        "before-after-accordion": {
+            "name": "Before after accordion"
+        },
         "banner-with-content": {
             "name": "Banner with content"
         },
@@ -149,7 +152,7 @@
             "name": "LED mask offer"
         },
         "benefits-with-icons": {
-            "name": "Benbefits with icons"
+            "name": "Benefits with icons"
         },
         "money-back-guarantee": {
             "name": "Money back guarantee"
@@ -261,6 +264,9 @@
         },
         "device-comparison-1": {
             "name": "Compare products with Competitors 1"
+        },
+        "device-comparison-2": {
+            "name": "Compare products with Competitors 2"
         },
         "how-to-use": {
             "name": "How to use"

@@ -88,7 +88,7 @@
         "beauty-benefits":{
             "verified_text": "Verified",
             "review_image": "https://qureskincaredns-main.com/assets/images/reviewCheck.svg"
-     },
+        },
         "sticky-cta":{
             "select_color_text": "Select Color",
             "white_swatch_image": "https://qureskincaredns-main.com/sections/isolated/sticky-cta/images/white_swatch.webp",
@@ -124,6 +124,10 @@
                 "discount_text": "% OFF",
                 "more_details_html": "<strong class='fw-600'>Skip pause/modify or cancel anytime.</strong> <br> <a href='' class='text-black text-decoration-underline'> See more details</a>."
             }
+        },
+        "before-after-accordion": {
+                "verified_text": "Verified",
+                "review_image": "https://qureskincaredns-main.com/assets/images/reviewCheck.svg"
         }
     },
     "general": {
