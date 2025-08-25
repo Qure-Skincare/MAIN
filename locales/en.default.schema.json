@@ -124,6 +124,9 @@
         "announcement-bar": {
             "name": "Announcement bar"
         },
+        "numbered-steps": {
+            "name": "Numbered steps"
+        },
         "before-after-accordion": {
             "name": "Before after accordion"
         },
@@ -267,6 +270,9 @@
         },
         "device-comparison-2": {
             "name": "Compare products with Competitors 2"
+        },
+        "device-comparison-3": {
+            "name": "Compare products with Competitors 3"
         },
         "how-to-use": {
             "name": "How to use"
