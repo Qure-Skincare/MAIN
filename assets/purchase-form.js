@@ -125,7 +125,10 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         const chosenImg = document.querySelector('.' + __section + " #choosen_image");
-        if (chosenImg) chosenImg.setAttribute("src", this.getAttribute("data-image"));
+
+        if(this.getAttribute("data-image")) {
+            if (chosenImg) chosenImg.setAttribute("src", this.getAttribute("data-image"));
+        }
 
         toogleTab(block_id);
 
