@@ -112,8 +112,8 @@
           "type": "product",
           "settings": {
             "product": "micro-infusion-6-month-bundle-for-dark-spots",
-            "preselected": false,
-            "heading": "6 Month Supply <br> End Of Summer Sale",
+            "preselected": true,
+            "heading": "6 Month Supply  End Of Summer Sale",
             "subheading": "(12 Treatments)",
             "image": "shopify://shop_images/3_month_mixed.webp",
             "soldout": false,
@@ -173,7 +173,7 @@
           "settings": {
             "product": "micro-infusion-6-month-bundle-for-wrinkles",
             "preselected": true,
-            "heading": "6 Month Supply <br> End Of Summer Sale",
+            "heading": "6 Month Supply  End Of Summer Sale",
             "subheading": "(12 Treatments)",
             "image": "shopify://shop_images/3_month_mixed.webp",
             "soldout": false,
@@ -232,8 +232,8 @@
           "type": "product",
           "settings": {
             "product": "microinfusion-offer-6-month-supply",
-            "preselected": false,
-            "heading": "6 Month Supply <br> End Of Summer Sale",
+            "preselected": true,
+            "heading": "6 Month Supply  End Of Summer Sale",
             "subheading": "(12 Treatments)",
             "image": "shopify://shop_images/3_month_mixed.webp",
             "soldout": false,
