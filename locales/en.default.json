@@ -88,7 +88,7 @@
     "beauty-benefits": {
       "verified_text": "Verified",
       "review_image": "https://qureskincaredns-main.com/assets/images/reviewCheck.svg"
-       },
+    },
     "sticky-cta": {
       "select_color_text": "Select Color",
       "white_swatch_image": "https://qureskincaredns-main.com/sections/isolated/sticky-cta/images/white_swatch.webp",
@@ -97,38 +97,38 @@
       "white_text": "White"
     },
     "page-qure-filters-form": {
-        "settings": {
-          "limited": "Limited Time Offer",
-          "header": "Qure Shower Filter",
-          "subheader": "+ FREE Faucet Filter",
-          "warranty": "Lifetime Warranty",
-          "compatibility": "99% Fit Compatibility",
-          "text": "Repair skin and hair with dual filters that remove up to 99% of chlorine, heavy metals and contaminants.",
-          "select_color": "Select Your Color:",
-          "free": "FREE",
-          "white": "White",
-          "black": "Black",
-          "delivery": "Select Your Delivery:",
-          "best_value": "Best Value",
-          "subscribe_and_save_html": "Subscribe & <span class='qure__product-label'>SAVE 50%</span>",
-          "shower_filter_title": "Qure Shower Filter",
-          "faucet_filter_title": "Qure Faucet Filter",
-          "delivery_terms": "New filters auto-ship every 90 days.",
-          "one_time_purchase_html": "One-Time Purchase <span class='qure__product-label'>SAVE 35%</span>",
-          "button_label": "Buy now",
-          "button_label_save": "Subscribe Now & Save 50%",
-          "waranty_html": "<strong class='fw-600'>Covered by our Lifetime Warranty. </strong><br> Backed by our 30-Day Money-Back Guarantee.",
-          "dermatologist": "Dermatologist Reviewed",
-          "shipping": "Free Shipping over $100",
-          "science": "Backed by Science",
-          "discount_text": "% OFF",
-          "more_details_html": "<strong class='fw-600'>Skip pause/modify or cancel anytime.</strong> <br> <a href='' class='text-black text-decoration-underline'> See more details</a>."
-        }
-      },
-      "before-after-accordion": {
-          "verified_text": "Verified",
-          "review_image": "https://qureskincaredns-main.com/assets/images/reviewCheck.svg"
+      "settings": {
+        "limited": "Limited Time Offer",
+        "header": "Qure Shower Filter",
+        "subheader": "+ FREE Faucet Filter",
+        "warranty": "Lifetime Warranty",
+        "compatibility": "99% Fit Compatibility",
+        "text": "Repair skin and hair with dual filters that remove up to 99% of chlorine, heavy metals and contaminants.",
+        "select_color": "Select Your Color:",
+        "free": "FREE",
+        "white": "White",
+        "black": "Black",
+        "delivery": "Select Your Delivery:",
+        "best_value": "Best Value",
+        "subscribe_and_save_html": "Subscribe & <span class='qure__product-label'>SAVE 50%</span>",
+        "shower_filter_title": "Qure Shower Filter",
+        "faucet_filter_title": "Qure Faucet Filter",
+        "delivery_terms": "New filters auto-ship every 90 days.",
+        "one_time_purchase_html": "One-Time Purchase <span class='qure__product-label'>SAVE 35%</span>",
+        "button_label": "Buy now",
+        "button_label_save": "Subscribe Now & Save 50%",
+        "waranty_html": "<strong class='fw-600'>Covered by our Lifetime Warranty. </strong><br> Backed by our 30-Day Money-Back Guarantee.",
+        "dermatologist": "Dermatologist Reviewed",
+        "shipping": "Free Shipping over $100",
+        "science": "Backed by Science",
+        "discount_text": "% OFF",
+        "more_details_html": "<strong class='fw-600'>Skip pause/modify or cancel anytime.</strong> <br> <a href='' class='text-black text-decoration-underline'> See more details</a>."
       }
+    },
+    "before-after-accordion": {
+      "verified_text": "Verified",
+      "review_image": "https://qureskincaredns-main.com/assets/images/reviewCheck.svg"
+    }
   },
   "general": {
     "page": "Page {{ page }}",
@@ -185,7 +185,7 @@
         "header": "Jump To"
       },
       "limited-offer": {
-        "header": "Qure Sale Limited Time Offer",
+        "header": "Summer Sale Offer",
         "text_html": "<p class='qs-offer'>Get <span class='qs-badge'>{{ sum }} OFF</span> with code {{ code }}</p>",
         "days": "DAYS",
         "hours": "HOURS",
