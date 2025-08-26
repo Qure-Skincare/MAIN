@@ -128,7 +128,7 @@ function __landing__updateProductFormButton(product_variant_id, soldout) {
 
     if (form) {
         const idInput = form.querySelector('input[name="id"]');
-        const button = form.querySelector('.productButtonObject');
+        const button = form.querySelector('.add-cart-button');
 
         if (idInput) {
             if (soldout === 'true') {

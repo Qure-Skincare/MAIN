@@ -64,14 +64,14 @@
                                 data-product-price="{{ product_price }}">
                                 
                                 <input type="radio" class="vp__input" name="monthlyPlan_{{ section.settings.form_name }}" id="{{ section.id }}-{{ product_title_tag }}" {% if block.settings.preselected == true %} checked{% endif %}>
-                                <label for="three-month" class="vp-pack vp-best-pack pt-0">
+                                <label for="monthlyPlan_{{ section.settings.form_name }}" id="{{ section.id }}-{{ product_title_tag }}" class="vp-pack vp-best-pack{% if product_type == 3 %} pt-0{% endif %}">
                                     {% if product_type == 3 %}
                                         <div class="vp-best-value">{{ 'purchase-form.settings.best' | t }} <i class="fa-sharp fa-solid fa-star-sharp"></i></div>
                                     {% endif %}
                                     
                                     {% if block.settings.image != blank %}
                                         <div class="vp-img">
-                                            <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" class="img-fluid" />
+                                            <img src="{{ block.settings.image | img_url: '250x' }}" alt="{{ block.settings.image.alt | escape }}" class="img-fluid" />
                                         </div>   
                                     {% else %}
                                         <br />                                     

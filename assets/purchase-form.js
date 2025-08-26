@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (form) {
             const idInput = form.querySelector('input[name="id"]');
-            const button = form.querySelector('.productButtonObject');
+            const button = form.querySelector('.add-cart-button');
 
             if (idInput) {
                 if (soldout === 'true') {

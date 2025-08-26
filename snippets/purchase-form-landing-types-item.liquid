@@ -6,11 +6,15 @@
             <div class="col qure__variant-item serumBlock" id="{{ section.id }}-{{ product_type_title }}">
                 <input type="radio" class="variant__input" name="serum_{{ section.settings.form_name }}" id="{{ section.id }}-{{ block.id }}" data-name="{{ block.settings.heading | escape }}" {% if block.settings.preselected == true %} checked{% endif %}>
                 <label for="{{ section.id }}-{{ block.id }}" class="qure__variant-box">
-                    <div class="qv-frame">
-                        <div class="qv-frame-inner">
-                            <img class="qv-img" src="{{ block.settings.image | img_url: 'master' }}">
+                    {% if block.settings.image != blank %}
+                        <div class="qv-frame">
+                            <div class="qv-frame-inner">
+                                <img class="qv-img" src="{{ block.settings.image | img_url: '250x' }}">
+                            </div>
                         </div>
-                    </div>
+                    {% else %}
+                        <br />
+                    {% endif %}
                     <div class="div">{{ block.settings.heading }}</div>
                 </label>
             </div>

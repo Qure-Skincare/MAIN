@@ -12,13 +12,20 @@
     "product_header_kHW3Cn": {
       "type": "product-header",
       "blocks": {
+        "section_A0": {
+          "type": "section",
+          "settings": {
+            "section_id": "purchase-form-landing"
+          }
+        },
         "nextships_KzHDC3": {
           "type": "nextships",
+          "disabled": true,
           "settings": {
-            "date": "{date}:",
-            "percent": 48,
-            "date_soldout": "{Previous date}",
-            "date_reserved": "{date}"
+            "date": "25 September",
+            "percent": 55,
+            "date_soldout": "28 July",
+            "date_reserved": "3 August"
           }
         },
         "jumpto_J8aUQH": {
@@ -32,7 +39,7 @@
           "type": "jumpto",
           "settings": {
             "button-label": "Reviews",
-            "button-url": "#reviews"
+            "button-url": "#trusted-reviews"
           }
         },
         "jumpto_hcQKEq": {
@@ -57,10 +64,6 @@
             "code": "QURE100"
           }
         },
-        "button_A9": {
-          "type": "button",
-          "settings": {}
-        },
         "description_iPBNaS": {
           "type": "description",
           "settings": {}
@@ -73,7 +76,7 @@
       "block_order": [
         "price_A11",
         "description_iPBNaS",
-        "button_A9",
+        "section_A0",
         "limited_offer_A8",
         "nextships_KzHDC3",
         "jumpto_J8aUQH",
@@ -82,12 +85,98 @@
         "jumpto_hQdAPf"
       ],
       "name": "t:sections.product-header.name",
+      "custom_css": [
+        ".vp-img > img {max-height: 50px !important;margin-bottom: 12px !important;}"
+      ],
       "settings": {
         "seo_heading": "ANTI-AGING & ALL-IN-ONE SERUM",
         "heading": "Embrace ageless confidence with All-In-One Face Serum",
-        "description": "",
+        "description": "<ul><li>Helps reduce the appearance of fine lines and dark spots, for smoother, firmer feeling skin.</li><li>Save money buying multiple skincare products to treat various concerns.</li><li>Argireline® Peptides, Retinol, Bakuchiol, Niacinamide, Vitamin C, Vitamin E, Ferulic Acid.</li></ul>",
         "reserved": false,
         "soldout": false
+      }
+    },
+    "purchase-form-landing": {
+      "type": "purchase-form-landing",
+      "blocks": {
+        "nextships_4xp7uM": {
+          "type": "nextships",
+          "settings": {
+            "date": "25 September",
+            "percent": 55,
+            "date_soldout": "28 July",
+            "date_reserved": "3 August"
+          }
+        },
+        "type_hHPdgJ": {
+          "type": "type",
+          "settings": {}
+        },
+        "product_type_QKQhNr": {
+          "type": "product_type",
+          "settings": {
+            "heading": "All-In-One Face Serum",
+            "image": "",
+            "preselected": false
+          }
+        },
+        "product_gbPf3J": {
+          "type": "product",
+          "settings": {
+            "product": "all-in-one-face-serum-6-month-bundle",
+            "preselected": false,
+            "heading": "6 Months",
+            "subheading": "(3 bottles)",
+            "image": "shopify://shop_images/3-bottles.webp",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": ""
+          }
+        },
+        "product_NEgEkN": {
+          "type": "product",
+          "settings": {
+            "product": "all-in-one-face-serum-3-month-bundle",
+            "preselected": false,
+            "heading": "4 Months",
+            "subheading": "(2 bottles)",
+            "image": "shopify://shop_images/2-bottles.webp",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": ""
+          }
+        },
+        "product_RBCPe8": {
+          "type": "product",
+          "settings": {
+            "product": "face-serum",
+            "preselected": false,
+            "heading": "2 Months",
+            "subheading": "(1 bottle)",
+            "image": "shopify://shop_images/1-bottle.webp",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": ""
+          }
+        }
+      },
+      "block_order": [
+        "nextships_4xp7uM",
+        "type_hHPdgJ",
+        "product_type_QKQhNr",
+        "product_gbPf3J",
+        "product_NEgEkN",
+        "product_RBCPe8"
+      ],
+      "settings": {
+        "form_name": "purchase-form-landing",
+        "hide_types": true
       }
     },
     "logos_89qVYW": {
@@ -642,6 +731,7 @@
   },
   "order": [
     "product_header_kHW3Cn",
+    "purchase-form-landing",
     "logos_89qVYW",
     "banner_with_text_YH3YjY",
     "product_sunil_all_in_one_section_header_gCaVAm",
