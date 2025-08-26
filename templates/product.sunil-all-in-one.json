@@ -12,15 +12,31 @@
     "product_header_kHW3Cn": {
       "type": "product-header",
       "blocks": {
+        "price_A11": {
+          "type": "price",
+          "settings": {}
+        },
+        "description_iPBNaS": {
+          "type": "description",
+          "settings": {}
+        },
         "section_A0": {
           "type": "section",
           "settings": {
             "section_id": "purchase-form-landing"
           }
         },
+        "limited_offer_A8": {
+          "type": "limited-offer",
+          "disabled": true,
+          "settings": {
+            "sum": "$100",
+            "code": "QURE100",
+            "days": 5
+          }
+        },
         "nextships_KzHDC3": {
           "type": "nextships",
-          "disabled": true,
           "settings": {
             "date": "25 September",
             "percent": 55,
@@ -55,22 +71,6 @@
             "button-label": "FAQs",
             "button-url": "#faq"
           }
-        },
-        "limited_offer_A8": {
-          "type": "limited-offer",
-          "disabled": true,
-          "settings": {
-            "sum": "$100",
-            "code": "QURE100"
-          }
-        },
-        "description_iPBNaS": {
-          "type": "description",
-          "settings": {}
-        },
-        "price_A11": {
-          "type": "price",
-          "settings": {}
         }
       },
       "block_order": [
@@ -84,15 +84,15 @@
         "jumpto_hcQKEq",
         "jumpto_hQdAPf"
       ],
-      "name": "t:sections.product-header.name",
       "custom_css": [
-        ".vp-img > img {max-height: 50px !important;margin-bottom: 12px !important;}"
+        ".vp-img > img {max-height: 50px !important; margin-bottom: 12px !important;}"
       ],
+      "name": "t:sections.product-header.name",
       "settings": {
         "seo_heading": "ANTI-AGING & ALL-IN-ONE SERUM",
         "heading": "Embrace ageless confidence with All-In-One Face Serum",
         "description": "<ul><li>Helps reduce the appearance of fine lines and dark spots, for smoother, firmer feeling skin.</li><li>Save money buying multiple skincare products to treat various concerns.</li><li>Argireline® Peptides, Retinol, Bakuchiol, Niacinamide, Vitamin C, Vitamin E, Ferulic Acid.</li></ul>",
-        "reserved": false,
+        "reserved": true,
         "soldout": false
       }
     },
@@ -116,7 +116,6 @@
           "type": "product_type",
           "settings": {
             "heading": "All-In-One Face Serum",
-            "image": "",
             "preselected": false
           }
         },
@@ -132,7 +131,8 @@
             "preorder": false,
             "preorder_text": "",
             "preorder_date_soldout": "",
-            "preorder_date_reserved": ""
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
           }
         },
         "product_NEgEkN": {
@@ -147,7 +147,8 @@
             "preorder": false,
             "preorder_text": "",
             "preorder_date_soldout": "",
-            "preorder_date_reserved": ""
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
           }
         },
         "product_RBCPe8": {
@@ -162,7 +163,8 @@
             "preorder": false,
             "preorder_text": "",
             "preorder_date_soldout": "",
-            "preorder_date_reserved": ""
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
           }
         }
       },
@@ -282,7 +284,7 @@
             "percent_value": "100%",
             "button_label": "Read more",
             "badge_text": "Niacinamide",
-            "popup_heading": " <p>Topical niacinamide significantly improved fine lines, wrinkles, hyperpigmentation, red blotchiness, and skin texture over 12 weeks, while also boosting elasticity. The improvements were visually noticeable and instrumentally measured compared to placebo.</p>",
+            "popup_heading": "<p>Topical niacinamide significantly improved fine lines, wrinkles, hyperpigmentation, red blotchiness, and skin texture over 12 weeks, while also boosting elasticity. The improvements were visually noticeable and instrumentally measured compared to placebo.</p>",
             "popup_text": "<p><strong>About the clinical trial</strong></p><p>12-week, double‑blind, split-face randomized trial with 50 participants, using a 5% niacinamide moisturizer twice daily. Results measured via clinical grading, instrumental imaging, and elasticity measurements</p> <p>References: Bissett, Donald L., et al. \"Niacinamide: A B Vitamin That Improves Aging Facial Skin Appearance.\" Dermatologic Surgery, vol. 31, no. 7, pt. 2, 2005, pp. 860–865.</p>"
           }
         },
@@ -290,7 +292,14 @@
           "type": "accordion",
           "settings": {
             "heading": "Lactic & Mandelic Acid",
-            "text": "Gentle chemical exfoliants gobble up the top layer of dead cells to reveal clearer, smoother skin."
+            "text": "Gentle chemical exfoliants gobble up the top layer of dead cells to reveal clearer, smoother skin.",
+            "heading_percent_scale": "",
+            "percent_scale_text": "",
+            "percent_value": "",
+            "button_label": "",
+            "badge_text": "",
+            "popup_heading": "",
+            "popup_text": ""
           }
         }
       },
@@ -305,7 +314,6 @@
         "text": "Clarify and even skin tone, minimize enlarged pores, strengthen skin’s barrier, reduce breakouts.",
         "sub_text": "Key Ingredients:",
         "username": "Bethany N.",
-        "image": "shopify://shop_images/uneven-skin-texture.webp",
         "country_image": "shopify://shop_images/canada_f.svg"
       }
     },
