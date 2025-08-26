@@ -73,6 +73,22 @@
     "class":"purchase-form",
     "settings":[
         {
+            "type": "select",
+            "id": "style",
+            "label": "t:common.style",
+            "options": [
+                {
+                    "value": "box",
+                    "label": "t:common.box"
+                },
+                {
+                    "value": "list",
+                    "label": "t:common.list"
+                }
+            ],
+            "default": "box"
+        },
+        {
             "type": "text",
             "id": "heading",
             "label": "t:common.header"
@@ -206,6 +222,20 @@
                     "id": "preorder",
                     "label": "t:common.preorder",
                     "default": false
+                },
+                {
+                    "type": "number",
+                    "id": "total_treatments",
+                    "label": "t:sections.purchase-form.blocks.product.settings.total_treatments",
+                    "info": "t:sections.purchase-form.blocks.product.settings.total_treatments_info",
+                    "default": 0
+                },
+                {
+                    "type": "number",
+                    "id": "left_items",
+                    "label": "t:sections.purchase-form.blocks.product.settings.left_items",
+                    "info": "t:sections.purchase-form.blocks.product.settings.left_items_info",
+                    "default": 0,
                 },
                 {
                     "type": "text",

@@ -9,6 +9,9 @@
  */
 {
     "common": {
+        "style": "Style",
+        "box": "Box",
+        "list": "List",
         "button": "Button",
         "days": "Days",
         "limited-offer": "Limited offer",
@@ -93,7 +96,6 @@
         "bundle": "Bundle",
         "wistia-url": "Wistia URL",
         "youtube-url": "YouTube URL",
-        "list": "List",
         "numbered-list": "Numbered list",
         "information-box": "Information box",
         "gift": "Gift",
@@ -617,7 +619,11 @@
                         "preorder_text": "Preorder text",
                         "preorder_date_soldout": "Soldout date",
                         "preorder_date_reserved": "Reserved date",
-                        "included_text": "Included text"
+                        "included_text": "Included text",
+                        "total_treatments": "Total treatments",
+                        "total_treatments_info": "Use this setting to show the number of treatments in product variant",
+                        "left_items": "Left items",
+                        "left_items_info": "Use this setting to show the number of items left in stock."
                     }
                 }
             }

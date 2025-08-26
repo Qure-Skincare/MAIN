@@ -285,13 +285,16 @@
       "soldout-button-label": "Sold Out",
       "select-type": "Select Your Serum:",
       "select-product": "Select Your supply:",
-      "save": "& Save",
+      "and": "&",
+      "save": "Save",
       "off": "OFF",
       "best": "Best Value",
       "payment-option": "Select A Payment Option",
       "pay-full": "Pay in full",
       "onetime-payment": "One-time payment with:",
       "pay-today": "Pay today only",
+      "per-treatment": "Only {{ price }} per treatment",
+      "kit-left": "{{ count }} kits left",
       "monthly-payment": "Monthly interest-free payments with:",
       "questions_html": "<h6 class='fm-body fw-600 mb-0 fs-18'>Have questions about Micro-Infusion?</h6><a href='' class='btn btn-sm btn--secondary' style='--btn-secondary-bg: #fff;'>Chat with us!</a>"
     }
