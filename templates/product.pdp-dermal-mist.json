@@ -12,6 +12,37 @@
     "product_header_c7eEXx": {
       "type": "product-header",
       "blocks": {
+        "price_A11": {
+          "type": "price",
+          "settings": {}
+        },
+        "description_iPBNaS": {
+          "type": "description",
+          "settings": {}
+        },
+        "button_A9": {
+          "type": "button",
+          "settings": {}
+        },
+        "limited_offer_A8": {
+          "type": "limited-offer",
+          "disabled": true,
+          "settings": {
+            "sum": "$100",
+            "code": "QURE100",
+            "days": 5
+          }
+        },
+        "nextships_VCb3mM": {
+          "type": "nextships",
+          "disabled": true,
+          "settings": {
+            "date": "28 september",
+            "percent": 48,
+            "date_soldout": "28 July",
+            "date_reserved": "3 August"
+          }
+        },
         "jumpto_gVULpr": {
           "type": "jumpto",
           "settings": {
@@ -32,35 +63,6 @@
             "button-label": "FAQs",
             "button-url": "#faq"
           }
-        },
-        "nextships_VCb3mM": {
-          "type": "nextships",
-          "settings": {
-            "date": "28 september",
-            "percent": 48,
-            "date_soldout": "28 July",
-            "date_reserved": "3 August"
-          }
-        },
-        "limited_offer_A8": {
-          "type": "limited-offer",
-          "disabled": true,
-          "settings": {
-            "sum": "$100",
-            "code": "QURE100"
-          }
-        },
-        "button_A9": {
-          "type": "button",
-          "settings": {}
-        },
-        "description_iPBNaS": {
-          "type": "description",
-          "settings": {}
-        },
-        "price_A11": {
-          "type": "price",
-          "settings": {}
         }
       },
       "block_order": [
@@ -77,7 +79,9 @@
       "settings": {
         "seo_heading": "HYPOCHLOROUS ACID SPRAY DERMAL MIST",
         "heading": "Purify your skin anytime, anywhere with Dermal Mist",
-        "description": "<ul><li>A hypochlorous acid mist that purifies skin, kills breakout-causing bacteria, and supports barrier repair.</li><li>Use on clean skin to calm irritation, reduce redness, or as a no-rinse refresher throughout the day.</li><li>Comes as a duo: 100ml for daily use and a travel-friendly 15ml.</li></ul>"
+        "description": "<ul><li>A hypochlorous acid mist that purifies skin, kills breakout-causing bacteria, and supports barrier repair.</li><li>Use on clean skin to calm irritation, reduce redness, or as a no-rinse refresher throughout the day.</li><li>Comes as a duo: 100ml for daily use and a travel-friendly 15ml.</li></ul>",
+        "reserved": false,
+        "soldout": false
       }
     },
     "logos_mUyKFd": {
@@ -137,6 +141,8 @@
       "settings": {
         "heading": "A mist to treat breakouts, redness, and irritation",
         "text": "<p>Powered by pure hypochlorous acid (HOCl), Dermal Mist helps calm inflammation, speed up healing, and support your skin’s natural barrier — all without irritation. </p><p>Perfect for breakouts, redness, or post-treatment care, <strong>this mist instantly soothes skin while fighting off bacteria</strong></p><p>and environmental triggers. It’s fragrance-free, non-drying, and gentle enough <strong>to use anytime, anywhere</strong> even over makeup.</p>",
+        "quote": "",
+        "quote-mobile": "",
         "image_position": "left",
         "sub_text": "",
         "button_label": "Shop Now",
@@ -258,7 +264,9 @@
         "items_EWjYfE"
       ],
       "name": "t:common.carousel",
-      "settings": {}
+      "settings": {
+        "display_mode": "both"
+      }
     },
     "product_info_popup_cJGGQN": {
       "type": "product-info-popup",
@@ -420,6 +428,7 @@
       "type": "sticky-cta",
       "name": "t:sections.sticky-cta.name",
       "settings": {
+        "cta-mode": "default",
         "heading": "Dermal Mist",
         "text": "93 reserved in last 48 hours",
         "button-label": "",
