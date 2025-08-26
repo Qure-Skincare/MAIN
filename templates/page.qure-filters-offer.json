@@ -402,7 +402,8 @@
         "text": "We conducted a independent user study on 30 participants to measure the influence on the level of skin hydration and appearance of wrinkles. Here’s what the results were:",
         "sub_text": "Tested by an independent lab, compiled by Regulatory Consultants",
         "image_before": "shopify://shop_images/before-gf.webp",
-        "image_after": "shopify://shop_images/after-gf.webp"
+        "image_after": "shopify://shop_images/after-gf.webp",
+        "layout": "lane"
       }
     },
     "trusted_reviews_b9NgPL": {
@@ -457,7 +458,9 @@
       "settings": {
         "background_color": "",
         "heading": "Your transformation awaits",
-        "text_mobile": "<p>See the power of Qure filter technology, now available for your shower and faucet. </p>"
+        "text_mobile": "<p>See the power of Qure filter technology, now available for your shower and faucet. </p>",
+        "button_label": "",
+        "button_url": ""
       }
     },
     "trusted_recommended_awbjc8": {
@@ -466,9 +469,11 @@
       "settings": {
         "heading": "Trusted and Recommended by Experts",
         "text": "<p>“How do you<strong> reduce the things in your water that are causing issues</strong> with your skin?</p><p>This Qure filter is incredible –<strong> it’s the only filter I personally use</strong> to [reduce] chlorine and anything else that’s going to make your water harsh for your skin.”</p>",
+        "image_text": "",
         "image": "shopify://shop_images/doctor_shah_desk.webp",
         "image_mobile": "shopify://shop_images/doctor_shah_mob.webp",
-        "video_url": ""
+        "video_url": "",
+        "wistia_url": ""
       }
     },
     "form": {
@@ -525,7 +530,8 @@
       ],
       "name": "t:sections.video-review-slider.name",
       "settings": {
-        "heading": "See why everyone's switching to filtered water"
+        "heading": "See why everyone's switching to filtered water",
+        "background_color": "#f6f6f7"
       }
     },
     "qure_filters_offer_comparison_real_fake_FJifqy": {
@@ -693,42 +699,55 @@
           "type": "accordion",
           "settings": {
             "heading": "What’s included in this bundle?",
-            "text": "<p>This bundle includes:</p><ul><li>1 Qure Showerhead + 1 Filter</li><li>1 Qure Faucet + 1 Filter</li></ul><p>Each filter lasts 90 days (3 months) before needing to be replaced to ensure optimal filtration. When you subscribe to this bundle, 2 replacement filters (1 for Showerhead and 1 for Faucet) will auto-ship every 90 days, with a recurring charge of &lcub;$dyn&rcub; per month.</p>"
+            "text": "<p>This bundle includes:</p><ul><li>1 Qure Showerhead + 1 Filter</li><li>1 Qure Faucet + 1 Filter</li></ul><p>Each filter lasts 90 days (3 months) before needing to be replaced to ensure optimal filtration. When you subscribe to this bundle, 2 replacement filters (1 for Showerhead and 1 for Faucet) will auto-ship every 90 days, with a recurring charge of &lcub;$dyn&rcub; per month.</p>",
+            "link_url": "",
+            "link_text": ""
           }
         },
         "accordion_eARGxh": {
           "type": "accordion",
           "settings": {
             "heading": "How does tap water harm my skin?",
-            "text": "<p>Facial skin is more sensitive than your skin anywhere else. Your skin barrier is like a protective shield against outside threats. But the stuff in tap water can harm it, leading to:</p><ul><li>Dry and Damaged Skin: Tap water can strip away your skin's natural oils, leaving it dry and damaged.</li><li>Skin Irritation: It might also cause skin irritation, making it sensitive and red.</li><li>Premature Aging: Chemicals in tap water may contribute to early signs of aging, like fine lines and dullness.<br/><br/></li></ul>"
+            "text": "<p>Facial skin is more sensitive than your skin anywhere else. Your skin barrier is like a protective shield against outside threats. But the stuff in tap water can harm it, leading to:</p><ul><li>Dry and Damaged Skin: Tap water can strip away your skin's natural oils, leaving it dry and damaged.</li><li>Skin Irritation: It might also cause skin irritation, making it sensitive and red.</li><li>Premature Aging: Chemicals in tap water may contribute to early signs of aging, like fine lines and dullness.<br/><br/></li></ul>",
+            "link_url": "",
+            "link_text": ""
           }
         },
         "accordion_K6KtcN": {
           "type": "accordion",
           "settings": {
             "heading": "What chemicals do they filter?",
-            "text": "<p>The Qure Filter Bundle improves your tap water by reducing skin irritants that make your water “hard,” like chlorine, heavy metals, microorganisms, and more.</p><p>The filters reduce chlorine, heavy metals, microorganisms, and other common water contaminants.</p>"
+            "text": "<p>The Qure Filter Bundle improves your tap water by reducing skin irritants that make your water “hard,” like chlorine, heavy metals, microorganisms, and more.</p><p>The filters reduce chlorine, heavy metals, microorganisms, and other common water contaminants.</p>",
+            "link_url": "",
+            "link_text": ""
           }
         },
         "accordion_UkkxRw": {
           "type": "accordion",
           "settings": {
             "heading": "Are they compatible with all showerhead and faucets?",
-            "text": "<p>The Qure Shower Filter fits most standard screw-on showerheads, but we recommend checking  your showerheads specs to confirm. It won’t work with built-in or custom fittings without standard threads.</p><p>The Qure Faucet Filter fits 99% of standard faucets with a circular removable aerator and includes adaptors for different sizes. We recommend checking your faucet type before purchase. It won’t fit square or oval faucets, showerhead faucets, induction styles, pull-outs without detachable aerators, or non-threaded pipes under 15mm.</p>"
+            "text": "<p>The Qure Shower Filter fits most standard screw-on showerheads, but we recommend checking  your showerheads specs to confirm. It won’t work with built-in or custom fittings without standard threads.</p><p>The Qure Faucet Filter fits 99% of standard faucets with a circular removable aerator and includes adaptors for different sizes. We recommend checking your faucet type before purchase. It won’t fit square or oval faucets, showerhead faucets, induction styles, pull-outs without detachable aerators, or non-threaded pipes under 15mm.</p>",
+            "link_url": "",
+            "link_text": "",
+            "image": "shopify://shop_images/taps.webp"
           }
         },
         "accordion_UA8Mgj": {
           "type": "accordion",
           "settings": {
             "heading": "Do I need to change/replace the filters?",
-            "text": "<p>With daily use, your Qure Filters will need to be replaced at least once every three months for your skin to look and feel its best. When you subscribe to this bundle, 2 replacement filters (1 for Showerhead and 1 for Faucet) will auto-ship every 90 days, with a recurring charge of &lcub;$dyn&rcub; per month.</p>"
+            "text": "<p>With daily use, your Qure Filters will need to be replaced at least once every three months for your skin to look and feel its best. When you subscribe to this bundle, 2 replacement filters (1 for Showerhead and 1 for Faucet) will auto-ship every 90 days, with a recurring charge of &lcub;$dyn&rcub; per month.</p>",
+            "link_url": "",
+            "link_text": ""
           }
         },
         "accordion_KU3qrq": {
           "type": "accordion",
           "settings": {
             "heading": "Will it affect water pressure?",
-            "text": "<p>Our filters are designed to maintain water pressure while effectively filtering impurities.</p>"
+            "text": "<p>Our filters are designed to maintain water pressure while effectively filtering impurities.</p>",
+            "link_url": "",
+            "link_text": ""
           }
         }
       },
@@ -744,8 +763,8 @@
       "settings": {
         "heading": "Have questions?",
         "text": "Don’t see your question?",
-        "button": "Ask us",
-        "url": "#"
+        "button_label": "Ask us",
+        "button_url": ""
       }
     }
   },

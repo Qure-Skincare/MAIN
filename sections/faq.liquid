@@ -38,7 +38,7 @@ Renders a faq section.
                                         | replace: '<p><em>', '<span>'
                                         | replace: '</em></p>', '</span>' }}
                                         {% if block.settings.image != blank %}
-                                            <div class="d-flex gap-3 flex-wrap ctm_images_zz my-3">
+                                            <div class="my-3">
                                                 <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}">
                                             </div>
                                         {% endif %}
