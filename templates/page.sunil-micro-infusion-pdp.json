@@ -113,11 +113,11 @@
           "settings": {
             "product": "micro-infusion-6-month-bundle-for-dark-spots",
             "preselected": false,
-            "heading": "6 Month",
+            "heading": "6 Month End Of Summer Sale",
             "subheading": "(12 Treatments)",
             "image": "shopify://shop_images/3_month_mixed.webp",
             "soldout": false,
-            "preorder": true,
+            "preorder": false,
             "preorder_text": "",
             "preorder_date_soldout": "27 July",
             "preorder_date_reserved": "15 july",
