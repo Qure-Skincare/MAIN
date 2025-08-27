@@ -115,7 +115,8 @@
         "mobile": "Mobile",
         "desktop": "Desktop",
         "both": "Both (Desktop & Mobile)",
-        "display-mode": "Display mode"
+        "display-mode": "Display mode",
+        "shower": "Shower"
     },
     "blocks": {
         "block-card": {
@@ -235,7 +236,8 @@
                     },
                     "image-4": {
                         "name": "Image 4"
-                    }
+                    },
+                    "checkbox": "Shower"
                 }
             }
         },

@@ -2,7 +2,97 @@
   Renders a why it works faucet section.
 {% enddoc %}
 
-
+{% if section.settings.checkbox %}
+<link rel="stylesheet" href="https://qureskincaredns-main.com/sections/isolated/why-it-works/section-why-it-works.css">
+<link rel="stylesheet" href="https://qureskincaredns-main.com/assets/css/animate.css">
+<div class="why_it_works qure__section" style="--section-padding-top: 80px; --section-padding-bottom: 40px;">
+    <div class="container" style="--column-gap:50px; --column-gap-mobile:18px;" id="why_it_works">
+        <div class="section_header text-center pb-md-0 pb-30">
+            <h2 class="title-lg mb-md-30">Why It Works</h2>
+            <p>Our triple filtration technology filters the water to remove heavy metals and purify. </p>
+        </div>
+        <div class="row custom__grid align-items-center">
+            <div class="col-md-6 custom__block">
+                <div style="--heading-font: 'TT Commons';" class="pr-md-30">
+                    <div class="accordion accordion-flush" id="qure_benefit-main">
+                        <div class="accordion-item qure__accordion-item" data-img-url="https://qureskincaredns-main.com/sections/isolated/why-it-works/images/shower_point1.webp">
+                            <button class="accordion-button collapsed qure__accordion-header hit-header" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#qure_benefit-1" aria-expanded="false" aria-controls="qure_benefit-1">
+                                <span class="mr-10"><img src="https://qureskincaredns-main.com/sections/isolated/why-it-works/images/carbon.svg" alt=""></span>Carbon Fiber Layer
+                            </button>
+                            <div id="qure_benefit-1" class="accordion-collapse collapse qure__accordion-content"
+                                data-bs-parent="#qure_benefit-main">
+                                <div class="accordion-body pt-0">
+                                    <p>Removes up to 99% of chlorine, reducing skin irritation and dryness, leaving your skin and hair healthier.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item qure__accordion-item" data-img-url="https://qureskincaredns-main.com/sections/isolated/why-it-works/images/shower_point2.webp">
+                            <button class="accordion-button collapsed qure__accordion-header hit-header" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#qure_benefit-2" aria-expanded="false" aria-controls="qure_benefit-2">
+                                <span class="mr-10"><img src="https://qureskincaredns-main.com/sections/isolated/why-it-works/images/KDF.svg" alt=""></span>KDF-55 Layer
+                            </button>
+                            <div id="qure_benefit-2" class="accordion-collapse collapse qure__accordion-content"
+                                data-bs-parent="#qure_benefit-main">
+                                <div class="accordion-body pt-0">
+                                    <p>Targets and removes heavy metals like lead and mercury, providing cleaner water for your shower.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item qure__accordion-item" data-img-url="https://qureskincaredns-main.com/sections/isolated/why-it-works/images/shower_point3.webp">
+                            <button class="accordion-button collapsed qure__accordion-header hit-header" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#qure_benefit-3" aria-expanded="false" aria-controls="qure_benefit-3">
+                                <span class="mr-10"><img src="https://qureskincaredns-main.com/sections/isolated/why-it-works/images/FOF.svg" alt=""></span>FOF (Filter of Future)
+                            </button>
+                            <div id="qure_benefit-3" class="accordion-collapse collapse qure__accordion-content"
+                                data-bs-parent="#qure_benefit-main">
+                                <div class="accordion-body pt-0">
+                                    <p>Helps with descaling by preventing the buildup of hard water minerals, reducing scale formation and improving water
+                                    flow.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>               
+                </div>
+            </div>
+            <div class="col-md-6 order-md-0 order-first custom__block">
+                <div class="filter_points position-relative">
+                    <img id="benefit-image" src="https://qureskincaredns-main.com/sections/isolated/why-it-works/images/shower_point0.webp" class="img-fluid" alt="">
+                    <div class="point_column p_one top_0 right_0 wow fadeInDown" style="--top:90px; --top-mob: 40px;">
+                        <div class="accordion-button collapsed fs-18 gap-2" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#qure_benefit-1" aria-expanded="false" aria-controls="qure_benefit-1"
+                            data-img-url="https://qureskincaredns-main.com/sections/isolated/why-it-works/images/shower_point1.webp">
+                            <span class="p_text">Carbon Fiber Layer</span>
+                        </div>
+                    </div>
+                    <div class="point_column p_two top_0 left_0 wow fadeInDown" data-wow-delay="0.4s" style="--top:140px; --top-mob: 80px;">
+                        <div class="accordion-button collapsed fs-18 gap-2" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#qure_benefit-2" aria-expanded="false" aria-controls="qure_benefit-2"
+                            data-img-url="https://qureskincaredns-main.com/sections/isolated/why-it-works/images/shower_point2.webp">
+                            <span class="p_text">KDF-55 Layer</span>
+                        </div>
+                    </div>
+                    <div class="point_column p_three top_0 right_0 wow fadeInDown" data-wow-delay="0.6s" style="--top:76%; --top-mob: 72%;">
+                        <div class="accordion-button collapsed fs-18 gap-2" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#qure_benefit-3" aria-expanded="false" aria-controls="qure_benefit-3"
+                            data-img-url="https://qureskincaredns-main.com/sections/isolated/why-it-works/images/shower_point3.webp">
+                            <span class="p_text">Filter of Future</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+loadScriptOnce('data_image', 'https://qureskincaredns-main.com/sections/isolated/why-it-works/section-why-it-works.js');
+loadScriptOnce('wow-js', 'https://qureskincaredns-main.com/assets/js/wow.min.js', function () {
+    new WOW().init();
+});
+});
+</script>
+{% else %}
 <link rel="stylesheet" href="https://qureskincaredns-main.com/sections/isolated/why-it-works/section-why-it-works.css">
 <link rel="stylesheet" href="https://qureskincaredns-main.com/assets/css/animate.css">
 <div class="why_it_works qure__section" style="--section-padding-top: 80px; --section-padding-bottom: 40px;">
@@ -24,7 +114,7 @@
                                 <div class="accordion-item qure__accordion-item" {% if block.settings.image != blank %} data-img-url="{{ block.settings.image | image_url }}"{% endif %}>
                                     <button class="accordion-button collapsed qure__accordion-header hit-header" type="button"
                                         data-bs-toggle="collapse" data-bs-target="#qure_benefit-{{ forloop.index }}" aria-expanded="false" aria-controls="qure_benefit-{{ forloop.index }}">
-                                        <span class="mr-10 d-inline-flex">{% if block.settings.image-with-text != blank %} <img src="{{ block.settings.image-with-text | image_url }}" alt="{{ block.settings.image-with-text.alt | escape }}"> {% endif %}</span>
+                                        <span class="mr-10 d-inline-flex">{% if block.settings.image_with_text != blank %} <img src="{{ block.settings.image_with_text | image_url }}" alt="{{ block.settings.image_with_text.alt | escape }}"> {% endif %}</span>
                                             {% if block.settings.heading != blank %}
                                                 {{ block.settings.heading }}
                                             {% endif %}
@@ -52,11 +142,11 @@
                             <div class="point_column p_one top_0 right_0 wow fadeInDown" style="--top:68px;--top-mob:20px;">
                                 <div class="accordion-button collapsed fs-18 gap-2" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#qure_benefit-1" aria-expanded="false" aria-controls="qure_benefit-1"
-                                    {% if block.settings.image-1 != blank %}
-                                        data-img-url="{{ block.settings.image-1 | image_url }}">
+                                    {% if block.settings.image_1 != blank %}
+                                        data-img-url="{{ block.settings.image_1 | image_url }}">
                                     {% endif %}
-                                    {% if block.settings.text-item-1 != blank %}
-                                        <span class="p_text">{{block.settings.text-item-1}}</span>
+                                    {% if block.settings.text_item_1 != blank %}
+                                        <span class="p_text">{{block.settings.text_item_1}}</span>
                                     {% endif %}
                                 </div>
                             </div>
@@ -64,11 +154,11 @@
                                 <div class="accordion-button collapsed fs-18 gap-1 flex-column" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#qure_benefit-2" aria-expanded="false"
                                     aria-controls="qure_benefit-2"
-                                    {% if block.settings.image-2 != blank %}
-                                        data-img-url="{{ block.settings.image-2 | image_url }}">
+                                    {% if block.settings.image_2 != blank %}
+                                        data-img-url="{{ block.settings.image_2 | image_url }}">
                                     {% endif %}
-                                    {% if block.settings.text-item-2 != blank %}
-                                        <span class="p_text">{{ block.settings.text-item-2 }}</span>
+                                    {% if block.settings.text_item_2 != blank %}
+                                        <span class="p_text">{{ block.settings.text_item_2 }}</span>
                                     {% endif %}
                                 </div>
                             </div>
@@ -76,11 +166,11 @@
                                 style="--top:47%;--top-mob:47%; --right: 30px;">
                                 <div class="accordion-button collapsed fs-18 gap-2" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#qure_benefit-3" aria-expanded="false" aria-controls="qure_benefit-3"
-                                    {% if block.settings.image-3 != blank %}
-                                        data-img-url="{{ block.settings.image-3 | image_url }}">
+                                    {% if block.settings.image_3 != blank %}
+                                        data-img-url="{{ block.settings.image_3 | image_url }}">
                                     {% endif %}
-                                    {% if block.settings.text-item-3 != blank %}
-                                        <span class="p_text">{{ block.settings.text-item-3 }}</span>
+                                    {% if block.settings.text_item_3 != blank %}
+                                        <span class="p_text">{{ block.settings.text_item_3 }}</span>
                                     {% endif %}
                                 </div>
                             </div>
@@ -88,11 +178,11 @@
                                 <div class="accordion-button collapsed fs-18 gap-1 flex-column" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#qure_benefit-4" aria-expanded="false"
                                     aria-controls="qure_benefit-4"
-                                    {% if block.settings.image-4 != blank %}
-                                        data-img-url="{{ block.settings.image-4 | image_url }}">
+                                    {% if block.settings.image_4 != blank %}
+                                        data-img-url="{{ block.settings.image_4 | image_url }}">
                                     {% endif %}
-                                    {% if block.settings.text-item-4 != blank %}
-                                        <span class="p_text">{{ block.settings.text-item-4 }}</span>
+                                    {% if block.settings.text_item_4 != blank %}
+                                        <span class="p_text">{{ block.settings.text_item_4 }}</span>
                                     {% endif %}
                                 </div>
                             </div>
@@ -111,6 +201,7 @@
         });
     });
 </script>
+{% endif %}
 
 
 {% schema %}
@@ -131,6 +222,11 @@
         "type": "image_picker",
         "id": "image",
         "label": "t:common.image"
+    },
+    {
+        "type": "checkbox",
+        "id": "checkbox",
+        "label": "t:sections.why-it-works.blocks.items.checkbox"
     }
   ],
   "blocks": [
@@ -150,7 +246,7 @@
         },
         {
             "type": "image_picker",
-            "id": "image-with-text",
+            "id": "image_with_text",
             "label": "t:common.image-with-text"
         },
         {
@@ -167,42 +263,42 @@
         "settings": [
             {
                 "type": "text",
-                "id": "text-item-1",
+                "id": "text_item_1",
                 "label": "t:sections.why-it-works.blocks.items.text-item-1.name"
             },
             {
                 "type": "image_picker",
-                "id": "image-1",
+                "id": "image_1",
                 "label": "t:sections.why-it-works.blocks.items.image-1.name"
             },
             {
                 "type": "text",
-                "id": "text-item-2",
+                "id": "text_item_2",
                 "label": "t:sections.why-it-works.blocks.items.text-item-2.name"
             },
             {
                 "type": "image_picker",
-                "id": "image-2",
+                "id": "image_2",
                 "label": "t:sections.why-it-works.blocks.items.image-2.name"
             },
             {
                 "type": "text",
-                "id": "text-item-3",
+                "id": "text_item_3",
                 "label": "t:sections.why-it-works.blocks.items.text-item-3.name"
             },
             {
                 "type": "image_picker",
-                "id": "image-3",
+                "id": "image_3",
                 "label": "t:sections.why-it-works.blocks.items.image-3.name"
             },
             {
                 "type": "text",
-                "id": "text-item-4",
+                "id": "text_item_4",
                 "label": "t:sections.why-it-works.blocks.items.text-item-4.name"
             },
             {
                 "type": "image_picker",
-                "id": "image-4",
+                "id": "image_4",
                 "label": "t:sections.why-it-works.blocks.items.image-4.name"
             }
         ]

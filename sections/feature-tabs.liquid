@@ -55,11 +55,17 @@ Renders a feature tabs section.
                                             aria-controls="shower_rainfall" aria-selected="true"
                                             style="--btn-font-mob: 16px;">{{ block.settings.heading }}</button>
                                         {% endif %}
-                                    {% else %}
+                                    {% elsif heading_counter == 2 %}
                                         {% if block.settings.heading != blank %}
                                             <button class="btn qure-filter-link" id="spray" data-bs-toggle="tab"
                                             data-bs-target="#shower_spray" type="button" role="tab" aria-controls="shower_spray"
                                             aria-selected="false" style="--btn-font-mob: 16px;">{{ block.settings.heading }}</button>
+                                        {% endif %}
+                                    {% elsif heading_counter == 3 %}
+                                        {% if block.settings.heading != blank %}
+                                            <button class="btn qure-filter-link" id="massage" data-bs-toggle="tab"
+                                            data-bs-target="#shower_massage" type="button" role="tab" aria-controls="shower_massage"
+                                            aria-selected="false">{{ block.settings.heading }}</button>
                                         {% endif %}
                                     {% endif %}
                                 {% endif %}
@@ -79,7 +85,7 @@ Renders a feature tabs section.
                                         {% endif %}
                                     </div>
                                 </div>
-                                {% else %}
+                                {% elsif tab_counter == 2 %}
                                 <div class="qure-tab-pane tab-pane fade" id="shower_spray" role="tabpanel"
                                     aria-labelledby="spray" tabindex="0">
                                     <div class="px-md-50 pt-md-10">
@@ -88,6 +94,15 @@ Renders a feature tabs section.
                                         {% endif %}
                                     </div>
                                 </div>
+                                {% elsif tab_counter == 3 %}
+                                    <div class="qure-tab-pane tab-pane fade" id="shower_massage" role="tabpanel"
+                                        aria-labelledby="massage" tabindex="0">
+                                        <div class="px-md-50 pt-md-10">
+                                            {% if block.settings.image != blank %}
+                                                <img src="{{ block.settings.image | image_url }}" class="img-fluid" alt="{{ block.settings.image.alt | escape }}">
+                                            {% endif %}
+                                        </div>
+                                    </div>
                                 {% endif %}
                             {% endif %}
                         {% endfor %}

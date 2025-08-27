@@ -93,8 +93,10 @@
       "select_color_text": "Select Color",
       "white_swatch_image": "https://qureskincaredns-main.com/sections/isolated/sticky-cta/images/white_swatch.webp",
       "black_swatch_image": "https://qureskincaredns-main.com/sections/isolated/sticky-cta/images/black_swatch.webp",
+      "silver_swatch_image": "https://qureskincaredns-main.com/sections/isolated/sticky-cta/images/silver_swatch.webp",
       "black_text": "Black",
-      "white_text": "White"
+      "white_text": "White",
+      "silver_text": "Silver"
     },
     "page-qure-filters-form": {
       "settings": {

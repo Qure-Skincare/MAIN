@@ -5,8 +5,7 @@
 {% include 'get-product-data' %}
 
 <link rel="stylesheet" href="https://qureskincaredns-main.com/sections/isolated/sticky-cta/sticky-cta.css" />
-
-{% if section.settings.cta-mode == 'patches' %}
+{% if section.settings.cta-mode == 'patches' or section.settings.cta-mode == 'shower'%}
   <div class="qure__sticky-atc mi-patches-sticky-cta">
     <div class="container">
       <div class="d-flex flex-wrap justify-content-between align-items-center py-16">
@@ -22,6 +21,17 @@
                 </div>
               </label>
             </div>
+            {% if section.settings.cta-mode == 'shower' %}
+              <div class="patch__value-pack">
+                <input type="radio" class="vp__input" name="vaule-pack" id="two_month_bx">
+                <label for="two_month_bx" class="vp-pack-cta px-12 py-8 d-flex align-items-center gap-2">
+                  <div class="vp-img"><img src="{{ 'sections.sticky-cta.silver_swatch_image'  | t  }}" alt="{{ 'sections.sticky-cta.silver_swatch_image.alt' | t | escape }}"></div>
+                  <div class="vp-content">
+                      <p class="mb-0">{{ 'sections.sticky-cta.silver_text' | t }}</p>
+                  </div>
+                </label>
+              </div>
+            {% endif %}
             <div class="patch__value-pack">
               <input type="radio" class="vp__input" name="vaule-pack" id="one-month-cta">
               <label for="one-month-cta" class="vp-pack-cta px-12 py-8 d-flex align-items-center gap-2">
@@ -38,6 +48,12 @@
                 <img src="{{ 'sections.sticky-cta.white_swatch_image' | t }}" alt="{{ 'sections.sticky-cta.white_swatch_image.alt' | t | escape }}">
                 <span>{{ 'sections.sticky-cta.white_text' | t }}</span>
               </div>
+              {% if section.settings.cta-mode == 'shower' %}
+                <div class="dropdown-option" onclick="selectOption('Silver', 'silver_swatch.webp')">
+                  <img src="{{ 'sections.sticky-cta.silver_swatch_image' | t }}" alt="{{ 'sections.sticky-cta.silver_swatch_image.alt' | t | escape }}">
+                  <span>{{ 'sections.sticky-cta.silver_text' | t }}</span>
+                </div>
+              {% endif %}
               <div class="dropdown-option" onclick="selectOption('Black', 'black_swatch.webp')">
                 <img src="{{ 'sections.sticky-cta.black_swatch_image' | t }}" alt="{{ 'sections.sticky-cta.black_swatch_image.alt' | t | escape }}">
                 <span>{{ 'sections.sticky-cta.black_text' | t }}</span>
@@ -67,14 +83,13 @@
       {% endif %}
     </div>
   </div>
-{% else %}
+{% elsif section.settings.cta-mode == 'default' %}
   <div class="qure__sticky-atc">
     <div class="container">
       <div class="d-flex flex-wrap justify-content-between align-items-center py-16">
         {% if section.settings.heading != blank %}
           <h3 class="fs-20 m-0 d-none d-md-block">{{ section.settings.heading }}</h3>
         {% endif %}
-
         {% if section.settings.button-url != blank %}
           <a href="{{ section.settings.button-url }}" class="btn btn--primary">{% if section.settings.button-label != blank %}{{ section.settings.button-label }}{% else %}{{ 'product.settings.buy-button-label' | t }}{% endif %}</a>
         {% else %}
@@ -93,7 +108,6 @@
     </div>
   </div>
 {% endif %}
-
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     loadScriptOnce('sticky-cta', 'https://qureskincaredns-main.com/assets/js/sticky-cta.js');
@@ -117,6 +131,10 @@
         { 
           "value": "patches", 
           "label": "t:common.patches" 
+        },
+        {
+          "value": "shower",
+          "label": "t:common.shower"  
         }
       ],
       "default": "default"
