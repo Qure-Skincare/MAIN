@@ -12,6 +12,12 @@
     "product_header_prNYyf": {
       "type": "product-header",
       "blocks": {
+        "section_A0": {
+          "type": "section",
+          "settings": {
+            "section_id": "purchase-form-landing"
+          }
+        },
         "description_9VBwaX": {
           "type": "description",
           "settings": {}
@@ -22,11 +28,12 @@
         },
         "nextships_nN4CpM": {
           "type": "nextships",
+          "disabled": true,
           "settings": {
-            "date": "{date}:",
-            "percent": 48,
-            "date_soldout": "{Previous date}",
-            "date_reserved": "{date}"
+            "date": "25 September",
+            "percent": 55,
+            "date_soldout": "28 July",
+            "date_reserved": "3 August"
           }
         },
         "jumpto_jzQqUH": {
@@ -68,6 +75,7 @@
       "block_order": [
         "description_9VBwaX",
         "button_PkVUx9",
+        "section_A0",
         "nextships_nN4CpM",
         "jumpto_jzQqUH",
         "jumpto_RKQfLC",
@@ -82,6 +90,98 @@
         "description": "<ul><li>Clinically proven to increase skin moisture by 15%, and scalp moisture by 22% after just 8 weeks.</li><li>Removes up to 99% of chlorine, heavy metals & contaminants that irritate the skin, for an overall more hydrated, clearer skin and hair.</li><li>Reduces limescale buildup, which can dry out skin and hair, for smoother, softer results.</li></ul>",
         "reserved": false,
         "soldout": false
+      }
+    },
+    "purchase-form-landing": {
+      "type": "purchase-form-landing",
+      "blocks": {
+        "nextships_4xp7uM": {
+          "type": "nextships",
+          "settings": {
+            "date": "25 September",
+            "percent": 55,
+            "date_soldout": "28 July",
+            "date_reserved": "3 August"
+          }
+        },
+        "type_hHPdgJ": {
+          "type": "type",
+          "settings": {}
+        },
+        "product_type_QKQhNr": {
+          "type": "product_type",
+          "settings": {
+            "heading": "Colors",
+            "preselected": false
+          }
+        },
+        "product_gbPf3J": {
+          "type": "product",
+          "settings": {
+            "product": "shower-filter",
+            "product_variant_id": 45909763522799,
+            "product_selling_plan": 6286115055,
+            "preselected": true,
+            "heading": "White",
+            "subheading": "",
+            "image": "shopify://shop_images/variant-white-1.webp",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        },
+        "product_NEgEkN": {
+          "type": "product",
+          "settings": {
+            "product": "shower-filter",
+            "product_variant_id": 45909763490031,
+            "product_selling_plan": 6286115055,
+            "preselected": true,
+            "heading": "Black",
+            "subheading": "",
+            "image": "shopify://shop_images/variant-black-1.webp",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        },
+        "product_RBCPe8": {
+          "type": "product",
+          "settings": {
+            "product": "shower-filter",
+            "product_variant_id": 46544976969967,
+            "product_selling_plan": 6286115055,
+            "preselected": false,
+            "heading": "Silver",
+            "subheading": "",
+            "image": "shopify://shop_images/variant-silver-1.webp",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        }
+      },
+      "block_order": [
+        "nextships_4xp7uM",
+        "type_hHPdgJ",
+        "product_type_QKQhNr",
+        "product_gbPf3J",
+        "product_NEgEkN",
+        "product_RBCPe8"
+      ],
+      "settings": {
+        "form_name": "purchase-form-landing",
+        "hide_types": true,
+        "style": "variant"
       }
     },
     "information_about_water_yAtd3i": {
@@ -722,6 +822,7 @@
   },
   "order": [
     "product_header_prNYyf",
+    "purchase-form-landing",
     "information_about_water_yAtd3i",
     "banner_with_text_XJrLnE",
     "improve_skin_hydration_q6fqbg",

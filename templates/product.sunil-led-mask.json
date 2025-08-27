@@ -85,8 +85,8 @@
         }
       },
       "block_order": [
-        "description_A10",
         "price_A11",
+        "description_A10",
         "button_A9",
         "limited_offer_A8",
         "nextships_A7",

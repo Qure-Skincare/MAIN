@@ -1,0 +1,71 @@
+{% if section.settings.style == 'variant' %}
+    <div id="purchase-form-landing-delivery">
+        <div class="product_shower-subscription my-25">
+            <div class="qure__variant-label">Select Your Delivery:</div>
+        </div>
+        <div class="qure__subscription" id="qure__subscription">
+            <div class="qure__subscription-item save-subscription subscription-active position-relative" data-per="Subscribe Now & Save 30%">
+                <div class="best_value">
+                    <p>Best Value <img src="https://qureskincaredns-main.com/assets/images/star_white.svg" alt=""></p>
+                </div>
+                <button class="qure__subscription-btn" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#subscribe_and_save" aria-expanded="true"
+                    aria-controls="subscribe_and_save" data-btnlabel="Subscribe Now &amp; Save 30%">
+                    <div class="qure__sbs-label d-flex align-items-center gap-2">Subscribe &amp; <span
+                            class="product_shower-label">SAVE {dyn}%</span></div>
+                    <div class="qure__price price--on-sale d-flex align-items-center">
+                        <div class="price__sale mr-0 fs-18">{$dyn}</div>
+                        <div class="price__regular fs-18">{$dyn}</div>
+                    </div>
+                </button>
+                <div id="subscribe_and_save" class="qure__subscription-collapse collapse show"
+                    data-bs-parent="#qure__subscription" style="">
+                    <div class="qure__subscription-body p-0 mt-5">
+                        <div
+                            class="subscription-item-row d-flex align-items-center gap-4 justify-content-between fs-16">
+                            <div class="subscription-item-title">
+                                <div class="div">One Time: Showerhead + 1 Filter</div>
+                            </div>
+                        </div>
+                        <div
+                            class="subscription-item-row d-flex align-items-center gap-4 justify-content-between fs-16">
+                            <div class="subscription-item-title">
+                                <div class="qure__price div">Every 90 days: Filter Refill (<span
+                                        class="price__sale fs-16">{$dyn}</span> {$dyn})</div>
+                            </div>
+                        </div>
+                        <div class="fs-14">Skip, pause or cancel anytime. <a href=""
+                                class="text-decoration-underline" style="--base-color: #212428;">See more
+                                details</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="qure__subscription-item one_time_purchase">
+                <button class="qure__subscription-btn collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#one_time_purchase" aria-expanded="false"
+                    aria-controls="one_time_purchase" data-btnlabel="Buy Now">
+                    <div class="qure__sbs-label d-flex align-items-center gap-3">One-Time Purchase <span
+                            class="product_shower-label">SAVE 35%</span></div>
+                    <div
+                        class="qure__price price--on-sale d-flex flex-wrap align-items-end flex-column text-right">
+                        <div class="price__regular fs-18">$149</div>
+                    </div>
+                </button>
+                <div id="one_time_purchase" class="qure__subscription-collapse collapse"
+                    data-bs-parent="#qure__subscription" style="">
+                    <div class="qure__subscription-body p-0 mt-5">
+                        <div
+                            class="subscription-item-row d-flex align-items-center gap-4 justify-content-between fs-16">
+                            <div class="subscription-item-title">
+                                <div class="div">Qure Faucet Filter</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://qureskincaredns-main.com/sections/isolated/product-shower-filter/subscription-collapse.js"></script>
+
+{% endif %}
