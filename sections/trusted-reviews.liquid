@@ -39,10 +39,10 @@
                           {{ block.settings.username | replace: '<p>', '<span class="username">' | replace: '</p>', '</span>' }}
                         {% endif %}
                       </div>
-                      {% comment %} <div class="icon-with-text d-flex align-items-center gap-2 px-10 py-5 bg-light rounded-3 fs-14">
+                      <div class="icon-with-text d-flex align-items-center gap-2 px-10 py-5 bg-light rounded-3 fs-14">
                         <img src="{{ 'sections.trusted-reviews.badge_image' | t }}" alt="{{ 'sections.trusted-reviews.badge_image.alt' | t | escape }}" />
                         <span>{{ 'sections.trusted-reviews.badge_text' | t }}</span>
-                      </div> {% endcomment %}
+                      </div>
                     </div>
                     {% if block.settings.heading != blank %}
                       <h5 class="card-title fm-body mb-15">{{ block.settings.heading }}</h5>
