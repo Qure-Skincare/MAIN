@@ -1,0 +1,290 @@
+{% doc %}
+  Renders a collection offer section
+{% enddoc %}
+
+<!--Breadcrumbs-->
+<div class="qure_breadcrumbs qure__section"
+    style="--section-padding-top:60px;--section-padding-bottom:10px; --section-padding-bottom-mob:10px;">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb fs-16 mb-0" style="--base-color:#212428;">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" style="--bs-breadcrumb-item-active-color:#212428;"
+                    aria-current="page">Best Sellers</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<!--Breadcrumbs end-->
+<link rel="stylesheet"
+    href="https://qureskincaredns-main.com/sections/isolated/collection-block/section-collection-block.css">
+<div class="collection_block qure__section" style="--section-padding-top:10px; --section-padding-top-mob:10px;">
+    <div class="container">
+        <div class="collection_content">
+            <div
+                class="d-flex flex-wrap flex-md-nowrap justify-content-between gap-10 align-items-center mb-md-50 mb-40 fs-16">
+                <p class="ctm-width mb-15" style="--ctm-width: 80px; --ctm-width-mob: 60px;">Shop by</p>
+                <p class="d-md-none ctm-width mb-15" style="--ctm-width-mob: 125px;">Swipe for more <span><img
+                            src="https://qureskincaredns-main.com/assets/images/arrow_right.svg" alt=""></span></p>
+                <ul class="filters qure_tabs">
+                    <li><button class="filter active" data-filter="all" onclick="handleTabClick(this)">Shop All</button>
+                    </li>
+                    <li><button class="filter" data-filter="fine_lines" onclick="handleTabClick(this)">Fine Lines &
+                            Wrinkles</button></li>
+                    <li><button class="filter" data-filter="dark_spots" onclick="handleTabClick(this)">Dark Spots &
+                            Hyperpigmentation</button></li>
+                    <li><button class="filter" data-filter="breakouts" onclick="handleTabClick(this)">Breakouts &
+                            Acne</button></li>
+                </ul>
+            </div>
+            <div class="row projects custom__grid" style="--column-gap:32px; --column-gap-mobile:16px;">
+                <div class="col-6 col-md-3 custom__block project" data-filter="all">
+                    <a href="">
+                        <div class="pd_review-card">
+                            <img src="https://qureskincaredns-main.com/sections/isolated/top-products/images/pd-review.webp"
+                                class="img-fluid" alt="">
+                            <div class="pd_review-inner">
+                                <p class="d-md-block d-none">“I’m shocked at the results after just one treatment! My
+                                    skin looks so clear, glowy, and healthy.”</p>
+                                <p class="d-md-none">“I’m shocked at the results after just one treatment!”</p>
+                                <div class="pd_inner-img">
+                                    <img src="https://qureskincaredns-main.com/sections/isolated/top-products/images/mi_system.webp"
+                                        class="ctm-width" style="--ctm-width:50px;" alt="">
+                                    <div class="fs-14">Ela uses...</div>
+                                    <p class="text-decoration-underline">Micro-Infusion System</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-3 custom__block project" data-filter="fine_lines dark_spots breakouts">
+                    <div class="qure__product-item">
+                        <a href="#" class="qure__product-img overflow-hidden position-relative d-block">
+                            <div class="qure__product-main-img"><img
+                                    src="https://qureskincaredns-main.com/sections/isolated/top-products/images/q-rejuvalight-pro-facewear.webp"
+                                    alt="" />
+                            </div>
+                            <div class="qure__product-hover-img position-absolute inset-0"><img
+                                    src="https://qureskincaredns-main.com/sections/isolated/top-products/images/q-rejuvalight-pro-facewear-hover.webp"
+                                    alt="" />
+                            </div>
+                            <div class="badge rounded-pill badge-bestseller">Bestseller</div>
+                        </a>
+                        <div class="qure__product-details">
+                            <div class="qure__product-reviews fs-14 d-flex gap-3 align-items-center">
+                                <img src="https://qureskincaredns-main.com/sections/isolated/top-products/images/stars.svg"
+                                    alt="" /><span>1,375 Reviews</span>
+                            </div>
+                            <h3 class="fm-body mb-0 qure__product-name">
+                                <a class="limited-line capitalize d-block" href="#">Q-Rejuvalight Pro Facewear </a>
+                            </h3>
+                            <div class="qure__product-price">{$dyn}</div>
+                        </div>
+                        <a href="" class="btn btn--primary w-100">Buy Now</a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 custom__block project" data-filter="fine_lines dark_spots breakouts">
+                    <div class="qure__product-item">
+                        <a href="#" class="qure__product-img overflow-hidden position-relative d-block">
+                            <div class="qure__product-main-img"><img
+                                    src="https://qureskincaredns-main.com/sections/isolated/top-products/images/all-in-one-face-serum.webp"
+                                    alt="" />
+                            </div>
+                            <div class="qure__product-hover-img position-absolute inset-0"><img
+                                    src="https://qureskincaredns-main.com/sections/isolated/top-products/images/all-in-one-face-serum-hover.webp"
+                                    alt="" /></div>
+                        </a>
+                        <div class="qure__product-details">
+                            <div class="qure__product-reviews fs-14 d-flex gap-3 align-items-center">
+                                <img src="https://qureskincaredns-main.com/sections/isolated/top-products/images/stars.svg"
+                                    alt="" /><span>380 Reviews</span>
+                            </div>
+                            <h3 class="fm-body mb-0 qure__product-name">
+                                <a class="limited-line capitalize d-block" href="#">All-In-One Face Serum</a>
+                            </h3>
+                            <div class="qure__product-price">{$dyn}</div>
+                        </div>
+                        <a href="" class="btn btn--primary w-100">Buy Now</a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 custom__block project" data-filter="fine_lines dark_spots">
+                    <div class="qure__product-item">
+                        <a href="#" class="qure__product-img overflow-hidden position-relative d-block">
+                            <div class="qure__product-main-img"><img
+                                    src="https://qureskincaredns-main.com/sections/isolated/top-products/images/micro-infusion-facial-system.webp"
+                                    alt="" />
+                            </div>
+                            <div class="qure__product-hover-img position-absolute inset-0"><img
+                                    src="https://qureskincaredns-main.com/sections/isolated/top-products/images/micro-infusion-facial-system-hover.webp"
+                                    alt="" />
+                            </div>
+                            <div class="badge rounded-pill badge-bestseller">Bestseller</div>
+                        </a>
+                        <div class="qure__product-details">
+                            <div class="qure__product-reviews fs-14 d-flex gap-3 align-items-center">
+                                <img src="https://qureskincaredns-main.com/sections/isolated/top-products/images/stars.svg"
+                                    alt="" /><span>1,312 Reviews</span>
+                            </div>
+                            <h3 class="fm-body mb-0 qure__product-name">
+                                <a class="limited-line capitalize d-block" href="#">Micro-Infusion Facial System</a>
+                            </h3>
+                            <div class="qure__product-price">{$dyn}</div>
+                        </div>
+                        <a href="" class="btn btn--primary w-100">Buy Now</a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 custom__block project" data-filter="fine_lines all">
+                    <div class="qure__product-item">
+                        <a href="#" class="qure__product-img overflow-hidden position-relative d-block">
+                            <div class="qure__product-main-img"><img
+                                    src="https://qureskincaredns-main.com/sections/isolated/top-products/images/micro-infusion-targeted-patches.webp"
+                                    alt="" />
+                            </div>
+                            <div class="qure__product-hover-img position-absolute inset-0"><img
+                                    src="https://qureskincaredns-main.com/sections/isolated/top-products/images/micro-infusion-targeted-patches-hover.webp"
+                                    alt="" />
+                            </div>
+                            <div class="badge rounded-pill badge-bestseller"
+                                style="--text-clr:#FF5429; --badge-bg:#FFEEEA">
+                                Trending</div>
+                        </a>
+                        <div class="qure__product-details">
+                            <div class="qure__product-reviews fs-14 d-flex gap-3 align-items-center">
+                                <img src="https://qureskincaredns-main.com/sections/isolated/top-products/images/stars.svg"
+                                    alt="" /><span>157 Reviews</span>
+                            </div>
+                            <h3 class="fm-body mb-0 qure__product-name">
+                                <a class="limited-line capitalize d-block" href="#">Micro-Infusion Targeted Patches</a>
+                            </h3>
+                            <div class="qure__product-price">{$dyn}</div>
+                        </div>
+                        <a href="" class="btn btn--primary w-100">Buy Now</a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 custom__block project" data-filter="fine_lines dark_spots">
+                    <div class="qure__product-item">
+                        <a href="#" class="qure__product-img overflow-hidden position-relative d-block">
+                            <div class="qure__product-main-img"><img
+                                    src="https://qureskincaredns-main.com/sections/isolated/top-products/images/neck-and-deck.webp"
+                                    alt="" />
+                            </div>
+                            <div class="qure__product-hover-img position-absolute inset-0"><img
+                                    src="https://qureskincaredns-main.com/sections/isolated/top-products/images/neck-and-deck-hover.webp"
+                                    alt="" />
+                            </div>
+                        </a>
+                        <div class="qure__product-details">
+                            <div class="qure__product-reviews fs-14 d-flex gap-3 align-items-center">
+                                <img src="https://qureskincaredns-main.com/sections/isolated/top-products/images/stars.svg"
+                                    alt="" /><span>104 Reviews</span>
+                            </div>
+                            <h3 class="fm-body mb-0 qure__product-name">
+                                <a class="limited-line capitalize d-block" href="#">Neck & Décolletage LED Device</a>
+                            </h3>
+                            <div class="qure__product-price">{$dyn}</div>
+                        </div>
+                        <a href="" class="btn btn--primary w-100">Buy Now</a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 custom__block project" data-filter="all">
+                    <div class="qure__product-item">
+                        <img src="https://qureskincaredns-main.com/sections/isolated/top-products/images/mask_card.webp"
+                            class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 custom__block project" data-filter="breakouts">
+                    <div class="qure__product-item">
+                        <a href="#" class="qure__product-img overflow-hidden position-relative d-block">
+                            <div class="qure__product-main-img"><img
+                                    src="https://qureskincaredns-main.com/sections/isolated/top-products/images/dermal-mist.webp"
+                                    alt="" />
+                            </div>
+                            <div class="qure__product-hover-img position-absolute inset-0"><img
+                                    src="https://qureskincaredns-main.com/sections/isolated/top-products/images/dermal-mist-hover.webp"
+                                    alt="" />
+                            </div>
+                            <div class="badge rounded-pill badge-bestseller"
+                                style="--text-clr:#fff; --badge-bg:#91BAEC">
+                                New</div>
+                        </a>
+                        <div class="qure__product-details">
+                            <div class="qure__product-reviews fs-14 d-flex gap-3 align-items-center">
+                                <img src="https://qureskincaredns-main.com/sections/isolated/top-products/images/stars.svg"
+                                    alt="" /><span>26 Reviews</span>
+                            </div>
+                            <h3 class="fm-body mb-0 qure__product-name">
+                                <a class="limited-line capitalize d-block" href="#">Dermal Mist</a>
+                            </h3>
+                            <div class="qure__product-price">{$dyn}</div>
+                        </div>
+                        <a href="" class="btn btn--primary w-100">Buy Now</a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 custom__block project" data-filter="all">
+                    <div class="qure__product-item">
+                        <a href="#" class="qure__product-img overflow-hidden position-relative d-block">
+                            <div class="qure__product-main-img"><img
+                                    src="https://qureskincaredns-main.com/sections/isolated/top-products/images/shower-filter.webp"
+                                    alt="" />
+                            </div>
+                            <div class="qure__product-hover-img position-absolute inset-0"><img
+                                    src="https://qureskincaredns-main.com/sections/isolated/top-products/images/shower-filter-hover.webp"
+                                    alt="" />
+                            </div>
+                            <div class="badge rounded-pill badge-bestseller"
+                                style="--text-clr:#fff; --badge-bg:#91BAEC">
+                                New</div>
+                        </a>
+                        <div class="qure__product-details">
+                            <div class="qure__product-reviews fs-14 d-flex gap-3 align-items-center">
+                                <img src="https://qureskincaredns-main.com/sections/isolated/top-products/images/stars.svg"
+                                    alt="" /><span>48 Reviews</span>
+                            </div>
+                            <h3 class="fm-body mb-0 qure__product-name">
+                                <a class="limited-line capitalize d-block" href="#">Shower Filter</a>
+                            </h3>
+                            <div class="qure__product-price">{$dyn}</div>
+                        </div>
+                        <a href="" class="btn btn--primary w-100">Buy Now</a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 custom__block project" data-filter="breakouts">
+                    <div class="qure__product-item">
+                        <a href="#" class="qure__product-img overflow-hidden position-relative d-block">
+                            <div class="qure__product-main-img"><img
+                                    src="https://qureskincaredns-main.com/sections/isolated/top-products/images/faucet-filter.webp"
+                                    alt="" />
+                            </div>
+                            <div class="qure__product-hover-img position-absolute inset-0"><img
+                                    src="https://qureskincaredns-main.com/sections/isolated/top-products/images/faucet-filter-hover.webp"
+                                    alt="" />
+                            </div>
+                            <div class="badge rounded-pill badge-bestseller"
+                                style="--text-clr:#fff; --badge-bg:#91BAEC">
+                                New</div>
+                        </a>
+                        <div class="qure__product-details">
+                            <div class="qure__product-reviews fs-14 d-flex gap-3 align-items-center">
+                                <img src="https://qureskincaredns-main.com/sections/isolated/top-products/images/stars.svg"
+                                    alt="" /><span>48 Reviews</span>
+                            </div>
+                            <h3 class="fm-body mb-0 qure__product-name">
+                                <a class="limited-line capitalize d-block" href="#">Faucet Filter</a>
+                            </h3>
+                            <div class="qure__product-price">{$dyn}</div>
+                        </div>
+                        <a href="" class="btn btn--primary w-100">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://qureskincaredns-main.com/sections/isolated/collection-block/section-collection-block.js"></script>
+
+{% schema %}
+{
+    "name": "t:sections.collections-offer.name",
+    "settings": []
+}
+{% endschema %}
