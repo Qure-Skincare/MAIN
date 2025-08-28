@@ -1,5 +1,5 @@
 {% doc %}
-  Renders a quiz section on an index page
+  Renders a quiz section
 {% enddoc %}
 
 
@@ -9,10 +9,12 @@
    <div class="container" style="--column-gap:100px; --column-gap-mobile:32px;">
       <div class="row custom__grid align-items-center">
          <div class="custom__block col-lg-6">
-            {% if section.settings.heading != blank and section.settings.text != blank %}
+            {% if section.settings.heading != blank %}
                 <h2 class="mb-20">{{ section.settings.heading }}</h2>
+            {% endif %}
+            {% if section.settings.text != blank  %}
                 {{ section.settings.text | replace: '<p>', '' }}
-            {% endif %}  
+            {% endif %}
          </div>
          <div class="custom__block col-lg-6">
             <div class="quiz__container">
@@ -23,10 +25,11 @@
                      <div class="quiz-stepper__circle">1</div>
                      <div class="quiz-stepper__content">
                         {% for block in section.blocks %}
-                            {% if  block.settings.heading != blank and block.settings.text != blank %}
+                            {% if  block.settings.heading != blank %}
                                 <p class="quiz-stepper__title mb-10 fs-24 fw-600">{{ block.settings.heading }}</p>
-                                {{ block.settings.text | replace: '<p>', '<span class="quiz-stepper__desc">'
-                                                       | replace: '</p>', '</span>' }}
+                            {% endif %}
+                            {% if block.settings.text != blank %}
+                                {{ block.settings.text | replace: '<p>', '<span class="quiz-stepper__desc">' | replace: '</p>', '</span>' }}
                             {% endif %}
                             {% if block.settings.button-label != blank and block.settings.image_text != blank %}
                                 <div class="ctm-width" style="--ctm-width: 350px;">
@@ -57,7 +60,7 @@
 </div>
 {% schema %}
 {
-  "name": "t:sections.index-quiz.name",
+  "name": "t:sections.quiz.name",
   "settings": [
     {
         "type": "text",
@@ -78,7 +81,7 @@
   "blocks": [
     {
       "type": "take_quiz",
-      "name": "t:sections.index-quiz.name",
+      "name": "t:sections.quiz.name",
       "limit": 1,
       "settings": [
         {
@@ -108,6 +111,11 @@
             "label": "t:common.button-url"
         }
       ]
+    }
+  ],
+  "presets": [
+    {
+        "name": "t:sections.quiz.name"
     }
   ]
 }

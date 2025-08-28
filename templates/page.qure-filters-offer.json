@@ -675,7 +675,7 @@
             "button-url": "#buy-form",
             "review_image_text": "<p>Dermatologist Reviewed</p>",
             "review_image": "shopify://shop_images/dermatologist_13b5a446-fc57-44bb-afea-a6d6bda4cc85.svg",
-            "shipping_image_text": "<p>Free Shipping Over &lcub;$dyn&rcub;</p>",
+            "shipping_image_text": "<p>Free Shipping Over &lcub;$100&rcub;</p>",
             "shipping_image": "shopify://shop_images/shipping.svg"
           }
         }
@@ -699,7 +699,7 @@
           "type": "accordion",
           "settings": {
             "heading": "What’s included in this bundle?",
-            "text": "<p>This bundle includes:</p><ul><li>1 Qure Showerhead + 1 Filter</li><li>1 Qure Faucet + 1 Filter</li></ul><p>Each filter lasts 90 days (3 months) before needing to be replaced to ensure optimal filtration. When you subscribe to this bundle, 2 replacement filters (1 for Showerhead and 1 for Faucet) will auto-ship every 90 days, with a recurring charge of &lcub;$dyn&rcub; per month.</p>",
+            "text": "<p>This bundle includes:</p><ul><li>1 Qure Showerhead + 1 Filter</li><li>1 Qure Faucet + 1 Filter</li></ul><p>Each filter lasts 90 days (3 months) before needing to be replaced to ensure optimal filtration. When you subscribe to this bundle, 2 replacement filters (1 for Showerhead and 1 for Faucet) will auto-ship every 90 days, with a recurring charge of &lcub;$100&rcub; per month.</p>",
             "link_url": "",
             "link_text": ""
           }
@@ -736,7 +736,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Do I need to change/replace the filters?",
-            "text": "<p>With daily use, your Qure Filters will need to be replaced at least once every three months for your skin to look and feel its best. When you subscribe to this bundle, 2 replacement filters (1 for Showerhead and 1 for Faucet) will auto-ship every 90 days, with a recurring charge of &lcub;$dyn&rcub; per month.</p>",
+            "text": "<p>With daily use, your Qure Filters will need to be replaced at least once every three months for your skin to look and feel its best. When you subscribe to this bundle, 2 replacement filters (1 for Showerhead and 1 for Faucet) will auto-ship every 90 days, with a recurring charge of &lcub;$100&rcub; per month.</p>",
             "link_url": "",
             "link_text": ""
           }

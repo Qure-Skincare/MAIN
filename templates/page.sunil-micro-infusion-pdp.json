@@ -751,7 +751,7 @@
         "items_3xewxx": {
           "type": "items",
           "settings": {
-            "heading": "Free Shipping On Orders Over {$dyn}",
+            "heading": "Free Shipping On Orders Over $100",
             "image": "shopify://shop_images/guarantee.svg"
           }
         },
@@ -1096,14 +1096,6 @@
         "text": "<p>Available until stocks last!</p>",
         "text_mobile": "",
         "style_color": "green"
-      }
-    },
-    "choose_treatment_Nw8gQW": {
-      "type": "choose-treatment",
-      "disabled": true,
-      "name": "t:sections.choose-treatment.name",
-      "settings": {
-        "heading": ""
       }
     },
     "purchase_form_Lj9cVS": {
@@ -1481,7 +1473,6 @@
     "device_comparison_1_HLNK7P",
     "compare_yQAfAr",
     "stock_alert_9g7rUD",
-    "choose_treatment_Nw8gQW",
     "purchase_form_Lj9cVS",
     "faq_HwTfqQ",
     "sticky_cta_KCAhq3"

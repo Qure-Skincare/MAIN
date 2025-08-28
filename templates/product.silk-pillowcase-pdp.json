@@ -133,7 +133,7 @@
         "items_itqcCq": {
           "type": "items",
           "settings": {
-            "heading": "Free Shipping On Orders Over {$dyn}",
+            "heading": "Free Shipping On Orders Over $100",
             "image": "shopify://shop_images/guarantee.svg"
           }
         },
