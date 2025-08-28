@@ -137,6 +137,9 @@
         "announcement-bar": {
             "name": "Announcement bar"
         },
+        "collections-offer": {
+            "name": "Collections offer"
+        },
         "numbered-steps": {
             "name": "Numbered steps"
         },
@@ -357,7 +360,7 @@
          "page-banner": {
             "name": "Page banner"
         },
-         "index-bundle-banner": {
+         "bundle-banner": {
             "name": "Bundle banner"
         },
          "slider-featured-in": {

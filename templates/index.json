@@ -94,9 +94,9 @@
         "image_mobile": "shopify://shop_images/hero-mob.webp"
       }
     },
-    "index_bundle_banner_eEa7XN": {
-      "type": "index-bundle-banner",
-      "name": "t:sections.index-bundle-banner.name",
+    "bundle_banner_eEa7XN": {
+      "type": "bundle-banner",
+      "name": "t:sections.bundle-banner.name",
       "settings": {
         "heading": "Save up to 55% on Exclusive Bundles",
         "text": "<p>Everything your skin needs, bundled for less.</p>",
@@ -739,7 +739,7 @@
   "order": [
     "index-mobile-category-slider",
     "page_banner_4Pyyhz",
-    "index_bundle_banner_eEa7XN",
+    "bundle_banner_eEa7XN",
     "slider_featured_in_KgaUTN",
     "trusted_reviews_ecfpDp",
     "index-qure-products",
