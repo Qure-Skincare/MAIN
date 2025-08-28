@@ -75,11 +75,13 @@ function __landing__handlerPlanBlock() {
     const product_variant_id = this.getAttribute("data-product_variant_id");
     const soldout = this.getAttribute("data-soldout");
     const preorder = this.getAttribute("data-preorder");
+    const product_selling_plan = this.getAttribute("data-product-selling-plan");
 
     __landing__updateProductCheckbox(this);
     __landing__updateProductFormButton(product_variant_id, soldout);
     __landing__clearPreorderBoxes();
     __landing__tooglePreorderBox(preorder, product_variant_id);
+    __landing_updateSellingPlan(this, product_selling_plan, soldout);
 
     const regularPriceContainer = document.querySelector("." + __section_landing + " .total_price .regular_price");
     const regularPriceSource = this.querySelector(".regular_price");
@@ -93,9 +95,18 @@ function __landing__handlerPlanBlock() {
         salePriceContainer.textContent = salePriceSource.textContent.trim();
     }
 
-    const btnValueContainer = document.querySelector("." + __section_landing + " .btn_value");
-    if (btnValueContainer) {
-        btnValueContainer.textContent = this.getAttribute("data-per") || "";
+    if(!product_selling_plan) {
+        __updateButtonLabel(this);
+    }
+    else {
+        if(soldout == 'true') {
+            __updateButtonLabel(this);
+        }
+        else {
+            if(__landing_isSellingPlanDisabled()) {
+                __updateButtonLabel(this);
+            }
+        }
     }
 
     const payTodayContainer = document.querySelector("." + __section_landing + " .pay_today");
@@ -107,6 +118,70 @@ function __landing__handlerPlanBlock() {
         purchase_form_landing_event(__section_landing, this, product_variant_id);
     }, 500)
 
+}
+
+function __updateButtonLabel(element) {
+    const btnValueContainer = document.querySelector("." + __section_landing + " .add-cart-button");
+    if (btnValueContainer) {
+        btnValueContainer.textContent = element.getAttribute("data-per") || "";
+    }
+}
+
+function __landing_updateSellingPlan(element, product_selling_plan, soldout) {
+    if (!product_selling_plan) return;
+
+    const deliveryBox = document.getElementById('purchase-form-landing-delivery');
+    if (!deliveryBox) return;
+
+    if (soldout == 'true') {
+        deliveryBox.style.display = 'none';
+    } else {
+        deliveryBox.style.display = '';
+    }
+
+    const form = document.querySelector('.' + __section_landing + ' .qure__product-action-inner form[action="/cart/add"]');
+    if (!form) return;
+
+    const sellingPlanInput = form.querySelector('input[name="selling_plan"]');
+    if (!sellingPlanInput) return;
+
+    sellingPlanInput.value = product_selling_plan;
+
+    __updateSellingPlanButtonLabel();
+
+    document.querySelectorAll('.' + __section_landing + ' .qure__subscription .qure__subscription-item').forEach(el => {
+        el.addEventListener('click', () => {
+            if (el.classList.contains('subscription-active') && el.classList.contains('one_time_purchase')) {
+                sellingPlanInput.setAttribute('disabled', 'disabled');
+                __updateButtonLabel(element);
+            } else {
+                sellingPlanInput.removeAttribute('disabled');
+                __updateSellingPlanButtonLabel();
+            }
+        });
+    });
+}
+
+function __updateSellingPlanButtonLabel() {
+    let targetEl = document.querySelector('.save-subscription') || document.querySelector('[data-per]');
+
+    if (targetEl) {
+        let value = targetEl.getAttribute('data-per') || targetEl.textContent.trim();
+        const btnValueContainer = document.querySelector("." + __section_landing + " .add-cart-button");
+        if (btnValueContainer) {
+            btnValueContainer.textContent = value || "";
+        }
+    }
+}
+
+function __landing_isSellingPlanDisabled() {
+    const form = document.querySelector('.' + __section_landing + ' .qure__product-action-inner form[action="/cart/add"]');
+    if (!form) return;
+
+    const sellingPlanInput = form.querySelector('input[name="selling_plan"]');
+    if (!sellingPlanInput) return;
+
+    return sellingPlanInput.hasAttribute("disabled");
 }
 
 function __landing__updateProductCheckbox(element)
@@ -122,9 +197,9 @@ function __landing__updateProductCheckbox(element)
 }
 
 function __landing__updateProductFormButton(product_variant_id, soldout) {
-    const form = document.querySelector('.' + __section_landing + ' .qure__product-action-inner form[action="/cart/add"]');
-
     if (!product_variant_id) return;
+
+    const form = document.querySelector('.' + __section_landing + ' .qure__product-action-inner form[action="/cart/add"]');
 
     if (form) {
         const idInput = form.querySelector('input[name="id"]');

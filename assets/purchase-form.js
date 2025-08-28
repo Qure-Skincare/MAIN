@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
 
-        const btnValue = document.querySelector('.' + __section + " .btn_value");
+        const btnValue = document.querySelector('.' + __section + " .add-cart-button");
         if (btnValue) btnValue.textContent = this.getAttribute("data-per");
 
         document.querySelectorAll('.' + __section + " .pay_today").forEach(el => {

@@ -25,9 +25,10 @@
 {% endif %}
 
 <div class="qure__product-action-inner mt-30 mt-md-30 mb-10 max-w-ctm" style="--max-w-ctm:500px">
-  <form method="post" action="/cart/add" enctype="multipart/form-data">
-    <button type="submit" class="add-cart-button product-form__submit btn btn--primary w-100"{% if soldout %} disabled{% endif %}><span class="btn_value">{{ button-label }}</span></button>
+  <form method="post" action="/cart/add" enctype="multipart/form-data" data-static="true">
+    <button type="submit" class="add-cart-button product-form__submit btn btn--primary w-100"{% if soldout %} disabled{% endif %}>{{ button-label }}</button>
     <input type="hidden" name="quantity" id="quantity" value="1">
+    <input type="hidden" name="selling_plan" id="selling_plan" value="">
     <input type="hidden" name="id" value="{{ product_variant_id }}">
   </form>
 </div>

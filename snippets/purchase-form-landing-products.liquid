@@ -3,10 +3,20 @@
 {% endcapture %}
 
 <div class="patch__product-variants max-w-ctm" style="--max-w-ctm:500px">
-    <div class="patch__variant-label mb-15 mt-20">{{ 'purchase-form.settings.select-product' | t }}</div>
-    {% render 'purchase-form-landing-products-item' array: __idsArray1, preorder_box: preorder_box %}
-    {% render 'purchase-form-landing-products-item' array: __idsArray2, preorder_box: preorder_box %}
-    {% render 'purchase-form-landing-products-item' array: __idsArray3, preorder_box: preorder_box %}
+    {% if section.settings.style == 'variant' %}
+
+        <link rel="stylesheet" href="https://qureskincaredns-main.com/sections/isolated/product-shower-filter/section-product-shower-filter.css" />
+
+        <div class="patch__variant-label mb-15 mt-20">{{ 'purchase-form.settings.select-product-variant' | t }}</div>
+        {% render 'purchase-form-landing-products-variant-item' array: __idsArray1, preorder_box: preorder_box %}
+        {% render 'purchase-form-landing-products-variant-item' array: __idsArray2, preorder_box: preorder_box %}
+        {% render 'purchase-form-landing-products-variant-item' array: __idsArray3, preorder_box: preorder_box %}
+    {% else %}
+        <div class="patch__variant-label mb-15 mt-20">{{ 'purchase-form.settings.select-product' | t }}</div>
+        {% render 'purchase-form-landing-products-item' array: __idsArray1, preorder_box: preorder_box %}
+        {% render 'purchase-form-landing-products-item' array: __idsArray2, preorder_box: preorder_box %}
+        {% render 'purchase-form-landing-products-item' array: __idsArray3, preorder_box: preorder_box %}
+    {% endif %}
 
     <div id="{{ section.settings.form_name }}-body-{{ section.id }}"></div>
 </div>

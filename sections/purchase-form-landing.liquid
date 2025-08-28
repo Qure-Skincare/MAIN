@@ -4,6 +4,7 @@
     <div class="{{ section.id }}">
         {% render 'purchase-form-landing-types' section: section, __idsArray1: __idsArray1, __idsArray2: __idsArray2, __idsArray3: __idsArray3 %}
         {% render 'purchase-form-landing-products' section: section, __idsArray1: __idsArray1, __idsArray2: __idsArray2, __idsArray3: __idsArray3 %}
+        {% render 'purchase-form-landing-delivery' section: section, __idsArray1: __idsArray1, __idsArray2: __idsArray2, __idsArray3: __idsArray3 %}
         {% render 'product-page-buy-button' %}
         {% render 'product-page-buy-button-payments' %}
         {% render 'product-page-buy-button-bottom' %}
@@ -26,6 +27,22 @@
                 "id": "hide_types",
                 "label": "t:sections.purchase-form-landing.settings.hide_types",
                 "default": false
+            },
+            {
+                "type": "select",
+                "id": "style",
+                "label": "t:common.style",
+                "options": [
+                    {
+                        "value": "box",
+                        "label": "t:common.box"
+                    },
+                    {
+                        "value": "variant",
+                        "label": "t:common.variant"
+                    }
+                ],
+                "default": "box"
             }
         ],
         "blocks": [
@@ -107,6 +124,18 @@
                         "type": "product",
                         "id": "product",
                         "label": "t:common.product"
+                    },
+                    {
+                        "type": "number",
+                        "id": "product_variant_id",
+                        "label": "t:common.variant",
+                        "default": 0
+                    },   
+                    {
+                        "type": "number",
+                        "id": "product_selling_plan",
+                        "label": "t:common.selling_plan",
+                        "default": 0
                     },   
                     {
                         "type": "checkbox",

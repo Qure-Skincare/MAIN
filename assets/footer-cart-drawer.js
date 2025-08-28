@@ -64,12 +64,18 @@ const bindForms = () => {
 
     //clear all binds before if they are exist
     document.querySelectorAll('form[action$="/cart/add"]').forEach((form) => {
+        if (form.getAttribute('data-static') === 'true') {
+            return;
+        }
         form.replaceWith(form.cloneNode(true));
     });
 
     toogleInsurance();
 
     document.querySelectorAll('form[action$="/cart/add"]').forEach((form) => {
+        if (form.getAttribute('data-static') === 'true') {
+            return;
+        }
         form.addEventListener('submit', (e) => {
             e.preventDefault();
             const formData = new FormData(form);

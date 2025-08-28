@@ -9,6 +9,8 @@
  */
 {
     "common": {
+        "selling_plan": "Selling plan",
+        "variant": "Variant",
         "style": "Style",
         "box": "Box",
         "list": "List",
