@@ -52,20 +52,6 @@
             "button-url": "#results"
           }
         },
-        "jumpto_RKQfLC": {
-          "type": "jumpto",
-          "settings": {
-            "button-label": "Reviews",
-            "button-url": "#trusted-reviews"
-          }
-        },
-        "jumpto_7JzPHz": {
-          "type": "jumpto",
-          "settings": {
-            "button-label": "How To Use",
-            "button-url": "#how_to_use"
-          }
-        },
         "jumpto_EY6mqw": {
           "type": "jumpto",
           "settings": {
@@ -78,6 +64,20 @@
           "settings": {
             "button-label": "Ingredients",
             "button-url": "#ingredients"
+          }
+        },
+        "jumpto_RKQfLC": {
+          "type": "jumpto",
+          "settings": {
+            "button-label": "Reviews",
+            "button-url": "#trusted-reviews"
+          }
+        },
+        "jumpto_7JzPHz": {
+          "type": "jumpto",
+          "settings": {
+            "button-label": "How To Use",
+            "button-url": "#how_to_use"
           }
         },
         "jumpto_YV6XMK": {
@@ -140,12 +140,14 @@
           "type": "product",
           "settings": {
             "product": "micro-infusion-targeted-patches-3-month-supply-24-pairs-1",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
             "preselected": true,
             "heading": "3 Months",
             "subheading": "(3 boxes, 24 pairs)",
             "image": "shopify://shop_images/24-pairs.webp",
             "soldout": false,
-            "preorder": false,
+            "preorder": true,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
@@ -156,6 +158,8 @@
           "type": "product",
           "settings": {
             "product": "micro-infusion-targeted-patches-2-month-supply-16-pairs-1",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
             "preselected": false,
             "heading": "2 Months",
             "subheading": "(2 boxes, 16 pairs)",
@@ -172,6 +176,8 @@
           "type": "product",
           "settings": {
             "product": "micro-infusion-targeted-patches",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
             "preselected": false,
             "heading": "1 Months",
             "subheading": "(1 box, 8 pairs)",
@@ -195,7 +201,8 @@
       ],
       "settings": {
         "form_name": "purchase-form-landing",
-        "hide_types": true
+        "hide_types": true,
+        "type": "box"
       }
     },
     "slider_featured_in_biQEht": {
@@ -440,6 +447,7 @@
       "settings": {
         "background_color": "",
         "heading": "Results you’ll see with your own eyes",
+        "text": "",
         "text_mobile": "",
         "button_label": "",
         "button_url": ""
@@ -588,6 +596,7 @@
       ],
       "name": "t:common.carousel",
       "settings": {
+        "background_color": "#f6f6f7",
         "display_mode": "mobile"
       }
     },
@@ -676,6 +685,7 @@
       ],
       "name": "t:common.carousel",
       "settings": {
+        "background_color": "#f6f6f7",
         "display_mode": "desktop"
       }
     },
