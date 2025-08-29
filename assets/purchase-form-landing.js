@@ -86,7 +86,7 @@ function __landing__handlerPlanBlock() {
     __landing__updateProductFormButton(product_variant_id, soldout);
     __landing__clearPreorderBoxes();
     __landing__tooglePreorderBox(preorder, product_variant_id);
-    __landing__updateSellingPlan(this, product_selling_plan, soldout);
+    __landing__updateSellingPlan(this, product_selling_plan, soldout, preorder);
     __landing__updateStickyButton(variant_title);
 
     const regularPriceContainer = document.querySelector("." + __section_landing + " .total_price .regular_price");
@@ -151,7 +151,7 @@ function __landing_updateButtonLabel(element) {
     }
 }
 
-function __landing__updateSellingPlan(element, product_selling_plan, soldout) {
+function __landing__updateSellingPlan(element, product_selling_plan, soldout, preorder) {
     if (!product_selling_plan) return;
 
     const subscriptionBox = document.getElementById('purchase-form-landing-subscription');
@@ -171,7 +171,7 @@ function __landing__updateSellingPlan(element, product_selling_plan, soldout) {
 
     sellingPlanInput.value = product_selling_plan;
 
-    __updateSellingPlanButtonLabel();
+    __updateSellingPlanButtonLabel(preorder);
 
     document.querySelectorAll('.' + __section_landing + ' .qure__subscription .qure__subscription-item').forEach(el => {
         el.addEventListener('click', () => {
@@ -180,17 +180,25 @@ function __landing__updateSellingPlan(element, product_selling_plan, soldout) {
                 __landing_updateButtonLabel(element);
             } else {
                 sellingPlanInput.removeAttribute('disabled');
-                __updateSellingPlanButtonLabel();
+                __updateSellingPlanButtonLabel(preorder);
             }
         });
     });
 }
 
-function __updateSellingPlanButtonLabel() {
+function __updateSellingPlanButtonLabel(preorder) {
     let targetEl = document.querySelector('.save-subscription') || document.querySelector('[data-per]');
+    let value;
 
     if (targetEl) {
-        let value = targetEl.getAttribute('data-per') || targetEl.textContent.trim();
+
+        if(preorder == 'true') {
+            value = targetEl.getAttribute('data-per-preorder') || targetEl.textContent.trim();
+        }
+        else {
+            value = targetEl.getAttribute('data-per') || targetEl.textContent.trim();
+        }
+        
         const btnValueContainer = document.querySelector("." + __section_landing + " .add-cart-button");
         if (btnValueContainer) {
             btnValueContainer.textContent = value || "";

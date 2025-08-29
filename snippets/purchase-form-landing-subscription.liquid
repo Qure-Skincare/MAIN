@@ -5,6 +5,15 @@
             {% assign product_prefix = 'purchase-form-landing-subscription-' %}
             {% assign subscription_discount_percent = block.settings.subscription_discount_percent %}
 
+            {% capture data-per %}
+                {% if subscription_discount_percent > 0 %}
+                    {{ 'purchase-form.settings.subscribe-and-save-button-label' | t: value: subscription_discount_percent }}
+                {% else %}
+                    {{ 'purchase-form.settings.subscribe-button-label' | t }}
+                {% endif %}
+            {% endcapture %}
+
+
             {% include 'get-product-data', product_handle: product.handle, product_prefix: product_prefix %}
 
             <div id="purchase-form-landing-subscription">
@@ -12,7 +21,7 @@
                     <div class="qure__variant-label">{{ 'purchase-form.settings.select-product-delivery' | t }}</div>
                 </div>
                 <div class="qure__subscription" id="qure__subscription">
-                    <div class="qure__subscription-item save-subscription subscription-active position-relative" data-per="{% if subscription_discount_percent > 0 %}{{ 'purchase-form.settings.subscribe-and-save-button-label' | t: value: subscription_discount_percent }}{% else %}{{ 'purchase-form.settings.subscribe-button-label' | t }}{% endif %}">
+                    <div class="qure__subscription-item save-subscription subscription-active position-relative" data-per="{{ data-per }}" data-per-preorder="{{ 'purchase-form.settings.reserve-and-save-button-label' | t: value: subscription_discount_percent }}">
                         <div class="best_value">
                             <p>{{ 'purchase-form.settings.best' | t }} <img src="https://qureskincaredns-main.com/assets/images/star_white.svg" alt="star_white"></p>
                         </div>

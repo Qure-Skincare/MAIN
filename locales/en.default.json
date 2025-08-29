@@ -282,6 +282,7 @@
       "buy-button-label": "Buy Now",
       "subscribe-button-label": "Subscribe Now",
       "subscribe-and-save-button-label": "Subscribe Now & Save {{ value }}%",
+      "reserve-and-save-button-label": "Reserve Now & Save {{ value }}%",
       "reserve-button-label": "Reserve Now",
       "soldout-button-label": "Sold Out",
       "select-type": "Select Your Serum:",
