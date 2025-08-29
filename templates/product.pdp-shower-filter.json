@@ -24,7 +24,6 @@
         },
         "nextships_nN4CpM": {
           "type": "nextships",
-          "disabled": true,
           "settings": {
             "date": "25 September",
             "percent": 55,
@@ -130,7 +129,7 @@
             "subheading": "",
             "image": "shopify://shop_images/variant-white-1.webp",
             "soldout": false,
-            "preorder": false,
+            "preorder": true,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
@@ -387,6 +386,7 @@
       "settings": {
         "background_color": "",
         "heading": "The results are crystal clear",
+        "text": "",
         "text_mobile": "",
         "button_label": "",
         "button_url": ""
@@ -549,6 +549,7 @@
       ],
       "name": "t:common.carousel",
       "settings": {
+        "background_color": "#f6f6f7",
         "display_mode": "both"
       }
     },

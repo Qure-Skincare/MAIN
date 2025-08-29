@@ -260,7 +260,6 @@
           "settings": {
             "heading": "Carbon Fiber Layer",
             "text": "<p>Removes up to 99% of chlorine, reducing skin irritation and dryness, leaving your skin and hair healthier.</p>",
-            "image-with-text": "shopify://shop_images/carbon.svg",
             "image": "shopify://shop_images/filter_cartiage1.webp"
           }
         },
@@ -269,7 +268,6 @@
           "settings": {
             "heading": "PP Filter",
             "text": "<p>Captures larger particles such as dirt, rust, and sediment, providing the first stage of filtration.</p>",
-            "image-with-text": "shopify://shop_images/KDF.svg",
             "image": "shopify://shop_images/filter_cartiage2.webp"
           }
         },
@@ -278,7 +276,6 @@
           "settings": {
             "heading": "NOK Ultra Filter",
             "text": "<p>Japan-made, top-range ultra-filter that reduces microscopic particles, including bacteria and some viruses, down to 0.01μm for enhanced purification.</p>",
-            "image-with-text": "shopify://shop_images/FOF1.svg",
             "image": "shopify://shop_images/filter_cartiage3.webp"
           }
         },
@@ -287,22 +284,12 @@
           "settings": {
             "heading": "ASP-Descaler",
             "text": "<p>Reduces limescale buildup by preventing the accumulation of hard water minerals, helping to protect your shower system.</p>",
-            "image-with-text": "shopify://shop_images/asp.svg",
             "image": "shopify://shop_images/filter_cartiage4.webp"
           }
         },
         "items_Bk8DAe": {
           "type": "items",
-          "settings": {
-            "text-item-1": "Carbon Fiber Layer",
-            "image-1": "shopify://shop_images/filter_cartiage1.webp",
-            "text-item-2": "PP Filter",
-            "image-2": "shopify://shop_images/filter_cartiage2.webp",
-            "text-item-3": "NOK Ultra Filter",
-            "image-3": "shopify://shop_images/filter_cartiage3.webp",
-            "text-item-4": "ASP-Descaler",
-            "image-4": "shopify://shop_images/filter_cartiage4.webp"
-          }
+          "settings": {}
         }
       },
       "block_order": [
