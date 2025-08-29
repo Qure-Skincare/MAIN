@@ -12,6 +12,27 @@
     "product_header_YnMCRD": {
       "type": "product-header",
       "blocks": {
+        "price_A11": {
+          "type": "price",
+          "settings": {}
+        },
+        "description_iPBNaS": {
+          "type": "description",
+          "settings": {}
+        },
+        "button_A9": {
+          "type": "button",
+          "settings": {}
+        },
+        "limited_offer_A8": {
+          "type": "limited-offer",
+          "disabled": true,
+          "settings": {
+            "sum": "$100",
+            "code": "QURE100",
+            "days": 5
+          }
+        },
         "nextships_iPBNaP": {
           "type": "nextships",
           "disabled": true,
@@ -21,26 +42,6 @@
             "date_soldout": "{Previous date}",
             "date_reserved": "{date}"
           }
-        },
-        "limited_offer_A8": {
-          "type": "limited-offer",
-          "disabled": true,
-          "settings": {
-            "sum": "$100",
-            "code": "QURE100"
-          }
-        },
-        "button_A9": {
-          "type": "button",
-          "settings": {}
-        },
-        "description_iPBNaS": {
-          "type": "description",
-          "settings": {}
-        },
-        "price_A11": {
-          "type": "price",
-          "settings": {}
         },
         "jumpto_bdVMhB": {
           "type": "jumpto",
@@ -216,7 +217,7 @@
       "name": "t:sections.improve-skin-hydration.name",
       "settings": {
         "heading": "Clinically proven to improve skin hydration in just 4 weeks",
-        "text": "An independent user study with 30 participants, validated by certified third-party skin hydration testing, showed visible improvements in skin hydration and wrinkle appearance after just 4 weeks of using the Qure Faucet Filter daily.",
+        "text": "An independent user study with 30 participants, validated by certified third-party skin hydration testing, showed visible improvements in skin hydration and wrinkle appearance after just 4 weeks of using the Qure Faucet Filter daily. <br> <br> Tested by an independent lab, compiled by Regulatory Consultants",
         "sub_text": "",
         "image_before": "shopify://shop_images/graph_before-1.webp",
         "image_after": "shopify://shop_images/graph_after-1.webp",
@@ -352,7 +353,6 @@
           "settings": {
             "heading": "Carbon Fiber Layer",
             "text": "<p>Removes up to 99% of chlorine, reducing skin irritation and dryness, leaving your skin and hair healthier.</p>",
-            "image-with-text": "shopify://shop_images/carbon.svg",
             "image": "shopify://shop_images/filter_cartiage1.webp"
           }
         },
@@ -361,7 +361,6 @@
           "settings": {
             "heading": "PP Filter",
             "text": "<p>Captures larger particles such as dirt, rust, and sediment, providing the first stage of filtration.</p>",
-            "image-with-text": "shopify://shop_images/KDF.svg",
             "image": "shopify://shop_images/filter_cartiage2.webp"
           }
         },
@@ -370,7 +369,6 @@
           "settings": {
             "heading": "NOK Ultra Filter",
             "text": "<p>Japan-made, top-range ultra-filter that reduces microscopic particles, including bacteria and some viruses, down to 0.01μm for enhanced purification.</p>",
-            "image-with-text": "shopify://shop_images/FOF1.svg",
             "image": "shopify://shop_images/filter_cartiage3.webp"
           }
         },
@@ -379,21 +377,16 @@
           "settings": {
             "heading": "ASP-Descaler",
             "text": "<p>Reduces limescale buildup by preventing the accumulation of hard water minerals, helping to protect your shower system.</p>",
-            "image-with-text": "shopify://shop_images/asp.svg",
             "image": "shopify://shop_images/filter_cartiage4.webp"
           }
         },
         "items_Bk8DAe": {
           "type": "items",
           "settings": {
-            "text-item-1": "Carbon Fiber Layer",
-            "image-1": "shopify://shop_images/filter_cartiage1.webp",
-            "text-item-2": "PP Filter",
-            "image-2": "shopify://shop_images/filter_cartiage2.webp",
-            "text-item-3": "NOK Ultra Filter",
-            "image-3": "shopify://shop_images/filter_cartiage3.webp",
-            "text-item-4": "ASP-Descaler",
-            "image-4": "shopify://shop_images/filter_cartiage4.webp"
+            "text_item_1": "",
+            "text_item_2": "",
+            "text_item_3": "",
+            "text_item_4": ""
           }
         }
       },
@@ -408,7 +401,8 @@
       "settings": {
         "heading": "Why It Works",
         "text": "<p>Our triple filtration technology filters the water to remove heavy metals and purify.</p>",
-        "image": "shopify://shop_images/filter_cartiage0.webp"
+        "image": "shopify://shop_images/filter_cartiage0.webp",
+        "checkbox": false
       }
     },
     "video_review_slider_8tmR8r": {
@@ -518,7 +512,9 @@
         "items_TVMfzL"
       ],
       "name": "t:common.carousel",
-      "settings": {}
+      "settings": {
+        "display_mode": "both"
+      }
     },
     "how_to_use_9HiEth": {
       "type": "how-to-use",
