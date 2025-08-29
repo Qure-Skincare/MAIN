@@ -4,26 +4,24 @@
 
 
 <link href="https://qureskincaredns-main.com/sections/global/banner-with-text/banner-text.css" rel="stylesheet" type="text/css">
-<div class="qure__section banner-with-text"
-    style="--section-padding-top: 80px; --section-padding-bottom: 80px; --section-padding-top-mob: 30px; --section-padding-bottom-mob: 50px;">
+<div class="qure__section banner-with-text" style="--section-padding-top: 80px; --section-padding-bottom: 80px; --section-padding-top-mob: 30px; --section-padding-bottom-mob: 50px;" id="image_text">
     <div class="container">
         {% if section.settings.image_position == 'left' %}
             <div class="row custom__grid align-items-center" style="--column-gap:60px; --column-gap-mobile:32px;">
                 <div class="col-md-6 custom__block">
                     {% if section.settings.image != blank %}
-                            <div class="banner-text--media">
-                                <img src="{{ section.settings.image | image_url }}" class="img-fluid" alt="{{ section.settings.image.alt | escape }}"></div>
-                        {% endif %}
-                        {% if section.settings.wistia_url != blank %}
+                        <div class="banner-text--media">
+                            <img src="{{ section.settings.image | image_url }}" class="img-fluid" alt="{{ section.settings.image.alt | escape }}"></div>
+                    {% endif %}
+                    {% if section.settings.wistia_url != blank %}
                         <div class="treat_breakouts">
-                            <style>
-                                wistia-player[media-id='{{ section.settings.wistia_url }}']:not(:defined) {
-                                    background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/{{ section.settings.wistia_url }}/swatch');
-                                    display: block;
-                                    filter: blur(5px);
-                                    padding-top: 100.0%;
-                                }
-                            </style> <wistia-player media-id="{{ section.settings.wistia_url }}" seo="false" aspect="1.0"></wistia-player>
+                            <div class="wistia_responsive_padding" style="position:relative;">
+                                <div class="wistia_responsive_wrapper"
+                                    style="height:100%;left:0;position:absolute;top:0;width:100%;">
+                                    <div class="wistia_embed wistia_async_{{ section.settings.wistia_url }} seo=false videoFoam=true"
+                                    style="height:100%;position:relative;width:100%">&nbsp;</div>
+                                </div>
+                            </div>
                         </div>
                     {% endif %}
                 </div>
