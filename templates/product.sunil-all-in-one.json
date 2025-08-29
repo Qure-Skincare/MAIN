@@ -736,6 +736,44 @@
         "button_label": "Ask us",
         "button_url": ""
       }
+    },
+    "sticky_cta_fbPDSk": {
+      "type": "sticky-button-variants",
+      "blocks": {
+        "variant_43xxGi": {
+          "type": "variant",
+          "settings": {
+            "heading": "6 Months",
+            "image": "shopify://shop_images/3-bottles.webp"
+          }
+        },
+        "variant_45xfGi": {
+          "type": "variant",
+          "settings": {
+            "heading": "4 Months",
+            "image": "shopify://shop_images/2-bottles.webp"
+          }
+        },
+        "variant_45sxGi": {
+          "type": "variant",
+          "settings": {
+            "heading": "2 Months",
+            "image": "shopify://shop_images/1-bottle.webp"
+          }
+        }
+      },
+      "block_order": [
+        "variant_43xxGi",
+        "variant_45xfGi",
+        "variant_45sxGi"
+      ],
+      "name": "t:sections.sticky-button-variants.name",
+      "settings": {
+        "heading": "",
+        "text": "580 Units Reserved in last 48 hours",
+        "button-label": "",
+        "button-url": ""
+      }
     }
   },
   "order": [
@@ -751,6 +789,7 @@
     "product_sunil_all_in_one_benefits_with_icons_Jcw7jM",
     "video_review_slider_txjCcR",
     "device_comparison_2_YGRWQi",
-    "faq_z4ggy9"
+    "faq_z4ggy9",
+    "sticky_cta_fbPDSk"
   ]
 }

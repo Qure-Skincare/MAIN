@@ -72,8 +72,8 @@
                                 data-variant-title="{{ product_title_tag }}"
                                 data-product-price="{{ product_price }}">
 
-                                <input type="radio" class="variant__input vp__input" name="monthlyPlan_{{ section.settings.form_name }}" id="{{ product_title_tag }}" data-id="{{ product_title_tag }}" {% if block.settings.preselected == true %} checked{% endif %}>
-                                <label for="monthlyPlan_{{ section.settings.form_name }}" id="{{ product_title_tag }}" data-id="{{ product_title_tag }}" class="qure__variant-box">
+                                <input type="radio" class="variant__input vp__input" name="monthlyPlan_{{ section.settings.form_name }}" id="{% if section.settings.hide_types %}{{ product_title_tag }}{% else %}{{ section.id }}-{{ product_title_tag }}{% endif %}" data-id="{{ product_title_tag }}" {% if block.settings.preselected == true %} checked{% endif %}>
+                                <label for="{% if section.settings.hide_types %}{{ product_title_tag }}{% else %}{{ section.id }}-{{ product_title_tag }}{% endif %}" data-id="{{ product_title_tag }}" class="qure__variant-box">
                                     <div class="qv-frame">
                                         {% if block.settings.image != blank %}
                                             <div class="qv-frame-inner">

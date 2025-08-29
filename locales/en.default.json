@@ -92,17 +92,8 @@
       "verified_text": "Verified",
       "review_image": "https://qureskincaredns-main.com/assets/images/reviewCheck.svg"
     },
-    "sticky-cta": {
-      "select_color_text": "Select Color",
-      "white_swatch_image": "https://qureskincaredns-main.com/sections/isolated/sticky-cta/images/white_swatch.webp",
-      "black_swatch_image": "https://qureskincaredns-main.com/sections/isolated/sticky-cta/images/black_swatch.webp",
-      "silver_swatch_image": "https://qureskincaredns-main.com/sections/isolated/sticky-cta/images/silver_swatch.webp",
-      "black_text": "Black",
-      "white_text": "White",
-      "silver_text": "Silver"
-    },
     "sticky-button-variants": {
-      "select_color": "Select Color"
+      "select_color": "Select Option:"
     },
     "page-qure-filters-form": {
       "settings": {

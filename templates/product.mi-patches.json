@@ -20,64 +20,67 @@
           "type": "description",
           "settings": {}
         },
-        "button_A9": {
-          "type": "button",
-          "settings": {}
+        "section_A0": {
+          "type": "section",
+          "settings": {
+            "section_id": "purchase-form-landing"
+          }
         },
         "limited_offer_A8": {
           "type": "limited-offer",
           "disabled": true,
           "settings": {
             "sum": "$100",
-            "code": "QURE100",
+            "code": "QURE5000",
             "days": 5
           }
         },
-        "nextships_7bppdR": {
+        "nextships_KzHDC3": {
           "type": "nextships",
+          "disabled": true,
           "settings": {
-            "date": "01/09/2025",
-            "percent": 48,
-            "date_soldout": "22/08/2025",
-            "date_reserved": "23/08/2025"
+            "date": "25 September",
+            "percent": 55,
+            "date_soldout": "28 July",
+            "date_reserved": "3 August"
           }
         },
-        "jumpto_UwWwEq": {
+        "jumpto_jzQqUH": {
           "type": "jumpto",
           "settings": {
             "button-label": "The Results",
-            "button-url": "#evidence_section"
+            "button-url": "#results"
           }
         },
-        "jumpto_cK9wF7": {
+        "jumpto_RKQfLC": {
+          "type": "jumpto",
+          "settings": {
+            "button-label": "Reviews",
+            "button-url": "#trusted-reviews"
+          }
+        },
+        "jumpto_7JzPHz": {
+          "type": "jumpto",
+          "settings": {
+            "button-label": "How To Use",
+            "button-url": "#how_to_use"
+          }
+        },
+        "jumpto_EY6mqw": {
           "type": "jumpto",
           "settings": {
             "button-label": "How It Works",
             "button-url": "#image_text"
           }
         },
-        "jumpto_BMKY7g": {
-          "type": "jumpto",
-          "settings": {
-            "button-label": "Reviews",
-            "button-url": "#reviews"
-          }
-        },
-        "jumpto_F88WyR": {
-          "type": "jumpto",
-          "settings": {
-            "button-label": "How To Use",
-            "button-url": "#steps"
-          }
-        },
-        "jumpto_UcxqjT": {
+        "jumpto_EY7mqw": {
           "type": "jumpto",
           "settings": {
             "button-label": "Ingredients",
-            "button-url": "#image_accordion"
+            "button-url": "#ingredients"
           }
         },
-        "jumpto_ycWhH3": {
+        "jumpto_YV6XMK": {
           "type": "jumpto",
           "settings": {
             "button-label": "FAQs",
@@ -88,23 +91,111 @@
       "block_order": [
         "price_A11",
         "description_iPBNaS",
-        "button_A9",
+        "section_A0",
         "limited_offer_A8",
-        "nextships_7bppdR",
-        "jumpto_UwWwEq",
-        "jumpto_cK9wF7",
-        "jumpto_BMKY7g",
-        "jumpto_F88WyR",
-        "jumpto_UcxqjT",
-        "jumpto_ycWhH3"
+        "nextships_KzHDC3",
+        "jumpto_jzQqUH",
+        "jumpto_EY6mqw",
+        "jumpto_EY7mqw",
+        "jumpto_RKQfLC",
+        "jumpto_7JzPHz",
+        "jumpto_YV6XMK"
+      ],
+      "custom_css": [
+        ".vp-img > img {max-height: 50px !important; margin-bottom: 12px !important;}"
       ],
       "name": "t:sections.product-header.name",
       "settings": {
-        "seo_heading": "",
-        "heading": "",
-        "description": "",
+        "seo_heading": "MICRO-INFUSION DART PATCHES",
+        "heading": "Smooth, firm and plump stubborn areas with Micro-Infusion Targeted Patches",
+        "description": "<ul><li>Reduces appearance of fine lines and wrinkles, under-eye darkness, and puffiness. </li><li>Serum infused micro-darts dissolve into the skin to deliver active ingredients beyond the surface for faster results.</li><li>Science backed, age-defying ingredients such as retinol, caffeine, niacinamide, and peptides.</li></ul>",
         "reserved": false,
         "soldout": false
+      }
+    },
+    "purchase-form-landing": {
+      "type": "purchase-form-landing",
+      "blocks": {
+        "nextships_4xp7uM": {
+          "type": "nextships",
+          "settings": {
+            "date": "25 September",
+            "percent": 55,
+            "date_soldout": "28 July",
+            "date_reserved": "3 August"
+          }
+        },
+        "type_hHPdgJ": {
+          "type": "type",
+          "settings": {}
+        },
+        "product_type_QKQhNr": {
+          "type": "product_type",
+          "settings": {
+            "heading": "Micro-Infusion Targeted Patches",
+            "preselected": false
+          }
+        },
+        "product_gbPf3J": {
+          "type": "product",
+          "settings": {
+            "product": "micro-infusion-targeted-patches-3-month-supply-24-pairs-1",
+            "preselected": true,
+            "heading": "3 Months",
+            "subheading": "(3 boxes, 24 pairs)",
+            "image": "shopify://shop_images/24-pairs.webp",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        },
+        "product_NEgEkN": {
+          "type": "product",
+          "settings": {
+            "product": "micro-infusion-targeted-patches-2-month-supply-16-pairs-1",
+            "preselected": false,
+            "heading": "2 Months",
+            "subheading": "(2 boxes, 16 pairs)",
+            "image": "shopify://shop_images/16-pairs.webp",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        },
+        "product_RBCPe8": {
+          "type": "product",
+          "settings": {
+            "product": "micro-infusion-targeted-patches",
+            "preselected": false,
+            "heading": "1 Months",
+            "subheading": "(1 box, 8 pairs)",
+            "image": "shopify://shop_images/8-pairs.webp",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        }
+      },
+      "block_order": [
+        "nextships_4xp7uM",
+        "type_hHPdgJ",
+        "product_type_QKQhNr",
+        "product_gbPf3J",
+        "product_NEgEkN",
+        "product_RBCPe8"
+      ],
+      "settings": {
+        "form_name": "purchase-form-landing",
+        "hide_types": true
       }
     },
     "slider_featured_in_biQEht": {
@@ -837,14 +928,48 @@
         "button_url": ""
       }
     },
-    "product_mi_patches_sticky_cta_nQB8CD": {
-      "type": "product-mi-patches-sticky-CTA",
-      "name": "t:sections.sticky-cta.name",
-      "settings": {}
+    "sticky_cta_ddPFXx": {
+      "type": "sticky-button-variants",
+      "blocks": {
+        "variant_43xxGi": {
+          "type": "variant",
+          "settings": {
+            "heading": "3 Months",
+            "image": "shopify://shop_images/24-pairs.webp"
+          }
+        },
+        "variant_45xfGi": {
+          "type": "variant",
+          "settings": {
+            "heading": "2 Months",
+            "image": "shopify://shop_images/16-pairs.webp"
+          }
+        },
+        "variant_45sxGi": {
+          "type": "variant",
+          "settings": {
+            "heading": "1 Months",
+            "image": "shopify://shop_images/8-pairs.webp"
+          }
+        }
+      },
+      "block_order": [
+        "variant_43xxGi",
+        "variant_45xfGi",
+        "variant_45sxGi"
+      ],
+      "name": "t:sections.sticky-button-variants.name",
+      "settings": {
+        "heading": "",
+        "text": "580 Units Reserved in last 48 hours",
+        "button-label": "",
+        "button-url": ""
+      }
     }
   },
   "order": [
     "product_header_U6RBGz",
+    "purchase-form-landing",
     "slider_featured_in_biQEht",
     "banner_with_text_ddJxzB",
     "proven_results_f4gALH",
@@ -858,6 +983,6 @@
     "video_review_slider_6KnKUh",
     "product_mi_patches_image_accordion_GAU3GJ",
     "faq_Nn7YjE",
-    "product_mi_patches_sticky_cta_nQB8CD"
+    "sticky_cta_ddPFXx"
   ]
 }
