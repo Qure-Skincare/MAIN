@@ -130,7 +130,7 @@
             "subheading": "",
             "image": "shopify://shop_images/variant-white-1.webp",
             "soldout": false,
-            "preorder": false,
+            "preorder": true,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
@@ -300,7 +300,7 @@
       "name": "t:sections.improve-skin-hydration.name",
       "settings": {
         "heading": "Clinically proven to improve skin and scalp hydration in just 8 weeks",
-        "text": "In an independent user study, the Qure Shower Filter demonstrated significant visible improvements after just two months of daily filtered showers. <br> <br>Tested by an independent lab, compiled by Regulatory Consultants",
+        "text": "In an independent user study, the Qure Shower Filter demonstrated significant visible improvements after just two months of daily filtered showers.  Tested by an independent lab, compiled by Regulatory Consultants",
         "sub_text": "",
         "image_before": "shopify://shop_images/graph_before.webp",
         "image_after": "shopify://shop_images/graph_after.webp",
