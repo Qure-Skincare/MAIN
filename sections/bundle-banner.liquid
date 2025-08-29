@@ -1,5 +1,5 @@
 {% doc %}
-  Renders a bundle banner section for index page
+  Renders a bundle banner section
 {% enddoc %}
 
 
@@ -39,7 +39,7 @@
 </div>
 {% schema %}
 {
-  "name": "t:sections.index-bundle-banner.name",
+  "name": "t:sections.bundle-banner.name",
   "settings": [
    {
         "type": "text",
@@ -76,6 +76,11 @@
         "type": "image_picker",
         "id": "image_mobile",
         "label": "t:common.image-mobile"
+    }
+  ],
+  "presets": [
+    {
+        "name": "t:sections.bundle-banner.name"
     }
   ]
 }

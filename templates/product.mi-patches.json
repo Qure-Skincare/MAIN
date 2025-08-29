@@ -463,7 +463,7 @@
         "items_tNcf3p": {
           "type": "items",
           "settings": {
-            "heading": "Free Shipping On Orders Over {$dyn}",
+            "heading": "Free Shipping On Orders Over $100",
             "image": "shopify://shop_images/guarantee.svg"
           }
         },
@@ -551,7 +551,7 @@
         "items_cjrKFC": {
           "type": "items",
           "settings": {
-            "heading": "Free Shipping On Orders Over {$dyn}",
+            "heading": "Free Shipping On Orders Over $100",
             "image": "shopify://shop_images/guarantee.svg"
           }
         },

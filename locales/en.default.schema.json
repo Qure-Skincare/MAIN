@@ -121,7 +121,10 @@
         "desktop": "Desktop",
         "both": "Both (Desktop & Mobile)",
         "display-mode": "Display mode",
-        "shower": "Shower"
+        "shower": "Shower",
+        "static": "Static",
+        "buy-box": "Buy box",
+        "background-color": "Background color"
     },
     "blocks": {
         "block-card": {
@@ -137,8 +140,14 @@
         "announcement-bar": {
             "name": "Announcement bar"
         },
+        "collections-offer": {
+            "name": "Collections offer"
+        },
         "numbered-steps": {
             "name": "Numbered steps"
+        },
+        "expert-advisory-product": {
+            "name": "Expert advisory product"
         },
         "before-after-accordion": {
             "name": "Before after accordion"
@@ -354,10 +363,10 @@
          "index-mobile-category-slider": {
             "name": "Mobile category slider"
         },
-         "index-page-banner": {
+         "page-banner": {
             "name": "Page banner"
         },
-         "index-bundle-banner": {
+         "bundle-banner": {
             "name": "Bundle banner"
         },
          "slider-featured-in": {
@@ -456,6 +465,9 @@
                 }
             }
         },
+        "trusted-reviews-image": {
+            "name": "Trusted reviews image"
+        },
         "improve-skin-hydration": {
             "name": "Improve skin hydration",
             "blocks": {
@@ -485,7 +497,7 @@
         "text-with-image": {
             "name": "Text with image"
         },
-        "index-quiz": {
+        "quiz": {
             "name": "Quiz"
         },
         "fix-problem": {

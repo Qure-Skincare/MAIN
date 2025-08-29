@@ -50,14 +50,14 @@
             {% if block.settings.heading_image_check != blank %}
               <div class="col custom__block">
                 <div class="patch-card-content">
-                  <div class="text-center my-10"><img src="{{ block.settings.heading_image_check | image_url }}" alt="{{ block.settings.heading_image_check.alt | escape }}" style="filter: invert(1);"></div>
+                  <div class="text-center my-10"><img src="{{ block.settings.heading_image_check | image_url }}" alt="{{ block.settings.heading_image_check.alt | escape }}"></div>
                 </div>
               </div>
             {% endif %}
             {% if block.settings.heading_image_cross != blank %}
               <div class="col custom__block">
                 <div class="patch-card-content">
-                  <div class="text-center my-10"><img src="{{ block.settings.heading_image_cross | image_url }}" alt="{{ block.settings.heading_image_cross.alt | escape }}" style="filter: invert(1);"></div>
+                  <div class="text-center my-10"><img src="{{ block.settings.heading_image_cross | image_url }}" alt="{{ block.settings.heading_image_cross.alt | escape }}"></div>
                 </div>
               </div>
             {% endif %}
