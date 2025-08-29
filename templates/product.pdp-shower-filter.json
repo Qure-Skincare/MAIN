@@ -12,15 +12,15 @@
     "product_header_prNYyf": {
       "type": "product-header",
       "blocks": {
+        "description_9VBwaX": {
+          "type": "description",
+          "settings": {}
+        },
         "section_A0": {
           "type": "section",
           "settings": {
             "section_id": "purchase-form-landing"
           }
-        },
-        "description_9VBwaX": {
-          "type": "description",
-          "settings": {}
         },
         "nextships_nN4CpM": {
           "type": "nextships",
@@ -300,7 +300,7 @@
       "name": "t:sections.improve-skin-hydration.name",
       "settings": {
         "heading": "Clinically proven to improve skin and scalp hydration in just 8 weeks",
-        "text": "In an independent user study, the Qure Shower Filter demonstrated significant visible improvements after just two months of daily filtered showers.",
+        "text": "In an independent user study, the Qure Shower Filter demonstrated significant visible improvements after just two months of daily filtered showers. <br> <br>Tested by an independent lab, compiled by Regulatory Consultants",
         "sub_text": "",
         "image_before": "shopify://shop_images/graph_before.webp",
         "image_after": "shopify://shop_images/graph_after.webp",
@@ -815,7 +815,6 @@
     },
     "sticky_cta_ggPFXx": {
       "type": "sticky-button-variants",
-      "name": "t:sections.sticky-button-variants.name",
       "blocks": {
         "variant_43xxGi": {
           "type": "variant",
@@ -824,18 +823,18 @@
             "image": "shopify://shop_images/white_swatch.webp"
           }
         },
-        "variant_45sxGi": {
-          "type": "variant",
-          "settings": {
-            "heading": "Silver",
-            "image": "shopify://shop_images/silver_swatch.webp"
-          }
-        },
         "variant_45xfGi": {
           "type": "variant",
           "settings": {
             "heading": "Black",
             "image": "shopify://shop_images/black_swatch.webp"
+          }
+        },
+        "variant_45sxGi": {
+          "type": "variant",
+          "settings": {
+            "heading": "Silver",
+            "image": "shopify://shop_images/silver_swatch.webp"
           }
         }
       },
@@ -844,10 +843,11 @@
         "variant_45xfGi",
         "variant_45sxGi"
       ],
+      "name": "t:sections.sticky-button-variants.name",
       "settings": {
         "heading": "",
         "text": "580 Units Reserved in last 48 hours",
-        "button-label": "Subscribe & Save 30%",
+        "button-label": "Subscribe & Save",
         "button-url": ""
       }
     }

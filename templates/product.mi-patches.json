@@ -12,6 +12,27 @@
     "product_header_U6RBGz": {
       "type": "product-header",
       "blocks": {
+        "price_A11": {
+          "type": "price",
+          "settings": {}
+        },
+        "description_iPBNaS": {
+          "type": "description",
+          "settings": {}
+        },
+        "button_A9": {
+          "type": "button",
+          "settings": {}
+        },
+        "limited_offer_A8": {
+          "type": "limited-offer",
+          "disabled": true,
+          "settings": {
+            "sum": "$100",
+            "code": "QURE100",
+            "days": 5
+          }
+        },
         "nextships_7bppdR": {
           "type": "nextships",
           "settings": {
@@ -20,26 +41,6 @@
             "date_soldout": "22/08/2025",
             "date_reserved": "23/08/2025"
           }
-        },
-        "limited_offer_A8": {
-          "type": "limited-offer",
-          "disabled": true,
-          "settings": {
-            "sum": "$100",
-            "code": "QURE100"
-          }
-        },
-        "button_A9": {
-          "type": "button",
-          "settings": {}
-        },
-        "description_iPBNaS": {
-          "type": "description",
-          "settings": {}
-        },
-        "price_A11": {
-          "type": "price",
-          "settings": {}
         },
         "jumpto_UwWwEq": {
           "type": "jumpto",
@@ -193,7 +194,7 @@
       "name": "t:sections.proven-results.name",
       "settings": {
         "heading": "No hype, just evidence",
-        "text": "<p>In an independent user study, participants' skin was measured and showed proven visible improvement after just one month.</p>",
+        "text": "<p>In an independent user study, participants' skin was measured and showed proven visible improvement after just one month.<br/><br/>Tested by an independent lab, compiled by Regulatory Consultants</p>",
         "button_label": "",
         "button_url": ""
       }

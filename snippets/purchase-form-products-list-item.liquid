@@ -19,7 +19,7 @@
     <template id="{{ section.settings.form_name }}-source-{{ section.id }}-{{ product_type_title }}">
         <div class="step_content" id="{{ section.id }}-{{ product_type_title }}">
             <div class="qure-bundle-container step_conten_blocks" style="--col-gap: 10px;--col-gap-mb:10px">
-                <div class="align-items-end bundle-supply col-gap d-flex" id="myTab" role="tablist">
+                <div class="align-items-end bundle-supply col-gap d-flex flex-column" id="myTab" role="tablist">
 
                     {% assign array_count = array.size %}
 
@@ -73,7 +73,7 @@
                                     {% capture data-per %}{{ 'purchase-form.settings.soldout-button-label' | t }}{% endcapture %}
                                 {% endif %}
 
-                                <div class="qure-supply-item col planBlock" role="presentation" href="javascript:void(0)"
+                                <div class="qure-supply-item col-12 position-relative planBlock" role="presentation" href="javascript:void(0)"
                                     data-block-id="{{ block.id }}"
                                     data-tab="tab_{{ product_title_tag }}" 
                                     data-pay="{{ product_price_divided | money_without_trailing_zeros }}" 
@@ -88,39 +88,58 @@
                                     data-product-name="{{ block.settings.heading | escape }}",
                                     data-product-price="{{ product_price }}">
 
+                                    {% if product_type == 3 %}
+                                        <div class="best_value">
+                                            <p>{{ 'purchase-form.settings.best' | t }} <img src="https://qureskincaredns-main.com/assets/images/star_white.svg" alt=""></p>
+                                        </div>
+                                    {% endif %}
+
                                     <input type="radio" name="monthlyPlan_{{ section.settings.form_name }}" id="{{ section.id }}-{{ product_title_tag }}"{% if block.settings.preselected == true %} checked{% endif %}>
 
-                                    <label for="{{ section.id }}-{{ product_title_tag }}" class="supply-link active pt-0" id="{{ block.id }}-tab"
+                                    <label for="{{ section.id }}-{{ product_title_tag }}" class="supply-link active py-0 overflow-hidden" id="{{ block.id }}-tab"
                                         data-bs-toggle="tab" data-bs-target="#{{ block.id }}-tabitem" type="button" role="tab"
                                         aria-controls="{{ block.id }}-tabitem" aria-selected="true">
-                                        
-                                        {% if product_type == 3 %}
-                                            <div class="qure-best-value">{{ 'purchase-form.settings.best' | t }} <i class="fa-sharp fa-solid fa-star-sharp"></i></div>
-                                        {% endif %}
 
-                                        {% if block.settings.image != blank %}
-                                            <div class="qure__supply-img">
-                                                <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" class="img-fluid">
+                                        <div class="qure__supply-content d-flex text-start justify-content-between p-15">
+                                            <div>
+                                                <p class="mb-0">{{ block.settings.heading }}</p>
+                                                <p class="fs-14">{{ block.settings.subheading }}</p>
                                             </div>
-                                        {% else %}
-                                            <br />
-                                        {% endif %}
-
-                                        <div class="qure__supply-content">
-                                            <p class="mb-0">{{ block.settings.heading }}</p>
-                                            <p class="fs-14 mb-15">{{ block.settings.subheading }}</p>
-                                            <div class="qure__supply-price">
-                                                {% if product_price_compare != blank %}
-                                                    <span class="qure__supply-price-sale regular_price">{{ product_price_compare }}</span>
-                                                    <span class="qure__supply-price-reg-sale sale_price">{{ product_price }}</span>
-                                                {% else %}
-                                                    <span class="qure__supply-price-reg sale_price">{{ product_price }}</span>
+                                            <div>
+                                                <div class="qure__supply-price">
+                                                    {% if product_price_compare != blank %}
+                                                        <span class="qure__supply-price-sale regular_price">{{ product_price_compare }}</span>
+                                                        <span class="qure__supply-price-reg-sale sale_price">{{ product_price }}</span>
+                                                    {% else %}
+                                                        <span class="qure__supply-price-reg sale_price">{{ product_price }}</span>
+                                                    {% endif %}
+                                                </div>
+                                                {% if discount_percentage != blank %}
+                                                    {% case product_type %}
+                                                        {% when 3 %}
+                                                            <p class="ctm-background fs-12 text-center text-white rounded-30">{{ 'purchase-form.settings.save' | t | upcase }} {{ discount_percentage }}%</p>
+                                                        {% when 2 %}
+                                                            <p class="ctm-background fs-12 text-center text-orange rounded-30" style="--ctm-background:#ff54291a;">{{ 'purchase-form.settings.save' | t | upcase }} {{ discount_percentage }}%</p>
+                                                    {% endcase %}
                                                 {% endif %}
                                             </div>
-                                            {% if discount_percentage != blank %}
-                                                <span class="qure__supply-badge">{{ discount_percentage }}% {{ 'purchase-form.settings.off' | t }}</span>
-                                            {% endif %}
                                         </div>
+                                        {% case product_type %}
+                                            {% when 3 %}
+                                                <div class="qure-best-value rounded-0 mb-0 justify-content-between px-15 fs-12 pt-5">
+                                                    <div>🔥 {{ 'purchase-form.settings.per-treatment' | t: price: product_price_per_item }}</div>
+                                                    {% if block.settings.left_items > 0 %}
+                                                        <div><span><img src="https://qureskincaredns-main.com/assets/images/clock-w.svg" alt=""></span> {{ 'purchase-form.settings.kit-left' | t: count: block.settings.left_items }}</div>
+                                                    {% endif %}
+                                                </div>
+                                            {% when 2 %}
+                                                <div class="qure-best-value rounded-0 mb-0 justify-content-between px-15 fs-12 pt-5" style="--qure-charcoal:#C7E5DB; --white-color:#212428;">
+                                                    <div>{{ 'purchase-form.settings.per-treatment' | t: price: product_price_per_item }}</div>
+                                                    {% if block.settings.left_items > 0 %}
+                                                        <div><span><img src="https://qureskincaredns-main.com/assets/images/clock-b.svg" alt=""></span> {{ 'purchase-form.settings.kit-left' | t: count: block.settings.left_items }}</div>
+                                                    {% endif %}
+                                                </div>
+                                        {% endcase %}
                                     </label>
                                 </div>
 

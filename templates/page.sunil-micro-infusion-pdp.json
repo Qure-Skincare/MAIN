@@ -316,7 +316,7 @@
       "settings": {
         "form_name": "purchase-form-landing",
         "hide_types": false,
-        "style": "box"
+        "type": "box"
       }
     },
     "slider_featured_in_qHHg4W": {
@@ -498,7 +498,7 @@
       "name": "t:sections.proven-results.name",
       "settings": {
         "heading": "No hype, just evidence",
-        "text": "<p>The results speak for themselves. In an independent user study, participants' skin was measured and showed proven visible improvement after just 6 treatments.</p>",
+        "text": "<p>The results speak for themselves. In an independent user study, participants' skin was measured and showed proven visible improvement after just 6 treatments.<br/><br/><em>Tested by an independent lab, compiled by Regulatory Consultants</em></p>",
         "button_label": "",
         "button_url": ""
       }
