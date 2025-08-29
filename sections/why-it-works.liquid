@@ -164,11 +164,10 @@ loadScriptOnce('wow-js', 'https://qureskincaredns-main.com/assets/js/wow.min.js'
                             </div>
                             <div class="point_column p_three top_0 right_0 wow fadeInDown" data-wow-delay="0.6s"
                                 style="--top:47%;--top-mob:47%; --right: 30px;">
-                                <div class="accordion-button collapsed fs-18 gap-2" type="button" data-bs-toggle="collapse"
+                                <div class="accordion-button collapsed fs-18 gap-2" type="button" data-bs-toggle="collapse" 
                                     data-bs-target="#qure_benefit-3" aria-expanded="false" aria-controls="qure_benefit-3"
-                                    {% if block.settings.image_3 != blank %}
-                                        data-img-url="{{ block.settings.image_3 | image_url }}">
-                                    {% endif %}
+                                    {% if block.settings.image_3 != blank %}data-img-url="{{ block.settings.image_3 | image_url }}"{% endif %}>
+                                    
                                     {% if block.settings.text_item_3 != blank %}
                                         <span class="p_text">{{ block.settings.text_item_3 }}</span>
                                     {% endif %}
@@ -177,10 +176,7 @@ loadScriptOnce('wow-js', 'https://qureskincaredns-main.com/assets/js/wow.min.js'
                             <div class="point_column p_four left_0 top_0 wow fadeInDown" data-wow-delay="0.6s" style="--top:95%;--top-mob:95%; --left:50px;">
                                 <div class="accordion-button collapsed fs-18 gap-1 flex-column" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#qure_benefit-4" aria-expanded="false"
-                                    aria-controls="qure_benefit-4"
-                                    {% if block.settings.image_4 != blank %}
-                                        data-img-url="{{ block.settings.image_4 | image_url }}">
-                                    {% endif %}
+                                    aria-controls="qure_benefit-4" {% if block.settings.image_4 != blank %}data-img-url="{{ block.settings.image_4 | image_url }}"{% endif %}>
                                     {% if block.settings.text_item_4 != blank %}
                                         <span class="p_text">{{ block.settings.text_item_4 }}</span>
                                     {% endif %}

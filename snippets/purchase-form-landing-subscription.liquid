@@ -21,16 +21,16 @@
                             aria-controls="subscribe_and_save">
                             
                             {% if subscription_discount_percent > 0 %}
-                                <div class="qure__sbs-label d-flex align-items-center gap-2">{{ 'purchase-form.settings.subscribe' | t }} & <span class='product_shower-label' style="gap: 3px;">{{ 'purchase-form.settings.save' | t | upcase }} <span data-gpd-value="subscription_discount" data-gpd-product="{{ product_prefix }}{{ product.handle }}"></span>%</span></div>
+                                <div class="qure__sbs-label d-flex align-items-center gap-2">{{ 'purchase-form.settings.subscribe' | t }} & <span class='product_shower-label' style="gap: 3px;">{{ 'purchase-form.settings.save' | t | upcase }} {{ subscription_discount }}%</span></div>
                             {% else %}
                                 <div class="qure__sbs-label d-flex align-items-center gap-2">{{ 'purchase-form.settings.subscribe' | t }}</div>
                             {% endif %}
                             <div class="qure__price price--on-sale d-flex align-items-center">
                                 {% if subscription_discount_percent > 0 %}
-                                    <div class="price__sale mr-0 fs-18" data-gpd-value="price" data-gpd-product="{{ product_prefix }}{{ product.handle }}"></div>
-                                    <div class="price__regular fs-18" data-gpd-value="subscription_price" data-gpd-product="{{ product_prefix }}{{ product.handle }}"></div>
+                                    <div class="price__sale mr-0 fs-18">{{ product_sale_price }}</div>
+                                    <div class="price__regular fs-18">{{ product_subscription_price }}</div>
                                 {% else %}
-                                    <div class="price__regular fs-18" data-gpd-value="price" data-gpd-product="{{ product_prefix }}{{ product.handle }}"></div>
+                                    <div class="price__regular fs-18">{{ product_sale_price }}</div>
                                 {% endif %}
                             </div>
                         </button>
@@ -47,9 +47,9 @@
                                     class="subscription-item-row d-flex align-items-center gap-4 justify-content-between fs-16">
                                     <div class="subscription-item-title">
                                         {% if subscription_discount_percent > 0 %}
-                                            <div class="qure__price div">{{ 'purchase-form.settings.subscription-days-option' | t }} {{ block.settings.subscription_days_text }} ( <span class="price__sale fs-16" data-gpd-value="price" data-gpd-product="{{ product_prefix }}{{ product.handle }}" style="margin: 0px"></span> <span data-gpd-value="subscription_price" data-gpd-product="{{ product_prefix }}{{ product.handle }}"></span> )</div>
+                                            <div class="qure__price div">{{ 'purchase-form.settings.subscription-days-option' | t }} {{ block.settings.subscription_days_text }} ( <span class="price__sale fs-16" style="margin:0;">{{ product_sale_price }}</span> {{ product_subscription_price }} )</div>
                                         {% else %}
-                                            <div class="qure__price div">{{ 'purchase-form.settings.subscription-days-option' | t }} {{ block.settings.subscription_days_text }} ( <span data-gpd-value="price" data-gpd-product="{{ product_prefix }}{{ product.handle }}"></span> )</div>
+                                            <div class="qure__price div">{{ 'purchase-form.settings.subscription-days-option' | t }} {{ block.settings.subscription_days_text }} ( <span>{{ product_sale_price }}</span> )</div>
                                         {% endif %}
                                     </div>
                                 </div>
@@ -64,7 +64,7 @@
                             <div class="qure__sbs-label d-flex align-items-center gap-3">{{ 'purchase-form.settings.onetime' | t }}</div>
                             <div
                                 class="qure__price price--on-sale d-flex flex-wrap align-items-end flex-column text-right">
-                                <div class="price__regular fs-18" data-gpd-value="price" data-gpd-product="{{ product_prefix }}{{ product.handle }}"></div>
+                                <div class="price__regular fs-18">{{ product_sale_price }}</div>
                             </div>
                         </button>
                         <div id="one_time_purchase" class="qure__subscription-collapse collapse" data-bs-parent="#qure__subscription" style="">

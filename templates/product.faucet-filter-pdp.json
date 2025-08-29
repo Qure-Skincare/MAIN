@@ -775,14 +775,41 @@
       }
     },
     "sticky_cta_9hzULB": {
-      "type": "sticky-cta",
-      "name": "t:sections.sticky-cta.name",
+      "type": "sticky-button-variants",
+      "blocks": {
+        "variant_43xxGi": {
+          "type": "variant",
+          "settings": {
+            "heading": "White",
+            "image": "shopify://shop_images/white_swatch.webp"
+          }
+        },
+        "variant_45xfGi": {
+          "type": "variant",
+          "settings": {
+            "heading": "Black",
+            "image": "shopify://shop_images/black_swatch.webp"
+          }
+        },
+        "variant_45sxGi": {
+          "type": "variant",
+          "settings": {
+            "heading": "Silver",
+            "image": "shopify://shop_images/silver_swatch.webp"
+          }
+        }
+      },
+      "block_order": [
+        "variant_43xxGi",
+        "variant_45xfGi",
+        "variant_45sxGi"
+      ],
+      "name": "t:sections.sticky-button-variants.name",
       "settings": {
-        "cta-mode": "patches",
         "heading": "",
         "text": "580 Units Reserved in last 48 hours",
-        "button-label": "Subscribe & Save 30%",
-        "button-url": "#buy_box"
+        "button-label": "Subscribe & Save",
+        "button-url": ""
       }
     }
   },
