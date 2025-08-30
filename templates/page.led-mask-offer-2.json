@@ -9,54 +9,38 @@
  */
 {
   "sections": {
-    "product_header_6BFNQx": {
-      "type": "product-header",
-      "name": "t:sections.product-header.name",
+    "page_header_6BFNQx": {
+      "type": "page-header",
       "blocks": {
-        "nextships_iPBNaP": {
-          "type": "nextships",
-          "disabled": true,
-          "settings": {
-            "date": "{date}:",
-            "percent": 48,
-            "date_soldout": "{Previous date}",
-            "date_reserved": "{date}"
-          }
-        },
-        "limited_offer_A8": {
-          "type": "limited-offer",
-          "disabled": true,
-          "settings": {
-            "sum": "$100",
-            "code": "QURE100"
-          }
-        },
-        "button_A9": {
-          "type": "button",
+        "link_iPBNaS": {
+          "type": "link",
           "settings": {}
         },
-        "description_iPBNaS": {
+        "description_iSDNaK": {
           "type": "description",
           "settings": {}
         },
-        "price_A11": {
-          "type": "price",
-          "settings": {}
+        "exclusive-offer_iaSzaK": {
+          "type": "exclusive-offer",
+          "settings": {
+            "image_product1": "shopify://shop_images/ledBox.webp",
+            "image_product2": "shopify://shop_images/ndBox.webp",
+            "text": "<p>Buy the Q-Rejuvalight Pro and get the Neck & Décolletage LED Device for FREE (value <span>$299</span>)</p>"
+          }
         }
       },
       "block_order": [
-        "price_A11",
-        "description_iPBNaS",
-        "button_A9",
-        "limited_offer_A8",
-        "nextships_iPBNaP"
+        "description_iSDNaK",
+        "link_iPBNaS",
+        "exclusive-offer_iaSzaK"
       ],
+      "name": "t:sections.page-header.name",
       "settings": {
-        "seo_heading": "",
-        "heading": "",
-        "description": "",
-        "reserved": false,
-        "soldout": false
+        "rating": "<p><strong>4.8</strong>/5 Rated by Customers</p>",
+        "heading": "Feel Confident Makeup-Free with Q-Rejuvalight Pro",
+        "description": "<ul><li>FDA-cleared at-home LED mask</li><li>Treat acne, fine lines, wrinkles & more</li><li>Customize, track & schedule treatments with app</li><li>Quick & convenient 3-minute wireless treatments</li></ul>",
+        "button-label": "Shop Now &amp; Save $299",
+        "button-url": "#buy-form"
       }
     },
     "logos_GdDRJU": {
@@ -527,7 +511,7 @@
       }
     },
     "page_led_mask_offer_2_led_mask_offer_QgKWfH": {
-      "type": "page-led-mask-offer-2-led-mask-offer",
+      "type": "page-led-mask-offer-2-led-mask-form",
       "name": "t:sections.led-mask-offer.name",
       "settings": {}
     },
@@ -865,19 +849,18 @@
       "settings": {}
     },
     "sticky_cta_xhjAY4": {
-      "type": "sticky-cta",
-      "name": "t:sections.sticky-cta.name",
+      "type": "sticky-button",
+      "name": "t:sections.sticky-button.name",
       "settings": {
-        "cta-mode": "default",
         "heading": "Q-Rejuvalight Pro + Neck & Décolletage LED Device",
         "text": "1,893 purchased in last 48 hours",
         "button-label": "SHOP NOW & SAVE $299",
-        "button-url": "#buy_box"
+        "button-url": "#buy-form"
       }
     }
   },
   "order": [
-    "product_header_6BFNQx",
+    "page_header_6BFNQx",
     "logos_GdDRJU",
     "card_slider_9hzbK3",
     "page_led_mask_offer_2_proof_in_numbers_WTwTgr",

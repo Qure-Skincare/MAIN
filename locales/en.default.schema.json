@@ -9,6 +9,7 @@
  */
 {
     "common": {
+        "exclusive-offer": "Exclusive-offer",
         "delivery": "Delivery",
         "subscription": "Subscription",
         "onetime": "Onetime",
@@ -273,8 +274,8 @@
         "banner-with-text": {
             "name": "Banner with text"
         },
-        "sticky-cta": {
-            "name": "Sticky Call to Action"
+        "sticky-button": {
+            "name": "Sticky button"
         },
         "sticky-button-variants": {
             "name": "Sticky Button Variants"

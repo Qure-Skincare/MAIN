@@ -21,6 +21,5 @@ const __gpd_update = () => {
     });
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    __gpd_update();
-});
+
+__gpd_update();

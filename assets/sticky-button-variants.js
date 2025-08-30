@@ -31,6 +31,10 @@ const sticky_button_mobile_click = () => {
 
         if (target) {
             target.click();
+
+            if (typeof selectOption === "function") {
+                selectOption(selectedId);
+            }
         }
     });
   });

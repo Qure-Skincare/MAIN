@@ -95,7 +95,7 @@
     "sticky-button-variants": {
       "select_color": "Select Option:"
     },
-    "page-qure-filters-form": {
+    "page-qure-filters-offer-form": {
       "settings": {
         "limited": "Limited Time Offer",
         "header": "Qure Shower Filter",
@@ -115,13 +115,39 @@
         "delivery_terms": "New filters auto-ship every 90 days.",
         "one_time_purchase_html": "One-Time Purchase <span class='qure__product-label'>SAVE 35%</span>",
         "button_label": "Buy now",
-        "button_label_save": "Subscribe Now & Save 50%",
+        "button_label_save": "Subscribe Now & Save",
         "waranty_html": "<strong class='fw-600'>Covered by our Lifetime Warranty. </strong><br> Backed by our 30-Day Money-Back Guarantee.",
         "dermatologist": "Dermatologist Reviewed",
         "shipping": "Free Shipping over $100",
         "science": "Backed by Science",
-        "discount_text": "% OFF",
+        "discount_text": "OFF",
         "more_details_html": "<strong class='fw-600'>Skip pause/modify or cancel anytime.</strong> <br> <a href='' class='text-black text-decoration-underline'> See more details</a>."
+      }
+    },
+    "page-led-mask-offer-2-led-mask-form": {
+      "settings": {
+        "limited": "Limited Time Offer",
+        "header": "Q-Rejuvalight Pro LED Mask",
+        "subheader": "+ FREE Neck & Décolletage LED Device",
+        "warranty": "Lifetime Warranty",
+        "fda": "FDA Cleared",
+        "text": "Repair and rejuvenate your skin with our FDA-cleared LED mask that treats acne, fine lines, wrinkles and dark spots.",
+        "included": "What’s Included:",
+        "product1-header": "Q-Rejuvalight Pro LED Mask",
+        "product1-description": "FDA-cleared device that treats acne, fine lines, wrinkles and dark spots.",
+        "product2-header": "Neck & Décolletage LED Device",
+        "product2-description": "Clinically proven to smooth and firm where aging shows first.",
+        "instant-saving": "INSTANT SAVINGS:",
+        "low-stock": "Low Stock",
+        "low-stock-text": "Due to high demand, this offer is only available while stock lasts.",
+        "order-today": " Order today to lock in your deal and get FREE Shipping",
+        "button-label": "Save Now & Save $299",
+        "guarantee-text": "1-Year Guarantee",
+        "shipping-text": "Free Shipping over $100",
+        "free": "FREE",
+        "discount-text": "% OFF",
+        "sold": "Sold",
+        "percent": "82%"
       }
     },
     "before-after-accordion": {
@@ -138,6 +164,12 @@
       "jumpto": {
         "header": "Jump To"
       }
+    },
+    "exclusive-offer": {
+      "header_html": "<div class='eo-header'><span>exclusive</span><span>offer</span></div>",
+      "guarantee-text": "1-Year Guarantee",
+      "shipping-text": "Free Shipping over $100",
+      "free": "FREE"
     }
   },
   "product": {
