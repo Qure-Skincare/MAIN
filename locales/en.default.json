@@ -166,7 +166,7 @@
       }
     },
     "exclusive-offer": {
-      "header_html": "<div class='eo-header'><span>exclusive</span><span>offer</span></div>",
+      "header_html": "<div class='eo-header'><span>End Of Summer</span><span>offer</span></div>",
       "guarantee-text": "1-Year Guarantee",
       "shipping-text": "Free Shipping over $100",
       "free": "FREE"
