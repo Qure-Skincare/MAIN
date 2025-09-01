@@ -368,6 +368,7 @@
       "settings": {
         "background_color": "",
         "heading": "The results are crystal clear",
+        "text": "",
         "text_mobile": "",
         "button_label": "",
         "button_url": ""
@@ -530,6 +531,7 @@
       ],
       "name": "t:common.carousel",
       "settings": {
+        "background_color": "#f6f6f7",
         "display_mode": "both"
       }
     },
@@ -716,7 +718,7 @@
         "heading": "Have questions?",
         "text": "",
         "button_label": "Ask us",
-        "button_url": ""
+        "button_url": "https://qureskincare.com/pages/contact-us"
       }
     },
     "sticky_cta_6UGJ8F": {
