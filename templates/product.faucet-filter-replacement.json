@@ -129,7 +129,7 @@
             "heading": "White",
             "subheading": "",
             "image": "shopify://shop_images/faucet_refill-w.webp",
-            "soldout": false,
+            "soldout": true,
             "preorder": false,
             "preorder_text": "",
             "preorder_date_soldout": "",
@@ -340,6 +340,7 @@
       "settings": {
         "background_color": "",
         "heading": "The results are crystal clear",
+        "text": "",
         "text_mobile": "",
         "button_label": "",
         "button_url": ""
@@ -446,7 +447,12 @@
         },
         "items_Bk8DAe": {
           "type": "items",
-          "settings": {}
+          "settings": {
+            "text_item_1": "",
+            "text_item_2": "",
+            "text_item_3": "",
+            "text_item_4": ""
+          }
         }
       },
       "block_order": [
@@ -460,7 +466,8 @@
       "settings": {
         "heading": "Why It Works",
         "text": "<p>Our triple filtration technology filters the water to remove heavy metals and purify.</p>",
-        "image": "shopify://shop_images/filter_cartiage0.webp"
+        "image": "shopify://shop_images/filter_cartiage0.webp",
+        "checkbox": false
       }
     },
     "video_review_slider_Bgi9Ab": {
@@ -570,7 +577,10 @@
         "items_KLcq7U"
       ],
       "name": "t:common.carousel",
-      "settings": {}
+      "settings": {
+        "background_color": "#f6f6f7",
+        "display_mode": "both"
+      }
     },
     "how_to_use_HBy7NB": {
       "type": "how-to-use",
