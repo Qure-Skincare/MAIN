@@ -130,7 +130,7 @@
             "subheading": "",
             "image": "shopify://shop_images/faucet_white_3b09bc4c-0464-4c4a-ae2a-bec3cd09cbd5.webp",
             "soldout": false,
-            "preorder": true,
+            "preorder": false,
             "preorder_text": "30",
             "preorder_date_soldout": "30",
             "preorder_date_reserved": "",
