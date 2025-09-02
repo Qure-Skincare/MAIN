@@ -8,14 +8,14 @@ Renders a blog posts
         <a href="{{ link.url }}" class="choose_blog_topic position-relative">
             {% case forloop.index %}
                 {% when 1 %}  
-                    <img src="https://qureskincaredns-main.com/sections/isolated/blogs/images/choose_blog_1.webp" alt="{{ link.title | escape }}" class="img-fluid d-none d-md-block">
-                    <img src="https://qureskincaredns-main.com/sections/isolated/blogs/images/choose_blog_1_mob.webp" alt="{{ link.title | escape }}" class="img-fluid d-md-none">
+                    <img src="{{ 'blog.blog-post.settings.image_1' | t }}" alt="{{ link.title | escape }}" class="img-fluid d-none d-md-block">
+                    <img src="{{ 'blog.blog-post.settings.image__mobile_1' | t }}" alt="{{ link.title | escape }}" class="img-fluid d-md-none">
                 {% when 2 %}
-                    <img src="https://qureskincaredns-main.com/sections/isolated/blogs/images/choose_blog_2.webp" alt="{{ link.title | escape }}" class="img-fluid d-none d-md-block">
-                    <img src="https://qureskincaredns-main.com/sections/isolated/blogs/images/choose_blog_2_mob.webp" alt="{{ link.title | escape }}" class="img-fluid d-md-none">
+                    <img src="{{ 'blog.blog-post.settings.image_2' | t }}" alt="{{ link.title | escape }}" class="img-fluid d-none d-md-block">
+                    <img src="{{ 'blog.blog-post.settings.image__mobile_2' | t }}" alt="{{ link.title | escape }}" class="img-fluid d-md-none">
                 {% when 3 %}
-                    <img src="https://qureskincaredns-main.com/sections/isolated/blogs/images/choose_blog_3.webp" alt="{{ link.title | escape }}" class="img-fluid d-none d-md-block">
-                    <img src="https://qureskincaredns-main.com/sections/isolated/blogs/images/choose_blog_3_mob.webp" alt="{{ link.title | escape }}" class="img-fluid d-md-none">
+                    <img src="{{ 'blog.blog-post.settings.image_3' | t }}" alt="{{ link.title | escape }}" class="img-fluid d-none d-md-block">
+                    <img src="{{ 'blog.blog-post.settings.image__mobile_3' | t }}" alt="{{ link.title | escape }}" class="img-fluid d-md-none">
             {% endcase %}
             <h6>{{ link.title }}</h6>
         </a>
@@ -51,7 +51,7 @@ Renders a blog posts
                 </div>
             {% endfor %}
             {%- if paginate.pages > 1 -%}
-                {% render 'blog-pagination', paginate: paginate %}
+                {% render 'blog-snippet-pagination', paginate: paginate %}
             {%- endif -%}
         </div>
     {%- endpaginate -%}

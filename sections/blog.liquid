@@ -10,13 +10,13 @@
                 <div class="col-md-8">
                 {% case blog.handle %}
                     {% when 'light-therapy' %}
-                        {% render 'blog-post' with blog_handle: 'light-therapy', limit: 9 %}
+                        {% render 'blog-snippet-post' with blog_handle: 'light-therapy', limit: 9 %}
                     {% when 'skin' %}
-                        {% render 'blog-post' with blog_handle: 'skin', limit: 9 %}
+                        {% render 'blog-snippet-post' with blog_handle: 'skin', limit: 9 %}
                     {% when 'skincare' %}
-                        {% render 'blog-post' with blog_handle: 'skincare', limit: 9 %}
+                        {% render 'blog-snippet-post' with blog_handle: 'skincare', limit: 9 %}
                     {% when 'all' %}
-                        {% render 'blog-post' with blog_handle: 'all', limit: 9 %}   
+                        {% render 'blog-snippet-post' with blog_handle: 'all', limit: 9 %}   
                 {% endcase %}
                 </div>
                 <!-- most popular posts  -->
@@ -24,17 +24,17 @@
                     <div class="most_popular_posts pl-md-55">
                         <p class="mb-4">{{ 'blog.popular.header' | t }}</p>
                         <div class="row gy-4">
-                            {% render 'blog-post-popular' with blog_handle: 'skin', limit: 1 %}
-                            {% render 'blog-post-popular' with blog_handle: 'skincare', limit: 1 %}
-                            {% render 'blog-post-popular' with blog_handle: 'light-therapy', limit: 1 %}
-                            {% render 'blog-post-popular' with blog_handle: 'skin', limit: 1 %}
-                            {% render 'blog-post-popular' with blog_handle: 'skincare', limit: 1, offset:1 %}
-                            {% render 'blog-post-popular' with blog_handle: 'skincare', limit: 1, offset:1 %}
-                            {% render 'blog-post-popular' with blog_handle: 'light-therapy', limit: 1, offset:1 %}
-                            {% render 'blog-post-popular' with blog_handle: 'light-therapy', limit: 1, offset:1 %}
-                            {% render 'blog-post-popular' with blog_handle: 'skin', limit: 1, offset:2 %}
-                            {% render 'blog-post-popular' with blog_handle: 'skin', limit: 1, offset:2 %}
-                            {% render 'blog-post-popular' with blog_handle: 'skin', limit: 1, offset:2 %}
+                            {% render 'blog-snippet-post-popular' with blog_handle: 'skin', limit: 1 %}
+                            {% render 'blog-snippet-post-popular' with blog_handle: 'skincare', limit: 1 %}
+                            {% render 'blog-snippet-post-popular' with blog_handle: 'light-therapy', limit: 1 %}
+                            {% render 'blog-snippet-post-popular' with blog_handle: 'skin', limit: 1 %}
+                            {% render 'blog-snippet-post-popular' with blog_handle: 'skincare', limit: 1, offset:1 %}
+                            {% render 'blog-snippet-post-popular' with blog_handle: 'skincare', limit: 1, offset:1 %}
+                            {% render 'blog-snippet-post-popular' with blog_handle: 'light-therapy', limit: 1, offset:1 %}
+                            {% render 'blog-snippet-post-popular' with blog_handle: 'light-therapy', limit: 1, offset:1 %}
+                            {% render 'blog-snippet-post-popular' with blog_handle: 'skin', limit: 1, offset:2 %}
+                            {% render 'blog-snippet-post-popular' with blog_handle: 'skin', limit: 1, offset:2 %}
+                            {% render 'blog-snippet-post-popular' with blog_handle: 'skin', limit: 1, offset:2 %}
                         </div>
                     </div>
                 </div>
