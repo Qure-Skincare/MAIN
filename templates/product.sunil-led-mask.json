@@ -12,6 +12,36 @@
     "product_header_V3N3T8": {
       "type": "product-header",
       "blocks": {
+        "price_A11": {
+          "type": "price",
+          "settings": {}
+        },
+        "description_A10": {
+          "type": "description",
+          "settings": {}
+        },
+        "button_A9": {
+          "type": "button",
+          "settings": {}
+        },
+        "limited_offer_A8": {
+          "type": "limited-offer",
+          "settings": {
+            "sum": "$100",
+            "code": "QURE100",
+            "days": 7
+          }
+        },
+        "nextships_A7": {
+          "type": "nextships",
+          "disabled": true,
+          "settings": {
+            "date": "25 September",
+            "percent": 55,
+            "date_soldout": "28 July",
+            "date_reserved": "3 August"
+          }
+        },
         "jumpto_A1": {
           "type": "jumpto",
           "settings": {
@@ -53,35 +83,6 @@
             "button-label": "FAQs",
             "button-url": "#faq"
           }
-        },
-        "nextships_A7": {
-          "type": "nextships",
-          "disabled": true,
-          "settings": {
-            "date": "25 September",
-            "percent": 55,
-            "date_soldout": "28 July",
-            "date_reserved": "3 August"
-          }
-        },
-        "limited_offer_A8": {
-          "type": "limited-offer",
-          "settings": {
-            "sum": "$100",
-            "code": "QURE100"
-          }
-        },
-        "button_A9": {
-          "type": "button",
-          "settings": {}
-        },
-        "description_A10": {
-          "type": "description",
-          "settings": {}
-        },
-        "price_A11": {
-          "type": "price",
-          "settings": {}
         }
       },
       "block_order": [
@@ -497,6 +498,7 @@
       "settings": {
         "background_color": "",
         "heading": "Results you’ll see with your own eyes",
+        "text": "",
         "text_mobile": "",
         "button_label": "",
         "button_url": ""
@@ -768,7 +770,10 @@
         "items_trznWr"
       ],
       "name": "carousel",
-      "settings": {}
+      "settings": {
+        "background_color": "#f6f6f7",
+        "display_mode": "both"
+      }
     },
     "how_to_use_Uz9LpM": {
       "type": "how-to-use",
@@ -992,14 +997,13 @@
         "heading": "Have questions?",
         "text": "Don’t see your question?",
         "button_label": "Ask us",
-        "button_url": ""
+        "button_url": "https://qureskincare.com/pages/contact-us"
       }
     },
     "sticky_cta_AFkFxe": {
-      "type": "sticky-cta",
-      "name": "t:sections.sticky-cta.name",
+      "type": "sticky-button",
+      "name": "t:sections.sticky-button.name",
       "settings": {
-        "cta-mode": "default",
         "heading": "Q-Rejuvalight Pro LED Mask",
         "text": "203 purchased in last 48 hours",
         "button-label": "",

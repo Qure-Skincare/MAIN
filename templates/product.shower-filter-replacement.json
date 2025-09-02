@@ -16,17 +16,20 @@
           "type": "description",
           "settings": {}
         },
-        "button_PkVUx9": {
-          "type": "button",
-          "settings": {}
+        "section_A0": {
+          "type": "section",
+          "settings": {
+            "section_id": "purchase-form-landing"
+          }
         },
         "nextships_nN4CpM": {
           "type": "nextships",
+          "disabled": true,
           "settings": {
-            "date": "{date}:",
-            "percent": 48,
-            "date_soldout": "{Previous date}",
-            "date_reserved": "{date}"
+            "date": "25 September",
+            "percent": 55,
+            "date_soldout": "28 July",
+            "date_reserved": "3 August"
           }
         },
         "jumpto_jzQqUH": {
@@ -40,7 +43,7 @@
           "type": "jumpto",
           "settings": {
             "button-label": "Reviews",
-            "button-url": "#crystal_clear"
+            "button-url": "#trusted-reviews"
           }
         },
         "jumpto_7JzPHz": {
@@ -67,7 +70,7 @@
       },
       "block_order": [
         "description_9VBwaX",
-        "button_PkVUx9",
+        "section_A0",
         "nextships_nN4CpM",
         "jumpto_jzQqUH",
         "jumpto_RKQfLC",
@@ -77,11 +80,94 @@
       ],
       "name": "t:sections.product-header.name",
       "settings": {
-        "seo_heading": "SHOWER FILTER",
-        "heading": "Save your hair and skin from dryness and irritation",
-        "description": "<ul><li>Clinically proven to increase skin moisture by 15%, and scalp moisture by 22% after just 8 weeks.</li><li>Removes up to 99% of chlorine, heavy metals & contaminants that irritate the skin, for an overall more hydrated, clearer skin and hair.</li><li>Reduces limescale buildup, which can dry out skin and hair, for smoother, softer results.</li></ul>",
+        "seo_heading": "SHOWER FILTER REFILL CARTRIDGE",
+        "heading": "Keep your skin & hair protected with the Shower Filter Refill",
+        "description": "<ul><li>Replace Shower Filter cartridge every 3 months for consistently hydrated, healthier hair and skin. </li><li>Removes up to 99% chlorine, heavy metals & contaminants that harms your skin and hair.</li><li>Easy to refill, only 2 minutes, no tools needed.</li></ul>",
         "reserved": false,
         "soldout": false
+      }
+    },
+    "purchase-form-landing": {
+      "type": "purchase-form-landing",
+      "blocks": {
+        "subscription_6xp1uL": {
+          "type": "subscription",
+          "settings": {
+            "subscription_onetime_text": "",
+            "subscription_days_text": "Receive a new Filter Refill",
+            "subscription_discount_percent": 30,
+            "onetime_text": "Qure Faucet Filter"
+          }
+        },
+        "nextships_4xp7uM": {
+          "type": "nextships",
+          "settings": {
+            "date": "25 September",
+            "percent": 55,
+            "date_soldout": "28 July",
+            "date_reserved": "3 August"
+          }
+        },
+        "type_hHPdgJ": {
+          "type": "type",
+          "settings": {}
+        },
+        "product_type_QKQhNr": {
+          "type": "product_type",
+          "settings": {
+            "heading": "Colors",
+            "preselected": false
+          }
+        },
+        "product_gbPf3J": {
+          "type": "product",
+          "settings": {
+            "product": "shower-filter",
+            "product_variant_id": 46010772652271,
+            "product_selling_plan": 6286082287,
+            "preselected": true,
+            "heading": "White",
+            "subheading": "",
+            "image": "shopify://shop_images/cartiage-1.webp",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        },
+        "product_NEgEkN": {
+          "type": "product",
+          "settings": {
+            "product": "shower-filter",
+            "product_variant_id": 46010772685039,
+            "product_selling_plan": 6286082287,
+            "preselected": false,
+            "heading": "Black",
+            "subheading": "",
+            "image": "shopify://shop_images/cartiage-2.webp",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        }
+      },
+      "block_order": [
+        "subscription_6xp1uL",
+        "nextships_4xp7uM",
+        "type_hHPdgJ",
+        "product_type_QKQhNr",
+        "product_gbPf3J",
+        "product_NEgEkN"
+      ],
+      "settings": {
+        "form_name": "purchase-form-landing",
+        "hide_types": true,
+        "type": "variant"
       }
     },
     "information_about_water_yr3S8H": {
@@ -282,6 +368,7 @@
       "settings": {
         "background_color": "",
         "heading": "The results are crystal clear",
+        "text": "",
         "text_mobile": "",
         "button_label": "",
         "button_url": ""
@@ -444,6 +531,7 @@
       ],
       "name": "t:common.carousel",
       "settings": {
+        "background_color": "#f6f6f7",
         "display_mode": "both"
       }
     },
@@ -630,23 +718,43 @@
         "heading": "Have questions?",
         "text": "",
         "button_label": "Ask us",
-        "button_url": ""
+        "button_url": "https://qureskincare.com/pages/contact-us"
       }
     },
     "sticky_cta_6UGJ8F": {
-      "type": "sticky-cta",
-      "name": "t:sections.sticky-cta.name",
+      "type": "sticky-button-variants",
+      "blocks": {
+        "variant_43xxGi": {
+          "type": "variant",
+          "settings": {
+            "heading": "White",
+            "image": "shopify://shop_images/white_swatch.webp"
+          }
+        },
+        "variant_45xfGi": {
+          "type": "variant",
+          "settings": {
+            "heading": "Black",
+            "image": "shopify://shop_images/black_swatch.webp"
+          }
+        }
+      },
+      "block_order": [
+        "variant_43xxGi",
+        "variant_45xfGi"
+      ],
+      "name": "t:sections.sticky-button-variants.name",
       "settings": {
-        "cta-mode": "patches",
         "heading": "",
         "text": "580 Units Reserved in last 48 hours",
-        "button-label": "Subscribe & Save 30%",
-        "button-url": "#buy_box"
+        "button-label": "Subscribe & Save",
+        "button-url": ""
       }
     }
   },
   "order": [
     "product_header_5nXYyf",
+    "purchase-form-landing",
     "information_about_water_yr3S8H",
     "banner_with_text_ieNfDr",
     "improve_skin_hydration_w3fbDY",

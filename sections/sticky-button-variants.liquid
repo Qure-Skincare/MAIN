@@ -9,7 +9,7 @@
                     {% for block in section.blocks %}
                         {% assign product_type_title = block.settings.heading | strip_newlines | strip | replace: ' ', '' | downcase %}
                         <div class="patch__value-pack">
-                            <input type="radio" class="vp__input sticky__input" name="vaule-pack" id="{{ num }}-months-cta" data-id="{{ product_type_title }}">
+                            <input type="radio" class="vp__input sticky__input" name="vaule-pack" id="{{ num }}-months-cta" data-id="{{ product_type_title }}"{% if num == section.blocks.size %}checked{% endif %}>
                             <label for="{{ num }}-months-cta" class="vp-pack-cta px-12 py-8 d-flex align-items-center gap-2">
                                 {% if block.settings.image != blank %}
                                     <div class="vp-img">
@@ -55,9 +55,7 @@
                 <input type="hidden" name="properties[Duration]" id="selectedDuration" value="{{ product_type_title }}">
             </div>
 
-            {% if section.settings.button-label != blank %}
-                <a href="{% if section.settings.button-url != blank %}{{ section.settings.button-url }}{% else %}javascript:;{% endif %}" class="add-cart-button add-cart-sticky-button btn btn--primary fs-11 fs-md-20 px-10 mw" style="--mw-mob:170px">{% if section.settings.button-label != blank %}{{ section.settings.button-label }}{% else %}{{ 'product.settings.buy-button-label' | t }}{% endif %}</a>
-            {% endif %}
+            <a href="{% if section.settings.button-url != blank %}{{ section.settings.button-url }}{% else %}javascript:;{% endif %}" class="add-cart-button add-cart-sticky-button btn btn--primary fs-11 fs-md-20 px-10 mw" style="--mw-mob:170px">{% if section.settings.button-label != blank %}{{ section.settings.button-label }}{% else %}{{ 'product.settings.buy-button-label' | t }}{% endif %}</a>
         </div>
     </div>
     <div

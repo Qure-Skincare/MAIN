@@ -12,7 +12,13 @@
 
 {% assign reserved = null %}
 {% assign soldout = null %}
-{% capture button-label %}{{ 'product.settings.buy-button-label' | t }} – {{ product_price }}{% endcapture %}
+
+{% if product_price != null %}
+  {% capture button-label %}{{ 'product.settings.buy-button-label' | t }} – {{ product_price }}{% endcapture %}
+{% else %}
+  {% capture button-label %}{{ 'product.settings.buy-button-label' | t }}{% endcapture %}
+{% endif %}
+
 
 {% if section != blank %}
   {% if section.settings.reserved != blank %}

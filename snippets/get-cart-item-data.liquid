@@ -29,6 +29,8 @@
     {% assign cart_item_selling_plan = null %}
     {% assign cart_item_selling_plan_name = null %}
     {% assign selling_plan_exists = null %}
+    {% assign cart_item_final_price = null %}
+    {% assign discount_exists = null %}
 
 
 
@@ -43,6 +45,7 @@
     {% assign cart_item_url = item.url %}
     {% assign cart_item_image = item.image %}
     {% assign cart_item_properties = item.properties %}
+    {% assign cart_item_final_price = item.final_price %}
     {% assign cart_item_price = item.variant.price | times: item.quantity %}
     {% assign cart_item_compare_price = item.variant.compare_at_price | times: item.quantity %}
     {% assign cart_item_selling_plan = item.selling_plan_allocation %}
@@ -68,6 +71,12 @@
     {% endif %}
 
 
+    {% comment %} discount {% endcomment %}
+    {% if cart_item_final_price == 0 %}
+      {% assign discount_exists = true %}
+      {% assign cart_item_compare_price = cart_item_price %}
+      {% assign cart_item_price = 0 %}
+    {% endif %}
 
     {% comment %} item properties {% endcomment %}
 
@@ -86,6 +95,11 @@
       {% assign cart_item_before_price = cart_item_selling_plan.compare_at_price | money_without_trailing_zeros %}
       {% assign cart_item_price = cart_item_selling_plan.price %}
       {% assign cart_item_sale_price = cart_item_selling_plan.price | money_without_trailing_zeros %}
+
+      {% if cart_item_compare_price == cart_item_price %}
+        {% assign cart_item_before_price = blank %}
+      {% endif %}
+
     {% endif %}
 
 

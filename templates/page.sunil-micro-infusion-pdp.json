@@ -316,7 +316,7 @@
       "settings": {
         "form_name": "purchase-form-landing",
         "hide_types": false,
-        "style": "box"
+        "type": "box"
       }
     },
     "slider_featured_in_qHHg4W": {
@@ -498,7 +498,7 @@
       "name": "t:sections.proven-results.name",
       "settings": {
         "heading": "No hype, just evidence",
-        "text": "<p>The results speak for themselves. In an independent user study, participants' skin was measured and showed proven visible improvement after just 6 treatments.</p>",
+        "text": "<p>The results speak for themselves. In an independent user study, participants' skin was measured and showed proven visible improvement after just 6 treatments.<br/><br/><em>Tested by an independent lab, compiled by Regulatory Consultants</em></p>",
         "button_label": "",
         "button_url": ""
       }
@@ -667,6 +667,7 @@
       "settings": {
         "background_color": "",
         "heading": "Results you’ll see with your own eyes",
+        "text": "",
         "text_mobile": "",
         "button_label": "",
         "button_url": ""
@@ -805,6 +806,7 @@
       ],
       "name": "t:common.carousel",
       "settings": {
+        "background_color": "#f6f6f7",
         "display_mode": "both"
       }
     },
@@ -1371,7 +1373,7 @@
         "product_RBCPe8"
       ],
       "settings": {
-        "style": "box",
+        "type": "box",
         "heading": "Choose your treatment",
         "text": "All orders are one-time purchases. No extra charges, and no hidden fees.",
         "image": "shopify://shop_images/tami-cropped.webp",
@@ -1479,14 +1481,13 @@
         "heading": "Have questions?",
         "text": "Don’t see your question?",
         "button_label": "Ask us",
-        "button_url": ""
+        "button_url": "https://qureskincare.com/pages/contact-us"
       }
     },
     "sticky_cta_KCAhq3": {
-      "type": "sticky-cta",
-      "name": "t:sections.sticky-cta.name",
+      "type": "sticky-button",
+      "name": "t:sections.sticky-button.name",
       "settings": {
-        "cta-mode": "default",
         "heading": "Micro-Infusion Facial System",
         "text": "1,893 purchased in last 48 hours",
         "button-label": "CHOOSE YOUR SUPPLY",

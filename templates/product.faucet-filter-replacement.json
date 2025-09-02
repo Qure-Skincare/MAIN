@@ -9,9 +9,166 @@
  */
 {
   "sections": {
-    "main": {
-      "type": "product-faucet-filter-replacement",
-      "settings": {}
+    "product_header_FnMCMD": {
+      "type": "product-header",
+      "blocks": {
+        "description_9VBwaX": {
+          "type": "description",
+          "settings": {}
+        },
+        "section_A0": {
+          "type": "section",
+          "settings": {
+            "section_id": "purchase-form-landing"
+          }
+        },
+        "nextships_nN4CpM": {
+          "type": "nextships",
+          "disabled": true,
+          "settings": {
+            "date": "25 September",
+            "percent": 55,
+            "date_soldout": "28 July",
+            "date_reserved": "3 August"
+          }
+        },
+        "jumpto_jzQqUH": {
+          "type": "jumpto",
+          "settings": {
+            "button-label": "The Results",
+            "button-url": "#improve_skin"
+          }
+        },
+        "jumpto_RKQfLC": {
+          "type": "jumpto",
+          "settings": {
+            "button-label": "Reviews",
+            "button-url": "#trusted-reviews"
+          }
+        },
+        "jumpto_7JzPHz": {
+          "type": "jumpto",
+          "settings": {
+            "button-label": "How To Use",
+            "button-url": "#how_to_use"
+          }
+        },
+        "jumpto_EY6mqw": {
+          "type": "jumpto",
+          "settings": {
+            "button-label": "How It Works",
+            "button-url": "#why_it_works"
+          }
+        },
+        "jumpto_YV6XMK": {
+          "type": "jumpto",
+          "settings": {
+            "button-label": "FAQs",
+            "button-url": "#faq"
+          }
+        }
+      },
+      "block_order": [
+        "description_9VBwaX",
+        "section_A0",
+        "nextships_nN4CpM",
+        "jumpto_jzQqUH",
+        "jumpto_RKQfLC",
+        "jumpto_7JzPHz",
+        "jumpto_EY6mqw",
+        "jumpto_YV6XMK"
+      ],
+      "name": "t:sections.product-header.name",
+      "settings": {
+        "seo_heading": "FAUCET FILTER REFILL CARTRIDGER",
+        "heading": "Keep the good skin flowing with the Faucet Filter Refill",
+        "description": "<ul><li>Qure Faucet Filter Refill cartridge provides up to 3 months or 13,000 liters of purified, filtered water.</li><li>Reduces up to 99% of common skin irritants, including chlorine, calcium, and magnesium, from tap water.</li><li>Easy to refill, only 2 minutes, no tools needed.</li></ul>",
+        "reserved": false,
+        "soldout": false
+      }
+    },
+    "purchase-form-landing": {
+      "type": "purchase-form-landing",
+      "blocks": {
+        "subscription_6xp1uL": {
+          "type": "subscription",
+          "settings": {
+            "subscription_onetime_text": "",
+            "subscription_days_text": "Receive a new Filter Refill",
+            "subscription_discount_percent": 30,
+            "onetime_text": ""
+          }
+        },
+        "nextships_4xp7uM": {
+          "type": "nextships",
+          "settings": {
+            "date": "25 September",
+            "percent": 55,
+            "date_soldout": "28 July",
+            "date_reserved": "3 August"
+          }
+        },
+        "type_hHPdgJ": {
+          "type": "type",
+          "settings": {}
+        },
+        "product_type_QKQhNr": {
+          "type": "product_type",
+          "settings": {
+            "heading": "Colors",
+            "preselected": false
+          }
+        },
+        "product_gbPf3J": {
+          "type": "product",
+          "settings": {
+            "product": "shower-filter",
+            "product_variant_id": 45852989653231,
+            "product_selling_plan": 6180143343,
+            "preselected": true,
+            "heading": "White",
+            "subheading": "",
+            "image": "shopify://shop_images/faucet_refill-w.webp",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "25 july",
+            "preorder_date_reserved": "50 may",
+            "preorder_percent": 55
+          }
+        },
+        "product_NEgEkN": {
+          "type": "product",
+          "settings": {
+            "product": "shower-filter",
+            "product_variant_id": 45852989620463,
+            "product_selling_plan": 6180143343,
+            "preselected": false,
+            "heading": "Black",
+            "subheading": "",
+            "image": "shopify://shop_images/faucet_refill-b.webp",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        }
+      },
+      "block_order": [
+        "subscription_6xp1uL",
+        "nextships_4xp7uM",
+        "type_hHPdgJ",
+        "product_type_QKQhNr",
+        "product_gbPf3J",
+        "product_NEgEkN"
+      ],
+      "settings": {
+        "form_name": "purchase-form-landing",
+        "hide_types": true,
+        "type": "variant"
+      }
     },
     "information_about_water_QHm8d8": {
       "type": "information-about-water",
@@ -183,6 +340,7 @@
       "settings": {
         "background_color": "",
         "heading": "The results are crystal clear",
+        "text": "",
         "text_mobile": "",
         "button_label": "",
         "button_url": ""
@@ -260,7 +418,6 @@
           "settings": {
             "heading": "Carbon Fiber Layer",
             "text": "<p>Removes up to 99% of chlorine, reducing skin irritation and dryness, leaving your skin and hair healthier.</p>",
-            "image-with-text": "shopify://shop_images/carbon.svg",
             "image": "shopify://shop_images/filter_cartiage1.webp"
           }
         },
@@ -269,7 +426,6 @@
           "settings": {
             "heading": "PP Filter",
             "text": "<p>Captures larger particles such as dirt, rust, and sediment, providing the first stage of filtration.</p>",
-            "image-with-text": "shopify://shop_images/KDF.svg",
             "image": "shopify://shop_images/filter_cartiage2.webp"
           }
         },
@@ -278,7 +434,6 @@
           "settings": {
             "heading": "NOK Ultra Filter",
             "text": "<p>Japan-made, top-range ultra-filter that reduces microscopic particles, including bacteria and some viruses, down to 0.01μm for enhanced purification.</p>",
-            "image-with-text": "shopify://shop_images/FOF1.svg",
             "image": "shopify://shop_images/filter_cartiage3.webp"
           }
         },
@@ -287,21 +442,16 @@
           "settings": {
             "heading": "ASP-Descaler",
             "text": "<p>Reduces limescale buildup by preventing the accumulation of hard water minerals, helping to protect your shower system.</p>",
-            "image-with-text": "shopify://shop_images/asp.svg",
             "image": "shopify://shop_images/filter_cartiage4.webp"
           }
         },
         "items_Bk8DAe": {
           "type": "items",
           "settings": {
-            "text-item-1": "Carbon Fiber Layer",
-            "image-1": "shopify://shop_images/filter_cartiage1.webp",
-            "text-item-2": "PP Filter",
-            "image-2": "shopify://shop_images/filter_cartiage2.webp",
-            "text-item-3": "NOK Ultra Filter",
-            "image-3": "shopify://shop_images/filter_cartiage3.webp",
-            "text-item-4": "ASP-Descaler",
-            "image-4": "shopify://shop_images/filter_cartiage4.webp"
+            "text_item_1": "",
+            "text_item_2": "",
+            "text_item_3": "",
+            "text_item_4": ""
           }
         }
       },
@@ -316,7 +466,8 @@
       "settings": {
         "heading": "Why It Works",
         "text": "<p>Our triple filtration technology filters the water to remove heavy metals and purify.</p>",
-        "image": "shopify://shop_images/filter_cartiage0.webp"
+        "image": "shopify://shop_images/filter_cartiage0.webp",
+        "checkbox": false
       }
     },
     "video_review_slider_Bgi9Ab": {
@@ -426,7 +577,10 @@
         "items_KLcq7U"
       ],
       "name": "t:common.carousel",
-      "settings": {}
+      "settings": {
+        "background_color": "#f6f6f7",
+        "display_mode": "both"
+      }
     },
     "how_to_use_HBy7NB": {
       "type": "how-to-use",
@@ -636,19 +790,39 @@
       }
     },
     "sticky_cta_BrchB7": {
-      "type": "sticky-cta",
-      "name": "t:sections.sticky-cta.name",
+      "type": "sticky-button-variants",
+      "blocks": {
+        "variant_43xxGi": {
+          "type": "variant",
+          "settings": {
+            "heading": "White",
+            "image": "shopify://shop_images/white_swatch.webp"
+          }
+        },
+        "variant_45xfGi": {
+          "type": "variant",
+          "settings": {
+            "heading": "Black",
+            "image": "shopify://shop_images/black_swatch.webp"
+          }
+        }
+      },
+      "block_order": [
+        "variant_43xxGi",
+        "variant_45xfGi"
+      ],
+      "name": "t:sections.sticky-button-variants.name",
       "settings": {
-        "cta-mode": "patches",
         "heading": "",
         "text": "580 Units Reserved in last 48 hours",
-        "button-label": "Subscribe & Save 30%",
-        "button-url": "#buy_box"
+        "button-label": "Subscribe & Save",
+        "button-url": ""
       }
     }
   },
   "order": [
-    "main",
+    "product_header_FnMCMD",
+    "purchase-form-landing",
     "information_about_water_QHm8d8",
     "banner_with_text_kcnLnP",
     "improve_skin_hydration_e8i3th",

@@ -1,0 +1,154 @@
+{% doc %}
+  Renders a collection section
+{% enddoc %}
+
+<!--Breadcrumbs-->
+<div class="qure_breadcrumbs qure__section"
+    style="--section-padding-top:60px;--section-padding-bottom:10px; --section-padding-bottom-mob:10px;">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb fs-16 mb-0" style="--base-color:#212428;">
+                <li class="breadcrumb-item"><a href="{{ shop.url }}">{{ 'breadcrumb.home' | t }}</a></li>
+                <li class="breadcrumb-item active" style="--bs-breadcrumb-item-active-color:#212428;" aria-current="page">{{ collection.title }}</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<!--Breadcrumbs end-->
+<link rel="stylesheet"
+    href="https://qureskincaredns-main.com/sections/isolated/collection-block/section-collection-block.css">
+<div class="collection_block qure__section" style="--section-padding-top:10px; --section-padding-top-mob:10px;">
+    <div class="container">
+        <div class="collection_content">
+            <div
+                class="d-flex flex-wrap flex-md-nowrap justify-content-between gap-10 align-items-center mb-md-50 mb-40 fs-16">
+                <p class="ctm-width mb-15" style="--ctm-width: 80px; --ctm-width-mob: 60px;">{{ 'sections.collection.shopby' | t }}</p>
+                <ul class="filters qure_tabs">
+                    {% for link in linklists['collection'].links %}
+                        <li><button class="filter{% if link.active %} active{% endif %}" onclick="window.location.href='{{ link.url }}'">{{ link.title }}</button></li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="row projects custom__grid" style="--column-gap:32px; --column-gap-mobile:16px;">
+                {% for product in collection.products %}
+
+                    {% include 'collection-cards', position: forloop.index, section: section %}
+
+                    {% include 'get-product-data', product_handle: product.handle, product_prefix: 'collection' %}
+
+                    {% if product_handle contains 'micro-infusion' %}
+                        {% assign product_url = '/pages/microinfusion' %}
+                    {% endif %}
+
+                    <div class="col-6 col-md-3 custom__block project">
+                        <div class="qure__product-item">
+                            <a href="{{ product_url }}" aria-label="{{ product_title }}" class="qure__product-img overflow-hidden position-relative d-block">
+                                {% if product.featured_image != blank %}
+                                    <div class="qure__product-main-img">
+                                        <img src="{{ product.featured_image | img_url: '720x' }}" alt="{{ product.featured_image.alt | escape }}" />
+                                    </div>                                    
+                                {% endif %}
+                                {% for tag in product_tags %}
+                                    {% if tag contains 'Best Seller' %}
+                                        <div class="badge rounded-pill badge-bestseller">{{ 'sections.collection.bestseller' | t }}</div>
+                                    {% endif %}
+                                {% endfor %}
+                            </a>
+                            <div class="qure__product-details">
+                                {% render 'collection-product-rating', product: product %}
+
+                                <h3 class="fm-body mb-0 qure__product-name">
+                                    <a class="limited-line capitalize d-block" href="{{ product_url }}" aria-label="{{ product_title }}">{{ product_title }}</a>
+                                </h3>
+                                
+                                {% if product_before_price != blank %}
+                                    <div class="bef_price text-decoration-line-through">{{ product_before_price }}</div>
+                                {% endif %}
+
+                                <div class="qure__product-price">{{ product_sale_price }}</div>
+                            </div>
+
+                            {% render 'product-page-buy-button', product_price: null, product_variant_id: product_variant_id, section: blank %}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    loadScriptOnce('section-collection-block', 'https://qureskincaredns-main.com/sections/isolated/collection-block/section-collection-block.js');
+  });
+</script>
+
+{% schema %}
+{
+    "name": "t:sections.collection.name",
+    "settings": [],
+    "blocks": [
+        {
+            "type": "product-item",
+            "name": "t:common.product-item",
+            "limit": 3,
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                },
+                {
+                    "type": "text",
+                    "id": "text",
+                    "label": "t:common.text"
+                },
+                {
+                    "type": "text",
+                    "id": "client",
+                    "label": "t:common.client"
+                },
+                {
+                    "type": "text",
+                    "id": "text_mobile",
+                    "label": "t:common.text_mobile"
+                },
+                {
+                    "type": "product",
+                    "id": "product",
+                    "label": "t:common.product"
+                },
+                {
+                    "type": "number",
+                    "id": "position",
+                    "label": "t:common.position",
+                    "default": 0
+                }
+            ]
+        },
+        {
+            "type": "brand-item",
+            "name": "t:common.brand-item",
+            "limit": 3,
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                },
+                {
+                    "type": "url",
+                    "id": "button-url",
+                    "label": "t:common.button-url"
+                },
+                {
+                    "type": "number",
+                    "id": "position",
+                    "label": "t:common.position",
+                    "default": 0
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}

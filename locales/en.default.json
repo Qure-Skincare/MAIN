@@ -9,6 +9,11 @@
  */
 {
   "sections": {
+    "collection": {
+      "bestseller": "Bestseller",
+      "shopby": "Shop by",
+      "uses": "uses..."
+    },
     "slider-featured-in": {
       "featured_text": "FEATURED IN"
     },
@@ -92,19 +97,10 @@
       "verified_text": "Verified",
       "review_image": "https://qureskincaredns-main.com/assets/images/reviewCheck.svg"
     },
-    "sticky-cta": {
-      "select_color_text": "Select Color",
-      "white_swatch_image": "https://qureskincaredns-main.com/sections/isolated/sticky-cta/images/white_swatch.webp",
-      "black_swatch_image": "https://qureskincaredns-main.com/sections/isolated/sticky-cta/images/black_swatch.webp",
-      "silver_swatch_image": "https://qureskincaredns-main.com/sections/isolated/sticky-cta/images/silver_swatch.webp",
-      "black_text": "Black",
-      "white_text": "White",
-      "silver_text": "Silver"
-    },
     "sticky-button-variants": {
-      "select_color": "Select Color"
+      "select_color": "Select Option:"
     },
-    "page-qure-filters-form": {
+    "page-qure-filters-offer-form": {
       "settings": {
         "limited": "Limited Time Offer",
         "header": "Qure Shower Filter",
@@ -124,19 +120,48 @@
         "delivery_terms": "New filters auto-ship every 90 days.",
         "one_time_purchase_html": "One-Time Purchase <span class='qure__product-label'>SAVE 35%</span>",
         "button_label": "Buy now",
-        "button_label_save": "Subscribe Now & Save 50%",
+        "button_label_save": "Subscribe Now & Save",
         "waranty_html": "<strong class='fw-600'>Covered by our Lifetime Warranty. </strong><br> Backed by our 30-Day Money-Back Guarantee.",
         "dermatologist": "Dermatologist Reviewed",
         "shipping": "Free Shipping over $100",
         "science": "Backed by Science",
-        "discount_text": "% OFF",
+        "discount_text": "OFF",
         "more_details_html": "<strong class='fw-600'>Skip pause/modify or cancel anytime.</strong> <br> <a href='' class='text-black text-decoration-underline'> See more details</a>."
+      }
+    },
+    "page-led-mask-offer-2-led-mask-form": {
+      "settings": {
+        "limited": "End Of Summer Offer",
+        "header": "Q-Rejuvalight Pro LED Mask",
+        "subheader": "+ FREE Neck & Décolletage LED Device",
+        "warranty": "Lifetime Warranty",
+        "fda": "FDA Cleared",
+        "text": "Repair and rejuvenate your skin with our FDA-cleared LED mask that treats acne, fine lines, wrinkles and dark spots.",
+        "included": "What’s Included:",
+        "product1-header": "Q-Rejuvalight Pro LED Mask",
+        "product1-description": "FDA-cleared device that treats acne, fine lines, wrinkles and dark spots.",
+        "product2-header": "Neck & Décolletage LED Device",
+        "product2-description": "Clinically proven to smooth and firm where aging shows first.",
+        "instant-saving": "INSTANT SAVINGS:",
+        "low-stock": "Low Stock",
+        "low-stock-text": "Due to high demand, this offer is only available while stock lasts.",
+        "order-today": " Order today to lock in your deal and get FREE Shipping",
+        "button-label": "Save Now & Save $299",
+        "guarantee-text": "1-Year Guarantee",
+        "shipping-text": "Free Shipping over $100",
+        "free": "FREE",
+        "discount-text": "% OFF",
+        "sold": "Sold",
+        "percent": "82%"
       }
     },
     "before-after-accordion": {
       "verified_text": "Verified",
       "review_image": "https://qureskincaredns-main.com/assets/images/reviewCheck.svg"
     }
+  },
+  "breadcrumb": {
+    "home": "Home"
   },
   "general": {
     "page": "Page {{ page }}",
@@ -147,6 +172,12 @@
       "jumpto": {
         "header": "Jump To"
       }
+    },
+    "exclusive-offer": {
+      "header_html": "<div class='eo-header'><span>End Of Summer</span><span>offer</span></div>",
+      "guarantee-text": "1-Year Guarantee",
+      "shipping-text": "Free Shipping over $100",
+      "free": "FREE"
     }
   },
   "product": {
@@ -291,6 +322,7 @@
       "buy-button-label": "Buy Now",
       "subscribe-button-label": "Subscribe Now",
       "subscribe-and-save-button-label": "Subscribe Now & Save {{ value }}%",
+      "reserve-and-save-button-label": "Reserve Now & Save {{ value }}%",
       "reserve-button-label": "Reserve Now",
       "soldout-button-label": "Sold Out",
       "select-type": "Select Your Serum:",
@@ -301,7 +333,7 @@
       "save": "Save",
       "off": "OFF",
       "best": "Best Value",
-      "subscribe" : "Subscribe",
+      "subscribe": "Subscribe",
       "payment-option": "Select A Payment Option",
       "pay-full": "Pay in full",
       "onetime": "One-Time Purchase",

@@ -1126,7 +1126,7 @@
         "product_RBCPe8"
       ],
       "settings": {
-        "style": "list",
+        "type": "list",
         "heading": "Choose your treatment",
         "text": "All orders are one-time purchases. No extra charges, and no hidden fees.",
         "image": "shopify://shop_images/tami-cropped.webp",
@@ -1309,10 +1309,9 @@
       }
     },
     "sticky_cta_yKcXPF": {
-      "type": "sticky-cta",
-      "name": "t:sections.sticky-cta.name",
+      "type": "sticky-button",
+      "name": "t:sections.sticky-button.name",
       "settings": {
-        "cta-mode": "default",
         "heading": "Micro-Infusion Facial System",
         "text": "393 purchased in last 48 hours",
         "button-label": "BUY NOW & SAVE UP TO 43%",

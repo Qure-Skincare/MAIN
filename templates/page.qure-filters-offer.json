@@ -477,7 +477,7 @@
       }
     },
     "form": {
-      "type": "page-qure-filters-form",
+      "type": "page-qure-filters-offer-form",
       "settings": {}
     },
     "video_review_slider_yBjMTk": {
@@ -766,6 +766,36 @@
         "button_label": "Ask us",
         "button_url": ""
       }
+    },
+    "sticky_cta_SrchB9": {
+      "type": "sticky-button-variants",
+      "blocks": {
+        "variant_43xxGi": {
+          "type": "variant",
+          "settings": {
+            "heading": "White",
+            "image": "shopify://shop_images/white_swatch.webp"
+          }
+        },
+        "variant_45xfGi": {
+          "type": "variant",
+          "settings": {
+            "heading": "Black",
+            "image": "shopify://shop_images/black_swatch.webp"
+          }
+        }
+      },
+      "block_order": [
+        "variant_43xxGi",
+        "variant_45xfGi"
+      ],
+      "name": "t:sections.sticky-button-variants.name",
+      "settings": {
+        "heading": "",
+        "text": "580 Units Reserved in last 48 hours",
+        "button-label": "Buy Now",
+        "button-url": ""
+      }
     }
   },
   "order": [
@@ -784,6 +814,7 @@
     "qure_filters_offer_comparison_real_fake_FJifqy",
     "information_about_water_BDVnVm",
     "featured_product_bundle_fGtC93",
-    "faq_dyCjhg"
+    "faq_dyCjhg",
+    "sticky_cta_SrchB9"
   ]
 }

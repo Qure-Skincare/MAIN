@@ -1027,10 +1027,9 @@
       }
     },
     "sticky_cta_d9dC8X": {
-      "type": "sticky-cta",
-      "name": "t:sections.sticky-cta.name",
+      "type": "sticky-button",
+      "name": "t:sections.sticky-button.name",
       "settings": {
-        "cta-mode": "default",
         "heading": "Transform dull looking skin with Micro-Infusion Facial System",
         "text": "1,293 purchased in last 48 hours",
         "button-label": "BUY NOW & SAVE UP TO 43%",

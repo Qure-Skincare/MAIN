@@ -13,12 +13,12 @@
       "type": "page-banner",
       "name": "t:sections.page-banner.name",
       "settings": {
-        "heading": "Shop our best sellers",
+        "heading": "Breakouts & Acne",
         "text": "",
         "sub_text": "",
-        "button": "Shop All Best Sellers",
+        "button": "Breakouts & Acne",
         "button_url": "",
-        "button_mobile": "Shop Best Sellers",
+        "button_mobile": "Breakouts & Acne",
         "button_url_mobile": "",
         "image": "shopify://shop_images/best-seller-banner.webp",
         "image_mobile": "shopify://shop_images/best-seller-banner-mob.webp"
@@ -71,31 +71,6 @@
     "collection_fXMjkJ": {
       "type": "collection",
       "name": "t:sections.collection.name",
-      "blocks": {
-        "product_item_Ub9bKD": {
-          "type": "product-item",
-          "settings": {
-            "image": "shopify://shop_images/pd-review.webp",
-            "client": "Ela",
-            "text": "I’m shocked at the results after just one treatment! My skin looks so clear, glowy, and healthy.",
-            "text_mobile": "I’m shocked at the results after just one treatment!",
-            "product": "micro-infusion-3-month-bundle-6x-beta-glucan-serum",
-            "position": 1
-          }
-        },
-        "brand_item_Ub7bKD": {
-          "type": "brand-item",
-          "settings": {
-            "image": "shopify://shop_images/mask_card.webp",
-            "button-url": "#",
-            "position": 6
-          }
-        }
-      },
-      "block_order": [
-        "product_item_Ub9bKD",
-        "brand_item_Ub7bKD"
-      ],
       "settings": {}
     },
     "bundle_banner_zWkqBN": {

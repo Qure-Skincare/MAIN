@@ -1,8 +1,10 @@
 {% doc %}
   Renders a product rating snippet for the product-header section.
 
+  @param {object} product - A string value.
+
   @example
-  {% render 'product-rating' %}
+  {% render 'product-rating', product: '' %}
 {% enddoc %}
 
 {% assign rating_value = product.metafields.reviews.rating.value %}
