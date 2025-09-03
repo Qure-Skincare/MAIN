@@ -269,7 +269,7 @@
         "header": "Shopping Cart",
         "empty-header": "Your cart is currently empty",
         "empty-text": "Before proceed to checkout you must add some products to your shopping cart.",
-        "empty-button_html": "<a href='{{ button_link }}' class='btn btn--primary'>Start Shopping</a>",
+        "empty-button_html": "<a href='https://qureskincare.com/pages/exclusive-holiday-bundle-deal-new' class='btn btn--primary'>Start Shopping</a>",
         "product": "Product",
         "quantity": "Quantity",
         "price": "Price",
@@ -426,7 +426,7 @@
       "bundles": "Bundles",
       "dermatologist": "Dermatologist Reviewed",
       "shipping-text": "Free Shipping over $100",
-      "recommended_html": "<strong>50+ Board Certified Dermatologists</strong> recommend Qure to their patients. <a href='https://qureskincare.com/pages/derm-reviews' class='text-black text-decoration-underline'>See More</a>.",
+      "recommended_html": "<strong>50+ Board Certified Dermatologists</strong> recommend Qure to their patients. <a href='https://qureskincare.com/pages/derm-reviews' class='text-black text-decoration-underline'>See More</a>."
     }
   },
   "header": {
