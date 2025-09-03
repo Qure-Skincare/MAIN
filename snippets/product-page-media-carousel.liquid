@@ -23,6 +23,8 @@
 
     {% for media in input_media_carousel.image_or_video.value %}
         {% assign index = forloop.index0 %}
+        {% assign title = media |  replace: 'files/', '' | replace: '.webp', '' %}
+
         {% if media.media_type == 'video' %}
             {% if media.sources[1].url != blank %}
                 {% assign video_source_url = media.sources[1].url %}
@@ -33,7 +35,7 @@
                 <div class="play_btn">
                     <a class="popup-youtube lvideo" data-url="{{ video_source_url }}">
                         <span class="justify-content-center">
-                            <img src="{{ media | img_url: size }}" alt="{{ media.alt | escape }}" class="img-fluid">
+                            <img src="{{ media | img_url: size }}" alt="{{ title }}" data-product-handle="{{ title | escape }}" class="img-fluid">
                         </span>
                     </a>
                 </div>
@@ -43,14 +45,14 @@
                  <div class="swiper-slide">
                     <div class="trusted_video_card"> 
                         <a href="#" data-bs-toggle="modal" data-bs-target="#reusableWistiaModal" data-video-id="{{ objects_array[index] }}" class="filter-card-item filter-card-video slide-image">
-                            <img src="{{ media | img_url: size }}" alt="{{ media.alt | escape }}" class="img-fluid" />
+                            <img src="{{ media | img_url: size }}" alt="{{ title }}" data-product-handle="{{ title | escape }}" class="img-fluid" />
                         </a>
                     </div>
                 </div>
             {% else %}
                 <div class="swiper-slide">
                     <div class="{{ classname }}">
-                        <img src="{{ media | img_url: size }}" alt="{{ media.alt | escape }}" class="img-fluid" />
+                        <img src="{{ media | img_url: size }}" alt="{{ title }}" data-product-handle="{{ title | escape }}" class="img-fluid" />
                     </div>
                 </div>
             {% endif %}

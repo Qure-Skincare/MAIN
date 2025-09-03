@@ -295,6 +295,9 @@
         "page-header": {
             "name": "Page header"
         },
+        "bundle-header": {
+            "name": "Bundle header"
+        },
         "device-comparison": {
             "name": "Compare products with Competitors"
         },

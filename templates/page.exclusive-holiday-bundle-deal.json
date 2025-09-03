@@ -9,10 +9,18 @@
  */
 {
   "sections": {
-    "page_exclusive_holiday_bundle_deal_buy_box_fXqLwY": {
-      "type": "page-exclusive-holiday-bundle-deal-buy-box",
+    "bundle-header": {
+      "type": "bundle-header",
       "name": "t:common.buy-box",
-      "settings": {}
+      "custom_css": [
+        ".desktop-slider { margin-top: -100px !important; }"
+      ],
+      "settings": {
+        "heading": "Save Up to 55% on Certified Skincare Solutions",
+        "description": "<p>Backed by the most respected peer-reviewed Dermatologist Journals and scientific studies that prove; Qure’s skincare works.</p>",
+        "button-label": "SHOP & SAVE UP TO 55%",
+        "button-url": "#purchase-form-bundle"
+      }
     },
     "carousel_BHi3nq": {
       "type": "carousel",
@@ -200,12 +208,6 @@
         "rating_text": "<p>200,000+ Confident Customers</p>",
         "trating_image": "shopify://shop_images/stars_d8d678e4-b245-4e2a-bf95-2e655cd1cd17.svg"
       }
-    },
-    "page_exclusive_holiday_bundle_deal_offer_bundle_HUk6nX": {
-      "disabled": true,
-      "type": "page-exclusive-holiday-bundle-deal-offer-bundle",
-      "name": "t:common.bundle",
-      "settings": {}
     },
     "purchase_form_bundle_Lj9cVS": {
       "type": "purchase-form-bundle",
@@ -893,11 +895,10 @@
     }
   },
   "order": [
-    "page_exclusive_holiday_bundle_deal_buy_box_fXqLwY",
+    "bundle-header",
     "carousel_BHi3nq",
     "slider_featured_in_RUfV4m",
     "page_exclusive_holiday_bundle_trusted_reviews_img_kCfC33",
-    "page_exclusive_holiday_bundle_deal_offer_bundle_HUk6nX",
     "purchase_form_bundle_Lj9cVS",
     "quiz_V6p9AW",
     "trusted_reviews_9WdXCj",

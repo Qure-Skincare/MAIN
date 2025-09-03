@@ -187,7 +187,7 @@
       "soldout-button-label": "Sold Out",
       "buy-button-bottom": {
         "heading_html": "OR pay 4 monthly payments of <span class='pay_today'>{{ product_price_divided }}</span> with",
-        "recommended_html": "<strong>50+ Board Certified Dermatologists</strong> recommend Qure to their patients. <a href='{{ button_link }}' class='text-black text-decoration-underline'>See More</a>.",
+        "recommended_html": "<strong>50+ Board Certified Dermatologists</strong> recommend Qure to their patients. <a href='https://qureskincare.com/pages/derm-reviews' class='text-black text-decoration-underline'>See More</a>.",
         "guaranteed_text": "30-Day Money-Back Guarantee",
         "shipping_text": "Free Shipping over $100"
       },
@@ -418,6 +418,15 @@
           "text_html": "<li>Install the Faucet Filter to your faucet.</li><li>Replace filter every 3 months.</li>"
         }
       }
+    }
+  },
+  "bundle-header": {
+    "settings": {
+      "exclusive": "Exclusive",
+      "bundles": "Bundles",
+      "dermatologist": "Dermatologist Reviewed",
+      "shipping-text": "Free Shipping over $100",
+      "recommended_html": "<strong>50+ Board Certified Dermatologists</strong> recommend Qure to their patients. <a href='https://qureskincare.com/pages/derm-reviews' class='text-black text-decoration-underline'>See More</a>.",
     }
   },
   "header": {

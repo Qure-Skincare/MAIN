@@ -4,6 +4,12 @@
         {% if block.type == 'product_type' %}
             {% assign product_type_title = block.settings.heading | strip_newlines | strip | replace: ' ', '' | replace: ',', '_' | downcase %}
         {% endif %}
+        {% if block.type == 'product' %}
+            <script>
+                window.get_form_bundle_products_data = window.get_form_bundle_products_data || {};
+                window.get_form_bundle_products_data['{{ block.settings.product }}'] = {{ type }};
+            </script>
+        {% endif %}
     {%- endfor -%}
 
     <template id="{{ section.settings.form_name }}-source-{{ section.id }}-{{ product_type_title }}">
