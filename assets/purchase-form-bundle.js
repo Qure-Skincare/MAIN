@@ -52,9 +52,13 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function initScripts() {
-        window.QureEventProductSlider?.initAllSliders?.();
+        document.querySelectorAll('.' + __section + ' .qure__swiper-wrapper').forEach((wrapper, index) => {
+            window.QureEventProductSlider?.initGallerySlider?.(wrapper, index);
+        });
 
-        window.QureSettingsSwiper?.init?.();
+        document.querySelectorAll('.' + __section + ' .qure__swiper').forEach(el => {
+            window.QureSettingsSwiper?.QureCarousel?.(el);
+        });
 
         initProductVariant();
     }
