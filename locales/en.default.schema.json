@@ -640,6 +640,26 @@
                 }
             }
         },
+        "purchase-form-bundle": {
+            "name": "Purchase form bundle",
+            "settings": {
+                "form_name": "Form name"
+            },
+            "blocks": {
+                "product": {
+                    "settings": {
+                        "preorder_text": "Preorder text",
+                        "preorder_date_soldout": "Soldout date",
+                        "preorder_date_reserved": "Reserved date",
+                        "included_text": "Included text",
+                        "total_treatments": "Total treatments",
+                        "total_treatments_info": "Use this setting to show the number of treatments in product variant",
+                        "left_items": "Left items",
+                        "left_items_info": "Use this setting to show the number of items left in stock."
+                    }
+                }
+            }
+        },
         "purchase-form": {
             "name": "Purchase form",
             "settings": {

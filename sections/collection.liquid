@@ -40,7 +40,7 @@
                         {% assign product_url = '/pages/microinfusion' %}
                     {% endif %}
 
-                    <div class="col-6 col-md-3 custom__block project">
+                    <div class="col-6 col-md-3 custom__block project" data-filter="fine_lines dark_spots breakouts">
                         <div class="qure__product-item">
                             <a href="{{ product_url }}" aria-label="{{ product_title }}" class="qure__product-img overflow-hidden position-relative d-block">
                                 {% if product.featured_image != blank %}
@@ -48,6 +48,7 @@
                                         <img src="{{ product.featured_image | img_url: '720x' }}" alt="{{ product.featured_image.alt | escape }}" />
                                     </div>                                    
                                 {% endif %}
+
                                 {% for tag in product_tags %}
                                     {% if tag contains 'Best Seller' %}
                                         <div class="badge rounded-pill badge-bestseller">{{ 'sections.collection.bestseller' | t }}</div>
@@ -60,14 +61,15 @@
                                 <h3 class="fm-body mb-0 qure__product-name">
                                     <a class="limited-line capitalize d-block" href="{{ product_url }}" aria-label="{{ product_title }}">{{ product_title }}</a>
                                 </h3>
-                                
-                                {% if product_before_price != blank %}
-                                    <div class="bef_price text-decoration-line-through">{{ product_before_price }}</div>
-                                {% endif %}
-
-                                <div class="qure__product-price">{{ product_sale_price }}</div>
+                                <div class="d-flex gap-2">
+                                    {% if product_before_price != blank %}
+                                        <div class="bef_price text-decoration-line-through text-black-50">{{ product_before_price }}</div>
+                                    {% endif %}
+                                    
+                                    <div class="qure__product-price">{{ product_sale_price }}</div>
+                                </div>
                             </div>
-
+                            
                             {% render 'product-page-buy-button', product_price: null, product_variant_id: product_variant_id, section: blank %}
                         </div>
                     </div>

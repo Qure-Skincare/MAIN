@@ -9,7 +9,7 @@
 
 {% include 'get-product-data', product_handle: product_handle, product_prefix: 'upsells-item-' %}
 
-{% if product != blank %}
+{% if product_id != blank %}
     <div class="swiper-slide">
         <div class="cart__upsell">
             <div class="cart__upsell-img"><img src="{{ product_featured_image | img_url: '240x' }}" alt="{{ product_title | escape }}" class="img-fluid" /></div>
