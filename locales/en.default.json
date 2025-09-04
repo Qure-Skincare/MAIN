@@ -397,6 +397,9 @@
     },
     "blog-bottom": {
       "header": "Related Articles"
+    },
+    "settings": {
+      "blog_text": "Blog"
     }
   },
   "article": {

@@ -1,13 +1,17 @@
 <link rel="stylesheet" href="https://qureskincaredns-main.com/sections/isolated/blogs/blog.css">
-<div class="qure__section qure_blog_wrapper"
+<div class="qure__section qure_blog_wrapper blogs"
     style="--section-padding-top: 80px; --section-padding-bottom: 80px; --section-padding-top-mob: 50px; --section-padding-bottom-mob: 50px;">
     <div class="container">
-        <p>Blog > <strong>All Posts</strong></p>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="/blogs/all">Blog</a>
+            </li>
+            <li class="breadcrumb-item">{{ blog.title }}</li> 
+        </ol> 
     </div>
     <div class="qure_blogs mt-30 mt-md-40">
         <div class="container">
             <div class="row">
-                <div class="col-md-8">
                 {% case blog.handle %}
                     {% when 'light-therapy' %}
                         {% render 'blog-snippet-post' with blog_handle: 'light-therapy', limit: 9 %}
@@ -18,7 +22,6 @@
                     {% when 'all' %}
                         {% render 'blog-snippet-post' with blog_handle: 'all', limit: 9 %}   
                 {% endcase %}
-                </div>
                 <!-- most popular posts  -->
                 <div class="col-md-4 d-none d-md-block">
                     <div class="most_popular_posts pl-md-55">
@@ -29,12 +32,11 @@
                             {% render 'blog-snippet-post-popular' with blog_handle: 'light-therapy', limit: 1 %}
                             {% render 'blog-snippet-post-popular' with blog_handle: 'skin', limit: 1 %}
                             {% render 'blog-snippet-post-popular' with blog_handle: 'skincare', limit: 1, offset:1 %}
-                            {% render 'blog-snippet-post-popular' with blog_handle: 'skincare', limit: 1, offset:1 %}
+                            {% render 'blog-snippet-post-popular' with blog_handle: 'skincare', limit: 1, offset:2 %}
                             {% render 'blog-snippet-post-popular' with blog_handle: 'light-therapy', limit: 1, offset:1 %}
-                            {% render 'blog-snippet-post-popular' with blog_handle: 'light-therapy', limit: 1, offset:1 %}
+                            {% render 'blog-snippet-post-popular' with blog_handle: 'light-therapy', limit: 1, offset:2 %}
                             {% render 'blog-snippet-post-popular' with blog_handle: 'skin', limit: 1, offset:2 %}
-                            {% render 'blog-snippet-post-popular' with blog_handle: 'skin', limit: 1, offset:2 %}
-                            {% render 'blog-snippet-post-popular' with blog_handle: 'skin', limit: 1, offset:2 %}
+                            {% render 'blog-snippet-post-popular' with blog_handle: 'skin', limit: 1, offset:3 %}
                         </div>
                     </div>
                 </div>
@@ -42,3 +44,8 @@
         </div>
     </div>
 </div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    loadScriptOnce('equal-height', 'https://qureskincaredns-main.com/assets/js/equal-height.js');
+    });
+</script>

@@ -67,14 +67,13 @@ Renders a safety guide section.
             </div>
          </div>
          {% if section.settings.button_label != blank and section.settings.button_url != blank %}
-            
+            <div class="text-center"><a href="{{ section.settings.button_url }}" class="btn btn--primary d-inline-flex align-items-center gap-2 px-md-40 px-20">{{ section.settings.button_label }} <i class="fa-regular fa-arrow-right ml-5"></i></a></div>
          {% endif %}
-         <div class="text-center"><a href="{{ section.settings.button_url }}" class="btn btn--primary d-inline-flex align-items-center gap-2 px-md-40 px-20">{{ section.settings.button_label }} <i class="fa-regular fa-arrow-right ml-5"></i></a></div>
       </div>
    </div>
    <script>
       document.addEventListener("DOMContentLoaded", function () {
-         loadScriptOnce('main-slider', 'assets/js/main-slider.js');
+         loadScriptOnce('main-slider', 'https://qureskincaredns-main.com/assets/js/main-slider.js');
       });
    </script>
 

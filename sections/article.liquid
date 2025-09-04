@@ -43,11 +43,13 @@ Renders an article page
             <div class="row">
                 <div class="col-md-8">
                     <div class="post_details_wrapper">
-                        {{ article.content 
-                            |  replace: '[discover-snippet]', discover 
-                            |  replace: '[subscription-snippet]', subscription 
-                            |  replace: '[community-snippet]', community 
-                        }}
+                        <div class="post_details">
+                            {{ article.content 
+                                |  replace: '[discover-snippet]', discover 
+                                |  replace: '[subscription-snippet]', subscription 
+                                |  replace: '[community-snippet]', community 
+                            }}
+                        </div>
                     </div>
                 </div>
                 <!-- most popular posts  -->
@@ -58,13 +60,13 @@ Renders an article page
                             {% render 'blog-snippet-post-popular' with blog_handle: 'skin', limit: 1 %}
                             {% render 'blog-snippet-post-popular' with blog_handle: 'skincare', limit: 1 %}
                             {% render 'blog-snippet-post-popular' with blog_handle: 'light-therapy', limit: 1 %}
-                            {% render 'blog-snippet-post-popular' with blog_handle: 'skin', limit: 1 %}
+                            {% render 'blog-snippet-post-popular' with blog_handle: 'skin', limit: 1, offset:1 %}
                             {% render 'blog-snippet-post-popular' with blog_handle: 'skincare', limit: 1, offset:1 %}
-                            {% render 'blog-snippet-post-popular' with blog_handle: 'skincare', limit: 1, offset:1 %}
+                            {% render 'blog-snippet-post-popular' with blog_handle: 'skincare', limit: 1, offset:2 %}
                             {% render 'blog-snippet-post-popular' with blog_handle: 'light-therapy', limit: 1, offset:1 %}
-                            {% render 'blog-snippet-post-popular' with blog_handle: 'light-therapy', limit: 1, offset:1 %}
+                            {% render 'blog-snippet-post-popular' with blog_handle: 'light-therapy', limit: 1, offset:2 %}
                             {% render 'blog-snippet-post-popular' with blog_handle: 'skin', limit: 1, offset:2 %}
-                            {% render 'blog-snippet-post-popular' with blog_handle: 'skin', limit: 1, offset:2 %}
+                            {% render 'blog-snippet-post-popular' with blog_handle: 'skin', limit: 1, offset:3 %}
                         </div>
                     </div>
                 </div>

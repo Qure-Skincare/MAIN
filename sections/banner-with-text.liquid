@@ -38,9 +38,9 @@
                                 | replace: '[/strong]</p>', '</div>' }}
                             </div>
                         {% endif %}
-                        {% if section.settings.button_label != blank and section.settings.button_url != blank %}
+                        {% comment %} {% if section.settings.button_label != blank and section.settings.button_url != blank %}
                             <a href="{{ section.settings.button_url }}" class="banner-text--button btn btn--primary w-mob-100">{{ section.settings.button_label }}</a>
-                        {% endif %}
+                        {% endif %} {% endcomment %}
                         {% assign numbered_list_blocks = section.blocks | where: "type", "numbered_list" %}
                         {% if numbered_list_blocks.size > 0 %}
                             <div class="banner-text--steps mb-30">
@@ -93,6 +93,9 @@
                                     {% endif %}
                                 {% endfor %}
                             </div>
+                        {% endif %}
+                        {% if section.settings.button_label != blank and section.settings.button_url != blank %}
+                            <a href="{{ section.settings.button_url }}" class="text-uppercase btn btn--primary mt-25 w-100" style="--btn-mx-w:400px;">{{ section.settings.button_label }}</a>
                         {% endif %}
                     </div>
                 </div>
