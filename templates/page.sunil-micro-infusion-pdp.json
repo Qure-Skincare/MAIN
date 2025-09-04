@@ -648,6 +648,19 @@
             "product_heading": "",
             "product_text": ""
           }
+        },
+        "slider_NW88g8": {
+          "type": "slider",
+          "settings": {
+            "heading": "Works great. ",
+            "text": "<p>“I am loving the micro infusion. I was skeptical because nothing ever works for my face, except Botox. But let me tell you, I am seeing a difference already. I’ve only done three treatments and the my face looks so much better. I have small vein discolorations and acne scars and it’s helping diminish them!! It is a little painful in certain areas but for the few seconds of pain, it’s worth it! Definitely give it a try and see for yourself.”</p>",
+            "compare_image": "shopify://shop_images/Image_8_fb9b7c49-01c1-48f9-9609-b9d8bdf8bb7d.png",
+            "country_image": "shopify://shop_images/england_f_7b85ce69-2b67-4245-a148-3dd808fc574a.webp",
+            "username": "<p>Lourdes F.</p>",
+            "product_url": "",
+            "product_heading": "",
+            "product_text": ""
+          }
         }
       },
       "block_order": [
@@ -661,7 +674,8 @@
         "slider_UXmznT",
         "slider_PQ3RbR",
         "slider_6tprhW",
-        "slider_9NRFNC"
+        "slider_9NRFNC",
+        "slider_NW88g8"
       ],
       "name": "t:sections.trusted-reviews.name",
       "settings": {
@@ -866,7 +880,7 @@
           "type": "left_accordion",
           "settings": {
             "heading": "All Ingredients",
-            "text": "<p><strong>Beta Glucan:</strong> A tall glass of water for your skin. Strengthens skin barrier while leaving skin soft and plump.</p><p><strong>Copper Peptide GHK-Cu:</strong> Known for its powerful anti-aging properties. This switch boosts collagen production and skin healing and gives the serum its distinctive blue hue. </p><p><strong>Sodium Hyaluronate:</strong> Hydrating power to lock in moisture more effectively and plump the skin for a firmer, fresher complexion.</p><p><strong>All ingredients:</strong>Rosa Damascena Flower Water, Propanediol, Glycerin, Panthenol, Niacinamide, Myrothamnus Flabellifolia Leaf/Stem Extract, Water, Butylene Glycol, Hydroxyacetophenone, Copper Tripeptide-1, Beta-Glucan, Chrysanthellum Indicum Extract, Ethylhexylglycerin, Sodium Hyaluronate, Allantoin, Xanthan Gum.</p><p><em>Please note that due to innovative updates and changing regulatory guidelines, the ingredient lists provided here may differ slightly from those on our packaging and distributor websites.</em></p>"
+            "text": "<p><strong>Epidermal Growth Factor (EGF):</strong> Works at a cellular level to repair and rejuvenate skin. Reduces appearance of wrinkles, improves hydration, and prevents hyperpigmentation.</p><p><strong>Niacinamide:</strong> Superstar ingredient that helps with most skin concerns from soothing to brightening and clarifying, and reducing look of fine lines and wrinkles. </p><p><strong>Tranexamic Acid:</strong> Helps to fade look of dark spots and discoloration. Assists with brightening and evening look of skin tone. </p><p><strong>All ingredients:</strong>Rosa Damascena Flower Water, Propanediol, Glycerin, Tranexamic Acid, Niacinamide, Panthenol, Chrysanthellum Indicum Extract, Ethylhexylglycerin, Tripeptide-1, Xanthan Gum, Allantoin, Sh-Oligopeptide-1.</p><p><em>Please note that due to innovative updates and changing regulatory guidelines, the ingredient lists provided here may differ slightly from those on our packaging and distributor websites.<br/><br/></em></p>"
           }
         },
         "right_accordion_4V6QHp": {
@@ -880,7 +894,7 @@
           "type": "right_accordion",
           "settings": {
             "heading": "All Ingredients",
-            "text": "<p><strong>Epidermal Growth Factor (EGF):</strong> Works at a cellular level to repair and rejuvenate skin. Reduces appearance of wrinkles, improves hydration, and prevents hyperpigmentation.</p><p><strong>Niacinamide:</strong> Superstar ingredient that helps with most skin concerns from soothing to brightening and clarifying, and reducing look of fine lines and wrinkles. </p><p><strong>Tranexamic Acid:</strong> Helps to fade look of dark spots and discoloration. Assists with brightening and evening look of skin tone. </p><p><strong>All ingredients:</strong>Rosa Damascena Flower Water, Propanediol, Glycerin, Tranexamic Acid, Niacinamide, Panthenol, Chrysanthellum Indicum Extract, Ethylhexylglycerin, Tripeptide-1, Xanthan Gum, Allantoin, Sh-Oligopeptide-1.</p><p><em>Please note that due to innovative updates and changing regulatory guidelines, the ingredient lists provided here may differ slightly from those on our packaging and distributor websites.</em></p>"
+            "text": "<p><strong>Beta Glucan:</strong> A tall glass of water for your skin. Strengthens skin barrier while leaving skin soft and plump.</p><p><strong>Copper Peptide GHK-Cu:</strong> Known for its powerful anti-aging properties. This switch boosts collagen production and skin healing and gives the serum its distinctive blue hue. </p><p><strong>Sodium Hyaluronate:</strong> Hydrating power to lock in moisture more effectively and plump the skin for a firmer, fresher complexion.</p><p><strong>All ingredients:</strong>Rosa Damascena Flower Water, Propanediol, Glycerin, Panthenol, Niacinamide, Myrothamnus Flabellifolia Leaf/Stem Extract, Water, Butylene Glycol, Hydroxyacetophenone, Copper Tripeptide-1, Beta-Glucan, Chrysanthellum Indicum Extract, Ethylhexylglycerin, Sodium Hyaluronate, Allantoin, Xanthan Gum.</p><p><em>Please note that due to innovative updates and changing regulatory guidelines, the ingredient lists provided here may differ slightly from those on our packaging and distributor websites.<br/><br/></em></p>"
           }
         },
         "left_feedback_9KFACL": {
@@ -1386,8 +1400,8 @@
         "accordion_MbxCt7": {
           "type": "accordion",
           "settings": {
-            "heading": "What color wavelengths does Q-Rejuvalight Pro have?",
-            "text": "<p>The needles of the Micro-Infusion device and the stamping action triggers the body’s natural healing process and in turn boosts the production of collage, making your skinlook firmer and fine lines look softer.</p><p>The serum that you choose to infuse during your Micro-Infusion will determine the major benefits of your treatment. Very fine needles infuse micro-droplets of concentrated serum at a specific depth into the dermis (top layer) of your skin precisely where they are needed to accelerate absorption of active ingredients that target specific skin concerns.</p><p>Visible benefits of Micro-Infusion include: </p><ul><li>More even skin tone and texture</li><li>Glowing, fresh complexion</li><li>Softer fine lines</li><li>Firmer, rejuvenated skin<br/><br/></li></ul>",
+            "heading": "What are the benefits of Micro-Infusion?",
+            "text": "<p>The stamping action of the Micro-Infusion device creates tiny micro-channels in the top layer of the skin, helping to enhance the absorption of active ingredients and visibly refresh the complexion.The serum you choose during your Micro-Infusion treatment will guide the visible results. Very fine needles help deliver concentrated ingredients exactly where they're needed to target specific skin concerns with precision.<br/><br/>You can switch up your treatments or even mix the two serums together!<br/><br/>Visible benefits of Micro-Infusion include:<br/><br/>More even-looking skin tone and texture<br/>Glowing, refreshed-looking complexion<br/>Softer-looking fine lines<br/>Skin that feels firmer and rejuvenated<br/></p>",
             "link_url": "",
             "link_text": ""
           }
@@ -1396,7 +1410,7 @@
           "type": "accordion",
           "settings": {
             "heading": "How quickly will I see results?",
-            "text": "<p>Micro-Infusion treatment is an effective skin booster treatment, and you’ll notice a radiance boost, smaller pores, more hydrated and overall a healthy fresh complexion in the next day or two.</p><p>The more treatments you perform the greater skin benefits over time you’ll receive! This quick and easy home facial is perfect to perform a day or two before a big event, when you need to look to boost your skin’s complexion, fast.</p><p>Don’t forget to keep up with your everyday skincare routine to boost the effectiveness of your Micro-Infusion results and keep skin glowing long-term.</p>",
+            "text": "<p>Micro-Infusion treatment is an effective skin-boosting step, and many users notice a visible radiance boost, glowier complexion, and skin that feels more hydrated within a day or two after their first treatment.<br/><br/>The more consistently you use the treatment, the more visible improvements you'll likely notice over time. This easy, at-home facial is perfect to use a day or two before a big event, when you want your complexion to look and feel refreshed.<br/><br/>Don't forget to keep up with your everyday skincare routine to help maintain the results of your Micro-Infusion treatment and keep your skin looking its best long-term.<br/><br/><strong>Timeline of Visible Results <br/></strong><br/><strong>After 1–2 Treatments (Weeks 1–4):</strong><br/>Typically users experience mild redness post-treatment – this is a normal response!<br/>Skin looks more hydrated, plumped, and refreshed.<br/>Complexion appears smoother and more radiant.<br/><br/><strong>After 4 Treatments (Around 8 Weeks):</strong><br/>Fine lines begin to appear softened.<br/>Skin tone looks more even and bright.<br/>Hydration feels longer-lasting.<br/><br/><strong>After 6+ Treatments (12 Weeks and Beyond):</strong><br/>Complexion looks clearer and more balanced.<br/>Skin feels firmer with improved elasticity.<br/>Texture appears smoother and more refined.<br/>Overall skin looks more resilient and youthful.</p>",
             "link_url": "",
             "link_text": ""
           }

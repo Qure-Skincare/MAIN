@@ -187,7 +187,7 @@
       "soldout-button-label": "Sold Out",
       "buy-button-bottom": {
         "heading_html": "OR pay 4 monthly payments of <span class='pay_today'>{{ product_price_divided }}</span> with",
-        "recommended_html": "<strong>50+ Board Certified Dermatologists</strong> recommend Qure to their patients. <a href='{{ button_link }}' class='text-black text-decoration-underline'>See More</a>.",
+        "recommended_html": "<strong>50+ Board Certified Dermatologists</strong> recommend Qure to their patients. <a href='https://qureskincare.com/pages/derm-reviews' class='text-black text-decoration-underline'>See More</a>.",
         "guaranteed_text": "30-Day Money-Back Guarantee",
         "shipping_text": "Free Shipping over $100"
       },
@@ -346,6 +346,87 @@
       "monthly-payment": "Monthly interest-free payments with:",
       "questions_html": "<h6 class='fm-body fw-600 mb-0 fs-18'>Have questions about Micro-Infusion?</h6><a href='' class='btn btn-sm btn--secondary' style='--btn-secondary-bg: #fff;'>Chat with us!</a>",
       "more_details_html": "<div class='fs-14'>Skip, pause or cancel anytime. <a href='#' class='text-decoration-underline' style='--base-color: #212428;'>See more details</a></div>"
+    }
+  },
+  "purchase-form-bundle": {
+    "settings": {
+      "shop-by": "Shop by concern:",
+      "rated": "Rated",
+      "discount-text": "SAVE",
+      "included-text": "What’s Included",
+      "how-to-use-text": "How To Use",
+      "select-color": "Color",
+      "types": {
+        "type1": {
+          "header": "Dark Spots & Hyperpigmentation",
+          "text": "These bundles are specifically designed to target signs of aging and fade dark spots.",
+          "icon1_text": "Fade dark spots",
+          "icon1_image": "cloud.svg",
+          "icon2_text": "Boost radiance",
+          "icon2_image": "magic_stick.svg",
+          "icon3_text": "Brighten and even tone",
+          "icon3_image": "sun.svg"
+        },
+        "type2": {
+          "header": "Pro-Aging Bundles",
+          "text": "These bundles are specifically designed to target signs of aging, fine lines, wrinkles.",
+          "icon1_text": "Reduce lines & wrinkles",
+          "icon1_image": "lines.svg",
+          "icon2_text": "Boost collagen",
+          "icon2_image": "drop.svg",
+          "icon3_text": "Promote firmer skin",
+          "icon3_image": "verticle_lines.svg"
+        },
+        "type3": {
+          "header": "Acne Bundles",
+          "text": "These bundles are specifically designed to clear acne and heal post-breakout skin.",
+          "icon1_text": "Eliminate bacteria",
+          "icon1_image": "bolt.svg",
+          "icon2_text": "Calm active breakouts",
+          "icon2_image": "sun_light.svg",
+          "icon3_text": "Soothe redness",
+          "icon3_image": "magic_stick.svg"
+        }
+      },
+      "how-to-use": {
+        "mask": {
+          "image": "mask.svg",
+          "text_html": "<li>Use daily.</li><li>Cleanse and pat dry your face, then start your chosen mask treatment for 3 minutes.</li><li>Follow with your regular skincare routine.</li>"
+        },
+        "neck": {
+          "image": "neck&d.svg",
+          "text_html": "<li>Use 3-5 times a week.</li><li>Adjust strap to fit around neck and décolletage and begin your 10-minute treatment.</li>"
+        },
+        "month_bundle": {
+          "image": "serum.svg",
+          "text_html": "<li>Use every 2 weeks, at night.</li><li>Cleanse and pat dry your face, start your 5-minute treatment and leave serum to work overnight.</li>"
+        },
+        "face-serum": {
+          "image": "all_in_one.svg",
+          "text_html": "<li>Use daily.</li><li>On clean skin, apply 1-2 pumps to the face and neck.Follow with moisturizer.</li>"
+        },
+        "dermal-mist": {
+          "image": "Mist.svg",
+          "text_html": "<li>Use when needed.</li><li>Spray directly on dry skin, body and face. Allow to air dry - no rinsing needed.</li>"
+        },
+        "patches": {
+          "image": "mi_patches.svg",
+          "text_html": "<li>Use twice a week.</li><li>Apply where needed (11 lines, crow’s feet,under-eye, laugh lines) and leave overnight or for a minimum of 2 hours.</li>"
+        },
+        "faucet-filter": {
+          "image": "faucet.svg",
+          "text_html": "<li>Install the Faucet Filter to your faucet.</li><li>Replace filter every 3 months.</li>"
+        }
+      }
+    }
+  },
+  "bundle-header": {
+    "settings": {
+      "exclusive": "Exclusive",
+      "bundles": "Bundles",
+      "dermatologist": "Dermatologist Reviewed",
+      "shipping-text": "Free Shipping over $100",
+      "recommended_html": "<strong>50+ Board Certified Dermatologists</strong> recommend Qure to their patients. <a href='https://qureskincare.com/pages/derm-reviews' class='text-black text-decoration-underline'>See More</a>."
     }
   },
   "header": {
