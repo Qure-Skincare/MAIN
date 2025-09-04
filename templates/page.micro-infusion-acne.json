@@ -1,0 +1,352 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "page_header_jUJyfG": {
+      "type": "page-header",
+      "blocks": {
+        "link_iPBNaS": {
+          "type": "link",
+          "settings": {}
+        },
+        "description_iSDNaK": {
+          "type": "description",
+          "settings": {}
+        },
+        "video_jEEVjS": {
+          "type": "video",
+          "settings": {
+            "heading": "Watch: How To Use",
+            "image": "shopify://shop_images/how-to-use3.webp",
+            "wistia_url": "8ymvdqzx92"
+          }
+        },
+        "jumpto_jEyVj6": {
+          "type": "jumpto",
+          "settings": {
+            "button-label": "The Results",
+            "button-url": "#video-review-slider"
+          }
+        },
+        "jumpto_P7zN3P": {
+          "type": "jumpto",
+          "settings": {
+            "button-label": "How To Use",
+            "button-url": "#how_to_use"
+          }
+        },
+        "jumpto_F9gpDd": {
+          "type": "jumpto",
+          "settings": {
+            "button-label": "Serum Guide",
+            "button-url": "#science_backed"
+          }
+        },
+        "jumpto_GYW9XP": {
+          "type": "jumpto",
+          "settings": {
+            "button-label": "Expert Reviews",
+            "button-url": "#trusted_recommended"
+          }
+        },
+        "jumpto_Ybdp8V": {
+          "type": "jumpto",
+          "settings": {
+            "button-label": "FAQs",
+            "button-url": "#faq"
+          }
+        }
+      },
+      "block_order": [
+        "link_iPBNaS",
+        "description_iSDNaK",
+        "video_jEEVjS",
+        "jumpto_jEyVj6",
+        "jumpto_P7zN3P",
+        "jumpto_F9gpDd",
+        "jumpto_GYW9XP",
+        "jumpto_Ybdp8V"
+      ],
+      "name": "t:sections.page-header.name",
+      "settings": {
+        "rating": "<p><strong>4.8</strong>/5 Rated by Customers</p>",
+        "heading": "Regenerate your skin and watch acne scars fade away",
+        "description": "<ul><li>Stimulates skin regeneration to smooth acne scars, works beneath the surface where topicals can't reach</li><li>Easy 5-minute treatment that triggers your skin's natural healing response for visibly smother, even-toned skin.</li><li>Watch as skin texture improves and scars become less visible, with typical results after just 3 sessions every 2 weeks</li></ul>",
+        "button-label": "Get Smoother, Glowing Skin",
+        "button-url": "#purchase-form"
+      }
+    },
+    "main": {
+      "type": "page-micro-infusion-acne",
+      "settings": {}
+    },
+    "purchase_form_Lv6fWn": {
+      "type": "purchase-form",
+      "blocks": {
+        "nextships_5rd2bS": {
+          "type": "nextships",
+          "settings": {
+            "date": "25 September",
+            "percent": 55,
+            "date_soldout": "28 July",
+            "date_reserved": "3 August"
+          }
+        },
+        "payment_type_3zQTmH": {
+          "type": "payment_type",
+          "settings": {
+            "image": "shopify://shop_images/pmt-1.webp"
+          }
+        },
+        "payment_type_B6Pzbh": {
+          "type": "payment_type",
+          "settings": {
+            "image": "shopify://shop_images/pmt-2.webp"
+          }
+        },
+        "type_hHPdgJ": {
+          "type": "type",
+          "settings": {}
+        },
+        "product_type_QKQhNr": {
+          "type": "product_type",
+          "settings": {
+            "heading": "Dark Spots",
+            "image": "shopify://shop_images/serum_1.webp",
+            "preselected": false
+          }
+        },
+        "product_DBd4ef": {
+          "type": "product",
+          "settings": {
+            "product": "micro-infusion-6-month-bundle-for-dark-spots",
+            "preselected": true,
+            "heading": "6 Month Supply  End Of Summer Sale",
+            "subheading": "(12 Treatments)",
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 12,
+            "left_items": 164,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55,
+            "included_text": "<ul><li>2 Micro-Infusion devices (valued at $160)</li><li>10 Clinical-grade micro-needling heads (valued at $100)</li><li>12 clinically-formulated 4ml serums to treat your specific skin concerns (valued at $240)</li><li>Worldwide shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li><li>24/7 customer support access</li></ul>"
+          }
+        },
+        "product_7dL4ci": {
+          "type": "product",
+          "settings": {
+            "product": "micro-infusion-3-month-bundle",
+            "preselected": false,
+            "heading": "3 Month Supply",
+            "subheading": "(6 Treatments)",
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 6,
+            "left_items": 201,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55,
+            "included_text": "<ul><li>Micro-Infusion device (valued at $80)</li><li>5 Clinical-grade micro-needling heads (valued at $50)</li><li>6 clinically-formulated 4ml serum to treat your specific skin concerns (valued at $120)</li><li>Worldwide shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
+          }
+        },
+        "product_Xf8A6C": {
+          "type": "product",
+          "settings": {
+            "product": "micro-infusion-1-month-bundle-2x-e-g-f-serum",
+            "preselected": false,
+            "heading": "1 Month Supply",
+            "subheading": "(2 Treatments)",
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55,
+            "included_text": "<ul><li>Micro-Infusion device (valued at $80)</li><li>1 Clinical-grade micro-needling heads (valued at $10)</li><li>2 clinically-formulated 4ml serums to treat your specific skin concerns (valued at $40)</li><li>Worldwide shipping (valued at $25)</li></ul>"
+          }
+        },
+        "type_aJwQ9q": {
+          "type": "type",
+          "settings": {}
+        },
+        "product_type_VLXcAn": {
+          "type": "product_type",
+          "settings": {
+            "heading": "Wrinkles",
+            "image": "shopify://shop_images/serum_2.webp",
+            "preselected": true
+          }
+        },
+        "product_nyJ9n7": {
+          "type": "product",
+          "settings": {
+            "product": "micro-infusion-6-month-bundle-for-wrinkles",
+            "preselected": true,
+            "heading": "6 Month Supply  End Of Summer Sale",
+            "subheading": "(12 Treatments)",
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 12,
+            "left_items": 280,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55,
+            "included_text": "<ul><li>2 Micro-Infusion devices (valued at $160)</li><li>10 Clinical-grade micro-needling heads (valued at $100)</li><li>12 clinically-formulated 4ml serums to treat your specific skin concerns (valued at $240)</li><li>Worldwide shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
+          }
+        },
+        "product_EKAAzA": {
+          "type": "product",
+          "settings": {
+            "product": "micro-infusion-3-month-bundle-6x-beta-glucan-serum",
+            "preselected": false,
+            "heading": "3 Month Supply",
+            "subheading": "(6 Treatments)",
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 6,
+            "left_items": 500,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55,
+            "included_text": "<ul><li>1 Micro-Infusion devices (valued at $80)</li><li>5 Clinical-grade micro-needling heads (valued at $50)</li><li>6 clinically-formulated 4ml serums to treat your specific skin concerns (valued at $120)</li><li>Worldwide shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li><li>24/7 customer support access</li></ul>"
+          }
+        },
+        "product_eiY89h": {
+          "type": "product",
+          "settings": {
+            "product": "micro-infusion-1-month-bundle-2x-beta-glucan-serum",
+            "preselected": false,
+            "heading": "1 Month Supply",
+            "subheading": "(2 Treatments)",
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55,
+            "included_text": "<ul><li>Micro-Infusion device (valued at $80)</li><li>1 Clinical-grade micro-needling heads (valued at $10)</li><li>2 clinically-formulated 4ml serums to treat your specific skin concerns (valued at $40)</li><li>Worldwide shipping (valued at $25)</li></ul>"
+          }
+        },
+        "type_yDwWmt": {
+          "type": "type",
+          "settings": {}
+        },
+        "product_type_YrPQrV": {
+          "type": "product_type",
+          "settings": {
+            "heading": "Mixed",
+            "image": "shopify://shop_images/serum_3.webp",
+            "preselected": false
+          }
+        },
+        "product_gbPf3J": {
+          "type": "product",
+          "settings": {
+            "product": "microinfusion-offer-6-month-supply",
+            "preselected": true,
+            "heading": "6 Month Supply  End Of Summer Sale",
+            "subheading": "(12 Treatments)",
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 12,
+            "left_items": 547,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55,
+            "included_text": "<ul><li>2 Micro-Infusion devices (valued at $160)</li><li>10 Clinical-grade micro-needling heads (valued at $100)</li><li>12 clinically-formulated 4ml serums to treat your specific skin concerns (valued at $240)</li><li>Worldwide shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li><li>24/7 customer support access</li></ul>"
+          }
+        },
+        "product_NEgEkN": {
+          "type": "product",
+          "settings": {
+            "product": "micro-infusion-2-month-bundle-2x-b-g-serum-2x-e-g-f-serum",
+            "preselected": false,
+            "heading": "3 Month Supply",
+            "subheading": "(6 Treatments)",
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 6,
+            "left_items": 0,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55,
+            "included_text": "<ul><li>Micro-Infusion device (valued at $80)</li><li>5 Clinical-grade micro-needling heads (valued at $50)</li><li>6 clinically-formulated 4ml serum to treat your specific skin concerns (valued at $120)</li><li>Worldwide shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
+          }
+        },
+        "product_RBCPe8": {
+          "type": "product",
+          "settings": {
+            "product": "micro-infusion-1-month-bundle-1x-b-g-serum-1x-e-g-f-serum",
+            "preselected": false,
+            "heading": "1 Month Supply",
+            "subheading": "(2 Treatments)",
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55,
+            "included_text": "<ul><li>Micro-Infusion device (valued at $80)</li><li>1 Clinical-grade micro-needling heads (valued at $10)</li><li>2 clinically-formulated 4ml serums to treat your specific skin concerns (valued at $40)</li><li>Worldwide shipping (valued at $25)</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "nextships_5rd2bS",
+        "payment_type_3zQTmH",
+        "payment_type_B6Pzbh",
+        "type_hHPdgJ",
+        "product_type_QKQhNr",
+        "product_DBd4ef",
+        "product_7dL4ci",
+        "product_Xf8A6C",
+        "type_aJwQ9q",
+        "product_type_VLXcAn",
+        "product_nyJ9n7",
+        "product_EKAAzA",
+        "product_eiY89h",
+        "type_yDwWmt",
+        "product_type_YrPQrV",
+        "product_gbPf3J",
+        "product_NEgEkN",
+        "product_RBCPe8"
+      ],
+      "settings": {
+        "type": "list",
+        "heading": "Choose your treatment",
+        "text": "All orders are one-time purchases. No extra charges, and no hidden fees.",
+        "image": "shopify://shop_images/tami-cropped.webp",
+        "form_name": "purchase-form-second"
+      }
+    },
+    "second": {
+      "type": "page-micro-infusion-acne-second",
+      "settings": {}
+    }
+  },
+  "order": [
+    "page_header_jUJyfG",
+    "main",
+    "purchase_form_Lv6fWn",
+    "second"
+  ]
+}
