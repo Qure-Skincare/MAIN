@@ -39,6 +39,7 @@
     {% assign product_before_price = product_price_compare %}
     {% assign product_variants = get_product_data.variants %}
     {% assign product_tags = get_product_data.tags %}
+    {% assign product_media = get_product_data.media %}
     {% assign product_url = product_handle | prepend: '/products/'  %}
 
     {% assign product_subscription_price = null %}
