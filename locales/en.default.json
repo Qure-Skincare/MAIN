@@ -491,6 +491,7 @@
     "settings": {
       "related_articles": {
         "header_html": "Written by <strong>Our Editorial Team</strong>",
+        "header_author_html": "Written by <strong>{{ name }}</strong>",
         "read_time": "6 min read"
       },
       "social_media": {

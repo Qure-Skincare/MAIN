@@ -15,7 +15,15 @@ Renders an article page
                 <div class="post">
                     <p><a href="#">Blog</a> > <strong>LED Light Therapy</strong></p>
                     <h1 class="banner-text--heading my-20">{{ article.title }}</h1>
-                    <p>{{ 'article.settings.related_articles.header_html' | t }}</p>
+
+                    {% assign author = article.author | downcase | default: blank%}
+
+                    {% if author != blank and author contains 'orlic' %}
+                        <p>{{ 'article.settings.related_articles.header_author_html' | t: name: article.author }}</p>
+                    {% else %}
+                        <p>{{ 'article.settings.related_articles.header_html' | t }}</p>
+                    {% endif %}
+
                     <p>{{ 'article.settings.related_articles.read_time' | t }}</p>
                     <div class="d-flex justify-content-between align-items-center border-top pt-20 my-20">
                         <p>{{ 'article.settings.social_media.share' | t }}</p>
