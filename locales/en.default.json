@@ -43,6 +43,10 @@
     "exclusive-offer": {
       "include_text": "Included free"
     },
+    "serum-infusions": {
+      "rating_image": "https://qureskincaredns-main.com/sections/isolated/serum/images/stars.webp",
+      "verified_customer_text": "Verified Customer"
+    },
     "proof-in-numbers": {
       "study_text": "Study"
     },

@@ -174,7 +174,7 @@
         "carousel_rN6NEL": {
           "type": "carousel",
           "settings": {
-            "text": "<p>Dermatologist Reviewed</p>",
+            "text": "<p>90-Day Money-Back Guarantee</p>",
             "text_mobile": "",
             "image": "shopify://shop_images/dermatologist.svg"
           }
@@ -246,12 +246,12 @@
       "name": "t:sections.banner-with-text.name",
       "settings": {
         "heading": "Introducing the Qure Micro-Infusion System",
-        "text": "<ul><li>Helps reduce appearance of fine lines</li><li>Wake up with dewy looking, glowing skin</li><li>Reveal brighter looking, firmer feeling skin</li><li>Help fade appearance of dark spots and acne marks</li></ul>",
+        "text": "<ul><li>Works beneath the surface where topicals can't reach to target <strong>stubborn dark spots</strong> and uneven tone</li><li>Wake up with <strong>radiant, more even-toned</strong> skin</li><li>Minimal to no downtime, and <strong>virtually painless</strong></li><li>Easy to use <strong>5-minute</strong> treatment</li></ul>",
         "quote": "<p>“<strong>Even my esthetician is hooked!</strong>And I can now visit beauty clinics less often.”</p>",
         "quote-mobile": "",
         "image_position": "right",
         "sub_text": "",
-        "image": "shopify://shop_images/qure-micro-infusion_men.webp",
+        "image": "shopify://shop_images/mi_serum-show.webp",
         "button_label": "BUY NOW & SAVE UP TO 43%",
         "button_url": "#purchase-form",
         "wistia_url": ""
@@ -263,52 +263,52 @@
         "heading_7ejDaF": {
           "type": "heading",
           "settings": {
-            "heading": "Minimize Fine Lines & Wrinkles"
+            "heading": "Fade Hyperpigmentation"
           }
         },
         "heading_TWn7Cf": {
           "type": "heading",
           "settings": {
-            "heading": "Improve Tone & Texture"
+            "heading": "Improve Tone and Texture"
           }
         },
         "heading_xJY33L": {
           "type": "heading",
           "settings": {
-            "heading": "Boost Skin’s Glow"
+            "heading": "Boost Glow and Radiance"
           }
         },
         "content_kPiDiQ": {
           "type": "content",
           "settings": {
-            "heading": "Minimize Fine Lines and Wrinkles",
-            "text": "<p>Smooth, plump, and firm your skin from within. Qure’s Micro-Infusion boosts collagen, restores hydration, and strengthens the skin barrier — all in one step.</p>",
-            "list": "<p>Deeply hydrates to leave skin dewy and plump</p><p>Visibly softens fine lines for a smoother, more youthful look</p><p>Strengthens the skin barrier to support long-lasting firmness</p>",
-            "username": "Tami T.",
-            "image": "shopify://shop_images/tami.webp",
+            "heading": "Fade Hyperpigmentation and Dark Spots",
+            "text": "<p>Qure’s Micro-Infusion can help reduce the appearance of dark spots and uneven tone by combining gentle microneedling with targeted brightening serum delivery.</p>",
+            "list": "<p>Helps target stubborn pigmentation where topicals can’t reach</p><p>Supports skin renewal for a more even-looking complexion</p><p>Creates visible improvement in tone and clarity over time</p>",
+            "username": "Kyla R.",
+            "image": "shopify://shop_images/kyla.webp",
             "country_image": "shopify://shop_images/america_f.webp"
           }
         },
         "content_XrJqFM": {
           "type": "content",
           "settings": {
-            "heading": "Improve Tone & Texture",
-            "text": "<p>Gentle microneedling device boosts cell turnover and delivers brightening ingredients deep into the skin to visibly smooth, clarify, and even out tone.</p>",
-            "list": "<p>Refines rough texture by promoting skin renewal</p><p>Fades dark spots and post-acne marks for a more even tone</p><p>Helps minimize the look of pores for a smoother, clearer complexion</p>",
-            "username": "Monika J.",
-            "image": "shopify://shop_images/monika.webp",
-            "country_image": "shopify://shop_images/australia_f.webp"
+            "heading": "Improve Tone and Texture",
+            "text": "<p>Uneven tone can make skin look older and less healthy. Micro-Infusion helps minimize the look of blotchiness by delivering concentrated ingredients where they’re needed most.</p>",
+            "list": "<p>Helps minimize the look of pores for a smoother, clearer complexion</p><p>Softens the appearance of redness and patchiness</p><p>Targets rough texture and uneven tone</p>",
+            "username": "Jess M.",
+            "image": "shopify://shop_images/jess.webp",
+            "country_image": "shopify://shop_images/america_f.webp"
           }
         },
         "content_cQLdrN": {
           "type": "content",
           "settings": {
-            "heading": "Boost Glow and Radiance",
-            "text": "<p>Restore skin glow by infusing hydrating, brightening ingredients deep into the skin for a fresh, radiant finish that lasts.</p>",
-            "list": "<p>Brightens dull skin for a healthy, radiant complexion</p><p>Enhances serum absorption for more visible results</p><p>Leaves skin looking firmer, smoother, and refreshed</p>",
-            "username": "Ellie V.",
-            "image": "shopify://shop_images/ellie.webp",
-            "country_image": "shopify://shop_images/america_f.webp"
+            "heading": "Boost Glow and Revive Dull Skin",
+            "text": "<p>Refresh tired-looking skin by infusing hydrating, brightening ingredients deep into the skin for a fresh, radiant finish that lasts.</p>",
+            "list": "<p>Brightens the look of tired skin for a healthier appearance</p><p>Boosts hydration to help skin look plump and refreshed</p><p>Leaves skin looking refreshed and full of life</p>",
+            "username": "Monika J.",
+            "image": "shopify://shop_images/monika.webp",
+            "country_image": "shopify://shop_images/australia_f.webp"
           }
         }
       },
@@ -452,12 +452,12 @@
       "name": "t:sections.banner-with-text.name",
       "settings": {
         "heading": "Dual action for twice the results",
-        "text": "<p>Qure’s Micro-Infusion System has a one-two punch, making it uniquely effective.<br/><br/></p>",
+        "text": "<p>Qure’s Micro-Infusion System has a one-two punch, making it uniquely effective.</p>",
         "quote": "",
         "quote-mobile": "",
         "image_position": "left",
-        "sub_text": "Perfect for anyone wanting to add a fresh, dewy glowing look to their skin, especially before an event or occasion.",
-        "image": "shopify://shop_images/dual-action_men.webp",
+        "sub_text": "Perfect for anyone who has struggled with stubborn acne scars and uneven texture that hasn't responded to other treatments.",
+        "image": "shopify://shop_images/dual_action-women.webp",
         "button_label": "",
         "button_url": "",
         "wistia_url": ""
@@ -867,6 +867,49 @@
         "wistia_url": "8ymvdqzx92",
         "button_label": "buy now & SAVE UP TO 43%",
         "button_url": "#purchase-form"
+      }
+    },
+    "serum_infusions_hdPt9c": {
+      "type": "serum-infusions",
+      "blocks": {
+        "accordion_Amii86": {
+          "type": "accordion",
+          "settings": {
+            "heading": "What can it do for your skin",
+            "text": "<p>Reveals a smoother, brighter looking, and evenly radiant complexion to generate a glow effect. Renewal properties to help fade the appearance of dark spots and restore even-looking, smoother-feeling skin.</p><p><strong>Skin Concerns:</strong> Designed for skin with discoloration, rough texture, enlarged pores, acne marks and dark spots.</p>"
+          }
+        },
+        "accordion_difXNr": {
+          "type": "accordion",
+          "settings": {
+            "heading": "All Ingredients",
+            "text": "<p><strong>Epidermal Growth Factor (EGF):</strong> Works at a cellular level to repair and rejuvenate skin. Reduces appearance of wrinkles, improves hydration, and prevents hyperpigmentation.</p><p><strong>Niacinamide:</strong> Superstar ingredient that helps with most skin concerns from soothing to brightening and clarifying, and reducing look of fine lines and wrinkles.</p><p><strong>Tranexamic Acid:</strong> Helps to fade look of dark spots and discoloration. Assists with brightening and evening look of skin tone.</p><p><strong>All ingredients: </strong>Rosa Damascena Flower Water, Propanediol, Glycerin, Tranexamic Acid, Niacinamide, Panthenol, Chrysanthellum Indicum Extract, Ethylhexylglycerin, Tripeptide-1, Xanthan Gum, Allantoin, Sh-Oligopeptide-1.</p><p>[quote]Please note that due to innovative updates and changing regulatory guidelines, the ingredient lists provided here may differ slightly from those on our packaging and distributor websites.[/quote]</p>"
+          }
+        },
+        "feedback_CRTTUR": {
+          "type": "feedback",
+          "settings": {
+            "country_image": "shopify://shop_images/america-flag_f1f6c160-90c6-4ba9-8bfc-d9039a28d2af.webp",
+            "username": "Jaya P.",
+            "text": "“I love this treatment. I’ve used it twice and see a difference already!”"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_Amii86",
+        "accordion_difXNr",
+        "feedback_CRTTUR"
+      ],
+      "name": "t:sections.serum-infusions.name",
+      "settings": {
+        "heading": "Science-Backed Micro-Infusion Serums",
+        "text": "Choose the exact serum to use in your Micro-Infusion treatment, or get both and mix them together to experience a complete set of benefits that addresses your specific skin concerns.",
+        "heading_mobile": "Science-Backed Micro-Infusion Serums",
+        "text_mobile": "Choose the exact serum to use in your Micro-Infusion treatment, or get both and mix them together to experience a complete set of benefits that addresses your specific skin concerns.",
+        "image": "shopify://shop_images/serums-lady2.webp",
+        "image_header": "Rejuvenating Serum",
+        "image_text": "For Dark Spots",
+        "image_with_text": "shopify://shop_images/dark-serum_fdd5f7a8-28fe-4952-9554-623e8727458b.webp"
       }
     },
     "money_back_guarantee_J28b9K": {
@@ -1333,6 +1376,7 @@
     "compare_UGAfRr",
     "device_comparison_1_hwtQdg",
     "how_to_use_AyUYT4",
+    "serum_infusions_hdPt9c",
     "money_back_guarantee_J28b9K",
     "purchase_form_Dv7fWn",
     "safety_guide_1jzCz8",

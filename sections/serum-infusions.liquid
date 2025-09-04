@@ -3,120 +3,98 @@
 {% enddoc %}
 
 
-<link rel="stylesheet" href="sections/isolated/serum/section-serum.css" />
-    <div id="science_backed" class="qure__section compare_section"
-        style="--section-padding-top: 60px; --section-padding-bottom: 40px; --section-padding-top-mob: 50px; --section-padding-bottom-mob: 30px;">
-        <div class="container container-small" style="--container-width:850px">
-            <div class="qure__section-header text-center mb-60 d-none d-md-block">
-                {% if section.settings.heading != blank %}
-                    <h2 class="qure__section-heading">{{ section.settings.heading }}</h2>
-                {% endif %}
-                {% if section.settings.text != blank %}
-                    <div class="qure__section-desc mt-30 px-lg-40">{{ section.settings.text }}</div>
-                {% endif %}
-            </div> 
-        </div>
-        <div class="container">
-            <div class="row custom__grid" style="--column-gap:50px; --column-gap-mobile:30px;">
-                <div class="col-md-6 custom__block">
-                    <div class="qure__img">
-                        {% if section.settings.image != blank %}
-                            <img src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt | escape }}" class="img-fluid" />
+<link rel="stylesheet" href="https://qureskincaredns-main.com/sections/isolated/serum/section-serum.css" />
+<div id="science_backed" class="qure__section compare_section"
+    style="--section-padding-top: 60px; --section-padding-bottom: 40px; --section-padding-top-mob: 50px; --section-padding-bottom-mob: 30px;">
+    <div class="container container-small" style="--container-width:850px">
+        <div class="qure__section-header text-center mb-60 d-none d-md-block">
+            {% if section.settings.heading != blank %}
+                <h2 class="qure__section-heading">{{ section.settings.heading }}</h2>
+            {% endif %}
+            {% if section.settings.text != blank %}
+                <div class="qure__section-desc mt-30 px-lg-40">{{ section.settings.text }}</div>
+            {% endif %}
+        </div> 
+    </div>
+    <div class="container">
+        <div class="row custom__grid" style="--column-gap:50px; --column-gap-mobile:30px;">
+            <div class="col-md-6 custom__block">
+                <div class="qure__img">
+                    {% if section.settings.image != blank %}
+                        <img src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt | escape }}" class="img-fluid" />
+                    {% endif %}
+                    <div class="qure__section-header text-center mb-0 d-md-none pt-25">
+                        {% if section.settings.heading_mobile != blank %}
+                            <h2 class="qure__section-heading">{{ section.settings.heading_mobile }}</h2>
                         {% endif %}
-                        <div class="qure__section-header text-center mb-0 d-md-none pt-25">
-                            {% if section.settings.heading_mobile !=  %}
-                                <h2 class="qure__section-heading">{{ section.settings.heading_mobile }}</h2>
-                            {% endif %}
-                            {% if section.settings.text_mobile != blank %}
-                                <div class="qure__section-desc mt-20">{{ section.settings.text_mobile }}</div>
-                            {% endif %}
-                        </div>
+                        {% if section.settings.text_mobile != blank %}
+                            <div class="qure__section-desc mt-20">{{ section.settings.text_mobile }}</div>
+                        {% endif %}
                     </div>
                 </div>
-                <div class="col-md-6 custom__block">
-                    <div class="qure__serum">
-                        <div class="d-flex align-items-center gap-5 pb-20">
-                            <div class="ctm-width" style="--ctm-width: 86px; --ctm-width-mob: 80px;">
-                                <img src="sections/isolated/serum/images/dark-serum.webp" alt="dark spots"
-                                    class="img-fluid ml-0" />
-                            </div>
-                            <div>
-                                <h2 class="qure__section-heading" style="--heading-size:34px;">Rejuvenating Serum</h2>
-                                <p class="fs-md-20">For Dark Spots</p>
-                            </div>
+            </div>
+            <div class="col-md-6 custom__block">
+                <div class="qure__serum">
+                    <div class="d-flex align-items-center gap-5 pb-20">
+                        <div class="ctm-width" style="--ctm-width: 86px; --ctm-width-mob: 80px;">
+                            {% if section.settings.image_with_text %}
+                                <img src="{{ section.settings.image_with_text | image_url }}" alt="{{ section.settings.image_with_text.alt | escape }}" class="img-fluid ml-0" />
+                            {% endif %}
                         </div>
-                        <div class="qure__serum-tabs py-0">
-                            <div class="accordion accordion-flush" id="qure_dark-main">
-                                <div class="accordion-item qure__accordion-item">
-                                    <button class="accordion-button collapsed qure__accordion-header px-0" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#qure_dark-1" aria-expanded="false"
-                                        aria-controls="qure_dark-1">
-                                        What can it do for your skin
-                                    </button>
-                                    <div id="qure_dark-1" class="accordion-collapse collapse qure__accordion-content"
-                                        data-bs-parent="#qure_dark-main">
-                                        <div class="accordion-body px-0">
-                                            <p>Reveals a smoother, brighter looking, and evenly radiant complexion to
-                                                generate a glow effect. Renewal properties to help fade the appearance
-                                                of dark spots and restore even-looking, smoother-feeling skin.</p>
-                                            <p><strong>Skin Concerns:</strong> Designed for skin with discoloration,
-                                                rough texture, enlarged pores, acne marks and dark spots.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item qure__accordion-item" style="--bs-accordion-border-width:0;">
-                                    <button class="accordion-button collapsed qure__accordion-header px-0" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#qure_dark-2" aria-expanded="false"
-                                        aria-controls="qure_dark-2">
-                                        All Ingredients
-                                    </button>
-                                    <div id="qure_dark-2" class="accordion-collapse collapse qure__accordion-content"
-                                        data-bs-parent="#qure_dark-main">
-                                        <div class="accordion-body px-0">
-                                            <p><strong>Epidermal Growth Factor (EGF):</strong> Works at a cellular level
-                                                to
-                                                repair and rejuvenate skin. Reduces appearance of wrinkles, improves
-                                                hydration, and prevents hyperpigmentation.</p>
-                                            <p><strong>Niacinamide:</strong> Superstar ingredient that helps with most
-                                                skin
-                                                concerns from soothing to brightening and clarifying, and reducing look
-                                                of
-                                                fine lines and wrinkles. </p>
-                                            <p><strong>Tranexamic Acid:</strong> Helps to fade look of dark spots and
-                                                discoloration. Assists with brightening and evening look of skin tone.
-                                            </p>
-                                            <p><strong>All ingredients:</strong>Rosa Damascena Flower Water,
-                                                Propanediol,
-                                                Glycerin, Tranexamic Acid, Niacinamide, Panthenol, Chrysanthellum
-                                                Indicum
-                                                Extract, Ethylhexylglycerin, Tripeptide-1, Xanthan Gum, Allantoin,
-                                                Sh-Oligopeptide-1.</p>
-                                            <div class="bg-light rounded-10 p-18 fs-14">
-                                                Please note that due to innovative updates and changing regulatory
-                                                guidelines,
-                                                the ingredient lists provided here may differ slightly from those on our
-                                                packaging and distributor websites.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="qure__serum-feedback mw-100">
-                            <div class="qs-stars"><img src="sections/isolated/serum/images/stars.webp" /></div>
-                            <div class="qs-feedback py-10">“I love this treatment. I’ve used it twice and see a difference already!”</div>
-                            <div class="qs-user"><img src="sections/isolated/serum/images/america-flag.webp"
-                                    alt=""><span>Jaya P.</span></div>
-                            <span class="fs-12">Verified customer</span>
+                        <div>
+                            {% if section.settings.image_header != blank %}
+                                <h2 class="qure__section-heading" style="--heading-size:34px;">{{ section.settings.image_header }}</h2>
+                            {% endif %}
+                            {% if section.settings.image_text %}
+                                <p class="fs-md-20">{{ section.settings.image_text }}</p>
+                            {% endif %}
                         </div>
                     </div>
+                    <div class="qure__serum-tabs py-0">
+                        <div class="accordion accordion-flush" id="qure_dark-main">
+                            {% for block in section.blocks %}
+                                {% if block.type == 'accordion' %}
+                                <div class="accordion-item qure__accordion-item"{% if forloop.index > 1 %}style="--bs-accordion-border-width:0;"{% endif %}>
+                                    {% if block.settings.heading != blank %}
+                                        <button class="accordion-button collapsed qure__accordion-header px-0" type="button" 
+                                        data-bs-toggle="collapse" data-bs-target="#qure_dark-{{ forloop.index }}" aria-expanded="false" 
+                                        aria-controls="qure_dark-{{ forloop.index }}">
+                                            {{ block.settings.heading }}
+                                        </button>
+                                    {% endif %}
+                                    <div id="qure_dark-{{ forloop.index }}" class="accordion-collapse collapse qure__accordion-content"
+                                        data-bs-parent="#qure_dark-main">
+                                        {% if block.settings.text != blank %}
+                                            <div class="accordion-body px-0">{{ block.settings.text | replace: '<p>[quote]', '<div class="bg-light rounded-10 p-18 fs-14">' | replace: '[/quote]</p>', '</div>' }}</div>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% for block in section.blocks %}
+                        {% if block.type == 'feedback' %}
+                            <div class="qure__serum-feedback mw-100">
+                                <div class="qs-stars"><img src="{{ 'sections.serum-infusions.rating_image' | t }}" /></div>
+                                {% if block.settings.text != blank %}
+                                    <div class="qs-feedback py-10">{{ block.settings.text }}</div>
+                                {% endif %}
+                                {% if block.settings.country_image != blank and block.settings.username != blank %}
+                                    <div class="qs-user"><img src="{{ block.settings.country_image | image_url }}" alt="{{ block.settings.country_image.alt | escape }}"><span>{{ block.settings.username }}</span></div>
+                                {% endif %}
+                                <span class="fs-12">{{ 'sections.serum-infusions.verified_customer_text' | t }}</span>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-    {% schema %}
+
+{% schema %}
 {
   "name": "t:sections.serum-infusions.name",
   "settings": [
@@ -144,98 +122,43 @@
         "type": "image_picker",
         "id": "image",
         "label": "t:common.image"
+    },
+    {
+        "type": "text",
+        "id": "image_header",
+        "label": "t:common.image-header"
+    },
+    {
+        "type": "text",
+        "id": "image_text",
+        "label": "t:common.image-text"
+    },
+    {
+        "type": "image_picker",
+        "id": "image_with_text",
+        "label": "t:common.image-with-text"
     }
   ],
   "blocks": [
     {
-      "type": "left_text_with_image",
-      "name": "t:sections.serum-selection.blocks.left-text-with-image.name",
+      "type": "accordion",
+      "name": "t:common.accordion",
       "settings": [
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "t:common.header"
+        },
         {
           "type": "richtext",
           "id": "text",
           "label": "t:common.text"
-        },
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "t:common.image"
         }
       ]
     },
     {
-      "type": "right_text_with_image",
-      "name": "t:sections.serum-selection.blocks.right-text-with-image.name",
-      "settings": [
-        {
-          "type": "richtext",
-          "id": "text",
-          "label": "t:common.text"
-        },
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "t:common.image"
-        }
-      ]
-    },
-    {
-        "type": "left_accordion",
-        "name": "t:sections.serum-selection.blocks.left-accordion.name",
-        "settings": [
-            {
-                "type": "text",
-                "id": "heading",
-                "label": "t:common.header"
-            },
-            {
-                "type": "richtext",
-                "id": "text",
-                "label": "t:common.text"
-            }
-        ]
-    },
-    {
-        "type": "right_accordion",
-        "name": "t:sections.serum-selection.blocks.right-accordion.name",
-        "settings": [
-            {
-                "type": "text",
-                "id": "heading",
-                "label": "t:common.header"
-            },
-            {
-                "type": "richtext",
-                "id": "text",
-                "label": "t:common.text"
-            }
-        ]
-    },
-    {
-        "type": "left_feedback",
-        "name": "t:sections.serum-selection.blocks.left-feedback.name",
-        "limit": 1,
-        "settings": [
-            {
-                "type": "image_picker",
-                "id": "country_image",
-                "label": "t:common.country-image"
-            },
-            {
-                "type": "text",
-                "id": "username",
-                "label": "t:common.username"
-            },
-            {
-                "type": "text",
-                "id": "text",
-                "label": "t:common.text"
-            }
-        ]
-    },
-    {
-        "type": "right_feedback",
-        "name": "t:sections.serum-selection.blocks.right-feedback.name",
+        "type": "feedback",
+        "name": "t:common.feedback",
         "limit": 1,
         "settings": [
             {
@@ -255,7 +178,6 @@
             }
         ]
     }
-
   ],
   "presets": [
     {
