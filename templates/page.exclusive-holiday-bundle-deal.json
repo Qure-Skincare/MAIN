@@ -228,8 +228,8 @@
           "settings": {
             "product": "fade-firm-bundle-pro",
             "preselected": true,
-            "soldout": true,
-            "reserved": false
+            "soldout": false,
+            "reserved": true
           }
         },
         "product_7dL4ci": {
