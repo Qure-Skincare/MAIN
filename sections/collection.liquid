@@ -43,11 +43,11 @@
                     <div class="col-6 col-md-3 custom__block project" data-filter="fine_lines dark_spots breakouts">
                         <div class="qure__product-item">
                             <a href="{{ product_url }}" aria-label="{{ product_title }}" class="qure__product-img overflow-hidden position-relative d-block">
-                                {% if product.featured_image != blank %}
-                                    <div class="qure__product-main-img">
-                                        <img src="{{ product.featured_image | img_url: '720x' }}" alt="{{ product.featured_image.alt | escape }}" />
-                                    </div>                                    
-                                {% endif %}
+                                {% for media in product_media limit:2 %}
+                                    <div class="{% if forloop.index == 1 %}qure__product-main-img{% else %}qure__product-hover-img position-absolute inset-0{% endif %}">
+                                        <img src="{{ media | img_url: '720x' }}" alt="{{ product_title | escape }}" />
+                                    </div>
+                                {% endfor %}
 
                                 {% for tag in product_tags %}
                                     {% if tag contains 'Best Seller' %}
