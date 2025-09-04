@@ -29,6 +29,8 @@ function __landing__initTemplate(source) {
         if (typeof __gpd_update === "function") {
             __gpd_update();
         }
+
+        __landing__setVariantFromUrl();
     }               
 }
 
@@ -252,6 +254,23 @@ function __landing__updateProductFormButton(product_variant_id, soldout) {
             }
         }
     }
+}
+
+function __landing__setVariantFromUrl() {
+  const params = new URLSearchParams(window.location.search);
+  const variantId = params.get("variant");
+
+  if (!variantId) return;
+    
+  if (variantId) {
+    const el = document.querySelector('.' + __section_landing + ' .planBlock[data-product_variant_id="' + variantId + '"]');
+    if (el) {
+      el.click();
+      params.delete("variant");
+      const newUrl = window.location.pathname + (params.toString() ? "?" + params.toString() : "") + window.location.hash;
+      window.history.replaceState({}, "", newUrl);
+    }
+  }
 }
 
 function __landing__bindForm() {

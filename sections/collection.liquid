@@ -70,7 +70,9 @@
                                 </div>
                             </div>
                             
-                            {% render 'product-page-buy-button', product_price: null, product_variant_id: product_variant_id, section: blank %}
+                            <div class="d-none">
+                                {% render 'product-page-buy-button', product_price: null, product_variant_id: product_variant_id, section: blank %}
+                            </div>
                         </div>
                     </div>
                 {% endfor %}

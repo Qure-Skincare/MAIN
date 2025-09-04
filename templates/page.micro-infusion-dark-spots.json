@@ -154,7 +154,7 @@
         "quote-mobile": "",
         "image_position": "left",
         "sub_text": "",
-        "button_label": "BUY NOW & SAVE UP TO 43%",
+        "button_label": "BUY NOW & SAVE UP TO 70%",
         "button_url": "#purchase-form",
         "wistia_url": "a1pykz2tp0"
       }
@@ -252,7 +252,7 @@
         "image_position": "right",
         "sub_text": "",
         "image": "shopify://shop_images/mi_serum-show.webp",
-        "button_label": "BUY NOW & SAVE UP TO 43%",
+        "button_label": "BUY NOW & SAVE UP TO 70%",
         "button_url": "#purchase-form",
         "wistia_url": ""
       }
@@ -865,7 +865,7 @@
         "heading": "See how quick and easy it is to use",
         "heading_mobile": "",
         "wistia_url": "8ymvdqzx92",
-        "button_label": "buy now & SAVE UP TO 43%",
+        "button_label": "buy now & SAVE UP TO 70%",
         "button_url": "#purchase-form"
       }
     },
@@ -1018,6 +1018,7 @@
         },
         "product_type_VLXcAn": {
           "type": "product_type",
+          "disabled": true,
           "settings": {
             "heading": "Wrinkles",
             "image": "shopify://shop_images/serum_2.webp",
@@ -1084,6 +1085,7 @@
         },
         "product_type_YrPQrV": {
           "type": "product_type",
+          "disabled": true,
           "settings": {
             "heading": "Mixed",
             "image": "shopify://shop_images/serum_3.webp",
@@ -1241,7 +1243,7 @@
         "heading": "What you should know for the best results",
         "text": "<p>The Qure Micro-Infusion System is designed with your safety in mind.</p><p>Unlike popular at-home derma rollers, our stamper device features single-use sterile heads that help minimize the risk of infection or unnecessary skin damage caused by blunt and multi-use needles.</p><p>Below are a few rules you should follow while using your Qure Micro-Infusion System:</p>",
         "button_label": "See Detailed Treatment Guide",
-        "button_url": "https://querskin-brand.aronwebsolutions.com/page.sunil-micro-infusion-safety.html"
+        "button_url": "https://qureskincare.com/pages/microinfusion-safety-guide"
       }
     },
     "faq_fkEH4b": {
@@ -1354,7 +1356,7 @@
       "settings": {
         "heading": "Micro-Infusion Facial System",
         "text": "393 purchased in last 48 hours",
-        "button-label": "BUY NOW & SAVE UP TO 43%",
+        "button-label": "BUY NOW & SAVE UP TO 70%",
         "button-url": "#purchase-form"
       }
     }
