@@ -10,13 +10,13 @@ Renders a blog posts
                 {% case forloop.index %}
                     {% when 1 %}  
                         <img src="{{ 'blog.blog-post.settings.image_1' | t }}" alt="{{ link.title | escape }}" class="img-fluid d-none d-md-block">
-                        <img src="{{ 'blog.blog-post.settings.image__mobile_1' | t }}" alt="{{ link.title | escape }}" class="img-fluid d-md-none">
+                        <img src="{{ 'blog.blog-post.settings.image_mobile_1'| t }}" alt="{{ link.title | escape }}" class="img-fluid d-md-none">
                     {% when 2 %}
                         <img src="{{ 'blog.blog-post.settings.image_2' | t }}" alt="{{ link.title | escape }}" class="img-fluid d-none d-md-block">
-                        <img src="{{ 'blog.blog-post.settings.image__mobile_2' | t }}" alt="{{ link.title | escape }}" class="img-fluid d-md-none">
+                        <img src="{{ 'blog.blog-post.settings.image_mobile_2'| t }}" alt="{{ link.title | escape }}" class="img-fluid d-md-none">
                     {% when 3 %}
                         <img src="{{ 'blog.blog-post.settings.image_3' | t }}" alt="{{ link.title | escape }}" class="img-fluid d-none d-md-block">
-                        <img src="{{ 'blog.blog-post.settings.image__mobile_3' | t }}" alt="{{ link.title | escape }}" class="img-fluid d-md-none">
+                        <img src="{{ 'blog.blog-post.settings.image_mobile_3'| t }}" alt="{{ link.title | escape }}" class="img-fluid d-md-none">
                 {% endcase %}
                 <h6>{{ link.title }}</h6>
             </a>
@@ -30,7 +30,7 @@ Renders a blog posts
                     <div class="col-md-6 col-lg-4">
                         <div class="article">
                             {% if article.image != blank %}
-                                <div class="article_img position-relative"> <img src="{{ article.image | image_url }}" alt="{{ article.image.alt | escape }}" class="img-fluid w-100">
+                                <div class="article_img position-relative"> <img src="{{ article.image | image_url: width: 400, height: 300, crop: 'center' }}" alt="{{ article.image.alt | escape }}" class="img-fluid w-100">
                                     <p class="tag_name">#{{ blogs[blog_handle].title }}</p>
                                 </div>
                             {% endif %}

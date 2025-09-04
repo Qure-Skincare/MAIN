@@ -24,7 +24,7 @@
                             <img src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt | escape }}" class="img-fluid" />
                         {% endif %}
                         <div class="qure__section-header text-center mb-0 d-md-none pt-25">
-                            {% if section.settings.heading_mobile !=  %}
+                            {% if section.settings.heading_mobile != blank %}
                                 <h2 class="qure__section-heading">{{ section.settings.heading_mobile }}</h2>
                             {% endif %}
                             {% if section.settings.text_mobile != blank %}
