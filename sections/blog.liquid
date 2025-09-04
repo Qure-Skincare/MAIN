@@ -1,385 +1,42 @@
 <link rel="stylesheet" href="https://qureskincaredns-main.com/sections/isolated/blogs/blog.css">
-<div class="qure__section qure_blog_wrapper"
+<div class="qure__section qure_blog_wrapper blogs"
     style="--section-padding-top: 80px; --section-padding-bottom: 80px; --section-padding-top-mob: 50px; --section-padding-bottom-mob: 50px;">
     <div class="container">
-        <p>Blog > <strong>All Posts</strong></p>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="/blogs/all">Blog</a>
+            </li>
+            <li class="breadcrumb-item">{{ blog.title }}</li> 
+        </ol> 
     </div>
     <div class="qure_blogs mt-30 mt-md-40">
         <div class="container">
             <div class="row">
-                <div class="col-md-8">
-                    <h2 class="banner-text--heading mb-30">Choose your topic</h2>
-                    <div class="d-flex flex-column flex-md-row gap-4 gap-md-5 mw" style="--mw:648px;">
-                        <a href="#" class="choose_blog_topic position-relative">
-                            <img src="https://qureskincaredns-main.com/sections/isolated/blogs/images/choose_blog_1.webp" alt=""
-                                class="img-fluid d-none d-md-block">
-                            <img src="https://qureskincaredns-main.com/sections/isolated/blogs/images/choose_blog_1_mob.webp" alt=""
-                                class="img-fluid d-md-none">
-                            <h6>LED Light Therapy</h6>
-                        </a>
-                        <a href="#" class="choose_blog_topic position-relative">
-                            <img src="https://qureskincaredns-main.com/sections/isolated/blogs/images/choose_blog_2.webp" alt=""
-                                class="img-fluid d-none d-md-block">
-                            <img src="https://qureskincaredns-main.com/sections/isolated/blogs/images/choose_blog_2_mob.webp" alt=""
-                                class="img-fluid d-md-none">
-                            <h6>Skin</h6>
-                        </a>
-                        <a href="#" class="choose_blog_topic position-relative">
-                            <img src="https://qureskincaredns-main.com/sections/isolated/blogs/images/choose_blog_3.webp" alt=""
-                                class="img-fluid d-none d-md-block">
-                            <img src="https://qureskincaredns-main.com/sections/isolated/blogs/images/choose_blog_3_mob.webp" alt=""
-                                class="img-fluid d-md-none">
-                            <h6>Skincare</h6>
-                        </a>
-                    </div>
-                    <div class="articles mt-40">
-                        <h2 class="banner-text--heading mb-30">Articles</h2>
-                        <div class="row g-5">
-                            <div class="col-md-6 col-lg-4">
-                                <div class="article">
-                                    <div class="article_img position-relative">
-                                        <img src="https://qureskincaredns-main.com/sections/isolated/blogs/images/article_1.webp" alt=""
-                                            class="img-fluid w-100">
-                                        <p class="tag_name">#all</p>
-                                    </div>
-                                    <div class="article_content border border-top-0 p-24">
-                                        <div class="d-flex justify-content-between mb-15">
-                                            <div class="article_date">
-                                                <p>July 04, 2025</p>
-                                            </div>
-                                            <div class="read_time">
-                                                <p>6 min read</p>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex flex-column justify-content-between gap-5 title_bt_wrap">
-                                            <p class="article_title">The Skin Microbiome. Everything You Need to
-                                                Know!</p>
-                                            <a href="" class="btn">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="article">
-                                    <div class="article_img position-relative">
-                                        <img src="https://qureskincaredns-main.com/sections/isolated/blogs/images/article_2.webp" alt=""
-                                            class="img-fluid w-100">
-                                        <p class="tag_name">#all</p>
-                                    </div>
-                                    <div class="article_content border border-top-0 p-24">
-                                        <div class="d-flex justify-content-between mb-15">
-                                            <div class="article_date">
-                                                <p>June 12, 2025</p>
-                                            </div>
-                                            <div class="read_time">
-                                                <p>6 min read</p>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex flex-column justify-content-between gap-5 title_bt_wrap">
-                                            <p class="article_title">What to Do After Microneedling Your Scalp</p>
-                                            <a href="" class="btn">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="article">
-                                    <div class="article_img position-relative">
-                                        <img src="https://qureskincaredns-main.com/sections/isolated/blogs/images/article_3.webp" alt=""
-                                            class="img-fluid w-100">
-                                        <p class="tag_name">#all</p>
-                                    </div>
-                                    <div class="article_content border border-top-0 p-24">
-                                        <div class="d-flex justify-content-between mb-15">
-                                            <div class="article_date">
-                                                <p>June 12, 2025</p>
-                                            </div>
-                                            <div class="read_time">
-                                                <p>6 min read</p>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex flex-column justify-content-between gap-5 title_bt_wrap">
-                                            <p class="article_title">How to Clean a Derma Roller</p>
-                                            <a href="" class="btn">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="article">
-                                    <div class="article_img position-relative">
-                                        <img src="https://qureskincaredns-main.com/sections/isolated/blogs/images/article_4.webp" alt=""
-                                            class="img-fluid w-100">
-                                        <p class="tag_name">#all</p>
-                                    </div>
-                                    <div class="article_content border border-top-0 p-24">
-                                        <div class="d-flex justify-content-between mb-15">
-                                            <div class="article_date">
-                                                <p>June 06 2025</p>
-                                            </div>
-                                            <div class="read_time">
-                                                <p>6 min read</p>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex flex-column justify-content-between gap-5 title_bt_wrap">
-                                            <p class="article_title">Microchanneling vs Microneedling</p>
-                                            <a href="" class="btn">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="article">
-                                    <div class="article_img position-relative">
-                                        <img src="https://qureskincaredns-main.com/sections/isolated/blogs/images/article_5.webp" alt=""
-                                            class="img-fluid w-100">
-                                        <p class="tag_name">#all</p>
-                                    </div>
-                                    <div class="article_content border border-top-0 p-24">
-                                        <div class="d-flex justify-content-between mb-15">
-                                            <div class="article_date">
-                                                <p>June 06, 2025</p>
-                                            </div>
-                                            <div class="read_time">
-                                                <p>6 min read</p>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex flex-column justify-content-between gap-5 title_bt_wrap">
-                                            <p class="article_title">Microneedling vs Chemical Peel</p>
-                                            <a href="" class="btn">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="article">
-                                    <div class="article_img position-relative">
-                                        <img src="https://qureskincaredns-main.com/sections/isolated/blogs/images/article_6.webp" alt=""
-                                            class="img-fluid w-100">
-                                        <p class="tag_name">#all</p>
-                                    </div>
-                                    <div class="article_content border border-top-0 p-24">
-                                        <div class="d-flex justify-content-between mb-15">
-                                            <div class="article_date">
-                                                <p>June 06, 2025</p>
-                                            </div>
-                                            <div class="read_time">
-                                                <p>6 min read</p>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex flex-column justify-content-between gap-5 title_bt_wrap">
-                                            <p class="article_title">Does a Derma Roller Hurt?</p>
-                                            <a href="" class="btn">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="article">
-                                    <div class="article_img position-relative">
-                                        <img src="https://qureskincaredns-main.com/sections/isolated/blogs/images/article_7.webp" alt=""
-                                            class="img-fluid w-100">
-                                        <p class="tag_name">#all</p>
-                                    </div>
-                                    <div class="article_content border border-top-0 p-24">
-                                        <div class="d-flex justify-content-between mb-15">
-                                            <div class="article_date">
-                                                <p>June 05, 2025</p>
-                                            </div>
-                                            <div class="read_time">
-                                                <p>6 min read</p>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex flex-column justify-content-between gap-5 title_bt_wrap">
-                                            <p class="article_title">Microneedling vs PRP</p>
-                                            <a href="" class="btn">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="article">
-                                    <div class="article_img position-relative">
-                                        <img src="https://qureskincaredns-main.com/sections/isolated/blogs/images/article_8.webp" alt=""
-                                            class="img-fluid w-100">
-                                        <p class="tag_name">#all</p>
-                                    </div>
-                                    <div class="article_content border border-top-0 p-24">
-                                        <div class="d-flex justify-content-between mb-15">
-                                            <div class="article_date">
-                                                <p>June 05, 2025</p>
-                                            </div>
-                                            <div class="read_time">
-                                                <p>6 min read</p>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex flex-column justify-content-between gap-5 title_bt_wrap">
-                                            <p class="article_title">Are Derma Rollers Safe?</p>
-                                            <a href="" class="btn">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="article">
-                                    <div class="article_img position-relative">
-                                        <img src="https://qureskincaredns-main.com/sections/isolated/blogs/images/article_9.webp" alt=""
-                                            class="img-fluid w-100">
-                                        <p class="tag_name">#all</p>
-                                    </div>
-                                    <div class="article_content border border-top-0 p-24">
-                                        <div class="d-flex justify-content-between mb-15">
-                                            <div class="article_date">
-                                                <p>June 04, 2025</p>
-                                            </div>
-                                            <div class="read_time">
-                                                <p>6 min read</p>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex flex-column justify-content-between gap-5 title_bt_wrap">
-                                            <p class="article_title">Microneedling vs Botox</p>
-                                            <a href="" class="btn">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="blog_pagination">
-                        <button class="prev" disabled>
-                            <i class="fa-regular fa-angle-left"></i>
-                        </button>
-                        <span class="page-info">1 / 12</span>
-                        <button class="next">
-                            <i class="fa-regular fa-angle-right"></i>
-                        </button>
-                    </div>
-                </div>
+                {% case blog.handle %}
+                    {% when 'light-therapy' %}
+                        {% render 'blog-snippet-post' with blog_handle: 'light-therapy', limit: 9 %}
+                    {% when 'skin' %}
+                        {% render 'blog-snippet-post' with blog_handle: 'skin', limit: 9 %}
+                    {% when 'skincare' %}
+                        {% render 'blog-snippet-post' with blog_handle: 'skincare', limit: 9 %}
+                    {% when 'all' %}
+                        {% render 'blog-snippet-post' with blog_handle: 'all', limit: 9 %}   
+                {% endcase %}
                 <!-- most popular posts  -->
                 <div class="col-md-4 d-none d-md-block">
                     <div class="most_popular_posts pl-md-55">
-                        <p class="mb-4">Most Popular Posts</p>
+                        <p class="mb-4">{{ 'blog.popular.header' | t }}</p>
                         <div class="row gy-4">
-                            <div class="col-12">
-                                <a href="#" class="popular_post d-flex gap-3">
-                                    <div class="popular_post_img">
-                                        <img src="https://qureskincaredns-main.com/sections/isolated/blogs/images/pop_post_1.webp" alt=""
-                                            class="img-fluid">
-                                    </div>
-                                    <div class="popular_post_content">
-                                        <p class="pop_post_tag">#skin</p>
-                                        <p class="pop_post_title">Does Drinking Water Help Clear Your Skin?</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-12">
-                                <a href="#" class="popular_post d-flex gap-3">
-                                    <div class="popular_post_img">
-                                        <img src="https://qureskincaredns-main.com/sections/isolated/blogs/images/pop_post_2.webp" alt=""
-                                            class="img-fluid">
-                                    </div>
-                                    <div class="popular_post_content">
-                                        <p class="pop_post_tag">#skincare</p>
-                                        <p class="pop_post_title">Benefits of Peptides for the Skin</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-12">
-                                <a href="#" class="popular_post d-flex gap-3">
-                                    <div class="popular_post_img">
-                                        <img src="https://qureskincaredns-main.com/sections/isolated/blogs/images/pop_post_3.webp" alt=""
-                                            class="img-fluid">
-                                    </div>
-                                    <div class="popular_post_content">
-                                        <p class="pop_post_tag">#LEDlighttherapy</p>
-                                        <p class="pop_post_title">How LED Therapy Can Transform Your Skin</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-12">
-                                <a href="#" class="popular_post d-flex gap-3">
-                                    <div class="popular_post_img">
-                                        <img src="https://qureskincaredns-main.com/sections/isolated/blogs/images/pop_post_4.webp" alt=""
-                                            class="img-fluid">
-                                    </div>
-                                    <div class="popular_post_content">
-                                        <p class="pop_post_tag">#skin</p>
-                                        <p class="pop_post_title">21 Best Skin-Care Tips, According to Der...</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-12">
-                                <a href="#" class="popular_post d-flex gap-3">
-                                    <div class="popular_post_img">
-                                        <img src="https://qureskincaredns-main.com/sections/isolated/blogs/images/pop_post_5.webp" alt=""
-                                            class="img-fluid">
-                                    </div>
-                                    <div class="popular_post_content">
-                                        <p class="pop_post_tag">#skincare</p>
-                                        <p class="pop_post_title">Retinol/Retinoids - What are they and...</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-12">
-                                <a href="#" class="popular_post d-flex gap-3">
-                                    <div class="popular_post_img">
-                                        <img src="https://qureskincaredns-main.com/sections/isolated/blogs/images/pop_post_6.webp" alt=""
-                                            class="img-fluid">
-                                    </div>
-                                    <div class="popular_post_content">
-                                        <p class="pop_post_tag">#skincare</p>
-                                        <p class="pop_post_title">Can Vitamin C Help With Anti-Skin Aging?</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-12">
-                                <a href="#" class="popular_post d-flex gap-3">
-                                    <div class="popular_post_img">
-                                        <img src="https://qureskincaredns-main.com/sections/isolated/blogs/images/pop_post_7.webp" alt=""
-                                            class="img-fluid">
-                                    </div>
-                                    <div class="popular_post_content">
-                                        <p class="pop_post_tag">#LEDlighttherapy</p>
-                                        <p class="pop_post_title">How to Treat Acne Using Light Therapy...</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-12">
-                                <a href="#" class="popular_post d-flex gap-3">
-                                    <div class="popular_post_img">
-                                        <img src="https://qureskincaredns-main.com/sections/isolated/blogs/images/pop_post_8.webp" alt=""
-                                            class="img-fluid">
-                                    </div>
-                                    <div class="popular_post_content">
-                                        <p class="pop_post_tag">#LEDlighttherapy</p>
-                                        <p class="pop_post_title">Skincare Questions You’re Too Afraid To...</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-12">
-                                <a href="#" class="popular_post d-flex gap-3">
-                                    <div class="popular_post_img">
-                                        <img src="https://qureskincaredns-main.com/sections/isolated/blogs/images/pop_post_9.webp" alt=""
-                                            class="img-fluid">
-                                    </div>
-                                    <div class="popular_post_content">
-                                        <p class="pop_post_tag">#skin</p>
-                                        <p class="pop_post_title">How Cortisol Affects the Skin: The St...</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-12">
-                                <a href="#" class="popular_post d-flex gap-3">
-                                    <div class="popular_post_img">
-                                        <img src="https://qureskincaredns-main.com/sections/isolated/blogs/images/pop_post_10.webp" alt=""
-                                            class="img-fluid">
-                                    </div>
-                                    <div class="popular_post_content">
-                                        <p class="pop_post_tag">#skin</p>
-                                        <p class="pop_post_title">Beta-Glucan: The Saint Grail of Skin Hy...</p>
-                                    </div>
-                                </a>
-                            </div>
+                            {% render 'blog-snippet-post-popular' with blog_handle: 'skin', limit: 1 %}
+                            {% render 'blog-snippet-post-popular' with blog_handle: 'skincare', limit: 1 %}
+                            {% render 'blog-snippet-post-popular' with blog_handle: 'light-therapy', limit: 1 %}
+                            {% render 'blog-snippet-post-popular' with blog_handle: 'skin', limit: 1 %}
+                            {% render 'blog-snippet-post-popular' with blog_handle: 'skincare', limit: 1, offset:1 %}
+                            {% render 'blog-snippet-post-popular' with blog_handle: 'skincare', limit: 1, offset:2 %}
+                            {% render 'blog-snippet-post-popular' with blog_handle: 'light-therapy', limit: 1, offset:1 %}
+                            {% render 'blog-snippet-post-popular' with blog_handle: 'light-therapy', limit: 1, offset:2 %}
+                            {% render 'blog-snippet-post-popular' with blog_handle: 'skin', limit: 1, offset:2 %}
+                            {% render 'blog-snippet-post-popular' with blog_handle: 'skin', limit: 1, offset:3 %}
                         </div>
                     </div>
                 </div>
@@ -387,3 +44,8 @@
         </div>
     </div>
 </div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    loadScriptOnce('equal-height', 'https://qureskincaredns-main.com/assets/js/equal-height.js');
+    });
+</script>

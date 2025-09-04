@@ -456,5 +456,63 @@
         "text": "Our products are not intended to diagnose, cure, or prevent specific diseases of medical conditions. The Qure website is for education and information purposes only and is not intended as medical advice or a substitute for medical advice."
       }
     }
+  },
+  "blog": {
+    "choose": {
+      "header": "Choose your topic",
+      "read_time": "6 min read",
+      "read_more": "Read More"
+    },
+    "popular": {
+      "header": "Most Popular Posts"
+    },
+    "blog-post":{
+      "settings": {
+        "image_1": "https://qureskincaredns-main.com/sections/isolated/blogs/images/choose_blog_1.webp",
+        "image_mobile_1": "https://qureskincaredns-main.com/sections/isolated/blogs/images/choose_blog_1_mob.webp",
+        "image_2": "https://qureskincaredns-main.com/sections/isolated/blogs/images/choose_blog_2.webp",
+        "image_mobile_2": "https://qureskincaredns-main.com/sections/isolated/blogs/images/choose_blog_2_mob.webp",
+        "image_3": "https://qureskincaredns-main.com/sections/isolated/blogs/images/choose_blog_3.webp",
+        "image_mobile_3": "https://qureskincaredns-main.com/sections/isolated/blogs/images/choose_blog_3_mob.webp"
+      }
+    },
+    "blog-bottom": {
+      "header": "Related Articles"
+    },
+    "settings": {
+      "blog_text": "Blog"
+    }
+  },
+  "article": {
+    "settings": {
+      "related_articles": {
+        "header_html": "Written by <strong>Our Editorial Team</strong>",
+        "read_time": "6 min read"
+      },
+      "social_media": {
+        "share": "Share this article:",
+        "facebook_icon": "https://qureskincaredns-main.com/sections/isolated/blogs/images/facebook.webp",
+        "pinterest_icon": "https://qureskincaredns-main.com/sections/isolated/blogs/images/pinterest.webp",
+        "whatsapp_icon": "https://qureskincaredns-main.com/sections/isolated/blogs/images/whatsapp.webp",
+        "email_icon": "https://qureskincaredns-main.com/sections/isolated/blogs/images/email.webp"
+      }
+    },
+    "snippets": {
+      "discover": {
+        "image": "https://qureskincaredns-main.com/sections/isolated/blogs/images/discover_best_seller.webp",
+        "image_mobile": "https://qureskincaredns-main.com/sections/isolated/blogs/images/discover_best_seller_mob.webp",
+        "header_html": "<strong>Discover our Best Sellers</strong>",
+        "button_label": "Shop Now"
+      },
+      "subscription": {
+        "header": "",
+        "text": "",
+        "button_image": ""
+      },
+      "community": {
+        "header_html": "<strong>Learn more and share <br> your skincare journey</strong>",
+        "button_label": "Join Our VIP Community"
+      }
+    }
   }
 }

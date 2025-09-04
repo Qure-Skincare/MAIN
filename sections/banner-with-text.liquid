@@ -35,12 +35,15 @@
                                 | replace: '<em>', '<span>' 
                                 | replace: '</em>', '</span>' 
                                 | replace: '<p>[strong]', '<div class="fs-20 fw-600 mb-10">'
-                                | replace: '[/strong]</p>', '</div>' }}
+                                | replace: '[/strong]</p>', '</div>' 
+                                | replace: '<strong>', '<span class="fw-600 bg-transparent">'
+                                | replace: '</strong>', '</span>'
+                                }}
                             </div>
                         {% endif %}
-                        {% if section.settings.button_label != blank and section.settings.button_url != blank %}
+                        {% comment %} {% if section.settings.button_label != blank and section.settings.button_url != blank %}
                             <a href="{{ section.settings.button_url }}" class="banner-text--button btn btn--primary w-mob-100">{{ section.settings.button_label }}</a>
-                        {% endif %}
+                        {% endif %} {% endcomment %}
                         {% assign numbered_list_blocks = section.blocks | where: "type", "numbered_list" %}
                         {% if numbered_list_blocks.size > 0 %}
                             <div class="banner-text--steps mb-30">
@@ -94,6 +97,9 @@
                                 {% endfor %}
                             </div>
                         {% endif %}
+                        {% if section.settings.button_label != blank and section.settings.button_url != blank %}
+                            <a href="{{ section.settings.button_url }}" class="text-uppercase btn btn--primary mt-25 w-100" style="--btn-mx-w:400px;">{{ section.settings.button_label }}</a>
+                        {% endif %}
                     </div>
                 </div>
             </div>
@@ -116,7 +122,10 @@
                                 | replace: '<em>', '<span>' 
                                 | replace: '</em>', '</span>' 
                                 | replace: '<p>[strong]', '<div class="fs-20 fw-600 mb-10">'
-                                | replace: '[/strong]</p>', '</div>' }}
+                                | replace: '[/strong]</p>', '</div>' 
+                                | replace: '<strong>', '<span class="fw-600 bg-transparent">'
+                                | replace: '</strong>', '</span>' 
+                                }}
                             </div>
                         {% endif %}
                         {% if section.settings.button_label != blank and section.settings.button_url != blank %}
