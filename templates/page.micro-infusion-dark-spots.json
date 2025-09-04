@@ -708,10 +708,10 @@
           "type": "slider",
           "settings": {
             "heading": "It really works!!",
-            "text": "<p>“I committed to the 3 month saver bundle and after 6 treatments (2 weeks apart) I’m SO happy with the results!!! My pores are smaller and I have mainly noticed a difference in my skin texture. My skin goes a little red straight after the treatment but that quickly goes away. It’s a little uncomfortable when I do it on my forehead but it’s fine everywhere else. Totally worth it!!!”/p>",
+            "text": "<p>“I committed to the 3 month saver bundle and after 6 treatments (2 weeks apart) I’m SO happy with the results!!! My pores are smaller and I have mainly noticed a difference in my skin texture. My skin goes a little red straight after the treatment but that quickly goes away. It’s a little uncomfortable when I do it on my forehead but it’s fine everywhere else. Totally worth it!!!”</p>",
             "compare_image": "shopify://shop_images/jess.webp",
             "country_image": "shopify://shop_images/america_f.webp",
-            "username": "<p></p>",
+            "username": "",
             "product_url": "",
             "product_heading": "",
             "product_text": ""
@@ -749,7 +749,7 @@
         "text": "",
         "text_mobile": "",
         "button_label": "BUY NOW & SAVE UP TO 43%",
-        "button_url": ""
+        "button_url": "#purchase-form"
       }
     },
     "compare_UGAfRr": {
