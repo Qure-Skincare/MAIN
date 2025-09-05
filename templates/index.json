@@ -386,7 +386,7 @@
           "settings": {
             "text": "<p>Signs of aging, fine lines and wrinkles</p>",
             "button": "Shop Now",
-            "button_url": "#",
+            "button_url": "https://qureskincare.com/collections/fine-line-wrinkles",
             "image": "shopify://shop_images/gq-1.webp",
             "image_mobile": "shopify://shop_images/gq-mob-1.webp"
           }
@@ -396,7 +396,7 @@
           "settings": {
             "text": "<p>Dark spots and uneven skin tone</p>",
             "button": "Shop Now",
-            "button_url": "#",
+            "button_url": "https://qureskincare.com/collections/dark-spots",
             "image": "shopify://shop_images/gq-2.webp",
             "image_mobile": "shopify://shop_images/gq-mob-2.webp"
           }
