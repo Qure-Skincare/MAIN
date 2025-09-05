@@ -7,7 +7,7 @@
   {% render 'header-menu-desktop', label: '' %}
 {% enddoc %}
 
-{% for link in linklists['main-menu'].links %}
+{% for link in linklists['main-header'].links %}
     {% if link.title == label %}
         {% if link.links.size > 0 %}
             {%- for __link in link.links -%}

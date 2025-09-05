@@ -103,10 +103,10 @@
             </div>
         </div>
 
-        {% if linklists['mobile-drawer-menu'].links.size > 0 %}
+        {% if linklists['main-mobile-drawer-menu'].links.size > 0 %}
             <div class="px-24 py-30 border-top" style="--bs-border-color: #8B8C8E;">
                 <ul class="mob-help-nav">
-                    {% for link in linklists['mobile-drawer-menu'].links %}
+                    {% for link in linklists['main-mobile-drawer-menu'].links %}
 
                         {% case link.title %}
                             {% when 'Customer Account' %}

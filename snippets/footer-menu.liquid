@@ -12,7 +12,7 @@
         <div class="qure__footer-content qure__footer-nav unactive">
             <div class="pb-20 pb-md-0">
                 <ul>
-                    {% for link in linklists['footer-menu'].links %}
+                    {% for link in linklists['main-footer-menu'].links %}
                         {% if link.title == 'Shop' %}
                             {%- for __link in link.links -%}
                                 <li><a href="{{ __link.url }}" aria-label="{{ __link.title | escape }}">{{ __link.title }}</a></li>
@@ -30,7 +30,7 @@
         <div class="qure__footer-content qure__footer-nav unactive">
             <div class="pb-20 pb-md-0">
                 <ul>
-                    {% for link in linklists['footer-menu'].links %}
+                    {% for link in linklists['main-footer-menu'].links %}
                         {% if link.title == 'Learn' %}
                             {%- for __link in link.links -%}
                                 <li><a href="{{ __link.url }}" aria-label="{{ __link.title | escape }}">{{ __link.title }}</a></li>
@@ -48,7 +48,7 @@
         <div class="qure__footer-content qure__footer-nav unactive">
             <div class="pb-20 pb-md-0">
                 <ul>
-                    {% for link in linklists['footer-menu'].links %}
+                    {% for link in linklists['main-footer-menu'].links %}
                         {% if link.title == 'Qure' %}
                             {%- for __link in link.links -%}
                                 <li><a href="{{ __link.url }}" aria-label="{{ __link.title | escape }}">{{ __link.title }}</a></li>

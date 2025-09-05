@@ -24,7 +24,7 @@
                 class="d-flex flex-wrap flex-md-nowrap justify-content-between gap-10 align-items-center mb-md-50 mb-40 fs-16">
                 <p class="ctm-width mb-15" style="--ctm-width: 80px; --ctm-width-mob: 60px;">{{ 'sections.collection.shopby' | t }}</p>
                 <ul class="filters qure_tabs">
-                    {% for link in linklists['collection'].links %}
+                    {% for link in linklists['main-collection'].links %}
                         <li><button class="filter{% if link.active %} active{% endif %}" onclick="window.location.href='{{ link.url }}'">{{ link.title }}</button></li>
                     {% endfor %}
                 </ul>
