@@ -1,0 +1,23 @@
+{% if section.settings.heading != blank %}
+    <div class="qure__section-header text-center mt-30 mb-30">
+        <h2 class="qure__section-heading">{{ section.settings.heading }}</h2>
+    </div>
+{% endif %}
+
+{% schema %}
+{
+    "name": "t:sections.text-header.name",
+    "settings": [
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "t:common.header"
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.text-header.name"
+        }
+    ]
+}
+{% endschema %}

@@ -319,7 +319,7 @@
         "how-to-use": {
             "name": "How to use"
         },
-         "how-to-use-picture": {
+        "how-to-use-picture": {
             "name": "How to use with picture"
         },
         "footer-cart-drawer": {
@@ -376,16 +376,16 @@
                 }
             }
         },
-         "index-mobile-category-slider": {
+        "index-mobile-category-slider": {
             "name": "Mobile category slider"
         },
-         "page-banner": {
+        "page-banner": {
             "name": "Page banner"
         },
-         "bundle-banner": {
+        "bundle-banner": {
             "name": "Bundle banner"
         },
-         "slider-featured-in": {
+        "slider-featured-in": {
             "name": "Slider Featured In"
         },
          "index-qure-products": {
@@ -492,7 +492,7 @@
                 }
             }
         },
-         "qure-filters-offer-qure-filters": {
+        "qure-filters-offer-qure-filters": {
             "name": "Qure filters",
             "blocks": {
                 "shower-tab": {
@@ -515,6 +515,9 @@
         },
         "quiz": {
             "name": "Quiz"
+        },
+        "text-header": {
+            "name": "Text header"
         },
         "fix-problem": {
             "name": "Fix problem"

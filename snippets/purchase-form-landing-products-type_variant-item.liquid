@@ -24,33 +24,25 @@
                 {%- for __id in array -%}
                     {% assign block = section.blocks | where: "id", __id | first %}
                     {% if block.type == 'product' %}
-                        {% assign product = all_products[block.settings.product] %}
+                        {% include 'get-product-data', product_handle: block.settings.product, product_prefix: 'purchase-form-landing-products-type_variant-items-' %}
 
-                        {% if product != blank and product.available %}
-
-                            {% assign product_variant_id = product.variants.first.id %}
-
+                        {% if product_id %}
                             {% if block.settings.product_variant_id != null %}
                                 {% assign product_variant_id = block.settings.product_variant_id %}
                             {% endif %}
 
-                            {% assign product_price_divided = product.price | divided_by: 4 %}
-                            {% assign discount_percentage = product.price | times: 1.0 | divided_by: product.compare_at_price | minus: 1 | abs | times: 100 | ceil %}
                             {% assign product_title_tag = block.settings.heading | strip_newlines | strip | replace: ' ', '' | downcase %}
-                            {% assign product_price = product.price | money_without_trailing_zeros %}
-                            {% assign product_price_compare = product.compare_at_price | money_without_trailing_zeros %}
-
                             {% assign array_count = array_count |  minus: 1 %}
                             {% assign product_type = array_count %}
                             
-                            {% if product_price_compare == blank %}
-                                {% assign discount_percentage = blank %}
+                            {% if product_before_price == blank %}
+                                {% assign product_discount = blank %}
                             {% endif %}
 
-                            {% capture data-per %}{{ 'purchase-form.settings.buy-button-label' | t }} {% if discount_percentage != blank %} {{ 'purchase-form.settings.save' | t }} {{ discount_percentage }}%{% endif %}{% endcapture %}
+                            {% capture data-per %}{{ 'purchase-form.settings.buy-button-label' | t }} {% if product_discount != blank %} {{ 'purchase-form.settings.save' | t }} {{ product_discount }}%{% endif %}{% endcapture %}
 
                             {% if block.settings.preorder == true %}
-                                {% capture data-per %}{{ 'purchase-form.settings.reserve-button-label' | t }} {% if discount_percentage != blank %} {{ 'purchase-form.settings.save' | t }} {{ discount_percentage }}%{% endif %}{% endcapture %}
+                                {% capture data-per %}{{ 'purchase-form.settings.reserve-button-label' | t }} {% if product_discount != blank %} {{ 'purchase-form.settings.save' | t }} {{ product_discount }}%{% endif %}{% endcapture %}
                             {% endif %}
 
                             {% if block.settings.soldout == true %}
@@ -59,7 +51,7 @@
 
                             <div class="planBlock col qure__variant-item" href="javascript:void(0)"
                                 data-block-id="{{ block.id }}"
-                                data-pay="{{ product_price_divided | money_without_trailing_zeros }}" 
+                                data-pay="{{ product_price_divided }}" 
                                 data-per="{{ data-per }}" 
                                 data-product_variant_id="{{ product_variant_id }}" 
                                 data-soldout="{{ block.settings.soldout }}" 
@@ -70,7 +62,7 @@
                                 data-product-selling-plan="{{ block.settings.product_selling_plan }}"
                                 {% endif %}
                                 data-variant-title="{{ product_title_tag }}"
-                                data-product-price="{{ product_price }}">
+                                data-product-price="{{ product_sale_price }}">
 
                                 <input type="radio" class="variant__input vp__input" name="monthlyPlan_{{ section.settings.form_name }}" id="{% if section.settings.hide_types %}{{ product_title_tag }}{% else %}{{ section.id }}-{{ product_title_tag }}{% endif %}" data-id="{{ product_title_tag }}" {% if block.settings.preselected == true %} checked{% endif %}>
                                 <label for="{% if section.settings.hide_types %}{{ product_title_tag }}{% else %}{{ section.id }}-{{ product_title_tag }}{% endif %}" data-id="{{ product_title_tag }}" class="qure__variant-box">

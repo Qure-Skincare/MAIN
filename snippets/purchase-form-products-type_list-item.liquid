@@ -26,25 +26,20 @@
                     {%- for __id in array -%}
                         {% assign block = section.blocks | where: "id", __id | first %}
                         {% if block.type == 'product' %}
-                            {% assign product = all_products[block.settings.product] %}
-                            {% if product != blank and product.available %}
-                                {% assign product_id = product.id %}
-                                {% assign product_variant_id = product.variants.first.id %}
-                                {% assign product_price_divided = product.price | divided_by: 4 %}
-                                {% assign discount_percentage = product.price | times: 1.0 | divided_by: product.compare_at_price | minus: 1 | abs | times: 100 | ceil %}
+                            {% include 'get-product-data', product_handle: block.settings.product, product_prefix: 'purchase-form-products-type_list-item-' %}
+
+                            {% if product_id %}
                                 {% assign product_title_tag = block.settings.heading | strip_newlines | strip | replace: ' ', '' | replace: ',', '_' | downcase %}
-                                {% assign product_price = product.price | money_without_trailing_zeros %}
-                                {% assign product_price_compare = product.compare_at_price | money_without_trailing_zeros %}
 
                                 {% if block.settings.total_treatments > 0 %}
-                                    {% assign product_price_per_item = product.price | divided_by: block.settings.total_treatments | money_without_trailing_zeros %}
+                                    {% assign product_price_per_item = product_price_original | divided_by: block.settings.total_treatments | money_without_trailing_zeros %}
                                 {% endif %}
 
                                 {% assign array_count = array_count |  minus: 1 %}
                                 {% assign product_type = array_count %}
                                 
-                                {% if product_price_compare == blank %}
-                                    {% assign discount_percentage = blank %}
+                                {% if product_before_price == blank %}
+                                    {% assign product_discount = blank %}
                                 {% endif %}
 
                                 {% capture product-included-dropdown %}
@@ -63,10 +58,10 @@
                                     </div>
                                 {% endcapture %}
 
-                                {% capture data-per %}{{ 'purchase-form.settings.buy-button-label' | t }} {% if discount_percentage != blank %} {{ 'purchase-form.settings.and' | t }} {{ 'purchase-form.settings.save' | t }} {{ discount_percentage }}%{% endif %}{% endcapture %}
+                                {% capture data-per %}{{ 'purchase-form.settings.buy-button-label' | t }} {% if product_discount != blank %} {{ 'purchase-form.settings.and' | t }} {{ 'purchase-form.settings.save' | t }} {{ product_discount }}%{% endif %}{% endcapture %}
 
                                 {% if block.settings.preorder == true %}
-                                    {% capture data-per %}{{ 'purchase-form.settings.reserve-button-label' | t }} {% if discount_percentage != blank %} {{ 'purchase-form.settings.and' | t }} {{ 'purchase-form.settings.save' | t }} {{ discount_percentage }}%{% endif %}{% endcapture %}
+                                    {% capture data-per %}{{ 'purchase-form.settings.reserve-button-label' | t }} {% if product_discount != blank %} {{ 'purchase-form.settings.and' | t }} {{ 'purchase-form.settings.save' | t }} {{ product_discount }}%{% endif %}{% endcapture %}
                                 {% endif %}
 
                                 {% if block.settings.soldout == true %}
@@ -76,7 +71,7 @@
                                 <div class="qure-supply-item col-12 position-relative planBlock" role="presentation" href="javascript:void(0)"
                                     data-block-id="{{ block.id }}"
                                     data-tab="tab_{{ product_title_tag }}" 
-                                    data-pay="{{ product_price_divided | money_without_trailing_zeros }}" 
+                                    data-pay="{{ product_price_divided }}" 
                                     data-per="{{ data-per }}" 
                                     {% if block.settings.image != blank %}
                                     data-image="{{ block.settings.image | img_url: 'master' }}"
@@ -86,7 +81,7 @@
                                     data-preorder="{{ block.settings.preorder }}" 
                                     data-product-type="{{ product_type }}"
                                     data-product-name="{{ block.settings.heading | escape }}",
-                                    data-product-price="{{ product_price }}">
+                                    data-product-price="{{ product_sale_price }}">
 
                                     {% if product_type == 3 %}
                                         <div class="best_value">
@@ -107,19 +102,19 @@
                                             </div>
                                             <div>
                                                 <div class="qure__supply-price">
-                                                    {% if product_price_compare != blank %}
-                                                        <span class="qure__supply-price-sale regular_price">{{ product_price_compare }}</span>
-                                                        <span class="qure__supply-price-reg-sale sale_price">{{ product_price }}</span>
+                                                    {% if product_before_price != blank %}
+                                                        <span class="qure__supply-price-sale regular_price">{{ product_before_price }}</span>
+                                                        <span class="qure__supply-price-reg-sale sale_price">{{ product_sale_price }}</span>
                                                     {% else %}
-                                                        <span class="qure__supply-price-reg sale_price">{{ product_price }}</span>
+                                                        <span class="qure__supply-price-reg sale_price">{{ product_sale_price }}</span>
                                                     {% endif %}
                                                 </div>
-                                                {% if discount_percentage != blank %}
+                                                {% if product_discount != blank %}
                                                     {% case product_type %}
                                                         {% when 3 %}
-                                                            <p class="ctm-background fs-12 text-center text-white rounded-30">{{ 'purchase-form.settings.save' | t | upcase }} {{ discount_percentage }}%</p>
+                                                            <p class="ctm-background fs-12 text-center text-white rounded-30">{{ 'purchase-form.settings.save' | t | upcase }} {{ product_discount }}%</p>
                                                         {% when 2 %}
-                                                            <p class="ctm-background fs-12 text-center text-orange rounded-30" style="--ctm-background:#ff54291a;">{{ 'purchase-form.settings.save' | t | upcase }} {{ discount_percentage }}%</p>
+                                                            <p class="ctm-background fs-12 text-center text-orange rounded-30" style="--ctm-background:#ff54291a;">{{ 'purchase-form.settings.save' | t | upcase }} {{ product_discount }}%</p>
                                                     {% endcase %}
                                                 {% endif %}
                                             </div>
