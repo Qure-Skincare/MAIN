@@ -416,7 +416,7 @@
           "settings": {
             "text": "<p>Acne breakouts<br/>and blemishes</p>",
             "button": "Shop Now",
-            "button_url": "#",
+            "button_url": "https://qureskincare.com/collections/acne-breakouts",
             "image": "shopify://shop_images/gq-4.webp",
             "image_mobile": "shopify://shop_images/gq-mob-2.webp"
           }
