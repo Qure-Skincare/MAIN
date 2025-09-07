@@ -19,7 +19,7 @@
                             {% if block.type == 'list' %}
                                 <li class="nav-item" role="presentation">
                                     {% if block.settings.button_label %}
-                                        <button class="nav-link{% if forloop.index == 1 %} active{% endif %}" id="routine-tab-{{ forloop.index }}" data-bs-toggle="tab" data-bs-target="#routine-content-{{ forloop.index }}" type="button" role="tab" data-img="{% if forloop.index == 1 %}daily{% elsif forloop.index == 2 %}weekly{% endif %}">{{ block.settings.button_label }}</button>
+                                        <button class="nav-link{% if forloop.index == 1 %} active{% endif %}" id="routine-tab-{{ forloop.index }}" data-bs-toggle="tab" data-bs-target="#routine-content-{{ forloop.index }}" type="button" role="tab" data-img="{% if forloop.index == 1 %}daily{% elsif forloop.index == 2 %}weekly{% elsif forloop.index == 3 %}biweekly{% endif %}">{{ block.settings.button_label }}</button>
                                     {% endif %}
                                 </li>
                             {% endif %}
@@ -42,7 +42,36 @@
                                         {{ block.settings.subheading }}
                                     {% endif %}
                                     {% if block.settings.subtext != blank %}
-                                        {{ block.settings.subtext | replace: '<p><ul>', '<ul class="benefits_ul">' | replace: '</ul></p>', '</ul>' }}
+                                        {{ block.settings.subtext 
+                                        | replace: '<p><ul>', '<ul class="benefits_ul">' 
+                                        | replace: '</ul></p>', '</ul>' }}
+                                    {% endif %}
+                                    {% if block.settings.am_or_pm == 'both' %}
+                                        <div class="d-flex align-items-center gap-4">
+                                            <div class="d-flex bg-light gap-2 px-12 py-6 rounded-100">
+                                                <img src="{{ 'sections.skincare-routine.am_image' | t }}" alt="{{ 'sections.skincare-routine.am_image.alt' | t | escape }}">
+                                                <p class="mb-0">{{ 'sections.skincare-routine.am_text' | t }}</p>
+                                            </div>
+                                            <div>{{ 'sections.skincare-routine.or_text' | t }}</div>
+                                            <div class="d-flex bg-light gap-2 px-12 py-6 rounded-100">
+                                                <img src="{{ 'sections.skincare-routine.pm_image' | t }}" alt="{{ 'sections.skincare-routine.pm_image.alt' | t | escape }}">
+                                                <p class="mb-0">{{ 'sections.skincare-routine.pm_text' | t }}</p>
+                                            </div>
+                                        </div>
+                                    {% elsif block.settings.am_or_pm == 'am' %}
+                                        <div class="d-flex align-items-center gap-4">
+                                            <div class="d-flex bg-light gap-2 px-12 py-6 rounded-100">
+                                                <img src="{{ 'sections.skincare-routine.am_image' | t }}" alt="{{ 'sections.skincare-routine.am_image.alt' | t | escape }}">
+                                                <p class="mb-0">{{ 'sections.skincare-routine.am_text' | t }}</p>
+                                            </div>
+                                        </div>
+                                    {% elsif block.settings.am_or_pm == 'pm' %}
+                                        <div class="d-flex align-items-center gap-4">
+                                            <div class="d-flex bg-light gap-2 px-12 py-6 rounded-100">
+                                                <img src="{{ 'sections.skincare-routine.pm_image' | t }}" alt="{{ 'sections.skincare-routine.pm_image.alt' | t | escape }}">
+                                                <p class="mb-0">{{ 'sections.skincare-routine.pm_text' | t }}</p>
+                                            </div>
+                                        </div>
                                     {% endif %}
                                 </div>
                             {% endif %}
@@ -55,13 +84,13 @@
                     {% for block in section.blocks %}
                         {% if block.type == 'list' %}
                             {% if block.settings.image != blank %}
-                                <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" class="img-fluid routine-img {% if forloop.index == 1 %}daily{% elsif forloop.index == 2 %}weekly{% endif %}">
+                                <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" class="img-fluid routine-img {% if forloop.index == 1 %}daily{% elsif forloop.index == 2 %}weekly{%  elsif forloop.index == 3 %}biweekly{% endif %}">
                             {% endif %}
                             {% if block.settings.image_mobile != blank %}
-                                <img src="{{ block.settings.image_mobile | image_url }}" alt="{{ block.settings.image_mobile.alt | escape }}" class="img-fluid routine-img {% if forloop.index == 1 %}daily{% elsif forloop.index == 2 %}weekly {% endif %}d-none">
+                                <img src="{{ block.settings.image_mobile | image_url }}" alt="{{ block.settings.image_mobile.alt | escape }}" class="img-fluid routine-img {% if forloop.index == 1 %}daily{% elsif forloop.index == 2 %}weekly{% elsif forloop.index==3 %}{% endif %} d-none">
                             {% endif %}
                             {% if block.settings.wistia_url != blank %}
-                                <div class="wistia_responsive_padding routine-img routine-img {% if forloop.index == 1 %}daily{% elsif forloop.index == 2 %}weekly {% endif %}d-none"
+                                <div class="wistia_responsive_padding routine-img routine-img {% if forloop.index == 1 %}daily{% elsif forloop.index == 2 %}weekly{% elsif forloop.index == 3 %}biweekly{% endif %} d-none"
                                     style="padding:56.25% 0 0 0;position:relative;">
                                     <div class="wistia_responsive_wrapper"
                                         style="height:100%;left:0;position:absolute;top:0;width:100%;">
@@ -123,6 +152,30 @@
             "type": "richtext",
             "id": "subtext",
             "label": "t:common.sub-text"
+        },
+        {
+            "type": "select",
+            "id": "am_or_pm",
+            "label": "t:sections.skincare-routine.blocks.list.settings.am-or-pm",
+            "default": "none",
+            "options": [
+                { 
+                    "value": "am", 
+                    "label": "t:common.am" 
+                },
+                { 
+                    "value": "pm", 
+                    "label": "t:common.pm"
+                },
+                {
+                    "value": "both", 
+                    "label": "t:common.both"
+                },
+                {
+                    "value": "none", 
+                    "label": "t:common.none"
+                }
+            ]
         },
         {
             "type": "text",

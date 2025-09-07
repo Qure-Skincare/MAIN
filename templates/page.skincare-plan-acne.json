@@ -5,6 +5,7 @@
  * This file may be updated by the Shopify admin theme editor
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
+ * https://app.clickup.com/t/869a3n8b0
  * ------------------------------------------------------------
  */
 {
@@ -451,7 +452,7 @@
           "type": "compairing_points",
           "settings": {
             "real_text": "<p>Effective and proven formulas</p>",
-            "fake_text": "<p>MShow minimal improvement or change</p>"
+            "fake_text": "<p>Show minimal improvement or change</p>"
           }
         },
         "compairing_points_RbBr8B": {

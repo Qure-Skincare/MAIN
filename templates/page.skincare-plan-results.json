@@ -11,10 +11,538 @@
   "sections": {
     "main": {
       "type": "page-skincare-plan-results",
+      "disabled": true,
+      "settings": {}
+    },
+    "banner_with_text_bKMCxw": {
+      "type": "banner-with-text",
+      "name": "t:sections.banner-with-text.name",
+      "settings": {
+        "heading": "[Name], your results are in.",
+        "text": "<p><strong>Let’s transform your signs of aging!</strong></p><p>We put together a straightforward, no-nonsense program just for you and your skin. It’s aimed to help you reduce the signs of aging, fine lines and wrinkles, keep your skin smooth, and your confidence high.</p>",
+        "quote": "",
+        "quote-mobile": "",
+        "image_position": "right",
+        "sub_text": "",
+        "image": "shopify://shop_images/transform_aging_76e1fe26-12a3-49d5-910f-9f03791bdc0b.webp",
+        "button_label": "Shop & Save 25%",
+        "button_url": "#",
+        "wistia_url": ""
+      }
+    },
+    "skincare_plan_yCkXYi": {
+      "type": "skincare-plan",
+      "blocks": {
+        "items_rc8Rmp": {
+          "type": "items",
+          "settings": {
+            "heading": "Q-Rejuvalight Pro Facewear",
+            "price": "$399",
+            "text": "A hands-free LED light therapy mask that uses clinically proven wavelengths to target multiple skin concerns.",
+            "list": "<p>FDA-cleared device that treats acne, fine lines, wrinkles and dark spots.</p><p>Customizable treatment on 5 facial areas for your specific skin concerns.</p><p>Quick 3 minute, wireless daily treatments with convenient hands-free operation.</p>",
+            "button_label": "Add to Bundle",
+            "button_url": "#",
+            "review_heading": "<p><strong>“I noticed results straight away!</strong></p>",
+            "review_text": "<p>Now I can’t go a day without the Q-Rejuvalight Mask.”</p>",
+            "product_image": "shopify://shop_images/q-rej-product.webp",
+            "product_hover_image": "shopify://shop_images/hov_img_1.webp",
+            "results_image": "shopify://shop_images/transform_aging.webp",
+            "review_video": "https://www.youtube.com/embed/jwKN4SH4yz8?autoplay=1&mute=1"
+          }
+        },
+        "items_8nmjC7": {
+          "type": "items",
+          "settings": {
+            "heading": "Micro-Infusion 3 Month Bundle (For Wrinkles)",
+            "price": "$149",
+            "text": "Inspired by in-clinic microneedling for results you can see and feel—with minimal to no downtime.",
+            "list": "<p>Smooths fine lines and softens wrinkles.</p><p>Improves tone and texture through gentle skin renewal and deep hydration</p><p>Clinically backed and easy to use at home</p>",
+            "button_label": "Add to Bundle",
+            "button_url": "#",
+            "review_heading": "<p><strong>“Even my esthetician is hooked!</strong></p>",
+            "review_text": "<p>And I can now visit beauty clinics less often.”</p>",
+            "product_image": "shopify://shop_images/mi-prod.webp",
+            "product_hover_image": "shopify://shop_images/hov_img_2.webp",
+            "results_image": "shopify://shop_images/mi-result.webp",
+            "review_video": "https://www.youtube.com/embed/JPWycy8cwN8?autoplay=1&mute=1"
+          }
+        },
+        "items_kDMBBt": {
+          "type": "items",
+          "settings": {
+            "heading": "All-In-One Face Serum",
+            "price": "$79",
+            "text": "A multi-tasking formula designed to hydrate, brighten, and strengthen skin barrier in one step.",
+            "list": "<p>Hydrates and plumps with hyaluronic acid and soothing ingredients.</p><p>Deeply hydrates and evens tone with gentle, skin-renewing actives.</p><p>Lightweight, non-sticky formula that absorbs quickly and layers well.</p>",
+            "button_label": "Add to Bundle",
+            "button_url": "#",
+            "review_heading": "<p><strong>“This product is a keeper.</strong></p>",
+            "review_text": "<p>My skin looks better than ever after just 2 weeks.”</p>",
+            "product_image": "shopify://shop_images/all-in-prod.webp",
+            "product_hover_image": "shopify://shop_images/hov_img_3.webp",
+            "results_image": "shopify://shop_images/all-in-result.webp",
+            "review_video": "https://www.youtube.com/embed/PJt57LcFEQk?autoplay=1&mute=1"
+          }
+        },
+        "items_WBdErb": {
+          "type": "items",
+          "settings": {
+            "heading": "Neck & Décolletage LED Device",
+            "price": "$299",
+            "text": "A targeted LED light therapy device designed specifically for the delicate skin on your neck and chest.",
+            "list": "<p>Uses wavelengths of LED light that have been clinically proven to support skin clarity and repair.</p><p>Helps even skin tone and improve the feel of firmness.</p><p>Pairs seamlessly with Qure’s Micro-Infusion for enhanced results.</p>",
+            "button_label": "Add to Bundle",
+            "button_url": "#",
+            "review_heading": "<p><strong>“I’m surprised how much younger my neck looks</strong></p>",
+            "review_text": "<p>and my skin looks and feels more rejuvenated.”</p>",
+            "product_image": "shopify://shop_images/neck-prod.webp",
+            "product_hover_image": "shopify://shop_images/hov_img_4.webp",
+            "results_image": "shopify://shop_images/neck-result.webp",
+            "review_video": "https://www.youtube.com/embed/W9KXAimjHCE?autoplay=1&mute=1"
+          }
+        }
+      },
+      "block_order": [
+        "items_rc8Rmp",
+        "items_8nmjC7",
+        "items_kDMBBt",
+        "items_WBdErb"
+      ],
+      "name": "t:sections.skincare-plan.name",
+      "settings": {
+        "heading": "Based on your goals, we suggest:",
+        "button_label": "Add Complete Bundle To Cart",
+        "button_url": "#sticky_cta_cart"
+      }
+    },
+    "logos_1Gp3pp": {
+      "type": "logos",
+      "blocks": {
+        "carousel_YLH9Bz": {
+          "type": "carousel",
+          "settings": {
+            "image": "shopify://shop_images/vogue_57c9f9a2-9414-4002-b546-8f368c6b57ae.svg"
+          }
+        },
+        "carousel_FydKyJ": {
+          "type": "carousel",
+          "settings": {
+            "image": "shopify://shop_images/womens_health_5b443450-a7c4-41fa-a568-f15e3cdca301.svg"
+          }
+        },
+        "carousel_R3tyjq": {
+          "type": "carousel",
+          "settings": {
+            "image": "shopify://shop_images/elle_54660f6f-a533-4b3f-8a45-0345c881697a.webp"
+          }
+        },
+        "carousel_4AqCkg": {
+          "type": "carousel",
+          "settings": {
+            "image": "shopify://shop_images/cosmopolitan_81320831-ebc5-4a3d-af5d-d3489fa24e5c.svg"
+          }
+        },
+        "carousel_qGnB6e": {
+          "type": "carousel",
+          "settings": {
+            "image": "shopify://shop_images/grazia_02e4c999-70f4-49e5-9cee-5576ffc88b28.svg"
+          }
+        },
+        "carousel_YxRnWf": {
+          "type": "carousel",
+          "settings": {
+            "image": "shopify://shop_images/qq_7977a492-b26f-4580-aad0-c20f27a49444.svg"
+          }
+        }
+      },
+      "block_order": [
+        "carousel_YLH9Bz",
+        "carousel_FydKyJ",
+        "carousel_R3tyjq",
+        "carousel_4AqCkg",
+        "carousel_qGnB6e",
+        "carousel_YxRnWf"
+      ],
+      "name": "t:sections.logos.name",
+      "settings": {}
+    },
+    "skincare_routine_9Ca4VF": {
+      "type": "skincare-routine",
+      "blocks": {
+        "list_Br8P9x": {
+          "type": "list",
+          "settings": {
+            "button_label": "Daily",
+            "heading": "<p><strong>How To Use</strong></p>",
+            "text": "<p>Cleanse and dry your skin. Put on your Q-Rejuvalight Pro on the Pro-Aging treatment mode for a full 3 minute session. Follow with the All-In-One Face Serum, applying to your face and neck.</p>",
+            "subheading": "<p><strong>Benefits</strong></p>",
+            "subtext": "",
+            "am_or_pm": "both",
+            "wistia_url": "klt401yhji"
+          }
+        },
+        "list_mVmn9B": {
+          "type": "list",
+          "settings": {
+            "button_label": "Weekly",
+            "heading": "<p><strong>How To Use</strong></p>",
+            "text": "<p>Use the Neck & Décolletage Device on clean, dry skin for 10 minutes, 3-5 times per week. For best results, follow with the All-In-One Serum.</p>",
+            "subheading": "<p><strong>When To Use</strong></p>",
+            "subtext": "",
+            "am_or_pm": "both",
+            "wistia_url": "",
+            "image": "shopify://shop_images/weekly.webp"
+          }
+        },
+        "list_yJLb7F": {
+          "type": "list",
+          "settings": {
+            "button_label": "Biweekly",
+            "heading": "<p><strong>How To Use</strong></p>",
+            "text": "<p>Once every 2 weeks, use the Micro-Infusion System in place of your nightly routine. Gently stamp across the face, focusing on under-eyes and fine lines for overnight glow and smoothness.</p>",
+            "subheading": "<p><strong>When To Use</strong></p>",
+            "subtext": "",
+            "am_or_pm": "pm",
+            "wistia_url": "spbl22fho4"
+          }
+        }
+      },
+      "block_order": [
+        "list_Br8P9x",
+        "list_mVmn9B",
+        "list_yJLb7F"
+      ],
+      "name": "t:sections.skincare-routine.name",
+      "settings": {
+        "heading": "Meet your new skincare routine"
+      }
+    },
+    "trusted_reviews_AjfPDU": {
+      "type": "trusted-reviews",
+      "blocks": {
+        "slider_Nth4NR": {
+          "type": "slider",
+          "settings": {
+            "heading": "My skin returned to life!",
+            "text": "<p>“I just turned 57 years. My skin was extremely dry and while using this product my skin RETURNED to LIFE! I am so impressed with it! You will not regret in purchasing it. I really see the change in my skin. Outstanding job QURE!”</p>",
+            "compare_image": "shopify://shop_images/ellie_12_weeks.webp",
+            "country_image": "shopify://shop_images/america_f.webp",
+            "username": "<p>Ellie V.</p>",
+            "product_url": "#",
+            "product_heading": "Ellie uses...",
+            "product_text": "Micro-Infusion Facial System",
+            "product_image": "shopify://shop_images/micro-infusion-facial-system.webp"
+          }
+        },
+        "slider_JxMBEW": {
+          "type": "slider",
+          "settings": {
+            "heading": "Wish I had this technology years ago!",
+            "text": "<p>“After two weeks I began to see results and after six weeks the changes in my skin were dramatic. I have now been using Qure six months and loving the compliments! I bought masks for my daughters for Christmas so they could start at a younger age…. I wish this technology had been available when I was younger. I am 76 years old!”</p>",
+            "compare_image": "shopify://shop_images/terri_6_weeks.webp",
+            "country_image": "shopify://shop_images/america_f.webp",
+            "username": "<p>Terri P.</p>",
+            "product_url": "#",
+            "product_heading": "Terri uses...",
+            "product_text": "Micro-Infusion Facial System",
+            "product_image": "shopify://shop_images/q-rejuvalight-pro-led-mask.webp"
+          }
+        },
+        "slider_tRQpzW": {
+          "type": "slider",
+          "settings": {
+            "heading": "Works better than I imagined!",
+            "text": "<p>“I am really stunned by how well this product works. I have had professional micro-needling and I wanted the benefits without the downtime. I did my treatment, went to bed and woke up the next morning and was ready to go. My skin looks better than it has in years.”</p>",
+            "compare_image": "shopify://shop_images/jennifer_1_week.webp",
+            "country_image": "shopify://shop_images/america_f.webp",
+            "username": "<p>Jennifer N.</p>",
+            "product_url": "#",
+            "product_heading": "Jennifer uses...",
+            "product_text": "Micro-Infusion Facial System",
+            "product_image": "shopify://shop_images/micro-infusion-facial-system.webp"
+          }
+        },
+        "slider_JjNRkA": {
+          "type": "slider",
+          "settings": {
+            "heading": "Healthier-looking glow",
+            "text": "<p>“I am really stunned by how well this product works. I have had professional micro-needling and I wanted the benefits without the downtime. I did my treatment, went to bed and woke up the next morning and was ready to go. My skin looks better than it has in years.”</p>",
+            "compare_image": "shopify://shop_images/Claudia_1_week.webp",
+            "country_image": "shopify://shop_images/canada_f.webp",
+            "username": "<p>Claudia</p>",
+            "product_url": "#",
+            "product_heading": "Claudia uses...",
+            "product_text": "Neck & Décolletage LED Device",
+            "product_image": "shopify://shop_images/neck-decolletage-led-device.webp"
+          }
+        },
+        "slider_tYQCXX": {
+          "type": "slider",
+          "settings": {
+            "heading": "I see a difference!",
+            "text": "<p>“I SEE A DIFFERENCE!! This product is a keeper. I’ve been using it for 2 weeks now and there is definitely a big difference in my skin!! I noticed my sun spots have lighten, especially on the backs of my hands. Facial redness and discolorations have lessened! Very happy with this serum.”</p>",
+            "compare_image": "shopify://shop_images/cheryl_2_weeks.webp",
+            "country_image": "shopify://shop_images/america_f.webp",
+            "username": "<p>Cheryl T.</p>",
+            "product_url": "#",
+            "product_heading": "Cheryl uses...",
+            "product_text": "All-In-One Serum",
+            "product_image": "shopify://shop_images/all-in-one-serum.webp"
+          }
+        },
+        "slider_W6EfLA": {
+          "type": "slider",
+          "settings": {
+            "heading": "Outstanding",
+            "text": "<p>“I’m so impressed with the results! I noticed a difference after a few weeks. I am so surprised at how much younger the skin on my neck/chest looks. Wrinkles have significantly reduced, sun spots are lighter and my skin looks and feels more rejuvenated. Device is easy to use, I love that I can clip the controller to my robe and multitask whilst using.”</p>",
+            "compare_image": "shopify://shop_images/Mary.webp",
+            "country_image": "shopify://shop_images/america_f.webp",
+            "username": "<p>Mary R. M.</p>",
+            "product_url": "#",
+            "product_heading": "Mary uses...",
+            "product_text": "Neck & Décolletage LED Device",
+            "product_image": "shopify://shop_images/neck-decolletage-led-device.webp"
+          }
+        }
+      },
+      "block_order": [
+        "slider_Nth4NR",
+        "slider_JxMBEW",
+        "slider_tRQpzW",
+        "slider_JjNRkA",
+        "slider_tYQCXX",
+        "slider_W6EfLA"
+      ],
+      "name": "t:sections.trusted-reviews.name",
+      "settings": {
+        "background_color": "#ffffff",
+        "heading": "No promises, just proof",
+        "text": "",
+        "text_mobile": "",
+        "button_label": "",
+        "button_url": ""
+      }
+    },
+    "trusted_recommended_QxWGL9": {
+      "type": "trusted-recommended",
+      "name": "t:sections.trusted-recommended.name",
+      "settings": {
+        "heading": "Trusted and Recommended by Experts",
+        "text": "<p>“This treatment is an at-home option for those who want to <strong>avoid the hassle or cost of going to the office”.</strong></p>",
+        "image_text": "",
+        "video_cover_image": "shopify://shop_images/shah-maxfield.webp",
+        "video_url": "https://www.youtube.com/watch?v=mVdncsTAXiA",
+        "wistia_url": ""
+      }
+    },
+    "video_slider_W9Lnpz": {
+      "type": "video-slider",
+      "blocks": {
+        "slider_t4xMi7": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>\"Qure has a fully customized mask which has 5 clinical-grade wavelength for aging and</p>",
+            "text": "<p>Dr. Prem Tripathi</p>",
+            "sub_text": "<p>Board-Certified Dermatologist</p>",
+            "url": "qnxqysx3sg",
+            "checkbox": false,
+            "image": "shopify://shop_images/trusted_rejuv_1_3095f149-9b75-4dc7-8a11-cb66297f2d6d.webp"
+          }
+        },
+        "slider_tNi6wz": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>I personally suffer from tech neck from looking down ar my phone [...] it helps address signs of aging.</p>",
+            "text": "<p>Dr. Mona Patel</p>",
+            "sub_text": "<p>Internal Medicine Doctor</p>",
+            "url": "k1wciiwksf",
+            "checkbox": false,
+            "image": "shopify://shop_images/trusted_img_3_26233ad8-ede6-4edf-aa54-674f739f90ab.webp"
+          }
+        },
+        "slider_XXggfV": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>\"This serum has awesome ingredients... and is probably the best known peptide complex.\"</p>",
+            "text": "<p>Dr Shah & Dr. Maxfield</p>",
+            "sub_text": "<p>Board-Certified Dermatologist</p>",
+            "url": "https://www.youtube.com/watch?v=1iXBgh7WPOY",
+            "checkbox": true,
+            "image": "shopify://shop_images/skin_dr_review.webp"
+          }
+        }
+      },
+      "block_order": [
+        "slider_t4xMi7",
+        "slider_tNi6wz",
+        "slider_XXggfV"
+      ],
+      "name": "t:sections.video-slider.name",
+      "settings": {}
+    },
+    "skincare_lifestyle_nRFYNb": {
+      "type": "skincare-lifestyle",
+      "blocks": {
+        "numbered_list_q89zRq": {
+          "type": "numbered_list",
+          "settings": {
+            "heading": "<p><strong>Exfoliate 1-2 times per week</strong></p>",
+            "text": "<p>With an at-home peel that contains Alpha-Hydroxy Acids (AHAs) to remove dead skin and make fine lines less visible.</p>",
+            "image_mobile": "shopify://shop_images/sk_life_1.webp"
+          }
+        },
+        "numbered_list_NyjLLc": {
+          "type": "numbered_list",
+          "settings": {
+            "heading": "<p><strong>Reduce sugar intake</strong></p>",
+            "text": "<p>High blood sugar triggers glycation, which damages collagen and makes skin lose elasticity, leading to wrinkles and sagging</p>",
+            "image_mobile": "shopify://shop_images/sk_life_2.webp"
+          }
+        },
+        "numbered_list_JHymyn": {
+          "type": "numbered_list",
+          "settings": {
+            "heading": "<p><strong>Sleep on your back</strong></p>",
+            "text": "<p>Sleeping on your back on a <a href=\"http://127.0.0.1:5500/page.skincare-plan-results.html\">Silk Pillowcase</a> reduces friction on the skin and helps prevent wrinkles caused by excess pressure.</p>",
+            "image_mobile": "shopify://shop_images/sk_life_3.webp"
+          }
+        }
+      },
+      "block_order": [
+        "numbered_list_q89zRq",
+        "numbered_list_NyjLLc",
+        "numbered_list_JHymyn"
+      ],
+      "name": "t:sections.skincare-lifestyle.name",
+      "settings": {
+        "heading": "Skincare is a lifestyle",
+        "text": "Caring for your skin goes beyond the products you use. It’s about adopting habits that support your skin’s health every day. Our dermatologists recommend these expert tips to help you reach your skin goals even faster."
+      }
+    },
+    "comparison_real_fake_KIjf3y": {
+      "type": "comparison-real-fake",
+      "blocks": {
+        "compairing_points_KyG6gw": {
+          "type": "compairing_points",
+          "settings": {
+            "real_text": "<p>Effective and proven formulas</p>",
+            "fake_text": "<p>Show minimal improvement or change</p>"
+          }
+        },
+        "compairing_points_RbBr8B": {
+          "type": "compairing_points",
+          "settings": {
+            "real_text": "<p>Penetrates deep for better results</p>",
+            "fake_text": "<p>Topical products stay on the surface</p>"
+          }
+        },
+        "compairing_points_393WiG": {
+          "type": "compairing_points",
+          "settings": {
+            "real_text": "<p>Gentle on skin with no downtime</p>",
+            "fake_text": "<p>Can cause irritation and peeling</p>"
+          }
+        },
+        "compairing_points_cFYTbm": {
+          "type": "compairing_points",
+          "settings": {
+            "real_text": "<p>Safe to use at-home</p>",
+            "fake_text": "<p>Often requires clinic visits and downtime</p>"
+          }
+        },
+        "compairing_points_XXNhHY": {
+          "type": "compairing_points",
+          "settings": {
+            "real_text": "<p>Backed by dermatologists</p>",
+            "fake_text": "<p>Not always tested or recommended</p>"
+          }
+        }
+      },
+      "block_order": [
+        "compairing_points_KyG6gw",
+        "compairing_points_RbBr8B",
+        "compairing_points_393WiG",
+        "compairing_points_cFYTbm",
+        "compairing_points_XXNhHY"
+      ],
+      "name": "t:sections.comparison-real-fake.name",
+      "settings": {
+        "heading": "Your skin deserves Qure",
+        "text": "<p>Skincare isn’t a numbers game. More products won’t help if your skin can’t use them effectively. Qure gives you the right treatment, in the right way, for results you can actually see.</p>",
+        "heading_fake": "Other Products",
+        "image_heading_real": "shopify://shop_images/qure_logo..svg"
+      }
+    },
+    "bundle_routine_Yxtfxj": {
+      "type": "bundle-routine",
+      "blocks": {
+        "bundle_kX3PXc": {
+          "type": "bundle",
+          "settings": {
+            "heading": "<p>Q-Rejuvalight Pro Facewear</p>",
+            "button_label": "Add to Bundle",
+            "button_url": "#",
+            "image": "shopify://shop_images/bndl_routine_1.webp"
+          }
+        },
+        "bundle_PJeUr8": {
+          "type": "bundle",
+          "settings": {
+            "heading": "<p>Micro-Infusion 3 Month Bundle (For Wrinkles</p>",
+            "button_label": "Add to Bundle",
+            "button_url": "#",
+            "image": "shopify://shop_images/bndl_routine_2.webp"
+          }
+        },
+        "bundle_BXKaTW": {
+          "type": "bundle",
+          "settings": {
+            "heading": "<p>All-In-One Face Serum</p>",
+            "button_label": "Add to Bundle",
+            "button_url": "#",
+            "image": "shopify://shop_images/bndl_routine_3_2721a3e0-6422-4b83-a5fc-73062f91d858.webp"
+          }
+        },
+        "bundle_4HeamN": {
+          "type": "bundle",
+          "settings": {
+            "heading": "<p>Neck & Décolletage LED Device</p>",
+            "button_label": "Add to Bundle",
+            "button_url": "#",
+            "image": "shopify://shop_images/bndl_routine_4.webp"
+          }
+        }
+      },
+      "block_order": [
+        "bundle_kX3PXc",
+        "bundle_PJeUr8",
+        "bundle_BXKaTW",
+        "bundle_4HeamN"
+      ],
+      "name": "t:sections.bundle-routine.name",
+      "settings": {
+        "heading": "Bundle your new routine",
+        "text": "Mix and match our targeted treatments to create a high-performance routine that fits your skin goals."
+      }
+    },
+    "sticky_cta_BpPQpM": {
+      "type": "sticky-cta",
+      "name": "t:sections.static-sticky-cta.name",
       "settings": {}
     }
   },
   "order": [
-    "main"
+    "main",
+    "banner_with_text_bKMCxw",
+    "skincare_plan_yCkXYi",
+    "logos_1Gp3pp",
+    "skincare_routine_9Ca4VF",
+    "trusted_reviews_AjfPDU",
+    "trusted_recommended_QxWGL9",
+    "video_slider_W9Lnpz",
+    "skincare_lifestyle_nRFYNb",
+    "comparison_real_fake_KIjf3y",
+    "bundle_routine_Yxtfxj",
+    "sticky_cta_BpPQpM"
   ]
 }

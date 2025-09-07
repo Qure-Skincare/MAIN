@@ -133,7 +133,10 @@
         "static": "Static",
         "buy-box": "Buy box",
         "background-color": "Background color",
-        "feedback": "Feedback"
+        "feedback": "Feedback",
+        "am": "AM",
+        "pm": "PM",
+        "none": "None"
     },
     "blocks": {
         "block-card": {
@@ -174,7 +177,15 @@
             "name": "Skincare lifestyle"
         },
         "skincare-routine": {
-            "name": "Skincare routine"
+            "name": "Skincare routine",
+            "blocks": {
+                "list": {
+                    "settings": {
+                        "am-or-pm": "AM or PM"
+                    }
+                }
+
+            }
         },
         "skincare-plan": {
             "name": "Skincare plan",

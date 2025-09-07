@@ -169,6 +169,13 @@
       "review": "Review",
       "read-more": " Read more",
       "review-stars": "https://qureskincaredns-main.com/sections/isolated/skincare-plan/images/review_stars.webp"
+    },
+    "skincare-routine": {
+      "am_text": "AM",
+      "pm_text": "PM",
+      "am_image": "https://qureskincaredns-main.com/sections/isolated/skincare-routine/images/am.webp",
+      "pm_image": "https://qureskincaredns-main.com/sections/isolated/skincare-routine/images/pm.webp",
+      "or_text": "or"
     }
   },
   "breadcrumb": {
