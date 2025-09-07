@@ -85,7 +85,8 @@
       "name": "t:sections.page-banner.name",
       "settings": {
         "heading": "Get clinic-level results from home – minus the ‘clinical’ costs.",
-        "sub_text": "<p>Join <strong>30,000+ customers</strong> feeling more confident.</p>",
+        "text": "",
+        "sub_text": "<p>Join <strong>300,000+ customers</strong> feeling more confident.</p>",
         "button": "Shop All Best Sellers",
         "button_url": "https://qureskincare.com/collections/best-sellers",
         "button_mobile": "Shop Best Sellers",
@@ -301,6 +302,7 @@
       "settings": {
         "background_color": "#ffffff",
         "heading": "Results you’ll see with your own eyes",
+        "text": "",
         "text_mobile": "",
         "button_label": "",
         "button_url": ""
@@ -384,7 +386,7 @@
           "settings": {
             "text": "<p>Signs of aging, fine lines and wrinkles</p>",
             "button": "Shop Now",
-            "button_url": "#",
+            "button_url": "https://qureskincare.com/collections/fine-line-wrinkles",
             "image": "shopify://shop_images/gq-1.webp",
             "image_mobile": "shopify://shop_images/gq-mob-1.webp"
           }
@@ -394,7 +396,7 @@
           "settings": {
             "text": "<p>Dark spots and uneven skin tone</p>",
             "button": "Shop Now",
-            "button_url": "#",
+            "button_url": "https://qureskincare.com/collections/dark-spots",
             "image": "shopify://shop_images/gq-2.webp",
             "image_mobile": "shopify://shop_images/gq-mob-2.webp"
           }
@@ -404,7 +406,7 @@
           "settings": {
             "text": "<p>Large pores and textured skin</p>",
             "button": "Shop Now",
-            "button_url": "#",
+            "button_url": "https://qureskincare.com/collections/dark-spots",
             "image": "shopify://shop_images/gq-3.webp",
             "image_mobile": "shopify://shop_images/gq-mob-3.webp"
           }
@@ -414,7 +416,7 @@
           "settings": {
             "text": "<p>Acne breakouts<br/>and blemishes</p>",
             "button": "Shop Now",
-            "button_url": "#",
+            "button_url": "https://qureskincare.com/collections/acne-breakouts",
             "image": "shopify://shop_images/gq-4.webp",
             "image_mobile": "shopify://shop_images/gq-mob-2.webp"
           }
@@ -588,7 +590,10 @@
         "items_wpmqpr"
       ],
       "name": "t:common.carousel",
-      "settings": {}
+      "settings": {
+        "background_color": "#f6f6f7",
+        "display_mode": "both"
+      }
     },
     "our_advisors_LPVVBm": {
       "type": "our-advisors",
