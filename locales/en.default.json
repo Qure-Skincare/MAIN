@@ -162,6 +162,13 @@
     "before-after-accordion": {
       "verified_text": "Verified",
       "review_image": "https://qureskincaredns-main.com/assets/images/reviewCheck.svg"
+    },
+    "skincare-plan": {
+      "product": "Product",
+      "results": "Results",
+      "review": "Review",
+      "read-more": " Read more",
+      "review-stars": "https://qureskincaredns-main.com/sections/isolated/skincare-plan/images/review_stars.webp"
     }
   },
   "breadcrumb": {

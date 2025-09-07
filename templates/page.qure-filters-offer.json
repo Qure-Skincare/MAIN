@@ -534,8 +534,8 @@
         "background_color": "#f6f6f7"
       }
     },
-    "qure_filters_offer_comparison_real_fake_FJifqy": {
-      "type": "qure-filters-offer-comparison-real-fake",
+    "comparison_real_fake_FJifqy": {
+      "type": "comparison-real-fake",
       "blocks": {
         "compairing_points_KyG6gw": {
           "type": "compairing_points",
@@ -580,7 +580,7 @@
         "compairing_points_cFYTbm",
         "compairing_points_XXNhHY"
       ],
-      "name": "t:sections.qure-filters-offer-comparison-real-fake.name",
+      "name": "t:sections.comparison-real-fake.name",
       "settings": {
         "heading": "Your skin deserves Qure",
         "text": "<p>When your water is working against you, no product can keep up. Qure filters are designed with your skin and hair in mind. Here’s how Qure compares to what you’re using now.</p>",
@@ -811,7 +811,7 @@
     "trusted_recommended_awbjc8",
     "form",
     "video_review_slider_yBjMTk",
-    "qure_filters_offer_comparison_real_fake_FJifqy",
+    "comparison_real_fake_FJifqy",
     "information_about_water_BDVnVm",
     "featured_product_bundle_fGtC93",
     "faq_dyCjhg",
