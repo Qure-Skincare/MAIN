@@ -9,11 +9,6 @@
  */
 {
   "sections": {
-    "main": {
-      "type": "page-skincare-plan-results",
-      "disabled": true,
-      "settings": {}
-    },
     "banner_with_text_bKMCxw": {
       "type": "banner-with-text",
       "name": "t:sections.banner-with-text.name",
@@ -532,7 +527,6 @@
     }
   },
   "order": [
-    "main",
     "banner_with_text_bKMCxw",
     "skincare_plan_yCkXYi",
     "logos_1Gp3pp",

@@ -43,8 +43,7 @@
                                     {% endif %}
                                     {% if block.settings.subtext != blank %}
                                         {{ block.settings.subtext 
-                                        | replace: '<p><ul>', '<ul class="benefits_ul">' 
-                                        | replace: '</ul></p>', '</ul>' }}
+                                        | replace: '<ul>', '<ul class="benefits_ul">' }}
                                     {% endif %}
                                     {% if block.settings.am_or_pm == 'both' %}
                                         <div class="d-flex align-items-center gap-4">
