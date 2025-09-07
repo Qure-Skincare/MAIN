@@ -1,101 +1,109 @@
 <!-- Cookies  -->
 <link rel="stylesheet" href="https://qureskincaredns-main.com/sections/isolated/cookies/cookies.css" />
-<div id="qure_cookie" class="qure_cookie d-none">
-    <div class="qure_cookie-inner">
-        <div class="cookie-message">
-            <div class="container-fluid">
-                <div class="row custom__grid" style="--column-gap:32px; --column-gap-mobile:12px;">
-                    <div class="col-md-6 col-lg-6 custom__block">
-                    <div class="cookie-message-card">
-                        <p><strong>{{ 'GDPR.settings.header' | t }}</strong></p>
-                        {{ 'GDPR.settings.text_html' | t: privacy_policy_url: '/pages/privacy-page' }}
-                    </div>
-                    <a href="#" class="btn btn--primary mt-20 fs-14" style="--btn-padding: 11px 34px;">{{ 'GDPR.settings.button-label' | t }}</a>
-                    </div>
-                    <div class="col-md-6 col-lg-6 custom__block">
-                    <div class="cookies-options">
-                        <div class="cookies-item">
-                            <div class="cookies-button-header">
-                                <button class="cookies-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                {{ 'GDPR.settings.collapse_tab_1.header' | t }}
-                                </button>
-                                <div class="cookies__input">
-                                <label for="strictly-necessary-cookies" class="switch">
-                                    <input type="checkbox" id="strictly-necessary-cookies"/>
-                                    <span class="slider round"></span>
-                                </label>
-                                </div>
-                                </div>
-                            <div id="collapseOne" class="cookies-collapse collapse" data-bs-parent="">
-                                <div class="cookies-body">
-                                {{ 'GDPR.settings.collapse_tab_1.text' | t }}
+<div id="qure_cookie_container" class="d-none">
+    <div id="qure_cookie" class="qure_cookie">
+        <div class="qure_cookie-inner">
+            <div class="cookie-message">
+                <div class="container-fluid">
+                    <div class="row custom__grid" style="--column-gap:32px; --column-gap-mobile:12px;">
+                        <div class="col-md-6 col-lg-6 custom__block">
+                        <div class="cookie-message-card">
+                            <p><strong>{{ 'GDPR.settings.header' | t }}</strong></p>
+                            {{ 'GDPR.settings.text_html' | t: privacy_policy_url: '/pages/privacy-page' }}
+                        </div>
+                        <a href="#" class="btn btn--primary mt-20 fs-14" style="--btn-padding: 11px 34px;">{{ 'GDPR.settings.button-label' | t }}</a>
+                        </div>
+                        <div class="col-md-6 col-lg-6 custom__block">
+                        <div class="cookies-options">
+                            <div class="cookies-item">
+                                <div class="cookies-button-header">
+                                    <button class="cookies-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    {{ 'GDPR.settings.collapse_tab_1.header' | t }}
+                                    </button>
+                                    <div class="cookies__input">
+                                    <label for="strictly-necessary-cookies" class="switch">
+                                        <input type="checkbox" id="strictly-necessary-cookies"/>
+                                        <span class="slider round"></span>
+                                    </label>
+                                    </div>
+                                    </div>
+                                <div id="collapseOne" class="cookies-collapse collapse" data-bs-parent="">
+                                    <div class="cookies-body">
+                                    {{ 'GDPR.settings.collapse_tab_1.text' | t }}
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="cookies-item">
-                            <div class="cookies-button-header">
-                                <button class="cookies-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                {{ 'GDPR.settings.collapse_tab_2.header' | t }} 
-                                </button>
-                                <div class="cookies__input">
-                                <label for="performance-cookies" class="switch">
-                                    <input type="checkbox" id="performance-cookies"/>
-                                    <span class="slider round"></span>
-                                </label>
-                                </div>
-                                </div>
-                            <div id="collapseTwo" class="cookies-collapse collapse" data-bs-parent="">
-                                <div class="cookies-body">
-                                {{ 'GDPR.settings.collapse_tab_2.text' | t }}
+                            <div class="cookies-item">
+                                <div class="cookies-button-header">
+                                    <button class="cookies-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    {{ 'GDPR.settings.collapse_tab_2.header' | t }} 
+                                    </button>
+                                    <div class="cookies__input">
+                                    <label for="performance-cookies" class="switch">
+                                        <input type="checkbox" id="performance-cookies"/>
+                                        <span class="slider round"></span>
+                                    </label>
+                                    </div>
+                                    </div>
+                                <div id="collapseTwo" class="cookies-collapse collapse" data-bs-parent="">
+                                    <div class="cookies-body">
+                                    {{ 'GDPR.settings.collapse_tab_2.text' | t }}
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="cookies-item">
-                            <div class="cookies-button-header">
-                                <button class="cookies-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                {{ 'GDPR.settings.collapse_tab_3.header' | t }}
-                                </button>
-                                <div class="cookies__input">
-                                <label for="functional-cookies" class="switch">
-                                    <input type="checkbox" id="functional-cookies"/>
-                                    <span class="slider round"></span>
-                                </label>
-                                </div>
-                                </div>
-                            <div id="collapseThree" class="cookies-collapse collapse" data-bs-parent="">
-                                <div class="cookies-body">
-                                {{ 'GDPR.settings.collapse_tab_3.text' | t }}
+                            <div class="cookies-item">
+                                <div class="cookies-button-header">
+                                    <button class="cookies-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    {{ 'GDPR.settings.collapse_tab_3.header' | t }}
+                                    </button>
+                                    <div class="cookies__input">
+                                    <label for="functional-cookies" class="switch">
+                                        <input type="checkbox" id="functional-cookies"/>
+                                        <span class="slider round"></span>
+                                    </label>
+                                    </div>
+                                    </div>
+                                <div id="collapseThree" class="cookies-collapse collapse" data-bs-parent="">
+                                    <div class="cookies-body">
+                                    {{ 'GDPR.settings.collapse_tab_3.text' | t }}
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="cookies-item">
-                            <div class="cookies-button-header">
-                                <button class="cookies-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                {{ 'GDPR.settings.collapse_tab_4.header' | t }}
-                                </button>
-                                <div class="cookies__input">
-                                <label for="advertising-cookies" class="switch">
-                                    <input type="checkbox" id="advertising-cookies"/>
-                                    <span class="slider round"></span>
-                                </label>
-                                </div>
-                                </div>
-                            <div id="collapseFour" class="cookies-collapse collapse" data-bs-parent="">
-                                <div class="cookies-body">
-                                {{ 'GDPR.settings.collapse_tab_4.text' | t }}
+                            <div class="cookies-item">
+                                <div class="cookies-button-header">
+                                    <button class="cookies-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    {{ 'GDPR.settings.collapse_tab_4.header' | t }}
+                                    </button>
+                                    <div class="cookies__input">
+                                    <label for="advertising-cookies" class="switch">
+                                        <input type="checkbox" id="advertising-cookies"/>
+                                        <span class="slider round"></span>
+                                    </label>
+                                    </div>
+                                    </div>
+                                <div id="collapseFour" class="cookies-collapse collapse" data-bs-parent="">
+                                    <div class="cookies-body">
+                                    {{ 'GDPR.settings.collapse_tab_4.text' | t }}
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                    </div>
+                        </div>
+                        </div>
                     </div>
                 </div>
             </div>
+            <button class="cookie-btn cookie-dismiss btn btn-reset" id="ba-cookie-dismiss"><i class="fa-regular fa-xmark"></i></button>
         </div>
-        <button class="cookie-btn cookie-dismiss btn btn-reset" id="ba-cookie-dismiss"><i class="fa-regular fa-xmark"></i></button>
     </div>
 </div>
 <!-- Cookies end -->
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    loadScriptOnce('footer-gdpr', '{{ 'footer-gdpr.js' | asset_url }}');
+  });
+</script>
