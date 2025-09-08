@@ -47,7 +47,7 @@
                </ul>
             </nav>
             <div class="header_gift header-item">
-               <button class="btn-reset header__icon" aria-label="gift">
+               <button class="btn-reset header__icon" aria-label="gift" onclick="window.location = '{{ shop.url }}/pages/loyalty-program'">
                   <svg width="92" height="92" viewBox="0 0 92 92" fill="none" xmlns="http://www.w3.org/2000/svg">
                      <path
                         d="M83.8869 27.0569H8.11099C5.49538 27.0569 3.375 29.1772 3.375 31.7929V41.2649C3.375 43.8805 5.49538 46.0008 8.11099 46.0008H83.8869C86.5025 46.0008 88.6229 43.8805 88.6229 41.2649V31.7929C88.6229 29.1772 86.5025 27.0569 83.8869 27.0569Z"
@@ -64,7 +64,7 @@
                </button>
             </div>
             <div class="header_account header-item d-none d-lg-block">
-               <button class="btn-reset header__icon" aria-label="account" onclick="window.location = '{{ shop.url }}/account/login';">
+               <button class="btn-reset header__icon" aria-label="account" onclick="window.location = '{{ shop.url }}/account/login'">
                   <svg width="106" height="106" viewBox="0 0 106 106" fill="none" xmlns="http://www.w3.org/2000/svg">
                      <path
                         d="M83.2259 93.3001C83.2259 85.284 80.0415 77.5961 74.3732 71.9278C68.7049 66.2595 61.017 63.0751 53.0009 63.0751C44.9847 63.0751 37.2969 66.2595 31.6286 71.9278C25.9603 77.5961 22.7759 85.284 22.7759 93.3001"
@@ -100,6 +100,6 @@
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         loadScriptOnce('carousel', 'https://qureskincaredns-main.com/sections/global/header/js/carousel.js');
-        loadScriptOnce('slider-script', 'https://qureskincaredns-main.com/assets/js/slider-with-thumb.js');
+        loadScriptOnce('slider-with-thumb', 'https://qureskincaredns-main.com/assets/js/slider-with-thumb.js');
     });
 </script>

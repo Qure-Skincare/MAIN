@@ -18,6 +18,9 @@ const sticky_button_click = () => {
 
         if (target) {
             target.click();
+            if(__section_landing) {
+              purchase_form_landing_event(__section_landing, target.closest('.planBlock'), target.closest('.planBlock')?.dataset.product_variant_id);
+            }
         }
     });
   });
@@ -31,7 +34,10 @@ const sticky_button_mobile_click = () => {
 
         if (target) {
             target.click();
-
+            if(__section_landing) {
+              purchase_form_landing_event(__section_landing, target.closest('.planBlock'), target.closest('.planBlock')?.dataset.product_variant_id);
+            }
+            
             if (typeof selectOption === "function") {
                 selectOption(selectedId);
             }

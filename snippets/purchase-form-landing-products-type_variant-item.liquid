@@ -60,6 +60,13 @@
                                 data-product-name="{{ block.settings.heading | escape }}"
                                 {% if block.settings.product_selling_plan != null %}
                                 data-product-selling-plan="{{ block.settings.product_selling_plan }}"
+                                {% else %}
+                                data-product-selling-plan="0"
+                                {% endif %}
+                                {% if block.settings.preselected == true %}
+                                data-preselected="{{ block.settings.preselected }}"
+                                {% else %}
+                                data-preselected="false"
                                 {% endif %}
                                 data-variant-title="{{ product_title_tag }}"
                                 data-product-price="{{ product_sale_price }}">

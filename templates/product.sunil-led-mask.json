@@ -1010,6 +1010,13 @@
         "button-url": ""
       }
     },
+    "text_header_3LDiTg": {
+      "type": "text-header",
+      "name": "t:sections.text-header.name",
+      "settings": {
+        "heading": "Real reviews, real results from people just like you"
+      }
+    },
     "1707653061bd3707e6": {
       "type": "apps",
       "blocks": {
@@ -1052,6 +1059,7 @@
     "compare_FyPtUj",
     "faq_46wWyJ",
     "sticky_cta_AFkFxe",
+    "text_header_3LDiTg",
     "1707653061bd3707e6"
   ]
 }
