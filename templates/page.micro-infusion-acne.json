@@ -982,6 +982,7 @@
         },
         "product_type_VLXcAn": {
           "type": "product_type",
+          "disabled": true,
           "settings": {
             "heading": "Wrinkles",
             "image": "shopify://shop_images/serum_2.webp",
@@ -1048,6 +1049,7 @@
         },
         "product_type_YrPQrV": {
           "type": "product_type",
+          "disabled": true,
           "settings": {
             "heading": "Mixed",
             "image": "shopify://shop_images/serum_3.webp",
