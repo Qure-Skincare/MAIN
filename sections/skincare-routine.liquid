@@ -80,16 +80,23 @@
             </div>
             <div class="col-md-5">
                 <div class="skincare_routine_img">
+                    {% assign first_found = false %}
                     {% for block in section.blocks %}
                         {% if block.type == 'list' %}
+                            {% if first_found == false %}
+                                {% assign dnone = '' %}
+                                {% assign first_found = true %}
+                            {% else %}
+                                {% assign dnone = ' d-none' %}
+                            {% endif %}
                             {% if block.settings.image != blank %}
-                                <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" class="img-fluid routine-img {% if forloop.index == 1 %}daily{% elsif forloop.index == 2 %}weekly{%  elsif forloop.index == 3 %}biweekly{% endif %}">
+                                <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" class="img-fluid routine-img {% if forloop.index == 1 %}daily{% elsif forloop.index == 2 %}weekly{%  elsif forloop.index == 3 %}biweekly{% endif %} {{ dnone }}">
                             {% endif %}
                             {% if block.settings.image_mobile != blank %}
-                                <img src="{{ block.settings.image_mobile | image_url }}" alt="{{ block.settings.image_mobile.alt | escape }}" class="img-fluid routine-img {% if forloop.index == 1 %}daily{% elsif forloop.index == 2 %}weekly{% elsif forloop.index==3 %}{% endif %} d-none">
+                                <img src="{{ block.settings.image_mobile | image_url }}" alt="{{ block.settings.image_mobile.alt | escape }}" class="img-fluid routine-img {% if forloop.index == 1 %}daily{% elsif forloop.index == 2 %}weekly{% elsif forloop.index==3 %}{% endif %} {{ dnone }}">
                             {% endif %}
                             {% if block.settings.wistia_url != blank %}
-                                <div class="wistia_responsive_padding routine-img routine-img {% if forloop.index == 1 %}daily{% elsif forloop.index == 2 %}weekly{% elsif forloop.index == 3 %}biweekly{% endif %} d-none"
+                                <div class="wistia_responsive_padding routine-img routine-img {% if forloop.index == 1 %}daily{% elsif forloop.index == 2 %}weekly{% elsif forloop.index == 3 %}biweekly{% endif %} {{ dnone }}"
                                     style="padding:56.25% 0 0 0;position:relative;">
                                     <div class="wistia_responsive_wrapper"
                                         style="height:100%;left:0;position:absolute;top:0;width:100%;">
