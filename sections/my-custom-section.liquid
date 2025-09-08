@@ -1,0 +1,165 @@
+{% doc %}
+  Renders a custom section example
+{% enddoc %}
+
+<!-- Custom Section -->
+<link rel="stylesheet" href="https://qureskincaredns-main.com/sections/isolated/custom/my-custom-section.css" />
+<div class="qure__section my-custom-section" style="--section-padding-top: 60px; --section-padding-bottom: 60px;">
+    <div class="container">
+        {% if section.settings.heading != blank %}
+            <div class="text-center mb-4">
+                <h2 class="section-heading">{{ section.settings.heading }}</h2>
+            </div>
+        {% endif %}
+        
+        {% if section.settings.text != blank %}
+            <div class="text-center mb-4">
+                <p class="section-text">{{ section.settings.text }}</p>
+            </div>
+        {% endif %}
+        
+        {% if section.settings.image != blank %}
+            <div class="text-center">
+                <img src="{{ section.settings.image | image_url }}" 
+                     alt="{{ section.settings.image.alt | escape }}" 
+                     class="img-fluid" 
+                     style="max-width: {{ section.settings.image_width }}px;">
+            </div>
+        {% endif %}
+        
+        {% if section.settings.button_label != blank and section.settings.button_url != blank %}
+            <div class="text-center mt-4">
+                <a href="{{ section.settings.button_url }}" 
+                   class="btn btn--primary">{{ section.settings.button_label }}</a>
+            </div>
+        {% endif %}
+        
+        <!-- Блоки секции -->
+        {% for block in section.blocks %}
+            {% case block.type %}
+                {% when 'text_block' %}
+                    <div class="custom-text-block mb-3" {{ block.shopify_attributes }}>
+                        {% if block.settings.title != blank %}
+                            <h3>{{ block.settings.title }}</h3>
+                        {% endif %}
+                        {% if block.settings.content != blank %}
+                            <p>{{ block.settings.content }}</p>
+                        {% endif %}
+                    </div>
+                    
+                {% when 'image_block' %}
+                    <div class="custom-image-block mb-3" {{ block.shopify_attributes }}>
+                        {% if block.settings.image != blank %}
+                            <img src="{{ block.settings.image | image_url }}" 
+                                 alt="{{ block.settings.image.alt | escape }}" 
+                                 class="img-fluid">
+                        {% endif %}
+                        {% if block.settings.caption != blank %}
+                            <p class="text-center mt-2">{{ block.settings.caption }}</p>
+                        {% endif %}
+                    </div>
+            {% endcase %}
+        {% endfor %}
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.my-custom-section.name",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "t:common.header",
+      "default": "Заголовок секции"
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "t:common.text",
+      "default": "Описание секции"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "t:common.image"
+    },
+    {
+      "type": "range",
+      "id": "image_width",
+      "label": "Ширина изображения",
+      "min": 200,
+      "max": 800,
+      "step": 50,
+      "default": 400,
+      "unit": "px"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "t:common.button-label",
+      "default": "Кнопка"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "t:common.button-url"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Цвет фона",
+      "default": "#ffffff"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "text_block",
+      "name": "Текстовый блок",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Заголовок блока",
+          "default": "Заголовок"
+        },
+        {
+          "type": "textarea",
+          "id": "content",
+          "label": "Содержимое блока",
+          "default": "Текст блока"
+        }
+      ]
+    },
+    {
+      "type": "image_block",
+      "name": "Блок с изображением",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:common.image"
+        },
+        {
+          "type": "text",
+          "id": "caption",
+          "label": "Подпись к изображению"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.my-custom-section.name",
+      "blocks": [
+        {
+          "type": "text_block"
+        },
+        {
+          "type": "image_block"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

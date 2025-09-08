@@ -728,6 +728,9 @@
                     }
                 }
             }
+        },
+        "my-custom-section": {
+            "name": "Моя пользовательская секция"
         }
     },
     "sections-group": {
