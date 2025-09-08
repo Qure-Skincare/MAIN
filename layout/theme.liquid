@@ -57,18 +57,25 @@
       </script>
     {% endif %}
 
-    <link rel="shortcut icon" href="https://qureskincaredns-main.com/assets/qure_32x32.webp" type="image/png">
+    <link rel="shortcut icon" href="https://qureskincaredns-main.com/assets/images/qure_32x32.webp" type="image/png">
     <link rel="stylesheet" href="https://qureskincaredns-main.com/assets/css/vendor.css">
     <link rel="stylesheet" href="https://qureskincaredns-main.com/assets/css/spacings.css">
     <link href="https://qureskincaredns-main.com/assets/css/theme-fonts.css" rel="stylesheet" />
     <link href="https://qureskincaredns-main.com/assets/css/base.css" rel="stylesheet" />
     
-    {% comment %} {{ content_for_header }} {% endcomment %}
+    {{ content_for_header }}
+
+    {% render 'header-scripts' %}
 
     <script src="{{ 'datalayer.js' | asset_url }}"></script>
   </head>
 
   <body class="{{ template }}">
+
+    <!-- Google Tag Manager (noscript) -- BV -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KLP8CZF"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -- BV -->
     
     {% sections 'header-group' %}
 
@@ -76,8 +83,12 @@
 
     {% sections 'footer-group' %}
 
+    {% render 'book-easy' %}
+
     <script src="https://qureskincaredns-main.com/assets/js/vendor.js" defer="defer"></script>
     <script src="https://qureskincaredns-main.com/assets/js/header.js" defer="defer"></script>
     <script src="https://qureskincaredns-main.com/assets/js/footer.js" defer="defer"></script>
+
+    {% render 'footer-scripts' %}
   </body>
 </html>

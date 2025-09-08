@@ -21,7 +21,7 @@
           "settings": {
             "section_id": "purchase-form-landing"
           }
-        },
+        },  
         "nextships_nN4CpM": {
           "type": "nextships",
           "disabled": true,
@@ -115,7 +115,7 @@
         "product_type_QKQhNr": {
           "type": "product_type",
           "settings": {
-            "heading": "Colors",
+            "heading": "Shower filter refill variants",
             "preselected": false
           }
         },
