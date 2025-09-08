@@ -1,5 +1,5 @@
 {% doc %}
-  Renders a comparison real fake section for qure filters offer page
+  Renders a comparison real fake section
 {% enddoc %}
 
 
@@ -55,7 +55,7 @@
 </div>
 {% schema %}
 {
-"name": "t:sections.qure-filters-offer-comparison-real-fake.name",
+"name": "t:sections.comparison-real-fake.name",
     "settings": [
     {
         "type": "text",
@@ -70,31 +70,36 @@
     {
         "type": "text",
         "id": "heading_fake",
-        "label": "t:sections.qure-filters-offer-comparison-real-fake.settings.heading-fake.name"
+        "label": "t:sections.comparison-real-fake.settings.heading-fake.name"
     },
     {
         "type": "image_picker",
         "id": "image_heading_real",
-        "label": "t:sections.qure-filters-offer-comparison-real-fake.settings.image-real.name"
+        "label": "t:sections.comparison-real-fake.settings.image-real.name"
     }
 ],
 "blocks": [
     {
         "type": "compairing_points",
-        "name": "t:sections.qure-filters-offer-comparison-real-fake.blocks.points.name",
+        "name": "t:sections.comparison-real-fake.blocks.points.name",
         "settings": [
     {
         "type": "richtext",
         "id": "real_text",
-        "label": "t:sections.qure-filters-offer-comparison-real-fake.blocks.points.settings.real-text"
+        "label": "t:sections.comparison-real-fake.blocks.points.settings.real-text"
     },
     {
         "type": "richtext",
         "id": "fake_text",
-        "label": "t:sections.qure-filters-offer-comparison-real-fake.blocks.points.settings.fake-text"
+        "label": "t:sections.comparison-real-fake.blocks.points.settings.fake-text"
     }
     ]
 }
-]
+],
+   "presets": [
+    {
+        "name": "t:sections.comparison-real-fake.name"
+    }
+    ]
 }
 {% endschema %}

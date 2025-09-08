@@ -43,6 +43,8 @@
         "left-tip": "Left tip",
         "text": "Text",
         "badge-text": "Badge text",
+        "review-header": "Review header",
+        "review-text": "Review text",
         "text-with-progress": "Text with progress",
         "popup": "Popup",
         "popup-header": "Popup header",
@@ -71,6 +73,8 @@
         "username": "Username",
         "image": "Image",
         "country-image": "Country image",
+        "hover-image": "Hover image",
+        "review-image": "Review image",
         "image-before": "Image before",
         "image-after": "Image after",
         "image-mobile": "Image mobile",
@@ -109,6 +113,7 @@
         "gift": "Gift",
         "product": "Product",
         "price": "Price",
+        "price-mobile": "Price mobile",
         "price-before": "Price before",
         "price-after": "Price after",
         "price_limit": "Price limit",
@@ -128,7 +133,10 @@
         "static": "Static",
         "buy-box": "Buy box",
         "background-color": "Background color",
-        "feedback": "Feedback"
+        "feedback": "Feedback",
+        "am": "AM",
+        "pm": "PM",
+        "none": "None"
     },
     "blocks": {
         "block-card": {
@@ -158,6 +166,35 @@
         },
         "expert-advisory-product": {
             "name": "Expert advisory product"
+        },
+        "bundle-routine": {
+            "name": "Bundle routine"
+        },
+        "static-sticky-cta": {
+            "name": "Static sticky cta"
+        },
+        "skincare-lifestyle": {
+            "name": "Skincare lifestyle"
+        },
+        "skincare-routine": {
+            "name": "Skincare routine",
+            "blocks": {
+                "list": {
+                    "settings": {
+                        "am-or-pm": "AM or PM"
+                    }
+                }
+
+            }
+        },
+        "skincare-plan": {
+            "name": "Skincare plan",
+            "settings": {
+                "product-image": "Product image",
+                "product-hover-image": "Product hover image",
+                "results-image": "Results image",
+                "review-video": "Review video"
+            }
         },
         "serum-infusions": {
             "name": "Serum infusions"
@@ -613,7 +650,7 @@
                 }
             }
         },
-        "qure-filters-offer-comparison-real-fake": {
+        "comparison-real-fake": {
             "name": "Comparison real and fake",
             "settings" :{
                 "heading-fake":{
