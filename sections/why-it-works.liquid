@@ -142,9 +142,7 @@ loadScriptOnce('wow-js', 'https://qureskincaredns-main.com/assets/js/wow.min.js'
                             <div class="point_column p_one top_0 right_0 wow fadeInDown" style="--top:68px;--top-mob:20px;">
                                 <div class="accordion-button collapsed fs-18 gap-2" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#qure_benefit-1" aria-expanded="false" aria-controls="qure_benefit-1"
-                                    {% if block.settings.image_1 != blank %}
-                                        data-img-url="{{ block.settings.image_1 | image_url }}">
-                                    {% endif %}
+                                    {% if block.settings.image_1 != blank %}data-img-url="{{ block.settings.image_1 | image_url }}"{% endif %}>
                                     {% if block.settings.text_item_1 != blank %}
                                         <span class="p_text">{{block.settings.text_item_1}}</span>
                                     {% endif %}
@@ -154,9 +152,7 @@ loadScriptOnce('wow-js', 'https://qureskincaredns-main.com/assets/js/wow.min.js'
                                 <div class="accordion-button collapsed fs-18 gap-1 flex-column" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#qure_benefit-2" aria-expanded="false"
                                     aria-controls="qure_benefit-2"
-                                    {% if block.settings.image_2 != blank %}
-                                        data-img-url="{{ block.settings.image_2 | image_url }}">
-                                    {% endif %}
+                                    {% if block.settings.image_2 != blank %}data-img-url="{{ block.settings.image_2 | image_url }}"{% endif %}>
                                     {% if block.settings.text_item_2 != blank %}
                                         <span class="p_text">{{ block.settings.text_item_2 }}</span>
                                     {% endif %}
