@@ -1014,7 +1014,7 @@
       "type": "text-header",
       "name": "t:sections.text-header.name",
       "settings": {
-        "heading": "Real reviews, real results from people just like you"
+        "heading": "Our customer reviews"
       }
     },
     "1707653061bd3707e6": {
@@ -1057,9 +1057,9 @@
     "product_info_UhyUij",
     "device_comparison_gqa6Kh",
     "compare_FyPtUj",
-    "faq_46wWyJ",
     "sticky_cta_AFkFxe",
     "text_header_3LDiTg",
-    "1707653061bd3707e6"
+    "1707653061bd3707e6",
+    "faq_46wWyJ"
   ]
 }
