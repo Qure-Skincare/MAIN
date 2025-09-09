@@ -26,7 +26,7 @@
                         {% include 'get-product-data', product_handle: block.settings.product, product_prefix: 'purchase-form-bundle-products-items-' %}
 
                         {% if product_id %}
-                            {% assign product_title_tag = block.settings.heading | strip_newlines | strip | replace: ' ', '' | replace: ',', '_' | downcase %}
+                            {% assign product_title_tag = block.settings.heading | strip_html | strip_newlines | strip | replace: ' ', '' | replace: ',', '_' | downcase %}
                             {% assign array_count = array_count |  minus: 1 %}
                             {% assign product_type = array_count %}
                             

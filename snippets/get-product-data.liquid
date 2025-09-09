@@ -30,7 +30,7 @@
     {% assign product_variant_id = get_product_data.variants.first.id %}
     {% assign product_price_divided = get_product_data.price | divided_by: 4 | money_without_trailing_zeros %}
     {% assign product_discount = get_product_data.price | times: 1.0 | divided_by: get_product_data.compare_at_price | minus: 1 | abs | times: 100 | ceil %}
-    {% assign product_title_tag = get_product_data.title | strip_newlines | strip | replace: ' ', '' | replace: ',', '_' | downcase %}
+    {% assign product_title_tag = get_product_data.title | strip_html | strip_newlines | strip | replace: ' ', '' | replace: ',', '_' | downcase %}
     {% assign product_price_original = get_product_data.price %}
     {% assign product_price = product_price_original | money_without_trailing_zeros %}
     {% assign product_price_compare_original = get_product_data.compare_at_price %}

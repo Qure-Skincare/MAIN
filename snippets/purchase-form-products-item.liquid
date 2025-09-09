@@ -29,7 +29,7 @@
                             {% include 'get-product-data', product_handle: block.settings.product, product_prefix: 'purchase-form-products-item-' %}
 
                             {% if product_id %}
-                                {% assign product_title_tag = block.settings.heading | strip_newlines | strip | replace: ' ', '' | replace: ',', '_' | downcase %}
+                                {% assign product_title_tag = block.settings.heading | strip_html | strip_newlines | strip | replace: ' ', '' | replace: ',', '_' | downcase %}
 
                                 {% if block.settings.total_treatments > 0 %}
                                     {% assign product_price_per_item = product_price_original | divided_by: block.settings.total_treatments | money_without_trailing_zeros %}
