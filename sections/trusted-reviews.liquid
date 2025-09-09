@@ -82,7 +82,33 @@
         <div class="qure-swiper-button-next qure-swiper-arrow trusted-slider-arrow-right"><i class="fa-regular fa-angle-right"></i></div>
       </div>
     </div>
-    {% if section.settings.button_label != blank and section.settings.button_url != blank %}
+    {% assign image_with_text_count = 0 %}
+    {% for block in section.blocks %}
+      {% if block.type == 'image_with_text' %}
+        {% assign image_with_text_count = image_with_text_count | plus: 1 %}
+      {% endif %}
+    {% endfor %}
+    {% if image_with_text_count > 1 %}
+      <div class="text-center pt-50">
+        {% if section.settings.button_url != blank and section.settings.button_label != blank %}
+          <a href="{{ section.settings.button_url }}" class="banner-text--button btn btn--primary w-100" style="--btn-mx-w:500px;">{{ section.settings.button_label }}</a>
+        {% endif %}
+        <div class="d-flex flex-wrap align-items-center justify-content-center col-gap pt-10" style="--col-gap-mb:10px; --col-gap-mb: 5px;">
+          {% for block in section.blocks %}
+            {% if block.type == 'image_with_text' %}
+              <div class="icon-with-text d-flex flex-nowrap flex-lg-row align-items-center fs-14 text-center text-lg-start">
+                {% if block.settings.image != blank %}
+                    <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" class="mr-0 mr-md-10">
+                {% endif %}
+                {% if block.settings.text != blank %}
+                    <span>{{ block.settings.text }}</span>
+                {% endif %}
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    {% elsif section.settings.button_label != blank and section.settings.button_url != blank %}
       <div class="text-center pt-md-50 pt-30">
         <a href="{{ section.settings.button_url }}" class="text-uppercase btn btn--primary">{{ section.settings.button_label }} </a>
       </div>
@@ -180,6 +206,22 @@
           "type": "image_picker",
           "id": "product_image",
           "label": "t:sections.trusted-reviews.blocks.slider.settings.product-image.name"
+        }
+      ]
+    },
+    {
+      "type": "image_with_text",
+      "name": "t:common.image-with-text",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "t:common.text"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:common.image"
         }
       ]
     }

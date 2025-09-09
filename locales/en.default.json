@@ -176,6 +176,16 @@
       "am_image": "https://qureskincaredns-main.com/sections/isolated/skincare-routine/images/am.webp",
       "pm_image": "https://qureskincaredns-main.com/sections/isolated/skincare-routine/images/pm.webp",
       "or_text": "or"
+    },
+    "faq-header": {
+    "view_image": "https://qureskincaredns-main.com/sections/isolated/faqs/images/eye.svg",
+    "shared_image": "https://qureskincaredns-main.com/sections/isolated/faqs/images/share.svg"
+    },
+    "faq-promo-banner": {
+      "limited_offer_text": "Limited Time Offer"
+    },
+    "richtext-simple": {
+      "step_text": "Step"
     }
   },
   "breadcrumb": {
@@ -535,5 +545,6 @@
         "button_label": "Join Our VIP Community"
       }
     }
-  }
+  },
+  
 }

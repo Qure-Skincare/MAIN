@@ -42,6 +42,7 @@
         "tip": "Tip",
         "left-tip": "Left tip",
         "text": "Text",
+        "text-with-image": "Text with image",
         "badge-text": "Badge text",
         "review-header": "Review header",
         "review-text": "Review text",
@@ -136,7 +137,9 @@
         "feedback": "Feedback",
         "am": "AM",
         "pm": "PM",
-        "none": "None"
+        "none": "None",
+        "number-of-views": "Number of views",
+        "nubmber-of-shared": "Number of shared"
     },
     "blocks": {
         "block-card": {
@@ -219,6 +222,33 @@
         },
         "get-smoother-skin": {
             "name": "Get smoother skin"
+        },
+        "richtext-simple": {
+            "name": "Richtext simple"
+        },
+        "healthier-skin-banner": {
+            "name": "Healthier skin banner"
+        },
+        "faq-header": {
+            "name": "FAQ header"
+        },
+        "quick-and-easy": {
+            "name": "Quick and easy"
+        },
+        "quick-an-easy-solution": {
+            "name": "Quick and easy solution"
+        },
+        "info-notice": {
+            "name": "Info notice"
+        },
+        "notification-bar": {
+            "name": "Notification bar"
+        },
+        "promo-banner": {
+            "name": "Promo banner"
+        },
+        "purchase-banner-with-text": {
+            "name": "Purchase banner with text"
         },
         "proof-in-numbers": {
             "name": "Proof in numbers"
