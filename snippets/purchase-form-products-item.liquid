@@ -44,7 +44,7 @@
 
                                 {% capture product-included-dropdown %}
                                     {{ product-included-dropdown }}
-                                    <div class="tab-pane fade" id="{{ block.id }}-tabitem" role="tabpanel" aria-labelledby="{{ block.id }}-tab" tabindex="0">
+                                    <div class="tab-pane collapsed-panel fade" id="{{ block.id }}-tabitem" role="tabpanel" aria-labelledby="{{ block.id }}-tab" tabindex="0">
                                         <div class="qure_bundle-accorion">
                                             <button class="qure_bundle-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#{{ block.id }}-collapse" aria-expanded="false" aria-controls="{{ block.id }}-collapse">
                                                 What is in the {{ block.settings.heading | replace: '<br>', '' }}?
