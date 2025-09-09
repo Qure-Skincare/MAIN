@@ -144,7 +144,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function toogleTab(block_id) {
 
-        document.querySelectorAll('.tab-pane').forEach(el => {
+        document.querySelectorAll('.collapsed-panel').forEach(el => {
             el.classList.remove('active', 'show');
         });
 
