@@ -26,13 +26,7 @@
     </div>
 </div>
 
-<script src="{{ 'purchase-form-bundle.js' | asset_url }}" data-form="{{ section.settings.form_name }}" data-section="{{ section.id }}" defer></script>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        loadScriptOnce('purchase-form-bundle', 'https://qureskincaredns-main.com/sections/global/purchase-form-bundle/purchase-form-bundle.js');
-    });
-</script>
+<script src="https://qureskincaredns-main.com/assets/shopify/js/purchase-form-bundle.js" data-form="{{ section.settings.form_name }}" data-section="{{ section.id }}" defer></script>
 
 {%- schema -%}
 {
