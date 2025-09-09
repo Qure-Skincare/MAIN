@@ -9,6 +9,8 @@ const purchase_form_landing_event = (target, element, product_variant_id) => {
             product_name: element.getAttribute("data-product-name"),
             product_type: element.getAttribute("data-product-type"),
             product_price: element.getAttribute("data-product-price"),
+            preselected: element.getAttribute("data-preselected"),
+            product_selling_plan: document.querySelector('.' + target + ' input[name="selling_plan"]')?.disabled ? '0' : document.querySelector('.' + target + ' input[name="selling_plan"]')?.value,
             unix_time: Math.floor(Date.now() / 1000)
         }
     });
@@ -30,6 +32,7 @@ const purchase_form_event = (target, element, product_variant_id) => {
             product_name: element.getAttribute("data-product-name"),
             product_type: element.getAttribute("data-product-type"),
             product_price: element.getAttribute("data-product-price"),
+            preselected: element.getAttribute("data-preselected"),
             unix_time: Math.floor(Date.now() / 1000)
         }
     });
@@ -42,6 +45,6 @@ const purchase_form_event = (target, element, product_variant_id) => {
 
 
 document.addEventListener('datalayer.pushCustomEvent', (event) => {
-    //console.log(event.detail);
+    console.log(event.detail);
     //window.dataLayer.push(event.detail);
 });

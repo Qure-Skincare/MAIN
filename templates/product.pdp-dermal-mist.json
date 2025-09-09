@@ -265,6 +265,7 @@
       ],
       "name": "t:common.carousel",
       "settings": {
+        "background_color": "#f6f6f7",
         "display_mode": "both"
       }
     },
@@ -350,6 +351,34 @@
         "image_compare_cross": "shopify://shop_images/mist_img_2.webp"
       }
     },
+    "text_header_LkTtUE": {
+      "type": "text-header",
+      "name": "t:sections.text-header.name",
+      "settings": {
+        "heading": "Our customer reviews"
+      }
+    },
+    "17574126382ef36ccf": {
+      "type": "apps",
+      "blocks": {
+        "stamped_reviews_main_widget_zxTJa8": {
+          "type": "shopify://apps/stamped-reviews/blocks/main-widget/a103faaf-2125-4b0e-89fa-de5149736723",
+          "settings": {
+            "animation": true,
+            "tags_exclude": "",
+            "tags_include": "",
+            "search": "",
+            "linkify": true,
+            "use_metafields": false,
+            "sku_tagtype": "sku"
+          }
+        }
+      },
+      "block_order": [
+        "stamped_reviews_main_widget_zxTJa8"
+      ],
+      "settings": {}
+    },
     "faq_RhychY": {
       "type": "faq",
       "blocks": {
@@ -421,7 +450,7 @@
         "heading": "Have questions?",
         "text": "Don’t see your question?",
         "button_label": "Ask us",
-        "button_url": "#"
+        "button_url": "https://qureskincare.com/pages/contact-us"
       }
     },
     "sticky_cta_KmhMmz": {
@@ -444,6 +473,8 @@
     "carousel_PjVxaQ",
     "product_info_popup_cJGGQN",
     "compare_8FkPMf",
+    "text_header_LkTtUE",
+    "17574126382ef36ccf",
     "faq_RhychY",
     "sticky_cta_KmhMmz"
   ]

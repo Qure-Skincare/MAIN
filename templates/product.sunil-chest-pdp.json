@@ -487,6 +487,34 @@
       "name": "t:sections.device-comparison-3.name",
       "settings": {}
     },
+    "text_header_JeNmHk": {
+      "type": "text-header",
+      "name": "t:sections.text-header.name",
+      "settings": {
+        "heading": "Our customer reviews"
+      }
+    },
+    "17574113984fdd4547": {
+      "type": "apps",
+      "blocks": {
+        "stamped_reviews_main_widget_iNp8ct": {
+          "type": "shopify://apps/stamped-reviews/blocks/main-widget/a103faaf-2125-4b0e-89fa-de5149736723",
+          "settings": {
+            "animation": true,
+            "tags_exclude": "",
+            "tags_include": "",
+            "search": "",
+            "linkify": true,
+            "use_metafields": false,
+            "sku_tagtype": "sku"
+          }
+        }
+      },
+      "block_order": [
+        "stamped_reviews_main_widget_iNp8ct"
+      ],
+      "settings": {}
+    },
     "faq_cMk3db": {
       "type": "faq",
       "blocks": {
@@ -604,6 +632,8 @@
     "product_sunil_chest_pdp_numbered_steps_QMQH3Q",
     "product_info_86H7kk",
     "device_comparison_3_QEDhV9",
+    "text_header_JeNmHk",
+    "17574113984fdd4547",
     "faq_cMk3db",
     "sticky_cta_Kmmeg7"
   ]

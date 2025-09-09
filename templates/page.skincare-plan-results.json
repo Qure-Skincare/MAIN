@@ -31,12 +31,10 @@
         "items_rc8Rmp": {
           "type": "items",
           "settings": {
-            "heading": "Q-Rejuvalight Pro Facewear",
-            "price": "$399",
+            "product": "q-rejuvalight-pro-facewear",
             "text": "A hands-free LED light therapy mask that uses clinically proven wavelengths to target multiple skin concerns.",
             "list": "<p>FDA-cleared device that treats acne, fine lines, wrinkles and dark spots.</p><p>Customizable treatment on 5 facial areas for your specific skin concerns.</p><p>Quick 3 minute, wireless daily treatments with convenient hands-free operation.</p>",
             "button_label": "Add to Bundle",
-            "button_url": "#",
             "review_heading": "<p><strong>“I noticed results straight away!</strong></p>",
             "review_text": "<p>Now I can’t go a day without the Q-Rejuvalight Mask.”</p>",
             "product_image": "shopify://shop_images/q-rej-product.webp",
@@ -48,12 +46,10 @@
         "items_8nmjC7": {
           "type": "items",
           "settings": {
-            "heading": "Micro-Infusion 3 Month Bundle (For Wrinkles)",
-            "price": "$149",
+            "product": "micro-infusion-3-month-bundle-6x-beta-glucan-serum",
             "text": "Inspired by in-clinic microneedling for results you can see and feel—with minimal to no downtime.",
             "list": "<p>Smooths fine lines and softens wrinkles.</p><p>Improves tone and texture through gentle skin renewal and deep hydration</p><p>Clinically backed and easy to use at home</p>",
             "button_label": "Add to Bundle",
-            "button_url": "#",
             "review_heading": "<p><strong>“Even my esthetician is hooked!</strong></p>",
             "review_text": "<p>And I can now visit beauty clinics less often.”</p>",
             "product_image": "shopify://shop_images/mi-prod.webp",
@@ -65,12 +61,10 @@
         "items_kDMBBt": {
           "type": "items",
           "settings": {
-            "heading": "All-In-One Face Serum",
-            "price": "$79",
+            "product": "face-serum",
             "text": "A multi-tasking formula designed to hydrate, brighten, and strengthen skin barrier in one step.",
             "list": "<p>Hydrates and plumps with hyaluronic acid and soothing ingredients.</p><p>Deeply hydrates and evens tone with gentle, skin-renewing actives.</p><p>Lightweight, non-sticky formula that absorbs quickly and layers well.</p>",
             "button_label": "Add to Bundle",
-            "button_url": "#",
             "review_heading": "<p><strong>“This product is a keeper.</strong></p>",
             "review_text": "<p>My skin looks better than ever after just 2 weeks.”</p>",
             "product_image": "shopify://shop_images/all-in-prod.webp",
@@ -82,12 +76,10 @@
         "items_WBdErb": {
           "type": "items",
           "settings": {
-            "heading": "Neck & Décolletage LED Device",
-            "price": "$299",
+            "product": "neck-decolletage-led",
             "text": "A targeted LED light therapy device designed specifically for the delicate skin on your neck and chest.",
             "list": "<p>Uses wavelengths of LED light that have been clinically proven to support skin clarity and repair.</p><p>Helps even skin tone and improve the feel of firmness.</p><p>Pairs seamlessly with Qure’s Micro-Infusion for enhanced results.</p>",
             "button_label": "Add to Bundle",
-            "button_url": "#",
             "review_heading": "<p><strong>“I’m surprised how much younger my neck looks</strong></p>",
             "review_text": "<p>and my skin looks and feels more rejuvenated.”</p>",
             "product_image": "shopify://shop_images/neck-prod.webp",
@@ -474,37 +466,29 @@
         "bundle_kX3PXc": {
           "type": "bundle",
           "settings": {
-            "heading": "<p>Q-Rejuvalight Pro Facewear</p>",
-            "button_label": "Add to Bundle",
-            "button_url": "#",
-            "image": "shopify://shop_images/bndl_routine_1.webp"
+            "product": "q-rejuvalight-pro-facewear",
+            "button_label": "Add to Bundle"
           }
         },
         "bundle_PJeUr8": {
           "type": "bundle",
           "settings": {
-            "heading": "<p>Micro-Infusion 3 Month Bundle (For Wrinkles</p>",
-            "button_label": "Add to Bundle",
-            "button_url": "#",
-            "image": "shopify://shop_images/bndl_routine_2.webp"
+            "product": "micro-infusion-3-month-bundle-6x-beta-glucan-serum",
+            "button_label": "Add to Bundle"
           }
         },
         "bundle_BXKaTW": {
           "type": "bundle",
           "settings": {
-            "heading": "<p>All-In-One Face Serum</p>",
-            "button_label": "Add to Bundle",
-            "button_url": "#",
-            "image": "shopify://shop_images/bndl_routine_3_2721a3e0-6422-4b83-a5fc-73062f91d858.webp"
+            "product": "face-serum",
+            "button_label": "Add to Bundle"
           }
         },
         "bundle_4HeamN": {
           "type": "bundle",
           "settings": {
-            "heading": "<p>Neck & Décolletage LED Device</p>",
-            "button_label": "Add to Bundle",
-            "button_url": "#",
-            "image": "shopify://shop_images/bndl_routine_4.webp"
+            "product": "neck-decolletage-led",
+            "button_label": "Add to Bundle"
           }
         }
       },
@@ -521,6 +505,7 @@
       }
     },
     "sticky_cta_BpPQpM": {
+      "disabled": true,
       "type": "sticky-cta",
       "name": "t:sections.static-sticky-cta.name",
       "settings": {}

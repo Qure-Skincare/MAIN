@@ -2,6 +2,7 @@
 Renders a bundle routine section.
 {% enddoc %}
 
+<link rel="stylesheet" href="{{ 'bundle-routine.css' | asset_url }}">
 <div class=" qure__section bundle_routine bg-light"
     style="--padding-top:80px;--padding-bottom:80px;--padding-top-mob:40px;--padding-top-mob:40px;">
     <div class="container">
@@ -16,18 +17,20 @@ Renders a bundle routine section.
         <div class="row g-4">
             {% for block in section.blocks %}
                 {% if block.type == 'bundle' %}
+                    {% include 'get-product-data', product_handle: block.settings.product, product_prefix: 'bundle-routine-' %}
+
                     <div class="col-6 col-lg-3">
                         <div class="bndl_routine bg-white rounded-10 p-16 p-md-24 d-flex flex-column justify-content-between h-100">
                             <div class="d-flex flex-md-nowrap gap-4 mb-4 align-items-md-center flex-column flex-md-row">
-                                {% if block.settings.image != blank %}
-                                    <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}">
+                                {% if product_featured_image != blank %}
+                                    <img src="{{ product_featured_image | img_url: '250x' }}" alt="{{ product_title | escape }}"  />
                                 {% endif %}
-                                {% if block.settings.heading != blank %}
-                                    {{ block.settings.heading }}
+                                {% if product_title != blank %}
+                                    {{ product_title }}
                                 {% endif %}
                             </div>
-                            {% if block.settings.button_url != blank and block.settings.button_label != blank %}
-                                <a href="{{ block.settings.button_url }}" class="btn border-0 w-100 px-10" style="--btn-font-mob:16px;">{{ block.settings.button_label }}</a>
+                            {% if block.settings.button_label != blank %}
+                                {% render 'product-page-buy-button', product_price: null, product_variant_id: product_variant_id, section: block %}
                             {% endif %}
                         </div>
                     </div>
@@ -58,27 +61,17 @@ Renders a bundle routine section.
         "type": "bundle",
         "name": "t:common.bundle",
         "settings": [
-        {
-            "type": "richtext",
-            "id": "heading",
-            "label": "t:common.header"
-        },
-        {
-            "type": "text",
-            "id": "button_label",
-            "label": "t:common.button-label",
-            "default": "Add to Bundle"
-        },
-        {
-            "type": "url",
-            "id": "button_url",
-            "label": "t:common.button-url"
-        },
-        {
-            "type": "image_picker",
-            "id": "image",
-            "label": "t:common.image"
-        }
+            {
+                "type": "text",
+                "id": "product",
+                "label": "t:common.product"
+            },
+            {
+                "type": "text",
+                "id": "button_label",
+                "label": "t:common.button-label",
+                "default": "Add to Bundle"
+            }
         ]
     }
     ],

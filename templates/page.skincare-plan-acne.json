@@ -32,12 +32,10 @@
         "items_KN7Ke9": {
           "type": "items",
           "settings": {
-            "heading": "Q-Rejuvalight Pro Facewear",
-            "price": "$399",
+            "product": "q-rejuvalight-pro-facewear",
             "text": "A hands-free LED light therapy mask that uses clinically proven wavelengths to target multiple skin concerns.",
             "list": "<p>FDA-cleared device that treats acne, fine lines, wrinkles and dark spots.</p><p>Customizable treatment on 5 facial areas for your specific skin concerns.</p><p>Quick 3 minute, wireless daily treatments with convenient hands-free operation.</p>",
-            "button_label": "Add to Bundle",
-            "button_url": "#",
+            "button_label": "Add to Bundle", 
             "review_heading": "<p><strong>“I noticed results straight away!</strong></p>",
             "review_text": "<p>Now I can’t go a day without the Q-Rejuvalight Mask.”</p>",
             "product_image": "shopify://shop_images/q-rej-product.webp",
@@ -49,12 +47,10 @@
         "items_cHtPBq": {
           "type": "items",
           "settings": {
-            "heading": "Shower Filter",
-            "price": "$149",
+            "product": "shower-filter",
             "text": "Healthy skin starts with your water. The Qure Shower Filter helps reduce harmful impurities that damage skin and hair.",
             "list": "<p>Reduces chlorine, heavy metals, and other impurities that can disrupt your skin barrier.</p><p>Clinically proven to increase skin and scalp moisture after just 8 weeks.</p><p>Available in three colors, with an easy-to-install design.</p>",
-            "button_label": "Add to Bundle",
-            "button_url": "#",
+            "button_label": "Add to Bundle", 
             "review_heading": "<p><strong>“This filter makes a huge difference </strong><br>in removing impurities that irritate the skin.”</p>",
             "review_text": "<p>– Dr. Muneeb Shah, Dermatologist</p>",
             "review_image": "shopify://shop_images/crt-1_a45e46c8-6d1d-4e86-bde1-2a1411dbe7b2.webp",
@@ -67,12 +63,10 @@
         "items_Q3cFkr": {
           "type": "items",
           "settings": {
-            "heading": "All-In-One Face Serum",
-            "price": "$79",
+            "product": "all-in-one-face-serum",
             "text": "A multi-tasking formula designed to hydrate, brighten, and strengthen skin barrier in one step.",
             "list": "<p>Helps improve skin texture and reduce the appearance of hyperpigmentation.</p><p>Lightweight, non-sticky formula that absorbs quickly and layers well.</p><p>Formulated with soothing botanicals to calm and comfort the skin.</p>",
-            "button_label": "Add to Bundle",
-            "button_url": "#",
+            "button_label": "Add to Bundle", 
             "review_heading": "<p><strong>“This product is a keeper.</strong></p>",
             "review_text": "<p>My skin looks better than ever after just 2 weeks.”</p>",
             "product_image": "shopify://shop_images/all-in-prod.webp",
@@ -84,12 +78,10 @@
         "items_iH7rhd": {
           "type": "items",
           "settings": {
-            "heading": "Dermal Mist",
-            "price": "$29",
+            "product": "dermal-mist",
             "text": "A refreshing facial spray that calms irritation, purifies the skin, and accelerates skin healing. Ideal for daily use.",
             "list": "<p>Gently purifies your skin, reducing breakout-causing bacteria without stripping or drying it out.</p><p>Helps calm inflammation and keeps your skin refreshed throughout the day.</p><p>Versatile and safe to use on your face, body and devices.</p>",
-            "button_label": "Add to Bundle",
-            "button_url": "#",
+            "button_label": "Add to Bundle", 
             "review_heading": "<p><strong>“I take this with me everywhere</strong></p>",
             "review_text": "<p>it keeps my skin calm and hydrated all day!”</p>",
             "product_image": "shopify://shop_images/dermal_mist_acne.webp",
@@ -505,37 +497,29 @@
         "bundle_LcqBR8": {
           "type": "bundle",
           "settings": {
-            "heading": "<p>Q-Rejuvalight Pro Facewear</p>",
-            "button_label": "Add to Bundle",
-            "button_url": "#",
-            "image": "shopify://shop_images/bndl_routine_1.webp"
+            "product": "q-rejuvalight-pro-facewear",
+            "button_label": "Add to Bundle" 
           }
         },
         "bundle_eNrMY7": {
           "type": "bundle",
           "settings": {
-            "heading": "<p>Shower Filter</p>",
-            "button_label": "Add to Bundle",
-            "button_url": "#",
-            "image": "shopify://shop_images/shower_routine.webp"
+            "product": "shower-filter",
+            "button_label": "Add to Bundle"
           }
         },
         "bundle_qwnnfe": {
           "type": "bundle",
           "settings": {
-            "heading": "<p>All-In-One Face Serum</p>",
-            "button_label": "Add to Bundle",
-            "button_url": "#",
-            "image": "shopify://shop_images/bndl_routine_3.webp"
+            "product": "face-serum",
+            "button_label": "Add to Bundle"
           }
         },
         "bundle_gg4Dhb": {
           "type": "bundle",
           "settings": {
-            "heading": "<p>Dermal Mist</p>",
-            "button_label": "Add to Bundle",
-            "button_url": "#",
-            "image": "shopify://shop_images/derm_routine.webp"
+            "product": "dermal-mist",
+            "button_label": "Add to Bundle"
           }
         }
       },
@@ -552,6 +536,7 @@
       }
     },
     "sticky_cta_nTPkm8": {
+      "disabled": true,
       "type": "sticky-cta",
       "name": "t:sections.static-sticky-cta.name",
       "settings": {}

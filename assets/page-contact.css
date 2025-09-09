@@ -1,0 +1,9 @@
+div.errors ul li {
+    color: red;
+    padding: 10px;
+}
+
+p.form-success {
+    color: green;
+    padding: 10px;
+}

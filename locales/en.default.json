@@ -220,7 +220,7 @@
         "shipping_text": "Free Shipping over $100"
       },
       "saveup": {
-        "heading_html": "<p>Save up to <strong>XX%</strong> with our curated bundles</p>",
+        "heading_html": "<p>Save up to <strong>55%</strong> with our curated bundles</p>",
         "button_html": "<a href='{{ button_link }}' class='btn bg-white border-0 text-black mt-15 mt-md-0'>Shop Now <img src='https://qureskincaredns-main.com/assets/images/arrow_right.svg' alt='arrow'></a>"
       },
       "benefits-list": {

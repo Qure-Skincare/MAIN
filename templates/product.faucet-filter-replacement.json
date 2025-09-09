@@ -115,7 +115,7 @@
         "product_type_QKQhNr": {
           "type": "product_type",
           "settings": {
-            "heading": "Colors",
+            "heading": "Faucet filter variants",
             "preselected": false
           }
         },
@@ -694,6 +694,34 @@
         "image_compare_cross": "shopify://shop_images/compare_others.webp"
       }
     },
+    "text_header_r6mPbB": {
+      "type": "text-header",
+      "name": "t:sections.text-header.name",
+      "settings": {
+        "heading": "Our customer reviews"
+      }
+    },
+    "17574115467f0c78e8": {
+      "type": "apps",
+      "blocks": {
+        "stamped_reviews_main_widget_HGjqHn": {
+          "type": "shopify://apps/stamped-reviews/blocks/main-widget/a103faaf-2125-4b0e-89fa-de5149736723",
+          "settings": {
+            "animation": true,
+            "tags_exclude": "",
+            "tags_include": "",
+            "search": "",
+            "linkify": true,
+            "use_metafields": false,
+            "sku_tagtype": "sku"
+          }
+        }
+      },
+      "block_order": [
+        "stamped_reviews_main_widget_HGjqHn"
+      ],
+      "settings": {}
+    },
     "faq_TxaNth": {
       "type": "faq",
       "blocks": {
@@ -834,6 +862,8 @@
     "carousel_BgaTxw",
     "how_to_use_HBy7NB",
     "compare_wy7JXr",
+    "text_header_r6mPbB",
+    "17574115467f0c78e8",
     "faq_TxaNth",
     "sticky_cta_BrchB7"
   ]

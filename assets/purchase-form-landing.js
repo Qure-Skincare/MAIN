@@ -77,7 +77,9 @@ function __landing__initScripts() {
     });
 }
 
-function __landing__handlerPlanBlock() {
+function __landing__handlerPlanBlock(e) {
+    if (e.target.tagName === 'INPUT') return;  //to skip second click
+
     const product_variant_id = this.getAttribute("data-product_variant_id");
     const soldout = this.getAttribute("data-soldout");
     const preorder = this.getAttribute("data-preorder");
@@ -176,7 +178,8 @@ function __landing__updateSellingPlan(element, product_selling_plan, soldout, pr
     __updateSellingPlanButtonLabel(preorder);
 
     document.querySelectorAll('.' + __section_landing + ' .qure__subscription .qure__subscription-item').forEach(el => {
-        el.addEventListener('click', () => {
+        el.removeEventListener('click', el.__landing_subscriptionClickHandler);
+        el.__landing_subscriptionClickHandler = () => {
             if (el.classList.contains('subscription-active') && el.classList.contains('one_time_purchase')) {
                 sellingPlanInput.setAttribute('disabled', 'disabled');
                 __landing_updateButtonLabel(element);
@@ -184,7 +187,12 @@ function __landing__updateSellingPlan(element, product_selling_plan, soldout, pr
                 sellingPlanInput.removeAttribute('disabled');
                 __updateSellingPlanButtonLabel(preorder);
             }
-        });
+
+            if(__section_landing) {
+              purchase_form_landing_event(__section_landing, element, element.dataset.product_variant_id);
+            }
+        };
+        el.addEventListener('click', el.__landing_subscriptionClickHandler);
     });
 }
 

@@ -470,45 +470,7 @@
         <div class="container qure__form">
             <h2 class="qure__section-heading mb-md-50 mb-30 text-md-center">How Apply to Join the Qure Creator Program
             </h2>
-            <form class="row custom__grid popupForm" style="--column-gap:12px; --column-gap-mobile:12px;">
-                <div class="col-md-4 custom__block">
-                    <input type="text" class="form-control" placeholder="First Name">
-                </div>
-                <div class="col-md-4 custom__block">
-                    <input type="text" class="form-control" placeholder="Last Name">
-                </div>
-                <div class="col-md-4 custom__block">
-                    <input type="email" class="form-control" placeholder="Email address">
-                </div>
-                <div class="col-md-6 custom__block">
-                    <input type="text" class="form-control" placeholder="Main IG/TT/YT (provide the link)*">
-                </div>
-                <div class="col-md-6 custom__block">
-                    <input type="text" class="form-control" placeholder="Secondary IG/TT/YT (provide the link)">
-                </div>
-                <div class="col-md-12 custom__block">
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Have you tried our products? 
-                    If so, which one is your favorite and why?*"></textarea>
-                </div>
-                <div class="col-md-12 custom__block">
-                    <textarea class="form-control" id="exampleFormControlTextarea2" rows="3" placeholder="How did you find out about Qure Affiliate 
-                    Program?"></textarea>
-                </div>
-                <div class="col-md-12 custom__block py-20">
-                    <div class="form-check p-0 d-flex  align-items-md-center gap-3">
-                        <label class="form-check-label fs-16">By creating account you agree to our <a
-                                href="page.affiliate-terms-and-conditions.html">Terms & Conditions.</a></label>
-                    </div>
-                </div>
-                <div class="col-md-12 custom__block">
-                    <div class="d-inline-block text-center w-mob-100">
-                        <input type="submit"
-                            class="btn btn--primary px-50 d-block d-md-inline-block text-center contact-submit"
-                            value="Create Account">
-                        <a href="" class="d-block mt-12">I already have an account</a>
-                    </div>
-                </div>
-            </form>
+            {% render 'socialsnowball-form-affiliate-page' %}
         </div>
     </div>
     <div class="popup-message">

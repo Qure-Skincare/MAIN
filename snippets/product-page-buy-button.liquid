@@ -13,10 +13,16 @@
 {% assign reserved = null %}
 {% assign soldout = null %}
 
+{% assign default_button_label = 'product.settings.buy-button-label' | t %}
+
+{% if section.settings.button_label != blank %}
+  {% assign default_button_label = section.settings.button_label %}
+{% endif %}
+
 {% if product_price != null %}
-  {% capture button-label %}{{ 'product.settings.buy-button-label' | t }} – {{ product_price }}{% endcapture %}
+  {% capture button-label %}{{ default_button_label }} – {{ product_price }}{% endcapture %}
 {% else %}
-  {% capture button-label %}{{ 'product.settings.buy-button-label' | t }}{% endcapture %}
+  {% capture button-label %}{{ default_button_label }}{% endcapture %}
 {% endif %}
 
 
