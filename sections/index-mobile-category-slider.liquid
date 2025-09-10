@@ -2,14 +2,9 @@
   Renders a mobile category slider section for index page 
 {% enddoc %}
 
-
+<link rel="stylesheet" href="{{ 'index-mobile-category-slider.css' | asset_url }}">
 <link rel="stylesheet" href="https://qureskincaredns-main.com/sections/isolated/categories/categories-list.css" />
-<div class="category__slider qure__section d-block d-md-none"
-style="
---section-padding-top: 16px;
---section-padding-bottom: 16px;
---section-padding-top-mob: 16px;
---section-padding-bottom-mob: 16px;">
+<div class="category__slider qure__section d-block d-md-none" style="--section-padding-top: 16px;--section-padding-bottom: 16px;--section-padding-top-mob: 16px;--section-padding-bottom-mob: 16px;">
     <div class="container">
         <div class="swiper qure__swiper" id="qure__swiper-categories" data-section-id="categories"
         data-autoplay="false" data-loop="false" data-mobile="4" data-tablet="6" data-desktop="6" data-spacing="15"
@@ -35,6 +30,8 @@ style="
         </div>
     </div>
 </div>
+
+
 {% schema %}
 {
   "name": "t:sections.index-mobile-category-slider.name",
