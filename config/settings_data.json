@@ -66,11 +66,6 @@
         "disabled": false,
         "settings": {}
       },
-      "471852632697159186": {
-        "type": "shopify://apps/stamped-loyalty-referrals/blocks/rewards-launcher/93b8fd18-14d4-464f-a49a-0093afb7e10a",
-        "disabled": false,
-        "settings": {}
-      },
       "4215564508307704909": {
         "type": "shopify://apps/sitemap-noindex-pro-seo/blocks/app-embed/4d815e2c-5af0-46ba-8301-d0f9cf660031",
         "disabled": false,
@@ -88,6 +83,11 @@
       },
       "8218531531362863771": {
         "type": "shopify://apps/kite-discount-free-gift/blocks/app-embed/2c7302c4-455d-4078-a829-48563ba26089",
+        "disabled": true,
+        "settings": {}
+      },
+      "471852632697159186": {
+        "type": "shopify://apps/stamped-loyalty-referrals/blocks/rewards-launcher/93b8fd18-14d4-464f-a49a-0093afb7e10a",
         "disabled": true,
         "settings": {}
       }
