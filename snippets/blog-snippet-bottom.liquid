@@ -21,7 +21,9 @@ Renders a blog post bottom spnippet
                         <div class="swiper-slide">
                             <div class="article">
                                 <div class="article_img position-relative">
-                                    <img src="{{ article.image | image_url }}" alt="{{ article.image.alt | escape }}" class="img-fluid w-100">
+                                    <a href="{{ article.url }}" aria-label="{{ article.title | escape }}">
+                                        <img src="{{ article.image | image_url }}" alt="{{ article.image.alt | escape }}" class="img-fluid w-100">
+                                    </a>
                                     <p class="tag_name">#{{ blogs[blog_handle].title }}</p>
                                 </div>
                                 <div class="article_content border border-top-0 p-24">
@@ -35,7 +37,7 @@ Renders a blog post bottom spnippet
                                     </div>
                                     <div class="d-flex flex-column justify-content-between gap-5 title_bt_wrap">
                                         <p class="article_title">{{ article.title | truncatewords: 8 }}</p>
-                                        <a href="" class="btn">{{ 'blog.choose.read_more' | t }}</a>
+                                        <a href="{{ article.url }}" aria-label="{{ article.title | escape }}" class="btn">{{ 'blog.choose.read_more' | t }}</a>
                                     </div>
                                 </div>
                             </div>
