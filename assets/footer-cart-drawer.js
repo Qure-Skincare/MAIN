@@ -314,7 +314,9 @@ const getCartState = () => {
 const toogleGift = async (cart) => {
     const forms = document.querySelectorAll('form.footer-cart-drawer-gift[action$="/cart/add"]');
 
-    if (forms.length === 0) return false;
+    if (forms.length === 0) {
+        await new Promise(resolve => setTimeout(resolve, 100));
+    };
 
     for (const form of forms) {
         const formData = new FormData(form);
@@ -336,7 +338,7 @@ const toogleGift = async (cart) => {
                 await changeCart(formData, undefined, true);
             }
         }
-
-        await new Promise(resolve => setTimeout(resolve, 100));
     }
+
+    await new Promise(resolve => setTimeout(resolve, 100));
 };

@@ -63,9 +63,9 @@
     <link rel="stylesheet" href="https://qureskincaredns-main.com/assets/css/theme-fonts.css" />
     <link rel="stylesheet" href="https://qureskincaredns-main.com/assets/css/base.css" />
     
-    {% comment %} {{ content_for_header }} {% endcomment %}
+    {{ content_for_header }}
 
-    {% comment %} {% render 'header-scripts' %} {% endcomment %}
+    {% render 'header-scripts' %}
 
     <script src="{{ 'datalayer.js' | asset_url }}"></script>
   </head>
@@ -83,12 +83,12 @@
 
     {% sections 'footer-group' %}
 
-    {% comment %} {% render 'book-easy' %} {% endcomment %}
+    {% render 'book-easy' %}
 
     <script src="https://qureskincaredns-main.com/assets/js/vendor.js" defer="defer"></script>
     <script src="https://qureskincaredns-main.com/assets/js/header.js" defer="defer"></script>
     <script src="https://qureskincaredns-main.com/assets/js/footer.js" defer="defer"></script>
 
-    {% comment %} {% render 'footer-scripts' %} {% endcomment %}
+    {% render 'footer-scripts' %}
   </body>
 </html>
