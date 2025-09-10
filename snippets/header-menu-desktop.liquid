@@ -33,7 +33,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="quer-menu-item type_banner col-sm-4">
+                        <div class="quer-menu-item type_banner col-sm-4 header-slider-desktop">
                             {% render 'header-slider-desktop' %}
                         </div>
                     </div>
@@ -66,3 +66,9 @@
         </li>
     </ul>
 </nav>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    loadScriptOnce('header-slider-desktop', 'https://qureskincaredns-main.com/assets/shopify/js/header-slider-desktop.js');
+  });
+</script>

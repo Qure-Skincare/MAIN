@@ -1,9 +1,0 @@
-@media (max-width: 767px) {
-    .category__slider .swiper-slide {
-        width: calc((100vw - 45px) / 4) !important;
-        margin-right: 5px !important;
-    }
-    .category__slider .swiper-slide:last-child {
-        margin-right: 0 !important;
-    }
-}
