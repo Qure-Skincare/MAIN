@@ -443,6 +443,7 @@
         "slider_WQKKEj",
         "slider_wU4KUj"
       ],
+      "disabled": true,
       "name": "t:sections.trusted-reviews.name",
       "settings": {
         "background_color": "",
@@ -817,10 +818,9 @@
         "slider_pxNHrz",
         "slider_gwBpt3"
       ],
-      "disabled": true,
       "name": "t:sections.video-review-slider.name",
       "settings": {
-        "heading": "See why everyone's switching to filtered water",
+        "heading": "Confident skin starts here",
         "background_color": "#f6f6f7"
       }
     },
