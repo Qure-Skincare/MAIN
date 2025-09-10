@@ -2,6 +2,7 @@
   Renders a product-info section.
 {% enddoc %}
 
+<link href="https://qureskincaredns-main.com/cassets/css/popup-modal.css" rel="stylesheet">
 <div id="ingredients" class="hypo_acid qure__section"
         style="--section-padding-top: 80px; --section-padding-bottom: 80px; --section-padding-top-mob: 50px; --section-padding-bottom-mob: 10px;">
         <div class="container">
@@ -25,7 +26,6 @@
                             {{ section.settings.text | replace: '<strong>', '<span style="background: #C7E5DB;">' | replace: '</strong>' , '</span>' }}
                         {% endif %}
                         <!-- popup modal  -->
-                        <link href="https://qureskincaredns-main.com/cassets/css/popup-modal.css" rel="stylesheet">
                         <div class="ctm_modal_derm_mist">
                             <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
                                 aria-labelledby="exampleModalToggleLabel" tabindex="-1">
@@ -35,11 +35,11 @@
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
                                         </div>
                                         <div class="modal-body p-0">
-                                            {% if section.settings.popup-heading != blank %}
-                                                <h5 class="modal-title fs-16 fw-600 fm-body mb-4" id="exampleModalToggleLabel">{{ section.settings.popup-heading }}</h5>
+                                            {% if section.settings.popup_heading != blank %}
+                                                <h5 class="modal-title fs-16 fw-600 fm-body mb-4" id="exampleModalToggleLabel">{{ section.settings.popup_heading }}</h5>
                                             {% endif %}
-                                           {% if section.settings.popup-text != blank %}
-                                                {{ section.settings.popup-text 
+                                           {% if section.settings.popup_text != blank %}
+                                                {{ section.settings.popup_text 
                                                 | replace: '<strong>', '<p class="fs-16 fw-400 fm-body">' 
                                                 | replace: '</strong>', '</p>'
                                                 }}
@@ -49,8 +49,8 @@
                                 </div>
                             </div>
                         </div>
-                        {% if section.settings.button-url != blank and section.settings.button-label != blank %}
-                            <a class="btn color-background text-black border-0 fs-18 fw-500 btn-center-mob mt-20" data-bs-toggle="modal" href="{{ section.settings.button-url }}" role="button">{{ section.settings.button-label }}</a>
+                        {% if section.settings.button_url != blank and section.settings.button_label != blank %}
+                            <a class="btn color-background text-black border-0 fs-18 fw-500 btn-center-mob mt-20" data-bs-toggle="modal" href="{{ section.settings.button_url }}" role="button">{{ section.settings.button_label }}</a>
                         {% endif %}
                         <!-- popup modal end  -->
                     </div>
@@ -85,22 +85,22 @@
     },
     {
         "type": "text",
-        "id": "popup-heading",
+        "id": "popup_heading",
         "label": "t:common.popup-header"
     },
     {
         "type": "richtext",
-        "id": "popup-text",
+        "id": "popup_text",
         "label": "t:common.popup-text"
     },
     {
       "type": "text",
-      "id": "button-label",
+      "id": "button_label",
       "label": "t:common.button-label"
     },
     {
       "type": "url",
-      "id": "button-url",
+      "id": "button_url",
       "label": "t:common.button-url"
     }
   ],

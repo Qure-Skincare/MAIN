@@ -277,10 +277,10 @@
         "text": "<p><strong>Hypochlorus Acid (HOCl)</strong> a powerful molecule naturally made by your immune system to fight bacteria, calm inflammation, and speed up skin healing.</p><p>We’ve combined this with botanical extracts to create a pure, skin-safe mist to help soothe irritation, reduce <em>surface bacteria, refresh the skin</em> on-the-go.</p><p>Perfect for post-treatment sensitivity, managing breakouts, or just giving your skin a reset.</p>",
         "image": "shopify://shop_images/hypo_acid.webp",
         "image_mobile": "shopify://shop_images/hypo_acid_mob.webp",
-        "popup-heading": "Dermal Mist Ingredients",
-        "popup-text": "<p><strong>Water (aqua)*, Chrysanthellum indicum flowerwater, sodium chloride, sodium phosphate, disodium phosphate, hypochlorous acid. *Ultra pure water.</strong></p>",
-        "button-label": "View Full Ingredient List",
-        "button-url": "#exampleModalToggle"
+        "popup_heading": "Dermal Mist Ingredients",
+        "popup_text": "<p>Water (aqua)*, Chrysanthellum indicum flower water, sodium chloride, sodium phosphate, disodium phosphate, hypochlorous acid. *Ultra pure water.</p>",
+        "button_label": "View Full Ingredient List",
+        "button_url": "#exampleModalToggle"
       }
     },
     "compare_8FkPMf": {
