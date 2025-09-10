@@ -899,6 +899,7 @@
         },
         "left_feedback_9KFACL": {
           "type": "left_feedback",
+          "disabled": true,
           "settings": {
             "country_image": "shopify://shop_images/america-flag.webp",
             "username": "Jessie Hardy",
@@ -907,6 +908,7 @@
         },
         "right_feedback_3gJyJD": {
           "type": "right_feedback",
+          "disabled": true,
           "settings": {
             "country_image": "shopify://shop_images/eng-flag.webp",
             "username": "Monika Jansen",
