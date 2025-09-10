@@ -91,7 +91,7 @@
         "button-url": "Button url",
         "button-label-mobile": "Mobile button label",
         "button-url-mobile": "Mobile button url",
-        "link-url": "Link url",
+        "link-url": "Link URL",
         "hash": "Hash",
         "left": "Left",
         "right": "Right",
@@ -276,6 +276,9 @@
         },
         "safety-guide": {
             "name": "Safety guide"
+        },
+        "products-guide": {
+            "name": "Products guide"
         },
         "serum-selection": {
             "name": "Serum selection",

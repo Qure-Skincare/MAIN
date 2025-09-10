@@ -186,6 +186,9 @@
     },
     "richtext-simple": {
       "step_text": "Step"
+    },
+    "products-guide": {
+      "right_icon": "https://qureskincaredns-main.com/assets/images/right_icon.svg"
     }
   },
   "breadcrumb": {

@@ -454,10 +454,14 @@
         "items_Bk8DAe": {
           "type": "items",
           "settings": {
-            "text_item_1": "",
-            "text_item_2": "",
-            "text_item_3": "",
-            "text_item_4": ""
+            "text_item_1": "Carbon Fiber Layer",
+            "image_1": "shopify://shop_images/filter_cartiage1.webp",
+            "text_item_2": "PP Filter",
+            "image_2": "shopify://shop_images/filter_cartiage2.webp",
+            "text_item_3": "NOK Ultra Filter",
+            "image_3": "shopify://shop_images/filter_cartiage3.webp",
+            "text_item_4": "ASP-Descaler",
+            "image_4": "shopify://shop_images/filter_cartiage4.webp"
           }
         }
       },

@@ -11,7 +11,59 @@
   "sections": {
     "main": {
       "type": "page-products-guide-page",
-      "settings": {}
+      "blocks": {
+        "items_xBGDDp": {
+          "type": "items",
+          "settings": {
+            "heading": "Micro-Infusion Facial System",
+            "link_url": "/page.mi-user-guide.html",
+            "image": "shopify://shop_images/product_guide-1.webp"
+          }
+        },
+        "items_Kq979r": {
+          "type": "items",
+          "settings": {
+            "heading": "Q-Rejuvalight Pro LED Face Mask",
+            "link_url": "/page.q-rejuvalight-pro-mask.html",
+            "image": "shopify://shop_images/product_guide-3.webp"
+          }
+        },
+        "items_MTb44F": {
+          "type": "items",
+          "settings": {
+            "heading": "Neck & Décolletage LED Device",
+            "link_url": "/page.neck-decollatage-user-guide.html",
+            "image": "shopify://shop_images/n_d_device.webp"
+          }
+        },
+        "items_cABYcq": {
+          "type": "items",
+          "settings": {
+            "heading": "Faucet Filter",
+            "link_url": "/page.faucet-user-guide.html",
+            "image": "shopify://shop_images/product_guide-2.webp"
+          }
+        },
+        "items_YEJr3C": {
+          "type": "items",
+          "settings": {
+            "heading": "Shower Filter",
+            "link_url": "/page.shower-filter-guide.html",
+            "image": "shopify://shop_images/product_guide-4.webp"
+          }
+        }
+      },
+      "block_order": [
+        "items_xBGDDp",
+        "items_Kq979r",
+        "items_MTb44F",
+        "items_cABYcq",
+        "items_YEJr3C"
+      ],
+      "settings": {
+        "heading": "User Guides",
+        "text": "<p><strong>Choose your product</strong> to get started.</p>"
+      }
     }
   },
   "order": [
