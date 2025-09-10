@@ -672,6 +672,34 @@
       "name": "t:sections.device-comparison-2.name",
       "settings": {}
     },
+    "text_header_BXGNWp": {
+      "type": "text-header",
+      "name": "t:sections.text-header.name",
+      "settings": {
+        "heading": "Our customer reviews"
+      }
+    },
+    "17575150924facf5ff": {
+      "type": "apps",
+      "blocks": {
+        "stamped_reviews_main_widget_zBLPfg": {
+          "type": "shopify://apps/stamped-reviews/blocks/main-widget/a103faaf-2125-4b0e-89fa-de5149736723",
+          "settings": {
+            "animation": true,
+            "tags_exclude": "",
+            "tags_include": "",
+            "search": "",
+            "linkify": true,
+            "use_metafields": false,
+            "sku_tagtype": "sku"
+          }
+        }
+      },
+      "block_order": [
+        "stamped_reviews_main_widget_zBLPfg"
+      ],
+      "settings": {}
+    },
     "faq_z4ggy9": {
       "type": "faq",
       "blocks": {
@@ -798,6 +826,8 @@
     "product_sunil_all_in_one_benefits_with_icons_Jcw7jM",
     "video_review_slider_txjCcR",
     "device_comparison_2_YGRWQi",
+    "text_header_BXGNWp",
+    "17575150924facf5ff",
     "faq_z4ggy9",
     "sticky_cta_fbPDSk"
   ]
