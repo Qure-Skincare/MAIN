@@ -23,8 +23,8 @@
             "label_greeting_anonymous": "Loyalty Program",
             "label_greeting_customer": "Hello {0},",
             "label_greeting_description": "Earn points and gain access to exclusive benefits every time you shop.",
-            "label_signup": "Create your account",
-            "label_signin": "Login here",
+            "label_signup": "Join Now",
+            "label_signin": "Sign In",
             "label_redeem": "Redeem Now",
             "label_history": "Rewards History"
           }
