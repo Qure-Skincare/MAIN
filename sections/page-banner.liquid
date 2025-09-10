@@ -18,17 +18,17 @@
       {% endif %}
    </picture>
    <div
-      class="page__banner-wrapper position-absolute d-flex align-items-center justify-content-end top-0 bottom-0 start-0 end-0 pb-20">
+      class="page__banner-wrapper position-absolute d-flex align-items-start align-items-md-center justify-content-end top-0 bottom-0 start-0 end-0 pt-25 pt-md-0 pb-20">
       <div class="container">
          <div class="d-flex">
-            <div class="ctm-width ctm-color text-center text-md-start mx-auto mx-md-0" style="--ctm-width:550px; --txt-color-mob:#fff;">
+            <div class="ctm-width ctm-color text-center text-md-start mx-auto mx-md-0" style="--ctm-width:550px; --pg-title-mob:#212428;">
                {% if section.settings.heading != blank %}
                   <h1 class="page-banner-title">{{ section.settings.heading }}</h1>
                {% endif %}
                {% if section.settings.text != blank %}
                   <p class="py-15">{{ section.settings.text }}</p>
                {% endif %}
-               {% if section.settings.button_mobile != blank and section.settings.button != blank %}
+               {% if section.settings.button_mobile != blank and section.settings.button_url_mobile != blank %}
                   <a href="{{ section.settings.button_url_mobile }}" class="btn btn--primary-white mt-20 text-center d-md-none">{{ section.settings.button_mobile }}</a>
                {% endif %}           
                <div class="ctm-width d-none d-md-block" style="--ctm-width:450px">
@@ -61,6 +61,8 @@
       </div>
    </div>
 </div>
+
+
 {% schema %}
 {
   "name": "t:sections.page-banner.name",

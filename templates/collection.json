@@ -16,9 +16,9 @@
         "heading": "Shop our best sellers",
         "text": "",
         "sub_text": "",
-        "button": "Shop All Best Sellers",
+        "button": "",
         "button_url": "",
-        "button_mobile": "Shop Best Sellers",
+        "button_mobile": "",
         "button_url_mobile": "",
         "image": "shopify://shop_images/best-seller-banner.webp",
         "image_mobile": "shopify://shop_images/best-seller-banner-mob.webp"

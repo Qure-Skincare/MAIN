@@ -820,17 +820,20 @@
         "button_url": ""
       }
     },
-    "product_info_UhyUij": {
-      "type": "product-info",
-      "name": "t:sections.product-info.name",
+    "banner_with_text_brh8bN": {
+      "type": "banner-with-text",
+      "name": "t:sections.banner-with-text.name",
       "settings": {
         "heading": "Qure mobile app",
         "text": "<p><strong>The only FDA-cleared LED light therapy mask with an app.</strong></p><p>Your skin is unique, so your treatment should be too.</p><p>Choose between <em>three treatment modes</em>, “Anti-Breakout”, “Anti-Aging” or custom treatment zones. Select a treatment mode on five different facial areas to treat and <em>target what your skin needs today</em>. </p><p>Never miss a treatment with Qure mobile app planner and phone reminders.</p>",
+        "quote": "",
+        "quote-mobile": "",
+        "image_position": "right",
+        "sub_text": "",
         "image": "shopify://shop_images/qure_mobile_app.webp",
-        "image_mobile": "shopify://shop_images/qure_mobile_app_mob.webp",
-        "button-label": "",
-        "button-url": "",
-        "image_position": "right"
+        "button_label": "Shop Now",
+        "button_url": "",
+        "wistia_url": ""
       }
     },
     "device_comparison_gqa6Kh": {
@@ -845,7 +848,7 @@
           "type": "heading",
           "settings": {
             "heading_check": "",
-            "heading_image_check": "shopify://shop_images/logo_a0485ab7-7672-494a-a74a-ee82b3b2c76f.svg",
+            "heading_image_check": "shopify://shop_images/qure_logo_41353005-84a7-4b4a-9b7d-2c32bcc97432.svg",
             "heading_cross": "<p>Derm/<br/>Clinic Treatments</p>"
           }
         },
@@ -905,6 +908,45 @@
         "image_compare_check": "shopify://shop_images/rejuv_vs_1.webp",
         "image_compare_cross": "shopify://shop_images/rejuv_vs_2.webp"
       }
+    },
+    "sticky_cta_AFkFxe": {
+      "type": "sticky-button",
+      "name": "t:sections.sticky-button.name",
+      "settings": {
+        "heading": "Q-Rejuvalight Pro LED Mask",
+        "text": "203 purchased in last 48 hours",
+        "button-label": "",
+        "button-url": ""
+      }
+    },
+    "text_header_3LDiTg": {
+      "type": "text-header",
+      "name": "t:sections.text-header.name",
+      "settings": {
+        "heading": "Our customer reviews"
+      }
+    },
+    "1707653061bd3707e6": {
+      "type": "apps",
+      "blocks": {
+        "stamped_product_reviews_ugc_main_widget_A4ebAn": {
+          "type": "shopify://apps/stamped-reviews/blocks/main-widget/a103faaf-2125-4b0e-89fa-de5149736723",
+          "settings": {
+            "take_questions": 2,
+            "animation": true,
+            "tags_exclude": "",
+            "tags_include": "",
+            "search": "",
+            "linkify": true,
+            "use_metafields": false,
+            "sku_tagtype": "sku"
+          }
+        }
+      },
+      "block_order": [
+        "stamped_product_reviews_ugc_main_widget_A4ebAn"
+      ],
+      "settings": {}
     },
     "faq_46wWyJ": {
       "type": "faq",
@@ -999,45 +1041,6 @@
         "button_label": "Ask us",
         "button_url": "https://qureskincare.com/pages/contact-us"
       }
-    },
-    "sticky_cta_AFkFxe": {
-      "type": "sticky-button",
-      "name": "t:sections.sticky-button.name",
-      "settings": {
-        "heading": "Q-Rejuvalight Pro LED Mask",
-        "text": "203 purchased in last 48 hours",
-        "button-label": "",
-        "button-url": ""
-      }
-    },
-    "text_header_3LDiTg": {
-      "type": "text-header",
-      "name": "t:sections.text-header.name",
-      "settings": {
-        "heading": "Our customer reviews"
-      }
-    },
-    "1707653061bd3707e6": {
-      "type": "apps",
-      "blocks": {
-        "stamped_product_reviews_ugc_main_widget_A4ebAn": {
-          "type": "shopify://apps/stamped-reviews/blocks/main-widget/a103faaf-2125-4b0e-89fa-de5149736723",
-          "settings": {
-            "take_questions": 2,
-            "animation": true,
-            "tags_exclude": "",
-            "tags_include": "",
-            "search": "",
-            "linkify": true,
-            "use_metafields": false,
-            "sku_tagtype": "sku"
-          }
-        }
-      },
-      "block_order": [
-        "stamped_product_reviews_ugc_main_widget_A4ebAn"
-      ],
-      "settings": {}
     }
   },
   "order": [
@@ -1054,7 +1057,7 @@
     "video_review_slider_Qx3NMq",
     "carousel_mfFFcV",
     "how_to_use_Uz9LpM",
-    "product_info_UhyUij",
+    "banner_with_text_brh8bN",
     "device_comparison_gqa6Kh",
     "compare_FyPtUj",
     "sticky_cta_AFkFxe",
