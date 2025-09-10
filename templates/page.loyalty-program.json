@@ -39,12 +39,12 @@
           "type": "shopify://apps/stamped-loyalty-referrals/blocks/page-how-it-works/93b8fd18-14d4-464f-a49a-0093afb7e10a",
           "settings": {
             "label_title": "How it Works",
-            "label_step_title_one": "Create Your Account",
-            "label_step_description_one": "Sign up today in just a few minutes\n\nand join the Skin I-Q Club!",
-            "label_step_title_two": "Earn Qoins ",
-            "label_step_description_two": "Every time you shop with Qure or share our message about skincare that respects and celebrates everyone’s beauty, you’ll earn more Qoins.",
-            "label_step_title_three": "Redeem Your Qoins",
-            "label_step_description_three": "We believe in choice which is why you can choose what to do with your Qoins. Save them up for free products or redeem them for their cash value."
+            "label_step_title_one": "JOIN THE CLUB",
+            "label_step_description_one": "Create an account in a few minutes and earn 50 points right away.",
+            "label_step_title_two": "EARN POINTS",
+            "label_step_description_two": "Earn points for shopping, following us on social media, birthdays, and product reviews.",
+            "label_step_title_three": "REDEEM POINTS",
+            "label_step_description_three": "Use your points to redeem exclusive discounts and free products."
           }
         },
         "stamped_loyalty_referrals_vip_tiers_4FwJ9K": {
