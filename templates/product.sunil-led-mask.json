@@ -189,35 +189,35 @@
           "type": "slider",
           "settings": {
             "text": "<p>Reduce the look of fine lines and wrinkles</p>",
-            "image": "shopify://shop_images/led_light_icon_1.webp"
+            "image": "shopify://shop_images/Micro-Infusion_Icons_6_ec6c579e-dacd-4fb4-8003-01ae0f27157c.svg"
           }
         },
         "slider_Nq4jQt": {
           "type": "slider",
           "settings": {
             "text": "<p>Even skin tone and fade dark spots</p>",
-            "image": "shopify://shop_images/led_light_icon_2.webp"
+            "image": "shopify://shop_images/Micro-Infusion_Icons_7.svg"
           }
         },
         "slider_ifPfiR": {
           "type": "slider",
           "settings": {
             "text": "<p>Clear and calm redness and inflammation</p>",
-            "image": "shopify://shop_images/led_light_icon_3.webp"
+            "image": "shopify://shop_images/Micro-Infusion_Icons_8.svg"
           }
         },
         "slider_rhnxB4": {
           "type": "slider",
           "settings": {
             "text": "<p>Lift and firm sagging skin</p>",
-            "image": "shopify://shop_images/led_light_icon_4.webp"
+            "image": "shopify://shop_images/Micro-Infusion_Icons_9.svg"
           }
         },
         "slider_X7Tpw4": {
           "type": "slider",
           "settings": {
             "text": "<p>Promote a healthy, glowing complexion</p>",
-            "image": "shopify://shop_images/led_light_icon_5.webp"
+            "image": "shopify://shop_images/Micro-Infusion_Icons_10.svg"
           }
         }
       },
