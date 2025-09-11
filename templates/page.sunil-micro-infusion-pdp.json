@@ -1168,7 +1168,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Dark Spots",
-            "image": "shopify://shop_images/serum_3b03c169-22c4-4994-9484-c7d48ece21d1.png",
+            "image": "shopify://shop_images/corect_mi_dark.svg",
             "preselected": false
           }
         },
@@ -1237,7 +1237,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Wrinkles",
-            "image": "shopify://shop_images/serum_1_82fe9c85-2f77-4465-b851-eafec27bea00.png",
+            "image": "shopify://shop_images/corect_mi_wr.svg",
             "preselected": true
           }
         },
