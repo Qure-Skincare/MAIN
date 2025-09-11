@@ -934,8 +934,8 @@
         "left_text_with_image_6j8ph6": {
           "type": "left_text_with_image",
           "settings": {
-            "text": "<p>Evens skin <br /> tone</p>",
-            "image": "shopify://shop_images/dark-3.webp"
+            "text": "<p>Evens skin <br/> tone</p>",
+            "image": "shopify://shop_images/Micro-Infusion_Icons_2.svg"
           }
         },
         "right_text_with_image_zLm9hV": {
