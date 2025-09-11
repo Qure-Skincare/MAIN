@@ -23,7 +23,8 @@
          <div class="d-flex pt-md-0 pt-50">
             <div class="ctm-width ctm-color mx-auto mx-md-0" style="--ctm-width:550px; --pg-title-mob:#212428;">
                {% if section.settings.heading != blank %}
-                  <h2 class="page-banner-title" style="--pg-title-mob:#212428; --font-h2:46px; --font-h2-mob:38px;">{{ section.settings.heading }}</h2>
+                  <h2 class="ctm-width ctm-color text-center text-md-start mx-auto mx-md-0 d-none d-md-block" style="--ctm-width:550px; --pg-title-mob:#212428;">{{ section.settings.heading }}</h2>
+                  <h2 class="ctm-width ctm-color text-center text-md-start mx-auto mx-md-0 d-block d-md-none" style="--ctm-width:550px; --pg-title-mob:#212428; margin-top:-20px;">{{ section.settings.heading }}</h2>
                {% endif %}
                {% if section.settings.text != blank %}
                   <p class="py-15">{{ section.settings.text }}</p>
