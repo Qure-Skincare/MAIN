@@ -64,8 +64,8 @@
           "type": "shopify://apps/stamped-loyalty-referrals/blocks/page-referral/93b8fd18-14d4-464f-a49a-0093afb7e10a",
           "settings": {
             "label_subtitle": "",
-            "label_title": "Refer a Friend",
-            "label_description": "Give your friend {0} off on their first skin-vestment and get {1} Qoins for each member you introduce to the Skin I-Q Club.",
+            "label_title": "Gift a friend 10% off",
+            "label_description": "Give your friend 10% off on their first skin-vestment and receive 150 points for each member you introduce to the Qure Loyalty Program.",
             "label_button": "Start referring now",
             "label_send": "Send",
             "label_email_customer": "Enter your email address:",
@@ -76,7 +76,7 @@
         "stamped_loyalty_referrals_rewards_activities_Xr8YHK": {
           "type": "shopify://apps/stamped-loyalty-referrals/blocks/rewards-activities/93b8fd18-14d4-464f-a49a-0093afb7e10a",
           "settings": {
-            "label_title": "",
+            "label_title": "csdscsc",
             "label_activity": "",
             "label_date": ""
           }
