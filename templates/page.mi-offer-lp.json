@@ -1081,7 +1081,7 @@
           "settings": {
             "heading": "Dark Spots",
             "image": "shopify://shop_images/corect_mi_dark.svg",
-            "preselected": false
+            "preselected": true
           }
         },
         "product_DBd4ef": {
@@ -1147,17 +1147,17 @@
           "settings": {
             "heading": "Wrinkles",
             "image": "shopify://shop_images/corect_mi_wr.svg",
-            "preselected": true
+            "preselected": false
           }
         },
         "product_nyJ9n7": {
           "type": "product",
           "settings": {
             "product": "micro-infusion-6-month-bundle-for-wrinkles",
-            "preselected": true,
-            "heading": "6 Month Supply <br> End Of Summer Sale",
+            "preselected": false,
+            "heading": "6 Month Supply  End Of Summer Sale",
             "subheading": "(12 Treatments)",
-            "soldout": false,
+            "soldout": true,
             "preorder": false,
             "total_treatments": 12,
             "left_items": 280,
@@ -1172,7 +1172,7 @@
           "type": "product",
           "settings": {
             "product": "micro-infusion-3-month-bundle-6x-beta-glucan-serum",
-            "preselected": false,
+            "preselected": true,
             "heading": "3 Month Supply",
             "subheading": "(6 Treatments)",
             "soldout": false,
