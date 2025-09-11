@@ -239,13 +239,13 @@
         "payment_type_3zQTmH": {
           "type": "payment_type",
           "settings": {
-            "image": "shopify://shop_images/pmt-1.webp"
+            "image": "shopify://shop_images/logos_701eef24-0061-4d41-8688-ce69887aace9.svg"
           }
         },
         "payment_type_B6Pzbh": {
           "type": "payment_type",
           "settings": {
-            "image": "shopify://shop_images/pmt-2.webp"
+            "image": "shopify://shop_images/Pay_Icons.svg"
           }
         },
         "type_hHPdgJ": {
@@ -388,7 +388,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Mixed",
-            "image": "shopify://shop_images/serum_3.webp",
+            "image": "shopify://shop_images/Corect_MIX.png",
             "preselected": false
           }
         },
