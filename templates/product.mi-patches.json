@@ -512,35 +512,35 @@
           "type": "image_with_text",
           "settings": {
             "text": "Dark Circles",
-            "image": "shopify://shop_images/dark-circles.webp"
+            "image": "shopify://shop_images/Frame_1073714840.svg"
           }
         },
         "image_with_text_WJLG4f": {
           "type": "image_with_text",
           "settings": {
             "text": "Puffiness",
-            "image": "shopify://shop_images/puffiness.webp"
+            "image": "shopify://shop_images/Frame_1073714840_2.svg"
           }
         },
         "image_with_text_EGUJF6": {
           "type": "image_with_text",
           "settings": {
             "text": "Fine Lines",
-            "image": "shopify://shop_images/fine-lines.webp"
+            "image": "shopify://shop_images/Frame_1073714840_4.svg"
           }
         },
         "image_with_text_NRMeiG": {
           "type": "image_with_text",
           "settings": {
             "text": "Wrinkles",
-            "image": "shopify://shop_images/wrinkles.webp"
+            "image": "shopify://shop_images/Frame_1073714840_1.svg"
           }
         },
         "image_with_text_KR6iaT": {
           "type": "image_with_text",
           "settings": {
             "text": "Under-Eye Bags",
-            "image": "shopify://shop_images/under-eye-bags.webp"
+            "image": "shopify://shop_images/Frame_1073714840_3.svg"
           }
         }
       },
