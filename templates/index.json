@@ -80,19 +80,18 @@
       ],
       "settings": {}
     },
-    "page_banner_4Pyyhz": {
-      "type": "page-banner",
+    "index_banner_with_text_TNGNLJ": {
+      "type": "index-banner-with-text",
       "name": "t:sections.page-banner.name",
       "settings": {
         "heading": "Get clinic-level results from home – minus the ‘clinical’ costs.",
-        "text": "",
-        "sub_text": "<p>Join <strong>300,000+ customers</strong> feeling more confident.</p>",
-        "button": "Shop All Best Sellers",
-        "button_url": "https://qureskincare.com/collections/best-sellers",
-        "button_mobile": "Shop Best Sellers",
-        "button_url_mobile": "https://qureskincare.com/collections/best-sellers",
+        "text": "<p>Join <strong>30,000+ customers</strong> feeling more confident.</p>",
         "image": "shopify://shop_images/hero.webp",
-        "image_mobile": "shopify://shop_images/hero-mob.webp"
+        "image_mobile": "shopify://shop_images/hero-mob.webp",
+        "button_label": "Shop All Best Sellers",
+        "button_url": "#",
+        "button_label_mobile": "Shop Best Sellers",
+        "button_url_mobile": "#"
       }
     },
     "bundle_banner_eEa7XN": {
@@ -743,7 +742,7 @@
   },
   "order": [
     "index-mobile-category-slider",
-    "page_banner_4Pyyhz",
+    "index_banner_with_text_TNGNLJ",
     "bundle_banner_eEa7XN",
     "slider_featured_in_KgaUTN",
     "trusted_reviews_ecfpDp",
