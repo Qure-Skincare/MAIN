@@ -305,6 +305,7 @@
       ],
       "name": "t:common.carousel",
       "settings": {
+        "background_color": "#f6f6f7",
         "display_mode": "both"
       }
     },
@@ -627,6 +628,7 @@
       "settings": {
         "background_color": "#f6f6f7",
         "heading": "Results you’ll see with your own eyes",
+        "text": "",
         "text_mobile": "",
         "button_label": "BUY NOW SAVE UP TO 43%",
         "button_url": "#purchase-form"
@@ -987,7 +989,7 @@
         "product_nyJ9n7": {
           "type": "product",
           "settings": {
-            "product": "micro-infusion-6-month-bundle-for-wrinkles",
+            "product": "6-month-micro-infusion-for-wrinkles-dark-spots",
             "preselected": true,
             "heading": "6 Month Supply  End Of Summer Sale",
             "subheading": "(12 Treatments)",
