@@ -373,6 +373,7 @@
       ],
       "name": "t:common.carousel",
       "settings": {
+        "background_color": "#f6f6f7",
         "display_mode": "both"
       }
     },
@@ -781,6 +782,7 @@
       "settings": {
         "background_color": "",
         "heading": "Results you’ll see with your own eyes",
+        "text": "",
         "text_mobile": "",
         "button_label": "buy now SAVE UP TO 43%",
         "button_url": "#purchase-form"
@@ -1078,7 +1080,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Dark Spots",
-            "image": "shopify://shop_images/serum_1.webp",
+            "image": "shopify://shop_images/corect_mi_dark.svg",
             "preselected": false
           }
         },
@@ -1144,7 +1146,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Wrinkles",
-            "image": "shopify://shop_images/serum_2.webp",
+            "image": "shopify://shop_images/corect_mi_wr.svg",
             "preselected": true
           }
         },
@@ -1290,7 +1292,7 @@
         "product_RBCPe8"
       ],
       "settings": {
-        "style": "list",
+        "type": "box",
         "heading": "Choose your treatment",
         "text": "All orders are one-time purchases. No extra charges, and no hidden fees.",
         "image": "shopify://shop_images/tami-cropped.webp",
