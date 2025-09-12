@@ -751,8 +751,8 @@
         "accordion_zwV9FB": {
           "type": "accordion",
           "settings": {
-            "doctor_name": "Dr. Stephens",
-            "doctor_position": "Board Certified Dermatologist",
+            "doctor_name": "Filters",
+            "doctor_position": "Remove chlorine, bacteria, and metals at the source.",
             "accordion_image": "shopify://shop_images/filters.webp"
           }
         },
