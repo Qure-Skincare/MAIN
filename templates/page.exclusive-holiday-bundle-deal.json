@@ -727,56 +727,85 @@
         "accordion_6MpWLR": {
           "type": "accordion",
           "settings": {
-            "heading": "LED Therapy",
-            "text": "Targeted red light therapy to firm and smooth skin.",
-            "image": "shopify://shop_images/led_mask.webp"
+            "doctor_name": "Dr. Shah",
+            "doctor_position": "Board Certified Dermatologist",
+            "accordion_image": "shopify://shop_images/led_mask.webp"
           }
         },
         "accordion_XqVibT": {
           "type": "accordion",
           "settings": {
-            "heading": "Micro-Infusion",
-            "text": "Smooth fine lines, hydrate, and firm skin.",
-            "image": "shopify://shop_images/micro-infusion.webp"
+            "doctor_name": "Dr. Maxfield",
+            "doctor_position": "Board Certified Dermatologist",
+            "accordion_image": "shopify://shop_images/micro-infusion.webp"
           }
         },
         "accordion_CMf9Pm": {
           "type": "accordion",
           "settings": {
-            "heading": "Topical Treatments",
-            "text": "Target acne and dehydration with clinical solutions.",
-            "image": "shopify://shop_images/topical.webp"
+            "doctor_name": "Dr. Tripathi",
+            "doctor_position": "Double Board Certified Facial Plastic Surgeon",
+            "accordion_image": "shopify://shop_images/topical.webp"
           }
         },
         "accordion_zwV9FB": {
           "type": "accordion",
           "settings": {
-            "heading": "Filters",
-            "text": "Remove chlorine, bacteria, and metals at the source.",
-            "image": "shopify://shop_images/filters.webp"
+            "doctor_name": "Dr. Stephens",
+            "doctor_position": "Board Certified Dermatologist",
+            "accordion_image": "shopify://shop_images/filters.webp"
           }
         },
-        "text_xFCCQz": {
-          "type": "text",
+        "items_944BRi": {
+          "type": "items",
           "settings": {
             "heading": "Treat skin concerns from the inside out",
-            "text": "<p>Clinically proven wavelengths penetrate deep into the skin, energizing cells to boost collagen production and reduce wrinkles, dark spots, and redness.</p><ul><li>Covers hard-to-treat areas like the jawline, neck, and chest for all-over results.</li><li>Boosts collagen production to firm and smooth the skin over time.</li><li>Reduces the appearance of fine lines, wrinkles, and uneven tone.</li><li>Hands-free treatment you can use in just a few minutes.</li></ul>"
+            "text": "<p>Clinically proven wavelengths penetrate deep into the skin, energizing cells to boost collagen production and reduce wrinkles, dark spots, and redness.</p><ul><li>Covers hard-to-treat areas like the jawline, neck, and chest for all-over results.</li><li>Boosts collagen production to firm and smooth the skin over time.</li><li>Reduces the appearance of fine lines, wrinkles, and uneven tone.</li><li>Hands-free treatment you can use in just a few minutes.</li></ul>",
+            "product_1": "Q-Rejuvalight Pro LED Mask",
+            "link_url_1": "#",
+            "image_1": "shopify://shop_images/q-rejuvalight-mask.webp",
+            "product_2": "Neck & Décolletage LED Device",
+            "link_url_2": "#",
+            "image_2": "shopify://shop_images/neck-led-device.webp"
           }
         },
-        "product_rmiq94": {
-          "type": "product",
+        "items_WUydzk": {
+          "type": "items",
           "settings": {
-            "product": "Q-Rejuvalight Pro LED Mask",
-            "link_url": "https://qureskincare.com/products/q-rejuvalight-pro-facewear",
-            "image": "shopify://shop_images/q-rejuvalight-mask.webp"
+            "heading": "Precision skincare that works below the surface",
+            "text": "<p>Infuse active ingredients beneath the surface of your skin for maximum efficacy, evening out texture, softening fine lines, and promoting a youthful appearance.</p><ul><li>Improves overall glow, firmness, and bounce.</li><li>Helps fade dark spots and brighten tone.</li><li>Smooths fine lines and softens wrinkles.</li><li>Clinically backed and easy to use at home.</li></ul>",
+            "product_1": "Micro-Infusion Treatment",
+            "link_url_1": "#",
+            "image_1": "shopify://shop_images/micro-infusion-treatment.webp",
+            "product_2": "Micro-Infusion Targeted Patches",
+            "link_url_2": "#",
+            "image_2": "shopify://shop_images/micro-infusion-targeted-patches.webp"
           }
         },
-        "product_mJBAmw": {
-          "type": "product",
+        "items_chWKG4": {
+          "type": "items",
           "settings": {
-            "product": "Neck & Décolletage LED Device",
-            "link_url": "https://qureskincare.com/products/neck-decolletage-led",
-            "image": "shopify://shop_images/neck-led-device.webp"
+            "heading": "Hydrate and strengthen your skin barrier",
+            "text": "<p>Lightweight formulas to balance, calm, and support recovery after treatments.</p><ul><li>Improves skin texture by reducing roughness and dehydration lines.</li><li>Delivers long-lasting moisture to keep skin soft and plump.</li><li>Restores glow to dull or dehydrated skin.</li><li>Gentle on sensitive and reactive skin.</li></ul>",
+            "product_1": "All-In-One Serum",
+            "link_url_1": "#",
+            "image_1": "shopify://shop_images/all-in-one-serum.webp",
+            "product_2": "Dermal Mist",
+            "link_url_2": "#",
+            "image_2": "shopify://shop_images/dermal-mist.webp"
+          }
+        },
+        "items_nhCmGx": {
+          "type": "items",
+          "settings": {
+            "heading": "Healthier, calmer skin every time you wash",
+            "text": "<p>Remove chlorine, heavy metals, and harmful bacteria from your tap water, to help protect your skin against premature aging, dryness, and irritation.</p><ul><li>Supports a healthier skin barrier by preventing exposure to harsh water.</li><li>Improves the effectiveness of your skincare products.</li><li>Helps reduce skin irritation, dryness, and sensitivity.</li></ul>",
+            "product_1": "Shower Filter",
+            "link_url_1": "#",
+            "image_1": "shopify://shop_images/shower-filter.webp",
+            "product_2": "Water Filter",
+            "link_url_2": "#",
+            "image_2": "shopify://shop_images/water-filter.webp"
           }
         }
       },
@@ -785,9 +814,10 @@
         "accordion_XqVibT",
         "accordion_CMf9Pm",
         "accordion_zwV9FB",
-        "text_xFCCQz",
-        "product_rmiq94",
-        "product_mJBAmw"
+        "items_944BRi",
+        "items_WUydzk",
+        "items_chWKG4",
+        "items_nhCmGx"
       ],
       "name": "t:sections.expert-advisory-product.name",
       "settings": {
