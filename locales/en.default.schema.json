@@ -99,6 +99,7 @@
         "right-block": "Right block",
         "lane": "Lane",
         "accordion": "Accordion",
+        "accordion-image": "Accordion image",
         "slider": "Slider",
         "video-slider": "Video slider",
         "carousel": "Carousel",
@@ -168,7 +169,11 @@
             "name": "Numbered steps"
         },
         "expert-advisory-product": {
-            "name": "Expert advisory product"
+            "name": "Expert advisory product",
+            "blocks": {
+                "doctor-name": "Doctor name",
+                "doctor-position": "Doctor position"
+            }
         },
         "bundle-routine": {
             "name": "Bundle routine"
