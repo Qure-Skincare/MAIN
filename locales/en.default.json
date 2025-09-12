@@ -467,8 +467,8 @@
     "settings": {
       "exclusive": "End Of Summer ",
       "bundles": "Bundles",
-      "dermatologist": "Dermatologist Reviewed",
-      "shipping-text": "Free Shipping over $100",
+      "easy-returns": "Easy 30-Day Returns",
+      "shipping-text": "Free Worldwide Shipping",
       "recommended_html": "<strong>50+ Board Certified Dermatologists</strong> recommend Qure to their patients. <a href='https://qureskincare.com/pages/derm-reviews' class='text-black text-decoration-underline'>See More</a>."
     }
   },
