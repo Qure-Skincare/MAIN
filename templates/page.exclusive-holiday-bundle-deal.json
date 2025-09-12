@@ -727,8 +727,8 @@
         "accordion_6MpWLR": {
           "type": "accordion",
           "settings": {
-            "doctor_name": "Dr. Shah",
-            "doctor_position": "Board Certified Dermatologist",
+            "doctor_name": "LED Therapy",
+            "doctor_position": "Targeted red light therapy to firm and smooth skin.",
             "accordion_image": "shopify://shop_images/led_mask.webp"
           }
         },
