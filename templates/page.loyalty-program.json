@@ -44,7 +44,7 @@
         "stamped_loyalty_referrals_page_spendings_BFy4qR": {
           "type": "shopify://apps/stamped-loyalty-referrals/blocks/page-spendings/93b8fd18-14d4-464f-a49a-0093afb7e10a",
           "settings": {
-            "label_title": "What do I get?",
+            "label_title": "Your Rewards",
             "label_description": ""
           }
         },
