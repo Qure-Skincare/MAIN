@@ -290,6 +290,7 @@
         },
         "product_dkFRPe": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "line-refine-bundle-pro-bf25",
             "preselected": false,
