@@ -17,7 +17,7 @@
         <button class="accordion-button{% if index != 'first' %} collapsed{% endif %} qure__accordion-header" type="button" data-bs-toggle="collapse" data-bs-target="#{{ index }}" aria-expanded="false" aria-controls="{{ index }}">
           {{ title }}
         </button>
-        <div id="{{ index }}" class="accordion-collapse collapse qure__accordion-content{% if index == 'first' %} show{% endif %}" data-bs-parent="#tp-product-qure">
+        <div id="{{ index }}" class="accordion-collapse collapse qure__accordion-content" data-bs-parent="#tp-product-qure">
           <div class="accordion-body">
             {% for item in included_json.children %}
               {% case item.type %}
