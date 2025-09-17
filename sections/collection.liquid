@@ -23,7 +23,8 @@
             <div
                 class="d-flex flex-wrap flex-md-nowrap justify-content-between gap-10 align-items-center mb-md-50 mb-40 fs-16">
                 <p class="ctm-width mb-15" style="--ctm-width: 80px; --ctm-width-mob: 60px;">{{ 'sections.collection.shopby' | t }}</p>
-                <ul class="filters">
+                <p class="d-md-none ctm-width mb-15" style="--ctm-width-mob: 125px;">{{ 'sections.collection.swipe_for_more' | t }} <span><img src="https://qureskincaredns-main.com/assets/images/arrow_right.svg" alt=""></span></p>
+                <ul class="filters qure_tabs">
                     {% for link in linklists['main-collection'].links %}
                         <li><button class="filter{% if link.active %} active{% endif %}" onclick="window.location.href='{{ link.url }}'">{{ link.title }}</button></li>
                     {% endfor %}
@@ -83,7 +84,7 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    loadScriptOnce('section-collection-block', 'https://qureskincaredns-main.com/sections/isolated/collection-block/section-collection-block.js');
+    loadScriptOnce('section-collection-block', '{{ "section-collection-block.js" | asset_url }}');
   });
 </script>
 
