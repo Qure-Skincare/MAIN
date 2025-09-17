@@ -494,6 +494,7 @@
         },
         "slider_P434c6": {
           "type": "slider",
+          "disabled": true,
           "settings": {
             "heading": "<p>\"One of the best ways to treat hyperpigmentation at home.\"</p>",
             "text": "<p>Dr. Wallace Nozile</p>",
