@@ -505,7 +505,6 @@
         },
         "slider_ThUgnK": {
           "type": "slider",
-          "disabled": true,
           "settings": {
             "heading": "<p>\"With Micro-Infusion, you get to see the results almost instantly.\"</p>",
             "text": "<p>Dr. Davin Lim</p>",
