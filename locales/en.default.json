@@ -525,9 +525,6 @@
     },
     "settings": {
       "blog_text": "Blog"
-    },
-    "my-custom-section": {
-      "name": "Моя пользовательская секция"
     }
   },
   "article": {

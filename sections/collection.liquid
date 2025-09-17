@@ -26,11 +26,11 @@
                 <p class="d-md-none ctm-width mb-15" style="--ctm-width-mob: 125px;">{{ 'sections.collection.swipe_for_more' | t }} <span><img src="https://qureskincaredns-main.com/assets/images/arrow_right.svg" alt=""></span></p>
                 <ul class="filters qure_tabs">
                     {% for link in linklists['main-collection'].links %}
-                        <li><button class="filter{% if link.active %} active{% endif %}" onclick="window.location.href='{{ link.url }}'">{{ link.title }}</button></li>
+                        <li><button class="filter{% if link.active %} active{% endif %}" data-url="{{ link.url }}">{{ link.title }}</button></li>
                     {% endfor %}
                 </ul>
             </div>
-            <div class="row projects custom__grid" style="--column-gap:32px; --column-gap-mobile:16px;">
+            <div id="collection-products" class="row projects custom__grid" style="--column-gap:32px; --column-gap-mobile:16px;">
                 {% for product in collection.products %}
 
                     {% include 'collection-cards', position: forloop.index, section: section %}
@@ -84,7 +84,8 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    loadScriptOnce('section-collection-block', '{{ "section-collection-block.js" | asset_url }}');
+    loadScriptOnce('section-collection-block', 'https://qureskincaredns-main.com/assets/shopify/js/section-collection-block.js');
+    loadScriptOnce('collection', 'https://qureskincaredns-main.com/assets/shopify/js/collection.js');
   });
 </script>
 

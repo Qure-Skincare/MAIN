@@ -612,7 +612,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Treatment details",
-            "text": "<p><strong>USE: </strong>Use daily after cleansing, before topical skincare</p><p><strong>PRO-AGING TREATMENT: </strong>415nm (Blue), 605nm (Amber), 630nm (Red), 660nm (Deep Red), 880nm (Infrared)</p><p><strong>ANTI-BREAKOUT TREATMENT: </strong>415nm (Blue), 630nm (Red)</p><p><strong>CUSTOMIZED TREATMENT: </strong>Choose treatment modes for each facial area via app</p><p><strong>Skin Type: </strong>Most suitable for Fitzpatrick Skin Types I-IV</p>"
+            "text": "<p><strong>USE: </strong>Use daily after cleansing, before topical skincare</p><p><strong>SKIN REJUVENATING TREATMENT:</strong>415nm (Blue), 605nm (Amber), 630nm (Red), 660nm (Deep Red), 880nm (Infrared)</p><p><strong>SKIN CLEARING TREATMENT: </strong>415nm (Blue), 630nm (Red)</p><p><strong>CUSTOMIZED TREATMENT: </strong>Choose treatment modes for each facial area via app</p><p><strong>Skin Type: </strong>Most suitable for Fitzpatrick Skin Types I-IV</p>"
           }
         }
       },
@@ -626,10 +626,10 @@
         "text": "<p>The Q-Rejuvalight Pro LED mask uses 5 light wavelengths and two modes for customizable skincare. Our FDA-cleared device targets your skin's needs.</p>",
         "image_aging": "shopify://shop_images/mask_aging.webp",
         "image_breakout": "shopify://shop_images/mask_breakout.webp",
-        "heading_aging_mode": "<p><strong>Pro-Aging Mode</strong></p>",
-        "text_aging_mode": "<p>On Pro-Aging Mode, red and infrared wavelengths work together to help support collagen production, which reduces the appearance of wrinkles and fine lines, as well as to improve skin elasticity and firmness.</p><p>Red light stimulates collagen and elastin production, which supports skin renewal. Deep red light penetrates deeper to help with the appearance of wrinkles, while infrared is designed to reach deeper layers for potential long-term benefits.</p>",
-        "heading_breakout_mode": "<p><strong>Anti-Breakout Mode</strong></p>",
-        "text_breakout_mode": "<p>Our Anti-Breakout Mode combines blue and red light wavelengths. Blue (415 nm) targets acne-causing bacteria on the skin's surface, and red (630 nm) helps calm inflammation and soothes irritated skin.</p><p>Together, these wavelengths help reduce breakouts, prevent future flare-ups, and support clearer, healthier-looking skin.</p>"
+        "heading_aging_mode": "<p><strong>Skin Rejuvenating</strong></p>",
+        "text_aging_mode": "<p>On Skin Rejuvenating Mode, red and infrared wavelengths work together to help support collagen production, which reduces the appearance of wrinkles and fine lines, as well as to improve skin elasticity and firmness.</p><p>Red light stimulates collagen and elastin production, which supports skin renewal. Deep red light penetrates deeper to help with the appearance of wrinkles, while infrared is designed to reach deeper layers for potential long-term benefits.</p>",
+        "heading_breakout_mode": "<p><strong>Skin Clearing</strong></p>",
+        "text_breakout_mode": "<p>Our Skin Clearing Mode combines blue and red light wavelengths. Blue (415 nm) targets acne-causing bacteria on the skin's surface, and red (630 nm) helps calm inflammation and soothes irritated skin.</p><p>Together, these wavelengths help reduce breakouts, prevent future flare-ups, and support clearer, healthier-looking skin.</p>"
       }
     },
     "video_review_slider_Qx3NMq": {
@@ -746,7 +746,7 @@
           "type": "items",
           "settings": {
             "heading": "Dermatologist Reviewed",
-            "image": "shopify://shop_images/sheild.svg"
+            "image": "shopify://shop_images/Guarantee_Icons.svg"
           }
         },
         "items_BjbYbB": {
@@ -826,7 +826,7 @@
       "name": "t:sections.banner-with-text.name",
       "settings": {
         "heading": "Qure mobile app",
-        "text": "<p><strong>The only FDA-cleared LED light therapy mask with an app.</strong></p><p>Your skin is unique, so your treatment should be too.</p><p>Choose between <em>three treatment modes</em>, “Anti-Breakout”, “Anti-Aging” or custom treatment zones. Select a treatment mode on five different facial areas to treat and <em>target what your skin needs today</em>. </p><p>Never miss a treatment with Qure mobile app planner and phone reminders.</p>",
+        "text": "<p><strong>The only FDA-cleared LED light therapy mask with an app.</strong></p><p>Your skin is unique, so your treatment should be too.</p><p>Choose between <em>three treatment modes</em>, “Skin Rejuvenating”, “Skin Clearing” or custom treatment zones. Select a treatment mode on five different facial areas to treat and <em>target what your skin needs today</em>. </p><p>Never miss a treatment with Qure mobile app planner and phone reminders.</p>",
         "quote": "",
         "quote-mobile": "",
         "image_position": "right",
@@ -956,7 +956,7 @@
           "type": "accordion",
           "settings": {
             "heading": "What color wavelengths does Q-Rejuvalight Pro have?",
-            "text": "<p>The Q-Rejuvalight Pro has a total of 5 clinically-proven wavelengths of lights:</p><ul><li>Infrared light (880 nm): Increases circulation, protects existing collagen and enhances product absorption.</li><li>Deep Red (660 nm): Accelerates skin healing to fade and prevent scarring Builds collagen to help reduce wrinkles.</li><li>Red (630 nm): Stimulates collagen and elastin production, firms and plumps skin, repairs skin cells and promotes hydration to help reduce inflammation, redness and rosacea.</li><li>Amber (605 nm): Reduces appearance of dark spots. Soothes skin and calms swelling and inflammation.</li><li>Blue (415 nm): Anti-bacterial, eliminates and prevents acne breakouts. Soothes and calms skin.</li></ul><p>There are two treatment modes:</p><ul><li>The Pro-Aging Treatment combines red, deep red, infrared and amber  wavelengths which is why the LED lights appear to be an orange color. This combination stimulates collagen, help reduce redness, fine lines, dark spots while encouraging the skin to heal and rejuvenate itself, for visibly smoother, firmer, younger-looking skin.</li><li>The Anti-Breakout Treatment combines red and blue wavelengths to destroy the bacteria that causes acne, regulate oil production, reduce redness and other symptoms when a flare-up occurs for clearer skin.<br/></li></ul>",
+            "text": "<p>The Q-Rejuvalight Pro has a total of 5 clinically-proven wavelengths of lights:</p><ul><li>Infrared light (880 nm): Increases circulation, protects existing collagen and enhances product absorption.</li><li>Deep Red (660 nm): Accelerates skin healing to fade and prevent scarring Builds collagen to help reduce wrinkles.</li><li>Red (630 nm): Stimulates collagen and elastin production, firms and plumps skin, repairs skin cells and promotes hydration to help reduce inflammation, redness and rosacea.</li><li>Amber (605 nm): Reduces appearance of dark spots. Soothes skin and calms swelling and inflammation.</li><li>Blue (415 nm): Anti-bacterial, eliminates and prevents acne breakouts. Soothes and calms skin.</li></ul><p>There are two treatment modes:</p><ul><li>The Skin Rejuvenating Treatment combines red, deep red, infrared and amber wavelengths which is why the LED lights appear to be an orange color. This combination stimulates collagen, help reduce redness, fine lines, dark spots while encouraging the skin to heal and rejuvenate itself, for visibly smoother, firmer, younger-looking skin.</li><li>The Skin Clearing Treatment combines red and blue wavelengths to destroy the bacteria that causes acne, regulate oil production, reduce redness and other symptoms when a flare-up occurs for clearer skin.<br/></li></ul>",
             "link_url": "",
             "link_text": ""
           }
