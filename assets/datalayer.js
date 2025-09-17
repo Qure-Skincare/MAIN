@@ -46,5 +46,5 @@ const purchase_form_event = (target, element, product_variant_id) => {
 
 document.addEventListener('datalayer.pushCustomEvent', (event) => {
     //console.log(event.detail);
-    //window.dataLayer.push(event.detail);
+    window.dataLayer.push(event.detail);
 });
