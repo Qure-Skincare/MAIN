@@ -15,7 +15,7 @@ Renders an article page
         <div class="row g-4">
             <div class="col-md-6 pr-md-45">
                 <div class="post">
-                    <p><a href="/blogs/all">Blog</a> > <strong>{{ blog.title }}</strong></p>
+                    <p><a href="/blogs/all">{{ 'blog.settings.blog_text' | t }}</a> > <strong>{{ blog.title }}</strong></p>
                     <h1 class="banner-text--heading my-20">{{ article.title }}</h1>
                     {% assign author = article.author | downcase | default: blank%}
                     {% if author != blank and author contains 'orlic' %}

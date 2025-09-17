@@ -3,13 +3,12 @@
 {% enddoc %}
 
 
-<!-- Announcement Bar -->
 <link rel="stylesheet" href="https://qureskincaredns-main.com/sections/isolated/announcement/announcement-bar.css" />
 <div id="announcement-bar" class="announcement-bar" style="--ans-bar-font-size:16px; --anc-bar-font-weight :400;">
    <div class="container">
         {% if section.settings.heading != blank %}
             <div class="announcement-bar-content text-center">
-                {{ section.settings.heading }} {% if section.settings.button-label != blank %}<a href="{{ section.settings.button-url }}">{{ section.settings.button-label }}</a>{% endif %}
+                {{ section.settings.heading }} {% if section.settings.button_label != blank and section.settings.button_url != blank %}<a href="{{ section.settings.button_url }}">{{ section.settings.button_label }}</a>{% endif %}
             </div>
         {% endif %}
    </div>
@@ -26,12 +25,12 @@
     },
     {
       "type": "text",
-      "id": "button-label",
+      "id": "button_label",
       "label": "t:common.button-label"
     },
     {
       "type": "text",
-      "id": "button-url",
+      "id": "button_url",
       "label": "t:common.button-url"
     }
   ],
