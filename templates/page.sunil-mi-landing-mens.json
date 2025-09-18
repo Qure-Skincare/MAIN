@@ -788,21 +788,21 @@
           "type": "right_text_with_image",
           "settings": {
             "text": "<p>Softens lines & wrinkles</p>",
-            "image": "shopify://shop_images/wrinkle-1.webp"
+            "image": "shopify://shop_images/Micro-Infusion_Icons_3.svg"
           }
         },
         "right_text_with_image_i9yAbQ": {
           "type": "right_text_with_image",
           "settings": {
-            "text": "<p>Soothes <br />redness</p>",
-            "image": "shopify://shop_images/wrinkle-2.webp"
+            "text": "<p>Soothes <br/>redness</p>",
+            "image": "shopify://shop_images/Micro-Infusion_Icons_4.svg"
           }
         },
         "right_text_with_image_FExJGY": {
           "type": "right_text_with_image",
           "settings": {
-            "text": "<p>Boosts <br /> hydration</p>",
-            "image": "shopify://shop_images/wrinkle-3.webp"
+            "text": "<p>Boosts <br/> hydration</p>",
+            "image": "shopify://shop_images/Micro-Infusion_Icons_5.svg"
           }
         },
         "left_accordion_Y64cWD": {
