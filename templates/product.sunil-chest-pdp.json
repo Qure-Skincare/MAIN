@@ -164,28 +164,28 @@
           "type": "slider",
           "settings": {
             "text": "<p>Reduce the look of fine lines and wrinkles</p>",
-            "image": "shopify://shop_images/red_light_icon_1.webp"
+            "image": "shopify://shop_images/Neck_Dec_Icons.svg"
           }
         },
         "slider_nzJkbQ": {
           "type": "slider",
           "settings": {
             "text": "<p>Fade pigmentation and <br/>dark spots</p>",
-            "image": "shopify://shop_images/red_light_icon_2.webp"
+            "image": "shopify://shop_images/Neck_Dec_Icons_1.svg"
           }
         },
         "slider_wPpPVU": {
           "type": "slider",
           "settings": {
             "text": "<p>Lift and firm sagging<br/>skin</p>",
-            "image": "shopify://shop_images/red_light_icon_3.webp"
+            "image": "shopify://shop_images/Neck_Dec_Icons_2.svg"
           }
         },
         "slider_XFzXwM": {
           "type": "slider",
           "settings": {
             "text": "<p>Boost smoothness and repair sun-damaged skin</p>",
-            "image": "shopify://shop_images/red_light_icon_4.webp"
+            "image": "shopify://shop_images/Neck_Dec_Icons_3.svg"
           }
         }
       },
