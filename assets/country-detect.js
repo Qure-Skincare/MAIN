@@ -42,3 +42,54 @@ async function is_country_us() {
 
     return false;
 }
+
+async function is_gdpr_country() {
+    const clientIp = await getClientIp();
+    if (clientIp === null) {
+        console.error('Could not retrieve client IP address');
+        return false;
+    }
+
+    const countryCode = await getCountryCode(clientIp);
+
+    // GDPR countries based on ISO 3166-1 alpha-2 codes
+    const gdprCountries = [
+        'AT', // Austria
+        'BE', // Belgium
+        'BG', // Bulgaria
+        'HR', // Croatia
+        'CY', // Cyprus
+        'CZ', // Czech Republic
+        'DK', // Denmark
+        'EE', // Estonia
+        'FI', // Finland
+        'FR', // France
+        'DE', // Germany
+        'GR', // Greece
+        'HU', // Hungary
+        'IE', // Ireland
+        'IT', // Italy
+        'LV', // Latvia
+        'LT', // Lithuania
+        'LU', // Luxembourg
+        'MT', // Malta
+        'NL', // Netherlands
+        'PL', // Poland
+        'PT', // Portugal
+        'RO', // Romania
+        'SK', // Slovakia
+        'SI', // Slovenia
+        'ES', // Spain
+        'SE', // Sweden
+        'IS', // Iceland
+        'LI', // Liechtenstein
+        'NO', // Norway
+        'GB'  // United Kingdom
+    ];
+
+    if (gdprCountries.includes(countryCode)) {
+        return true;
+    }
+
+    return false;
+}
