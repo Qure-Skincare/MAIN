@@ -426,28 +426,28 @@
           "type": "slider",
           "settings": {
             "text": "<p>Saves time, money and hassle compared to in-clinic treatments</p>",
-            "image": "shopify://shop_images/mi_pdp_icon_1.webp"
+            "image": "shopify://shop_images/Micro-Infusion_Icons_11.svg"
           }
         },
         "slider_3HLnzt": {
           "type": "slider",
           "settings": {
             "text": "<p>Quick & easy 5-minute DIY facial from the convenience of home</p>",
-            "image": "shopify://shop_images/mi_pdp_icon_2.webp"
+            "image": "shopify://shop_images/Micro-Infusion_Icons_12.svg"
           }
         },
         "slider_kHUw7M": {
           "type": "slider",
           "settings": {
             "text": "<p>Virtually painless, little to no downtime</p>",
-            "image": "shopify://shop_images/mi_pdp_icon_3.webp"
+            "image": "shopify://shop_images/Micro-Infusion_Icons_13.svg"
           }
         },
         "slider_XHHhXh": {
           "type": "slider",
           "settings": {
             "text": "<p>2-in-1 system rejuvenates skin & infuses serum deeper for faster results</p>",
-            "image": "shopify://shop_images/mi_pdp_icon_4.webp"
+            "image": "shopify://shop_images/Micro-Infusion_Icons_14.svg"
           }
         }
       },
