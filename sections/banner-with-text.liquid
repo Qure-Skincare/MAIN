@@ -7,7 +7,7 @@
 <div class="qure__section banner-with-text" style="--section-padding-top: 80px; --section-padding-bottom: 80px; --section-padding-top-mob: 30px; --section-padding-bottom-mob: 50px;" id="image_text">
     <div class="container">
         {% if section.settings.image_position == 'left' %}
-            <div class="row custom__grid align-items-center" style="--column-gap:60px; --column-gap-mobile:32px;">
+            <div class="row custom__grid align-items-center flex-column-reverse flex-md-row" style="--column-gap:60px; --column-gap-mobile:32px;">
                 <div class="col-md-6 custom__block">
                     {% if section.settings.image != blank %}
                         <div class="banner-text--media">
@@ -38,12 +38,10 @@
                                 | replace: '[/strong]</p>', '</div>' 
                                 | replace: '<strong>', '<span class="fw-600 bg-transparent">'
                                 | replace: '</strong>', '</span>'
+                                | replace: '</p><p>[ul class]</p><ul>', '<ul class="list-dots pl-10 pt-20">'
                                 }}
                             </div>
                         {% endif %}
-                        {% comment %} {% if section.settings.button_label != blank and section.settings.button_url != blank %}
-                            <a href="{{ section.settings.button_url }}" class="banner-text--button btn btn--primary w-mob-100">{{ section.settings.button_label }}</a>
-                        {% endif %} {% endcomment %}
                         {% assign numbered_list_blocks = section.blocks | where: "type", "numbered_list" %}
                         {% if numbered_list_blocks.size > 0 %}
                             <div class="banner-text--steps mb-30">
@@ -104,12 +102,12 @@
                 </div>
             </div>
         {% else %}
-            <div class="row custom__grid align-items-center flex-column-reverse flex-md-row"
+            <div class="row custom__grid align-items-center"
                 style="--column-gap:60px; --column-gap-mobile:32px;">
                 <div class="col-md-6 custom__block">
-                    <div class="banner-with-text-content ctm-width" style="--ctm-width: 450px;">
+                    <div class="banner-with-text-content">
                         {% if section.settings.heading != blank %}
-                            <h2 class="banner-text--heading ctm-width" style="--ctm-width-mob: 300px;">{{ section.settings.heading }}</h2>
+                            <h2 class="banner-text--heading">{{ section.settings.heading }}</h2>
                         {% endif %}
                         {% if section.settings.quote != blank %}
                             <div class="banner-text-quotes" style="--text-quote-mt:24px;--text-quote-mb: 0px;">{{ section.settings.quote | replace: '<p>', '' | replace: '</p>', '' }}</div>
