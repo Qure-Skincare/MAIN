@@ -252,6 +252,7 @@
         },
         "product_zgw9eb": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "bundle-test",
             "preselected": false,
