@@ -327,19 +327,20 @@
             "reserved": false
           }
         },
-        "product_e9YBCe": {
+        "product_RBCPe8": {
           "type": "product",
           "settings": {
-            "product": "water-filter-family-bundle-bf25",
+            "product": "breakout-control-essentials",
             "preselected": false,
             "soldout": false,
             "reserved": false
           }
         },
-        "product_RBCPe8": {
+        "product_e9YBCe": {
           "type": "product",
+          "disabled": true,
           "settings": {
-            "product": "breakout-control-essentials",
+            "product": "water-filter-family-bundle-bf25",
             "preselected": false,
             "soldout": false,
             "reserved": false
@@ -362,8 +363,8 @@
         "product_type_YrPQrV",
         "product_gbPf3J",
         "product_NEgEkN",
-        "product_e9YBCe",
-        "product_RBCPe8"
+        "product_RBCPe8",
+        "product_e9YBCe"
       ],
       "settings": {
         "heading": "Choose Your Bundle",
