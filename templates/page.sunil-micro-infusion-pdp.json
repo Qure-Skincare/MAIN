@@ -1389,7 +1389,7 @@
         "product_RBCPe8"
       ],
       "settings": {
-        "type": "box",
+        "type": "list",
         "heading": "Choose your treatment",
         "text": "All orders are one-time purchases. No extra charges, and no hidden fees.",
         "image": "shopify://shop_images/tami-cropped.webp",
