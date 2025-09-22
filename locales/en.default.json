@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
     "collection": {
       "bestseller": "Bestseller",
@@ -182,8 +182,8 @@
       "or_text": "or"
     },
     "faq-header": {
-    "view_image": "https://qureskincaredns-main.com/sections/isolated/faqs/images/eye.svg",
-    "shared_image": "https://qureskincaredns-main.com/sections/isolated/faqs/images/share.svg"
+      "view_image": "https://qureskincaredns-main.com/sections/isolated/faqs/images/eye.svg",
+      "shared_image": "https://qureskincaredns-main.com/sections/isolated/faqs/images/share.svg"
     },
     "faq-promo-banner": {
       "limited_offer_text": "Limited Time Offer"
@@ -217,7 +217,7 @@
   },
   "product": {
     "settings": {
-      "buy-button-label": "Buy Now",
+      "buy-button-label": "Buy Now ",
       "reserved-button-label": "Reserve Now",
       "soldout-button-label": "Sold Out",
       "discount-text": "OFF",
@@ -278,34 +278,34 @@
   },
   "GDPR": {
     "settings": {
-        "main": {
-          "header": "Our site and third parties use cookies to enhance your browsing experience, serve personalized ads or content, and analyze traffic.",
-          "button-label": "Accept",
-          "button-label-decline": "Decline",
-          "button-label-manage": "Manage preferences"
+      "main": {
+        "header": "Our site and third parties use cookies to enhance your browsing experience, serve personalized ads or content, and analyze traffic.",
+        "button-label": "Accept",
+        "button-label-decline": "Decline",
+        "button-label-manage": "Manage preferences"
+      },
+      "preferences": {
+        "header": "Customize Your Cookie Preferences",
+        "text_html": "<p>We respect your privacy and give you the option to customize your cookie settings. Please select which types of cookies you are willing to accept.</p><p>For more information see our <a href='{{ privacy_policy_url }}'>Privacy Policy.</a></p>",
+        "button-label": "Save preferences",
+        "collapse_tab_1": {
+          "header": "Strictly Necessary Cookies",
+          "text": "These cookies are essential for the website to function properly. They enable basic functionalities like page navigation and access to secure areas of the website. The website cannot function properly without these cookies."
         },
-        "preferences": {
-          "header": "Customize Your Cookie Preferences",
-          "text_html": "<p>We respect your privacy and give you the option to customize your cookie settings. Please select which types of cookies you are willing to accept.</p><p>For more information see our <a href='{{ privacy_policy_url }}'>Privacy Policy.</a></p>",
-          "button-label": "Save preferences",
-          "collapse_tab_1": {
-            "header": "Strictly Necessary Cookies",
-            "text": "These cookies are essential for the website to function properly. They enable basic functionalities like page navigation and access to secure areas of the website. The website cannot function properly without these cookies."
-          },
-          "collapse_tab_2": {
-            "header": "Performance Cookies",
-            "text": "These cookies help us understand how visitors interact with our website by collecting and reporting information anonymously. They enable us to improve the website's performance and user experience."
-          },
-          "collapse_tab_3": {
-            "header": "Functional Cookies",
-            "text": "These cookies allow the website to remember choices you make (such as your username, language, or the region you are in) and provide enhanced, more personal features."
-          },
-          "collapse_tab_4": {
-            "header": "Targeting/Advertising Cookies",
-            "text": "These cookies are used to deliver ads more relevant to you and your interests. They may also be used to limit the number of times you see an advertisement and help measure the effectiveness of the advertising campaign. They are usually placed by advertising networks with the website operator’s permission."
-          }
+        "collapse_tab_2": {
+          "header": "Performance Cookies",
+          "text": "These cookies help us understand how visitors interact with our website by collecting and reporting information anonymously. They enable us to improve the website's performance and user experience."
+        },
+        "collapse_tab_3": {
+          "header": "Functional Cookies",
+          "text": "These cookies allow the website to remember choices you make (such as your username, language, or the region you are in) and provide enhanced, more personal features."
+        },
+        "collapse_tab_4": {
+          "header": "Targeting/Advertising Cookies",
+          "text": "These cookies are used to deliver ads more relevant to you and your interests. They may also be used to limit the number of times you see an advertisement and help measure the effectiveness of the advertising campaign. They are usually placed by advertising networks with the website operator’s permission."
         }
       }
+    }
   },
   "cart": {
     "static": {
@@ -388,8 +388,8 @@
       "per-treatment": "Only {{ price }} per treatment",
       "kit-left": "{{ count }} kits left",
       "monthly-payment": "Monthly interest-free payments with:",
-      "questions_html": "<h6 class='fm-body fw-600 mb-0 fs-18'>Have questions about Micro-Infusion?</h6><a href='' class='btn btn-sm btn--secondary' style='--btn-secondary-bg: #fff;'>Chat with us!</a>",
-      "more_details_html": "<div class='fs-14'>Skip, pause or cancel anytime. <a href='#' class='text-decoration-underline' style='--base-color: #212428;'>See more details</a></div>"
+      "questions_html": "<h6 class='fm-body fw-600 mb-0 fs-18'>Have questions about Micro-Infusion?</h6><a href='/pages/contact-us' class='btn btn-sm btn--secondary' style='--btn-secondary-bg: #fff;'>Chat with us!</a>",
+      "more_details_html": "<div class='fs-14'>Skip, pause or cancel anytime. <a href='/pages/subscriptions' class='text-decoration-underline' style='--base-color: #212428;'>See more details</a></div>"
     }
   },
   "purchase-form-bundle": {
@@ -558,6 +558,5 @@
         "button_label": "Join Our VIP Community"
       }
     }
-  },
-  
+  }
 }

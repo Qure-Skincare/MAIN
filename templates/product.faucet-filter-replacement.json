@@ -351,11 +351,10 @@
       "name": "t:sections.trusted-recommended.name",
       "settings": {
         "heading": "Trusted and Recommended by Experts",
-        "text": "<p>“<strong>Harsh water can definitely damage your skin</strong> on daily basis and it impacts everything you are doing with your skincare\"</p>",
+        "text": "<p>“How do you <strong>reduce the things in your water that are causing issues</strong> with your skin?<br/>This Qure filter is incredible –<strong> it’s the only filter I personally use</strong> to [reduce] chlorine and anything else that’s going to make your water harsh for your skin.”</p>",
         "image_text": "",
-        "image": "shopify://shop_images/doctor-maxfield.webp",
-        "image_mobile": "shopify://shop_images/doctor-maxfield.webp",
-        "video_url": "",
+        "video_cover_image": "shopify://shop_images/doctor_img_4127db25-79f7-4314-901a-e5fdd4c6fc94.png",
+        "video_url": "https://www.youtube.com/watch?v=Tk39sbR8Nak&t=433s",
         "wistia_url": ""
       }
     },

@@ -78,7 +78,7 @@
             "text": "I’m shocked at the results after just one treatment! My skin looks so clear, glowy, and healthy.",
             "client": "Ela",
             "text_mobile": "I’m shocked at the results after just one treatment!",
-            "product": "micro-infusion-3-month-bundle-6x-beta-glucan-serum",
+            "product": "q-rejuvalight-pro-facewear",
             "position": 1
           }
         },
@@ -86,7 +86,7 @@
           "type": "brand-item",
           "settings": {
             "image": "shopify://shop_images/mask_card.webp",
-            "button-url": "#",
+            "button-url": "https://qureskincare.com/products/q-rejuvalight-pro-facewear",
             "position": 6
           }
         }
@@ -119,13 +119,13 @@
           "settings": {
             "heading": "My skin returned to life!",
             "text": "<p>“I just turned 57 years. My skin was extremely dry and while using this product my skin RETURNED to LIFE! I am so impressed with it! You will not regret in purchasing it. I really see the change in my skin. Outstanding job QURE!”</p>",
-            "compare_image": "shopify://shop_images/ellie-v.webp",
+            "compare_image": "shopify://shop_images/Image_12_7a7b017a-c3dc-48b6-b46d-8381372cc87c.png",
             "country_image": "shopify://shop_images/america_f.webp",
             "username": "<p>Ellie V.</p>",
             "product_url": "#",
             "product_heading": "Ellie uses...",
             "product_text": "Micro-Infusion Facial System",
-            "product_image": "shopify://shop_images/micro-infusion-facial-system_f0e75ccc-2fd2-48d6-aea7-fe662896adaa.webp"
+            "product_image": "shopify://shop_images/Img_9.png"
           }
         },
         "slider_xqHC8P": {
@@ -133,13 +133,13 @@
           "settings": {
             "heading": "Can’t go a day without it",
             "text": "<p>“Straight away I noticed results with Qure, after the first week I had no active breakouts anymore. People ask me now how have I got my skin to be hydrated, acne-free, looking bright with no redness. I'm so reliant on the Qure mask now. I don't think I can go a day without using it.”</p>",
-            "compare_image": "shopify://shop_images/anton-m.webp",
+            "compare_image": "shopify://shop_images/Image_13_bc21b22b-9f3d-4021-b82f-dd20246c38f8.png",
             "country_image": "shopify://shop_images/australia_f.webp",
             "username": "<p>Anton M.</p>",
             "product_url": "#",
             "product_heading": "Anton uses...",
             "product_text": "Q-Rejuvalight Pro LED Mask",
-            "product_image": "shopify://shop_images/q-rejuvalight-pro-led-mask.webp"
+            "product_image": "shopify://shop_images/Img_10.png"
           }
         },
         "slider_ea3hLd": {
@@ -147,13 +147,13 @@
           "settings": {
             "heading": "Works better than I imagined!",
             "text": "<p>“I am really stunned by how well this product works. I have had professional micro-needling and I wanted the benefits without the downtime. I did my treatment, went to bed and woke up the next morning and was ready to go. My skin looks better than it has in years.”</p>",
-            "compare_image": "shopify://shop_images/jennifer-n.webp",
+            "compare_image": "shopify://shop_images/Image_14_e4f17107-9f08-48d2-ac29-0ad001741697.png",
             "country_image": "shopify://shop_images/america_f.webp",
             "username": "<p>Jennifer N.</p>",
             "product_url": "#",
             "product_heading": "Jennifer uses...",
             "product_text": "Micro-Infusion Facial System",
-            "product_image": "shopify://shop_images/micro-infusion-facial-system_f0e75ccc-2fd2-48d6-aea7-fe662896adaa.webp"
+            "product_image": "shopify://shop_images/Img_9.png"
           }
         }
       },

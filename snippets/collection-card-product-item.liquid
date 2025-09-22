@@ -28,7 +28,7 @@
                     {% assign product_title = product_title | split: "(" | first | strip %}
 
                     <div class="pd_inner-img">
-                        <img src="{{ product.featured_image | img_url: '50x' }}" alt="{{ product.featured_image.alt | escape }}" class="ctm-width" style="--ctm-width:50px;" />
+                        <img src="{{ product.featured_image | img_url: '250x' }}" alt="{{ product.featured_image.alt | escape }}" class="ctm-width" style="--ctm-width:50px;" />
                         {% if block.settings.client != blank %}
                             <div class="fs-14">{{ block.settings.client }} {{ 'sections.collection.uses' | t }}</div>
                         {% endif %}

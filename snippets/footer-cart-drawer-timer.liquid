@@ -6,7 +6,7 @@
 {% enddoc %}
 
 {% if timer > 0 %}
-    <cart-notification>
+    <cart-notification {% if cart.item_count == 0 %}style="display: none;"{% endif %}>
         <div class="cart-countdown-time" data-countdown-time="{{ timer }}" data-timeout-message="{{ 'cart.drawer.settings.notification_time_end' | t }}">
         <span class="">{{ 'cart.drawer.settings.notification_html' | t }}</span>
         <span class="cart-counter d-flex">

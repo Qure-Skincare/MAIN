@@ -3,8 +3,8 @@
 <!-- drawer cart start -->
 <link rel="stylesheet" href="https://qureskincaredns-main.com/assets/css/component-drawer.css" />
 <div class="offcanvas offcanvas-end" tabindex="-1" id="cartCanvas" aria-labelledby="cartCanvasLabel">
-   {% render 'footer-cart-drawer-timer', timer: global_timer %}
    <div id="cart-dynamic-content" class="offcanvas-dynamic-content">
+      {% render 'footer-cart-drawer-timer', timer: global_timer %}
       <div class="offcanvas-header border-btm-black">
          <h5 class="cart-drawer-heading fs-18 fm-body fw-600 m-0">{{ 'cart.drawer.settings.header' | t }} ({{ cart.item_count }})</h5>
          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa-regular fa-xmark"></i></button>

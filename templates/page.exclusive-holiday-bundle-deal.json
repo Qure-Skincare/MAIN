@@ -335,6 +335,16 @@
             "soldout": false,
             "reserved": false
           }
+        },
+        "product_e9YBCe": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "water-filter-family-bundle-bf25",
+            "preselected": false,
+            "soldout": false,
+            "reserved": false
+          }
         }
       },
       "block_order": [
@@ -353,7 +363,8 @@
         "product_type_YrPQrV",
         "product_gbPf3J",
         "product_NEgEkN",
-        "product_RBCPe8"
+        "product_RBCPe8",
+        "product_e9YBCe"
       ],
       "settings": {
         "heading": "Choose Your Bundle",

@@ -16,7 +16,7 @@
           "type": "items",
           "settings": {
             "heading": "Micro-Infusion Facial System",
-            "link_url": "/page.mi-user-guide.html",
+            "link_url": "/pages/microinfusion-safety-guide",
             "image": "shopify://shop_images/product_guide-1.webp"
           }
         },
@@ -24,7 +24,7 @@
           "type": "items",
           "settings": {
             "heading": "Q-Rejuvalight Pro LED Face Mask",
-            "link_url": "/page.q-rejuvalight-pro-mask.html",
+            "link_url": "/pages/q-rejuvalight-pro-welcome",
             "image": "shopify://shop_images/product_guide-3.webp"
           }
         },
@@ -32,7 +32,7 @@
           "type": "items",
           "settings": {
             "heading": "Neck & Décolletage LED Device",
-            "link_url": "/page.neck-decollatage-user-guide.html",
+            "link_url": "/pages/n-d-quickstart-guide",
             "image": "shopify://shop_images/n_d_device.webp"
           }
         },
@@ -40,7 +40,7 @@
           "type": "items",
           "settings": {
             "heading": "Faucet Filter",
-            "link_url": "/page.faucet-user-guide.html",
+            "link_url": "/pages/faucet-online-guide",
             "image": "shopify://shop_images/product_guide-2.webp"
           }
         },
@@ -48,7 +48,7 @@
           "type": "items",
           "settings": {
             "heading": "Shower Filter",
-            "link_url": "/page.shower-filter-guide.html",
+            "link_url": "/pages/shower-filter-online-guide",
             "image": "shopify://shop_images/product_guide-4.webp"
           }
         }
