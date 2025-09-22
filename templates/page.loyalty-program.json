@@ -9,11 +9,6 @@
  */
 {
   "sections": {
-    "main": {
-      "type": "page-loyalty-program",
-      "disabled": true,
-      "settings": {}
-    },
     "17333325327bc1f4c8": {
       "type": "apps",
       "blocks": {
@@ -159,7 +154,6 @@
     }
   },
   "order": [
-    "main",
     "17333325327bc1f4c8",
     "faq_47wWyJ"
   ]

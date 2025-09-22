@@ -747,7 +747,7 @@
         "heading": "See how quick and easy it is to use",
         "heading_mobile": "How To Use",
         "wistia_url": "wxgqgsjjdr",
-        "button_label": "BUY NOW & SAVE UP TO 43%",
+        "button_label": "BUY NOW & SAVE UP TO 70%",
         "button_url": "#purchase-form"
       }
     },
@@ -878,8 +878,8 @@
       "type": "money-back-guarantee",
       "name": "t:sections.money-back-guarantee.name",
       "settings": {
-        "heading": "<p>Try it now with zero risk.<br/>Our 30-day money-back guarantee</p>",
-        "text": "<p>We’re confident you’ll love your results — but if you don’t, we’ve got you covered.<br/><br/>Try the Micro-Infusion System for 30 days at-home. If you’re not seeing smoother, more radiant skin, simply return it for a full refund.</p>",
+        "heading": "<p>Try it now with zero risk.<br/>Our 90-day money-back guarantee</p>",
+        "text": "<p>We’re confident you’ll love your results — but if you don’t, we’ve got you covered.<br/><br/>Try the Micro-Infusion System for 90 days at-home. If you’re not seeing smoother, more radiant skin, simply return it for a full refund.</p>",
         "sub_text": "<p>SOLD OUT 10X - AVAILABLE UNTIL STOCK LASTS</p>",
         "image": "shopify://shop_images/icon.webp"
       }
@@ -990,10 +990,10 @@
           "type": "product",
           "settings": {
             "product": "6-month-micro-infusion-for-wrinkles-dark-spots",
-            "preselected": true,
+            "preselected": false,
             "heading": "6 Month Supply  End Of Summer Sale",
             "subheading": "(12 Treatments)",
-            "soldout": false,
+            "soldout": true,
             "preorder": false,
             "total_treatments": 12,
             "left_items": 280,
@@ -1008,7 +1008,7 @@
           "type": "product",
           "settings": {
             "product": "micro-infusion-3-month-bundle-6x-beta-glucan-serum",
-            "preselected": false,
+            "preselected": true,
             "heading": "3 Month Supply",
             "subheading": "(6 Treatments)",
             "soldout": false,

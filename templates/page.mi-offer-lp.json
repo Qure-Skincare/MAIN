@@ -220,9 +220,9 @@
         "carousel_LUTqzh": {
           "type": "carousel",
           "settings": {
-            "text": "<p>Dermatologist Reviewed</p>",
+            "text": "<p>90-Day Money-Back Guarantee</p>",
             "text_mobile": "",
-            "image": "shopify://shop_images/dermatologist.svg"
+            "image": "shopify://shop_images/Guarantee_Icons_1.svg"
           }
         },
         "carousel_kkigbk": {
@@ -1042,8 +1042,8 @@
       "type": "money-back-guarantee",
       "name": "t:sections.money-back-guarantee.name",
       "settings": {
-        "heading": "<h2>Try it now with zero risk. </h2><h2>Our 30-day money-back guarantee</h2>",
-        "text": "<p><br/>We’re confident you’ll love your results — but if you don’t, we’ve got you covered.<br/><br/>Try the Micro-Infusion System for 30 days at-home. If you’re not seeing smoother, more radiant skin, simply return it for a full refund.</p>",
+        "heading": "<h2>Try it now with zero risk. </h2><h2>Our 90-day money-back guarantee</h2>",
+        "text": "<p><br/>We’re confident you’ll love your results — but if you don’t, we’ve got you covered.<br/><br/>Try the Micro-Infusion System for 90 days at-home. If you’re not seeing smoother, more radiant skin, simply return it for a full refund.</p>",
         "sub_text": "<p>SOLD OUT 10X - AVAILABLE UNTIL STOCK LASTS</p>",
         "image": "shopify://shop_images/icon.webp"
       }
