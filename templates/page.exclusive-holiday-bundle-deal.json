@@ -250,15 +250,6 @@
             "reserved": false
           }
         },
-        "product_cHtmBA": {
-          "type": "product",
-          "settings": {
-            "product": "line-refine-bundle-essential-bf25-sku",
-            "preselected": false,
-            "soldout": false,
-            "reserved": false
-          }
-        },
         "type_aJwQ9q": {
           "type": "type",
           "settings": {}
@@ -362,7 +353,6 @@
         "product_DBd4ef",
         "product_7dL4ci",
         "product_Xf8A6C",
-        "product_cHtmBA",
         "type_aJwQ9q",
         "product_type_VLXcAn",
         "product_nyJ9n7",
