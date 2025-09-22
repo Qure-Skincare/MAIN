@@ -1,0 +1,9 @@
+/*============================ Announcement Bar =========================================*/
+.announcement-bar{padding:14px 0;background:var(--White,#FFF);font-size:var(--ans-bar-font-size,16px);font-weight:var(--anc-bar-font-weight,400);}
+.announcement-bar a{text-transform:var(--anc-link-transform,uppercase);color:var(--white-color);margin:0 10px;padding:1px 6px;background: #ff5429;border-radius:20px;font-size:14px;}
+.announcement-bar {visibility: hidden;font-family: 'TT Commons', system-ui, sans-serif;}
+@media(max-width:991px) {
+.announcement-bar{padding:6px 0;font-size:var(--ans-bar-font-size-mob,14px);font-weight:var(--anc-bar-font-weight-mob,400)}
+.announcement-bar-content {font-size: 12px;}
+}
+/*============================ Announcement Bar End ====================================== */
