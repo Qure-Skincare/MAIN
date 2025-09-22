@@ -993,7 +993,7 @@
             "preselected": true,
             "heading": "6 Month Supply  End Of Summer Sale",
             "subheading": "(12 Treatments)",
-            "soldout": false,
+            "soldout": true,
             "preorder": false,
             "total_treatments": 12,
             "left_items": 280,
