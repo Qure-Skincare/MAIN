@@ -40,7 +40,7 @@
     "header_learn_more_menu1_url": "/pages/microinfusion",
     "header_learn_more_menu2_title": "Discover Best Sellers",
     "header_learn_more_menu2_image": "shopify://shop_images/header_drop2.webp",
-    "header_learn_more_menu2_url": "/pages/faq-orders-shipping",
+    "header_learn_more_menu2_url": "https://qureskincare.com/collections/best-sellers",
     "cart_timer": 15,
     "shipping_title": "Shipping",
     "shipping_image": "shopify://shop_images/free-shipping_575ce407-01ac-44bc-bf6e-16f88494c9ad.svg",
