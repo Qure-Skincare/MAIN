@@ -9,12 +9,391 @@
  */
 {
   "sections": {
-    "main": {
-      "type": "page-our-story",
+    "page_banner_KgbNKR": {
+      "type": "page-banner",
+      "name": "t:sections.page-banner.name",
+      "settings": {
+        "heading": "We're rethinking skincare",
+        "text": "Bringing you clinical-grade technologies and products for DIY skin therapies, in the comfort of your own home, and at a price everyone can afford.",
+        "sub_text": "",
+        "button": "Shop All Best Sellers",
+        "button_url": "",
+        "button_mobile": "Shop Best Sellers",
+        "button_url_mobile": "",
+        "image": "shopify://shop_images/our_story_banner.webp",
+        "image_mobile": "shopify://shop_images/our_story_banner_mob.webp"
+      }
+    },
+    "logos_bu12iP": {
+      "type": "logos",
+      "blocks": {
+        "carousel_YLH9Bz": {
+          "type": "carousel",
+          "settings": {
+            "image": "shopify://shop_images/vogue_57c9f9a2-9414-4002-b546-8f368c6b57ae.svg"
+          }
+        },
+        "carousel_FydKyJ": {
+          "type": "carousel",
+          "settings": {
+            "image": "shopify://shop_images/womens_health_5b443450-a7c4-41fa-a568-f15e3cdca301.svg"
+          }
+        },
+        "carousel_R3tyjq": {
+          "type": "carousel",
+          "settings": {
+            "image": "shopify://shop_images/elle_54660f6f-a533-4b3f-8a45-0345c881697a.webp"
+          }
+        },
+        "carousel_4AqCkg": {
+          "type": "carousel",
+          "settings": {
+            "image": "shopify://shop_images/cosmopolitan_81320831-ebc5-4a3d-af5d-d3489fa24e5c.svg"
+          }
+        },
+        "carousel_qGnB6e": {
+          "type": "carousel",
+          "settings": {
+            "image": "shopify://shop_images/grazia_02e4c999-70f4-49e5-9cee-5576ffc88b28.svg"
+          }
+        },
+        "carousel_YxRnWf": {
+          "type": "carousel",
+          "settings": {
+            "image": "shopify://shop_images/qq_7977a492-b26f-4580-aad0-c20f27a49444.svg"
+          }
+        }
+      },
+      "block_order": [
+        "carousel_YLH9Bz",
+        "carousel_FydKyJ",
+        "carousel_R3tyjq",
+        "carousel_4AqCkg",
+        "carousel_qGnB6e",
+        "carousel_YxRnWf"
+      ],
+      "name": "t:sections.logos.name",
+      "settings": {}
+    },
+    "banner_with_text_hqBbAy": {
+      "type": "banner-with-text",
+      "name": "t:sections.banner-with-text.name",
+      "settings": {
+        "heading": "From a personal struggle to a skincare revolution",
+        "text": "<p>Good skin shouldn’t be a luxury. That belief sparked Qure — a brand built to bridge<strong> </strong><em>the gap between clinical-grade treatments and everyday skincare</em><strong>,</strong> without the clinic price tag.</p><p>It started with a personal journey. Kristina had always struggled with her skin and spent years researching products and routines.</p><p>She’d send care packages to Matt, complete with handwritten instructions. When his skin started to glow, she assumed it was thanks to her advice. But it wasn’t. Matt had been using an LED panel — proof that professional tech worked. <em>The problem? It wasn’t affordable or accessible.</em></p>",
+        "quote": "",
+        "quote-mobile": "",
+        "image_position": "right",
+        "sub_text": "",
+        "image": "shopify://shop_images/skincare_revolution.webp",
+        "button_label": "Shop Now",
+        "button_url": "",
+        "wistia_url": ""
+      }
+    },
+    "stats_grid_nK4GFc": {
+      "type": "stats-grid",
+      "blocks": {
+        "list_JjRWx8": {
+          "type": "list",
+          "settings": {
+            "heading": "<p>300,000+</p>",
+            "text": "Customers Worldwide"
+          }
+        },
+        "list_wGEDLH": {
+          "type": "list",
+          "settings": {
+            "heading": "<p>4.8/5</p>",
+            "text": "Average Rating"
+          }
+        },
+        "list_WKemHN": {
+          "type": "list",
+          "settings": {
+            "heading": "<p>#3</p>",
+            "text": "Fastest Growing Startup"
+          }
+        },
+        "list_qyN7ra": {
+          "type": "list",
+          "settings": {
+            "heading": "<p> 7+ </p>",
+            "text": "Clinical &amp; User Studies"
+          }
+        }
+      },
+      "block_order": [
+        "list_JjRWx8",
+        "list_wGEDLH",
+        "list_WKemHN",
+        "list_qyN7ra"
+      ],
+      "name": "t:sections.stats-grid.name",
+      "settings": {}
+    },
+    "banner_with_text_DEYYBG": {
+      "type": "banner-with-text",
+      "name": "t:sections.banner-with-text.name",
+      "settings": {
+        "heading": "From a personal struggle to a skincare revolution",
+        "text": "<p>With the release of the <a href=\"https://querskin-brand.aronwebsolutions.com/product.sunil-led-mask.html\">Q-Rejuvalight Pro LED Face Mask</a>, we put the future of your skin in your hands—literally.</p><p>By <em>bringing clinical-grade technology home</em>, we’ve made real results possible—without the clinic price tag.</p><p>Because when it comes to your skin, you deserve solutions that work.</p>",
+        "quote": "",
+        "quote-mobile": "",
+        "image_position": "left",
+        "sub_text": "",
+        "image": "shopify://shop_images/skincare_rev.webp",
+        "button_label": "Shop Now",
+        "button_url": "",
+        "wistia_url": ""
+      }
+    },
+    "page_banner_qGtYYX": {
+      "type": "page-banner",
+      "name": "t:sections.page-banner.name",
+      "settings": {
+        "heading": "Feeling good in your skin is so much more than skin deep.",
+        "text": "",
+        "sub_text": "",
+        "button": "Shop All Best Sellers",
+        "button_url": "",
+        "button_mobile": "Shop Best Sellers",
+        "button_url_mobile": "",
+        "image": "shopify://shop_images/feeling_good_banner.webp",
+        "image_mobile": "shopify://shop_images/feeling_good_banner_mob.webp"
+      }
+    },
+    "proven_results_with_goods_yV66AW": {
+      "type": "proven-results-with-goods",
+      "blocks": {
+        "slider_jYXCF4": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/no_hype_1.webp",
+            "percent_value": "70%",
+            "percent_scale_text": "<p>of participants say their fine lines looked smoother.</p>",
+            "product_image": "shopify://shop_images/1_month_mixed.webp",
+            "product_title": "Micro-Infusion Facial System",
+            "product_url": "#"
+          }
+        },
+        "slider_Lc69r4": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/q_rejuv_ab_1.webp",
+            "percent_value": "87%",
+            "percent_scale_text": "<p>of users reported smoother facial wrinkles and fine lines</p>",
+            "product_image": "shopify://shop_images/q_rejuvalight_led.webp",
+            "product_title": "Q-Rejuvalight Pro LED Mask",
+            "product_url": "#"
+          }
+        },
+        "slider_zJAmGr": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/q_rejuv_ab_3.webp",
+            "percent_value": "83%",
+            "percent_scale_text": "<p>of participants note a reduction of acne breakouts.</p>",
+            "product_image": "shopify://shop_images/q_rejuvalight_led.webp",
+            "product_title": "Q-Rejuvalight Pro LED Mask",
+            "product_url": "#"
+          }
+        },
+        "slider_6HQPDy": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/ab-2.webp",
+            "percent_value": "77%",
+            "percent_scale_text": "<p>noticed continued improvement in wrinkle reduction.</p>",
+            "product_image": "shopify://shop_images/micro-infusion_f3f16751-4910-4844-85da-2b2a4e8178fd.webp",
+            "product_title": "Micro-Infusion Targeted Patches",
+            "product_url": "#"
+          }
+        },
+        "slider_8rrEtB": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/q_rejuv_ab_2.webp",
+            "percent_value": "97%",
+            "percent_scale_text": "<p>noticed improved skin tone and enhanced smoothness</p>",
+            "product_image": "shopify://shop_images/q_rejuvalight_led.webp",
+            "product_title": "Q-Rejuvalight Pro LED Mask",
+            "product_url": "#"
+          }
+        },
+        "slider_1yrEtB": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/no_hype_3.webp",
+            "percent_value": "70%",
+            "percent_scale_text": "<p>of participants say their skin looked brighter and more even toned.</p>",
+            "product_image": "shopify://shop_images/1_month_mixed.webp",
+            "product_title": "Micro-Infusion Facial System",
+            "product_url": "#"
+          }
+        }
+      },
+      "block_order": [
+        "slider_jYXCF4",
+        "slider_Lc69r4",
+        "slider_zJAmGr",
+        "slider_6HQPDy",
+        "slider_8rrEtB",
+        "slider_1yrEtB"
+      ],
+      "name": "t:sections.proven-results-with-goods.name",
+      "settings": {
+        "heading": "Clinically proven results you can see"
+      }
+    },
+    "carousel_0FvqGy": {
+      "type": "carousel",
+      "blocks": {
+        "items_3xewxx": {
+          "type": "items",
+          "settings": {
+            "heading": "Free Shipping On Orders Over $100",
+            "image": "shopify://shop_images/guarantee.svg"
+          }
+        },
+        "items_AUjmAT": {
+          "type": "items",
+          "settings": {
+            "heading": "Dermatologist Reviewed",
+            "image": "shopify://shop_images/sheild.svg"
+          }
+        },
+        "items_Ub9bKD": {
+          "type": "items",
+          "settings": {
+            "heading": "Buy Now, Pay Later Options Available",
+            "image": "shopify://shop_images/pay-later.svg"
+          }
+        },
+        "items_CVMfzL": {
+          "type": "items",
+          "settings": {
+            "heading": "Proven Results, <br> Backed By Science",
+            "image": "shopify://shop_images/proven-result.svg"
+          }
+        }
+      },
+      "block_order": [
+        "items_3xewxx",
+        "items_AUjmAT",
+        "items_Ub9bKD",
+        "items_CVMfzL"
+      ],
+      "name": "t:common.carousel",
+      "settings": {
+        "background_color": "#f6f6f7",
+        "display_mode": "both"
+      }
+    },
+    "trusted_recommended_PlYbp1": {
+      "type": "trusted-recommended",
+      "name": "t:sections.trusted-recommended.name",
+      "settings": {
+        "heading": "Trusted and Recommended by Experts",
+        "text": "<p>What sets us apart is the trust we've earned from dermatologists who share our mission to make professional skincare accessible to all.</p><p>We’re removing the industry’s gatekeepers and putting clinical-grade, science-backed treatments in your hands — so you can care for your skin confidently, on your terms, at home.</p>",
+        "image_text": "",
+        "video_cover_image": "shopify://shop_images/doctor_img_27b84204-fd41-423b-b720-6d3a18961d20.webp",
+        "video_url": "https://www.youtube.com/watch?v=jwKN4SH4yz8",
+        "wistia_url": ""
+      }
+    },
+    "video_slider_5krtKA": {
+      "type": "video-slider",
+      "blocks": {
+        "slider_WE3dm8": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>\"I like using this between my in-office treatments and it’s easy to use, even for beginners.\"</p>",
+            "text": "<p>Dr. Alekandra Brown</p>",
+            "sub_text": "<p>Board-Certified Dermatologist</p>",
+            "url": "rehxqby0fq",
+            "checkbox": false,
+            "image": "shopify://shop_images/home-trusted_img_1.webp"
+          }
+        },
+        "slider_zBJJn3": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>\"After just a few uses my wrinkles look less visible and my skin brighter and smoother.\"</p>",
+            "text": "<p>Dr. Lindsey Zubritsky</p>",
+            "sub_text": "<p>Board-Certified Dermatologist</p>",
+            "url": "ug1o3j3d8w",
+            "checkbox": false,
+            "image": "shopify://shop_images/trusted_img_5.webp"
+          }
+        },
+        "slider_bjfWpC": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>\"You can get a clinical treatment at home safely and conveniently... and it’s particularly beneficial for those with melanin-rich skin\"</p>",
+            "text": "<p>Dr. Alexis Stephens</p>",
+            "sub_text": "<p>Internal Medicine Doctor</p>",
+            "url": "wbf95ywhx4",
+            "checkbox": false,
+            "image": "shopify://shop_images/trusted_img_6.webp"
+          }
+        },
+        "slider_mYiDLg": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>\"With Qure's Micro-Infusion System - consistency is key.\"</p>",
+            "text": "<p>Dr. Prem Tripati</p>",
+            "sub_text": "<p>Facial Plastic Surgeon</p>",
+            "url": "gzba345nd4",
+            "checkbox": false,
+            "image": "shopify://shop_images/trusted_img_9.webp"
+          }
+        },
+        "slider_FC8BrX": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>\"One of the best ways to treat hyperpigmentation at home.\"</p>",
+            "text": "<p>Dr. Wallace Nozile</p>",
+            "sub_text": "<p>Board-Certified Dermatologist</p>",
+            "url": "ypvcdsgwkx",
+            "checkbox": false,
+            "image": "shopify://shop_images/trusted_img_8.webp"
+          }
+        },
+        "slider_rWeyGn": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>\"With Micro-Infusion, you get to see the results almost instantly.\"</p>",
+            "text": "<p>Dr. Davin Lim</p>",
+            "sub_text": "<p>Board-Certified Dermatologist</p>",
+            "url": "3bud7no0j9",
+            "checkbox": false,
+            "image": "shopify://shop_images/trusted_img_7.webp"
+          }
+        }
+      },
+      "block_order": [
+        "slider_WE3dm8",
+        "slider_zBJJn3",
+        "slider_bjfWpC",
+        "slider_mYiDLg",
+        "slider_FC8BrX",
+        "slider_rWeyGn"
+      ],
+      "name": "t:sections.video-slider.name",
       "settings": {}
     }
   },
   "order": [
-    "main"
+    "page_banner_KgbNKR",
+    "logos_bu12iP",
+    "banner_with_text_hqBbAy",
+    "stats_grid_nK4GFc",
+    "banner_with_text_DEYYBG",
+    "page_banner_qGtYYX",
+    "proven_results_with_goods_yV66AW",
+    "carousel_0FvqGy",
+    "trusted_recommended_PlYbp1",
+    "video_slider_5krtKA"
   ]
 }

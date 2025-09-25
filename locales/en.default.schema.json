@@ -84,6 +84,9 @@
         "left-image": "Left image",
         "video-image-cover": "Video cover image",
         "video": "Video",
+        "product-image": "Product image",
+        "product-title": "Product title",
+        "product-url": "Product URL",
         "video-mobile": "Video mobile",
         "rating-image": "Rating image",
         "button-label": "Button label",
@@ -140,7 +143,9 @@
         "pm": "PM",
         "none": "None",
         "number-of-views": "Number of views",
-        "nubmber-of-shared": "Number of shared"
+        "nubmber-of-shared": "Number of shared",
+        "contact": "Contact",
+        "topic": "Topic"
     },
     "blocks": {
         "block-card": {
@@ -178,11 +183,40 @@
         "cta-cards": {
             "name": "CTA cards"
         },
+        "contact-form": {
+            "name": "Contact form"
+        },
+        "custom-form-contact-form": {
+            "name": "Contact form for custom form page"
+        },
+        "stats-grid": {
+            "name": "Stats grid"
+        },
+        "customer-service": {
+            "name": "Customer service",
+            "settings": {
+                "faq-text": {
+                    "name": "FAQ text"
+                },
+                "faq-url": {
+                    "name": "FAQ URL"
+                },
+                "returns-exchanges-text": {
+                    "name": "Returns exchanges text"
+                },
+                "returns-exchanges-url": {
+                    "name": "Returns exchanges URL"
+                }
+            }
+        },
         "returns-exchanges-card-slider": {
             "name": "Returns exchanges card slider"
         },
         "contact-info": {
             "name": "Contact information"
+        },
+        "text-block": {
+            "name": "Text block"
         },
         "bundle-routine": {
             "name": "Bundle routine"
@@ -366,6 +400,9 @@
             "blocks": {
                 
             }
+        },
+        "proven-results-with-goods": {
+            "name": "Proven results with goods"
         },
         "banner-with-text": {
             "name": "Banner with text"

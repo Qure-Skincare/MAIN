@@ -9,12 +9,146 @@
  */
 {
   "sections": {
-    "main": {
-      "type": "page-custom-form",
+    "page_banner_QDmRGR": {
+      "type": "page-banner",
+      "name": "t:sections.page-banner.name",
+      "settings": {
+        "heading": "Will you be our next professional partner?",
+        "text": "",
+        "sub_text": "",
+        "button": "Submit Stockist Enquiry",
+        "button_url": "#contact_form",
+        "button_mobile": "Submit Stockist Enquiry",
+        "button_url_mobile": "#contact_form",
+        "image": "shopify://shop_images/stockist_banner.webp",
+        "image_mobile": "shopify://shop_images/stockist_banner_mob.webp"
+      }
+    },
+    "logos_Pxp2ip": {
+      "type": "logos",
+      "blocks": {
+        "carousel_YLH9Bz": {
+          "type": "carousel",
+          "settings": {
+            "image": "shopify://shop_images/vogue_57c9f9a2-9414-4002-b546-8f368c6b57ae.svg"
+          }
+        },
+        "carousel_FydKyJ": {
+          "type": "carousel",
+          "settings": {
+            "image": "shopify://shop_images/womens_health_5b443450-a7c4-41fa-a568-f15e3cdca301.svg"
+          }
+        },
+        "carousel_R3tyjq": {
+          "type": "carousel",
+          "settings": {
+            "image": "shopify://shop_images/elle_54660f6f-a533-4b3f-8a45-0345c881697a.webp"
+          }
+        },
+        "carousel_4AqCkg": {
+          "type": "carousel",
+          "settings": {
+            "image": "shopify://shop_images/cosmopolitan_81320831-ebc5-4a3d-af5d-d3489fa24e5c.svg"
+          }
+        },
+        "carousel_qGnB6e": {
+          "type": "carousel",
+          "settings": {
+            "image": "shopify://shop_images/grazia_02e4c999-70f4-49e5-9cee-5576ffc88b28.svg"
+          }
+        },
+        "carousel_YxRnWf": {
+          "type": "carousel",
+          "settings": {
+            "image": "shopify://shop_images/qq_7977a492-b26f-4580-aad0-c20f27a49444.svg"
+          }
+        }
+      },
+      "block_order": [
+        "carousel_YLH9Bz",
+        "carousel_FydKyJ",
+        "carousel_R3tyjq",
+        "carousel_4AqCkg",
+        "carousel_qGnB6e",
+        "carousel_YxRnWf"
+      ],
+      "name": "t:sections.logos.name",
+      "settings": {}
+    },
+    "custom_form_text_block_yHhkiP": {
+      "type": "custom-form-text-block",
+      "name": "t:sections.text-block.name",
+      "settings": {
+        "heading": "Qure’s Professional Skincare Revolution",
+        "text": "<p>Using science-backed technology, research, and forward-focused insights, Qure creates visionary solutions, setting the new benchmark in the beauty industry.</p><p>Bringing together world-class experts with product designers and engineers, we disrupt the dermatologist industry and question how we can give power to people to teat their own skin from home with proven DIY therapies for an affordable price.</p><p>Gain maximum advantage of the industry’s consistent growth.</p><p>Join the revolution and <strong>become our professional partner.</strong></p>"
+      }
+    },
+    "stats_grid_dzB9Jy": {
+      "type": "stats-grid",
+      "blocks": {
+        "list_UGKTCk": {
+          "type": "list",
+          "settings": {
+            "heading": "<p><strong>↑</strong> 25.1%</p>",
+            "text": "Growth of home beauty devices"
+          }
+        },
+        "list_AmLVzC": {
+          "type": "list",
+          "settings": {
+            "heading": "<p><strong>↑</strong> 5.1%</p>",
+            "text": "Growth of light therapy market"
+          }
+        },
+        "list_3byHFJ": {
+          "type": "list",
+          "settings": {
+            "heading": "<p><strong>↑</strong> 5.6%</p>",
+            "text": "Growth of blue light therapy market*"
+          }
+        },
+        "list_fejKD6": {
+          "type": "list",
+          "settings": {
+            "heading": "<p><strong>↑</strong> 4.5% </p>",
+            "text": "Growth of red light therapy market**"
+          }
+        },
+        "quote_yBhKhG": {
+          "type": "quote",
+          "settings": {
+            "text": "** Driven by demand of non-invasive skin rejuvenation treatment"
+          }
+        },
+        "quote_WEfjeE": {
+          "type": "quote",
+          "settings": {
+            "text": "* Driven by preference for non-invasive acne treatment"
+          }
+        }
+      },
+      "block_order": [
+        "list_UGKTCk",
+        "list_AmLVzC",
+        "list_3byHFJ",
+        "list_fejKD6",
+        "quote_yBhKhG",
+        "quote_WEfjeE"
+      ],
+      "name": "t:sections.stats-grid.name",
+      "settings": {}
+    },
+    "custom_form_contact_form_tYwEPQ": {
+      "type": "custom-form-contact-form",
+      "name": "t:sections.custom-form-contact-form.name",
       "settings": {}
     }
   },
   "order": [
-    "main"
+    "page_banner_QDmRGR",
+    "logos_Pxp2ip",
+    "custom_form_text_block_yHhkiP",
+    "stats_grid_dzB9Jy",
+    "custom_form_contact_form_tYwEPQ"
   ]
 }

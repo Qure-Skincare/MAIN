@@ -17,8 +17,7 @@
          <img src="{{ section.settings.image_mobile | image_url }}" width="225" height="281" alt="{{ section.settings.image_mobile.alt | escape }}" class="img-fluid w-100">
       {% endif %}
    </picture>
-   <div
-      class="page__banner-wrapper position-absolute d-flex align-items-md-center justify-content-end top-0 bottom-0 start-0 end-0 pb-20">
+   <div class="page__banner-wrapper position-absolute d-flex align-items-md-center justify-content-end top-0 bottom-0 start-0 end-0 pb-20">
       <div class="container">
          <div class="d-flex pt-md-0 pt-50">
             <div class="ctm-width ctm-color mx-auto mx-md-0 text-center text-md-start" style="--ctm-width:550px; --pg-title-mob:#212428;">
@@ -28,6 +27,18 @@
                {% endif %}
                {% if section.settings.text != blank %}
                   <p class="py-15">{{ section.settings.text }}</p>
+               {% endif %}
+               {% assign button_blocks_size = section.blocks | where: 'type', 'button' | size %}
+               {% if button_blocks_size > 0 %}
+                  <div class="ctm-width mt-20 d-flex justify-content-center justify-content-md-start gap-3">
+                     {% for block in section.blocks %}
+                        {% if block.type == 'button' %}
+                           {% if block.settings.link_url != blank and block.settings.image != blank %}
+                              <a href="{{ block.settings.link_url }}"><img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" /></a>
+                           {% endif %}
+                        {% endif %}
+                     {% endfor %}
+                  </div>
                {% endif %}         
                <div class="ctm-width" style="--ctm-width:450px">
                   {% if section.settings.button_mobile != blank and section.settings.button_url_mobile != blank %}
@@ -130,6 +141,22 @@
             "type": "text",
             "id": "text",
             "label": "t:common.text"
+         }
+      ]
+   },
+   {
+      "type": "button",
+      "name": "t:common.button",
+      "settings": [
+         {
+            "type": "url",
+            "id": "link_url",
+            "label": "t:common.link-url"
+         },
+         {
+            "type": "image_picker",
+            "id": "image",
+            "label": "t:common.image"
          }
       ]
    }

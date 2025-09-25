@@ -21,6 +21,10 @@
     "expert-advisory-product": {
       "button_label": "Shop Now"
     },
+    "contact-form": {
+      "success_text": "Thanks for contacting us. We'll get back to you as soon as possible.",
+      "send_text": "Send"
+    },
     "how-it-works": {
       "aging_mode_button": "Skin Rejuvenating",
       "breakout_mode_button": "Skin Clearing",
@@ -40,6 +44,9 @@
     "proven-results": {
       "info_image": "https://qureskincaredns-main.com/assets/images/i.svg",
       "study_text": "Study"
+    },
+    "proven-results-with-goods": {
+      "arrow_image": "https://qureskincaredns-main.com/assets/images/arrow_right.svg"
     },
     "exclusive-offer": {
       "include_text": "Included free"

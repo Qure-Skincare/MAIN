@@ -1,0 +1,57 @@
+{% doc %}
+Renders a customer service section for contact page.
+{% enddoc %}
+
+<div class="customer_services qure__section color-background mt-10"
+    style="--section-padding-top: 40px; --section-padding-bottom: 40px; --section-padding-top-mob: 30px; --section-padding-bottom-mob: 30px;">
+    <div class="container">
+        <div class="d-flex flex-wrap justify-content-md-between justify-content-center ctm-width mx-auto"
+            style="--ctm-width: 800px;">
+            {% if section.settings.heading != blank %}
+                <p class="fw-600">{{ section.settings.heading }}</p>
+            {% endif %}
+            <div class="d-flex flex-wrap justify-content-md-between justify-content-center">
+                {% if section.settings.faq_text != blank and section.settings.faq_url != blank %}
+                    <a href="{{ section.settings.faq_url }}" class="fs-18 text-decoration-underline pt-md-0 pt-12" style="--base-color:#212428;">{{ section.settings.faq_text }}</a>
+                {% endif %}
+                <span class="px-15 d-md-block d-none">|</span>
+                {% if section.settings.returns_exchanges_text != blank and section.settings.returns_exchanges_url != blank %}
+                    <a href="{{ section.settings.returns_exchanges_url }}" class="fs-18 text-decoration-underline pt-md-0 pt-12" style="--base-color:#212428;">{{ section.settings.returns_exchanges_text }}</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+    "name": "t:sections.customer-service.name",
+    "settings": [
+    {
+        "type": "text",
+        "id": "heading",
+        "label": "t:common.header"
+    },
+    {
+        "type": "text",
+        "id": "faq_text",
+        "label": "t:sections.customer-service.settings.faq-text.name"
+    },
+    {
+        "type": "text",
+        "id": "faq_url",
+        "label": "t:sections.customer-service.settings.faq-url.name"
+    },
+    {
+        "type": "text",
+        "id": "returns_exchanges_text",
+        "label": "t:sections.customer-service.settings.returns-exchanges-text.name"
+    },
+    {
+        "type": "text",
+        "id": "returns_exchanges_url",
+        "label": "t:sections.customer-service.settings.returns-exchanges-url.name"
+    }
+    ]
+}
+{% endschema %}

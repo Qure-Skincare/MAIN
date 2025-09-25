@@ -9,12 +9,193 @@
  */
 {
   "sections": {
-    "main": {
-      "type": "page-contact",
-      "settings": {}
+    "contact_form_kkXb7P": {
+      "type": "contact-form",
+      "blocks": {
+        "contact_bHPmTY": {
+          "type": "contact",
+          "settings": {
+            "heading": "LIVE CHAT",
+            "text": "Mon - Fri<br>9AM - 5PM EST",
+            "image": "shopify://shop_images/ct-chat.svg"
+          }
+        },
+        "contact_xJqBFy": {
+          "type": "contact",
+          "settings": {
+            "heading": "CALL US",
+            "text": "+1 (240) 702-2228 <br>Sat - Sun<br>9AM - 5PM EST",
+            "image": "shopify://shop_images/ct-call.svg"
+          }
+        },
+        "contact_bKnnyR": {
+          "type": "contact",
+          "settings": {
+            "heading": "EMAIL",
+            "text": "Send a Message to Customer Service below",
+            "image": "shopify://shop_images/ct-email.svg"
+          }
+        },
+        "topic_PjjMVn": {
+          "type": "topic",
+          "settings": {
+            "text": "Topic"
+          }
+        },
+        "topic_6LeqkW": {
+          "type": "topic",
+          "settings": {
+            "text": "Order Tracking"
+          }
+        },
+        "topic_pdFULj": {
+          "type": "topic",
+          "settings": {
+            "text": "Order Issue"
+          }
+        },
+        "topic_aRLaMP": {
+          "type": "topic",
+          "settings": {
+            "text": "Product Inquiry"
+          }
+        },
+        "topic_CD8PkB": {
+          "type": "topic",
+          "settings": {
+            "text": "Discounts and Promotions"
+          }
+        },
+        "topic_VePLQ7": {
+          "type": "topic",
+          "settings": {
+            "text": "Subscriptions"
+          }
+        },
+        "topic_GED7VB": {
+          "type": "topic",
+          "settings": {
+            "text": "Rewards"
+          }
+        },
+        "topic_qdLebV": {
+          "type": "topic",
+          "settings": {
+            "text": "Qure App"
+          }
+        },
+        "topic_wEMGqm": {
+          "type": "topic",
+          "settings": {
+            "text": "Something else"
+          }
+        },
+        "product_MYiHGf": {
+          "type": "product",
+          "settings": {
+            "text": "Product"
+          }
+        },
+        "product_amwnwV": {
+          "type": "product",
+          "settings": {
+            "text": "Micro-Infusion Facial System"
+          }
+        },
+        "product_Ra4PMb": {
+          "type": "product",
+          "settings": {
+            "text": "Q-Rejuvalight Pro Facewear"
+          }
+        },
+        "product_tVx6Qq": {
+          "type": "product",
+          "settings": {
+            "text": "Neck & Décolletage LED Device"
+          }
+        },
+        "product_tXfrdy": {
+          "type": "product",
+          "settings": {
+            "text": "Shower Filter"
+          }
+        },
+        "product_TbbDUF": {
+          "type": "product",
+          "settings": {
+            "text": "Faucet Filter"
+          }
+        },
+        "product_XFhjyY": {
+          "type": "product",
+          "settings": {
+            "text": "Micro-Infusion Target Patches"
+          }
+        },
+        "product_RyRLGt": {
+          "type": "product",
+          "settings": {
+            "text": "All-In-One Face Serum"
+          }
+        },
+        "product_AMfXkG": {
+          "type": "product",
+          "settings": {
+            "text": "Dermal Mist"
+          }
+        },
+        "product_GYrcJK": {
+          "type": "product",
+          "settings": {
+            "text": "Silk Pillowcase"
+          }
+        }
+      },
+      "block_order": [
+        "contact_bHPmTY",
+        "contact_xJqBFy",
+        "contact_bKnnyR",
+        "topic_PjjMVn",
+        "topic_6LeqkW",
+        "topic_pdFULj",
+        "topic_aRLaMP",
+        "topic_CD8PkB",
+        "topic_VePLQ7",
+        "topic_GED7VB",
+        "topic_qdLebV",
+        "topic_wEMGqm",
+        "product_MYiHGf",
+        "product_amwnwV",
+        "product_Ra4PMb",
+        "product_tVx6Qq",
+        "product_tXfrdy",
+        "product_TbbDUF",
+        "product_XFhjyY",
+        "product_RyRLGt",
+        "product_AMfXkG",
+        "product_GYrcJK"
+      ],
+      "name": "t:sections.contact-form.name",
+      "settings": {
+        "heading": "Contact Us",
+        "text": "We are here to help!",
+        "button_label": "By submitting this contact form, you consent to receive text messages/SMS from Qure Skincare. To end messaging from us, you may always reply with STOP."
+      }
+    },
+    "contact_customer_service_KBnJVW": {
+      "type": "contact-customer-service",
+      "name": "t:sections.customer-service.name",
+      "settings": {
+        "heading": "Additional Customer Service",
+        "faq_text": "Frequently Asked Questions",
+        "faq_url": "/pages/faqs",
+        "returns_exchanges_text": "Returns and Exchanges",
+        "returns_exchanges_url": "/pages/returns-exchanges"
+      }
     }
   },
   "order": [
-    "main"
+    "contact_form_kkXb7P",
+    "contact_customer_service_KBnJVW"
   ]
 }

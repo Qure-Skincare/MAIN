@@ -1,0 +1,184 @@
+{% doc %}
+Renders a contact form section.
+{% enddoc %}
+
+
+<link rel="stylesheet" href="https://qureskincaredns-main.com/sections/isolated/contact-info/contact.css">
+<div class="qure__section"
+    style="--section-padding-top:80px; --section-padding-bottom:80px; --section-padding-top-mob:50px; --section-padding-bottom-mob:50px;">
+    <div class="container container-small" style="--container-width:980px">
+        <div class="qure__section-header text-md-center mb-30 mb-md-60">
+            {% if section.settings.heading != blank %}
+                <h1 class="qure__section-heading mb-16">{{ section.settings.heading }}</h1>
+            {% endif %}
+            {% if section.settings.text != blank %}
+                <div class="qure__section-desc">{{ section.settings.text }}</div>
+            {% endif %}
+        </div>
+    </div>
+    <div class="container">
+        <div class="contact-container">
+            {% for block in section.blocks %}
+                {% if block.type == 'contact' %}
+                    <div class="contact-info">
+                        {% if block.settings.image != blank %}
+                            <div class="cont-img"><img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}"></div>
+                        {% endif %}
+                        <div class="cont-time">
+                            {% if block.settings.heading != blank %}
+                                <div class="fw-600">{{ block.settings.heading }}</div>
+                            {% endif %}
+                            {% if block.settings.text != blank %}
+                                <div class="cont-time mt-6">{{ block.settings.text }}</div>
+                            {% endif %}
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+    <div class="container qure__form mt-30 mt-md-60">
+        {% form 'contact' %}
+            {% if form.posted_successfully? %}
+                <p class="form-success">{{ 'sections.contact-form.success_text' | t }}</p>
+            {% endif %}
+
+            {{ form.errors | default_errors }}
+
+            <div class="row custom__grid" style="--column-gap:12px; --column-gap-mobile:12px;">
+                <div class="col-md-6 custom__block">
+                    <input type="text" class="form-control" placeholder="Name" name="contact[name]" value="{% if form[name] %}{{ form[name] }}{% elsif customer %}{{ customer.name }}{% endif %}" required>
+                </div>
+                <div class="col-md-6 custom__block">
+                    <input type="email" class="form-control" placeholder="Email address" name="contact[email]" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}" required>
+                </div>
+                <div class="col-md-6 custom__block">
+                    <input type="text" class="form-control" placeholder="Order number" name="contact[order]">
+                </div>
+                <div class="col-md-6 custom__block">
+                    <input type="text" class="form-control" placeholder="Telephone number" name="contact[phone]" value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}" required>
+                </div>
+                <div class="col-md-12 custom__block">
+                    <div class="qure__select-wrapper">
+                        <select class="form-control synced-select related-select" name="contact[about]">
+                            {% for block in section.blocks %}
+                                {% if block.type == 'topic' %}
+                                    {% if block.settings.text != blank %}
+                                        <option value="{{ block.settings.text | downcase | replace: ' ', '_' }}">{{ block.settings.text }}</option>
+                                    {% endif %}
+                                {% endif %}
+                            {% endfor %}
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-12 custom__block related-field" id="product__Inquiry">
+                    <div class="qure__select-wrapper">
+                        <select class="form-control synced-select" placeholder="Topic" name="contact[product]">
+                            {% for block in section.blocks %}
+                                {% if block.type == 'product' %}
+                                    {% if block.settings.text != blank %}
+                                        <option value="{{ block.settings.text | downcase | replace: ' ', '_' }}">{{ block.settings.text }}</option>
+                                    {% endif %}
+                                {% endif %}
+                            {% endfor %}
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-12 custom__block">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="What’s on your mind?" name="contact[body]">{% if form.body %}{{ form.body }}{% endif %}</textarea>
+                </div>
+                <div class="col-md-12 custom__block py-20">
+                    <div class="form-check p-0 d-flex  align-items-md-center gap-3">
+                        <input type="checkbox" class="form-check-input m-0" id="checkConsent" required />
+                        {% if section.settings.button_label != blank %}
+                            <label class="form-check-label fs-16" for="checkConsent">{{ section.settings.button_label }}</label>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="col-md-12 custom__block">
+                    <button type="submit" class="btn btn--primary px-50 d-block d-md-inline-block text-center contact-submit">Send</button>
+                </div>
+            </div>
+        {% endform %}
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        loadScriptOnce('form', 'https://qureskincaredns-main.com/sections/isolated/contact-info/form.js');
+    });
+</script>
+
+
+{% schema %}
+{
+    "name": "t:sections.contact-form.name",
+    "settings": [
+    {
+        "type": "text",
+        "id": "heading",
+        "label": "t:common.header"
+    },
+    {
+        "type": "text",
+        "id": "text",
+        "label": "t:common.text"
+    },
+    {
+        "type": "text",
+        "id": "button_label",
+        "label": "t:common.button-label"
+    }
+    ],
+    "blocks": [
+    {
+        "type": "topic",
+        "name": "t:common.topic",
+        "settings": [
+        {
+            "type": "text",
+            "id": "text",
+            "label": "t:common.text"
+        }
+        ]
+    },
+    {
+        "type": "product",
+        "name": "t:common.product",
+        "settings": [
+        {
+            "type": "text",
+            "id": "text",
+            "label": "t:common.text"
+        }
+        ]
+    },
+    {
+        "type": "contact",
+        "name": "t:common.contact",
+        "settings": [
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "t:common.header"
+        },
+        {
+            "type": "text",
+            "id": "text",
+            "label": "t:common.text"
+        },
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "t:common.image"
+        }
+        ]
+    }
+    ],
+    "presets": [
+    {
+        "name": "t:sections.contact-form.name"
+    }
+    ]
+}
+{% endschema %}
