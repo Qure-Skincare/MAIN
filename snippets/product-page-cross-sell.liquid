@@ -1,0 +1,42 @@
+{% doc %}
+  Renders the crosssell products snippet for the product-header/page-header section
+
+  @param {object} - A product object.
+  @param {object} - A page object.
+
+  @example
+  {% render 'product-page-cross-sell' product: product, page: page %}
+{% enddoc %}
+
+{% assign source = blank %}
+
+{% if product != blank %}
+    {% assign source = product.metafields.custom.cross_sell.value %}
+{% endif %}
+
+{% if page != blank %}
+    {% assign source = page.metafields.custom.cross_sell.value %}
+{% endif %}
+
+{% if source != blank %}
+    <div class="product__label mt-0 mt-lg-40 mb-15">{{ 'product.settings.cross-sell.header' | t }}</div>
+    <div class="swiper qure__swiper" id="qure__swiper-best-results" data-section-id="best-results" data-autoplay="false" data-loop="false" data-mobile="1.4" data-tablet="2" data-desktop="2" data-spacing="12" data-pagination-fraction="true">
+        <div class="swiper-wrapper">
+            {% for item in source %}
+                <div class="swiper-slide">
+                    <div class="patch__results">
+                        <img class="patch__result-img img-fluid" src="{{ item.feature_image | image_url: width: 240, height: 240 }}" alt="{{ item.name }}">
+                        <div class="patch__result-content">
+                            {{ item.name }}
+                            <form method="post" action="/cart/add" enctype="multipart/form-data">
+                                <button type="submit" class="btn btn--primary btn-sm mt-10 w-100" style="--btn-sm-padding: 7px 20px;">{{ 'product.settings.cross-sell.buy-button-label' | t }} – {{ item.product.value.price | money_without_trailing_zeros  }}</button>
+                                <input type="hidden" name="quantity" id="quantity" value="1">
+                                <input type="hidden" name="id" value="{{ item.product.value.variants.first.id }}">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endif %}

@@ -86,7 +86,11 @@
         "heading": "Clean Water, Clearer Skin, Healthier Hair",
         "text": "<p>Your water is filled with hidden irritants and chemicals that damage your skin and hair daily.</p><p>The Qure Filter Bundle removes these at the source without adding any steps to your routine.</p>",
         "button_label": "Buy One + Get One FREE",
+<<<<<<< HEAD
         "button_url": "#",
+=======
+        "button_url": "#buy-form",
+>>>>>>> production
         "rating_text": "<p><strong>4.8</strong>/5 Rated by Customers</p>",
         "rating_image": "shopify://shop_images/cyan_blue_rating.svg"
       }
@@ -402,7 +406,12 @@
         "text": "We conducted a independent user study on 30 participants to measure the influence on the level of skin hydration and appearance of wrinkles. Here’s what the results were:",
         "sub_text": "Tested by an independent lab, compiled by Regulatory Consultants",
         "image_before": "shopify://shop_images/before-gf.webp",
+<<<<<<< HEAD
         "image_after": "shopify://shop_images/after-gf.webp"
+=======
+        "image_after": "shopify://shop_images/after-gf.webp",
+        "layout": "lane"
+>>>>>>> production
       }
     },
     "trusted_reviews_b9NgPL": {
@@ -457,7 +466,13 @@
       "settings": {
         "background_color": "",
         "heading": "Your transformation awaits",
+<<<<<<< HEAD
         "text_mobile": "<p>See the power of Qure filter technology, now available for your shower and faucet. </p>"
+=======
+        "text_mobile": "<p>See the power of Qure filter technology, now available for your shower and faucet. </p>",
+        "button_label": "",
+        "button_url": ""
+>>>>>>> production
       }
     },
     "trusted_recommended_awbjc8": {
@@ -466,6 +481,7 @@
       "settings": {
         "heading": "Trusted and Recommended by Experts",
         "text": "<p>“How do you<strong> reduce the things in your water that are causing issues</strong> with your skin?</p><p>This Qure filter is incredible –<strong> it’s the only filter I personally use</strong> to [reduce] chlorine and anything else that’s going to make your water harsh for your skin.”</p>",
+<<<<<<< HEAD
         "image": "shopify://shop_images/doctor_shah_desk.webp",
         "image_mobile": "shopify://shop_images/doctor_shah_mob.webp",
         "video_url": ""
@@ -473,6 +489,17 @@
     },
     "main": {
       "type": "page-qure-filters-offer",
+=======
+        "image_text": "",
+        "image": "shopify://shop_images/doctor_shah_desk.webp",
+        "image_mobile": "shopify://shop_images/doctor_shah_mob.webp",
+        "video_url": "",
+        "wistia_url": ""
+      }
+    },
+    "form": {
+      "type": "page-qure-filters-offer-form",
+>>>>>>> production
       "settings": {}
     },
     "video_review_slider_yBjMTk": {
@@ -525,11 +552,20 @@
       ],
       "name": "t:sections.video-review-slider.name",
       "settings": {
+<<<<<<< HEAD
         "heading": "See why everyone's switching to filtered water"
       }
     },
     "qure_filters_offer_comparison_real_fake_FJifqy": {
       "type": "qure-filters-offer-comparison-real-fake",
+=======
+        "heading": "See why everyone's switching to filtered water",
+        "background_color": "#f6f6f7"
+      }
+    },
+    "comparison_real_fake_FJifqy": {
+      "type": "comparison-real-fake",
+>>>>>>> production
       "blocks": {
         "compairing_points_KyG6gw": {
           "type": "compairing_points",
@@ -574,7 +610,11 @@
         "compairing_points_cFYTbm",
         "compairing_points_XXNhHY"
       ],
+<<<<<<< HEAD
       "name": "t:sections.qure-filters-offer-comparison-real-fake.name",
+=======
+      "name": "t:sections.comparison-real-fake.name",
+>>>>>>> production
       "settings": {
         "heading": "Your skin deserves Qure",
         "text": "<p>When your water is working against you, no product can keep up. Qure filters are designed with your skin and hair in mind. Here’s how Qure compares to what you’re using now.</p>",
@@ -666,9 +706,16 @@
             "scale_text": "<p>60% Sold</p>",
             "scale_value": "60%",
             "button": "Claim Offer Now",
+<<<<<<< HEAD
             "review_image_text": "<p>Dermatologist Reviewed</p>",
             "review_image": "shopify://shop_images/dermatologist_13b5a446-fc57-44bb-afea-a6d6bda4cc85.svg",
             "shipping_image_text": "<p>Free Shipping Over &lcub;$dyn&rcub;</p>",
+=======
+            "button-url": "#buy-form",
+            "review_image_text": "<p>Dermatologist Reviewed</p>",
+            "review_image": "shopify://shop_images/dermatologist_13b5a446-fc57-44bb-afea-a6d6bda4cc85.svg",
+            "shipping_image_text": "<p>Free Shipping Over &lcub;$100&rcub;</p>",
+>>>>>>> production
             "shipping_image": "shopify://shop_images/shipping.svg"
           }
         }
@@ -692,42 +739,79 @@
           "type": "accordion",
           "settings": {
             "heading": "What’s included in this bundle?",
+<<<<<<< HEAD
             "text": "<p>This bundle includes:</p><ul><li>1 Qure Showerhead + 1 Filter</li><li>1 Qure Faucet + 1 Filter</li></ul><p>Each filter lasts 90 days (3 months) before needing to be replaced to ensure optimal filtration. When you subscribe to this bundle, 2 replacement filters (1 for Showerhead and 1 for Faucet) will auto-ship every 90 days, with a recurring charge of &lcub;$dyn&rcub; per month.</p>"
+=======
+            "text": "<p>This bundle includes:</p><ul><li>1 Qure Showerhead + 1 Filter</li><li>1 Qure Faucet + 1 Filter</li></ul><p>Each filter lasts 90 days (3 months) before needing to be replaced to ensure optimal filtration. When you subscribe to this bundle, 2 replacement filters (1 for Showerhead and 1 for Faucet) will auto-ship every 90 days, with a recurring charge of &lcub;$100&rcub; per month.</p>",
+            "link_url": "",
+            "link_text": ""
+>>>>>>> production
           }
         },
         "accordion_eARGxh": {
           "type": "accordion",
           "settings": {
             "heading": "How does tap water harm my skin?",
+<<<<<<< HEAD
             "text": "<p>Facial skin is more sensitive than your skin anywhere else. Your skin barrier is like a protective shield against outside threats. But the stuff in tap water can harm it, leading to:</p><ul><li>Dry and Damaged Skin: Tap water can strip away your skin's natural oils, leaving it dry and damaged.</li><li>Skin Irritation: It might also cause skin irritation, making it sensitive and red.</li><li>Premature Aging: Chemicals in tap water may contribute to early signs of aging, like fine lines and dullness.<br/><br/></li></ul>"
+=======
+            "text": "<p>Facial skin is more sensitive than your skin anywhere else. Your skin barrier is like a protective shield against outside threats. But the stuff in tap water can harm it, leading to:</p><ul><li>Dry and Damaged Skin: Tap water can strip away your skin's natural oils, leaving it dry and damaged.</li><li>Skin Irritation: It might also cause skin irritation, making it sensitive and red.</li><li>Premature Aging: Chemicals in tap water may contribute to early signs of aging, like fine lines and dullness.<br/><br/></li></ul>",
+            "link_url": "",
+            "link_text": ""
+>>>>>>> production
           }
         },
         "accordion_K6KtcN": {
           "type": "accordion",
           "settings": {
             "heading": "What chemicals do they filter?",
+<<<<<<< HEAD
             "text": "<p>The Qure Filter Bundle improves your tap water by reducing skin irritants that make your water “hard,” like chlorine, heavy metals, microorganisms, and more.</p><p>The filters reduce chlorine, heavy metals, microorganisms, and other common water contaminants.</p>"
+=======
+            "text": "<p>The Qure Filter Bundle improves your tap water by reducing skin irritants that make your water “hard,” like chlorine, heavy metals, microorganisms, and more.</p><p>The filters reduce chlorine, heavy metals, microorganisms, and other common water contaminants.</p>",
+            "link_url": "",
+            "link_text": ""
+>>>>>>> production
           }
         },
         "accordion_UkkxRw": {
           "type": "accordion",
           "settings": {
             "heading": "Are they compatible with all showerhead and faucets?",
+<<<<<<< HEAD
             "text": "<p>The Qure Shower Filter fits most standard screw-on showerheads, but we recommend checking  your showerheads specs to confirm. It won’t work with built-in or custom fittings without standard threads.</p><p>The Qure Faucet Filter fits 99% of standard faucets with a circular removable aerator and includes adaptors for different sizes. We recommend checking your faucet type before purchase. It won’t fit square or oval faucets, showerhead faucets, induction styles, pull-outs without detachable aerators, or non-threaded pipes under 15mm.</p>"
+=======
+            "text": "<p>The Qure Shower Filter fits most standard screw-on showerheads, but we recommend checking  your showerheads specs to confirm. It won’t work with built-in or custom fittings without standard threads.</p><p>The Qure Faucet Filter fits 99% of standard faucets with a circular removable aerator and includes adaptors for different sizes. We recommend checking your faucet type before purchase. It won’t fit square or oval faucets, showerhead faucets, induction styles, pull-outs without detachable aerators, or non-threaded pipes under 15mm.</p>",
+            "link_url": "",
+            "link_text": "",
+            "image": "shopify://shop_images/taps.webp"
+>>>>>>> production
           }
         },
         "accordion_UA8Mgj": {
           "type": "accordion",
           "settings": {
             "heading": "Do I need to change/replace the filters?",
+<<<<<<< HEAD
             "text": "<p>With daily use, your Qure Filters will need to be replaced at least once every three months for your skin to look and feel its best. When you subscribe to this bundle, 2 replacement filters (1 for Showerhead and 1 for Faucet) will auto-ship every 90 days, with a recurring charge of &lcub;$dyn&rcub; per month.</p>"
+=======
+            "text": "<p>With daily use, your Qure Filters will need to be replaced at least once every three months for your skin to look and feel its best. When you subscribe to this bundle, 2 replacement filters (1 for Showerhead and 1 for Faucet) will auto-ship every 90 days, with a recurring charge of &lcub;$100&rcub; per month.</p>",
+            "link_url": "",
+            "link_text": ""
+>>>>>>> production
           }
         },
         "accordion_KU3qrq": {
           "type": "accordion",
           "settings": {
             "heading": "Will it affect water pressure?",
+<<<<<<< HEAD
             "text": "<p>Our filters are designed to maintain water pressure while effectively filtering impurities.</p>"
+=======
+            "text": "<p>Our filters are designed to maintain water pressure while effectively filtering impurities.</p>",
+            "link_url": "",
+            "link_text": ""
+>>>>>>> production
           }
         }
       },
@@ -743,8 +827,43 @@
       "settings": {
         "heading": "Have questions?",
         "text": "Don’t see your question?",
+<<<<<<< HEAD
         "button": "Ask us",
         "url": "#"
+=======
+        "button_label": "Ask us",
+        "button_url": ""
+      }
+    },
+    "sticky_cta_SrchB9": {
+      "type": "sticky-button-variants",
+      "blocks": {
+        "variant_43xxGi": {
+          "type": "variant",
+          "settings": {
+            "heading": "White",
+            "image": "shopify://shop_images/white_swatch.webp"
+          }
+        },
+        "variant_45xfGi": {
+          "type": "variant",
+          "settings": {
+            "heading": "Black",
+            "image": "shopify://shop_images/black_swatch.webp"
+          }
+        }
+      },
+      "block_order": [
+        "variant_43xxGi",
+        "variant_45xfGi"
+      ],
+      "name": "t:sections.sticky-button-variants.name",
+      "settings": {
+        "heading": "",
+        "text": "580 Units Reserved in last 48 hours",
+        "button-label": "Buy Now",
+        "button-url": ""
+>>>>>>> production
       }
     }
   },
@@ -759,11 +878,21 @@
     "improve_skin_hydration_UDwAJ8",
     "trusted_reviews_b9NgPL",
     "trusted_recommended_awbjc8",
+<<<<<<< HEAD
     "main",
     "video_review_slider_yBjMTk",
     "qure_filters_offer_comparison_real_fake_FJifqy",
     "information_about_water_BDVnVm",
     "featured_product_bundle_fGtC93",
     "faq_dyCjhg"
+=======
+    "form",
+    "video_review_slider_yBjMTk",
+    "comparison_real_fake_FJifqy",
+    "information_about_water_BDVnVm",
+    "featured_product_bundle_fGtC93",
+    "faq_dyCjhg",
+    "sticky_cta_SrchB9"
+>>>>>>> production
   ]
 }

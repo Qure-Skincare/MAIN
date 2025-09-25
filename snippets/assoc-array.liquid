@@ -1,0 +1,56 @@
+{% if section.blocks != blank %}
+    {% if __parent_title != blank %}
+        {% assign __parent_counter = 0 %}
+
+        {% unless __separator %}
+            {% assign __separator = '###' %}
+        {% endunless %}
+    
+        {% for block in section.blocks %}
+            {% if block.type == __parent_title %}
+                {% assign __parent_counter = __parent_counter | plus: 1 %}
+            {% else %}
+                    {% case __parent_counter %}
+                        {% when 1 %}
+                            {% assign __ids1 = __ids1 |  append: block.id |  append: __separator %}
+                        {% when 2 %}
+                            {% assign __ids2 = __ids2 |  append: block.id |  append: __separator %}
+                        {% when 3 %}
+                            {% assign __ids3 = __ids3 |  append: block.id |  append: __separator %}
+                        {% when 4 %}
+                            {% assign __ids4 = __ids4 |  append: block.id |  append: __separator %}
+                        {% when 5 %}
+                            {% assign __ids5 = __ids5 |  append: block.id |  append: __separator %}
+                        {% when 6 %}
+                            {% assign __ids6 = __ids6 |  append: block.id |  append: __separator %}
+                        {% when 7 %}
+                            {% assign __ids7 = __ids7 |  append: block.id |  append: __separator %}
+                        {% when 8 %}
+                            {% assign __ids8 = __ids8 |  append: block.id |  append: __separator %}
+                        {% when 9 %}
+                            {% assign __ids9 = __ids9 |  append: block.id |  append: __separator %}
+                        {% when 10 %}
+                            {% assign __ids10 = __ids10 |  append: block.id |  append: __separator %}
+                        {% when 11 %}
+                            {% assign __ids11 = __ids11 |  append: block.id |  append: __separator %}
+                        {% when 12 %}
+                            {% assign __ids12 = __ids12 |  append: block.id |  append: __separator %}
+                    {% endcase %}
+            {% endif %}
+        {% endfor %}
+
+        {% assign __idsArray1 = __ids1 | split: __separator %}
+        {% assign __idsArray2 = __ids2 | split: __separator %}
+        {% assign __idsArray3 = __ids3 | split: __separator %}
+        {% assign __idsArray4 = __ids4 | split: __separator %}
+        {% assign __idsArray5 = __ids5 | split: __separator %}
+        {% assign __idsArray6 = __ids6 | split: __separator %}
+        {% assign __idsArray7 = __ids7 | split: __separator %}
+        {% assign __idsArray8 = __ids8 | split: __separator %}
+        {% assign __idsArray9 = __ids9 | split: __separator %}
+        {% assign __idsArray10 = __ids10 | split: __separator %}
+        {% assign __idsArray11 = __ids11 | split: __separator %}
+        {% assign __idsArray12 = __ids12 | split: __separator %}
+        
+    {% endif %}
+{% endif %}

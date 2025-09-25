@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {% doc %}
   Returns the cart item properties.
 
@@ -104,4 +105,134 @@
       {% assign insurance_exists = true %}
     {% endif %}
 
+=======
+{% doc %}
+  Returns the cart item properties for the cart drawer/cart section.
+
+  @param {object} item - An object value.
+
+  @example
+  {% include 'get-cart-item-data', item: '' %}
+{% enddoc %}
+
+{% if item != blank %}
+
+    {% comment %} define variables as "null" to be sured 100% {% endcomment %}
+     
+    {% assign cart_item_id = null %}
+    {% assign cart_item_key = null %}
+    {% assign cart_item_quantity = null %}
+    {% assign cart_item_quantity_minus = null %}
+    {% assign cart_item_quantity_plus = null %}
+    {% assign cart_item_title = null %}
+    {% assign cart_item_url = null %}
+    {% assign cart_item_image = null %}
+    {% assign cart_item_properties = null %}
+    {% assign cart_item_price = null %}
+    {% assign cart_item_compare_price = null %}
+    {% assign cart_item_sale_price = null %}
+    {% assign cart_item_before_price = null %}
+    {% assign insurance_exists = null %}
+    {% assign gift_exists = null %}
+    {% assign cart_item_selling_plan = null %}
+    {% assign cart_item_selling_plan_name = null %}
+    {% assign selling_plan_exists = null %}
+    {% assign cart_item_final_price = null %}
+    {% assign discount_exists = null %}
+
+
+
+    {% comment %} cart item variables {% endcomment %}
+     
+    {% assign cart_item_id = item.id %}
+    {% assign cart_item_key = item.key %}
+    {% assign cart_item_quantity = item.quantity %}
+    {% assign cart_item_quantity_minus = item.quantity |  minus: 1 %}
+    {% assign cart_item_quantity_plus = item.quantity |  plus: 1 %}
+    {% assign cart_item_title = item.title %}
+    {% assign cart_item_url = item.url %}
+    {% assign cart_item_image = item.image %}
+    {% assign cart_item_properties = item.properties %}
+    {% assign cart_item_final_price = item.final_price %}
+    {% assign cart_item_price = item.variant.price | times: item.quantity %}
+    {% assign cart_item_compare_price = item.variant.compare_at_price | times: item.quantity %}
+    {% assign cart_item_selling_plan = item.selling_plan_allocation %}
+    {% assign cart_item_selling_plan_name = item.selling_plan_allocation.selling_plan.name %}
+    
+
+
+    {% comment %} insurance item {% endcomment %}
+
+    {% if cart_item_title contains 'Shipping Insurance' %}
+      {% assign insurance_exists = true %}
+      {% assign summary_insurance_exists = true %}
+    {% endif %}
+
+
+
+    {% comment %} gift properties {% endcomment %}
+
+    {% if cart_item_properties['_required_validation'] %}
+      {% assign gift_exists = true %}
+      {% assign cart_item_compare_price = cart_item_price %}
+      {% assign cart_item_price = 0 %}
+    {% endif %}
+
+
+    {% comment %} discount {% endcomment %}
+    {% if cart_item_final_price == 0 %}
+      {% assign discount_exists = true %}
+      {% assign cart_item_compare_price = cart_item_price %}
+      {% assign cart_item_price = 0 %}
+    {% endif %}
+
+    {% comment %} item properties {% endcomment %}
+
+    {% assign cart_item_sale_price = cart_item_price | money_without_trailing_zeros %}
+
+    {% if cart_item_compare_price > 0 %}
+        {% assign cart_item_before_price = cart_item_compare_price | money_without_trailing_zeros %}
+    {% endif %}
+
+
+    {% comment %} selling plan properties  {% endcomment %}
+
+    {% if cart_item_selling_plan != blank %}
+      {% assign selling_plan_exists = true %}
+      {% assign cart_item_compare_price = cart_item_selling_plan.compare_at_price %}
+      {% assign cart_item_before_price = cart_item_selling_plan.compare_at_price | money_without_trailing_zeros %}
+      {% assign cart_item_price = cart_item_selling_plan.price %}
+      {% assign cart_item_sale_price = cart_item_selling_plan.price | money_without_trailing_zeros %}
+
+      {% if cart_item_compare_price == cart_item_price %}
+        {% assign cart_item_before_price = blank %}
+      {% endif %}
+
+    {% endif %}
+
+
+    {% comment %} temporary variables {% endcomment %}
+
+    {% assign total_price = total_price |  plus:  cart_item_price %}
+
+    {% if cart_item_compare_price > 0 %}
+      {% assign total_compare_price = total_compare_price |  plus:  cart_item_compare_price %}
+      {% assign total_saving_price = total_compare_price |  minus: total_price %}
+    {% else %}
+      {% assign total_compare_price = total_compare_price |  plus:  cart_item_price %}
+      {% assign total_saving_price = total_compare_price |  minus: total_price %}
+    {% endif %}
+
+
+
+    {% comment %} summary variables {% endcomment %}
+
+    {% assign summary_sale_price = total_price | money_without_trailing_zeros %}
+
+    {% if total_compare_price > total_price  %}
+      {% assign summary_before_price = total_compare_price | money_without_trailing_zeros %}
+      {% assign summary_saving_price = total_saving_price | money_without_trailing_zeros %}
+    {% endif %}
+
+>>>>>>> production
 {% endif %}

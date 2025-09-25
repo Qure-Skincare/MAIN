@@ -1,0 +1,25 @@
+{% doc %}
+  Renders a header slider snippet for the header section.
+
+  @param {string} - A string value.
+  @param {string} - A string value.
+  @param {string} - A string value.
+
+  @example
+  {% render 'header-slider-item', image: '', button-label: '', button-url: '' %}
+{% enddoc %}
+
+{% if image != blank %}
+    <div class="swiper-slide" style="cursor: pointer;">
+        <div class="quer-collection-content">
+            <div class="slide-image">
+                <img src="{{ image | image_url }}" alt="header slider item image" class="img-fluid w-100" />
+                {% if button-label != blank %}
+                    <a href="{% if button-url != blank %}{{ button-url }}{% else %}#{% endif %}">
+                        <div class="qc-title bottom-0">{{ button-label }} <i class="fa-regular fa-arrow-right"></i></div>
+                    </a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endif %}

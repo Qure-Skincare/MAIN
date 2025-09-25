@@ -1,0 +1,208 @@
+{% doc %}
+  Renders a exclusive offer section on page led-mask-offer-2
+{% enddoc %}
+
+
+<link rel="stylesheet" href="https://qureskincaredns-main.com/sections/isolated/exclusive-offer/exclusive-offers.css" />
+<div class="qure__section qure__exclusive-offers">
+    <div class="container">
+        <div class="qure__section-header text-center mb-30 mb-md-60">
+            {% if section.settings.text != blank %}
+                <div class="quer__exclusive-badge d-inline-block mb-20 text-uppercase fw-500">{{ section.settings.text | replace: '<p>', '<span>' | replace: '</p>', '</span>' }}</div>
+            {% endif %}
+            {% if section.settings.heading != blank %}
+                 <h2 class="qure__section-heading">{{ section.settings.heading }}</h2>
+            {% endif %}
+            {% if section.settings.text_mobile != blank %}
+                <span class="d-block d-md-none mt-20">{{ section.settings.text_mobile | replace: '<p>', '' | replace: '</p>', '' }}</span>
+            {% endif %}
+        </div>
+        <!-- Nav tabs -->
+        <div class="exclusive-nav-tabs" id="exclusiveTabs" role="tablist">
+            {% for block in section.blocks %}
+                {% if block.type == 'left_block' %}
+                    <div class="exclusive-item">
+                        <button class="exclusive-link active" id="q-rejuvalight-pro-led-mask-tab" data-bs-toggle="tab"
+                            data-bs-target="#tab-q-rejuvalight-pro-led-mask" type="button" role="tab"
+                            aria-controls="q-rejuvalight-pro-led-mask" aria-selected="true">
+                            {% if block.settings.image != blank %}
+                                <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                            {% endif %}
+                            {% if block.settings.heading != blank %}
+                                <span>{{ block.settings.heading }}</span>
+                            {% endif %}
+                        </button>
+                    </div>
+                {% endif %}
+            {% endfor %}
+            {% for block in section.blocks %}
+                {% if block.type == 'right_block' %}
+                    <div class="exclusive-item">
+                        <button class="exclusive-link exclusive-link-free" id="neck-decolletage-led-device-tab"
+                            data-bs-toggle="tab" data-bs-target="#tab-neck-decolletage-led-device" type="button" role="tab"
+                            aria-controls="neck-decolletage-led-device" aria-selected="false">
+                            {% if block.settings.badge_text != blank %}
+                                <span class="exc-link-badge">{{ block.settings.badge_text }}</span>
+                            {% endif %}
+                            {% if block.settings.image != blank %}
+                                <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                            {% endif %}
+                            {% if block.settings.heading != blank %}
+                                <span>{{ block.settings.heading }}</span>
+                            {% endif %}
+                        </button>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+        <!-- Tab panes -->
+        <div class="tab-content exclusive-tab-content">
+            {% for block in section.blocks %}
+                {% if block.type == 'left_block' %}
+                    <div class="tab-pane active" id="tab-q-rejuvalight-pro-led-mask" role="tabpanel"
+                        aria-labelledby="q-rejuvalight-pro-led-mask-tab" tabindex="0">
+                        <div class="exc-container">
+                            <div class="exc-hdr">
+                                {% if block.settings.image != blank %}
+                                     <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                {% endif %}
+                                {% if block.settings.heading != blank %}
+                                    <div class="exc-title">{{ block.settings.heading }}</div>
+                                {% endif %}
+                                {% if block.settings.price != blank %}
+                                    <div class="exc-price">{{ block.settings.price | replace: '<p>', '<span>' | replace: '</p>', '</span>' }}</div>
+                                {% endif %}
+                            </div>
+                            {% if block.settings.text != blank %}
+                                {{ block.settings.text 
+                                    | replace: '<p>', '' 
+                                    | replace: '</p>', '' 
+                                    | replace: '<ul>', '<ul class="exc__list-check">' 
+                                }}
+                            {% endif %}
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+            {% for block in section.blocks %}
+                {% if block.type == 'right_block' %}
+                    <div class="exc-icon d-none d-md-block"></div>
+                        <div class="tab-pane" id="tab-neck-decolletage-led-device" role="tabpanel"
+                            aria-labelledby="neck-decolletage-led-device-tab" tabindex="0">
+                            <div class="exc-container exc-container-free">
+                                <span class="exc-badge">{{ 'sections.exclusive-offer.include_text' | t }}</span>
+                                <div class="exc-hdr">
+                                    {% if block.settings.image != blank %}
+                                        <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                    {% endif %}
+                                    {% if block.settings.heading != blank %}
+                                        <div class="exc-title">{{ block.settings.heading }}</div>
+                                    {% endif %}
+                                    {% if block.settings.price != blank %}
+                                        <div class="exc-price">{{ block.settings.price 
+                                            | replace: '<p>[span]', '<span>' 
+                                            | replace: '[/span]</p>', '</span>' 
+                                            | replace: '<p><em>', '<span class="oldPrice">' 
+                                            | replace: '</em></p>', '</span>' }}
+                                        </div>
+                                    {% endif %}
+                                </div>
+                                {% if block.settings.text != blank %}
+                                    {{ block.settings.text 
+                                        | replace: '<p>', '' 
+                                        | replace: '</p>', '' 
+                                        | replace: '<ul>', '<ul class="exc__list-check">' 
+                                    }}
+                                {% endif %}
+                            </div>
+                        </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "t:sections.exclusive-offer.name",
+  "settings": [
+    {
+        "type": "text",
+        "id": "heading",
+        "label": "t:common.header"
+    },
+    {
+        "type": "richtext",
+        "id": "text",
+        "label": "t:common.text"
+    },
+    {
+        "type": "richtext",
+        "id": "text_mobile",
+        "label": "t:common.text-mobile"
+    }
+  ],
+  "blocks": [
+    {
+        "type": "left_block",
+        "name": "t:common.left-block",
+        "limit": 1,
+        "settings": [
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "t:common.header"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "t:common.text"
+            },
+            {
+                "type": "richtext",
+                "id": "price",
+                "label": "t:common.price"
+            },
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "t:common.image"
+            }
+        ]
+    },
+    {
+        "type": "right_block",
+        "name": "t:common.right-block",
+        "limit": 1,
+        "settings": [
+           {
+                "type": "text",
+                "id": "heading",
+                "label": "t:common.header"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "t:common.text"
+            },
+            {
+                "type": "richtext",
+                "id": "price",
+                "label": "t:common.price"
+            },
+            {
+                "type": "text",
+                "id": "badge_text",
+                "label": "t:common.badge-text"
+            },
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "t:common.image"
+            }
+        ]
+    }
+  ]
+}
+{% endschema %}

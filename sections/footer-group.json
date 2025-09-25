@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
  * ------------------------------------------------------------
  * IMPORTANT: The contents of this file are auto-generated.
@@ -37,3 +38,44 @@
     "footer-gdpr"
   ]
 }
+=======
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "t:sections-group.footer.name",
+  "sections": {
+    "footer-form": {
+      "type": "footer-form",
+      "settings": {}
+    },
+    "footer": {
+      "type": "footer",
+      "settings": {}
+    },
+    "footer-drawer": {
+      "type": "footer-cart-drawer",
+      "name": "t:sections.footer-cart-drawer.name",
+      "settings": {}
+    },
+    "footer-gdpr": {
+      "type": "footer-gdpr",
+      "disabled": false,
+      "settings": {}
+    }
+  },
+  "order": [
+    "footer-form",
+    "footer",
+    "footer-drawer",
+    "footer-gdpr"
+  ]
+}
+>>>>>>> production

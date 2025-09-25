@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!-- -- User Guide start -- -->
 <link rel="stylesheet" href="https://qureskincaredns-main.com/sections/isolated/user-guide/section-user-guide.css">
 <div class="user_guide qure__section" style="--section-padding-top-mob: 30px;">
@@ -87,3 +88,85 @@
     </div>
 </div>
 <!-- -- User Guide end -- -->
+=======
+{% doc %}
+Renders a products guide section for products guide page
+{% enddoc %}
+
+<link rel="stylesheet" href="https://qureskincaredns-main.com/sections/isolated/user-guide/section-user-guide.css">
+<div class="user_guide qure__section" style="--section-padding-top-mob: 30px;">
+    <div class="container" style="--column-gap:24px; --column-gap-mobile:12px;">
+        <div class="qure__section-header text-md-start text-center">
+            {% if section.settings.heading != blank %}
+                <h2 class="qure__section-heading mb-10" style="--heading-size: 46px; --heading-size-mob: 32px;">{{ section.settings.heading }}</h2>
+            {% endif %}
+            {% if section.settings.text != blank %}
+                {{ section.settings.text | replace: '<strong>', '<span class="fw-600">' | replace: '</strong>', '</span>' }}
+            {% endif %}
+        </div>
+        <div class="row custom__grid">
+            {% for block in section.blocks %}
+                {% if block.type == 'items' %}
+                    <div class="col-md-6 custom__block">
+                        {% if block.settings.link_url != blank %}
+                            <a href="{{ block.settings.link_url }}" class="guide_content-main">
+                                <div class="guide_content">
+                                    {% if block.settings.image != blank %}
+                                        <div><img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" class="img-fluid" width="90"></div>
+                                    {% endif %}
+                                    {% if block.settings.heading != blank %}
+                                        <div class="qure__section-heading" style="--heading-size: 20px; --heading-size-mob: 18px;">{{ block.settings.heading }}</div>
+                                    {% endif %}
+                                    <span><img src="{{ 'sections.products-guide.right_icon' | t }}" alt="{{ 'sections.products-guide.right_icon.alt' | t | escape }}"></span>
+                                </div>
+                            </a>
+                        {% endif %}
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+
+{% schema %}
+{
+    "name": "t:sections.products-guide.name",
+    "settings": [
+    {
+        "type": "text",
+        "id": "heading",
+        "label": "t:common.header"
+    },
+    {
+        "type": "richtext",
+        "id": "text",
+        "label": "t:common.text"
+    }
+    ],
+    "blocks": [
+    {
+        "type": "items",
+        "name": "t:common.items",
+        "settings": [
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "t:common.header"
+        },
+        {
+            "type": "url",
+            "id": "link_url",
+            "label": "t:common.link-url"
+        },
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "t:common.image"
+        }
+        ]
+    }
+    ]
+}
+{% endschema %}
+>>>>>>> production

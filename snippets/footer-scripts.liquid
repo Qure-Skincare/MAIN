@@ -1,0 +1,30 @@
+<script type="text/javascript" src="https://s.skimresources.com/js/200448X1678823.skimlinks.js"></script>
+<script src="https://widget.sezzle.com/v1/javascript/price-widget?uuid=4c00ac67-4d68-4b44-95c1-190a7b67b92a"></script>
+<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=4a846202-05f3-48b3-a077-4d4a2eacbe6a"> </script>
+
+<script>window.ALBSS = { event_key: '225c861d-87c1-4b64-956f-d963e2cab43b' }</script>
+<script src="https://c.albss.com/p/l/loader.iife.js" async></script>
+
+<script>
+    let maxScrollDepth = 0;
+    window.onscroll = function() {
+        const scrollDepth = Math.round((window.scrollY + window.innerHeight) / document.body.scrollHeight * 100);
+        if (scrollDepth > maxScrollDepth) {
+            maxScrollDepth = scrollDepth;
+            if (typeof posthog !== 'undefined') {
+                posthog.capture('scroll', { depth: maxScrollDepth });
+            }
+        }
+    };
+</script>
+
+<!-- BEGIN UNIVERSAL ADS PIXEL CODE -->
+<script>
+    var cachebuster = Math.floor(Math.random() * 10000000000);
+    var img = new Image();
+    img.src = "https://cnv.event.prod.bidr.io/log/cnv?tag_id=2646&buzz_key=ua&value=&segment_key=ua-1063&account_id=359&ord=" + cachebuster;
+    img.width = 0;
+    img.height = 0;
+    document.body.appendChild(img);
+</script>
+<!-- END UNIVERSAL ADS PIXEL CODE -->

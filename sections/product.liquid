@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!-- section-targeted-patches -->
 <link rel="stylesheet" href="https://qureskincaredns-main.com/sections/isolated/product-bundle/product-bundle.css" />
 <div class="qure__trageted-patches qure__section" style="--section-padding-top: 40px; --section-padding-bottom: 80px;">
@@ -289,3 +290,57 @@
     });
 </script>
 <!-- section-targeted-patches -->
+=======
+{% doc %}
+  Renders a product section
+{% enddoc %}
+
+{% include 'get-product-data' %}
+
+
+<link rel="stylesheet" href="https://qureskincaredns-main.com/sections/isolated/product-bundle/product-bundle.css" />
+<div class="qure__trageted-patches qure__section" style="--section-padding-top: 40px; --section-padding-bottom: 80px;">
+    <div class="container" style="--column-gap:80px; --column-gap-mobile:30px;">
+        <div class="row custom__grid">
+            <div class="col-lg-6 custom__block">
+                <div class="qure-product-details mw" style="--mw:500px;">
+
+                    {% render 'product-page-slider', product: product, page: blank, class: 'tp-product-gallery d-block d-lg-none mb-30' %}
+                    {% render 'product-rating', product: product %}
+
+                    <h1 class="qure__product-title mb-10">{{ product_title }}</h1>
+                    
+                    <div class="patch__single-shortdes mt-25 mb-25">
+                        {{ product_description }}
+                    </div>
+
+                    <div class="bundle_price d-flex align-items-center justify-content-start gap-3 my-3 pb-2">
+                        
+                        {% if product_before_price != blank %}
+                            <div class="bef_price text-decoration-line-through">{{ product_before_price }}</div>
+                        {% endif %}
+
+                        <div class="aft_price clr_orange">{{ product_sale_price }}</div>
+
+                        {% if product_discount != blank %}
+                            <div class="discount_percentage">{{ 'product.settings.discount-text' | t }} {{ product_discount }}%</div>
+                        {% endif %}
+
+                    </div>
+
+                    {% render 'product-page-buy-button', product_price: product_sale_price, product_variant_id: product_variant_id, section: blank %}
+                    {% render 'product-page-buy-button-payments', product_price_divided: product_price_divided %}
+                    {% render 'product-page-buy-button-bottom' %}
+                </div>
+            </div>
+            <div class="col-lg-6 custom__block">
+                {% render 'product-page-slider', product: product, class: 'tp-product-gallery d-none d-lg-block' %}
+                {% render 'product-page-benefits-list', target: 'mobile' %}
+                {% render 'product-page-collapsed', product: product, page: blank, class: 'mt-15 tp-product-accordion' %}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% render 'product-data-json', product: product %}
+>>>>>>> production

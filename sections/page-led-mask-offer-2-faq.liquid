@@ -1,0 +1,259 @@
+{% doc %}
+Renders a static faq section for development.
+{% enddoc %}
+
+<div class="faq_section qure__section color-background"
+      style="--section-padding-top: 80px; --section-padding-bottom: 80px; --section-background: #F6F6F7; --section-padding-top-mob: 50px; --section-padding-bottom-mob: 50px;">
+      <div class="container">
+         <div class="qure__section-header text-center">
+            <h2 class="qure__section-heading">Have questions?</h2>
+         </div>
+         <div class="faq_content">
+            <div class="accordion accordion-flush" id="qure_faq-main">
+               <div class="accordion-item qure__accordion-item">
+                  <button class="accordion-button collapsed qure__accordion-header" type="button"
+                     data-bs-toggle="collapse" data-bs-target="#qure_faq-1" aria-expanded="false"
+                     aria-controls="qure_faq-1">
+                     Technical specifications
+                  </button>
+                  <div id="qure_faq-1" class="accordion-collapse collapse qure__accordion-content"
+                     data-bs-parent="#qure_faq-main">
+                     <div class="accordion-body">
+                        <div class="q-tabs" id="qTab" role="tablist">
+                           <button class="q-link active" id="ledMask-tab" data-bs-toggle="tab"
+                              data-bs-target="#ledMask-tab-pane" type="button" role="tab"
+                              aria-controls="ledMask-tab-pane" aria-selected="true">Q-Rejuvalight Pro LED Mask</button>
+                           <button class="q-link" id="led-tab" data-bs-toggle="tab" data-bs-target="#led-tab-pane"
+                              type="button" role="tab" aria-controls="led-tab-pane" aria-selected="false">Neck &
+                              Décolletage LED </button>
+                        </div>
+                        <div class="tab-content q-tab-content" id="qTabContent">
+                           <div class="tab-pane fade show active" id="ledMask-tab-pane" role="tabpanel"
+                              aria-labelledby="ledMask-tab" tabindex="0">
+                              <div class="tmt-container py-16">
+                                 <div class="tmt_specs">
+                                    <div class="tmt-hdr">Treatment details</div>
+                                    <div class="tmt-content">
+                                       <div class="tmt-list">
+                                          <i class="icon qure-watch"></i>
+                                          <span><strong>TREATMENT TIME:</strong> 3 minutes</span>
+                                       </div>
+                                       <div class="tmt-list">
+                                          <i class="icon qure-modes"></i>
+                                          <span><strong>TREATMENT MODES: </strong> Skin Rejuvenation, Skin Clearing, customized
+                                             treatment</span>
+                                       </div>
+                                       <div class="tmt-list">
+                                          <i class="icon qure-calendar"></i>
+                                          <span><strong>USE: </strong> Use daily after cleansing, before topical
+                                             skincare</span>
+                                       </div>
+                                       <div class="tmt-list">
+                                          <i class="icon qure-cursor"></i>
+                                          <span><strong>OPERATION: </strong> Wireless, hands-free app (Android and
+                                             iOS)</span>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="tmt_specs">
+                                    <div class="tmt-hdr">Tech specs</div>
+                                    <div class="tmt-content">
+                                       <div class="tmt-list">
+                                          <i class="icon qure-bows"></i>
+                                          <span><strong>WAVELENGTH: </strong> 415nm (Blue), 605nm (Amber), 630nm (Red),
+                                             660nm (Deep Red), 880nm (Infrared)</span>
+                                       </div>
+                                       <div class="tmt-list">
+                                          <i class="icon qure-waves"></i>
+                                          <span><strong>LEDs: </strong> 160 dual core</span>
+                                       </div>
+                                       <div class="tmt-list">
+                                          <i class="icon qure-badge"></i>
+                                          <span><strong>CERTIFICATES: </strong> FDA, TGA, CE, UKCA</span>
+                                       </div>
+                                       <div class="tmt-list">
+                                          <i class="icon qure-battery"></i>
+                                          <span><strong>CHARGING TIME: </strong> 2 hours</span>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="tab-pane fade" id="led-tab-pane" role="tabpanel" aria-labelledby="led-tab"
+                              tabindex="0">
+                              <div class="tmt-container py-16">
+                                 <div class="tmt_specs">
+                                    <div class="tmt-hdr">Treatment details</div>
+                                    <div class="tmt-content">
+                                       <div class="tmt-list">
+                                          <i class="icon qure-watch"></i>
+                                          <span><strong>TREATMENT TIME:</strong> 10 minutes</span>
+                                       </div>
+                                       <div class="tmt-list">
+                                          <i class="icon qure-calendar"></i>
+                                          <span><strong>USE: </strong> Use 5-7 times per week after on cleansed, dry
+                                             skin</span>
+                                       </div>
+                                       <div class="tmt-list">
+                                          <i class="icon qure-cursor"></i>
+                                          <span><strong>OPERATION: </strong> Wireless, hands-free with controller</span>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="tmt_specs">
+                                    <div class="tmt-hdr">Tech specs</div>
+                                    <div class="tmt-content">
+                                       <div class="tmt-list">
+                                          <i class="icon qure-bows"></i>
+                                          <span><strong>WAVELENGTH: </strong> 33nm (Red), 830nm (Near-Infrared)</span>
+                                       </div>
+                                       <div class="tmt-list">
+                                          <i class="icon qure-waves"></i>
+                                          <span><strong>LEDs: </strong> 55 dual core</span>
+                                       </div>
+                                       <div class="tmt-list">
+                                          <i class="icon qure-battery"></i>
+                                          <span><strong>CHARGING TIME: </strong> 4 hours</span>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="accordion-item qure__accordion-item">
+                  <button class="accordion-button collapsed qure__accordion-header" type="button"
+                     data-bs-toggle="collapse" data-bs-target="#qure_faq-2" aria-expanded="false"
+                     aria-controls="qure_faq-2">
+                     How quickly will I see results?
+                  </button>
+                  <div id="qure_faq-2" class="accordion-collapse collapse qure__accordion-content"
+                     data-bs-parent="#qure_faq-main">
+                     <div class="accordion-body">
+                        <p>Every individual may respond differently to specific wavelengths of lights and results will
+                           depend on the goal you want to achieve.</p>
+                        <p>Most users see a reduction of acne breakouts and redness quicker than they expect. Smoother
+                           lines, improved skin tone and firmness can take longer.</p>
+                        <p>The day-to-day changes will be subtle, so be sure to take "before and after" pictures to
+                           document progress. The most important thing to remember is that results are cumulative, so
+                           consistent daily treatment is key.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="accordion-item qure__accordion-item">
+                  <button class="accordion-button collapsed qure__accordion-header" type="button"
+                     data-bs-toggle="collapse" data-bs-target="#qure_faq-3" aria-expanded="false"
+                     aria-controls="qure_faq-3">
+                     How often can I use these treatments?
+                  </button>
+                  <div id="qure_faq-3" class="accordion-collapse collapse qure__accordion-content"
+                     data-bs-parent="#qure_faq-main">
+                     <div class="accordion-body">
+                        <p>You can use both the Q-Rejuvalight Pro Mask and the Neck & Décolletage LED Device daily. In
+                           fact, consistent daily use is recommended for best results. </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="accordion-item qure__accordion-item">
+                  <button class="accordion-button collapsed qure__accordion-header" type="button"
+                     data-bs-toggle="collapse" data-bs-target="#qure_faq-4" aria-expanded="false"
+                     aria-controls="qure_faq-4">
+                     Do I need to wear eye protection when I use the Q-Rejuvalight Pro?
+                  </button>
+                  <div id="qure_faq-4" class="accordion-collapse collapse qure__accordion-content"
+                     data-bs-parent="#qure_faq-main">
+                     <div class="accordion-body">
+                        <p>The Q-Rejuvalight Pro has been tested and cleared for eye safety. It has successfully passed
+                           the IEC62471 evaluation for eye safety test, which is used to determine whether a device's
+                           light output is safe for the eyes or not.</p>
+                        <p>Regardless, we recommend closing your eyes and wearing protective eyewear during treatment.
+                           The light can be bright when powered on and some users may experience sensitivity, even when
+                           closing their eyes. </p>
+                        <p>As part of our unwavering commitment to your safety, we decided to take the initiative to
+                           include FREE medical grade certified light blocking protective eyewear with our Q-Rejuvalight
+                           Pro LED mask that works seamlessly during your treatment.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="accordion-item qure__accordion-item">
+                  <button class="accordion-button collapsed qure__accordion-header" type="button"
+                     data-bs-toggle="collapse" data-bs-target="#qure_faq-5" aria-expanded="false"
+                     aria-controls="qure_faq-5">
+                     Is LED light therapy safe for all skin types?
+                  </button>
+                  <div id="qure_faq-5" class="accordion-collapse collapse qure__accordion-content"
+                     data-bs-parent="#qure_faq-main">
+                     <div class="accordion-body">
+                        <p>It's crucial to note that skin types V and VI (on the fitzpatrick scale) are more sensitive
+                           for light therapy as they can absorb more light than other skin types. The reason is that
+                           skin type V and VI have higher levels of melanin in the skin. Melanin in the epidermis allows
+                           higher absorption of energy which increases the risk of adverse events from epidermal injury
+                           in people with skin type V and VI. This is why the FDA recommends caution for individuals
+                           with these skin types. </p>
+                        <p>Based on our experience, numerous customers with skin types V and VI have successfully
+                           treated their skin with our LED devices, reporting positive results. </p>
+                        <p>For customers with skin types V and VI, we highly recommend consulting with your
+                           dermatologist before using our Q-Rejuvalight Pro Facewear. This step is crucial as skin
+                           reactions can vary from person to person, and what works well for one individual may not be
+                           suitable for another.</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="accordion-item qure__accordion-item">
+                  <button class="accordion-button collapsed qure__accordion-header" type="button"
+                     data-bs-toggle="collapse" data-bs-target="#qure_faq-6" aria-expanded="false"
+                     aria-controls="qure_faq-6">
+                     Does the Q-Rejuvalight Pro come with warranty?
+                  </button>
+                  <div id="qure_faq-6" class="accordion-collapse collapse qure__accordion-content"
+                     data-bs-parent="#qure_faq-main">
+                     <div class="accordion-body">
+                        <p>Q-Rejuvalight Pro Facewear comes with one (1) year warranty covering any manufacturer related
+                           problems resulting from everyday use of the product. However, this device is designed to last
+                           years! Proudly designed in Australia.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="accordion-item qure__accordion-item">
+                  <button class="accordion-button collapsed qure__accordion-header" type="button"
+                     data-bs-toggle="collapse" data-bs-target="#qure_faq-7" aria-expanded="false"
+                     aria-controls="qure_faq-7">
+                     At what age and when is the best time to start using LED light therapy?
+                  </button>
+                  <div id="qure_faq-7" class="accordion-collapse collapse qure__accordion-content"
+                     data-bs-parent="#qure_faq-main">
+                     <div class="accordion-body">
+                        <p>Most people can benefit from LED light therapty. Whether the goal is to treat acne, help
+                           reduce the visible signs of aging, or both, prevention is better than correction. The sooner
+                           the Q-Rejuvalight Pro becomes part of your routine, the better!</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="accordion-item qure__accordion-item">
+                  <button class="accordion-button collapsed qure__accordion-header" type="button"
+                     data-bs-toggle="collapse" data-bs-target="#qure_faq-8" aria-expanded="false"
+                     aria-controls="qure_faq-8">
+                     Is Q-Rejuvalight Pro FDA-cleared?
+                  </button>
+                  <div id="qure_faq-8" class="accordion-collapse collapse qure__accordion-content"
+                     data-bs-parent="#qure_faq-main">
+                     <div class="accordion-body">
+                        <p>Yes! Our Q-Rejuvalight Pro LED mask is the world’s first customizable, FDA-cleared at-home
+                           LED mask that is proven to be an effective and safe treatment for acne, and aging skin
+                           issues. You may find more details on the FDA website (K230042).</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="pt-md-50 pt-40 d-flex align-items-center justify-content-center gap-3">
+               <h6 class="fm-body fw-500 mb-0">Don’t see your question?</h6>
+               <a href="" class="btn btn-sm btn--secondary">Ask us <span><img src="assets/images/arrow_right.svg"
+                        alt=""></span></a>
+            </div>
+         </div>
+      </div>
+   </div>

@@ -10,11 +10,7 @@
                <div class="qure__section-header" style="--heading-size:32px; --heading-color:#fff">
                   <h2 class="qure__section-heading">{{ 'footer.settings.subscribe_text' | t }}</h2>
                </div>
-               <form class="qure__subcribe-submit position-relative d-flex rounded-pill">
-                  <input type="email" class="qure__subcribe-input form-control rounded-pill" placeholder="{{ 'footer.settings.email_placeholer' | t }}">
-                  <button class="btn qure__subcribe-button" type="submit"><i
-                        class="fa-sharp fa-regular fa-arrow-right"></i></button>
-               </form>
+               {% render 'klaviyo-subscription-form' %}
             </div>
          </div>
          <!-- Social Icons -->
@@ -23,10 +19,10 @@
                <h2 class="qure__section-heading">{{ 'footer.settings.follow_us_text' | t }}</h2>
             </div>
             <div class="quer__social d-flex justify-content-center gap-5">
-               <a href="#" class="social-link"><i class="icon qure-instagram"></i></a>
-               <a href="#" class="social-link"><i class="icon qure-facebook"></i></a>
-               <a href="#" class="social-link"><i class="icon qure-tik-tok"></i></a>
-               <a href="#" class="social-link"><i class="icon qure-youtube"></i></a>
+               <a href="https://www.instagram.com/qureskincare/" class="social-link" target="_blank" rel="nofollow" aria-label="Instagram"><i class="icon qure-instagram"></i></a>
+               <a href="https://www.facebook.com/Qureskincare/" class="social-link" target="_blank" rel="nofollow" aria-label="Facebook"><i class="icon qure-facebook"></i></a>
+               <a href="https://www.tiktok.com/@qureskincare?lang=en" class="social-link" target="_blank" rel="nofollow" aria-label="TikTok"><i class="icon qure-tik-tok"></i></a>
+               <a href="https://youtube.com/channel/UCGTi3BZn8GVlu30NtQ-reYA" class="social-link" target="_blank" rel="nofollow" aria-label="YouTube"><i class="icon qure-youtube"></i></a>
             </div>
          </div>
       </div>

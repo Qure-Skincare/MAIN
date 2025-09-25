@@ -1,6 +1,5 @@
 <link rel="stylesheet" href="https://qureskincaredns-main.com/sections/isolated/cart/cart.css" />
 
-
 <div id="main-cart-dynamic-content">
     {% if cart.item_count == 0 %}
         <!-- Empty cart section start -->
@@ -36,6 +35,8 @@
                     </div>
                 </div>
 
+                {% include 'get-cart-global-data' %}
+
                 {% for item in cart.items %}
                     {% include 'get-cart-item-data', item: item %}
                     <div class="qure__cart--item">
@@ -46,30 +47,32 @@
                                     <div class="cart-prd-title fs-16 fs-md-18">{{ cart_item_title }}</div>
                                 </div>
                             </div>
-                            <div class="col col-md-3 custom__block">
-                                <div class="cart--item text-center">
-                                    <div class="cart--quantity">
-                                        <div class="cart__qty">
-                                            <form id="static_{{ cart_item_id }}_minus" method="post" action="/cart/change" enctype="multipart/form-data">
-                                                <button class="qty-btn"><i class="fa-regular fa-minus"></i></button>
-                                                <input type="hidden" name="quantity" value="{{ cart_item_quantity_minus }}">
-                                                <input type="hidden" name="id" value="{{ cart_item_key }}">
-                                            </form>
-                                            <input class="qty-input p-0" type="number" name="qty" value="{{ cart_item_quantity }}" min="0">
-                                            <form id="static_{{ cart_item_id }}_plus" method="post" action="/cart/change" enctype="multipart/form-data">
-                                                <button class="qty-btn"><i class="fa-regular fa-plus"></i></button>
-                                                <input type="hidden" name="quantity" value="{{ cart_item_quantity_plus }}">
-                                                <input type="hidden" name="id" value="{{ cart_item_key }}">
-                                            </form>
+                                <div class="col col-md-3 custom__block">
+                                    <div class="cart--item text-center">
+                                        <div class="cart--quantity">
+                                            {% unless gift_exists or insurance_exists or selling_plan_exists %}
+                                                <div class="cart__qty">
+                                                    <form id="static_{{ cart_item_id }}_minus" method="post" action="/cart/change" enctype="multipart/form-data">
+                                                        <button class="qty-btn"><i class="fa-regular fa-minus"></i></button>
+                                                        <input type="hidden" name="quantity" value="{{ cart_item_quantity_minus }}">
+                                                        <input type="hidden" name="id" value="{{ cart_item_key }}">
+                                                    </form>
+                                                    <input class="qty-input p-0" type="number" name="qty" value="{{ cart_item_quantity }}" min="0">
+                                                    <form id="static_{{ cart_item_id }}_plus" method="post" action="/cart/change" enctype="multipart/form-data">
+                                                        <button class="qty-btn"><i class="fa-regular fa-plus"></i></button>
+                                                        <input type="hidden" name="quantity" value="{{ cart_item_quantity_plus }}">
+                                                        <input type="hidden" name="id" value="{{ cart_item_key }}">
+                                                    </form>
+                                                </div>
+                                                <form id="static_{{ cart_item_id }}_remove" method="post" action="/cart/change" enctype="multipart/form-data" class="text-center">
+                                                    <button class="d-block color-charcoal fs-14 text-decoration-underline btn btn-reset mx-auto text-uppercase">{{ 'cart.static.settings.remove' | t }}</button>
+                                                    <input type="hidden" name="quantity" value="0">
+                                                    <input type="hidden" name="id" value="{{ cart_item_key }}">
+                                                </form>
+                                            {% endunless %}
                                         </div>
-                                        <form id="static_{{ cart_item_id }}_remove" method="post" action="/cart/change" enctype="multipart/form-data" class="text-center">
-                                            <button class="d-block color-charcoal fs-14 text-decoration-underline btn btn-reset mx-auto text-uppercase">{{ 'cart.static.settings.remove' | t }}</button>
-                                            <input type="hidden" name="quantity" value="0">
-                                            <input type="hidden" name="id" value="{{ cart_item_key }}">
-                                        </form>
                                     </div>
                                 </div>
-                            </div>
                             <div class="col col-md-3 custom__block cart-item-price">
                                 <div class="cart--item cart--price text-center flex-row gap-2 fs-16 fs-md-20"><span class="price old">{{ cart_item_before_price }}</span> {{ cart_item_sale_price }}</div>
                             </div>
@@ -93,22 +96,22 @@
                                         </svg>
                                     </span>
                                 </div>
-                                <div class="insurance__text"> {{ 'cart.static.settings.insurance-text' | t }} <span class="insurance__cost">+ {{ insurance_price }}</span></div>
+                                <div class="insurance__text"> {{ 'cart.static.settings.insurance-text' | t }} <span class="insurance__cost">+ {{ global_insurance_price }}</span></div>
                             </div>
 
-                            <div class="insurance__switch-wrapper">
+                            <div id="main_toogle_insurance" class="insurance__switch-wrapper">
                                 <form method="post" action="/cart/add" enctype="multipart/form-data">
                                     <label class="switch">
-                                        <input type="hidden" name="quantity" id="quantity" value="{% if insurance_exists %}0{% else %}1{% endif %}">
-                                        <input type="hidden" name="id" value="{{ insurance_variant_id }}">
-                                        <input type="checkbox" id="insurance" name="insurance"{% if insurance_exists %} checked{% endif %}>
+                                        <input type="hidden" name="quantity" id="quantity" value="{% if summary_insurance_exists %}0{% else %}1{% endif %}">
+                                        <input type="hidden" id="insurance_id" name="id" value="{{ global_insurance_variant_id }}">
+                                        <input type="checkbox" id="insurance" name="insurance"{% if summary_insurance_exists %} checked{% endif %}>
                                         <span class="slider round"></span>
                                     </label>
                                 </form>
                             </div>
                         </div>
                         <div class="qure__cart-summary">
-                            {% if summary_saving_price != blank %}
+                            {% if summary_saving_price != null %}
                                 <div class="qure__cart-box qure__cart-savings">
                                     <div class="qure__cart-title">{{ 'cart.static.settings.savings' | t }}</div>
                                     <div class="qure__cart-price">{{ summary_saving_price }}</div>
@@ -116,12 +119,18 @@
                             {% endif %}
                             <div class="qure__cart-box">
                                 <div class="qure__cart-title">{{ 'cart.static.settings.shipping' | t }}</div>
-                                <div class="qure__cart-price"><span>{{ 'cart.static.settings.free' | t }}</span></div>
+                                <div class="qure__cart-price">
+                                    {% if global_shipping_price != null %}
+                                        <span>{{ global_shipping_price }}</span>
+                                    {% else %}
+                                        <span>{{ 'cart.static.settings.free' | t }}</span>
+                                    {% endif %}
+                                </div>
                             </div>
                             <div class="qure__cart-box ">
                                 <div class="qure__cart-title">{{ 'cart.static.settings.subtotal' | t }}</div>
                                 <div class="qure__cart-price">
-                                    {% if summary_before_price != blank %}
+                                    {% if summary_before_price != null %}
                                         <span class="price old">{{ summary_before_price }}</span>
                                     {% endif %}
                                     <span class="price new">{{ summary_sale_price }}</span>

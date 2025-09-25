@@ -1,0 +1,19 @@
+{% capture preorder_box %}
+    {% render 'product-page-next-ships', section: section, class: 'hide preorder_box' %}
+{% endcapture %}
+
+<div class="patch__product-variants max-w-ctm" style="--max-w-ctm:500px">
+    {% if section.settings.type == 'variant' %}
+        <div class="patch__variant-label mb-15 mt-20">{{ 'purchase-form.settings.select-product-variant' | t }}</div>
+        {% include 'purchase-form-landing-products-type_variant-item' array: __idsArray1, preorder_box: preorder_box %}
+        {% include 'purchase-form-landing-products-type_variant-item' array: __idsArray2, preorder_box: preorder_box %}
+        {% include 'purchase-form-landing-products-type_variant-item' array: __idsArray3, preorder_box: preorder_box %}
+    {% else %}
+        <div class="patch__variant-label mb-15 mt-20">{{ 'purchase-form.settings.select-product' | t }}</div>
+        {% include 'purchase-form-landing-products-item' array: __idsArray1, preorder_box: preorder_box %}
+        {% include 'purchase-form-landing-products-item' array: __idsArray2, preorder_box: preorder_box %}
+        {% include 'purchase-form-landing-products-item' array: __idsArray3, preorder_box: preorder_box %}
+    {% endif %}
+
+    <div id="{{ section.settings.form_name }}-body-{{ section.id }}"></div>
+</div>

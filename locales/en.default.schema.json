@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
  * ------------------------------------------------------------
  * IMPORTANT: The contents of this file are auto-generated.
@@ -409,4 +410,793 @@
             "name": "Footer"
         }
     }
+=======
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+ {
+    "common": {
+        "link": "Link",
+        "exclusive-offer": "Exclusive-offer",
+        "delivery": "Delivery",
+        "subscription": "Subscription",
+        "onetime": "Onetime",
+        "selling_plan": "Selling plan",
+        "variant": "Variant",
+        "style": "Style",
+        "box": "Box",
+        "list": "List",
+        "button": "Button",
+        "days": "Days",
+        "limited-offer": "Limited offer",
+        "code": "Code",
+        "sum": "Sum",
+        "payment": "Payment",
+        "preorder": "Preorder",
+        "preselect": "Preselect",
+        "type": "Type",
+        "product-type": "Product type",
+        "section": "Section",
+        "section_id": "Section id",
+        "seo_heading": "Seo header",
+        "header": "Header",
+        "subheader": "Subheader",
+        "header-mobile": "Header mobile",
+        "left-header": "Left column header",
+        "right-header": "Right column header",
+        "left-text": "Left text",
+        "right-text": "Right text",
+        "tip": "Tip",
+        "left-tip": "Left tip",
+        "text": "Text",
+        "text-with-image": "Text with image",
+        "badge-text": "Badge text",
+        "review-header": "Review header",
+        "review-text": "Review text",
+        "text-with-progress": "Text with progress",
+        "popup": "Popup",
+        "popup-header": "Popup header",
+        "popup-text": "Popup text",
+        "style-color": "Style color",
+        "color-switch": "Color switch",
+        "color-switch-heading": "Color switch header",
+        "black": "Black",
+        "green": "Green",
+        "light-green": "Light green",
+        "description": "Description",
+        "jumpto": "Jump to",
+        "nextships": "Next Ships",
+        "date": "Date",
+        "percent": "Percent",
+        "soldout": "Soldout",
+        "reserved": "Reserved",
+        "sub-text": "Sub text",
+        "text-mobile": "Text mobile",
+        "rating": "Rating",
+        "rating-text": "Rating text",
+        "link-text": "Link text",
+        "image-header": "Image header",
+        "image-text": "Image text",
+        "image-with-text": "Image with text",
+        "username": "Username",
+        "image": "Image",
+        "country-image": "Country image",
+        "hover-image": "Hover image",
+        "review-image": "Review image",
+        "image-before": "Image before",
+        "image-after": "Image after",
+        "image-mobile": "Image mobile",
+        "image-position": "Image position",
+        "right-image": "Right image",
+        "left-image": "Left image",
+        "video-image-cover": "Video cover image",
+        "video": "Video",
+        "video-mobile": "Video mobile",
+        "rating-image": "Rating image",
+        "button-label": "Button label",
+        "button-label-image": "Button label image",
+        "button-url": "Button url",
+        "button-label-mobile": "Mobile button label",
+        "button-url-mobile": "Mobile button url",
+        "link-url": "Link URL",
+        "hash": "Hash",
+        "left": "Left",
+        "right": "Right",
+        "left-block": "Left block",
+        "right-block": "Right block",
+        "lane": "Lane",
+        "accordion": "Accordion",
+        "accordion-image": "Accordion image",
+        "slider": "Slider",
+        "video-slider": "Video slider",
+        "carousel": "Carousel",
+        "items": "Items",
+        "percent-value": "Percent value",
+        "percent-scale-text": "Percent scale text",
+        "heading-percent-scale": "Header percent scale",
+        "bundle": "Bundle",
+        "wistia-url": "Wistia URL",
+        "youtube-url": "YouTube URL",
+        "numbered-list": "Numbered list",
+        "information-box": "Information box",
+        "gift": "Gift",
+        "product": "Product",
+        "price": "Price",
+        "price-mobile": "Price mobile",
+        "price-before": "Price before",
+        "price-after": "Price after",
+        "price_limit": "Price limit",
+        "layout": "Layout",
+        "mode": "Mode",
+        "default": "Default",
+        "patches": "Patches",
+        "quote": "Quote",
+        "quote-mobile": "Quote mobile",
+        "content": "Content",
+        "additional-content": "Additional content",
+        "mobile": "Mobile",
+        "desktop": "Desktop",
+        "both": "Both (Desktop & Mobile)",
+        "display-mode": "Display mode",
+        "shower": "Shower",
+        "static": "Static",
+        "buy-box": "Buy box",
+        "background-color": "Background color",
+        "feedback": "Feedback",
+        "am": "AM",
+        "pm": "PM",
+        "none": "None",
+        "number-of-views": "Number of views",
+        "nubmber-of-shared": "Number of shared"
+    },
+    "blocks": {
+        "block-card": {
+            "name": "Block card",
+            "settings": {}
+        },
+        "block-card-item": {
+            "name": "Block card item",
+            "settings": {}
+        }
+    },
+    "sections": {
+        "announcement-bar": {
+            "name": "Announcement bar"
+        },
+        "collection": {
+            "name": "Collection",
+            "blocks": {
+                "settings": {
+                    "product-item": "Product item",
+                    "brand-item": "Brand item"
+                }
+            }
+        },
+        "numbered-steps": {
+            "name": "Numbered steps"
+        },
+        "expert-advisory-product": {
+            "name": "Expert advisory product",
+            "blocks": {
+                "doctor-name": "Doctor name",
+                "doctor-position": "Doctor position"
+            }
+        },
+        "cta-cards": {
+            "name": "CTA cards"
+        },
+        "returns-exchanges-card-slider": {
+            "name": "Returns exchanges card slider"
+        },
+        "contact-info": {
+            "name": "Contact information"
+        },
+        "bundle-routine": {
+            "name": "Bundle routine"
+        },
+        "static-sticky-cta": {
+            "name": "Static sticky cta"
+        },
+        "skincare-lifestyle": {
+            "name": "Skincare lifestyle"
+        },
+        "skincare-routine": {
+            "name": "Skincare routine",
+            "blocks": {
+                "list": {
+                    "settings": {
+                        "am-or-pm": "AM or PM"
+                    }
+                }
+
+            }
+        },
+        "skincare-plan": {
+            "name": "Skincare plan",
+            "settings": {
+                "product-image": "Product image",
+                "product-hover-image": "Product hover image",
+                "results-image": "Results image",
+                "review-video": "Review video"
+            }
+        },
+        "serum-infusions": {
+            "name": "Serum infusions"
+        },
+        "before-after-accordion": {
+            "name": "Before after accordion"
+        },
+        "banner-with-content": {
+            "name": "Banner with content"
+        },
+        "card-slider": {
+            "name": "Card slider"
+        },
+        "exclusive-offer": {
+            "name": "Exclusive offer"
+        },
+        "feature-tabs": {
+            "name": "Feature tabs",
+            "settings": {
+                "feature-tabs-heading": "Feature tabs header"
+            }
+        },
+        "get-smoother-skin": {
+            "name": "Get smoother skin"
+        },
+        "richtext-simple": {
+            "name": "Richtext simple"
+        },
+        "healthier-skin-banner": {
+            "name": "Healthier skin banner"
+        },
+        "faq-header": {
+            "name": "FAQ header"
+        },
+        "quick-and-easy": {
+            "name": "Quick and easy"
+        },
+        "quick-an-easy-solution": {
+            "name": "Quick and easy solution"
+        },
+        "info-notice": {
+            "name": "Info notice"
+        },
+        "notification-bar": {
+            "name": "Notification bar"
+        },
+        "promo-banner": {
+            "name": "Promo banner"
+        },
+        "purchase-banner-with-text": {
+            "name": "Purchase banner with text"
+        },
+        "proof-in-numbers": {
+            "name": "Proof in numbers"
+        },
+        "led-mask-offer": {
+            "name": "LED mask offer"
+        },
+        "benefits-with-icons": {
+            "name": "Benefits with icons"
+        },
+        "money-back-guarantee": {
+            "name": "Money back guarantee"
+        },
+        "beauty-benefits": {
+            "name": "Beauty benefits"
+        },
+        "micro-infusion-pdp-detailed-guide": {
+            "name": "Detailed guide"
+        },
+        "stock-alert": {
+            "name": "Stock alert"
+        },
+        "micro-infusion-serums": {
+            "name": "Micro infusion serums"
+        },
+        "safety-guide": {
+            "name": "Safety guide"
+        },
+        "products-guide": {
+            "name": "Products guide"
+        },
+        "serum-selection": {
+            "name": "Serum selection",
+            "blocks": {
+                "left-text-with-image": {
+                    "name": "Left text with image"
+                },
+                "right-text-with-image": {
+                    "name": "Right text with image"
+                },
+                "left-accordion": {
+                    "name": "Left accordion"
+                },
+                "right-accordion": {
+                    "name": "Right accordion"
+                },
+                "left-feedback": {
+                    "name": "Left feedback"
+                },
+                "right-feedback": {
+                    "name": "Right feedback"
+                }
+            }
+        },
+        "choose-treatment": {
+            "name": "Choose treatment"
+        },
+        "why-it-works": {
+            "name": "Why it works",
+            "blocks":{
+                "items": {
+                    "text-item-1": {
+                        "name": "Text item 1"
+                    },
+                    "text-item-2": {
+                        "name": "Text item 2"
+                    },
+                    "text-item-3": {
+                        "name": "Text item 3"
+                    },
+                    "text-item-4": {
+                        "name": "Text item 4"
+                    },
+                    "image-1": {
+                        "name": "Image 1"
+                    },
+                    "image-2": {
+                        "name": "Image 2"
+                    },
+                    "image-3": {
+                        "name": "Image 3"
+                    },
+                    "image-4": {
+                        "name": "Image 4"
+                    },
+                    "checkbox": "Shower"
+                }
+            }
+        },
+        "product-info": {
+            "name": "Product information"
+        },
+        "product-info-popup": {
+            "name": "Product information with popup"
+        },
+        "led-benefits": {
+            "name": "LED benefits"
+        },
+        "proven-results": {
+            "name": "Proven results",
+            "blocks": {
+                
+            }
+        },
+        "banner-with-text": {
+            "name": "Banner with text"
+        },
+        "sticky-button": {
+            "name": "Sticky button"
+        },
+        "sticky-button-variants": {
+            "name": "Sticky Button Variants"
+        },
+        "image-accordion": {
+            "name": "Image accordion"
+        },
+        "product-header": {
+            "name": "Product header"
+        },
+        "page-header": {
+            "name": "Page header"
+        },
+        "bundle-header": {
+            "name": "Bundle header"
+        },
+        "device-comparison": {
+            "name": "Compare products with Competitors"
+        },
+        "device-comparison-1": {
+            "name": "Compare products with Competitors 1"
+        },
+        "device-comparison-2": {
+            "name": "Compare products with Competitors 2"
+        },
+        "device-comparison-3": {
+            "name": "Compare products with Competitors 3"
+        },
+        "how-to-use": {
+            "name": "How to use"
+        },
+        "how-to-use-picture": {
+            "name": "How to use with picture"
+        },
+        "footer-cart-drawer": {
+            "name": "Cart drawer"
+        },
+        "quote": {
+            "name": "Quote"
+        },
+        "index-read-our-story": {
+            "name": "Read Our Story"
+        },
+        "blocks": {
+            "name": "Blocks",
+            "settings": {    
+            }
+        },
+        "faq": {
+            "name": "Faq"
+        },
+        "compare": {
+            "name": "Compare",
+            "settings": {
+                "image-compare-check": {
+                    "name": "Compare image check"
+                },
+                "image-compare-cross": {
+                    "name": "Compare image cross"
+                },
+                "heading-check": 
+                {
+                    "name": "Header for check block"
+                },
+                "heading-image-check": 
+                {
+                    "name": "Header image for check block"
+                },
+                "heading-cross": 
+                {
+                    "name": "Header for cross block"
+                },
+                "heading-image-cross": 
+                {
+                    "name": "Header image for cross block"
+                }
+            },
+            "blocks": {
+                "compare": {
+                    "name": "Compare",
+                    "settings":{
+                        "check-text": "Text for check block",
+                        "cross-text": "Text for cross block",
+                        "checkbox": "Gray check (use for gray check in compare)"
+                    }
+                }
+            }
+        },
+        "index-mobile-category-slider": {
+            "name": "Mobile category slider"
+        },
+        "page-banner": {
+            "name": "Page banner"
+        },
+        "bundle-banner": {
+            "name": "Bundle banner"
+        },
+        "slider-featured-in": {
+            "name": "Slider Featured In"
+        },
+         "index-qure-products": {
+            "name": "Qure products",
+            "blocks": {
+                "hover-image": {
+                    "name": "Hover image"
+                },
+                "image-text":{
+                    "name": "Text on image"
+                },
+                "label-price":{
+                    "name": "Label price"
+                },
+                "rating-image":{
+                    "name": "Rating image"
+                }
+            }
+        },
+         "index-get-qure": {
+            "name": "Get the Qure",
+            "blocks": {
+                "listed-deal": {
+                    "name": "Listed deal"
+                }
+            }
+        },
+        "trusted-recommended": {
+            "name": "Trusted recommended"
+        },
+        "qure-filters-offer-slider-with-text": {
+            "name": "Slider with text",
+            "blocks": {
+                "carousel": {
+                    "settings": {
+                        "tag-1": {
+                            "name": "#tag1"
+                        },
+                        "tag-2":
+                        {
+                            "name":"#tag2"
+                        },
+                        "tag-3":{
+                            "name": "#tag3"
+                        } 
+                    }
+                }
+            }
+        },
+        "clean-water": {
+            "name": "Clean water",
+            "blocks": {
+                "bundle": {
+                    "settings": {
+                        "first-image-text": {
+                            "name": "First image text"
+                        },
+                        "second-image-text":
+                        {
+                            "name":"Second image text"
+                        },
+                        "first-image":{
+                            "name": "First image"
+                        }, 
+                        "second-image":{
+                            "name": "Second image"
+                        }
+                    }
+                }
+            }
+        },
+        "trusted-reviews": {
+            "name": "Trusted reviews",
+            "blocks": {
+                "slider": {
+                    "settings":{
+                        "compare-image":{
+                            "name": "Compare image"
+                        },
+                        "product-image":{
+                            "name": "Product image"
+                        },
+                        "product-heading":{
+                            "name": "Product heading"
+                        },
+                        "product-text":{
+                            "name": "Product text"
+                        },
+                        "product-url":{
+                            "name": "Product URL"
+                        }
+                    }
+                }
+            }
+        },
+        "trusted-reviews-image": {
+            "name": "Trusted reviews image"
+        },
+        "improve-skin-hydration": {
+            "name": "Improve skin hydration",
+            "blocks": {
+                "value": {
+                    "name": "Value"
+                }
+            }
+        },
+        "qure-filters-offer-qure-filters": {
+            "name": "Qure filters",
+            "blocks": {
+                "shower-tab": {
+                    "name": "Shower tab block (image + video)"
+                },
+                "faucet-tab": {
+                    "name": "Faucet tab block (image + video)"
+                },
+                "shower-text-with-image": {
+                    "name": "Shower tab text with image"
+                },
+                "faucet-text-with-image": {
+                    "name": "Faucet tab text with image"
+                }
+
+            }
+        },
+        "text-with-image": {
+            "name": "Text with image"
+        },
+        "quiz": {
+            "name": "Quiz"
+        },
+        "text-header": {
+            "name": "Text header"
+        },
+        "fix-problem": {
+            "name": "Fix problem"
+        },
+        "logos": {
+            "name": "Logos"
+        },
+        "our-advisors": {
+            "name": "Our advisors"
+        },
+        "video-slider": {
+            "name": "Video slider",
+            "settings": {
+                "youtube_url": {
+                    "name": "YouTube URL"
+                }
+            }
+        },
+        "how-it-works": {
+            "name": "How it works",
+            "settings": {
+                "image-aging": {
+                    "name": "Image for pro-aging mode"
+                },
+                "image-breakout": {
+                    "name": "Image for anti-breakout mode"
+                },
+                "heading-aging-mode": {
+                    "name": "Heading for Pro-aging mode"
+                },
+                "heading-breakout-mode": {
+                    "name": "Heading for anti-breakout mode"
+                },
+                "text-aging-mode": {
+                    "name": "Text for Pro-aging mode"
+                },
+                "text-breakout-mode": {
+                    "name": "Text for anti-breakout mode"
+                }
+            }
+        },
+        "featured-product-bundle": {
+            "name": "Featured product bundle",
+            "blocks": {
+                "claim":{
+                    "name": "Claim offer",
+                    "settings":{
+                        "first-image":{
+                            "name": "First image"
+                        },
+                        "second-image":{
+                            "name": "Second image"
+                        },
+                        "first-image-text":{
+                            "name": "First image text"
+                        },
+                        "second-image-text":{
+                            "name": "Second image text"
+                        },
+                        "heading-scale":{
+                            "name": "Heading scale"
+                        },
+                        "scale-text":{
+                            "name": "Scale text"
+                        },
+                        "scale-value":{
+                            "name": "Scale value"
+                        },
+                        "review-image":{
+                            "name": "Review image"
+                        },
+                        "shipping-image":{
+                            "name": "Shipping image"
+                        },
+                        "shipping-image-text":{
+                            "name": "Shipping image text"
+                        },
+                        "review-image-text":{
+                            "name": "Review image text"
+                        }
+                    }
+                }
+            }
+        },
+        "video-review-slider": {
+            "name": "Video review slider"
+        },
+        "information-about-water": {
+            "name": "Information about water",
+            "blocks":{
+                "image-with-text":{
+                    "name": "Image with text"
+                }
+            }
+        },
+        "comparison-real-fake": {
+            "name": "Comparison real and fake",
+            "settings" :{
+                "heading-fake":{
+                    "name": "Heading for fake things"
+                },
+                "image-real":{
+                    "name": "image for real things"
+                }
+            },
+            "blocks":{
+                "points":{
+                    "name": "Compairing points",
+                    "settings":{
+                        "real-text": "Text for real thing",
+                        "fake-text": "Text for fake thing"
+                    }
+                }
+            }
+        },
+        "purchase-form-landing": {
+            "name": "Purchase form landing",
+            "settings": {
+                "form_name": "Form name",
+                "hide_types": "Hide product types"
+            },
+            "blocks": {
+                "product": {
+                    "settings": {
+                        "preorder_text": "Preorder text",
+                        "preorder_date_soldout": "Soldout date",
+                        "preorder_date_reserved": "Reserved date",
+                        "subscription_onetime_text": "Onetime text",
+                        "subscription_days_text": "Days text",
+                        "subscription_discount": "Discount"
+                    }
+                }
+            }
+        },
+        "purchase-form-bundle": {
+            "name": "Purchase form bundle",
+            "settings": {
+                "form_name": "Form name"
+            },
+            "blocks": {
+                "product": {
+                    "settings": {
+                        "preorder_text": "Preorder text",
+                        "preorder_date_soldout": "Soldout date",
+                        "preorder_date_reserved": "Reserved date",
+                        "included_text": "Included text",
+                        "total_treatments": "Total treatments",
+                        "total_treatments_info": "Use this setting to show the number of treatments in product variant",
+                        "left_items": "Left items",
+                        "left_items_info": "Use this setting to show the number of items left in stock."
+                    }
+                }
+            }
+        },
+        "purchase-form": {
+            "name": "Purchase form",
+            "settings": {
+                "form_name": "Form name"
+            },
+            "blocks": {
+                "product": {
+                    "settings": {
+                        "preorder_text": "Preorder text",
+                        "preorder_date_soldout": "Soldout date",
+                        "preorder_date_reserved": "Reserved date",
+                        "included_text": "Included text",
+                        "total_treatments": "Total treatments",
+                        "total_treatments_info": "Use this setting to show the number of treatments in product variant",
+                        "left_items": "Left items",
+                        "left_items_info": "Use this setting to show the number of items left in stock."
+                    }
+                }
+            }
+        }
+    },
+    "sections-group": {
+        "header": {
+            "name": "Header"
+        },
+        "footer": {
+            "name": "Footer"
+        }
+    }
+>>>>>>> production
 }

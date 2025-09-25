@@ -1,0 +1,71 @@
+{% doc %}
+  Renders a product/page slider section for the product-header/page-header section.
+
+  @param {object} - A product object.
+  @param {object} - A page object.
+  @param {string} class - A string value.
+
+  @example
+  {% render 'product-page-slider', product: product, page: page, class: '' %}
+{% enddoc %}
+
+{% assign total = 0 %}
+
+{% if product.metafields.custom.carousel_media.value != blank %}
+    {% for media in product.metafields.custom.carousel_media.value.image_or_video.value %}
+        {% assign total = total |  plus: 1 %}
+    {% endfor %}
+{% elsif page.metafields.custom.carousel_media.value != blank %}
+    {% for media in page.metafields.custom.carousel_media.value.image_or_video.value %}
+        {% assign total = total |  plus: 1 %}
+    {% endfor %}
+{% else %}
+    {% assign total = product.media.size %}
+{% endif %}
+
+{% if total > 3 %}
+    {% assign total = 4 %}
+{% endif %}
+
+<link rel="stylesheet" href="https://qureskincaredns-main.com/assets/shopify/css/product-page-slider.css">
+
+<slide-with-thumbs class="qure__swiper-wrapper {{ class }}">
+    <!-- Galler start-->
+    <div class="swiper qure__product-gallery qure__swiper-gallery" data-section-id="tp-gallery-desktop" data-mobile="3" data-tablet="{{ total }}" data-desktop="{{ total }}" data-autoplay="false" data-loop="false" data-spacing="0">
+        <div class="swiper-wrapper" style="--perload-gap: 10px" data-nav-thumb>
+            {% if product.metafields.custom.carousel_media.value != blank %}
+                {% render 'product-page-media-carousel', input_media_carousel: product.metafields.custom.carousel_media.value, classname: 'slide-image', size: '720x' %}
+            {% elsif page.metafields.custom.carousel_media.value != blank %}
+                {% render 'product-page-media-carousel', input_media_carousel: page.metafields.custom.carousel_media.value, classname: 'slide-image', size: '720x' %}
+            {% else %}
+                {% render 'product-media', product_media: product.media, classname: 'slide-image', size: '720x' %}
+            {% endif %}
+        </div>
+    </div>
+    {% if total > 1 %}
+        <!-- Galler End-->
+        <div class="swiper-thumbnail-with-arrow mt-3">
+            <!-- Thumbnails start-->
+            <div class="qure-swiper-arrow swiper-prev"><i class="fa-regular fa-angle-left"></i></div>
+            <div class="swiper qure__product-gallery  tp-thumbnails-desktop qure__swiper-gallery-thumbnails" data-section-id="tp-thumbnails-desktop" data-mobile="3" data-tablet="{{ total }}" data-desktop="{{ total }}" data-autoplay="false" data-loop="false" data-spacing="10">
+                <div class="swiper-wrapper">
+                    {% if product.metafields.custom.carousel_media.value != blank %}
+                        {% render 'product-page-media-carousel', input_media_carousel: product.metafields.custom.carousel_media.value, classname: 'slide-thumbnail', size: '240x' %}
+                    {% elsif page.metafields.custom.carousel_media.value != blank %}
+                        {% render 'product-page-media-carousel', input_media_carousel: page.metafields.custom.carousel_media.value, classname: 'slide-thumbnail', size: '240x' %}
+                    {% else %}
+                        {% render 'product-media', product_media: product.media, classname: 'slide-thumbnail', size: '240x' %}
+                    {% endif %}
+                </div>
+            </div>
+            <div class="qure-swiper-arrow swiper-next"><i class="fa-regular fa-angle-right"></i></div>
+        </div>
+        <!-- Thumbnails End-->
+    {% endif %}
+</slide-with-thumbs>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        loadScriptOnce('slider-with-thumb', 'https://qureskincaredns-main.com/assets/js/slider-with-thumb.js');
+    });
+</script>

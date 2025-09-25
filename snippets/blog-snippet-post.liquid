@@ -1,0 +1,63 @@
+{% doc %}
+Renders a blog posts
+{% enddoc %}
+
+<div class="col-md-8">
+    <h2 class="banner-text--heading mb-30">{{ 'blog.choose.header' | t }}</h2>
+    <div class="d-flex flex-column flex-md-row gap-4 gap-md-5 mw" style="--mw:648px;">
+        {% for link in linklists.blog-menu.links offset:1 %}
+            <a href="{{ link.url }}" class="choose_blog_topic position-relative">
+                {% case forloop.index %}
+                    {% when 1 %}  
+                        <img src="{{ 'blog.blog-post.settings.image_1' | t }}" alt="{{ link.title | escape }}" class="img-fluid d-none d-md-block">
+                        <img src="{{ 'blog.blog-post.settings.image_mobile_1' | t }}" alt="{{ link.title | escape }}" class="img-fluid d-md-none">
+                    {% when 2 %}
+                        <img src="{{ 'blog.blog-post.settings.image_2' | t }}" alt="{{ link.title | escape }}" class="img-fluid d-none d-md-block">
+                        <img src="{{ 'blog.blog-post.settings.image_mobile_2' | t }}" alt="{{ link.title | escape }}" class="img-fluid d-md-none">
+                    {% when 3 %}
+                        <img src="{{ 'blog.blog-post.settings.image_3' | t }}" alt="{{ link.title | escape }}" class="img-fluid d-none d-md-block">
+                        <img src="{{ 'blog.blog-post.settings.image_mobile_3' | t }}" alt="{{ link.title | escape }}" class="img-fluid d-md-none">
+                {% endcase %}
+                <h6>{{ link.title }}</h6>
+            </a>
+        {% endfor %}
+    </div>
+    {%- paginate blogs[blog_handle].articles by limit -%}
+        <div class="articles mt-40">
+            <h2 class="banner-text--heading mb-30">{{ blogs[blog_handle].title }}</h2>
+            <div class="row g-5">
+                {% for article in blogs[blog_handle].articles %}
+                    <div class="col-md-6 col-lg-4">
+                        <div class="article">
+                            {% if article.image != blank %}
+                                <div class="article_img position-relative"> 
+                                    <a href="{{ article.url }}" aria-label="{{ article.title | escape }}">
+                                        <img src="{{ article.image | image_url: width: 400, height: 300, crop: 'center' }}" alt="{{ article.image.alt | escape }}" class="img-fluid w-100">
+                                    </a>
+                                    <p class="tag_name">#{{ blogs[blog_handle].title }}</p>
+                                </div>
+                            {% endif %}
+                            <div class="article_content border border-top-0 p-24">
+                                <div class="d-flex justify-content-between mb-15 gap-3 flex-wrap gap-3 flex-wrap">
+                                    <div class="article_date">
+                                        <p>{{ article.published_at | date: '%B %d, %Y' }}</p>
+                                    </div>
+                                    <div class="read_time">
+                                        <p>{{ 'blog.choose.read_time' | t }}</p>
+                                    </div>
+                                </div>
+                                <div class="title_bt_wrap">
+                                    <p class="article_title">{{ article.title | truncatewords: 8 }}</p>
+                                    <a href="{{ article.url }}" class="btn mt-md-20 mt-15">{{ 'blog.choose.read_more' | t }}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+        {%- if paginate.pages > 1 -%}
+            {% render 'blog-snippet-pagination', paginate: paginate %}
+        {%- endif -%}
+    {%- endpaginate -%}
+</div>

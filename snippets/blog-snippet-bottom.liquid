@@ -1,0 +1,64 @@
+{% doc %}
+Renders a blog post bottom spnippet 
+{% enddoc %}
+
+{% if blogs[blog_handle].articles.size > 0  %}
+<link rel="stylesheet" href="https://qureskincaredns-main.com/sections/isolated/review-slider/card-slide.css" />
+    <div class="qure__trusted-reviews qure__section"
+        style="--section-padding-top: 80px;--section-padding-bottom: 40px;--section-padding-top-mob: 50px;--section-padding-bottom-mob: 30px;">
+        <div class="container">
+            <div class="qure__section-header mb-30 mb-md-30">
+                <h2 class="qure__section-heading">{{ 'blog.blog-bottom.header' | t }}</h2>
+            </div>
+        </div>
+        <div class="container offset-container-mobile">
+            <div class="swiper qure__swiper" id="qure__swiper-trusted-slider" data-section-id="trusted-slider"
+                data-autoplay="false" data-loop="false" data-mobile="1.1" data-tablet="2" data-desktop="3"
+                data-spacing="30" data-pagination-fraction="true" data-arrowleft="trusted-slider-arrow-left"
+                data-arrowright="trusted-slider-arrow-right">
+                <div class="swiper-wrapper">
+                    {% for article in blogs[blog_handle].articles limit: 9 %}
+                        <div class="swiper-slide">
+                            <div class="article">
+                                <div class="article_img position-relative">
+                                    <a href="{{ article.url }}" aria-label="{{ article.title | escape }}">
+                                        <img src="{{ article.image | image_url }}" alt="{{ article.image.alt | escape }}" class="img-fluid w-100">
+                                    </a>
+                                    <p class="tag_name">#{{ blogs[blog_handle].title }}</p>
+                                </div>
+                                <div class="article_content border border-top-0 p-24">
+                                    <div class="d-flex justify-content-between mb-15">
+                                        <div class="article_date">
+                                            <p>{{ article.published_at | date: '%B %d, %Y' }}</p>
+                                        </div>
+                                        <div class="read_time">
+                                            <p>{{ 'blog.choose.read_time' | t }}</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-between gap-5 title_bt_wrap">
+                                        <p class="article_title">{{ article.title | truncatewords: 8 }}</p>
+                                        <a href="{{ article.url }}" aria-label="{{ article.title | escape }}" class="btn">{{ 'blog.choose.read_more' | t }}</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+                <div class="swiper-arrows-with-pagination d-flex align-items-center justify-content-center gap-4 mt-30">
+                    <div class="qure-swiper-button-prev qure-swiper-arrow trusted-slider-arrow-left"><i
+                            class="fa-regular fa-angle-left"></i>
+                    </div>
+                    <div class="swiper-pagination position-relative bottom-0 w-auto"></div>
+                    <div class="qure-swiper-button-next qure-swiper-arrow trusted-slider-arrow-right"><i
+                            class="fa-regular fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            loadScriptOnce('main-slider', 'https://qureskincaredns-main.com/assets/js/main-slider.js');
+        });
+    </script>
+{% endif %}
