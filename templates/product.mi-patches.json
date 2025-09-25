@@ -486,8 +486,8 @@
             "heading-mobile": "Protect",
             "text": "<p>After 2 hours, ingredients are sealed in, visibly boosting glow and smoothing skin.</p>",
             "text-mobile": "<p>After 2 hours, ingredients are sealed in, visibly boosting glow and smoothing skin.</p>",
-            "image": "shopify://shop_images/a-3.webp",
-            "image-mobile": "shopify://shop_images/a-3-m.webp"
+            "image": "shopify://shop_images/Img_17.png",
+            "image-mobile": "shopify://shop_images/1_2.png"
           }
         }
       },
@@ -744,7 +744,7 @@
       "settings": {
         "heading": "Not your ordinary eye patches",
         "text": "",
-        "image_compare_check": "shopify://shop_images/micro-infusion-targeted-patches_9af6ae15-4e7b-465c-8205-daffe74d0cb0.webp",
+        "image_compare_check": "shopify://shop_images/Frame_1073714807.png",
         "image_compare_cross": "shopify://shop_images/alternative-eye-patches.webp"
       }
     },

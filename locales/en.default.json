@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "collection": {
       "bestseller": "Bestseller",
@@ -556,6 +556,13 @@
       "community": {
         "header_html": "<strong>Learn more and share <br> your skincare journey</strong>",
         "button_label": "Join Our VIP Community"
+      }
+    }
+  },
+  "shopify": {
+    "checkout": {
+      "contact": {
+        "address1_label": "Address (We are not able to ship to PO boxes)"
       }
     }
   }

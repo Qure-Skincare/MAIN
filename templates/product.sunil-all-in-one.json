@@ -579,14 +579,14 @@
           "type": "image_with_text",
           "settings": {
             "text": "Blemishes",
-            "image": "shopify://shop_images/blemishes.webp"
+            "image": "shopify://shop_images/Frame_1073714840_5.svg"
           }
         },
         "image_with_text_NWgD3k": {
           "type": "image_with_text",
           "settings": {
             "text": "Rough Texture",
-            "image": "shopify://shop_images/Frame_1073714840_3.svg"
+            "image": "shopify://shop_images/Frame_1073714840_6.svg"
           }
         }
       },
