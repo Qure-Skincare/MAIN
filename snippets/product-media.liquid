@@ -1,25 +1,3 @@
-<<<<<<< HEAD
-{% doc %}
-  Renders a product media array.
-
-  @param {array} product_media - A product media array.
-  @param {string} classname - A string value.
-  @param {string} size - A string value.
-
-  @example
-  {% render 'product-media', product_media: product.media, classname: 'slide-thumbnail', size: '240x' %}
-{% enddoc %}
-
-
-{% if product_media %}
-    {% for media in product_media %}
-        <div class="swiper-slide">
-            <div class="{{ classname }}">
-                <img src="{{ media | img_url: size }}" alt="{{ media.alt | escape }}" class="img-fluid" />
-            </div>
-        </div>
-    {% endfor %}
-=======
 {% doc %}
   Renders a product media array for the product section.
 
@@ -57,5 +35,4 @@
             </div>
         {% endif %}
     {% endfor %}
->>>>>>> production
 {% endif %}

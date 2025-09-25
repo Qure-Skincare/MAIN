@@ -1,27 +1,3 @@
-<<<<<<< HEAD
-{% for link in linklists['main-menu'].links %}
-    {% if link.title == label %}
-        {% if link.links.size > 0 %}
-            {%- for __link in link.links -%}
-                {% if column != blank %}
-                    {% if __link.title == column %}
-                        {%- for __child in __link.links -%}
-                            <li class="submenu-item"><a href="{{ __child.url }}" aria-label="{{ __child.title | escape }}" role="link" class="submenu-menu-link">{{ __child.title }}</a></li>
-                        {%- endfor -%}
-                    {% endif %}
-                {% else %}
-                    {%- for __child in __link.links -%}
-                        <li class="submenu-item"><a href="{{ __child.url }}" aria-label="{{ __child.title | escape }}" role="link" class="submenu-menu-link">{{ __child.title }}</a></li>
-                    {%- endfor -%}
-                {% endif %}
-            {%- endfor -%}
-        {% else %}
-            <li class="level0 quer__menu-parent">
-                <a href="{{ link.url }}" aria-label="{{ link.title | escape }}" class="position-relative" role="link"><span>{{ 'header.settings.navigation_header_1' | t }}</span></a>
-            </li>
-        {% endif %}
-    {% endif %}
-=======
 {% doc %}
   Renders a header menu item for the header section.
 
@@ -53,5 +29,4 @@
             </li>
         {% endif %}
     {% endif %}
->>>>>>> production
 {% endfor %}
