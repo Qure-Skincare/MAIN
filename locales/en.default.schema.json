@@ -524,6 +524,12 @@
         "page-banner": {
             "name": "Page banner"
         },
+        "index-banner-with-text": {
+            "name": "Index banner"
+        },
+        "index-banner-with-text-second": {
+            "name": "Index banner second"
+        },
         "bundle-banner": {
             "name": "Bundle banner"
         },

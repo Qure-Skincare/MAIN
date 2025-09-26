@@ -9,12 +9,129 @@
  */
 {
   "sections": {
-    "main": {
+    "product": {
       "type": "product",
+      "settings": {}
+    },
+    "slider_featured_in_HDaUTN": {
+      "type": "slider-featured-in",
+      "blocks": {
+        "slider_rczj6t": {
+          "type": "slider",
+          "settings": {
+            "heading": "“The professional grade is the perfect addition to any at-home skincare routine.”",
+            "image": "shopify://shop_images/vogue-black_4651a572-6206-4c65-a29d-e5edf1697ad2.svg"
+          }
+        },
+        "slider_WhtWNQ": {
+          "type": "slider",
+          "settings": {
+            "heading": "“My skin actually seems considerable brighter and smoother! It’s simple, fast, and effective enough to become a daily habit.”",
+            "image": "shopify://shop_images/women-health.svg"
+          }
+        },
+        "slider_rwJFRA": {
+          "type": "slider",
+          "settings": {
+            "heading": "“The results are blatant — my glow after using the treatment speaks for itself. You'll notice hydrated, radiant, and healthy-looking skin.”",
+            "image": "shopify://shop_images/Popsugar_logo.svg"
+          }
+        },
+        "slider_GcMQyX": {
+          "type": "slider",
+          "settings": {
+            "heading": "“The combination of colors allows you to customize which lights are used, maximizing its benefits to help your skin...”",
+            "image": "shopify://shop_images/cosmopolitan_adf408aa-05b0-45c0-9349-a0f1f360ba73.svg"
+          }
+        },
+        "slider_xNnbxX": {
+          "type": "slider",
+          "settings": {
+            "heading": "“Q-Rejuvalight Pro harnesses the power of lights from blue to infrared to address nearly every skincare concern you could imagine.”",
+            "image": "shopify://shop_images/gq.svg"
+          }
+        }
+      },
+      "block_order": [
+        "slider_rczj6t",
+        "slider_WhtWNQ",
+        "slider_rwJFRA",
+        "slider_GcMQyX",
+        "slider_xNnbxX"
+      ],
+      "name": "t:sections.slider-featured-in.name",
+      "settings": {}
+    },
+    "trusted_reviews_HRLHtt": {
+      "type": "trusted-reviews",
+      "blocks": {
+        "slider_iCfR9d": {
+          "type": "slider",
+          "settings": {
+            "heading": "My skin returned to life!",
+            "text": "<p>“I just turned 57 years. My skin was extremely dry and while using this product my skin RETURNED to LIFE! I am so impressed with it! You will not regret in purchasing it. I really see the change in my skin. Outstanding job QURE!”</p>",
+            "compare_image": "shopify://shop_images/ellie-v.webp",
+            "country_image": "shopify://shop_images/america_f.webp",
+            "username": "<p>Ellie V.</p>",
+            "product_url": "#",
+            "product_heading": "Ellie uses...",
+            "product_text": "Micro-Infusion Facial System",
+            "product_image": "shopify://shop_images/micro-infusion-facial-system_f0e75ccc-2fd2-48d6-aea7-fe662896adaa.webp"
+          }
+        },
+        "slider_xqHC8P": {
+          "type": "slider",
+          "settings": {
+            "heading": "Can’t go a day without it",
+            "text": "<p>“Straight away I noticed results with Qure, after the first week I had no active breakouts anymore. People ask me now how have I got my skin to be hydrated, acne-free, looking bright with no redness. I'm so reliant on the Qure mask now. I don't think I can go a day without using it.”</p>",
+            "compare_image": "shopify://shop_images/anton-m.webp",
+            "country_image": "shopify://shop_images/australia_f.webp",
+            "username": "<p>Anton M.</p>",
+            "product_url": "#",
+            "product_heading": "Anton uses...",
+            "product_text": "Q-Rejuvalight Pro LED Mask",
+            "product_image": "shopify://shop_images/q-rejuvalight-pro-led-mask.webp"
+          }
+        },
+        "slider_ea3hLd": {
+          "type": "slider",
+          "settings": {
+            "heading": "Works better than I imagined!",
+            "text": "<p>“I am really stunned by how well this product works. I have had professional micro-needling and I wanted the benefits without the downtime. I did my treatment, went to bed and woke up the next morning and was ready to go. My skin looks better than it has in years.”</p>",
+            "compare_image": "shopify://shop_images/jennifer-n.webp",
+            "country_image": "shopify://shop_images/america_f.webp",
+            "username": "<p>Jennifer N.</p>",
+            "product_url": "#",
+            "product_heading": "Jennifer uses...",
+            "product_text": "Micro-Infusion Facial System",
+            "product_image": "shopify://shop_images/micro-infusion-facial-system_f0e75ccc-2fd2-48d6-aea7-fe662896adaa.webp"
+          }
+        }
+      },
+      "block_order": [
+        "slider_iCfR9d",
+        "slider_xqHC8P",
+        "slider_ea3hLd"
+      ],
+      "name": "t:sections.trusted-reviews.name",
+      "settings": {
+        "background_color": "#ffffff",
+        "heading": "Results you’ll see with your own eyes",
+        "text": "",
+        "text_mobile": "",
+        "button_label": "",
+        "button_url": ""
+      }
+    },
+    "you_may_also_like_HZi1bC": {
+      "type": "product-you-may-also-like",
       "settings": {}
     }
   },
   "order": [
-    "main"
+    "product",
+    "slider_featured_in_HDaUTN",
+    "trusted_reviews_HRLHtt",
+    "you_may_also_like_HZi1bC"
   ]
 }

@@ -11,6 +11,7 @@
   "sections": {
     "collection": {
       "bestseller": "Bestseller",
+      "trending": "Trending",
       "shopby": "Shop by",
       "swipe_for_more": "Swipe for more",
       "uses": "uses..."
@@ -273,6 +274,9 @@
         "hours": "HOURS",
         "minutes": "MINUTES",
         "seconds": "SECONDS"
+      },
+      "you-may-also-like": {
+        "header": "You may also like..."
       }
     }
   },
@@ -505,6 +509,34 @@
       "rights": {
         "header": "© 2025 Qure™ Skincare. All rights reserved.",
         "text": "Our products are not intended to diagnose, cure, or prevent specific diseases of medical conditions. The Qure website is for education and information purposes only and is not intended as medical advice or a substitute for medical advice."
+      }
+    }
+  },
+  "footer-perks": {
+    "settings": {
+      "slider-1": {
+        "header": "Free Worldwide Shipping",
+        "text": "Enjoy free delivery when you spend $100 USD or more.",
+        "text-mobile": "Free shipping on orders over $100 USD.",
+        "image": "box.svg"
+      },
+      "slider-2": {
+        "header": "Easy 30-Day Returns",
+        "text": "Changed your mind? Return it within 30 days for a full refund.",
+        "text-mobile": "Return your items within 30 days for a full refund.",
+        "image": "restart.svg"
+      },
+      "slider-3": {
+        "header": "Qure Rewards",
+        "text": "Earn points every time you shop for exclusive gifts and discounts.",
+        "text-mobile": "Earn points for exclusive perks with every purchase",
+        "image": "gift.svg"
+      },
+      "slider-4": {
+        "header": "24/7 Customer Support",
+        "text": "Our team is ready to help you, anytime you need.",
+        "text-mobile": "Have a question? Our team is here to help.",
+        "image": "headphone.svg"
       }
     }
   },

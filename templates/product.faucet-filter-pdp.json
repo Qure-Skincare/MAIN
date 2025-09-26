@@ -154,6 +154,25 @@
             "preorder_date_reserved": "",
             "preorder_percent": 55
           }
+        },
+        "product_DEgEkN": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "faucet-filter",
+            "product_variant_id": 46852913987823,
+            "product_selling_plan": 6190465263,
+            "preselected": false,
+            "heading": "Silver",
+            "subheading": "",
+            "image": "shopify://shop_images/faucet_silver.webp",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
         }
       },
       "block_order": [
@@ -162,7 +181,8 @@
         "type_hHPdgJ",
         "product_type_QKQhNr",
         "product_gbPf3J",
-        "product_NEgEkN"
+        "product_NEgEkN",
+        "product_DEgEkN"
       ],
       "settings": {
         "form_name": "purchase-form-landing",
@@ -894,11 +914,20 @@
             "heading": "Black",
             "image": "shopify://shop_images/black_swatch.webp"
           }
+        },
+        "variant_46xfGi": {
+          "type": "variant",
+          "disabled": true,
+          "settings": {
+            "heading": "Silver",
+            "image": "shopify://shop_images/silver_swatch.webp"
+          }
         }
       },
       "block_order": [
         "variant_43xxGi",
-        "variant_45xfGi"
+        "variant_45xfGi",
+        "variant_46xfGi"
       ],
       "name": "t:sections.sticky-button-variants.name",
       "settings": {

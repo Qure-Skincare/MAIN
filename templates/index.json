@@ -82,12 +82,28 @@
     },
     "index_banner_with_text_TNGNLJ": {
       "type": "index-banner-with-text",
-      "name": "t:sections.page-banner.name",
+      "name": "t:sections.index-banner-with-text.name",
       "settings": {
         "heading": "Get clinic-level results from home – minus the ‘clinical’ costs.",
         "text": "<p>Join <strong>30,000+ customers</strong> feeling more confident.</p>",
         "image": "shopify://shop_images/hero.webp",
         "image_mobile": "shopify://shop_images/hero-mob.webp",
+        "button_label": "Shop All Best Sellers",
+        "button_url": "shopify://collections/best-sellers",
+        "button_label_mobile": "Shop Best Sellers",
+        "button_url_mobile": "https://qureskincare.com/collections/best-sellers"
+      }
+    },
+    "index_banner_with_text_second_TNGNLJ": {
+      "type": "index-banner-with-text-second",
+      "disabled": true,
+      "name": "t:sections.index-banner-with-text-second.name",
+      "settings": {
+        "heading": "Get clinic-level results from home – minus the ‘clinical’ costs.",
+        "text": "<p>Get a <strong>FREE</strong> pink headband and cosmetic pouch <strong>with every purchase*</strong></p>",
+        "subtext": "<p>*To support breast cancer research to prevent, detect, stop and treat breast cancer, Qure will donate $2 from every order to the National Breast Cancer Foundation.</p>",
+        "image": "shopify://shop_images/promo-banner.webp",
+        "image_mobile": "shopify://shop_images/promo-banner-mob.webp",
         "button_label": "Shop All Best Sellers",
         "button_url": "shopify://collections/best-sellers",
         "button_label_mobile": "Shop Best Sellers",
@@ -745,6 +761,7 @@
   "order": [
     "index-mobile-category-slider",
     "index_banner_with_text_TNGNLJ",
+    "index_banner_with_text_second_TNGNLJ",
     "bundle_banner_eEa7XN",
     "slider_featured_in_KgaUTN",
     "trusted_reviews_ecfpDp",

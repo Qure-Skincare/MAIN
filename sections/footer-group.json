@@ -11,6 +11,10 @@
   "type": "footer",
   "name": "t:sections-group.footer.name",
   "sections": {
+    "footer-perks": {
+      "type": "footer-perks",
+      "settings": {}
+    },
     "footer-form": {
       "type": "footer-form",
       "settings": {}
@@ -26,11 +30,11 @@
     },
     "footer-gdpr": {
       "type": "footer-gdpr",
-      "disabled": false,
       "settings": {}
     }
   },
   "order": [
+    "footer-perks",
     "footer-form",
     "footer",
     "footer-drawer",
