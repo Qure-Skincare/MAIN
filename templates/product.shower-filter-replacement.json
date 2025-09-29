@@ -237,7 +237,7 @@
       "name": "t:sections.banner-with-text.name",
       "settings": {
         "heading": "Maximum filtration, minimal effort",
-        "text": "<p>The Qure Shower Filter is designed to <strong>remove up to 99% of chlorine</strong> – and other hard water nasties like copper, calcium, and lead – for healthy skin and hair.</p><p>For optimized showering that leaves you feeling (and looking) your best, swap out the filter cartridge every 3 months.</p><p>This Refill seamlessly fits the Qure Shower Filter system, providing long-lasting filtration benefits.</p>",
+        "text": "<p>The Qure Shower Filter is designed to <em>remove up to 99% of chlorine</em> – and other hard water nasties like copper, calcium, and lead – for healthy skin and hair.</p><p>For optimized showering that leaves you feeling (and looking) your best, swap out the filter cartridge every 3 months.</p><p>This Refill seamlessly fits the Qure Shower Filter system, providing long-lasting filtration benefits.</p>",
         "quote": "",
         "quote-mobile": "",
         "image_position": "left",

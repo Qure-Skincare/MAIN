@@ -660,7 +660,7 @@
       "name": "t:sections.banner-with-text.name",
       "settings": {
         "heading": "Qure mobile app",
-        "text": "<p>[strong]The only FDA-cleared LED light therapy mask with an app.[/strong]</p><p>Your skin is unique, so your treatment should be too.</p><p>Choose between <strong>three treatment modes</strong>, “Skin Rejuvenating”, “Skin Clearing” or custom treatment zones. Select a treatment mode on five different facial areas to <strong>treat and target what your skin needs today. </strong></p><p>Never miss a treatment with Qure mobile app planner and phone reminders.</p>",
+        "text": "<p>[strong]The only FDA-cleared LED light therapy mask with an app.[/strong]</p><p>Your skin is unique, so your treatment should be too.</p><p>Choose between <em>three treatment modes</em>, “Skin Rejuvenating”, “Skin Clearing” or custom treatment zones. Select a treatment mode on five different facial areas to <em>treat and target what your skin needs today. </em></p><p>Never miss a treatment with Qure mobile app planner and phone reminders.</p>",
         "quote": "",
         "quote-mobile": "",
         "image_position": "left",

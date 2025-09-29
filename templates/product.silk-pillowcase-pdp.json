@@ -116,7 +116,7 @@
       "name": "t:sections.banner-with-text.name",
       "settings": {
         "heading": "Meet the easiest skincare swap you'll ever make",
-        "text": "<p>You spend over 2,500 hours a year with your pillow, so what it’s made of matters.</p><p>Our silk pillowcase <strong>reduces friction on your skin and hair</strong> while you sleep, helping prevent sleep creases, minimize tugging on delicate facial skin, and reduce breakage and frizz. It’s a small switch that supports cell renewal overnight—and keeps both your skin and hair looking smoother over time.</p>",
+        "text": "<p>You spend over 2,500 hours a year with your pillow, so what it’s made of matters.</p><p>Our silk pillowcase <em>reduces friction on your skin and hair</em> while you sleep, helping prevent sleep creases, minimize tugging on delicate facial skin, and reduce breakage and frizz. It’s a small switch that supports cell renewal overnight—and keeps both your skin and hair looking smoother over time.</p>",
         "quote": "",
         "quote-mobile": "",
         "image_position": "left",
