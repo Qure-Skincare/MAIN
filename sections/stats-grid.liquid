@@ -12,13 +12,13 @@ Renders a stats grid secion
 <div class="qure__section fastest_growing_startup bg-light text-center"
     style="--section-padding-top: 60px; --section-padding-bottom: 60px; --section-padding-top-mob: 40px; --section-padding-bottom-mob: 40px;">
     <div class="container mw mx-auto" style="--mw:1040px">
-        <div class="row gy-5 mb-50">
+        <div class="row gy-5{% if has_quote %} mb-50{% endif %}">
             {% for block in section.blocks %}
                 {% if block.type == 'list' %}
                     <div class="col-6 col-md-3 px-2 px-md-3">
                         <div class="fastest_growing_item">
                             {% if block.settings.heading != blank %}
-                                <h3 style="--font-h3:46px;--font-h3-mob:32px;">{{ block.settings.heading 
+                                <h3>{{ block.settings.heading 
                                     | replace: '<p>', '' 
                                     | replace: '</p>', '' 
                                     | replace: '<strong>', '<span>'

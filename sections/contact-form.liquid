@@ -60,27 +60,32 @@ Renders a contact form section.
                 </div>
                 <div class="col-md-12 custom__block">
                     <div class="qure__select-wrapper">
-                        <select class="form-control synced-select related-select" name="contact[about]">
-                            {% for block in section.blocks %}
-                                {% if block.type == 'topic' %}
-                                    {% if block.settings.text != blank %}
-                                        <option value="{{ block.settings.text | downcase | replace: ' ', '_' }}">{{ block.settings.text }}</option>
-                                    {% endif %}
-                                {% endif %}
-                            {% endfor %}
+                        <select class="form-control synced-select related-select">
+                            <option value="">{{ 'sections.contact-form.topic' | t }}</option>
+                            <option value="Order_Tracking">{{ 'sections.contact-form.order_tracking' | t }}</option>
+                            <option value="Order_Issue">{{ 'sections.contact-form.order_issue' | t }}</option>
+                            <option value="product__Inquiry">{{ 'sections.contact-form.product_inquiry' | t }}</option>
+                            <option value="Discounts_and_Promotions">{{ 'sections.contact-form.discounts_and_promotions' | t }}</option>
+                            <option value="Subscriptions">{{ 'sections.contact-form.subscriptions' | t }}</option>
+                            <option value="Rewards">{{ 'sections.contact-form.rewards' | t }}</option>
+                            <option value="Qure_App">{{ 'sections.contact-form.qure_app' | t }}</option>
+                            <option value="Something_else">{{ 'sections.contact-form.something_else' | t }}</option>
                         </select>
                     </div>
                 </div>
                 <div class="col-md-12 custom__block related-field" id="product__Inquiry">
                     <div class="qure__select-wrapper">
-                        <select class="form-control synced-select" placeholder="Topic" name="contact[product]">
-                            {% for block in section.blocks %}
-                                {% if block.type == 'product' %}
-                                    {% if block.settings.text != blank %}
-                                        <option value="{{ block.settings.text | downcase | replace: ' ', '_' }}">{{ block.settings.text }}</option>
-                                    {% endif %}
-                                {% endif %}
-                            {% endfor %}
+                        <select class="form-control synced-select" placeholder="Topic">
+                            <option>{{ 'sections.contact-form.product' | t }}</option>
+                            <option value="Micro-Infusion Facial System">{{ 'sections.contact-form.micro_infusion_facial_system' | t }}</option>
+                            <option value="Q-Rejuvalight Pro Facewear">{{ 'sections.contact-form.qure_rejuvalight_pro_facewear' | t }}</option>
+                            <option value="Neck & Décolletage LED Device">{{ 'sections.contact-form.neck_decolletage_led_device' | t }}</option>
+                            <option value="Shower Filter">{{ 'sections.contact-form.shower_filter' | t }}</option>
+                            <option value="Faucet Filter">{{ 'sections.contact-form.faucet_filter' | t }}</option>
+                            <option value="Micro-Infusion Target Patches">{{ 'sections.contact-form.micro_infusion_target_patches' | t }}</option>
+                            <option value="All-In-One Face Serum">{{ 'sections.contact-form.all_in_one_face_serum' | t }}</option>
+                            <option value="Dermal Mist">{{ 'sections.contact-form.dermal_mist' | t }}</option>
+                            <option value="Silk Pillowcase">{{ 'sections.contact-form.silk_pillowcase' | t }}</option>
                         </select>
                     </div>
                 </div>
@@ -96,7 +101,7 @@ Renders a contact form section.
                     </div>
                 </div>
                 <div class="col-md-12 custom__block">
-                    <button type="submit" class="btn btn--primary px-50 d-block d-md-inline-block text-center contact-submit">Send</button>
+                    <button type="submit" class="btn btn--primary px-50 d-block d-md-inline-block text-center contact-submit">{{ 'sections.contact-form.send_text' | t }}</button>
                 </div>
             </div>
         {% endform %}
@@ -131,28 +136,6 @@ Renders a contact form section.
     }
     ],
     "blocks": [
-    {
-        "type": "topic",
-        "name": "t:common.topic",
-        "settings": [
-        {
-            "type": "text",
-            "id": "text",
-            "label": "t:common.text"
-        }
-        ]
-    },
-    {
-        "type": "product",
-        "name": "t:common.product",
-        "settings": [
-        {
-            "type": "text",
-            "id": "text",
-            "label": "t:common.text"
-        }
-        ]
-    },
     {
         "type": "contact",
         "name": "t:common.contact",

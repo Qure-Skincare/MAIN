@@ -24,7 +24,26 @@
     },
     "contact-form": {
       "success_text": "Thanks for contacting us. We'll get back to you as soon as possible.",
-      "send_text": "Send"
+      "send_text": "Send",
+      "topic": "Topic",
+      "order_tracking": "Order Tracking",
+      "order_issue": "Order Issue",
+      "product_inquiry": "Product Inquiry",
+      "discounts_and_promotions": "Discounts and Promotions",
+      "subscriptions": "Subscriptions",
+      "rewards": "Rewards",
+      "qure_app": "Qure App",
+      "something_else": "Something else",
+      "product": "Product",
+      "micro_infusion_facial_system": "Micro-Infusion Facial System",
+      "qure_rejuvalight_pro_facewear": "Q-Rejuvalight Pro Facewear",
+      "neck_decolletage_led_device": "Neck & Décolletage LED Device",
+      "shower_filter": "Shower Filter",
+      "faucet_filter": "Faucet Filter",
+      "micro_infusion_target_patches": "Micro-Infusion Target Patches",
+      "all_in_one_face_serum": "All-in-One Face Serum",
+      "dermal_mist": "Dermal Mist",
+      "silk_pillowcase": "Silk Pillowcase"
     },
     "how-it-works": {
       "aging_mode_button": "Skin Rejuvenating",

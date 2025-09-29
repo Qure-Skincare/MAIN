@@ -247,7 +247,7 @@
       "settings": {
         "heading": "Do you know what’s in your water?",
         "text": "<p>Research has shown tap water is contaminated with over 320* chemicals that your skin is absorbing daily. These micro-contaminants in water can clog pores, dry out and irritate sensitive skin.</p>",
-        "button_label": "Get a Free Water Report",
+        "button_label": "",
         "button_url": ""
       }
     },

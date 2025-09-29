@@ -16,9 +16,9 @@
         "heading": "Easy Returns & Exchanges",
         "text": "Shop with confidence at Qure",
         "sub_text": "",
-        "button": "Shop All Best Sellers",
+        "button": "",
         "button_url": "",
-        "button_mobile": "Shop Best Sellers",
+        "button_mobile": "",
         "button_url_mobile": "",
         "image": "shopify://shop_images/return-hero.webp",
         "image_mobile": "shopify://shop_images/return-hero-mob.webp"
@@ -35,7 +35,7 @@
         "image_position": "right",
         "sub_text": "",
         "image": "shopify://shop_images/hf-returns.webp",
-        "button_label": "Shop Now",
+        "button_label": "",
         "button_url": "",
         "wistia_url": ""
       }
@@ -51,7 +51,7 @@
         "image_position": "left",
         "sub_text": "",
         "image": "shopify://shop_images/hf-policy.webp",
-        "button_label": "Shop Now",
+        "button_label": "",
         "button_url": "",
         "wistia_url": ""
       }
@@ -154,9 +154,9 @@
         "heading": "Feeling good in your skin is so much more than skin deep.",
         "text": "",
         "sub_text": "",
-        "button": "Shop All Best Sellers",
+        "button": "",
         "button_url": "",
-        "button_mobile": "Shop Best Sellers",
+        "button_mobile": "",
         "button_url_mobile": "",
         "image": "shopify://shop_images/skin-d.webp",
         "image_mobile": "shopify://shop_images/skin-m.webp"

@@ -16,9 +16,9 @@
         "heading": "We're rethinking skincare",
         "text": "Bringing you clinical-grade technologies and products for DIY skin therapies, in the comfort of your own home, and at a price everyone can afford.",
         "sub_text": "",
-        "button": "Shop All Best Sellers",
+        "button": "",
         "button_url": "",
-        "button_mobile": "Shop Best Sellers",
+        "button_mobile": "",
         "button_url_mobile": "",
         "image": "shopify://shop_images/our_story_banner.webp",
         "image_mobile": "shopify://shop_images/our_story_banner_mob.webp"
@@ -86,7 +86,7 @@
         "image_position": "right",
         "sub_text": "",
         "image": "shopify://shop_images/skincare_revolution.webp",
-        "button_label": "Shop Now",
+        "button_label": "",
         "button_url": "",
         "wistia_url": ""
       }
@@ -143,7 +143,7 @@
         "image_position": "left",
         "sub_text": "",
         "image": "shopify://shop_images/skincare_rev.webp",
-        "button_label": "Shop Now",
+        "button_label": "",
         "button_url": "",
         "wistia_url": ""
       }
@@ -155,9 +155,9 @@
         "heading": "Feeling good in your skin is so much more than skin deep.",
         "text": "",
         "sub_text": "",
-        "button": "Shop All Best Sellers",
+        "button": "",
         "button_url": "",
-        "button_mobile": "Shop Best Sellers",
+        "button_mobile": "",
         "button_url_mobile": "",
         "image": "shopify://shop_images/feeling_good_banner.webp",
         "image_mobile": "shopify://shop_images/feeling_good_banner_mob.webp"

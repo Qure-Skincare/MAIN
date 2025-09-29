@@ -11,6 +11,9 @@
   "sections": {
     "page_banner_QDmRGR": {
       "type": "page-banner",
+      "custom_css": [
+        "h2.ctm-width.ctm-color.d-none.d-md-block {font-size: var(--font-h2, 46px); list-style: var(--font-h2-lh, 52px); margin-top: 52px;}"
+      ],
       "name": "t:sections.page-banner.name",
       "settings": {
         "heading": "Will you be our next professional partner?",
