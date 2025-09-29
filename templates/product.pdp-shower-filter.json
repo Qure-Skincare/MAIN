@@ -256,7 +256,7 @@
       "name": "t:sections.banner-with-text.name",
       "settings": {
         "heading": "Meet the Qure Shower Filter",
-        "text": "<p>At Qure, we believe great skin starts at the source – and that’s the water you use every day. The Qure Shower Filter helps <strong>remove sneaky chemicals and minerals</strong> that live in your water and linger on your skin. </p>",
+        "text": "<p>At Qure, we believe great skin starts at the source – and that’s the water you use every day. The Qure Shower Filter helps <em>remove sneaky chemicals and minerals</em> that live in your water and linger on your skin. </p>",
         "quote": "",
         "quote-mobile": "",
         "image_position": "left",

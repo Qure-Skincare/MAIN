@@ -264,7 +264,7 @@
       "name": "t:sections.banner-with-text.name",
       "settings": {
         "heading": "Meet the Qure Faucet Filter",
-        "text": "<p>Great skin begins with the source – the water you use daily. The Qure Faucet Filter <strong>effectively reduces harmful skin irritants</strong> that can affect your skin's health and appearance.</p>",
+        "text": "<p>Great skin begins with the source – the water you use daily. The Qure Faucet Filter <em>effectively reduces harmful skin irritants</em> that can affect your skin's health and appearance.</p>",
         "quote": "",
         "quote-mobile": "",
         "image_position": "left",
