@@ -149,7 +149,7 @@
       "name": "t:sections.banner-with-text.name",
       "settings": {
         "heading": "Qure’s Micro-Infusion goes where your skin cream can’t…",
-        "text": "<p>Its tiny, almost painless, microneedles penetrate beyond the skin's surface to <strong>activate skin regeneration </strong>and deliver powerful active ingredients EXACTLY where they're needed!</p>",
+        "text": "<p>Its tiny, almost painless, microneedles penetrate beyond the skin's surface to <em>activate skin regeneration </em>and deliver powerful active ingredients EXACTLY where they're needed!</p>",
         "quote": "",
         "quote-mobile": "",
         "image_position": "left",
