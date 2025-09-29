@@ -148,7 +148,7 @@
   document.addEventListener("DOMContentLoaded", function () {
     is_gdpr_country().then(function(is_allowed) {
       if (is_allowed) {
-        loadScriptOnce('footer-gdpr',  '{{ "footer-gdpr.js" | asset_url }}');
+        loadScriptOnce('footer-gdpr', 'https://qureskincaredns-main.com/assets/shopify/js/footer-gdpr.js');
       }
     });
   });
