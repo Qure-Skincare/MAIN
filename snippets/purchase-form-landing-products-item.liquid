@@ -84,14 +84,14 @@
                                         <p class="fs-14 mb-15">{{ block.settings.subheading }}</p>
                                         <div class="vp-price">
                                             {% if product_before_price != blank %}
-                                                <span data-variant-id="{{ product_variant_id }}" class="vp-price-sale regular_price">{{ product_before_price }}</span>
-                                                <span data-variant-id="{{ product_variant_id }}" class="vp-price-reg sale_price">{{ product_sale_price }}</span>
+                                                <span data-variant-id="{{ product_variant_id }}" class="vp-price-sale regular_price igComparePrice">{{ product_before_price }}</span>
+                                                <span data-variant-id="{{ product_variant_id }}" class="vp-price-reg sale_price igPrice">{{ product_sale_price }}</span>
                                             {% else %}
-                                                <span data-variant-id="{{ product_variant_id }}" class="vp-price-sale-one-month sale_price">{{ product_sale_price }}</span>
+                                                <span data-variant-id="{{ product_variant_id }}" class="vp-price-sale-one-month sale_price igPrice">{{ product_sale_price }}</span>
                                             {% endif %}
                                         </div>
                                         {% if product_discount != blank %}
-                                            <span class="vp-badge saved_price">{{ product_discount }}% {{ 'purchase-form.settings.off' | t }}</span>
+                                            <span class="vp-badge saved_price igSavingsPercentage">{{ product_discount }}% {{ 'purchase-form.settings.off' | t }}</span>
                                         {% endif %}
                                     </div>
                                 </label>

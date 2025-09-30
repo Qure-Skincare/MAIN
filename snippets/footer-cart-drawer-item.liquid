@@ -60,9 +60,9 @@
     <div class="product-footer d-flex align-items-center justify-content-between">
         <div class="product-price d-flex flex-row align-items-end">
             {% if cart_item_before_price != blank %}
-                <div class="product-price old">{{ cart_item_before_price }}</div>
+                <div class="product-price old igComparePrice">{{ cart_item_before_price }}</div>
             {% endif %}
-            <div class="product-price new">{{ cart_item_sale_price }}</div>
+            <div class="product-price new igPrice">{{ cart_item_sale_price }}</div>
         </div>
 
         {% unless gift_exists or insurance_exists or selling_plan_exists or discount_exists %}

@@ -15,7 +15,7 @@
             <div class="cart__upsell-img"><img src="{{ product_featured_image | img_url: '240x' }}" alt="{{ product_title | escape }}" class="img-fluid" /></div>
             <div class="cart__upsell-content">
                 <div class="cart__upsell-title mb-0">{{ product_title }}</div>
-                <div class="cart__upsell-price">{{ product_sale_price }}</div>
+                <div class="cart__upsell-price igPrice">{{ product_sale_price }}</div>
             </div>
             <div class="cart__upsell-btn d-flex align-items-center">
                 <form method="post" action="/cart/add" enctype="multipart/form-data">

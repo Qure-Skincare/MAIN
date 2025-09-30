@@ -20,7 +20,7 @@
 {% endif %}
 
 {% if product_price != null %}
-  {% capture button-label %}{{ default_button_label }} – {{ product_price }}{% endcapture %}
+  {% capture button-label %}{{ default_button_label }} – <span class="igPrice">{{ product_price }}</span>{% endcapture %}
 {% else %}
   {% capture button-label %}{{ default_button_label }}{% endcapture %}
 {% endif %}

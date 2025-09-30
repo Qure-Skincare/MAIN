@@ -36,10 +36,10 @@
                             {% endif %}
                             <div class="qure__price price--on-sale d-flex align-items-center">
                                 {% if subscription_discount_percent > 0 %}
-                                    <div class="price__sale mr-0 fs-18">{{ product_sale_price }}</div>
+                                    <div class="price__sale mr-0 fs-18 igPrice">{{ product_sale_price }}</div>
                                     <div class="price__regular fs-18">{{ product_subscription_price }}</div>
                                 {% else %}
-                                    <div class="price__regular fs-18">{{ product_sale_price }}</div>
+                                    <div class="price__regular fs-18 igPrice">{{ product_sale_price }}</div>
                                 {% endif %}
                             </div>
                         </button>
@@ -59,9 +59,9 @@
                                         class="subscription-item-row d-flex align-items-center gap-4 justify-content-between fs-16">
                                         <div class="subscription-item-title">
                                             {% if subscription_discount_percent > 0 %}
-                                                <div class="qure__price div">{{ 'purchase-form.settings.subscription-days-option' | t }} {{ block.settings.subscription_days_text }} ( <span class="price__sale fs-16" style="margin:0;">{{ product_sale_price }}</span> {{ product_subscription_price }} )</div>
+                                                <div class="qure__price div">{{ 'purchase-form.settings.subscription-days-option' | t }} {{ block.settings.subscription_days_text }} ( <span class="price__sale fs-16 igPrice" style="margin:0;">{{ product_sale_price }}</span> {{ product_subscription_price }} )</div>
                                             {% else %}
-                                                <div class="qure__price div">{{ 'purchase-form.settings.subscription-days-option' | t }} {{ block.settings.subscription_days_text }} ( <span>{{ product_sale_price }}</span> )</div>
+                                                <div class="qure__price div">{{ 'purchase-form.settings.subscription-days-option' | t }} {{ block.settings.subscription_days_text }} ( <span class="igPrice">{{ product_sale_price }}</span> )</div>
                                             {% endif %}
                                         </div>
                                     </div>
@@ -77,7 +77,7 @@
                             <div class="qure__sbs-label d-flex align-items-center gap-3">{{ 'purchase-form.settings.onetime' | t }}</div>
                             <div
                                 class="qure__price price--on-sale d-flex flex-wrap align-items-end flex-column text-right">
-                                <div class="price__regular fs-18">{{ product_sale_price }}</div>
+                                <div class="price__regular fs-18 igPrice">{{ product_sale_price }}</div>
                             </div>
                         </button>
                         <div id="one_time_purchase" class="qure__subscription-collapse collapse" data-bs-parent="#qure__subscription" style="">

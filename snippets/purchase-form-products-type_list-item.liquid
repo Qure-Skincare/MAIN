@@ -108,18 +108,18 @@
                                             <div>
                                                 <div class="qure__supply-price">
                                                     {% if product_before_price != blank %}
-                                                        <span class="qure__supply-price-sale regular_price">{{ product_before_price }}</span>
-                                                        <span class="qure__supply-price-reg-sale sale_price">{{ product_sale_price }}</span>
+                                                        <span class="qure__supply-price-sale regular_price igComparePrice">{{ product_before_price }}</span>
+                                                        <span class="qure__supply-price-reg-sale sale_price igPrice">{{ product_sale_price }}</span>
                                                     {% else %}
-                                                        <span class="qure__supply-price-reg sale_price">{{ product_sale_price }}</span>
+                                                        <span class="qure__supply-price-reg sale_price igPrice">{{ product_sale_price }}</span>
                                                     {% endif %}
                                                 </div>
                                                 {% if product_discount != blank %}
                                                     {% case product_type %}
                                                         {% when 3 %}
-                                                            <p class="ctm-background fs-12 text-center text-white rounded-30">{{ 'purchase-form.settings.save' | t | upcase }} {{ product_discount }}%</p>
+                                                            <p class="ctm-background fs-12 text-center text-white rounded-30 igSavingsPercentage">{{ 'purchase-form.settings.save' | t | upcase }} {{ product_discount }}%</p>
                                                         {% when 2 %}
-                                                            <p class="ctm-background fs-12 text-center text-orange rounded-30" style="--ctm-background:#ff54291a;">{{ 'purchase-form.settings.save' | t | upcase }} {{ product_discount }}%</p>
+                                                            <p class="ctm-background fs-12 text-center text-orange rounded-30 igSavingsPercentage" style="--ctm-background:#ff54291a;">{{ 'purchase-form.settings.save' | t | upcase }} {{ product_discount }}%</p>
                                                     {% endcase %}
                                                 {% endif %}
                                             </div>

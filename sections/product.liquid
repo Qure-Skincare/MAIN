@@ -24,13 +24,13 @@
                     <div class="bundle_price d-flex align-items-center justify-content-start gap-3 my-3 pb-2">
                         
                         {% if product_before_price != blank %}
-                            <div class="bef_price text-decoration-line-through">{{ product_before_price }}</div>
+                            <div class="bef_price text-decoration-line-through igComparePrice">{{ product_before_price }}</div>
                         {% endif %}
 
-                        <div class="aft_price clr_orange">{{ product_sale_price }}</div>
+                        <div class="aft_price clr_orange igPrice">{{ product_sale_price }}</div>
 
                         {% if product_discount != blank %}
-                            <div class="discount_percentage">{{ 'product.settings.discount-text' | t }} {{ product_discount }}%</div>
+                            <div class="discount_percentage igSavingsPercentage">{{ 'product.settings.discount-text' | t }} {{ product_discount }}%</div>
                         {% endif %}
 
                     </div>

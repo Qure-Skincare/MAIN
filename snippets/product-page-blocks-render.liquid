@@ -20,13 +20,9 @@
         {% if allowed_types contains block.type %}
             {% case block.type %}
                 {% when 'description' %}
-                    {% if section.settings.description != blank %}
-                        <div class="patch__single-shortdes mt-20">
-                            {{ section.settings.description }}
-                        </div>
-                    {% endif %}
+                    {% render 'product-description', description: section.settings.description %}
                 {% when 'price' %}
-                    <h4 class="fw-500 fm-body mt-20" style="--font-h4: 22px; --font-h4-mob: 20px;">{{ product_sale_price }}</h4>
+                    {% render 'product-price', product_sale_price: product_sale_price %}
                 {% when 'limited-offer' %}
                     {% render 'product-limited-time-offer', section: section, block: block %}
                 {% when 'exclusive-offer' %}

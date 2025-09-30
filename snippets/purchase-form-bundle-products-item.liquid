@@ -57,10 +57,10 @@
 
                                         <div class="bundle_price d-flex align-items-center justify-content-start gap-3 my-3 pb-2">
 
-                                            <div class="aft_price color-orange fs-20">{{ product_sale_price }}</div>
+                                            <div class="aft_price color-orange fs-20 igPrice">{{ product_sale_price }}</div>
 
                                             {% if product_before_price != blank %}
-                                                <div class="bef_price text-decoration-line-through fs-20">{{ product_before_price }}</div>
+                                                <div class="bef_price text-decoration-line-through fs-20 igComparePrice">{{ product_before_price }}</div>
                                             {% endif %}
 
                                             {% if product_discount != blank %}

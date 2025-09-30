@@ -29,7 +29,7 @@
                         <div class="patch__result-content">
                             {{ item.name }}
                             <form method="post" action="/cart/add" enctype="multipart/form-data">
-                                <button type="submit" class="btn btn--primary btn-sm mt-10 w-100" style="--btn-sm-padding: 7px 20px;">{{ 'product.settings.cross-sell.buy-button-label' | t }} – {{ item.product.value.price | money_without_trailing_zeros  }}</button>
+                                <button type="submit" class="btn btn--primary btn-sm mt-10 w-100" style="--btn-sm-padding: 7px 20px;">{{ 'product.settings.cross-sell.buy-button-label' | t }} – <span class="igPrice">{{ item.product.value.price | money_without_trailing_zeros  }}</span></button>
                                 <input type="hidden" name="quantity" id="quantity" value="1">
                                 <input type="hidden" name="id" value="{{ item.product.value.variants.first.id }}">
                             </form>
