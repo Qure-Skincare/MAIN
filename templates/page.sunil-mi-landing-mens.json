@@ -1080,7 +1080,7 @@
         "product_NEgEkN": {
           "type": "product",
           "settings": {
-            "product": "micro-infusion-2-month-bundle-2x-b-g-serum-2x-e-g-f-serum",
+            "product": "micro-infusion-3-month-bundle-3x-b-g-serum-3x-e-g-f-serum",
             "preselected": false,
             "heading": "3 Month Supply",
             "subheading": "(6 Treatments)",
@@ -1088,7 +1088,7 @@
             "soldout": false,
             "preorder": false,
             "total_treatments": 6,
-            "left_items": 0,
+            "left_items": 145,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
