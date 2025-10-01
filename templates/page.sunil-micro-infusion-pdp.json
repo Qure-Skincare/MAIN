@@ -1245,11 +1245,11 @@
           "type": "product",
           "settings": {
             "product": "micro-infusion-5-month-bundle-for-wrinkles",
-            "preselected": false,
+            "preselected": true,
             "heading": "5 Month Supply Autumn Glow Sale",
             "subheading": "(10 Treatments)",
             "image": "shopify://shop_images/MI_6_month_Wrinkles.png",
-            "soldout": true,
+            "soldout": false,
             "preorder": false,
             "total_treatments": 0,
             "left_items": 0,
@@ -1264,7 +1264,7 @@
           "type": "product",
           "settings": {
             "product": "micro-infusion-3-month-bundle-6x-beta-glucan-serum",
-            "preselected": true,
+            "preselected": false,
             "heading": "3 Month Supply",
             "subheading": "(6 Treatments)",
             "image": "shopify://shop_images/MI_3_month_Wrinkles.png",
