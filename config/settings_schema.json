@@ -117,7 +117,7 @@
 
       { "type": "header", "content": "Free Gift" },
       { "type": "product", "id": "cart_freegift_product", "label": "Product" },
-      { "type": "range", "id": "cart_freegift_price_limit", "label": "Price limit", "min": 1, "max": 1, "step": 1, "unit": "$", "default": 1 },
+      { "type": "range", "id": "cart_freegift_price_limit", "label": "Price limit", "min": 10, "max": 10, "step": 10, "unit": "$", "default": 10 },
 
       { "type": "header", "content": "Shipping" },
       { "type": "text", "id": "shipping_title", "label": "Title" },
