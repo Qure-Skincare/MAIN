@@ -1225,14 +1225,14 @@
         "product_gbPf3J": {
           "type": "product",
           "settings": {
-            "product": "6-month-micro-infusion-for-wrinkles-dark-spots",
+            "product": "micro-infusion-5-month-bundle-for-dark-spots-copy",
             "preselected": true,
-            "heading": "6 Month Supply  End Of Summer Sale",
-            "subheading": "(12 Treatments)",
+            "heading": "5 Month Supply  Autumn Glow Sale",
+            "subheading": "(10 Treatments)",
             "image": "shopify://shop_images/MI_6_month_DS_W.png",
             "soldout": false,
             "preorder": false,
-            "total_treatments": 12,
+            "total_treatments": 10,
             "left_items": 555,
             "preorder_text": "",
             "preorder_date_soldout": "",
