@@ -334,6 +334,40 @@
         "micro-infusion-pdp-detailed-guide": {
             "name": "Detailed guide"
         },
+        "car-giveaway-page-banner": {
+            "name": "Car giveaway page banner"
+        },
+        "car-giveaway-countdown-timer": {
+            "name": "Car giveaway countdown timer"
+        },
+        "car-giveaway-countdown-timer-start": {
+            "name": "Car giveaway countdown timer start"
+        },
+        "car-giveaway-product-cards": {
+            "name": "Car giveaway product cards"
+        },
+        "car-giveaway-interior-style": {
+            "name": "Car giveaway interior style",
+            "settings": {
+                "header-interior": {
+                    "name": "Header interior"
+                },
+                "text-interior": {
+                    "name": "Text interior"
+                },
+                "image-interior": {
+                    "name": "Image interior"
+                }
+            }
+        },
+        "car-giveaway-car-bundle": {
+            "name": "Car giveaway car bundle",
+            "settings": {
+                "sign": {
+                    "name": "Sign"
+                }
+            }
+        },
         "stock-alert": {
             "name": "Stock alert"
         },
@@ -479,7 +513,12 @@
             }
         },
         "faq": {
-            "name": "Faq"
+            "name": "Faq",
+            "settings": {
+                "terms-conditions": {
+                    "name": "Terms & conditions"
+                }
+            }
         },
         "compare": {
             "name": "Compare",

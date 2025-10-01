@@ -9,12 +9,372 @@
  */
 {
   "sections": {
-    "main": {
-      "type": "page-car-giveaway",
-      "settings": {}
+    "car_giveaway_page_banner_d3gH4X": {
+      "type": "car-giveaway-page-banner",
+      "name": "t:sections.car-giveaway-page-banner.name",
+      "settings": {
+        "heading": "2025 SWEEPSTAKE",
+        "text": "Take care of your skin and win a 2025 Range Rover",
+        "button_label": "Enter Now",
+        "button_url": "#saying_thank_you",
+        "image": "shopify://shop_images/car_banner.webp",
+        "image_mobile": "shopify://shop_images/car_banner-mob.webp"
+      }
+    },
+    "car_giveaway_countdown_timer_MJrqzk": {
+      "type": "car-giveaway-countdown-timer",
+      "name": "t:sections.car-giveaway-countdown-timer.name",
+      "settings": {
+        "heading": "30X extra entries ENDS IN:"
+      }
+    },
+    "car_giveaway_product_cards_f7JeEF": {
+      "type": "car-giveaway-product-cards",
+      "blocks": {
+        "items_VBLUby": {
+          "type": "items",
+          "settings": {
+            "heading": "Q-Rejuvalight Pro LED Face Mask",
+            "text": "Receive 11,970 Entries",
+            "image": "shopify://shop_images/q-rejuvalight-pro-led-mask_ad021a69-1ad1-4744-9917-9610bbc49237.webp",
+            "price": "$399",
+            "button_label": "Buy Now",
+            "button_url": "#",
+            "link_url": "#",
+            "quote": "BEST CHANCE"
+          }
+        },
+        "items_qbxrLL": {
+          "type": "items",
+          "settings": {
+            "heading": "Neck & Décolletage LED Device",
+            "text": "Receive 8,970 Entries",
+            "image": "shopify://shop_images/n_d_device_a26d9921-a777-45a3-9eee-b2702e70d76e.webp",
+            "price": "$299",
+            "button_label": "Buy Now",
+            "button_url": "#",
+            "link_url": "#",
+            "quote": ""
+          }
+        },
+        "items_QHcQCe": {
+          "type": "items",
+          "settings": {
+            "heading": "Micro-Infusion Facial System",
+            "text": "Receive 3,570 Entries",
+            "image": "shopify://shop_images/mi_facial.webp",
+            "price": "from $119",
+            "button_label": "Buy Now",
+            "button_url": "#",
+            "link_url": "#",
+            "quote": ""
+          }
+        },
+        "items_QhP7qQ": {
+          "type": "items",
+          "settings": {
+            "heading": "All-In-One Serum",
+            "text": "Receive 1,975 Entries",
+            "image": "shopify://shop_images/all_in_one_serum_prod.webp",
+            "price": "from $79",
+            "button_label": "Buy Now",
+            "button_url": "#",
+            "link_url": "#",
+            "quote": ""
+          }
+        }
+      },
+      "block_order": [
+        "items_VBLUby",
+        "items_qbxrLL",
+        "items_QHcQCe",
+        "items_QhP7qQ"
+      ],
+      "name": "t:sections.car-giveaway-product-cards.name",
+      "settings": {
+        "heading": "This is our way of saying thank you"
+      }
+    },
+    "car_giveaway_interior_style_UkFGBy": {
+      "type": "car-giveaway-interior-style",
+      "name": "t:sections.car-giveaway-interior-style.name",
+      "settings": {
+        "heading_interior": "Minimalist & Classy",
+        "text_interior": "<ul><li>Panoramic Glass Roof</li><li>Premium Leather Interior</li><li>Touchscreen with Apple CarPlay + Android Auto</li><li>Meridian Sound System</li><li>Heated Front Seats</li><li>360° Parking Camera + Driver Assist</li><li>Spacious Cargo Area with Fold-Flat Seats</li></ul>",
+        "image_interior": "shopify://shop_images/interior_img1.webp",
+        "heading": "Enter for free",
+        "text": "Sign up to emails & SMS for a chance to win",
+        "button_label": "Sign Up",
+        "button_url": "#",
+        "image": "shopify://shop_images/interior_img2.webp"
+      }
+    },
+    "car_giveaway_product_cards_addzMK": {
+      "type": "car-giveaway-product-cards",
+      "blocks": {
+        "items_X93EX6": {
+          "type": "items",
+          "settings": {
+            "heading": "Micro-Infusion Targeted Patches",
+            "text": "Receive 2,370 Entries",
+            "image": "shopify://shop_images/mi-target-pat.webp",
+            "price": "$79",
+            "button_label": "Buy Now",
+            "button_url": "#",
+            "link_url": "#",
+            "quote": ""
+          }
+        },
+        "items_GBcVLj": {
+          "type": "items",
+          "settings": {
+            "heading": "Shower Filter",
+            "text": "Receive 4,470 Entries",
+            "image": "shopify://shop_images/shwr-fil.webp",
+            "price": "from $149",
+            "button_label": "Buy Now",
+            "button_url": "#",
+            "link_url": "#",
+            "quote": ""
+          }
+        },
+        "items_MRgUDf": {
+          "type": "items",
+          "settings": {
+            "heading": "Faucet Filter",
+            "text": "Receive 3,870 Entries",
+            "image": "shopify://shop_images/water-fil.webp",
+            "price": "from $129",
+            "button_label": "Buy Now",
+            "button_url": "#",
+            "link_url": "#",
+            "quote": ""
+          }
+        },
+        "items_bMyP8k": {
+          "type": "items",
+          "settings": {
+            "heading": "Dermal Mist",
+            "text": "Receive 870 Entries",
+            "image": "shopify://shop_images/derm-mist.webp",
+            "price": "$29",
+            "button_label": "Buy Now",
+            "button_url": "#",
+            "link_url": "#",
+            "quote": ""
+          }
+        }
+      },
+      "block_order": [
+        "items_X93EX6",
+        "items_GBcVLj",
+        "items_MRgUDf",
+        "items_bMyP8k"
+      ],
+      "name": "t:sections.car-giveaway-product-cards.name",
+      "settings": {
+        "heading": ""
+      }
+    },
+    "car_giveaway_car_bundle_br3fna": {
+      "type": "car-giveaway-car-bundle",
+      "blocks": {
+        "image_xcYwVi": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/car_slide_1.webp",
+            "wistia_url": ""
+          }
+        },
+        "image_yY8jHn": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/car_slide_2.webp",
+            "wistia_url": "bwhqvtar9u"
+          }
+        },
+        "image_CpYYyB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/car_slide_3.webp",
+            "wistia_url": ""
+          }
+        },
+        "image_9YFhBE": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/car_slide_4.webp",
+            "wistia_url": ""
+          }
+        },
+        "image_eMqPfe": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/car_slide_5.webp",
+            "wistia_url": ""
+          }
+        },
+        "image_TiQnq3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/car_slide_6.webp",
+            "wistia_url": ""
+          }
+        },
+        "image_zQ6DBt": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/car_slide_7.webp",
+            "wistia_url": ""
+          }
+        },
+        "image_BC9MxC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/car_slide_8.webp",
+            "wistia_url": ""
+          }
+        },
+        "image_THJDxP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/car_slide_9.webp",
+            "wistia_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_xcYwVi",
+        "image_yY8jHn",
+        "image_CpYYyB",
+        "image_9YFhBE",
+        "image_eMqPfe",
+        "image_TiQnq3",
+        "image_zQ6DBt",
+        "image_BC9MxC",
+        "image_THJDxP"
+      ],
+      "name": "t:sections.car-giveaway-car-bundle.name",
+      "settings": {
+        "heading": "Kristina Orlić-Edmonds",
+        "sub_heading": "<p>Founder</p>",
+        "text": "At Qure, we make science-backed skincare accessible to everyone. Once a year, we give back in a way that goes beyond skin. This year is our biggest giveaway yet — one customer will drive away in a Range Rover Evoque.",
+        "sub_text": "“I see every Qure purchase as a commitment to your skin health. As a thank you, one of those commitments will come with an extraordinary surprise.”",
+        "sign": "– Kristina",
+        "image": "shopify://shop_images/kristina_984ff854-12ab-469f-94ea-6a28c221402e.webp"
+      }
+    },
+    "faq_fXt8wp": {
+      "type": "faq",
+      "blocks": {
+        "accordion_LBBzYy": {
+          "type": "accordion",
+          "settings": {
+            "heading": "How does it work?",
+            "text": "<p>Your routine is your entry! Every $1 you spend (excluding tax and shipping) between October 1, 2025 to December 1, 2025 automatically enters you into our community celebration.</p><p>You can also enter for free by mailing in a postcard with your details. Bonus entry opportunities may be announced on the website during the sweepstakes.</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "accordion_L9X7ci": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Who is eligible?",
+            "text": "<p>The sweepstakes is open only to legal residents of the 50 United States and D.C. who are the age of majority in their state at the time of entry. Void where prohibited and subject to all federal, state, and local laws.</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "accordion_JpizCy": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Do I need to make a purchase to enter?",
+            "text": "<p>No. You can enter without making a purchase by mailing in a postcard with your information. Mail-in entries receive a set number of entries (2,000 or 5,000, depending on whether it’s a standard or bonus period entry).</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "accordion_FkUTXX": {
+          "type": "accordion",
+          "settings": {
+            "heading": "How will the winner be chosen?",
+            "text": "<p>All eligible entries received during the promotion period will go into a random drawing conducted by the independent promotion administrator, SweepstakesPros.</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "accordion_HWbLrt": {
+          "type": "accordion",
+          "settings": {
+            "heading": "How many winners are there?",
+            "text": "<p>There will be one grand prize winner.</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "accordion_XtDkGG": {
+          "type": "accordion",
+          "settings": {
+            "heading": "When is the last day to enter?",
+            "text": "<p>The sweepstakes ends at 11:59 p.m. PT on October 31, 2025. Mail-in entries must be postmarked by that date and received by November 7, 2025</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "accordion_PMp4eF": {
+          "type": "accordion",
+          "settings": {
+            "heading": "How can I check how many entries I have earned?",
+            "text": "<p>Entries are tracked by the promotion administrator. There isn’t a public tracking system for individual entrants, so just follow the entry guidelines to know how many you’ve earned (e.g., $1 spent = 1 entry, each mail-in postcard = 2,000 or 5,000 entries).</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "accordion_WAU678": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Is it really free?",
+            "text": "<p>Yes. No purchase is necessary to enter or win. You can enter entirely for free by mailing in a postcard. The winner will never be asked to pay anything to claim the prize.</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "accordion_LBBzYy",
+        "accordion_L9X7ci",
+        "accordion_JpizCy",
+        "accordion_FkUTXX",
+        "accordion_HWbLrt",
+        "accordion_XtDkGG",
+        "accordion_PMp4eF",
+        "accordion_WAU678"
+      ],
+      "name": "t:sections.faq.name",
+      "settings": {
+        "heading": "Have questions?",
+        "text": "",
+        "button_label": "Full Terms & Conditions",
+        "button_url": "https://certified.promotrust.com/QureSkincare/RangeRoverSweeps/rules/",
+        "terms-conditions": true
+      }
+    },
+    "car_giveaway_countdown_timer_start_zFDDKf": {
+      "type": "car-giveaway-countdown-timer-start",
+      "name": "t:sections.car-giveaway-countdown-timer-start.name",
+      "settings": {
+        "heading": "30X entries!"
+      }
     }
   },
   "order": [
-    "main"
+    "car_giveaway_page_banner_d3gH4X",
+    "car_giveaway_countdown_timer_MJrqzk",
+    "car_giveaway_product_cards_f7JeEF",
+    "car_giveaway_interior_style_UkFGBy",
+    "car_giveaway_product_cards_addzMK",
+    "car_giveaway_car_bundle_br3fna",
+    "faq_fXt8wp",
+    "car_giveaway_countdown_timer_start_zFDDKf"
   ]
 }
