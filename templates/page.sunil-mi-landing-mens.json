@@ -260,7 +260,7 @@
         "image_position": "right",
         "sub_text": "",
         "image": "shopify://shop_images/qure-micro-infusion_men.webp",
-        "button_label": "BUY NOW & SAVE UP TO 70%",
+        "button_label": "BUY NOW & SAVE UP TO 67%",
         "button_url": "#purchase-form",
         "wistia_url": ""
       }
@@ -461,7 +461,7 @@
       "settings": {
         "background_color": "#f6f6f7",
         "heading": "4 reasons why everyone is using the Qure Micro-Infusion System",
-        "button_label": "buy now & SAVE UP TO 70%",
+        "button_label": "buy now & SAVE UP TO 67%",
         "button_url": "#purchase-form"
       }
     },
@@ -630,7 +630,7 @@
         "heading": "Results you’ll see with your own eyes",
         "text": "",
         "text_mobile": "",
-        "button_label": "BUY NOW SAVE UP TO 70%",
+        "button_label": "BUY NOW SAVE UP TO 67%",
         "button_url": "#purchase-form"
       }
     },
@@ -747,7 +747,7 @@
         "heading": "See how quick and easy it is to use",
         "heading_mobile": "How To Use",
         "wistia_url": "wxgqgsjjdr",
-        "button_label": "BUY NOW & SAVE UP TO 70%",
+        "button_label": "BUY NOW & SAVE UP TO 67%",
         "button_url": "#purchase-form"
       }
     },
@@ -1325,7 +1325,7 @@
       "settings": {
         "heading": "Micro-Infusion Facial System",
         "text": "393 purchased in last 48 hours",
-        "button-label": "BUY NOW & SAVE UP TO 70%",
+        "button-label": "BUY NOW & SAVE UP TO 67%",
         "button-url": "#purchase-form"
       }
     }
