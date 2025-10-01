@@ -7,10 +7,10 @@
             {% if section.settings.heading != blank %}
                 <h2 class="qure__section-heading mb-md-50 mb-30 text-md-center">{{ section.settings.heading }}</h2>
             {% endif %}
-            <div class="swiper qure__swiper" id="qure__swiper-join-slider" data-section-id="join-slider"
+            <div class="swiper qure__swiper" id="qure__swiper-join-slider-{{ section.id }}" data-section-id="join-slider-{{ section.id }}"
                 data-autoplay="false" data-loop="false" data-mobile="1.2" data-tablet="2" data-desktop="3"
-                data-spacing="40" data-pagination-fraction="true" data-arrowright="join-arrow-right"
-                data-arrowleft="join-arrow-left" data-pagination="join-pagination">
+                data-spacing="40" data-pagination-fraction="true" data-arrowright="join-{{ section.id }}-arrow-right"
+                data-arrowleft="join-{{ section.id }}-arrow-left" data-pagination="join-pagination">
                 <div class="swiper-wrapper">
                     {% for block in section.blocks %}
                         {% if block.type == 'list' %}
@@ -36,10 +36,10 @@
                     {% endfor %}
                 </div>
                 <div class="swiper-arrows-with-pagination d-flex align-items-center justify-content-center gap-4">
-                    <div class="qure-swiper-button-prev qure-swiper-arrow join-arrow-left mt-30"><i
+                    <div class="qure-swiper-button-prev qure-swiper-arrow join-{{ section.id }}-arrow-left mt-30"><i
                             class="fa-regular fa-angle-left"></i></div>
                     <div class="join-pagination position-relative bottom-0 w-auto mt-30"></div>
-                    <div class="qure-swiper-button-next qure-swiper-arrow join-arrow-right mt-30"><i
+                    <div class="qure-swiper-button-next qure-swiper-arrow join-{{ section.id }}-arrow-right mt-30"><i
                             class="fa-regular fa-angle-right"></i></div>
                 </div>
             </div>

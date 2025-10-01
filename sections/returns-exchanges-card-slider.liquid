@@ -13,10 +13,10 @@
         </div>
         <div class="container">
             <div class="swiper-offset-mobile">
-                <div class="swiper qure__swiper" id="qure__swiper-compliment-slider" data-section-id="compliment-slider"
+                <div class="swiper qure__swiper" id="qure__swiper-compliment-slider-{{ section.id }}" data-section-id="compliment-slider-{{ section.id }}"
                     data-autoplay="false" data-loop="false" data-mobile="1.05" data-tablet="2.6" data-desktop="4"
-                    data-spacing="40" data-pagination-fraction="true" data-arrowleft="compliment-slider-arrow-left"
-                    data-arrowright="compliment-slider-arrow-right">
+                    data-spacing="40" data-pagination-fraction="true" data-arrowleft="compliment-slider-{{ section.id }}-arrow-left"
+                    data-arrowright="compliment-slider-{{ section.id }}-arrow-right">
                     <div class="swiper-wrapper">
                         {% for block in section.blocks %}
                             {% if block.type == 'carousel' %}
@@ -42,10 +42,10 @@
                     </div>
                     <div
                         class="swiper-arrows-with-pagination d-flex align-items-center justify-content-center gap-4 mt-30">
-                        <div class="qure-swiper-arrow compliment-slider-arrow-left"><i class="fa-regular fa-angle-left"></i>
+                        <div class="qure-swiper-arrow compliment-slider-{{ section.id }}-arrow-left"><i class="fa-regular fa-angle-left"></i>
                         </div>
                         <div class="swiper-pagination position-relative bottom-0 w-auto"></div>
-                        <div class="qure-swiper-arrow compliment-slider-arrow-right"><i class="fa-regular fa-angle-right"></i>
+                        <div class="qure-swiper-arrow compliment-slider-{{ section.id }}-arrow-right"><i class="fa-regular fa-angle-right"></i>
                         </div>
                     </div>
                 </div>

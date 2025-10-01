@@ -22,8 +22,7 @@
                         {{ section.settings.description }}
                     {% endif %}
 
-                    {% render 'product-page-slider', product: blank, page: page, class: 'tp-product-gallery d-block d-lg-none mb-30' %}
-                    
+                    {% render 'product-page-slider', product: blank, page: page, class: 'tp-product-gallery d-block d-lg-none mb-30', element_id: section.id %}
                     
                     <div class="ctm-width" style="--ctm-width: 450px;">
 
@@ -60,7 +59,7 @@
                 </div>
             </div>
             <div class="col-lg-6 custom__block d-none d-lg-block">
-                {% render 'product-page-slider', product: blank, page: page, class: 'tp-product-gallery d-none d-lg-block desktop-slider' %}
+                {% render 'product-page-slider', product: blank, page: page, class: 'tp-product-gallery d-none d-lg-block desktop-slider', element_id: section.id %}
             </div>
         </div>
     </div>
