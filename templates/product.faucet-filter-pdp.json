@@ -916,7 +916,6 @@
         },
         "variant_46xfGi": {
           "type": "variant",
-          "disabled": true,
           "settings": {
             "heading": "Silver",
             "image": "shopify://shop_images/silver_swatch.webp"
