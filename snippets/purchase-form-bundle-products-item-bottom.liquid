@@ -33,10 +33,9 @@
                                                 {% if variant.title == bundle_variant.title %}
                                                     <option {% if variant.metafields.custom.bundle_not_available == true %}disabled{% endif %} value="{{ bundle_variant.title | escape }}" data-handle="{{ product_handle }}" data-image="{{ bundle_variant.featured_image | img_url: '250x' }}" data-variant-id="{{ variant.id }}" data-variant-text="{{ variant.metafields.custom.bundle_text }}">{{ bundle_variant.title }}</option>
                                                 {% endif %}
-                                                {% comment %} aaaaqqqq {% endcomment %}
-                                                {% comment %} {% if variant.title == ext_variant %}
-                                                    <option {% if variant.metafields.custom.bundle_not_available == true %}disabled{% endif %} value="{{ bundle_variant.title | escape }}" data-handle="{{ product_handle }}" data-image="{{ bundle_variant.featured_image | img_url: '250x' }}" data-variant-id="{{ variant.id }}" data-variant-text="{{ variant.metafields.custom.bundle_text }}">{{ bundle_variant.title }}</option>
-                                                {% endif %} {% endcomment %}
+                                                {% if variant.title == ext_variant %}
+                                                    <option {% if variant.metafields.custom.bundle_not_available == true %}disabled{% endif %} value="{{ bundle_variant.title | escape }}" data-handle="{{ product_handle }}" data-image="{{ bundle_variant.featured_image | img_url: '250x' }}" data-variant-id="{{ variant.id }}" data-bundle-variant-title="{{ bundle_variant.title }}" data-variant-text="{{ variant.metafields.custom.bundle_text }}">{{ bundle_variant.title }}</option>
+                                                {% endif %}
                                             {% endfor %}
                                         {% endfor %}  
                                     </select>
