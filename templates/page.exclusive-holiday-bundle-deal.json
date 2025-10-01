@@ -250,15 +250,6 @@
             "reserved": false
           }
         },
-        "product_zWUAFc": {
-          "type": "product",
-          "settings": {
-            "product": "fade-firm-bundle-advanced-bf25-sku",
-            "preselected": false,
-            "soldout": false,
-            "reserved": false
-          }
-        },
         "type_aJwQ9q": {
           "type": "type",
           "settings": {}
@@ -299,9 +290,8 @@
         },
         "product_dkFRPe": {
           "type": "product",
-          "disabled": true,
           "settings": {
-            "product": "line-refine-bundle-pro-bf25",
+            "product": "fade-firm-bundle-advanced-bf25-sku",
             "preselected": false,
             "soldout": false,
             "reserved": false
@@ -362,7 +352,6 @@
         "product_DBd4ef",
         "product_7dL4ci",
         "product_Xf8A6C",
-        "product_zWUAFc",
         "type_aJwQ9q",
         "product_type_VLXcAn",
         "product_nyJ9n7",
