@@ -157,7 +157,6 @@
         },
         "product_DEgEkN": {
           "type": "product",
-          "disabled": true,
           "settings": {
             "product": "faucet-filter",
             "product_variant_id": 46852913987823,
@@ -167,7 +166,7 @@
             "subheading": "",
             "image": "shopify://shop_images/faucet_silver.webp",
             "soldout": false,
-            "preorder": false,
+            "preorder": true,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
