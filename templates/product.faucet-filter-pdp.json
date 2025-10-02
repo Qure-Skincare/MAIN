@@ -166,7 +166,7 @@
             "subheading": "",
             "image": "shopify://shop_images/faucet_silver.webp",
             "soldout": false,
-            "preorder": true,
+            "preorder": false,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
@@ -676,7 +676,7 @@
         "heading_YETR3a": {
           "type": "heading",
           "settings": {
-            "heading": "Top Water"
+            "heading": "Tap Water"
           }
         },
         "feature_tabs_Bitqxt": {

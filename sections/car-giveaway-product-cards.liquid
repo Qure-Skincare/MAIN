@@ -2,6 +2,7 @@
   Renders a page banner section for car giveaway page.
 {% enddoc %}
 
+
 <link rel="stylesheet" href="https://qureskincaredns-main.com/sections/isolated/top-products/products-card.css" />
 <div class="qure__trusted-reviews qure__section"
     style="--section-padding-top: 80px;--section-padding-bottom: 80px;--section-padding-top-mob: 40px;--section-padding-bottom-mob: 40px;">
@@ -16,11 +17,10 @@
                 {% if block.type == 'items' %}
                     <div class="recieve_entries_item">
                         <div class="qure__product-item">
-                            {% if block.settings.link_url != blank %}
-                                <a href="{{ block.settings.link_url }}" class="qure__product-img overflow-hidden position-relative d-block">
-                                    {% if block.settings.image != blank %}
-                                        <div class="qure__product-main-img"><img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" /></div>
-                                    {% endif %}
+                            {% if block.settings.product != blank %}
+                                {% include 'get-product-data', product_handle: block.settings.product, product_prefix: 'car-giveaway-product-cards' %}
+                                <a href="{{ product_url }}" class="qure__product-img overflow-hidden position-relative d-block">
+                                        <div class="qure__product-main-img"><img src="{{ product_featured_image | img_url: '240x' }}" alt="{{ product_title | escape }}" /></div>
                                     {% if block.settings.quote != blank %}
                                         <div class="badge rounded-pill badge-bestseller">{{ block.settings.quote }}</div>
                                     {% endif %}
@@ -28,18 +28,12 @@
                                         <div class="d-flex align-items-center justify-content-center recieve_entries"><img src="{{ 'sections.car-giveaway-product-cards.tick_image' | t }}" alt="{{ 'sections.car-giveaway-product-cards.tick_image.alt' | t | escape }}">{{ block.settings.text }}</div>
                                     {% endif %}
                                 </a>
+                                <div class="qure__product-details pt-15">
+                                    <h3 class="fm-body mb-0 qure__product-name"><a class="limited-line capitalize d-block" href="{{ product_url }}">{{ product_title }}</a></h3>
+                                    <div class="qure__product-price mt-10">{{ block.settings.label_price }} <span class="igPrice">{{ product_sale_price }}</span></div>
+                                    {% render 'product-page-buy-button', product_price: null %}
+                                </div>
                             {% endif %}
-                            <div class="qure__product-details pt-15">
-                                {% if block.settings.heading != blank and block.settings.button_url != blank %}
-                                    <h3 class="fm-body mb-0 qure__product-name"><a class="limited-line capitalize d-block" href="{{ block.settings.button_url }}">{{ block.settings.heading }}</a></h3>
-                                {% endif %}
-                                {% if block.settings.price != blank %}
-                                    <div class="qure__product-price mt-10">{{ block.settings.price }}</div>
-                                {% endif %}
-                                {% if block.settings.button_label != blank %}
-                                    <button type="submit" class="btn mt-20 w-100">{{ block.settings.button_label }}</button>
-                                {% endif %}
-                            </div>
                         </div>
                     </div>
                 {% endif %}
@@ -66,38 +60,18 @@
         "settings": [
             {
                 "type": "text",
-                "id": "heading",
-                "label": "t:common.header"
-            },
-            {
-                "type": "text",
                 "id": "text",
                 "label": "t:common.text"
             },
             {
-                "type": "image_picker",
-                "id": "image",
-                "label": "t:common.image"
+                "type": "product",
+                "id": "product",
+                "label": "t:common.product"
             },
             {
                 "type": "text",
-                "id": "price",
-                "label": "t:common.price"
-            },
-            {
-                "type": "text",
-                "id": "button_label",
-                "label": "t:common.button-label"
-            },
-            {
-                "type": "url",
-                "id": "button_url",
-                "label": "t:common.button-url"
-            },
-            {
-                "type": "url",
-                "id": "link_url",
-                "label": "t:common.link-url"
+                "id": "label_price",
+                "label": "t:common.label-price"
             },
             {
                 "type": "text",

@@ -212,7 +212,7 @@
         "text": "<p>For a limited time, enjoy up to 50% off when you choose our best bundle.</p><p>Click \"Check Availability\" below to see our current stock and secure your discount!</p>",
         "text_mobile": "<p>Unlock Exclusive Savings on the Qure Micro-Infusion System!</p>",
         "button_label": "Check Availability",
-        "button_url": "#buy_box",
+        "button_url": "#purchase-form",
         "image": "shopify://shop_images/mi_bundle_114c0d15-2786-47ec-943e-bbc9031791cc.webp",
         "text_with_image": "<p>Free <em>World-Wide</em> Shipping over $100</p>"
       }
@@ -695,7 +695,7 @@
         "text": "",
         "text_mobile": "",
         "button_label": "Check Availability",
-        "button_url": "#buy_box"
+        "button_url": "#purchase-form"
       }
     },
     "mi_faq_page_info_notice_BznMhH": {
