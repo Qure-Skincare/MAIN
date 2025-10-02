@@ -34,52 +34,36 @@
         "items_VBLUby": {
           "type": "items",
           "settings": {
-            "heading": "Q-Rejuvalight Pro LED Face Mask",
             "text": "Receive 11,970 Entries",
-            "image": "shopify://shop_images/q-rejuvalight-pro-led-mask_ad021a69-1ad1-4744-9917-9610bbc49237.webp",
-            "price": "$399",
-            "button_label": "Buy Now",
-            "button_url": "#",
-            "link_url": "#",
+            "product": "q-rejuvalight-pro-facewear",
+            "label_price": "",
             "quote": "BEST CHANCE"
           }
         },
         "items_qbxrLL": {
           "type": "items",
           "settings": {
-            "heading": "Neck & Décolletage LED Device",
             "text": "Receive 8,970 Entries",
-            "image": "shopify://shop_images/n_d_device_a26d9921-a777-45a3-9eee-b2702e70d76e.webp",
-            "price": "$299",
-            "button_label": "Buy Now",
-            "button_url": "#",
-            "link_url": "#",
+            "product": "neck-decolletage-led",
+            "label_price": "",
             "quote": ""
           }
         },
         "items_QHcQCe": {
           "type": "items",
           "settings": {
-            "heading": "Micro-Infusion Facial System",
             "text": "Receive 3,570 Entries",
-            "image": "shopify://shop_images/mi_facial.webp",
-            "price": "from $119",
-            "button_label": "Buy Now",
-            "button_url": "#",
-            "link_url": "#",
+            "product": "microinfusion-offer-6-month-supply",
+            "label_price": "from",
             "quote": ""
           }
         },
         "items_QhP7qQ": {
           "type": "items",
           "settings": {
-            "heading": "All-In-One Serum",
             "text": "Receive 1,975 Entries",
-            "image": "shopify://shop_images/all_in_one_serum_prod.webp",
-            "price": "from $79",
-            "button_label": "Buy Now",
-            "button_url": "#",
-            "link_url": "#",
+            "product": "face-serum",
+            "label_price": "",
             "quote": ""
           }
         }
@@ -105,73 +89,6 @@
         "heading_exterior": "Certain To Turn Heads",
         "text_exterior": "<ul><li>Hands-Free Power Liftgate</li><li>246 HP Turbocharged Engine</li><li>All-Wheel Drive Standard</li><li>7.1 Second 0-60 mph</li><li>Heated Windshield</li></ul>",
         "image_exterior": "shopify://shop_images/interior_img2.webp"
-      }
-    },
-    "car_giveaway_product_cards_addzMK": {
-      "type": "car-giveaway-product-cards",
-      "blocks": {
-        "items_X93EX6": {
-          "type": "items",
-          "settings": {
-            "heading": "Micro-Infusion Targeted Patches",
-            "text": "Receive 2,370 Entries",
-            "image": "shopify://shop_images/mi-target-pat.webp",
-            "price": "$79",
-            "button_label": "Buy Now",
-            "button_url": "#",
-            "link_url": "#",
-            "quote": ""
-          }
-        },
-        "items_GBcVLj": {
-          "type": "items",
-          "settings": {
-            "heading": "Shower Filter",
-            "text": "Receive 4,470 Entries",
-            "image": "shopify://shop_images/shwr-fil.webp",
-            "price": "from $149",
-            "button_label": "Buy Now",
-            "button_url": "#",
-            "link_url": "#",
-            "quote": ""
-          }
-        },
-        "items_MRgUDf": {
-          "type": "items",
-          "settings": {
-            "heading": "Faucet Filter",
-            "text": "Receive 3,870 Entries",
-            "image": "shopify://shop_images/water-fil.webp",
-            "price": "from $129",
-            "button_label": "Buy Now",
-            "button_url": "#",
-            "link_url": "#",
-            "quote": ""
-          }
-        },
-        "items_bMyP8k": {
-          "type": "items",
-          "settings": {
-            "heading": "Dermal Mist",
-            "text": "Receive 870 Entries",
-            "image": "shopify://shop_images/derm-mist.webp",
-            "price": "$29",
-            "button_label": "Buy Now",
-            "button_url": "#",
-            "link_url": "#",
-            "quote": ""
-          }
-        }
-      },
-      "block_order": [
-        "items_X93EX6",
-        "items_GBcVLj",
-        "items_MRgUDf",
-        "items_bMyP8k"
-      ],
-      "name": "t:sections.car-giveaway-product-cards.name",
-      "settings": {
-        "heading": ""
       }
     },
     "car_giveaway_car_bundle_br3fna": {
@@ -260,6 +177,57 @@
         "sub_text": "“I see every Qure purchase as a commitment to your skin health. As a thank you, one of those commitments will come with an extraordinary surprise.”",
         "sign": "– Kristina",
         "image": "shopify://shop_images/kristina_984ff854-12ab-469f-94ea-6a28c221402e.webp"
+      }
+    },
+    "car_giveaway_product_cards_addzMK": {
+      "type": "car-giveaway-product-cards",
+      "blocks": {
+        "items_X93EX6": {
+          "type": "items",
+          "settings": {
+            "text": "Receive 2,370 Entries",
+            "product": "micro-infusion-targeted-patches",
+            "label_price": "",
+            "quote": ""
+          }
+        },
+        "items_GBcVLj": {
+          "type": "items",
+          "settings": {
+            "text": "Receive 4,470 Entries",
+            "product": "shower-filter",
+            "label_price": "from",
+            "quote": ""
+          }
+        },
+        "items_MRgUDf": {
+          "type": "items",
+          "settings": {
+            "text": "Receive 3,870 Entries",
+            "product": "faucet-filter",
+            "label_price": "from",
+            "quote": ""
+          }
+        },
+        "items_bMyP8k": {
+          "type": "items",
+          "settings": {
+            "text": "Receive 870 Entries",
+            "product": "dermal-mist",
+            "label_price": "",
+            "quote": ""
+          }
+        }
+      },
+      "block_order": [
+        "items_X93EX6",
+        "items_GBcVLj",
+        "items_MRgUDf",
+        "items_bMyP8k"
+      ],
+      "name": "t:sections.car-giveaway-product-cards.name",
+      "settings": {
+        "heading": ""
       }
     },
     "faq_fXt8wp": {
@@ -370,8 +338,8 @@
     "car_giveaway_countdown_timer_MJrqzk",
     "car_giveaway_product_cards_f7JeEF",
     "car_giveaway_interior_style_UkFGBy",
-    "car_giveaway_product_cards_addzMK",
     "car_giveaway_car_bundle_br3fna",
+    "car_giveaway_product_cards_addzMK",
     "faq_fXt8wp",
     "car_giveaway_countdown_timer_start_zFDDKf"
   ]
