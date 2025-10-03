@@ -218,6 +218,7 @@
           "type": "items",
           "settings": {
             "heading": "Micro-Infusion Targeted Patches",
+
             "text": "Receive 2,370 Entries",
             "image": "shopify://shop_images/mi-target-pat.webp",
             "price": "$79",
@@ -230,6 +231,7 @@
           "type": "items",
           "settings": {
             "heading": "Shower Filter",
+
             "text": "Receive 4,470 Entries",
             "image": "shopify://shop_images/shwr-fil.webp",
             "price": "from $149",
@@ -242,6 +244,7 @@
           "type": "items",
           "settings": {
             "heading": "Faucet Filter",
+
             "text": "Receive 3,870 Entries",
             "image": "shopify://shop_images/water-fil.webp",
             "price": "from $129",
@@ -254,6 +257,7 @@
           "type": "items",
           "settings": {
             "heading": "Dermal Mist",
+
             "text": "Receive 870 Entries",
             "image": "shopify://shop_images/derm-mist.webp",
             "price": "$29",
