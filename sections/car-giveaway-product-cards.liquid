@@ -37,8 +37,10 @@
                                 {% if block.settings.price != blank %}
                                     <div class="qure__product-price mt-10">{{ block.settings.price }}</div>
                                 {% endif %}
-                                {% if block.settings.button_label != blank %}
-                                    <button type="submit" class="btn mt-20 w-100">{{ block.settings.button_label }}</button>
+                                {% if block.settings.button_label != blank and block.settings.button_url != blank %}
+                                    <a href="{{ block.settings.button_url }}" class="btn mt-20 w-100">{{ block.settings.button_label }}</a>
+                                {% elsif block.settings.button_label != blank %}
+                                    <button type="button" class="btn mt-20 w-100">{{ block.settings.button_label }}</button>
                                 {% endif %}
                             </div>
                         </div>

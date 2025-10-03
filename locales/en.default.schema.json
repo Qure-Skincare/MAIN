@@ -528,6 +528,9 @@
             "settings": {
                 "terms-conditions": {
                     "name": "Terms & conditions"
+                },
+                "promotional-terms-and-conditions": {
+                    "name": "Promotional terms & conditions"
                 }
             }
         },

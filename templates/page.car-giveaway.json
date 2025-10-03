@@ -26,26 +26,7 @@
       "name": "t:sections.car-giveaway-countdown-timer.name",
       "settings": {
         "heading": "30X extra entries ENDS IN:",
-        "target-datetime": "2025-10-07T00:00:00"
-      }
-    },
-    "car_giveaway_page_banner_d3gH4X": {
-      "type": "car-giveaway-page-banner",
-      "name": "t:sections.car-giveaway-page-banner.name",
-      "settings": {
-        "heading": "2025 SWEEPSTAKE",
-        "text": "Take care of your skin and win a 2025 Range Rover",
-        "button_label": "Enter Now",
-        "button_url": "#saying_thank_you",
-        "image": "shopify://shop_images/car_banner.webp",
-        "image_mobile": "shopify://shop_images/car_banner-mob.webp"
-      }
-    },
-    "car_giveaway_countdown_timer_MJrqzk": {
-      "type": "car-giveaway-countdown-timer",
-      "name": "t:sections.car-giveaway-countdown-timer.name",
-      "settings": {
-        "heading": "30X extra entries ENDS IN:"
+        "target_datetime": "2025-10-07T00:00:00"
       }
     },
     "car_giveaway_product_cards_f7JeEF": {
@@ -366,7 +347,8 @@
         "text": "",
         "button_label": "Full Terms & Conditions",
         "button_url": "https://certified.promotrust.com/QureSkincare/RangeRoverSweeps/rules/",
-        "terms-conditions": true
+        "terms-conditions": true,
+        "promotional_terms_and_conditions": "<p><strong>LIMIT OF TWENTY THOUSAND ENTRIES PER PERSON/EMAIL ADDRESS. </strong>NO PURCHASE OR PAYMENT OF ANY KIND IS NECESSARY TO ENTER OR WIN. PURCHASE OR PAYMENT DOES NOT IMPROVE YOUR CHANCE OF WINNING. The Qure Range Rover Sweepstakes is open only to legal residents of the 50 US States & DC, age of majority +. Void elsewhere and where prohibited. <strong>Winner of vehicle must pick it up from a location in Miami, Florida, designated by Sponsor.</strong> Ends 12/01/2025. Subject to complete Official Rules at https://certified.promotrust.com/QureSkincare/RangeRoverSweeps/rules/.</p>"
       }
     },
     "car_giveaway_countdown_timer_start_zFDDKf": {
@@ -374,7 +356,7 @@
       "name": "t:sections.car-giveaway-countdown-timer-start.name",
       "settings": {
         "heading": "30X entries!",
-        "target-datetime": "2025-10-07T00:00:00"
+        "target_datetime": "2025-10-07T00:00:00"
       }
     }
   },

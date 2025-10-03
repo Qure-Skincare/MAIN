@@ -49,20 +49,23 @@ Renders a faq section.
                     {% endif %}
                 {% endfor %}
             </div>
+            {% if section.settings.terms-conditions %}
+                <div class="pt-md-50 pt-40 d-flex flex-column text-center align-items-center justify-content-center gap-5">
+                    {% if section.settings.promotional_terms_and_conditions != blank %}
+                        <p class="fs-16">{{ section.settings.promotional_terms_and_conditions | replace: '<p>', '' | replace: '</p>', '' }}</p>
+                    {% endif %}
+                    <a href="{{ section.settings.button_url }}" class="text-decoration-underline text-dark">{{ section.settings.button_label }}</a>
+                </div>
+            {% else %}
             <div class="pt-md-50 pt-40 d-flex align-items-center justify-content-center gap-3">
-                {% if section.settings.terms-conditions %}
-                    <div class="pt-md-50 pt-40 d-flex align-items-center justify-content-center gap-3">
-                        <a href="{{ section.settings.button_url }}" class="text-decoration-underline text-dark">{{ section.settings.button_label }}</a>
-                    </div>
-                {% else %}
-                    <h6 class="fm-body fw-500 mb-0">
-                        {% if section.settings.text != blank %}
-                            {{ section.settings.text }}
-                            {% else %}
-                            {{ 'sections.faq.text_before_button' | t }}{% endif %}</h6>
-                    <a href="{{ section.settings.button_url }}" class="btn btn-sm btn--secondary">{% if section.settings.button_label != blank %}{{ section.settings.button_label }} {% else %} {{ 'sections.faq.button_label' | t }} {% endif %}<span><img src="{{ 'sections.faq.arrow_image' | t }}" alt="{{ 'section.faq.arrow_image.alt' | escape }}"></span></a>
-                {% endif %}        
+                <h6 class="fm-body fw-500 mb-0">
+                    {% if section.settings.text != blank %}
+                        {{ section.settings.text }}
+                        {% else %}
+                        {{ 'sections.faq.text_before_button' | t }}{% endif %}</h6>
+                <a href="{{ section.settings.button_url }}" class="btn btn-sm btn--secondary">{% if section.settings.button_label != blank %}{{ section.settings.button_label }} {% else %} {{ 'sections.faq.button_label' | t }} {% endif %}<span><img src="{{ 'sections.faq.arrow_image' | t }}" alt="{{ 'section.faq.arrow_image.alt' | escape }}"></span></a>
             </div>
+            {% endif %}
         </div>
     </div>
 </div>
@@ -99,6 +102,11 @@ Renders a faq section.
         "id": "terms-conditions",
         "label": "t:sections.faq.settings.terms-conditions.name",
         "default": false
+    },
+    {
+        "type": "richtext",
+        "id": "promotional_terms_and_conditions",
+        "label": "t:sections.faq.settings.promotional-terms-and-conditions.name",
     }
     ],
     "blocks": [
