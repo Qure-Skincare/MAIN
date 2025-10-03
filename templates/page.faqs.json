@@ -10,7 +10,7 @@
 {
   "sections": {
     "main": {
-      "type": "page-faq-new",
+      "type": "page-faqs",
       "settings": {}
     }
   },

@@ -146,7 +146,8 @@
         "number-of-views": "Number of views",
         "nubmber-of-shared": "Number of shared",
         "contact": "Contact",
-        "topic": "Topic"
+        "topic": "Topic",
+        "target-datetime": "Target date/time (YYYY-MM-DDTHH:MM:SS)" 
     },
     "blocks": {
         "block-card": {

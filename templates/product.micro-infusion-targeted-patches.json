@@ -506,7 +506,7 @@
       }
     },
     "product_mi_patches_benefits_with_icons_z8Jdif": {
-      "type": "product-mi-patches-benefits-with-icons",
+      "type": "product-mitp-benefits-with-icons",
       "blocks": {
         "image_with_text_4pM3FY": {
           "type": "image_with_text",
@@ -825,7 +825,7 @@
       }
     },
     "product_mi_patches_image_accordion_GAU3GJ": {
-      "type": "product-mi-patches-image-accordion",
+      "type": "product-mitp-image-accordion",
       "blocks": {
         "accordion_iPmkaU": {
           "type": "accordion",

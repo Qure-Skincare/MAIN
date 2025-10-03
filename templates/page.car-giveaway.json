@@ -25,6 +25,26 @@
       "type": "car-giveaway-countdown-timer",
       "name": "t:sections.car-giveaway-countdown-timer.name",
       "settings": {
+        "heading": "30X extra entries ENDS IN:",
+        "target-datetime": "2025-10-07T00:00:00"
+      }
+    },
+    "car_giveaway_page_banner_d3gH4X": {
+      "type": "car-giveaway-page-banner",
+      "name": "t:sections.car-giveaway-page-banner.name",
+      "settings": {
+        "heading": "2025 SWEEPSTAKE",
+        "text": "Take care of your skin and win a 2025 Range Rover",
+        "button_label": "Enter Now",
+        "button_url": "#saying_thank_you",
+        "image": "shopify://shop_images/car_banner.webp",
+        "image_mobile": "shopify://shop_images/car_banner-mob.webp"
+      }
+    },
+    "car_giveaway_countdown_timer_MJrqzk": {
+      "type": "car-giveaway-countdown-timer",
+      "name": "t:sections.car-giveaway-countdown-timer.name",
+      "settings": {
         "heading": "30X extra entries ENDS IN:"
       }
     },
@@ -34,36 +54,48 @@
         "items_VBLUby": {
           "type": "items",
           "settings": {
+            "heading": "Q-Rejuvalight Pro LED Face Mask",
             "text": "Receive 11,970 Entries",
-            "product": "q-rejuvalight-pro-facewear",
-            "label_price": "",
+            "image": "shopify://shop_images/q-rejuvalight-pro-led-mask_ad021a69-1ad1-4744-9917-9610bbc49237.webp",
+            "price": "$399",
+            "button_label": "Buy Now",
+            "button_url": "#",
             "quote": "BEST CHANCE"
           }
         },
         "items_qbxrLL": {
           "type": "items",
           "settings": {
+            "heading": "Neck & Décolletage LED Device",
             "text": "Receive 8,970 Entries",
-            "product": "neck-decolletage-led",
-            "label_price": "",
+            "image": "shopify://shop_images/n_d_device_a26d9921-a777-45a3-9eee-b2702e70d76e.webp",
+            "price": "$299",
+            "button_label": "Buy Now",
+            "button_url": "#",
             "quote": ""
           }
         },
         "items_QHcQCe": {
           "type": "items",
           "settings": {
+            "heading": "Micro-Infusion Facial System",
             "text": "Receive 3,570 Entries",
-            "product": "microinfusion-offer-6-month-supply",
-            "label_price": "from",
+            "image": "shopify://shop_images/mi_facial.webp",
+            "price": "from $119",
+            "button_label": "Buy Now",
+            "button_url": "#",
             "quote": ""
           }
         },
         "items_QhP7qQ": {
           "type": "items",
           "settings": {
+            "heading": "All-In-One Serum",
             "text": "Receive 1,975 Entries",
-            "product": "face-serum",
-            "label_price": "",
+            "image": "shopify://shop_images/all_in_one_serum_prod.webp",
+            "price": "from $79",
+            "button_label": "Buy Now",
+            "button_url": "#",
             "quote": ""
           }
         }
@@ -185,40 +217,52 @@
         "items_X93EX6": {
           "type": "items",
           "settings": {
+            "heading": "Micro-Infusion Targeted Patches",
 
             "text": "Receive 2,370 Entries",
-            "product": "micro-infusion-targeted-patches",
-            "label_price": "",
+            "image": "shopify://shop_images/mi-target-pat.webp",
+            "price": "$79",
+            "button_label": "Buy Now",
+            "button_url": "#",
             "quote": ""
           }
         },
         "items_GBcVLj": {
           "type": "items",
           "settings": {
+            "heading": "Shower Filter",
 
             "text": "Receive 4,470 Entries",
-            "product": "shower-filter",
-            "label_price": "from",
+            "image": "shopify://shop_images/shwr-fil.webp",
+            "price": "from $149",
+            "button_label": "Buy Now",
+            "button_url": "#",
             "quote": ""
           }
         },
         "items_MRgUDf": {
           "type": "items",
           "settings": {
+            "heading": "Faucet Filter",
 
             "text": "Receive 3,870 Entries",
-            "product": "faucet-filter",
-            "label_price": "from",
+            "image": "shopify://shop_images/water-fil.webp",
+            "price": "from $129",
+            "button_label": "Buy Now",
+            "button_url": "#",
             "quote": ""
           }
         },
         "items_bMyP8k": {
           "type": "items",
           "settings": {
+            "heading": "Dermal Mist",
 
             "text": "Receive 870 Entries",
-            "product": "dermal-mist",
-            "label_price": "",
+            "image": "shopify://shop_images/derm-mist.webp",
+            "price": "$29",
+            "button_label": "Buy Now",
+            "button_url": "#",
             "quote": ""
           }
         }
@@ -333,7 +377,8 @@
       "type": "car-giveaway-countdown-timer-start",
       "name": "t:sections.car-giveaway-countdown-timer-start.name",
       "settings": {
-        "heading": "30X entries!"
+        "heading": "30X entries!",
+        "target-datetime": "2025-10-07T00:00:00"
       }
     }
   },

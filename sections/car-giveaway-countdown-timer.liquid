@@ -9,7 +9,7 @@
         {% if section.settings.heading != blank %}
             <p class="extra_entries">{{ section.settings.heading }}</p>
         {% endif %}
-        <div class="countdown" data-target="2025-10-02T00:00:00">
+        <div class="countdown" data-target="{{ section.settings.target_datetime }}">
             <div>
                 <div class="days">{{ 'sections.car-giveaway-countdown-timer.00' | t }}</div><span>{{ 'sections.car-giveaway-countdown-timer.days' | t }}</span>
             </div>
@@ -43,6 +43,12 @@
         "type": "text",
         "id": "heading",
         "label": "t:common.header"
+   },
+   {
+        "type": "text",
+        "id": "target_datetime",
+        "label": "t:common.target-datetime",
+        "default": "2025-10-07T00:00:00"
    }
   ]
 }
