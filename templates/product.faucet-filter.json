@@ -501,6 +501,13 @@
     "video_review_slider_8tmR8r": {
       "type": "video-review-slider",
       "blocks": {
+        "slider_qQYBeP": {
+          "type": "slider",
+          "settings": {
+            "youtube_url": "",
+            "wistia_url": "yvm1h7gbig"
+          }
+        },
         "slider_TCQPBh": {
           "type": "slider",
           "settings": {
@@ -550,15 +557,16 @@
             "wistia_url": "9xpl4uthol"
           }
         },
-        "slider_qQYBeP": {
+        "slider_Qai46F": {
           "type": "slider",
           "settings": {
             "youtube_url": "",
-            "wistia_url": "yvm1h7gbig"
+            "wistia_url": "o0wghi5h89"
           }
         }
       },
       "block_order": [
+        "slider_qQYBeP",
         "slider_TCQPBh",
         "slider_Udt4ty",
         "slider_FCDTXf",
@@ -566,7 +574,7 @@
         "slider_dcKaRT",
         "slider_ix3F8e",
         "slider_8ymdeH",
-        "slider_qQYBeP"
+        "slider_Qai46F"
       ],
       "name": "t:sections.video-review-slider.name",
       "settings": {
