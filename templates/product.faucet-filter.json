@@ -93,6 +93,7 @@
         "subscription_6xp1uL": {
           "type": "subscription",
           "settings": {
+            "product": "faucet-filter-refill",
             "subscription_onetime_text": "Faucet + 1 Filter",
             "subscription_days_text": "Filter Refill",
             "subscription_discount_percent": 50,
