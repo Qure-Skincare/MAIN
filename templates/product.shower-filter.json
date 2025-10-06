@@ -402,7 +402,7 @@
         "image_text": "",
         "image": "shopify://shop_images/doctor_shah_desk.webp",
         "image_mobile": "shopify://shop_images/doctor_shah_mob.webp",
-        "video_url": "",
+        "video_url": "https://www.youtube.com/watch?v=Tk39sbR8Nak&t=433s",
         "wistia_url": ""
       }
     },
@@ -840,7 +840,9 @@
         "heading": "Have questions?",
         "text": "",
         "button_label": "Ask us",
-        "button_url": ""
+        "button_url": "",
+        "terms-conditions": false,
+        "promotional_terms_and_conditions": ""
       }
     },
     "sticky_cta_ggPFXx": {
