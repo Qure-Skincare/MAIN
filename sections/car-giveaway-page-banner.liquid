@@ -21,14 +21,14 @@
         class="page__banner-wrapper position-absolute d-flex align-items-md-center justify-content-end top-0 bottom-0 start-0 end-0">
         <div class="container">
             <div class="d-flex justify-content-center justify-content-md-end align-items-start h-100 position-relative">
-                <div class="ctm-width ctm-color text-center text-md-center offset-md-6 pt-20 pt-md-0"
+                <div class="ctm-width ctm-color text-center text-md-center offset-md-6 pt-15 pt-md-0"
                     style="--ctm-width:345px;--txt-color-mob:#000;">
                     {% if section.settings.heading != blank %}
                         <p class="mb-8 fs-14">{{ section.settings.heading }}</p>
                     {% endif %}
                     <h1 class="page-banner-title pt-0 px-10 px-md-0" style="--pg-title-mob:#000;--font-h1:38px;--font-h1-mob:32px;">{{ 'sections.car-giveaway-page-banner.cta_text' | t }}<img src="{{ 'sections.car-giveaway-page-banner.qure_logo' | t }}" class="qure_logo_title">{{ 'sections.car-giveaway-page-banner.after_logo_text' | t }} </h1>
                     {% if section.settings.text != blank %}
-                        <p class="mt-8 mb-0 fs-18 fs-mob-16">{{ section.settings.text }}</p>
+                        <p class="mt-8 mb-0 fs-16 fs-md-18">{{ section.settings.text }}</p>
                     {% endif %}
                     <div class="ctm-width mx-auto" style="--ctm-width:450px">
                         {% if section.settings.button_label != blank and section.settings.button_url != blank %}

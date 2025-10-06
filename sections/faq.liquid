@@ -50,21 +50,21 @@ Renders a faq section.
                 {% endfor %}
             </div>
             {% if section.settings.terms-conditions %}
-                <div class="pt-md-50 pt-40 d-flex flex-column text-center align-items-center justify-content-center gap-5">
+                <div class="pt-md-50 pt-40 text-center">
                     {% if section.settings.promotional_terms_and_conditions != blank %}
-                        <p class="fs-16">{{ section.settings.promotional_terms_and_conditions | replace: '<p>', '' | replace: '</p>', '' }}</p>
+                        <p class="fs-16 mb-30">{{ section.settings.promotional_terms_and_conditions | replace: '<p>', '' | replace: '</p>', '' }}</p>
                     {% endif %}
-                    <a href="{{ section.settings.button_url }}" class="text-decoration-underline text-dark">{{ section.settings.button_label }}</a>
+                    <a href="{{ section.settings.button_url }}" class="text-decoration-underline text-dark">{{ section.settings.button_label }} <img src="{{ 'sections.faq.arrow_rotated_image' | t }}" alt="{{ 'sections.faq.arrow_rotated_image.alt' | t | escape }}"></a>
                 </div>
             {% else %}
-            <div class="pt-md-50 pt-40 d-flex align-items-center justify-content-center gap-3">
-                <h6 class="fm-body fw-500 mb-0">
-                    {% if section.settings.text != blank %}
-                        {{ section.settings.text }}
-                        {% else %}
-                        {{ 'sections.faq.text_before_button' | t }}{% endif %}</h6>
-                <a href="{{ section.settings.button_url }}" class="btn btn-sm btn--secondary">{% if section.settings.button_label != blank %}{{ section.settings.button_label }} {% else %} {{ 'sections.faq.button_label' | t }} {% endif %}<span><img src="{{ 'sections.faq.arrow_image' | t }}" alt="{{ 'section.faq.arrow_image.alt' | escape }}"></span></a>
-            </div>
+                <div class="pt-md-50 pt-40 d-flex align-items-center justify-content-center gap-3">
+                    <h6 class="fm-body fw-500 mb-0">
+                        {% if section.settings.text != blank %}
+                            {{ section.settings.text }}
+                            {% else %}
+                            {{ 'sections.faq.text_before_button' | t }}{% endif %}</h6>
+                    <a href="{{ section.settings.button_url }}" class="btn btn-sm btn--secondary">{% if section.settings.button_label != blank %}{{ section.settings.button_label }} {% else %} {{ 'sections.faq.button_label' | t }} {% endif %}<span><img src="{{ 'sections.faq.arrow_image' | t }}" alt="{{ 'section.faq.arrow_image.alt' | escape }}"></span></a>
+                </div>
             {% endif %}
         </div>
     </div>
@@ -106,7 +106,7 @@ Renders a faq section.
     {
         "type": "richtext",
         "id": "promotional_terms_and_conditions",
-        "label": "t:sections.faq.settings.promotional-terms-and-conditions.name",
+        "label": "t:sections.faq.settings.promotional-terms-and-conditions.name"
     }
     ],
     "blocks": [

@@ -128,7 +128,8 @@
     "faq": {
       "arrow_image": "https://qureskincaredns-main.com/assets/images/arrow_right.svg",
       "button_label": "Ask us",
-      "text_before_button": "Don’t see your question?"
+      "text_before_button": "Don’t see your question?",
+      "arrow_rotated_image": "https://qureskincaredns-main.com/sections/isolated/faqs/images/arrow_rotated.svg"
     },
     "expert-advisory": {
       "shop_now_text": "Shop Now"
