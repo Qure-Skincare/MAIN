@@ -501,73 +501,56 @@
     "video_review_slider_8tmR8r": {
       "type": "video-review-slider",
       "blocks": {
-        "slider_TCQPBh": {
+        "slider_Ma6kje": {
           "type": "slider",
           "settings": {
             "youtube_url": "",
-            "wistia_url": "0gqtwwjamc"
+            "wistia_url": "yvm1h7gbig"
           }
         },
-        "slider_Udt4ty": {
+        "slider_wQzpUh": {
           "type": "slider",
           "settings": {
             "youtube_url": "",
-            "wistia_url": "cxcun6wr2a"
+            "wistia_url": "l754b3m8ii"
           }
         },
-        "slider_FCDTXf": {
+        "slider_4r7WTK": {
           "type": "slider",
           "settings": {
             "youtube_url": "",
-            "wistia_url": "hizkyyq379"
+            "wistia_url": "l37pw1rg6z"
           }
         },
-        "slider_g3LGam": {
+        "slider_PUfQn6": {
           "type": "slider",
           "settings": {
             "youtube_url": "",
-            "wistia_url": "l9467wmx0n"
+            "wistia_url": "tw9t09jts0"
           }
         },
-        "slider_dcKaRT": {
+        "slider_bXU69G": {
           "type": "slider",
           "settings": {
             "youtube_url": "",
-            "wistia_url": "wj0ao3l2s1"
+            "wistia_url": "o0wghi5h89"
           }
         },
-        "slider_ix3F8e": {
+        "slider_87MMUY": {
           "type": "slider",
           "settings": {
             "youtube_url": "",
-            "wistia_url": "ivoe7gu6xf"
-          }
-        },
-        "slider_8ymdeH": {
-          "type": "slider",
-          "settings": {
-            "youtube_url": "",
-            "wistia_url": "9xpl4uthol"
-          }
-        },
-        "slider_wWGYPb": {
-          "type": "slider",
-          "settings": {
-            "youtube_url": "",
-            "video_cover_image": "shopify://shop_images/Review.png",
-            "wistia_url": "https://www.tiktok.com/@theugcfiles/video/7442571889878289672?_r=1&_t=8rn3f5qRoiS"
+            "wistia_url": "dfp3k20txu"
           }
         }
       },
       "block_order": [
-        "slider_TCQPBh",
-        "slider_Udt4ty",
-        "slider_FCDTXf",
-        "slider_g3LGam",
-        "slider_dcKaRT",
-        "slider_ix3F8e",
-        "slider_8ymdeH",
-        "slider_wWGYPb"
+        "slider_Ma6kje",
+        "slider_wQzpUh",
+        "slider_4r7WTK",
+        "slider_PUfQn6",
+        "slider_bXU69G",
+        "slider_87MMUY"
       ],
       "name": "t:sections.video-review-slider.name",
       "settings": {
