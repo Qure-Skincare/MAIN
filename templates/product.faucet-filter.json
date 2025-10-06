@@ -501,32 +501,56 @@
     "video_review_slider_8tmR8r": {
       "type": "video-review-slider",
       "blocks": {
-        "slider_qQYBeP": {
-          "type": "slider",
-          "settings": {
-            "youtube_url": "",
-            "wistia_url": "yvm1h7gbig"
-          }
-        },
-        "slider_Qai46F": {
+        "slider_bXU69G": {
           "type": "slider",
           "settings": {
             "youtube_url": "",
             "wistia_url": "o0wghi5h89"
           }
         },
-        "slider_bXU69G": {
+        "slider_87MMUY": {
           "type": "slider",
           "settings": {
             "youtube_url": "",
             "wistia_url": "dfp3k20txu"
           }
+        },
+        "slider_PUfQn6": {
+          "type": "slider",
+          "settings": {
+            "youtube_url": "",
+            "wistia_url": "tw9t09jts0"
+          }
+        },
+        "slider_4r7WTK": {
+          "type": "slider",
+          "settings": {
+            "youtube_url": "",
+            "wistia_url": "l37pw1rg6z"
+          }
+        },
+        "slider_wQzpUh": {
+          "type": "slider",
+          "settings": {
+            "youtube_url": "",
+            "wistia_url": "l754b3m8ii"
+          }
+        },
+        "slider_Ma6kje": {
+          "type": "slider",
+          "settings": {
+            "youtube_url": "",
+            "wistia_url": "yvm1h7gbig"
+          }
         }
       },
       "block_order": [
-        "slider_qQYBeP",
-        "slider_Qai46F",
-        "slider_bXU69G"
+        "slider_bXU69G",
+        "slider_87MMUY",
+        "slider_PUfQn6",
+        "slider_4r7WTK",
+        "slider_wQzpUh",
+        "slider_Ma6kje"
       ],
       "name": "t:sections.video-review-slider.name",
       "settings": {
