@@ -84,17 +84,19 @@
         {% endunless %}
     </div>
     </div>
-    <form id="{{ cart_item_id }}_remove" method="post" action="/cart/change" enctype="multipart/form-data">
-        <button class="product-remove">
-            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
-                <path
-                    d="M14.75 8.33183C14.75 12.2981 11.5061 15.5172 7.5 15.5172C3.49389 15.5172 0.25 12.2981 0.25 8.33183C0.25 4.36551 3.49389 1.14648 7.5 1.14648C11.5061 1.14648 14.75 4.36551 14.75 8.33183Z"
-                    stroke="#5C5C5C" stroke-width="0.5" />
-                <path d="M4.48242 11.5955L10.2683 5.64722" stroke="#5C5C5C" stroke-width="0.5" />
-                <path d="M10.375 11.489L4.375 5.75298" stroke="#5C5C5C" stroke-width="0.5" />
-            </svg>
-        </button>
-        <input type="hidden" name="quantity" value="0">
-        <input type="hidden" name="id" value="{{ cart_item_key }}">
-    </form>
+    {% unless gift_exists %}
+        <form id="{{ cart_item_id }}_remove" method="post" action="/cart/change" enctype="multipart/form-data">
+            <button class="product-remove">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
+                    <path
+                        d="M14.75 8.33183C14.75 12.2981 11.5061 15.5172 7.5 15.5172C3.49389 15.5172 0.25 12.2981 0.25 8.33183C0.25 4.36551 3.49389 1.14648 7.5 1.14648C11.5061 1.14648 14.75 4.36551 14.75 8.33183Z"
+                        stroke="#5C5C5C" stroke-width="0.5" />
+                    <path d="M4.48242 11.5955L10.2683 5.64722" stroke="#5C5C5C" stroke-width="0.5" />
+                    <path d="M10.375 11.489L4.375 5.75298" stroke="#5C5C5C" stroke-width="0.5" />
+                </svg>
+            </button>
+            <input type="hidden" name="quantity" value="0">
+            <input type="hidden" name="id" value="{{ cart_item_key }}">
+        </form>
+    {% endunless %}
 </div>
