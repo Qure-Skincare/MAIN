@@ -67,11 +67,6 @@
                         "label": "t:sections.purchase-form-landing.blocks.product.settings.subscription_days_text"
                     },
                     {
-                        "type": "product",
-                        "id": "product",
-                        "label": "t:common.product"
-                    },
-                    {
                         "type": "range",
                         "id": "subscription_discount_percent",
                         "min": 0,
@@ -80,6 +75,21 @@
                         "unit": "%",
                         "label": "t:sections.purchase-form-landing.blocks.product.settings.subscription_discount",
                         "default": 50
+                    },
+                    {
+                        "type": "product",
+                        "id": "product",
+                        "label": "t:common.product"
+                    },
+                    {
+                        "type": "range",
+                        "id": "product_discount_percent",
+                        "min": 0,
+                        "max": 100,
+                        "step": 1,
+                        "unit": "%",
+                        "label": "t:common.product_discount",
+                        "default": 30
                     },
                     {
                         "type": "header",

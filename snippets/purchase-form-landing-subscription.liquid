@@ -5,7 +5,7 @@
             {% assign product_prefix = 'purchase-form-landing-subscription-' %}
 
             {% if block.settings.product != blank %}
-                {%- assign subscription_discount_percent = 30 -%}
+                {%- assign subscription_discount_percent = block.settings.product_discount_percent -%}
                 {% include 'get-product-data', product_handle: block.settings.product, product_prefix: product_prefix %}
                 {%- capture subscription_product -%}
                     <div class="qure__price div">{{ 'purchase-form.settings.subscription-days-option' | t }} {{ block.settings.subscription_days_text }} ( <span class="price__sale fs-16 igPrice" style="margin:0;">{{ product_sale_price }}</span> {{ product_subscription_price }} )</div>
