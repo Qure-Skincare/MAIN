@@ -549,6 +549,13 @@
             "youtube_url": "",
             "wistia_url": "9xpl4uthol"
           }
+        },
+        "slider_wWGYPb": {
+          "type": "slider",
+          "settings": {
+            "youtube_url": "",
+            "wistia_url": "https://www.tiktok.com/@theugcfiles/video/7442571889878289672?_r=1&_t=8rn3f5qRoiS"
+          }
         }
       },
       "block_order": [
@@ -558,7 +565,8 @@
         "slider_g3LGam",
         "slider_dcKaRT",
         "slider_ix3F8e",
-        "slider_8ymdeH"
+        "slider_8ymdeH",
+        "slider_wWGYPb"
       ],
       "name": "t:sections.video-review-slider.name",
       "settings": {
