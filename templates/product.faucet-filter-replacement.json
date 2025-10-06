@@ -476,60 +476,52 @@
           "type": "slider",
           "settings": {
             "youtube_url": "",
-            "wistia_url": "0gqtwwjamc"
+            "wistia_url": "yvm1h7gbig"
           }
         },
-        "slider_PffREq": {
+        "slider_zXgc97": {
           "type": "slider",
           "settings": {
             "youtube_url": "",
-            "wistia_url": "9jm525u6ux"
+            "wistia_url": "l754b3m8ii"
           }
         },
-        "slider_FfHayB": {
+        "slider_KcaV8W": {
           "type": "slider",
           "settings": {
             "youtube_url": "",
-            "wistia_url": "x51zqe724s"
+            "wistia_url": "l37pw1rg6z"
           }
         },
-        "slider_eXbedy": {
+        "slider_7fGzQB": {
           "type": "slider",
           "settings": {
             "youtube_url": "",
-            "wistia_url": "1xdewr5qme"
+            "wistia_url": "tw9t09jts0"
           }
         },
-        "slider_fUpJP9": {
+        "slider_kQmCrr": {
           "type": "slider",
           "settings": {
             "youtube_url": "",
-            "wistia_url": "wj0ao3l2s1"
+            "wistia_url": "o0wghi5h89"
           }
         },
-        "slider_mUxPim": {
+        "slider_ptd8yj": {
           "type": "slider",
           "settings": {
             "youtube_url": "",
-            "wistia_url": "ivoe7gu6xf"
-          }
-        },
-        "slider_zcnFDA": {
-          "type": "slider",
-          "settings": {
-            "youtube_url": "",
-            "wistia_url": "9xpl4uthol"
+            "wistia_url": "dfp3k20txu"
           }
         }
       },
       "block_order": [
         "slider_gBeyX9",
-        "slider_PffREq",
-        "slider_FfHayB",
-        "slider_eXbedy",
-        "slider_fUpJP9",
-        "slider_mUxPim",
-        "slider_zcnFDA"
+        "slider_zXgc97",
+        "slider_KcaV8W",
+        "slider_7fGzQB",
+        "slider_kQmCrr",
+        "slider_ptd8yj"
       ],
       "name": "t:sections.video-review-slider.name",
       "settings": {
@@ -813,7 +805,9 @@
         "heading": "Have questions?",
         "text": "Don't see your question?",
         "button_label": "Ask us",
-        "button_url": "https://qureskincare.com/pages/contact-us"
+        "button_url": "https://qureskincare.com/pages/contact-us",
+        "terms-conditions": false,
+        "promotional_terms_and_conditions": ""
       }
     },
     "sticky_cta_BrchB7": {
