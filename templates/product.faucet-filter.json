@@ -515,13 +515,6 @@
             "wistia_url": "o0wghi5h89"
           }
         },
-        "slider_FCDTXf": {
-          "type": "slider",
-          "settings": {
-            "youtube_url": "",
-            "wistia_url": "hizkyyq379"
-          }
-        },
         "slider_bXU69G": {
           "type": "slider",
           "settings": {
@@ -533,7 +526,6 @@
       "block_order": [
         "slider_qQYBeP",
         "slider_Qai46F",
-        "slider_FCDTXf",
         "slider_bXU69G"
       ],
       "name": "t:sections.video-review-slider.name",
