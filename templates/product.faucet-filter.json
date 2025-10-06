@@ -515,13 +515,6 @@
             "wistia_url": "o0wghi5h89"
           }
         },
-        "slider_TCQPBh": {
-          "type": "slider",
-          "settings": {
-            "youtube_url": "",
-            "wistia_url": "0gqtwwjamc"
-          }
-        },
         "slider_Udt4ty": {
           "type": "slider",
           "settings": {
@@ -536,34 +529,6 @@
             "wistia_url": "hizkyyq379"
           }
         },
-        "slider_g3LGam": {
-          "type": "slider",
-          "settings": {
-            "youtube_url": "",
-            "wistia_url": "l9467wmx0n"
-          }
-        },
-        "slider_dcKaRT": {
-          "type": "slider",
-          "settings": {
-            "youtube_url": "",
-            "wistia_url": "wj0ao3l2s1"
-          }
-        },
-        "slider_ix3F8e": {
-          "type": "slider",
-          "settings": {
-            "youtube_url": "",
-            "wistia_url": "ivoe7gu6xf"
-          }
-        },
-        "slider_8ymdeH": {
-          "type": "slider",
-          "settings": {
-            "youtube_url": "",
-            "wistia_url": "9xpl4uthol"
-          }
-        },
         "slider_bXU69G": {
           "type": "slider",
           "settings": {
@@ -575,13 +540,8 @@
       "block_order": [
         "slider_qQYBeP",
         "slider_Qai46F",
-        "slider_TCQPBh",
         "slider_Udt4ty",
         "slider_FCDTXf",
-        "slider_g3LGam",
-        "slider_dcKaRT",
-        "slider_ix3F8e",
-        "slider_8ymdeH",
         "slider_bXU69G"
       ],
       "name": "t:sections.video-review-slider.name",
