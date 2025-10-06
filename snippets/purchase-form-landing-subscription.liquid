@@ -3,6 +3,15 @@
         {% if block.type == 'subscription' %}
 
             {% assign product_prefix = 'purchase-form-landing-subscription-' %}
+
+            {% if block.settings.product != blank %}
+                {%- assign subscription_discount_percent = 30 -%}
+                {% include 'get-product-data', product_handle: block.settings.product, product_prefix: product_prefix %}
+                {%- capture subscription_product -%}
+                    <div class="qure__price div">{{ 'purchase-form.settings.subscription-days-option' | t }} {{ block.settings.subscription_days_text }} ( <span class="price__sale fs-16 igPrice" style="margin:0;">{{ product_sale_price }}</span> {{ product_subscription_price }} )</div>
+                {%- endcapture -%}
+            {%- endif -%}
+
             {% assign subscription_discount_percent = block.settings.subscription_discount_percent %}
 
             {% capture data-per %}
@@ -12,7 +21,6 @@
                     {{ 'purchase-form.settings.subscribe-button-label' | t }}
                 {% endif %}
             {% endcapture %}
-
 
             {% include 'get-product-data', product_handle: product.handle, product_prefix: product_prefix %}
 
@@ -59,7 +67,11 @@
                                         class="subscription-item-row d-flex align-items-center gap-4 justify-content-between fs-16">
                                         <div class="subscription-item-title">
                                             {% if subscription_discount_percent > 0 %}
-                                                <div class="qure__price div">{{ 'purchase-form.settings.subscription-days-option' | t }} {{ block.settings.subscription_days_text }} ( <span class="price__sale fs-16 igPrice" style="margin:0;">{{ product_sale_price }}</span> {{ product_subscription_price }} )</div>
+                                                {% if block.settings.product != blank %}
+                                                    {{ subscription_product }}
+                                                {%- else -%}
+                                                    <div class="qure__price div">{{ 'purchase-form.settings.subscription-days-option' | t }} {{ block.settings.subscription_days_text }} ( <span class="price__sale fs-16 igPrice" style="margin:0;">{{ product_sale_price }}</span> {{ product_subscription_price }} )</div>
+                                                {%- endif -%}
                                             {% else %}
                                                 <div class="qure__price div">{{ 'purchase-form.settings.subscription-days-option' | t }} {{ block.settings.subscription_days_text }} ( <span class="igPrice">{{ product_sale_price }}</span> )</div>
                                             {% endif %}
