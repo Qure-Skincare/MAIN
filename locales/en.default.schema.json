@@ -849,7 +849,7 @@
                         "preorder_date_reserved": "Reserved date",
                         "subscription_onetime_text": "Onetime text",
                         "subscription_days_text": "Days text",
-                        "subscription_discount": "Discount"
+                        "subscription_discount": "Subscription discount"
                     }
                 }
             }
