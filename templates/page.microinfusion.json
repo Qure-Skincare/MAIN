@@ -1525,7 +1525,9 @@
         "heading": "Have questions?",
         "text": "Don’t see your question?",
         "button_label": "Ask us",
-        "button_url": "https://qureskincare.com/pages/contact-us"
+        "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home",
+        "terms-conditions": false,
+        "promotional_terms_and_conditions": ""
       }
     },
     "sticky_cta_KCAhq3": {
