@@ -235,7 +235,6 @@
         },
         "product_DBd4ef": {
           "type": "product",
-          "disabled": true,
           "settings": {
             "product": "fade-firm-bundle-pro",
             "preselected": true,
@@ -245,7 +244,6 @@
         },
         "product_7dL4ci": {
           "type": "product",
-          "disabled": true,
           "settings": {
             "product": "fade-firm-bundle-advance",
             "preselected": false,
@@ -255,7 +253,6 @@
         },
         "product_Xf8A6C": {
           "type": "product",
-          "disabled": true,
           "settings": {
             "product": "fade-firm-bundle-essentials",
             "preselected": false,
