@@ -85,7 +85,7 @@
                                         <div class="div">{{ block.settings.heading }}<br><span class="fs-14">{{ block.settings.subheading }}</span></div>
                                         </div>
                                         <div>
-                                            <div class="vp-price">
+                                            <div class="vp-price{% if product_black_friday_price != blank %} dis_red_line{% endif %}">
                                                 {% if product_before_price != blank %}
                                                     <span data-variant-id="{{ product_variant_id }}" class="vp-price-sale igComparePrice">{{ product_before_price }}</span>
                                                     <span data-variant-id="{{ product_variant_id }}" class="igPrice">{{ product_sale_price }}</span>
