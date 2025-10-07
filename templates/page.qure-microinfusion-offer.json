@@ -9,6 +9,16 @@
  */
 {
   "sections": {
+    "announcement_bar_iNbPEw": {
+      "type": "announcement-bar",
+      "name": "t:sections.announcement-bar.name",
+      "settings": {
+        "heading": "Prime Day Promo 67% OFF Micro-Infusion",
+        "button-label": "SHOP NOW",
+        "button-url": "https://qureskincare.com/pages/qure-microinfusion-offer",
+        "show": true
+      }
+    },
     "page_header_SXJyMD": {
       "type": "page-header",
       "blocks": {
@@ -171,8 +181,8 @@
       "type": "stock-alert",
       "name": "t:sections.stock-alert.name",
       "settings": {
-        "text": "<p>AUTUMN GLOW SALE!</p>",
-        "text_mobile": "<p>AUTUMN GLOW SALE!</p>",
+        "text": "<p>PRIME DAY PROMO!</p>",
+        "text_mobile": "<p>PRIME DAY PROMO!</p>",
         "style_color": "light_green"
       }
     },
@@ -1089,7 +1099,7 @@
           "settings": {
             "product": "micro-infusion-5-month-bundle-for-wrinkles-copy",
             "preselected": true,
-            "heading": "5 Month Supply Autumn Glow Sale",
+            "heading": "5 Month Supply PRIME DAY PROMO",
             "subheading": "(10 Treatments)",
             "image": "shopify://shop_images/MI_5_month_DS_2.png",
             "soldout": false,
@@ -1158,7 +1168,7 @@
           "settings": {
             "product": "micro-infusion-5-month-bundle-for-wrinkles",
             "preselected": true,
-            "heading": "5 Month Supply  Autumn Glow Sale",
+            "heading": "5 Month Supply PRIME DAY PROMO",
             "subheading": "(10 Treatments)",
             "image": "shopify://shop_images/MI_5_month_W_2.png",
             "soldout": false,
@@ -1227,7 +1237,7 @@
           "settings": {
             "product": "micro-infusion-5-month-bundle-for-dark-spots-copy",
             "preselected": true,
-            "heading": "5 Month Supply  Autumn Glow Sale",
+            "heading": "5 Month Supply PRIME DAY PROMO",
             "subheading": "(10 Treatments)",
             "image": "shopify://shop_images/MI_5_month_DS_W_3.png",
             "soldout": false,
@@ -1480,11 +1490,14 @@
         "heading": "Have questions?",
         "text": "Don’t see your question?",
         "button_label": "Ask us",
-        "button_url": "#"
+        "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home",
+        "terms-conditions": false,
+        "promotional_terms_and_conditions": ""
       }
     }
   },
   "order": [
+    "announcement_bar_iNbPEw",
     "page_header_SXJyMD",
     "slider_featured_in_lVZt5L",
     "banner_with_text_phJT4F",

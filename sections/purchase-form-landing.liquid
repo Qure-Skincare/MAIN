@@ -41,6 +41,10 @@
                     {
                         "value": "variant",
                         "label": "t:common.variant"
+                    },
+                    {
+                        "value": "list",
+                        "label": "t:common.list"
                     }
                 ],
                 "default": "box"
@@ -75,6 +79,21 @@
                         "unit": "%",
                         "label": "t:sections.purchase-form-landing.blocks.product.settings.subscription_discount",
                         "default": 50
+                    },
+                    {
+                        "type": "product",
+                        "id": "product",
+                        "label": "t:common.product"
+                    },
+                    {
+                        "type": "range",
+                        "id": "product_discount_percent",
+                        "min": 0,
+                        "max": 100,
+                        "step": 1,
+                        "unit": "%",
+                        "label": "t:common.product_discount",
+                        "default": 30
                     },
                     {
                         "type": "header",
@@ -177,7 +196,17 @@
                         "id": "product_selling_plan",
                         "label": "t:common.selling_plan",
                         "default": 0
-                    },   
+                    },  
+                    {
+                        "type": "range",
+                        "id": "product_discount_percent",
+                        "min": 0,
+                        "max": 100,
+                        "step": 1,
+                        "unit": "%",
+                        "label": "t:common.product_discount",
+                        "default": 0
+                    },
                     {
                         "type": "checkbox",
                         "id": "preselected",

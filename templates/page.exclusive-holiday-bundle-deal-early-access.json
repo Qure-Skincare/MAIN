@@ -9,16 +9,6 @@
  */
 {
   "sections": {
-    "announcement_bar_abkmWb": {
-      "type": "announcement-bar",
-      "name": "t:sections.announcement-bar.name",
-      "settings": {
-        "heading": "Prime Day Promo 67% OFF Micro-Infusion",
-        "button-label": "SHOP NOW",
-        "button-url": "https://qureskincare.com/pages/qure-microinfusion-offer",
-        "show": true
-      }
-    },
     "bundle-header": {
       "type": "bundle-header",
       "custom_css": [
@@ -959,7 +949,6 @@
     }
   },
   "order": [
-    "announcement_bar_abkmWb",
     "bundle-header",
     "carousel_BHi3nq",
     "slider_featured_in_RUfV4m",

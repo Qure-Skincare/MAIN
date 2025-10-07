@@ -96,6 +96,8 @@
             "subscription_onetime_text": "Faucet + 1 Filter",
             "subscription_days_text": "Filter Refill",
             "subscription_discount_percent": 50,
+            "product": "faucet-filter-refill",
+            "product_discount_percent": 30,
             "onetime_text": "Qure Faucet Filter"
           }
         },
@@ -529,13 +531,6 @@
             "wistia_url": "tw9t09jts0"
           }
         },
-        "slider_bXU69G": {
-          "type": "slider",
-          "settings": {
-            "youtube_url": "",
-            "wistia_url": "o0wghi5h89"
-          }
-        },
         "slider_87MMUY": {
           "type": "slider",
           "settings": {
@@ -549,7 +544,6 @@
         "slider_wQzpUh",
         "slider_4r7WTK",
         "slider_PUfQn6",
-        "slider_bXU69G",
         "slider_87MMUY"
       ],
       "name": "t:sections.video-review-slider.name",
@@ -885,7 +879,7 @@
         "heading": "Have questions?",
         "text": "",
         "button_label": "Ask us",
-        "button_url": "https://qureskincare.com/pages/contact-us",
+        "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home",
         "terms-conditions": false,
         "promotional_terms_and_conditions": ""
       }

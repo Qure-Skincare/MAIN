@@ -9,6 +9,7 @@
  */
  {
     "common": {
+        "show": "Show",
         "link": "Link",
         "exclusive-offer": "Exclusive-offer",
         "delivery": "Delivery",
@@ -119,6 +120,7 @@
         "information-box": "Information box",
         "gift": "Gift",
         "product": "Product",
+        "product_discount": "Product discount",
         "price": "Price",
         "price-mobile": "Price mobile",
         "price-before": "Price before",
@@ -867,7 +869,7 @@
                         "preorder_date_reserved": "Reserved date",
                         "subscription_onetime_text": "Onetime text",
                         "subscription_days_text": "Days text",
-                        "subscription_discount": "Discount"
+                        "subscription_discount": "Subscription discount"
                     }
                 }
             }

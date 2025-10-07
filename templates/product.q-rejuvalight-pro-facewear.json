@@ -9,6 +9,15 @@
  */
 {
   "sections": {
+    "announcement_bar_jkkyg7": {
+      "type": "announcement-bar",
+      "name": "t:sections.announcement-bar.name",
+      "settings": {
+        "heading": "FREE Worldwide Shipping Above $100",
+        "button-label": "Shop Now",
+        "button-url": "#"
+      }
+    },
     "product_header_V3N3T8": {
       "type": "product-header",
       "blocks": {
@@ -106,15 +115,6 @@
         "description": "<ul><li>FDA-cleared device that treats acne, fine lines, wrinkles, and dark spots.</li><li>Customizable treatment on 5 facial areas for your specific skin concerns.</li><li>Quick 3 minute, wireless daily treatments with convenient hands-free operation.</li></ul>",
         "reserved": false,
         "soldout": false
-      }
-    },
-    "announcement_bar_jkkyg7": {
-      "type": "announcement-bar",
-      "name": "t:sections.announcement-bar.name",
-      "settings": {
-        "heading": "FREE Worldwide Shipping Above $100",
-        "button-label": "Shop Now",
-        "button-url": "#"
       }
     },
     "slider_featured_in_KyQXpD": {
@@ -1040,13 +1040,15 @@
         "heading": "Have questions?",
         "text": "Don’t see your question?",
         "button_label": "Ask us",
-        "button_url": "https://qureskincare.com/pages/contact-us"
+        "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home",
+        "terms-conditions": false,
+        "promotional_terms_and_conditions": ""
       }
     }
   },
   "order": [
-    "product_header_V3N3T8",
     "announcement_bar_jkkyg7",
+    "product_header_V3N3T8",
     "slider_featured_in_KyQXpD",
     "banner_with_text_M34aAK",
     "led_benefits_eqJTF8",

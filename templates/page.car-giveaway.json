@@ -14,7 +14,7 @@
       "name": "t:sections.car-giveaway-page-banner.name",
       "settings": {
         "heading": "2025 SWEEPSTAKE",
-        "text": "Take care of your skin and win a 2025 Range Rover",
+        "text": "Take care of your skin and get a chance to win a 2025 Range Rover",
         "button_label": "Enter Now",
         "button_url": "#product_card",
         "image": "shopify://shop_images/car_banner.webp",
@@ -26,7 +26,7 @@
       "name": "t:sections.car-giveaway-countdown-timer.name",
       "settings": {
         "heading": "30X extra entries ENDS IN:",
-        "days": 7
+        "days": 6
       }
     },
     "car_giveaway_product_cards_f7JeEF": {
@@ -358,7 +358,7 @@
       "name": "t:sections.car-giveaway-countdown-timer-sticky.name",
       "settings": {
         "heading": "30X entries!",
-        "days": 5
+        "days": 6
       }
     }
   },
