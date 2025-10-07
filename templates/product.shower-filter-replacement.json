@@ -96,6 +96,8 @@
             "subscription_onetime_text": "",
             "subscription_days_text": "Receive a new Filter Refill",
             "subscription_discount_percent": 30,
+            "product": "",
+            "product_discount_percent": 30,
             "onetime_text": "Qure Faucet Filter"
           }
         },
@@ -773,7 +775,7 @@
         "heading": "Have questions?",
         "text": "",
         "button_label": "Ask us",
-        "button_url": "https://qureskincare.com/pages/contact-us",
+        "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home",
         "terms-conditions": false,
         "promotional_terms_and_conditions": ""
       }
