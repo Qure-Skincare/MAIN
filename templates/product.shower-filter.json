@@ -93,10 +93,11 @@
         "subscription_6xp1uL": {
           "type": "subscription",
           "settings": {
-            "product": "shower-filter-replacement",
             "subscription_onetime_text": "Showerhead + 1 Filter",
             "subscription_days_text": "Filter Refill",
             "subscription_discount_percent": 50,
+            "product": "shower-filter-replacement",
+            "product_discount_percent": 30,
             "onetime_text": "Qure Faucet Filter"
           }
         },
@@ -868,7 +869,7 @@
         "heading": "Have questions?",
         "text": "",
         "button_label": "Ask us",
-        "button_url": "",
+        "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home",
         "terms-conditions": false,
         "promotional_terms_and_conditions": ""
       }
