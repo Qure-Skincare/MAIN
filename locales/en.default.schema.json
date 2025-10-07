@@ -9,6 +9,7 @@
  */
  {
     "common": {
+        "show": "Show",
         "link": "Link",
         "exclusive-offer": "Exclusive-offer",
         "delivery": "Delivery",
