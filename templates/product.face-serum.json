@@ -37,7 +37,7 @@
         },
         "black_friday_discount_A9": {
           "type": "black-friday-discount",
-          "disabled": false,
+          "disabled": true,
           "settings": {
             "discount_percent": 26
           }
