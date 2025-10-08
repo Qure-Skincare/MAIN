@@ -291,8 +291,18 @@
             "preselected": true
           }
         },
+        "product_9YcwnY": {
+          "type": "product",
+          "settings": {
+            "product": "line-refine-bundle-pro-bf25-sku",
+            "preselected": false,
+            "soldout": false,
+            "reserved": false
+          }
+        },
         "product_nyJ9n7": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "line-refine-bundle-pro",
             "preselected": true,
@@ -302,6 +312,7 @@
         },
         "product_EKAAzA": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "line-refine-bundle-advanced-1",
             "preselected": false,
@@ -311,18 +322,9 @@
         },
         "product_eiY89h": {
           "type": "product",
-          "settings": {
-            "product": "line-refine-bundle-essentials",
-            "preselected": false,
-            "soldout": false,
-            "reserved": false
-          }
-        },
-        "product_dkFRPe": {
-          "type": "product",
           "disabled": true,
           "settings": {
-            "product": "fade-firm-bundle-advanced-bf25-sku",
+            "product": "line-refine-bundle-essentials",
             "preselected": false,
             "soldout": false,
             "reserved": false
@@ -388,10 +390,10 @@
         "product_Xf8A6C",
         "type_aJwQ9q",
         "product_type_VLXcAn",
+        "product_9YcwnY",
         "product_nyJ9n7",
         "product_EKAAzA",
         "product_eiY89h",
-        "product_dkFRPe",
         "type_yDwWmt",
         "product_type_YrPQrV",
         "product_gbPf3J",
