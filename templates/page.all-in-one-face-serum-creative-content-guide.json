@@ -35,6 +35,7 @@
       "type": "trusted-recommended",
       "name": "t:sections.trusted-recommended.name",
       "settings": {
+        "background_color": "#F6F6F7",
         "heading": "Trusted and Recommended by Experts",
         "text": "<p>“Qure has an amazing serum… it has retinol and Bakuchiol, which is an awesome dynamic complimenting ingredient, amazing antioxidants, Argireline, vitamin C. <strong>It can really help simplify and consolidate steps!”</strong></p>",
         "image_text": "",

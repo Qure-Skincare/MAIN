@@ -35,8 +35,9 @@
       "type": "trusted-recommended",
       "name": "t:sections.trusted-recommended.name",
       "settings": {
+        "background_color": "#F6F6F7",
         "heading": "Trusted and Recommended by Experts",
-        "text": "<p>“Throughout my life…living in Wilmington, [my] skin was great. Then I… move to Charlotte and… every week my skin would get irritated especially after showering. Even my hair wouldn't cooperate. I was convinced it was the water I was exposed to.</p><p>Turns out, <strong>there’s an overwhelming amount of data that the water hardness could affect your skin.</strong>”</p>",
+        "text": "<p>“To have argireline in a <strong>very targeted patch is GENIUS;</strong> it’s a botox-like peptide that <strong>really helps with fine lines</strong>”</p>",
         "image_text": "",
         "image": "shopify://shop_images/doctor_shah_desk.webp",
         "video_url": "",
