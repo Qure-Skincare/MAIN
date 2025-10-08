@@ -323,6 +323,10 @@
       },
       "you-may-also-like": {
         "header": "You may also like..."
+      },
+      "black-friday-discount": {
+        "header": "BLACK FRIDAY PRICING",
+        "save": "SAVE"
       }
     }
   },

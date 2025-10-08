@@ -9,6 +9,7 @@
  */
  {
     "common": {
+        "discount": "Discount",
         "show": "Show",
         "link": "Link",
         "exclusive-offer": "Exclusive-offer",
@@ -23,6 +24,7 @@
         "button": "Button",
         "days": "Days",
         "limited-offer": "Limited offer",
+        "black-friday-discount": "Black friday discount",
         "code": "Code",
         "sum": "Sum",
         "payment": "Payment",

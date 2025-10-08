@@ -25,6 +25,8 @@
                     {% render 'product-price', product_sale_price: product_sale_price %}
                 {% when 'limited-offer' %}
                     {% render 'product-limited-time-offer', section: section, block: block %}
+                {% when 'black-friday-discount' %}
+                    {% render 'product-page-black-friday-discount', section: section, block: block %}
                 {% when 'exclusive-offer' %}
                     {% render 'page-exclusive-offer', section: section, block: block %}
                 {% when 'nextships' %}        
