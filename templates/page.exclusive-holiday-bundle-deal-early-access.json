@@ -241,6 +241,15 @@
             "reserved": false
           }
         },
+        "product_iyCaR8": {
+          "type": "product",
+          "settings": {
+            "product": "fade-firm-bundle-essential-bf25-sku",
+            "preselected": false,
+            "soldout": false,
+            "reserved": false
+          }
+        },
         "product_DBd4ef": {
           "type": "product",
           "disabled": true,
@@ -373,6 +382,7 @@
         "product_type_QKQhNr",
         "product_cDgtRg",
         "product_PybAig",
+        "product_iyCaR8",
         "product_DBd4ef",
         "product_7dL4ci",
         "product_Xf8A6C",
