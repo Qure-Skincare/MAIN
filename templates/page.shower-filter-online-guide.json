@@ -9,12 +9,32 @@
  */
 {
   "sections": {
+    "page_banner_richtext_tFqADz": {
+      "type": "page-banner-richtext",
+      "name": "t:sections.page-banner-richtext.name",
+      "settings": {
+        "heading": "Shower Filter Guide",
+        "sub_heading": "IMPORTANT NOTICE:",
+        "text": "Please read the complete instruction manual carefully before installing and using your Qure Shower Filter.",
+        "image": "shopify://shop_images/shower-filter-guide.webp",
+        "image_mobile": "shopify://shop_images/shower-filter-guide-mob.webp"
+      }
+    },
+    "content_brief_MUaBpxd": {
+      "type": "content-brief",
+      "name": "t:sections.content-brief.name",
+      "settings": {
+        "text": "<p><strong>The Qure Faucet Filter</strong> is designed to remove harmful impurities from your water, ensuring your skin remains clear, hydrated, and free from irritants.</p><p>This guide will walk you through the installation process so you can start enjoying cleaner, skin-friendly water in just a few minutes.</p>"
+      }
+    },
     "main": {
       "type": "page-shower-filter-online-guide",
       "settings": {}
     }
   },
   "order": [
+    "page_banner_richtext_tFqADz",
+    "content_brief_MUaBpxd",
     "main"
   ]
 }

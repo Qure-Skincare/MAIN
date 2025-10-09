@@ -9,12 +9,46 @@
  */
 {
   "sections": {
+    "page_banner_richtext_mqFADz": {
+      "type": "page-banner-richtext",
+      "name": "t:sections.page-banner-richtext.name",
+      "settings": {
+        "heading": "Faucet Filter Creative Content Guide",
+        "sub_heading": "",
+        "text": "",
+        "image": "shopify://shop_images/faucet_banner.webp",
+        "image_mobile": "shopify://shop_images/faucet_banner-mob.webp"
+      }
+    },
+    "content_brief_MUaJ76": {
+      "type": "content-brief",
+      "name": "t:sections.content-brief.name",
+      "settings": {
+        "text": "<p><strong>Discover how to make the most of the Qure Faucet Filter with our creative content guide.</strong></p><p>This brief will help you craft compelling content that highlights how our innovative filter reduces skin-irritating contaminants, supports clearer, more hydrated skin.</p><p>It enhances the effectiveness of every step in your skincare routine, and is backed by a lifetime warranty.</p>"
+      }
+    },
     "main": {
       "type": "page-faucet-creative-brief",
       "settings": {}
+    },
+    "trusted_recommended_3HKQ7d": {
+      "type": "trusted-recommended",
+      "name": "t:sections.trusted-recommended.name",
+      "settings": {
+        "background_color": "#F6F6F7",
+        "heading": "Trusted and Recommended by Experts",
+        "text": "<p>“Harsh water can definitely damage your skin on daily basis and <strong>it impacts everything</strong> you are doing with your skincare.”</p>",
+        "image_text": "",
+        "image": "shopify://shop_images/doctor-maxfield.webp",
+        "video_url": "",
+        "wistia_url": ""
+      }
     }
   },
   "order": [
-    "main"
+    "page_banner_richtext_mqFADz",
+    "content_brief_MUaJ76",
+    "main",
+    "trusted_recommended_3HKQ7d"
   ]
 }

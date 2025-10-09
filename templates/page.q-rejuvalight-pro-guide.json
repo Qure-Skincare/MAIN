@@ -9,12 +9,46 @@
  */
 {
   "sections": {
+    "page_banner_richtext_xpnyc6": {
+      "type": "page-banner-richtext",
+      "name": "t:sections.page-banner-richtext.name",
+      "settings": {
+        "heading": "Q-Rejuvalight Pro Creative Content Guide",
+        "sub_heading": "",
+        "text": "",
+        "image": "shopify://shop_images/led_mask-banner.webp",
+        "image_mobile": "shopify://shop_images/led_mask-bannerM.webp"
+      }
+    },
+    "content_brief_tDTwN6": {
+      "type": "content-brief",
+      "name": "t:sections.content-brief.name",
+      "settings": {
+        "text": "<p><strong>Discover how to make the most of the Qure Q-Rejuvalight Pro LED Mask with our creative content guide.</strong></p><p>This brief will help you understand the key benefits of the Q-Rejuvalight Pro Mask and create content that is engaging and educational. </p>"
+      }
+    },
     "main": {
       "type": "page-q-rejuvalight-pro-guide",
       "settings": {}
+    },
+    "trusted_recommended_WVlz2d": {
+      "type": "trusted-recommended",
+      "name": "t:sections.trusted-recommended.name",
+      "settings": {
+        "background_color": "#F6F6F7",
+        "heading": "Trusted and Recommended by Experts",
+        "text": "<p>“Of all the LED masks we’ve tried, <strong>this is the best on the market right now...</strong> It didn’t lose in any category...”</p>",
+        "image_text": "",
+        "image": "shopify://shop_images/doctor_shah_desk.webp",
+        "video_url": "",
+        "wistia_url": ""
+      }
     }
   },
   "order": [
-    "main"
+    "page_banner_richtext_xpnyc6",
+    "content_brief_tDTwN6",
+    "main",
+    "trusted_recommended_WVlz2d"
   ]
 }

@@ -9,12 +9,46 @@
  */
 {
   "sections": {
+    "page_banner_richtext_7Hjf9": {
+      "type": "page-banner-richtext",
+      "name": "t:sections.page-banner-richtext.name",
+      "settings": {
+        "heading": "All-In-One Face Serum Creative Content Guide",
+        "sub_heading": "",
+        "text": "",
+        "image": "shopify://shop_images/all_in_one-banner.webp",
+        "image_mobile": "shopify://shop_images/all_in_one-bannerM.webp"
+      }
+    },
+    "content_brief_mKtt6l": {
+      "type": "content-brief",
+      "name": "t:sections.content-brief.name",
+      "settings": {
+        "text": "<p><strong>Discover how to make the most of the Qure All-In-One Face Serum with our creative content guide.</strong></p><p>This brief will help you craft engaging content that showcases how the science-backed ingredients transform skincare routines for radiant, glowing skin.</p>"
+      }
+    },
     "main": {
       "type": "page-all-in-one-face-serum-creative-content-guide",
       "settings": {}
+    },
+    "trusted_recommended_JhfncP": {
+      "type": "trusted-recommended",
+      "name": "t:sections.trusted-recommended.name",
+      "settings": {
+        "background_color": "#F6F6F7",
+        "heading": "Trusted and Recommended by Experts",
+        "text": "<p>“Qure has an amazing serum… it has retinol and Bakuchiol, which is an awesome dynamic complimenting ingredient, amazing antioxidants, Argireline, vitamin C. <strong>It can really help simplify and consolidate steps!”</strong></p>",
+        "image_text": "",
+        "image": "shopify://shop_images/doctor-maxfield.webp",
+        "video_url": "",
+        "wistia_url": ""
+      }
     }
   },
   "order": [
-    "main"
+    "page_banner_richtext_7Hjf9",
+    "content_brief_mKtt6l",
+    "main",
+    "trusted_recommended_JhfncP"
   ]
 }

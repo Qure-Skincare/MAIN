@@ -1,0 +1,40 @@
+{% doc %}
+  Renders an action-banner section for q-rejuvalight pro welcome page
+{% enddoc %}
+
+<div class="qure__section any_question color-background"
+    style="--section-padding-top: 40px; --section-padding-bottom: 40px; --section-padding-top-mob: 20px; --section-padding-bottom-mob: 20px;">
+    <div class="container">
+        <div class="any_question-content d-flex justify-content-between align-items-center flex-wrap flex-md-nowrap gap-4">
+            {% if section.settings.text != blank %}
+                {{ section.settings.text }}
+            {% endif %}
+            {% if section.settings.button_url != blank and section.settings.button_label != blank %}
+                <a href="{{ section.settings.button_url }}" class="btn w-100 mw" style="--mw:200px;">{{ section.settings.button_label }}</a>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.q-rejuvalight-pro-welcome-action-banner.name",
+  "settings": [
+    {
+        "type": "richtext",
+        "id": "text",
+        "label": "t:common.text"
+    },
+    {
+        "type": "text",
+        "id": "button_label",
+        "label": "t:common.button-label"
+    },
+    {
+        "type": "url",
+        "id": "button_url",
+        "label": "t:common.button-url"
+    }
+  ]
+}
+{% endschema %}

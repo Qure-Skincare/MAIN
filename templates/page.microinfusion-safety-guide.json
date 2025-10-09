@@ -9,12 +9,33 @@
  */
 {
   "sections": {
-    "main": {
+    "page_banner_richtext_BFeADz": {
+      "type": "page-banner-richtext",
+      "name": "t:sections.page-banner-richtext.name",
+      "settings": {
+        "heading": "Get started with Micro-Infusion",
+        "sub_heading": "IMPORTANT NOTICE:",
+        "text": "Please read this guideline carefully before proceeding with Micro-Infusion treatment.",
+        "image": "shopify://shop_images/mi_banner.webp",
+        "image_mobile": "shopify://shop_images/mi_banner-mob.webp"
+      }
+    },
+    "content_brief_MUBNxd": {
+      "type": "content-brief",
+      "name": "t:sections.content-brief.name",
+      "settings": {
+        "text": "<p><strong>Your new Qure Micro-Infusion device</strong> delivers targeted ingredients deep below the surface, helping reduce the look of fine lines, brighten tone, and boost your natural glow.</p><p>This guide will walk you through every step so you can get glowing results safely and confidently.</p>"
+      }
+    },
+     "main": {
       "type": "page-microinfusion-safety-guide",
+      "disabled": false,
       "settings": {}
     }
   },
   "order": [
+    "page_banner_richtext_BFeADz",
+    "content_brief_MUBNxd",
     "main"
   ]
 }

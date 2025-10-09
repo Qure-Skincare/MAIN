@@ -5,30 +5,41 @@
 <link rel="stylesheet" href="https://qureskincaredns-main.com/sections/isolated/page-banner/page-banner.css" />
 <div class="page__banner position-relative">
     <picture>
-        <source media="(min-width:1920px)"
-            srcset="https://qureskincaredns-main.com/sections/isolated/page-banner/images/shower-filter-guide.webp"
-            class="img-fluid" width="1440" height="557">
-        <source media="(min-width:1600px)"
-            srcset="https://qureskincaredns-main.com/sections/isolated/page-banner/images/shower-filter-guide.webp"
-            class="img-fluid" width="1440" height="557">
-        <source media="(min-width:1100px)"
-            srcset="https://qureskincaredns-main.com/sections/isolated/page-banner/images/shower-filter-guide.webp"
-            class="img-fluid" width="1440" height="557">
-        <source media="(min-width:720px)"
-            srcset="https://qureskincaredns-main.com/sections/isolated/page-banner/images/shower-filter-guide.webp"
-            class="img-fluid" width="1440" height="557">
-        <source media="(min-width:540px)"  srcset="https://qureskincaredns-main.com/sections/isolated/page-banner/images/shower-filter-guide-mob.webp" class="img-fluid" width="1440" height="557">
-        <img src="https://qureskincaredns-main.com/sections/isolated/page-banner/images/shower-filter-guide-mob.webp" width="225" height="281" alt="" class="img-fluid w-100">
+        {% if section.settings.image != blank %}
+            <source media="(min-width:1920px)" srcset="{{ section.settings.image | image_url }}" class="img-fluid" width="1440" height="557">
+            <source media="(min-width:1600px)" srcset="{{ section.settings.image | image_url }}" class="img-fluid" width="1440" height="557">
+            <source media="(min-width:1100px)" srcset="{{ section.settings.image | image_url }}" class="img-fluid" width="1440" height="557">
+            <source media="(min-width:720px)" srcset="{{ section.settings.image | image_url }}" class="img-fluid" width="1440" height="557">
+        {% endif %}
+        {% if section.settings.image_mobile %}
+            <source media="(min-width:540px)"  srcset="{{ section.settings.image_mobile | image_url }}" class="img-fluid" width="1440" height="557">
+            <img src="{{ section.settings.image_mobile | image_url }}" width="225" height="281" alt="{{ section.settings.image_mobile.alt | escape }}" class="img-fluid w-100">
+        {% endif %}
     </picture>
-    <div
-        class="page__banner-wrapper position-absolute d-flex align-items-end align-items-lg-center justify-content-end top-0 bottom-0 start-0 end-0 pb-20">
+    <div class="page__banner-wrapper position-absolute d-flex align-items-end align-items-lg-center justify-content-end top-0 bottom-0 start-0 end-0 pb-20">
         <div class="container">
-            <div class="d-flex justify-content-lg-end">
-                <div class="ctm-width ctm-color" style="--ctm-width:450px; --txt-color-mob:#fff;">
-                    <h1 class="page-banner-title">Shower Filter Guide</h1>
-                    <div class="fs-16 fw-600 pt-15 mb-1">IMPORTANT NOTICE:</div>
-                    <div class="fs-16">Please read the complete instruction manual carefully before installing and
-                        using your Qure Shower Filter.</div>
+            <div class="d-flex justify-content-lg-center ctm-width ms-auto"
+                style="--ctm-width:50%; --ctm-width-mob: 100%;">
+                <div class="ctm-width pb-md-0 pb-50" style="--ctm-width:307px; --ctm-width-mob:210px;">
+                    {% if section.settings.heading != blank %}
+                        <h1 class="page-banner-title">{{ section.settings.heading }}</h1>
+                    {% endif %}
+                    <div class="d-md-block d-none">
+                        {% if section.settings.sub_heading != blank %}
+                            <div class="fs-16 fw-600 pt-15">{{ section.settings.sub_heading }}</div>
+                        {% endif %}
+                        {% if section.settings.text != blank %}
+                             <div class="fs-16">{{ section.settings.text }}</div>
+                        {% endif %}
+                    </div>
+                    <div class="d-md-none text-white">
+                        {% if section.settings.sub_heading != blank %}
+                            <div class="fs-16 fw-600 pt-15">{{ section.settings.sub_heading }}</div>
+                        {% endif %}
+                        {% if section.settings.text != blank %}
+                            <div class="fs-16 fw-400">{{ section.settings.text }}</div>
+                        {% endif %}
+                    </div>
                 </div>
             </div>
         </div>
@@ -54,16 +65,15 @@
         "id": "text",
         "label": "t:common.text"
     },
-    
     {
         "type": "image_picker",
         "id": "image",
-        "label": "t:common.iamge"
+        "label": "t:common.image"
     },
     {
         "type": "image_picker",
-        "id": "imagfe_mobile",
-        "label": "t:common.image_mobile"
+        "id": "image_mobile",
+        "label": "t:common.image-mobile"
     }
   ],
   "presets": [

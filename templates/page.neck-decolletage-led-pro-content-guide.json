@@ -9,12 +9,46 @@
  */
 {
   "sections": {
+    "page_banner_richtext_p7esDz": {
+      "type": "page-banner-richtext",
+      "name": "t:sections.page-banner-richtext.name",
+      "settings": {
+        "heading": "Neck & Décolletage LED Device Creative Content Guide",
+        "sub_heading": "",
+        "text": "",
+        "image": "shopify://shop_images/neck___d-banner.webp",
+        "image_mobile": "shopify://shop_images/neck___d-bannerM.webp"
+      }
+    },
+    "content_brief_MkPyxd": {
+      "type": "content-brief",
+      "name": "t:sections.content-brief.name",
+      "settings": {
+        "text": "<p><strong>Discover how to make the most of the Qure Neck & Décolletage LED Device with our creative content guide.</strong></p><p>This brief will help you craft engaging content that showcases how our device transforms skincare routines for radiant, glowing skin.</p>"
+      }
+    },
     "main": {
       "type": "page-neck-decolletage-led-pro-content-guide",
       "settings": {}
+    },
+    "trusted_recommended_jOyz1d": {
+      "type": "trusted-recommended",
+      "name": "t:sections.trusted-recommended.name",
+      "settings": {
+        "background_color": "#F6F6F7",
+        "heading": "Trusted and Recommended by Experts",
+        "text": "<p>\"LED light targets fibroblasts to <strong>increase collagen production</strong> and has anti-aging benefits especially if you are seeing <strong>wrinkles and lines</strong> on your neck...\"</p>",
+        "image_text": "",
+        "image": "shopify://shop_images/doctor_shah_desk.webp",
+        "video_url": "",
+        "wistia_url": ""
+      }
     }
   },
   "order": [
-    "main"
+    "page_banner_richtext_p7esDz",
+    "content_brief_MkPyxd",
+    "main",
+    "trusted_recommended_jOyz1d"
   ]
 }

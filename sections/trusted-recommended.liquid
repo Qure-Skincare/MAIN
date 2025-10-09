@@ -2,8 +2,7 @@
   Renders a trusted recommended section. 
 {% enddoc %}
 
-<div id="trusted_recommended" class="trusted_recom qure__section"
-   style="--section-padding-top: 40px; --section-padding-bottom: 40px; --section-padding-top-mob: 30px; --section-padding-bottom-mob: 30px;">
+<div id="trusted_recommended" class="trusted_recom qure__section" style="--section-padding-top: 40px; --section-padding-bottom: 40px; --section-padding-top-mob: 30px; --section-padding-bottom-mob: 30px; background-color: {{ section.settings.background_color }};">
    <div class="container" style="--column-gap:35px; --column-gap-mobile:18px;">
       {% if section.settings.heading != blank %}
          <h2 class="qure__section-heading d-md-none mb-3 text-center">{{ section.settings.heading }}</h2>
@@ -120,47 +119,53 @@
 {
   "name": "t:sections.trusted-recommended.name",
   "settings": [
-    {
+   {
+      "type": "color",
+      "id": "background_color",
+      "label": "t:common.background-color",
+      "default": "#ffffff"
+   },
+   {
       "type": "text",
       "id": "heading",
       "label": "t:common.header",
       "default": "Trusted and Recommended by Experts"
-    },
-    {
+   },
+   {
       "type": "richtext",
       "id": "text",
       "label": "t:common.text"
-    },
-    {
+   },
+   {
       "type": "richtext",
       "id": "image_text",
       "label": "t:common.image-text"
-    },
-    {
+   },
+   {
       "type": "image_picker",
       "id": "image",
       "label": "t:common.image"
-    },
-    {
+   },
+   {
       "type": "image_picker",
       "id": "image_mobile",
       "label": "t:common.image-mobile"
-    },
-    {
+   },
+   {
       "type": "image_picker",
       "id": "video_cover_image",
       "label": "t:common.video-image-cover"
-    },
-    {
+   },
+   {
       "type": "url",
       "id": "video_url",
       "label": "t:common.link-url"
-    },
-    {
+   },
+   {
       "type": "text",
       "id": "wistia_url",
       "label": "t:common.wistia-url"
-    }
+   }
   ],
   "presets": [
     {

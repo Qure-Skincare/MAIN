@@ -9,12 +9,45 @@
  */
 {
   "sections": {
+    "page_banner_richtext_0rmac1": {
+      "type": "page-banner-richtext",
+      "name": "t:sections.page-banner-richtext.name",
+      "settings": {
+        "heading": "Micro-Infusion Creative Content Guide",
+        "sub_heading": "",
+        "text": "",
+        "image": "shopify://shop_images/mi__banner.webp",
+        "image_mobile": "shopify://shop_images/mi_banner--mob.webp"
+      }
+    },
+    "content_brief_dPxag6": {
+      "type": "content-brief",
+      "name": "t:sections.content-brief.name",
+      "settings": {
+        "text": "<p><strong>Discover how to make the most of the Qure Micro-Infusion System with our creative content guide</strong></p><p>This brief is designed to guide you in creating engaging, authentic content that highlights how our Micro-Infusion System transforms the skin. </p><p>You’ll be showcasing its ability to visibly improve texture, boost softness, and deliver a lasting, healthy glow—helping your audience see the real, science-backed benefits of this at-home treatment.</p>"
+      }
+    },
     "main": {
       "type": "page-content-instructions",
       "settings": {}
+    },
+    "trusted_recommended_3pKe1d": {
+      "type": "trusted-recommended",
+      "name": "t:sections.trusted-recommended.name",
+      "settings": {
+        "heading": "Trusted and Recommended by Experts",
+        "text": "<p>“This treatment is an <strong>at-home</strong> option for those who want to <strong>avoid the hassle or cost of going to the office.”</strong></p>",
+        "image_text": "",
+        "image": "shopify://shop_images/doctor_shah_desk.webp",
+        "video_url": "",
+        "wistia_url": ""
+      }
     }
   },
   "order": [
-    "main"
+    "page_banner_richtext_0rmac1",
+    "content_brief_dPxag6",
+    "main",
+    "trusted_recommended_3pKe1d"
   ]
 }
