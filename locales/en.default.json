@@ -514,6 +514,10 @@
           "image": "Mist.svg",
           "text_html": "<li>Use when needed.</li><li>Spray directly on dry skin, body and face. Allow to air dry - no rinsing needed.</li>"
         },
+        "dermal-mist-travel-size": {
+          "image": "Mist.svg",
+          "text_html": "<li>Use when needed.</li><li>Spray directly on dry skin, body and face. Allow to air dry - no rinsing needed.</li>"
+        },
         "patches": {
           "image": "mi_patches.svg",
           "text_html": "<li>Use twice a week.</li><li>Apply where needed (11 lines, crow’s feet,under-eye, laugh lines) and leave overnight or for a minimum of 2 hours.</li>"
@@ -521,6 +525,10 @@
         "faucet-filter": {
           "image": "faucet.svg",
           "text_html": "<li>Install the Faucet Filter to your faucet.</li><li>Replace filter every 3 months.</li>"
+        },
+        "shower-filter": {
+          "image": "shower.svg",
+          "text_html": "<li>Install the Shower Filter to your shower.</li><li>Replace filter every 3 months.</li>"
         }
       }
     }
