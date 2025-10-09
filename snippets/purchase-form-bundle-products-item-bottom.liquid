@@ -100,7 +100,7 @@
                                     {% capture image %}{{ 'purchase-form-bundle.settings.how-to-use.faucet-filter.image' | t }}{% endcapture %}
                                     {% capture text %}{{ 'purchase-form-bundle.settings.how-to-use.faucet-filter.text_html' | t }}{% endcapture %}
                                 {% when 'shower-filter' %}
-                                    {% capture image %}{{ 'purchase-form-bundle.settings.how-to-use.shower-filter.image' | t }}{% endcapture %}
+                                    {%- assign image = blank -%}
                                     {% capture text %}{{ 'purchase-form-bundle.settings.how-to-use.shower-filter.text_html' | t }}{% endcapture %}
                             {% endcase %}
 
