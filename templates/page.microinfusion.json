@@ -12,6 +12,13 @@
     "page_header_V5N4T9": {
       "type": "page-header",
       "blocks": {
+        "black_friday_discount_X3kBdA": {
+          "type": "black-friday-discount",
+          "disabled": true,
+          "settings": {
+            "discount_percent": 26
+          }
+        },
         "description_iSDNaK": {
           "type": "description",
           "settings": {}
@@ -66,6 +73,7 @@
         }
       },
       "block_order": [
+        "black_friday_discount_X3kBdA",
         "description_iSDNaK",
         "section_A0",
         "jumpto_A1",
@@ -111,9 +119,10 @@
         "product_gbPf3J": {
           "type": "product",
           "settings": {
-            "product": "micro-infusion-5-month-bundle-for-wrinkles-copy",
+            "product": "micro-infusion-5-month-bundle-for-darkspots-copy",
             "product_variant_id": 0,
             "product_selling_plan": 0,
+            "product_discount_percent": 0,
             "preselected": true,
             "heading": "5 Month Supply",
             "subheading": "(10 Treatments)",
@@ -132,6 +141,7 @@
             "product": "micro-infusion-3-month-bundle",
             "product_variant_id": 0,
             "product_selling_plan": 0,
+            "product_discount_percent": 0,
             "preselected": false,
             "heading": "3 Month Supply",
             "subheading": "(6 Treatments)",
@@ -150,6 +160,7 @@
             "product": "micro-infusion-1-month-bundle-2x-e-g-f-serum",
             "product_variant_id": 0,
             "product_selling_plan": 0,
+            "product_discount_percent": 0,
             "preselected": false,
             "heading": "1 Month Supply",
             "subheading": "(2 Treatments)",
@@ -180,6 +191,7 @@
             "product": "micro-infusion-5-month-bundle-for-wrinkles",
             "product_variant_id": 0,
             "product_selling_plan": 0,
+            "product_discount_percent": 0,
             "preselected": true,
             "heading": "5 Month Supply",
             "subheading": "(10 Treatments)",
@@ -198,6 +210,7 @@
             "product": "micro-infusion-3-month-bundle-6x-beta-glucan-serum",
             "product_variant_id": 0,
             "product_selling_plan": 0,
+            "product_discount_percent": 0,
             "preselected": false,
             "heading": "3 Month Supply",
             "subheading": "(6 Treatments)",
@@ -216,6 +229,7 @@
             "product": "micro-infusion-1-month-bundle-2x-beta-glucan-serum",
             "product_variant_id": 0,
             "product_selling_plan": 0,
+            "product_discount_percent": 0,
             "preselected": false,
             "heading": "1 Month Supply",
             "subheading": "(2 Treatments)",
@@ -246,6 +260,7 @@
             "product": "micro-infusion-5-month-bundle-for-dark-spots-copy",
             "product_variant_id": 0,
             "product_selling_plan": 0,
+            "product_discount_percent": 0,
             "preselected": true,
             "heading": "5 Month Supply",
             "subheading": "(10 Treatments)",
@@ -264,6 +279,7 @@
             "product": "micro-infusion-3-month-bundle-3x-b-g-serum-3x-e-g-f-serum",
             "product_variant_id": 0,
             "product_selling_plan": 0,
+            "product_discount_percent": 0,
             "preselected": false,
             "heading": "3 Month Supply",
             "subheading": "(6 Treatments)",
@@ -282,6 +298,7 @@
             "product": "micro-infusion-1-month-bundle-1x-b-g-serum-1x-e-g-f-serum",
             "product_variant_id": 0,
             "product_selling_plan": 0,
+            "product_discount_percent": 0,
             "preselected": false,
             "heading": "1 Month Supply",
             "subheading": "(2 Treatments)",
@@ -1175,7 +1192,7 @@
         "product_DBd4ef": {
           "type": "product",
           "settings": {
-            "product": "micro-infusion-5-month-bundle-for-wrinkles-copy",
+            "product": "micro-infusion-5-month-bundle-for-darkspots-copy",
             "preselected": true,
             "heading": "5 Month Supply Autumn Glow Sale",
             "subheading": "(10 Treatments)",

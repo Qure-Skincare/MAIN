@@ -12,6 +12,13 @@
     "product_header_YnMCRD": {
       "type": "product-header",
       "blocks": {
+        "black_friday_discount_tmNq3D": {
+          "type": "black-friday-discount",
+          "disabled": true,
+          "settings": {
+            "discount_percent": 26
+          }
+        },
         "description_9VBwaX": {
           "type": "description",
           "settings": {}
@@ -69,6 +76,7 @@
         }
       },
       "block_order": [
+        "black_friday_discount_tmNq3D",
         "description_9VBwaX",
         "section_A0",
         "nextships_nN4CpM",
@@ -127,6 +135,7 @@
             "product": "faucet-filter",
             "product_variant_id": 45852978348271,
             "product_selling_plan": 6190465263,
+            "product_discount_percent": 0,
             "preselected": true,
             "heading": "White",
             "subheading": "",
@@ -145,6 +154,7 @@
             "product": "faucet-filter",
             "product_variant_id": 45852978315503,
             "product_selling_plan": 6190465263,
+            "product_discount_percent": 0,
             "preselected": false,
             "heading": "Black",
             "subheading": "",
@@ -163,6 +173,7 @@
             "product": "faucet-filter",
             "product_variant_id": 46852913987823,
             "product_selling_plan": 6190465263,
+            "product_discount_percent": 0,
             "preselected": false,
             "heading": "Silver",
             "subheading": "",

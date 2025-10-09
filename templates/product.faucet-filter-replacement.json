@@ -12,6 +12,13 @@
     "product_header_FnMCMD": {
       "type": "product-header",
       "blocks": {
+        "black_friday_discount_CKPMip": {
+          "type": "black-friday-discount",
+          "disabled": true,
+          "settings": {
+            "discount_percent": 26
+          }
+        },
         "description_9VBwaX": {
           "type": "description",
           "settings": {}
@@ -69,6 +76,7 @@
         }
       },
       "block_order": [
+        "black_friday_discount_CKPMip",
         "description_9VBwaX",
         "section_A0",
         "nextships_nN4CpM",
