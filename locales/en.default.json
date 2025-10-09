@@ -527,7 +527,6 @@
           "text_html": "<li>Install the Faucet Filter to your faucet.</li><li>Replace filter every 3 months.</li>"
         },
         "shower-filter": {
-          "image": "shower.svg",
           "text_html": "<li>Install the Shower Filter to your shower.</li><li>Replace filter every 3 months.</li>"
         }
       }
