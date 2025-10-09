@@ -12,6 +12,13 @@
     "product_header_c7eEXx": {
       "type": "product-header",
       "blocks": {
+        "black_friday_discount_MCCNDL": {
+          "type": "black-friday-discount",
+          "disabled": true,
+          "settings": {
+            "discount_percent": 26
+          }
+        },
         "price_A11": {
           "type": "price",
           "settings": {}
@@ -66,6 +73,7 @@
         }
       },
       "block_order": [
+        "black_friday_discount_MCCNDL",
         "price_A11",
         "description_iPBNaS",
         "button_A9",

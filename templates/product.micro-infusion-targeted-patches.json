@@ -12,6 +12,13 @@
     "product_header_U6RBGz": {
       "type": "product-header",
       "blocks": {
+        "black_friday_discount_AXVH8g": {
+          "type": "black-friday-discount",
+          "disabled": true,
+          "settings": {
+            "discount_percent": 26
+          }
+        },
         "price_A11": {
           "type": "price",
           "settings": {}
@@ -89,6 +96,7 @@
         }
       },
       "block_order": [
+        "black_friday_discount_AXVH8g",
         "price_A11",
         "description_iPBNaS",
         "section_A0",
@@ -142,6 +150,7 @@
             "product": "micro-infusion-targeted-patches-3-month-supply-24-pairs-1",
             "product_variant_id": 0,
             "product_selling_plan": 0,
+            "product_discount_percent": 0,
             "preselected": true,
             "heading": "3 Months",
             "subheading": "(3 boxes, 24 pairs)",
@@ -160,6 +169,7 @@
             "product": "micro-infusion-targeted-patches-2-month-supply-16-pairs-1",
             "product_variant_id": 0,
             "product_selling_plan": 0,
+            "product_discount_percent": 0,
             "preselected": false,
             "heading": "2 Months",
             "subheading": "(2 boxes, 16 pairs)",
@@ -178,6 +188,7 @@
             "product": "micro-infusion-targeted-patches",
             "product_variant_id": 0,
             "product_selling_plan": 0,
+            "product_discount_percent": 0,
             "preselected": false,
             "heading": "1 Months",
             "subheading": "(1 box, 8 pairs)",

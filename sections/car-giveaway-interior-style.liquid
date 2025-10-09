@@ -39,7 +39,7 @@
                             <p class="my-10">{{ section.settings.text_exterior }}</p>
                         {% endif %}
                         {% if section.settings.button_url != blank and section.settings.button_label != blank %}
-                            <a href="{{ section.settings.button_url }}" class="btn btn--primary bg-white text-black w-100 mt-20 border-0">{{ section.settings.button_label }}</a>
+                            <a id="klaviyo_form_trigger" href="{{ section.settings.button_url }}" class="btn btn--primary bg-white text-black w-100 mt-20 border-0">{{ section.settings.button_label }}</a>
                         {% endif %}
                     </div>
                 </div>
@@ -47,6 +47,12 @@
         </div>
     </div>
 </div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      loadScriptOnce('car-giveaway-interior-style', 'https://qureskincaredns-main.com/assets/shopify/js/car-giveaway-interior-style.js');
+    });
+  </script>
 
 
 {% schema %}

@@ -13,7 +13,7 @@
                 {% for bundle_product in product_bundle_list %}
                     {% assign target = bundle_product.handle %}
 
-                    {% if target contains '-month-bundle-' %}
+                    {% if target contains 'month-bundle' %}
                         {% assign target = 'month_bundle' %}
                     {% endif %}
 
@@ -70,7 +70,7 @@
                         {% for bundle_product in product_bundle_list %}
                             {% assign target = bundle_product.handle %}
 
-                            {% if target contains '-month-bundle-' %}
+                            {% if target contains 'month-bundle' %}
                                 {% assign target = 'month_bundle' %}
                             {% endif %}
 
@@ -90,19 +90,25 @@
                                 {% when 'dermal-mist' %}
                                     {% capture image %}{{ 'purchase-form-bundle.settings.how-to-use.dermal-mist.image' | t }}{% endcapture %}
                                     {% capture text %}{{ 'purchase-form-bundle.settings.how-to-use.dermal-mist.text_html' | t }}{% endcapture %}
+                                {% when 'dermal-mist-travel-size' %}
+                                    {% capture image %}{{ 'purchase-form-bundle.settings.how-to-use.dermal-mist.image' | t }}{% endcapture %}
+                                    {% capture text %}{{ 'purchase-form-bundle.settings.how-to-use.dermal-mist.text_html' | t }}{% endcapture %}
                                 {% when 'micro-infusion-targeted-patches' %}
                                     {% capture image %}{{ 'purchase-form-bundle.settings.how-to-use.patches.image' | t }}{% endcapture %}
                                     {% capture text %}{{ 'purchase-form-bundle.settings.how-to-use.patches.text_html' | t }}{% endcapture %}
                                 {% when 'faucet-filter' %}
                                     {% capture image %}{{ 'purchase-form-bundle.settings.how-to-use.faucet-filter.image' | t }}{% endcapture %}
                                     {% capture text %}{{ 'purchase-form-bundle.settings.how-to-use.faucet-filter.text_html' | t }}{% endcapture %}
+                                {% when 'shower-filter' %}
+                                    {%- assign image = blank -%}
+                                    {% capture text %}{{ 'purchase-form-bundle.settings.how-to-use.shower-filter.text_html' | t }}{% endcapture %}
                             {% endcase %}
 
                             <div class="swiper-slide">
                                 <div class="px-15">
                                     <div class="d-flex align-items-center gap-3">
                                         {% if image != blank %}
-                                            <img src="https://qureskincaredns-main.com/sections/isolated/offer-bundle/images/{{ image }}" alt="icon">
+                                            <img src="https://qureskincaredns-main.com/sections/global/purchase-form-bundle/images/{{ image }}" alt="icon">
                                         {% endif %}
                                         <p class="fs-16">{{ bundle_product.title }}</p>
                                     </div>

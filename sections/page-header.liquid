@@ -15,7 +15,7 @@
                     <h1 class="qure__product-title mb-10">{{ section.settings.heading }}</h1>
                {% endif %}
 
-               {% include 'product-page-blocks-render', allowed_types: 'link,description,section,video,exclusive-offer' %}
+               {% include 'product-page-blocks-render', allowed_types: 'link,description,section,video,exclusive-offer,black-friday-discount' %}
             </div>
          </div>
          <div class="col-lg-6 custom__block">
@@ -121,6 +121,23 @@
                     "type": "richtext",
                     "id": "text",
                     "label": "t:common.text"
+                }
+            ]
+        },
+        {
+            "type": "black-friday-discount",
+            "name": "t:common.black-friday-discount",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "range",
+                    "id": "discount_percent",
+                    "min": 0,
+                    "max": 100,
+                    "step": 1,
+                    "unit": "%",
+                    "label": "t:common.discount",
+                    "default": 0
                 }
             ]
         },
