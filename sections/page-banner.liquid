@@ -21,9 +21,13 @@
       <div class="container">
          <div class="d-flex pt-md-0 pt-50">
             <div class="ctm-width ctm-color mx-auto mx-md-0 text-center text-md-start" style="--ctm-width:550px; --pg-title-mob:#212428;">
-               {% if section.settings.heading != blank %}
-                  <h2 class="ctm-width ctm-color text-center text-md-start mx-auto mx-md-0 d-none d-md-block" style="--ctm-width:550px; --pg-title-mob:#212428;">{{ section.settings.heading }}</h2>
-                  <h2 class="ctm-width ctm-color text-center text-md-start mx-auto mx-md-0 d-block d-md-none" style="--ctm-width:550px; --pg-title-mob:#212428; margin-top:-20px;">{{ section.settings.heading }}</h2>
+               {% if template.name == 'collection' and collection.handle != 'best-sellers' %}
+                  <h1 class="ctm-width ctm-color text-center text-md-start mx-auto mx-md-0 d-none d-md-block" style="--ctm-width:550px; --pg-title-mob:#212428;">{{ collection.handle | replace: '-', ' ' | capitalize }}</h1>
+               {% else %}
+                  {% if section.settings.heading != blank %}
+                     <h1 class="ctm-width ctm-color text-center text-md-start mx-auto mx-md-0 d-none d-md-block" style="--ctm-width:550px; --pg-title-mob:#212428;">{{ section.settings.heading }}</h1>
+                     <h1 class="ctm-width ctm-color text-center text-md-start mx-auto mx-md-0 d-block d-md-none" style="--ctm-width:550px; --pg-title-mob:#212428; margin-top:-20px;">{{ section.settings.heading }}</h1>
+                  {% endif %}
                {% endif %}
                {% if section.settings.text != blank %}
                   <p class="py-15">{{ section.settings.text }}</p>
