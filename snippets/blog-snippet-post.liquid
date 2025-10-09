@@ -24,7 +24,7 @@ Renders a blog posts
     </div>
     {%- paginate blogs[blog_handle].articles by limit -%}
         <div class="articles mt-40">
-            <h2 class="banner-text--heading mb-30">{{ blogs[blog_handle].title }}</h2>
+            <h1 class="banner-text--heading mb-30">{{ blogs[blog_handle].title }}</h1>
             <div class="row g-5">
                 {% for article in blogs[blog_handle].articles %}
                     <div class="col-md-6 col-lg-4">

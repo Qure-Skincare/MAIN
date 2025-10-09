@@ -7,7 +7,7 @@ Renders a products guide section for products guide page
     <div class="container" style="--column-gap:24px; --column-gap-mobile:12px;">
         <div class="qure__section-header text-md-start text-center">
             {% if section.settings.heading != blank %}
-                <h2 class="qure__section-heading mb-10" style="--heading-size: 46px; --heading-size-mob: 32px;">{{ section.settings.heading }}</h2>
+                <h1 class="qure__section-heading mb-10" style="--heading-size: 46px; --heading-size-mob: 32px;">{{ section.settings.heading }}</h1>
             {% endif %}
             {% if section.settings.text != blank %}
                 {{ section.settings.text | replace: '<strong>', '<span class="fw-600">' | replace: '</strong>', '</span>' }}
