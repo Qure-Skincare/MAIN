@@ -1,22 +1,3 @@
-// const handleClickVideoMobile = (video, btn) => {
-//   let svg = btn.querySelector("svg");
-//   if (btn.getAttribute("is-play") === "false") {
-//     svg.style.display = "none";
-//     video.setAttribute("is-active", true);
-//     video.play();
-//     video.addEventListener("ended", () => {
-//       btn.style.display = "flex";
-//       btn.setAttribute("is-play", "false");
-//     });
-//     btn.setAttribute("is-play", "true");
-//   } else {
-//     svg.style.display = "block";
-//     video.pause();
-//     video.setAttribute("is-active", false);
-//     btn.setAttribute("is-play", "false");
-//   }
-// };
-
 const handleClickVideo = (video) => {
   const handlelCloseModal = () => {
     document.body.style.overflow = "auto";
