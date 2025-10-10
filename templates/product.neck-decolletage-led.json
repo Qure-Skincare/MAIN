@@ -485,10 +485,8 @@
       ],
       "name": "t:sections.product-info.name",
       "settings": {
-        "heading": "Science-backed results",
-        "text": "<p>The Neck & Décolletage LED Device uses red and near-infrared light to trigger a natural process in your skin called <em>photobiomodulation</em>.</p><p>These wavelengths are absorbed by your skin cells and help boost their energy, allowing them to work more efficiently. This increased activity <em>supports collagen and elastin production</em>, speeds up repair, calms inflammation, and <em>improves overall tone and texture</em>.</p><p>No heat, no damage—just light activating your skin’s natural ability to heal and renew.</p>",
-        "image": "shopify://shop_images/science_backed_res.webp",
-        "image_mobile": "shopify://shop_images/science_backed_res_mob.webp",
+        "heading": "",
+        "text": "",
         "button-label": "",
         "button-url": "",
         "image_position": "left"
