@@ -2,52 +2,22 @@
   Renders an announcement bar section
 {% enddoc %}
 
-{% assign included = false %}
 
-{% for block in section.blocks %}
-  {% if block.type == 'include-page' %}
-    {% if page.handle == block.settings['include-page'].handle %}
-      {% assign included = true %}
-      {% break %}
-    {% endif %}
-  {% endif %}
-{% endfor %}
-
-{% if included %}
-  <style>
-    :root {
-      --height-bar: 50px !important;
-    }
-    @media (max-width: 991px) {
-      :root {
-        --height-bar: 34px !important;
-      }
-    }
-  </style>
-
-  <!-- Announcement Bar -->
-  <link rel="stylesheet" href="https://qureskincaredns-main.com/sections/isolated/announcement/announcement-bar.css">
-  <div
-    id="announcement-bar"
-    class="announcement-bar"
-    style="--ans-bar-font-size:16px; --anc-bar-font-weight :400;{% if section.settings.show != blank %}visibility:visible{% endif %}"
-  >
-    <div class="container">
-      {% if section.settings.heading != blank %}
-        <div class="announcement-bar-content text-center">
-          {{ section.settings.heading }}
-          {% if section.settings['button-label'] != blank -%}
-            <a href="{{ section.settings.button-url }}">{{ section.settings['button-label'] }}</a>
-          {%- endif %}
-        </div>
-      {% endif %}
-    </div>
-  </div>
-{% endif %}
+<!-- Announcement Bar -->
+<link rel="stylesheet" href="https://qureskincaredns-main.com/sections/isolated/announcement/announcement-bar.css" />
+<div id="announcement-bar" class="announcement-bar" style="--ans-bar-font-size:16px; --anc-bar-font-weight :400;">
+   <div class="container">
+        {% if section.settings.heading != blank %}
+            <div class="announcement-bar-content text-center">
+                {{ section.settings.heading }} {% if section.settings.button-label != blank %}<a href="{{ section.settings.button-url }}">{{ section.settings.button-label }}</a>{% endif %}
+            </div>
+        {% endif %}
+   </div>
+</div>
 
 {% schema %}
 {
-  "name": "announcement-bar-old",
+  "name": "t:sections.announcement-bar.name",
   "settings": [
     {
       "type": "text",
@@ -63,19 +33,6 @@
       "type": "text",
       "id": "button-url",
       "label": "t:common.button-url"
-    }
-  ],
-  "blocks": [
-    {
-      "type": "include-page",
-      "name": "Include page",
-      "settings": [
-        {
-          "type": "page",
-          "id": "include-page",
-          "label": "Page"
-        }
-      ]
     }
   ],
   "presets": [

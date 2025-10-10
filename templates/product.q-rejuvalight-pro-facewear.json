@@ -11,6 +11,7 @@
   "sections": {
     "announcement_bar_jkkyg7": {
       "type": "announcement-bar",
+      "disabled": true,
       "name": "t:sections.announcement-bar.name",
       "settings": {
         "heading": "FREE Worldwide Shipping Above $100",
@@ -627,10 +628,7 @@
           }
         }
       },
-      "block_order": [
-        "accordion_xTqqU8",
-        "accordion_tNf6Vj"
-      ],
+      "block_order": ["accordion_xTqqU8", "accordion_tNf6Vj"],
       "name": "t:sections.how-it-works.name",
       "settings": {
         "heading": "How it works",
@@ -818,11 +816,7 @@
           }
         }
       },
-      "block_order": [
-        "list_ELqhFc",
-        "list_9wJPLV",
-        "list_erY7DR"
-      ],
+      "block_order": ["list_ELqhFc", "list_9wJPLV", "list_erY7DR"],
       "name": "t:sections.how-to-use.name",
       "settings": {
         "heading": "See how quick and easy it is to use",
@@ -955,9 +949,7 @@
           }
         }
       },
-      "block_order": [
-        "stamped_product_reviews_ugc_main_widget_A4ebAn"
-      ],
+      "block_order": ["stamped_product_reviews_ugc_main_widget_A4ebAn"],
       "settings": {}
     },
     "faq_46wWyJ": {

@@ -60,27 +60,13 @@
     },
     "footer-form": {
       "type": "announcement-bar",
+      "disabled": true,
       "settings": {
         "heading": "Autumn Glow Sale 67% OFF Micro-Infusion",
         "button-label": "Shop Now",
         "button-url": "https://qureskincare.com/pages/microinfusion",
         "show": true
-      },
-      "blocks": {
-        "include-page-1": {
-          "type": "include-page",
-          "settings": {
-            "include-page": "exclusive-holiday-bundle-deal-new"
-          }
-        },
-        "include-page-2": {
-          "type": "include-page",
-          "settings": {
-            "include-page": "qure-microinfusion-offer"
-          }
-        }
-      },
-      "block_order": ["include-page-1", "include-page-2"]
+      }
     },
     "header": {
       "type": "header",
