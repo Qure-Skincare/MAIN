@@ -1,5 +1,4 @@
-{{ 'endrock__testimonialCarousel.css' | asset_url | stylesheet_tag }}
-{{ 'endrock__testimonialCarousel.js' | asset_url | script_tag }}
+{{ '__endrock_testimonialCarousel.css' | asset_url | stylesheet_tag }}
 <div id="testimonial-section-root">
   <div class="content-heading">
     <h2>{{ section.settings.title }}</h2>
@@ -14,7 +13,7 @@
         <ul class="swiper-wrapper">
           {% for block in section.blocks %}
           <li class="swiper-slide testimonial-item">
-            {% render 'endrock_testimonialVideoItems', block: block %}
+            {% render '__endrock_testimonialVideoItems', block: block %}
           </li>
           {% endfor %}
         </ul>
@@ -44,7 +43,7 @@
       <ul class="mobile-list">
         {% for block in section.blocks %}
         <li class="testimonial-item">
-          {% render 'endrock_testimonialVideoItems', block: block %}
+          {% render '__endrock_testimonialVideoItems', block: block %}
         </li>
         {% endfor %}
       </ul>
@@ -61,6 +60,14 @@
       </svg>
     </div>
   </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    loadScriptOnce('testimonial-carousel', '{{ '__endrock_testimonialCarousel.js' | asset_url  }}'); 
+  });
+</script>
+
 {% schema %}
 {
   "name": "Testimonial carousel",
