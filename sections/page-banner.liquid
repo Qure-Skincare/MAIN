@@ -23,6 +23,7 @@
             <div class="ctm-width ctm-color mx-auto mx-md-0 text-center text-md-start" style="--ctm-width:550px; --pg-title-mob:#212428;">
                {% if template.name == 'collection' and collection.handle != 'best-sellers' %}
                   <h1 class="ctm-width ctm-color text-center text-md-start mx-auto mx-md-0 d-none d-md-block" style="--ctm-width:550px; --pg-title-mob:#212428;">{{ collection.handle | replace: '-', ' ' | capitalize }}</h1>
+                  <h1 class="ctm-width ctm-color text-center text-md-start mx-auto mx-md-0 d-block d-md-none" style="--ctm-width:550px; --pg-title-mob:#212428; margin-top:-20px;">{{ collection.handle | replace: '-', ' ' | capitalize }}</h1>
                {% else %}
                   {% if section.settings.heading != blank %}
                      <h1 class="ctm-width ctm-color text-center text-md-start mx-auto mx-md-0 d-none d-md-block" style="--ctm-width:550px; --pg-title-mob:#212428;">{{ section.settings.heading }}</h1>

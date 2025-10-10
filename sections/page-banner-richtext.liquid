@@ -18,15 +18,14 @@
     </picture>
     <div class="page__banner-wrapper position-absolute d-flex align-items-end align-items-lg-center justify-content-end top-0 bottom-0 start-0 end-0 pb-20">
         <div class="container">
-            <div class="d-flex justify-content-lg-center ctm-width ms-auto"
-                style="--ctm-width:50%; --ctm-width-mob: 100%;">
-                <div class="ctm-width pb-md-0 pb-50" style="--ctm-width:307px; --ctm-width-mob:210px;">
+            <div class="d-flex justify-content-lg-end ctm_cls_content_wrapper">
+                <div class="ctm_cls_title_wrapper">
                     {% if section.settings.heading != blank %}
                         <h1 class="page-banner-title">{{ section.settings.heading }}</h1>
                     {% endif %}
                     <div class="d-md-block d-none">
                         {% if section.settings.sub_heading != blank %}
-                            <div class="fs-16 fw-600 pt-15">{{ section.settings.sub_heading }}</div>
+                            <div class="fs-16 fw-600 pt-15 mb-1">{{ section.settings.sub_heading }}</div>
                         {% endif %}
                         {% if section.settings.text != blank %}
                              <div class="fs-16">{{ section.settings.text }}</div>
