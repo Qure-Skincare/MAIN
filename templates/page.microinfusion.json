@@ -86,8 +86,8 @@
       "name": "t:sections.page-header.name",
       "settings": {
         "rating": "<p><strong>4.8</strong>/5 Rated by Customers</p>",
-        "heading": "Transform dull looking skin with Micro-Infusion Facial System",
-        "description": "<ul><li>Helps reduce appearance of fine lines, smooth texture while helping to infuse active ingredients into your skin.</li><li>Virtually painless and performed in the comfort and convenience of your home.</li><li>Minimal to no downtime with visible results.</li></ul>",
+        "heading": "Refresh the look of dull skin with the Micro-Infusion Facial System",
+        "description": "<ul><li>Helps reduce the appearance of fine lines and smooth texture while helping to infuse active ingredients onto the skin’s surface.</li><li>Virtually painless and performed in the comfort and convenience of your home.</li><li>Minimal to no downtime, with visible improvements reported by customers.</li></ul>",
         "button-label": "",
         "button-url": ""
       }
@@ -349,7 +349,7 @@
         "slider_EkJHPF": {
           "type": "slider",
           "settings": {
-            "heading": "“A true microneedling treatment - creating microchannels that increase collagen and elastin production and product absorption.”",
+            "heading": "“A true microneedling treatment - creating microchannels that enhance product absorption..”",
             "image": "shopify://shop_images/bazzar.svg"
           }
         },
@@ -428,7 +428,7 @@
       "name": "t:sections.banner-with-text.name",
       "settings": {
         "heading": "Qure’s Micro-Infusion goes where your skin cream can’t…",
-        "text": "<p>Its tiny, almost painless, 24K gold plated 0.5mm microneedles penetrate beyond the skin’s surface to gently create controlled trauma in your skin which help <em>boost the feel of firmness, smooth texture and reduce the look of fine lines and wrinkles.</em></p><p>The invisible micro-channels then infuse science-backed serums into your skin that are tailored to <em>treat your specific skin concerns,</em> increasing absorption and delivering powerful active ingredients exactly where they’re needed.</p>",
+        "text": "<p>Its tiny, almost painless, 24K gold-plated, EO-sterilized (ethylene oxide) 0.5 mm microneedles gently press onto the skin’s surface to help<em> improve the feel of firmness</em>, smooth texture, and <em>reduce the look of fine lines and wrinkles</em>.<br/><br/>The invisible micro-channels then deliver science-backed serums onto the skin’s surface, <em>tailored to address specific skin goals</em> — enhancing absorption and helping active ingredients work more effectively where they’re applied.</p>",
         "quote": "",
         "quote-mobile": "",
         "image_position": "left",
@@ -1107,7 +1107,7 @@
           "type": "compare",
           "settings": {
             "check_text": "<p>New needle heads provide sharp, straight needles for every treatment - designed for better efficacy</p>",
-            "cross_text": "<p>Needles become blunt after several uses & create unnecessary skin trauma which can lessen efficacy</p>",
+            "cross_text": "<p>Needles become blunt after several uses & may cause unnecessary irritation which can affect results</p>",
             "checkbox": false
           }
         },
@@ -1122,7 +1122,7 @@
         "compare_XyCyNE": {
           "type": "compare",
           "settings": {
-            "check_text": "<p>Delivers serum directly to skin to help increase absorption & results</p>",
+            "check_text": "<p>Applies serum onto the skin to enhance absorption and visible results</p>",
             "cross_text": "<p>Less effective absorption of serum as applied topically</p>",
             "checkbox": false
           }
@@ -1138,7 +1138,7 @@
       ],
       "name": "t:sections.compare.name",
       "settings": {
-        "heading": "Typically more effective and safer than other at-home needling devices",
+        "heading": "Typically a more hygienic option than re-usable at-home rollers when used as directed",
         "text": "<p>Unlike at-home needle roller devices, Micro-Infusion requires little to no downtime, is virtually painless, and minimizes risk of infection and irritation.</p>",
         "image_compare_check": "shopify://shop_images/mist_img_3.webp",
         "image_compare_cross": "shopify://shop_images/mist_img_4.webp"

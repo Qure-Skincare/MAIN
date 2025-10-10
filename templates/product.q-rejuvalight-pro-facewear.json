@@ -197,35 +197,35 @@
         "slider_AyUkwP": {
           "type": "slider",
           "settings": {
-            "text": "<p>Reduce the look of fine lines and wrinkles</p>",
+            "text": "<p>Reduce the look of fine<br/> lines and wrinkles</p>",
             "image": "shopify://shop_images/Micro-Infusion_Icons_6_ec6c579e-dacd-4fb4-8003-01ae0f27157c.svg"
           }
         },
         "slider_Nq4jQt": {
           "type": "slider",
           "settings": {
-            "text": "<p>Even skin tone and fade dark spots</p>",
+            "text": "<p>Helps improve the look of<br/> uneven tone</p>",
             "image": "shopify://shop_images/Micro-Infusion_Icons_7.svg"
           }
         },
         "slider_ifPfiR": {
           "type": "slider",
           "settings": {
-            "text": "<p>Clear and calm redness and inflammation</p>",
+            "text": "<p>Helps visibly calm and <br/>balance the look of skin</p>",
             "image": "shopify://shop_images/Micro-Infusion_Icons_8.svg"
           }
         },
         "slider_rhnxB4": {
           "type": "slider",
           "settings": {
-            "text": "<p>Lift and firm sagging skin</p>",
+            "text": "<p>Helps skin appear firmer<br/> and smoother</p>",
             "image": "shopify://shop_images/Micro-Infusion_Icons_9.svg"
           }
         },
         "slider_X7Tpw4": {
           "type": "slider",
           "settings": {
-            "text": "<p>Promote a healthy, glowing complexion</p>",
+            "text": "<p>Helps promote a healthy-<br/>looking, radiant complexion</p>",
             "image": "shopify://shop_images/Micro-Infusion_Icons_10.svg"
           }
         }
@@ -636,7 +636,7 @@
         "image_aging": "shopify://shop_images/mask_aging.webp",
         "image_breakout": "shopify://shop_images/mask_breakout.webp",
         "heading_aging_mode": "<p><strong>Skin Rejuvenating</strong></p>",
-        "text_aging_mode": "<p>On Skin Rejuvenating Mode, red and infrared wavelengths work together to help support collagen production, which reduces the appearance of wrinkles and fine lines, as well as to improve skin elasticity and firmness.</p><p>Red light stimulates collagen and elastin production, which supports skin renewal. Deep red light penetrates deeper to help with the appearance of wrinkles, while infrared is designed to reach deeper layers for potential long-term benefits.</p>",
+        "text_aging_mode": "<p>On Skin Rejuvenating Mode, red and infrared wavelengths work together to help improve the appearance of skin texture and firmness. <br/><br/>Red light helps improve the look of skin smoothness and radiance. Deep red and infrared light work at different depths of the skin’s surface to help improve the look of wrinkles over time.</p>",
         "heading_breakout_mode": "<p><strong>Skin Clearing</strong></p>",
         "text_breakout_mode": "<p>Our Skin Clearing Mode combines blue and red light wavelengths. Blue (415 nm) targets acne-causing bacteria on the skin's surface, and red (630 nm) helps calm inflammation and soothes irritated skin.</p><p>Together, these wavelengths help reduce breakouts, prevent future flare-ups, and support clearer, healthier-looking skin.</p>"
       }
