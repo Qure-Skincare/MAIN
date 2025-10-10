@@ -90,7 +90,7 @@
 
                                     {% if product_type == 3 %}
                                         <div class="best_value">
-                                            <p>{{ 'purchase-form.settings.best' | t }} <img src="https://qureskincaredns-main.com/assets/images/star_white.svg" alt=""></p>
+                                            <p>{{ 'purchase-form.settings.best' | t }} <img src="https://qureskincaredns-main.com/assets/images/star_white.svg" alt="star white"></p>
                                         </div>
                                     {% endif %}
 
@@ -129,14 +129,14 @@
                                                 <div class="qure-best-value rounded-0 mb-0 justify-content-between px-15 fs-12 pt-5">
                                                     <div>🔥 {{ 'purchase-form.settings.per-treatment' | t: price: product_price_per_item }}</div>
                                                     {% if block.settings.left_items > 0 %}
-                                                        <div><span><img src="https://qureskincaredns-main.com/assets/images/clock-w.svg" alt=""></span> {{ 'purchase-form.settings.kit-left' | t: count: block.settings.left_items }}</div>
+                                                        <div><span><img src="https://qureskincaredns-main.com/assets/images/clock-w.svg" alt="clock"></span> {{ 'purchase-form.settings.kit-left' | t: count: block.settings.left_items }}</div>
                                                     {% endif %}
                                                 </div>
                                             {% when 2 %}
                                                 <div class="qure-best-value rounded-0 mb-0 justify-content-between px-15 fs-12 pt-5" style="--qure-charcoal:#C7E5DB; --white-color:#212428;">
                                                     <div>{{ 'purchase-form.settings.per-treatment' | t: price: product_price_per_item }}</div>
                                                     {% if block.settings.left_items > 0 %}
-                                                        <div><span><img src="https://qureskincaredns-main.com/assets/images/clock-b.svg" alt=""></span> {{ 'purchase-form.settings.kit-left' | t: count: block.settings.left_items }}</div>
+                                                        <div><span><img src="https://qureskincaredns-main.com/assets/images/clock-b.svg" alt="clock"></span> {{ 'purchase-form.settings.kit-left' | t: count: block.settings.left_items }}</div>
                                                     {% endif %}
                                                 </div>
                                         {% endcase %}
