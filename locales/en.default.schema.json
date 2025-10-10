@@ -76,6 +76,7 @@
         "image-with-text": "Image with text",
         "username": "Username",
         "image": "Image",
+        "email-image": "Email image",
         "country-image": "Country image",
         "hover-image": "Hover image",
         "review-image": "Review image",
@@ -214,6 +215,21 @@
                     "name": "Returns exchanges URL"
                 }
             }
+        },
+        "content-brief": {
+            "name": "Content brief"
+        },
+        "q-rejuvalight-pro-welcome-intro": {
+            "name": "Intro",
+            "blocks": {
+                "settings": {
+                    "download-button-label": "Download button label",
+                    "download-button-url": "Download button URL"
+                }
+            }
+        },
+        "q-rejuvalight-pro-welcome-action-banner": {
+            "name": "Action banner"
         },
         "returns-exchanges-card-slider": {
             "name": "Returns exchanges card slider"

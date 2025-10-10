@@ -9,12 +9,31 @@
  */
 {
   "sections": {
+    "page_banner_richtext_n2esDz": {
+      "type": "page-banner-richtext",
+      "name": "t:sections.page-banner-richtext.name",
+      "settings": {
+        "heading": "Get started with the Neck & Décolletage LED Device",
+        "sub_heading": "IMPORTANT NOTICE:",
+        "text": "Please read the complete instruction manual carefully before using the device.",
+        "image": "shopify://shop_images/neck-decollatage.webp"
+      }
+    },
+    "content_brief_M8Gyxd": {
+      "type": "content-brief",
+      "name": "t:sections.content-brief.name",
+      "settings": {
+        "text": "<p><strong> The Qure Neck & Décolletage LED Device</strong> is an LED light therapy device designed to visibly firm, smooth, and brighten the delicate skin on your neck and chest. </p><p>This guide will show you exactly how to use it, care for it, and get the best results from your treatments.</p>"
+      }
+    },
     "main": {
       "type": "page-n-d-quickstart-guide",
       "settings": {}
     }
   },
   "order": [
+    "page_banner_richtext_n2esDz",
+    "content_brief_M8Gyxd",
     "main"
   ]
 }

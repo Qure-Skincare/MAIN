@@ -2,10 +2,7 @@
 Renders a page banner section second for index page
 {% enddoc %}
 
-<!-- Page banner -->
 <link rel="stylesheet" href="https://qureskincaredns-main.com/sections/isolated/page-banner/page-banner.css" />
-
-<!-- promotional banner  -->
 <div class="page__banner position-relative">
     <picture>
         {% if section.settings.image != blank %}
@@ -65,9 +62,6 @@ Renders a page banner section second for index page
         {{ section.settings.subtext | replace: '<p>', '<p class="prevent_breast_cancer d-md-none pb-30 text-center">' }}
     {% endif %}
 </div>
-<!-- promotional banner end -->
-
-<!-- Page banner end -->
 
 {% schema %}
     {

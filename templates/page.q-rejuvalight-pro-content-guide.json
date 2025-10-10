@@ -9,33 +9,33 @@
  */
 {
   "sections": {
-    "page_banner_richtext_0rmac1": {
+    "page_banner_richtext_xpnyc6": {
       "type": "page-banner-richtext",
       "name": "t:sections.page-banner-richtext.name",
       "settings": {
-        "heading": "Micro-Infusion Creative Content Guide",
+        "heading": "Q-Rejuvalight Pro Creative Content Guide",
         "sub_heading": "",
         "text": "",
-        "image": "shopify://shop_images/mi__banner.webp"
+        "image": "shopify://shop_images/led_mask-banner.webp"
       }
     },
-    "content_brief_dPxag6": {
+    "content_brief_tDTwN6": {
       "type": "content-brief",
       "name": "t:sections.content-brief.name",
       "settings": {
-        "text": "<p><strong>Discover how to make the most of the Qure Micro-Infusion System with our creative content guide</strong></p><p>This brief is designed to guide you in creating engaging, authentic content that highlights how our Micro-Infusion System transforms the skin. </p><p>You’ll be showcasing its ability to visibly improve texture, boost softness, and deliver a lasting, healthy glow—helping your audience see the real, science-backed benefits of this at-home treatment.</p>"
+        "text": "<p><strong>Discover how to make the most of the Qure Q-Rejuvalight Pro LED Mask with our creative content guide.</strong></p><p>This brief will help you understand the key benefits of the Q-Rejuvalight Pro Mask and create content that is engaging and educational. </p>"
       }
     },
     "main": {
-      "type": "page-content-instructions",
+      "type": "page-q-rejuvalight-pro-guide",
       "settings": {}
     },
-    "trusted_recommended_3pKe1d": {
+    "trusted_recommended_WVlz2d": {
       "type": "trusted-recommended",
       "name": "t:sections.trusted-recommended.name",
       "settings": {
         "heading": "Trusted and Recommended by Experts",
-        "text": "<p>“This treatment is an <strong>at-home</strong> option for those who want to <strong>avoid the hassle or cost of going to the office.”</strong></p>",
+        "text": "<p>“Of all the LED masks we’ve tried, <strong>this is the best on the market right now...</strong> It didn’t lose in any category...”</p>",
         "image_text": "",
         "image": "shopify://shop_images/doctor_shah_desk.webp",
         "image_mobile": "shopify://shop_images/doctor_shah_mob.webp",
@@ -45,9 +45,9 @@
     }
   },
   "order": [
-    "page_banner_richtext_0rmac1",
-    "content_brief_dPxag6",
+    "page_banner_richtext_xpnyc6",
+    "content_brief_tDTwN6",
     "main",
-    "trusted_recommended_3pKe1d"
+    "trusted_recommended_WVlz2d"
   ]
 }

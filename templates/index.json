@@ -453,6 +453,7 @@
       "type": "trusted-recommended",
       "name": "t:sections.trusted-recommended.name",
       "settings": {
+        "background_color": "#ffffff",
         "heading": "Trusted and Recommended by Experts",
         "text": "<p>“This treatment is an at-home option for those who want to <strong>avoid the hassle or cost of going to the office”.</strong></p>",
         "image_text": "",
@@ -523,7 +524,7 @@
         "slider_ThUgnK": {
           "type": "slider",
           "settings": {
-            "heading": "<p>\"With Micro-Infusion, you get to see the results almost instantly.\"</p>",
+            "heading": "<p>“With Micro-Infusion, many notice a visible glow soon after treatment.”</p>",
             "text": "<p>Dr. Davin Lim</p>",
             "sub_text": "<p>Board-Certified Dermatologist</p>",
             "url": "3bud7no0j9",
@@ -534,7 +535,7 @@
         "slider_wX7Rab": {
           "type": "slider",
           "settings": {
-            "heading": "<p>\"One of the best ways to treat hyperpigmentation at home.\"</p>",
+            "heading": "<p>\"One of the best ways to address the look of hyperpigmentation at home.\"</p>",
             "text": "<p>Dr. Wallace Nozile</p>",
             "sub_text": "<p>Board-Certified Dermatologist</p>",
             "url": "ypvcdsgwkx",

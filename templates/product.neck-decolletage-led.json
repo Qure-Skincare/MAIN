@@ -102,8 +102,8 @@
       "name": "t:sections.product-header.name",
       "settings": {
         "seo_heading": "RED LIGHT NECK & CHEST MASK",
-        "heading": "Combat signs of aging with Neck & Decolletage LED Therapy",
-        "description": "<ul><li>Clinically-proven results for anti-aging and skin rejuvenation where the first signs of aging appear.</li><li>Repairs sun-damaged skin, reduces the appearance of redness, and fine lines & wrinkles.</li><li>Evens skin tone and boosts firmness for radiant, younger-looking skin.</li></ul>",
+        "heading": "Visibly smooth and firm skin with the Neck & Décolletage LED System",
+        "description": "<ul><li>Visible cosmetic results supporting smoother- and firmer-looking skin where early signs of aging appear.</li><li>Helps improve the look of sun-exposed skin, visibly calms redness, and smooths the appearance of fine lines and wrinkles.</li><li>Evens skin tone and boosts firmness for radiant, younger-looking skin.</li></ul>",
         "reserved": false,
         "soldout": false
       }
@@ -114,7 +114,7 @@
         "slider_PkM64E": {
           "type": "slider",
           "settings": {
-            "heading": "“Changes you’ll see are positive - like plumper, more taut skin and an improved skin tone.”",
+            "heading": "“Changes you’ll see are positive – like visibly plumper, more refreshed-looking skin and an improved appearance of tone.”",
             "image": "shopify://shop_images/vogue-black_35010b3a-45a5-48d0-81c0-31a164697560.svg"
           }
         },
@@ -128,12 +128,13 @@
         "slider_eqqBgw": {
           "type": "slider",
           "settings": {
-            "heading": "“A foolproof pick: It’s affordable and high quality with dual-core red and near-infrared wavelengths.”",
+            "heading": "“A foolproof pick: It’s affordable and high quality, featuring dual red and near-infrared wavelengths.”",
             "image": "shopify://shop_images/bazaar_h.svg"
           }
         },
         "slider_NbVEhm": {
           "type": "slider",
+          "disabled": true,
           "settings": {
             "heading": "“It complements the face mask and targets areas that age first. I think it is most important for your first LED treatment.”",
             "image": "shopify://shop_images/grazia-black.svg"
@@ -154,7 +155,7 @@
       "name": "t:sections.banner-with-text.name",
       "settings": {
         "heading": "All the skin firming, smoothing, clearing benefits with just 1 device",
-        "text": "<p>The Neck & Décolletage LED Device uses red and near-infrared light to gently <em>activate your skin’s natural repair process</em></p><p>These wavelengths help boost collagen, reduce inflammation, and improve circulation—leading to <em>firmer, smoother, and more even-toned skin</em> over time.</p>",
+        "text": "<p>The Neck & Décolletage LED System uses red and near-infrared light to help <em>improve the look of firmness</em>, tone, and texture in the neck and chest area.<br/><br/>These wavelengths support the appearance of smoother, more even-looking skin and a refreshed, radiant look over time.</p>",
         "quote": "",
         "quote-mobile": "",
         "image_position": "left",
@@ -178,21 +179,21 @@
         "slider_nzJkbQ": {
           "type": "slider",
           "settings": {
-            "text": "<p>Fade pigmentation and <br/>dark spots</p>",
+            "text": "<p>Helps improve the look of uneven <br/>tone</p>",
             "image": "shopify://shop_images/Neck_Dec_Icons_1.svg"
           }
         },
         "slider_wPpPVU": {
           "type": "slider",
           "settings": {
-            "text": "<p>Lift and firm sagging<br/>skin</p>",
+            "text": "<p>Visibly refreshes and firms the<br/> appearance of skin</p>",
             "image": "shopify://shop_images/Neck_Dec_Icons_2.svg"
           }
         },
         "slider_XFzXwM": {
           "type": "slider",
           "settings": {
-            "text": "<p>Boost smoothness and repair sun-damaged skin</p>",
+            "text": "<p>Leaves skin looking smoother softer<br/> and more radiant</p>",
             "image": "shopify://shop_images/Neck_Dec_Icons_3.svg"
           }
         }
@@ -229,6 +230,7 @@
         },
         "slider_hhgf6i": {
           "type": "slider",
+          "disabled": true,
           "settings": {
             "heading": "From sun damage to this!",
             "text": "<p>“After years damage from the strong Aussie sun I wanted to try LED therapy to help rejuvenate and repair my skin. I’m so glad I did because after using it daily, I've witnessed this transformation!!! Skin is firmer, sunspots have faded and texture is so much smoother!”</p>",
@@ -243,7 +245,7 @@
         "slider_qtNChf": {
           "type": "slider",
           "settings": {
-            "heading": ">Amazing products",
+            "heading": "Amazing products",
             "text": "<p>“I’ve always taken care of my face but neglected my neck and chest skin so I’ve made it a top priority in the past year. Since using LED regularly, the pesky fine lines in the middle of my chest are so much smoother and my skin looks youthful again! And I love how this device has LEDs placed in the centre of the chest unlike other devices.”</p>",
             "compare_image": "shopify://shop_images/Ashley.webp",
             "country_image": "shopify://shop_images/america_f.webp",
@@ -256,8 +258,8 @@
         "slider_7343tm": {
           "type": "slider",
           "settings": {
-            "heading": ">Goodbye stubborn inflammation",
-            "text": "<p>“After struggling with acne and the stubborn pigmentation it left behind, I'm thrilled with the results I've seen after using Qure LED chest device. My skin is clearer, and the pigmentation has significantly faded. The most important, I don’t have to cover my neck and chest with foundations and concealers anymore”</p>",
+            "heading": "Clearer, more even-looking skin",
+            "text": "<p>“After dealing with breakouts and uneven tone, I'm thrilled with the results I've seen after using the Qure LED chest system. My skin looks clearer and more even, and I don’t feel the need to cover my neck and chest with makeup anymore.”</p>",
             "compare_image": "shopify://shop_images/Josie.webp",
             "country_image": "shopify://shop_images/australia_f.webp",
             "username": "<p>Josie R.</p>",
@@ -269,8 +271,8 @@
         "slider_mdLYBj": {
           "type": "slider",
           "settings": {
-            "heading": "Great results so far!",
-            "text": "<p>“After only 3 weeks of use I can see a visible change in the texture and color of my skin. I have a lot of sun damage in my chest so I imagine I will need to use my device consistently for a few months before I see a huge difference but I am already noticing improvement and am very happy with my purchase. I highly recommend!”</p>",
+            "heading": "Visible improvement so far!",
+            "text": "<p>“After only 3 weeks of use, I’ve noticed visible improvements in the texture and tone of my skin. I had uneven tone from sun exposure, so I plan to keep using it consistently for best results. I’m already seeing a difference and couldn’t be happier!”</p>",
             "compare_image": "shopify://shop_images/Brooke.webp",
             "country_image": "shopify://shop_images/america_f.webp",
             "username": "<p>Brooke B.</p>",
@@ -282,8 +284,8 @@
         "slider_6g8PkE": {
           "type": "slider",
           "settings": {
-            "heading": "Outstanding",
-            "text": "<p>“I’m so impressed with the results! I noticed a difference after a few weeks. I am so surprised at how much younger the skin on my neck/chest looks. Wrinkles have significantly reduced, sun spots are lighter and my skin looks and feels more rejuvenated. Device is easy to use, I love that I can clip the controller to my robe and multitask whilst using.”</p>",
+            "heading": "Smoother, refreshed-looking skin",
+            "text": "<p>“I’m so impressed with the improvement! I noticed a difference after a few weeks. The skin on my neck and chest looks smoother, more even, and refreshed. Fine lines look softer, sun spots appear lighter, and my skin feels rejuvenated. The system is easy to use — I love that I can clip the controller to my robe and multitask while using it.”</p>",
             "compare_image": "shopify://shop_images/Mary.webp",
             "country_image": "shopify://shop_images/america_f.webp",
             "username": "<p>Mary R.M.</p>",
@@ -315,8 +317,9 @@
       "type": "trusted-recommended",
       "name": "t:sections.trusted-recommended.name",
       "settings": {
+        "background_color": "#ffffff",
         "heading": "Trusted and Recommended by Experts",
-        "text": "<p>\"LED light targets fibroblasts to <strong>increase collagen production</strong> and has anti-aging benefits especially if you are seeing wrinkles and lines on your neck...\"</p>",
+        "text": "<p>“LED light targets the skin’s surface to <em><strong>help improve the look of firmness and smoothness,</strong></em> supporting a more youthful appearance over time.”</p>",
         "image_text": "",
         "video_cover_image": "shopify://shop_images/n-d-doctors.webp",
         "video_url": "https://www.youtube.com/watch?v=W9KXAimjHCE",
@@ -329,7 +332,7 @@
         "slider_9PfgjX": {
           "type": "slider",
           "settings": {
-            "heading": "<p>”Using a device like this consistently will fade brown spots and sun damage over time.”</p>",
+            "heading": "<p>“Using a product like this consistently may help improve the look of discoloration and sun-exposed skin over time.”</p>",
             "text": "<p>Dr. Prem Tripathi</p>",
             "sub_text": "<p>Board-Certified Dermatologist</p>",
             "url": "xoh5ew7v31",
@@ -340,7 +343,7 @@
         "slider_bmgXhU": {
           "type": "slider",
           "settings": {
-            "heading": "<p>\"This device helps me fight early signs of aging like fine lines, redness and discoloration...\"</p>",
+            "heading": "<p>“This product helps improve the appearance of early signs of aging like fine lines, visible redness, and uneven tone.”</p>",
             "text": "<p>Dr. Alexandra Zeitany</p>",
             "sub_text": "<p>Board-Certified Dermatologist</p>",
             "url": "fn1wr66mzp",
@@ -351,7 +354,7 @@
         "slider_p99jrE": {
           "type": "slider",
           "settings": {
-            "heading": "<p>I personally suffer from tech neck from looking down ar my phone [...] it helps address signs of aging.</p>",
+            "heading": "<p>“I often notice tech-neck related lines from looking down at my phone - this product helps improve their appearance over time.”</p>",
             "text": "<p>Dr. Mona Patel</p>",
             "sub_text": "<p>Internal Medicine Doctor</p>",
             "url": "k1wciiwksf",
@@ -462,7 +465,7 @@
       ],
       "name": "t:sections.numbered-steps.name",
       "settings": {
-        "heading": "Treat signs of aging in 10 minutes"
+        "heading": "Your 10-minute LED ritual for visibly firmer-looking skin"
       }
     },
     "product_info_86H7kk": {
@@ -481,10 +484,8 @@
       ],
       "name": "t:sections.product-info.name",
       "settings": {
-        "heading": "Science-backed results",
-        "text": "<p>The Neck & Décolletage LED Device uses red and near-infrared light to trigger a natural process in your skin called <em>photobiomodulation</em>.</p><p>These wavelengths are absorbed by your skin cells and help boost their energy, allowing them to work more efficiently. This increased activity <em>supports collagen and elastin production</em>, speeds up repair, calms inflammation, and <em>improves overall tone and texture</em>.</p><p>No heat, no damage—just light activating your skin’s natural ability to heal and renew.</p>",
-        "image": "shopify://shop_images/science_backed_res.webp",
-        "image_mobile": "shopify://shop_images/science_backed_res_mob.webp",
+        "heading": "",
+        "text": "",
         "button-label": "",
         "button-url": "",
         "image_position": "left"
@@ -529,8 +530,8 @@
         "accordion_yKAXF4": {
           "type": "accordion",
           "settings": {
-            "heading": "What color wavelengths does the Neck & Décolletage LED Device have?",
-            "text": "<p>The Neck & Décolletage LED Device uses two clinically backed wavelengths of light to target visible signs of aging, sun damage, and skin elasticity on the neck and chest:</p><ul><li>Red Light (633nm): Penetrates the upper layers of the skin to boost collagen and elastin, improving firmness, reducing fine lines, and smoothing texture.</li><li>Near-Infrared Light (830nm): Reaches deeper into the skin to support tissue repair, cell regeneration, and circulation, helping reduce inflammation and restore elasticity.</li></ul><p>Together, these wavelengths stimulate your skin’s natural healing processes to reveal smoother, firmer, more even-toned skin over time. All without heat, pain, or downtime. </p>",
+            "heading": "What color wavelengths does the Neck & Décolletage LED System have?",
+            "text": "<p>The Neck & Décolletage LED System uses two clinically studied wavelengths of light designed to target visible signs of aging and improve the look of firmness and tone on the neck and chest: <br/></p><ul><li>Red Light (633 nm): Reaches the skin’s surface layers to help improve the appearance of firmness and smooth texture.</li><li>Near-Infrared Light (830 nm): Penetrates deeper to support the look of elasticity and even tone.</li></ul><p> Together, these wavelengths help improve the appearance of smoother-, firmer-, more even-toned skin over time — all without heat, pain, or downtime. </p>",
             "link_url": "",
             "link_text": ""
           }
@@ -539,7 +540,7 @@
           "type": "accordion",
           "settings": {
             "heading": "How quickly will I see results?",
-            "text": "<p>Every individual may respond differently to specific wavelengths of lights and results will depend on the goal you want to achieve.</p><p>Visible improvements can typically be seen within 4 weeks of consistent use. More significant changes can be seen over several months. </p><p>The day-to-day changes will be subtle, so be sure to take \"before and after\" pictures to document progress. The most important thing to remember is that results are cumulative, so consistent daily treatment is key. </p>",
+            "text": "<p>Every individual may respond differently to specific wavelengths of light, and visible improvements will depend on the skin’s condition and consistency of use.<br/><br/>Most users report seeing visible improvements within 4 to 8 weeks of consistent use. More noticeable changes may continue to appear over several months.<br/><br/>Day-to-day changes can be subtle — we recommend taking before and after photos to track your progress. Results are cumulative, so consistency is key.</p>",
             "link_url": "",
             "link_text": ""
           }
@@ -548,7 +549,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Is it safe for all skin types?",
-            "text": "<p>Yes, this device is safe for all skin types. It is non-invasive and gentle on the skin. However, if you have specific skin conditions, we recommend consulting with a dermatologist before use.</p>",
+            "text": "<p>Yes, this system is safe for all skin types. It is non-invasive and gentle on the skin. However, if you have specific skin conditions, we recommend consulting with a dermatologist before use.</p>",
             "link_url": "",
             "link_text": ""
           }
@@ -557,7 +558,7 @@
           "type": "accordion",
           "settings": {
             "heading": "How often can I use the treatment?",
-            "text": "<p>For best results, we recommend using the device daily.</p>",
+            "text": "<p>For best results, we recommend using the system daily.</p>",
             "link_url": "",
             "link_text": ""
           }
@@ -583,8 +584,8 @@
         "accordion_y9NWCC": {
           "type": "accordion",
           "settings": {
-            "heading": "Can I use skincare products with the device?",
-            "text": "<p>For optimal results use the device on clean, bare skin. Creating a barrier between the device and your skin with unauthorized skincare products may diminish its effectiveness or potentially cause skin reactions.</p>",
+            "heading": "Can I use skincare products with the system?",
+            "text": "<p>For optimal results use the device on clean, bare skin. Creating a barrier between the system and your skin with unauthorized skincare products may diminish its effectiveness or potentially cause skin reactions.</p>",
             "link_url": "",
             "link_text": ""
           }
