@@ -146,7 +146,7 @@
         "slider_WbrVmC": {
           "type": "slider",
           "settings": {
-            "heading": "“A multi-use LED mask with five different light setting options to plump, smooth, and rejuvenate all skin types.”",
+            "heading": "“A multi-use LED mask with five different light setting options to refresh, smooth, and revitalize the look of all skin types.”",
             "image": "shopify://shop_images/elle-black_82b43549-bc96-4896-af71-0e6bb925e98c.svg"
           }
         },
@@ -160,7 +160,7 @@
         "slider_67Pdpr": {
           "type": "slider",
           "settings": {
-            "heading": "“Q-Rejuvalight Pro harnesses the power of lights from blue to infrared to address nearly every skincare concern you could imagine.”",
+            "heading": "Q-Rejuvalight Pro harnesses a range of LED wavelengths—from blue to infrared—to help improve the appearance of multiple skin concerns.",
             "image": "shopify://shop_images/gq_f5ab15ae-1608-435c-ae5a-00f10a826384.svg"
           }
         }
@@ -180,7 +180,7 @@
       "name": "t:sections.banner-with-text.name",
       "settings": {
         "heading": "All the skin firming, smoothing, clearing benefits with just 1 device",
-        "text": "<p>A portable, FDA-cleared, at-home LED light therapy treatment that is scientifically <em>proven to change your skin</em> for the better.</p><p>Q-Rejuvalight Pro utilizes a combination of <em>5 market-leading light wavelengths</em> to treat a multitude of skin concerns deep within the skin, where even the best creams and serums can’t reach. </p>",
+        "text": "<p>A portable, FDA-cleared, at-home LED light therapy device that is <em>clinically validated</em> to <em>improve the appearance of wrinkles</em> and mild to moderate inflammatory acne.<br/><br/>Q-Rejuvalight Pro uses five clinically backed light wavelengths to deliver light energy designed to <em>target multiple visible skin concerns,</em> supporting clearer-looking, smoother-looking skin where topical care can’t reach.</p>",
         "quote": "",
         "quote-mobile": "",
         "image_position": "left",
@@ -518,6 +518,7 @@
       "type": "trusted-recommended",
       "name": "t:sections.trusted-recommended.name",
       "settings": {
+        "background_color": "#ffffff",
         "heading": "Trusted and Recommended by Experts",
         "text": "<p>“Of all the LED masks we’ve tried, this is <strong>the best on the market right now...</strong> It didn’t lose in any category...</p><p>There’s real science behind LED therapy,  <strong>Qure makes it easy</strong> to be consistent—which is what really drives results.”</p>",
         "image_text": "",
@@ -543,7 +544,7 @@
         "slider_kGwK6t": {
           "type": "slider",
           "settings": {
-            "heading": "<p>\"Qure's anti-aging treatment gets down deep into your skin to stimulate collagen & makes a big difference...\"</p>",
+            "heading": "<p>\"Qure’s at-home LED device works beneath the skin’s surface to support a smoother, firmer-looking complexion and makes a visible difference…\"</p>",
             "text": "<p>Dr. Dylan Greeney</p>",
             "sub_text": "<p>Board-Certified Dermatologist</p>",
             "url": "https://www.youtube.com/watch?v=1iXBgh7WPOY",
@@ -576,7 +577,7 @@
         "slider_gPNnzc": {
           "type": "slider",
           "settings": {
-            "heading": "<p>\"These wavelengths trigger cells to create even more collagen... helping reduce common signs of aging.\"</p>",
+            "heading": "<p>\"These wavelengths help support your skin’s natural renewal process… helping reduce the look of common signs of aging.\"</p>",
             "text": "<p>Dr. Yaseen Arsalan</p>",
             "sub_text": "<p>Resident Doctor</p>",
             "url": "https://www.youtube.com/watch?v=lLkM7Q7It2A&t=154s",
@@ -638,7 +639,7 @@
         "heading_aging_mode": "<p><strong>Skin Rejuvenating</strong></p>",
         "text_aging_mode": "<p>On Skin Rejuvenating Mode, red and infrared wavelengths work together to help improve the appearance of skin texture and firmness. <br/><br/>Red light helps improve the look of skin smoothness and radiance. Deep red and infrared light work at different depths of the skin’s surface to help improve the look of wrinkles over time.</p>",
         "heading_breakout_mode": "<p><strong>Skin Clearing</strong></p>",
-        "text_breakout_mode": "<p>Our Skin Clearing Mode combines blue and red light wavelengths. Blue (415 nm) targets acne-causing bacteria on the skin's surface, and red (630 nm) helps calm inflammation and soothes irritated skin.</p><p>Together, these wavelengths help reduce breakouts, prevent future flare-ups, and support clearer, healthier-looking skin.</p>"
+        "text_breakout_mode": "<p>Our Skin Clearing Mode combines blue and red light wavelengths. Blue (415 nm) targets the bacteria associated with mild-to-moderate acne, while red (630 nm) helps calm and soothe the appearance of irritated skin.<br/><br/>Together, these wavelengths help improve the appearance of breakouts, support clearer-looking skin, and promote a balanced, healthier-looking complexion.</p>"
       }
     },
     "video_review_slider_Qx3NMq": {
@@ -965,7 +966,7 @@
           "type": "accordion",
           "settings": {
             "heading": "What color wavelengths does Q-Rejuvalight Pro have?",
-            "text": "<p>The Q-Rejuvalight Pro has a total of 5 clinically-proven wavelengths of lights:</p><ul><li>Infrared light (880 nm): Increases circulation, protects existing collagen and enhances product absorption.</li><li>Deep Red (660 nm): Accelerates skin healing to fade and prevent scarring Builds collagen to help reduce wrinkles.</li><li>Red (630 nm): Stimulates collagen and elastin production, firms and plumps skin, repairs skin cells and promotes hydration to help reduce inflammation, redness and rosacea.</li><li>Amber (605 nm): Reduces appearance of dark spots. Soothes skin and calms swelling and inflammation.</li><li>Blue (415 nm): Anti-bacterial, eliminates and prevents acne breakouts. Soothes and calms skin.</li></ul><p>There are two treatment modes:</p><ul><li>The Skin Rejuvenating Treatment combines red, deep red, infrared and amber wavelengths which is why the LED lights appear to be an orange color. This combination stimulates collagen, help reduce redness, fine lines, dark spots while encouraging the skin to heal and rejuvenate itself, for visibly smoother, firmer, younger-looking skin.</li><li>The Skin Clearing Treatment combines red and blue wavelengths to destroy the bacteria that causes acne, regulate oil production, reduce redness and other symptoms when a flare-up occurs for clearer skin.<br/></li></ul>",
+            "text": "<p>The Q-Rejuvalight Pro has a total of 5 clinically studied wavelengths of light:<br/></p><ul><li>Infrared light (880 nm): Helps support circulation, protects existing collagen, and enhances product absorption.</li><li>Deep Red (660 nm): Supports skin recovery to help fade the look of marks and smooth texture.</li><li>Red (630 nm): Helps improve the appearance of fine lines and wrinkles while soothing visible redness.</li><li>Amber (605 nm): Helps visibly even skin tone and calm the look of redness.</li><li>Blue (415 nm): Helps reduce the look of breakouts and calm the appearance of irritation.</li></ul><p>There are two treatment modes:<br/></p><p>The Skin Rejuvenating Mode combines red, deep red, infrared, and amber wavelengths. This blend is designed to help visibly smooth, firm, and refresh the look of skin.</p><p>The Skin Clearing Mode combines red and blue wavelengths to help improve the appearance of mild-to-moderate inflammatory acne, supporting a clearer-looking complexion.<br/></p>",
             "link_url": "",
             "link_text": ""
           }
@@ -974,7 +975,7 @@
           "type": "accordion",
           "settings": {
             "heading": "How quickly will I see results?",
-            "text": "<p>Every individual may respond differently to specific wavelengths of lights and  results will depend on the goal you want to achieve.</p><p>Most users see a reduction of acne breakouts and redness quicker than they expect. Smoother lines, improved skin tone and firmness can take longer.</p><p>The day-to-day changes will be subtle, so be sure to take \"before and after\" pictures to document progress. The most important thing to remember is that results are cumulative, so consistent daily treatment is key.</p>",
+            "text": "<p>Every individual may respond differently to specific wavelengths of light, and results will depend on the goal you want to address.<br/><br/>Most users report visible improvements in the look of breakouts and redness sooner than expected. Smoother-looking lines, improved tone, and a firmer appearance may take longer.<br/><br/>Changes are often gradual, so we recommend taking “before and after” photos to track your results. Consistency is key for maintaining improvements over time.</p>",
             "link_url": "",
             "link_text": ""
           }
@@ -983,7 +984,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Is it safe for all skin types?",
-            "text": "<p>Yes. Q-Rejuvalight Pro Facewear is safe and effective for all Fitzpatrick skin types (I–VI) when used as directed. Our device is FDA-cleared for at -home treatment of wrinkles and mild to moderate inflammatory acne, and operates at low light levels that are well within established safety limits for all skintones. We’ve seen great results across a diverse range of skin types and tones. For best outcomes, always follow the recommended treatment time, wear the included eye protection, and check with your dermatologist if you have a photosensitive condition, are taking light-sensitizing medications, or have specific concerns about your skin.</p>",
+            "text": "<p>Yes — the Q-Rejuvalight Pro is designed for use across all skin types when used as directed.<br/><br/>That said, skin types V and VI (on the Fitzpatrick scale) may be more sensitive to visible light due to higher melanin levels, leading to increased photo-absorption and a small risk of pigmentation changes.<br/><br/>Because of this, we advise that those with darker skin tones or pigment-prone skin consult with their dermatologist before use to determine proper settings and usage frequency.<br/><br/>Many users with deeper skin tones have used the device safely and shared positive outcomes when protocols were followed carefully.</p>",
             "link_url": "",
             "link_text": ""
           }
@@ -992,7 +993,7 @@
           "type": "accordion",
           "settings": {
             "heading": "How often can I use the treatment?",
-            "text": "<p>You can use the mask daily. In fact, consistent daily use is recommended for best results.</p><p>Each session takes just 3 minutes, and the more regularly you use it, the more noticeable the improvements in skin tone, texture, and clarity over time.</p>",
+            "text": "<p>You can use the mask daily. In fact, consistent daily use is recommended for best results. <br/><br/>Each session takes just 3 minutes, and the more regularly you use it, the more noticeable the improvements in skin tone, texture, and clarity over time.</p>",
             "link_url": "",
             "link_text": ""
           }
@@ -1001,7 +1002,7 @@
           "type": "accordion",
           "settings": {
             "heading": "When is the best time to use this mask?",
-            "text": "<p>The Q-Rejuvalight Pro Facewear can be used day or night, ideally after cleaning and/or exfoliation.<br/><br/>After the treatment is complete, follow with your topical skincare products of  choice.</p>",
+            "text": "<p>The Q-Rejuvalight Pro Facewear can be used day or night, ideally after cleaning and/or exfoliation.<br/>After the treatment is complete, follow with your topical skincare products of choice.</p>",
             "link_url": "",
             "link_text": ""
           }
@@ -1010,7 +1011,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Do I need to use eye protection?",
-            "text": "<p>The Q-Rejuvalight Pro has been tested and cleared for eye safety. It has  successfully passed the IEC62471 evaluation for eye safety test, which is used to determine whether a device's light output is safe for the eyes or not.</p><p>Regardless, we recommend closing your eyes and wearing protective eyewear during treatment. The light can be bright when powered on and some users may experience sensitivity, even when closing their eyes. <br/><br/>As part of our unwavering commitment to your safety, we decided to take the initiative to include FREE light blocking protective eyewear with our  Q-Rejuvalight Pro LED mask that works seamlessly during your treatment.</p>",
+            "text": "<p>The Q-Rejuvalight Pro has been tested and cleared for eye safety. It has successfully passed the IEC62471 evaluation for eye safety test, which is used to determine whether a device's light output is safe for the eyes or not.<br/><br/>Regardless, we recommend closing your eyes and wearing protective eyewear during treatment. The light can be bright when powered on and some users may experience sensitivity, even when closing their eyes. <br/><br/>As part of our unwavering commitment to your safety, we decided to take the initiative to include FREE light blocking protective eyewear with our Q-Rejuvalight Pro LED mask that works seamlessly during your treatment.</p>",
             "link_url": "",
             "link_text": ""
           }
@@ -1019,7 +1020,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Does Q-Rejuvalight Pro come with a warranty?",
-            "text": "<p>Q-Rejuvalight Pro Facewear comes with one (1) year warranty covering any  manufacturer related problems resulting from everyday use of the product. However, this device is designed to last years! Proudly designed in Australia.</p>",
+            "text": "<p>Q-Rejuvalight Pro Facewear comes with one (1) year warranty covering any manufacturer related problems resulting from everyday use of the product. However, this device is designed to last years! Proudly designed in Australia.</p>",
             "link_url": "",
             "link_text": ""
           }
@@ -1028,7 +1029,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Is Q-Rejuvalight Pro FDA-cleared?",
-            "text": "<p>Yes! Our Q-Rejuvalight Pro LED mask is the world’s first customizable, FDA-cleared at-home LED mask that is proven to be an effective and safe treatment for acne, and aging skin issues. You may find more details on the FDA website (K230042).</p>",
+            "text": "<p>Yes! The Q-Rejuvalight Pro LED Mask is the world’s first customizable, FDA-cleared at-home LED device designed for the treatment of wrinkles and mild-to-moderate inflammatory acne. You can find more details about the clearance on the FDA website (K230042).</p>",
             "link_url": "",
             "link_text": ""
           }

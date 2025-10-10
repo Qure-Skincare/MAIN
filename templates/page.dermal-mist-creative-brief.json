@@ -16,8 +16,7 @@
         "heading": "Dermal Mist Creative Content Guide",
         "sub_heading": "",
         "text": "",
-        "image": "shopify://shop_images/dermal_mist-banner.webp",
-        "image_mobile": "shopify://shop_images/dermal_mist-bannerM.webp"
+        "image": "shopify://shop_images/dermal_mist-banner.webp"
       }
     },
     "content_brief_MldBg6": {
@@ -35,7 +34,6 @@
       "type": "trusted-recommended",
       "name": "t:sections.trusted-recommended.name",
       "settings": {
-        "background_color": "#F6F6F7",
         "heading": "Trusted and Recommended by Experts",
         "text": "<p>\"...Spray your skin to sanitize it before using your Micro-Infusion device. <strong>It's absolutely genius.\"</strong></p>",
         "image_text": "",

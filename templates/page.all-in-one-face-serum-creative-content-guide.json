@@ -16,8 +16,7 @@
         "heading": "All-In-One Face Serum Creative Content Guide",
         "sub_heading": "",
         "text": "",
-        "image": "shopify://shop_images/all_in_one-banner.webp",
-        "image_mobile": "shopify://shop_images/all_in_one-bannerM.webp"
+        "image": "shopify://shop_images/all_in_one-banner.webp"
       }
     },
     "content_brief_mKtt6l": {
@@ -35,7 +34,6 @@
       "type": "trusted-recommended",
       "name": "t:sections.trusted-recommended.name",
       "settings": {
-        "background_color": "#F6F6F7",
         "heading": "Trusted and Recommended by Experts",
         "text": "<p>“Qure has an amazing serum… it has retinol and Bakuchiol, which is an awesome dynamic complimenting ingredient, amazing antioxidants, Argireline, vitamin C. <strong>It can really help simplify and consolidate steps!”</strong></p>",
         "image_text": "",

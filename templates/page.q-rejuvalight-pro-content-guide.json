@@ -16,8 +16,7 @@
         "heading": "Q-Rejuvalight Pro Creative Content Guide",
         "sub_heading": "",
         "text": "",
-        "image": "shopify://shop_images/led_mask-banner.webp",
-        "image_mobile": "shopify://shop_images/led_mask-bannerM.webp"
+        "image": "shopify://shop_images/led_mask-banner.webp"
       }
     },
     "content_brief_tDTwN6": {
@@ -35,7 +34,6 @@
       "type": "trusted-recommended",
       "name": "t:sections.trusted-recommended.name",
       "settings": {
-        "background_color": "#F6F6F7",
         "heading": "Trusted and Recommended by Experts",
         "text": "<p>“Of all the LED masks we’ve tried, <strong>this is the best on the market right now...</strong> It didn’t lose in any category...”</p>",
         "image_text": "",
