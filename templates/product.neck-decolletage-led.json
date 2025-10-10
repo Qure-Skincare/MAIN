@@ -114,7 +114,7 @@
         "slider_PkM64E": {
           "type": "slider",
           "settings": {
-            "heading": "“Changes you’ll see are positive - like plumper, more taut skin and an improved skin tone.”",
+            "heading": "“Changes you’ll see are positive – like visibly plumper, more refreshed-looking skin and an improved appearance of tone.”",
             "image": "shopify://shop_images/vogue-black_35010b3a-45a5-48d0-81c0-31a164697560.svg"
           }
         },
@@ -128,7 +128,7 @@
         "slider_eqqBgw": {
           "type": "slider",
           "settings": {
-            "heading": "“A foolproof pick: It’s affordable and high quality with dual-core red and near-infrared wavelengths.”",
+            "heading": "“A foolproof pick: It’s affordable and high quality, featuring dual red and near-infrared wavelengths.”",
             "image": "shopify://shop_images/bazaar_h.svg"
           }
         },
@@ -319,6 +319,7 @@
       "type": "trusted-recommended",
       "name": "t:sections.trusted-recommended.name",
       "settings": {
+        "background_color": "#ffffff",
         "heading": "Trusted and Recommended by Experts",
         "text": "<p>\"LED light targets fibroblasts to <strong>increase collagen production</strong> and has anti-aging benefits especially if you are seeing wrinkles and lines on your neck...\"</p>",
         "image_text": "",
