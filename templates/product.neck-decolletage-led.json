@@ -530,8 +530,8 @@
         "accordion_yKAXF4": {
           "type": "accordion",
           "settings": {
-            "heading": "What color wavelengths does the Neck & Décolletage LED Device have?",
-            "text": "<p>The Neck & Décolletage LED Device uses two clinically backed wavelengths of light to target visible signs of aging, sun damage, and skin elasticity on the neck and chest:</p><ul><li>Red Light (633nm): Penetrates the upper layers of the skin to boost collagen and elastin, improving firmness, reducing fine lines, and smoothing texture.</li><li>Near-Infrared Light (830nm): Reaches deeper into the skin to support tissue repair, cell regeneration, and circulation, helping reduce inflammation and restore elasticity.</li></ul><p>Together, these wavelengths stimulate your skin’s natural healing processes to reveal smoother, firmer, more even-toned skin over time. All without heat, pain, or downtime. </p>",
+            "heading": "What color wavelengths does the Neck & Décolletage LED System have?",
+            "text": "<p>The Neck & Décolletage LED System uses two clinically studied wavelengths of light designed to target visible signs of aging and improve the look of firmness and tone on the neck and chest: <br/></p><ul><li>Red Light (633 nm): Reaches the skin’s surface layers to help improve the appearance of firmness and smooth texture.</li><li>Near-Infrared Light (830 nm): Penetrates deeper to support the look of elasticity and even tone.</li></ul><p> Together, these wavelengths help improve the appearance of smoother-, firmer-, more even-toned skin over time — all without heat, pain, or downtime. </p>",
             "link_url": "",
             "link_text": ""
           }
@@ -540,7 +540,7 @@
           "type": "accordion",
           "settings": {
             "heading": "How quickly will I see results?",
-            "text": "<p>Every individual may respond differently to specific wavelengths of lights and results will depend on the goal you want to achieve.</p><p>Visible improvements can typically be seen within 4 weeks of consistent use. More significant changes can be seen over several months. </p><p>The day-to-day changes will be subtle, so be sure to take \"before and after\" pictures to document progress. The most important thing to remember is that results are cumulative, so consistent daily treatment is key. </p>",
+            "text": "<p>Every individual may respond differently to specific wavelengths of light, and visible improvements will depend on the skin’s condition and consistency of use.<br/><br/>Most users report seeing visible improvements within 4 to 8 weeks of consistent use. More noticeable changes may continue to appear over several months.<br/><br/>Day-to-day changes can be subtle — we recommend taking before and after photos to track your progress. Results are cumulative, so consistency is key.</p>",
             "link_url": "",
             "link_text": ""
           }
@@ -549,7 +549,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Is it safe for all skin types?",
-            "text": "<p>Yes, this device is safe for all skin types. It is non-invasive and gentle on the skin. However, if you have specific skin conditions, we recommend consulting with a dermatologist before use.</p>",
+            "text": "<p>Yes, this system is safe for all skin types. It is non-invasive and gentle on the skin. However, if you have specific skin conditions, we recommend consulting with a dermatologist before use.</p>",
             "link_url": "",
             "link_text": ""
           }
@@ -558,7 +558,7 @@
           "type": "accordion",
           "settings": {
             "heading": "How often can I use the treatment?",
-            "text": "<p>For best results, we recommend using the device daily.</p>",
+            "text": "<p>For best results, we recommend using the system daily.</p>",
             "link_url": "",
             "link_text": ""
           }
@@ -584,8 +584,8 @@
         "accordion_y9NWCC": {
           "type": "accordion",
           "settings": {
-            "heading": "Can I use skincare products with the device?",
-            "text": "<p>For optimal results use the device on clean, bare skin. Creating a barrier between the device and your skin with unauthorized skincare products may diminish its effectiveness or potentially cause skin reactions.</p>",
+            "heading": "Can I use skincare products with the system?",
+            "text": "<p>For optimal results use the device on clean, bare skin. Creating a barrier between the system and your skin with unauthorized skincare products may diminish its effectiveness or potentially cause skin reactions.</p>",
             "link_url": "",
             "link_text": ""
           }
