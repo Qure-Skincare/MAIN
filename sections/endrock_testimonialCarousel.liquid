@@ -1,0 +1,102 @@
+{{ '__endrock_testimonialCarousel.css' | asset_url | stylesheet_tag }}
+<div id="testimonial-section-root">
+  <div class="content-heading">
+    <h2>{{ section.settings.title }}</h2>
+  </div>
+
+  <div>
+
+  </div>
+  <div id="testimonial-carousel-desktop">
+    <div class="content-testimonial-carousel">
+      <div class="testimonial-carousel swiper">
+        <ul class="swiper-wrapper">
+          {% for block in section.blocks %}
+          <li class="swiper-slide testimonial-item">
+            {% render '__endrock_testimonialVideoItems', block: block %}
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="content-testimonial-carousel-navigation">
+        <div class="swiper-button-prev testimonial-swiper-button-prev">
+          <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" y="0.5" width="31" height="31" rx="15.5" stroke="black" />
+            <path d="M19.5 22L13.5 16L19.5 10" stroke="black" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div class="swiper-pagination testimonial-swiper-pagination"></div>
+        <div class="swiper-button-next testimonial-swiper-button-next">
+          <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" y="0.5" width="31" height="31" rx="15.5" stroke="black" />
+            <path d="M13.5 10L19.5 16L13.5 22" stroke="black" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="testimonial-carousel-mobile">
+    <div class="testimonial-carousel mobile-scroll-container">
+      <ul class="mobile-list">
+        {% for block in section.blocks %}
+        <li class="testimonial-item">
+          {% render '__endrock_testimonialVideoItems', block: block %}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+  <div class="container-blur-modal" style="display: none;">
+    <div class="modal-video-iframe">
+      <svg width="40" height="40" id="close-modal-video" fill="transparent" stroke="#f5edf6" strokeLinecap="round"
+        strokeLinejoin="round" strokeWidth="3" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2a10 10 0 1 0 0 20 10 10 0 1 0 0-20z" />
+        <path d="m15 9-6 6" />
+        <path d="m9 9 6 6" />
+      </svg>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    loadScriptOnce('testimonial-carousel', '{{ '__endrock_testimonialCarousel.js' | asset_url  }}'); 
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Testimonial carousel",
+  "class": "testimonial-carousel endrock_testimonialCarousel",
+  "tag": "section",
+  "settings": [
+    {
+      "id": "title",
+      "type": "text",
+      "label": "Heading"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "testimonial",
+      "name": "Testimonial video",
+      "settings": [
+        {
+          "id": "testimonial_video",
+          "type": "video",
+          "label": "Video"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Testimonial carousel"    
+    }
+  ]
+}
+{% endschema %}
