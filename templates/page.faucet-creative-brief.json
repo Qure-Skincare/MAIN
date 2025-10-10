@@ -16,8 +16,7 @@
         "heading": "Faucet Filter Creative Content Guide",
         "sub_heading": "",
         "text": "",
-        "image": "shopify://shop_images/faucet_banner.webp",
-        "image_mobile": "shopify://shop_images/faucet_banner-mob.webp"
+        "image": "shopify://shop_images/faucet_banner.webp"
       }
     },
     "content_brief_MUaJ76": {
@@ -35,7 +34,6 @@
       "type": "trusted-recommended",
       "name": "t:sections.trusted-recommended.name",
       "settings": {
-        "background_color": "#F6F6F7",
         "heading": "Trusted and Recommended by Experts",
         "text": "<p>“Harsh water can definitely damage your skin on daily basis and <strong>it impacts everything</strong> you are doing with your skincare.”</p>",
         "image_text": "",

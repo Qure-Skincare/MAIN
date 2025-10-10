@@ -180,7 +180,7 @@
       "name": "t:sections.banner-with-text.name",
       "settings": {
         "heading": "All the skin firming, smoothing, clearing benefits with just 1 device",
-        "text": "<p>A portable, FDA-cleared, at-home LED light therapy treatment that is scientifically <em>proven to change your skin</em> for the better.</p><p>Q-Rejuvalight Pro utilizes a combination of <em>5 market-leading light wavelengths</em> to treat a multitude of skin concerns deep within the skin, where even the best creams and serums can’t reach. </p>",
+        "text": "<p>A portable, FDA-cleared, at-home LED light therapy device that is <em>clinically validated</em> to <em>improve the appearance of wrinkles</em> and mild to moderate inflammatory acne.<br/><br/>Q-Rejuvalight Pro uses five clinically backed light wavelengths to deliver light energy designed to <em>target multiple visible skin concerns,</em> supporting clearer-looking, smoother-looking skin where topical care can’t reach.</p>",
         "quote": "",
         "quote-mobile": "",
         "image_position": "left",
@@ -518,6 +518,7 @@
       "type": "trusted-recommended",
       "name": "t:sections.trusted-recommended.name",
       "settings": {
+        "background_color": "#ffffff",
         "heading": "Trusted and Recommended by Experts",
         "text": "<p>“Of all the LED masks we’ve tried, this is <strong>the best on the market right now...</strong> It didn’t lose in any category...</p><p>There’s real science behind LED therapy,  <strong>Qure makes it easy</strong> to be consistent—which is what really drives results.”</p>",
         "image_text": "",

@@ -362,7 +362,6 @@
       "type": "trusted-recommended",
       "name": "t:sections.trusted-recommended.name",
       "settings": {
-        "background_color": "#ffffff",
         "heading": "Trusted and Recommended by Experts",
         "text": "<p>“How do you <strong>reduce the things in your water that are causing issues</strong> with your skin?<br/>This Qure filter is incredible –<strong> it’s the only filter I personally use</strong> to [reduce] chlorine and anything else that’s going to make your water harsh for your skin.”</p>",
         "image_text": "",
