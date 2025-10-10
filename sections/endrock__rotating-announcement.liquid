@@ -87,9 +87,9 @@
 
   <script>
     let delay = {{ section.settings.delay }}
-    document.addEventListener('DOMContentLoaded', async function() {
-        await loadScriptOnce('__endrock_splide','{{ 'splide.min.js' | file_url }}');
-        await loadScriptOnce('__endrock_rotating-announcement','{{ '__endrock_rotating-announcement.js' | asset_url }}');
+    document.addEventListener('DOMContentLoaded', function() {
+        loadScriptOnce('__endrock_splide','{{ 'splide.min.js' | file_url }}');
+        loadScriptOnce('__endrock_rotating-announcement','{{ '__endrock_rotating-announcement.js' | asset_url }}');
     });
   </script>
 {% endunless %}

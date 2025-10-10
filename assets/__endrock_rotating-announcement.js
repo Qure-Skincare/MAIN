@@ -1,19 +1,27 @@
-const annoucement = document.querySelector(
-  ".announcement-bar-rotating .splide"
-);
+function waitForSplide() {
+  if (typeof Splide === "undefined") {
+    return setTimeout(waitForSplide, 100);
+  }
 
-const splide = new Splide(annoucement, {
-  type: "fade",
-  rewind: true,
-  focus: "center",
-  perPage: 1,
-  perMove: 1,
-  pauseOnHover: false,
-  pagination: false,
-  autoplay: true,
-  interval: delay,
-  pauseOnHover: false,
-  pauseOnFocus: false,
-});
+  const annoucement = document.querySelector(
+    ".announcement-bar-rotating .splide"
+  );
+  if (!annoucement) return console.warn("No annoucement element found");
 
-splide.mount();
+  const splide = new Splide(annoucement, {
+    type: "fade",
+    rewind: true,
+    focus: "center",
+    perPage: 1,
+    perMove: 1,
+    pagination: false,
+    autoplay: true,
+    interval: delay,
+    pauseOnHover: false,
+    pauseOnFocus: false,
+  });
+
+  splide.mount();
+}
+
+waitForSplide();
