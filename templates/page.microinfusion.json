@@ -848,42 +848,42 @@
         "left_text_with_image_pmBYGn": {
           "type": "left_text_with_image",
           "settings": {
-            "text": "<p>Brightens discoloration</p>",
+            "text": "<p>Brightens look of skin</p>",
             "image": "shopify://shop_images/Micro-Infusion_Icons.svg"
           }
         },
         "left_text_with_image_4ajB36": {
           "type": "left_text_with_image",
           "settings": {
-            "text": "<p>Fades dark <br/>spots</p>",
+            "text": "<p>Reduces look<br/> of dark spots</p>",
             "image": "shopify://shop_images/Micro-Infusion_Icons_1.svg"
           }
         },
         "left_text_with_image_6j8ph6": {
           "type": "left_text_with_image",
           "settings": {
-            "text": "<p>Evens skin <br/> tone</p>",
+            "text": "<p>Even-looking <br/>tone</p>",
             "image": "shopify://shop_images/Micro-Infusion_Icons_2.svg"
           }
         },
         "right_text_with_image_zLm9hV": {
           "type": "right_text_with_image",
           "settings": {
-            "text": "<p>Softens lines & wrinkles</p>",
+            "text": "<p>Smooths fine <br/>lines</p>",
             "image": "shopify://shop_images/Micro-Infusion_Icons_3.svg"
           }
         },
         "right_text_with_image_i9yAbQ": {
           "type": "right_text_with_image",
           "settings": {
-            "text": "<p>Soothes <br/>redness</p>",
+            "text": "<p>Calms visible <br/>redness</p>",
             "image": "shopify://shop_images/Micro-Infusion_Icons_4.svg"
           }
         },
         "right_text_with_image_FExJGY": {
           "type": "right_text_with_image",
           "settings": {
-            "text": "<p>Boosts <br/> hydration</p>",
+            "text": "<p>Deeply <br/>hydrates</p>",
             "image": "shopify://shop_images/Micro-Infusion_Icons_5.svg"
           }
         },
