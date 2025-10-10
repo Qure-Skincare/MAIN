@@ -12,6 +12,13 @@
     "product_header_FnMCMD": {
       "type": "product-header",
       "blocks": {
+        "black_friday_discount_CKPMip": {
+          "type": "black-friday-discount",
+          "disabled": true,
+          "settings": {
+            "discount_percent": 26
+          }
+        },
         "description_9VBwaX": {
           "type": "description",
           "settings": {}
@@ -69,6 +76,7 @@
         }
       },
       "block_order": [
+        "black_friday_discount_CKPMip",
         "description_9VBwaX",
         "section_A0",
         "nextships_nN4CpM",
@@ -127,6 +135,7 @@
             "product": "shower-filter",
             "product_variant_id": 45852989653231,
             "product_selling_plan": 6180143343,
+            "product_discount_percent": 0,
             "preselected": true,
             "heading": "White",
             "subheading": "",
@@ -145,6 +154,7 @@
             "product": "shower-filter",
             "product_variant_id": 45852989620463,
             "product_selling_plan": 6180143343,
+            "product_discount_percent": 0,
             "preselected": false,
             "heading": "Black",
             "subheading": "",

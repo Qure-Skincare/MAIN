@@ -193,7 +193,7 @@
     },
     "page-led-mask-offer-2-led-mask-form": {
       "settings": {
-        "limited": "PRIME DAY PROMO",
+        "limited": "Autumn Glow Sale",
         "header": "Q-Rejuvalight Pro LED Mask",
         "subheader": "+ FREE Neck & Décolletage LED Device",
         "warranty": "Lifetime Warranty",
@@ -263,7 +263,7 @@
       }
     },
     "exclusive-offer": {
-      "header_html": "<div class='eo-header'><span>Prime Day </span><span>Promo</span></div>",
+      "header_html": "<div class='eo-header'><span>Autumn Glow </span><span>Sale</span></div>",
       "guarantee-text": "1-Year Guarantee",
       "shipping-text": "Free Shipping over $100",
       "free": "FREE"
@@ -314,7 +314,7 @@
         "header": "Jump To"
       },
       "limited-offer": {
-        "header": "PRIME DAY PROMO",
+        "header": "Autumn Glow Sale",
         "text_html": "<p class='qs-offer'>Get <span class='qs-badge'>{{ sum }} OFF</span> with code {{ code }}</p>",
         "days": "DAYS",
         "hours": "HOURS",
@@ -323,6 +323,10 @@
       },
       "you-may-also-like": {
         "header": "You may also like..."
+      },
+      "black-friday-discount": {
+        "header": "BLACK FRIDAY PRICING",
+        "save": "SAVE"
       }
     }
   },
@@ -510,6 +514,10 @@
           "image": "Mist.svg",
           "text_html": "<li>Use when needed.</li><li>Spray directly on dry skin, body and face. Allow to air dry - no rinsing needed.</li>"
         },
+        "dermal-mist-travel-size": {
+          "image": "Mist.svg",
+          "text_html": "<li>Use when needed.</li><li>Spray directly on dry skin, body and face. Allow to air dry - no rinsing needed.</li>"
+        },
         "patches": {
           "image": "mi_patches.svg",
           "text_html": "<li>Use twice a week.</li><li>Apply where needed (11 lines, crow’s feet,under-eye, laugh lines) and leave overnight or for a minimum of 2 hours.</li>"
@@ -517,13 +525,16 @@
         "faucet-filter": {
           "image": "faucet.svg",
           "text_html": "<li>Install the Faucet Filter to your faucet.</li><li>Replace filter every 3 months.</li>"
+        },
+        "shower-filter": {
+          "text_html": "<li>Install the Shower Filter to your shower.</li><li>Replace filter every 3 months.</li>"
         }
       }
     }
   },
   "bundle-header": {
     "settings": {
-      "exclusive": "PRIME DAY PROMO",
+      "exclusive": "Autumn Glow Sale",
       "bundles": "Bundles",
       "easy-returns": "Easy 30-Day Returns",
       "shipping-text": "Free Worldwide Shipping",

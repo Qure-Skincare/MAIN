@@ -37,7 +37,7 @@
           "settings": {
             "heading": "Q-Rejuvalight Pro LED Face Mask",
             "text": "Receive 11970 Entries",
-            "image": "shopify://shop_images/q-rejuvalight-pro-led-mask_ad021a69-1ad1-4744-9917-9610bbc49237.webp",
+            "image": "shopify://shop_images/Img_25.png",
             "price": "$399",
             "button_label": "Shop Now",
             "button_url": "https://qureskincare.com/products/q-rejuvalight-pro-facewear",
@@ -49,7 +49,7 @@
           "settings": {
             "heading": "Neck & Décolletage LED Device",
             "text": "Receive 8970 Entries",
-            "image": "shopify://shop_images/n_d_device_a26d9921-a777-45a3-9eee-b2702e70d76e.webp",
+            "image": "shopify://shop_images/Img_23.png",
             "price": "$299",
             "button_label": "Shop Now",
             "button_url": "https://qureskincare.com/products/neck-decolletage-led",
@@ -61,7 +61,7 @@
           "settings": {
             "heading": "Micro-Infusion Facial System",
             "text": "Receive 3570 Entries",
-            "image": "shopify://shop_images/mi_facial.webp",
+            "image": "shopify://shop_images/Rectangle_1375_d5b54d2a-a78a-4648-a652-a95cc0b53ea1.png",
             "price": "from $119",
             "button_label": "Shop Now",
             "button_url": "https://qureskincare.com/pages/microinfusion",
@@ -73,7 +73,7 @@
           "settings": {
             "heading": "All-In-One Serum",
             "text": "Receive 1975 Entries",
-            "image": "shopify://shop_images/all_in_one_serum_prod.webp",
+            "image": "shopify://shop_images/Img_24.png",
             "price": "from $79",
             "button_label": "Shop Now",
             "button_url": "https://qureskincare.com/products/face-serum",
@@ -309,7 +309,7 @@
           "type": "accordion",
           "settings": {
             "heading": "When is the last day to enter?",
-            "text": "<p>The sweepstakes ends at 11:59 p.m. PT on October 31, 2025. Mail-in entries must be postmarked by that date and received by November 7, 2025</p>",
+            "text": "<p>The sweepstakes ends at 11:59 p.m. PT on December 1st, 2025. Mail-in entries must be postmarked by that date and received by November 7, 2025</p>",
             "link_url": "",
             "link_text": ""
           }
