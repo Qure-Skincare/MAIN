@@ -229,6 +229,7 @@
         },
         "slider_hhgf6i": {
           "type": "slider",
+          "disabled": true,
           "settings": {
             "heading": "From sun damage to this!",
             "text": "<p>“After years damage from the strong Aussie sun I wanted to try LED therapy to help rejuvenate and repair my skin. I’m so glad I did because after using it daily, I've witnessed this transformation!!! Skin is firmer, sunspots have faded and texture is so much smoother!”</p>",
