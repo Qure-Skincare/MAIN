@@ -396,7 +396,7 @@
         "slider_XHHhXh": {
           "type": "slider",
           "settings": {
-            "text": "<p>2-in-1 system rejuvenates <br/>skin & infuses serum deeper for faster results</p>",
+            "text": "<p>2-in-1 system refreshes the<br/> look of skin for a visible<br/> glow.</p>",
             "image": "shopify://shop_images/Micro-Infusion_Icons_14.svg"
           }
         },
@@ -708,6 +708,7 @@
       "type": "trusted-recommended",
       "name": "t:sections.trusted-recommended.name",
       "settings": {
+        "background_color": "#ffffff",
         "heading": "Trusted and Recommended by Experts",
         "text": "<p>“This treatment is an at-home option for those who want to <strong>avoid the hassle or cost of going to the office”.</strong></p>",
         "image_text": "",
