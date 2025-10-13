@@ -399,6 +399,7 @@
         },
         "slider_EBwfmY": {
           "type": "slider",
+          "disabled": true,
           "settings": {
             "heading": "Cured my acne",
             "text": "<p>“This is the first time in TWO YEARS that I don’t have active acne  on my face. I’ve been using my Qure for 1 month now and it has completely qured my acne. It’s gone AND it’s healing all my scars and pox marks. I was literally on the rge of suicide because of my horrible skin. This device SAVED MY LIFE!!!.”</p>",
