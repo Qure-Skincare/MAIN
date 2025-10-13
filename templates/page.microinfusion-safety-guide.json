@@ -30,11 +30,46 @@
     "main": {
       "type": "page-microinfusion-safety-guide",
       "settings": {}
+    },
+    "page-microinfusion-safety-guide-quick-guide-start": {
+      "type": "page-microinfusion-safety-guide-quick-guide-start",
+      "settings": {}
+    },
+    "page-microinfusion-safety-guide-learn-about-device": {
+      "type": "page-microinfusion-safety-guide-learn-about-device",
+      "settings": {}
+    },
+    "page-microinfusion-safety-guide-serum-ingredients": {
+      "type": "page-microinfusion-safety-guide-serum-ingredients",
+      "settings": {}
+    },
+    "page-microinfusion-safety-guide-where-to-use": {
+      "type": "page-microinfusion-safety-guide-where-to-use",
+      "settings": {}
+    },
+    "page-microinfusion-safety-guide-post-treatment": {
+      "type": "page-microinfusion-safety-guide-post-treatment",
+      "settings": {}
+    },
+    "page-microinfusion-safety-guide-safety": {
+      "type": "page-microinfusion-safety-guide-safety",
+      "settings": {}
+    },
+    "page-microinfusion-safety-guide-faqs": {
+      "type": "page-microinfusion-safety-guide-faqs",
+      "settings": {}
     }
   },
   "order": [
     "page_banner_richtext_BFeADz",
     "content_brief_MUBNxd",
-    "main"
+    "main",
+    "page-microinfusion-safety-guide-quick-guide-start",
+    "page-microinfusion-safety-guide-learn-about-device",
+    "page-microinfusion-safety-guide-serum-ingredients",
+    "page-microinfusion-safety-guide-where-to-use",
+    "page-microinfusion-safety-guide-post-treatment",
+    "page-microinfusion-safety-guide-safety",
+    "page-microinfusion-safety-guide-faqs"
   ]
 }
