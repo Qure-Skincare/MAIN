@@ -235,7 +235,7 @@
         "product_PybAig": {
           "type": "product",
           "settings": {
-            "product": "fade-firm-bundle-advanced-bf25-sku",
+            "product": "fade-firm-bundle-advanced-bf25",
             "preselected": false,
             "soldout": false,
             "reserved": false
