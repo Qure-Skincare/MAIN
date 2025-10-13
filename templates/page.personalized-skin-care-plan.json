@@ -46,7 +46,7 @@
         "items_8nmjC7": {
           "type": "items",
           "settings": {
-            "product": "micro-infusion-3-month-bundle-6x-beta-glucan-serum",
+            "product": "micro-infusion-3-month-bundle-for-wrinkles",
             "text": "Inspired by in-clinic microneedling for results you can see and feel—with minimal to no downtime.",
             "list": "<p>Smooths fine lines and softens wrinkles.</p><p>Improves tone and texture through gentle skin renewal and deep hydration</p><p>Clinically backed and easy to use at home</p>",
             "button_label": "Add to Bundle",
@@ -505,8 +505,8 @@
       }
     },
     "sticky_cta_BpPQpM": {
-      "disabled": true,
       "type": "sticky-cta",
+      "disabled": true,
       "name": "t:sections.static-sticky-cta.name",
       "settings": {}
     }
