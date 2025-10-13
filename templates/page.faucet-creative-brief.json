@@ -16,7 +16,8 @@
         "heading": "Faucet Filter Creative Content Guide",
         "sub_heading": "",
         "text": "",
-        "image": "shopify://shop_images/faucet_banner.webp"
+        "image": "shopify://shop_images/faucet_banner.webp",
+        "image_mobile": "shopify://shop_images/faucet_banner-mob.webp"
       }
     },
     "content_brief_MUaJ76": {
