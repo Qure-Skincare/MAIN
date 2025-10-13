@@ -121,7 +121,7 @@
         "slider_MARHYc": {
           "type": "slider",
           "settings": {
-            "heading": "“One of my favorite devices for the neck [...] It has a quick treatment time of 10 minutes, which makes it easy for someone to work into their daily routine.”",
+            "heading": "“One of my favorite systems for the neck [...] It has a quick treatment time of 10 minutes, which makes it easy for someone to work into their daily routine.”",
             "image": "shopify://shop_images/elle-black_d992fb5b-e675-4ea0-8fe9-27198001a628.svg"
           }
         },
@@ -154,7 +154,7 @@
       "type": "banner-with-text",
       "name": "t:sections.banner-with-text.name",
       "settings": {
-        "heading": "All the skin firming, smoothing, clearing benefits with just 1 device",
+        "heading": "All the skin firming, smoothing, clearing benefits with just 1 system",
         "text": "<p>The Neck & Décolletage LED System uses red and near-infrared light to help <em>improve the look of firmness</em>, tone, and texture in the neck and chest area.<br/><br/>These wavelengths support the appearance of smoother, more even-looking skin and a refreshed, radiant look over time.</p>",
         "quote": "",
         "quote-mobile": "",
