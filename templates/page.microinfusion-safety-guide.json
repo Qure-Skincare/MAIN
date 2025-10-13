@@ -16,7 +16,8 @@
         "heading": "Get started with Micro-Infusion",
         "sub_heading": "IMPORTANT NOTICE:",
         "text": "Please read this guideline carefully before proceeding with Micro-Infusion treatment.",
-        "image": "shopify://shop_images/mi_banner.webp"
+        "image": "shopify://shop_images/mi_banner.webp",
+        "image_mobile": "shopify://shop_images/mi_banner-mob.webp"
       }
     },
     "content_brief_MUBNxd": {
