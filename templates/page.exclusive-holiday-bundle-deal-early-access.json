@@ -226,7 +226,7 @@
         "product_cDgtRg": {
           "type": "product",
           "settings": {
-            "product": "fade-firm-bundle-pro-bf25-sku",
+            "product": "fade-firm-bundle-pro-bf25",
             "preselected": false,
             "soldout": false,
             "reserved": false
