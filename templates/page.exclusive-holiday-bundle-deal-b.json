@@ -125,6 +125,157 @@
       "name": "t:sections.slider-featured-in.name",
       "settings": {}
     },
+    "trusted_reviews_9WdXCj": {
+      "type": "trusted-reviews",
+      "blocks": {
+        "slider_qYcxbX": {
+          "type": "slider",
+          "settings": {
+            "heading": "My skin returned to life!",
+            "text": "<p>“I just turned 57 years. My skin was extremely dry and while using this product my skin RETURNED to LIFE! I am so impressed with it! You will not regret in purchasing it. I really see the change in my skin. Outstanding job QURE!”</p>",
+            "compare_image": "shopify://shop_images/ellie-v.webp",
+            "country_image": "shopify://shop_images/america_f.webp",
+            "username": "<p>Ana L.</p>",
+            "product_url": "#",
+            "product_heading": "Ellie uses",
+            "product_text": "Micro infusion facial systems",
+            "product_image": "shopify://shop_images/micro-infusion-facial-system_f0e75ccc-2fd2-48d6-aea7-fe662896adaa.webp"
+          }
+        },
+        "slider_ECMbpP": {
+          "type": "slider",
+          "settings": {
+            "heading": "Can’t go a day without it",
+            "text": "<p>“Straight away I noticed results with Qure, after the first week I had no active breakouts anymore. People ask me now how have I got my skin to be hydrated, acne-free, looking bright with no redness. I'm so reliant on the Qure mask now. I don't think I can go a day without using it.”</p>",
+            "compare_image": "shopify://shop_images/anton-m.webp",
+            "country_image": "shopify://shop_images/america_f.webp",
+            "username": "<p>Anton M.</p>",
+            "product_url": "#",
+            "product_heading": "Anton uses...",
+            "product_text": "Q-Rejuvalight Pro LED Mask",
+            "product_image": "shopify://shop_images/q-rejuvalight-pro-led-mask.webp"
+          }
+        },
+        "slider_MLP4F6": {
+          "type": "slider",
+          "settings": {
+            "heading": "Works better than I imagined!",
+            "text": "<p>“I am really stunned by how well this product works. I have had professional micro-needling and I wanted the benefits without the downtime. I did my treatment, went to bed and woke up the next morning and was ready to go. My skin looks better than it has in years.”</p>",
+            "compare_image": "shopify://shop_images/jennifer-n.webp",
+            "country_image": "shopify://shop_images/england_f.webp",
+            "username": "<p>Jennifer N.</p>",
+            "product_url": "#",
+            "product_heading": "Jennifer uses...",
+            "product_text": "Micro-Infusion Facial System",
+            "product_image": "shopify://shop_images/micro-infusion-facial-system_f0e75ccc-2fd2-48d6-aea7-fe662896adaa.webp"
+          }
+        },
+        "slider_jdNazB": {
+          "type": "slider",
+          "settings": {
+            "heading": "Wish I had this technology years ago!",
+            "text": "<p>“After two weeks I began to see results and after six weeks the changes in my skin were dramatic. I have now been using Qure six months and loving the compliments! I bought masks for my daughters for Christmas so they could start at a younger age…. I wish this technology had been available when I was younger. I am 76 years old!”</p>",
+            "compare_image": "shopify://shop_images/terry-p.webp",
+            "country_image": "shopify://shop_images/america_f.webp",
+            "username": "<p>Terri P.</p>",
+            "product_url": "#",
+            "product_heading": "Terri uses...",
+            "product_text": "Micro-Infusion Facial System",
+            "product_image": "shopify://shop_images/q-rejuvalight-pro-led-mask.webp"
+          }
+        },
+        "slider_WrGfPY": {
+          "type": "slider",
+          "settings": {
+            "heading": "Can see the difference after one use!",
+            "text": "<p>“I did the patches last night and I swear just after one use I already see a result. The difference in my under-eye is wild!”</p>",
+            "compare_image": "shopify://shop_images/cassandra.webp",
+            "country_image": "shopify://shop_images/america_f.webp",
+            "username": "<p>Cassandra</p>",
+            "product_url": "#",
+            "product_heading": "Cassandra uses...",
+            "product_text": "Micro-Infusion Targeted Patches",
+            "product_image": "shopify://shop_images/micro-infusion-targeted-patches_d896fbd3-01a9-4e6b-8786-c717634936e4.webp"
+          }
+        },
+        "slider_WYy6pT": {
+          "type": "slider",
+          "settings": {
+            "heading": "Healthier-looking glow",
+            "text": "<p>“I am really stunned by how well this product works. I have had professional micro-needling and I wanted the benefits without the downtime. I did my treatment, went to bed and woke up the next morning and was ready to go. My skin looks better than it has in years.”</p>",
+            "compare_image": "shopify://shop_images/Claudia.webp",
+            "country_image": "shopify://shop_images/canada_f.webp",
+            "username": "<p>Claudia</p>",
+            "product_url": "#",
+            "product_heading": "Claudia uses...",
+            "product_text": "Neck & Décolletage LED Device",
+            "product_image": "shopify://shop_images/neck-decolletage-led-device.webp"
+          }
+        },
+        "slider_mzetU8": {
+          "type": "slider",
+          "settings": {
+            "heading": "Amazing",
+            "text": "<p>“I'm so happy, l've been using the products for 2 months and they have made such a difference in my skin. I had tried a lot of products before but with just one bottle of the serum, staying consistent with the Mask, and doing a few treatments of the Micro-Infusion for scaring. l've seen a huge change in my skin.”</p>",
+            "compare_image": "shopify://shop_images/ana.webp",
+            "country_image": "shopify://shop_images/australia_f.webp",
+            "username": "<p>Ana L.</p>",
+            "product_url": "#",
+            "product_heading": "Ana uses...",
+            "product_text": "All-In-One Serum",
+            "product_image": "shopify://shop_images/all-in-one-serum.webp"
+          }
+        },
+        "slider_RTBcJx": {
+          "type": "slider",
+          "settings": {
+            "heading": "Completed qured my acne",
+            "text": "<p>“This is the first time in TWO YEARS that I don’t have active acne on my face. I’ve been using my Qure for 1 month now and it has completely qured my acne. It’s gone AND it’s healing all my scars and pox marks. I was literally on the verge of suicide because of my horrible skin. This device SAVED MY LIFE!!!.”</p>",
+            "compare_image": "shopify://shop_images/bj-nerdi.webp",
+            "country_image": "shopify://shop_images/canada_f.webp",
+            "username": "<p>BJ Nardi</p>",
+            "product_url": "#",
+            "product_heading": "BJ uses...",
+            "product_text": "Q-Rejuvalight Pro LED Mask",
+            "product_image": "shopify://shop_images/q-rejuvalight-pro-led-mask.webp"
+          }
+        },
+        "slider_q9MPFk": {
+          "type": "slider",
+          "settings": {
+            "heading": "Outstanding",
+            "text": "<p>“I’m so impressed with the results! I noticed a difference after a few weeks. I am so surprised at how much younger the skin on my neck/chest looks. Wrinkles have significantly reduced, sun spots are lighter and my skin looks and feels more rejuvenated. Device is easy to use, I love that I can clip the controller to my robe and multitask whilst using.”</p>",
+            "compare_image": "shopify://shop_images/Mary.webp",
+            "country_image": "shopify://shop_images/canada_f.webp",
+            "username": "<p>Mary R. M.</p>",
+            "product_url": "#",
+            "product_heading": "Mary uses...",
+            "product_text": "Neck & Décolletage LED Device",
+            "product_image": "shopify://shop_images/neck-decolletage-led-device.webp"
+          }
+        }
+      },
+      "block_order": [
+        "slider_qYcxbX",
+        "slider_ECMbpP",
+        "slider_MLP4F6",
+        "slider_jdNazB",
+        "slider_WrGfPY",
+        "slider_WYy6pT",
+        "slider_mzetU8",
+        "slider_RTBcJx",
+        "slider_q9MPFk"
+      ],
+      "name": "t:sections.trusted-reviews.name",
+      "settings": {
+        "background_color": "#ffffff",
+        "heading": "Confidence changing results, from people just like you",
+        "text": "Will it work for me?",
+        "text_mobile": "",
+        "button_label": "",
+        "button_url": ""
+      }
+    },
     "page_exclusive_holiday_bundle_trusted_reviews_img_kCfC33": {
       "type": "page-exclusive-holiday-bundle-trusted-reviews-img",
       "blocks": {
@@ -407,157 +558,6 @@
         "sub_text": "Here’s your personalized skincare routine…"
       }
     },
-    "trusted_reviews_9WdXCj": {
-      "type": "trusted-reviews",
-      "blocks": {
-        "slider_qYcxbX": {
-          "type": "slider",
-          "settings": {
-            "heading": "My skin returned to life!",
-            "text": "<p>“I just turned 57 years. My skin was extremely dry and while using this product my skin RETURNED to LIFE! I am so impressed with it! You will not regret in purchasing it. I really see the change in my skin. Outstanding job QURE!”</p>",
-            "compare_image": "shopify://shop_images/ellie-v.webp",
-            "country_image": "shopify://shop_images/america_f.webp",
-            "username": "<p>Ana L.</p>",
-            "product_url": "#",
-            "product_heading": "Ellie uses",
-            "product_text": "Micro infusion facial systems",
-            "product_image": "shopify://shop_images/micro-infusion-facial-system_f0e75ccc-2fd2-48d6-aea7-fe662896adaa.webp"
-          }
-        },
-        "slider_ECMbpP": {
-          "type": "slider",
-          "settings": {
-            "heading": "Can’t go a day without it",
-            "text": "<p>“Straight away I noticed results with Qure, after the first week I had no active breakouts anymore. People ask me now how have I got my skin to be hydrated, acne-free, looking bright with no redness. I'm so reliant on the Qure mask now. I don't think I can go a day without using it.”</p>",
-            "compare_image": "shopify://shop_images/anton-m.webp",
-            "country_image": "shopify://shop_images/america_f.webp",
-            "username": "<p>Anton M.</p>",
-            "product_url": "#",
-            "product_heading": "Anton uses...",
-            "product_text": "Q-Rejuvalight Pro LED Mask",
-            "product_image": "shopify://shop_images/q-rejuvalight-pro-led-mask.webp"
-          }
-        },
-        "slider_MLP4F6": {
-          "type": "slider",
-          "settings": {
-            "heading": "Works better than I imagined!",
-            "text": "<p>“I am really stunned by how well this product works. I have had professional micro-needling and I wanted the benefits without the downtime. I did my treatment, went to bed and woke up the next morning and was ready to go. My skin looks better than it has in years.”</p>",
-            "compare_image": "shopify://shop_images/jennifer-n.webp",
-            "country_image": "shopify://shop_images/england_f.webp",
-            "username": "<p>Jennifer N.</p>",
-            "product_url": "#",
-            "product_heading": "Jennifer uses...",
-            "product_text": "Micro-Infusion Facial System",
-            "product_image": "shopify://shop_images/micro-infusion-facial-system_f0e75ccc-2fd2-48d6-aea7-fe662896adaa.webp"
-          }
-        },
-        "slider_jdNazB": {
-          "type": "slider",
-          "settings": {
-            "heading": "Wish I had this technology years ago!",
-            "text": "<p>“After two weeks I began to see results and after six weeks the changes in my skin were dramatic. I have now been using Qure six months and loving the compliments! I bought masks for my daughters for Christmas so they could start at a younger age…. I wish this technology had been available when I was younger. I am 76 years old!”</p>",
-            "compare_image": "shopify://shop_images/terry-p.webp",
-            "country_image": "shopify://shop_images/america_f.webp",
-            "username": "<p>Terri P.</p>",
-            "product_url": "#",
-            "product_heading": "Terri uses...",
-            "product_text": "Micro-Infusion Facial System",
-            "product_image": "shopify://shop_images/q-rejuvalight-pro-led-mask.webp"
-          }
-        },
-        "slider_WrGfPY": {
-          "type": "slider",
-          "settings": {
-            "heading": "Can see the difference after one use!",
-            "text": "<p>“I did the patches last night and I swear just after one use I already see a result. The difference in my under-eye is wild!”</p>",
-            "compare_image": "shopify://shop_images/cassandra.webp",
-            "country_image": "shopify://shop_images/america_f.webp",
-            "username": "<p>Cassandra</p>",
-            "product_url": "#",
-            "product_heading": "Cassandra uses...",
-            "product_text": "Micro-Infusion Targeted Patches",
-            "product_image": "shopify://shop_images/micro-infusion-targeted-patches_d896fbd3-01a9-4e6b-8786-c717634936e4.webp"
-          }
-        },
-        "slider_WYy6pT": {
-          "type": "slider",
-          "settings": {
-            "heading": "Healthier-looking glow",
-            "text": "<p>“I am really stunned by how well this product works. I have had professional micro-needling and I wanted the benefits without the downtime. I did my treatment, went to bed and woke up the next morning and was ready to go. My skin looks better than it has in years.”</p>",
-            "compare_image": "shopify://shop_images/Claudia.webp",
-            "country_image": "shopify://shop_images/canada_f.webp",
-            "username": "<p>Claudia</p>",
-            "product_url": "#",
-            "product_heading": "Claudia uses...",
-            "product_text": "Neck & Décolletage LED Device",
-            "product_image": "shopify://shop_images/neck-decolletage-led-device.webp"
-          }
-        },
-        "slider_mzetU8": {
-          "type": "slider",
-          "settings": {
-            "heading": "Amazing",
-            "text": "<p>“I'm so happy, l've been using the products for 2 months and they have made such a difference in my skin. I had tried a lot of products before but with just one bottle of the serum, staying consistent with the Mask, and doing a few treatments of the Micro-Infusion for scaring. l've seen a huge change in my skin.”</p>",
-            "compare_image": "shopify://shop_images/ana.webp",
-            "country_image": "shopify://shop_images/australia_f.webp",
-            "username": "<p>Ana L.</p>",
-            "product_url": "#",
-            "product_heading": "Ana uses...",
-            "product_text": "All-In-One Serum",
-            "product_image": "shopify://shop_images/all-in-one-serum.webp"
-          }
-        },
-        "slider_RTBcJx": {
-          "type": "slider",
-          "settings": {
-            "heading": "Completed qured my acne",
-            "text": "<p>“This is the first time in TWO YEARS that I don’t have active acne on my face. I’ve been using my Qure for 1 month now and it has completely qured my acne. It’s gone AND it’s healing all my scars and pox marks. I was literally on the verge of suicide because of my horrible skin. This device SAVED MY LIFE!!!.”</p>",
-            "compare_image": "shopify://shop_images/bj-nerdi.webp",
-            "country_image": "shopify://shop_images/canada_f.webp",
-            "username": "<p>BJ Nardi</p>",
-            "product_url": "#",
-            "product_heading": "BJ uses...",
-            "product_text": "Q-Rejuvalight Pro LED Mask",
-            "product_image": "shopify://shop_images/q-rejuvalight-pro-led-mask.webp"
-          }
-        },
-        "slider_q9MPFk": {
-          "type": "slider",
-          "settings": {
-            "heading": "Outstanding",
-            "text": "<p>“I’m so impressed with the results! I noticed a difference after a few weeks. I am so surprised at how much younger the skin on my neck/chest looks. Wrinkles have significantly reduced, sun spots are lighter and my skin looks and feels more rejuvenated. Device is easy to use, I love that I can clip the controller to my robe and multitask whilst using.”</p>",
-            "compare_image": "shopify://shop_images/Mary.webp",
-            "country_image": "shopify://shop_images/canada_f.webp",
-            "username": "<p>Mary R. M.</p>",
-            "product_url": "#",
-            "product_heading": "Mary uses...",
-            "product_text": "Neck & Décolletage LED Device",
-            "product_image": "shopify://shop_images/neck-decolletage-led-device.webp"
-          }
-        }
-      },
-      "block_order": [
-        "slider_qYcxbX",
-        "slider_ECMbpP",
-        "slider_MLP4F6",
-        "slider_jdNazB",
-        "slider_WrGfPY",
-        "slider_WYy6pT",
-        "slider_mzetU8",
-        "slider_RTBcJx",
-        "slider_q9MPFk"
-      ],
-      "name": "t:sections.trusted-reviews.name",
-      "settings": {
-        "background_color": "#ffffff",
-        "heading": "Confidence changing results, from people just like you",
-        "text": "Will it work for me?",
-        "text_mobile": "",
-        "button_label": "",
-        "button_url": ""
-      }
-    },
     "carousel_4rPxxy": {
       "type": "carousel",
       "blocks": {
@@ -602,10 +602,114 @@
         "display_mode": "both"
       }
     },
+    "page_exclusive_holiday_bundle_deal_expert_advisory_9JcJgQ": {
+      "type": "page-exclusive-holiday-bundle-deal-expert-advisory",
+      "blocks": {
+        "accordion_6MpWLR": {
+          "type": "accordion",
+          "settings": {
+            "doctor_name": "LED Therapy",
+            "doctor_position": "Targeted red light therapy to firm and smooth skin.",
+            "accordion_image": "shopify://shop_images/led_mask.webp"
+          }
+        },
+        "accordion_XqVibT": {
+          "type": "accordion",
+          "settings": {
+            "doctor_name": "Micro-Infusion",
+            "doctor_position": "Smooth fine lines, hydrate, and firm skin.",
+            "accordion_image": "shopify://shop_images/micro-infusion.webp"
+          }
+        },
+        "accordion_CMf9Pm": {
+          "type": "accordion",
+          "settings": {
+            "doctor_name": "Topical Treatments",
+            "doctor_position": "Target acne and dehydration with clinical solutions.",
+            "accordion_image": "shopify://shop_images/topical.webp"
+          }
+        },
+        "accordion_zwV9FB": {
+          "type": "accordion",
+          "settings": {
+            "doctor_name": "Filters",
+            "doctor_position": "Remove chlorine, bacteria, and metals at the source.",
+            "accordion_image": "shopify://shop_images/filters.webp"
+          }
+        },
+        "items_944BRi": {
+          "type": "items",
+          "settings": {
+            "heading": "Treat skin concerns from the inside out",
+            "text": "<p>Clinically proven wavelengths penetrate deep into the skin, energizing cells to boost collagen production and reduce wrinkles, dark spots, and redness.</p><ul><li>Covers hard-to-treat areas like the jawline, neck, and chest for all-over results.</li><li>Boosts collagen production to firm and smooth the skin over time.</li><li>Reduces the appearance of fine lines, wrinkles, and uneven tone.</li><li>Hands-free treatment you can use in just a few minutes.</li></ul>",
+            "product_1": "Q-Rejuvalight Pro LED Mask",
+            "link_url_1": "https://qureskincare.com/products/q-rejuvalight-pro-facewear",
+            "image_1": "shopify://shop_images/q-rejuvalight-mask.webp",
+            "product_2": "Neck & Décolletage LED Device",
+            "link_url_2": "https://qureskincare.com/products/neck-decolletage-led?ref=5aea19bd-da85-4b42-b898-49a9d9f81d61&sub_id=visualPreviewInitialLoad",
+            "image_2": "shopify://shop_images/neck-led-device.webp"
+          }
+        },
+        "items_WUydzk": {
+          "type": "items",
+          "settings": {
+            "heading": "Precision skincare that works below the surface",
+            "text": "<p>Infuse active ingredients beneath the surface of your skin for maximum efficacy, evening out texture, softening fine lines, and promoting a youthful appearance.</p><ul><li>Improves overall glow, firmness, and bounce.</li><li>Helps fade dark spots and brighten tone.</li><li>Smooths fine lines and softens wrinkles.</li><li>Clinically backed and easy to use at home.</li></ul>",
+            "product_1": "Micro-Infusion Treatment",
+            "link_url_1": "https://qureskincare.com/pages/microinfusion",
+            "image_1": "shopify://shop_images/micro-infusion-treatment.webp",
+            "product_2": "Micro-Infusion Targeted Patches",
+            "link_url_2": "https://qureskincare.com/products/micro-infusion-targeted-patches",
+            "image_2": "shopify://shop_images/micro-infusion-targeted-patches.webp"
+          }
+        },
+        "items_chWKG4": {
+          "type": "items",
+          "settings": {
+            "heading": "Hydrate and strengthen your skin barrier",
+            "text": "<p>Lightweight formulas to balance, calm, and support recovery after treatments.</p><ul><li>Improves skin texture by reducing roughness and dehydration lines.</li><li>Delivers long-lasting moisture to keep skin soft and plump.</li><li>Restores glow to dull or dehydrated skin.</li><li>Gentle on sensitive and reactive skin.</li></ul>",
+            "product_1": "All-In-One Serum",
+            "link_url_1": "https://qureskincare.com/products/face-serum",
+            "image_1": "shopify://shop_images/all-in-one-serum.webp",
+            "product_2": "Dermal Mist",
+            "link_url_2": "https://qureskincare.com/products/dermal-mist",
+            "image_2": "shopify://shop_images/dermal-mist.webp"
+          }
+        },
+        "items_nhCmGx": {
+          "type": "items",
+          "settings": {
+            "heading": "Healthier, calmer skin every time you wash",
+            "text": "<p>Remove chlorine, heavy metals, and harmful bacteria from your tap water, to help protect your skin against premature aging, dryness, and irritation.</p><ul><li>Supports a healthier skin barrier by preventing exposure to harsh water.</li><li>Improves the effectiveness of your skincare products.</li><li>Helps reduce skin irritation, dryness, and sensitivity.</li></ul>",
+            "product_1": "Shower Filter",
+            "link_url_1": "#",
+            "image_1": "shopify://shop_images/shower-filter.webp",
+            "product_2": "Water Filter",
+            "link_url_2": "#",
+            "image_2": "shopify://shop_images/water-filter.webp"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_6MpWLR",
+        "accordion_XqVibT",
+        "accordion_CMf9Pm",
+        "accordion_zwV9FB",
+        "items_944BRi",
+        "items_WUydzk",
+        "items_chWKG4",
+        "items_nhCmGx"
+      ],
+      "name": "t:sections.expert-advisory-product.name",
+      "settings": {
+        "heading": "Learn more about our products"
+      }
+    },
     "trusted_recommended_Hp8pkA": {
       "type": "trusted-recommended",
       "name": "t:sections.trusted-recommended.name",
       "settings": {
+        "background_color": "#ffffff",
         "heading": "Trusted and Recommended by Experts",
         "text": "<p>“This treatment is an at-home option for those who want to <strong>avoid the hassle or cost of going to the office”.</strong></p>",
         "image_text": "",
@@ -754,109 +858,6 @@
         "image_compare_cross": "shopify://shop_images/compare_other.webp"
       }
     },
-    "page_exclusive_holiday_bundle_deal_expert_advisory_9JcJgQ": {
-      "type": "page-exclusive-holiday-bundle-deal-expert-advisory",
-      "blocks": {
-        "accordion_6MpWLR": {
-          "type": "accordion",
-          "settings": {
-            "doctor_name": "LED Therapy",
-            "doctor_position": "Targeted red light therapy to firm and smooth skin.",
-            "accordion_image": "shopify://shop_images/led_mask.webp"
-          }
-        },
-        "accordion_XqVibT": {
-          "type": "accordion",
-          "settings": {
-            "doctor_name": "Micro-Infusion",
-            "doctor_position": "Smooth fine lines, hydrate, and firm skin.",
-            "accordion_image": "shopify://shop_images/micro-infusion.webp"
-          }
-        },
-        "accordion_CMf9Pm": {
-          "type": "accordion",
-          "settings": {
-            "doctor_name": "Topical Treatments",
-            "doctor_position": "Target acne and dehydration with clinical solutions.",
-            "accordion_image": "shopify://shop_images/topical.webp"
-          }
-        },
-        "accordion_zwV9FB": {
-          "type": "accordion",
-          "settings": {
-            "doctor_name": "Filters",
-            "doctor_position": "Remove chlorine, bacteria, and metals at the source.",
-            "accordion_image": "shopify://shop_images/filters.webp"
-          }
-        },
-        "items_944BRi": {
-          "type": "items",
-          "settings": {
-            "heading": "Treat skin concerns from the inside out",
-            "text": "<p>Clinically proven wavelengths penetrate deep into the skin, energizing cells to boost collagen production and reduce wrinkles, dark spots, and redness.</p><ul><li>Covers hard-to-treat areas like the jawline, neck, and chest for all-over results.</li><li>Boosts collagen production to firm and smooth the skin over time.</li><li>Reduces the appearance of fine lines, wrinkles, and uneven tone.</li><li>Hands-free treatment you can use in just a few minutes.</li></ul>",
-            "product_1": "Q-Rejuvalight Pro LED Mask",
-            "link_url_1": "https://qureskincare.com/products/q-rejuvalight-pro-facewear",
-            "image_1": "shopify://shop_images/q-rejuvalight-mask.webp",
-            "product_2": "Neck & Décolletage LED Device",
-            "link_url_2": "https://qureskincare.com/products/neck-decolletage-led?ref=5aea19bd-da85-4b42-b898-49a9d9f81d61&sub_id=visualPreviewInitialLoad",
-            "image_2": "shopify://shop_images/neck-led-device.webp"
-          }
-        },
-        "items_WUydzk": {
-          "type": "items",
-          "settings": {
-            "heading": "Precision skincare that works below the surface",
-            "text": "<p>Infuse active ingredients beneath the surface of your skin for maximum efficacy, evening out texture, softening fine lines, and promoting a youthful appearance.</p><ul><li>Improves overall glow, firmness, and bounce.</li><li>Helps fade dark spots and brighten tone.</li><li>Smooths fine lines and softens wrinkles.</li><li>Clinically backed and easy to use at home.</li></ul>",
-            "product_1": "Micro-Infusion Treatment",
-            "link_url_1": "https://qureskincare.com/pages/microinfusion",
-            "image_1": "shopify://shop_images/micro-infusion-treatment.webp",
-            "product_2": "Micro-Infusion Targeted Patches",
-            "link_url_2": "https://qureskincare.com/products/micro-infusion-targeted-patches",
-            "image_2": "shopify://shop_images/micro-infusion-targeted-patches.webp"
-          }
-        },
-        "items_chWKG4": {
-          "type": "items",
-          "settings": {
-            "heading": "Hydrate and strengthen your skin barrier",
-            "text": "<p>Lightweight formulas to balance, calm, and support recovery after treatments.</p><ul><li>Improves skin texture by reducing roughness and dehydration lines.</li><li>Delivers long-lasting moisture to keep skin soft and plump.</li><li>Restores glow to dull or dehydrated skin.</li><li>Gentle on sensitive and reactive skin.</li></ul>",
-            "product_1": "All-In-One Serum",
-            "link_url_1": "https://qureskincare.com/products/face-serum",
-            "image_1": "shopify://shop_images/all-in-one-serum.webp",
-            "product_2": "Dermal Mist",
-            "link_url_2": "https://qureskincare.com/products/dermal-mist",
-            "image_2": "shopify://shop_images/dermal-mist.webp"
-          }
-        },
-        "items_nhCmGx": {
-          "type": "items",
-          "settings": {
-            "heading": "Healthier, calmer skin every time you wash",
-            "text": "<p>Remove chlorine, heavy metals, and harmful bacteria from your tap water, to help protect your skin against premature aging, dryness, and irritation.</p><ul><li>Supports a healthier skin barrier by preventing exposure to harsh water.</li><li>Improves the effectiveness of your skincare products.</li><li>Helps reduce skin irritation, dryness, and sensitivity.</li></ul>",
-            "product_1": "Shower Filter",
-            "link_url_1": "#",
-            "image_1": "shopify://shop_images/shower-filter.webp",
-            "product_2": "Water Filter",
-            "link_url_2": "#",
-            "image_2": "shopify://shop_images/water-filter.webp"
-          }
-        }
-      },
-      "block_order": [
-        "accordion_6MpWLR",
-        "accordion_XqVibT",
-        "accordion_CMf9Pm",
-        "accordion_zwV9FB",
-        "items_944BRi",
-        "items_WUydzk",
-        "items_chWKG4",
-        "items_nhCmGx"
-      ],
-      "name": "t:sections.expert-advisory-product.name",
-      "settings": {
-        "heading": "Learn more about our products"
-      }
-    },
     "page_banner_eaDxdy": {
       "type": "page-banner",
       "blocks": {
@@ -963,16 +964,16 @@
     "announcement_bar_abkmWb",
     "bundle-header",
     "carousel_BHi3nq",
-    "slider_featured_in_RUfV4m",
-    "page_exclusive_holiday_bundle_trusted_reviews_img_kCfC33",
     "trusted_reviews_9WdXCj",
-    "purchase_form_bundle_Lj9cVS",
-    "quiz_V6p9AW",
     "carousel_4rPxxy",
-    "page_exclusive_holiday_bundle_deal_expert_advisory_9JcJgQ",
     "trusted_recommended_Hp8pkA",
     "video_slider_HtrKKA",
+    "purchase_form_bundle_Lj9cVS",
+    "slider_featured_in_RUfV4m",
     "compare_9f4PmB",
+    "page_exclusive_holiday_bundle_trusted_reviews_img_kCfC33",
+    "quiz_V6p9AW",
+    "page_exclusive_holiday_bundle_deal_expert_advisory_9JcJgQ",
     "page_banner_eaDxdy",
     "faq_GEAWy8"
   ]
