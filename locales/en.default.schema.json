@@ -9,6 +9,7 @@
  */
  {
     "common": {
+        "from": "From",
         "discount": "Discount",
         "show": "Show",
         "link": "Link",

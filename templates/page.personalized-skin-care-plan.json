@@ -33,7 +33,7 @@
           "settings": {
             "product": "q-rejuvalight-pro-facewear",
             "text": "A hands-free LED light therapy mask that uses clinically proven wavelengths to target multiple skin concerns.",
-            "list": "<p>FDA-cleared device that treats acne, fine lines, wrinkles and dark spots.</p><p>Customizable treatment on 5 facial areas for your specific skin concerns.</p><p>Quick 3 minute, wireless daily treatments with convenient hands-free operation.</p>",
+            "list": "<p>FDA-cleared device designed to treat wrinkles and mild-to-moderate inflammatory acne.</p><p>Customizable treatment on 5 facial areas for your specific skin concerns.</p><p>Quick 3 minute, wireless daily treatments with convenient hands-free operation.</p>",
             "button_label": "Add to Bundle",
             "review_heading": "<p><strong>“I noticed results straight away!</strong></p>",
             "review_text": "<p>Now I can’t go a day without the Q-Rejuvalight Mask.”</p>",
@@ -46,7 +46,7 @@
         "items_8nmjC7": {
           "type": "items",
           "settings": {
-            "product": "micro-infusion-3-month-bundle-6x-beta-glucan-serum",
+            "product": "micro-infusion-3-month-bundle-for-wrinkles",
             "text": "Inspired by in-clinic microneedling for results you can see and feel—with minimal to no downtime.",
             "list": "<p>Smooths fine lines and softens wrinkles.</p><p>Improves tone and texture through gentle skin renewal and deep hydration</p><p>Clinically backed and easy to use at home</p>",
             "button_label": "Add to Bundle",
@@ -78,7 +78,7 @@
           "settings": {
             "product": "neck-decolletage-led",
             "text": "A targeted LED light therapy device designed specifically for the delicate skin on your neck and chest.",
-            "list": "<p>Uses wavelengths of LED light that have been clinically proven to support skin clarity and repair.</p><p>Helps even skin tone and improve the feel of firmness.</p><p>Pairs seamlessly with Qure’s Micro-Infusion for enhanced results.</p>",
+            "list": "<p>Uses wavelengths of LED light that have been clinically studied to support skin clarity and appearance.</p><p>Helps promote a more even-looking tone and smoother, firmer-feeling skin.</p><p>Pairs seamlessly with Qure’s Micro-Infusion System for visibly enhanced results.</p>",
             "button_label": "Add to Bundle",
             "review_heading": "<p><strong>“I’m surprised how much younger my neck looks</strong></p>",
             "review_text": "<p>and my skin looks and feels more rejuvenated.”</p>",
@@ -173,7 +173,7 @@
           "settings": {
             "button_label": "Weekly",
             "heading": "<p><strong>How To Use</strong></p>",
-            "text": "<p>Use the Neck & Décolletage Device on clean, dry skin for 10 minutes, 3-5 times per week. For best results, follow with the All-In-One Serum.</p>",
+            "text": "<p>Use the Neck & Décolletage System on clean, dry skin for 10 minutes, 3-5 times per week. For best results, follow with the All-In-One Serum.</p>",
             "subheading": "<p><strong>When To Use</strong></p>",
             "subtext": "",
             "am_or_pm": "both",
@@ -252,8 +252,8 @@
         "slider_JjNRkA": {
           "type": "slider",
           "settings": {
-            "heading": "Healthier-looking glow",
-            "text": "<p>“I am really stunned by how well this product works. I have had professional micro-needling and I wanted the benefits without the downtime. I did my treatment, went to bed and woke up the next morning and was ready to go. My skin looks better than it has in years.”</p>",
+            "heading": "Recommend to everyone",
+            "text": "<p>“I was shocked seeing my before and after photos!! I didn’t realise how much my skin improved. I feel so much more confident wearing open tops now. My skin looks much more even, less red and all round healthier. Happy I invested into this device.”</p>",
             "compare_image": "shopify://shop_images/Claudia_1_week.webp",
             "country_image": "shopify://shop_images/canada_f.webp",
             "username": "<p>Claudia</p>",
@@ -280,8 +280,8 @@
         "slider_W6EfLA": {
           "type": "slider",
           "settings": {
-            "heading": "Outstanding",
-            "text": "<p>“I’m so impressed with the results! I noticed a difference after a few weeks. I am so surprised at how much younger the skin on my neck/chest looks. Wrinkles have significantly reduced, sun spots are lighter and my skin looks and feels more rejuvenated. Device is easy to use, I love that I can clip the controller to my robe and multitask whilst using.”</p>",
+            "heading": "Smoother, refreshed-looking skin",
+            "text": "<p>“I’m so impressed with the improvement! I noticed a difference after a few weeks. The skin on my neck and chest looks smoother, more even, and refreshed. Fine lines look softer, sun spots appear lighter, and my skin feels rejuvenated. The system is easy to use — I love that I can clip the controller to my robe and multitask while using it.”</p>",
             "compare_image": "shopify://shop_images/Mary.webp",
             "country_image": "shopify://shop_images/america_f.webp",
             "username": "<p>Mary R. M.</p>",
@@ -314,6 +314,7 @@
       "type": "trusted-recommended",
       "name": "t:sections.trusted-recommended.name",
       "settings": {
+        "background_color": "#ffffff",
         "heading": "Trusted and Recommended by Experts",
         "text": "<p>“This treatment is an at-home option for those who want to <strong>avoid the hassle or cost of going to the office”.</strong></p>",
         "image_text": "",
@@ -505,8 +506,8 @@
       }
     },
     "sticky_cta_BpPQpM": {
-      "disabled": true,
       "type": "sticky-cta",
+      "disabled": true,
       "name": "t:sections.static-sticky-cta.name",
       "settings": {}
     }

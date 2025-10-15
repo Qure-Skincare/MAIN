@@ -13,10 +13,11 @@
       "type": "page-banner-richtext",
       "name": "t:sections.page-banner-richtext.name",
       "settings": {
-        "heading": "Neck & Décolletage LED Device Creative Content Guide",
+        "heading": "Neck & Décolletage LED System Creative Content Guide",
         "sub_heading": "",
         "text": "",
-        "image": "shopify://shop_images/neck___d-banner.webp"
+        "image": "shopify://shop_images/neck___d-banner.webp",
+        "image_mobile": "shopify://shop_images/neck___d-bannerM.webp"
       }
     },
     "content_brief_MkPyxd": {
@@ -34,6 +35,7 @@
       "type": "trusted-recommended",
       "name": "t:sections.trusted-recommended.name",
       "settings": {
+        "background_color": "#ffffff",
         "heading": "Trusted and Recommended by Experts",
         "text": "<p>\"LED light targets fibroblasts to <strong>increase collagen production</strong> and has anti-aging benefits especially if you are seeing <strong>wrinkles and lines</strong> on your neck...\"</p>",
         "image_text": "",

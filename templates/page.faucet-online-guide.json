@@ -16,7 +16,8 @@
         "heading": "Faucet Filter Guide",
         "sub_heading": "IMPORTANT NOTICE:",
         "text": "Please read the complete instruction manual carefully before installing and using your Qure Faucet Filter.",
-        "image": "shopify://shop_images/faucet_guide-banner.webp"
+        "image": "shopify://shop_images/faucet_guide-banner.webp",
+        "image_mobile": "shopify://shop_images/faucet_banner-mob.webp"
       }
     },
     "content_brief_MUaBpxd": {

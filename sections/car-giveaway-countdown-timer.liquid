@@ -9,7 +9,7 @@
         {% if section.settings.heading != blank %}
             <p class="extra_entries">{{ section.settings.heading }}</p>
         {% endif %}
-        <div class="countdown" data-deadline="">
+        <div class="countdown"{% if section.settings.from != blank %} data-from="{{ section.settings.from }}"{% endif %}>
             <div>
                 <div class="days qs-value" data-key="days">00</div><span class="qs-label">{{ 'sections.car-giveaway-countdown-timer.days' | t }}</span>
             </div>
@@ -47,6 +47,12 @@
         "type": "text",
         "id": "heading",
         "label": "t:common.header"
+   },
+   {
+        "type": "text",
+        "id": "from",
+        "label": "t:common.from",
+        "info": "Date format: YYYY-MM-DD"
    },
    {
         "type": "range",

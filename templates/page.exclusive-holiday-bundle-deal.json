@@ -302,7 +302,7 @@
           "type": "product",
           "disabled": true,
           "settings": {
-            "product": "fade-firm-bundle-advanced-bf25-sku",
+            "product": "fade-firm-bundle-advanced-bf25",
             "preselected": false,
             "soldout": false,
             "reserved": false
@@ -489,7 +489,7 @@
             "username": "<p>Claudia</p>",
             "product_url": "#",
             "product_heading": "Claudia uses...",
-            "product_text": "Neck & Décolletage LED Device",
+            "product_text": "Neck & Décolletage LED System",
             "product_image": "shopify://shop_images/neck-decolletage-led-device.webp"
           }
         },
@@ -509,6 +509,7 @@
         },
         "slider_RTBcJx": {
           "type": "slider",
+          "disabled": true,
           "settings": {
             "heading": "Completed qured my acne",
             "text": "<p>“This is the first time in TWO YEARS that I don’t have active acne on my face. I’ve been using my Qure for 1 month now and it has completely qured my acne. It’s gone AND it’s healing all my scars and pox marks. I was literally on the verge of suicide because of my horrible skin. This device SAVED MY LIFE!!!.”</p>",
@@ -531,7 +532,7 @@
             "username": "<p>Mary R. M.</p>",
             "product_url": "#",
             "product_heading": "Mary uses...",
-            "product_text": "Neck & Décolletage LED Device",
+            "product_text": "Neck & Décolletage LED System",
             "product_image": "shopify://shop_images/neck-decolletage-led-device.webp"
           }
         }
@@ -605,6 +606,7 @@
       "type": "trusted-recommended",
       "name": "t:sections.trusted-recommended.name",
       "settings": {
+        "background_color": "#ffffff",
         "heading": "Trusted and Recommended by Experts",
         "text": "<p>“This treatment is an at-home option for those who want to <strong>avoid the hassle or cost of going to the office”.</strong></p>",
         "image_text": "",
@@ -663,7 +665,7 @@
         "slider_FC8BrX": {
           "type": "slider",
           "settings": {
-            "heading": "<p>\"One of the best ways to treat hyperpigmentation at home.\"</p>",
+            "heading": "<p>\"One of the best ways to address the look of hyperpigmentation at home.\"</p>",
             "text": "<p>Dr. Wallace Nozile</p>",
             "sub_text": "<p>Board-Certified Dermatologist</p>",
             "url": "ypvcdsgwkx",
@@ -674,7 +676,7 @@
         "slider_rWeyGn": {
           "type": "slider",
           "settings": {
-            "heading": "<p>\"With Micro-Infusion, you get to see the results almost instantly.\"</p>",
+            "heading": "<p>“With Micro-Infusion, many notice a visible glow soon after treatment.”</p>",
             "text": "<p>Dr. Davin Lim</p>",
             "sub_text": "<p>Board-Certified Dermatologist</p>",
             "url": "3bud7no0j9",
@@ -805,7 +807,7 @@
           "type": "items",
           "settings": {
             "heading": "Precision skincare that works below the surface",
-            "text": "<p>Infuse active ingredients beneath the surface of your skin for maximum efficacy, evening out texture, softening fine lines, and promoting a youthful appearance.</p><ul><li>Improves overall glow, firmness, and bounce.</li><li>Helps fade dark spots and brighten tone.</li><li>Smooths fine lines and softens wrinkles.</li><li>Clinically backed and easy to use at home.</li></ul>",
+            "text": "<p>Infuse active ingredients beneath the surface of your skin for maximum efficacy, evening out texture, softening fine lines, and promoting a youthful appearance.</p><ul><li>Helps smooth the appearance of fine lines and wrinkles</li><li>Supports a brighter, more even-looking skin tone</li><li>Visibly plumps and supports smoother-looking skin texture</li><li>Clinically backed and easy to use at home.</li></ul>",
             "product_1": "Micro-Infusion Treatment",
             "link_url_1": "https://qureskincare.com/pages/microinfusion",
             "image_1": "shopify://shop_images/micro-infusion-treatment.webp",
@@ -898,7 +900,7 @@
           "type": "accordion",
           "settings": {
             "heading": "How quickly will I see results?",
-            "text": "<p>Most people see improvement within the first weeks of using Qure products, but this can vary. </p><p>Some Qure products deliver visible results quickly, like smoother, more hydrated skin after your first Micro-Infusion session. For long-term improvements in wrinkles, acne, or hyperpigmentation, we recommend consistent use for at least 4 to 12 weeks. Like any effective routine, results build over time. </p>",
+            "text": "<p>Most people notice visible improvements within the first few weeks of using Qure products, though results can vary from person to person.<br/><br/>Some users report that their skin feels smoother, more refreshed, and hydrated after their first uses. For best results, consistency is key—visible improvements typically continue to build over 4 to 12 weeks with regular use as part of your skincare routine.</p>",
             "link_url": "",
             "link_text": ""
           }
@@ -907,7 +909,7 @@
           "type": "accordion",
           "settings": {
             "heading": "How often can I use Qure treatments?",
-            "text": "<p>It depends on the product. </p><p>Most of our products, including our All-In-One Serum and Q-Rejuvalight Pro LED Mask, are gentle and intended for daily use. Our Micro-Infusion treatments are more intensive and should be used less frequently. We recommend using the Micro Infusion Targeted Eye Patches once per week. and the full Micro-Infusion System once every 2 weeks, for the best results.</p><p>Always follow the usage guidelines for each product and adjust based on how your skin responds.</p>",
+            "text": "<p>It depends on the product. <br/><br/>Most of our products, including our All-In-One Serum and Q-Rejuvalight Pro LED Mask, are gentle and intended for daily use. Our Micro-Infusion treatments are more intensive and should be used less frequently. We recommend using the Micro-Infusion Targeted Eye Patches once per week. and the full Micro-Infusion System once every 2 weeks, for the best results.<br/><br/>Always follow the usage guidelines for each product and adjust based on how your skin responds.</p>",
             "link_url": "",
             "link_text": ""
           }
@@ -925,7 +927,7 @@
           "type": "accordion",
           "settings": {
             "heading": "When can I expect to receive my Qure package?",
-            "text": "<p>We aim to ship your package as quickly as possible. Processing takes 1-3 business days. You’ll receive an email with tracking info once your package ships.</p><p>Shipping times vary by location but these times are typical per region:</p><ul><li>United States: 8-14 business days</li><li>Canada: 4-6 business days</li><li>UK & Europe: 8-14 business days</li><li>Australia: 8-14 business days</li></ul>",
+            "text": "<p>We aim to ship your package as quickly as possible. Processing takes 1-3 business days. You’ll receive an email with tracking info once your package ships.<br/><br/>Shipping times vary by location but these times are typical per region:<br/><br/></p><ul><li>United States: 8-14 business days</li><li>Canada: 4-6 business days</li><li>UK & Europe: 8-14 business days</li><li>Australia: 8-14 business days</li></ul>",
             "link_url": "",
             "link_text": ""
           }

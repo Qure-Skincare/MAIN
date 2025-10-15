@@ -100,7 +100,7 @@
       "name": "t:sections.index-banner-with-text-second.name",
       "settings": {
         "heading": "Get clinic-level results from home – minus the ‘clinical’ costs.",
-        "text": "<p>Get a <strong>FREE</strong> pink headband and cosmetic pouch <strong>with every purchase*</strong></p>",
+        "text": "",
         "subtext": "<p>*To support breast cancer research to prevent, detect, stop and treat breast cancer, Qure will donate $3 from every order to the National Breast Cancer Foundation.</p>",
         "image": "shopify://shop_images/promo-banner.webp",
         "image_mobile": "shopify://shop_images/promo-banner-mob.webp",
@@ -255,7 +255,7 @@
             "username": "<p>Claudia</p>",
             "product_url": "https://qureskincare.com/products/neck-decolletage-led",
             "product_heading": "Claudia uses...",
-            "product_text": "Neck & Décolletage LED Device",
+            "product_text": "Neck & Décolletage LED System",
             "product_image": "shopify://shop_images/neck-decolletage-led-device.webp"
           }
         },
@@ -275,6 +275,7 @@
         },
         "slider_yC7yhD": {
           "type": "slider",
+          "disabled": true,
           "settings": {
             "heading": "Completed qured my acne",
             "text": "<p>“This is the first time in TWO YEARS that I don’t have active acne on my face. I’ve been using my Qure for 1 month now and it has completely qured my acne. It’s gone AND it’s healing all my scars and pox marks. I was literally on the verge of suicide because of my horrible skin. This device SAVED MY LIFE!!!.”</p>",
@@ -297,7 +298,7 @@
             "username": "<p>Mary R. M.</p>",
             "product_url": "https://qureskincare.com/products/neck-decolletage-led",
             "product_heading": "Mary uses...",
-            "product_text": "Neck & Décolletage LED Device",
+            "product_text": "Neck & Décolletage LED System",
             "product_image": "shopify://shop_images/neck-decolletage-led-device.webp"
           }
         }
@@ -330,7 +331,7 @@
           "type": "hover_image",
           "settings": {
             "heading": "Micro-Infusion Facial System",
-            "product": "micro-infusion-1-month-bundle-1x-b-g-serum-1x-e-g-f-serum",
+            "product": "micro-infusion-1-month-bundle-for-wrinkles-dark-spots",
             "image_text": "Bestseller",
             "image": "shopify://shop_images/micro-infusion-facial-system.webp",
             "hover_image": "shopify://shop_images/Frame_1073714796_1.png",

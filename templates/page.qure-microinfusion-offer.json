@@ -1116,7 +1116,7 @@
         "product_7dL4ci": {
           "type": "product",
           "settings": {
-            "product": "micro-infusion-3-month-bundle",
+            "product": "micro-infusion-3-month-bundle-for-dark-spots",
             "preselected": false,
             "heading": "3 Month Supply",
             "subheading": "(6 Treatments)",
@@ -1135,7 +1135,7 @@
         "product_Xf8A6C": {
           "type": "product",
           "settings": {
-            "product": "micro-infusion-1-month-bundle-2x-e-g-f-serum",
+            "product": "micro-infusion-1-month-bundle-for-dark-spots",
             "preselected": false,
             "heading": "1 Month Supply",
             "subheading": "(2 Treatments)",
@@ -1185,7 +1185,7 @@
         "product_EKAAzA": {
           "type": "product",
           "settings": {
-            "product": "micro-infusion-3-month-bundle-6x-beta-glucan-serum",
+            "product": "micro-infusion-3-month-bundle-for-wrinkles",
             "preselected": false,
             "heading": "3 Month Supply",
             "subheading": "(6 Treatments)",
@@ -1204,7 +1204,7 @@
         "product_eiY89h": {
           "type": "product",
           "settings": {
-            "product": "micro-infusion-1-month-bundle-2x-beta-glucan-serum",
+            "product": "micro-infusion-1-month-bundle-for-wrinkles",
             "preselected": false,
             "heading": "1 Month Supply",
             "subheading": "(2 Treatments)",
@@ -1254,7 +1254,7 @@
         "product_NEgEkN": {
           "type": "product",
           "settings": {
-            "product": "micro-infusion-3-month-bundle-3x-b-g-serum-3x-e-g-f-serum",
+            "product": "micro-infusion-3-month-bundle-for-wrinkles-dark-spots",
             "preselected": false,
             "heading": "3 Month Supply",
             "subheading": "(6 Treatments)",
@@ -1273,7 +1273,7 @@
         "product_RBCPe8": {
           "type": "product",
           "settings": {
-            "product": "micro-infusion-1-month-bundle-1x-b-g-serum-1x-e-g-f-serum",
+            "product": "micro-infusion-1-month-bundle-for-wrinkles-dark-spots",
             "preselected": false,
             "heading": "1 Month Supply",
             "subheading": "(2 Treatments)",

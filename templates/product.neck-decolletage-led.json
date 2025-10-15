@@ -121,7 +121,7 @@
         "slider_MARHYc": {
           "type": "slider",
           "settings": {
-            "heading": "“One of my favorite devices for the neck [...] It has a quick treatment time of 10 minutes, which makes it easy for someone to work into their daily routine.”",
+            "heading": "“One of my favorite systems for the neck [...] It has a quick treatment time of 10 minutes, which makes it easy for someone to work into their daily routine.”",
             "image": "shopify://shop_images/elle-black_d992fb5b-e675-4ea0-8fe9-27198001a628.svg"
           }
         },
@@ -154,7 +154,7 @@
       "type": "banner-with-text",
       "name": "t:sections.banner-with-text.name",
       "settings": {
-        "heading": "All the skin firming, smoothing, clearing benefits with just 1 device",
+        "heading": "All the skin firming, smoothing, clearing benefits with just 1 system",
         "text": "<p>The Neck & Décolletage LED System uses red and near-infrared light to help <em>improve the look of firmness</em>, tone, and texture in the neck and chest area.<br/><br/>These wavelengths support the appearance of smoother, more even-looking skin and a refreshed, radiant look over time.</p>",
         "quote": "",
         "quote-mobile": "",
@@ -219,7 +219,7 @@
           "type": "slider",
           "settings": {
             "heading": "Recommend to everyone",
-            "text": "<p>“I was shocked seeing my before and after photos!! I didn’t realise how much my skin improved. I feel so much more confident wearing open tops now. My skin looks much more even, less red and all round healthier. Happy I invested into this device.”</p>",
+            "text": "<p>“I was shocked seeing my before and after photos!! I didn’t realise how much my skin improved. I feel so much more confident wearing open tops now. My skin looks much more even, less red and all round healthier. Happy I invested into this product.”</p>",
             "compare_image": "shopify://shop_images/Claudia.webp",
             "country_image": "shopify://shop_images/canada_f.webp",
             "username": "<p>Claudia M.</p>",
@@ -230,10 +230,9 @@
         },
         "slider_hhgf6i": {
           "type": "slider",
-          "disabled": true,
           "settings": {
-            "heading": "From sun damage to this!",
-            "text": "<p>“After years damage from the strong Aussie sun I wanted to try LED therapy to help rejuvenate and repair my skin. I’m so glad I did because after using it daily, I've witnessed this transformation!!! Skin is firmer, sunspots have faded and texture is so much smoother!”</p>",
+            "heading": "Visible improvements!",
+            "text": "<p>“After years in the strong Aussie sun, I wanted to try LED therapy to refresh and rejuvenate my skin. I’m so glad I did — after using it daily, I’ve noticed real improvements! My skin looks firmer, smoother, and the appearance of sunspots has visibly reduced.”</p>",
             "compare_image": "shopify://shop_images/Sophia.webp",
             "country_image": "shopify://shop_images/australia_f.webp",
             "username": "<p>Sophia N.</p>",
@@ -246,7 +245,7 @@
           "type": "slider",
           "settings": {
             "heading": "Amazing products",
-            "text": "<p>“I’ve always taken care of my face but neglected my neck and chest skin so I’ve made it a top priority in the past year. Since using LED regularly, the pesky fine lines in the middle of my chest are so much smoother and my skin looks youthful again! And I love how this device has LEDs placed in the centre of the chest unlike other devices.”</p>",
+            "text": "<p>“I’ve always taken care of my face but neglected my neck and chest skin so I’ve made it a top priority in the past year. Since using LED regularly, the pesky fine lines in the middle of my chest are so much smoother and my skin looks youthful again! And I love how this system has LEDs placed in the centre of the chest unlike other system.”</p>",
             "compare_image": "shopify://shop_images/Ashley.webp",
             "country_image": "shopify://shop_images/america_f.webp",
             "username": "<p>Ashley W.</p>",
@@ -332,7 +331,7 @@
         "slider_9PfgjX": {
           "type": "slider",
           "settings": {
-            "heading": "<p>“Using a product like this consistently may help improve the look of discoloration and sun-exposed skin over time.”</p>",
+            "heading": "<p>“Using this product consistently can help visibly improve uneven tone and discoloration over time.”</p>",
             "text": "<p>Dr. Prem Tripathi</p>",
             "sub_text": "<p>Board-Certified Dermatologist</p>",
             "url": "xoh5ew7v31",
@@ -434,7 +433,7 @@
           "type": "items",
           "settings": {
             "heading": "Prepare",
-            "text": "<p>Start with clean, dry skin. Secure the device around your neck and adjust using the velcro straps.</p>",
+            "text": "<p>Start with clean, dry skin. Secure the system around your neck and adjust using the velcro straps.</p>",
             "image": "shopify://shop_images/treat_aging_1.webp",
             "image_mobile": "shopify://shop_images/treat_aging_1_m.webp"
           }
@@ -452,7 +451,7 @@
           "type": "items",
           "settings": {
             "heading": "Aftercare",
-            "text": "<p>Relax while the device runs its 10-minute session. Afterward, follow with your usual skincare routine.</p>",
+            "text": "<p>Relax while the system runs its 10-minute session. Afterward, follow with your usual skincare routine.</p>",
             "image": "shopify://shop_images/treat_aging_3.webp",
             "image_mobile": "shopify://shop_images/treat_aging_3_m.webp"
           }
@@ -624,7 +623,7 @@
       "type": "sticky-button",
       "name": "t:sections.sticky-button.name",
       "settings": {
-        "heading": "Neck & Décolletage LED Device",
+        "heading": "Neck & Décolletage LED System",
         "text": "203 purchased in last 48 hours",
         "button-label": "",
         "button-url": ""

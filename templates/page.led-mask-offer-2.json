@@ -25,7 +25,7 @@
           "settings": {
             "image_product1": "shopify://shop_images/Img_16.png",
             "image_product2": "shopify://shop_images/ndBox.webp",
-            "text": "<p>Buy the Q-Rejuvalight Pro and get the Neck & Décolletage LED Device for FREE (value $299)</p>"
+            "text": "<p>Buy the Q-Rejuvalight Pro and get the Neck & Décolletage LED System for FREE (value $299)</p>"
           }
         }
       },
@@ -38,7 +38,7 @@
       "settings": {
         "rating": "<p><strong>4.8</strong>/5 Rated by Customers</p>",
         "heading": "Feel Confident Makeup-Free with Q-Rejuvalight Pro",
-        "description": "<ul><li>FDA-cleared at-home LED mask</li><li>Treat acne, fine lines, wrinkles & more</li><li>Customize, track & schedule treatments with app</li><li>Quick & convenient 3-minute wireless treatments</li></ul>",
+        "description": "<ul><li>FDA-cleared device designed to treat wrinkles and mild-to-moderate inflammatory acne.</li><li>Quick & convenient 3-minute wireless treatments</li><li>Customize, track & schedule treatments with app</li></ul>",
         "button-label": "Shop Now & Save $299",
         "button-url": "#buy-form"
       }
@@ -227,7 +227,7 @@
           "type": "slider",
           "settings": {
             "heading": "Recommend to everyone",
-            "text": "<p>“I was shocked seeing my before and after photos!! I didn’t realise how much my skin improved. I feel so much more confident wearing open tops now. My skin looks much more even, less red and all round healthier. Happy I invested into this device.”</p>",
+            "text": "<p>“I was shocked seeing my before and after photos!! I didn’t realise how much my skin improved. I feel so much more confident wearing open tops now. My skin looks much more even, less red and all round healthier. Happy I invested into this product.”</p>",
             "compare_image": "shopify://shop_images/Claudia.webp",
             "country_image": "shopify://shop_images/canada_f.webp",
             "username": "<p>Claudia M.</p>",
@@ -240,8 +240,8 @@
         "slider_98GwR4": {
           "type": "slider",
           "settings": {
-            "heading": "Great results so far!",
-            "text": "<p>“After only 3 weeks of use I can see a visible change in the texture and color of my skin. I have a lot of sun damage in my chest so I imagine I will need to use my device consistently for a few months before I see a huge difference but I am already noticing improvement and am very happy with my purchase. I highly recommend!”</p>",
+            "heading": "Visible improvement so far!",
+            "text": "<p>“After only 3 weeks of use, I’ve noticed visible improvements in the texture and tone of my skin. I had uneven tone from sun exposure, so I plan to keep using it consistently for best results. I’m already seeing a difference and couldn’t be happier!”</p>",
             "compare_image": "shopify://shop_images/Brooke.webp",
             "country_image": "shopify://shop_images/england_f.webp",
             "username": "<p>Brooke B.</p>",
@@ -337,6 +337,7 @@
         },
         "slider_y7yihh": {
           "type": "slider",
+          "disabled": true,
           "settings": {
             "heading": "Saw a difference within 3 days",
             "text": "<p>“Incredible! The item is so well made, I had cystic acne on my jaw that went away within a week of use and my skin felt very soft. I have gotten 3 other people to purchase this product and will continue to rave about it!”</p>",
@@ -352,8 +353,8 @@
         "slider_cyTFaz": {
           "type": "slider",
           "settings": {
-            "heading": "Goodbye stubborn inflammation",
-            "text": "<p>“After struggling with acne and the stubborn pigmentation it left behind, I'm thrilled with the results I've seen after using Qure LED chest device. My skin is clearer, and the pigmentation has significantly faded. The most important, I don’t have to cover my neck and chest with foundations and concealers anymore”</p>",
+            "heading": "Clearer, more even-looking skin",
+            "text": "<p>“After dealing with breakouts and uneven tone, I'm thrilled with the results I've seen after using the Qure LED chest system. My skin looks clearer and more even, and I don’t feel the need to cover my neck and chest with makeup anymore.”</p>",
             "compare_image": "shopify://shop_images/Josie.webp",
             "country_image": "shopify://shop_images/canada_f.webp",
             "username": "<p>Josie R.</p>",
@@ -380,8 +381,8 @@
         "slider_hKw6wx": {
           "type": "slider",
           "settings": {
-            "heading": "Outstanding",
-            "text": "<p>“I’m so impressed with the results! I noticed a difference after a few weeks. I am so surprised at how much younger the skin on my neck/chest looks. Wrinkles have significantly reduced, sun spots are lighter and my skin looks and feels more rejuvenated.”</p>",
+            "heading": "Smoother, refreshed-looking skin",
+            "text": "<p>“I’m so impressed with the improvement! I noticed a difference after a few weeks. The skin on my neck and chest looks smoother, more even, and refreshed. Fine lines look softer, sun spots appear lighter, and my skin feels rejuvenated. The system is easy to use — I love that I can clip the controller to my robe and multitask while using it.”</p>",
             "compare_image": "shopify://shop_images/Mary.webp",
             "country_image": "shopify://shop_images/america_f.webp",
             "username": "<p>Mary R.M.</p>",
@@ -484,7 +485,7 @@
           "type": "left_block",
           "settings": {
             "heading": "Q-Rejuvalight Pro LED Mask",
-            "text": "<ul><li>Targets the face</li><li>5 clinically proven wavelengths</li><li>2 treatment modes <br/>(Skin Rejuvenation and Skin Clearing)</li><li>Reduces acne & breakouts</li><li>Smooths fine lines & wrinkles</li><li>Improves skin texture & tone</li><li>Boosts collagen</li></ul>",
+            "text": "<ul><li>Designed the face</li><li>5 clinically proven wavelengths</li><li>2 treatment modes <br/>(Skin Rejuvenation and Skin Clearing)</li><li>Treats wrinkles and mild-to-moderate inflammatory acne.</li><li>Helps visibly smooth the look of fine lines & wrinkles</li><li>Improves the appearance of skin texture & tone</li><li>Supports skin’s natural renewal process</li></ul>",
             "price": "<p>$399</p>",
             "image": "shopify://shop_images/q-rejuvalight-pro-led-mask_80cf908b-75f7-4fa1-a3a1-d74d4fcb8641.webp"
           }
@@ -492,8 +493,8 @@
         "right_block_zYVkKE": {
           "type": "right_block",
           "settings": {
-            "heading": "Neck & Décolletage LED Device",
-            "text": "<ul><li>Targets the neck & chest</li><li>2 clinically proven wavelengths</li><li>1 treatment mode<br/>(Skin Rejuvenation)</li><li>Firms skin & improves texture</li><li>Smooths fine lines & wrinkles</li><li>Fades dark spots</li><li>Improves sun damaged skin</li></ul>",
+            "heading": "Neck & Décolletage LED System",
+            "text": "<ul><li>Designed for the neck & chest</li><li>2 clinically proven wavelengths</li><li>1 treatment mode<br/>(Skin Rejuvenation)</li><li>Helps visibly firm and smooth skin texture</li><li>Improves the look of fine lines & elasticity</li><li>Helps even skin tone and reduce the appearance of dark spots</li><li>Supports overall skin radiance</li></ul>",
             "price": "<p><em>$299</em></p><p>[span]FREE[/span]</p>",
             "badge_text": "Free",
             "image": "shopify://shop_images/neck-decolletage-led-device_5338f8eb-309c-4b98-acf8-a8ca44a727f7.webp"
@@ -634,9 +635,9 @@
         "image_aging": "shopify://shop_images/mask_aging.webp",
         "image_breakout": "shopify://shop_images/mask_breakout.webp",
         "heading_aging_mode": "<p><strong>Skin Rejuvenating</strong></p>",
-        "text_aging_mode": "<p>On Skin Rejuvenating, red and infrared wavelengths work together to help support collagen production, which reduces the appearance of wrinkles and fine lines, as well as to improve skin elasticity and firmness.</p><p>Red light stimulates collagen and elastin production, which supports skin renewal. Deep red light penetrates deeper to help with the appearance of wrinkles, while infrared is designed to reach deeper layers for potential long-term benefits.</p>",
+        "text_aging_mode": "<p>On Skin Rejuvenating Mode, red and infrared wavelengths work together to help improve the appearance of skin texture and firmness. <br/><br/>Red light helps improve the look of skin smoothness and radiance. Deep red and infrared light work at different depths of the skin’s surface to help improve the look of wrinkles over time.</p>",
         "heading_breakout_mode": "<p><strong>Skin Clearing</strong></p>",
-        "text_breakout_mode": "<p>Our Skin Clearing combines blue and red light wavelengths. Blue (415 nm) targets acne-causing bacteria on the skin's surface, and red (630 nm) helps calm inflammation and soothes irritated skin.</p><p>Together, these wavelengths help reduce breakouts, prevent future flare-ups, and support clearer, healthier-looking skin.</p>"
+        "text_breakout_mode": "<p>Our Skin Clearing Mode combines blue and red light wavelengths. Blue (415 nm) targets the bacteria associated with mild-to-moderate acne, while red (630 nm) helps calm and soothe the appearance of irritated skin.<br/><br/>Together, these wavelengths help improve the appearance of breakouts, support clearer-looking skin, and promote a balanced, healthier-looking complexion.</p>"
       }
     },
     "banner_with_text_mw6Bby": {
@@ -675,6 +676,7 @@
       "type": "trusted-recommended",
       "name": "t:sections.trusted-recommended.name",
       "settings": {
+        "background_color": "#ffffff",
         "heading": "Trusted and Recommended by Experts",
         "text": "<p>“Of all the LED masks we’ve tried, this is <strong>the best on the market right now...</strong> It didn’t lose in any category...</p><p>There’s real science behind LED therapy, and <strong>Qure makes it easy</strong> to be consistent—which is what really drives results.”</p>",
         "image_text": "",
@@ -689,7 +691,7 @@
         "slider_tG98FW": {
           "type": "slider",
           "settings": {
-            "heading": "<p>\"Qure's anti-aging treatment gets down deep into your skin to stimulate collagen & makes a big difference...\"</p>",
+            "heading": "<p>\"Qure’s at-home LED device works beneath the skin’s surface to support a smoother, firmer-looking complexion and makes a visible difference…\"</p>",
             "text": "<p>Dr. Dylan Greeney</p>",
             "sub_text": "<p>Board-Certified Dermatologist</p>",
             "url": "https://www.youtube.com/watch?v=1iXBgh7WPOY",
@@ -722,7 +724,7 @@
         "slider_byFTGg": {
           "type": "slider",
           "settings": {
-            "heading": "<p>\"These wavelengths trigger cells to create even more collagen... helping reduce common signs of aging.\"</p>",
+            "heading": "<p>\"These wavelengths help support your skin’s natural renewal process… helping reduce the look of common signs of aging.\"</p>",
             "text": "<p>Dr. Yaseen Arsalan</p>",
             "sub_text": "<p>Doctor of Pharmacy</p>",
             "url": "https://www.youtube.com/watch?v=lLkM7Q7It2A&t=154s",
@@ -836,8 +838,8 @@
       "type": "page-led-mask-offer-2-banner-with-content-over",
       "name": "t:sections.banner-with-content.name",
       "settings": {
-        "heading": "Maximize Benefits with a FREE Neck & Décolletage LED Device",
-        "text": "<ul><li>Treat beyond the face for an all-over youthful appearance</li><li>Smooth fine lines, reduce appearance of wrinkles and boost firmness</li><li>Fade dark spots and repair sun-damaged skin for an even-toned complexion</li></ul>",
+        "heading": "Maximize Benefits with a FREE Neck & Décolletage LED System",
+        "text": "<ul><li>Extend your treatment beyond the face for an all-over rejuvenated look</li><li>Visibly smooth fine lines, improve skin texture, and support firmness</li><li>Helps reduce the look of dark spots and improve uneven tone for a more radiant complexion</li></ul>",
         "image": "shopify://shop_images/hero.webp",
         "image_mobile": "shopify://shop_images/hero-mob-1.webp",
         "rating_text": "<p><strong>97%</strong> customer satisfaction rate</p>",
@@ -856,7 +858,7 @@
       "type": "sticky-button",
       "name": "t:sections.sticky-button.name",
       "settings": {
-        "heading": "Q-Rejuvalight Pro + Neck & Décolletage LED Device",
+        "heading": "Q-Rejuvalight Pro + Neck & Décolletage LED System",
         "text": "1,893 purchased in last 48 hours",
         "button-label": "SHOP NOW & SAVE $299",
         "button-url": "#buy-form"
