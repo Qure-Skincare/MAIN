@@ -78,7 +78,7 @@
           "settings": {
             "product": "neck-decolletage-led",
             "text": "A targeted LED light therapy device designed specifically for the delicate skin on your neck and chest.",
-            "list": "<p>Uses wavelengths of LED light that have been clinically proven to support skin clarity and repair.</p><p>Helps even skin tone and improve the feel of firmness.</p><p>Pairs seamlessly with Qure’s Micro-Infusion for enhanced results.</p>",
+            "list": "<p>Uses wavelengths of LED light that have been clinically studied to support skin clarity and appearance.</p><p>Helps promote a more even-looking tone and smoother, firmer-feeling skin.</p><p>Pairs seamlessly with Qure’s Micro-Infusion System for visibly enhanced results.</p>",
             "button_label": "Add to Bundle",
             "review_heading": "<p><strong>“I’m surprised how much younger my neck looks</strong></p>",
             "review_text": "<p>and my skin looks and feels more rejuvenated.”</p>",
@@ -161,7 +161,7 @@
           "settings": {
             "button_label": "Daily",
             "heading": "<p><strong>How To Use</strong></p>",
-            "text": "<p>Cleanse and dry your skin. Put on your Q-Rejuvalight Pro on the Pro-Aging treatment mode for a full 3 minute session. Follow with the All-In-One Face Serum, applying to your face and neck.</p>",
+            "text": "<p>Cleanse and dry your skin. Put on your Q-Rejuvalight Pro on the Skin Rejuvenating treatment mode for a full 3 minute session. Follow with the All-In-One Face Serum, applying to your face and neck.</p>",
             "subheading": "<p><strong>Benefits</strong></p>",
             "subtext": "",
             "am_or_pm": "both",
