@@ -286,7 +286,7 @@
         "button_html": "<a href='{{ button_link }}' class='btn bg-white border-0 text-black mt-15 mt-md-0'>Shop Now <img src='https://qureskincaredns-main.com/assets/images/arrow_right.svg' alt='arrow'></a>"
       },
       "benefits-list": {
-        "guaranteed_text": "30-Day Money-Back Guarantee",
+        "guaranteed_text": "90-Day Money-Back Guarantee",
         "shipping_text": "Free World-Wide Shipping over $100",
         "science_text": "Backed by Science"
       },
