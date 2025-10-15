@@ -678,6 +678,19 @@
             "product_heading": "",
             "product_text": ""
           }
+        },
+        "slider_MHwxjr": {
+          "type": "slider",
+          "settings": {
+            "heading": "Love it!",
+            "text": "<p>“I’m 46 years old and have struggled with breakouts my whole life. Sadly, it wasn’t until I turned 40 that I started really taking care of my mature skin, the sagging, and wrinkles. This product, along with my skincare routine for mature skin, has made such an incredible difference—I’m absolutely thrilled! I can’t recommend it enough!!!”</p>",
+            "compare_image": "shopify://shop_images/Image_18_84ad7aed-73d2-49a7-a97c-88e4e0c2932c.png",
+            "country_image": "shopify://shop_images/america-flag_f1f6c160-90c6-4ba9-8bfc-d9039a28d2af.webp",
+            "username": "<p>Matias T.</p>",
+            "product_url": "",
+            "product_heading": "",
+            "product_text": ""
+          }
         }
       },
       "block_order": [
@@ -692,7 +705,8 @@
         "slider_PQ3RbR",
         "slider_6tprhW",
         "slider_9NRFNC",
-        "slider_NW88g8"
+        "slider_NW88g8",
+        "slider_MHwxjr"
       ],
       "name": "t:sections.trusted-reviews.name",
       "settings": {
