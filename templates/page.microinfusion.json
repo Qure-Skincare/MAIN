@@ -816,6 +816,7 @@
         },
         "slider_VqM8Qm": {
           "type": "slider",
+          "disabled": true,
           "settings": {
             "heading": "<p>“You can personalize the treatment for each part of your face. Genius!”</p>",
             "text": "<p>Susie Spring</p>",
