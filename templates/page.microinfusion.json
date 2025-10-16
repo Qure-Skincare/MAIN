@@ -813,6 +813,17 @@
             "checkbox": false,
             "image": "shopify://shop_images/trusted_img_7.webp"
           }
+        },
+        "slider_VqM8Qm": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>“You can personalize the treatment for each part of your face. Genius!”</p>",
+            "text": "<p>Susie Spring</p>",
+            "sub_text": "<p>Harvard-Certified Skin Expert</p>",
+            "url": "https://www.instagram.com/reel/DLA9moNI3Cr/",
+            "checkbox": false,
+            "image": "shopify://shop_images/Image_20_7fa4ffd1-0309-4a07-82b1-be1f41f1b96e.png"
+          }
         }
       },
       "block_order": [
@@ -821,7 +832,8 @@
         "slider_fy9Whb",
         "slider_eMVGVa",
         "slider_QwHKTQ",
-        "slider_7TUNBU"
+        "slider_7TUNBU",
+        "slider_VqM8Qm"
       ],
       "name": "t:sections.video-slider.name",
       "settings": {}
