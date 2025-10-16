@@ -38,7 +38,7 @@
       "settings": {
         "rating": "<p><strong>4.8</strong>/5 Rated by Customers</p>",
         "heading": "Feel Confident Makeup-Free with Q-Rejuvalight Pro",
-        "description": "<ul><li>FDA-cleared at-home LED mask</li><li>Treat acne, fine lines, wrinkles & more</li><li>Customize, track & schedule treatments with app</li><li>Quick & convenient 3-minute wireless treatments</li></ul>",
+        "description": "<ul><li>FDA-cleared device designed to treat wrinkles and mild-to-moderate inflammatory acne.</li><li>Quick & convenient 3-minute wireless treatments</li><li>Customize, track & schedule treatments with app</li></ul>",
         "button-label": "Shop Now & Save $299",
         "button-url": "#buy-form"
       }
@@ -227,7 +227,7 @@
           "type": "slider",
           "settings": {
             "heading": "Recommend to everyone",
-            "text": "<p>“I was shocked seeing my before and after photos!! I didn’t realise how much my skin improved. I feel so much more confident wearing open tops now. My skin looks much more even, less red and all round healthier. Happy I invested into this device.”</p>",
+            "text": "<p>“I was shocked seeing my before and after photos!! I didn’t realise how much my skin improved. I feel so much more confident wearing open tops now. My skin looks much more even, less red and all round healthier. Happy I invested into this product.”</p>",
             "compare_image": "shopify://shop_images/Claudia.webp",
             "country_image": "shopify://shop_images/canada_f.webp",
             "username": "<p>Claudia M.</p>",
@@ -485,7 +485,7 @@
           "type": "left_block",
           "settings": {
             "heading": "Q-Rejuvalight Pro LED Mask",
-            "text": "<ul><li>Targets the face</li><li>5 clinically proven wavelengths</li><li>2 treatment modes <br/>(Skin Rejuvenation and Skin Clearing)</li><li>Reduces acne & breakouts</li><li>Smooths fine lines & wrinkles</li><li>Improves skin texture & tone</li><li>Boosts collagen</li></ul>",
+            "text": "<ul><li>Designed the face</li><li>5 clinically proven wavelengths</li><li>2 treatment modes <br/>(Skin Rejuvenation and Skin Clearing)</li><li>Treats wrinkles and mild-to-moderate inflammatory acne.</li><li>Helps visibly smooth the look of fine lines & wrinkles</li><li>Improves the appearance of skin texture & tone</li><li>Supports skin’s natural renewal process</li></ul>",
             "price": "<p>$399</p>",
             "image": "shopify://shop_images/q-rejuvalight-pro-led-mask_80cf908b-75f7-4fa1-a3a1-d74d4fcb8641.webp"
           }
@@ -494,7 +494,7 @@
           "type": "right_block",
           "settings": {
             "heading": "Neck & Décolletage LED System",
-            "text": "<ul><li>Targets the neck & chest</li><li>2 clinically proven wavelengths</li><li>1 treatment mode<br/>(Skin Rejuvenation)</li><li>Firms skin & improves texture</li><li>Smooths fine lines & wrinkles</li><li>Fades dark spots</li><li>Improves sun damaged skin</li></ul>",
+            "text": "<ul><li>Designed for the neck & chest</li><li>2 clinically proven wavelengths</li><li>1 treatment mode<br/>(Skin Rejuvenation)</li><li>Helps visibly firm and smooth skin texture</li><li>Improves the look of fine lines & elasticity</li><li>Helps even skin tone and reduce the appearance of dark spots</li><li>Supports overall skin radiance</li></ul>",
             "price": "<p><em>$299</em></p><p>[span]FREE[/span]</p>",
             "badge_text": "Free",
             "image": "shopify://shop_images/neck-decolletage-led-device_5338f8eb-309c-4b98-acf8-a8ca44a727f7.webp"
@@ -691,7 +691,7 @@
         "slider_tG98FW": {
           "type": "slider",
           "settings": {
-            "heading": "<p>\"Qure's anti-aging treatment gets down deep into your skin to stimulate collagen & makes a big difference...\"</p>",
+            "heading": "<p>\"Qure’s at-home LED device works beneath the skin’s surface to support a smoother, firmer-looking complexion and makes a visible difference…\"</p>",
             "text": "<p>Dr. Dylan Greeney</p>",
             "sub_text": "<p>Board-Certified Dermatologist</p>",
             "url": "https://www.youtube.com/watch?v=1iXBgh7WPOY",
@@ -724,7 +724,7 @@
         "slider_byFTGg": {
           "type": "slider",
           "settings": {
-            "heading": "<p>\"These wavelengths trigger cells to create even more collagen... helping reduce common signs of aging.\"</p>",
+            "heading": "<p>\"These wavelengths help support your skin’s natural renewal process… helping reduce the look of common signs of aging.\"</p>",
             "text": "<p>Dr. Yaseen Arsalan</p>",
             "sub_text": "<p>Doctor of Pharmacy</p>",
             "url": "https://www.youtube.com/watch?v=lLkM7Q7It2A&t=154s",
@@ -839,7 +839,7 @@
       "name": "t:sections.banner-with-content.name",
       "settings": {
         "heading": "Maximize Benefits with a FREE Neck & Décolletage LED System",
-        "text": "<ul><li>Treat beyond the face for an all-over youthful appearance</li><li>Smooth fine lines, reduce appearance of wrinkles and boost firmness</li><li>Fade dark spots and repair sun-damaged skin for an even-toned complexion</li></ul>",
+        "text": "<ul><li>Extend your treatment beyond the face for an all-over rejuvenated look</li><li>Visibly smooth fine lines, improve skin texture, and support firmness</li><li>Helps reduce the look of dark spots and improve uneven tone for a more radiant complexion</li></ul>",
         "image": "shopify://shop_images/hero.webp",
         "image_mobile": "shopify://shop_images/hero-mob-1.webp",
         "rating_text": "<p><strong>97%</strong> customer satisfaction rate</p>",

@@ -14,7 +14,7 @@
       "name": "t:sections.banner-with-text.name",
       "settings": {
         "heading": "Your results are in.",
-        "text": "<p><strong>Let’s transform your dark spots!</strong></p><p>We put together a straightforward, no-nonsense program just for you and your skin. It’s aimed to help reveal a brighter, more even complexion to build back your confidence.</p>",
+        "text": "<p><strong>Let’s fade the look of dark spots!</strong></p><p>We’ve created a straightforward, no-nonsense program designed to help visibly brighten and even out your complexion — so your skin looks clearer, smoother, and more radiant with consistency.</p>",
         "quote": "",
         "quote-mobile": "",
         "image_position": "right",
@@ -33,7 +33,7 @@
           "settings": {
             "product": "q-rejuvalight-pro-facewear",
             "text": "A hands-free LED light therapy mask that uses clinically proven wavelengths to target multiple skin concerns.",
-            "list": "<p>FDA-cleared device that treats acne, fine lines, wrinkles and dark spots.</p><p>Customizable treatment on 5 facial areas for your specific skin concerns.</p><p>Quick 3 minute, wireless daily treatments with convenient hands-free operation.</p>",
+            "list": "<p>FDA-cleared device designed to treat wrinkles and mild-to-moderate inflammatory acne.</p><p>Customizable treatment on 5 facial areas for your specific skin concerns..</p><p>Quick 3 minute, wireless daily treatments with convenient hands-free operation..</p>",
             "button_label": "Add to Bundle",
             "review_heading": "<p><strong>“I noticed results straight away!</strong></p>",
             "review_text": "<p>Now I can’t go a day without the Q-Rejuvalight Mask.”</p>",
@@ -78,7 +78,7 @@
           "settings": {
             "product": "neck-decolletage-led",
             "text": "A targeted LED light therapy device designed specifically for the delicate skin on your neck and chest.",
-            "list": "<p>Uses wavelengths of LED light that have been clinically proven to support skin clarity and repair.</p><p>Helps even skin tone and improve the feel of firmness.</p><p>Pairs seamlessly with Qure’s Micro-Infusion for enhanced results.</p>",
+            "list": "<p>Uses wavelengths of LED light that have been clinically studied to support skin clarity and appearance.</p><p>Helps promote a more even-looking tone and smoother, firmer-feeling skin.</p><p>Pairs seamlessly with Qure’s Micro-Infusion System for visibly enhanced results.</p>",
             "button_label": "Add to Bundle",
             "review_heading": "<p><strong>“I’m surprised how much younger my neck looks</strong></p>",
             "review_text": "<p>and my skin looks and feels more rejuvenated.”</p>",
@@ -161,7 +161,7 @@
           "settings": {
             "button_label": "Daily",
             "heading": "<p><strong>How To Use</strong></p>",
-            "text": "<p>Cleanse and dry your skin. Put on your Q-Rejuvalight Pro on the Pro-Aging treatment mode for a full 3 minute session. Follow with the All-In-One Face Serum, applying to your face and neck.</p>",
+            "text": "<p>Cleanse and dry your skin. Put on your Q-Rejuvalight Pro on the Skin Rejuvenating treatment mode for a full 3 minute session. Follow with the All-In-One Face Serum, applying to your face and neck.</p>",
             "subheading": "<p><strong>Benefits</strong></p>",
             "subtext": "",
             "am_or_pm": "both",
@@ -224,8 +224,8 @@
         "slider_V8pUkE": {
           "type": "slider",
           "settings": {
-            "heading": "Great results so far!",
-            "text": "<p>“After only 3 weeks of use I can see a visible change in the texture and color of my skin. I have a lot of sun damage in my chest so I imagine I will need to use my device consistently for a few months before I see a huge difference but I am already noticing improvement and am very happy with my purchase. I highly recommend!”</p>",
+            "heading": "Visible improvement so far!",
+            "text": "<p>“After only 3 weeks of use, I’ve noticed visible improvements in the texture and tone of my skin. I had uneven tone from sun exposure, so I plan to keep using it consistently for best results. I’m already seeing a difference and couldn’t be happier!”</p>",
             "compare_image": "shopify://shop_images/Brooke.webp",
             "country_image": "shopify://shop_images/america_f.webp",
             "username": "<p>Brooke B.</p>",
@@ -329,6 +329,7 @@
       "type": "trusted-recommended",
       "name": "t:sections.trusted-recommended.name",
       "settings": {
+        "background_color": "#ffffff",
         "heading": "Trusted and Recommended by Experts",
         "text": "<p>“Of all the LED masks we’ve tried, this is <strong>the best on the market right now...</strong> It didn’t lose in any category...</p><p>There’s real science behind LED therapy, and <strong>Qure makes it easy</strong> to be consistent—which is what really drives results.”</p>",
         "image_text": "",
@@ -343,7 +344,7 @@
         "slider_zemfQq": {
           "type": "slider",
           "settings": {
-            "heading": "<p>\"Using a device like this consistently will fade brown spots and sun damage over time.”</p>",
+            "heading": "<p>“Using this product consistently can help visibly improve uneven tone and discoloration over time.”</p>",
             "text": "<p>Dr. Prem Tripathi</p>",
             "sub_text": "<p>Board-Certified Dermatologist</p>",
             "url": "xoh5ew7v31",
@@ -365,7 +366,7 @@
         "slider_3TQMGn": {
           "type": "slider",
           "settings": {
-            "heading": "<p>\"One of the best ways to treat hyperpigmentation at home.\"</p>",
+            "heading": "<p>\"One of the best ways to address the look of hyperpigmentation at home.\"</p>",
             "text": "<p>Dr. Wallace Nozile</p>",
             "sub_text": "<p>Board-Certified Dermatologist</p>",
             "url": "ypvcdsgwkx",
