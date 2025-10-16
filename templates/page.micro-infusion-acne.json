@@ -141,7 +141,7 @@
       "name": "t:sections.banner-with-text.name",
       "settings": {
         "heading": "Qure’s Micro-Infusion goes where your skin cream can’t…",
-        "text": "<p>Its tiny, almost painless, microneedles penetrate beyond the skin's surface to <em>activate skin regeneration</em> and deliver powerful active ingredients EXACTLY where they're needed for scar improvement!</p>",
+        "text": "<p>Its tiny, almost painless, 24K gold-plated, EO-sterilized (ethylene oxide) 0.5 mm microneedles gently press onto the skin’s surface to help <em>improve the feel of firmness</em>, smooth texture, and <em>r</em><em><strong>educe the look of fine lines</strong></em> and wrinkles.</p>",
         "quote": "",
         "quote-mobile": "",
         "image_position": "left",
@@ -274,8 +274,8 @@
           "type": "content",
           "settings": {
             "heading": "Fade Acne Scars",
-            "text": "<p>Qure’s Micro-Infusion can help fade the appearance of acne scars by combining gentle microneedling with targeted serum delivery.</p>",
-            "list": "<p>Improves stubborn acne scars where topicals can’t reach</p><p>Stimulates skin regeneration to smooth deep, pitted texture</p><p>Creates visible improvement in scar appearance over time.</p>",
+            "text": "<p>Qure’s Micro-Infusion can help visibly reduce the look of acne scars by combining gentle micro-infusion technology with targeted serum delivery.</p>",
+            "list": "<p>Supports skin renewal for smoother-looking texture</p><p>Creates visible improvement in the appearance of scars over time</p><p>Helps improve the look of stubborn acne marks where topicals may not reach</p>",
             "username": "Ela O.",
             "image": "shopify://shop_images/ela.webp",
             "country_image": "shopify://shop_images/america_f.webp"
