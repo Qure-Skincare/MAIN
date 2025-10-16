@@ -96,7 +96,7 @@
         "slider_EkJHPF": {
           "type": "slider",
           "settings": {
-            "heading": "“A true microneedling treatment - creating microchannels that increase collagen and elastin production and product absorption.”",
+            "heading": "“A true micro-infusion treatment — creating microchannels that help enhance serum absorption and support visibly smoother-looking skin.”",
             "image": "shopify://shop_images/bazzar.svg"
           }
         },
@@ -391,13 +391,13 @@
         "numbered_list_n6pbga": {
           "type": "numbered_list",
           "settings": {
-            "text": "First, it uses tiny 24K gold needles (thinner than a hair) to gently press into your skin. This helps improve firmness and smooth out fine lines."
+            "text": "First, it uses tiny 24K gold-plated, EO-sterilized needles (thinner than a hair) to gently press against your skin. This helps visibly smooth and refine the look of fine lines."
           }
         },
         "numbered_list_nGHdDi": {
           "type": "numbered_list",
           "settings": {
-            "text": "Next, it delivers serum through the tiny channels created, so your skin absorbs the ingredients more deeply."
+            "text": "Next, it delivers serum through the tiny surface channels created, helping your skin better absorb the ingredients."
           }
         }
       },
@@ -412,7 +412,7 @@
         "quote": "",
         "quote-mobile": "",
         "image_position": "left",
-        "sub_text": "Perfect for anyone wanting to add a fresh, dewy glowing look to their skin, especially before an event or occasion.",
+        "sub_text": "Perfect for anyone wanting to add a fresh, dewy, glowing look to their skin, especially before an event or occasion.",
         "image": "shopify://shop_images/dual-action_men.webp",
         "button_label": "",
         "button_url": "",
@@ -469,6 +469,7 @@
       "type": "trusted-recommended",
       "name": "t:sections.trusted-recommended.name",
       "settings": {
+        "background_color": "#ffffff",
         "heading": "Trusted and Recommended by Experts",
         "text": "<p>“This treatment is an at-home option for those who want to <strong>avoid the hassle or cost of going to the office”.</strong></p>",
         "image_text": "",
@@ -1316,7 +1317,9 @@
         "heading": "Have questions?",
         "text": "Don’t see your question?",
         "button_label": "Ask us",
-        "button_url": "#"
+        "button_url": "#",
+        "terms-conditions": false,
+        "promotional_terms_and_conditions": ""
       }
     },
     "sticky_cta_yKcXPF": {
