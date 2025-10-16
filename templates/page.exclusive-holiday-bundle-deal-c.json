@@ -177,7 +177,7 @@
       "settings": {
         "background_color": "#f6f6f7",
         "display_mode": "both"
-      }
+      } 
     },
     "trusted_reviews_9WdXCj": {
       "type": "trusted-reviews",
@@ -413,7 +413,7 @@
           "type": "product",
           "disabled": true,
           "settings": {
-            "product": "fade-firm-bundle-advanced-bf25",
+            "product": "fade-firm-bundle-advanced-bf25-sku",
             "preselected": false,
             "soldout": false,
             "reserved": false
@@ -491,6 +491,100 @@
         "heading": "Choose Your Bundle",
         "text": "Long term healthy skin and better self-esteem starts here.",
         "form_name": "purchase-form-bundle"
+      }
+    },
+    "slider_featured_in_RUfV4m": {
+      "type": "slider-featured-in",
+      "blocks": {
+        "slider_ymUfgY": {
+          "type": "slider",
+          "settings": {
+            "heading": "“The professional grade is the perfect addition to any at-home skincare routine.”",
+            "image": "shopify://shop_images/vogue-black.svg"
+          }
+        },
+        "slider_eJj9q6": {
+          "type": "slider",
+          "settings": {
+            "heading": "“One of my favorite devices for the neck [...] It has a quick treatment time of 10 minutes, which makes it easy for someone to work into their daily routine.”",
+            "image": "shopify://shop_images/womens-health.svg"
+          }
+        },
+        "slider_x3CRkV": {
+          "type": "slider",
+          "settings": {
+            "heading": "“A foolproof pick: It’s affordable and high quality with dual-core red and near-infrared wavelengths.”",
+            "image": "shopify://shop_images/Popsugar_logo.svg"
+          }
+        },
+        "slider_Bzr4eD": {
+          "type": "slider",
+          "settings": {
+            "heading": "“It complements the face mask and targets areas that age first. I think it is most important for your first LED treatment.”",
+            "image": "shopify://shop_images/cosmopolitan_70c5f571-db67-4d3f-8998-714fa10f89be.svg"
+          }
+        },
+        "slider_4jJE7W": {
+          "type": "slider",
+          "settings": {
+            "heading": "“It complements the face mask and targets areas that age first. I think it is most important for your first LED treatment.”",
+            "image": "shopify://shop_images/gq.svg"
+          }
+        }
+      },
+      "block_order": [
+        "slider_ymUfgY",
+        "slider_eJj9q6",
+        "slider_x3CRkV",
+        "slider_Bzr4eD",
+        "slider_4jJE7W"
+      ],
+      "name": "t:sections.slider-featured-in.name",
+      "settings": {}
+    },
+    "carousel_BHi3nq": {
+      "type": "carousel",
+      "blocks": {
+        "items_Jjd3LP": {
+          "type": "items",
+          "settings": {
+            "heading": "Proven Results,<br> Backed By Science",
+            "image": "shopify://shop_images/proven-result_aa0bded8-61de-481c-a572-de3ee2ebd568.svg"
+          }
+        },
+        "items_KgwGX6": {
+          "type": "items",
+          "settings": {
+            "heading": "Dermatologist<br> Approved",
+            "image": "shopify://shop_images/sheild_0b8742b5-c607-4820-834a-1c5a5fb1eabf.svg"
+          }
+        },
+        "items_LaLBeG": {
+          "type": "items",
+          "settings": {
+            "heading": "Treat Multiple<br> Skin Concerns",
+            "image": "shopify://shop_images/spark.svg"
+          }
+        },
+        "items_AcfKTd": {
+          "type": "items",
+          "settings": {
+            "heading": "Save Time<br> and Money",
+            "image": "shopify://shop_images/drops.svg"
+          }
+        }
+      },
+      "block_order": [
+        "items_Jjd3LP",
+        "items_KgwGX6",
+        "items_LaLBeG",
+        "items_AcfKTd"
+      ],
+      "disabled": true,
+      "name": "t:common.carousel",
+      "settings": {
+        "background_color": "#ffffff",
+        "display_mode": "static"
       }
     },
     "slider_featured_in_RUfV4m": {
@@ -658,51 +752,6 @@
         "heading": "Need help finding your new routine?",
         "text": "<p>You don’t have time for products that don’t work. We’ll prescribe you a personalized routine with clinically proven products and tips - just for your skin.</p>",
         "sub_text": "Here’s your personalized skincare routine…"
-      }
-    },
-    "carousel_BHi3nq": {
-      "type": "carousel",
-      "blocks": {
-        "items_Jjd3LP": {
-          "type": "items",
-          "settings": {
-            "heading": "Proven Results,<br> Backed By Science",
-            "image": "shopify://shop_images/proven-result_aa0bded8-61de-481c-a572-de3ee2ebd568.svg"
-          }
-        },
-        "items_KgwGX6": {
-          "type": "items",
-          "settings": {
-            "heading": "Dermatologist<br> Approved",
-            "image": "shopify://shop_images/sheild_0b8742b5-c607-4820-834a-1c5a5fb1eabf.svg"
-          }
-        },
-        "items_LaLBeG": {
-          "type": "items",
-          "settings": {
-            "heading": "Treat Multiple<br> Skin Concerns",
-            "image": "shopify://shop_images/spark.svg"
-          }
-        },
-        "items_AcfKTd": {
-          "type": "items",
-          "settings": {
-            "heading": "Save Time<br> and Money",
-            "image": "shopify://shop_images/drops.svg"
-          }
-        }
-      },
-      "block_order": [
-        "items_Jjd3LP",
-        "items_KgwGX6",
-        "items_LaLBeG",
-        "items_AcfKTd"
-      ],
-      "disabled": true,
-      "name": "t:common.carousel",
-      "settings": {
-        "background_color": "#ffffff",
-        "display_mode": "static"
       }
     },
     "compare_9f4PmB": {
@@ -969,10 +1018,10 @@
     "trusted_reviews_9WdXCj",
     "purchase_form_bundle_Lj9cVS",
     "slider_featured_in_RUfV4m",
+    "carousel_BHi3nq",
     "trusted_recommended_Hp8pkA",
     "video_slider_HtrKKA",
     "quiz_V6p9AW",
-    "carousel_BHi3nq",
     "compare_9f4PmB",
     "page_exclusive_holiday_bundle_trusted_reviews_img_kCfC33",
     "page_banner_eaDxdy",

@@ -573,6 +573,7 @@
       "type": "trusted-recommended",
       "name": "t:sections.trusted-recommended.name",
       "settings": {
+        "background_color": "#ffffff",
         "heading": "Trusted and Recommended by Experts",
         "text": "<p>“This treatment is an at-home option for those who want to <strong>avoid the hassle or cost of going to the office”.</strong></p>",
         "image_text": "",
@@ -764,7 +765,7 @@
             "product_1": "Q-Rejuvalight Pro LED Mask",
             "link_url_1": "https://qureskincare.com/products/q-rejuvalight-pro-facewear",
             "image_1": "shopify://shop_images/q-rejuvalight-mask.webp",
-            "product_2": "Neck & Décolletage LED Device",
+            "product_2": "Neck & Décolletage LED System",
             "link_url_2": "https://qureskincare.com/products/neck-decolletage-led?ref=5aea19bd-da85-4b42-b898-49a9d9f81d61&sub_id=visualPreviewInitialLoad",
             "image_2": "shopify://shop_images/neck-led-device.webp"
           }

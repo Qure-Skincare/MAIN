@@ -85,8 +85,8 @@
       "name": "t:sections.page-header.name",
       "settings": {
         "rating": "<p><strong>4.8</strong>/5 Rated by Customers</p>",
-        "heading": "Fade dark spots and reveal even complexion with this 5-minute treatment",
-        "description": "<ul><li>Targets dark spots beneath the surface where topicals can't reach</li><li>Improves uneven skin tone for a smoother, brighter look</li><li>Minimal to no downtime, virtually painless and ready to perform conveniently from home</li></ul>",
+        "heading": "Visibly fade dark spots with this 5-minute treatment",
+        "description": "<ul><li>Helps reduce the look of dark spots and uneven tone where topicals may not reach</li><li>Improves the appearance of uneven skin tone for a smoother, brighter-looking complexion</li><li>Minimal to no downtime, virtually painless, and easy to perform conveniently from home</li></ul>",
         "button-label": "Get Smoother, Glowing Skin",
         "button-url": "#purchase-form"
       }
@@ -104,7 +104,7 @@
         "slider_9Vz7Et": {
           "type": "slider",
           "settings": {
-            "heading": "“A true microneedling treatment - creating microchannels that increase collagen and elastin production and product absorption.”",
+            "heading": "“A true micro-infusion treatment — creating microchannels that help enhance serum absorption and support visibly smoother-looking skin.”",
             "image": "shopify://shop_images/bazzar_7e77b76f-8145-4f52-9a6e-ee72a2910d1c.svg"
           }
         },
@@ -149,7 +149,7 @@
       "name": "t:sections.banner-with-text.name",
       "settings": {
         "heading": "Qure’s Micro-Infusion goes where your skin cream can’t…",
-        "text": "<p>Its tiny, almost painless, microneedles penetrate beyond the skin's surface to <em>activate skin regeneration</em><strong> </strong>and deliver powerful active ingredients EXACTLY where they're needed!</p>",
+        "text": "<p>Its tiny, almost painless, 24K gold-plated, EO-sterilized needles gently press against the skin’s surface to help<em><strong> improve the look of uneven pigmentation</strong></em> and deliver active ingredients right where they’re most effective.</p>",
         "quote": "",
         "quote-mobile": "",
         "image_position": "left",
@@ -246,8 +246,8 @@
       "name": "t:sections.banner-with-text.name",
       "settings": {
         "heading": "Introducing the Qure Micro-Infusion System",
-        "text": "<ul><li>Works beneath the surface where topicals can't reach to target <strong>stubborn dark spots</strong> and uneven tone</li><li>Wake up with <strong>radiant, more even-toned</strong> skin</li><li>Minimal to no downtime, and <strong>virtually painless</strong></li><li>Easy to use <strong>5-minute</strong> treatment</li></ul>",
-        "quote": "<p>“<strong>Even my esthetician is hooked!</strong>And I can now visit beauty clinics less often.”</p>",
+        "text": "<ul><li>Helps improve the look of <strong>stubborn dark spots</strong> and uneven tone where topicals may not reach</li><li>Wake up with <strong>radiant, more even-toned </strong>skin</li><li>Minimal to no downtime, and virtually painless</li><li>Easy to use <strong>5-minute</strong> treatment</li></ul>",
+        "quote": "<p>“<strong>Even my esthetician is hooked! </strong>And I can now visit beauty clinics less often.”</p>",
         "quote-mobile": "",
         "image_position": "right",
         "sub_text": "",
@@ -282,8 +282,8 @@
           "type": "content",
           "settings": {
             "heading": "Fade Hyperpigmentation and Dark Spots",
-            "text": "<p>Qure’s Micro-Infusion can help reduce the appearance of dark spots and uneven tone by combining gentle microneedling with targeted brightening serum delivery.</p>",
-            "list": "<p>Helps target stubborn pigmentation where topicals can’t reach</p><p>Supports skin renewal for a more even-looking complexion</p><p>Creates visible improvement in tone and clarity over time</p>",
+            "text": "<p>Qure’s Micro-Infusion can help visibly reduce the look of dark spots and uneven tone by combining gentle micro-infusion technology with targeted brightening serum delivery.</p>",
+            "list": "<p>Helps improve the look of stubborn pigmentation where topicals may not reach</p><p>Supports skin renewal for a more even-looking complexion</p><p>Creates visible improvement in skin tone and clarity over time</p>",
             "username": "Kyla R.",
             "image": "shopify://shop_images/kyla.webp",
             "country_image": "shopify://shop_images/america_f.webp"
@@ -293,8 +293,8 @@
           "type": "content",
           "settings": {
             "heading": "Improve Tone and Texture",
-            "text": "<p>Uneven tone can make skin look older and less healthy. Micro-Infusion helps minimize the look of blotchiness by delivering concentrated ingredients where they’re needed most.</p>",
-            "list": "<p>Helps minimize the look of pores for a smoother, clearer complexion</p><p>Softens the appearance of redness and patchiness</p><p>Targets rough texture and uneven tone</p>",
+            "text": "<p>Uneven tone can make skin appear dull and tired-looking. Qure’s Micro-Infusion helps minimize the look of blotchinessby delivering concentrated ingredients right where they’re most effective.</p>",
+            "list": "<p>Helps minimize the look of pores for a smoother, clearer-looking complexion</p><p>Softens the appearance of redness and uneven patches</p><p>Helps refine rough texture and uneven tone</p>",
             "username": "Jess M.",
             "image": "shopify://shop_images/jess.webp",
             "country_image": "shopify://shop_images/america_f.webp"
@@ -304,8 +304,8 @@
           "type": "content",
           "settings": {
             "heading": "Boost Glow and Revive Dull Skin",
-            "text": "<p>Refresh tired-looking skin by infusing hydrating, brightening ingredients deep into the skin for a fresh, radiant finish that lasts.</p>",
-            "list": "<p>Brightens the look of tired skin for a healthier appearance</p><p>Boosts hydration to help skin look plump and refreshed</p><p>Leaves skin looking refreshed and full of life</p>",
+            "text": "<p>Restore skin’s glow by infusing hydrating and brightening ingredients for a fresh, radiant-looking finish that lasts.</p>",
+            "list": "<p>Brightens dull-looking skin for a healthy, radiant complexion</p><p>Leaves skin looking smoother, refreshed, and revitalized</p><p>Enhances serum absorption for more visible results</p>",
             "username": "Monika J.",
             "image": "shopify://shop_images/monika.webp",
             "country_image": "shopify://shop_images/australia_f.webp"
@@ -435,13 +435,13 @@
         "numbered_list_n6pbga": {
           "type": "numbered_list",
           "settings": {
-            "text": "First, it uses tiny 24K gold needles (thinner than a hair) to gently press into your skin. This helps improve firmness and smooth out fine lines."
+            "text": "First, it uses tiny 24K gold-plated, EO-sterilized needles (thinner than a hair) to gently press against your skin. This helps visibly smooth and refine the look of fine lines."
           }
         },
         "numbered_list_nGHdDi": {
           "type": "numbered_list",
           "settings": {
-            "text": "Next, it delivers serum through the tiny channels created, so your skin absorbs the ingredients more deeply."
+            "text": "Next, it delivers serum through the tiny surface channels created, helping your skin better absorb the ingredients."
           }
         }
       },
@@ -456,7 +456,7 @@
         "quote": "",
         "quote-mobile": "",
         "image_position": "left",
-        "sub_text": "Perfect for anyone who has struggled with stubborn acne scars and uneven texture that hasn't responded to other treatments.",
+        "sub_text": "Perfect for anyone wanting to add a fresh, dewy, glowing look to their skin, especially before an event or occasion.",
         "image": "shopify://shop_images/dual_action-women.webp",
         "button_label": "",
         "button_url": "",
@@ -490,7 +490,7 @@
         "slider_XHHhXh": {
           "type": "slider",
           "settings": {
-            "text": "<p>2-in-1 system rejuvenates skin & infuses serum deeper for faster results</p>",
+            "text": "<p>2-in-1 system refreshes the<br/> look of skin for a visible<br/> glow.</p>",
             "image": "shopify://shop_images/mi_pdp_icon_4.webp"
           }
         },
@@ -521,6 +521,7 @@
       "type": "trusted-recommended",
       "name": "t:sections.trusted-recommended.name",
       "settings": {
+        "background_color": "#ffffff",
         "heading": "Trusted and Recommended by Experts",
         "text": "<p>“This treatment is an at-home option for those who want to <strong>avoid the hassle or cost of going to the office”.</strong></p>",
         "image_text": "",
@@ -579,7 +580,7 @@
         "slider_FC8BrX": {
           "type": "slider",
           "settings": {
-            "heading": "<p>\"One of the best ways to treat hyperpigmentation at home.\"</p>",
+            "heading": "<p>“One of the best ways to help improve the look of hyperpigmentation at home.”</p>",
             "text": "<p>Dr. Wallace Nozile</p>",
             "sub_text": "<p>Board-Certified Dermatologist</p>",
             "url": "ypvcdsgwkx",
@@ -590,7 +591,7 @@
         "slider_rWeyGn": {
           "type": "slider",
           "settings": {
-            "heading": "<p>\"With Micro-Infusion, you get to see the results almost instantly.\"</p>",
+            "heading": "<p>“With Micro-Infusion, you may notice visible results quickly after your first treatment.”</p>",
             "text": "<p>Dr. Davin Lim</p>",
             "sub_text": "<p>Board-Certified Dermatologist</p>",
             "url": "3bud7no0j9",
@@ -782,7 +783,7 @@
           "type": "compare",
           "settings": {
             "check_text": "<p>New needle heads provide sharp, straight needles for every treatment - designed for better efficacy</p>",
-            "cross_text": "<p>Needles become blunt after several uses & create unnecessary skin trauma which can lessen efficacy</p>",
+            "cross_text": "<p>Needles become blunt after several uses & may cause unnecessary irritation which can affect results</p>",
             "checkbox": false
           }
         },
@@ -797,7 +798,7 @@
         "compare_XyCyNE": {
           "type": "compare",
           "settings": {
-            "check_text": "<p>Delivers serum directly to skin to help increase absorption & results</p>",
+            "check_text": "<p>Applies serum onto the skin to enhance absorption and visible results</p>",
             "cross_text": "<p>Less effective absorption of serum as applied topically</p>",
             "checkbox": false
           }
@@ -813,7 +814,7 @@
       ],
       "name": "t:sections.compare.name",
       "settings": {
-        "heading": "Typically more effective and safer than other at-home needling devices",
+        "heading": "Typically a more hygienic option than re-usable at-home rollers when used as directed",
         "text": "<p>Unlike at-home needle roller devices, Micro-Infusion requires little to no downtime, is virtually painless, and minimizes risk of infection and irritation.</p>",
         "image_compare_check": "shopify://shop_images/mist_img_3.webp",
         "image_compare_cross": "shopify://shop_images/mist_img_4.webp"
@@ -876,7 +877,7 @@
           "type": "accordion",
           "settings": {
             "heading": "What can it do for your skin",
-            "text": "<p>Reveals a smoother, brighter looking, and evenly radiant complexion to generate a glow effect. Renewal properties to help fade the appearance of dark spots and restore even-looking, smoother-feeling skin.</p><p><strong>Skin Concerns:</strong> Designed for skin with discoloration, rough texture, enlarged pores, acne marks and dark spots.</p>"
+            "text": "<p>Helps reveal a smoother-looking, more radiant complexion. Formulated to help improve the appearance of dark spots and uneven tone for skin that looks refreshed and luminous.<br/><br/><strong>Skin Concerns:</strong>Ideal for skin that appears uneven in tone or texture and shows visible dark spots or post-blemish marks.</p>"
           }
         },
         "accordion_difXNr": {
@@ -902,10 +903,10 @@
       ],
       "name": "t:sections.serum-infusions.name",
       "settings": {
-        "heading": "Science-Backed Micro-Infusion Serums",
-        "text": "Choose the exact serum to use in your Micro-Infusion treatment, or get both and mix them together to experience a complete set of benefits that addresses your specific skin concerns.",
-        "heading_mobile": "Science-Backed Micro-Infusion Serums",
-        "text_mobile": "Choose the exact serum to use in your Micro-Infusion treatment, or get both and mix them together to experience a complete set of benefits that addresses your specific skin concerns.",
+        "heading": "",
+        "text": "",
+        "heading_mobile": "",
+        "text_mobile": "",
         "image": "shopify://shop_images/serums-lady2.webp",
         "image_header": "Rejuvenating Serum",
         "image_text": "For Dark Spots",
@@ -1256,7 +1257,7 @@
           "type": "accordion",
           "settings": {
             "heading": "What are the benefits of Micro-Infusion?",
-            "text": "<p>The needles of the Micro-Infusion device and the stamping action triggers the body’s natural healing process and in turn boosts the production of collage, making your look firmer and fine lines look softer.</p><p>The serum that you choose to infuse during your Micro-Infusion will determine the major benefits of your treatment. Very fine needles infuse micro-droplets of concentrated serum at a specific depth into the dermis (top layer) of your skin precisely where they are needed to accelerate absorption of active ingredients that target specific skin concerns.</p><p>You can switch up your treatments and even mix the two serums together!</p><p><em>Visible benefits of Micro-Infusion include:</em></p><ul><li>More even skin tone and texture</li><li>Glowing, fresh complexion</li><li>Softer fine lines</li><li>Firmer, rejuvenated skin</li></ul>",
+            "text": "<p>The stamping action of the Micro-Infusion device creates tiny micro-channels on the surface of the skin, helping to enhance the absorption of active ingredients and visibly refresh the complexion.<br/><br/>The serum you choose during your Micro-Infusion treatment will deliver visible results over time. Very fine needles help apply concentrated ingredients exactly where they’re needed to target specific skin concerns with precision.<br/><br/>You can switch up your treatments or even mix the two serums together!<br/><br/>Visible benefits of Micro-Infusion may include:<br/></p><ul><li>More even-looking skin tone and texture</li><li>Glowing, refreshed-looking complexion</li><li>Softer-looking fine lines</li><li>Skin that feels renewed and rejuvenated</li></ul>",
             "link_url": "",
             "link_text": ""
           }
@@ -1319,7 +1320,7 @@
           "type": "accordion",
           "settings": {
             "heading": "How is this different to micro-rolling?",
-            "text": "<p>Micro-needling focuses on stimulating your body's own collagen by creating micro-injuries. But it doesn’t deliver any ingredients directly into your skin.</p><p>With Micro-Infusion, you not only reap the benefits of micro-needling, but also deliver active ingredient solutions to target your specific skin concerns - This makes it work quicker and more effectively.</p>",
+            "text": "<p>Micro-Infusion focuses on improving the skin’s appearance by creating micro-channels on the skin’s surface. It does not alter or affect skin structure or function.<br/><br/>With Micro-Infusion, you not only enjoy the visible benefits of micro-needling, but also deliver science-backed ingredients to targeted areas with precision — helping the skin appear smoother and more radiant.</p>",
             "link_url": "",
             "link_text": ""
           }
@@ -1350,7 +1351,9 @@
         "heading": "Have questions?",
         "text": "",
         "button_label": "Ask us",
-        "button_url": ""
+        "button_url": "",
+        "terms-conditions": false,
+        "promotional_terms_and_conditions": ""
       }
     },
     "sticky_cta_yKcXPD": {
