@@ -821,7 +821,7 @@
             "text": "<p>Susie Spring</p>",
             "sub_text": "<p>Harvard-Certified Skin Expert</p>",
             "url": "https://www.instagram.com/reel/DLA9moNI3Cr/",
-            "checkbox": false,
+            "checkbox": true,
             "image": "shopify://shop_images/Image_20_7fa4ffd1-0309-4a07-82b1-be1f41f1b96e.png"
           }
         }
