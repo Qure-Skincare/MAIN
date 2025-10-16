@@ -85,8 +85,8 @@
       "name": "t:sections.page-header.name",
       "settings": {
         "rating": "<p><strong>4.8</strong>/5 Rated by Customers</p>",
-        "heading": "Fade dark spots and reveal even complexion with this 5-minute treatment",
-        "description": "<ul><li>Targets dark spots beneath the surface where topicals can't reach</li><li>Improves uneven skin tone for a smoother, brighter look</li><li>Minimal to no downtime, virtually painless and ready to perform conveniently from home</li></ul>",
+        "heading": "Visibly fade dark spots with this 5-minute treatment",
+        "description": "<ul><li>Helps reduce the look of dark spots and uneven tone where topicals may not reach</li><li>Improves the appearance of uneven skin tone for a smoother, brighter-looking complexion</li><li>Minimal to no downtime, virtually painless, and easy to perform conveniently from home</li></ul>",
         "button-label": "Get Smoother, Glowing Skin",
         "button-url": "#purchase-form"
       }
@@ -521,6 +521,7 @@
       "type": "trusted-recommended",
       "name": "t:sections.trusted-recommended.name",
       "settings": {
+        "background_color": "#ffffff",
         "heading": "Trusted and Recommended by Experts",
         "text": "<p>“This treatment is an at-home option for those who want to <strong>avoid the hassle or cost of going to the office”.</strong></p>",
         "image_text": "",
@@ -1350,7 +1351,9 @@
         "heading": "Have questions?",
         "text": "",
         "button_label": "Ask us",
-        "button_url": ""
+        "button_url": "",
+        "terms-conditions": false,
+        "promotional_terms_and_conditions": ""
       }
     },
     "sticky_cta_yKcXPD": {
