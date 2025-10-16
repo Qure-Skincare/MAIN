@@ -11,8 +11,56 @@
   "type": "header",
   "name": "t:sections-group.header.name",
   "sections": {
+    "endrock-rotating-announcement": {
+      "type": "endrock__rotating-announcement",
+      "settings": {},
+      "blocks": {
+        "announcement-1": {
+          "type": "announcement",
+          "settings": {
+            "heading": "<strong>END OF SUMMER SALE</strong> 70% OFF Micro-Infusion",
+            "button-label": "Shop Now",
+            "button-url": "https://qureskincare.com/pages/microinfusion"
+          }
+        },
+        "announcement-2": {
+          "type": "announcement",
+          "settings": {
+            "heading": "<strong>Free Shipping</strong> on Orders Over $100",
+            "icon": "shopify://shop_images/icon-cart.png"
+          }
+        },
+        "announcement-3": {
+          "type": "announcement",
+          "settings": {
+            "heading": "<strong>Clinically Proven,</strong> Visible Results",
+            "icon": "shopify://shop_images/icon-shield.png"
+          }
+        },
+        "exclude-page-1": {
+          "type": "exclude-page",
+          "settings": {
+            "exclude-page": "exclusive-holiday-bundle-deal-new"
+          }
+        },
+        "exclude-page-2": {
+          "type": "exclude-page",
+          "settings": {
+            "exclude-page": "qure-microinfusion-offer"
+          }
+        }
+      },
+      "block_order": [
+        "announcement-1",
+        "announcement-2",
+        "announcement-3",
+        "exclude-page-1",
+        "exclude-page-2"
+      ]
+    },
     "footer-form": {
       "type": "announcement-bar",
+      "disabled": true,
       "settings": {
         "heading": "Autumn Glow Sale 67% OFF Micro-Infusion",
         "button-label": "Shop Now",
@@ -25,8 +73,5 @@
       "settings": {}
     }
   },
-  "order": [
-    "footer-form",
-    "header"
-  ]
+  "order": ["endrock-rotating-announcement", "footer-form", "header"]
 }
