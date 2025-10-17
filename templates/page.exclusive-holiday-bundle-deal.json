@@ -13,7 +13,7 @@
       "type": "announcement-bar",
       "name": "t:sections.announcement-bar.name",
       "settings": {
-        "heading": "Prime Day Promo 67% OFF Micro-Infusion",
+        "heading": "Autumn Glow Sale 67% OFF Micro-Infusion",
         "button-label": "SHOP NOW",
         "button-url": "https://qureskincare.com/pages/qure-microinfusion-offer",
         "show": false
@@ -418,8 +418,8 @@
             "country_image": "shopify://shop_images/america_f.webp",
             "username": "<p>Ana L.</p>",
             "product_url": "#",
-            "product_heading": "Ellie uses",
-            "product_text": "Micro infusion facial systems",
+            "product_heading": "Ana uses",
+            "product_text": "Micro infusion Facial Systems",
             "product_image": "shopify://shop_images/micro-infusion-facial-system_f0e75ccc-2fd2-48d6-aea7-fe662896adaa.webp"
           }
         },

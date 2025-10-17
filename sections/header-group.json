@@ -13,12 +13,11 @@
   "sections": {
     "endrock-rotating-announcement": {
       "type": "endrock__rotating-announcement",
-      "settings": {},
       "blocks": {
         "announcement-1": {
           "type": "announcement",
           "settings": {
-            "heading": "<strong>END OF SUMMER SALE</strong> 70% OFF Micro-Infusion",
+            "heading": "Autumn Glow Sale 67% OFF Micro-Infusion",
             "button-label": "Shop Now",
             "button-url": "https://qureskincare.com/pages/microinfusion"
           }
@@ -27,6 +26,8 @@
           "type": "announcement",
           "settings": {
             "heading": "<strong>Free Shipping</strong> on Orders Over $100",
+            "button-label": "",
+            "button-url": "",
             "icon": "shopify://shop_images/icon-cart.png"
           }
         },
@@ -34,6 +35,8 @@
           "type": "announcement",
           "settings": {
             "heading": "<strong>Clinically Proven,</strong> Visible Results",
+            "button-label": "",
+            "button-url": "",
             "icon": "shopify://shop_images/icon-shield.png"
           }
         },
@@ -56,7 +59,10 @@
         "announcement-3",
         "exclude-page-1",
         "exclude-page-2"
-      ]
+      ],
+      "settings": {
+        "delay": 3000
+      }
     },
     "footer-form": {
       "type": "announcement-bar",
@@ -73,5 +79,9 @@
       "settings": {}
     }
   },
-  "order": ["endrock-rotating-announcement", "footer-form", "header"]
+  "order": [
+    "endrock-rotating-announcement",
+    "footer-form",
+    "header"
+  ]
 }

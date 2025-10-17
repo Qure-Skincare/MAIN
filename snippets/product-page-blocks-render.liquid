@@ -28,7 +28,11 @@
                 {% when 'black-friday-discount' %}
                     {% render 'product-page-black-friday-discount', section: section, block: block %}
                 {% when 'exclusive-offer' %}
-                    {% render 'page-exclusive-offer', section: section, block: block %}
+                    {% if product_variant_id %}
+                        {% include 'product-exclusive-offer', section: section, block: block %}
+                    {% else %}
+                        {% include 'page-exclusive-offer', section: section, block: block %}
+                    {% endif %}
                 {% when 'nextships' %}        
                     {% render 'product-page-next-ships', section: section, block: block %}
                 {% when 'button' %}

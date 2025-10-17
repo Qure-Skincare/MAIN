@@ -30,6 +30,16 @@
             "discount_percent": 26
           }
         },
+        "exclusive-offer_iaSzaD": {
+          "type": "exclusive-offer",
+          "settings": {
+            "product": "q-rejuvalight-pro-facewear-3",
+            "image_product1": "shopify://shop_images/Img_16.png",
+            "product2": "neck-decolletage-led",
+            "image_product2": "shopify://shop_images/ndBox.webp",
+            "text": "<p>Buy the Q-Rejuvalight Pro and get the Neck & Décolletage LED System for FREE (value $299)</p>"
+          }
+        },
         "price_A11": {
           "type": "price",
           "settings": {}
@@ -109,6 +119,7 @@
         "price_A11",
         "description_A10",
         "button_A9",
+        "exclusive-offer_iaSzaD",
         "limited_offer_A8",
         "nextships_A7",
         "jumpto_A1",
