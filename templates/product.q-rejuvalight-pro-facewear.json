@@ -30,16 +30,6 @@
             "discount_percent": 26
           }
         },
-        "exclusive-offer_iaSzaD": {
-          "type": "exclusive-offer",
-          "settings": {
-            "product": "q-rejuvalight-pro-facewear-3",
-            "image_product1": "shopify://shop_images/Img_16.png",
-            "product2": "neck-decolletage-led",
-            "image_product2": "shopify://shop_images/ndBox.webp",
-            "text": "<p>Buy the Q-Rejuvalight Pro and get the Neck & Décolletage LED System for FREE (value $299)</p>"
-          }
-        },
         "price_A11": {
           "type": "price",
           "settings": {}
@@ -51,6 +41,17 @@
         "button_A9": {
           "type": "button",
           "settings": {}
+        },
+        "exclusive-offer_iaSzaD": {
+          "type": "exclusive-offer",
+          "disabled": true,
+          "settings": {
+            "product": "q-rejuvalight-pro-facewear-3",
+            "image_product1": "shopify://shop_images/Img_16.png",
+            "product2": "neck-decolletage-led",
+            "image_product2": "shopify://shop_images/ndBox.webp",
+            "text": "<p>Buy the Q-Rejuvalight Pro and get the Neck & Décolletage LED System for FREE (value $299)</p>"
+          }
         },
         "limited_offer_A8": {
           "type": "limited-offer",
@@ -639,7 +640,10 @@
           }
         }
       },
-      "block_order": ["accordion_xTqqU8", "accordion_tNf6Vj"],
+      "block_order": [
+        "accordion_xTqqU8",
+        "accordion_tNf6Vj"
+      ],
       "name": "t:sections.how-it-works.name",
       "settings": {
         "heading": "How it works",
@@ -827,7 +831,11 @@
           }
         }
       },
-      "block_order": ["list_ELqhFc", "list_9wJPLV", "list_erY7DR"],
+      "block_order": [
+        "list_ELqhFc",
+        "list_9wJPLV",
+        "list_erY7DR"
+      ],
       "name": "t:sections.how-to-use.name",
       "settings": {
         "heading": "See how quick and easy it is to use",
@@ -960,7 +968,9 @@
           }
         }
       },
-      "block_order": ["stamped_product_reviews_ugc_main_widget_A4ebAn"],
+      "block_order": [
+        "stamped_product_reviews_ugc_main_widget_A4ebAn"
+      ],
       "settings": {}
     },
     "faq_46wWyJ": {
