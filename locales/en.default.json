@@ -265,6 +265,7 @@
     "exclusive-offer": {
       "header_html": "<div class='eo-header'><span>Autumn Glow </span><span>Sale</span></div>",
       "guarantee-text": "1-Year Guarantee",
+      "button-label": "BUY NOW AND SAVE",
       "shipping-text": "Free Shipping over $100",
       "free": "FREE"
     }

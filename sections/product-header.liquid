@@ -23,7 +23,7 @@
                         <h1 class="qure__product-title mb-10">{{ section.settings.heading }}</h1>
                     {% endif %}
 
-                    {% include 'product-page-blocks-render', allowed_types: 'limited-offer,nextships,button,description,price,section,black-friday-discount' %}
+                    {% include 'product-page-blocks-render', allowed_types: 'limited-offer,nextships,button,description,price,section,black-friday-discount,exclusive-offer' %}
                 </div>
             </div>
             <div class="col-lg-6 custom__block">
@@ -106,6 +106,38 @@
                     "type": "text",
                     "id": "section_id",
                     "label": "t:common.section_id"
+                }
+            ]
+        },
+        {
+            "type": "exclusive-offer",
+            "name": "t:common.exclusive-offer",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "product",
+                    "label": "t:common.product"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image_product1",
+                    "label": "t:common.image"
+                },
+                {
+                    "type": "text",
+                    "id": "product2",
+                    "label": "t:common.product"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image_product2",
+                    "label": "t:common.image"
+                },
+                {
+                    "type": "richtext",
+                    "id": "text",
+                    "label": "t:common.text"
                 }
             ]
         },
