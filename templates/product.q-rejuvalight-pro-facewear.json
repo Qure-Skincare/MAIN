@@ -741,6 +741,13 @@
             "youtube_url": "",
             "wistia_url": "https://qureskincare.wistia.com/medias/65rmmodyl1"
           }
+        },
+        "slider_dbPajp": {
+          "type": "slider",
+          "settings": {
+            "youtube_url": "",
+            "wistia_url": "65rmmodyl1"
+          }
         }
       },
       "block_order": [
@@ -755,7 +762,8 @@
         "slider_CgGbjj",
         "slider_Rinfeh",
         "slider_NNNQeY",
-        "slider_FcHNzm"
+        "slider_FcHNzm",
+        "slider_dbPajp"
       ],
       "name": "t:sections.video-review-slider.name",
       "settings": {
