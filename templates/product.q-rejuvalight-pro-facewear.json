@@ -599,6 +599,17 @@
             "image": "shopify://shop_images/trusted_rejuv_1.webp"
           }
         },
+        "slider_Dck8UD": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>“This mask is so cool because it has BOTH red light and blue light...”</p>",
+            "text": "<p>Care Clark</p>",
+            "sub_text": "<p>Registered Nurse</p>",
+            "url": "https://www.instagram.com/reel/DHEWXKVuS3c/",
+            "checkbox": false,
+            "image": "shopify://shop_images/Image_23_a7b81311-e1fc-46d7-b185-bd6d031d199d.png"
+          }
+        },
         "slider_gPNnzc": {
           "type": "slider",
           "disabled": true,
@@ -641,6 +652,7 @@
         "slider_kGwK6t",
         "slider_VwcHpm",
         "slider_xPgTYA",
+        "slider_Dck8UD",
         "slider_gPNnzc",
         "slider_dgCbHR",
         "slider_V4d9wU"
