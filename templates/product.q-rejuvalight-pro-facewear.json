@@ -543,6 +543,17 @@
     "video_slider_G8bjzR": {
       "type": "video-slider",
       "blocks": {
+        "slider_9gjKWw": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>\"This mask actively treats the entire face for clearer and more beautiful skin.\"</p>",
+            "text": "<p>Dr. Anthony Youn</p>",
+            "sub_text": "<p>Resident Doctor</p>",
+            "url": "https://www.youtube.com/watch?v=XtgmSadah48",
+            "checkbox": true,
+            "image": "shopify://shop_images/trusted_rejuv_4.webp"
+          }
+        },
         "slider_kGwK6t": {
           "type": "slider",
           "settings": {
@@ -574,17 +585,6 @@
             "url": "qnxqysx3sg",
             "checkbox": false,
             "image": "shopify://shop_images/trusted_rejuv_1.webp"
-          }
-        },
-        "slider_9gjKWw": {
-          "type": "slider",
-          "settings": {
-            "heading": "<p>\"This mask actively treats the entire face for clearer and more beautiful skin.\"</p>",
-            "text": "<p>Dr. Anthony Youn</p>",
-            "sub_text": "<p>Resident Doctor</p>",
-            "url": "https://www.youtube.com/watch?v=XtgmSadah48",
-            "checkbox": true,
-            "image": "shopify://shop_images/trusted_rejuv_4.webp"
           }
         },
         "slider_gPNnzc": {
@@ -622,10 +622,10 @@
         }
       },
       "block_order": [
+        "slider_9gjKWw",
         "slider_kGwK6t",
         "slider_VwcHpm",
         "slider_xPgTYA",
-        "slider_9gjKWw",
         "slider_gPNnzc",
         "slider_dgCbHR",
         "slider_V4d9wU"
