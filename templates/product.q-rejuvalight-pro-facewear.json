@@ -543,17 +543,6 @@
     "video_slider_G8bjzR": {
       "type": "video-slider",
       "blocks": {
-        "slider_xPgTYA": {
-          "type": "slider",
-          "settings": {
-            "heading": "<p>\"Qure has a fully customized mask which has 5 clinical-grade wavelength for aging and acne.\"</p>",
-            "text": "<p>Dr. Prem Tripathi</p>",
-            "sub_text": "<p>Board-Certified Dermatologist</p>",
-            "url": "qnxqysx3sg",
-            "checkbox": false,
-            "image": "shopify://shop_images/trusted_rejuv_1.webp"
-          }
-        },
         "slider_kGwK6t": {
           "type": "slider",
           "settings": {
@@ -574,6 +563,17 @@
             "url": "https://www.youtube.com/watch?v=AeksxRPZyrA",
             "checkbox": true,
             "image": "shopify://shop_images/trusted_rejuv_3.webp"
+          }
+        },
+        "slider_xPgTYA": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>\"Qure has a fully customized mask which has 5 clinical-grade wavelength for aging and acne.\"</p>",
+            "text": "<p>Dr. Prem Tripathi</p>",
+            "sub_text": "<p>Board-Certified Dermatologist</p>",
+            "url": "qnxqysx3sg",
+            "checkbox": false,
+            "image": "shopify://shop_images/trusted_rejuv_1.webp"
           }
         },
         "slider_9gjKWw": {
@@ -622,9 +622,9 @@
         }
       },
       "block_order": [
-        "slider_xPgTYA",
         "slider_kGwK6t",
         "slider_VwcHpm",
+        "slider_xPgTYA",
         "slider_9gjKWw",
         "slider_gPNnzc",
         "slider_dgCbHR",
