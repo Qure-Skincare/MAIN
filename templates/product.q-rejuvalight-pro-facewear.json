@@ -721,6 +721,14 @@
     "video_review_slider_Qx3NMq": {
       "type": "video-review-slider",
       "blocks": {
+        "slider_Eni939": {
+          "type": "slider",
+          "settings": {
+            "youtube_url": "https://www.youtube.com/watch?v=2eYXN_obpjs&t=495s",
+            "video_cover_image": "shopify://shop_images/Review_1.png",
+            "wistia_url": ""
+          }
+        },
         "slider_AH9pKk": {
           "type": "slider",
           "settings": {
@@ -808,6 +816,7 @@
         }
       },
       "block_order": [
+        "slider_Eni939",
         "slider_AH9pKk",
         "slider_NiNYGW",
         "slider_bbphF3",
