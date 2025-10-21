@@ -30,16 +30,6 @@
             "discount_percent": 26
           }
         },
-        "exclusive-offer_iaSzaD": {
-          "type": "exclusive-offer",
-          "settings": {
-            "product": "q-rejuvalight-pro-facewear-3",
-            "image_product1": "shopify://shop_images/Img_16.png",
-            "product2": "neck-decolletage-led",
-            "image_product2": "shopify://shop_images/ndBox.webp",
-            "text": "<p>Buy the Q-Rejuvalight Pro and get the Neck & Décolletage LED System for FREE (value $299)</p>"
-          }
-        },
         "price_A11": {
           "type": "price",
           "settings": {}
@@ -51,6 +41,16 @@
         "button_A9": {
           "type": "button",
           "settings": {}
+        },
+        "exclusive-offer_iaSzaD": {
+          "type": "exclusive-offer",
+          "settings": {
+            "product": "q-rejuvalight-pro-facewear-3",
+            "image_product1": "shopify://shop_images/Img_16.png",
+            "product2": "neck-decolletage-led",
+            "image_product2": "shopify://shop_images/ndBox.webp",
+            "text": "<p>Buy the Q-Rejuvalight Pro and get the Neck & Décolletage LED System for FREE (value $299)</p>"
+          }
         },
         "limited_offer_A8": {
           "type": "limited-offer",
@@ -543,19 +543,31 @@
     "video_slider_G8bjzR": {
       "type": "video-slider",
       "blocks": {
-        "slider_xPgTYA": {
+        "slider_9gjKWw": {
           "type": "slider",
           "settings": {
-            "heading": "<p>\"Qure has a fully customized mask which has 5 clinical-grade wavelength for aging and acne.\"</p>",
-            "text": "<p>Dr. Prem Tripathi</p>",
-            "sub_text": "<p>Board-Certified Dermatologist</p>",
-            "url": "qnxqysx3sg",
+            "heading": "<p>\"This mask actively treats the entire face for clearer and more beautiful skin.\"</p>",
+            "text": "<p>Dr. Anthony Youn</p>",
+            "sub_text": "<p>Resident Doctor</p>",
+            "url": "https://www.youtube.com/watch?v=XtgmSadah48",
+            "checkbox": true,
+            "image": "shopify://shop_images/trusted_rejuv_4.webp"
+          }
+        },
+        "slider_AjE9PU": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>“There is an overwhelming amount of data on red light therapy, and this is the mask I use daily. ”</p>",
+            "text": "<p>Dr. Berry Fairchild</p>",
+            "sub_text": "<p>Plastic Surgeon</p>",
+            "url": "cpifkaungu",
             "checkbox": false,
-            "image": "shopify://shop_images/trusted_rejuv_1.webp"
+            "image": "shopify://shop_images/Image_22_8a5ff1cc-d62c-41d1-ba88-3b5f724065e4.png"
           }
         },
         "slider_kGwK6t": {
           "type": "slider",
+          "disabled": true,
           "settings": {
             "heading": "<p>\"Qure’s at-home LED device works beneath the skin’s surface to support a smoother, firmer-looking complexion and makes a visible difference…\"</p>",
             "text": "<p>Dr. Dylan Greeney</p>",
@@ -576,19 +588,31 @@
             "image": "shopify://shop_images/trusted_rejuv_3.webp"
           }
         },
-        "slider_9gjKWw": {
+        "slider_xPgTYA": {
           "type": "slider",
           "settings": {
-            "heading": "<p>\"This mask actively treats the entire face for clearer and more beautiful skin.\"</p>",
-            "text": "<p>Dr. Anthony Youn</p>",
-            "sub_text": "<p>Resident Doctor</p>",
-            "url": "https://www.youtube.com/watch?v=XtgmSadah48",
-            "checkbox": true,
-            "image": "shopify://shop_images/trusted_rejuv_4.webp"
+            "heading": "<p>\"Qure has a fully customized mask which has 5 clinical-grade wavelength for aging and acne.\"</p>",
+            "text": "<p>Dr. Prem Tripathi</p>",
+            "sub_text": "<p>Board-Certified Dermatologist</p>",
+            "url": "qnxqysx3sg",
+            "checkbox": false,
+            "image": "shopify://shop_images/trusted_rejuv_1.webp"
+          }
+        },
+        "slider_Dck8UD": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>“This mask is so cool because it has BOTH red light and blue light...”</p>",
+            "text": "<p>Care Clark</p>",
+            "sub_text": "<p>Registered Nurse</p>",
+            "url": "povi0d5975",
+            "checkbox": false,
+            "image": "shopify://shop_images/Image_23_a7b81311-e1fc-46d7-b185-bd6d031d199d.png"
           }
         },
         "slider_gPNnzc": {
           "type": "slider",
+          "disabled": true,
           "settings": {
             "heading": "<p>\"These wavelengths help support your skin’s natural renewal process… helping reduce the look of common signs of aging.\"</p>",
             "text": "<p>Dr. Yaseen Arsalan</p>",
@@ -600,6 +624,7 @@
         },
         "slider_dgCbHR": {
           "type": "slider",
+          "disabled": true,
           "settings": {
             "heading": "<p>\"Not your average LED mask... this is a deeper, more effective way to achieve healthy, radiant skin.\"</p>",
             "text": "<p>Dr. Davin Lim</p>",
@@ -608,15 +633,53 @@
             "checkbox": true,
             "image": "shopify://shop_images/trusted_rejuv_6.webp"
           }
+        },
+        "slider_V4d9wU": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>“You can personalize the treatment for each part of your face. Genius!”</p>",
+            "text": "<p>Susie Spring</p>",
+            "sub_text": "<p>Harvard-Certified Skin Expert</p>",
+            "url": "65rmmodyl1",
+            "checkbox": false,
+            "image": "shopify://shop_images/Image_21_94fc9bc6-5816-421e-97e1-542ef78978ac.png"
+          }
+        },
+        "slider_dximBk": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>“This is a 3-minute ritual I complete every night without fail.”</p>",
+            "text": "<p>Dr. Kurren Gill</p>",
+            "sub_text": "<p>Medical Doctor</p>",
+            "url": "wp66z3ewc8",
+            "checkbox": false,
+            "image": "shopify://shop_images/Image_24.png"
+          }
+        },
+        "slider_9nkTGH": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>“As a Resident Doctor, I don’t have much time to get to the clinic... this is my solution.”</p>",
+            "text": "<p>Dr. Nayiri Khatch</p>",
+            "sub_text": "<p>Medical Doctor</p>",
+            "url": "9ctpv6wao5",
+            "checkbox": false,
+            "image": "shopify://shop_images/Image_25.png"
+          }
         }
       },
       "block_order": [
-        "slider_xPgTYA",
+        "slider_9gjKWw",
+        "slider_AjE9PU",
         "slider_kGwK6t",
         "slider_VwcHpm",
-        "slider_9gjKWw",
+        "slider_xPgTYA",
+        "slider_Dck8UD",
         "slider_gPNnzc",
-        "slider_dgCbHR"
+        "slider_dgCbHR",
+        "slider_V4d9wU",
+        "slider_dximBk",
+        "slider_9nkTGH"
       ],
       "name": "t:sections.video-slider.name",
       "settings": {}
@@ -639,7 +702,10 @@
           }
         }
       },
-      "block_order": ["accordion_xTqqU8", "accordion_tNf6Vj"],
+      "block_order": [
+        "accordion_xTqqU8",
+        "accordion_tNf6Vj"
+      ],
       "name": "t:sections.how-it-works.name",
       "settings": {
         "heading": "How it works",
@@ -655,8 +721,73 @@
     "video_review_slider_Qx3NMq": {
       "type": "video-review-slider",
       "blocks": {
+        "slider_Rpw9fQ": {
+          "type": "slider",
+          "settings": {
+            "youtube_url": "",
+            "video_cover_image": "shopify://shop_images/Review_2.png",
+            "wistia_url": "lats3h0xd8"
+          }
+        },
+        "slider_Byzyg7": {
+          "type": "slider",
+          "settings": {
+            "youtube_url": "",
+            "video_cover_image": "shopify://shop_images/Review_4.png",
+            "wistia_url": "vhytqwlre4"
+          }
+        },
+        "slider_trU8ya": {
+          "type": "slider",
+          "settings": {
+            "youtube_url": "",
+            "video_cover_image": "shopify://shop_images/Review_5.png",
+            "wistia_url": "bpfdun1ngw"
+          }
+        },
+        "slider_BTaRFq": {
+          "type": "slider",
+          "settings": {
+            "youtube_url": "https://youtu.be/LBxbzYfGEV0?si=HgWxLn8UB-AfqbKk&t=348",
+            "video_cover_image": "shopify://shop_images/Review_3.png",
+            "wistia_url": ""
+          }
+        },
+        "slider_Eni939": {
+          "type": "slider",
+          "settings": {
+            "youtube_url": "https://youtu.be/2eYXN_obpjs?si=KkWZ8jZ9R749hS9m&t=504",
+            "video_cover_image": "shopify://shop_images/Review_1.png",
+            "wistia_url": ""
+          }
+        },
+        "slider_64URjn": {
+          "type": "slider",
+          "settings": {
+            "youtube_url": "https://youtu.be/nIBJ6SchgPs?si=oL87lpsJ0yJ-shu5&t=117",
+            "video_cover_image": "shopify://shop_images/Review_6.png",
+            "wistia_url": ""
+          }
+        },
+        "slider_QGTAmt": {
+          "type": "slider",
+          "settings": {
+            "youtube_url": "",
+            "video_cover_image": "shopify://shop_images/Review_7.png",
+            "wistia_url": "qqe1onrw3s"
+          }
+        },
+        "slider_pAibG7": {
+          "type": "slider",
+          "settings": {
+            "youtube_url": "https://www.youtube.com/watch?v=If8c-GLBAwA",
+            "video_cover_image": "shopify://shop_images/Review_8.png",
+            "wistia_url": ""
+          }
+        },
         "slider_AH9pKk": {
           "type": "slider",
+          "disabled": true,
           "settings": {
             "youtube_url": "",
             "wistia_url": "oofgzce5um"
@@ -664,6 +795,7 @@
         },
         "slider_NiNYGW": {
           "type": "slider",
+          "disabled": true,
           "settings": {
             "youtube_url": "",
             "wistia_url": "gw1rne236n"
@@ -671,6 +803,7 @@
         },
         "slider_bbphF3": {
           "type": "slider",
+          "disabled": true,
           "settings": {
             "youtube_url": "",
             "wistia_url": "vkd8so2clv"
@@ -678,6 +811,7 @@
         },
         "slider_j4Jpe7": {
           "type": "slider",
+          "disabled": true,
           "settings": {
             "youtube_url": "",
             "wistia_url": "ltv3wi7ayy"
@@ -685,6 +819,7 @@
         },
         "slider_FxaxVF": {
           "type": "slider",
+          "disabled": true,
           "settings": {
             "youtube_url": "",
             "wistia_url": "3dk53o20xw"
@@ -692,6 +827,7 @@
         },
         "slider_r8WNhq": {
           "type": "slider",
+          "disabled": true,
           "settings": {
             "youtube_url": "",
             "wistia_url": "i688q7ywip"
@@ -699,6 +835,7 @@
         },
         "slider_zwUJCV": {
           "type": "slider",
+          "disabled": true,
           "settings": {
             "youtube_url": "",
             "wistia_url": "nmgtj7w4at"
@@ -706,6 +843,7 @@
         },
         "slider_WEYAWp": {
           "type": "slider",
+          "disabled": true,
           "settings": {
             "youtube_url": "",
             "wistia_url": "5kh8ymubw0"
@@ -713,6 +851,7 @@
         },
         "slider_CgGbjj": {
           "type": "slider",
+          "disabled": true,
           "settings": {
             "youtube_url": "",
             "wistia_url": "wl5y3puch1"
@@ -720,6 +859,7 @@
         },
         "slider_Rinfeh": {
           "type": "slider",
+          "disabled": true,
           "settings": {
             "youtube_url": "",
             "wistia_url": "v955rlnldn"
@@ -727,13 +867,30 @@
         },
         "slider_NNNQeY": {
           "type": "slider",
+          "disabled": true,
           "settings": {
             "youtube_url": "",
             "wistia_url": "5vgchvxn6l"
           }
+        },
+        "slider_ANweJW": {
+          "type": "slider",
+          "disabled": true,
+          "settings": {
+            "youtube_url": "",
+            "wistia_url": "65rmmodyl1"
+          }
         }
       },
       "block_order": [
+        "slider_Rpw9fQ",
+        "slider_Byzyg7",
+        "slider_trU8ya",
+        "slider_BTaRFq",
+        "slider_Eni939",
+        "slider_64URjn",
+        "slider_QGTAmt",
+        "slider_pAibG7",
         "slider_AH9pKk",
         "slider_NiNYGW",
         "slider_bbphF3",
@@ -744,7 +901,8 @@
         "slider_WEYAWp",
         "slider_CgGbjj",
         "slider_Rinfeh",
-        "slider_NNNQeY"
+        "slider_NNNQeY",
+        "slider_ANweJW"
       ],
       "name": "t:sections.video-review-slider.name",
       "settings": {
@@ -827,7 +985,11 @@
           }
         }
       },
-      "block_order": ["list_ELqhFc", "list_9wJPLV", "list_erY7DR"],
+      "block_order": [
+        "list_ELqhFc",
+        "list_9wJPLV",
+        "list_erY7DR"
+      ],
       "name": "t:sections.how-to-use.name",
       "settings": {
         "heading": "See how quick and easy it is to use",
@@ -960,7 +1122,9 @@
           }
         }
       },
-      "block_order": ["stamped_product_reviews_ugc_main_widget_A4ebAn"],
+      "block_order": [
+        "stamped_product_reviews_ugc_main_widget_A4ebAn"
+      ],
       "settings": {}
     },
     "faq_46wWyJ": {

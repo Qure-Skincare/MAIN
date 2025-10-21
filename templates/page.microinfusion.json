@@ -179,7 +179,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Dark Spots",
-            "image": "shopify://shop_images/corect_mi_dark_44767190-4557-487d-affa-d00a6e042d4b.svg",
+            "image": "shopify://shop_images/Frame_1073714896_1.png",
             "preselected": true
           }
         },
@@ -248,7 +248,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Wrinkles",
-            "image": "shopify://shop_images/corect_mi_wr.svg",
+            "image": "shopify://shop_images/Frame_1073714897.png",
             "preselected": false
           }
         },
@@ -317,7 +317,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Mixed",
-            "image": "shopify://shop_images/Corect_MIX.png",
+            "image": "shopify://shop_images/mixed_1.png",
             "preselected": false
           }
         },
@@ -1060,8 +1060,8 @@
       "settings": {
         "heading": "Science-Backed Micro-Infusion Serums",
         "text": "Choose the exact serum to use in your Micro-Infusion treatment, or get both and mix them together to experience a complete set of benefits that addresses your specific skin concerns.",
-        "left_image": "shopify://shop_images/dark-serum.webp",
-        "right_image": "shopify://shop_images/wrinkle-serum.webp",
+        "left_image": "shopify://shop_images/Rectangle_389.png",
+        "right_image": "shopify://shop_images/Rectangle_389_1.png",
         "left_heading": "For Dark Spots",
         "right_heading": "For Wrinkles"
       }
@@ -1294,7 +1294,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Dark Spots",
-            "image": "shopify://shop_images/corect_mi_dark.svg",
+            "image": "shopify://shop_images/dark.png",
             "preselected": true
           }
         },
@@ -1363,7 +1363,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Wrinkles",
-            "image": "shopify://shop_images/corect_mi_wr.svg",
+            "image": "shopify://shop_images/wrinkles_fad540f8-ef39-4286-8e1f-297e0a1600d8.png",
             "preselected": false
           }
         },
@@ -1432,7 +1432,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Mixed",
-            "image": "shopify://shop_images/Frame_1073714838.png",
+            "image": "shopify://shop_images/mix.png",
             "preselected": false
           }
         },
