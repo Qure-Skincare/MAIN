@@ -1,0 +1,19 @@
+{{ '__endrock_bundles_sticky_atc.css' | asset_url | stylesheet_tag }}
+<div class="sticky-atc">
+	<div class="sticky-button-cta">
+		<span>Shop by concern</span>
+		<svg xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7" fill="none">
+			<path d="M0.500231 0.499749L5.93408 5.93359L10.7642 0.499749" stroke="white" stroke-linecap="round"/>
+		</svg>
+	</div>
+    <div class="sticky-category-buttons" id="bundles-tab-sticky">
+        {% render '__endrock-purchase-form-bundle-types-item' array: array1, class: 'px-15 px-md-0', type: 1, mode: 'sticky' %}
+        {% render '__endrock-purchase-form-bundle-types-item' array: array2, type: 2, mode: 'sticky' %}
+        {% render '__endrock-purchase-form-bundle-types-item' array: array3, type: 3, mode: 'sticky' %}
+    </div>  
+</div>
+<script>
+	document.addEventListener('DOMContentLoaded', function() {
+		loadScriptOnce('__endrock_bundles_sticky_atc','{{ '__endrock_bundles_sticky_atc.js' | asset_url }}');
+	});
+</script>
