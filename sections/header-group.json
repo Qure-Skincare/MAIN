@@ -12,7 +12,7 @@
   "name": "t:sections-group.header.name",
   "sections": {
     "endrock-gamification-header": {
-      "type": "endrock_gamificationHeader",
+      "type": "endrock-gamification-header",
       "settings": {}
     },
     "endrock-rotating-announcement": {
@@ -73,7 +73,7 @@
       "disabled": true,
       "settings": {
         "heading": "Autumn Glow Sale 67% OFF Micro-Infusion",
-        "button-label": "Shop Now",
+      "button-label": "Shop Now",
         "button-url": "https://qureskincare.com/pages/microinfusion",
         "show": true
       }

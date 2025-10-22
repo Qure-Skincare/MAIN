@@ -49,7 +49,7 @@
     margin: 0px;
 }
 
-.countdown-label {
+.countdown-label, .countdown-label--short {
     color: #FF5429;
     text-align: center;
     leading-trim: both;
@@ -61,6 +61,10 @@
     line-height: normal;
     text-transform: uppercase;
     margin: 0px;
+}
+
+.countdown-label--short{
+    display: none;
 }
 
 .countdown-separator{

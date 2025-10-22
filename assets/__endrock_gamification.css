@@ -2,19 +2,21 @@
     --height-bar: 56px;
 }
 
-#announcement-bar{
+#announcement-bar {
     display: none;
 }
 
-.offcanvas-header{
+#cart-dynamic-content .offcanvas-header {
     padding-bottom: 16px;
 }
 
-.free_shpngBox{
+.free_shpngBox {
     display: none;
 }
 
-.gamification-container.gamification-homepage{
+/* gamification homepage */
+
+.gamification-container.gamification-homepage {
     position: fixed;
     width: 100%;
     top: 0px;
@@ -25,24 +27,120 @@
     padding: 12px 100px;
 }
 
-.gamification-container.gamification-homepage .gamification-content{
+
+.gamification-container.gamification-homepage .gamification-content {
     padding: 0px;
     border: none;
     margin: 0px;
     max-height: fit-content;
+    width: 100%;
 }
+
+.gamification-container.gamification-homepage .gamification-threshold-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gamification-container.gamification-homepage endrock-countdown-timer .countdown-item .countdown-value {
+    font-size: 20px;
+}
+
+
+.gamification-container.gamification-homepage endrock-countdown-timer .countdown-item .countdown-label {
+    font-size: 12px;
+}
+
+@media screen and (max-width: 1200px) {
+    .gamification-container.gamification-homepage {
+        padding: 12px 30px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    :root {
+        --height-bar: 75px;
+    }
+
+    .gamification-container.gamification-homepage {
+        padding: 12px 16px;
+    }
+
+    .gamification-container.gamification-homepage .gamification_threshold {
+        padding: 3px;
+    }
+
+    .gamification-container.gamification-homepage .gamification-content {
+        flex-direction: column;
+        width: 100%;
+        gap: 8px;
+    }
+
+    .gamification-container.gamification-homepage .gamification-threshold-wrapper {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .gamification-container.gamification-homepage endrock-countdown-timer .countdown-title {
+        display: none;
+    }
+
+    .gamification-container.gamification-homepage endrock-countdown-timer .countdown-wrapper {
+        gap: 8px;
+    }
+
+    .gamification-container.gamification-homepage endrock-countdown-timer .countdown-item {
+        flex-direction: row;
+        column-gap: 4px;
+    }
+
+    .gamification-container.gamification-homepage endrock-countdown-timer .countdown-item .countdown-value {
+        font-size: 14px;
+    }
+
+    .gamification-container.gamification-homepage endrock-countdown-timer .countdown-item .countdown-label {
+        display: none;
+    }
+
+    .gamification-container.gamification-homepage endrock-countdown-timer .countdown-item .countdown-label--short {
+        display: block;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+
+    .gamification-threshold-wrapper .gamification-timer-wrapper {
+        display: flex;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .gamification-container.gamification-homepage .gamification_threshold .gamification_threshold__item .gamification_threshold__label {
+        font-size: 12px;
+    }
+
+    .gamification-container.gamification-homepage endrock-countdown-timer .countdown-wrapper {
+        gap: 4px;
+    }
+
+}
+
+
+
+/* gamification side cart */
 
 .gamification-container {
     padding: 0px 24px;
 }
 
-.gamification-content{
+.gamification-content {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 12px;
     border-bottom: 1px solid #DFE0E0;
-    padding: 1px 20px 16px 20px;
+    padding: 1px 14px 16px 14px;
     margin-bottom: 16px;
 }
 
@@ -58,6 +156,7 @@
     font-weight: 400;
     line-height: 18px;
     margin: 0px;
+    min-width: fit-content;
 }
 
 /* Gamification Threshold Item */
@@ -128,7 +227,7 @@
 
 
 /* Completed State */
-.gamification_threshold__items--active{
+.gamification_threshold__items--active {
     background: #C6E5DB;
 }
 
@@ -158,5 +257,14 @@
 @media screen and (max-width: 767px) {
     .gamification-container {
         padding: 0px 16px;
+    }
+
+    .gamification-content {
+        padding: 12px 14px 10px 14px;
+        margin-bottom: 10px;
+    }
+
+    #cart-dynamic-content .offcanvas-header {
+        padding-bottom: 0px;
     }
 }

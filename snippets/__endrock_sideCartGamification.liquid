@@ -1,12 +1,12 @@
 {% comment %} {{ "__endrock_gamification.css" | asset_url | stylesheet_tag }} {% endcomment %}
 
 {% assign header_text = settings.gamification_info_sidecart %}
-{% assign header_completed = settings.endrock_bar_header_completed_html %}
+{% assign header_completed = settings.gamification_info_sidecart_completed %}
 
 
 {% assign has_gamification_content = false %}
 
-{% if global_bar_gift1_limit > 0 or global_bar_gift2_limit > 0 %}
+{% if global_bar_gift1_limit > 0 %}
   {% assign has_gamification_content = true %}
 {% endif %}
 

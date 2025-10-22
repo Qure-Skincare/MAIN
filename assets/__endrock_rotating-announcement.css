@@ -4,9 +4,6 @@
     format("otf");
 } */
 /*============================ Announcement Bar =========================================*/
-:root {
-  --height-bar: 40px !important;
-}
 @media (max-width: 991px) {
   :root {
     --height-bar: 32px !important;

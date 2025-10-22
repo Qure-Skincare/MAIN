@@ -187,6 +187,16 @@
         "type": "header",
         "content": "B. Event Scheduling & Timer (Global)"
       },
+
+      {
+        "type": "text",
+        "id": "event_name",
+        "label": "Event Name",
+        "placeholder": "Black Friday",
+        "default": "Black Friday",
+        "info": "The name of the gamification event."
+      },
+
       {
         "type": "text",
         "id": "event_start_date",
@@ -221,7 +231,7 @@
         "id": "event_end_date",
         "label": "Timer End Date",
         "placeholder": "2025-11-05",
-        "default": "2025-10-21",
+        "default": "2025-10-23",
         "info": "The date when the timer ends. Format: YYYY-MM-DD"
       },
       {

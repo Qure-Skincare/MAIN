@@ -8,6 +8,9 @@
 {% assign event_end_time_hour = settings.event_end_time_hour %}
 {% assign event_end_time_minute = settings.event_end_time_minute %}
 
+{% assign event_name = settings.event_name %}
+
+
 
 {% assign is_valid_timer_config = false %}
 
@@ -22,26 +25,30 @@
     data-end-date="{{ event_end_date }}" data-end-time-hour="{{ event_end_time_hour }}"
     data-end-time-minute="{{ event_end_time_minute }}" class="timer-countdown timer-countdown--{{ timer_location }}"
     aria-live="off" role="timer" id="timer-countdown">
-    <h5 class="countdown-title">Black Friday Ends In:</h5>
+    <h5 class="countdown-title">{{ event_name }} Ends In:</h5>
     <div class="countdown-wrapper">
         <div class="countdown-item">
             <p class="countdown-value" data-key="days">00</p>
             <span class="countdown-label">DAYS</span>
+            <span class="countdown-label--short">D</span>
         </div>
         <div class="countdown-separator"></div>
         <div class="countdown-item">
             <p class="countdown-value" data-key="hours">00</p>
             <span class="countdown-label">HOURS</span>
+            <span class="countdown-label--short">H</span>
         </div>
         <div class="countdown-separator"></div>
         <div class="countdown-item">
             <p class="countdown-value" data-key="minutes">00</p>
             <span class="countdown-label">MINUTES</span>
+            <span class="countdown-label--short">M</span>
         </div>
         <div class="countdown-separator"></div>
         <div class="countdown-item">
             <p class="countdown-value" data-key="seconds">00</p>
             <span class="countdown-label">SECONDS</span>
+            <span class="countdown-label--short">S</span>
         </div>
     </div>
 </endrock-countdown-timer>
