@@ -5,6 +5,7 @@
 	bottom: -100px;
 	width: 100%;
 	padding: 16px;
+    padding-bottom: calc(16px + env(safe-area-inset-bottom));
 	background-color: #ffffff;
     border-top: 1px solid var(--Charcoal-10, #DFE0E0);
 	z-index: 100;
@@ -12,6 +13,7 @@
 }
 .sticky-atc.active {
     padding: 12px 16px;
+    padding-bottom: calc(12px + env(safe-area-inset-bottom));
 }
 .sticky-atc .sticky-category-buttons
 {
