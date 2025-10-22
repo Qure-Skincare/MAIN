@@ -1,0 +1,162 @@
+:root {
+    --height-bar: 56px;
+}
+
+#announcement-bar{
+    display: none;
+}
+
+.offcanvas-header{
+    padding-bottom: 16px;
+}
+
+.free_shpngBox{
+    display: none;
+}
+
+.gamification-container.gamification-homepage{
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 9;
+    background-color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 100px;
+}
+
+.gamification-container.gamification-homepage .gamification-content{
+    padding: 0px;
+    border: none;
+    margin: 0px;
+    max-height: fit-content;
+}
+
+.gamification-container {
+    padding: 0px 24px;
+}
+
+.gamification-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    border-bottom: 1px solid #DFE0E0;
+    padding: 1px 20px 16px 20px;
+    margin-bottom: 16px;
+}
+
+
+.gamification-container .gamification-message {
+    color: #212428;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "TT Commons";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    margin: 0px;
+}
+
+/* Gamification Threshold Item */
+
+.gamification_threshold {
+    display: flex;
+    border-radius: 100px;
+    background: #FFF;
+    padding: 4px;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.20);
+    min-width: fit-content;
+}
+
+.gamification_threshold__items {
+    display: flex;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+
+.gamification_threshold__item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px;
+    border-radius: 100px;
+}
+
+.gamification_threshold__item .gamification_threshold__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    border: 0.64px solid #8B8C8E;
+    background: #F6F6F7;
+    padding: 3.2px;
+}
+
+.gamification_threshold__item .gamification_threshold__icon img {
+    max-width: 9px;
+}
+
+.gamification_threshold__item .gamification_threshold__label {
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "TT Commons";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.gamification_threshold__item:first-child:not(.gamification_threshold__item--completed) .gamification_threshold__label {
+    background: linear-gradient(90deg, #D9D9D9 0%, #8B8C8E 23.56%, #8B8C8E 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gamification_threshold__item:not(:first-child) .gamification_threshold__label {
+    color: #8B8C8E;
+}
+
+
+/* Completed State */
+.gamification_threshold__items--active{
+    background: #C6E5DB;
+}
+
+.gamification_threshold__item.gamification_threshold__item--completed {
+    background: #C6E5DB;
+    padding: 4px 4px 4px 10px;
+}
+
+.gamification_threshold__item.gamification_threshold__item--completed .gamification_threshold__label {
+    color: #000;
+}
+
+.gamification_threshold__item.gamification_threshold__item--completed .gamification_threshold__icon {
+    border: none;
+    padding: 0px;
+    width: auto;
+    height: auto;
+}
+
+.gamification_threshold__item.gamification_threshold__item--completed .gamification_threshold__icon img {
+    max-width: 100%;
+    width: 16px;
+    height: 16px;
+}
+
+
+@media screen and (max-width: 767px) {
+    .gamification-container {
+        padding: 0px 16px;
+    }
+}

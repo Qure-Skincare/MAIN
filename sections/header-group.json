@@ -11,6 +11,10 @@
   "type": "header",
   "name": "t:sections-group.header.name",
   "sections": {
+    "endrock-gamification-header": {
+      "type": "endrock_gamificationHeader",
+      "settings": {}
+    },
     "footer-form": {
       "type": "announcement-bar",
       "settings": {
@@ -26,6 +30,7 @@
     }
   },
   "order": [
+    "endrock-gamification-header",
     "footer-form",
     "header"
   ]
