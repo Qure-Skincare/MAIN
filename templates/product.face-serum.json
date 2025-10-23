@@ -197,7 +197,7 @@
       "settings": {
         "form_name": "purchase-form-landing",
         "hide_types": true,
-        "type": "list"
+        "type": "box"
       }
     },
     "logos_89qVYW": {
@@ -510,6 +510,7 @@
       "type": "trusted-recommended",
       "name": "t:sections.trusted-recommended.name",
       "settings": {
+        "background_color": "#ffffff",
         "heading": "Trusted and Recommended by Experts",
         "text": "<p>“Qure has a really good serum. It’s probably <strong>the best known peptide complex</strong></p><p>It has awesome, complimenting ingredients and amazing antioxidants. It really helps to simplify and consolidate your night routine.”</p>",
         "image_text": "",

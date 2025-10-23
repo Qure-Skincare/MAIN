@@ -112,7 +112,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Dark Spots",
-            "image": "shopify://shop_images/corect_mi_dark_44767190-4557-487d-affa-d00a6e042d4b.svg",
+            "image": "shopify://shop_images/Frame_1073714896_1.png",
             "preselected": true
           }
         },
@@ -181,7 +181,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Wrinkles",
-            "image": "shopify://shop_images/corect_mi_wr.svg",
+            "image": "shopify://shop_images/Frame_1073714897.png",
             "preselected": false
           }
         },
@@ -250,7 +250,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Mixed",
-            "image": "shopify://shop_images/Corect_MIX.png",
+            "image": "shopify://shop_images/mixed_1.png",
             "preselected": false
           }
         },
@@ -993,8 +993,8 @@
       "settings": {
         "heading": "Science-Backed Micro-Infusion Serums",
         "text": "Choose the exact serum to use in your Micro-Infusion treatment, or get both and mix them together to experience a complete set of benefits that addresses your specific skin concerns.",
-        "left_image": "shopify://shop_images/dark-serum.webp",
-        "right_image": "shopify://shop_images/wrinkle-serum.webp",
+        "left_image": "shopify://shop_images/Rectangle_389.png",
+        "right_image": "shopify://shop_images/Rectangle_389_1.png",
         "left_heading": "For Dark Spots",
         "right_heading": "For Wrinkles"
       }
@@ -1227,7 +1227,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Dark Spots",
-            "image": "shopify://shop_images/corect_mi_dark.svg",
+            "image": "shopify://shop_images/dark.png",
             "preselected": true
           }
         },
@@ -1296,7 +1296,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Wrinkles",
-            "image": "shopify://shop_images/corect_mi_wr.svg",
+            "image": "shopify://shop_images/wrinkles_fad540f8-ef39-4286-8e1f-297e0a1600d8.png",
             "preselected": false
           }
         },
@@ -1365,7 +1365,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Mixed",
-            "image": "shopify://shop_images/Frame_1073714838.png",
+            "image": "shopify://shop_images/mix.png",
             "preselected": false
           }
         },
@@ -1527,7 +1527,7 @@
           "settings": {
             "heading": "When is the best time to do Micro-Infusion?",
             "text": "<p>We recommend doing the treatment at night before bed. Avoid being in the sun and using makeup for 24 hours after the treatment. For more information on post treatment care, [link][/link]</p>",
-            "link_url": "#https://qureskincare.com/pages/microinfusion-safety-guide",
+            "link_url": "https://qureskincare.com/pages/microinfusion-safety-guide",
             "link_text": "visit our safety guide"
           }
         },
@@ -1563,7 +1563,7 @@
           "settings": {
             "heading": "Tranexamic Acid Notice",
             "text": "<p>If you live in Australia, you may receive a notice from Border Force regarding tranexamic acid (TXA) in your order. Here’s what you need to know:<br/><br/>In Australia, TXA is classified as a Schedule 4 (prescription-only) drug only when used orally or by injection for treating melasma or other medical conditions. However, topical TXA in cosmetic formulations is permitted.<br/><br/>Our serums are purely for cosmetic use and do not claim to treat medical conditions. They are applied topically (not injected) and are classified as a cosmetic product rather than a prescription medicine.<br/><br/>Our products are compliant with Australian regulations. Facial serums containing up to 3% TXA for cosmetic purposes are not classified as prescription-only medicines and do not require inclusion in the Australian Register of Therapeutic Goods (ARTG).<br/><br/>If Border Force requires clarification, you can provide the information above to confirm that the product complies with Australian regulations. If further details are needed, they can refer to the Therapeutic Goods Administration (TGA) guidelines on cosmetic formulations.</p><p>If you need further assistance, feel free to [link][/link] —we’re happy to help!</p>",
-            "link_url": "#",
+            "link_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home",
             "link_text": "contact our suport team"
           }
         }

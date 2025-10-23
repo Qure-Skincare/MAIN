@@ -144,7 +144,7 @@
       "name": "t:sections.contact-info.name",
       "settings": {
         "heading": "Have questions?",
-        "text": "<p>If you have a question about your order please contact our customer service team by sending an email to <a href=\"mailto:support@qureskincare.com\" title=\"mailto:support@qureskincare.com\">support@qureskincare.com</a>. For more information on our warranty please visit our warranty policy here.</p>"
+        "text": "<p>If you have a question about your order please contact our customer service team by visiting our <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Help Center</a>.<br/>For more information on our warranty please visit our warranty policy.</p>"
       }
     },
     "page_banner_UXq7yQ": {
@@ -178,7 +178,7 @@
           "type": "accordion",
           "settings": {
             "heading": "What should I do if I received the wrong item?",
-            "text": "<p>If you received a product different from the one that you ordered, please contact us at support@qureskincare.com and we’ll be sure to make this right!</p>",
+            "text": "<p>If you received a product different from the one that you ordered, please <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Help Center</a>  and we’ll be sure to make this right!</p>",
             "link_url": "",
             "link_text": ""
           }

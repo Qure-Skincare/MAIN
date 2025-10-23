@@ -9,6 +9,7 @@
  */
  {
     "common": {
+        "start": "Start",
         "from": "From",
         "discount": "Discount",
         "show": "Show",
@@ -541,6 +542,9 @@
         },
         "device-comparison-3": {
             "name": "Compare products with Competitors 3"
+        },
+        "black-friday-early-access": {
+            "name": "Black friday early access"
         },
         "how-to-use": {
             "name": "How to use"
