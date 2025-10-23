@@ -81,7 +81,13 @@
             </div>
             <div class="col-md-1 custom__block">
                 <div class="align-items-end d-flex justify-content-center qure__serum-or">
-                    <h2>{{ 'sections.serum-selection.or_text' | t }}</h2>
+                    <h2>
+                        {% if section.settings.use_and_symbol %}
+                            {{ 'sections.serum-selection.and_text' | t }}
+                        {% else %}
+                            {{ 'sections.serum-selection.or_text' | t }}
+                        {% endif %}
+                    </h2>
                 </div>
             </div>
             <div class="col custom__block">
@@ -161,6 +167,12 @@
 {
   "name": "t:sections.serum-selection.name",
   "settings": [
+    {
+        "type": "checkbox",
+        "id": "use_and_symbol",
+        "label": "t:sections.serum-selection.settings.use_and_symbol",
+        "default": false
+    },
     {
         "type": "text",
         "id": "heading",

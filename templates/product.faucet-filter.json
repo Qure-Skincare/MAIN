@@ -614,7 +614,7 @@
           "type": "list",
           "settings": {
             "heading": "Remove",
-            "text": "Remove faucet aerator. Simply attach and twist it off using the key for removal.",
+            "text": "<p>Remove faucet aerator. Simply attach and twist it off using the key for removal.</p>",
             "image": "shopify://shop_images/faucet_remove.webp",
             "image_mobile": "shopify://shop_images/faucet_remove-m.webp"
           }
@@ -623,7 +623,7 @@
           "type": "list",
           "settings": {
             "heading": "Fit",
-            "text": "Find the faucet thread accessory which best fits your faucet size.",
+            "text": "<p>Find the faucet thread accessory which best fits your faucet size.</p>",
             "image": "shopify://shop_images/faucet_fit.webp",
             "image_mobile": "shopify://shop_images/faucet_fit-m.webp"
           }
@@ -632,7 +632,7 @@
           "type": "list",
           "settings": {
             "heading": "Secure",
-            "text": "Clip Qure Faucet Filter onto the faucet. Once you hear it click it is installed. <br>Turn the toggle button to “Q” mark on the filter and enjoy healthier, clearer skin!",
+            "text": "<p>Clip Qure Faucet Filter onto the faucet. Once you hear it click it is installed. <br>Turn the toggle button to “Q” mark on the filter and enjoy healthier, clearer skin!</p>",
             "image": "shopify://shop_images/faucet_secure.webp",
             "image_mobile": "shopify://shop_images/faucet_secure-m.webp"
           }

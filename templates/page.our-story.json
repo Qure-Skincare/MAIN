@@ -14,7 +14,7 @@
       "name": "t:sections.page-banner.name",
       "settings": {
         "heading": "We're rethinking skincare",
-        "text": "Bringing you clinical-grade technologies and products for DIY skin therapies, in the comfort of your own home, and at a price everyone can afford.",
+        "text": "<p>Bringing you clinical-grade technologies and products for DIY skin therapies, in the comfort of your own home, and at a price everyone can afford.</p>",
         "sub_text": "",
         "button": "",
         "button_url": "",

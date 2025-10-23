@@ -119,6 +119,7 @@
     },
     "serum-selection": {
       "or_text": "or",
+      "and_text": "&",
       "review_stars": "https://qureskincaredns-main.com/sections/isolated/serum/images/stars.webp",
       "verified_customer_text": "Verified Customer"
     },
@@ -161,6 +162,9 @@
     },
     "sticky-button-variants": {
       "select_color": "Select Option:"
+    },
+    "micro-infusion-lim-edition-bundle-action-banner": {
+      "dot_image": "https://qureskincaredns-main.com/assets/images/dot.svg"
     },
     "page-qure-filters-offer-form": {
       "settings": {
@@ -220,6 +224,10 @@
     "before-after-accordion": {
       "verified_text": "Verified",
       "review_image": "https://qureskincaredns-main.com/assets/images/reviewCheck.svg"
+    },
+    "micro-infusion-lim-ed-bundle-inside-kit": {
+      "bullet_arrow": "https://qureskincaredns-main.com/sections/isolated/inside-kit/images/bullet_arrow.svg",
+      "bullet_arrow_left": "https://qureskincaredns-main.com/sections/isolated/inside-kit/images/bullet_arrow_left.svg"
     },
     "skincare-plan": {
       "product": "Product",

@@ -23,6 +23,7 @@
         "style": "Style",
         "box": "Box",
         "list": "List",
+        "list-mobile": "List mobile",
         "button": "Button",
         "days": "Days",
         "limited-offer": "Limited offer",
@@ -40,6 +41,8 @@
         "header": "Header",
         "subheader": "Subheader",
         "header-mobile": "Header mobile",
+        "left-text": "Left text",
+        "right-text": "Right text",
         "left-header": "Left column header",
         "right-header": "Right column header",
         "left-text": "Left text",
@@ -192,6 +195,12 @@
         "cta-cards": {
             "name": "CTA cards"
         },
+        "micro-infusion-lim-ed-bundle-inside-kit": {
+            "name": "Inside the kit"
+        },
+        "micro-infusion-lim-ed-bundle-page-banner": {
+            "name": "Page banner"
+        },
         "contact-form": {
             "name": "Contact form"
         },
@@ -221,6 +230,9 @@
         "content-brief": {
             "name": "Content brief"
         },
+        "micro-infusion-lim-edition-bundle-action-banner": {
+            "name": "Action banner"
+        },
         "q-rejuvalight-pro-welcome-intro": {
             "name": "Intro",
             "blocks": {
@@ -247,6 +259,9 @@
         },
         "static-sticky-cta": {
             "name": "Static sticky cta"
+        },
+        "micro-infusion-lim-ed-bundle-sticky-button": {
+            "name": "Sticky button for limited edition bundle"
         },
         "skincare-lifestyle": {
             "name": "Skincare lifestyle"
@@ -418,6 +433,9 @@
         },
         "serum-selection": {
             "name": "Serum selection",
+            "settings": {
+                "use_and_symbol": "Use '&' symbol instead of 'or'"
+            },
             "blocks": {
                 "left-text-with-image": {
                     "name": "Left text with image"

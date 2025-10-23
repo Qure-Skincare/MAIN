@@ -592,7 +592,7 @@
           "type": "list",
           "settings": {
             "heading": "Remove",
-            "text": "Turn off the faucet. Rotate the filter cartridge cover counterclockwise to remove the old filter cartridge.",
+            "text": "<p>Turn off the faucet. Rotate the filter cartridge cover counterclockwise to remove the old filter cartridge.</p>",
             "image": "shopify://shop_images/faucet_replace1.webp",
             "image_mobile": "shopify://shop_images/faucet_replace1-m.webp"
           }
@@ -601,7 +601,7 @@
           "type": "list",
           "settings": {
             "heading": "Insert",
-            "text": "Peel off the seal from the new filter cartridge. Install the cartridge into the faucet housing. Screw the filter cartridge cover clockwise to secure it.",
+            "text": "<p>Peel off the seal from the new filter cartridge. Install the cartridge into the faucet housing. Screw the filter cartridge cover clockwise to secure it.</p>",
             "image": "shopify://shop_images/faucet_replace2.webp",
             "image_mobile": "shopify://shop_images/faucet_replace2-m.webp"
           }
@@ -610,7 +610,7 @@
           "type": "list",
           "settings": {
             "heading": "Flush",
-            "text": "Turn on the faucet and let raw water flow for 5 seconds, then switch to purified water mode and let it run for 3 minutes before first use.",
+            "text": "<p>Turn on the faucet and let raw water flow for 5 seconds, then switch to purified water mode and let it run for 3 minutes before first use.</p>",
             "image": "shopify://shop_images/faucet_replace3.webp",
             "image_mobile": "shopify://shop_images/faucet_replace3-m.webp"
           }
