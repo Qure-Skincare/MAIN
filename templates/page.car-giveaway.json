@@ -242,7 +242,7 @@
             "image": "shopify://shop_images/derm-mist.webp",
             "price": "$29",
             "button_label": "Shop Now",
-            "button_url": "#",
+            "button_url": "https://qureskincare.com/products/dermal-mist",
             "quote": ""
           }
         }
