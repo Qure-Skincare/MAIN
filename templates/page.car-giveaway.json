@@ -226,7 +226,7 @@
           "type": "items",
           "settings": {
             "heading": "Faucet Filter",
-            "text": "Receive 3225 Entries",
+            "text": "Receive 2580 Entries",
             "image": "shopify://shop_images/water-fil.webp",
             "price": "from $129",
             "button_label": "Shop Now",
@@ -238,7 +238,7 @@
           "type": "items",
           "settings": {
             "heading": "Dermal Mist",
-            "text": "Receive 725 Entries",
+            "text": "Receive 580 Entries",
             "image": "shopify://shop_images/derm-mist.webp",
             "price": "$29",
             "button_label": "Shop Now",
