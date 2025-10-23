@@ -12,9 +12,7 @@
     },
     "bundle-header": {
       "type": "bundle-header",
-      "custom_css": [
-        ".desktop-slider {margin-top: -100px !important;}"
-      ],
+      "custom_css": [],
       "name": "t:common.buy-box",
       "settings": {
         "heading": "Save Up to 55% on Certified Skincare Solutions",
