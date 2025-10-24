@@ -11,9 +11,10 @@
   "sections": {
     "announcement_bar_iNbPEw": {
       "type": "announcement-bar",
+      "disabled": true,
       "name": "t:sections.announcement-bar.name",
       "settings": {
-        "heading": "Prime Day Promo 67% OFF Micro-Infusion",
+        "heading": "Autumn Glow Sale 67% OFF Micro-Infusion",
         "button-label": "SHOP NOW",
         "button-url": "https://qureskincare.com/pages/qure-microinfusion-offer",
         "show": false
@@ -878,7 +879,7 @@
           "type": "list",
           "settings": {
             "heading": "Prepare",
-            "text": "Twist open the Micro-Infusion device and fill with one ampule of serum.",
+            "text": "<p>Twist open the Micro-Infusion device and fill with one ampule of serum.</p>",
             "image": "shopify://shop_images/mi-1.webp",
             "image_mobile": "shopify://shop_images/mi-1-mob.webp"
           }
@@ -887,7 +888,7 @@
           "type": "list",
           "settings": {
             "heading": "Treatment",
-            "text": "Start at the centre of the face and work your way outward to cover the full face.",
+            "text": "<p>Start at the centre of the face and work your way outward to cover the full face.</p>",
             "image": "shopify://shop_images/mi-2.webp",
             "image_mobile": "shopify://shop_images/mi-2-mob.webp"
           }
@@ -896,7 +897,7 @@
           "type": "list",
           "settings": {
             "heading": "Aftercare",
-            "text": "Once treatment is completed, place lid back on the needle head. Twist the lid off and dispose safely.",
+            "text": "<p>Once treatment is completed, place lid back on the needle head. Twist the lid off and dispose safely.</p>",
             "image": "shopify://shop_images/mi-3.webp",
             "image_mobile": "shopify://shop_images/mi-3-mob.webp"
           }
@@ -910,6 +911,7 @@
       "name": "t:sections.how-to-use.name",
       "settings": {
         "heading": "See how quick and easy it is to use",
+        "text": "",
         "heading_mobile": "",
         "wistia_url": "8ymvdqzx92",
         "button_label": "buy now & SAVE UP TO 67%",
@@ -1031,6 +1033,7 @@
       ],
       "name": "t:sections.serum-selection.name",
       "settings": {
+        "use_and_symbol": false,
         "heading": "Science-Backed Micro-Infusion Serums",
         "text": "Choose the exact serum to use in your Micro-Infusion treatment, or get both and mix them together to experience a complete set of benefits that addresses your specific skin concerns.",
         "left_image": "shopify://shop_images/Rectangle_389_2.png",
@@ -1045,6 +1048,7 @@
       "settings": {
         "heading": "Autumn Glow Sale",
         "text": "1,293 purchased in last 48 hours",
+        "limited": false,
         "button-label": "BUY NOW & SAVE UP TO 67%",
         "button-url": "#purchase-form"
       }
@@ -1091,7 +1095,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Dark Spots",
-            "image": "shopify://shop_images/dark_6e76a1cd-8dd2-48bc-9cb1-f4d2d5b8ef30.png",
+            "image": "shopify://shop_images/dark_spots_1.png",
             "preselected": true
           }
         },
@@ -1160,7 +1164,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Wrinkles",
-            "image": "shopify://shop_images/wrinkles_cda7892b-ae7d-4c82-b40c-ee03a802d484.png",
+            "image": "shopify://shop_images/wrinkles_1_8426e2f1-0591-4133-97a6-71ade016a9a2.png",
             "preselected": false
           }
         },
@@ -1229,7 +1233,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Mixed",
-            "image": "shopify://shop_images/mix_393d5047-dff7-41cf-aba6-3dd09e5a32a7.png",
+            "image": "shopify://shop_images/mixed_2.png",
             "preselected": false
           }
         },

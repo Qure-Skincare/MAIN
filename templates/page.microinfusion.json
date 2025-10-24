@@ -991,6 +991,7 @@
       ],
       "name": "t:sections.serum-selection.name",
       "settings": {
+        "use_and_symbol": false,
         "heading": "Science-Backed Micro-Infusion Serums",
         "text": "Choose the exact serum to use in your Micro-Infusion treatment, or get both and mix them together to experience a complete set of benefits that addresses your specific skin concerns.",
         "left_image": "shopify://shop_images/Rectangle_389.png",
@@ -1076,7 +1077,7 @@
           "type": "list",
           "settings": {
             "heading": "Prepare",
-            "text": "Twist open the Micro-Infusion device and fill with one ampule of serum.",
+            "text": "<p>Twist open the Micro-Infusion device and fill with one ampule of serum.</p>",
             "image": "shopify://shop_images/mixed_mi_1.webp",
             "image_mobile": "shopify://shop_images/mi-1-mob_10d274d3-9488-48b7-bc9c-4f36e48e9ce1.webp"
           }
@@ -1085,7 +1086,7 @@
           "type": "list",
           "settings": {
             "heading": "Treatment",
-            "text": "Start at the centre of the face and work your way outward to cover the full face.",
+            "text": "<p>Start at the centre of the face and work your way outward to cover the full face.</p>",
             "image": "shopify://shop_images/mixed_mi_2.webp",
             "image_mobile": "shopify://shop_images/mi-2-mob_0692c2e6-eb84-4d03-ac7a-f8f386d88f25.webp"
           }
@@ -1094,7 +1095,7 @@
           "type": "list",
           "settings": {
             "heading": "Aftercare",
-            "text": "Once treatment is completed, place lid back on the needle head. Twist the lid off and dispose safely.",
+            "text": "<p>Once treatment is completed, place lid back on the needle head. Twist the lid off and dispose safely.</p>",
             "image": "shopify://shop_images/mixed_mi_3.webp",
             "image_mobile": "shopify://shop_images/mi-3-mob_474650ff-a9f7-4ec8-b784-d9c7da333689.webp"
           }
@@ -1108,6 +1109,7 @@
       "name": "t:sections.how-to-use.name",
       "settings": {
         "heading": "See how quick and easy it is to use",
+        "text": "",
         "heading_mobile": "",
         "wistia_url": "8ymvdqzx92",
         "button_label": "",
@@ -1227,7 +1229,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Dark Spots",
-            "image": "shopify://shop_images/dark.png",
+            "image": "shopify://shop_images/dark_spots_1.png",
             "preselected": true
           }
         },
@@ -1296,7 +1298,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Wrinkles",
-            "image": "shopify://shop_images/wrinkles_fad540f8-ef39-4286-8e1f-297e0a1600d8.png",
+            "image": "shopify://shop_images/wrinkles_1_8426e2f1-0591-4133-97a6-71ade016a9a2.png",
             "preselected": false
           }
         },
@@ -1365,7 +1367,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Mixed",
-            "image": "shopify://shop_images/mix.png",
+            "image": "shopify://shop_images/mixed_2.png",
             "preselected": false
           }
         },
@@ -1595,6 +1597,7 @@
       "settings": {
         "heading": "Autumn Glow Sale",
         "text": "1,893 purchased in last 48 hours",
+        "limited": false,
         "button-label": "Choose Your Supply",
         "button-url": "#purchase-form"
       }

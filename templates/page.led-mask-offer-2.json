@@ -568,7 +568,7 @@
           "type": "list",
           "settings": {
             "heading": "Prepare",
-            "text": "Start with clean, dry skin—no serums or moisturizers before treatment.",
+            "text": "<p>Start with clean, dry skin—no serums or moisturizers before treatment.</p>",
             "image": "shopify://shop_images/lmo-1.webp",
             "image_mobile": "shopify://shop_images/lmo-1-mob.webp"
           }
@@ -577,7 +577,7 @@
           "type": "list",
           "settings": {
             "heading": "Treatment",
-            "text": "Open the Qure app to customize your or use the pre-set routines on the device.",
+            "text": "<p>Open the Qure app to customize your or use the pre-set routines on the device.</p>",
             "image": "shopify://shop_images/lmo-2.webp",
             "image_mobile": "shopify://shop_images/lmo-2-mob.webp"
           }
@@ -586,7 +586,7 @@
           "type": "list",
           "settings": {
             "heading": "Aftercare",
-            "text": "Relax while the mask runs its 3-minute session. Afterward, follow with your usual skincare routine.",
+            "text": "<p>Relax while the mask runs its 3-minute session. Afterward, follow with your usual skincare routine.</p>",
             "image": "shopify://shop_images/lmo-3.webp",
             "image_mobile": "shopify://shop_images/mi-3-mob_0c634efd-f922-47a6-bc40-fa8e07be1a08.webp"
           }

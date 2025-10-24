@@ -55,6 +55,12 @@
           "settings": {
             "exclude-page": "qure-microinfusion-offer"
           }
+        },
+        "exclude_page_9EKRtX": {
+          "type": "exclude-page",
+          "settings": {
+            "exclude-page": "car-giveaway"
+          }
         }
       },
       "block_order": [
@@ -62,7 +68,8 @@
         "announcement-2",
         "announcement-3",
         "exclude-page-1",
-        "exclude-page-2"
+        "exclude-page-2",
+        "exclude_page_9EKRtX"
       ],
       "settings": {
         "delay": 3000
@@ -72,10 +79,10 @@
       "type": "announcement-bar",
       "disabled": true,
       "settings": {
-        "heading": "Autumn Glow Sale 67% OFF Micro-Infusion",
-      "button-label": "Shop Now",
-        "button-url": "https://qureskincare.com/pages/microinfusion",
-        "show": true
+        "heading": "ONLY AVAILABLE TO US CUSTOMERS",
+        "button-label": "",
+        "button-url": "",
+        "show": false
       }
     },
     "header": {

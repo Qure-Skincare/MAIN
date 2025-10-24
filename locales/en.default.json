@@ -119,6 +119,7 @@
     },
     "serum-selection": {
       "or_text": "or",
+      "and_text": "&",
       "review_stars": "https://qureskincaredns-main.com/sections/isolated/serum/images/stars.webp",
       "verified_customer_text": "Verified Customer"
     },
@@ -161,6 +162,9 @@
     },
     "sticky-button-variants": {
       "select_color": "Select Option:"
+    },
+    "micro-infusion-lim-edition-bundle-action-banner": {
+      "dot_image": "https://qureskincaredns-main.com/assets/images/dot.svg"
     },
     "page-qure-filters-offer-form": {
       "settings": {
@@ -221,6 +225,10 @@
       "verified_text": "Verified",
       "review_image": "https://qureskincaredns-main.com/assets/images/reviewCheck.svg"
     },
+    "micro-infusion-lim-ed-bundle-inside-kit": {
+      "bullet_arrow": "https://qureskincaredns-main.com/sections/isolated/inside-kit/images/bullet_arrow.svg",
+      "bullet_arrow_left": "https://qureskincaredns-main.com/sections/isolated/inside-kit/images/bullet_arrow_left.svg"
+    },
     "skincare-plan": {
       "product": "Product",
       "results": "Results",
@@ -275,6 +283,9 @@
       "buy-button-label": "Buy Now ",
       "reserved-button-label": "Reserve Now",
       "soldout-button-label": "Sold Out",
+      "save": "SAVE",
+      "buy-and-save-button-label": "Buy Now & Save",
+      "limited-edition": "Limited Edition",
       "discount-text": "OFF",
       "buy-button-bottom": {
         "heading_html": "OR pay 4 monthly payments of <span class='pay_today'>{{ product_price_divided }}</span> with",
@@ -328,6 +339,14 @@
       "black-friday-discount": {
         "header": "BLACK FRIDAY PRICING",
         "save": "SAVE"
+      },
+      "money-back": {
+        "image": "moneyback_90.svg",
+        "header": "90-Day Money Back Guarantee",
+        "text": "You deserve results you can see. Try Micro-Infusion for 90 days, and if you’re not satisfied, simply get in touch with our team for a full refund!"
+      },
+      "reviews-videos": {
+        "header": "Hear What People Are Saying About Qure"
       }
     }
   },

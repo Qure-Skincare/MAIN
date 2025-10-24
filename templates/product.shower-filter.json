@@ -602,7 +602,7 @@
           "type": "list",
           "settings": {
             "heading": "Detatch",
-            "text": "Unscrew your old shower head by hand, or with a wrench (included) for more grip if needed.",
+            "text": "<p>Unscrew your old shower head by hand, or with a wrench (included) for more grip if needed.</p>",
             "image": "shopify://shop_images/detatch.webp",
             "image_mobile": "shopify://shop_images/detatch_m.webp"
           }
@@ -611,7 +611,7 @@
           "type": "list",
           "settings": {
             "heading": "Fit",
-            "text": "Wrap the plumber tape (included) around the shower pipe.",
+            "text": "<p>Wrap the plumber tape (included) around the shower pipe.</p>",
             "image": "shopify://shop_images/fit.webp",
             "image_mobile": "shopify://shop_images/fit_m.webp"
           }
@@ -620,7 +620,7 @@
           "type": "list",
           "settings": {
             "heading": "Secure",
-            "text": "Twist the Qure Shower Filter onto the pipe and tighten it securely with the wrench.",
+            "text": "<p>Twist the Qure Shower Filter onto the pipe and tighten it securely with the wrench.</p>",
             "image": "shopify://shop_images/secure.webp",
             "image_mobile": "shopify://shop_images/secure_m.webp"
           }

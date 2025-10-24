@@ -14,7 +14,7 @@
       "name": "t:sections.page-banner.name",
       "settings": {
         "heading": "Easy Returns & Exchanges",
-        "text": "Shop with confidence at Qure",
+        "text": "<p>Shop with confidence at Qure</p>",
         "sub_text": "",
         "button": "",
         "button_url": "",

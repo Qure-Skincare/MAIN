@@ -581,7 +581,7 @@
           "type": "list",
           "settings": {
             "heading": "Remove",
-            "text": "Turn off the water. Open the filter housing and remove the old cartridge. ",
+            "text": "<p>Turn off the water. Open the filter housing and remove the old cartridge.</p>",
             "image": "shopify://shop_images/Remove.webp",
             "image_mobile": "shopify://shop_images/remove-m.webp"
           }
@@ -590,7 +590,7 @@
           "type": "list",
           "settings": {
             "heading": "Fit",
-            "text": "Firmly press the new filter into the housing. Screw the cover back clockwise until it's secure.",
+            "text": "<p>Firmly press the new filter into the housing. Screw the cover back clockwise until it's secure.</p>",
             "image": "shopify://shop_images/Fit2.webp",
             "image_mobile": "shopify://shop_images/fit-m.webp"
           }
@@ -599,7 +599,7 @@
           "type": "list",
           "settings": {
             "heading": "Flush",
-            "text": "Turn on the shower and let the system run for 1–2 minutes to flush out any loose particles.",
+            "text": "<p>Turn on the shower and let the system run for 1–2 minutes to flush out any loose particles.</p>",
             "image": "shopify://shop_images/Flush.webp",
             "image_mobile": "shopify://shop_images/fit-m.webp"
           }

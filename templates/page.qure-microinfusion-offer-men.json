@@ -714,7 +714,7 @@
           "type": "list",
           "settings": {
             "heading": "Prepare",
-            "text": "Twist open the Micro-Infusion device and fill with one ampule of serum.",
+            "text": "<p>Twist open the Micro-Infusion device and fill with one ampule of serum.</p>",
             "image": "shopify://shop_images/mixed_mi_1_1284d5cb-b091-4486-8c61-8e7fb91f0ee3.webp",
             "image_mobile": "shopify://shop_images/mixed_mi_1_mob_9befa158-b63c-4fdb-9ec1-355b2c21df91.webp"
           }
@@ -723,7 +723,7 @@
           "type": "list",
           "settings": {
             "heading": "Treatment",
-            "text": "Start at the centre of the face and work your way outward to cover the full face.",
+            "text": "<p>Start at the centre of the face and work your way outward to cover the full face.</p>",
             "image": "shopify://shop_images/how_quick_men_2.webp",
             "image_mobile": "shopify://shop_images/how_quick_men_2_mob.webp"
           }
@@ -732,7 +732,7 @@
           "type": "list",
           "settings": {
             "heading": "Aftercare",
-            "text": "Once treatment is completed, place lid back on the needle head. Twist the lid off and dispose safely.",
+            "text": "<p>Once treatment is completed, place lid back on the needle head. Twist the lid off and dispose safely.</p>",
             "image": "shopify://shop_images/mixed_mi_3_91f2474a-d637-4864-9324-f49cd5d5bf72.webp",
             "image_mobile": "shopify://shop_images/mixed_mi_3_mob_32eae610-029c-499f-aa52-ca74e5d64ed4.webp"
           }
@@ -746,6 +746,7 @@
       "name": "t:sections.how-to-use.name",
       "settings": {
         "heading": "See how quick and easy it is to use",
+        "text": "",
         "heading_mobile": "How To Use",
         "wistia_url": "wxgqgsjjdr",
         "button_label": "BUY NOW & SAVE UP TO 67%",
@@ -867,6 +868,7 @@
       ],
       "name": "t:sections.serum-selection.name",
       "settings": {
+        "use_and_symbol": false,
         "heading": "Science-Backed Micro-Infusion Serums",
         "text": "Choose the exact serum to use in your Micro-Infusion treatment, or get both and mix them together to experience a complete set of benefits that addresses your specific skin concerns.",
         "left_image": "shopify://shop_images/Rectangle_389_2_2788562a-f205-4d02-97be-3df96684377b.png",
@@ -917,7 +919,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Dark Spots",
-            "image": "shopify://shop_images/dark_741b6743-4ba9-43fc-bcc2-62073e80d84a.png",
+            "image": "shopify://shop_images/dark_spots_1.png",
             "preselected": false
           }
         },
@@ -986,7 +988,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Wrinkles",
-            "image": "shopify://shop_images/wrinkles_cda7892b-ae7d-4c82-b40c-ee03a802d484.png",
+            "image": "shopify://shop_images/wrinkles_1_8426e2f1-0591-4133-97a6-71ade016a9a2.png",
             "preselected": true
           }
         },
@@ -1055,7 +1057,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Mixed",
-            "image": "shopify://shop_images/mix_393d5047-dff7-41cf-aba6-3dd09e5a32a7.png",
+            "image": "shopify://shop_images/mixed_2.png",
             "preselected": false
           }
         },
@@ -1328,6 +1330,7 @@
       "settings": {
         "heading": "Micro-Infusion Facial System",
         "text": "393 purchased in last 48 hours",
+        "limited": false,
         "button-label": "BUY NOW & SAVE UP TO 67%",
         "button-url": "#purchase-form"
       }
