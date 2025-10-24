@@ -874,7 +874,7 @@
         "image": "shopify://shop_images/serums-lady.webp",
         "image_header": "Rejuvenating Serum",
         "image_text": "For Dark Spots",
-        "image_with_text": "shopify://shop_images/dark-serum_fdd5f7a8-28fe-4952-9554-623e8727458b.webp"
+        "image_with_text": "shopify://shop_images/Rectangle_389_2_c34dc51a-61f0-46e2-b564-db68d52113a3.png"
       }
     },
     "money_back_guarantee_J29b1C": {
@@ -919,7 +919,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Dark Spots",
-            "image": "shopify://shop_images/corect_mi_dark.svg",
+            "image": "shopify://shop_images/dark_741b6743-4ba9-43fc-bcc2-62073e80d84a.png",
             "preselected": false
           }
         },

@@ -869,8 +869,8 @@
       "settings": {
         "heading": "Science-Backed Micro-Infusion Serums",
         "text": "Choose the exact serum to use in your Micro-Infusion treatment, or get both and mix them together to experience a complete set of benefits that addresses your specific skin concerns.",
-        "left_image": "shopify://shop_images/dark-serum.webp",
-        "right_image": "shopify://shop_images/wrinkle-serum.webp",
+        "left_image": "shopify://shop_images/Rectangle_389_2_2788562a-f205-4d02-97be-3df96684377b.png",
+        "right_image": "shopify://shop_images/Rectangle_389_3.png",
         "left_heading": "For Dark Spots",
         "right_heading": "For Wrinkles"
       }
@@ -917,7 +917,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Dark Spots",
-            "image": "shopify://shop_images/serum_1.webp",
+            "image": "shopify://shop_images/dark_741b6743-4ba9-43fc-bcc2-62073e80d84a.png",
             "preselected": false
           }
         },
@@ -986,7 +986,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Wrinkles",
-            "image": "shopify://shop_images/serum_2.webp",
+            "image": "shopify://shop_images/wrinkles_cda7892b-ae7d-4c82-b40c-ee03a802d484.png",
             "preselected": true
           }
         },
@@ -1055,7 +1055,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Mixed",
-            "image": "shopify://shop_images/serum_3.webp",
+            "image": "shopify://shop_images/mix_393d5047-dff7-41cf-aba6-3dd09e5a32a7.png",
             "preselected": false
           }
         },

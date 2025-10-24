@@ -12,9 +12,7 @@
     },
     "bundle-header": {
       "type": "bundle-header",
-      "custom_css": [
-        ".desktop-slider {margin-top: -100px !important;}"
-      ],
+      "custom_css": [],
       "name": "t:common.buy-box",
       "settings": {
         "heading": "Save Up to 55% on Certified Skincare Solutions",
@@ -895,7 +893,7 @@
             "text": "<p>Then get a custom skincare plan, backed by science.<\/p>",
             "image_text": "<p>Only takes 60 seconds<\/p>",
             "button-label": "Take The Quiz",
-            "button-url": ""
+            "button-url": "https://qureskincare.com/pages/skin-consultation"
           }
         }
       },

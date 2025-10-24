@@ -438,6 +438,7 @@
       "type": "trusted-recommended",
       "name": "t:sections.trusted-recommended.name",
       "settings": {
+        "background_color": "#ffffff",
         "heading": "Trusted and Recommended by Experts",
         "text": "<p>“How do you<strong> reduce the things in your water that are causing issues</strong> with your skin?<br/>This Qure filter is incredible – <strong>it’s the only filter I personally use t</strong>o [reduce] chlorine and anything else that’s going to make your water harsh for your skin.”</p>",
         "image_text": "",
@@ -656,16 +657,16 @@
             "heading": "Rainfall"
           }
         },
-        "heading_6QzNgz": {
-          "type": "heading",
-          "settings": {
-            "heading": "Power Spray"
-          }
-        },
         "heading_dDX3xm": {
           "type": "heading",
           "settings": {
             "heading": "Massage"
+          }
+        },
+        "heading_6QzNgz": {
+          "type": "heading",
+          "settings": {
+            "heading": "Power Spray"
           }
         },
         "feature_tabs_UtWJMR": {
@@ -674,27 +675,27 @@
             "image": "shopify://shop_images/shower_rainfall_6ab60934-b2f7-474b-bde9-312a392ef3e1.webp"
           }
         },
-        "feature_tabs_QWA7DM": {
-          "type": "feature_tabs",
-          "settings": {
-            "image": "shopify://shop_images/shower_spray.webp"
-          }
-        },
         "feature_tabs_nQDbrt": {
           "type": "feature_tabs",
           "settings": {
             "image": "shopify://shop_images/shower_massage_1.webp"
+          }
+        },
+        "feature_tabs_QWA7DM": {
+          "type": "feature_tabs",
+          "settings": {
+            "image": "shopify://shop_images/shower_spray.webp"
           }
         }
       },
       "block_order": [
         "additional_content_bEL9Eh",
         "heading_eVakn6",
-        "heading_6QzNgz",
         "heading_dDX3xm",
+        "heading_6QzNgz",
         "feature_tabs_UtWJMR",
-        "feature_tabs_QWA7DM",
-        "feature_tabs_nQDbrt"
+        "feature_tabs_nQDbrt",
+        "feature_tabs_QWA7DM"
       ],
       "name": "t:sections.feature-tabs.name",
       "settings": {

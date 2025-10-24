@@ -213,7 +213,7 @@
         "text_mobile": "<p>Unlock Exclusive Savings on the Qure Micro-Infusion System!</p>",
         "button_label": "Check Availability",
         "button_url": "#purchase-form",
-        "image": "shopify://shop_images/mi_bundle_114c0d15-2786-47ec-943e-bbc9031791cc.webp",
+        "image": "shopify://shop_images/MI_3_month_DS_W.png",
         "text_with_image": "<p>Free <em>World-Wide</em> Shipping over $100</p>"
       }
     },
@@ -256,7 +256,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Dark Spots",
-            "image": "shopify://shop_images/corect_mi_dark.svg",
+            "image": "shopify://shop_images/dark_741b6743-4ba9-43fc-bcc2-62073e80d84a.png",
             "preselected": true
           }
         },
@@ -325,7 +325,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Wrinkles",
-            "image": "shopify://shop_images/corect_mi_wr.svg",
+            "image": "shopify://shop_images/wrinkles_cda7892b-ae7d-4c82-b40c-ee03a802d484.png",
             "preselected": false
           }
         },
@@ -394,7 +394,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Mixed",
-            "image": "shopify://shop_images/Corect_MIX.png",
+            "image": "shopify://shop_images/mix_393d5047-dff7-41cf-aba6-3dd09e5a32a7.png",
             "preselected": false
           }
         },
