@@ -25,6 +25,10 @@
     margin: 0px;
 }
 
+.gamification-container.gamification-homepage .countdown-title{
+    color: #212428;
+}
+
 .countdown-wrapper {
     display: flex;
     gap: 12px;
