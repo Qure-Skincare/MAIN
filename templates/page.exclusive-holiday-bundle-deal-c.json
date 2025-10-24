@@ -166,7 +166,7 @@
       "settings": {
         "background_color": "#f6f6f7",
         "display_mode": "both"
-      } 
+      }
     },
     "trusted_reviews_9WdXCj": {
       "type": "trusted-reviews",
@@ -175,10 +175,10 @@
           "type": "slider",
           "settings": {
             "heading": "My skin returned to life!",
-            "text": "<p>“I just turned 57 years. My skin was extremely dry and while using this product my skin RETURNED to LIFE! I am so impressed with it! You will not regret in purchasing it. I really see the change in my skin. Outstanding job QURE!”<\/p>",
-            "compare_image": "shopify:\/\/shop_images\/ellie-v.webp",
-            "country_image": "shopify:\/\/shop_images\/america_f.webp",
-            "username": "<p>Ana L.<\/p>",
+            "text": "<p>“I just turned 57 years. My skin was extremely dry and while using this product my skin RETURNED to LIFE! I am so impressed with it! You will not regret in purchasing it. I really see the change in my skin. Outstanding job QURE!”</p>",
+            "compare_image": "shopify://shop_images/ellie-v.webp",
+            "country_image": "shopify://shop_images/america_f.webp",
+            "username": "<p>Ana L.</p>",
             "product_url": "#",
             "product_heading": "Ana uses",
             "product_text": "Micro infusion facial systems",
@@ -723,7 +723,7 @@
           "type": "items",
           "settings": {
             "heading": "Save Time<br> and Money",
-            "image": "shopify:\/\/shop_images\/drops.svg"
+            "image": "shopify://shop_images/drops.svg"
           }
         }
       },
@@ -739,55 +739,6 @@
         "background_color": "#ffffff",
         "display_mode": "static"
       }
-    },
-    "slider_featured_in_RUfV4m": {
-      "type": "slider-featured-in",
-      "blocks": {
-        "slider_ymUfgY": {
-          "type": "slider",
-          "settings": {
-            "heading": "“The professional grade is the perfect addition to any at-home skincare routine.”",
-            "image": "shopify://shop_images/vogue-black.svg"
-          }
-        },
-        "slider_eJj9q6": {
-          "type": "slider",
-          "settings": {
-            "heading": "“One of my favorite devices for the neck [...] It has a quick treatment time of 10 minutes, which makes it easy for someone to work into their daily routine.”",
-            "image": "shopify://shop_images/womens-health.svg"
-          }
-        },
-        "slider_x3CRkV": {
-          "type": "slider",
-          "settings": {
-            "heading": "“A foolproof pick: It’s affordable and high quality with dual-core red and near-infrared wavelengths.”",
-            "image": "shopify://shop_images/Popsugar_logo.svg"
-          }
-        },
-        "slider_Bzr4eD": {
-          "type": "slider",
-          "settings": {
-            "heading": "“It complements the face mask and targets areas that age first. I think it is most important for your first LED treatment.”",
-            "image": "shopify://shop_images/cosmopolitan_70c5f571-db67-4d3f-8998-714fa10f89be.svg"
-          }
-        },
-        "slider_4jJE7W": {
-          "type": "slider",
-          "settings": {
-            "heading": "“It complements the face mask and targets areas that age first. I think it is most important for your first LED treatment.”",
-            "image": "shopify://shop_images/gq.svg"
-          }
-        }
-      },
-      "block_order": [
-        "slider_ymUfgY",
-        "slider_eJj9q6",
-        "slider_x3CRkV",
-        "slider_Bzr4eD",
-        "slider_4jJE7W"
-      ],
-      "name": "t:sections.slider-featured-in.name",
-      "settings": {}
     },
     "trusted_recommended_Hp8pkA": {
       "type": "trusted-recommended",
@@ -1086,7 +1037,7 @@
       "name": "t:sections.page-banner.name",
       "settings": {
         "heading": "Better skin starts here",
-        "text": "No fake promises, no fillers – just formulas that work. Our most-loved bundles are here for a limited time, with up to 55% off and results backed by clinical studies.",
+        "text": "<p>No fake promises, no fillers – just formulas that work. Our most-loved bundles are here for a limited time, with up to 55% off and results backed by clinical studies.</p>",
         "sub_text": "",
         "button": "Shop All Best Sellers",
         "button_url": "https:\/\/qureskincare.com\/collections\/best-sellers",

@@ -6,6 +6,10 @@
       overflow: hidden !important;
   }
 
+  #testimonial-carousel-desktop, #testimonial-carousel-mobile{
+    display: none;
+  }
+
   .testimonial-carousel {
       display: flex;
       flex-direction: column;
@@ -72,7 +76,6 @@
 
   #testimonial-carousel-desktop {
       width: 100%;
-      display: flex;
       justify-content: center;
       flex-direction: column;
       margin-top: 55px;
@@ -304,7 +307,6 @@
 
       #testimonial-carousel-mobile {
           padding: 0 16px;
-          display: block;
           border-radius: 100%;
           -webkit-border-radius: 100%;
           -moz-border-radius: 100%;

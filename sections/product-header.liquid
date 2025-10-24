@@ -12,18 +12,33 @@
             <div class="col-lg-6 custom__block">
                 <div class="qure-product-details">
 
+                    {% if section.settings.limited != blank %}
+                        <p class="limited_edition">{{ 'product.settings.limited-edition' | t }}</p>
+
+                        {% if section.settings.seo_heading != blank %}
+                            <p class="mb-10 fs-16 fw-400">{{ section.settings.seo_heading }}</p>
+                        {% endif %}
+                        {% if section.settings.heading != blank %}
+                            <h1 class="qure__product-title mb-10">{{ section.settings.heading }}</h1>
+                        {% endif %}
+                    {%- endif -%}
 
                     {% render 'product-page-slider', product: product, page: blank, class: 'tp-product-gallery d-block d-lg-none mb-30', element_id: section.id %}
-                    {% render 'product-rating', product: product %}
 
-                    {% if section.settings.seo_heading != blank %}
-                        <p class="mb-10 fs-16 fw-400">{{ section.settings.seo_heading }}</p>
-                    {% endif %}
-                    {% if section.settings.heading != blank %}
-                        <h1 class="qure__product-title mb-10">{{ section.settings.heading }}</h1>
+                    {% if section.settings.rating != blank %}
+                        {% render 'product-rating', product: product %}
                     {% endif %}
 
-                    {% include 'product-page-blocks-render', allowed_types: 'limited-offer,nextships,button,description,price,section,black-friday-discount,exclusive-offer' %}
+                    {% if section.settings.limited == blank %}
+                        {% if section.settings.seo_heading != blank %}
+                            <p class="mb-10 fs-16 fw-400">{{ section.settings.seo_heading }}</p>
+                        {% endif %}
+                        {% if section.settings.heading != blank %}
+                            <h1 class="qure__product-title mb-10">{{ section.settings.heading }}</h1>
+                        {% endif %} 
+                    {% endif %}
+
+                    {% include 'product-page-blocks-render', allowed_types: 'limited-offer,nextships,button,description,price,section,black-friday-discount,exclusive-offer,money-back,reviews-videos' %}
                 </div>
             </div>
             <div class="col-lg-6 custom__block">
@@ -60,6 +75,18 @@
             "type": "text",
             "id": "heading",
             "label": "t:common.header"
+        },
+        {
+            "type": "checkbox",
+            "id": "rating",
+            "label": "t:common.rating",
+            "default": true
+        },
+        {
+            "type": "checkbox",
+            "id": "limited",
+            "label": "t:common.limited",
+            "default": false
         },
         {
             "type": "richtext",
@@ -110,6 +137,18 @@
             ]
         },
         {
+            "type": "money-back",
+            "name": "t:common.money-back",
+            "limit": 1,
+            "settings": []
+        },
+        {
+            "type": "reviews-videos",
+            "name": "t:common.reviews-videos",
+            "limit": 1,
+            "settings": []
+        },
+        {
             "type": "exclusive-offer",
             "name": "t:common.exclusive-offer",
             "limit": 1,
@@ -145,7 +184,14 @@
             "type": "price",
             "name": "t:common.price",
             "limit": 1,
-            "settings": []
+            "settings": [
+                {
+                    "type": "checkbox",
+                    "id": "show_discount",
+                    "label": "t:common.show_discount",
+                    "default": false
+                }
+            ]
         },
         {
             "type": "description",

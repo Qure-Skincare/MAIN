@@ -31,7 +31,7 @@
                   {% endif %}
                {% endif %}
                {% if section.settings.text != blank %}
-                  <p class="py-15">{{ section.settings.text }}</p>
+                  <p class="py-15">{{ section.settings.text | replace: '<p>', '' | replace: '</p>', '' }}</p>
                {% endif %}
                {% assign button_blocks_size = section.blocks | where: 'type', 'button' | size %}
                {% if button_blocks_size > 0 %}
@@ -90,7 +90,7 @@
         "label": "t:common.header"
    },
    {
-      "type": "text",
+      "type": "richtext",
       "id": "text",
       "label": "t:common.text"
    },

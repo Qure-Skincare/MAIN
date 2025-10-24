@@ -22,7 +22,7 @@
                 {% when 'description' %}
                     {% render 'product-description', description: section.settings.description %}
                 {% when 'price' %}
-                    {% render 'product-price', product_sale_price: product_sale_price %}
+                    {% render 'product-price', product_sale_price: product_sale_price, product_before_price: product_before_price, product_discount: product_discount, section: section, block: block %}
                 {% when 'limited-offer' %}
                     {% render 'product-limited-time-offer', section: section, block: block %}
                 {% when 'black-friday-discount' %}
@@ -45,6 +45,10 @@
                     {% render 'product-page-async-section', section: section, block: block %}
                 {% when 'link' %}
                     {% render 'page-link-button', section: section %}
+                {% when 'money-back' %}
+                    {% render 'product-money-back', section: section, block: block %}
+                {% when 'reviews-videos' %}
+                    {% render 'product-reviews-videos', section: section, block: block %}
             {% endcase %}
         {% endif %}
     {% endfor %}

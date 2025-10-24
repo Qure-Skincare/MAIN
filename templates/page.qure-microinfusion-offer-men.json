@@ -714,7 +714,7 @@
           "type": "list",
           "settings": {
             "heading": "Prepare",
-            "text": "Twist open the Micro-Infusion device and fill with one ampule of serum.",
+            "text": "<p>Twist open the Micro-Infusion device and fill with one ampule of serum.</p>",
             "image": "shopify://shop_images/mixed_mi_1_1284d5cb-b091-4486-8c61-8e7fb91f0ee3.webp",
             "image_mobile": "shopify://shop_images/mixed_mi_1_mob_9befa158-b63c-4fdb-9ec1-355b2c21df91.webp"
           }
@@ -723,7 +723,7 @@
           "type": "list",
           "settings": {
             "heading": "Treatment",
-            "text": "Start at the centre of the face and work your way outward to cover the full face.",
+            "text": "<p>Start at the centre of the face and work your way outward to cover the full face.</p>",
             "image": "shopify://shop_images/how_quick_men_2.webp",
             "image_mobile": "shopify://shop_images/how_quick_men_2_mob.webp"
           }
@@ -732,7 +732,7 @@
           "type": "list",
           "settings": {
             "heading": "Aftercare",
-            "text": "Once treatment is completed, place lid back on the needle head. Twist the lid off and dispose safely.",
+            "text": "<p>Once treatment is completed, place lid back on the needle head. Twist the lid off and dispose safely.</p>",
             "image": "shopify://shop_images/mixed_mi_3_91f2474a-d637-4864-9324-f49cd5d5bf72.webp",
             "image_mobile": "shopify://shop_images/mixed_mi_3_mob_32eae610-029c-499f-aa52-ca74e5d64ed4.webp"
           }

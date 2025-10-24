@@ -848,7 +848,7 @@
       "name": "t:sections.page-banner.name",
       "settings": {
         "heading": "Better skin starts here",
-        "text": "No fake promises, no fillers – just formulas that work. Our most-loved bundles are here for a limited time, with up to 55% off and results backed by clinical studies.",
+        "text": "<p>No fake promises, no fillers – just formulas that work. Our most-loved bundles are here for a limited time, with up to 55% off and results backed by clinical studies.</p>",
         "sub_text": "",
         "button": "Shop All Best Sellers",
         "button_url": "https://qureskincare.com/collections/best-sellers",

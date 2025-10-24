@@ -618,7 +618,7 @@
           "type": "list",
           "settings": {
             "heading": "Prepare",
-            "text": "Peel off the adhesive strips. Avoid touching the adhesive or the darts with your hands.",
+            "text": "<p>Peel off the adhesive strips. Avoid touching the adhesive or the darts with your hands.</p>",
             "image": "shopify://shop_images/prepare.webp",
             "image_mobile": "shopify://shop_images/prepare-m.webp"
           }
@@ -627,7 +627,7 @@
           "type": "list",
           "settings": {
             "heading": "Treatment",
-            "text": "Apply the patch on a desired area. Gently press for 5-10 seconds then leave them to work for at least two hours.",
+            "text": "<p>Apply the patch on a desired area. Gently press for 5-10 seconds then leave them to work for at least two hours.</p>",
             "image": "shopify://shop_images/treatment.webp",
             "image_mobile": "shopify://shop_images/treatment-m.webp"
           }
@@ -636,7 +636,7 @@
           "type": "list",
           "settings": {
             "heading": "Aftercare",
-            "text": "After the treatment peel off the patches gently. Wash your face and continue with your regular routine.",
+            "text": "<p>After the treatment peel off the patches gently. Wash your face and continue with your regular routine.</p>",
             "image": "shopify://shop_images/aftercare.webp",
             "image_mobile": "shopify://shop_images/aftercare-m.webp"
           }

@@ -9,7 +9,7 @@
   <div class="container">
     <div class="d-flex flex-wrap justify-content-between align-items-center py-16">
       {% if section.settings.heading != blank %}
-        <h3 class="fs-20 m-0 d-none d-md-block">{{ section.settings.heading }}</h3>
+        <h3 class="fs-20 m-0 d-none d-md-block">{{ section.settings.heading }} {% if section.settings.limited != blank %}<span class="limited_edition ml-15">{{ 'product.settings.limited-edition' | t }}</span>{% endif %}</h3>
       {% endif %}
       {% if section.settings.button-url != blank %}
         <a href="{{ section.settings.button-url }}" class="btn btn--primary">{% if section.settings.button-label != blank %}{{ section.settings.button-label }}{% else %}{{ 'product.settings.buy-button-label' | t }}{% endif %}</a>
@@ -48,6 +48,12 @@
       "type": "text",
       "id": "text",
       "label": "t:common.text"
+    },
+    {
+        "type": "checkbox",
+        "id": "limited",
+        "label": "t:common.limited",
+        "default": false
     },
     {
       "type": "text",

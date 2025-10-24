@@ -223,28 +223,28 @@
           "type": "items",
           "settings": {
             "heading": "Free Shipping On Orders Over $100",
-            "image": "shopify:\/\/shop_images\/guarantee.svg"
+            "image": "shopify://shop_images/guarantee.svg"
           }
         },
         "items_BUjmAT": {
           "type": "items",
           "settings": {
             "heading": "Dermatologist Reviewed",
-            "image": "shopify:\/\/shop_images\/sheild.svg"
+            "image": "shopify://shop_images/sheild.svg"
           }
         },
         "items_yb9bKD": {
           "type": "items",
           "settings": {
             "heading": "Buy Now, Pay Later Options Available",
-            "image": "shopify:\/\/shop_images\/pay-later.svg"
+            "image": "shopify://shop_images/pay-later.svg"
           }
         },
         "items_TVMfzL": {
           "type": "items",
           "settings": {
             "heading": "Proven Results, <br> Backed By Science",
-            "image": "shopify:\/\/shop_images\/proven-result.svg"
+            "image": "shopify://shop_images/proven-result.svg"
           }
         }
       },
@@ -266,10 +266,10 @@
       "settings": {
         "background_color": "#ffffff",
         "heading": "Trusted and Recommended by Experts",
-        "text": "<p>“This treatment is an at-home option for those who want to <strong>avoid the hassle or cost of going to the office”.<\/strong><\/p>",
+        "text": "<p>“This treatment is an at-home option for those who want to <strong>avoid the hassle or cost of going to the office”.</strong></p>",
         "image_text": "",
-        "video_cover_image": "shopify:\/\/shop_images\/shah-maxfield.webp",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=mVdncsTAXiA",
+        "video_cover_image": "shopify://shop_images/shah-maxfield.webp",
+        "video_url": "https://www.youtube.com/watch?v=mVdncsTAXiA",
         "wistia_url": ""
       }
     },
@@ -279,67 +279,67 @@
         "slider_WE3dm8": {
           "type": "slider",
           "settings": {
-            "heading": "<p>\"I like using this between my in-office treatments and it’s easy to use, even for beginners.\"<\/p>",
-            "text": "<p>Dr. Alekandra Brown<\/p>",
-            "sub_text": "<p>Board-Certified Dermatologist<\/p>",
+            "heading": "<p>\"I like using this between my in-office treatments and it’s easy to use, even for beginners.\"</p>",
+            "text": "<p>Dr. Alekandra Brown</p>",
+            "sub_text": "<p>Board-Certified Dermatologist</p>",
             "url": "rehxqby0fq",
             "checkbox": false,
-            "image": "shopify:\/\/shop_images\/home-trusted_img_1.webp"
+            "image": "shopify://shop_images/home-trusted_img_1.webp"
           }
         },
         "slider_zBJJn3": {
           "type": "slider",
           "settings": {
-            "heading": "<p>\"After just a few uses my wrinkles look less visible and my skin brighter and smoother.\"<\/p>",
-            "text": "<p>Dr. Lindsey Zubritsky<\/p>",
-            "sub_text": "<p>Board-Certified Dermatologist<\/p>",
+            "heading": "<p>\"After just a few uses my wrinkles look less visible and my skin brighter and smoother.\"</p>",
+            "text": "<p>Dr. Lindsey Zubritsky</p>",
+            "sub_text": "<p>Board-Certified Dermatologist</p>",
             "url": "ug1o3j3d8w",
             "checkbox": false,
-            "image": "shopify:\/\/shop_images\/trusted_img_5.webp"
+            "image": "shopify://shop_images/trusted_img_5.webp"
           }
         },
         "slider_bjfWpC": {
           "type": "slider",
           "settings": {
-            "heading": "<p>\"You can get a clinical treatment at home safely and conveniently... and it’s particularly beneficial for those with melanin-rich skin\"<\/p>",
-            "text": "<p>Dr. Alexis Stephens<\/p>",
-            "sub_text": "<p>Internal Medicine Doctor<\/p>",
+            "heading": "<p>\"You can get a clinical treatment at home safely and conveniently... and it’s particularly beneficial for those with melanin-rich skin\"</p>",
+            "text": "<p>Dr. Alexis Stephens</p>",
+            "sub_text": "<p>Internal Medicine Doctor</p>",
             "url": "wbf95ywhx4",
             "checkbox": false,
-            "image": "shopify:\/\/shop_images\/trusted_img_6.webp"
+            "image": "shopify://shop_images/trusted_img_6.webp"
           }
         },
         "slider_mYiDLg": {
           "type": "slider",
           "settings": {
-            "heading": "<p>\"With Qure's Micro-Infusion System - consistency is key.\"<\/p>",
-            "text": "<p>Dr. Prem Tripati<\/p>",
-            "sub_text": "<p>Facial Plastic Surgeon<\/p>",
+            "heading": "<p>\"With Qure's Micro-Infusion System - consistency is key.\"</p>",
+            "text": "<p>Dr. Prem Tripati</p>",
+            "sub_text": "<p>Facial Plastic Surgeon</p>",
             "url": "gzba345nd4",
             "checkbox": false,
-            "image": "shopify:\/\/shop_images\/trusted_img_9.webp"
+            "image": "shopify://shop_images/trusted_img_9.webp"
           }
         },
         "slider_FC8BrX": {
           "type": "slider",
           "settings": {
-            "heading": "<p>\"One of the best ways to treat hyperpigmentation at home.\"<\/p>",
-            "text": "<p>Dr. Wallace Nozile<\/p>",
-            "sub_text": "<p>Board-Certified Dermatologist<\/p>",
+            "heading": "<p>\"One of the best ways to treat hyperpigmentation at home.\"</p>",
+            "text": "<p>Dr. Wallace Nozile</p>",
+            "sub_text": "<p>Board-Certified Dermatologist</p>",
             "url": "ypvcdsgwkx",
             "checkbox": false,
-            "image": "shopify:\/\/shop_images\/trusted_img_8.webp"
+            "image": "shopify://shop_images/trusted_img_8.webp"
           }
         },
         "slider_rWeyGn": {
           "type": "slider",
           "settings": {
-            "heading": "<p>\"With Micro-Infusion, you get to see the results almost instantly.\"<\/p>",
-            "text": "<p>Dr. Davin Lim<\/p>",
-            "sub_text": "<p>Board-Certified Dermatologist<\/p>",
+            "heading": "<p>\"With Micro-Infusion, you get to see the results almost instantly.\"</p>",
+            "text": "<p>Dr. Davin Lim</p>",
+            "sub_text": "<p>Board-Certified Dermatologist</p>",
             "url": "3bud7no0j9",
             "checkbox": false,
-            "image": "shopify:\/\/shop_images\/trusted_img_7.webp"
+            "image": "shopify://shop_images/trusted_img_7.webp"
           }
         }
       },
@@ -358,170 +358,6 @@
       "type": "purchase-form-bundle",
       "blocks": {
         "type_hHPdgJ": {
-          "type": "type",
-          "settings": {}
-        },
-        "product_type_QKQhNr": {
-          "type": "product_type",
-          "settings": {
-            "heading": "Dark Spots & Hyperpigmentation",
-            "preselected": false
-          }
-        },
-        "product_DBd4ef": {
-          "type": "product",
-          "settings": {
-            "product": "fade-firm-bundle-pro",
-            "preselected": true,
-            "soldout": false,
-            "reserved": false
-          }
-        },
-        "product_7dL4ci": {
-          "type": "product",
-          "settings": {
-            "product": "fade-firm-bundle-advance",
-            "preselected": false,
-            "soldout": false,
-            "reserved": false
-          }
-        },
-        "product_Xf8A6C": {
-          "type": "product",
-          "settings": {
-            "product": "fade-firm-bundle-essentials",
-            "preselected": false,
-            "soldout": false,
-            "reserved": false
-          }
-        },
-        "type_aJwQ9q": {
-          "type": "type",
-          "settings": {}
-        },
-        "product_type_VLXcAn": {
-          "type": "product_type",
-          "settings": {
-            "heading": "Signs of Aging",
-            "preselected": true
-          }
-        },
-        "product_nyJ9n7": {
-          "type": "product",
-          "settings": {
-            "product": "line-refine-bundle-pro",
-            "preselected": true,
-            "soldout": false,
-            "reserved": false
-          }
-        },
-        "product_EKAAzA": {
-          "type": "product",
-          "settings": {
-            "product": "line-refine-bundle-advanced-1",
-            "preselected": false,
-            "soldout": false,
-            "reserved": false
-          }
-        },
-        "product_eiY89h": {
-          "type": "product",
-          "settings": {
-            "product": "line-refine-bundle-essentials",
-            "preselected": false,
-            "soldout": false,
-            "reserved": false
-          }
-        },
-        "product_dkFRPe": {
-          "type": "product",
-          "disabled": true,
-          "settings": {
-            "product": "fade-firm-bundle-advanced-bf25",
-            "preselected": false,
-            "soldout": false,
-            "reserved": false
-          }
-        },
-        "type_yDwWmt": {
-          "type": "type",
-          "settings": {}
-        },
-        "product_type_YrPQrV": {
-          "type": "product_type",
-          "settings": {
-            "heading": "Acne & Redness",
-            "preselected": false
-          }
-        },
-        "product_gbPf3J": {
-          "type": "product",
-          "settings": {
-            "product": "breakout-control-pro-1",
-            "preselected": true,
-            "soldout": false,
-            "reserved": false
-          }
-        },
-        "product_NEgEkN": {
-          "type": "product",
-          "settings": {
-            "product": "breakout-control-advanced",
-            "preselected": false,
-            "soldout": false,
-            "reserved": false
-          }
-        },
-        "product_RBCPe8": {
-          "type": "product",
-          "settings": {
-            "product": "breakout-control-essentials",
-            "preselected": false,
-            "soldout": false,
-            "reserved": false
-          }
-        },
-        "product_e9YBCe": {
-          "type": "product",
-          "disabled": true,
-          "settings": {
-            "product": "water-filter-family-bundle-bf25",
-            "preselected": false,
-            "soldout": false,
-            "reserved": false
-          }
-        }
-      },
-      "block_order": [
-        "type_hHPdgJ",
-        "product_type_QKQhNr",
-        "product_DBd4ef",
-        "product_7dL4ci",
-        "product_Xf8A6C",
-        "type_aJwQ9q",
-        "product_type_VLXcAn",
-        "product_nyJ9n7",
-        "product_EKAAzA",
-        "product_eiY89h",
-        "product_dkFRPe",
-        "type_yDwWmt",
-        "product_type_YrPQrV",
-        "product_gbPf3J",
-        "product_NEgEkN",
-        "product_RBCPe8",
-        "product_e9YBCe"
-      ],
-      "disabled": true,
-      "settings": {
-        "heading": "Choose Your Bundle",
-        "text": "Long term healthy skin and better self-esteem starts here.",
-        "form_name": "purchase-form-bundle"
-      }
-    },
-    "endrock_purchase_form_bundle_mtJJDR": {
-      "type": "endrock__purchase-form-bundle",
-      "blocks": {
-        "type_N3i9ix": {
           "type": "type",
           "settings": {}
         },
@@ -1037,7 +873,7 @@
       "name": "t:sections.page-banner.name",
       "settings": {
         "heading": "Better skin starts here",
-        "text": "No fake promises, no fillers – just formulas that work. Our most-loved bundles are here for a limited time, with up to 55% off and results backed by clinical studies.",
+        "text": "<p>No fake promises, no fillers – just formulas that work. Our most-loved bundles are here for a limited time, with up to 55% off and results backed by clinical studies.</p>",
         "sub_text": "",
         "button": "Shop All Best Sellers",
         "button_url": "https:\/\/qureskincare.com\/collections\/best-sellers",
