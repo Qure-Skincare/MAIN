@@ -11,6 +11,9 @@
   {% render 'product-price', product_sale_price: '', product_before_price: '', product_discount: '', section: '', block: '' %}
 {% enddoc %}
 
+{% assign reserved = false %}
+{% assign soldout = false %}
+
 {% if block == blank %}
   {% for _block in section.blocks %}
       {% if _block.type == 'price' %}
@@ -19,6 +22,14 @@
   {% endfor %}
 {% endif %}
 
+{% if section != blank %}
+  {% if section.settings.reserved != blank %}
+    {% assign reserved = true %}
+  {% endif %}
+  {% if section.settings.soldout != blank %}
+    {% assign soldout = true %}
+  {% endif %}
+{% endif %}
 
 {%- if block.settings.show_discount != blank -%}
   <link rel="stylesheet" href="https://qureskincaredns-main.com/shopify/css/product-price.css">
@@ -28,13 +39,15 @@
     <div class="save_price">{{ 'product.settings.save' | t }} {{ product_discount }}%</div>
   </div>
 
-  <script>
+  {% if reserved == false and soldout == false %}
+    <script>
       const buy_and_save_button_label = '{{ 'product.settings.buy-and-save-button-label' | t }} {{ product_discount }}%';
 
       document.addEventListener("DOMContentLoaded", function () {
         loadScriptOnce('product-price', 'https://qureskincaredns-main.com/shopify/js/product-price.js');
       });
   </script>
+  {% endif %}
 
 {%- else -%}
   <h4 class="fw-500 fm-body mt-20 igPrice" style="--font-h4: 22px; --font-h4-mob: 20px;">{{ product_sale_price }}</h4>
