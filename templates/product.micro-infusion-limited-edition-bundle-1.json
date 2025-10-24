@@ -12,11 +12,19 @@
     "product_header_CpLxTq": {
       "type": "product-header",
       "blocks": {
+        "description_iPBNaS": {
+          "type": "description",
+          "settings": {}
+        },
         "price_A11": {
           "type": "price",
           "settings": {
             "show_discount": true
           }
+        },
+        "button_A9": {
+          "type": "button",
+          "settings": {}
         },
         "money-back": {
           "type": "money-back",
@@ -24,14 +32,6 @@
         },
         "reviews-videos": {
           "type": "reviews-videos",
-          "settings": {}
-        },
-        "description_iPBNaS": {
-          "type": "description",
-          "settings": {}
-        },
-        "button_A9": {
-          "type": "button",
           "settings": {}
         },
         "limited_offer_A8": {
@@ -160,7 +160,6 @@
       "name": "t:sections.micro-infusion-lim-ed-bundle-inside-kit.name",
       "settings": {
         "heading": "What’s Inside the Kit",
-        "text": "",
         "image": "shopify://shop_images/inside_kit.webp",
         "button_label": "Secure My Limited Edition Kit",
         "button_url": "#buy_box"
