@@ -1,0 +1,780 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "index-mobile-category-slider": {
+      "type": "index-mobile-category-slider",
+      "blocks": {
+        "slider_tBnUFt": {
+          "type": "slider",
+          "settings": {
+            "heading": "Q-Rejuvalight LED Mask",
+            "url": "https://qureskincare.com/products/q-rejuvalight-pro-facewear",
+            "image": "shopify://shop_images/1.webp"
+          }
+        },
+        "slider_UDzThC": {
+          "type": "slider",
+          "settings": {
+            "heading": "Micro-Infusion System",
+            "url": "https://qureskincare.com/pages/microinfusion",
+            "image": "shopify://shop_images/2.webp"
+          }
+        },
+        "slider_nGjgn8": {
+          "type": "slider",
+          "settings": {
+            "heading": "Neck & Décolletage LED",
+            "url": "https://qureskincare.com/products/neck-decolletage-led",
+            "image": "shopify://shop_images/3.webp"
+          }
+        },
+        "slider_7BxLdb": {
+          "type": "slider",
+          "settings": {
+            "heading": "All-In-One Face Serum",
+            "url": "https://qureskincare.com/products/face-serum",
+            "image": "shopify://shop_images/4.webp"
+          }
+        },
+        "slider_7EAryt": {
+          "type": "slider",
+          "settings": {
+            "heading": "Micro-Infusion Patches",
+            "url": "https://qureskincare.com/products/micro-infusion-targeted-patches",
+            "image": "shopify://shop_images/5.webp"
+          }
+        },
+        "slider_tGUyQe": {
+          "type": "slider",
+          "settings": {
+            "heading": "Faucet Filter",
+            "url": "https://qureskincare.com/products/faucet-filter?variant=45852978348271",
+            "image": "shopify://shop_images/Ellipse_81_6b93c9d7-cab1-4c9e-b308-42673f25bdd8.png"
+          }
+        },
+        "slider_EhyeaX": {
+          "type": "slider",
+          "settings": {
+            "heading": "Dermal Mist",
+            "url": "https://qureskincare.com/products/dermal-mist",
+            "image": "shopify://shop_images/Ellipse_81_1.png"
+          }
+        }
+      },
+      "block_order": [
+        "slider_tBnUFt",
+        "slider_UDzThC",
+        "slider_nGjgn8",
+        "slider_7BxLdb",
+        "slider_7EAryt",
+        "slider_tGUyQe",
+        "slider_EhyeaX"
+      ],
+      "settings": {}
+    },
+    "index_banner_with_text_TNGNLJ": {
+      "type": "index-banner-with-text",
+      "disabled": true,
+      "name": "t:sections.index-banner-with-text.name",
+      "settings": {
+        "heading": "Get clinic-level results from home – minus the ‘clinical’ costs",
+        "text": "<p>Join <strong>30,000+ customers</strong> feeling more confident.</p>",
+        "image": "shopify://shop_images/hero.webp",
+        "image_mobile": "shopify://shop_images/hero-mob.webp",
+        "button_label": "Shop All Best Sellers",
+        "button_url": "shopify://collections/best-sellers",
+        "button_label_mobile": "Shop Best Sellers",
+        "button_url_mobile": "https://qureskincare.com/collections/best-sellers"
+      }
+    },
+    "index_banner_with_text_second_TNGNLJ": {
+      "type": "index-banner-with-text-second",
+      "name": "t:sections.index-banner-with-text-second.name",
+      "settings": {
+        "heading": "Get clinic-level results from home – minus the ‘clinical’ costs!!",
+        "text": "",
+        "subtext": "<p>*To support breast cancer research to prevent, detect, stop and treat breast cancer, Qure will donate $3 from every order to the National Breast Cancer Foundation.</p>",
+        "image": "shopify://shop_images/promo-banner.webp",
+        "image_mobile": "shopify://shop_images/promo-banner-mob.webp",
+        "button_label": "Shop All Best Sellers",
+        "button_url": "shopify://collections/best-sellers",
+        "button_label_mobile": "Shop Best Sellers",
+        "button_url_mobile": "https://qureskincare.com/collections/best-sellers"
+      }
+    },
+    "bundle_banner_eEa7XN": {
+      "type": "bundle-banner",
+      "name": "t:sections.bundle-banner.name",
+      "settings": {
+        "heading": "Save up to 55% on Exclusive Bundles",
+        "text": "<p>Everything your skin needs, bundled for less.</p>",
+        "text_mobile": "<p>Everything your skin needs, bundled for less. Shop our exclusive sets while they last.</p>",
+        "button": "Shop & Save 55%",
+        "button_url": "https://qureskincare.com/pages/exclusive-holiday-bundle-deal-new",
+        "image": "shopify://shop_images/bundle.webp",
+        "image_mobile": "shopify://shop_images/bundle-mob.webp"
+      }
+    },
+    "slider_featured_in_KgaUTN": {
+      "type": "slider-featured-in",
+      "blocks": {
+        "slider_rczj6t": {
+          "type": "slider",
+          "settings": {
+            "heading": "“The professional grade is the perfect addition to any at-home skincare routine.”",
+            "image": "shopify://shop_images/vogue-black_4651a572-6206-4c65-a29d-e5edf1697ad2.svg"
+          }
+        },
+        "slider_WhtWNQ": {
+          "type": "slider",
+          "settings": {
+            "heading": "“My skin actually seems considerable brighter and smoother! It’s simple, fast, and effective enough to become a daily habit.”",
+            "image": "shopify://shop_images/women-health.svg"
+          }
+        },
+        "slider_rwJFRA": {
+          "type": "slider",
+          "settings": {
+            "heading": "“The results are blatant — my glow after using the treatment speaks for itself. You'll notice hydrated, radiant, and healthy-looking skin.”",
+            "image": "shopify://shop_images/Popsugar_logo.svg"
+          }
+        },
+        "slider_GcMQyX": {
+          "type": "slider",
+          "settings": {
+            "heading": "“The combination of colors allows you to customize which lights are used, maximizing its benefits to help your skin...”",
+            "image": "shopify://shop_images/cosmopolitan_adf408aa-05b0-45c0-9349-a0f1f360ba73.svg"
+          }
+        },
+        "slider_xNnbxX": {
+          "type": "slider",
+          "settings": {
+            "heading": "“Q-Rejuvalight Pro harnesses the power of lights from blue to infrared to address nearly every skincare concern you could imagine.”",
+            "image": "shopify://shop_images/gq.svg"
+          }
+        }
+      },
+      "block_order": [
+        "slider_rczj6t",
+        "slider_WhtWNQ",
+        "slider_rwJFRA",
+        "slider_GcMQyX",
+        "slider_xNnbxX"
+      ],
+      "name": "t:sections.slider-featured-in.name",
+      "settings": {}
+    },
+    "trusted_reviews_ecfpDp": {
+      "type": "trusted-reviews",
+      "blocks": {
+        "slider_eerPKi": {
+          "type": "slider",
+          "settings": {
+            "heading": "My skin returned to life!",
+            "text": "<p>“I just turned 57 years. My skin was extremely dry and while using this product my skin RETURNED to LIFE! I am so impressed with it! You will not regret in purchasing it. I really see the change in my skin. Outstanding job QURE!”<br/><br/></p>",
+            "compare_image": "shopify://shop_images/Image_12_7a7b017a-c3dc-48b6-b46d-8381372cc87c.png",
+            "country_image": "shopify://shop_images/america_f_3d0e5b48-9006-49eb-b959-ec7fa14baea6.webp",
+            "username": "<p>Ellie V.</p>",
+            "product_url": "https://qureskincare.com/pages/microinfusion",
+            "product_heading": "Ellie uses...",
+            "product_text": "Micro-Infusion Facial System",
+            "product_image": "shopify://shop_images/Img_9.png"
+          }
+        },
+        "slider_exNrQ9": {
+          "type": "slider",
+          "settings": {
+            "heading": "Can’t go a day without it",
+            "text": "<p>“Straight away I noticed results with Qure, after the first week I had no active breakouts anymore. People ask me now how have I got my skin to be hydrated, acne-free, looking bright with no redness. I'm so reliant on the Qure mask now. I don't think I can go a day without using it.”</p>",
+            "compare_image": "shopify://shop_images/Image_13_bc21b22b-9f3d-4021-b82f-dd20246c38f8.png",
+            "country_image": "shopify://shop_images/america_f_3d0e5b48-9006-49eb-b959-ec7fa14baea6.webp",
+            "username": "<p>Anton M.</p>",
+            "product_url": "https://qureskincare.com/products/q-rejuvalight-pro-facewear",
+            "product_heading": "Anton uses...",
+            "product_text": "Q-Rejuvalight Pro LED Mask",
+            "product_image": "shopify://shop_images/Img_10.png"
+          }
+        },
+        "slider_TeRddM": {
+          "type": "slider",
+          "settings": {
+            "heading": "Works better than I imagined!",
+            "text": "<p>“I am really stunned by how well this product works. I have had professional micro-needling and I wanted the benefits without the downtime. I did my treatment, went to bed and woke up the next morning and was ready to go. My skin looks better than it has in years.”</p>",
+            "compare_image": "shopify://shop_images/Image_14_e4f17107-9f08-48d2-ac29-0ad001741697.png",
+            "country_image": "shopify://shop_images/england_f_7b85ce69-2b67-4245-a148-3dd808fc574a.webp",
+            "username": "<p>Jennifer N.</p>",
+            "product_url": "https://qureskincare.com/pages/microinfusion",
+            "product_heading": "Jennifer uses...",
+            "product_text": "Micro-Infusion Facial System",
+            "product_image": "shopify://shop_images/Img_9.png"
+          }
+        },
+        "slider_38xPQm": {
+          "type": "slider",
+          "settings": {
+            "heading": "Wish I had this technology years ago!",
+            "text": "<p>“After two weeks I began to see results and after six weeks the changes in my skin were dramatic. I have now been using Qure six months and loving the compliments! I bought masks for my daughters for Christmas so they could start at a younger age…. I wish this technology had been available when I was younger. I am 76 years old!”</p>",
+            "compare_image": "shopify://shop_images/Image_15_4c3b7577-4da7-4f8d-894d-302159d2581e.png",
+            "country_image": "shopify://shop_images/america_f_3d0e5b48-9006-49eb-b959-ec7fa14baea6.webp",
+            "username": "<p>Terri P.</p>",
+            "product_url": "https://qureskincare.com/products/q-rejuvalight-pro-facewear",
+            "product_heading": "Terri uses...",
+            "product_text": "Q-Rejuvalight Pro LED Mask",
+            "product_image": "shopify://shop_images/Img_10.png"
+          }
+        },
+        "slider_LpAF74": {
+          "type": "slider",
+          "settings": {
+            "heading": "Can see the difference after one use!",
+            "text": "<p>\"I did the patches last night and I swear just after one use I already see a result. The difference in my under-eye is wild!\"</p>",
+            "compare_image": "shopify://shop_images/cassandra.webp",
+            "country_image": "shopify://shop_images/america_f_3d0e5b48-9006-49eb-b959-ec7fa14baea6.webp",
+            "username": "<p>Cassandra</p>",
+            "product_url": "https://qureskincare.com/products/micro-infusion-targeted-patches",
+            "product_heading": "Cassandra uses...",
+            "product_text": "Micro-Infusion Targeted Patches",
+            "product_image": "shopify://shop_images/micro-infusion-targeted-patches_d896fbd3-01a9-4e6b-8786-c717634936e4.webp"
+          }
+        },
+        "slider_eV7nBd": {
+          "type": "slider",
+          "settings": {
+            "heading": "Healthier-looking glow",
+            "text": "<p>“I am really stunned by how well this product works. I have had professional micro-needling and I wanted the benefits without the downtime. I  did my treatment, went to bed and woke up the next morning and was ready to go. My skin looks better than it has in years.”</p>",
+            "compare_image": "shopify://shop_images/Claudia.webp",
+            "country_image": "shopify://shop_images/canada_f.webp",
+            "username": "<p>Claudia</p>",
+            "product_url": "https://qureskincare.com/products/neck-decolletage-led",
+            "product_heading": "Claudia uses...",
+            "product_text": "Neck & Décolletage LED System",
+            "product_image": "shopify://shop_images/neck-decolletage-led-device.webp"
+          }
+        },
+        "slider_bjVaKx": {
+          "type": "slider",
+          "settings": {
+            "heading": "Amazing",
+            "text": "<p>“I'm so happy, l've been using the products for 2 months and they have made such a difference in my skin. I had tried a lot of products before but with just one bottle of the serum, staying consistent with the Mask,  and doing a few treatments of the Micro-Infusion for scaring. l've seen a huge change in my skin.”</p>",
+            "compare_image": "shopify://shop_images/ana.webp",
+            "country_image": "shopify://shop_images/england_f_7b85ce69-2b67-4245-a148-3dd808fc574a.webp",
+            "username": "<p>Ana L.</p>",
+            "product_url": "https://qureskincare.com/products/face-serum",
+            "product_heading": "Ana uses...",
+            "product_text": "All-In-One Serum",
+            "product_image": "shopify://shop_images/all-in-one-serum.webp"
+          }
+        },
+        "slider_yC7yhD": {
+          "type": "slider",
+          "disabled": true,
+          "settings": {
+            "heading": "Completed qured my acne",
+            "text": "<p>“This is the first time in TWO YEARS that I don’t have active acne on my face. I’ve been using my Qure for 1 month now and it has completely qured my acne. It’s gone AND it’s healing all my scars and pox marks. I was literally on the verge of suicide because of my horrible skin. This device SAVED MY LIFE!!!.”</p>",
+            "compare_image": "shopify://shop_images/bj-nerdi.webp",
+            "country_image": "shopify://shop_images/canada_f.webp",
+            "username": "<p>BJ Nardi</p>",
+            "product_url": "https://qureskincare.com/products/q-rejuvalight-pro-facewear",
+            "product_heading": "BJ uses...",
+            "product_text": "Q-Rejuvalight Pro LED Mask",
+            "product_image": "shopify://shop_images/q-rejuvalight-pro-led-mask.webp"
+          }
+        },
+        "slider_cMYwQa": {
+          "type": "slider",
+          "settings": {
+            "heading": "Outstanding",
+            "text": "<p>“I’m so impressed with the results! I noticed a difference after a few weeks. I am so surprised at how much younger the skin on my neck/chest looks. Wrinkles have significantly reduced, sun spots are lighter and my skin looks and feels more rejuvenated. Device is easy to use, I love that I can clip the controller to my robe and multitask whilst using.”</p>",
+            "compare_image": "shopify://shop_images/Mary.webp",
+            "country_image": "shopify://shop_images/canada_f.webp",
+            "username": "<p>Mary R. M.</p>",
+            "product_url": "https://qureskincare.com/products/neck-decolletage-led",
+            "product_heading": "Mary uses...",
+            "product_text": "Neck & Décolletage LED System",
+            "product_image": "shopify://shop_images/neck-decolletage-led-device.webp"
+          }
+        }
+      },
+      "block_order": [
+        "slider_eerPKi",
+        "slider_exNrQ9",
+        "slider_TeRddM",
+        "slider_38xPQm",
+        "slider_LpAF74",
+        "slider_eV7nBd",
+        "slider_bjVaKx",
+        "slider_yC7yhD",
+        "slider_cMYwQa"
+      ],
+      "name": "t:sections.trusted-reviews.name",
+      "settings": {
+        "background_color": "#ffffff",
+        "heading": "Results you’ll see with your own eyes",
+        "text": "",
+        "text_mobile": "",
+        "button_label": "",
+        "button_url": ""
+      }
+    },
+    "index-qure-products": {
+      "type": "index-qure-products",
+      "blocks": {
+        "hover_image_y8Fn3G": {
+          "type": "hover_image",
+          "settings": {
+            "heading": "Micro-Infusion Facial System",
+            "product": "micro-infusion-1-month-bundle-for-wrinkles-dark-spots",
+            "image_text": "Bestseller",
+            "image": "shopify://shop_images/micro-infusion-facial-system.webp",
+            "hover_image": "shopify://shop_images/Frame_1073714796_1.png",
+            "url": "https://qureskincare.com/pages/microinfusion",
+            "rating_text": "1,312 Reviews",
+            "rating_image": "shopify://shop_images/stars_28fec7ee-9c78-4fd9-a20e-79d5fd6f89e3.svg",
+            "label_price": "from"
+          }
+        },
+        "hover_image_FDAa4d": {
+          "type": "hover_image",
+          "settings": {
+            "heading": "Q-Rejuvalight Pro Facewear",
+            "product": "q-rejuvalight-pro-facewear",
+            "image_text": "Bestseller",
+            "image": "shopify://shop_images/q-rejuvalight-pro-facewear.webp",
+            "hover_image": "shopify://shop_images/Frame_1073714814_1.png",
+            "url": "https://qureskincare.com/products/q-rejuvalight-pro-facewear",
+            "rating_text": "1,375 Reviews",
+            "rating_image": "shopify://shop_images/stars_28fec7ee-9c78-4fd9-a20e-79d5fd6f89e3.svg",
+            "label_price": ""
+          }
+        },
+        "hover_image_hm3rHW": {
+          "type": "hover_image",
+          "settings": {
+            "heading": "All-In-One Face Serum",
+            "product": "face-serum",
+            "image_text": "tending",
+            "image": "shopify://shop_images/all-in-one-face-serum.webp",
+            "hover_image": "shopify://shop_images/Img_7.png",
+            "url": "https://qureskincare.com/products/face-serum",
+            "rating_text": "380 Reviews",
+            "rating_image": "shopify://shop_images/stars_28fec7ee-9c78-4fd9-a20e-79d5fd6f89e3.svg",
+            "label_price": ""
+          }
+        },
+        "hover_image_kQWMy8": {
+          "type": "hover_image",
+          "settings": {
+            "heading": "Micro-Infusion Targeted Patches",
+            "product": "micro-infusion-targeted-patches",
+            "image_text": "Trending",
+            "image": "shopify://shop_images/micro-infusion-targeted-patches.webp",
+            "hover_image": "shopify://shop_images/Patches_f35d5219-aea3-4fe7-804d-052768dce864.png",
+            "url": "https://qureskincare.com/products/micro-infusion-targeted-patches",
+            "rating_text": "157 Reviews",
+            "rating_image": "shopify://shop_images/stars_28fec7ee-9c78-4fd9-a20e-79d5fd6f89e3.svg",
+            "label_price": ""
+          }
+        }
+      },
+      "block_order": [
+        "hover_image_y8Fn3G",
+        "hover_image_FDAa4d",
+        "hover_image_hm3rHW",
+        "hover_image_kQWMy8"
+      ],
+      "settings": {
+        "heading": "Top Rated Products"
+      }
+    },
+    "index_get_qure_mqX6LE": {
+      "type": "index-get-qure",
+      "blocks": {
+        "listed_deal_QhxjtH": {
+          "type": "listed_deal",
+          "settings": {
+            "text": "<p>Signs of aging, fine lines and wrinkles</p>",
+            "button": "Shop Now",
+            "button_url": "https://qureskincare.com/collections/fine-line-wrinkles",
+            "image": "shopify://shop_images/gq-1.webp",
+            "image_mobile": "shopify://shop_images/Category_1.png"
+          }
+        },
+        "listed_deal_gdiJ4J": {
+          "type": "listed_deal",
+          "settings": {
+            "text": "<p>Dark spots and uneven skin tone</p>",
+            "button": "Shop Now",
+            "button_url": "https://qureskincare.com/collections/dark-spots",
+            "image": "shopify://shop_images/gq-2.webp",
+            "image_mobile": "shopify://shop_images/gq-mob-2.webp"
+          }
+        },
+        "listed_deal_DyxiXX": {
+          "type": "listed_deal",
+          "settings": {
+            "text": "<p>Large pores and textured skin</p>",
+            "button": "Shop Now",
+            "button_url": "https://qureskincare.com/collections/dark-spots",
+            "image": "shopify://shop_images/gq-3.webp",
+            "image_mobile": "shopify://shop_images/gq-mob-3.webp"
+          }
+        },
+        "listed_deal_kzdUNH": {
+          "type": "listed_deal",
+          "settings": {
+            "text": "<p>Acne breakouts<br/>and blemishes</p>",
+            "button": "Shop Now",
+            "button_url": "https://qureskincare.com/collections/acne-breakouts",
+            "image": "shopify://shop_images/gq-4.webp",
+            "image_mobile": "shopify://shop_images/Category.png"
+          }
+        }
+      },
+      "block_order": [
+        "listed_deal_QhxjtH",
+        "listed_deal_gdiJ4J",
+        "listed_deal_DyxiXX",
+        "listed_deal_kzdUNH"
+      ],
+      "name": "t:sections.index-get-qure.name",
+      "settings": {
+        "heading": "Get the Qure",
+        "text": "<p>Reclaim your confidence at any age, no matter what your skin concern is.</p>"
+      }
+    },
+    "trusted_recommended_KHYLQ9": {
+      "type": "trusted-recommended",
+      "name": "t:sections.trusted-recommended.name",
+      "settings": {
+        "background_color": "#ffffff",
+        "heading": "Trusted and Recommended by Experts",
+        "text": "<p>“This treatment is an at-home option for those who want to <strong>avoid the hassle or cost of going to the office”.</strong></p>",
+        "image_text": "",
+        "video_cover_image": "shopify://shop_images/shah-maxfield.webp",
+        "video_url": "https://www.youtube.com/watch?v=JPWycy8cwN8",
+        "wistia_url": ""
+      }
+    },
+    "video_slider_MWbVWw": {
+      "type": "video-slider",
+      "blocks": {
+        "slider_DJLy8m": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>\"I like using this between my in-office treatments and it’s easy to use, even for beginners.\"</p>",
+            "text": "<p>Dr. Alekandra Brown</p>",
+            "sub_text": "<p>Board-Certified Dermatologist</p>",
+            "url": "rehxqby0fq",
+            "checkbox": false,
+            "image": "shopify://shop_images/home-trusted_img_1.webp"
+          }
+        },
+        "slider_kPRrAP": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>\"After just a few uses my wrinkles look less visible and my skin brighter and smoother.\"</p>",
+            "text": "<p>Dr. Lindsey Zubritsky</p>",
+            "sub_text": "<p>Board-Certified Dermatologist</p>",
+            "url": "ug1o3j3d8w",
+            "checkbox": false,
+            "image": "shopify://shop_images/trusted_img_5.webp"
+          }
+        },
+        "slider_waHMbF": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>\"You can get a clinical treatment at home safely and conveniently... and it’s particularly beneficial for those with melanin-rich skin\"</p>",
+            "text": "<p>Dr. Alexis Stephens</p>",
+            "sub_text": "<p>Internal Medicine Doctor</p>",
+            "url": "wbf95ywhx4",
+            "checkbox": false,
+            "image": "shopify://shop_images/trusted_img_6.webp"
+          }
+        },
+        "slider_QyMERA": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>\"With Qure's Micro-Infusion System - consistency is key.\"</p>",
+            "text": "<p>Dr. Prem Tripati</p>",
+            "sub_text": "<p>Facial Plastic Surgeon</p>",
+            "url": "gzba345nd4",
+            "checkbox": false,
+            "image": "shopify://shop_images/trusted_img_9.webp"
+          }
+        },
+        "slider_P434c6": {
+          "type": "slider",
+          "disabled": true,
+          "settings": {
+            "heading": "<p>\"One of the best ways to treat hyperpigmentation at home.\"</p>",
+            "text": "<p>Dr. Wallace Nozile</p>",
+            "sub_text": "<p>Board-Certified Dermatologist</p>",
+            "url": "ypvcdsgwkx",
+            "checkbox": false,
+            "image": "shopify://shop_images/trusted_img_8.webp"
+          }
+        },
+        "slider_ThUgnK": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>“With Micro-Infusion, many notice a visible glow soon after treatment.”</p>",
+            "text": "<p>Dr. Davin Lim</p>",
+            "sub_text": "<p>Board-Certified Dermatologist</p>",
+            "url": "3bud7no0j9",
+            "checkbox": false,
+            "image": "shopify://shop_images/trusted_img_7.webp"
+          }
+        },
+        "slider_wX7Rab": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>\"One of the best ways to address the look of hyperpigmentation at home.\"</p>",
+            "text": "<p>Dr. Wallace Nozile</p>",
+            "sub_text": "<p>Board-Certified Dermatologist</p>",
+            "url": "ypvcdsgwkx",
+            "checkbox": false,
+            "image": "shopify://shop_images/trusted_img_8.webp"
+          }
+        },
+        "slider_dFKXa3": {
+          "type": "slider",
+          "disabled": true,
+          "settings": {
+            "heading": "<p>\"With Micro-Infusion, you get to see the results almost instantly.\"</p>",
+            "text": "<p>Dr. Davin Lim</p>",
+            "sub_text": "<p>Board-Certified Dermatologist</p>",
+            "url": "3bud7no0j9",
+            "checkbox": false,
+            "image": "shopify://shop_images/trusted_img_7.webp"
+          }
+        }
+      },
+      "block_order": [
+        "slider_DJLy8m",
+        "slider_kPRrAP",
+        "slider_waHMbF",
+        "slider_QyMERA",
+        "slider_P434c6",
+        "slider_ThUgnK",
+        "slider_wX7Rab",
+        "slider_dFKXa3"
+      ],
+      "name": "t:sections.video-slider.name",
+      "settings": {}
+    },
+    "carousel_qXW6Gd": {
+      "type": "carousel",
+      "blocks": {
+        "items_NHKMPi": {
+          "type": "items",
+          "settings": {
+            "heading": "Free Shipping On Orders Over $100",
+            "image": "shopify://shop_images/guarantee.svg"
+          }
+        },
+        "items_qd3AjU": {
+          "type": "items",
+          "settings": {
+            "heading": "Dermatologist Reviewed",
+            "image": "shopify://shop_images/Guarantee_Icons.svg"
+          }
+        },
+        "items_ANgYcm": {
+          "type": "items",
+          "settings": {
+            "heading": "Buy Now, Pay Later Options Available",
+            "image": "shopify://shop_images/pay-later.svg"
+          }
+        },
+        "items_wpmqpr": {
+          "type": "items",
+          "settings": {
+            "heading": "Proven Results, Backed By Science",
+            "image": "shopify://shop_images/proven-result.svg"
+          }
+        }
+      },
+      "block_order": [
+        "items_NHKMPi",
+        "items_qd3AjU",
+        "items_ANgYcm",
+        "items_wpmqpr"
+      ],
+      "name": "t:common.carousel",
+      "settings": {
+        "background_color": "#f6f6f7",
+        "display_mode": "both"
+      }
+    },
+    "our_advisors_LPVVBm": {
+      "type": "our-advisors",
+      "blocks": {
+        "accordion_Gef7nK": {
+          "type": "accordion",
+          "settings": {
+            "heading": "<p>Dr. Shah</p>",
+            "text": "<p>Board Certified Dermatologist</p>",
+            "sub_text": "<p>“I like that they put a lot of R&D into their products - Ultimately, I think that they care a lot about the products they are putting out”<br/></p>",
+            "image": "shopify://shop_images/shah.webp"
+          }
+        },
+        "accordion_cAtJ6W": {
+          "type": "accordion",
+          "settings": {
+            "heading": "<p>Dr. Maxfield</p>",
+            "text": "<p>Board Certified Dermatologist</p>",
+            "sub_text": "<p>“Qure do studies on this, taking a look at how effective it is, so you can have confidence it’s going to help what you’re doing for your skincare routine”</p>",
+            "image": "shopify://shop_images/maxfield.webp"
+          }
+        },
+        "accordion_iMxgiG": {
+          "type": "accordion",
+          "settings": {
+            "heading": "<p>Dr. Tripathi</p>",
+            "text": "<p>Double Board Certified Facial Plastic Surgeon</p>",
+            "sub_text": "<p>“I love that Qure Skincare products go beyond just topical treatments, helping to maintain the results of in-office procedures.”</p>",
+            "image": "shopify://shop_images/tripathi.webp"
+          }
+        },
+        "accordion_JkR3Rq": {
+          "type": "accordion",
+          "settings": {
+            "heading": "<p>Dr. Stephens</p>",
+            "text": "<p>Board Certified Dermatologist</p>",
+            "sub_text": "<p>\"What really sets Qure apart is the level of innovation and thoughtfulness they put into each product. Their commitment to quality and attention to detail really shines through in everything they create\"<br/><br/></p>",
+            "image": "shopify://shop_images/stephens.webp"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_Gef7nK",
+        "accordion_cAtJ6W",
+        "accordion_iMxgiG",
+        "accordion_JkR3Rq"
+      ],
+      "name": "t:sections.our-advisors.name",
+      "settings": {
+        "heading": "Meet our board of advisors",
+        "text": "<p>At Qure Skincare, we are proud to have a team of esteemed Dermatologists guiding our mission to deliver high-quality skincare solutions.</p>"
+      }
+    },
+    "quiz_wdnen7": {
+      "type": "quiz",
+      "blocks": {
+        "take_quiz_Pkcafw": {
+          "type": "take_quiz",
+          "settings": {
+            "heading": "Take The Quiz",
+            "text": "<p>Then get a custom skincare plan, backed by science.</p>",
+            "image_text": "<p>Only takes 60 seconds</p>",
+            "button-label": "Take The Quiz",
+            "button-url": "https://qureskincare.com/pages/skin-consultation"
+          }
+        }
+      },
+      "block_order": [
+        "take_quiz_Pkcafw"
+      ],
+      "name": "t:sections.quiz.name",
+      "settings": {
+        "heading": "Unlock Your Personalized Skincare Routine",
+        "text": "<p>You don’t have time for products that don’t work. We’ll prescribe you a personalized routine with clinically proven products and tips - just for your skin.</p>",
+        "sub_text": "Here’s your personalized skincare routine…"
+      }
+    },
+    "index-read-our-story": {
+      "type": "index-read-our-story",
+      "settings": {
+        "heading": "Feeling good in your skin is not a privilege – it’s a right",
+        "text": "At Qure, we're redefining beauty boundaries by making professional clinical treatments accessible to everyone from the comfort of peoples home—without the clinical price tag.",
+        "button": "Read Our Story",
+        "url": "https://qureskincare.com/pages/our-story",
+        "image": "shopify://shop_images/collage.webp"
+      }
+    },
+    "blocks": {
+      "type": "blocks",
+      "blocks": {
+        "block_card_CwMxwz": {
+          "type": "block-card",
+          "name": "t:blocks.block-card.name",
+          "settings": {
+            "heading": "Learn more and share your skincare journey",
+            "text": "Achieve your best skin yet with our simple 3-step skincare routine.",
+            "button-label": "Join Our Community",
+            "button-url": "https://m.facebook.com/groups/140594262121805/?ref=d6cb54b2-d73b-423e-8d66-3b5b3a661340"
+          },
+          "blocks": {
+            "block_card_item_eWMt8m": {
+              "type": "_block-card-item",
+              "name": "t:blocks.block-card-item.name",
+              "settings": {
+                "hash": "skin",
+                "text": "Does Drinking Water Help Clear Your Skin?",
+                "image": "shopify://shop_images/block-card-1.webp",
+                "link-url": "https://qureskincare.com/blogs/skin/does-drinking-water-help-clear-your-skin"
+              },
+              "blocks": {}
+            },
+            "block_card_item_3bxMai": {
+              "type": "_block-card-item",
+              "name": "t:blocks.block-card-item.name",
+              "settings": {
+                "hash": "skincare",
+                "text": "Benefits of Peptides for the Skin",
+                "image": "shopify://shop_images/block-card-2.webp",
+                "link-url": "#"
+              },
+              "blocks": {}
+            },
+            "block_card_item_E9Aq43": {
+              "type": "_block-card-item",
+              "name": "t:blocks.block-card-item.name",
+              "settings": {
+                "hash": "light-therapy",
+                "text": "How LED Therapy Can Transform Your Skin",
+                "image": "shopify://shop_images/block-card-3.webp",
+                "link-url": "#"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "block_card_item_eWMt8m",
+            "block_card_item_3bxMai",
+            "block_card_item_E9Aq43"
+          ]
+        }
+      },
+      "block_order": [
+        "block_card_CwMxwz"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "index-mobile-category-slider",
+    "index_banner_with_text_TNGNLJ",
+    "index_banner_with_text_second_TNGNLJ",
+    "bundle_banner_eEa7XN",
+    "slider_featured_in_KgaUTN",
+    "trusted_reviews_ecfpDp",
+    "index-qure-products",
+    "index_get_qure_mqX6LE",
+    "trusted_recommended_KHYLQ9",
+    "video_slider_MWbVWw",
+    "carousel_qXW6Gd",
+    "our_advisors_LPVVBm",
+    "quiz_wdnen7",
+    "index-read-our-story",
+    "blocks"
+  ]
+}
