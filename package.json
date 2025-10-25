@@ -1,0 +1,9 @@
+{
+    "name": "shopify-theme",
+    "version": "1.0.0",
+    "scripts": {
+      "dev": "shopify theme dev --live-reload=hot-reload --theme-editor-sync --force",
+      "check": "shopify theme check"
+    }
+  }
+  
