@@ -7,5 +7,13 @@
     "open": "git pull origin production; git checkout -b feature/$npm_config_name",
     "close": "git pull origin production; git fetch --prune; git branch -D feature/$npm_config_name",
     "sync": "git checkout production; git pull origin production; git fetch --prune"
+  },
+  "comments": {
+    "start": "npm run start",
+    "check": "npm run check",
+    "push": "npm run push --name=[branch-name] --message=[optional]",
+    "open": "npm run open --name=[branch-name]",
+    "close": "npm run close --name=[branch-name]",
+    "sync": "npm run sync"
   }
 }
