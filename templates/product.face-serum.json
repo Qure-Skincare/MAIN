@@ -14,6 +14,7 @@
       "blocks": {
         "black_friday_discount_A9": {
           "type": "black-friday-discount",
+          "disabled": true,
           "settings": {
             "discount_percent": 26
           }
@@ -200,7 +201,7 @@
       "settings": {
         "form_name": "purchase-form-landing",
         "hide_types": true,
-        "type": "list"
+        "type": "box"
       }
     },
     "logos_89qVYW": {
