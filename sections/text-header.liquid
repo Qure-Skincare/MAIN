@@ -1,5 +1,5 @@
 {% if section.settings.heading != blank %}
-    <div class="qure__section-header text-center mt-30 mb-30">
+    <div id="{{ section.settings.heading | strip | downcase | replace: ' ', '-' | escape }}" class="qure__section-header text-center mt-30 mb-30">
         <h2 class="qure__section-heading">{{ section.settings.heading }}</h2>
     </div>
 {% endif %}
