@@ -9,9 +9,70 @@
  */
 {
   "sections": {
-    "main": {
-      "type": "product-micro-infusion-limited-edition-bundle-1",
-      "settings": {}
+    "product_header_CpLxTq": {
+      "type": "product-header",
+      "blocks": {
+        "description_iPBNaS": {
+          "type": "description",
+          "settings": {}
+        },
+        "price_A11": {
+          "type": "price",
+          "settings": {
+            "show_discount": true
+          }
+        },
+        "button_A9": {
+          "type": "button",
+          "settings": {}
+        },
+        "money-back": {
+          "type": "money-back",
+          "settings": {}
+        },
+        "reviews-videos": {
+          "type": "reviews-videos",
+          "settings": {}
+        },
+        "limited_offer_A8": {
+          "type": "limited-offer",
+          "disabled": true,
+          "settings": {
+            "sum": "$100",
+            "code": "QURE100",
+            "days": 5
+          }
+        },
+        "nextships_BtDkBp": {
+          "type": "nextships",
+          "disabled": true,
+          "settings": {
+            "date": "25 September",
+            "percent": 55,
+            "date_soldout": "28 July",
+            "date_reserved": "3 August"
+          }
+        }
+      },
+      "block_order": [
+        "description_iPBNaS",
+        "price_A11",
+        "button_A9",
+        "money-back",
+        "reviews-videos",
+        "limited_offer_A8",
+        "nextships_BtDkBp"
+      ],
+      "name": "t:sections.product-header.name",
+      "settings": {
+        "seo_heading": "",
+        "heading": "Micro-Infusion Glowcase",
+        "rating": false,
+        "limited": true,
+        "description": "<p>Late nights. Long flights. Endless events. Meet your glow-to: Micro-Infusion Limited Edition. The cosmetic mirror case makes it easy to take your favorite treatments anywhere, keeping yourskin hydrated wherever you are.</p>",
+        "reserved": false,
+        "soldout": false
+      }
     },
     "slider_featured_in_GrJ4Na": {
       "type": "slider-featured-in",
@@ -99,8 +160,7 @@
       "name": "t:sections.micro-infusion-lim-ed-bundle-inside-kit.name",
       "settings": {
         "heading": "What’s Inside the Kit",
-        "text": "",
-        "image": "shopify://shop_images/inside_kit.webp",
+        "image": "shopify://shop_images/Img_26.png",
         "button_label": "Secure My Limited Edition Kit",
         "button_url": "#buy_box"
       }
@@ -361,7 +421,7 @@
           "type": "left_accordion",
           "settings": {
             "heading": "All Ingredients",
-            "text": "<p><strong>Odycea Onsen-Sui (Thermal Spring Water):</strong> Making up over 50% of the formula, this mineral-rich thermal spring water forms the base of our serum. Known for its natural soothing and balancing properties, it helps support skin hydration, comfort, and resilience while enhancing overall formula compatibility — even for sensitive skin.</p><p><strong>Epidermal Growth Factor (EGF):</strong> A science-backed ingredient known to support the look of smoother, hydrated, and more refreshed skin. Helps visibly reduce the look of fine lines and uneven tone. </p><p><strong>Niacinamide:</strong> A multi-benefit vitamin known to help improve the look of uneven tone, minimize visible pores, and support smoother-looking skin.</p><p><strong>Tranexamic Acid:</strong>A brightening ingredient that helps visibly improve the look of dark spots, uneven tone, and dullness.</p><p><strong>All ingredients:</strong></p><p>Odycea Onsen-Sui (Thermal water), Propanediol, Glycerin, Tranexamic Acid, Niacinamide, Panthenol, Chrysanthellum Indicum Extract, Ethylhexylglycerin, Tripeptide-1, Xanthan Gum, Allantoin, SH-Oligopeptide-1.</p><p><em>Please note that due to innovative updates and changing regulatory guidelines, the ingredient lists provided here may differ slightly from those on our packaging and distributor websites.</em></p>"
+            "text": "<p><strong>Odycea Onsen-Sui Thermal Spring Water (France):</strong> Making up 50% of the formula, this mineral-rich thermal spring water is the foundation of our serum. Naturally sourced from the Onsen-Sui springs in France, it’s known for its soothing, hydrating, and balancing properties that help support skin comfort, barrier strength, and ingredient performance. As the main base of our micro-infusion system, it gives the formula its refreshing and lightweight feel — gentle enough even for sensitive skin.<br/><br/><strong>Epidermal Growth Factor (EGF):</strong> A science-backed ingredient known to support the look of smoother, hydrated, and more refreshed skin. Helps visibly reduce the look of fine lines and uneven tone.<br/><br/><strong>Niacinamide:</strong>A multi-benefit vitamin known to help improve the look of uneven tone, minimize visible pores, and support smoother-looking skin.<br/><br/><strong>Tranexamic Acid</strong>:A brightening ingredient that helps visibly improve the look of dark spots, uneven tone, and dullness.<br/><br/><strong>All ingredients</strong>: Odycea Onsen-Sui (Thermal water), Propanediol, Glycerin, Tranexamic Acid, Niacinamide, Panthenol, Chrysanthellum Indicum Extract, Ethylhexylglycerin, Tripeptide-1, Xanthan Gum, Allantoin, SH-Oligopeptide-1.</p><p><em>Please note that due to innovative updates and changing regulatory guidelines, the ingredient lists provided here may differ slightly from those on our packaging and distributor websites.</em></p>"
           }
         },
         "right_accordion_mDwXEE": {
@@ -375,7 +435,7 @@
           "type": "right_accordion",
           "settings": {
             "heading": "All Ingredients",
-            "text": "<p><strong>Odycea Onsen-Sui (Thermal Spring Water):</strong> Making up over 50% of the formula, this mineral-rich thermal spring water forms the base of our serum. Known for its natural soothing and balancing properties, it helps support skin hydration, comfort, and resilience while enhancing overall formula compatibility — even for sensitive skin.</p><p><strong>Niacinamide:</strong> A powerful hydrator that helps the skin feel supple, moisturized, and visibly smoother.</p><p><strong>GHK-Cu (Copper Peptide):</strong> A peptide complex known to help improve the appearance of firmness and smoothness for youthful-looking skin. Gives the serum its signature blue hue.</p><p><strong>Sodium Hyaluronate:</strong> A powerful hydrator that helps the skin feel supple, moisturized, and visibly smoother.</p><p><strong>All ingredients:</strong></p><p>Odycea Onsen-Sui (Thermal water), Propanediol, Glycerin, Panthenol, Niacinamide, Myrothamnus Flabellifolia Leaf/Stem Extract, Water, Butylene Glycol, Hydroxyacetophenone, Copper Tripeptide-1, Beta-Glucan, Chrysanthellum Indicum Extract, Ethylhexylglycerin, Allantoin, Sodium Hyaluronate, Xanthan Gum.</p><p><em>Please note that due to innovative updates and changing regulatory guidelines, the ingredient lists provided here may differ slightly from those on our packaging and distributor websites.</em></p>"
+            "text": "<p><strong>Odycea Onsen-Sui Thermal Spring Water (France): </strong>Making up 50% of the formula, this mineral-rich thermal spring water is the foundation of our serum. Naturally sourced from the Onsen-Sui springs in France, it’s known for its soothing, hydrating, and balancing properties that help support skin comfort, barrier strength, and ingredient performance. As the main base of our micro-infusion system, it gives the formula its refreshing and lightweight feel — gentle enough even for sensitive skin.<br/><br/><strong>Beta Glucan:</strong> A powerful hydrator that helps the skin feel supple, moisturized, and visibly smoother.<br/><br/><strong>GHK-Cu (Copper Peptide)</strong>:A peptide complex known to help improve the appearance of firmness and smoothness for youthful-looking skin. Gives the serum its signature blue hue.<br/><br/><strong>Sodium Hyaluronate:</strong>A powerful hydrator that helps the skin feel supple, moisturized, and visibly smoother.</p><p><strong>All ingredients:</strong></p><p>Odycea Onsen-Sui (Thermal water), Propanediol, Glycerin, Panthenol, Niacinamide, Myrothamnus Flabellifolia Leaf/Stem Extract, Water, Butylene Glycol, Hydroxyacetophenone, Copper Tripeptide-1, Beta-Glucan, Chrysanthellum Indicum Extract, Ethylhexylglycerin, Allantoin, Sodium Hyaluronate, Xanthan Gum.</p><p><em>Please note that due to innovative updates and changing regulatory guidelines, the ingredient lists provided here may differ slightly from those on our packaging and distributor websites.</em></p>"
           }
         }
       },
@@ -447,8 +507,8 @@
           "settings": {
             "heading": "Cleanse",
             "text": "<p>Cleanse your face thoroughly and spritz the <a href=\"https://qureskincare.com/products/dermal-mist\" title=\"https://qureskincare.com/products/dermal-mist\">Dermal Mist</a> to refresh and prepare your skin further.</p>",
-            "image": "shopify://shop_images/mi_era_1.webp",
-            "image_mobile": "shopify://shop_images/mi_era_1_mob.webp"
+            "image": "shopify://shop_images/1a_1_1_856035da-a280-46f7-bb2b-4ce26b3c718b.png",
+            "image_mobile": "shopify://shop_images/1a_1_2_8f0fa775-9129-4f0b-bd4c-e57c14c61be1.png"
           }
         },
         "list_rydhbU": {
@@ -456,8 +516,8 @@
           "settings": {
             "heading": "Prepare",
             "text": "<p>Twist off the cap of the serum vial and screw on the sterile needle head.</p>",
-            "image": "shopify://shop_images/mi_era_2.webp",
-            "image_mobile": "shopify://shop_images/mi_era_2_mob.webp"
+            "image": "shopify://shop_images/1a_2_1_400c8cf5-d28f-4554-b370-ed43783b065d.png",
+            "image_mobile": "shopify://shop_images/1a_2_c5019e08-dd4f-4562-afec-0dd58af880a3.png"
           }
         },
         "list_mh4AVY": {
@@ -465,8 +525,8 @@
           "settings": {
             "heading": "Treat",
             "text": "<p>Remove the cap and stamp gently across your face using light pressure, working section-by-section.</p>",
-            "image": "shopify://shop_images/mi_era_3.webp",
-            "image_mobile": "shopify://shop_images/mi_era_3_mob.webp"
+            "image": "shopify://shop_images/1a_3_1.png",
+            "image_mobile": "shopify://shop_images/1a_3_0480d313-7c73-4e78-9aa8-bb98becf55d8.png"
           }
         },
         "image_with_text_7cWV99": {
@@ -633,19 +693,20 @@
         "promotional_terms_and_conditions": ""
       }
     },
-    "micro_infusion_lim_ed_bundle_sticky_button_wnVTTV": {
-      "type": "micro-infusion-lim-ed-bundle-sticky-button",
-      "name": "t:sections.micro-infusion-lim-ed-bundle-sticky-button.name",
+    "sticky_cta_AFkFxe": {
+      "type": "sticky-button",
+      "name": "t:sections.sticky-button.name",
       "settings": {
-        "heading": "<p>Micro-Infusion Glowcase <em>Limited Edition</em></p>",
+        "heading": "Micro-Infusion Glowcase",
         "text": "<p><strong>Grab it while stocks last:</strong>Under 100 cases remaining</p>",
-        "button-label": "BUY NOW & SAVE 68%",
-        "button-url": "#buy_box"
+        "limited": true,
+        "button-label": "",
+        "button-url": ""
       }
     }
   },
   "order": [
-    "main",
+    "product_header_CpLxTq",
     "slider_featured_in_GrJ4Na",
     "micro_infusion_lim_ed_bundle_inside_kit_VNrLBK",
     "banner_with_text_Jet7fb",
@@ -655,6 +716,6 @@
     "how_to_use_FEKfw9",
     "micro_infusion_lim_ed_bundle_page_banner_fdpNTq",
     "faq_kPzeHm",
-    "micro_infusion_lim_ed_bundle_sticky_button_wnVTTV"
+    "sticky_cta_AFkFxe"
   ]
 }

@@ -9,6 +9,10 @@
  */
  {
     "common": {
+        "show_discount": "Show discount",
+        "reviews-videos": "Reviews-videos",
+        "money-back": "Money Back",
+        "limited": "Limited",
         "start": "Start",
         "from": "From",
         "discount": "Discount",

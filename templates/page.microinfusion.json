@@ -9,6 +9,73 @@
  */
 {
   "sections": {
+    "endrock_testimonial_carousel_k6Rkhj": {
+      "type": "endrock_testimonialCarousel",
+      "blocks": {
+        "testimonial_qr33Xh": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial_video": "shopify://files/videos/testimonial-charinecheungg.mp4",
+            "poster_image": "shopify://shop_images/poster-img7.png"
+          }
+        },
+        "testimonial_N7RGgc": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial_video": "shopify://files/videos/testimonial-wendyskin.mp4",
+            "poster_image": "shopify://shop_images/poster-img.png"
+          }
+        },
+        "testimonial_Rthe6c": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial_video": "shopify://files/videos/testimonial-careclarkbsn.mp4",
+            "poster_image": "shopify://shop_images/poster-img2.png"
+          }
+        },
+        "testimonial_AQzQxe": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial_video": "shopify://files/videos/testimonial-glowwithava.mp4",
+            "poster_image": "shopify://shop_images/poster-img6.png"
+          }
+        },
+        "testimonial_YFLjzQ": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial_video": "shopify://files/videos/testimonial-fleurdeforce.mp4",
+            "poster_image": "shopify://shop_images/poster-img5.png"
+          }
+        },
+        "testimonial_wxDBYB": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial_video": "shopify://files/videos/testimonial-sophieanneperry.mp4",
+            "poster_image": "shopify://shop_images/poster-img4.png"
+          }
+        },
+        "testimonial_df64JD": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial_video": "shopify://files/videos/testimonial-gothamista.mp4",
+            "poster_image": "shopify://shop_images/poster-img3.png"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_qr33Xh",
+        "testimonial_N7RGgc",
+        "testimonial_Rthe6c",
+        "testimonial_AQzQxe",
+        "testimonial_YFLjzQ",
+        "testimonial_wxDBYB",
+        "testimonial_df64JD"
+      ],
+      "name": "Testimonial carousel",
+      "settings": {
+        "title": ""
+      }
+    },
     "page_header_V5N4T9": {
       "type": "page-header",
       "blocks": {
@@ -991,6 +1058,7 @@
       ],
       "name": "t:sections.serum-selection.name",
       "settings": {
+        "use_and_symbol": false,
         "heading": "Science-Backed Micro-Infusion Serums",
         "text": "Choose the exact serum to use in your Micro-Infusion treatment, or get both and mix them together to experience a complete set of benefits that addresses your specific skin concerns.",
         "left_image": "shopify://shop_images/Rectangle_389.png",
@@ -1108,6 +1176,7 @@
       "name": "t:sections.how-to-use.name",
       "settings": {
         "heading": "See how quick and easy it is to use",
+        "text": "",
         "heading_mobile": "",
         "wistia_url": "8ymvdqzx92",
         "button_label": "",
@@ -1227,7 +1296,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Dark Spots",
-            "image": "shopify://shop_images/dark.png",
+            "image": "shopify://shop_images/dark_spots_1.png",
             "preselected": true
           }
         },
@@ -1296,7 +1365,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Wrinkles",
-            "image": "shopify://shop_images/wrinkles_fad540f8-ef39-4286-8e1f-297e0a1600d8.png",
+            "image": "shopify://shop_images/wrinkles_1_8426e2f1-0591-4133-97a6-71ade016a9a2.png",
             "preselected": false
           }
         },
@@ -1365,7 +1434,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Mixed",
-            "image": "shopify://shop_images/mix.png",
+            "image": "shopify://shop_images/mixed_2.png",
             "preselected": false
           }
         },
@@ -1595,12 +1664,14 @@
       "settings": {
         "heading": "Autumn Glow Sale",
         "text": "1,893 purchased in last 48 hours",
+        "limited": false,
         "button-label": "Choose Your Supply",
         "button-url": "#purchase-form"
       }
     }
   },
   "order": [
+    "endrock_testimonial_carousel_k6Rkhj",
     "page_header_V5N4T9",
     "purchase-form-landing",
     "slider_featured_in_qHHg4W",

@@ -32,7 +32,9 @@
         },
         "price_A11": {
           "type": "price",
-          "settings": {}
+          "settings": {
+            "show_discount": false
+          }
         },
         "description_A10": {
           "type": "description",
@@ -89,7 +91,7 @@
           "type": "jumpto",
           "settings": {
             "button-label": "Reviews",
-            "button-url": "#reviews"
+            "button-url": "#trusted-reviews"
           }
         },
         "jumpto_A4": {
@@ -133,6 +135,8 @@
       "settings": {
         "seo_heading": "RED LIGHT MASK Q-REJUVALIGHT PRO",
         "heading": "Refresh the appearance of  your skin with our Light Therapy Mask",
+        "rating": true,
+        "limited": false,
         "description": "<ul><li>FDA-cleared device designed to treat wrinkles and mild-to-moderate inflammatory acne.</li><li>Customizable treatment on 5 facial areas for your specific skin concerns.</li><li>Quick 3 minute, wireless daily treatments with convenient hands-free operation.</li></ul>",
         "reserved": false,
         "soldout": false
@@ -993,6 +997,7 @@
       "name": "t:sections.how-to-use.name",
       "settings": {
         "heading": "See how quick and easy it is to use",
+        "text": "",
         "heading_mobile": "",
         "wistia_url": "jlz3itwzrb",
         "button_label": "",
@@ -1094,6 +1099,7 @@
       "settings": {
         "heading": "Q-Rejuvalight Pro LED Mask",
         "text": "203 purchased in last 48 hours",
+        "limited": false,
         "button-label": "",
         "button-url": ""
       }
