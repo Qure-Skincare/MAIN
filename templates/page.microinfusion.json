@@ -1296,7 +1296,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Dark Spots",
-            "image": "shopify://shop_images/Dark_Spots_2.png",
+            "image": "shopify://shop_images/dark_spots_1.png",
             "preselected": true
           }
         },
