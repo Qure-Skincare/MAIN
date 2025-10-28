@@ -151,6 +151,15 @@
   {
     "name": "Endrock Gamification Settings",
     "settings": [
+
+      {
+        "type": "checkbox",
+        "id": "enable_gamification_header",
+        "label": "Enable Gamification in Header",
+        "default": true,
+        "info": "Enable or disable the gamification feature in the header section."
+      },
+
       {
         "type": "header",
         "content": "A. Gamification Event Texts"

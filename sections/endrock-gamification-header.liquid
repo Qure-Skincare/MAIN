@@ -19,7 +19,36 @@
 {% endif %}
 
 
-{% if has_gamification_content %}
+<style>
+  {% if settings.enable_gamification_header == false %} 
+    #endrock_gamificationHeader {
+      display: none;
+    }
+    :root {
+      --height-bar: 40px !important;
+    }
+    @media (max-width: 991px) {
+      :root {
+        --height-bar: 32px !important;
+      }
+    }
+  {% else  %}
+    :root {
+        --height-bar: 56px;
+    }
+    #announcement-bar {
+        display: none;
+    }
+    @media screen and (max-width: 1024px) {
+      :root {
+        --height-bar: 80px;
+      }
+    }
+  {% endif %}
+</style>
+
+
+{% if has_gamification_content and settings.enable_gamification_header %}
   <div id="endrock_gamificationHeader" class="gamification-container gamification-homepage">
     <div class="gamification-content">
       <div class="gamification-message">

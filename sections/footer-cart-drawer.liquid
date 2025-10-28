@@ -13,7 +13,7 @@
          <div class="cart-content-area d-flex justify-content-between flex-column">
             <div class="minicart-loop custom-scrollbar">
                {% include 'footer-cart-drawer-gift' %}
-               {% include '__endrock_sideCartGamification' %}
+               {% include '__endrock_sideCartGamification', location_id: 'cart' %}
 
                {% if cart.item_count == 0 %}
                   {% render 'footer-cart-drawer-empty' %}

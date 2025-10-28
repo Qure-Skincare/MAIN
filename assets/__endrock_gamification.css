@@ -1,10 +1,3 @@
-:root {
-    --height-bar: 56px;
-}
-
-#announcement-bar {
-    display: none;
-}
 
 #cart-dynamic-content .offcanvas-header {
     padding-bottom: 16px;
