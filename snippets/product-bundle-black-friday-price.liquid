@@ -1,0 +1,35 @@
+{% doc %}
+  Renders product price for black friday
+
+  @param {product_sale_price} - A string value.
+  @param {product_before_price} - A string value.
+  @param {product_discount} - A string value.
+
+  @example
+  {% render 'product-bundle-black-friday-price', product_sale_price: '', product_before_price: '', product_discount: product_discount, product_black_friday_price: '', black_friday_discount: '' %}
+{% enddoc %}
+
+<div class="bundle_price d-flex align-items-center justify-content-start gap-3 my-3 pb-2">
+    <div class="black_friday_pricing">{{ 'black-friday.settings.header' | t }}:</div>
+    <div class="dis_red_line">
+        {% if product_before_price != blank %}
+          <div class="bef_price text-decoration-line-through">{{ product_before_price }}</div>
+        {% endif %}
+        
+        <div class="aft_price">{{ product_sale_price }}</div>
+    </div>
+    <div class="black_friday_price">{{ product_black_friday_price }}</div>
+    <a href="#" class="save_perc">{{ 'product.settings.save' | t }} {{ black_friday_discount }}%</a>
+</div>
+
+<script>
+  {%- if product_discount -%}
+    const buy_and_save_button_label = '{{ 'product.settings.buy-and-save-button-label' | t }} {{ product_discount }}%';
+  {%- else -%}
+    const buy_and_save_button_label = '{{ 'product.settings.buy-and-save-button-label' | t }} {{ black_friday_discount }}%';
+  {%- endif -%}
+
+  document.addEventListener("DOMContentLoaded", function () {
+    loadScriptOnce('product-bundle-black-friday-price', '{{ 'product-bundle-black-friday-price.js' | asset_url }}');
+  });
+</script>

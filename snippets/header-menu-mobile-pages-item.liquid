@@ -9,6 +9,8 @@
   {% render 'header-menu-mobile-pages-item', title: '', image: '', url: '' %}
 {% enddoc %}
 
+{% assign black_friday_turn_on = true %}
+
 {% if title != blank %}
     <div class="swiper-slide">
         <a href="{% if url != blank %}{{ url }}{% else %}#{% endif %}" class="quer-collection-content">

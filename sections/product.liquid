@@ -2,8 +2,10 @@
   Renders a product section
 {% enddoc %}
 
-{% include 'get-product-data' %}
+{% assign black_friday_turn_on = true %}
+{% assign black_friday_discount_percent = 26 %}
 
+{% include 'get-product-data' %}
 
 <link rel="stylesheet" href="https://qureskincaredns-main.com/sections/isolated/product-bundle/product-bundle.css" />
 <div class="qure__trageted-patches qure__section" style="--section-padding-top: 40px; --section-padding-bottom: 80px;">
@@ -21,24 +23,22 @@
                         {{ product_description }}
                     </div>
 
-                    <div class="bundle_price d-flex align-items-center justify-content-start gap-3 my-3 pb-2">
-                        
-                        {% if product_before_price != blank %}
-                            <div class="bef_price text-decoration-line-through igComparePrice">{{ product_before_price }}</div>
-                        {% endif %}
-
-                        <div class="aft_price clr_orange igPrice">{{ product_sale_price }}</div>
-
-                        {% if product_discount != blank %}
-                            <div class="discount_percentage igSavingsPercentage">{{ 'product.settings.discount-text' | t }} {{ product_discount }}%</div>
-                        {% endif %}
-
-                    </div>
+                    {% if black_friday_turn_on == true and black_friday_discount_percent > 0 %}
+                        {% render 'product-bundle-black-friday-price', product_sale_price: product_sale_price, product_before_price: product_before_price, product_discount: product_discount, product_black_friday_price: product_black_friday_price, black_friday_discount: black_friday_discount %}
+                    {% else %}
+                        {% render 'product-bundle-price', product_sale_price: product_sale_price, product_before_price: product_before_price, product_discount: product_discount %}
+                    {% endif %}
 
                     {% if product_price_original > 0 %}
                         {% render 'product-page-buy-button', product_price: product_sale_price, product_variant_id: product_variant_id, section: blank %}
                         {% render 'product-page-buy-button-payments', product_price_divided: product_price_divided %}
                         {% render 'product-page-buy-button-bottom' %}
+                    {% endif %}
+
+                    {% if black_friday_turn_on == true %}
+                        {% render 'product-bundle-limited-offer-black-friday' %}
+                    {% else %}
+                        {% render 'product-saveup' %}
                     {% endif %}
 
                 </div>

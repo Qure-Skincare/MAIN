@@ -1,0 +1,19 @@
+{% doc %}
+  Renders limited offer for black friday
+
+  @example
+  {% render 'product-bundle-limited-offer-black-friday' %}
+{% enddoc %}
+
+<a href="{{ 'black-friday.limited-offer.link' | t }}" class="bf-limited-time-banner">
+    <div class="bf-limited-time-banner__image">
+       <img src="https://qureskincaredns-main.com/sections/isolated/product-bundle/images/black-friday-limited-time-bundle.webp" alt="black-friday-limited-time-bundle">
+    </div>
+    <div class="bf-limited-time-banner__content">
+       <h6>{{ 'black-friday.limited-offer.header' | t }}</h6>
+       <p>{{ 'black-friday.limited-offer.text' | t }}</p>
+    </div>
+    <div class="bf-limited-time-banner__label">
+       <img src="https://qureskincaredns-main.com/sections/isolated/product-bundle/images/black-friday-limited-time.webp" alt="black-friday-limited-time">
+    </div>
+ </a>

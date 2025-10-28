@@ -5,12 +5,20 @@
   {% render 'header-menu-mobile' %}
 {% enddoc %}
 
+{% assign black_friday_turn_on = true %}
+
 <div class="navigation-mobile main-nav-mobile d-block d-lg-none">
     <!-- Nav tabs -->
     <ul class="nav nav-tabs nav-mobile-tab" id="myTab" role="tablist">
-        <li class="nav-item" role="presentation">
-            <a href="/collections/best-sellers" class="nav-link" id="bestSeller-tab">{{ 'header.settings.navigation_header_1' | t }}</a>
-        </li>
+        {% if black_friday_turn_on == true %}
+            <li class="nav-item" role="presentation">
+                <a class="nav-link black-friday-menu-item" role="link" aria-label="{{ 'black-friday.menu.header' | t }}"><span>{{ 'black-friday.menu.header' | t }}</span></a>
+             </li>
+        {% else %}
+            <li class="nav-item" role="presentation">
+                <a href="/collections/best-sellers" class="nav-link" id="bestSeller-tab">{{ 'header.settings.navigation_header_1' | t }}</a>
+            </li>
+        {% endif %}
         <li class="nav-item" role="presentation">
             <button class="nav-link active" id="Products-tab" data-bs-toggle="tab" data-bs-target="#products"
             type="button" role="tab" aria-controls="Products" aria-selected="true">{{ 'header.settings.navigation_header_2' | t }}</button>

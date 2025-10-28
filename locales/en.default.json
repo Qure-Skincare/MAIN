@@ -284,6 +284,20 @@
       "free": "FREE"
     }
   },
+  "black-friday": {
+    "settings": {
+      "header": "Black Friday"
+    },
+    "menu": {
+      "header": "Black Friday Bundles",
+      "link": "/pages/exclusive-holiday-bundle-deal-new"
+    },
+    "limited-offer": {
+      "header": "UP TO 57% OFF",
+      "text": "Save with Black Friday bundle deals",
+      "link": "/pages/exclusive-holiday-bundle-deal-new"
+    }
+  },
   "product": {
     "settings": {
       "buy-button-label": "Buy Now ",
