@@ -1,0 +1,6 @@
+.endrock-banner-with-text .banner-with-text-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+}
+

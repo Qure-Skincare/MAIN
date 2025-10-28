@@ -127,6 +127,65 @@
       "name": "t:sections.slider-featured-in.name",
       "settings": {}
     },
+    "endrock_bannerWithText3yX9": {
+      "type": "endrock_bannerWithText",
+      "blocks": {
+        "text_with_progress_UrifNc": {
+          "type": "text_with_progress",
+          "settings": {
+            "text": "<p>reported visible results the next day</p>",
+            "percent_value": "93%"
+          }
+        },
+        "text_with_progress_DWw9qf": {
+          "type": "text_with_progress",
+          "settings": {
+            "text": "<p>experienced fast recovery within an hour</p>",
+            "percent_value": "73%"
+          }
+        },
+        "text_with_progress_fzrXwz": {
+          "type": "text_with_progress",
+          "settings": {
+            "text": "<p>said skin appeared more hydrated and glowy</p>",
+            "percent_value": "93%"
+          }
+        },
+        "text_with_progress_3wQ6gt": {
+          "type": "text_with_progress",
+          "settings": {
+            "text": "<p>noticed a brighter and more even-looking tone</p>",
+            "percent_value": "70%"
+          }
+        },
+        "testimonial_QL6PG3": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial_text": "<p>“I love this product! I’d say it is a 3/10 on the pain scale – a little uncomfortable but the <strong>results are amazing</strong> and it has improved my skin overall.”</p>",
+            "testimonial_author": "– Charlotte B."
+          }
+        }
+      },
+      "block_order": [
+        "text_with_progress_UrifNc",
+        "text_with_progress_DWw9qf",
+        "text_with_progress_fzrXwz",
+        "text_with_progress_3wQ6gt",
+        "testimonial_QL6PG3"
+      ],
+      "name": "Endrock Banner with Text",
+      "settings": {
+        "heading": "Virtually painless care for noticeably better skin",
+        "text": "",
+        "quote": "",
+        "quote-mobile": "",
+        "image_position": "left",
+        "sub_text": "",
+        "button_label": "",
+        "button_url": "",
+        "wistia_url": "a1pykz2tp0"
+      }
+    },
     "banner_with_text_phJT4F": {
       "type": "banner-with-text",
       "blocks": {
@@ -1505,6 +1564,7 @@
     "announcement_bar_iNbPEw",
     "page_header_SXJyMD",
     "slider_featured_in_lVZt5L",
+    "endrock_bannerWithText3yX9",
     "banner_with_text_phJT4F",
     "stock_alert_egmbcj",
     "banner_with_text_xzUU6n",
