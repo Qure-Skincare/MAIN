@@ -5,6 +5,8 @@
   {% include 'footer-cart-drawer-summary' %}
 {% enddoc %}
 
+{% assign black_friday_turn_on = settings.black_friday_turn_on %}
+
 <div class="minicart-footer">
     <div class="minicart-shadow">
         <div class="insurance-wrapper">
@@ -37,10 +39,17 @@
         <div class="qure__cart-summary">
 
             {% if summary_saving_price != null %}
-            <div class="qure__cart-box qure__cart-savings">
-                <div class="qure__cart-title">{{ 'cart.drawer.settings.savings' | t }}</div>
-                <div class="qure__cart-price">{{ summary_saving_price }}</div>
-            </div>
+                {% if black_friday_turn_on == true %}
+                    <div class="qure__cart-box qure__cart-savings_blk_friday">
+                        <div class="qure__cart-title">{{ 'black-friday.cart.savings' | t }}</div>
+                        <div class="qure__cart-price">{{ summary_saving_price }}</div>
+                    </div>
+                {% else %}
+                    <div class="qure__cart-box qure__cart-savings">
+                        <div class="qure__cart-title">{{ 'cart.drawer.settings.savings' | t }}</div>
+                        <div class="qure__cart-price">{{ summary_saving_price }}</div>
+                    </div>
+                {% endif %}
             {% endif %}
 
             <div class="qure__cart-box">
