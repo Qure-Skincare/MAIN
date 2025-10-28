@@ -95,6 +95,86 @@
         "button_url_mobile": "https://qureskincare.com/collections/best-sellers"
       }
     },
+    "bf_banner_with_text_4LMX6e": {
+      "type": "bf-banner-with-text",
+      "blocks": {
+        "carousel_Wpd4xy": {
+          "type": "carousel",
+          "settings": {
+            "heading": "Acne",
+            "percent_value": "57%",
+            "image": "shopify://shop_images/home-banner-bf-bundle-1.webp"
+          }
+        },
+        "carousel_BigzyF": {
+          "type": "carousel",
+          "settings": {
+            "heading": "Wrinkles",
+            "percent_value": "57%",
+            "image": "shopify://shop_images/home-banner-bf-bundle-2.webp"
+          }
+        },
+        "carousel_C4JjyW": {
+          "type": "carousel",
+          "settings": {
+            "heading": "Dark Spots",
+            "percent_value": "57%",
+            "image": "shopify://shop_images/home-banner-bf-bundle-3.webp"
+          }
+        }
+      },
+      "block_order": [
+        "carousel_Wpd4xy",
+        "carousel_BigzyF",
+        "carousel_C4JjyW"
+      ],
+      "disabled": true,
+      "name": "t:sections.bf-banner-with-text.name",
+      "settings": {
+        "heading": "<h2>Save Up to 57%</h2>",
+        "text": "<p>Your Favorite Products, Perfectly Bundled</p>",
+        "button_label": "Shop Bundles Now",
+        "button_url": "#"
+      }
+    },
+    "bf_bundle_banner_dTGjF7": {
+      "type": "bf-bundle-banner",
+      "blocks": {
+        "carousel_bjazym": {
+          "type": "carousel",
+          "settings": {
+            "heading": "<h3>Your Holiday Glow Starts Here</h3>",
+            "text": "<p>Our signature treatment in one carry-on approved set.</p>",
+            "percent_value": "68%",
+            "image": "shopify://shop_images/bundle-1.webp",
+            "image_mobile": "shopify://shop_images/bundle-1-mob.webp",
+            "button_label": "Get Yours Now",
+            "button_url": "#",
+            "sub_text": "<p><strong>Limited availability:</strong> Under 100 cases remaining</p>"
+          }
+        },
+        "carousel_rRrz43": {
+          "type": "carousel",
+          "settings": {
+            "heading": "<h3>Celebrating the [logo] Community</h3>",
+            "text": "<p>Every purchase* enters you to <strong>a 2025 Range Rover Evoque</strong></p>",
+            "percent_value": "",
+            "image": "shopify://shop_images/bundle-2.webp",
+            "image_mobile": "shopify://shop_images/bundle-2-mob.webp",
+            "button_label": "Shop To Enter",
+            "button_url": "#",
+            "sub_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "carousel_bjazym",
+        "carousel_rRrz43"
+      ],
+      "disabled": true,
+      "name": "t:sections.bf-bundle-banner.name",
+      "settings": {}
+    },
     "index_banner_with_text_second_TNGNLJ": {
       "type": "index-banner-with-text-second",
       "name": "t:sections.index-banner-with-text-second.name",
@@ -763,6 +843,8 @@
   "order": [
     "index-mobile-category-slider",
     "index_banner_with_text_TNGNLJ",
+    "bf_banner_with_text_4LMX6e",
+    "bf_bundle_banner_dTGjF7",
     "index_banner_with_text_second_TNGNLJ",
     "bundle_banner_eEa7XN",
     "slider_featured_in_KgaUTN",

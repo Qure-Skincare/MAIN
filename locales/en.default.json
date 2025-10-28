@@ -22,6 +22,12 @@
     "expert-advisory-product": {
       "button_label": "Shop Now"
     },
+    "bf-banner-with-text": {
+      "bf_sale_image": "https://qureskincaredns-main.com/alex/sections/global/banner-with-text/images/black-friday-sale.webp"
+    },
+    "bf-clickable-banner-with-text": {
+      "bf_sale_image": "https://qureskincaredns-main.com/alex/sections/global/banner-with-text/images/black-friday-sale.webp"
+    },
     "car-giveaway-page-banner": {
       "cta_text": "Join Us In Celebrating the ",
       "qure_logo": "https://qureskincaredns-main.com/sections/isolated/page-banner/images/qure_logo.svg",

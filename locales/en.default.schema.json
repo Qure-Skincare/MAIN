@@ -94,6 +94,8 @@
         "image-mobile": "Image mobile",
         "image-position": "Image position",
         "right-image": "Right image",
+        "right-image-mobile": "Right image mobile",
+        "left-image-mobile": "Left image mobile",
         "left-image": "Left image",
         "video-image-cover": "Video cover image",
         "video": "Video",
@@ -195,6 +197,15 @@
                 "doctor-name": "Doctor name",
                 "doctor-position": "Doctor position"
             }
+        },
+        "bf-bundle-banner": {
+            "name": "Black Friday bundle banner"
+        },
+        "bf-banner-with-text": {
+            "name": "Black Friday banner with text"
+        },
+        "bf-clickable-banner-with-text": {
+            "name": "Black Friday clickable banner with text"
         },
         "cta-cards": {
             "name": "CTA cards"
