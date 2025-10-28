@@ -163,7 +163,9 @@
         "nubmber-of-shared": "Number of shared",
         "contact": "Contact",
         "topic": "Topic",
-        "target-datetime": "Target date/time (YYYY-MM-DDTHH:MM:SS)" 
+        "target-datetime": "Target date/time (YYYY-MM-DDTHH:MM:SS)",
+        "white": "White",
+        "black": "Black"
     },
     "blocks": {
         "block-card": {

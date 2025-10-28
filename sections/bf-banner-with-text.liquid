@@ -3,61 +3,65 @@
 {% enddoc %}
 
 <link href="https://qureskincaredns-main.com/alex/sections/global/banner-with-text/banner-text.css" rel="stylesheet" type="text/css">
-   <div class="qure__section banner-with-text color-background">
-      <div class="offset-right-container">
-         <div class="row custom__grid">
+{% assign bf_bg = section.settings.bg_color | default: 'black' %}
+<div class="qure__section banner-with-text{% if bf_bg == 'black' %} color-background{% endif %}">
+    <div class="offset-right-container">
+        <div class="row custom__grid">
             <div class="col-md-5 custom__block">
-               <div class="banner-with-text-content text-center">
-                  <img src="{{ 'sections.bf-banner-with-text.bf_sale_image' | t }}" alt="{{ 'sections.bf-banner-with-text.bf_sale_image.alt' | t | escape}}">
-                  {% if section.settings.heading != blank %}
-                    {{ section.settings.heading }}
-                  {% endif %}
-                  {% if section.settings.text != blank %}
-                    {{ section.settings.text }}
-                  {% endif %}
-                  {% if section.settings.button_url != blank and section.settings.button_label != blank %}
-                    <a href="{{ section.settings.button_url }}" class="banner-text--button btn btn--primary-white">{{ section.settings.button_label }}</a>
-                  {% endif %}
-               </div>
+                <div class="banner-with-text-content text-center">
+                    <img src="{{ 'sections.bf-banner-with-text.bf_sale_image' | t }}" alt="{{ 'sections.bf-banner-with-text.bf_sale_image.alt' | t | escape}}">
+                    {% if section.settings.heading != blank %}
+                        {{ section.settings.heading }}
+                    {% endif %}
+                    {% if section.settings.text != blank %}
+                        {{ section.settings.text }}
+                    {% endif %}
+                    {% if section.settings.button_url != blank and section.settings.button_label != blank %}
+                        <a href="{{ section.settings.button_url }}" class="banner-text--button btn btn--primary-white">{{ section.settings.button_label }}1</a>
+                    {% endif %}
+                </div>
             </div>
             <div class="col-md-7 custom__block">
-               <div class="banner-text--media banner-text-mob-full">
-                  <div class="qure__swiper-wrapper">
-                     <div class="swiper qure__swiper-gallery" data-section-id="bf-bundles-slider" data-mobile="1" data-tablet="1" data-desktop="1" data-autoplay="true" data-loop="true" data-spacing="0">
-                        <div class="swiper-wrapper">
-                            {% for block in section.blocks %}
-                                {% if block.type == 'carousel' %}
-                                    <div class="swiper-slide">
-                                        {% if block.settings.image != blank %}
-                                            <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}">
+                <div class="banner-text--media banner-text-mob-full">
+                    {% assign carousel_blocks = section.blocks | where: "type", "carousel" %}
+                    {% if carousel_blocks.size > 0 %}
+                        <div class="qure__swiper-wrapper">
+                            <div class="swiper qure__swiper-gallery" data-section-id="bf-bundles-slider" data-mobile="1" data-tablet="1" data-desktop="1" data-autoplay="true" data-loop="true" data-spacing="0">
+                                <div class="swiper-wrapper">
+                                    {% for block in section.blocks %}
+                                        {% if block.type == 'carousel' %}
+                                            <div class="swiper-slide">
+                                                {% if block.settings.image != blank %}
+                                                    <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}">
+                                                {% endif %}
+                                                {% if block.settings.percent_value != blank %}
+                                                    <div class="bf-discont-badge" data-text-top="Up to" data-text-bottom="Off">{{ block.settings.percent_value }}</div>
+                                                {% endif %}
+                                            </div>
                                         {% endif %}
-                                        {% if block.settings.percent_value != blank %}
-                                            <div class="bf-discont-badge" data-text-top="Up to" data-text-bottom="Off">{{ block.settings.percent_value }}</div>
-                                        {% endif %}
+                                    {% endfor %}
+                                </div>
+                            </div>
+                            <div class="swiper-thumbnail-press-slider">
+                                <div class="swiper qure__swiper-gallery-thumbnails" data-section-id="bf-bundles-slider-thumbnails" data-mobile="3" data-tablet="3" data-desktop="3" data-autoplay="true" data-loop="true" data-spacing="15">
+                                    <div class="swiper-wrapper">
+                                            {% for block in section.blocks %}
+                                                {% if block.type == 'carousel' %}
+                                                    {% if block.settings.heading != blank %}
+                                                        <div class="swiper-slide">{{ block.settings.heading }}</div>
+                                                    {% endif %}
+                                                {% endif %}
+                                            {% endfor %}
                                     </div>
-                                {% endif %}
-                            {% endfor %}
+                                </div>
+                            </div>
                         </div>
-                     </div>
-                     <div class="swiper-thumbnail-press-slider">
-                        <div class="swiper qure__swiper-gallery-thumbnails" data-section-id="bf-bundles-slider-thumbnails" data-mobile="3" data-tablet="3" data-desktop="3" data-autoplay="true" data-loop="true" data-spacing="15">
-                           <div class="swiper-wrapper">
-                                {% for block in section.blocks %}
-                                    {% if block.type == 'carousel' %}
-                                        {% if block.settings.heading != blank %}
-                                            <div class="swiper-slide">{{ block.settings.heading }}</div>
-                                        {% endif %}
-                                    {% endif %}
-                                {% endfor %}
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+                    {% endif %}
+                </div>
             </div>
-         </div>
-      </div>
-   </div>
+        </div>
+    </div>
+</div>
    <script>
       document.addEventListener("DOMContentLoaded", function () {
          loadScriptOnce('slider-script', 'https://qureskincaredns-main.com/assets/js/slider-with-thumb.js');
@@ -77,6 +81,22 @@
         "type": "richtext",
         "id": "text",
         "label": "t:common.text"
+    },
+    {
+        "type": "select",
+        "id": "bg_color",
+        "label": "Background color",
+        "options": [
+            { 
+                "value": "white", 
+                "label": "t:common.white" 
+            },
+            { 
+                "value": "black", 
+                "label": "t:common.black" 
+            }
+        ],
+        "default": "black"
     },
     {
         "type": "text",
