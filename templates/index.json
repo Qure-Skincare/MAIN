@@ -128,7 +128,6 @@
         "carousel_BigzyF",
         "carousel_C4JjyW"
       ],
-      "disabled": true,
       "name": "t:sections.bf-banner-with-text.name",
       "settings": {
         "heading": "<h2>Save Up to 57%</h2>",
@@ -171,12 +170,12 @@
         "carousel_bjazym",
         "carousel_rRrz43"
       ],
-      "disabled": true,
       "name": "t:sections.bf-bundle-banner.name",
       "settings": {}
     },
     "index_banner_with_text_second_TNGNLJ": {
       "type": "index-banner-with-text-second",
+      "disabled": true,
       "name": "t:sections.index-banner-with-text-second.name",
       "settings": {
         "heading": "Get clinic-level results from home – minus the ‘clinical’ costs.",
