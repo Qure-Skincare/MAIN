@@ -7,6 +7,8 @@
   {% render 'header-menu-desktop', label: '' %}
 {% enddoc %}
 
+{% assign black_friday_turn_on = settings.black_friday_turn_on %}
+
 {% for link in linklists['main-header'].links %}
     {% if link.title == label %}
         {% if link.links.size > 0 %}
@@ -24,9 +26,15 @@
                 {% endif %}
             {%- endfor -%}
         {% else %}
-            <li class="level0 quer__menu-parent">
-                <a href="{{ link.url }}" aria-label="{{ link.title | escape }}" class="position-relative" role="link"><span>{{ 'header.settings.navigation_header_1' | t }}</span></a>
-            </li>
+            {% if black_friday_turn_on == true %}
+                <li class="level0 quer__menu-parent">
+                    <a href="{{ 'black-friday.menu.link' | t }}" aria-label="{{ 'black-friday.menu.header' | t }}" class="position-relative black-friday-menu-item" role="link"><span>{{ 'black-friday.menu.header' | t }}</span></a>
+                </li>
+            {% else %}
+                <li class="level0 quer__menu-parent">
+                    <a href="{{ link.url }}" aria-label="{{ link.title | escape }}" class="position-relative" role="link"><span>{{ 'header.settings.navigation_header_1' | t }}</span></a>
+                </li>
+            {% endif %}
         {% endif %}
     {% endif %}
 {% endfor %}

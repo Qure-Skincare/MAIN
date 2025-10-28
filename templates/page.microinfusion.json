@@ -250,7 +250,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Mixed",
-            "image": "shopify://shop_images/mixed_1.png",
+            "image": "shopify://shop_images/mixed_2.png",
             "preselected": false
           }
         },
@@ -1367,7 +1367,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Mixed",
-            "image": "shopify://shop_images/mixed_2.png",
+            "image": "shopify://shop_images/Mixed.jpg",
             "preselected": false
           }
         },

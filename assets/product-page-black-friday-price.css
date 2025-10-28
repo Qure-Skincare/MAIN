@@ -1,0 +1,35 @@
+.bundle_price .black_friday_pricing {
+    text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+    .bundle_price {
+        flex-wrap: wrap;
+    }
+
+    .bundle_price .black_friday_pricing {
+        width: 100%;
+    }
+}
+
+.bundle_price .dis_red_line {
+    position: relative;
+    display: flex;
+    gap: 6px;
+}
+
+.bundle_price .dis_red_line:after {
+    position: absolute;
+    top: 10px;
+    right: -3px;
+    left: -3px;
+    z-index: 1;
+    height: 2px;
+    background: #ff4e22;
+    content: '';
+    transform: rotate(7deg);
+}
+
+.bundle_price .black_friday_price {
+    font-weight: 600;
+}

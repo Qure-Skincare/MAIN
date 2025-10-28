@@ -149,6 +149,13 @@
     ]
   },
   {
+    "name": "Black friday",
+    "settings": [
+      { "type": "checkbox", "id": "black_friday_turn_on", "label": "Turn on" },
+      { "type": "range", "id": "black_friday_discount_percent", "label": "Discount", "min": 0, "max": 100, "step": 1, "unit": "%", "default": 25 }
+    ]
+  },
+  {
     "name": "Endrock Gamification Settings",
     "settings": [
 

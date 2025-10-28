@@ -2,6 +2,16 @@
   Renders a product header section
 {% enddoc %}
 
+{% assign black_friday_turn_on = settings.black_friday_turn_on %}
+
+{% if black_friday_turn_on == true %}
+    {% assign black_friday_discount_percent = settings.black_friday_discount_percent %}
+{% endif %}
+
+{% if product.metafields.custom.bf_exclude == true %}
+    {%- assign black_friday_discount_percent = 0 -%}
+{% endif %}
+
 {% include 'get-product-data' %}
 
 <link rel="stylesheet" href="https://qureskincaredns-main.com/sections/isolated/targeted-patches/section-targeted-patches.css" />
@@ -39,6 +49,10 @@
                     {% endif %}
 
                     {% include 'product-page-blocks-render', allowed_types: 'limited-offer,nextships,button,description,price,section,black-friday-discount,exclusive-offer,money-back,reviews-videos' %}
+
+                    {% if black_friday_turn_on == true %}
+                        {% render 'product-page-limited-offer-black-friday' %}
+                    {% endif %}
                 </div>
             </div>
             <div class="col-lg-6 custom__block">

@@ -9,6 +9,20 @@
  */
 {
   "sections": {
+    "bf_clickable_banner_with_text_rTzUyC": {
+      "type": "bf-clickable-banner-with-text",
+      "disabled": true,
+      "name": "t:sections.bf-clickable-banner-with-text.name",
+      "settings": {
+        "heading": "<h2>Save Up to 57%</h2>",
+        "text": "<p>Your Favorite Products, Perfectly Bundled</p>",
+        "percent_value": "57%",
+        "left_image": "shopify://shop_images/best-seller-bf-bundle-1.webp",
+        "left_image_mobile": "shopify://shop_images/best-seller-bf-bundle-1-mob.webp",
+        "right_image": "shopify://shop_images/best-seller-bf-bundle-2.webp",
+        "link": "#"
+      }
+    },
     "page_banner_zUyTB8": {
       "type": "page-banner",
       "name": "t:sections.page-banner.name",
@@ -111,6 +125,44 @@
         "image_mobile": "shopify://shop_images/bundle-mob_163c3466-44ba-4c09-b638-e81576c90ecb.webp"
       }
     },
+    "bf_bundle_banner_dTU6Q7": {
+      "type": "bf-bundle-banner",
+      "blocks": {
+        "carousel_bjazym": {
+          "type": "carousel",
+          "settings": {
+            "heading": "<h3>Your Holiday Glow Starts Here</h3>",
+            "text": "<p>Our signature treatment in one carry-on approved set.</p>",
+            "percent_value": "68%",
+            "image": "shopify://shop_images/bundle-1.webp",
+            "image_mobile": "shopify://shop_images/bundle-1-mob.webp",
+            "button_label": "Get Yours Now",
+            "button_url": "#",
+            "sub_text": "<p><strong>Limited availability:</strong> Under 100 cases remaining</p>"
+          }
+        },
+        "carousel_rRrz43": {
+          "type": "carousel",
+          "settings": {
+            "heading": "<h3>Celebrating the [logo] Community</h3>",
+            "text": "<p>Every purchase* enters you to <strong>a 2025 Range Rover Evoque</strong></p>",
+            "percent_value": "",
+            "image": "shopify://shop_images/bundle-2.webp",
+            "image_mobile": "shopify://shop_images/bundle-2-mob.webp",
+            "button_label": "Shop To Enter",
+            "button_url": "#",
+            "sub_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "carousel_bjazym",
+        "carousel_rRrz43"
+      ],
+      "disabled": true,
+      "name": "t:sections.bf-bundle-banner.name",
+      "settings": {}
+    },
     "trusted_reviews_mRLHtt": {
       "type": "trusted-reviews",
       "blocks": {
@@ -198,10 +250,12 @@
     }
   },
   "order": [
+    "bf_clickable_banner_with_text_rTzUyC",
     "page_banner_zUyTB8",
     "carousel_7YOxGy",
     "collection_fXMjkJ",
     "bundle_banner_zWkqBN",
+    "bf_bundle_banner_dTU6Q7",
     "trusted_reviews_mRLHtt",
     "quiz_DfRXwD"
   ]

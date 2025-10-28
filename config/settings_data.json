@@ -61,6 +61,8 @@
     "cart_upsell3_product": "q-rejuvalight-pro-facewear",
     "cart_upsell4_product": "neck-decolletage-led",
     "cart_upsell5_product": "micro-infusion-targeted-patches",
+    "black_friday_turn_on": false,
+    "black_friday_discount_percent": 0,
     "content_for_index": [],
     "blocks": {
       "2786716548061469553": {

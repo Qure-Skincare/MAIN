@@ -11,7 +11,6 @@
   "sections": {
     "announcement_bar_iNbPEw": {
       "type": "announcement-bar",
-      "disabled": true,
       "name": "t:sections.announcement-bar.name",
       "settings": {
         "heading": "Autumn Glow Sale 67% OFF Micro-Infusion",
@@ -35,7 +34,7 @@
           "type": "video",
           "settings": {
             "heading": "Watch: How To Use",
-            "image": "shopify://shop_images/how-to-use.webp",
+            "image": "shopify://shop_images/how-to-use3_1.webp",
             "wistia_url": "8ymvdqzx92"
           }
         },
