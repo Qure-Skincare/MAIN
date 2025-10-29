@@ -9,10 +9,16 @@
         <div class="row custom__grid">
             <div class="col-lg-6 custom__block">
                 <div class="qure-product-details">
+                    {% if section.settings.bf_link != blank %}
+                        <a href="{{ section.settings.bf_link }}" class="black-frigay-badge">
+                            <img src="{{ 'bundle-header.settings.bf_badge_image' | t }}"/>
+                        </a>
+                    {% else %}
                     <div class="exclusive_tag">
                         <div class="tag_content color-background text-white" style="--section-background:#FF5429">{{ 'bundle-header.settings.exclusive' | t }}</div>
                         <div class="tag_content color-background" style="--section-background:#FFEEEA">{{ 'bundle-header.settings.bundles' | t }}</div>
                     </div>
+                    {% endif %}
 
                     {% if section.settings.heading != blank %}
                         <h1 class="qure__product-title my-25 ctm-width" style="--font-h1:42px; --ctm-width: 475px;">{{ section.settings.heading }}</h1>
@@ -84,6 +90,11 @@
             "type": "richtext",
             "id": "description",
             "label": "t:common.description"
+        },
+        {
+            "type": "url",
+            "id": "bf_link",
+            "label": "t:common.bf-link"
         },
         {
             "type": "text",

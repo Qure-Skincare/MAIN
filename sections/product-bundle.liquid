@@ -2,16 +2,6 @@
   Renders a product bundle
 {% enddoc %}
 
-{% assign black_friday_turn_on = settings.black_friday_turn_on %}
-
-{% if black_friday_turn_on == true %}
-    {% assign black_friday_discount_percent = settings.black_friday_discount_percent %}
-{% endif %}
-
-{% if product.metafields.custom.bf_exclude == true %}
-    {%- assign black_friday_discount_percent = 0 -%}
-{% endif %}
-
 {% include 'get-product-data' %}
 
 {%- for block in section.blocks -%}

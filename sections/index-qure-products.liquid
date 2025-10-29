@@ -15,8 +15,13 @@
       <div class="row custom__grid">
         {% for block in section.blocks %}
             {% if block.type == 'hover_image' %}
+                
+                {% if block.settings.product != blank %}
+                    {% include 'get-product-data', product_handle: block.settings.product, product_prefix: 'index-qure-products-' %}
+                {% endif %}
+
                 <div class="col-6 col-md-3 custom__block">
-                    <div class="qure__product-item">
+                    <div class="qure__product-item{% if black_friday_turn_on == true %} silver-badge{% endif %}">
                         <a href="{{ block.settings.url }}" class="qure__product-img overflow-hidden position-relative d-block">
                             {% if block.settings.image != blank %}
                                 <div class="qure__product-main-img"><img
@@ -51,9 +56,20 @@
                                     <a class="limited-line capitalize d-block" href="{{ block.settings.url }}">{{ block.settings.heading }}</a>
                                 </h3>
                             {% endif %}
-                            {% if block.settings.product != blank %}
-                                {% include 'get-product-data', product_handle: block.settings.product, product_prefix: 'index-qure-products-' %}
-                                <div class="qure__product-price mt-10">{{ block.settings.label_price }} <span class="igPrice">{{ product_sale_price }}</span></div>
+                            {% if product_sale_price != blank %}
+                                {% if black_friday_discount_percent > 0 %}
+                                    <div class="qure__product-price mt-10">
+                                        <div class="dis_red_line">
+                                            {% if product_before_price != blank %}
+                                                <span class="bef_price text-decoration-line-through">{{ product_before_price }}</span>
+                                            {% endif %}
+                                           <span class="aft_price">{{ product_sale_price }}</span>
+                                        </div>
+                                        <div class="black_friday_price">{{ product_black_friday_price }}</div>
+                                     </div>
+                                {% else %}
+                                    <div class="qure__product-price mt-10">{{ block.settings.label_price }} <span class="igPrice">{{ product_sale_price }}</span></div>
+                                {% endif %}
                             {% endif %}
                         </div>
                     </div>

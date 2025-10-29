@@ -9,6 +9,8 @@
  */
  {
     "common": {
+        "compare-price": "Compare price",
+        "discount-price": "Discount price",
         "show_discount": "Show discount",
         "reviews-videos": "Reviews-videos",
         "money-back": "Money Back",
@@ -32,6 +34,8 @@
         "days": "Days",
         "limited-offer": "Limited offer",
         "black-friday-discount": "Black friday discount",
+        "black-friday-info": "Black friday information",
+        "bf-link": "Black friday link",
         "code": "Code",
         "sum": "Sum",
         "payment": "Payment",
@@ -163,7 +167,9 @@
         "nubmber-of-shared": "Number of shared",
         "contact": "Contact",
         "topic": "Topic",
-        "target-datetime": "Target date/time (YYYY-MM-DDTHH:MM:SS)" 
+        "target-datetime": "Target date/time (YYYY-MM-DDTHH:MM:SS)",
+        "white": "White",
+        "black": "Black"
     },
     "blocks": {
         "block-card": {
@@ -200,6 +206,9 @@
         },
         "bf-bundle-banner": {
             "name": "Black Friday bundle banner"
+        },
+        "bf-bundle-banner-mini": {
+            "name": "Black Friday bundle banner mini"
         },
         "bf-banner-with-text": {
             "name": "Black Friday banner with text"

@@ -33,9 +33,23 @@
                                 {% if block.settings.heading != blank and block.settings.button_url != blank %}
                                     <h3 class="fm-body mb-0 qure__product-name"><a class="limited-line capitalize d-block" href="{{ block.settings.button_url }}">{{ block.settings.heading }}</a></h3>
                                 {% endif %}
-                                {% if block.settings.price != blank %}
-                                    <div class="qure__product-price mt-10">{{ block.settings.price }}</div>
-                                {% endif %}
+
+                                {%- if block.settings.discount_price != blank -%}
+                                    <div class="qure__product-price mt-10">
+                                        <div class="dis_red_line">
+                                            {% if block.settings.compare_price != blank %}
+                                                <span class="bef_price text-decoration-line-through">{{ block.settings.compare_price }}</span>
+                                            {% endif %}
+                                            <span class="aft_price">{{ block.settings.price }}</span>
+                                        </div>
+                                        <div class="black_friday_price">{{ block.settings.discount_price }}</div>
+                                    </div>
+                                {%- else -%}
+                                    {% if block.settings.price != blank %}
+                                        <div class="qure__product-price mt-10">{{ block.settings.price }}</div>
+                                    {% endif %}
+                                {%- endif -%}
+
                                 {% if block.settings.button_label != blank and block.settings.button_url != blank %}
                                     <a href="{{ block.settings.button_url }}" class="btn mt-20 w-100">{{ block.settings.button_label }}</a>
                                 {% elsif block.settings.button_label != blank %}
@@ -85,6 +99,16 @@
                 "type": "text",
                 "id": "price",
                 "label": "t:common.price"
+            },
+            {
+                "type": "text",
+                "id": "compare_price",
+                "label": "t:common.compare-price"
+            },
+            {
+                "type": "text",
+                "id": "discount_price",
+                "label": "t:common.discount-price"
             },
             {
                 "type": "text",

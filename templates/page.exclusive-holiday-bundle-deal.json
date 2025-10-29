@@ -26,9 +26,48 @@
       "settings": {
         "heading": "Save Up to 55% on Certified Skincare Solutions",
         "description": "<p>Backed by the most respected peer-reviewed Dermatologist Journals and scientific studies that prove; Qure’s skincare works.</p>",
+        "bf_link": "",
         "button-label": "SHOP & SAVE UP TO 55%",
         "button-url": "#purchase-form-bundle"
       }
+    },
+    "bf_bundle_banner_dTj5R1": {
+      "type": "bf-bundle-banner",
+      "blocks": {
+        "carousel_bjazym": {
+          "type": "carousel",
+          "settings": {
+            "heading": "<h3>Your Holiday Glow Starts Here</h3>",
+            "text": "<p>Our signature treatment in one carry-on approved set.</p>",
+            "percent_value": "68%",
+            "image": "shopify://shop_images/bundle-1.webp",
+            "image_mobile": "shopify://shop_images/bundle-1-mob.webp",
+            "button_label": "Get Yours Now",
+            "button_url": "#",
+            "sub_text": "<p><strong>Limited availability:</strong> Under 100 cases remaining</p>"
+          }
+        },
+        "carousel_rRrz43": {
+          "type": "carousel",
+          "settings": {
+            "heading": "<h3>Celebrating the [logo] Community</h3>",
+            "text": "<p>Every purchase* enters you to <strong>a 2025 Range Rover Evoque</strong></p>",
+            "percent_value": "",
+            "image": "shopify://shop_images/bundle-2.webp",
+            "image_mobile": "shopify://shop_images/bundle-2-mob.webp",
+            "button_label": "Shop To Enter",
+            "button_url": "#",
+            "sub_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "carousel_bjazym",
+        "carousel_rRrz43"
+      ],
+      "disabled": true,
+      "name": "t:sections.bf-bundle-banner.name",
+      "settings": {}
     },
     "carousel_BHi3nq": {
       "type": "carousel",
@@ -258,6 +297,36 @@
             "reserved": false
           }
         },
+        "product_Ykma4b": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "fade-firm-bundle-pro-bf25",
+            "preselected": false,
+            "soldout": false,
+            "reserved": false
+          }
+        },
+        "product_8hJgNj": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "fade-firm-bundle-advanced-bf25",
+            "preselected": false,
+            "soldout": false,
+            "reserved": false
+          }
+        },
+        "product_BJXNMB": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "fade-firm-bundle-essential-bf25",
+            "preselected": false,
+            "soldout": false,
+            "reserved": false
+          }
+        },
         "type_aJwQ9q": {
           "type": "type",
           "settings": {}
@@ -296,11 +365,31 @@
             "reserved": false
           }
         },
-        "product_dkFRPe": {
+        "product_eiHVrp": {
           "type": "product",
           "disabled": true,
           "settings": {
-            "product": "fade-firm-bundle-advanced-bf25",
+            "product": "line-refine-bundle-pro-bf25",
+            "preselected": false,
+            "soldout": false,
+            "reserved": false
+          }
+        },
+        "product_xJpDep": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "line-refine-bundle-advanced-bf25",
+            "preselected": false,
+            "soldout": false,
+            "reserved": false
+          }
+        },
+        "product_xwqzya": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "line-refine-bundle-essential-bf25",
             "preselected": false,
             "soldout": false,
             "reserved": false
@@ -344,6 +433,36 @@
             "reserved": false
           }
         },
+        "product_KKbDAE": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "breakout-control-pro-bf25",
+            "preselected": false,
+            "soldout": false,
+            "reserved": false
+          }
+        },
+        "product_gia3hC": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "breakout-control-advanced-bf25",
+            "preselected": false,
+            "soldout": false,
+            "reserved": false
+          }
+        },
+        "product_gNjH9L": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "breakout-control-essentials-bf25",
+            "preselected": false,
+            "soldout": false,
+            "reserved": false
+          }
+        },
         "product_e9YBCe": {
           "type": "product",
           "disabled": true,
@@ -361,17 +480,25 @@
         "product_DBd4ef",
         "product_7dL4ci",
         "product_Xf8A6C",
+        "product_Ykma4b",
+        "product_8hJgNj",
+        "product_BJXNMB",
         "type_aJwQ9q",
         "product_type_VLXcAn",
         "product_nyJ9n7",
         "product_EKAAzA",
         "product_eiY89h",
-        "product_dkFRPe",
+        "product_eiHVrp",
+        "product_xJpDep",
+        "product_xwqzya",
         "type_yDwWmt",
         "product_type_YrPQrV",
         "product_gbPf3J",
         "product_NEgEkN",
         "product_RBCPe8",
+        "product_KKbDAE",
+        "product_gia3hC",
+        "product_gNjH9L",
         "product_e9YBCe"
       ],
       "settings": {
@@ -956,11 +1083,24 @@
         "terms-conditions": false,
         "promotional_terms_and_conditions": ""
       }
+    },
+    "sticky_button_hkxM4i": {
+      "type": "sticky-button",
+      "disabled": true,
+      "name": "t:sections.sticky-button.name",
+      "settings": {
+        "heading": "Shop now to save up to 57% on Black Friday deals",
+        "text": "1,893 bundles purchased in last 48 hours",
+        "limited": false,
+        "button-label": "CHOOSE YOUR BUNDLE",
+        "button-url": "#offer_bundle"
+      }
     }
   },
   "order": [
     "announcement_bar_abkmWb",
     "bundle-header",
+    "bf_bundle_banner_dTj5R1",
     "carousel_BHi3nq",
     "slider_featured_in_RUfV4m",
     "page_exclusive_holiday_bundle_trusted_reviews_img_kCfC33",
@@ -973,6 +1113,7 @@
     "compare_9f4PmB",
     "page_exclusive_holiday_bundle_deal_expert_advisory_9JcJgQ",
     "page_banner_eaDxdy",
-    "faq_GEAWy8"
+    "faq_GEAWy8",
+    "sticky_button_hkxM4i"
   ]
 }

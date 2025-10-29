@@ -16,6 +16,7 @@
       "settings": {
         "heading": "Save Up to 57% on Certified Skincare Solutions",
         "description": "<p>Backed by the most respected peer-reviewed Dermatologist Journals and scientific studies that prove; Qure’s skincare works.</p>",
+        "bf_link": "#",
         "button-label": "SHOP & SAVE UP TO 57%",
         "button-url": "#purchase-form-bundle"
       }
@@ -203,7 +204,7 @@
       "name": "t:sections.trusted-reviews-image.name",
       "settings": {
         "heading": "Top-rated products at best prices",
-        "rating_text": "<p>200,000+ Confident Customers</p>",
+        "rating_text": "<p>300,000+ Confident Customers</p>",
         "trating_image": "shopify://shop_images/stars_d8d678e4-b245-4e2a-bf95-2e655cd1cd17.svg"
       }
     },
@@ -242,7 +243,7 @@
         "product_iyCaR8": {
           "type": "product",
           "settings": {
-            "product": "fade-firm-bundle-essential-bf25-sku",
+            "product": "fade-firm-bundle-essential-bf25",
             "preselected": false,
             "soldout": false,
             "reserved": false
@@ -271,7 +272,7 @@
         "product_NtbDxk": {
           "type": "product",
           "settings": {
-            "product": "line-refine-bundle-advanced-bf25-sku",
+            "product": "line-refine-bundle-advanced-bf25",
             "preselected": false,
             "soldout": false,
             "reserved": false
@@ -280,7 +281,7 @@
         "product_jRJTCy": {
           "type": "product",
           "settings": {
-            "product": "line-refine-bundle-essential-bf25-sku",
+            "product": "line-refine-bundle-essential-bf25",
             "preselected": false,
             "soldout": false,
             "reserved": false
@@ -309,7 +310,7 @@
         "product_3JCGzy": {
           "type": "product",
           "settings": {
-            "product": "breakout-control-advanced-bf25-sku",
+            "product": "breakout-control-advanced-bf25",
             "preselected": false,
             "soldout": false,
             "reserved": false
@@ -318,7 +319,16 @@
         "product_TkVDd8": {
           "type": "product",
           "settings": {
-            "product": "breakout-control-essentials-bf25-1",
+            "product": "breakout-control-essentials-bf25",
+            "preselected": false,
+            "soldout": false,
+            "reserved": false
+          }
+        },
+        "product_wiYyUk": {
+          "type": "product",
+          "settings": {
+            "product": "water-filter-family-bundle-bf25",
             "preselected": false,
             "soldout": false,
             "reserved": false
@@ -340,7 +350,8 @@
         "product_type_YrPQrV",
         "product_6TBNNL",
         "product_3JCGzy",
-        "product_TkVDd8"
+        "product_TkVDd8",
+        "product_wiYyUk"
       ],
       "settings": {
         "heading": "Choose Your Bundle",
@@ -365,6 +376,7 @@
       "block_order": [
         "take_quiz_n7qDWC"
       ],
+      "disabled": true,
       "name": "t:sections.index-quiz.name",
       "settings": {
         "heading": "Need help finding your new routine?",
