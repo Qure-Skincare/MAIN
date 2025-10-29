@@ -11,11 +11,12 @@
                 {% render 'product-page-slider', product: blank, page: page, class: 'tp-product-gallery d-block d-lg-none mb-30', element_id: section.id %}
                 {% render 'page-rating', section: section %}
 
-               {% if section.settings.heading != blank %}
-                    <h1 class="qure__product-title mb-10">{{ section.settings.heading }}</h1>
-               {% endif %}
 
-               {% include 'product-page-blocks-render', allowed_types: 'link,description,section,video,exclusive-offer,black-friday-discount' %}
+                {% if section.settings.heading != blank %}
+                    <h1 class="qure__product-title mb-10">{{ section.settings.heading }}</h1>
+                {% endif %}
+
+                {% include 'product-page-blocks-render', allowed_types: 'link,description,section,video,exclusive-offer,black-friday-discount' %}
             </div>
          </div>
          <div class="col-lg-6 custom__block">
