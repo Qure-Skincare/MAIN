@@ -9,12 +9,12 @@
 {% assign milestone_name = settings.shipping_title %}
 
 {% if global_total_price_devided > global_bar_shipping_limit %}
-  {% assign milestone_name = settings.cart_gift1_title | append: ' worth $100' %}
+  {% assign milestone_name = settings.cart_gift2_title | append: ' worth $100' %}
 {% endif %}
 
 {% assign has_gamification_content = false %}
 
-{% if global_bar_gift1_limit > 0 %}
+{% if global_bar_gift2_limit > 0 %}
   {% assign has_gamification_content = true %}
 {% endif %}
 
@@ -23,7 +23,7 @@
     <div class="gamification-content">
       <div class="gamification-message">
         {% if global_bar_percent == 100 %}
-          {% assign formatted_message = header_completed | replace: '{{ gift_name }}', settings.cart_gift1_title | replace: 'Free', '' %}
+          {% assign formatted_message = header_completed | replace: '{{ gift_name }}', settings.cart_gift2_title | replace: 'Free', '' %}
           {{ formatted_message }}
         {% else %}
         {% assign formatted_message = header_text | replace: '{{ add_more }}', global_bar_add_more | replace: '{{ milestone_name }}', milestone_name %}
