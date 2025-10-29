@@ -133,6 +133,7 @@
       "settings": {
         "heading": "<h2>Save Up to 57%</h2>",
         "text": "<p>Your Favorite Products, Perfectly Bundled</p>",
+        "bg_color": "black",
         "button_label": "Shop Bundles Now",
         "button_url": "https://qureskincare.com/pages/exclusive-holiday-bundle-deal-new#"
       }
@@ -174,6 +175,59 @@
       "disabled": true,
       "name": "t:sections.bf-bundle-banner.name",
       "settings": {}
+    },
+    "bf_banner_with_text_7wEFDF": {
+      "type": "bf-banner-with-text",
+      "disabled": true,
+      "name": "t:sections.bf-banner-with-text.name",
+      "settings": {
+        "heading": "<h2>26% Off Sitewide*</h2>",
+        "text": "<p>Shop our biggest sale of the year. The week only.</p>",
+        "image": "shopify://shop_images/stop-motion-square-v1.gif",
+        "bg_color": "white",
+        "button_label": "Shop Now",
+        "button_url": "#",
+        "sub_text": ""
+      }
+    },
+    "bf_bundle_bunner_mini_VD9qRR": {
+      "type": "bf-bundle-banner-mini",
+      "blocks": {
+        "image_rATyPJ": {
+          "type": "image",
+          "settings": {
+            "percent_value": "57%",
+            "image": "shopify://shop_images/bundle-mini-1.webp"
+          }
+        },
+        "image_dicxDW": {
+          "type": "image",
+          "settings": {
+            "percent_value": "",
+            "image": "shopify://shop_images/bundle-mini-2.webp"
+          }
+        },
+        "image_wCgyfh": {
+          "type": "image",
+          "settings": {
+            "percent_value": "",
+            "image": "shopify://shop_images/bundle-mini-3.webp"
+          }
+        }
+      },
+      "block_order": [
+        "image_rATyPJ",
+        "image_dicxDW",
+        "image_wCgyfh"
+      ],
+      "disabled": true,
+      "name": "t:sections.bf-bundle-banner-mini.name",
+      "settings": {
+        "heading": "<h3>Save Up to 57%</h3>",
+        "text": "<p>Your Favorite Products, Perfectly Bundled</p>",
+        "button_url": "#",
+        "button_label": "Shop Bundles Now"
+      }
     },
     "index_banner_with_text_second_TNGNLJ": {
       "type": "index-banner-with-text-second",
@@ -845,6 +899,8 @@
     "index_banner_with_text_TNGNLJ",
     "bf_banner_with_text_4LMX6e",
     "bf_bundle_banner_dTGjF7",
+    "bf_banner_with_text_7wEFDF",
+    "bf_bundle_bunner_mini_VD9qRR",
     "index_banner_with_text_second_TNGNLJ",
     "bundle_banner_eEa7XN",
     "slider_featured_in_KgaUTN",
