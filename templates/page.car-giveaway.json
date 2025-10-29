@@ -26,7 +26,7 @@
       "name": "t:sections.car-giveaway-countdown-timer.name",
       "settings": {
         "heading": "20X extra entries ENDS IN:",
-        "from": "2025-10-23",
+        "from": "2025-10-24",
         "days": 7
       }
     },
@@ -40,6 +40,8 @@
             "text": "Receive 7980 Entries",
             "image": "shopify://shop_images/Img_25.png",
             "price": "$399",
+            "compare_price": "",
+            "discount_price": "",
             "button_label": "Shop Now",
             "button_url": "https://qureskincare.com/products/q-rejuvalight-pro-facewear",
             "quote": "BEST CHANCE"
@@ -52,6 +54,8 @@
             "text": "Receive 5980 Entries",
             "image": "shopify://shop_images/Img_23.png",
             "price": "$299",
+            "compare_price": "",
+            "discount_price": "",
             "button_label": "Shop Now",
             "button_url": "https://qureskincare.com/products/neck-decolletage-led",
             "quote": ""
@@ -64,6 +68,8 @@
             "text": "Receive 2380 Entries",
             "image": "shopify://shop_images/Rectangle_1375_d5b54d2a-a78a-4648-a652-a95cc0b53ea1.png",
             "price": "from $119",
+            "compare_price": "",
+            "discount_price": "",
             "button_label": "Shop Now",
             "button_url": "https://qureskincare.com/pages/microinfusion",
             "quote": ""
@@ -76,6 +82,8 @@
             "text": "Receive 1580 Entries",
             "image": "shopify://shop_images/Img_24.png",
             "price": "from $79",
+            "compare_price": "",
+            "discount_price": "",
             "button_label": "Shop Now",
             "button_url": "https://qureskincare.com/products/face-serum",
             "quote": ""
@@ -205,6 +213,8 @@
             "text": "Receive 1580 Entries",
             "image": "shopify://shop_images/mi-target-pat.webp",
             "price": "$79",
+            "compare_price": "",
+            "discount_price": "",
             "button_label": "Shop Now",
             "button_url": "https://qureskincare.com/products/micro-infusion-targeted-patches",
             "quote": ""
@@ -217,6 +227,8 @@
             "text": "Receive 2980 Entries",
             "image": "shopify://shop_images/shwr-fil.webp",
             "price": "from $149",
+            "compare_price": "",
+            "discount_price": "",
             "button_label": "Shop Now",
             "button_url": "https://qureskincare.com/products/shower-filter",
             "quote": ""
@@ -229,6 +241,8 @@
             "text": "Receive 2580 Entries",
             "image": "shopify://shop_images/water-fil.webp",
             "price": "from $129",
+            "compare_price": "",
+            "discount_price": "",
             "button_label": "Shop Now",
             "button_url": "https://qureskincare.com/products/faucet-filter",
             "quote": ""
@@ -241,6 +255,8 @@
             "text": "Receive 580 Entries",
             "image": "shopify://shop_images/derm-mist.webp",
             "price": "$29",
+            "compare_price": "",
+            "discount_price": "",
             "button_label": "Shop Now",
             "button_url": "https://qureskincare.com/products/dermal-mist",
             "quote": ""
