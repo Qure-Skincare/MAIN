@@ -93,6 +93,45 @@
         "heading": "This is our way of saying thank you"
       }
     },
+    "bf_bundle_bunner_mini_Jugh9R": {
+      "type": "bf-bundle-banner-mini",
+      "blocks": {
+        "image_rATyPJ": {
+          "type": "image",
+          "settings": {
+            "percent_value": "57%",
+            "image": "shopify://shop_images/bundle-mini-1.webp"
+          }
+        },
+        "image_dicxDW": {
+          "type": "image",
+          "settings": {
+            "percent_value": "",
+            "image": "shopify://shop_images/bundle-mini-2.webp"
+          }
+        },
+        "image_wCgyfh": {
+          "type": "image",
+          "settings": {
+            "percent_value": "",
+            "image": "shopify://shop_images/bundle-mini-3.webp"
+          }
+        }
+      },
+      "block_order": [
+        "image_rATyPJ",
+        "image_dicxDW",
+        "image_wCgyfh"
+      ],
+      "disabled": true,
+      "name": "t:sections.bf-bundle-banner-mini.name",
+      "settings": {
+        "heading": "<h3>Save Up to 57%</h3>",
+        "text": "<p>Your Favorite Products, Perfectly Bundled</p>",
+        "button_url": "#",
+        "button_label": "Shop Bundles Now"
+      }
+    },
     "car_giveaway_interior_style_UkFGBy": {
       "type": "car-giveaway-interior-style",
       "name": "t:sections.car-giveaway-interior-style.name",
@@ -368,6 +407,7 @@
     "car_giveaway_page_banner_d3gH4X",
     "car_giveaway_countdown_timer_MJrqzk",
     "car_giveaway_product_cards_f7JeEF",
+    "bf_bundle_bunner_mini_Jugh9R",
     "car_giveaway_interior_style_UkFGBy",
     "car_giveaway_car_bundle_br3fna",
     "car_giveaway_product_cards_addzMK",
