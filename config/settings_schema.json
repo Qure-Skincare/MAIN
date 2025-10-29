@@ -163,7 +163,7 @@
         "type": "checkbox",
         "id": "enable_gamification",
         "label": "Enable Gamification",
-        "default": true,
+        "default": false,
         "info": "Enable or disable the gamification feature."
       },
 
