@@ -161,10 +161,10 @@
 
       {
         "type": "checkbox",
-        "id": "enable_gamification_header",
-        "label": "Enable Gamification in Header",
+        "id": "enable_gamification",
+        "label": "Enable Gamification",
         "default": true,
-        "info": "Enable or disable the gamification feature in the header section."
+        "info": "Enable or disable the gamification feature."
       },
 
       {

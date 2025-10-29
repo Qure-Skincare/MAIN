@@ -9,6 +9,46 @@
   {% endif %}
 {% endfor %}
 
+<style>
+  {% if settings.enable_gamification == false %} 
+    #endrock_gamificationHeader {
+      display: none;
+    }
+
+    {% if excluded %}
+      :root {
+      --height-bar: 51px !important;
+    }
+    @media (max-width: 991px) {
+      :root {
+        --height-bar: 35px !important;
+      }
+    }
+    {% else %}
+    :root {
+      --height-bar: 40px !important;
+    }
+    @media (max-width: 991px) {
+      :root {
+        --height-bar: 32px !important;
+      }
+    }
+    {% endif %}
+  {% else  %}
+    :root {
+        --height-bar: 56px;
+    }
+    #announcement-bar {
+        display: none;
+    }
+    @media screen and (max-width: 1024px) {
+      :root {
+        --height-bar: 80px;
+      }
+    }
+  {% endif %}
+</style>
+
 {% unless excluded %}
   {{ '__endrock_rotating-announcement.css' | asset_url | stylesheet_tag }}
   {{ 'splide.min.css' | file_url | stylesheet_tag }}
