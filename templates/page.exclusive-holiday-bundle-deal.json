@@ -394,6 +394,36 @@
             "reserved": false
           }
         },
+        "product_KKbDAE": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "breakout-control-pro-bf25",
+            "preselected": false,
+            "soldout": false,
+            "reserved": false
+          }
+        },
+        "product_gia3hC": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "breakout-control-advanced-bf25-sku",
+            "preselected": false,
+            "soldout": false,
+            "reserved": false
+          }
+        },
+        "product_gNjH9L": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "breakout-control-essentials-bf25-1",
+            "preselected": false,
+            "soldout": false,
+            "reserved": false
+          }
+        },
         "product_e9YBCe": {
           "type": "product",
           "disabled": true,
@@ -427,6 +457,9 @@
         "product_gbPf3J",
         "product_NEgEkN",
         "product_RBCPe8",
+        "product_KKbDAE",
+        "product_gia3hC",
+        "product_gNjH9L",
         "product_e9YBCe"
       ],
       "settings": {
