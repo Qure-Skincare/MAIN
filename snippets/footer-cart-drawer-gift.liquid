@@ -22,7 +22,7 @@
     {% endif %}
 {% endif %}
 
-{% if global_bar_gift1_handle != blank %}
+{% if global_bar_gift1_handle != blank and settings.enable_gamification == false  %}
     {% if global_bar_gift1_variant_id != null and global_bar_gift1_limit > 0 %}
         <form id="gift_{{ global_bar_gift1_handle }}" method="post" action="/cart/add" enctype="multipart/form-data" class="footer-cart-drawer-gift">
             <input type="hidden" name="quantity" id="quantity" value="1">
@@ -44,3 +44,55 @@
         </form>
     {% endif %}
 {% endif %}
+
+
+{% assign old_freegift_handle = 'micro-infusion-targeted-patches-single' %}
+{% for item in cart.items %}
+  {% if item.product.handle == old_freegift_handle and item.properties._required_validation %}
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const removeGift = async (attempt = 1) => {
+          try {
+            const res = await fetch('/cart/change.js', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({
+                id: '{{ item.key }}',
+                quantity: 0
+              })
+            });
+
+            if (res.status === 409) {
+              const delay = Math.min(1000 * attempt, 5000);
+              console.warn(`Conflict (409). Retry #${attempt} in ${delay}ms`);
+              setTimeout(() => removeGift(attempt + 1), delay);
+              return;
+            }
+
+            if (!res.ok) throw new Error(`HTTP ${res.status}`);
+
+            const data = await res.json();
+            console.log('✅ Removed old free gift', data);
+
+            // 🔥 Dispara el evento que ya usan tus otros métodos (addToCart, changeCart, etc)
+            const event = new CustomEvent('cart.requestComplete', { 
+              detail: { source: 'removeOldGift' } 
+            });
+            document.dispatchEvent(event);
+
+          } catch (err) {
+            if (attempt < 5) {
+              const delay = 1000 * attempt;
+              console.warn(`Error removing gift, retrying #${attempt} in ${delay}ms`, err);
+              setTimeout(() => removeGift(attempt + 1), delay);
+            } else {
+              console.error('❌ Failed to remove old gift after multiple attempts', err);
+            }
+          }
+        };
+
+        removeGift();
+      });
+    </script>
+  {% endif %}
+{% endfor %}

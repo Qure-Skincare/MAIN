@@ -364,7 +364,7 @@
         "save": "SAVE"
       },
       "money-back": {
-        "image": "moneyback_90.webp",
+        "image": "moneyback_90.svg",
         "header": "90-Day Money Back Guarantee",
         "text": "You deserve results you can see. Try Micro-Infusion for 90 days, and if you’re not satisfied, simply get in touch with our team for a full refund!"
       },
@@ -434,7 +434,7 @@
       "settings": {
         "notification_html": "<strong>IN HIGH DEMAND</strong> | Items reserved for:",
         "notification_time_end": "Time is up!",
-        "bar_header_html": "You’re {{ add_more }} way from <strong>a FREE {{ product_title }}</strong> (worth {{ product_price }})",
+        "bar_header_html": "You’re {{ add_more }} way from <strong>a {{ product_title }}</strong> (worth {{ product_price }})",
         "bar_header_completed_html": "Congrats! You've unlocked your <strong>Free Gifts!</strong>",
         "header": "Your Cart",
         "item-text-2days": "In stock. Shipped within 2 days",
@@ -581,8 +581,7 @@
       "bundles": "Bundles",
       "easy-returns": "Easy 30-Day Returns",
       "shipping-text": "Free Worldwide Shipping",
-      "recommended_html": "<strong>50+ Board Certified Dermatologists</strong> recommend Qure to their patients. <a href='https://qureskincare.com/pages/derm-reviews' class='text-black text-decoration-underline'>See More</a>.",
-      "bf_badge_image": "https://qureskincaredns-main.com/sections/isolated/micro-infusion-pdp/images/black-friday-silver-badge.webp"
+      "recommended_html": "<strong>50+ Board Certified Dermatologists</strong> recommend Qure to their patients. <a href='https://qureskincare.com/pages/derm-reviews' class='text-black text-decoration-underline'>See More</a>."
     }
   },
   "header": {
