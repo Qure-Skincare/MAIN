@@ -2,7 +2,7 @@
   "name": "commands",
   "scripts": {
     "start": "shopify theme dev --live-reload=hot-reload --theme-editor-sync --force",
-    "check": "shopify theme check",
+    "publish": "shopify theme push --unpublished",
     "sync": "git checkout production; git pull origin production; git fetch --prune",
     "open": "git checkout production; git pull origin production; git checkout -b feature/$npm_config_name",
     "push": "git add .; git commit -m \"${npm_config_message:-push}\"; git push origin feature/${npm_config_name}",
@@ -10,7 +10,7 @@
   },
   "comments": {
     "start": "npm run start",
-    "check": "npm run check",
+    "publish": "npm run publish",
     "sync": "npm run sync",
     "open": "npm run open --name=[branch-name]",
     "push": "npm run push --name=[branch-name] --message=[optional]",
