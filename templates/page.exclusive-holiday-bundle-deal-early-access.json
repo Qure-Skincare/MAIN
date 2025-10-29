@@ -21,11 +21,6 @@
         "button-url": "#purchase-form-bundle"
       }
     },
-    "bf_bundle_banner_6kcrBf": {
-      "type": "bf-bundle-banner",
-      "name": "t:sections.bf-bundle-banner.name",
-      "settings": {}
-    },
     "carousel_BHi3nq": {
       "type": "carousel",
       "blocks": {
@@ -944,7 +939,6 @@
   },
   "order": [
     "bundle-header",
-    "bf_bundle_banner_6kcrBf",
     "carousel_BHi3nq",
     "slider_featured_in_RUfV4m",
     "page_exclusive_holiday_bundle_trusted_reviews_img_kCfC33",
