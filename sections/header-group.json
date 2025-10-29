@@ -11,17 +11,13 @@
   "type": "header",
   "name": "t:sections-group.header.name",
   "sections": {
-    "endrock-gamification-header": {
-      "type": "endrock-gamification-header",
-      "settings": {}
-    },
     "endrock-rotating-announcement": {
       "type": "endrock__rotating-announcement",
       "blocks": {
         "announcement-1": {
           "type": "announcement",
           "settings": {
-            "heading": "<p>Autumn Glow Sale 67% OFF Micro-Infusion</p>",
+            "heading": "Autumn Glow Sale 67% OFF Micro-Infusion",
             "button-label": "Shop Now",
             "button-url": "https://qureskincare.com/pages/microinfusion"
           }
@@ -29,7 +25,7 @@
         "announcement-2": {
           "type": "announcement",
           "settings": {
-            "heading": "<p><strong>Free Shipping</strong> on Orders Over $100</p>",
+            "heading": "<strong>Free Shipping</strong> on Orders Over $100",
             "button-label": "",
             "button-url": "",
             "icon": "shopify://shop_images/icon-cart.png"
@@ -38,7 +34,7 @@
         "announcement-3": {
           "type": "announcement",
           "settings": {
-            "heading": "<p><strong>Clinically Proven,</strong> Visible Results</p>",
+            "heading": "<strong>Clinically Proven,</strong> Visible Results",
             "button-label": "",
             "button-url": "",
             "icon": "shopify://shop_images/icon-shield.png"
@@ -79,10 +75,10 @@
       "type": "announcement-bar",
       "disabled": true,
       "settings": {
-        "heading": "Autumn Glow Sale 67% OFF Micro-Infusion",
-      "button-label": "Shop Now",
-        "button-url": "https://qureskincare.com/pages/microinfusion",
-        "show": true
+        "heading": "ONLY AVAILABLE TO US CUSTOMERS",
+        "button-label": "",
+        "button-url": "",
+        "show": false
       }
     },
     "header": {
@@ -91,7 +87,6 @@
     }
   },
   "order": [
-    "endrock-gamification-header",
     "endrock-rotating-announcement",
     "footer-form",
     "header"
