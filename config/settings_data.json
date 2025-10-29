@@ -63,8 +63,6 @@
     "cart_upsell5_product": "micro-infusion-targeted-patches",
     "black_friday_turn_on": false,
     "black_friday_discount_percent": 0,
-    "enable_gamification_header": false,
-    "event_name": "Offer",
     "content_for_index": [],
     "blocks": {
       "2786716548061469553": {
