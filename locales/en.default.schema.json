@@ -9,6 +9,8 @@
  */
  {
     "common": {
+        "compare-price": "Compare price",
+        "discount-price": "Discount price",
         "show_discount": "Show discount",
         "reviews-videos": "Reviews-videos",
         "money-back": "Money Back",
