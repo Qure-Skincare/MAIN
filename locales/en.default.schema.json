@@ -147,6 +147,7 @@
         "mode": "Mode",
         "default": "Default",
         "patches": "Patches",
+        "background_color": "Background color",
         "quote": "Quote",
         "quote-mobile": "Quote mobile",
         "content": "Content",

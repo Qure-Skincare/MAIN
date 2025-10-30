@@ -174,6 +174,7 @@
       ],
       "name": "Endrock Banner with Text",
       "settings": {
+        "background_color": "#f6f6f7",
         "heading": "Virtually painless care for noticeably better skin",
         "text": "",
         "quote": "",
@@ -182,7 +183,11 @@
         "sub_text": "",
         "button_label": "",
         "button_url": "",
-        "wistia_url": "a1pykz2tp0"
+        "wistia_url": "a1pykz2tp0",
+        "mobile_layout": "image_first",
+        "title_position": "above_image",
+        "testimonial_order": 1,
+        "text_with_progress_order": 2
       }
     },
     "banner_with_text_phJT4F": {

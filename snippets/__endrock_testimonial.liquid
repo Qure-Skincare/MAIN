@@ -1,0 +1,15 @@
+<div class="banner-text--testimonial">
+    {% if testimonial_block.testimonial_text != blank %}
+    <div class="testimonial-text">{{ testimonial_block.testimonial_text }}
+    </div>
+    {% endif %}
+    {% if testimonial_block.testimonial_author != blank %}
+        <div class="testimonial-footer">
+            <div class="testimonial-author">{{ testimonial_block.testimonial_author }}</div>
+            <div class="verified-purchaser">
+                <img src="https://cdn.shopify.com/s/files/1/0441/1431/3365/files/reviewCheck.svg?v=1753879814" alt="review" width="12px" height="12px">
+                <span> Verified Purchaser </span>
+            </div>
+        </div>
+    {% endif %}
+</div>

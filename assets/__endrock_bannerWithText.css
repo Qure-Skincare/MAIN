@@ -1,6 +1,90 @@
+
+.mobile-only {
+    display: none;
+}
+
 .endrock-banner-with-text .banner-with-text-content {
     display: flex;
     flex-direction: column;
     row-gap: 32px;
 }
 
+
+.endrock-banner-with-text .banner-text--testimonial {
+    padding: 16px 12px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    background: #FFFFFFCC;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.endrock-banner-with-text .banner-text--testimonial .testimonial-text {
+    font-family: TT Commons;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0px;
+}
+
+
+.endrock-banner-with-text .banner-text--testimonial .testimonial-author,
+.endrock-banner-with-text .banner-text--testimonial .verified-purchaser span {
+    font-family: TT Commons;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0%;
+}
+
+.endrock-banner-with-text .banner-text--testimonial .testimonial-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 8px;
+}
+.endrock-banner-with-text .banner-text--testimonial .testimonial-footer .verified-purchaser {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+}
+
+
+@media (max-width: 767px) {
+    .mobile-only {
+        display: block;
+    }
+    .desktop-only {
+        display: none;
+    }
+
+    .mobile-order-1 {
+        order: 1;
+    }
+    .mobile-order-2 {
+        order: 2;
+    }
+    .mobile-order-3 {
+        order: 3;
+    }
+    .mobile-order-4 {
+        order: 4;
+    }
+    .mobile-order-5 {
+        order: 5;
+    }
+
+    .endrock-banner-with-text .banner-with-text-content{
+        row-gap: 24px;
+    }
+
+    .endrock-banner-with-text .banner-text--heading.mobile-only {
+        margin-bottom: 24px;
+    }
+}
