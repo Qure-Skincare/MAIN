@@ -39,15 +39,7 @@
 {% endif %}
 
 <script>
-document.addEventListener('cart.requestComplete', (event) => {
-    
-    const sectionFileHandle = 'endrock-gamification-header'; 
-    const elementIdToUpdate = 'endrock_gamificationHeader'; 
-    if (typeof updateSection === 'function') {
-        updateSection(sectionFileHandle, elementIdToUpdate)
-            .catch((error) => {
-                console.error('Failed to update Header Gamification section:', error);
-            });
-    }
-});
+  document.addEventListener('DOMContentLoaded', function () {
+    loadScriptOnce('gamification_handler', '{{ "__endrock_gamificationHandler.js" | asset_url }}');
+  });
 </script>
