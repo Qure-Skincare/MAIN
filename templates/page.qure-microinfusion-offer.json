@@ -93,39 +93,6 @@
         "button-url": "#purchase-form"
       }
     },
-    "slider_featured_in_lVZt5L": {
-      "type": "slider-featured-in",
-      "blocks": {
-        "slider_7tzexM": {
-          "type": "slider",
-          "settings": {
-            "heading": "“Few beauty trends are actually worth adopting, but Qure’s take on at-home Micro-Infusion is a viral skin trend with merit.”",
-            "image": "shopify://shop_images/forbes.svg"
-          }
-        },
-        "slider_EkJHPF": {
-          "type": "slider",
-          "settings": {
-            "heading": "“A true microneedling treatment - creating microchannels that increase collagen and elastin production and product absorption.”",
-            "image": "shopify://shop_images/bazzar.svg"
-          }
-        },
-        "slider_Haj4cd": {
-          "type": "slider",
-          "settings": {
-            "heading": "“This microneedling alternative is my secret to glowing skin.”",
-            "image": "shopify://shop_images/ps.svg"
-          }
-        }
-      },
-      "block_order": [
-        "slider_7tzexM",
-        "slider_EkJHPF",
-        "slider_Haj4cd"
-      ],
-      "name": "t:sections.slider-featured-in.name",
-      "settings": {}
-    },
     "endrock_bannerWithText3yX9": {
       "type": "endrock_bannerWithText",
       "blocks": {
@@ -189,6 +156,39 @@
         "testimonial_order": 1,
         "text_with_progress_order": 2
       }
+    },
+    "slider_featured_in_lVZt5L": {
+      "type": "slider-featured-in",
+      "blocks": {
+        "slider_7tzexM": {
+          "type": "slider",
+          "settings": {
+            "heading": "“Few beauty trends are actually worth adopting, but Qure’s take on at-home Micro-Infusion is a viral skin trend with merit.”",
+            "image": "shopify://shop_images/forbes.svg"
+          }
+        },
+        "slider_EkJHPF": {
+          "type": "slider",
+          "settings": {
+            "heading": "“A true microneedling treatment - creating microchannels that increase collagen and elastin production and product absorption.”",
+            "image": "shopify://shop_images/bazzar.svg"
+          }
+        },
+        "slider_Haj4cd": {
+          "type": "slider",
+          "settings": {
+            "heading": "“This microneedling alternative is my secret to glowing skin.”",
+            "image": "shopify://shop_images/ps.svg"
+          }
+        }
+      },
+      "block_order": [
+        "slider_7tzexM",
+        "slider_EkJHPF",
+        "slider_Haj4cd"
+      ],
+      "name": "t:sections.slider-featured-in.name",
+      "settings": {}
     },
     "stock_alert_egmbcj": {
       "type": "stock-alert",
@@ -1516,8 +1516,8 @@
   "order": [
     "announcement_bar_iNbPEw",
     "page_header_SXJyMD",
-    "slider_featured_in_lVZt5L",
     "endrock_bannerWithText3yX9",
+    "slider_featured_in_lVZt5L",
     "stock_alert_egmbcj",
     "banner_with_text_xzUU6n",
     "beauty_benefits_Pzxmim",
