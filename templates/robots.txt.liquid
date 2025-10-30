@@ -1,0 +1,162 @@
+# --- START: Custom Rules ---
+
+# --- Standard Search Engines ---
+User-agent: Googlebot
+Allow: /
+Disallow: /cart
+Disallow: /carts/
+Disallow: /checkout
+Disallow: /checkouts/
+Disallow: /account
+Disallow: /orders
+Disallow: /admin
+Disallow: /password
+
+User-agent: Bingbot
+Allow: /
+Disallow: /cart
+Disallow: /carts/
+Disallow: /checkout
+Disallow: /checkouts/
+Disallow: /account
+Disallow: /orders
+Disallow: /admin
+Disallow: /password
+
+# --- AI Chatbots and Indexers ---
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /cart
+Disallow: /carts/
+Disallow: /checkout
+Disallow: /checkouts/
+Disallow: /account
+Disallow: /orders
+Disallow: /admin
+Disallow: /password
+
+User-agent: GPTBot
+Allow: /
+Disallow: /cart
+Disallow: /carts/
+Disallow: /checkout
+Disallow: /checkouts/
+Disallow: /account
+Disallow: /orders
+Disallow: /admin
+Disallow: /password
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /cart
+Disallow: /carts/
+Disallow: /checkout
+Disallow: /checkouts/
+Disallow: /account
+Disallow: /orders
+Disallow: /admin
+Disallow: /password
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /cart
+Disallow: /carts/
+Disallow: /checkout
+Disallow: /checkouts/
+Disallow: /account
+Disallow: /orders
+Disallow: /admin
+Disallow: /password
+
+User-agent: Anthropic-Bot
+Allow: /
+Disallow: /cart
+Disallow: /carts/
+Disallow: /checkout
+Disallow: /checkouts/
+Disallow: /account
+Disallow: /orders
+Disallow: /admin
+Disallow: /password
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /cart
+Disallow: /carts/
+Disallow: /checkout
+Disallow: /checkouts/
+Disallow: /account
+Disallow: /orders
+Disallow: /admin
+Disallow: /password
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /cart
+Disallow: /carts/
+Disallow: /checkout
+Disallow: /checkouts/
+Disallow: /account
+Disallow: /orders
+Disallow: /admin
+Disallow: /password
+
+User-agent: CCBot
+Allow: /
+Disallow: /cart
+Disallow: /carts/
+Disallow: /checkout
+Disallow: /checkouts/
+Disallow: /account
+Disallow: /orders
+Disallow: /admin
+Disallow: /password
+
+User-agent: NeevaBot
+Allow: /
+Disallow: /cart
+Disallow: /carts/
+Disallow: /checkout
+Disallow: /checkouts/
+Disallow: /account
+Disallow: /orders
+Disallow: /admin
+Disallow: /password
+
+User-agent: YouBot
+Allow: /
+Disallow: /cart
+Disallow: /carts/
+Disallow: /checkout
+Disallow: /checkouts/
+Disallow: /account
+Disallow: /orders
+Disallow: /admin
+Disallow: /password
+
+User-agent: Amazonbot
+Allow: /
+Disallow: /cart
+Disallow: /carts/
+Disallow: /checkout
+Disallow: /checkouts/
+Disallow: /account
+Disallow: /orders
+Disallow: /admin
+Disallow: /password
+
+# --- END: Custom Rules ---
+
+
+# --- START: Shopify Default Rules ---
+# This loop prints Shopify's managed rules. Do not modify it.
+{% for group in robots.default_groups %}
+{{ group.user_agent }}
+{% for rule in group.rules %}
+{{ rule }}
+{% endfor %}
+{%- if group.sitemap != blank -%}
+{{ group.sitemap }}
+{%- endif -%}
+{% endfor %}
+# --- END: Shopify Default Rules ---

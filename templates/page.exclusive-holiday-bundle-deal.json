@@ -31,7 +31,7 @@
         "button-url": "#purchase-form-bundle"
       }
     },
-    "bf_bundle_banner_dTj5R1": {
+    "bf_bundle_banner_jHuIO7": {
       "type": "bf-bundle-banner",
       "blocks": {
         "carousel_bjazym": {
@@ -43,7 +43,7 @@
             "image": "shopify://shop_images/bundle-1.webp",
             "image_mobile": "shopify://shop_images/bundle-1-mob.webp",
             "button_label": "Get Yours Now",
-            "button_url": "#",
+            "button_url": "https://qureskincare.com/products/micro-infusion-limited-edition-bundle-1",
             "sub_text": "<p><strong>Limited availability:</strong> Under 100 cases remaining</p>"
           }
         },
@@ -56,7 +56,7 @@
             "image": "shopify://shop_images/bundle-2.webp",
             "image_mobile": "shopify://shop_images/bundle-2-mob.webp",
             "button_label": "Shop To Enter",
-            "button_url": "#",
+            "button_url": "https://qureskincare.com/pages/car-giveaway",
             "sub_text": ""
           }
         }
@@ -545,7 +545,7 @@
             "product_url": "#",
             "product_heading": "Ellie uses",
             "product_text": "Micro infusion Facial System",
-            "product_image": "shopify://shop_images/micro-infusion-facial-system_f0e75ccc-2fd2-48d6-aea7-fe662896adaa.webp"
+            "product_image": "shopify://shop_images/Img_681ea999-3f18-4af5-bdbd-cba3c1b9bbe0.png"
           }
         },
         "slider_ECMbpP": {
@@ -559,7 +559,7 @@
             "product_url": "#",
             "product_heading": "Anton uses...",
             "product_text": "Q-Rejuvalight Pro LED Mask",
-            "product_image": "shopify://shop_images/q-rejuvalight-pro-led-mask.webp"
+            "product_image": "shopify://shop_images/Img_798bfa82-0458-44be-b56c-680a7c054959.png"
           }
         },
         "slider_MLP4F6": {
@@ -573,7 +573,7 @@
             "product_url": "#",
             "product_heading": "Jennifer uses...",
             "product_text": "Micro-Infusion Facial System",
-            "product_image": "shopify://shop_images/micro-infusion-facial-system_f0e75ccc-2fd2-48d6-aea7-fe662896adaa.webp"
+            "product_image": "shopify://shop_images/Img_681ea999-3f18-4af5-bdbd-cba3c1b9bbe0.png"
           }
         },
         "slider_jdNazB": {
@@ -587,7 +587,7 @@
             "product_url": "#",
             "product_heading": "Terri uses...",
             "product_text": "Q-Rejuvalight Pro LED Mask",
-            "product_image": "shopify://shop_images/q-rejuvalight-pro-led-mask.webp"
+            "product_image": "shopify://shop_images/Img_798bfa82-0458-44be-b56c-680a7c054959.png"
           }
         },
         "slider_WrGfPY": {
@@ -601,7 +601,7 @@
             "product_url": "#",
             "product_heading": "Cassandra uses...",
             "product_text": "Micro-Infusion Targeted Patches",
-            "product_image": "shopify://shop_images/micro-infusion-targeted-patches_d896fbd3-01a9-4e6b-8786-c717634936e4.webp"
+            "product_image": "shopify://shop_images/Img_45470638-5f15-4e49-82ef-d726c981b6c6.png"
           }
         },
         "slider_WYy6pT": {
@@ -615,7 +615,7 @@
             "product_url": "#",
             "product_heading": "Claudia uses...",
             "product_text": "Neck & Décolletage LED System",
-            "product_image": "shopify://shop_images/neck-decolletage-led-device.webp"
+            "product_image": "shopify://shop_images/Img_4d39d871-f9dc-43af-b79c-86f9e62b1feb.png"
           }
         },
         "slider_mzetU8": {
@@ -629,7 +629,7 @@
             "product_url": "#",
             "product_heading": "Ana uses...",
             "product_text": "All-In-One Serum",
-            "product_image": "shopify://shop_images/all-in-one-serum.webp"
+            "product_image": "shopify://shop_images/Img_56121904-3168-443c-975e-ff570248b23b.png"
           }
         },
         "slider_RTBcJx": {
@@ -644,7 +644,7 @@
             "product_url": "#",
             "product_heading": "BJ uses...",
             "product_text": "Q-Rejuvalight Pro LED Mask",
-            "product_image": "shopify://shop_images/q-rejuvalight-pro-led-mask.webp"
+            "product_image": "shopify://shop_images/Img_ad24081a-bb2f-4d16-8839-a8041c50e39d.png"
           }
         },
         "slider_q9MPFk": {
@@ -658,7 +658,7 @@
             "product_url": "#",
             "product_heading": "Mary uses...",
             "product_text": "Neck & Décolletage LED System",
-            "product_image": "shopify://shop_images/neck-decolletage-led-device.webp"
+            "product_image": "shopify://shop_images/Img_4d39d871-f9dc-43af-b79c-86f9e62b1feb.png"
           }
         }
       },
@@ -938,7 +938,7 @@
             "image_1": "shopify://shop_images/micro-infusion-treatment.webp",
             "product_2": "Micro-Infusion Targeted Patches",
             "link_url_2": "https://qureskincare.com/products/micro-infusion-targeted-patches",
-            "image_2": "shopify://shop_images/micro-infusion-targeted-patches.webp"
+            "image_2": "shopify://shop_images/image_c3f7733f-e17b-488d-ac70-3ecdc65bd098.png"
           }
         },
         "items_chWKG4": {
@@ -948,10 +948,10 @@
             "text": "<p>Lightweight formulas to balance, calm, and support recovery after treatments.</p><ul><li>Improves skin texture by reducing roughness and dehydration lines.</li><li>Delivers long-lasting moisture to keep skin soft and plump.</li><li>Restores glow to dull or dehydrated skin.</li><li>Gentle on sensitive and reactive skin.</li></ul>",
             "product_1": "All-In-One Serum",
             "link_url_1": "https://qureskincare.com/products/face-serum",
-            "image_1": "shopify://shop_images/all-in-one-serum.webp",
+            "image_1": "shopify://shop_images/Img_1f6e46c5-126c-499a-9458-ad4d167eb316.jpg",
             "product_2": "Dermal Mist",
             "link_url_2": "https://qureskincare.com/products/dermal-mist",
-            "image_2": "shopify://shop_images/dermal-mist.webp"
+            "image_2": "shopify://shop_images/Img_cc4021fe-088f-4046-a2ff-7fa388967725.png"
           }
         },
         "items_nhCmGx": {
@@ -1084,7 +1084,7 @@
         "promotional_terms_and_conditions": ""
       }
     },
-    "sticky_button_hkxM4i": {
+    "sticky_button_hNut0P": {
       "type": "sticky-button",
       "disabled": true,
       "name": "t:sections.sticky-button.name",
@@ -1100,7 +1100,7 @@
   "order": [
     "announcement_bar_abkmWb",
     "bundle-header",
-    "bf_bundle_banner_dTj5R1",
+    "bf_bundle_banner_jHuIO7",
     "carousel_BHi3nq",
     "slider_featured_in_RUfV4m",
     "page_exclusive_holiday_bundle_trusted_reviews_img_kCfC33",
@@ -1114,6 +1114,6 @@
     "page_exclusive_holiday_bundle_deal_expert_advisory_9JcJgQ",
     "page_banner_eaDxdy",
     "faq_GEAWy8",
-    "sticky_button_hkxM4i"
+    "sticky_button_hNut0P"
   ]
 }
