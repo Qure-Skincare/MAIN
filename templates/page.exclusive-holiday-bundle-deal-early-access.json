@@ -975,7 +975,6 @@
     },
     "sticky_button_K8uy6TG": {
       "type": "sticky-button",
-      "disabled": true,
       "name": "t:sections.sticky-button.name",
       "settings": {
         "heading": "Shop now to save up to 57% on Black Friday deals",
