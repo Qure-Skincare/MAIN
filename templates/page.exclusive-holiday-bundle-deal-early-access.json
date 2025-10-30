@@ -16,10 +16,48 @@
       "settings": {
         "heading": "Save Up to 57% on Certified Skincare Solutions",
         "description": "<p>Backed by the most respected peer-reviewed Dermatologist Journals and scientific studies that prove; Qure’s skincare works.</p>",
-        "bf_link": "#",
+        "bf_link": "",
         "button-label": "SHOP & SAVE UP TO 57%",
         "button-url": "#purchase-form-bundle"
       }
+    },
+    "bf_bundle_banner_Ugp05r": {
+      "type": "bf-bundle-banner",
+      "blocks": {
+        "carousel_bjazym": {
+          "type": "carousel",
+          "settings": {
+            "heading": "<h3>Your Holiday Glow Starts Here</h3>",
+            "text": "<p>Our signature treatment in one carry-on approved set.</p>",
+            "percent_value": "68%",
+            "image": "shopify://shop_images/bundle-1.webp",
+            "image_mobile": "shopify://shop_images/bundle-1-mob.webp",
+            "button_label": "Get Yours Now",
+            "button_url": "#",
+            "sub_text": "<p><strong>Limited availability:</strong> Under 100 cases remaining</p>"
+          }
+        },
+        "carousel_rRrz43": {
+          "type": "carousel",
+          "settings": {
+            "heading": "<h3>Celebrating the [logo] Community</h3>",
+            "text": "<p>Every purchase* enters you to <strong>a 2025 Range Rover Evoque</strong></p>",
+            "percent_value": "",
+            "image": "shopify://shop_images/bundle-2.webp",
+            "image_mobile": "shopify://shop_images/bundle-2-mob.webp",
+            "button_label": "Shop To Enter",
+            "button_url": "#",
+            "sub_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "carousel_bjazym",
+        "carousel_rRrz43"
+      ],
+      "disabled": true,
+      "name": "t:sections.bf-bundle-banner.name",
+      "settings": {}
     },
     "carousel_BHi3nq": {
       "type": "carousel",
@@ -935,10 +973,23 @@
         "terms-conditions": false,
         "promotional_terms_and_conditions": ""
       }
+    },
+    "sticky_button_K8uy6TG": {
+      "type": "sticky-button",
+      "disabled": true,
+      "name": "t:sections.sticky-button.name",
+      "settings": {
+        "heading": "Shop now to save up to 57% on Black Friday deals",
+        "text": "1,893 bundles purchased in last 48 hours",
+        "limited": false,
+        "button-label": "CHOOSE YOUR BUNDLE",
+        "button-url": "#offer_bundle"
+      }
     }
   },
   "order": [
     "bundle-header",
+    "bf_bundle_banner_Ugp05r",
     "carousel_BHi3nq",
     "slider_featured_in_RUfV4m",
     "page_exclusive_holiday_bundle_trusted_reviews_img_kCfC33",
@@ -951,6 +1002,7 @@
     "compare_9f4PmB",
     "page_exclusive_holiday_bundle_deal_expert_advisory_9JcJgQ",
     "page_banner_eaDxdy",
-    "faq_GEAWy8"
+    "faq_GEAWy8",
+    "sticky_button_K8uy6TG"
   ]
 }
