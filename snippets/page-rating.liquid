@@ -10,6 +10,6 @@
 {% if section.settings.rating != blank %}
     <div class="patch__product-rating d-inline-flex align-items-center gap-3 fs-16 mb-20">
         <img src="https://qureskincaredns-main.com/sections/isolated/clean-water/images/cyan_blue_rating.svg" class="ctm-width" style="--ctm-width-mob: 90px; --ctm-width:115px" alt="cyan_blue_rating">
-        {{ section.settings.rating |  replace: '<p>', '<span>' |  replace: '</p>', '</span>' }}
+        <a style="--base-color: #212428;" href="#stamped-main-widget">{{ section.settings.rating |  replace: '<p>', '<span>' |  replace: '</p>', '</span>' }}</a>
     </div>
 {% endif %}

@@ -28,3 +28,19 @@
     document.body.appendChild(img);
 </script>
 <!-- END UNIVERSAL ADS PIXEL CODE -->
+
+{% if page.handle == 'microinfusion' %}
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var stampedWidget = document.getElementById('stamped-main-widget');
+            if (stampedWidget) {
+                stampedWidget.setAttribute("data-product-id", "8215269441775");
+                stampedWidget.setAttribute("data-product-sku", "MICROINFSN-1MTH-TP");
+                stampedWidget.setAttribute("data-name", "Micro-Infusion Targeted Patches (8 Pairs)");
+                if (typeof StampedFn !== 'undefined' && typeof StampedFn.reloadUGC === 'function') {
+                    StampedFn.reloadUGC();
+                }
+            }
+        });
+    </script>
+{% endif %}
