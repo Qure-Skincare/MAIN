@@ -2,6 +2,16 @@
 <link href="https://qureskincaredns-main.com/sections/global/banner-with-text/banner-text.css" rel="stylesheet" type="text/css">
 {{ "__endrock_bannerWithText.css" | asset_url | stylesheet_tag }}
 
+<style>
+  @font-face {
+    font-family: 'TT Commons DemiBold';
+    src: url('{{ "TTCommons-DemiBold.woff2" | asset_url }}') format('woff2'),
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+</style>
+
 <div class="qure__section banner-with-text" style="--section-padding-top: 80px; --section-padding-bottom: 80px; --section-padding-top-mob: 30px; --section-padding-bottom-mob: 50px; background-color: {{ section.settings.background_color }};" id="image_text">
     <div class="container">
         {% if section.settings.image_position == 'left' %}
