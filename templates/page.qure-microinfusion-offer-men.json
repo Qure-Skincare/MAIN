@@ -919,7 +919,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Dark Spots",
-            "image": "shopify://shop_images/dark_spots_1.png",
+            "image": "shopify://shop_images/Dark_Spots_4.png",
             "preselected": false
           }
         },
@@ -988,7 +988,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Wrinkles",
-            "image": "shopify://shop_images/wrinkles_1_8426e2f1-0591-4133-97a6-71ade016a9a2.png",
+            "image": "shopify://shop_images/Wrinkles_2.png",
             "preselected": true
           }
         },
@@ -1057,7 +1057,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Mixed",
-            "image": "shopify://shop_images/mixed_2.png",
+            "image": "shopify://shop_images/Mixed_3.png",
             "preselected": false
           }
         },
