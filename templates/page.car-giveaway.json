@@ -135,7 +135,7 @@
       "settings": {
         "heading": "<h3>Save Up to 57%</h3>",
         "text": "<p>Your Favorite Products, Perfectly Bundled</p>",
-        "button_url": "#https://qureskincare.com/pages/exclusive-holiday-bundle-deal-new",
+        "button_url": "https://qureskincare.com/pages/exclusive-holiday-bundle-deal-new",
         "button_label": "Shop Bundles Now"
       }
     },
