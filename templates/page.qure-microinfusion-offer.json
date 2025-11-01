@@ -181,8 +181,8 @@
       "type": "stock-alert",
       "name": "t:sections.stock-alert.name",
       "settings": {
-        "text": "<p>Autumn Glow Sale!</p>",
-        "text_mobile": "<p>Autumn Glow Sale</p>",
+        "text": "<p>Black Friday Sale!</p>",
+        "text_mobile": "<p>Black Friday Sale</p>",
         "style_color": "light_green"
       }
     },
