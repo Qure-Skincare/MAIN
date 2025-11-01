@@ -11,7 +11,6 @@
   "sections": {
     "bf_clickable_banner_with_text_rTzUyC": {
       "type": "bf-clickable-banner-with-text",
-      "disabled": true,
       "name": "t:sections.bf-clickable-banner-with-text.name",
       "settings": {
         "heading": "<h2>Save Up to 57%</h2>",
@@ -25,6 +24,7 @@
     },
     "page_banner_zUyTB8": {
       "type": "page-banner",
+      "disabled": true,
       "name": "t:sections.page-banner.name",
       "settings": {
         "heading": "Shop our best sellers",
@@ -114,6 +114,7 @@
     },
     "bundle_banner_zWkqBN": {
       "type": "bundle-banner",
+      "disabled": true,
       "name": "t:sections.bundle-banner.name",
       "settings": {
         "heading": "Save up to 55% on Exclusive Bundles",
@@ -159,7 +160,6 @@
         "carousel_bjazym",
         "carousel_rRrz43"
       ],
-      "disabled": true,
       "name": "t:sections.bf-bundle-banner.name",
       "settings": {}
     },
