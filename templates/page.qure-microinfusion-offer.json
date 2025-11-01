@@ -270,7 +270,7 @@
         "image_position": "right",
         "sub_text": "",
         "image": "shopify://shop_images/qure-micro-infusion.webp",
-        "button_label": "BUY NOW & SAVE UP TO 67%",
+        "button_label": "BUY NOW & SAVE UP TO 70%",
         "button_url": "#purchase-form",
         "wistia_url": ""
       }
@@ -531,7 +531,7 @@
       "settings": {
         "background_color": "#f6f6f7",
         "heading": "5 reasons why everyone is using the Qure Micro-Infusion System",
-        "button_label": "BUY NOW & SAVE UP TO 67%",
+        "button_label": "BUY NOW & SAVE UP TO 70%",
         "button_url": "#purchase-form"
       }
     },
@@ -795,7 +795,7 @@
         "heading": "Results you’ll see with your own eyes",
         "text": "",
         "text_mobile": "",
-        "button_label": "buy now SAVE UP TO 67%",
+        "button_label": "buy now SAVE UP TO 70%",
         "button_url": "#purchase-form"
       }
     },
