@@ -4,10 +4,15 @@
   @param {array} input_media_carousel - A product/page media carousel array.
   @param {string} classname - A string value.
   @param {string} size - A string value.
+  @param {boolean} thumbnails - A boolean value.
 
   @example
-  {% render 'product-page-media-carousel', input_media_carousel: '', classname: 'slide-thumbnail', size: '240x' %}
+  {% render 'product-page-media-carousel', input_media_carousel: '', classname: 'slide-thumbnail', size: '240x', thumbnails: false %}
 {% enddoc %}
+
+{% if thumbnails == blank %}
+    {%- assign thumbnails = false -%}
+{% endif %}
 
 {% if input_media_carousel != blank %}
 
@@ -41,7 +46,7 @@
                 </div>
             </div>
         {% else %}
-            {% if objects_array[index] != blank and objects_array[index] != 'none' %}
+            {% if thumbnails == false and objects_array[index] != blank and objects_array[index] != 'none' %}
                  <div class="swiper-slide">
                     <div class="trusted_video_card"> 
                         <a href="#" data-bs-toggle="modal" data-bs-target="#reusableWistiaModal" data-video-id="{{ objects_array[index] }}" class="filter-card-item filter-card-video slide-image">
