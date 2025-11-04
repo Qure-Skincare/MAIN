@@ -279,7 +279,7 @@
     "exclusive-offer": {
       "header_html": "<div class='eo-header'><span>Black Friday </span><span>Sale</span></div>",
       "guarantee-text": "1-Year Guarantee",
-      "button-label": "BUY NOW AND SAVE",
+      "button-label": "Buy Now & Save",
       "shipping-text": "Free Shipping over $100",
       "free": "FREE"
     }
@@ -360,7 +360,7 @@
         "header": "You may also like..."
       },
       "black-friday-discount": {
-        "header": "BLACK FRIDAY PRICING",
+        "header": "BLACK FRIDAY",
         "save": "SAVE"
       },
       "money-back": {

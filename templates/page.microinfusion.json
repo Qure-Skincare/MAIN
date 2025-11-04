@@ -81,10 +81,7 @@
       "blocks": {
         "black_friday_discount_X3kBdA": {
           "type": "black-friday-discount",
-          "disabled": true,
-          "settings": {
-            "discount_percent": 26
-          }
+          "disabled": true
         },
         "description_iSDNaK": {
           "type": "description",
@@ -189,7 +186,6 @@
             "product": "micro-infusion-6-month-bundle-for-dark-spots",
             "product_variant_id": 0,
             "product_selling_plan": 0,
-            "product_discount_percent": 0,
             "preselected": true,
             "heading": "6 Month Supply",
             "subheading": "(12 Treatments)",
@@ -208,7 +204,6 @@
             "product": "micro-infusion-3-month-bundle-for-dark-spots",
             "product_variant_id": 0,
             "product_selling_plan": 0,
-            "product_discount_percent": 0,
             "preselected": false,
             "heading": "3 Month Supply",
             "subheading": "(6 Treatments)",
@@ -227,7 +222,6 @@
             "product": "micro-infusion-1-month-bundle-for-dark-spots",
             "product_variant_id": 0,
             "product_selling_plan": 0,
-            "product_discount_percent": 0,
             "preselected": false,
             "heading": "1 Month Supply",
             "subheading": "(2 Treatments)",
@@ -258,7 +252,6 @@
             "product": "micro-infusion-6-month-bundle-for-wrinkles",
             "product_variant_id": 0,
             "product_selling_plan": 0,
-            "product_discount_percent": 0,
             "preselected": true,
             "heading": "6 Month Supply",
             "subheading": "(12 Treatments)",
@@ -277,7 +270,6 @@
             "product": "micro-infusion-3-month-bundle-for-wrinkles",
             "product_variant_id": 0,
             "product_selling_plan": 0,
-            "product_discount_percent": 0,
             "preselected": false,
             "heading": "3 Month Supply",
             "subheading": "(6 Treatments)",
@@ -296,7 +288,6 @@
             "product": "micro-infusion-1-month-bundle-for-wrinkles",
             "product_variant_id": 0,
             "product_selling_plan": 0,
-            "product_discount_percent": 0,
             "preselected": false,
             "heading": "1 Month Supply",
             "subheading": "(2 Treatments)",
@@ -327,7 +318,6 @@
             "product": "6-month-micro-infusion-for-wrinkles-dark-spots",
             "product_variant_id": 0,
             "product_selling_plan": 0,
-            "product_discount_percent": 0,
             "preselected": true,
             "heading": "6 Month Supply",
             "subheading": "(12 Treatments)",
@@ -346,7 +336,6 @@
             "product": "micro-infusion-3-month-bundle-for-wrinkles-dark-spots",
             "product_variant_id": 0,
             "product_selling_plan": 0,
-            "product_discount_percent": 0,
             "preselected": false,
             "heading": "3 Month Supply",
             "subheading": "(6 Treatments)",
@@ -365,7 +354,6 @@
             "product": "micro-infusion-1-month-bundle-for-wrinkles-dark-spots",
             "product_variant_id": 0,
             "product_selling_plan": 0,
-            "product_discount_percent": 0,
             "preselected": false,
             "heading": "1 Month Supply",
             "subheading": "(2 Treatments)",

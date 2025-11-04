@@ -38,10 +38,6 @@
                                 {% assign array_count = array_count |  minus: 1 %}
                                 {% assign product_type = array_count %}
                                 
-                                {% if product_before_price == blank %}
-                                    {% assign product_discount = blank %}
-                                {% endif %}
-
                                 {% capture product-included-dropdown %}
                                     {{ product-included-dropdown }}
                                     <div class="tab-pane collapsed-panel fade" id="{{ block.id }}-tabitem" role="tabpanel" aria-labelledby="{{ block.id }}-tab" tabindex="0">

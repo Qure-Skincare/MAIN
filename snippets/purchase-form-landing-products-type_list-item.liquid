@@ -24,7 +24,6 @@
                 {%- for __id in array -%}
                     {% assign block = section.blocks | where: "id", __id | first %}
                     {% if block.type == 'product' %}
-                        {%- assign black_friday_discount_percent = block.settings.product_discount_percent -%}
                         {% include 'get-product-data', product_handle: block.settings.product, product_prefix: 'purchase-form-landing-products-items-' %}
 
                         {% if product_id %}
@@ -32,10 +31,6 @@
                             {% assign array_count = array_count |  minus: 1 %}
                             {% assign product_type = array_count %}
                             
-                            {% if product_before_price == blank %}
-                                {% assign product_discount = blank %}
-                            {% endif %}
-
                             {% capture data-per %}{{ 'purchase-form.settings.buy-button-label' | t }} {% if product_discount != blank %} {{ 'purchase-form.settings.and' | t }} {{ 'purchase-form.settings.save' | t }} {{ product_discount }}%{% endif %}{% endcapture %}
 
                             {% if block.settings.preorder == true %}
@@ -83,9 +78,11 @@
                                             {% endif %}
                                         </div>
                                         <div class="div">{{ block.settings.heading }}<br><span class="fs-14">{{ block.settings.subheading }}</span></div>
-                                        </div>
+                                    </div>
+                                    
+                                    {% if black_friday_discount_percent > 0 %}
                                         <div>
-                                            <div class="vp-price{% if product_black_friday_price != blank %} dis_red_line{% endif %}">
+                                            <div class="vp-price dis_red_line">
                                                 {% if product_before_price != blank %}
                                                     <span data-variant-id="{{ product_variant_id }}" class="vp-price-sale igComparePrice">{{ product_before_price }}</span>
                                                     <span data-variant-id="{{ product_variant_id }}" class="igPrice">{{ product_sale_price }}</span>
@@ -93,10 +90,18 @@
                                                     <span data-variant-id="{{ product_variant_id }}" class="igPrice">{{ product_sale_price }}</span>
                                                 {% endif %}
                                             </div>
-                                        {% if product_black_friday_price != blank %}
-                                            <div class="text-end fw-600">{{ product_black_friday_price }}</div>
-                                        {% endif %}
-                                    </div>
+                                            {% if product_black_friday_price != blank %}
+                                                <div class="text-end fw-600">{{ product_black_friday_price }}</div>
+                                            {% endif %}
+                                        </div>
+                                    {% else %}
+                                        <div class="vp-price">
+                                            {% if product_before_price != blank %}
+                                                <span class="vp-price-sale regular_price igComparePrice">{{ product_before_price }}</span>
+                                            {% endif %}
+                                            <span class="vp-price-reg sale_price igPrice">{{ product_sale_price }}</span>
+                                        </div>
+                                    {% endif %}
                                 </label>
                             </div>
 

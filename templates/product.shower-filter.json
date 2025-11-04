@@ -14,10 +14,7 @@
       "blocks": {
         "black_friday_discount_eUhwh7": {
           "type": "black-friday-discount",
-          "disabled": true,
-          "settings": {
-            "discount_percent": 26
-          }
+          "disabled": false
         },
         "description_9VBwaX": {
           "type": "description",
@@ -135,7 +132,6 @@
             "product": "shower-filter",
             "product_variant_id": 45909763522799,
             "product_selling_plan": 6286115055,
-            "product_discount_percent": 0,
             "preselected": true,
             "heading": "White",
             "subheading": "",
@@ -154,7 +150,6 @@
             "product": "shower-filter",
             "product_variant_id": 45909763490031,
             "product_selling_plan": 6286115055,
-            "product_discount_percent": 0,
             "preselected": false,
             "heading": "Black",
             "subheading": "",
@@ -173,7 +168,6 @@
             "product": "shower-filter",
             "product_variant_id": 46544976969967,
             "product_selling_plan": 6286115055,
-            "product_discount_percent": 0,
             "preselected": false,
             "heading": "Silver",
             "subheading": "",

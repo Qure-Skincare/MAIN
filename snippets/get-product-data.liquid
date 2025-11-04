@@ -9,11 +9,7 @@
 {% enddoc %}
 
 {% assign black_friday_turn_on = settings.black_friday_turn_on %}
-{% assign black_friday_26_turn_on = settings.black_friday_26_turn_on %}
-
-{% if black_friday_turn_on == true %}
-    {% assign black_friday_discount_percent = settings.black_friday_discount_percent %}
-{% endif %}
+{% assign black_friday_discount_percent = settings.black_friday_discount_percent %}
 
 {% if product.metafields.custom.bf_exclude == true %}
     {%- assign black_friday_discount_percent = 0 -%}
@@ -30,6 +26,8 @@
     {% assign get_product_data = blank %}
     {% assign get_product_data = all_products[product_handle] %}
 {% endif %}
+
+{% assign product_discount = blank %}
 
 {% if get_product_data != blank %}
     {% assign product_id = get_product_data.id %}
@@ -62,27 +60,41 @@
     {% assign product_subscription_price = null %}
     {% assign subscription_discount = 0 %}
 
-    {% if subscription_discount_percent != null %}
-      {% if subscription_discount_percent > 0 %}
-        {% assign subscription_discount = subscription_discount_percent %}
-        {% assign product_subscription_discount_delta = get_product_data.price | times: subscription_discount | divided_by: 100 %}      
-        {% assign product_subscription_price = get_product_data.price | minus: product_subscription_discount_delta | money_without_trailing_zeros %}      
-      {% endif %}
-    {% endif %}
-
-
     {% assign product_black_friday_price = null %}
     {% assign black_friday_discount = 0 %}
 
-    {% if black_friday_discount_percent != null %}
-      {% if black_friday_discount_percent > 0 %}
-        {% assign black_friday_discount = black_friday_discount_percent %}
-        {% assign product_black_friday_discount_delta = get_product_data.price | times: black_friday_discount | divided_by: 100 %}      
-        {% assign product_black_friday_price = get_product_data.price | minus: product_black_friday_discount_delta | money_without_trailing_zeros %}
-        {% assign product_discount = get_product_data.price | minus: product_black_friday_discount_delta | times: 1.0 | divided_by: get_product_data.compare_at_price | minus: 1 | abs | times: 100 | ceil %}
-        {% assign product_price_divided = get_product_data.price | minus: product_black_friday_discount_delta | divided_by: 4 | money_without_trailing_zeros %}
+    {% if subscription_discount_percent != null %}
+      {% if subscription_discount_percent > 0 %}
+        {% assign subscription_discount = subscription_discount_percent %}
+        {% assign product_subscription_discount_delta = product_price_original | times: subscription_discount | divided_by: 100 %}
+        {% assign product_subscription_price_original = product_price_original | minus: product_subscription_discount_delta %}   
+        {% assign product_subscription_price = product_subscription_price_original | money_without_trailing_zeros %}  
+        
+        {% if black_friday_discount_percent > 0 %}
+          {% assign product_subscription_discount_delta = product_subscription_price_original | times: black_friday_discount_percent | divided_by: 100 %}      
+          {% assign black_friday_product_subscription_price_original = product_subscription_price_original | minus: product_subscription_discount_delta %}
+          {% assign black_friday_product_subscription_price = black_friday_product_subscription_price_original | money_without_trailing_zeros %}
+          {% assign subscription_discount_percent = black_friday_product_subscription_price_original | times: 1.0 | divided_by: product_price_original | minus: 1 | abs | times: 100 | floor %}
+        {% endif %}
+
       {% endif %}
     {% endif %}
+
+
+    {% if black_friday_discount_percent > 0 %}
+      {% assign black_friday_discount = black_friday_discount_percent %}
+      {% assign product_black_friday_discount_delta = product_price_original | times: black_friday_discount | divided_by: 100 %}      
+      {% assign product_black_friday_price = product_price_original | minus: product_black_friday_discount_delta | money_without_trailing_zeros %}
+
+      {% if product_price_compare_original != blank %}
+        {% assign product_discount = product_price_original | minus: product_black_friday_discount_delta | times: 1.0 | divided_by: product_price_compare_original | minus: 1 | abs | times: 100 | ceil %}
+      {% else %}
+        {% assign product_discount = product_price_original | minus: product_black_friday_discount_delta | times: 1.0 | divided_by: product_price_original | minus: 1 | abs | times: 100 | ceil %}
+      {% endif %}
+
+      {% assign product_price_divided = product_price_original | minus: product_black_friday_discount_delta | divided_by: 4 | money_without_trailing_zeros %}
+    {% endif %}
+
 
     {% assign product_bundle_list = blank %}
     {% if get_product_data.metafields.custom.bundle.value != blank %}

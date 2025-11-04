@@ -21,7 +21,7 @@
                 {% endif %}
 
                 <div class="col-6 col-md-3 custom__block">
-                    <div class="qure__product-item{% if black_friday_26_turn_on == true %} silver-badge{% endif %}">
+                    <div class="qure__product-item{% if black_friday_discount_percent > 0 %} silver-badge{% endif %}">
                         <a href="{{ block.settings.url }}" class="qure__product-img overflow-hidden position-relative d-block">
                             {% if block.settings.image != blank %}
                                 <div class="qure__product-main-img"><img

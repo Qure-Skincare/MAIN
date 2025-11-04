@@ -14,6 +14,8 @@
 
             {% assign subscription_discount_percent = block.settings.subscription_discount_percent %}
 
+            {% include 'get-product-data', product_handle: product.handle, product_prefix: product_prefix %}
+
             {% capture data-per %}
                 {% if subscription_discount_percent > 0 %}
                     {{ 'purchase-form.settings.subscribe-and-save-button-label' | t: value: subscription_discount_percent }}
@@ -21,8 +23,6 @@
                     {{ 'purchase-form.settings.subscribe-button-label' | t }}
                 {% endif %}
             {% endcapture %}
-
-            {% include 'get-product-data', product_handle: product.handle, product_prefix: product_prefix %}
 
             <div id="purchase-form-landing-subscription">
                 <div class="product_shower-subscription my-25">
@@ -33,23 +33,36 @@
                         <div class="best_value">
                             <p>{{ 'purchase-form.settings.best' | t }} <img src="https://qureskincaredns.com/assets/images/star_white.svg" alt="star_white"></p>
                         </div>
-                        <button class="qure__subscription-btn" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#subscribe_and_save" aria-expanded="true"
-                            aria-controls="subscribe_and_save">
-                            
+                        <button class="qure__subscription-btn" type="button" data-bs-toggle="collapse" data-bs-target="#subscribe_and_save" aria-expanded="true" aria-controls="subscribe_and_save">
+
                             {% if subscription_discount_percent > 0 %}
-                                <div class="qure__sbs-label d-flex align-items-center gap-2">{{ 'purchase-form.settings.subscribe' | t }} & <span class='product_shower-label' style="gap: 3px;">{{ 'purchase-form.settings.save' | t | upcase }} {{ subscription_discount }}%</span></div>
+                                <div class="qure__sbs-label d-flex align-items-center gap-2">{{ 'purchase-form.settings.subscribe' | t }} & <span class='product_shower-label' style="gap: 3px;">{{ 'purchase-form.settings.save' | t | upcase }} {{ subscription_discount_percent }}%</span></div>
                             {% else %}
                                 <div class="qure__sbs-label d-flex align-items-center gap-2">{{ 'purchase-form.settings.subscribe' | t }}</div>
                             {% endif %}
-                            <div class="qure__price price--on-sale d-flex align-items-center">
-                                {% if subscription_discount_percent > 0 %}
-                                    <div class="price__sale mr-0 fs-18 igPrice">{{ product_sale_price }}</div>
-                                    <div class="price__regular fs-18">{{ product_subscription_price }}</div>
-                                {% else %}
-                                    <div class="price__regular fs-18 igPrice">{{ product_sale_price }}</div>
-                                {% endif %}
-                            </div>
+                            
+                            {% if black_friday_discount_percent > 0 %}
+                                <div>
+                                    <div class="qure__price price--on-sale price_wrap dis_red_line">
+                                        <div class="price__sale">{{ product_sale_price }}</div>
+                                        {% if subscription_discount_percent > 0 %}
+                                            <div class="price__regular ctm_pri_cls">{{ product_subscription_price }}</div>
+                                        {% endif %}
+                                    </div>
+                                    <div class="qure_bf_price">
+                                        <div class="price__regular ctm_pri_cls">{{ black_friday_product_subscription_price }}</div>
+                                    </div>
+                                </div>
+                            {% else %}
+                                <div class="qure__price price--on-sale d-flex align-items-center">
+                                    {% if subscription_discount_percent > 0 %}
+                                        <div class="price__sale mr-0 fs-18 igPrice">{{ product_sale_price }}</div>
+                                        <div class="price__regular fs-18">{{ product_subscription_price }}</div>
+                                    {% else %}
+                                        <div class="price__regular fs-18 igPrice">{{ product_sale_price }}</div>
+                                    {% endif %}
+                                </div>
+                            {% endif %}
                         </button>
                         <div id="subscribe_and_save" class="qure__subscription-collapse collapse show"
                             data-bs-parent="#qure__subscription" style="">
@@ -87,9 +100,16 @@
                             data-bs-target="#one_time_purchase" aria-expanded="false"
                             aria-controls="one_time_purchase" data-btnlabel="Buy Now">
                             <div class="qure__sbs-label d-flex align-items-center gap-3">{{ 'purchase-form.settings.onetime' | t }}</div>
-                            <div
-                                class="qure__price price--on-sale d-flex flex-wrap align-items-end flex-column text-right">
-                                <div class="price__regular fs-18 igPrice">{{ product_sale_price }}</div>
+                            <div class="qure__price price--on-sale d-flex flex-wrap align-items-end flex-column text-right">
+                                {% if black_friday_discount_percent > 0 %}
+                                    <div
+                                        class="qure__price price--on-sale">
+                                        <div class="price__regular ctm_pri_cls dis_red_line">{{ product_sale_price }}</div>
+                                        <div class="price__regular ctm_pri_cls qure_bf_price">{{ product_black_friday_price }}</div> 
+                                    </div>
+                                {% else %}
+                                    <div class="price__regular fs-18 igPrice">{{ product_sale_price }}</div>
+                                {% endif %}
                             </div>
                         </button>
                         <div id="one_time_purchase" class="qure__subscription-collapse collapse" data-bs-parent="#qure__subscription" style="">

@@ -14,10 +14,7 @@
       "blocks": {
         "black_friday_discount_PYGjBx": {
           "type": "black-friday-discount",
-          "disabled": true,
-          "settings": {
-            "discount_percent": 26
-          }
+          "disabled": true
         },
         "price_A11": {
           "type": "price",

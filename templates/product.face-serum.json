@@ -14,13 +14,11 @@
       "blocks": {
         "black_friday_discount_A9": {
           "type": "black-friday-discount",
-          "disabled": true,
-          "settings": {
-            "discount_percent": 26
-          }
+          "disabled": false
         },
         "price_A11": {
           "type": "price",
+          "disabled": true,
           "settings": {
             "show_discount": false
           }
@@ -157,7 +155,6 @@
             "product": "all-in-one-face-serum-4-month-bundle",
             "product_variant_id": 0,
             "product_selling_plan": 0,
-            "product_discount_percent": 0,
             "preselected": false,
             "heading": "4 Months",
             "subheading": "(2 bottles)",
@@ -176,7 +173,6 @@
             "product": "face-serum",
             "product_variant_id": 0,
             "product_selling_plan": 0,
-            "product_discount_percent": 0,
             "preselected": false,
             "heading": "2 Months",
             "subheading": "(1 bottle)",

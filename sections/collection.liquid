@@ -42,7 +42,7 @@
                     {% endif %}
 
                     <div class="col-6 col-md-3 custom__block project" data-filter="fine_lines dark_spots breakouts">
-                        <div class="qure__product-item">
+                        <div class="qure__product-item{% if black_friday_discount_percent > 0 %} silver-badge{% endif %}">
                             <a href="{{ product_url }}" aria-label="{{ product_title }}" class="qure__product-img overflow-hidden position-relative d-block">
                                 {% for media in product_media limit:2 %}
                                     <div class="{% if forloop.index == 1 %}qure__product-main-img{% else %}qure__product-hover-img position-absolute inset-0{% endif %}">
@@ -62,13 +62,26 @@
                                 <h3 class="fm-body mb-0 qure__product-name">
                                     <a class="limited-line capitalize d-block" href="{{ product_url }}" aria-label="{{ product_title }}">{{ product_title }}</a>
                                 </h3>
-                                <div class="d-flex gap-2">
-                                    {% if product_before_price != blank %}
-                                        <div class="bef_price text-decoration-line-through text-black-50 igComparePrice">{{ product_before_price }}</div>
-                                    {% endif %}
-                                    
-                                    <div class="qure__product-price igPrice">{{ product_sale_price }}</div>
-                                </div>
+
+                                {% if black_friday_discount_percent > 0 %}
+                                    <div class="qure__product-price">
+                                        <div class="dis_red_line">
+                                            {% if product_before_price != blank %}
+                                                <span class="bef_price text-decoration-line-through">{{ product_before_price }}</span>
+                                            {% endif %}
+                                            <span class="aft_price">{{ product_sale_price }}</span>
+                                        </div>
+                                        <div class="black_friday_price">{{ product_black_friday_price }}</div>
+                                    </div>
+                                {% else %}
+                                    <div class="d-flex gap-2">
+                                        {% if product_before_price != blank %}
+                                            <div class="bef_price text-decoration-line-through text-black-50 igComparePrice">{{ product_before_price }}</div>
+                                        {% endif %}
+                                        
+                                        <div class="qure__product-price igPrice">{{ product_sale_price }}</div>
+                                    </div>
+                                {% endif %}
                             </div>
                             
                             <div class="d-none d-lg-block">

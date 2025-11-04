@@ -30,10 +30,6 @@
                             {% assign array_count = array_count |  minus: 1 %}
                             {% assign product_type = array_count %}
                             
-                            {% if product_before_price == blank %}
-                                {% assign product_discount = blank %}
-                            {% endif %}
-
                             {% capture data-per %}{{ 'purchase-form.settings.buy-button-label' | t }} {% if product_discount != blank %} {{ 'purchase-form.settings.and' | t }} {{ 'purchase-form.settings.save' | t }} {{ product_discount }}%{% endif %}{% endcapture %}
 
                             {% if block.settings.preorder == true %}
