@@ -7,7 +7,7 @@
   }
 
   #testimonial-carousel-desktop, #testimonial-carousel-mobile{
-    display: none;
+    display: none !important;
   }
 
   .testimonial-carousel {
