@@ -14,7 +14,7 @@
       "blocks": {
         "black_friday_discount_eUhwh7": {
           "type": "black-friday-discount",
-          "disabled": false
+          "settings": {}
         },
         "description_9VBwaX": {
           "type": "description",
