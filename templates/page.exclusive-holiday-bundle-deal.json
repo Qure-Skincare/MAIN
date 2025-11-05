@@ -991,7 +991,7 @@
         "text": "1,893 bundles purchased in last 48 hours",
         "limited": false,
         "button-label": "CHOOSE YOUR BUNDLE",
-        "button-url": "#offer_bundle"
+        "button-url": "#purchase-form-bundle"
       }
     }
   },
