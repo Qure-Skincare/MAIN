@@ -10,10 +10,12 @@
 {
   "sections": {
     "main": {
-      "type": "product-hair-growth-helmet-main"
+      "type": "product-hair-growth-helmet-main",
+      "settings": {}
     },
     "second": {
-      "type": "product-hair-growth-helmet-second"
+      "type": "product-hair-growth-helmet-second",
+      "settings": {}
     }
   },
   "order": [

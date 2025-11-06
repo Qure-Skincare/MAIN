@@ -81,7 +81,6 @@
       "blocks": {
         "black_friday_discount_X3kBdA": {
           "type": "black-friday-discount",
-          "disabled": false,
           "settings": {}
         },
         "description_iSDNaK": {
