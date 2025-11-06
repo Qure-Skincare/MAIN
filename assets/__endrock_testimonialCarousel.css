@@ -6,8 +6,8 @@
       overflow: hidden !important;
   }
 
-  #testimonial-carousel-desktop, #testimonial-carousel-mobile{
-    display: none !important;
+  #testimonial-carousel-desktop, #testimonial-section-root, #testimonial-carousel-mobile{
+    display: none;
   }
 
   .testimonial-carousel {

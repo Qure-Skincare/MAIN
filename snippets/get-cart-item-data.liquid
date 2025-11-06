@@ -25,6 +25,7 @@
     {% assign cart_item_sale_price = null %}
     {% assign cart_item_before_price = null %}
     {% assign insurance_exists = null %}
+    {% assign preorder_exists = null %}
     {% assign gift_exists = null %}
     {% assign cart_item_selling_plan = null %}
     {% assign cart_item_selling_plan_name = null %}
@@ -51,15 +52,20 @@
     {% assign cart_item_selling_plan = item.selling_plan_allocation %}
     {% assign cart_item_selling_plan_name = item.selling_plan_allocation.selling_plan.name %}
     
-
+    {% assign __cart_item_title = cart_item_title | downcase %}
 
     {% comment %} insurance item {% endcomment %}
 
-    {% if cart_item_title contains 'Shipping Insurance' %}
+    {% if __cart_item_title contains 'shipping insurance' %}
       {% assign insurance_exists = true %}
       {% assign summary_insurance_exists = true %}
     {% endif %}
 
+    {% comment %} preorder item {% endcomment %}
+     
+    {% if __cart_item_title contains 'pre-order' %}
+      {% assign preorder_exists = true %}
+    {% endif %}
 
 
     {% comment %} gift properties {% endcomment %}

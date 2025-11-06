@@ -216,6 +216,9 @@
         "bf-clickable-banner-with-text": {
             "name": "Black Friday clickable banner with text"
         },
+        "bf-page-banner": {
+            "name": "Black Friday page banner"
+        },
         "cta-cards": {
             "name": "CTA cards"
         },

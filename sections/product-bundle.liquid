@@ -29,12 +29,7 @@
                         <p>{{ product_description }}</p>
                     </div>
 
-                    {% if black_friday_discount_percent > 0 %}
-                        {% render 'product-page-black-friday-price', product_sale_price: product_sale_price, product_before_price: product_before_price, product_discount: product_discount, product_black_friday_price: product_black_friday_price, black_friday_discount: black_friday_discount %}
-                    {% else %}
-                        {% render 'product-bundle-price', product_sale_price: product_sale_price, product_before_price: product_before_price, product_discount: product_discount %}
-                    {% endif %}
-
+                    {% render 'product-bundle-price', product_sale_price: product_sale_price, product_before_price: product_before_price, product_discount: product_discount %}
                     {% render 'product-page-buy-button', product_price: product_sale_price, product_variant_id: product_variant_id, section: blank %}
                     {% render 'product-page-buy-button-payments', product_price_divided: product_price_divided %}
                     {% render 'product-page-buy-button-bottom' %}
