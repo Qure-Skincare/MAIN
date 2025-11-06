@@ -388,7 +388,7 @@
       "settings": {
         "form_name": "purchase-form-landing",
         "hide_types": false,
-        "type": "list"
+        "type": "box"
       }
     },
     "slider_featured_in_qHHg4W": {
