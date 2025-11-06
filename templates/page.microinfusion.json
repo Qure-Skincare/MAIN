@@ -389,7 +389,7 @@
       "settings": {
         "form_name": "purchase-form-landing",
         "hide_types": false,
-        "type": "box"
+        "type": "list"
       }
     },
     "slider_featured_in_qHHg4W": {
@@ -1506,7 +1506,7 @@
         "product_RBCPe8"
       ],
       "settings": {
-        "type": "list",
+        "type": "list_bf26",
         "heading": "Choose your treatment",
         "text": "All orders are one-time purchases. No extra charges, and no hidden fees.",
         "image": "shopify://shop_images/tami-cropped.webp",
