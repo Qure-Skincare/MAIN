@@ -4,14 +4,19 @@
 
 <div class="qure__bundle-steps">
     <div class="qure-bundle-stps-title mb-16">{{ 'purchase-form.settings.select-product' | t }}</div>
-        {% if section.settings.type == 'list' %}
-            {% include 'purchase-form-products-type_list-item' array: __idsArray1, preorder_box: preorder_box %}
-            {% include 'purchase-form-products-type_list-item' array: __idsArray2, preorder_box: preorder_box %}
-            {% include 'purchase-form-products-type_list-item' array: __idsArray3, preorder_box: preorder_box %}
-        {% else %}
-            {% include 'purchase-form-products-item' array: __idsArray1, preorder_box: preorder_box %}
-            {% include 'purchase-form-products-item' array: __idsArray2, preorder_box: preorder_box %}
-            {% include 'purchase-form-products-item' array: __idsArray3, preorder_box: preorder_box %}
-        {% endif %}
+        {% case section.settings.type %}
+            {% when 'box' %}
+                {% include 'purchase-form-products-item' array: __idsArray1, preorder_box: preorder_box %}
+                {% include 'purchase-form-products-item' array: __idsArray2, preorder_box: preorder_box %}
+                {% include 'purchase-form-products-item' array: __idsArray3, preorder_box: preorder_box %}
+            {% when 'list' %}
+                {% include 'purchase-form-products-type_list-item' array: __idsArray1, preorder_box: preorder_box %}
+                {% include 'purchase-form-products-type_list-item' array: __idsArray2, preorder_box: preorder_box %}
+                {% include 'purchase-form-products-type_list-item' array: __idsArray3, preorder_box: preorder_box %}
+            {% when 'list_bf26' %}
+                {% include 'purchase-form-products-type_list_bf26-item' array: __idsArray1, preorder_box: preorder_box %}
+                {% include 'purchase-form-products-type_list_bf26-item' array: __idsArray2, preorder_box: preorder_box %}
+                {% include 'purchase-form-products-type_list_bf26-item' array: __idsArray3, preorder_box: preorder_box %}
+        {% endcase %}
      <div id="{{ section.settings.form_name }}-body-{{ section.id }}"></div>
 </div> 
