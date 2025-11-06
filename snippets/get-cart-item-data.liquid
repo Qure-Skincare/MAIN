@@ -79,20 +79,23 @@
     {% endif %}
 
 
+    {% comment %} discount {% endcomment %}
+
+    {% if cart_item_final_price != cart_item_original_price %}
+      {% assign discount_exists = true %}
+      {% assign cart_item_compare_price = cart_item_original_price %}
+      {% assign cart_item_price = cart_item_final_price %}
+    {% endif %}
+
+
     {% comment %} full price discount {% endcomment %}
+
     {% if cart_item_final_price == 0 %}
       {% assign discount_exists = true %}
       {% assign cart_item_compare_price = cart_item_price %}
       {% assign cart_item_price = 0 %}
     {% endif %}
     
-
-    {% comment %} discount {% endcomment %}
-    {% if cart_item_final_price != cart_item_original_price %}
-      {% assign discount_exists = true %}
-      {% assign cart_item_compare_price = cart_item_original_price %}
-      {% assign cart_item_price = cart_item_final_price %}
-    {% endif %}
 
     {% comment %} item properties {% endcomment %}
 
