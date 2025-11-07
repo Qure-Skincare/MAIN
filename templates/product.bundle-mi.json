@@ -307,6 +307,52 @@
         "button_url": ""
       }
     },
+    "how_to_use_xxxaxK": {
+      "type": "how-to-use",
+      "blocks": {
+        "list_npLGNp": {
+          "type": "list",
+          "settings": {
+            "heading": "Prepare",
+            "text": "<p>Twist open the Micro-Infusion device and fill with one ampule of serum.</p>",
+            "image": "shopify://shop_images/mixed_mi_1.webp",
+            "image_mobile": "shopify://shop_images/mi-1-mob_10d274d3-9488-48b7-bc9c-4f36e48e9ce1.webp"
+          }
+        },
+        "list_iaNLwp": {
+          "type": "list",
+          "settings": {
+            "heading": "Treatment",
+            "text": "<p>Start at the centre of the face and work your way outward to cover the full face.</p>",
+            "image": "shopify://shop_images/mixed_mi_2.webp",
+            "image_mobile": "shopify://shop_images/mi-2-mob_0692c2e6-eb84-4d03-ac7a-f8f386d88f25.webp"
+          }
+        },
+        "list_aQHPpP": {
+          "type": "list",
+          "settings": {
+            "heading": "Aftercare",
+            "text": "<p>Once treatment is completed, place lid back on the needle head. Twist the lid off and dispose safely.</p>",
+            "image": "shopify://shop_images/mixed_mi_3.webp",
+            "image_mobile": "shopify://shop_images/mi-3-mob_474650ff-a9f7-4ec8-b784-d9c7da333689.webp"
+          }
+        }
+      },
+      "block_order": [
+        "list_npLGNp",
+        "list_iaNLwp",
+        "list_aQHPpP"
+      ],
+      "name": "t:sections.how-to-use.name",
+      "settings": {
+        "heading": "See how quick and easy it is to use",
+        "text": "",
+        "heading_mobile": "",
+        "wistia_url": "8ymvdqzx92",
+        "button_label": "",
+        "button_url": ""
+      }
+    },
     "you_may_also_like_uZi1bC": {
       "type": "product-you-may-also-like",
       "settings": {}
@@ -320,6 +366,7 @@
     "proven_results_dPwVBB",
     "carousel_PYn3Tz",
     "trusted_reviews_mRLHtt",
+    "how_to_use_xxxaxK",
     "you_may_also_like_uZi1bC"
   ]
 }
