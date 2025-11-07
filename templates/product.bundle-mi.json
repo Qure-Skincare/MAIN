@@ -64,9 +64,53 @@
     },
     "led_benefits_fCGiVb": {
       "type": "led-benefits",
+      "blocks": {
+        "slider_cXKh7n": {
+          "type": "slider",
+          "settings": {
+            "text": "<p>Saves time, money and<br/> hassle compared to in-clinic treatments</p>",
+            "image": "shopify://shop_images/Micro-Infusion_Icons_11.svg"
+          }
+        },
+        "slider_8tVPKT": {
+          "type": "slider",
+          "settings": {
+            "text": "<p>Quick & easy 5-minute <br/>DIY facial from the convenience of home</p>",
+            "image": "shopify://shop_images/Micro-Infusion_Icons_12.svg"
+          }
+        },
+        "slider_6JbaLe": {
+          "type": "slider",
+          "settings": {
+            "text": "<p>Virtually painless, little to <br/>no downtime</p>",
+            "image": "shopify://shop_images/Micro-Infusion_Icons_13.svg"
+          }
+        },
+        "slider_g8TypW": {
+          "type": "slider",
+          "settings": {
+            "text": "<p>2-in-1 system refreshes the<br/> look of skin for a visible<br/> glow.</p>",
+            "image": "shopify://shop_images/Micro-Infusion_Icons_14.svg"
+          }
+        },
+        "slider_kR8RRD": {
+          "type": "slider",
+          "settings": {
+            "text": "<p>Perfect for transforming <br/>dull-looking skin before events</p>",
+            "image": "shopify://shop_images/Micro-Infusion_Icons_15.svg"
+          }
+        }
+      },
+      "block_order": [
+        "slider_cXKh7n",
+        "slider_8tVPKT",
+        "slider_6JbaLe",
+        "slider_g8TypW",
+        "slider_kR8RRD"
+      ],
       "name": "t:sections.led-benefits.name",
       "settings": {
-        "background_color": "",
+        "background_color": "#ffffff",
         "heading": "",
         "button_label": "",
         "button_url": ""
