@@ -9,7 +9,7 @@
  */
 {
   "current": {
-    "header_scrolling_hide": false,
+    "header_scrolling_hide": true,
     "header_slider1_title": "Discover Bundles",
     "header_slider1_image": "shopify://shop_images/CS_TD_HandsGroup_1_1_2.png",
     "header_slider1_thumb": "shopify://shop_images/Img_d4f239b2-3c5f-4e64-942b-d93a46638e23.png",
