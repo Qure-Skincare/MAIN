@@ -131,6 +131,121 @@
         "wistia_url": "a1pykz2tp0"
       }
     },
+    "proven_results_dPwVBB": {
+      "type": "proven-results",
+      "blocks": {
+        "slider_AD9wkG": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>Proven to visually improve</p>",
+            "text": "",
+            "image": "shopify://shop_images/no_hype_1.webp",
+            "button_label": "",
+            "button_label_image": "Fine Lines & Wrinkles"
+          }
+        },
+        "slider_WNCAcc": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>Proven to visually improve</p>",
+            "text": "",
+            "image": "shopify://shop_images/no_hype_2.webp",
+            "button_label": "",
+            "button_label_image": "Large Pores & Skin Texture"
+          }
+        },
+        "slider_TeAbMa": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>Proven to visually improve</p>",
+            "text": "",
+            "image": "shopify://shop_images/no_hype_3.webp",
+            "button_label": "",
+            "button_label_image": "Dark Spots & Texture"
+          }
+        },
+        "text_with_progress_yJEpjQ": {
+          "type": "text_with_progress",
+          "settings": {
+            "text": "<p>of participants say their fine lines looked smoother.</p>",
+            "percent_value": "70%"
+          }
+        },
+        "text_with_progress_zkn33e": {
+          "type": "text_with_progress",
+          "settings": {
+            "text": "<p>noticed results the next day after their first Micro-Infusion treatment. </p>",
+            "percent_value": "93%"
+          }
+        },
+        "text_with_progress_U9P3MQ": {
+          "type": "text_with_progress",
+          "settings": {
+            "text": "<p>of participants say their skin looked brighter and more even toned.</p>",
+            "percent_value": "70%"
+          }
+        }
+      },
+      "block_order": [
+        "slider_AD9wkG",
+        "slider_WNCAcc",
+        "slider_TeAbMa",
+        "text_with_progress_yJEpjQ",
+        "text_with_progress_zkn33e",
+        "text_with_progress_U9P3MQ"
+      ],
+      "name": "t:sections.proven-results.name",
+      "settings": {
+        "heading": "No hype, just evidence",
+        "text": "<p>The results speak for themselves. In an independent user study, participants' skin was measured and showed proven visible improvement after just 6 treatments.<br/><br/><em>Tested by an independent lab, compiled by Regulatory Consultants</em></p>",
+        "button_label": "",
+        "button_url": ""
+      }
+    },
+    "carousel_PYn3Tz": {
+      "type": "carousel",
+      "blocks": {
+        "items_hHPVNj": {
+          "type": "items",
+          "settings": {
+            "heading": "Free Shipping On Orders Over $100",
+            "image": "shopify://shop_images/guarantee.svg"
+          }
+        },
+        "items_g9N6kD": {
+          "type": "items",
+          "settings": {
+            "heading": "Dermatologist Reviewed",
+            "image": "shopify://shop_images/Guarantee_Icons.svg"
+          }
+        },
+        "items_nbazx3": {
+          "type": "items",
+          "settings": {
+            "heading": "Buy Now, Pay Later Options Available",
+            "image": "shopify://shop_images/pay-later.svg"
+          }
+        },
+        "items_m8hFgq": {
+          "type": "items",
+          "settings": {
+            "heading": "Proven Results,  Backed By Science",
+            "image": "shopify://shop_images/proven-result.svg"
+          }
+        }
+      },
+      "block_order": [
+        "items_hHPVNj",
+        "items_g9N6kD",
+        "items_nbazx3",
+        "items_m8hFgq"
+      ],
+      "name": "t:common.carousel",
+      "settings": {
+        "background_color": "#F6F6F7",
+        "display_mode": "both"
+      }
+    },
     "trusted_reviews_mRLHtt": {
       "type": "trusted-reviews",
       "blocks": {
@@ -202,6 +317,8 @@
     "slider_featured_in_DDaUTN",
     "led_benefits_fCGiVb",
     "banner_with_text_YiQnbm",
+    "proven_results_dPwVBB",
+    "carousel_PYn3Tz",
     "trusted_reviews_mRLHtt",
     "you_may_also_like_uZi1bC"
   ]
