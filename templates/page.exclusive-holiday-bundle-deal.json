@@ -423,6 +423,7 @@
       "block_order": [
         "take_quiz_n7qDWC"
       ],
+      "disabled": true,
       "name": "t:sections.index-quiz.name",
       "settings": {
         "heading": "Need help finding your new routine?",
