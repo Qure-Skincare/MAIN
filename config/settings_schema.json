@@ -8,6 +8,12 @@
     "theme_support_url": "https://support.shopify.com/"
   },
   {
+    "name": "Header",
+    "settings": [
+      { "type": "checkbox", "id": "header_scrolling_hide", "label": "Hide while scrolling" }
+    ]
+  },
+  {
     "name": "Header slider",
     "settings": [
       { "type": "header", "content": "Product #1" },
