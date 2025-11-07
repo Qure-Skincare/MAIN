@@ -13,11 +13,6 @@
       "type": "product-bundle",
       "settings": {}
     },
-    "device_comparison_1_LDAgc7": {
-      "type": "device-comparison-1",
-      "name": "t:sections.device-comparison-1.name",
-      "settings": {}
-    },
     "slider_featured_in_DDaUTN": {
       "type": "slider-featured-in",
       "blocks": {
@@ -135,7 +130,6 @@
   },
   "order": [
     "product-bundle",
-    "device_comparison_1_LDAgc7",
     "slider_featured_in_DDaUTN",
     "trusted_reviews_mRLHtt",
     "you_may_also_like_uZi1bC"
