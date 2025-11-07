@@ -83,10 +83,5 @@
       "settings": {}
     }
   },
-  "order": [
-    "endrock-gamification-header",
-    "endrock-rotating-announcement",
-    "footer-form",
-    "header"
-  ]
+  "order": ["endrock-rotating-announcement", "footer-form", "header"]
 }
