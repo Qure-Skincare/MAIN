@@ -2,7 +2,7 @@
     Renders a bundle banner section for black friday.
 {% enddoc %}
 
-<link rel="stylesheet" href="https://qureskincaredns-main.com/alex/sections/isolated/bundle-banner/bundle-banner.css" />
+<link rel="stylesheet" href="https://qureskincaredns.com/alex/sections/isolated/bundle-banner/bundle-banner.css" />
    <div class="swiper qure__swiper bundle-banners-slider" id="qure__swiper-banners-slider" data-section-id="banners-slider" data-autoplay="false" data-loop="false" data-mobile="1" data-tablet="1" data-desktop="1" data-spacing="0" data-pagination-fraction="false">
       <div class="swiper-wrapper">
         {% for block in section.blocks %}
@@ -24,7 +24,7 @@
                         <div class="row">
                             <div class="col-md-4">
                                 {% if block.settings.heading != blank %}
-                                    {{ block.settings.heading | replace: '[logo]', '<img src="https://qureskincaredns-main.com/assets/images/logo.svg"/>'}}
+                                    {{ block.settings.heading | replace: '[logo]', '<img src="https://qureskincaredns.com/assets/images/logo.svg"/>'}}
                                 {% endif %}
                                 {% if block.settings.text != blank %}
                                     {{ block.settings.text }}
@@ -51,7 +51,7 @@
    </div>
    <script>
       document.addEventListener("DOMContentLoaded", function () {
-         loadScriptOnce('slider-script', 'https://qureskincaredns-main.com/assets/js/main-slider.js');
+         loadScriptOnce('slider-script', 'https://qureskincaredns.com/assets/js/main-slider.js');
       });
    </script>
 

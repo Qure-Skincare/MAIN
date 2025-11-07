@@ -32,7 +32,7 @@
 {% endif %}
 
 {%- if block.settings.show_discount != blank -%}
-  <link rel="stylesheet" href="https://qureskincaredns-main.com/shopify/css/product-price.css">
+  <link rel="stylesheet" href="https://qureskincaredns.com/shopify/css/product-price.css">
   <div class="qure__price price--on-sale d-flex flex-wrap align-items-center my-20">
     <div class="price__regular">{{ product_sale_price }}</div>
     <div class="price__sale">{{ product_before_price }}</div>
@@ -44,7 +44,7 @@
       const buy_and_save_button_label = '{{ 'product.settings.buy-and-save-button-label' | t }} {{ product_discount }}%';
 
       document.addEventListener("DOMContentLoaded", function () {
-        loadScriptOnce('product-price', 'https://qureskincaredns-main.com/shopify/js/product-price.js');
+        loadScriptOnce('product-price', 'https://qureskincaredns.com/shopify/js/product-price.js');
       });
   </script>
   {% endif %}

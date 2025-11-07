@@ -30,10 +30,6 @@
                             {% assign array_count = array_count |  minus: 1 %}
                             {% assign product_type = array_count %}
                             
-                            {% if product_before_price == blank %}
-                                {% assign product_discount = blank %}
-                            {% endif %}
-
                             {% capture data-per %}{{ 'purchase-form.settings.buy-button-label' | t }} {% if product_discount != blank %} {{ 'purchase-form.settings.and' | t }} {{ 'purchase-form.settings.save' | t }} {{ product_discount }}%{% endif %}{% endcapture %}
 
                             {% if block.settings.preorder == true %}
@@ -49,7 +45,7 @@
                                         {% render 'product-page-slider', product: get_product_data, page: blank, class: 'tp-product-gallery qure__swiper-wrapper mb-20', element_id: block.id %}
 
                                         <div class="qure__product-reviews fs-14 d-flex gap-3 align-items-center mb-10 mt-20">
-                                            <img src="https://qureskincaredns-main.com/sections/isolated/top-products/images/stars.svg" alt="stars">
+                                            <img src="https://qureskincaredns.com/sections/isolated/top-products/images/stars.svg" alt="stars">
                                             <span>{{ 'purchase-form-bundle.settings.rated' | t }} <span class="fw-600">{{ product_rating | default: 4.8 }}</span>/5</span>
                                         </div>
 

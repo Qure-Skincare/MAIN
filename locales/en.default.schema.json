@@ -29,6 +29,7 @@
         "style": "Style",
         "box": "Box",
         "list": "List",
+        "list_bf26": "List BF26",
         "list-mobile": "List mobile",
         "button": "Button",
         "days": "Days",
@@ -215,6 +216,9 @@
         },
         "bf-clickable-banner-with-text": {
             "name": "Black Friday clickable banner with text"
+        },
+        "bf-page-banner": {
+            "name": "Black Friday page banner"
         },
         "cta-cards": {
             "name": "CTA cards"

@@ -16,7 +16,9 @@
     {% endfor %}
 {% endif %}
 
-<div class="d-flex align-items-center gap-3">
-    <p class="black_friday_pricing">{{ 'product.settings.black-friday-discount.header' | t }}</p>
-    <a href="javascript:void();" class="save_perc">{{ 'product.settings.black-friday-discount.save' | t }} {{ block.settings.discount_percent }}%</a>
- </div>
+{% if settings.black_friday_discount_percent > 0 %}
+    <div class="black_friday_wrapper">
+        <p class="black_friday_pricing">{{ 'product.settings.black-friday-discount.header' | t }}</p>
+        <a href="javascript:void();" class="save_perc">{{ 'product.settings.black-friday-discount.save' | t }} {{ settings.black_friday_discount_percent }}%</a>
+    </div>
+{% endif %}

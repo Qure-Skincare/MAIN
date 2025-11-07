@@ -29,7 +29,7 @@
 {% endif %}
 
 
-<link rel="stylesheet" href="https://qureskincaredns-main.com/shopify/css/product-page-slider.css">
+<link rel="stylesheet" href="https://qureskincaredns.com/shopify/css/product-page-slider.css">
 
 <slide-with-thumbs class="qure__swiper-wrapper {{ class }}">
     <!-- Galler start-->
@@ -52,9 +52,9 @@
             <div class="swiper qure__product-gallery tp-thumbnails-desktop qure__swiper-gallery-thumbnails" data-section-id="tp-thumbnails-desktop-{{ element_id }}" data-mobile="3" data-tablet="{{ total }}" data-desktop="{{ total }}" data-autoplay="false" data-loop="false" data-spacing="10">
                 <div class="swiper-wrapper">
                     {% if product.metafields.custom.carousel_media.value != blank %}
-                        {% render 'product-page-media-carousel', input_media_carousel: product.metafields.custom.carousel_media.value, classname: 'slide-thumbnail', size: '240x' %}
+                        {% render 'product-page-media-carousel', input_media_carousel: product.metafields.custom.carousel_media.value, classname: 'slide-thumbnail', size: '240x', thumbnails: true %}
                     {% elsif page.metafields.custom.carousel_media.value != blank %}
-                        {% render 'product-page-media-carousel', input_media_carousel: page.metafields.custom.carousel_media.value, classname: 'slide-thumbnail', size: '240x' %}
+                        {% render 'product-page-media-carousel', input_media_carousel: page.metafields.custom.carousel_media.value, classname: 'slide-thumbnail', size: '240x', thumbnails: true %}
                     {% else %}
                         {% render 'product-media', product_media: product.media, classname: 'slide-thumbnail', size: '240x' %}
                     {% endif %}
@@ -86,6 +86,6 @@
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-        loadScriptOnce('slider-with-thumb', 'https://qureskincaredns-main.com/assets/js/slider-with-thumb.js');
+        loadScriptOnce('slider-with-thumb', 'https://qureskincaredns.com/assets/js/slider-with-thumb.js');
     });
 </script>

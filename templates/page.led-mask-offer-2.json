@@ -485,7 +485,7 @@
           "type": "left_block",
           "settings": {
             "heading": "Q-Rejuvalight Pro LED Mask",
-            "text": "<ul><li>Designed the face</li><li>5 clinically proven wavelengths</li><li>2 treatment modes <br/>(Skin Rejuvenation and Skin Clearing)</li><li>Treats wrinkles and mild-to-moderate inflammatory acne.</li><li>Helps visibly smooth the look of fine lines & wrinkles</li><li>Improves the appearance of skin texture & tone</li><li>Supports skin’s natural renewal process</li></ul>",
+            "text": "<ul><li>Designed the face</li><li>5 clinically proven wavelengths</li><li>2 treatment modes <br/>(Skin Rejuvenating and Skin Clearing)</li><li>Treats wrinkles and mild-to-moderate inflammatory acne.</li><li>Helps visibly smooth the look of fine lines & wrinkles</li><li>Improves the appearance of skin texture & tone</li><li>Supports skin’s natural renewal process</li></ul>",
             "price": "<p>$399</p>",
             "image": "shopify://shop_images/q-rejuvalight-pro-led-mask_80cf908b-75f7-4fa1-a3a1-d74d4fcb8641.webp"
           }
@@ -508,7 +508,7 @@
       "name": "t:sections.exclusive-offer.name",
       "settings": {
         "heading": "Experience face and neck rejuvenation in one bundle",
-        "text": "<p>Autumn Glow </p><p>Sale</p>",
+        "text": "<p>Black Friday </p><p>Sale</p>",
         "text_mobile": "<p>Includes 2 LED Devices:</p>"
       }
     },
@@ -600,6 +600,7 @@
       "name": "t:sections.how-to-use.name",
       "settings": {
         "heading": "See how quick and easy it is to use",
+        "text": "",
         "heading_mobile": "See how quick and easy it is to use",
         "wistia_url": "j7op01weqs",
         "button_label": "",
@@ -860,6 +861,7 @@
       "settings": {
         "heading": "Q-Rejuvalight Pro + Neck & Décolletage LED System",
         "text": "1,893 purchased in last 48 hours",
+        "limited": false,
         "button-label": "SHOP NOW & SAVE $299",
         "button-url": "#buy-form"
       }

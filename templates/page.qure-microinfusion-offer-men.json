@@ -260,7 +260,7 @@
         "image_position": "right",
         "sub_text": "",
         "image": "shopify://shop_images/qure-micro-infusion_men.webp",
-        "button_label": "BUY NOW & SAVE UP TO 67%",
+        "button_label": "BUY NOW & SAVE UP TO 70%",
         "button_url": "#purchase-form",
         "wistia_url": ""
       }
@@ -461,7 +461,7 @@
       "settings": {
         "background_color": "#f6f6f7",
         "heading": "4 reasons why everyone is using the Qure Micro-Infusion System",
-        "button_label": "buy now & SAVE UP TO 67%",
+        "button_label": "buy now & SAVE UP TO 70%",
         "button_url": "#purchase-form"
       }
     },
@@ -631,7 +631,7 @@
         "heading": "Results you’ll see with your own eyes",
         "text": "",
         "text_mobile": "",
-        "button_label": "BUY NOW SAVE UP TO 67%",
+        "button_label": "BUY NOW SAVE UP TO 70%",
         "button_url": "#purchase-form"
       }
     },
@@ -749,7 +749,7 @@
         "text": "",
         "heading_mobile": "How To Use",
         "wistia_url": "wxgqgsjjdr",
-        "button_label": "BUY NOW & SAVE UP TO 67%",
+        "button_label": "BUY NOW & SAVE UP TO 70%",
         "button_url": "#purchase-form"
       }
     },
@@ -919,27 +919,27 @@
           "type": "product_type",
           "settings": {
             "heading": "Dark Spots",
-            "image": "shopify://shop_images/dark_spots_1.png",
+            "image": "shopify://shop_images/Dark_Spots_4.png",
             "preselected": false
           }
         },
         "product_DBd4ef": {
           "type": "product",
           "settings": {
-            "product": "micro-infusion-5-month-bundle-for-darkspots-copy",
+            "product": "micro-infusion-6-month-bundle-for-dark-spots",
             "preselected": true,
-            "heading": "5 Month Supply Autumn Glow Sale",
-            "subheading": "(10 Treatments)",
-            "image": "shopify://shop_images/MI_5_month_DS_2_272eb5f7-6ec2-4f69-b1bb-500120fdf206.png",
+            "heading": "6 Month Supply Black Friday Sale",
+            "subheading": "(12 Treatments)",
+            "image": "shopify://shop_images/MI_6_month_Dark_Spots.png",
             "soldout": false,
             "preorder": false,
-            "total_treatments": 10,
+            "total_treatments": 12,
             "left_items": 164,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
             "preorder_percent": 55,
-            "included_text": "<ul><li>2 Micro-Infusion devices (valued at $160)</li><li>8 Clinical-grade micro-needling heads (valued at $100)</li><li>10 clinically-formulated 4ml serums to treat your specific skin concerns (valued at $240)</li><li>Worldwide shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li><li>24/7 customer support access</li></ul>"
+            "included_text": "<ul><li>2 Micro-Infusion devices (valued at $160)</li><li>10 Clinical-grade micro-needling heads (valued at $100)</li><li>12 clinically-formulated 4ml serums to treat your specific skin concerns (valued at $240)</li><li>Worldwide shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li><li>24/7 customer support access</li></ul>"
           }
         },
         "product_7dL4ci": {
@@ -988,27 +988,27 @@
           "type": "product_type",
           "settings": {
             "heading": "Wrinkles",
-            "image": "shopify://shop_images/wrinkles_1_8426e2f1-0591-4133-97a6-71ade016a9a2.png",
+            "image": "shopify://shop_images/Wrinkles_2.png",
             "preselected": true
           }
         },
         "product_nyJ9n7": {
           "type": "product",
           "settings": {
-            "product": "micro-infusion-5-month-bundle-for-wrinkles",
+            "product": "micro-infusion-6-month-bundle-for-wrinkles",
             "preselected": true,
-            "heading": "5 Month Supply Autumn Glow Sale",
-            "subheading": "(10 Treatments)",
-            "image": "shopify://shop_images/MI_5_month_W_2_0a7b3588-3709-4bfc-8a22-270e318c820b.png",
+            "heading": "6 Month Supply Black Friday Sale",
+            "subheading": "(12 Treatments)",
+            "image": "shopify://shop_images/MI_6_month_Wrinkles.png",
             "soldout": false,
             "preorder": false,
-            "total_treatments": 10,
+            "total_treatments": 12,
             "left_items": 98,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
             "preorder_percent": 55,
-            "included_text": "<ul><li>2 Micro-Infusion devices (valued at $160)</li><li>8 Clinical-grade micro-needling heads (valued at $100)</li><li>10 clinically-formulated 4ml serums to treat your specific skin concerns (valued at $240)</li><li>Worldwide shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
+            "included_text": "<ul><li>2 Micro-Infusion devices (valued at $160)</li><li>10 Clinical-grade micro-needling heads (valued at $100)</li><li>12 clinically-formulated 4ml serums to treat your specific skin concerns (valued at $240)</li><li>Worldwide shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
           }
         },
         "product_EKAAzA": {
@@ -1057,27 +1057,27 @@
           "type": "product_type",
           "settings": {
             "heading": "Mixed",
-            "image": "shopify://shop_images/mixed_2.png",
+            "image": "shopify://shop_images/Mixed_3.png",
             "preselected": false
           }
         },
         "product_gbPf3J": {
           "type": "product",
           "settings": {
-            "product": "micro-infusion-5-month-bundle-for-dark-spots-copy",
+            "product": "6-month-micro-infusion-for-wrinkles-dark-spots",
             "preselected": true,
-            "heading": "5 Month Supply Autumn Glow Sale",
-            "subheading": "(10 Treatments)",
-            "image": "shopify://shop_images/MI_5_month_DS_W_3_c7404699-4833-4222-9dbc-7332a3274916.png",
+            "heading": "6 Month Supply Black Friday Sale",
+            "subheading": "(12 Treatments)",
+            "image": "shopify://shop_images/MI_6_month_DS_W_7d6dc5df-3b35-44cb-b211-2e41e1cfbad7.jpg",
             "soldout": false,
             "preorder": false,
-            "total_treatments": 10,
+            "total_treatments": 12,
             "left_items": 47,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
             "preorder_percent": 55,
-            "included_text": "<ul><li>2 Micro-Infusion devices (valued at $160)</li><li>8 Clinical-grade micro-needling heads (valued at $100)</li><li>10 clinically-formulated 4ml serums to treat your specific skin concerns (valued at $240)</li><li>Worldwide shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li><li>24/7 customer support access</li></ul>"
+            "included_text": "<ul><li>2 Micro-Infusion devices (valued at $160)</li><li>10 Clinical-grade micro-needling heads (valued at $100)</li><li>12 clinically-formulated 4ml serums to treat your specific skin concerns (valued at $240)</li><li>Worldwide shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li><li>24/7 customer support access</li></ul>"
           }
         },
         "product_NEgEkN": {
@@ -1331,7 +1331,7 @@
         "heading": "Micro-Infusion Facial System",
         "text": "393 purchased in last 48 hours",
         "limited": false,
-        "button-label": "BUY NOW & SAVE UP TO 67%",
+        "button-label": "BUY NOW & SAVE UP TO 70%",
         "button-url": "#purchase-form"
       }
     }

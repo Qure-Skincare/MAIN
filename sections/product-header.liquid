@@ -4,7 +4,7 @@
 
 {% include 'get-product-data' %}
 
-<link rel="stylesheet" href="https://qureskincaredns-main.com/sections/isolated/targeted-patches/section-targeted-patches.css" />
+<link rel="stylesheet" href="https://qureskincaredns.com/sections/isolated/targeted-patches/section-targeted-patches.css" />
 <div id="buy_box" class="qure__trageted-patches qure__section"
     style="--section-padding-top: 40px; --section-padding-bottom: 80px;">
     <div class="container" style="--column-gap:80px; --column-gap-mobile:30px;">
@@ -47,7 +47,7 @@
             </div>
             <div class="col-lg-6 custom__block">
                 {% render 'product-page-slider', product: product, page: blank, class: 'tp-product-gallery d-none d-lg-block', element_id: section.id %}
-                {% render 'product-page-cross-sell', product: product %}
+                {% include 'product-page-cross-sell', product: product %}
                 {% render 'product-page-benefits-list', target: 'mobile' %}
                 {% render 'product-page-collapsed', product: product, page: blank, class: 'mt-15 tp-product-accordion' %}
                 {% render 'product-page-jumpto', section: section %}
@@ -58,9 +58,9 @@
 </div>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-        loadScriptOnce('main-slider', 'https://qureskincaredns-main.com/assets/js/main-slider.js');
-        loadScriptOnce('youtube-popup', 'https://qureskincaredns-main.com/assets/js/yt-popup.js');
-        loadScriptOnce('slider-with-thumb', 'https://qureskincaredns-main.com/assets/js/slider-with-thumb.js');
+        loadScriptOnce('main-slider', 'https://qureskincaredns.com/assets/js/main-slider.js');
+        loadScriptOnce('youtube-popup', 'https://qureskincaredns.com/assets/js/yt-popup.js');
+        loadScriptOnce('slider-with-thumb', 'https://qureskincaredns.com/assets/js/slider-with-thumb.js');
     });
 </script>
 
@@ -241,16 +241,6 @@
             "name": "t:common.black-friday-discount",
             "limit": 1,
             "settings": [
-                {
-                    "type": "range",
-                    "id": "discount_percent",
-                    "min": 0,
-                    "max": 100,
-                    "step": 1,
-                    "unit": "%",
-                    "label": "t:common.discount",
-                    "default": 0
-                }
             ]
         },
         {

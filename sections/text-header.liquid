@@ -1,8 +1,17 @@
 {% if section.settings.heading != blank %}
-    <div id="{{ section.settings.heading | strip | downcase | replace: ' ', '-' | escape }}" class="qure__section-header text-center mt-30 mb-30">
+    <div data-id="{{ section.settings.heading | strip | downcase | replace: ' ', '-' | escape }}" class="qure__section-header text-center mt-30 mb-30">
         <h2 class="qure__section-heading">{{ section.settings.heading }}</h2>
     </div>
 {% endif %}
+
+<script>
+    const text_header_title = '{{ section.settings.heading | strip | downcase | replace: ' ', '-' | escape }}';      
+  
+    document.addEventListener("DOMContentLoaded", function () {
+      loadScriptOnce('text-header', 'https://qureskincaredns.com/shopify/js/text-header.js');
+    });
+</script>
+
 
 {% schema %}
 {

@@ -4,7 +4,7 @@
 
 {% include 'assoc-array', section: section, __parent_title: 'type', __separator: '###' %}
 
-<link rel="stylesheet" href="https://qureskincaredns-main.com/sections/global/purchase-form/purchase-form.css">
+<link rel="stylesheet" href="https://qureskincaredns.com/sections/global/purchase-form/purchase-form.css">
 <div id="purchase-form" class="qure__section user_guideline color-background {{ section.id }}"
     style="--section-padding-top: 50px; --section-padding-bottom: 80px; --section-padding-top-mob: 30px; --section-padding-bottom-mob: 50px;">
     <div class="container" style="--column-gap:60px; --column-gap-mobile:30px;">
@@ -64,7 +64,7 @@
     </div>
 </div>
 
-<script src="https://qureskincaredns-main.com/shopify/js/purchase-form.js" data-form="{{ section.settings.form_name }}" data-section="{{ section.id }}" defer></script>
+<script src="https://qureskincaredns.com/shopify/js/purchase-form.js" data-form="{{ section.settings.form_name }}" data-section="{{ section.id }}" defer></script>
 
 {%- schema -%}
 {
@@ -83,6 +83,10 @@
                 {
                     "value": "list",
                     "label": "t:common.list"
+                },
+                {
+                    "value": "list_bf26",
+                    "label": "t:common.list_bf26"
                 }
             ],
             "default": "box"

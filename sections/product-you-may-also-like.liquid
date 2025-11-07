@@ -1,5 +1,5 @@
 <!-- you may also like start -->
-<link rel="stylesheet" href="https://qureskincaredns-main.com/sections/isolated/top-products/products-card.css" />
+<link rel="stylesheet" href="https://qureskincaredns.com/sections/isolated/top-products/products-card.css" />
 <div class="qure__also-reviews qure__section"
     style="--section-padding-top: 40px;--section-padding-bottom: 40px;--section-padding-top-mob: 40px;--section-padding-bottom-mob: 40px;">
     <div class="container offset-container-mobile">
@@ -24,7 +24,7 @@
 
                 {% for index in indices_array %}
                     {% assign product = collections['upsell-bundle'].products[index] %}
-                    {% include 'get-product-data', product_handle: product.handle, product_prefix: 'you-may-also-like' %}
+                    {% include 'get-product-data', product_handle: product.handle, product_prefix: 'you-may-also-like-' %}
 
                     {% if product_handle contains 'micro-infusion' %}
                         {% assign product_url = '/pages/microinfusion' %}
@@ -75,7 +75,7 @@
 </div>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-        loadScriptOnce('main-slider', 'https://qureskincaredns-main.com/assets/js/main-slider.js');
+        loadScriptOnce('main-slider', 'https://qureskincaredns.com/assets/js/main-slider.js');
     });
 </script>
 <!-- you may also like end -->

@@ -2,7 +2,7 @@
   Renders a bundle-header section
 {% enddoc %}
 
-<link rel="stylesheet" href="https://qureskincaredns-main.com/sections/isolated/micro-infusion-pdp/section-micro-infusion-pdp.css" />
+<link rel="stylesheet" href="https://qureskincaredns.com/sections/isolated/micro-infusion-pdp/section-micro-infusion-pdp.css" />
 <div id="buy_box" class="qure__trageted-patches qure__section bundle-header"
     style="--section-padding-top: 80px; --section-padding-bottom: 40px; --section-padding-bottom-mob: 15px;">
     <div class="container" style="--column-gap:80px; --column-gap-mobile:30px;">
@@ -11,7 +11,7 @@
                 <div class="qure-product-details">
                     {% if section.settings.bf_link != blank %}
                         <a href="{{ section.settings.bf_link }}" class="black-frigay-badge">
-                            <img src="{{ 'bundle-header.settings.bf_badge_image' | t }}"/>
+                            <img src="https://qureskincaredns.com/sections/isolated/micro-infusion-pdp/images/{{ 'bundle-header.settings.bf_badge_image' | t }}"/>
                         </a>
                     {% else %}
                     <div class="exclusive_tag">
@@ -37,13 +37,13 @@
                         <div class="d-flex flex-wrap align-items-center justify-content-between justify-content-md-center col-gap" style="--col-gap-mb:10px;">
                             <div
                                 class="icon-with-text d-flex gap-2 justify-content-center align-items-center fs-14 text-center text-lg-start">
-                                <img src="https://qureskincaredns-main.com/sections/isolated/protect-your-skin/images/dermatologist.svg"
+                                <img src="https://qureskincaredns.com/sections/isolated/protect-your-skin/images/dermatologist.svg"
                                     alt="dermatologist">
                                 <span>{{ 'bundle-header.settings.easy-returns' | t }}</span>
                             </div>
                             <div
                                 class="icon-with-text d-flex gap-2 justify-content-center align-items-center fs-14 text-center text-lg-start">
-                                <img src="https://qureskincaredns-main.com/sections/isolated/protect-your-skin/images/shipping.svg" alt="shipping">
+                                <img src="https://qureskincaredns.com/sections/isolated/protect-your-skin/images/shipping.svg" alt="shipping">
                                 <span>{{ 'bundle-header.settings.shipping-text' | t }}</span>
                             </div>
                         </div>
@@ -51,14 +51,14 @@
                         <div class="patch__product-main pt-15">
                             <div class="d-block patch__product-certified text-center">
                                 <ul class="justify-content-center patch-dr-list">
-                                    <li><img src="https://qureskincaredns-main.com/sections/isolated/targeted-patches/images/crt-1.webp"></li>
-                                    <li><img src="https://qureskincaredns-main.com/sections/isolated/targeted-patches/images/crt-2.webp"></li>
+                                    <li><img src="https://qureskincaredns.com/sections/isolated/targeted-patches/images/crt-1.webp"></li>
+                                    <li><img src="https://qureskincaredns.com/sections/isolated/targeted-patches/images/crt-2.webp"></li>
                                     <li>+50</li>
                                 </ul>
                                 <p>{{ 'bundle-header.settings.recommended_html' | t }}</p>
                             </div>
                             <div class="d-md-block d-none">
-                                <img src="https://qureskincaredns-main.com/assets/images/jaad.webp" class="ctm-width" style="--ctm-width:98px" alt="jaad">
+                                <img src="https://qureskincaredns.com/assets/images/jaad.webp" class="ctm-width" style="--ctm-width:98px" alt="jaad">
                             </div>
                         </div>
                     </div>
@@ -73,7 +73,7 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    loadScriptOnce('bundle-header', 'https://qureskincaredns-main.com/shopify/js/bundle-header.js');
+    loadScriptOnce('bundle-header', 'https://qureskincaredns.com/shopify/js/bundle-header.js?rnd=1');
   });
 </script>
 

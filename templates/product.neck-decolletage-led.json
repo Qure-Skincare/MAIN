@@ -15,13 +15,13 @@
         "black_friday_discount_PYGjBx": {
           "type": "black-friday-discount",
           "disabled": true,
-          "settings": {
-            "discount_percent": 26
-          }
+          "settings": {}
         },
         "price_A11": {
           "type": "price",
-          "settings": {}
+          "settings": {
+            "show_discount": false
+          }
         },
         "description_iPBNaS": {
           "type": "description",
@@ -103,6 +103,8 @@
       "settings": {
         "seo_heading": "RED LIGHT NECK & CHEST MASK",
         "heading": "Visibly smooth and firm skin with the Neck & Décolletage LED System",
+        "rating": true,
+        "limited": false,
         "description": "<ul><li>Visible cosmetic results supporting smoother- and firmer-looking skin where early signs of aging appear.</li><li>Helps improve the look of sun-exposed skin, visibly calms redness, and smooths the appearance of fine lines and wrinkles.</li><li>Evens skin tone and boosts firmness for radiant, younger-looking skin.</li></ul>",
         "reserved": false,
         "soldout": false
@@ -625,6 +627,7 @@
       "settings": {
         "heading": "Neck & Décolletage LED System",
         "text": "203 purchased in last 48 hours",
+        "limited": false,
         "button-label": "",
         "button-url": ""
       }

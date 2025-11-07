@@ -1,7 +1,7 @@
 {% include 'assoc-array', section: section, __parent_title: 'type', __separator: '###' %}
 
 <template id="async">
-    <link rel="stylesheet" href="https://qureskincaredns-main.com/sections/global/purchase-form-landing/purchase-form-landing.css">
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/global/purchase-form-landing/purchase-form-landing.css">
     <div class="{{ section.id }}">
         {% render 'purchase-form-landing-types' section: section, __idsArray1: __idsArray1, __idsArray2: __idsArray2, __idsArray3: __idsArray3 %}
         {% include 'purchase-form-landing-products' section: section, __idsArray1: __idsArray1, __idsArray2: __idsArray2, __idsArray3: __idsArray3 %}
@@ -10,7 +10,7 @@
         {% render 'product-page-buy-button-payments' %}
         {% render 'product-page-buy-button-bottom' %}
     </div>
-    <script src="https://qureskincaredns-main.com/shopify/js/purchase-form-landing.js" data-form="{{ section.settings.form_name }}" data-section="{{ section.id }}" defer></script>
+    <script src="https://qureskincaredns.com/shopify/js/purchase-form-landing.js" data-form="{{ section.settings.form_name }}" data-section="{{ section.id }}" defer></script>
 </template>
 
 {% schema %}
@@ -195,16 +195,6 @@
                         "type": "number",
                         "id": "product_selling_plan",
                         "label": "t:common.selling_plan",
-                        "default": 0
-                    },  
-                    {
-                        "type": "range",
-                        "id": "product_discount_percent",
-                        "min": 0,
-                        "max": 100,
-                        "step": 1,
-                        "unit": "%",
-                        "label": "t:common.product_discount",
                         "default": 0
                     },
                     {

@@ -128,14 +128,14 @@
         "carousel_BigzyF",
         "carousel_C4JjyW"
       ],
-      "disabled": true,
       "name": "t:sections.bf-banner-with-text.name",
       "settings": {
         "heading": "<h2>Save Up to 57%</h2>",
         "text": "<p>Your Favorite Products, Perfectly Bundled</p>",
         "bg_color": "black",
         "button_label": "Shop Bundles Now",
-        "button_url": "https://qureskincare.com/pages/exclusive-holiday-bundle-deal-new#"
+        "button_url": "https://qureskincare.com/pages/exclusive-holiday-bundle-deal-new#",
+        "sub_text": ""
       }
     },
     "bf_bundle_banner_dTGjF7": {
@@ -172,7 +172,6 @@
         "carousel_bjazym",
         "carousel_rRrz43"
       ],
-      "disabled": true,
       "name": "t:sections.bf-bundle-banner.name",
       "settings": {}
     },
@@ -187,7 +186,7 @@
         "bg_color": "white",
         "button_label": "Shop Now",
         "button_url": "#",
-        "sub_text": ""
+        "sub_text": "*Excludes Black Friday bundles"
       }
     },
     "bf_bundle_bunner_mini_VD9qRR": {
@@ -225,12 +224,13 @@
       "settings": {
         "heading": "<h3>Save Up to 57%</h3>",
         "text": "<p>Your Favorite Products, Perfectly Bundled</p>",
-        "button_url": "#",
+        "button_url": "https://qureskincare.com/pages/exclusive-holiday-bundle-deal-new",
         "button_label": "Shop Bundles Now"
       }
     },
     "index_banner_with_text_second_TNGNLJ": {
       "type": "index-banner-with-text-second",
+      "disabled": true,
       "name": "t:sections.index-banner-with-text-second.name",
       "settings": {
         "heading": "Get clinic-level results from home – minus the ‘clinical’ costs.",
@@ -246,6 +246,7 @@
     },
     "bundle_banner_eEa7XN": {
       "type": "bundle-banner",
+      "disabled": true,
       "name": "t:sections.bundle-banner.name",
       "settings": {
         "heading": "Save up to 55% on Exclusive Bundles",

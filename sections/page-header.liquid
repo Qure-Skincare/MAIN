@@ -2,7 +2,7 @@
   Renders a page header section
 {% enddoc %}
 
-<link rel="stylesheet" href="https://qureskincaredns-main.com/sections/isolated/micro-infusion-pdp/section-micro-infusion-pdp.css" />
+<link rel="stylesheet" href="https://qureskincaredns.com/sections/isolated/micro-infusion-pdp/section-micro-infusion-pdp.css" />
 <div class="qure__trageted-patches qure__section" style="--section-padding-top: 40px; --section-padding-bottom: 80px;">
    <div class="container" style="--column-gap:80px; --column-gap-mobile:30px;">
       <div class="row custom__grid">
@@ -21,7 +21,7 @@
          </div>
          <div class="col-lg-6 custom__block">
             {% render 'product-page-slider', product: blank, page: page, class: 'tp-product-gallery d-none d-lg-block', element_id: section.id %}
-            {% render 'product-page-cross-sell', product: blank, page: page %}
+            {% include 'product-page-cross-sell', product: blank, page: page %}
             {% render 'product-page-benefits-list', target: 'mobile' %}
             {% render 'product-page-collapsed', product: blank, page: page, class: 'mt-15 tp-product-accordion' %}
             {% render 'product-page-jumpto', section: section %}
@@ -130,16 +130,6 @@
             "name": "t:common.black-friday-discount",
             "limit": 1,
             "settings": [
-                {
-                    "type": "range",
-                    "id": "discount_percent",
-                    "min": 0,
-                    "max": 100,
-                    "step": 1,
-                    "unit": "%",
-                    "label": "t:common.discount",
-                    "default": 0
-                }
             ]
         },
         {

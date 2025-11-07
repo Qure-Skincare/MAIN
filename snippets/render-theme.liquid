@@ -1,0 +1,12 @@
+{% doc %}
+  Render theme content
+
+  @example
+  {% render 'render-theme', html: '' %}
+{% enddoc %}
+
+{% if html contains 'dev=true' %}
+  {{ html | replace: 'https://qureskincaredns.com/', 'https://qureskincare.dev/' }}  
+{% endif %}
+
+{{ html }}

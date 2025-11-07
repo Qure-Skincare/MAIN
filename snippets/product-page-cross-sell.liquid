@@ -23,16 +23,23 @@
     <div class="swiper qure__swiper" id="qure__swiper-best-results" data-section-id="best-results" data-autoplay="false" data-loop="false" data-mobile="1.4" data-tablet="2" data-desktop="2" data-spacing="12" data-pagination-fraction="true">
         <div class="swiper-wrapper">
             {% for item in source %}
+
+                {% include 'get-product-data', product_handle: item.product.value.handle, product_prefix: 'product-page-cross-sell-' %}
+
                 <div class="swiper-slide">
-                    <a href="{{ shop.url }}/products/{{ item.product.value.handle }}" aria-label="{{ item.product.value.handle | escape }}" style="color: black;">
+                    <a href="{{ product_url }}" aria-label="{{ product_handle | escape }}" style="color: black;">
                         <div class="patch__results">
-                            <img class="patch__result-img img-fluid" src="{{ item.feature_image | image_url: width: 240, height: 240 }}" alt="{{ item.name }}">
+                            <img class="patch__result-img img-fluid" src="{{ product_featured_image | img_url: '240x' }}" alt="{{ product_title | escape }}">
                             <div class="patch__result-content">
-                                {{ item.name }}
+                                {{ product_title }}
                                 <form method="post" action="/cart/add" enctype="multipart/form-data">
-                                    <button type="submit" class="btn btn--primary btn-sm mt-10 w-100" style="--btn-sm-padding: 7px 20px;">{{ 'product.settings.cross-sell.buy-button-label' | t }} – <span class="igPrice">{{ item.product.value.price | money_without_trailing_zeros  }}</span></button>
+                                    {% if black_friday_discount_percent > 0 %}
+                                        <button type="submit" class="btn btn--primary btn-sm mt-10 w-100" style="--btn-sm-padding: 7px 20px;">{{ 'product.settings.cross-sell.buy-button-label' | t }} – <span class="igPrice">{{ product_black_friday_price }}</span></button>
+                                    {% else %}
+                                        <button type="submit" class="btn btn--primary btn-sm mt-10 w-100" style="--btn-sm-padding: 7px 20px;">{{ 'product.settings.cross-sell.buy-button-label' | t }} – <span class="igPrice">{{ product_sale_price }}</span></button>
+                                    {% endif %}
                                     <input type="hidden" name="quantity" id="quantity" value="1">
-                                    <input type="hidden" name="id" value="{{ item.product.value.variants.first.id }}">
+                                    <input type="hidden" name="id" value="{{ product_variant_id }}">
                                 </form>
                             </div>
                         </div>

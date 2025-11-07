@@ -25,11 +25,13 @@
     {% assign cart_item_sale_price = null %}
     {% assign cart_item_before_price = null %}
     {% assign insurance_exists = null %}
+    {% assign preorder_exists = null %}
     {% assign gift_exists = null %}
     {% assign cart_item_selling_plan = null %}
     {% assign cart_item_selling_plan_name = null %}
     {% assign selling_plan_exists = null %}
     {% assign cart_item_final_price = null %}
+    {% assign cart_item_original_price = null %}
     {% assign discount_exists = null %}
 
 
@@ -46,20 +48,26 @@
     {% assign cart_item_image = item.image %}
     {% assign cart_item_properties = item.properties %}
     {% assign cart_item_final_price = item.final_price %}
+    {% assign cart_item_original_price = item.original_price %}
     {% assign cart_item_price = item.variant.price | times: item.quantity %}
     {% assign cart_item_compare_price = item.variant.compare_at_price | times: item.quantity %}
     {% assign cart_item_selling_plan = item.selling_plan_allocation %}
     {% assign cart_item_selling_plan_name = item.selling_plan_allocation.selling_plan.name %}
     
-
+    {% assign __cart_item_title = cart_item_title | downcase %}
 
     {% comment %} insurance item {% endcomment %}
 
-    {% if cart_item_title contains 'Shipping Insurance' %}
+    {% if __cart_item_title contains 'shipping insurance' %}
       {% assign insurance_exists = true %}
       {% assign summary_insurance_exists = true %}
     {% endif %}
 
+    {% comment %} preorder item {% endcomment %}
+     
+    {% if __cart_item_title contains 'pre-order' %}
+      {% assign preorder_exists = true %}
+    {% endif %}
 
 
     {% comment %} gift properties {% endcomment %}
@@ -72,11 +80,22 @@
 
 
     {% comment %} discount {% endcomment %}
+
+    {% if cart_item_final_price != cart_item_original_price %}
+      {% assign discount_exists = true %}
+      {% assign cart_item_compare_price = cart_item_original_price %}
+      {% assign cart_item_price = cart_item_final_price %}
+    {% endif %}
+
+
+    {% comment %} full price discount {% endcomment %}
+
     {% if cart_item_final_price == 0 %}
       {% assign discount_exists = true %}
       {% assign cart_item_compare_price = cart_item_price %}
       {% assign cart_item_price = 0 %}
     {% endif %}
+    
 
     {% comment %} item properties {% endcomment %}
 

@@ -22,7 +22,7 @@
                     <div class="qure__freeshipping-icon" style="--icon-pos:20%">
 
                         {% if global_total_price_devided >= global_bar_shipping_limit %}
-                            <img src="https://qureskincaredns-main.com/sections/global/drawer/images/completed.svg" alt="shipping" />
+                            <img src="https://qureskincaredns.com/sections/global/drawer/images/completed.svg" alt="shipping" />
                         {% else %}
                             <img src="{{ global_bar_shipping_image | image_url }}" alt="shipping" />
                         {% endif %}
@@ -35,7 +35,7 @@
                     <div class="qure__freeshipping-icon" style="--icon-pos:{% if global_bar_gift2_limit > 0 %}50{% else %}80{% endif %}%">
 
                         {% if global_total_price_devided >= global_bar_gift1_limit %}
-                            <img src="https://qureskincaredns-main.com/sections/global/drawer/images/completed.svg" alt="shipping" />
+                            <img src="https://qureskincaredns.com/sections/global/drawer/images/completed.svg" alt="shipping" />
                         {% else %}
                             <img src="{{ global_bar_gift1_image | image_url }}" alt="{{ global_bar_gift1_title | escape }}" />
                         {% endif %}
@@ -48,7 +48,7 @@
                     <div class="qure__freeshipping-icon" style="--icon-pos:80%">
 
                         {% if global_total_price_devided >= global_bar_gift2_limit %}
-                            <img src="https://qureskincaredns-main.com/sections/global/drawer/images/completed.svg" alt="shipping" />
+                            <img src="https://qureskincaredns.com/sections/global/drawer/images/completed.svg" alt="shipping" />
                         {% else %}
                             <img src="{{ global_bar_gift2_image | image_url }}" alt="{{ global_bar_gift2_title | escape }}" />
                         {% endif %}
