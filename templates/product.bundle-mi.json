@@ -353,6 +353,11 @@
         "button_url": ""
       }
     },
+    "device_comparison_1_JCGw3B": {
+      "type": "device-comparison-1",
+      "name": "t:sections.device-comparison-1.name",
+      "settings": {}
+    },
     "you_may_also_like_uZi1bC": {
       "type": "product-you-may-also-like",
       "settings": {}
@@ -367,6 +372,7 @@
     "carousel_PYn3Tz",
     "trusted_reviews_mRLHtt",
     "how_to_use_xxxaxK",
+    "device_comparison_1_JCGw3B",
     "you_may_also_like_uZi1bC"
   ]
 }
