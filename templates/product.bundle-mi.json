@@ -62,6 +62,16 @@
       "name": "t:sections.slider-featured-in.name",
       "settings": {}
     },
+    "led_benefits_fCGiVb": {
+      "type": "led-benefits",
+      "name": "t:sections.led-benefits.name",
+      "settings": {
+        "background_color": "",
+        "heading": "",
+        "button_label": "",
+        "button_url": ""
+      }
+    },
     "trusted_reviews_mRLHtt": {
       "type": "trusted-reviews",
       "blocks": {
@@ -131,6 +141,7 @@
   "order": [
     "product-bundle",
     "slider_featured_in_DDaUTN",
+    "led_benefits_fCGiVb",
     "trusted_reviews_mRLHtt",
     "you_may_also_like_uZi1bC"
   ]
