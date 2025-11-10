@@ -49,17 +49,12 @@
                 {% assign twp_count = 0 %}
                 {% for block in section.blocks %}
                     {% if block.type == 'text_with_progress' %}
-                        {% assign twp_count = twp_count | plus: 1 %}
                             <li>
                                 {% if block.settings.percent_value != blank %}
-                                    {% if twp_count == 1 %}
-                                        <div class="circle-percent"><span>{{ block.settings.percent_value }}</span></div>
-                                    {% else %}
-                                        <div class="circle-percent circle-percent-90"><span>{{ block.settings.percent_value }}</span></div>
-                                    {% endif %}
+                                        <div class="circle-percent" style="--percent-value: {{ block.settings.percent_value | remove: '%' }};"><span>{{ block.settings.percent_value }}</span></div>
                                 {% endif %}
                                 {% if block.settings.text != blank %}
-                                    <span></span>{{ block.settings.text }}</span>
+                                    <span>{{ block.settings.text }}</span>
                                 {% endif %}
                             </li>
                     {% endif %}
