@@ -65,8 +65,8 @@
     "black_friday_turn_on": true,
     "black_friday_discount_percent": 0,
     "enable_gamification": true,
-    "event_start_date": "2025-11-01",
-    "event_end_date": "2025-11-11",
+    "event_start_date": "2025-11-05",
+    "event_end_date": "2025-11-15",
     "content_for_index": [],
     "blocks": {
       "2786716548061469553": {
