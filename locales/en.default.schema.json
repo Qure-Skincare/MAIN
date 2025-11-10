@@ -11,6 +11,7 @@
     "common": {
         "compare-price": "Compare price",
         "discount-price": "Discount price",
+        "compare": "Compare",
         "show_discount": "Show discount",
         "reviews-videos": "Reviews-videos",
         "money-back": "Money Back",
@@ -219,6 +220,53 @@
         },
         "bf-page-banner": {
             "name": "Black Friday page banner"
+        },
+        "hair-growth-helmet-image-slider": {
+            "name": "Image slider for hair growth helmet"
+        },
+        "hair-growth-helmet-banner-with-modal": {
+            "name": "Banner with modal for hair growth helmet"
+        },
+        "hair-growth-helmet-feature-carousel": {
+            "name": "Feature carousel for hair growth helmet"
+        },
+        "hair-growth-helmet-usage-guide": {
+            "name": "Usage guide for hair growth helmet"
+        },
+        "hair-growth-helmet-product-comparison": {
+            "name": "Product comparison for hair growth helmet",
+            "blocks": {
+                "header-prof": {
+                    "name": "Header for iRestore Professional"
+                },
+                "header-hair-growth": {
+                    "name": "Header for CurrentBody Hair Growth Helmet"
+                },
+                "header-red-light-hat": {
+                    "name": "Header for HigherDose Red Light Hat"
+                },    
+                "text-prof": {
+                    "name": "Text for iRestore Professional"
+                },
+                "text-hair-growth": {
+                    "name": "Text for CurrentBody Hair Growth Helmet"
+                },
+                "text-red-light-hat": {
+                    "name": "Text for HigherDose Red Light Hat"
+                },
+                "compare-prof": {
+                    "name": "Compare iRestore Professional"
+                },
+                "compare-hair-growth": {
+                    "name": "Compare CurrentBody Hair Growth Helmet"
+                },
+                "compare-red-light-hat": {
+                    "name": "Compare HigherDose Red Light Hat"
+                }    
+            }
+        },
+        "results-slider": {
+            "name": "Results slider"
         },
         "cta-cards": {
             "name": "CTA cards"

@@ -33,6 +33,23 @@
       "exclude_text": "*Excludes bundles",
       "percent_value": "26%"
     },
+    "hair-growth-helmet-banner-with-modal": {
+      "button_image": "https://qureskincaredns.com/assets/images/cross_black.svg"
+    },
+    "hair-growth-helmet-usage-guide": {
+      "wathch_video_text": "Watch the video",
+      "play_icon": "https://qureskincaredns.com/alex/sections/isolated/across-slider/images/play-icon.svg",
+      "cross_icon": "https://qureskincaredns.com/assets/images/cross_black.svg"
+    },
+    "hair-growth-helmet-product-comparison": {
+      "compare_text": "Compare with",
+      "prof_heading": "iRestore Professional",
+      "hair_growth_heading": "CurrentBody Hair Growth Helmet",
+      "red_light_hat_text": "HigherDose Red Light Hat",
+      "qure_logo": "https://qureskincaredns.com/assets/images/qure_logo..svg",
+      "irestore_prof_logo": "https://qureskincaredns.com/alex/sections/isolated/how-compares/images/irestore.webp",
+      "currenbody_logo": "https://qureskincaredns.com/alex/sections/isolated/how-compares/images/currentbody.webp"
+    },
     "car-giveaway-page-banner": {
       "cta_text": "Join Us In Celebrating the ",
       "qure_logo": "https://qureskincaredns.com/sections/isolated/page-banner/images/qure_logo.svg",

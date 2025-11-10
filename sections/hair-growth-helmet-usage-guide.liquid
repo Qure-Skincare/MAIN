@@ -1,0 +1,121 @@
+{% doc %}
+    Renders an usage guide section for hair growth helmet page.
+{% enddoc %}
+
+<link rel="stylesheet" href="https://qureskincaredns.com/alex/sections/isolated/across-slider/across-slider.css">
+<div class="across-slider steps-to-use" id="steps-to-use">
+    <div class="across-slider__content">
+        <div class="across-slider__header container">
+            {% if section.settings.heading != blank %}
+                {{ section.settings.heading }}
+            {% endif %}
+            {% if section.settings.youtube_url != blank %}
+                <a class="popup-youtube lvideo" data-url="{{ section.settings.youtube_url }}">
+                    {{ 'sections.hair-growth-helmet-usage-guide.wathch_video_text' | t }}
+                    <img src="{{ 'sections.hair-growth-helmet-usage-guide.play_icon' | t }}" alt="{{ 'sections.hair-growth-helmet-usage-guide.play_icon.alt' | t }}" />
+                </a>
+            {% endif %}
+        </div>
+        <div class="across-slider__carousel">
+            <div class="swiper qure__swiper" id="qure__swiper-steps-to-use" data-section-id="steps-to-use"
+                data-mobile="1.1" data-tablet="1.8" data-desktop="2.2" data-autoplay="false" data-loop="false"
+                data-spacing="-6" data-spacingmob="-18" data-pagination-fraction="true"
+                data-arrowleft="steps-to-use-arrow-left" data-arrowright="steps-to-use-arrow-right">
+                <div class="swiper-wrapper">
+                    {% for block in section.blocks %}
+                        {% if block.type == 'slider' %}
+                            <div class="swiper-slide">
+                                <div class="steps-to-use__item" data-number="{{ forloop.index }}">
+                                    <picture>
+                                        <source media="(min-width:768px)"
+                                        {% if block.settings.image != blank %}
+                                            srcset="{{ block.settings.image | image_url }}">
+                                        {% endif %}
+                                        {% if block.settings.image_mobile != blank %}
+                                            <img src="{{ block.settings.image_mobile | image_url }}" alt="{{ block.settings.image_mobile.alt | escape }}" />
+                                        {% endif %}
+                                    </picture>
+                                    {% if block.settings.heading != blank %}
+                                        {{ block.settings.heading }}
+                                    {% endif %}
+                                    {% if block.settings.text != blank %}
+                                        {{ block.settings.text }}
+                                    {% endif %}
+                                </div>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                <div class="swiper-arrows-with-pagination">
+                    <div class="qure-swiper-button-prev qure-swiper-arrow steps-to-use-arrow-left"><i
+                            class="fa-regular fa-angle-left"></i></div>
+                    <div class="swiper-pagination"></div>
+                    <div class="qure-swiper-button-next qure-swiper-arrow steps-to-use-arrow-right"><i
+                            class="fa-regular fa-angle-right"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal steps-to-use-modal fade" id="steps-to-use-modal">
+    <div class="modal-dialog">
+        <div class="modal-content steps-to-use-modal__content">
+            <button type="button" class="btn-close" data-bs-dismiss="modal">
+                <img src="{{ 'sections.hair-growth-helmet-usage-guide.cross_icon' | t }}" alt="{{ 'sections.hair-growth-helmet-usage-guide.cross_icon.alt' | t }}" />
+            </button>
+        </div>
+    </div>
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        loadScriptOnce('main-slider', 'https://qureskincaredns.com/assets/js/main-slider.js');
+        loadScriptOnce('youtube-popup', 'https://qureskincaredns.com/assets/js/yt-popup.js');
+    });
+</script>
+
+{%  schema  %}
+{
+  "name": "t:sections.hair-growth-helmet-usage-guide.name",
+  "settings": [
+    {
+        "type": "richtext",
+        "id": "heading",
+        "label": "t:common.header"
+    },
+    {
+        "type": "url",
+        "id": "youtube_url",
+        "label": "t:common.youtube-url"
+    }
+  ],
+  "blocks": [
+    {
+        "type": "slider",
+        "name": "t:common.slider",
+        "settings": [
+            {
+                "type": "richtext",
+                "id": "heading",
+                "label": "t:common.header"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "t:common.text"
+            },
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "t:common.image"
+            },
+            {
+                "type": "image_picker",
+                "id": "image_mobile",
+                "label": "t:common.image-mobile"
+            }
+        ]
+    }
+  ]
+}
+
+{% endschema %}
