@@ -16,7 +16,8 @@
       "settings": {
         "heading": "FREE Worldwide Shipping Above $100",
         "button-label": "SHOP NOW",
-        "button-url": "#"
+        "button-url": "#",
+        "show": false
       }
     },
     "clean_water_KQtjt9": {
@@ -138,7 +139,11 @@
           }
         }
       },
-      "block_order": ["carousel_JiXKEh", "carousel_gMY6JG", "carousel_PUe6Gj"],
+      "block_order": [
+        "carousel_JiXKEh",
+        "carousel_gMY6JG",
+        "carousel_PUe6Gj"
+      ],
       "name": "t:sections.qure-filters-offer-slider-with-text.name",
       "settings": {
         "heading": "The 3 biggest skin and hair issues? Blame your water.",
@@ -388,7 +393,11 @@
           }
         }
       },
-      "block_order": ["value_B8ER4i", "value_E6RppN", "value_izxaxF"],
+      "block_order": [
+        "value_B8ER4i",
+        "value_E6RppN",
+        "value_izxaxF"
+      ],
       "name": "t:sections.improve-skin-hydration.name",
       "settings": {
         "heading": "Clinically proven to improve skin hydration in just 4 weeks",
@@ -442,11 +451,16 @@
           }
         }
       },
-      "block_order": ["slider_6UfcXz", "slider_7mtD8L", "slider_KKJAJe"],
+      "block_order": [
+        "slider_6UfcXz",
+        "slider_7mtD8L",
+        "slider_KKJAJe"
+      ],
       "name": "t:sections.trusted-reviews.name",
       "settings": {
         "background_color": "",
         "heading": "Your transformation awaits",
+        "text": "",
         "text_mobile": "<p>See the power of Qure filter technology, now available for your shower and faucet. </p>",
         "button_label": "",
         "button_url": ""
@@ -456,6 +470,7 @@
       "type": "trusted-recommended",
       "name": "t:sections.trusted-recommended.name",
       "settings": {
+        "background_color": "#ffffff",
         "heading": "Trusted and Recommended by Experts",
         "text": "<p>“How do you<strong> reduce the things in your water that are causing issues</strong> with your skin?</p><p>This Qure filter is incredible –<strong> it’s the only filter I personally use</strong> to [reduce] chlorine and anything else that’s going to make your water harsh for your skin.”</p>",
         "image_text": "",
@@ -638,6 +653,7 @@
         "image_with_text_JmWAjP",
         "image_with_text_7dnhdk"
       ],
+      "disabled": true,
       "name": "t:sections.information-about-water.name",
       "settings": {
         "heading": "Do you know what’s in your water?",
@@ -669,7 +685,9 @@
           }
         }
       },
-      "block_order": ["claim_MTiLze"],
+      "block_order": [
+        "claim_MTiLze"
+      ],
       "name": "t:sections.featured-product-bundle.name",
       "settings": {
         "heading": "Protect your skin & save $129",
@@ -751,7 +769,9 @@
         "heading": "Have questions?",
         "text": "Don’t see your question?",
         "button_label": "Ask us",
-        "button_url": ""
+        "button_url": "",
+        "terms-conditions": false,
+        "promotional_terms_and_conditions": ""
       }
     },
     "sticky_cta_SrchB9": {
@@ -772,7 +792,10 @@
           }
         }
       },
-      "block_order": ["variant_43xxGi", "variant_45xfGi"],
+      "block_order": [
+        "variant_43xxGi",
+        "variant_45xfGi"
+      ],
       "name": "t:sections.sticky-button-variants.name",
       "settings": {
         "heading": "",

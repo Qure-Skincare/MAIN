@@ -97,9 +97,14 @@
    </div>
 </header>
 
+
+
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-        loadScriptOnce('carousel', 'https://qureskincaredns.com/sections/global/header/js/carousel.js');
-        loadScriptOnce('slider-with-thumb', 'https://qureskincaredns.com/assets/js/slider-with-thumb.js');
+      loadScriptOnce('carousel', 'https://qureskincaredns.com/sections/global/header/js/carousel.js');
+      loadScriptOnce('slider-with-thumb', 'https://qureskincaredns.com/assets/js/slider-with-thumb.js');
+      {% if settings.header_scrolling_hide == true %}
+      loadScriptOnce('header', 'https://qureskincaredns.com/shopify/js/header.js')
+      {% endif %}
     });
 </script>

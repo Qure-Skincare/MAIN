@@ -24,8 +24,8 @@
       "custom_css": [],
       "name": "t:common.buy-box",
       "settings": {
-        "heading": "Save Up to 57% on Certified Skincare Solutions",
-        "description": "<p>Backed by the most respected peer-reviewed Dermatologist Journals and scientific studies that prove; Qure’s skincare works.</p>",
+        "heading": "Get Your Best Skin Yet — Save up to 57% on Holiday Bundles.",
+        "description": "",
         "bf_link": "#",
         "button-label": "SHOP & SAVE UP TO 57%",
         "button-url": "#purchase-form-bundle"
@@ -423,6 +423,7 @@
       "block_order": [
         "take_quiz_n7qDWC"
       ],
+      "disabled": true,
       "name": "t:sections.index-quiz.name",
       "settings": {
         "heading": "Need help finding your new routine?",
