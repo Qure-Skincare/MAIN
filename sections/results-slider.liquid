@@ -51,7 +51,7 @@
                     {% if block.type == 'text_with_progress' %}
                             <li>
                                 {% if block.settings.percent_value != blank %}
-                                        <div class="circle-percent" style="--percent-value: {{ block.settings.percent_value | remove: '%' }};"><span>{{ block.settings.percent_value }}</span></div>
+                                    <div class="circle-percent" style="--percent-value: {{ block.settings.percent_value | remove: '%' }};"><span>{{ block.settings.percent_value }}</span></div>
                                 {% endif %}
                                 {% if block.settings.text != blank %}
                                     <span>{{ block.settings.text }}</span>
