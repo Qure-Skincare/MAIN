@@ -28,7 +28,9 @@
         },
         "money-back": {
           "type": "money-back",
-          "settings": {}
+          "settings": {
+            "text": "You deserve results you can see. Try Micro-Infusion for 90 days, and if you’re not satisfied, simply get in touch with our team for a full refund!"
+          }
         },
         "reviews-videos": {
           "type": "reviews-videos",

@@ -24,8 +24,10 @@
           <img src="https://qureskincaredns.com/sections/isolated/micro-infusion-pdp/images/{{ 'product.settings.money-back.image' | t }}" alt="moneyback" class="img-fluid">
        </div>
        <div class="moneyback_guarantee_content">
-          <p class="fs-16 fs-md-18"><strong>{{ 'product.settings.money-back.header' | t }}</strong></p>
-          <p class="fs-14 fs-md-16">{{ 'product.settings.money-back.text' | t }}</p>
+            <p class="fs-16 fs-md-18"><strong>{{ 'product.settings.money-back.header' | t }}</strong></p>
+            {% if block.settings.text != blank %}
+                <p class="fs-14 fs-md-16">{{ block.settings.text }}</p>
+            {% endif %}
        </div>
     </div>
  </div>

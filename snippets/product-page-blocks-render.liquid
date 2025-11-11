@@ -41,8 +41,15 @@
                     {% render 'product-page-next-ships', section: section, block: block %}
                 {% when 'button' %}
                     {% render 'product-page-buy-button', product_price: null, product_variant_id: product_variant_id, section: section %}
-                    {% render 'product-page-buy-button-payments', product_price_divided: product_price_divided %}
-                    {% render 'product-page-buy-button-bottom' %}
+
+                    {% unless block.settings.hide_payments %}
+                        {% render 'product-page-buy-button-payments', product_price_divided: product_price_divided %}
+                    {% endunless %}
+
+                    {% unless block.settings.hide_bottom %}
+                        {% render 'product-page-buy-button-bottom' %}
+                    {% endunless %}
+                    
                 {% when 'video' %}
                     {% render 'page-video', section: section, block: block %}
                 {% when 'section' %}

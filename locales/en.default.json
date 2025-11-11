@@ -33,6 +33,14 @@
       "exclude_text": "*Excludes bundles",
       "percent_value": "26%"
     },
+    "hair-growth-helmet": {
+      "header": {
+        "benefits_html": "<ul class='helmet-home__benefits'><li>FDA Cleared</li><li>Wireless</li><li>Easy to Use</li></ul>",
+        "preorder": "Reserve now for guaranteed first shipment (Jan. 2026)",
+        "info_html": "<p>90% of users experienced significant improvement to their hair line.</p><strong>Will Q-Renew work for me?</strong>"
+      }
+    },
+
     "hair-growth-helmet-banner-with-modal": {
       "button_image": "https://qureskincaredns.com/assets/images/cross_black.svg"
     },
@@ -388,7 +396,6 @@
       "money-back": {
         "image": "moneyback_90.webp",
         "header": "90-Day Money Back Guarantee",
-        "text": "You deserve results you can see. Try Micro-Infusion for 90 days, and if you’re not satisfied, simply get in touch with our team for a full refund!"
       },
       "reviews-videos": {
         "header": "Hear What People Are Saying About Qure"

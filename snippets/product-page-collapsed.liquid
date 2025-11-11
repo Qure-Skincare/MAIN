@@ -20,9 +20,14 @@
     {% elsif page.metafields.custom.how_it_works != blank %}
         {% render 'product-page-collapsed-item' input: page.metafields.custom.how_it_works, index: 'second', title: 'How It Works' %}
     {% endif %}
+    {% if product.metafields.custom.what_to_expect != blank %}
+        {% render 'product-page-collapsed-item' input: product.metafields.custom.what_to_expect, index: 'third', title: 'What To Expect' %}
+    {% elsif page.metafields.custom.what_to_expect != blank %}
+        {% render 'product-page-collapsed-item' input: page.metafields.custom.what_to_expect, index: 'third', title: 'What To Expect' %}
+    {% endif %}
     {% if product.metafields.custom.key_benefits != blank %}
-        {% render 'product-page-collapsed-item' input: product.metafields.custom.what_s_included, index: 'third', title: 'What’s Included' %}
+        {% render 'product-page-collapsed-item' input: product.metafields.custom.what_s_included, index: 'fourth', title: 'What’s Included' %}
     {% elsif page.metafields.custom.key_benefits != blank %}
-        {% render 'product-page-collapsed-item' input: page.metafields.custom.what_s_included, index: 'third', title: 'What’s Included' %}
+        {% render 'product-page-collapsed-item' input: page.metafields.custom.what_s_included, index: 'fourth', title: 'What’s Included' %}
     {% endif %}
 </div>
