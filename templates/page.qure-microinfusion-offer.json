@@ -87,6 +87,7 @@
       "name": "t:sections.page-header.name",
       "settings": {
         "rating": "<p><strong>4.8</strong>/5 Rated by Customers</p>",
+        "rating-url": "#trusted-reviews",
         "heading": "Transform dull looking skin with Micro-Infusion Facial System",
         "description": "<ul><li>Helps reduce appearance of fine lines, smooth texture whilst helping to infuse active ingredients into your skin.</li><li>Virtually painless and performed in the comfort and convenience of your home.</li><li>Minimal to no downtime with visible results.</li></ul>",
         "button-label": "BUY NOW & SAVE UP TO 70%",
