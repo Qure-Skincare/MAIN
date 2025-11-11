@@ -383,6 +383,7 @@
         },
         "slider_eV7nBd": {
           "type": "slider",
+          "disabled": true,
           "settings": {
             "heading": "Healthier-looking glow",
             "text": "<p>“I am really stunned by how well this product works. I have had professional micro-needling and I wanted the benefits without the downtime. I  did my treatment, went to bed and woke up the next morning and was ready to go. My skin looks better than it has in years.”</p>",
