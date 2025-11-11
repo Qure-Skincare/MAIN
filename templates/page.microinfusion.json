@@ -150,6 +150,7 @@
       "name": "t:sections.page-header.name",
       "settings": {
         "rating": "<p><strong>4.8</strong>/5 Rated by Customers</p>",
+        "rating-url": "",
         "heading": "Refresh the look of dull skin with the Micro-Infusion Facial System",
         "description": "<ul><li>Helps reduce the appearance of fine lines and smooth texture while helping to infuse active ingredients onto the skin’s surface.</li><li>Virtually painless and performed in the comfort and convenience of your home.</li><li>Minimal to no downtime, with visible improvements reported by customers.</li></ul>",
         "button-label": "",
@@ -869,6 +870,17 @@
             "image": "shopify://shop_images/trusted_img_7.webp"
           }
         },
+        "slider_tGGWhz": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>“If you’re into dermatologist-approved treatments that actually work, you’ll love this one.”</p>",
+            "text": "<p>Dr. Leela Athalye</p>",
+            "sub_text": "<p>Board Certified Dermatologist</p>",
+            "url": "5ikykvqcud",
+            "checkbox": false,
+            "image": "shopify://shop_images/Image_28.png"
+          }
+        },
         "slider_VqM8Qm": {
           "type": "slider",
           "disabled": true,
@@ -889,6 +901,7 @@
         "slider_eMVGVa",
         "slider_QwHKTQ",
         "slider_7TUNBU",
+        "slider_tGGWhz",
         "slider_VqM8Qm"
       ],
       "name": "t:sections.video-slider.name",
