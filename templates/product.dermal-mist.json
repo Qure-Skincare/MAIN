@@ -18,6 +18,7 @@
           "settings": {}
         },
         "price_A11": {
+          "disabled": true,
           "type": "price",
           "settings": {}
         },
@@ -25,9 +26,11 @@
           "type": "description",
           "settings": {}
         },
-        "button_A9": {
-          "type": "button",
-          "settings": {}
+        "section_A0": {
+          "type": "section",
+          "settings": {
+            "section_id": "purchase-form-landing"
+          }
         },
         "limited_offer_A8": {
           "type": "limited-offer",
@@ -74,7 +77,7 @@
         "black_friday_discount_MCCNDL",
         "price_A11",
         "description_iPBNaS",
-        "button_A9",
+        "section_A0",
         "limited_offer_A8",
         "nextships_VCb3mM",
         "jumpto_gVULpr",
@@ -88,6 +91,98 @@
         "description": "<ul><li>A hypochlorous acid mist that purifies skin, kills breakout-causing bacteria, and supports barrier repair.</li><li>Use on clean skin to calm irritation, reduce redness, or as a no-rinse refresher throughout the day.</li><li>Comes as a duo: 100ml for daily use and a travel-friendly 15ml.</li></ul>",
         "reserved": false,
         "soldout": false
+      }
+    },
+    "purchase-form-landing": {
+      "type": "purchase-form-landing",
+      "blocks": {
+        "nextships_4xp7uM": {
+          "type": "nextships",
+          "settings": {
+            "date": "25 September",
+            "percent": 55,
+            "date_soldout": "28 July",
+            "date_reserved": "3 August"
+          }
+        },
+        "type_hHPdgJ": {
+          "type": "type",
+          "settings": {}
+        },
+        "product_type_QKQhNr": {
+          "type": "product_type",
+          "settings": {
+            "heading": "Micro-Infusion Targeted Patches",
+            "preselected": false
+          }
+        },
+        "product_gbPf3J": {
+          "type": "product",
+          "settings": {
+            "product": "derma-mist-6-month-bundle",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "preselected": true,
+            "heading": "6 Months Supply",
+            "subheading": "(3 bottles)",
+            "image": "shopify://shop_images/derm_trio.webp",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        },
+        "product_NEgEkN": {
+          "type": "product",
+          "settings": {
+            "product": "dermal-mist-4-month-bundle",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "preselected": false,
+            "heading": "4 Months Supply",
+            "subheading": "(2 bottles)",
+            "image": "shopify://shop_images/derm_duo.webp",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        },
+        "product_RBCPe8": {
+          "type": "product",
+          "settings": {
+            "product": "dermal-mist",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "preselected": false,
+            "heading": "2 Months Supply",
+            "subheading": "(1 bottle)",
+            "image": "shopify://shop_images/derm_single.webp",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        }
+      },
+      "block_order": [
+        "nextships_4xp7uM",
+        "type_hHPdgJ",
+        "product_type_QKQhNr",
+        "product_gbPf3J",
+        "product_NEgEkN",
+        "product_RBCPe8"
+      ],
+      "settings": {
+        "form_name": "purchase-form-landing",
+        "hide_types": true,
+        "type": "list"
       }
     },
     "logos_mUyKFd": {
@@ -474,6 +569,7 @@
   },
   "order": [
     "product_header_c7eEXx",
+    "purchase-form-landing",
     "logos_mUyKFd",
     "banner_with_text_3trYVA",
     "how_to_use_picture_WHyQTm",
