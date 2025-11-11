@@ -83,7 +83,6 @@
 
     {% if cart_item_final_price != cart_item_original_price %}
       {% assign discount_exists = true %}
-      {% assign cart_item_compare_price = cart_item_original_price %}
       {% assign cart_item_price = cart_item_final_price %}
     {% endif %}
 

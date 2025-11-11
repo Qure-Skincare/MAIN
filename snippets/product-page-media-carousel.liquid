@@ -58,6 +58,9 @@
                 <div class="swiper-slide">
                     <div class="{{ classname }}">
                         <img src="{{ media | img_url: size }}" alt="{{ title }}" data-product-handle="{{ title | escape }}" class="img-fluid" />
+                        {% if forloop.index == 1 and thumbnails == false and input_media_carousel.coming_soon.value == true %}
+                            <div class="coming-soon">{{ 'product.settings.coming_soon' | t }}</div>
+                        {% endif %}
                     </div>
                 </div>
             {% endif %}

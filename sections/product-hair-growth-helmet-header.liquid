@@ -21,40 +21,50 @@
                             <h1 class="helmet-home__header-title">{{ section.settings.heading }}</h1>
                         {% endif %}
 
-                        {% include 'product-page-blocks-render', allowed_types: 'price' %}
+                        {% if black_friday_discount_percent > 0 %}
+                            <div class="helmet-home__header-price">
+                                <div class="price-offer">
+                                    <div class="price-offer__main">
+                                        <div class="price-offer__current">{{ product_black_friday_price }}</div>
+                                        <div class="price-offer__discount">{{ 'product.settings.save' | t }} {{ product_black_friday_price_save }}</div>
+                                        <div class="price-offer__value">({{ 'black-friday.settings.total-value' | t }} {{ product_before_price }})</div>
+                                    </div>
+                                    <div class="price-offer__bf">
+                                        <div class="price-offer__bf-label">{{ 'black-friday.settings.header' | t }}</div>
+                                        <div class="price-offer__bf-discont">{{ 'product.settings.save' | t }} {{ black_friday_discount }}%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        {% else %}
+                            {% include 'product-page-blocks-render', allowed_types: 'price' %}
+                        {% endif %}
                     </div>
 
                     {{ 'sections.hair-growth-helmet.header.benefits_html' | t }}
 
-                    {% include 'product-page-blocks-render', allowed_types: 'description' %}
-                    {% include 'product-page-blocks-render', allowed_types: 'button' %}
+                    {% include 'product-page-blocks-render', allowed_types: 'description,button' %}
 
-                    <div class="helmet-home__ordering">
-                        <div class="pre-order-info">
-                            <div class="pre-order-info__status">Available for Pre-Order</div>
-                            <div class="pre-order-info__expected" data-bs-toggle="modal" data-bs-target="#shipment-modal">
-                                Expected Jan. 2026
-                                <img src="alex/sections/isolated/helmet-home/images/expected-arrow.svg" alt="" />
+                    {% if section.settings.reserved == true %}
+                        <div class="helmet-home__ordering">
+                            <div class="pre-order-info">
+                                <div class="pre-order-info__status">{{ 'sections.hair-growth-helmet.header.reserve' | t }}</div>
+                                <div class="pre-order-info__expected" data-bs-toggle="modal" data-bs-target="#shipment-modal">
+                                    {{ 'sections.hair-growth-helmet.header.reserve_date' | t }}
+                                    <img src="https://qureskincaredns.com/alex/sections/isolated/helmet-home/images/expected-arrow.svg" alt="expected-arrow" />
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="helmet-home__ordering">
-                        <button type="button" class="btn btn--light" data-bs-toggle="modal" data-bs-target="#email-modal">
-                            Join the Waitlist
-                            <img src="alex/sections/isolated/helmet-home/images/email-icon.svg" alt="" />
-                        </button>
-                        <div class="pre-order-info">
-                            <div class="pre-order-info__status">Unavailable</div>
-                            <div class="pre-order-info__expected">Expected Jan. 2026</div>
+                        <div class="helmet-home__ordering">
+                            <button type="button" class="btn btn--light" data-bs-toggle="modal" data-bs-target="#email-modal">
+                                {{ 'sections.hair-growth-helmet.header.whitelist' | t }}
+                                <img src="https://qureskincaredns.com/alex/sections/isolated/helmet-home/images/email-icon.svg" alt="email-icon" />
+                            </button>
+                            <div class="pre-order-info">
+                                <div class="pre-order-info__status">{{ 'sections.hair-growth-helmet.header.unavailable' | t }}</div>
+                                <div class="pre-order-info__expected">{{ 'sections.hair-growth-helmet.header.whitelist_date' | t }}</div>
+                            </div>
                         </div>
-                    </div>
-
-                    {% comment %} <div class="helmet-home__button">
-                        <div class="info" data-bs-toggle="modal" data-bs-target="#shipment-modal">
-                            {{ 'sections.hair-growth-helmet.header.preorder' | t }}
-                            <img src="https://qureskincaredns.com/assets/images/info_icon.svg" alt="info_icon" />
-                        </div>
-                    </div> {% endcomment %}
+                    {% endif %}
 
                     <div class="helmet-home__users-experienced" data-bs-toggle="modal" data-bs-target="#info-modal">
                         <img src="https://qureskincaredns.com/alex/sections/isolated/helmet-home/images/qure-headgear-1589-2.webp" alt="">
@@ -103,7 +113,7 @@
                     <div class="swiper helmet-home__gallery-thumbs d-md-none" id="helmet-gallery-thumbs">
                         <div class="swiper-wrapper">
                             {% if product.metafields.custom.carousel_media.value != blank %}
-                                {% render 'product-page-media-carousel', input_media_carousel: product.metafields.custom.carousel_media.value, classname: 'slide-image', size: '720x' %}
+                                {% render 'product-page-media-carousel', input_media_carousel: product.metafields.custom.carousel_media.value, classname: 'slide-thumbnail', size: '240x', thumbnails: true %}
                             {% endif %}
                         </div>
                     </div>
@@ -134,10 +144,10 @@
                 <p>Orders shipped outside the U.S. may be subject to import duties, customs fees, or local taxes upon
                     arrival. These are determined by your country’s customs authority and are the responsibility of the
                     customer.</p>
-                <button type="button" class="btn btn--primary">Pre-Order Now</button>
+                {% include 'product-page-blocks-render', allowed_types: 'button' %}
             </div>
             <button type="button" class="btn-close" data-bs-dismiss="modal">
-                <img src="https://qureskincaredns.com/assets/images/cross_black.svg" alt="" />
+                <img src="https://qureskincaredns.com/assets/images/cross_black.svg" alt="cross black" />
             </button>
         </div>
     </div>
@@ -249,7 +259,7 @@
                 <div class="klaviyo-form-QQP9fe"></div>
             </div>
             <button type="button" class="btn-close" data-bs-dismiss="modal">
-                <img src="assets/images/cross_black.svg" alt="" />
+                <img src="https://qureskincaredns.com/assets/images/cross_black.svg" alt="cross_black" />
             </button>
         </div>
     </div>
