@@ -28,9 +28,7 @@
         },
         "money-back": {
           "type": "money-back",
-          "settings": {
-            "text": "You deserve results you can see. Try Micro-Infusion for 90 days, and if you’re not satisfied, simply get in touch with our team for a full refund!"
-          }
+          "settings": {}
         },
         "reviews-videos": {
           "type": "reviews-videos",
@@ -65,6 +63,9 @@
         "limited_offer_A8",
         "nextships_BtDkBp"
       ],
+      "custom_css": [
+        ".benefits-list {display:none !important;} .bf-limited-time-banner {display:none !important;} @media (max-width: 600px) { .review_videos { margin-bottom: -20px !important; } }"
+      ],
       "name": "t:sections.product-header.name",
       "settings": {
         "seo_heading": "MICRO-INFUSION 7 MONTH SUPPLY",
@@ -74,10 +75,7 @@
         "description": "<p>Late nights. Long flights. Endless events. Meet your glow-to: Micro-Infusion Limited Edition. The cosmetic mirror case makes it easy to take your favorite treatments anywhere, keeping your skin hydrated wherever you are.<br/><br/>This <strong>Limited Edition Micro-Infusion Kit </strong>includes a cosmetic mirror case and a <strong>7-month supply.</strong></p>",
         "reserved": false,
         "soldout": false
-      },
-      "custom_css": [
-        ".benefits-list {display:none !important;} .bf-limited-time-banner {display:none !important;} @media (max-width: 600px) { .review_videos { margin-bottom: -20px !important; } }"
-      ]
+      }
     },
     "slider_featured_in_GrJ4Na": {
       "type": "slider-featured-in",
