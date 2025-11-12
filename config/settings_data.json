@@ -63,7 +63,7 @@
     "cart_upsell4_product": "neck-decolletage-led",
     "cart_upsell5_product": "micro-infusion-targeted-patches",
     "black_friday_turn_on": true,
-    "black_friday_discount_percent": 26,
+    "black_friday_discount_percent": 0,
     "enable_gamification": true,
     "event_start_date": "2025-11-05",
     "event_end_date": "2025-11-15",
