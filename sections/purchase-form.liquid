@@ -64,7 +64,8 @@
     </div>
 </div>
 
-<script src="https://qureskincaredns.com/shopify/js/purchase-form.js" data-form="{{ section.settings.form_name }}" data-section="{{ section.id }}" defer></script>
+{% comment %} AB TES 219 to 224 {% endcomment %}
+<script src="{{ 'purchase-form.js' | asset_url }} " data-form="{{ section.settings.form_name }}" data-section="{{ section.id }}" defer></script>
 
 {%- schema -%}
 {
@@ -83,10 +84,6 @@
                 {
                     "value": "list",
                     "label": "t:common.list"
-                },
-                {
-                    "value": "list_bf26",
-                    "label": "t:common.list_bf26"
                 }
             ],
             "default": "box"

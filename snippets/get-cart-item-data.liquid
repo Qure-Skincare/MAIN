@@ -49,8 +49,16 @@
     {% assign cart_item_properties = item.properties %}
     {% assign cart_item_final_price = item.final_price %}
     {% assign cart_item_original_price = item.original_price %}
-    {% assign cart_item_price = item.variant.price | times: item.quantity %}
-    {% assign cart_item_compare_price = item.variant.compare_at_price | times: item.quantity %}
+
+    {% comment %} AB TES 219 to 224 {% endcomment %}
+    {% assign cart_item_price = item.final_price | times: item.quantity %}
+    {% if item.properties._igcp %}
+      {% assign cart_item_compare_price = item.properties._igcp | times: item.quantity %}
+    {% else %}
+      {% assign cart_item_compare_price = item.variant.compare_at_price | times: item.quantity %}
+    {% endif %}
+    {% comment %} AB TES 219 to 224 {% endcomment %}
+    
     {% assign cart_item_selling_plan = item.selling_plan_allocation %}
     {% assign cart_item_selling_plan_name = item.selling_plan_allocation.selling_plan.name %}
     
@@ -79,14 +87,6 @@
     {% endif %}
 
 
-    {% comment %} discount {% endcomment %}
-
-    {% if cart_item_final_price != cart_item_original_price %}
-      {% assign discount_exists = true %}
-      {% assign cart_item_price = cart_item_final_price %}
-    {% endif %}
-
-
     {% comment %} full price discount {% endcomment %}
 
     {% if cart_item_final_price == 0 %}
@@ -94,7 +94,13 @@
       {% assign cart_item_compare_price = cart_item_price %}
       {% assign cart_item_price = 0 %}
     {% endif %}
-    
+
+    {% comment %} discount {% endcomment %}
+    {% if cart_item_final_price != cart_item_original_price %}
+      {% assign discount_exists = true %}
+      {% assign cart_item_compare_price = cart_item_original_price %}
+      {% assign cart_item_price = cart_item_final_price %}
+    {% endif %}
 
     {% comment %} item properties {% endcomment %}
 
