@@ -44,7 +44,7 @@
 
                     {% include 'product-page-blocks-render', allowed_types: 'description,button' %}
 
-                    {% if section.settings.whitelist == true %}
+                    {% if section.settings.reserved == true %}
                         <div class="helmet-home__ordering">
                             <div class="pre-order-info">
                                 <div class="pre-order-info__status">{{ 'sections.hair-growth-helmet.header.reserve' | t }}</div>
@@ -54,6 +54,9 @@
                                 </div>
                             </div>
                         </div>
+                    {% endif %}
+                    
+                    {% if section.settings.whitelist == true %}
                         <div class="helmet-home__ordering">
                             <button type="button" class="btn btn--light" data-bs-toggle="modal" data-bs-target="#email-modal">
                                 {{ 'sections.hair-growth-helmet.header.whitelist' | t }}
