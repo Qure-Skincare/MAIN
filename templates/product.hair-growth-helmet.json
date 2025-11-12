@@ -9,9 +9,91 @@
  */
 {
   "sections": {
-    "main": {
-      "type": "product-hair-growth-helmet-main",
-      "settings": {}
+    "header": {
+      "blocks": {
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_discount": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "button": {
+          "disabled": true,
+          "type": "button",
+          "settings": {
+            "hide_payments": true,
+            "hide_bottom": true
+          }
+        },
+        "money-back": {
+          "type": "money-back",
+          "settings": {
+            "text": "Hair growth isn't instant. That's why we offer a money-back guarantee. If you don't see real results, get a full refund - no questions asked."
+          }
+        },
+        "jumpto_results": {
+          "type": "jumpto",
+          "settings": {
+            "button-label": "The Results",
+            "button-url": "#see-the-change"
+          }
+        },
+        "jumpto_features": {
+          "type": "jumpto",
+          "settings": {
+            "button-label": "Features",
+            "button-url": "#light-technology"
+          }
+        },
+        "jumpto_user_study": {
+          "type": "jumpto",
+          "settings": {
+            "button-label": "User Study",
+            "button-url": "#backed-by-real-results"
+          }
+        },
+        "jumpto_how-to-use": {
+          "type": "jumpto",
+          "settings": {
+            "button-label": "How To Use",
+            "button-url": "#steps-to-use"
+          }
+        },
+        "jumpto_faqs": {
+          "type": "jumpto",
+          "settings": {
+            "button-label": "FAQs",
+            "button-url": "#faq"
+          }
+        }
+      },
+      "block_order": [
+        "price",
+        "description",
+        "button",
+        "money-back",
+        "jumpto_results",
+        "jumpto_features",
+        "jumpto_user_study",
+        "jumpto_how-to-use",
+        "jumpto_faqs"
+      ],
+      "type": "product-hair-growth-helmet-header",
+      "name": "t:sections.product-hair-growth-helmet-header.name",
+      "settings": {
+        "seo_heading": "Backed by Dermatologists",
+        "heading": "Q-Renew LLLT Helmet",
+        "rating": true,
+        "limited": false,
+        "description": "<p>Targeted LED light therapy and medical-grade lasers to support scalp health. Encourages the appearance of thicker-looking hair with <strong>just 12 minutes per session</strong>.</p>",
+        "whitelist": true,
+        "reserved": false,
+        "soldout": false
+      }
     },
     "hair_growth_helmet_image_slider_9KL6Kj": {
       "type": "hair-growth-helmet-image-slider",
@@ -582,7 +664,7 @@
     }
   },
   "order": [
-    "main",
+    "header",
     "hair_growth_helmet_image_slider_9KL6Kj",
     "hair_growth_helmet_banner_with_modal_BnqA3f",
     "hair_growth_helmet_feature_carousel_HtN8C4",

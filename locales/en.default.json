@@ -33,22 +33,25 @@
       "exclude_text": "*Excludes bundles",
       "percent_value": "26%"
     },
-    "hair-growth-helmet-banner-with-modal": {
-      "button_image": "https://qureskincaredns.com/assets/images/cross_black.svg"
-    },
-    "hair-growth-helmet-usage-guide": {
-      "wathch_video_text": "Watch the video",
-      "play_icon": "https://qureskincaredns.com/alex/sections/isolated/across-slider/images/play-icon.svg",
-      "cross_icon": "https://qureskincaredns.com/assets/images/cross_black.svg"
-    },
-    "hair-growth-helmet-product-comparison": {
-      "compare_text": "Compare with",
-      "prof_heading": "iRestore Professional",
-      "hair_growth_heading": "CurrentBody Hair Growth Helmet",
-      "red_light_hat_text": "HigherDose Red Light Hat",
-      "qure_logo": "https://qureskincaredns.com/assets/images/qure_logo..svg",
-      "irestore_prof_logo": "https://qureskincaredns.com/alex/sections/isolated/how-compares/images/irestore.webp",
-      "currenbody_logo": "https://qureskincaredns.com/alex/sections/isolated/how-compares/images/currentbody.webp"
+    "hair-growth-helmet": {
+      "header": {
+        "benefits_html": "<ul class='helmet-home__benefits'><li>FDA Cleared</li><li>Wireless</li><li>Easy to Use</li></ul>",
+        "info_html": "<p>90% of users experienced significant improvement to their hair line.</p><strong>Will Q-Renew work for me?</strong>",
+        "reserve": "Available for Reserve",
+        "reserve_date": "Expected Jan. 2026",
+        "whitelist": "Join the Waitlist",
+        "whitelist_date": "Expected Jan. 2026",
+        "unavailable": "Unavailable"
+      },
+      "guide": {
+        "watch_video": "Watch the video"
+      },
+      "product-comparison": {
+        "compare_text": "Compare with",
+        "prof_heading": "iRestore Professional",
+        "hair_growth_heading": "CurrentBody Hair Growth Helmet",
+        "red_light_hat_text": "HigherDose Red Light Hat"
+      }
     },
     "car-giveaway-page-banner": {
       "cta_text": "Join Us In Celebrating the ",
@@ -308,7 +311,8 @@
   },
   "black-friday": {
     "settings": {
-      "header": "Black Friday"
+      "header": "Black Friday",
+      "total-value": "Total value"
     },
     "menu": {
       "header": "Black Friday Bundles",
@@ -330,8 +334,10 @@
       "soldout-button-label": "Sold Out",
       "save": "SAVE",
       "buy-and-save-button-label": "Buy Now & Save",
+      "reserve-and-save-button-label": "Reserve Now & Save",
       "limited-edition": "Limited Edition",
       "discount-text": "OFF",
+      "coming_soon": "Coming soon",
       "buy-button-bottom": {
         "heading_html": "OR pay 4 monthly payments of <span class='pay_today'>{{ product_price_divided }}</span> with",
         "recommended_html": "<strong>50+ Board Certified Dermatologists</strong> recommend Qure to their patients. <a href='https://qureskincare.com/pages/derm-reviews' class='text-black text-decoration-underline'>See More</a>.",
@@ -388,7 +394,6 @@
       "money-back": {
         "image": "moneyback_90.webp",
         "header": "90-Day Money Back Guarantee",
-        "text": "You deserve results you can see. Try Micro-Infusion for 90 days, and if you’re not satisfied, simply get in touch with our team for a full refund!"
       },
       "reviews-videos": {
         "header": "Hear What People Are Saying About Qure"

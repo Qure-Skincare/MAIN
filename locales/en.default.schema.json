@@ -9,6 +9,7 @@
  */
  {
     "common": {
+        "whitelist": "Whitelist",
         "compare-price": "Compare price",
         "discount-price": "Discount price",
         "compare": "Compare",
@@ -55,8 +56,6 @@
         "right-text": "Right text",
         "left-header": "Left column header",
         "right-header": "Right column header",
-        "left-text": "Left text",
-        "right-text": "Right text",
         "tip": "Tip",
         "left-tip": "Left tip",
         "text": "Text",
@@ -71,7 +70,6 @@
         "style-color": "Style color",
         "color-switch": "Color switch",
         "color-switch-heading": "Color switch header",
-        "black": "Black",
         "green": "Green",
         "light-green": "Light green",
         "description": "Description",
@@ -221,6 +219,9 @@
         },
         "bf-page-banner": {
             "name": "Black Friday page banner"
+        },
+        "product-hair-growth-helmet-header": {
+            "name": "Helmet header"
         },
         "hair-growth-helmet-image-slider": {
             "name": "Image slider for hair growth helmet"
