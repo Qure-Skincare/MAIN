@@ -18,9 +18,11 @@
           "settings": {}
         },
         "price_A11": {
-          "disabled": true,
           "type": "price",
-          "settings": {}
+          "disabled": true,
+          "settings": {
+            "show_discount": false
+          }
         },
         "description_iPBNaS": {
           "type": "description",
@@ -88,6 +90,8 @@
       "settings": {
         "seo_heading": "HYPOCHLOROUS ACID SPRAY DERMAL MIST",
         "heading": "Purify your skin anytime, anywhere with Dermal Mist",
+        "rating": true,
+        "limited": false,
         "description": "<ul><li>A hypochlorous acid mist that purifies skin, kills breakout-causing bacteria, and supports barrier repair.</li><li>Use on clean skin to calm irritation, reduce redness, or as a no-rinse refresher throughout the day.</li><li>Comes as a duo: 100ml for daily use and a travel-friendly 15ml.</li></ul>",
         "reserved": false,
         "soldout": false
@@ -126,7 +130,7 @@
             "heading": "6 Months Supply",
             "subheading": "(3 bottles)",
             "image": "shopify://shop_images/derm_trio.webp",
-            "soldout": false,
+            "soldout": true,
             "preorder": false,
             "preorder_text": "",
             "preorder_date_soldout": "",
@@ -144,7 +148,7 @@
             "heading": "4 Months Supply",
             "subheading": "(2 bottles)",
             "image": "shopify://shop_images/derm_duo.webp",
-            "soldout": false,
+            "soldout": true,
             "preorder": false,
             "preorder_text": "",
             "preorder_date_soldout": "",
@@ -162,7 +166,7 @@
             "heading": "2 Months Supply",
             "subheading": "(1 bottle)",
             "image": "shopify://shop_images/derm_single.webp",
-            "soldout": false,
+            "soldout": true,
             "preorder": false,
             "preorder_text": "",
             "preorder_date_soldout": "",
@@ -318,6 +322,7 @@
       "type": "trusted-recommended",
       "name": "t:sections.trusted-recommended.name",
       "settings": {
+        "background_color": "#ffffff",
         "heading": "Trusted and Recommended by Experts",
         "text": "<p>“Dermal Mist is great for use after the gym, but the best use of hypocholorus acid is in combination with Qure’s Micro Infusion. <strong>Dermal Mist sanitizes and preps your skin,</strong> allowing ingredients placed on top to <strong>penetrate your skin even further.</strong>”</p>",
         "image_text": "<p>Dr. Shah & Dr. Maxfield <strong>Board certified dermatologists</strong></p>",
@@ -562,6 +567,7 @@
       "settings": {
         "heading": "Dermal Mist",
         "text": "93 reserved in last 48 hours",
+        "limited": false,
         "button-label": "",
         "button-url": ""
       }
