@@ -97,7 +97,7 @@
                                         </div>
                                     {% endif %}
                                 </div>
-                                {% render 'product-page-buy-button', product_price: null, product_variant_id: product_variant_id, section: block %}
+                                {% render 'product-page-buy-button', product_price: null, product_variant_id: product_variant_id, section: block, product_available: product_available %}
 
                                 <div class="text-center border-top mt-20 pt-20 star_text">
                                     {% if block.settings.review_image != blank %}

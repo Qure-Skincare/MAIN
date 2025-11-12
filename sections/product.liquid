@@ -27,7 +27,7 @@
                     {% endif %}
 
                     {% if product_price_original > 0 %}
-                        {% render 'product-page-buy-button', product_price: product_sale_price, product_variant_id: product_variant_id, section: blank %}
+                        {% render 'product-page-buy-button', product_price: product_sale_price, product_variant_id: product_variant_id, section: blank, product_available: product_available %}
                         {% render 'product-page-buy-button-payments', product_price_divided: product_price_divided %}
                         {% render 'product-page-buy-button-bottom' %}
                     {% endif %}
