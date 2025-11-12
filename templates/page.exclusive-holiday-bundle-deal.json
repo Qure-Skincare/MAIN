@@ -350,7 +350,7 @@
           "settings": {
             "product": "breakout-control-pro-bf25",
             "preselected": false,
-            "soldout": true,
+            "soldout": false,
             "reserved": false
           }
         },
@@ -359,7 +359,7 @@
           "settings": {
             "product": "breakout-control-advanced-bf25",
             "preselected": false,
-            "soldout": true,
+            "soldout": false,
             "reserved": false
           }
         },
@@ -368,7 +368,7 @@
           "settings": {
             "product": "breakout-control-essentials-bf25",
             "preselected": false,
-            "soldout": true,
+            "soldout": false,
             "reserved": false
           }
         },
