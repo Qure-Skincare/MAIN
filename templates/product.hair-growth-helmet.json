@@ -335,6 +335,7 @@
         "text_with_progress_F4bjaQ",
         "text_with_progress_Bf4pzi"
       ],
+      "disabled": true,
       "name": "t:sections.results-slider.name",
       "settings": {
         "heading": "<h2>Backed by real results</h2>",
