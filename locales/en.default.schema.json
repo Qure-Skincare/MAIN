@@ -9,6 +9,7 @@
  */
  {
     "common": {
+        "whitelist": "Whitelist",
         "compare-price": "Compare price",
         "discount-price": "Discount price",
         "compare": "Compare",
@@ -217,6 +218,9 @@
         },
         "bf-page-banner": {
             "name": "Black Friday page banner"
+        },
+        "product-hair-growth-helmet-header": {
+            "name": "Helmet header"
         },
         "hair-growth-helmet-image-slider": {
             "name": "Image slider for hair growth helmet"

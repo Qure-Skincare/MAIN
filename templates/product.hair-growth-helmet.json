@@ -22,6 +22,7 @@
           "settings": {}
         },
         "button": {
+          "disabled": true,
           "type": "button",
           "settings": {
             "hide_payments": true,
@@ -89,6 +90,7 @@
         "rating": true,
         "limited": false,
         "description": "<p>Targeted LED light therapy and medical-grade lasers to support scalp health. Encourages the appearance of thicker-looking hair with <strong>just 12 minutes per session</strong>.</p>",
+        "whitelist": true,
         "reserved": true,
         "soldout": false
       }
