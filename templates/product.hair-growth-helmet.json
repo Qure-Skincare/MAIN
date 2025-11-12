@@ -10,6 +10,7 @@
 {
   "sections": {
     "header": {
+      "type": "product-hair-growth-helmet-header",
       "blocks": {
         "price": {
           "type": "price",
@@ -22,8 +23,8 @@
           "settings": {}
         },
         "button": {
-          "disabled": true,
           "type": "button",
+          "disabled": true,
           "settings": {
             "hide_payments": true,
             "hide_bottom": true
@@ -32,6 +33,7 @@
         "money-back": {
           "type": "money-back",
           "settings": {
+            "heading": "",
             "text": "Hair growth isn't instant. That's why we offer a money-back guarantee. If you don't see real results, get a full refund - no questions asked."
           }
         },
@@ -51,6 +53,7 @@
         },
         "jumpto_user_study": {
           "type": "jumpto",
+          "disabled": true,
           "settings": {
             "button-label": "User Study",
             "button-url": "#backed-by-real-results"
@@ -82,7 +85,6 @@
         "jumpto_how-to-use",
         "jumpto_faqs"
       ],
-      "type": "product-hair-growth-helmet-header",
       "name": "t:sections.product-hair-growth-helmet-header.name",
       "settings": {
         "seo_heading": "Backed by Dermatologists",
