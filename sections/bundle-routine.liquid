@@ -30,7 +30,7 @@ Renders a bundle routine section.
                                 {% endif %}
                             </div>
                             {% if block.settings.button_label != blank %}
-                                {% render 'product-page-buy-button', product_price: null, product_variant_id: product_variant_id, section: block %}
+                                {% render 'product-page-buy-button', product_price: null, product_variant_id: product_variant_id, section: block, product_available: product_available %}
                             {% endif %}
                         </div>
                     </div>

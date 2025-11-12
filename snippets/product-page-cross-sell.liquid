@@ -26,25 +26,28 @@
 
                 {% include 'get-product-data', product_handle: item.product.value.handle, product_prefix: 'product-page-cross-sell-' %}
 
-                <div class="swiper-slide">
-                    <a href="{{ product_url }}" aria-label="{{ product_handle | escape }}" style="color: black;">
-                        <div class="patch__results">
-                            <img class="patch__result-img img-fluid" src="{{ product_featured_image | img_url: '240x' }}" alt="{{ product_title | escape }}">
-                            <div class="patch__result-content">
-                                {{ product_title }}
-                                <form method="post" action="/cart/add" enctype="multipart/form-data">
-                                    {% if black_friday_discount_percent > 0 %}
-                                        <button type="submit" class="btn btn--primary btn-sm mt-10 w-100" style="--btn-sm-padding: 7px 20px;">{{ 'product.settings.cross-sell.buy-button-label' | t }} – <span class="igPrice">{{ product_black_friday_price }}</span></button>
-                                    {% else %}
-                                        <button type="submit" class="btn btn--primary btn-sm mt-10 w-100" style="--btn-sm-padding: 7px 20px;">{{ 'product.settings.cross-sell.buy-button-label' | t }} – <span class="igPrice">{{ product_sale_price }}</span></button>
-                                    {% endif %}
-                                    <input type="hidden" name="quantity" id="quantity" value="1">
-                                    <input type="hidden" name="id" value="{{ product_variant_id }}">
-                                </form>
+                {% if product_available == true %}
+                    <div class="swiper-slide">
+                        <a href="{{ product_url }}" aria-label="{{ product_handle | escape }}" style="color: black;">
+                            <div class="patch__results">
+                                <img class="patch__result-img img-fluid" src="{{ product_featured_image | img_url: '240x' }}" alt="{{ product_title | escape }}">
+                                <div class="patch__result-content">
+                                    {{ product_title }}
+                                    <form method="post" action="/cart/add" enctype="multipart/form-data">
+                                        {% if black_friday_discount_percent > 0 %}
+                                            <button type="submit" class="btn btn--primary btn-sm mt-10 w-100" style="--btn-sm-padding: 7px 20px;">{{ 'product.settings.cross-sell.buy-button-label' | t }} – <span class="igPrice">{{ product_black_friday_price }}</span></button>
+                                        {% else %}
+                                            <button type="submit" class="btn btn--primary btn-sm mt-10 w-100" style="--btn-sm-padding: 7px 20px;">{{ 'product.settings.cross-sell.buy-button-label' | t }} – <span class="igPrice">{{ product_sale_price }}</span></button>
+                                        {% endif %}
+                                        <input type="hidden" name="quantity" id="quantity" value="1">
+                                        <input type="hidden" name="id" value="{{ product_variant_id }}">
+                                    </form>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
+                        </a>
+                    </div>
+                {% endif %}
+
             {% endfor %}
         </div>
     </div>

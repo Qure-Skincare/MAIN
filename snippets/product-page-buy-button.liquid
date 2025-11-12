@@ -7,7 +7,7 @@
   @param {bool} static - A static value.
 
   @example
-  {% render 'product-page-buy-button', product_price: '', product_variant_id: '', section: '', static: '' %}
+  {% render 'product-page-buy-button', product_price: '', product_variant_id: '', section: '', product_available: '', static: '' %}
 {% enddoc %}
 
 {% assign reserved = null %}
@@ -25,16 +25,25 @@
   {% capture button-label %}{{ default_button_label }}{% endcapture %}
 {% endif %}
 
+{% if product_available == false %}
+  {% assign soldout = true %}
+{% endif %}
 
 {% if section != blank %}
   {% if section.settings.reserved != blank %}
-    {% capture button-label %}{{ 'product.settings.reserved-button-label' | t }}{% endcapture %}
     {% assign reserved = true %}
   {% endif %}
   {% if section.settings.soldout != blank %}
-    {% capture button-label %}{{ 'product.settings.soldout-button-label' | t }}{% endcapture %}
     {% assign soldout = true %}
   {% endif %}
+{% endif %}
+
+{% if reserved == true %}
+  {% capture button-label %}{{ 'product.settings.reserved-button-label' | t }}{% endcapture %}
+{% endif %}
+
+{% if soldout == true %}
+  {% capture button-label %}{{ 'product.settings.soldout-button-label' | t }}{% endcapture %}
 {% endif %}
 
 <div class="qure__product-action-inner mt-30 mt-md-30 mb-10 max-w-ctm" style="--max-w-ctm:500px">
