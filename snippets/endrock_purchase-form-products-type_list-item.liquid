@@ -67,7 +67,8 @@
                                 <div class="qure-supply-item col-12 position-relative planBlock" role="presentation" href="javascript:void(0)"
                                     data-block-id="{{ block.id }}"
                                     data-tab="tab_{{ product_title_tag }}" 
-                                    data-pay="{{ product_price_divided }}" 
+                                    data-pay="{{ product_price_divided }}"
+                                    data-currency-symbol="{{ cart.currency.symbol }}"
                                     data-per="{{ data-per }}" 
                                     {% if block.settings.image != blank %}
                                     data-image="{{ block.settings.image | img_url: 'master' }}"
@@ -104,18 +105,18 @@
                                             <div>
                                                 <div class="qure__supply-price">
                                                     {% if product_before_price != blank %}
-                                                        <span class="qure__supply-price-sale regular_price igComparePrice">{{ product_before_price }}</span>
-                                                        <span class="qure__supply-price-reg-sale sale_price igPrice">{{ product_sale_price }}</span>
+                                                        <span class="qure__supply-price-sale regular_price igComparePrice" data-variant-id="{{ product_variant_id }}">{{ product_before_price }}</span>
+                                                        <span class="qure__supply-price-reg-sale sale_price igPrice" data-variant-id="{{ product_variant_id }}">{{ product_sale_price }}</span>
                                                     {% else %}
-                                                        <span class="qure__supply-price-reg sale_price igPrice">{{ product_sale_price }}</span>
+                                                        <span class="qure__supply-price-reg sale_price igPrice" data-variant-id="{{ product_variant_id }}">{{ product_sale_price }}</span>
                                                     {% endif %}
                                                 </div>
                                                 {% if product_discount != blank %}
                                                     {% case product_type %}
                                                         {% when 3 %}
-                                                            <p class="ctm-background fs-12 text-center text-white rounded-30 igSavingsPercentage">{{ 'purchase-form.settings.save' | t | upcase }} {{ product_discount }}%</p>
+                                                            <p class="ctm-background fs-12 text-center text-white rounded-30" data-variant-id="{{ product_variant_id }}">{{ 'purchase-form.settings.save' | t | upcase }} {{ product_discount }}%</p>
                                                         {% when 2 %}
-                                                            <p class="ctm-background fs-12 text-center text-orange rounded-30 igSavingsPercentage" style="--ctm-background:#ff54291a;">{{ 'purchase-form.settings.save' | t | upcase }} {{ product_discount }}%</p>
+                                                            <p class="ctm-background fs-12 text-center text-orange rounded-30" data-variant-id="{{ product_variant_id }}" style="--ctm-background:#ff54291a;">{{ 'purchase-form.settings.save' | t | upcase }} {{ product_discount }}%</p>
                                                     {% endcase %}
                                                 {% endif %}
                                             </div>
@@ -123,14 +124,14 @@
                                         {% case product_type %}
                                             {% when 3 %}
                                                 <div class="qure-best-value rounded-0 mb-0 justify-content-between px-15 fs-12 pt-5">
-                                                    <div>🔥 {{ 'purchase-form.settings.per-treatment' | t: price: product_price_per_item }}</div>
+                                                    <div class="igPrice" data-variant-id="{{ product_variant_id }}" data-price-multiplier="{{ 1.00 | divided_by: block.settings.total_treatments }}">🔥 {{ 'purchase-form.settings.per-treatment' | t: price: product_price_per_item }}</div>
                                                     {% if block.settings.left_items > 0 %}
                                                         <div><span><img src="https://qureskincaredns.com/assets/images/clock-w.svg" alt="clock"></span> {{ 'purchase-form.settings.kit-left' | t: count: block.settings.left_items }}</div>
                                                     {% endif %}
                                                 </div>
                                             {% when 2 %}
                                                 <div class="qure-best-value rounded-0 mb-0 justify-content-between px-15 fs-12 pt-5" style="--qure-charcoal:#C7E5DB; --white-color:#212428;">
-                                                    <div>{{ 'purchase-form.settings.per-treatment' | t: price: product_price_per_item }}</div>
+                                                    <div class="igPrice" data-variant-id="{{ product_variant_id }}" data-price-multiplier="{{ 1.00 | divided_by: block.settings.total_treatments }}">{{ 'purchase-form.settings.per-treatment' | t: price: product_price_per_item }}</div>
                                                     {% if block.settings.left_items > 0 %}
                                                         <div><span><img src="https://qureskincaredns.com/assets/images/clock-b.svg" alt="clock"></span> {{ 'purchase-form.settings.kit-left' | t: count: block.settings.left_items }}</div>
                                                     {% endif %}

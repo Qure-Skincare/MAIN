@@ -48,12 +48,12 @@
                 <div class="qure__bundle-container">
                     <div class="qure__bundle-form">
                         {% render 'purchase-form-types' section: section, __idsArray1: __idsArray1, __idsArray2: __idsArray2, __idsArray3: __idsArray3 %}
-                        {% include 'purchase-form-products' section: section, __idsArray1: __idsArray1, __idsArray2: __idsArray2, __idsArray3: __idsArray3 %}
+                        {% include 'endrock_purchase-form-products' section: section, __idsArray1: __idsArray1, __idsArray2: __idsArray2, __idsArray3: __idsArray3 %}
                         {% render 'purchase-form-payments' section: section %}
                     </div>
 
                     <div class="qure__bundle-atc mt-40">
-                        {% render 'product-page-buy-button', product_price: null, product_variant_id: null, section: section %}
+                        {% render 'product-page-buy-button', product_price: null, product_variant_id: null, section: section, product_available: product_available %}
                         {% render 'product-page-buy-button-payments', product_price_divided: product_price_divided %}
                     </div>
 
@@ -64,7 +64,8 @@
     </div>
 </div>
 
-<script src="https://qureskincaredns.com/shopify/js/purchase-form.js" data-form="{{ section.settings.form_name }}" data-section="{{ section.id }}" defer></script>
+{% comment %} AB TES 219 to 224 {% endcomment %}
+<script src="{{ '__endrock_purchase-form.js' | asset_url }} " data-form="{{ section.settings.form_name }}" data-section="{{ section.id }}" defer></script>
 
 {%- schema -%}
 {
@@ -83,10 +84,6 @@
                 {
                     "value": "list",
                     "label": "t:common.list"
-                },
-                {
-                    "value": "list_bf26",
-                    "label": "t:common.list_bf26"
                 }
             ],
             "default": "box"

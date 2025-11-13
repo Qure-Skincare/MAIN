@@ -67,7 +67,8 @@
       
       {{ content_for_header }}
   
-      {% render 'header-scripts' %}
+      {% comment %} {% render 'header-scripts' %} {% endcomment %}
+      {% render 'endrock_header-scripts' %}
   
       <script src="https://qureskincaredns.com/shopify/js/datalayer.js"></script>
       <script src="https://qureskincaredns.com/shopify/js/country-detect.js"></script>
