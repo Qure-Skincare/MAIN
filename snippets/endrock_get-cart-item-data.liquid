@@ -4,7 +4,7 @@
   @param {object} item - An object value.
 
   @example
-  {% include 'get-cart-item-data', item: '' %}
+  {% include 'endrock_get-cart-item-data', item: '' %}
 {% enddoc %}
 
 {% if item != blank %}
@@ -52,13 +52,14 @@
 
     {% comment %} AB TES 219 to 224 {% endcomment %}
     {% assign cart_item_price = item.final_price | times: item.quantity %}
+
     {% if item.properties._igcp %}
       {% assign cart_item_compare_price = item.properties._igcp | times: item.quantity %}
     {% else %}
       {% assign cart_item_compare_price = item.variant.compare_at_price | times: item.quantity %}
     {% endif %}
     {% comment %} AB TES 219 to 224 {% endcomment %}
-    
+
     {% assign cart_item_selling_plan = item.selling_plan_allocation %}
     {% assign cart_item_selling_plan_name = item.selling_plan_allocation.selling_plan.name %}
     

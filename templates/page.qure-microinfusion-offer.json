@@ -1064,7 +1064,7 @@
       }
     },
     "purchase_form_PwCCh6": {
-      "type": "endrock_purchase-form",
+      "type": "endrock_purchase-form", 
       "blocks": {
         "nextships_5rd2bS": {
           "type": "nextships",

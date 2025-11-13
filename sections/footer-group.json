@@ -24,7 +24,7 @@
       "settings": {}
     },
     "footer-drawer": {
-      "type": "endrock_footer-cart-drawer",
+      "type": "footer-cart-drawer",
       "name": "t:sections.footer-cart-drawer.name",
       "settings": {}
     },
