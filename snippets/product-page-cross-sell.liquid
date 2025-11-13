@@ -40,6 +40,7 @@
                                         {% endif %}
                                         <input type="hidden" name="quantity" id="quantity" value="1">
                                         <input type="hidden" name="id" value="{{ product_variant_id }}">
+                                        <input type="hidden" name="properties[page_url]" value="{{ request.path }}">
                                     </form>
                                 {% else %}
                                     <button type="button" class="btn btn--primary btn-sm mt-10 w-100" style="--btn-sm-padding: 7px 20px;" disabled="true">{{ 'product.settings.cross-sell.soldout-button-label' | t }}</button>
