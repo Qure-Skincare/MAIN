@@ -33,8 +33,9 @@
         "money-back": {
           "type": "money-back",
           "settings": {
-            "heading": "",
-            "text": "Hair growth isn't instant. That's why we offer a money-back guarantee. If you don't see real results, get a full refund - no questions asked."
+            "heading": "Money Back Guarantee",
+            "text": "Hair growth isn't instant. That's why we offer a money-back guarantee. If you don't see real results, get a full refund - no questions asked.",
+            "image": "shopify://shop_images/moneyback_1.webp"
           }
         },
         "jumpto_results": {
@@ -92,7 +93,7 @@
         "rating": true,
         "limited": false,
         "description": "<p>Targeted LED light therapy and medical-grade lasers to support scalp health. Encourages the appearance of thicker-looking hair with <strong>just 12 minutes per session</strong>.</p>",
-        "whitelist": true,
+        "whitelist": false,
         "reserved": false,
         "soldout": false
       }
