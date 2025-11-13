@@ -127,7 +127,7 @@
             "product_variant_id": 0,
             "product_selling_plan": 0,
             "preselected": true,
-            "heading": "6 Months Supply",
+            "heading": "6 Months",
             "subheading": "(3 bottles)",
             "image": "shopify://shop_images/derm_trio.webp",
             "soldout": true,
@@ -145,7 +145,7 @@
             "product_variant_id": 0,
             "product_selling_plan": 0,
             "preselected": false,
-            "heading": "4 Months Supply",
+            "heading": "4 Months",
             "subheading": "(2 bottles)",
             "image": "shopify://shop_images/derm_duo.webp",
             "soldout": true,
@@ -163,7 +163,7 @@
             "product_variant_id": 0,
             "product_selling_plan": 0,
             "preselected": false,
-            "heading": "2 Months Supply",
+            "heading": "2 Months",
             "subheading": "(1 bottle)",
             "image": "shopify://shop_images/derm_single.webp",
             "soldout": true,
@@ -562,12 +562,51 @@
       }
     },
     "sticky_cta_KmhMmz": {
+      "disabled": true,
       "type": "sticky-button",
       "name": "t:sections.sticky-button.name",
       "settings": {
         "heading": "Dermal Mist",
         "text": "93 reserved in last 48 hours",
         "limited": false,
+        "button-label": "",
+        "button-url": ""
+      }
+    },
+    "sticky_cta_ddPFdd": {
+      "type": "sticky-button-variants",
+      "blocks": {
+        "variant_43xxGi": {
+          "type": "variant",
+          "settings": {
+            "heading": "6 Months",
+            "image": "shopify://shop_images/derm_trio.webp"
+          }
+        },
+        "variant_45xfGi": {
+          "type": "variant",
+          "settings": {
+            "heading": "4 Months",
+            "image": "shopify://shop_images/derm_duo.webp"
+          }
+        },
+        "variant_45sxGi": {
+          "type": "variant",
+          "settings": {
+            "heading": "2 Months",
+            "image": "shopify://shop_images/derm_single.webp"
+          }
+        }
+      },
+      "block_order": [
+        "variant_43xxGi",
+        "variant_45xfGi",
+        "variant_45sxGi"
+      ],
+      "name": "t:sections.sticky-button-variants.name",
+      "settings": {
+        "heading": "",
+        "text": "270 Units Reserved in last 48 hours",
         "button-label": "",
         "button-url": ""
       }
@@ -586,6 +625,7 @@
     "text_header_LkTtUE",
     "17574126382ef36ccf",
     "faq_RhychY",
-    "sticky_cta_KmhMmz"
+    "sticky_cta_KmhMmz",
+    "sticky_cta_ddPFdd"
   ]
 }

@@ -355,7 +355,8 @@
       },
       "cross-sell": {
         "header": "Get The Best Results With",
-        "buy-button-label": "Add"
+        "buy-button-label": "Add",
+        "soldout-button-label": "Sold Out"
       },
       "product-next-ships": {
         "header": "Next batch ships",
@@ -488,7 +489,7 @@
       },
       "upsell": {
         "header": "Get The Best Results With",
-        "button-label": "Add"
+        "buy-button-label": "Add"
       }
     }
   },
