@@ -25,7 +25,7 @@
           "settings": {
             "heading": "Watch: How To Use",
             "image": "shopify://shop_images/how-to-use3.webp",
-            "wistia_url": "8ymvdqzx92"
+            "wistia_url": "ptw4q3aod8"
           }
         },
         "jumpto_jEyVj6": {
@@ -77,6 +77,7 @@
       "name": "t:sections.page-header.name",
       "settings": {
         "rating": "<p><strong>4.8</strong>/5 Rated by Customers</p>",
+        "rating-url": "",
         "heading": "Refresh your skin and visibly smooth the look of acne scars",
         "description": "<ul><li>Helps refine skin texture for smoother-looking skin and visibly softer scars</li><li>Easy 5-minute treatment that supports skin renewal for a more even-toned complexion</li><li>With consistent use, skin looks smoother and marks appear less visible — with most users noticing visible improvement after a few sessions</li></ul>",
         "button-label": "Get Smoother, Glowing Skin",
