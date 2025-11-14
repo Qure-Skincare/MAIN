@@ -313,16 +313,16 @@
             "preselected": false
           }
         },
-        "product_hD69Aq": {
+        "product_DBd4ef": {
           "type": "product",
           "settings": {
-            "product": "micro-infusion-2-month-bundle-for-wrinkles-dark-spots",
+            "product": "micro-infusion-3-month-bundle-for-wrinkles-dark-spots",
             "product_variant_id": 0,
             "product_selling_plan": 0,
             "preselected": true,
-            "heading": "2 Month Supply",
-            "subheading": "(4 Treatments)",
-            "image": "shopify://shop_images/Group_1000008549_5.png",
+            "heading": "3 Month Supply",
+            "subheading": "(6 Treatments)",
+            "image": "shopify://shop_images/3m_mix.png",
             "soldout": false,
             "preorder": false,
             "preorder_text": "",
@@ -331,17 +331,17 @@
             "preorder_percent": 55
           }
         },
-        "product_DBd4ef": {
+        "product_hD69Aq": {
           "type": "product",
           "settings": {
-            "product": "micro-infusion-3-month-bundle-for-wrinkles-dark-spots",
+            "product": "micro-infusion-2-month-bundle-for-wrinkles-dark-spots",
             "product_variant_id": 0,
             "product_selling_plan": 0,
             "preselected": false,
-            "heading": "3 Month Supply",
-            "subheading": "(6 Treatments)",
-            "image": "shopify://shop_images/3m_mix.png",
-            "soldout": false,
+            "heading": "2 Month Supply",
+            "subheading": "(4 Treatments)",
+            "image": "shopify://shop_images/Group_1000008549_5.png",
+            "soldout": true,
             "preorder": false,
             "preorder_text": "",
             "preorder_date_soldout": "",
@@ -382,8 +382,8 @@
         "product_eiY89h",
         "type_yDwWmt",
         "product_type_YrPQrV",
-        "product_hD69Aq",
         "product_DBd4ef",
+        "product_hD69Aq",
         "product_Xf8A6C"
       ],
       "settings": {
