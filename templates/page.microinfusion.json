@@ -359,7 +359,7 @@
             "heading": "1 Month Supply",
             "subheading": "(2 Treatments)",
             "image": "shopify://shop_images/1m_mix.png",
-            "soldout": false,
+            "soldout": true,
             "preorder": false,
             "preorder_text": "",
             "preorder_date_soldout": "",
