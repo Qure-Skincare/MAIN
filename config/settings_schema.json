@@ -158,7 +158,9 @@
     "name": "Black friday",
     "settings": [
       { "type": "checkbox", "id": "black_friday_turn_on", "label": "BF Turn on" },
-      { "type": "range", "id": "black_friday_discount_percent", "label": "Discount", "min": 0, "max": 100, "step": 1, "unit": "%", "default": 25 }
+      { "type": "text", "id": "black_friday_discount", "label": "Discount" },
+      { "type": "range", "id": "black_friday_discount_percent", "label": "Percent", "min": 0, "max": 100, "step": 1, "unit": "%", "default": 26 },
+      { "type": "textarea", "id": "black_friday_discount_exception", "label": "Exception" }
     ]
   },
   {

@@ -18,7 +18,6 @@
           <button id="sticky-cta-button" type="submit" class="btn btn--primary">{% if section.settings.button-label != blank %}{{ section.settings.button-label }}{% else %}{{ 'product.settings.buy-button-label' | t }}{% endif %}</button>
           <input type="hidden" name="quantity" id="quantity" value="1">
           <input type="hidden" name="id" value="{{ product_variant_id }}">
-          <input type="hidden" name="properties[page_url]" value="{{ request.path }}">
         </form>
       {% endif %}
     </div>
