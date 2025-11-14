@@ -250,12 +250,12 @@
         "product_nyJ9n7": {
           "type": "product",
           "settings": {
-            "product": "micro-infusion-6-month-bundle-for-wrinkles",
+            "product": "micro-infusion-2-month-bundle-for-wrinkles",
             "product_variant_id": 0,
             "product_selling_plan": 0,
             "preselected": true,
-            "heading": "6 Month Supply",
-            "subheading": "(12 Treatments)",
+            "heading": "2 Month Supply",
+            "subheading": "(4 Treatments)",
             "image": "shopify://shop_images/Group_1000008583_1.png",
             "soldout": false,
             "preorder": false,
