@@ -77,6 +77,7 @@
       "name": "t:sections.page-header.name",
       "settings": {
         "rating": "<p><strong>4.8</strong>/5 Rated by Customers</p>",
+        "rating-url": "",
         "heading": "The go-to skin treatment for the ultimate confidence booster",
         "description": "<ul><li>Helps reduce appearance of fine lines, smooth texture whilst helping to infuse active ingredients into your skin.</li><li>Virtually painless and performed in the comfort and convenience of your home.</li><li>Minimal to no downtime with visible results.</li></ul>",
         "button-label": "Get Smoother Skin",
@@ -1107,7 +1108,7 @@
             "heading": "1 Month Supply",
             "subheading": "(2 Treatments)",
             "image": "shopify://shop_images/MI_1_month_DS_W_838230ac-8968-4e5b-b30d-5c0eeea7f9ad.png",
-            "soldout": false,
+            "soldout": true,
             "preorder": false,
             "total_treatments": 0,
             "left_items": 0,
