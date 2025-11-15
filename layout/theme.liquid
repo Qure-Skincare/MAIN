@@ -68,9 +68,6 @@
       {{ content_for_header }}
   
       {% render 'header-scripts' %}
-  
-      <script src="https://qureskincaredns.com/shopify/js/datalayer.js"></script>
-      <script src="https://qureskincaredns.com/shopify/js/country-detect.js"></script>
     </head>
   
     <body class="{{ template }}">
@@ -85,19 +82,7 @@
       {{ content_for_layout }}
   
       {% sections 'footer-group' %}
-  
-      {% render 'book-easy' %}
-      {% render 'stamped-rewards-init' %}
-      <script src="https://qureskincaredns.com/assets/js/vendor.js" defer="defer"></script>
-      <script src="https://qureskincaredns.com/assets/js/header.js" defer="defer"></script>
-      <script src="https://qureskincaredns.com/assets/js/footer.js" defer="defer"></script>
-  
       {% render 'footer-scripts' %}
-      <style>
-        script[type="application/ld+json"]:not(.universal-product-schema) { display: none !important; }
-      </style>
-          <script>function myInit(){ StampedFn.init({ apiKey: 'pubkey-s0D9tf0qd11g0kyfeoSf23o9h0Ts3b', storeUrl: '198244' }); }</script>
-<script async onload="myInit()" type="text/javascript" src="https://cdn1.stamped.io/files/widget.min.js"></script>
     </body>
   </html>
 {% endcapture %}
