@@ -67,6 +67,9 @@
     {{ content_for_header }}
 
     {% render 'header-scripts' %}
+
+    <script src="https://qureskincaredns.com/shopify/js/datalayer.js"></script>
+    <script src="https://qureskincaredns.com/shopify/js/country-detect.js"></script>
   </head>
 
   <body class="{{ template }}">
@@ -82,5 +85,9 @@
 
     {% sections 'footer-group' %}
     {% render 'footer-scripts' %}
+
+    <script src="https://qureskincaredns.com/assets/js/vendor.js" defer="defer"></script>
+    <script src="https://qureskincaredns.com/assets/js/header.js" defer="defer"></script>
+    <script src="https://qureskincaredns.com/assets/js/footer.js" defer="defer"></script>
   </body>
 </html>
