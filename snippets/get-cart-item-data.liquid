@@ -82,7 +82,7 @@
 
     {% comment %} discount {% endcomment %}
 
-    {% if cart_item_final_price != cart_item_discounted_price %}
+    {% if cart_item_original_price != cart_item_discounted_price %}
       {% assign discount_exists = true %}
       {% if cart_item_compare_price == 0 %}
         {% assign cart_item_compare_price = cart_item_price %}
