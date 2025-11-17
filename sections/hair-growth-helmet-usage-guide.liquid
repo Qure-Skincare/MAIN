@@ -9,11 +9,18 @@
             {% if section.settings.heading != blank %}
                 {{ section.settings.heading }}
             {% endif %}
-            {% if section.settings.youtube_url != blank %}
-                <a class="popup-youtube lvideo" data-url="{{ section.settings.youtube_url }}">
-                    {{ 'sections.hair-growth-helmet.guide.watch_video' | t }}
-                    <img src="https://qureskincaredns.com/alex/sections/isolated/across-slider/images/play-icon.svg" alt="play-icon" />
-                </a>
+            {% if section.settings.video_url != blank %}
+                {% if section.settings.youtube_url %}
+                    <a class="popup-youtube lvideo" data-url="{{ section.settings.video_url }}">
+                        {{ 'sections.hair-growth-helmet.guide.watch_video' | t }}
+                        <img src="https://qureskincaredns.com/alex/sections/isolated/across-slider/images/play-icon.svg" alt="play-icon" />
+                    </a>
+                {% else %}
+                    <a class="filter-card-video" data-bs-toggle="modal" data-bs-target="#reusableWistiaModal" data-video-id="{{ section.settings.video_url }}">
+                        {{ 'sections.hair-growth-helmet.guide.watch_video' | t }}
+                        <img src="https://qureskincaredns.com/alex/sections/isolated/across-slider/images/play-icon.svg" alt="play-icon" />
+                    </a>
+                {% endif %}
             {% endif %}
         </div>
         <div class="across-slider__carousel">
@@ -83,9 +90,15 @@
         "label": "t:common.header"
     },
     {
-        "type": "url",
+        "type": "text",
+        "id": "video_url",
+        "label": "t:common.video-url"
+    },
+    {
+        "type": "checkbox",
         "id": "youtube_url",
-        "label": "t:common.youtube-url"
+        "label": "t:common.youtube-url",
+        "default": true
     }
   ],
   "blocks": [
