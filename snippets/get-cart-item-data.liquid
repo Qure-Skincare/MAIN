@@ -48,6 +48,7 @@
     {% assign cart_item_image = item.image %}
     {% assign cart_item_properties = item.properties %}
     {% assign cart_item_final_price = item.final_price %}
+    {% assign cart_item_discounted_price = item.discounted_price %}
     {% assign cart_item_original_price = item.original_price %}
     {% assign cart_item_price = item.variant.price | times: item.quantity %}
     {% assign cart_item_compare_price = item.variant.compare_at_price | times: item.quantity %}
@@ -81,11 +82,14 @@
 
     {% comment %} discount {% endcomment %}
 
-    {% if cart_item_final_price != cart_item_original_price %}
+    {% if cart_item_original_price != cart_item_discounted_price %}
       {% assign discount_exists = true %}
-      {% assign cart_item_price = cart_item_final_price %}
+      {% if cart_item_compare_price == 0 %}
+        {% assign cart_item_compare_price = cart_item_price %}
+      {% endif %}
+      {% assign cart_item_price = cart_item_discounted_price %}
     {% endif %}
-
+    
 
     {% comment %} full price discount {% endcomment %}
 
