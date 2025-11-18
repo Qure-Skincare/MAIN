@@ -56,7 +56,8 @@
           "type": "items",
           "settings": {
             "heading": "Helmet",
-            "link_url": ""
+            "link_url": "",
+            "image": "shopify://shop_images/Dermal_Mist_100_15ml.jpg"
           }
         }
       },
