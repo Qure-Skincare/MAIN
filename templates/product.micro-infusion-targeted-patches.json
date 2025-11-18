@@ -903,7 +903,7 @@
             "tags_include": "",
             "search": "",
             "linkify": true,
-            "use_metafields": false,
+            "use_metafields": true,
             "sku_tagtype": "sku"
           }
         }
