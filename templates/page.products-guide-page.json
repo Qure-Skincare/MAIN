@@ -51,6 +51,13 @@
             "link_url": "/pages/shower-filter-online-guide",
             "image": "shopify://shop_images/product_guide-4.webp"
           }
+        },
+        "items_qDeaFN": {
+          "type": "items",
+          "settings": {
+            "heading": "Helmet",
+            "link_url": ""
+          }
         }
       },
       "block_order": [
@@ -58,7 +65,8 @@
         "items_Kq979r",
         "items_MTb44F",
         "items_cABYcq",
-        "items_YEJr3C"
+        "items_YEJr3C",
+        "items_qDeaFN"
       ],
       "settings": {
         "heading": "User Guides",
