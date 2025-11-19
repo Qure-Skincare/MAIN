@@ -20,6 +20,14 @@
             "image": "shopify://shop_images/product_guide-1.webp"
           }
         },
+        "items_hBGDDp": {
+          "type": "items",
+          "settings": {
+            "heading": "Q-Renew LLLT Helmet",
+            "link_url": "/pages/hairgrowth-helmet-guide",
+            "image": "shopify://shop_images/product_guide-5.webp"
+          }
+        },
         "items_Kq979r": {
           "type": "items",
           "settings": {
@@ -63,6 +71,7 @@
       },
       "block_order": [
         "items_xBGDDp",
+        "items_hBGDDp",
         "items_Kq979r",
         "items_MTb44F",
         "items_cABYcq",
