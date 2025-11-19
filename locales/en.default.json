@@ -22,6 +22,10 @@
     "expert-advisory-product": {
       "button_label": "Shop Now"
     },
+    "bf-top-products": {
+      "header": "Shop Black Friday",
+      "new": "New"
+    },
     "bf-banner-with-text": {
       "bf_sale_image": "https://qureskincaredns.com/alex/sections/global/banner-with-text/images/black-friday-sale.webp"
     },
