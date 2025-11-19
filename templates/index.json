@@ -138,6 +138,74 @@
         "sub_text": ""
       }
     },
+    "bf_top_products": {
+      "type": "bf-top-products",
+      "settings": {},
+      "blocks": {
+        "item1": {
+          "type": "items",
+          "settings": {
+            "heading": "Skincare Bundles",
+            "link_url": "/pages/exclusive-holiday-bundle-deal-new",
+            "image": "shopify://shop_images/skincare-bundles.webp",
+            "new": false
+          }
+        },
+        "item2": {
+          "type": "items",
+          "settings": {
+            "heading": "Best Sellers",
+            "link_url": "/collections/best-sellers",
+            "image": "shopify://shop_images/best-sellers.webp",
+            "new": false
+          }
+        },
+        "item3": {
+          "type": "items",
+          "settings": {
+            "heading": "Q-Renew LLLT Helmet",
+            "link_url": "/products/hair-growth-helmet",
+            "image": "shopify://shop_images/helmet.webp",
+            "new": true
+          }
+        },
+        "item4": {
+          "type": "items",
+          "settings": {
+            "heading": "Q-Rejuvalight LED Mask",
+            "link_url": "/products/q-rejuvalight-pro-facewear",
+            "image": "shopify://shop_images/led-mask.webp",
+            "new": false
+          }
+        },
+        "item5": {
+          "type": "items",
+          "settings": {
+            "heading": "Neck & Décolletage LED System",
+            "link_url": "/products/neck-decolletage-led",
+            "image": "shopify://shop_images/neck-decolletage.webp",
+            "new": false
+          }
+        },
+        "item6": {
+          "type": "items",
+          "settings": {
+            "heading": "Micro-Infusion System",
+            "link_url": "/pages/microinfusion",
+            "image": "shopify://shop_images/mi-system.webp",
+            "new": false
+          }
+        }
+      },
+      "block_order": [
+        "item1",
+        "item2",
+        "item3",
+        "item4",
+        "item5",
+        "item6"
+      ]
+    },
     "bf_bundle_banner_dTGjF7": {
       "type": "bf-bundle-banner",
       "blocks": {
@@ -900,6 +968,7 @@
     "index-mobile-category-slider",
     "index_banner_with_text_TNGNLJ",
     "bf_banner_with_text_4LMX6e",
+    "bf_top_products",
     "bf_bundle_banner_dTGjF7",
     "bf_banner_with_text_7wEFDF",
     "bf_bundle_bunner_mini_VD9qRR",

@@ -9,6 +9,7 @@
  */
  {
     "common": {
+        "new": "New",
         "whitelist": "Whitelist",
         "compare-price": "Compare price",
         "discount-price": "Discount price",
@@ -205,6 +206,9 @@
                 "doctor-name": "Doctor name",
                 "doctor-position": "Doctor position"
             }
+        },
+        "bf-top-products": {
+            "name": "Black Friday top products"
         },
         "bf-bundle-banner": {
             "name": "Black Friday bundle banner"
