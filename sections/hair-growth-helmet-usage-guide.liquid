@@ -73,10 +73,26 @@
         </div>
     </div>
 </div>
+<div class="modal fade filter-modal" id="reusableWistiaModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-md filter-dialog">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <button type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="wistiaVideoContainer" class="filter-modal-video"></div>
+            </div>
+        </div>
+    </div>
+</div>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         loadScriptOnce('main-slider', 'https://qureskincaredns.com/assets/js/main-slider.js');
         loadScriptOnce('youtube-popup', 'https://qureskincaredns.com/assets/js/yt-popup.js');
+        loadScriptOnce('wistia-video-popup', 'https://qureskincaredns.com/sections/isolated/trusted-video/wistia-video-popup.js');
+        loadScriptOnce('wistia-script', 'https://fast.wistia.com/assets/external/E-v1.js');
     });
 </script>
 
