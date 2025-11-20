@@ -87,6 +87,7 @@
         "items_Ub9bKD",
         "items_CVMfzL"
       ],
+      "disabled": true,
       "name": "t:common.carousel",
       "settings": {
         "background_color": "#f6f6f7",

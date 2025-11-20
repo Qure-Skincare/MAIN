@@ -33,8 +33,9 @@
         "money-back": {
           "type": "money-back",
           "settings": {
-            "heading": "",
-            "text": "Hair growth isn't instant. That's why we offer a money-back guarantee. If you don't see real results, get a full refund - no questions asked."
+            "heading": "Money Back Guarantee",
+            "text": "Hair growth isn't instant. That's why we offer a money-back guarantee. If you don't see real results, get a full refund - no questions asked.",
+            "image": "shopify://shop_images/moneyback_1.webp"
           }
         },
         "jumpto_results": {
@@ -170,7 +171,7 @@
       "name": "t:sections.hair-growth-helmet-image-slider.name",
       "settings": {
         "heading": "<h2>See the change, feel the difference</h2>",
-        "text": "<p>Join real women experiencing real transformations with consistent use of Q-Renew.</p>",
+        "text": "<p>Join real people experiencing real transformations with consistent use of Q-Renew.</p>",
         "button_label": "",
         "button_url": "#"
       }
@@ -236,8 +237,8 @@
       ],
       "name": "t:sections.hair-growth-helmet-banner-with-modal.name",
       "settings": {
-        "heading": "<h2>Powerful light technology for healthier-looking hair</h2>",
-        "text": "<p>Backed by decades of light therapy research, the Q-Renew LLLT Helmet uses medical-grade lasers and LEDs proven to reactivate hair follicles. No gimmicks, no miracle claims — just real technology that works.</p>",
+        "heading": "<h2>Powerful light technology for fuller-looking hair</h2>",
+        "text": "<p>Backed by decades of light therapy research, the Q-Renew LLLT Helmet uses clinically-proven lasers and LEDs to reactivate hair follicles. No gimmicks, no miracle claims — just real technology that works.</p>",
         "button_label": "Explore The Features"
       }
     },
@@ -247,7 +248,7 @@
         "section_mJmezX": {
           "type": "section",
           "settings": {
-            "image": "shopify://shop_images/why-carousel-1.webp",
+            "image": "shopify://shop_images/6_aa559435-67ea-4abf-a608-b4bc6120687e.svg",
             "heading": "<h6>Stimulates hair follicles</h6>",
             "text": "<p>Low-level lasers reach deep into the scalp to energize dormant follicles. This helps kickstart natural growth activity where thinning is most visible.</p>"
           }
@@ -255,7 +256,7 @@
         "section_gxTc4q": {
           "type": "section",
           "settings": {
-            "image": "shopify://shop_images/why-carousel-2.webp",
+            "image": "shopify://shop_images/8_cc4881c0-6c79-41b3-a3cd-887524f4a85d.svg",
             "heading": "<h6>Improves thickness</h6>",
             "text": "<p>LED light supports circulation and nutrient delivery around the follicle. Over time, this helps new strands grow in stronger, denser, and more resilient.</p>"
           }
@@ -263,7 +264,7 @@
         "section_BTCCyz": {
           "type": "section",
           "settings": {
-            "image": "shopify://shop_images/why-carousel-3.webp",
+            "image": "shopify://shop_images/7_b652c035-154f-446a-8c7f-dbda4f7cf104.svg",
             "heading": "<h6>Reduces shedding</h6>",
             "text": "<p>By working with your natural growth cycle, light therapy helps extend the active growth phase. The result is fewer hairs lost daily, creating fuller-looking coverage.</p>"
           }
@@ -426,7 +427,8 @@
       "name": "t:sections.hair-growth-helmet-usage-guide.name",
       "settings": {
         "heading": "<h2>Restore your hair health in just 12 minutes a day</h2>",
-        "youtube_url": "https://www.youtube.com/watch?v=mVdncsTAXiA"
+        "video_url": "wvoucso35j",
+        "youtube_url": false
       }
     },
     "hair_growth_helmet_product_comparison_CxQNNe": {
@@ -493,11 +495,11 @@
             "description_1": "Up to",
             "heading_1": "<h3>208% more diodes</h3>",
             "text_1": "<p>370 vs. 120 for deeper coverage</p>",
-            "description_2": "Double the trust",
-            "heading_2": "<h3>2x longer warranty</h3>",
-            "text_2": "<p>2-year vs. 1-year warranty for peace of mind.</p>",
+            "description_2": "Triple the trust",
+            "heading_2": "<h3>3x longer warranty</h3>",
+            "text_2": "<p>3-year vs. 1-year warranty for peace of mind.</p>",
             "description_3": "Deeper stimulation",
-            "heading_3": "<h3>50% more wavelengths</h3>",
+            "heading_3": "<h3>300% more wavelengths</h3>",
             "text_3": "<p>3 wavelengths vs. 2 wavelengths for broader stimulation</p>"
           }
         },
@@ -514,7 +516,7 @@
             "left_text_3": "370 total diodes",
             "right_text_3": "282 total diodes",
             "heading_4": "Warranty",
-            "left_text_4": "2-year warranty",
+            "left_text_4": "3-year warranty",
             "right_text_4": "1-year warranty"
           }
         },
@@ -531,7 +533,7 @@
             "left_text_3": "370 total diodes",
             "right_text_3": "120 total diodes",
             "heading_4": "Warranty",
-            "left_text_4": "2-year warranty",
+            "left_text_4": "3-year warranty",
             "right_text_4": "1-year warranty"
           }
         },
@@ -540,7 +542,7 @@
           "settings": {
             "heading_1": "LED wavelengths",
             "left_text_1": "3 wavelengths",
-            "right_text_1": "2 wavelengths",
+            "right_text_1": "1 wavelength",
             "heading_2": "Customization",
             "left_text_2": "Zone targeting",
             "right_text_2": "No customization",
@@ -548,7 +550,7 @@
             "left_text_3": "370 total diodes",
             "right_text_3": "120 total diodes",
             "heading_4": "Warranty",
-            "left_text_4": "2-year warranty",
+            "left_text_4": "3-year warranty",
             "right_text_4": "1-year warranty"
           }
         }
@@ -585,7 +587,7 @@
           "type": "accordion",
           "settings": {
             "heading": "How often can I use this treatment?",
-            "text": "<p>We recommend using the helmet 3-4 times per week for at least 16 weeks. After that, continue every other day to maintain results.</p><p>Each treatment lasts 12 minutes and ends automatically.</p>",
+            "text": "<p>We recommend using the helmet 5-7 times per week for at least 16 weeks. After that, continue every other day to maintain results.</p><p>Each treatment lasts 12 minutes and ends automatically.</p>",
             "link_url": "",
             "link_text": ""
           }
@@ -639,7 +641,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Does Q-Renew LLLT Helmet come with a warranty?",
-            "text": "<p>Yes, the Q-Renew LLLT Helmet comes with a 2-year warranty.</p>",
+            "text": "<p>Yes, the Q-Renew LLLT Helmet comes with a 2 years of protection plus 1 extra year at no added cost. </p>",
             "link_url": "",
             "link_text": ""
           }

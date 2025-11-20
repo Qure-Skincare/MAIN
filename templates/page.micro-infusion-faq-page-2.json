@@ -96,7 +96,7 @@
       "settings": {
         "heading": "Treatment",
         "text": "Start at the centre of the face and work your way outward to cover the full face.",
-        "wistia_url": "8ymvdqzx92"
+        "wistia_url": "ptw4q3aod8"
       }
     },
     "mi_faq_page_healthier_skin_banner_m7bRLM": {
@@ -444,7 +444,7 @@
             "heading": "1 Month Supply",
             "subheading": "(2 Treatments)",
             "image": "shopify://shop_images/MI_1_month_DS_W_838230ac-8968-4e5b-b30d-5c0eeea7f9ad.png",
-            "soldout": false,
+            "soldout": true,
             "preorder": false,
             "total_treatments": 0,
             "left_items": 0,

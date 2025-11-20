@@ -338,7 +338,7 @@
         "product_6TBNNL": {
           "type": "product",
           "settings": {
-            "product": "breakout-control-pro-bf25",
+            "product": "breakout-control-pro-bf",
             "preselected": false,
             "soldout": false,
             "reserved": false
@@ -347,7 +347,7 @@
         "product_3JCGzy": {
           "type": "product",
           "settings": {
-            "product": "breakout-control-advanced-bf25",
+            "product": "breakout-control-advanced-bf",
             "preselected": false,
             "soldout": false,
             "reserved": false
@@ -356,7 +356,7 @@
         "product_TkVDd8": {
           "type": "product",
           "settings": {
-            "product": "breakout-control-essentials-bf25",
+            "product": "breakout-control-essentials-bf",
             "preselected": false,
             "soldout": false,
             "reserved": false

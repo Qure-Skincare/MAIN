@@ -22,6 +22,10 @@
     "expert-advisory-product": {
       "button_label": "Shop Now"
     },
+    "bf-top-products": {
+      "header": "Shop Black Friday",
+      "new": "New"
+    },
     "bf-banner-with-text": {
       "bf_sale_image": "https://qureskincaredns.com/alex/sections/global/banner-with-text/images/black-friday-sale.webp"
     },
@@ -36,11 +40,11 @@
     "hair-growth-helmet": {
       "header": {
         "benefits_html": "<ul class='helmet-home__benefits'><li>FDA Cleared</li><li>Wireless</li><li>Easy to Use</li></ul>",
-        "info_html": "<p>90% of users experienced significant improvement to their hair line.</p><strong>Will Q-Renew work for me?</strong>",
+        "info_html": "<p>Made for those who want to support a fuller, healthier-looking hair line</p><strong>Will Q-Renew work for me?</strong>",
         "reserve": "Available for Reserve",
         "reserve_date": "Expected Jan. 2026",
         "whitelist": "Join the Waitlist",
-        "whitelist_date": "Expected Jan. 2026",
+        "whitelist_date": "Expected 21st Nov. 2025",
         "unavailable": "Unavailable"
       },
       "guide": {
@@ -355,7 +359,8 @@
       },
       "cross-sell": {
         "header": "Get The Best Results With",
-        "buy-button-label": "Add"
+        "buy-button-label": "Add",
+        "soldout-button-label": "Sold Out"
       },
       "product-next-ships": {
         "header": "Next batch ships",
@@ -394,6 +399,7 @@
       "money-back": {
         "image": "moneyback_90.webp",
         "header": "90-Day Money Back Guarantee",
+        "text": "You deserve results you can see. Try Micro-Infusion for 90 days, and if you’re not satisfied, simply get in touch with our team for a full refund!"
       },
       "reviews-videos": {
         "header": "Hear What People Are Saying About Qure"
@@ -488,7 +494,7 @@
       },
       "upsell": {
         "header": "Get The Best Results With",
-        "button-label": "Add"
+        "buy-button-label": "Add"
       }
     }
   },

@@ -20,6 +20,14 @@
             "image": "shopify://shop_images/product_guide-1.webp"
           }
         },
+        "items_hBGDDp": {
+          "type": "items",
+          "settings": {
+            "heading": "Q-Renew LLLT Helmet",
+            "link_url": "/pages/hairgrowth-helmet-guide",
+            "image": "shopify://shop_images/product_guide-5.webp"
+          }
+        },
         "items_Kq979r": {
           "type": "items",
           "settings": {
@@ -51,14 +59,24 @@
             "link_url": "/pages/shower-filter-online-guide",
             "image": "shopify://shop_images/product_guide-4.webp"
           }
+        },
+        "items_qDeaFN": {
+          "type": "items",
+          "settings": {
+            "heading": "Helmet",
+            "link_url": "",
+            "image": "shopify://shop_images/Dermal_Mist_100_15ml.jpg"
+          }
         }
       },
       "block_order": [
         "items_xBGDDp",
+        "items_hBGDDp",
         "items_Kq979r",
         "items_MTb44F",
         "items_cABYcq",
-        "items_YEJr3C"
+        "items_YEJr3C",
+        "items_qDeaFN"
       ],
       "settings": {
         "heading": "User Guides",

@@ -25,7 +25,7 @@
           "settings": {
             "heading": "Watch: How To Use",
             "image": "shopify://shop_images/how-to-use3.webp",
-            "wistia_url": "8ymvdqzx92"
+            "wistia_url": "ptw4q3aod8"
           }
         },
         "jumpto_jEyVj6": {
@@ -85,6 +85,7 @@
       "name": "t:sections.page-header.name",
       "settings": {
         "rating": "<p><strong>4.8</strong>/5 Rated by Customers</p>",
+        "rating-url": "",
         "heading": "Visibly fade dark spots with this 5-minute treatment",
         "description": "<ul><li>Helps reduce the look of dark spots and uneven tone where topicals may not reach</li><li>Improves the appearance of uneven skin tone for a smoother, brighter-looking complexion</li><li>Minimal to no downtime, virtually painless, and easy to perform conveniently from home</li></ul>",
         "button-label": "Get Smoother, Glowing Skin",
@@ -866,7 +867,7 @@
         "heading": "See how quick and easy it is to use",
         "text": "",
         "heading_mobile": "",
-        "wistia_url": "8ymvdqzx92",
+        "wistia_url": "ptw4q3aod8",
         "button_label": "buy now & SAVE UP TO 70%",
         "button_url": "#purchase-form"
       }

@@ -25,8 +25,8 @@
       "type": "car-giveaway-countdown-timer",
       "name": "t:sections.car-giveaway-countdown-timer.name",
       "settings": {
-        "heading": "20X extra entries ENDS IN:",
-        "from": "2025-11-12",
+        "heading": "25X extra entries ENDS IN:",
+        "from": "2025-11-20",
         "days": 7
       }
     },
@@ -37,7 +37,7 @@
           "type": "items",
           "settings": {
             "heading": "Q-Rejuvalight Pro LED Face Mask",
-            "text": "Receive 7980 Entries",
+            "text": "Receive 9975 Entries",
             "image": "shopify://shop_images/Img_25.png",
             "price": "$399",
             "compare_price": "",
@@ -51,7 +51,7 @@
           "type": "items",
           "settings": {
             "heading": "Neck & Décolletage LED Device",
-            "text": "Receive 5980 Entries",
+            "text": "Receive 7475 Entries",
             "image": "shopify://shop_images/Img_23.png",
             "price": "$299",
             "compare_price": "",
@@ -65,7 +65,7 @@
           "type": "items",
           "settings": {
             "heading": "Micro-Infusion Facial System",
-            "text": "Receive 2380 Entries",
+            "text": "Receive 4975 Entries",
             "image": "shopify://shop_images/Rectangle_1375_d5b54d2a-a78a-4648-a652-a95cc0b53ea1.png",
             "price": "from $119",
             "compare_price": "",
@@ -79,7 +79,7 @@
           "type": "items",
           "settings": {
             "heading": "All-In-One Serum",
-            "text": "Receive 1560 Entries",
+            "text": "Receive 1975 Entries",
             "image": "shopify://shop_images/Img_24.png",
             "price": "from $79",
             "compare_price": "",
@@ -248,7 +248,7 @@
           "type": "items",
           "settings": {
             "heading": "Micro-Infusion Targeted Patches",
-            "text": "Receive 1580 Entries",
+            "text": "Receive 1975 Entries",
             "image": "shopify://shop_images/mi-target-pat.webp",
             "price": "$79",
             "compare_price": "",
@@ -262,7 +262,7 @@
           "type": "items",
           "settings": {
             "heading": "Shower Filter",
-            "text": "Receive 2980 Entries",
+            "text": "Receive 3725 Entries",
             "image": "shopify://shop_images/shwr-fil.webp",
             "price": "from $149",
             "compare_price": "",
@@ -276,7 +276,7 @@
           "type": "items",
           "settings": {
             "heading": "Faucet Filter",
-            "text": "Receive 2580 Entries",
+            "text": "Receive 3225 Entries",
             "image": "shopify://shop_images/water-fil.webp",
             "price": "from $129",
             "compare_price": "",
@@ -290,7 +290,7 @@
           "type": "items",
           "settings": {
             "heading": "Dermal Mist",
-            "text": "Receive 580 Entries",
+            "text": "Receive 725 Entries",
             "image": "shopify://shop_images/derm-mist.webp",
             "price": "$29",
             "compare_price": "",
@@ -412,8 +412,8 @@
       "type": "car-giveaway-countdown-timer-sticky",
       "name": "t:sections.car-giveaway-countdown-timer-sticky.name",
       "settings": {
-        "heading": "20X entries!",
-        "from": "2025-11-06",
+        "heading": "25X entries!",
+        "from": "2025-11-20",
         "days": 7
       }
     }

@@ -63,10 +63,12 @@
     "cart_upsell4_product": "neck-decolletage-led",
     "cart_upsell5_product": "micro-infusion-targeted-patches",
     "black_friday_turn_on": true,
+    "black_friday_discount": "BlackF26",
     "black_friday_discount_percent": 0,
+    "black_friday_discount_exception": "qure-microinfusion-offer,qure-microinfusion-offer-men,micro-infusion-acne,micro-infusion-dark-spots,micro-infusion-faq-page-2,exclusive-holiday-bundle-deal-new",
     "enable_gamification": true,
-    "event_start_date": "2025-11-05",
-    "event_end_date": "2025-11-15",
+    "event_start_date": "2025-11-17",
+    "event_end_date": "2025-11-23",
     "enable_test": true,
     "content_for_index": [],
     "blocks": {
@@ -112,6 +114,11 @@
       },
       "3436920659579967349": {
         "type": "shopify://apps/stamped-reviews/blocks/loyalty-rewards-launcher/a103faaf-2125-4b0e-89fa-de5149736723",
+        "disabled": false,
+        "settings": {}
+      },
+      "2567389343055140935": {
+        "type": "shopify://apps/microsoft-clarity/blocks/clarity_js/31c3d126-8116-4b4a-8ba1-baeda7c4aeea",
         "disabled": false,
         "settings": {}
       }
