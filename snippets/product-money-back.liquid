@@ -35,6 +35,8 @@
             {% endif %}
             {% if block.settings.text != blank %}
                 <p class="fs-14 fs-md-16">{{ block.settings.text }}</p>
+            {% else %}
+                <p class="fs-14 fs-md-16">{{ 'product.settings.money-back.text' | t }}</p>
             {% endif %}
        </div>
     </div>
