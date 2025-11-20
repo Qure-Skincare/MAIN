@@ -140,7 +140,6 @@
     },
     "bf_top_products": {
       "type": "bf-top-products",
-      "settings": {},
       "blocks": {
         "item1": {
           "type": "items",
@@ -204,7 +203,9 @@
         "item4",
         "item5",
         "item6"
-      ]
+      ],
+      "disabled": true,
+      "settings": {}
     },
     "bf_bundle_banner_dTGjF7": {
       "type": "bf-bundle-banner",
