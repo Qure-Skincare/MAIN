@@ -67,6 +67,7 @@
     "enable_gamification": true,
     "event_start_date": "2025-11-05",
     "event_end_date": "2025-11-15",
+    "enable_test": true,
     "content_for_index": [],
     "blocks": {
       "2786716548061469553": {

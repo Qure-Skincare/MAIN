@@ -278,5 +278,17 @@
       }
       
     ]
+  },
+  {
+    "name": "Endrock Test Settings",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "enable_test",
+        "label": "Enable Test",
+        "default": false,
+        "info": "Enable or disable the test feature."
+      }
+    ]
   }
 ]

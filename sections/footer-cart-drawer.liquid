@@ -27,11 +27,20 @@
                   {% render 'footer-cart-drawer-empty' %}
                {% else %}
                   {% for item in cart.items %}
-                     {% include 'endrock_get-cart-item-data' %}
-                     {% include 'endrock_footer-cart-drawer-item' %}
+                     {% include 'get-cart-item-data' %}
+
+                     {% if settings.enable_test %}
+                        {% include 'endrock_footer-cart-drawer-item' %}
+                     {% else %}
+                        {% include 'footer-cart-drawer-item' %}
+                     {% endif %}
                   {% endfor %}
 
-                  {% include 'endrock_footer-cart-drawer-upsells' %}
+                  {% if settings.enable_test %}
+                     {% include 'endrock_footer-cart-drawer-upsells' %}
+                  {% else %}
+                     {% include 'footer-cart-drawer-upsells' %}
+                  {% endif %}
                {% endif %}
             </div>
             {% if cart.item_count > 0 %}
