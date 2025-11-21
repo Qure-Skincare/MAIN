@@ -254,7 +254,7 @@
         "image": "shopify://shop_images/stop-motion-square-v1.gif",
         "bg_color": "white",
         "button_label": "Shop Now",
-        "button_url": "#",
+        "button_url": "https://qureskincare.com/collections/best-sellers",
         "sub_text": "*Excludes Black Friday bundles"
       }
     },
