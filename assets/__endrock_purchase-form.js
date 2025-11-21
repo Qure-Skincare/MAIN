@@ -1,4 +1,4 @@
-// {% comment %} AB TES 219 to 224 {% endcomment %}
+// {% comment %} AB TEST 219 to 224 {% endcomment %}
 
 const __section = document.currentScript.getAttribute('data-section');
 const __form = document.currentScript.getAttribute('data-form');
