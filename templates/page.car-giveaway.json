@@ -290,11 +290,11 @@
           "type": "items",
           "settings": {
             "heading": "Dermal Mist",
-            "text": "Receive 725 Entries",
-            "image": "shopify://shop_images/derm-mist.webp",
+            "text": "Receive 536 Entries",
+            "image": "shopify://shop_images/mist.png",
             "price": "$29",
             "compare_price": "",
-            "discount_price": "",
+            "discount_price": "21.46",
             "button_label": "Shop Now",
             "button_url": "https://qureskincare.com/products/dermal-mist",
             "quote": ""
