@@ -51,11 +51,11 @@
           "type": "items",
           "settings": {
             "heading": "Neck & Décolletage LED Device",
-            "text": "Receive 7475 Entries",
+            "text": "Receive 5531 Entries",
             "image": "shopify://shop_images/nd.png",
             "price": "$299",
             "compare_price": "",
-            "discount_price": "",
+            "discount_price": "221.26",
             "button_label": "Shop Now",
             "button_url": "https://qureskincare.com/products/neck-decolletage-led",
             "quote": ""
