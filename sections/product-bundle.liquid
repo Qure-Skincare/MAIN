@@ -2,7 +2,7 @@
   Renders a product bundle
 {% enddoc %}
 
-{% include 'get-product-data' %}
+{% include 'get-product-data', is_black_friday_exception: true %}
 
 {%- for block in section.blocks -%}
     {% if block.type == 'description' %}

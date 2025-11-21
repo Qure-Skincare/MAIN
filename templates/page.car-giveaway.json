@@ -37,11 +37,11 @@
           "type": "items",
           "settings": {
             "heading": "Q-Rejuvalight Pro LED Face Mask",
-            "text": "Receive 9975 Entries",
-            "image": "shopify://shop_images/Img_25.png",
+            "text": "Receive 7381 Entries",
+            "image": "shopify://shop_images/mask_eff815ba-eede-4ec4-ab66-e7c81f890131.png",
             "price": "$399",
             "compare_price": "",
-            "discount_price": "",
+            "discount_price": "$295.26",
             "button_label": "Shop Now",
             "button_url": "https://qureskincare.com/products/q-rejuvalight-pro-facewear",
             "quote": "BEST CHANCE"
@@ -51,11 +51,11 @@
           "type": "items",
           "settings": {
             "heading": "Neck & Décolletage LED Device",
-            "text": "Receive 7475 Entries",
-            "image": "shopify://shop_images/Img_23.png",
+            "text": "Receive 5531 Entries",
+            "image": "shopify://shop_images/nd.png",
             "price": "$299",
             "compare_price": "",
-            "discount_price": "",
+            "discount_price": "$221.26",
             "button_label": "Shop Now",
             "button_url": "https://qureskincare.com/products/neck-decolletage-led",
             "quote": ""
@@ -65,11 +65,11 @@
           "type": "items",
           "settings": {
             "heading": "Micro-Infusion Facial System",
-            "text": "Receive 4975 Entries",
-            "image": "shopify://shop_images/Rectangle_1375_d5b54d2a-a78a-4648-a652-a95cc0b53ea1.png",
+            "text": "Receive 2200 Entries",
+            "image": "shopify://shop_images/Img_279c177e-86e1-4317-83f4-4c05b6d63958.png",
             "price": "from $119",
             "compare_price": "",
-            "discount_price": "",
+            "discount_price": "$88",
             "button_label": "Shop Now",
             "button_url": "https://qureskincare.com/pages/microinfusion",
             "quote": ""
@@ -79,11 +79,11 @@
           "type": "items",
           "settings": {
             "heading": "All-In-One Serum",
-            "text": "Receive 1975 Entries",
-            "image": "shopify://shop_images/Img_24.png",
+            "text": "Receive 1450 Entries",
+            "image": "shopify://shop_images/serum_0f18bea1-b8b0-45b2-bcd2-e9cb4dc13bd3.png",
             "price": "from $79",
             "compare_price": "",
-            "discount_price": "",
+            "discount_price": "$58",
             "button_label": "Shop Now",
             "button_url": "https://qureskincare.com/products/face-serum",
             "quote": ""
@@ -248,11 +248,11 @@
           "type": "items",
           "settings": {
             "heading": "Micro-Infusion Targeted Patches",
-            "text": "Receive 1975 Entries",
-            "image": "shopify://shop_images/mi-target-pat.webp",
+            "text": "Receive 1450 Entries",
+            "image": "shopify://shop_images/patches_3f842a9b-9a5f-4ec0-81d6-6dd4da52b841.png",
             "price": "$79",
             "compare_price": "",
-            "discount_price": "",
+            "discount_price": "$58",
             "button_label": "Shop Now",
             "button_url": "https://qureskincare.com/products/micro-infusion-targeted-patches",
             "quote": ""
@@ -262,11 +262,11 @@
           "type": "items",
           "settings": {
             "heading": "Shower Filter",
-            "text": "Receive 3725 Entries",
-            "image": "shopify://shop_images/shwr-fil.webp",
+            "text": "Receive 2750 Entries",
+            "image": "shopify://shop_images/shower.png",
             "price": "from $149",
             "compare_price": "",
-            "discount_price": "",
+            "discount_price": "$110",
             "button_label": "Shop Now",
             "button_url": "https://qureskincare.com/products/shower-filter",
             "quote": ""
@@ -276,11 +276,11 @@
           "type": "items",
           "settings": {
             "heading": "Faucet Filter",
-            "text": "Receive 3225 Entries",
-            "image": "shopify://shop_images/water-fil.webp",
+            "text": "Receive 2386 Entries",
+            "image": "shopify://shop_images/faucet_12adda3e-02f1-4fb2-b430-c3dbe04f1dbc.png",
             "price": "from $129",
             "compare_price": "",
-            "discount_price": "",
+            "discount_price": "$95.46",
             "button_label": "Shop Now",
             "button_url": "https://qureskincare.com/products/faucet-filter",
             "quote": ""
@@ -290,11 +290,11 @@
           "type": "items",
           "settings": {
             "heading": "Dermal Mist",
-            "text": "Receive 725 Entries",
-            "image": "shopify://shop_images/derm-mist.webp",
+            "text": "Receive 536 Entries",
+            "image": "shopify://shop_images/mist.png",
             "price": "$29",
             "compare_price": "",
-            "discount_price": "",
+            "discount_price": "21.46",
             "button_label": "Shop Now",
             "button_url": "https://qureskincare.com/products/dermal-mist",
             "quote": ""

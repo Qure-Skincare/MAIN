@@ -95,6 +95,19 @@
         "button_url_mobile": "https://qureskincare.com/collections/best-sellers"
       }
     },
+    "bf_banner_with_text_7wEFDF": {
+      "type": "bf-banner-with-text",
+      "name": "t:sections.bf-banner-with-text.name",
+      "settings": {
+        "heading": "<h2>26% Off Sitewide*</h2>",
+        "text": "<p>Shop our biggest sale of the year. The week only.</p>",
+        "image": "shopify://shop_images/stop-motion-square-v1.gif",
+        "bg_color": "white",
+        "button_label": "Shop Now",
+        "button_url": "https://qureskincare.com/collections/best-sellers",
+        "sub_text": "*Excludes Black Friday bundles"
+      }
+    },
     "bf_banner_with_text_4LMX6e": {
       "type": "bf-banner-with-text",
       "blocks": {
@@ -128,6 +141,7 @@
         "carousel_BigzyF",
         "carousel_C4JjyW"
       ],
+      "disabled": true,
       "name": "t:sections.bf-banner-with-text.name",
       "settings": {
         "heading": "<h2>Save Up to 57%</h2>",
@@ -204,7 +218,6 @@
         "item5",
         "item6"
       ],
-      "disabled": true,
       "settings": {}
     },
     "bf_bundle_banner_dTGjF7": {
@@ -241,22 +254,9 @@
         "carousel_rRrz43",
         "carousel_bjazym"
       ],
+      "disabled": true,
       "name": "t:sections.bf-bundle-banner.name",
       "settings": {}
-    },
-    "bf_banner_with_text_7wEFDF": {
-      "type": "bf-banner-with-text",
-      "disabled": true,
-      "name": "t:sections.bf-banner-with-text.name",
-      "settings": {
-        "heading": "<h2>26% Off Sitewide*</h2>",
-        "text": "<p>Shop our biggest sale of the year. The week only.</p>",
-        "image": "shopify://shop_images/stop-motion-square-v1.gif",
-        "bg_color": "white",
-        "button_label": "Shop Now",
-        "button_url": "#",
-        "sub_text": "*Excludes Black Friday bundles"
-      }
     },
     "bf_bundle_bunner_mini_VD9qRR": {
       "type": "bf-bundle-banner-mini",
@@ -373,7 +373,6 @@
         "slider_GcMQyX",
         "slider_xNnbxX"
       ],
-      "disabled": true,
       "name": "t:sections.slider-featured-in.name",
       "settings": {}
     },
@@ -655,6 +654,50 @@
         "text": "<p>Reclaim your confidence at any age, no matter what your skin concern is.</p>"
       }
     },
+    "carousel_qXW6Gd": {
+      "type": "carousel",
+      "blocks": {
+        "items_NHKMPi": {
+          "type": "items",
+          "settings": {
+            "heading": "Free Shipping On Orders Over $100",
+            "image": "shopify://shop_images/guarantee.svg"
+          }
+        },
+        "items_qd3AjU": {
+          "type": "items",
+          "settings": {
+            "heading": "Dermatologist Reviewed",
+            "image": "shopify://shop_images/Guarantee_Icons.svg"
+          }
+        },
+        "items_ANgYcm": {
+          "type": "items",
+          "settings": {
+            "heading": "Buy Now, Pay Later Options Available",
+            "image": "shopify://shop_images/pay-later.svg"
+          }
+        },
+        "items_wpmqpr": {
+          "type": "items",
+          "settings": {
+            "heading": "Proven Results, Backed By Science",
+            "image": "shopify://shop_images/proven-result.svg"
+          }
+        }
+      },
+      "block_order": [
+        "items_NHKMPi",
+        "items_qd3AjU",
+        "items_ANgYcm",
+        "items_wpmqpr"
+      ],
+      "name": "t:common.carousel",
+      "settings": {
+        "background_color": "#f6f6f7",
+        "display_mode": "both"
+      }
+    },
     "trusted_recommended_KHYLQ9": {
       "type": "trusted-recommended",
       "name": "t:sections.trusted-recommended.name",
@@ -775,50 +818,6 @@
       "name": "t:sections.video-slider.name",
       "settings": {}
     },
-    "carousel_qXW6Gd": {
-      "type": "carousel",
-      "blocks": {
-        "items_NHKMPi": {
-          "type": "items",
-          "settings": {
-            "heading": "Free Shipping On Orders Over $100",
-            "image": "shopify://shop_images/guarantee.svg"
-          }
-        },
-        "items_qd3AjU": {
-          "type": "items",
-          "settings": {
-            "heading": "Dermatologist Reviewed",
-            "image": "shopify://shop_images/Guarantee_Icons.svg"
-          }
-        },
-        "items_ANgYcm": {
-          "type": "items",
-          "settings": {
-            "heading": "Buy Now, Pay Later Options Available",
-            "image": "shopify://shop_images/pay-later.svg"
-          }
-        },
-        "items_wpmqpr": {
-          "type": "items",
-          "settings": {
-            "heading": "Proven Results, Backed By Science",
-            "image": "shopify://shop_images/proven-result.svg"
-          }
-        }
-      },
-      "block_order": [
-        "items_NHKMPi",
-        "items_qd3AjU",
-        "items_ANgYcm",
-        "items_wpmqpr"
-      ],
-      "name": "t:common.carousel",
-      "settings": {
-        "background_color": "#f6f6f7",
-        "display_mode": "both"
-      }
-    },
     "our_advisors_LPVVBm": {
       "type": "our-advisors",
       "blocks": {
@@ -897,6 +896,7 @@
     },
     "index-read-our-story": {
       "type": "index-read-our-story",
+      "disabled": true,
       "settings": {
         "heading": "Feeling good in your skin is not a privilege – it’s a right",
         "text": "At Qure, we're redefining beauty boundaries by making professional clinical treatments accessible to everyone from the comfort of peoples home—without the clinical price tag.",
@@ -968,10 +968,10 @@
   "order": [
     "index-mobile-category-slider",
     "index_banner_with_text_TNGNLJ",
+    "bf_banner_with_text_7wEFDF",
     "bf_banner_with_text_4LMX6e",
     "bf_top_products",
     "bf_bundle_banner_dTGjF7",
-    "bf_banner_with_text_7wEFDF",
     "bf_bundle_bunner_mini_VD9qRR",
     "index_banner_with_text_second_TNGNLJ",
     "bundle_banner_eEa7XN",
@@ -979,9 +979,9 @@
     "trusted_reviews_ecfpDp",
     "index-qure-products",
     "index_get_qure_mqX6LE",
+    "carousel_qXW6Gd",
     "trusted_recommended_KHYLQ9",
     "video_slider_MWbVWw",
-    "carousel_qXW6Gd",
     "our_advisors_LPVVBm",
     "quiz_wdnen7",
     "index-read-our-story",

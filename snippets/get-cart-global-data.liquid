@@ -49,21 +49,21 @@
 {% assign global_black_friday_discount_exception = settings.black_friday_discount_exception %}
 
 {% if global_black_friday_discount_exception != blank %}
-    {% assign is_exception = false %}
+    {% assign is_black_friday_exception = false %}
     {% assign exception_list = global_black_friday_discount_exception | split: ',' %}
     {% assign path_lower = request.path | downcase %}
     
     {% for exception in exception_list %}
         {% assign exception = exception | downcase %}
         {% if exception != blank and path_lower contains exception %}
-            {% assign is_exception = true %}
+            {% assign is_black_friday_exception = true %}
             {% break %}
         {% endif %}
     {% endfor %}
 {% endif %}
 
 
-{% if global_black_friday_discount_percent > 0 and is_exception == false %}
+{% if global_black_friday_discount_percent > 0 and is_black_friday_exception == false %}
     {% assign global_black_friday_discount = settings.black_friday_discount %}
 {% endif %}
 

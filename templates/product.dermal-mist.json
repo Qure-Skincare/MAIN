@@ -14,7 +14,6 @@
       "blocks": {
         "black_friday_discount_MCCNDL": {
           "type": "black-friday-discount",
-          "disabled": true,
           "settings": {}
         },
         "price_A11": {
@@ -562,8 +561,8 @@
       }
     },
     "sticky_cta_KmhMmz": {
-      "disabled": true,
       "type": "sticky-button",
+      "disabled": true,
       "name": "t:sections.sticky-button.name",
       "settings": {
         "heading": "Dermal Mist",
