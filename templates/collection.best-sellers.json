@@ -11,6 +11,7 @@
   "sections": {
     "bf_clickable_banner_with_text_rTzUyC": {
       "type": "bf-clickable-banner-with-text",
+      "disabled": true,
       "name": "t:sections.bf-clickable-banner-with-text.name",
       "settings": {
         "heading": "<h2>Save Up to 57%</h2>",
@@ -24,7 +25,6 @@
     },
     "bf_page_banner_pYKPB4": {
       "type": "bf-page-banner",
-      "disabled": true,
       "name": "t:sections.bf-page-banner.name",
       "settings": {
         "heading": "<h2>26% Off Sitewide*</h2>",
@@ -154,7 +154,6 @@
         "image_dicxDW",
         "image_wCgyfh"
       ],
-      "disabled": true,
       "name": "t:sections.bf-bundle-banner-mini.name",
       "settings": {
         "heading": "<h3>Save Up to 57%</h3>",
@@ -211,6 +210,7 @@
         "carousel_rRrz43",
         "carousel_bjazym"
       ],
+      "disabled": true,
       "name": "t:sections.bf-bundle-banner.name",
       "settings": {}
     },
