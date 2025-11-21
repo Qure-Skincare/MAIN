@@ -248,11 +248,11 @@
           "type": "items",
           "settings": {
             "heading": "Micro-Infusion Targeted Patches",
-            "text": "Receive 1975 Entries",
-            "image": "shopify://shop_images/mi-target-pat.webp",
+            "text": "Receive 1450 Entries",
+            "image": "shopify://shop_images/patches_3f842a9b-9a5f-4ec0-81d6-6dd4da52b841.png",
             "price": "$79",
             "compare_price": "",
-            "discount_price": "",
+            "discount_price": "$58",
             "button_label": "Shop Now",
             "button_url": "https://qureskincare.com/products/micro-infusion-targeted-patches",
             "quote": ""
@@ -262,11 +262,11 @@
           "type": "items",
           "settings": {
             "heading": "Shower Filter",
-            "text": "Receive 3725 Entries",
-            "image": "shopify://shop_images/shwr-fil.webp",
+            "text": "Receive 2750 Entries",
+            "image": "shopify://shop_images/shower.png",
             "price": "from $149",
             "compare_price": "",
-            "discount_price": "",
+            "discount_price": "$110",
             "button_label": "Shop Now",
             "button_url": "https://qureskincare.com/products/shower-filter",
             "quote": ""
