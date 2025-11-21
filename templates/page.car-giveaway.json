@@ -79,11 +79,11 @@
           "type": "items",
           "settings": {
             "heading": "All-In-One Serum",
-            "text": "Receive 1975 Entries",
+            "text": "Receive 1450 Entries",
             "image": "shopify://shop_images/serum_0f18bea1-b8b0-45b2-bcd2-e9cb4dc13bd3.png",
             "price": "from $79",
             "compare_price": "",
-            "discount_price": "",
+            "discount_price": "$58",
             "button_label": "Shop Now",
             "button_url": "https://qureskincare.com/products/face-serum",
             "quote": ""
