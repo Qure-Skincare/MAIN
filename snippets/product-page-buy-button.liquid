@@ -48,7 +48,7 @@
 
 <div class="qure__product-action-inner mt-30 mt-md-30 mb-10 max-w-ctm" style="--max-w-ctm:500px">
   <form method="post" action="/cart/add" enctype="multipart/form-data"{% if static %} data-static="true"{% endif %}>
-    <button type="submit" class="add-cart-button product-form__submit btn btn--primary w-100"{% if soldout %} disabled{% endif %}>{{ button-label }}</button>
+    <button type="submit" class="add-cart-button product-form__submit btn btn--primary w-100{% if skip_black_friday_label == true %} skip_black_friday_label{% endif %}"{% if soldout %} disabled{% endif %}>{{ button-label }}</button>
     <input type="hidden" name="quantity" id="quantity" value="1">
     <input type="hidden" name="selling_plan" id="selling_plan" value="">
     <input type="hidden" name="id" value="{{ product_variant_id }}">
@@ -57,8 +57,8 @@
 
 {% if reserved or soldout %}
   <script>
-    const product_buy_button_label = '{{ button-label }}';
-    const product_buy_button_soldout = {% if soldout %}true{% else %}false{% endif %};
+    let product_buy_button_label = '{{ button-label }}';
+    let product_buy_button_soldout = {% if soldout %}true{% else %}false{% endif %};
   </script>
 
   <script>
