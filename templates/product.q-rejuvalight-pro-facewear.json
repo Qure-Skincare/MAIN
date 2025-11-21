@@ -25,6 +25,7 @@
       "blocks": {
         "black_friday_discount_A12": {
           "type": "black-friday-discount",
+          "disabled": true,
           "settings": {}
         },
         "price_A11": {
