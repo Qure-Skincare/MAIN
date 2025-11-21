@@ -29,7 +29,6 @@
         },
         "price_A11": {
           "type": "price",
-          "disabled": true,
           "settings": {
             "show_discount": false
           }
@@ -44,6 +43,7 @@
         },
         "exclusive-offer_iaSzaD": {
           "type": "exclusive-offer",
+          "disabled": true,
           "settings": {
             "product": "q-rejuvalight-pro-facewear-3",
             "image_product1": "shopify://shop_images/Img_16.png",
