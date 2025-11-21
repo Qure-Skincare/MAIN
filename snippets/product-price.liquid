@@ -41,7 +41,7 @@
 
   {% if reserved == false and soldout == false %}
     <script>
-      const buy_and_save_button_label = '{{ 'product.settings.buy-and-save-button-label' | t }} {{ product_discount }}%';
+      let buy_and_save_button_label = '{{ 'product.settings.buy-and-save-button-label' | t }} {{ product_discount }}%';
 
       document.addEventListener("DOMContentLoaded", function () {
         loadScriptOnce('product-price', 'https://qureskincaredns.com/shopify/js/product-price.js');
