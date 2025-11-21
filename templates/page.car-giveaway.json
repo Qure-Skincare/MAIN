@@ -276,11 +276,11 @@
           "type": "items",
           "settings": {
             "heading": "Faucet Filter",
-            "text": "Receive 3225 Entries",
-            "image": "shopify://shop_images/water-fil.webp",
+            "text": "Receive 2386 Entries",
+            "image": "shopify://shop_images/faucet_12adda3e-02f1-4fb2-b430-c3dbe04f1dbc.png",
             "price": "from $129",
             "compare_price": "",
-            "discount_price": "",
+            "discount_price": "$95.46",
             "button_label": "Shop Now",
             "button_url": "https://qureskincare.com/products/faucet-filter",
             "quote": ""
