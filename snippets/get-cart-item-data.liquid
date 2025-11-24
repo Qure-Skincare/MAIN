@@ -80,6 +80,21 @@
     {% endif %}
 
 
+    {% comment %} selling plan properties  {% endcomment %}
+
+    {% if cart_item_selling_plan != blank %}
+      {% assign selling_plan_exists = true %}
+      {% assign cart_item_compare_price = cart_item_selling_plan.compare_at_price %}
+      {% assign cart_item_before_price = cart_item_selling_plan.compare_at_price | money_without_trailing_zeros %}
+      {% assign cart_item_price = cart_item_selling_plan.price %}
+      {% assign cart_item_sale_price = cart_item_selling_plan.price | money_without_trailing_zeros %}
+
+      {% if cart_item_compare_price == cart_item_price %}
+        {% assign cart_item_before_price = blank %}
+      {% endif %}
+    {% endif %}
+
+
     {% comment %} discount {% endcomment %}
 
     {% if cart_item_original_price != cart_item_discounted_price %}
@@ -106,22 +121,6 @@
 
     {% if cart_item_compare_price > 0 %}
         {% assign cart_item_before_price = cart_item_compare_price | money_without_trailing_zeros %}
-    {% endif %}
-
-
-    {% comment %} selling plan properties  {% endcomment %}
-
-    {% if cart_item_selling_plan != blank %}
-      {% assign selling_plan_exists = true %}
-      {% assign cart_item_compare_price = cart_item_selling_plan.compare_at_price %}
-      {% assign cart_item_before_price = cart_item_selling_plan.compare_at_price | money_without_trailing_zeros %}
-      {% assign cart_item_price = cart_item_selling_plan.price %}
-      {% assign cart_item_sale_price = cart_item_selling_plan.price | money_without_trailing_zeros %}
-
-      {% if cart_item_compare_price == cart_item_price %}
-        {% assign cart_item_before_price = blank %}
-      {% endif %}
-
     {% endif %}
 
 
