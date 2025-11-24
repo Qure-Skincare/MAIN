@@ -539,7 +539,7 @@
         "compare_red_light_hat_bUHcLm": {
           "type": "compare_red_light_hat",
           "settings": {
-            "heading_1": "LED wavelengths",
+            "heading_1": "LED wavelength",
             "left_text_1": "3 wavelengths",
             "right_text_1": "1 wavelength",
             "heading_2": "Customization",
