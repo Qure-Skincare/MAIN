@@ -522,7 +522,7 @@
         "compare_hair_growth_pQVjnm": {
           "type": "compare_hair_growth",
           "settings": {
-            "heading_1": "LED wavelengths",
+            "heading_1": "LED wavelength",
             "left_text_1": "3 wavelengths",
             "right_text_1": "1 wavelengths",
             "heading_2": "Customization",
