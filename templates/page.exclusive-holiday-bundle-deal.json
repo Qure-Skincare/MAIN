@@ -335,6 +335,15 @@
             "reserved": false
           }
         },
+        "product_eAgqK8": {
+          "type": "product",
+          "settings": {
+            "product": "micro-infusion-limited-edition-bundle-1",
+            "preselected": false,
+            "soldout": false,
+            "reserved": false
+          }
+        },
         "type_yDwWmt": {
           "type": "type",
           "settings": {}
@@ -394,6 +403,7 @@
         "product_eiHVrp",
         "product_xJpDep",
         "product_xwqzya",
+        "product_eAgqK8",
         "type_yDwWmt",
         "product_type_YrPQrV",
         "product_KKbDAE",
