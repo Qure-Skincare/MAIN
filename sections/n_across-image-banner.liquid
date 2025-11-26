@@ -1,0 +1,117 @@
+{% doc %}
+  Renders an across image banner section
+{% enddoc %}
+
+
+<link rel="stylesheet" href="https://qureskincaredns.com/sections/new/across-image-banner/across-image-banner.css" />
+    <section class="across-image-banner across-image-banner--holidays">
+        <picture>
+            {% if section.settings.image != blank %}
+                <source media="(min-width:768px)" srcset="{{ section.settings.image | image_url }}" />
+            {% endif %}
+            {% if section.settings.image_mobile != blank %}
+                <img src="{{ section.settings.image_mobile | image_url }}" alt="{{ section.settings.image_mobile.alt | escape }}" />
+            {% endif %}
+        </picture>
+        <div class="across-image-banner__overlay">
+            <div class="container">
+                <article>
+                    {% if section.settings.heading != blank %}
+                        {{ section.settings.heading }}
+                    {% endif %}
+                    {% if section.settings.text != blank %}
+                        {{ section.settings.text }}
+                    {% endif %}
+                    {% if section.settings.button_label != blank and section.settings.button_url != blank %}
+                        <a href="{{ section.settings.button_url }}" class="btn btn--primary">{{ section.settings.button_label }}</a>
+                    {% endif %}
+                </article>
+                {% for block in section.blocks %}
+                    {% if block.type == 'percent_value' %}
+                        <div class="e-discount-badge" data-text-top="Up to" data-text-bottom="Off">
+                            <span>{{ block.settings.percent_value }}%</span>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+
+{% schema %}
+{
+    "name": "t:sections.n_across-image-banner.name",
+        "settings": [
+        {
+            "type": "select",
+            "id": "modifier",
+            "label": "t:common.modifier",
+            "default": "none",
+            "options": [
+                {
+                    "value": "none",
+                    "label": "t:sections.n_across-image-banner.settings.modifier-options.none"
+                },
+                {
+                    "value": "holidays",
+                    "label": "t:sections.n_across-image-banner.settings.modifier-options.holidays"
+                }
+            ]
+        },
+        {
+            "type": "richtext",
+            "id": "heading",
+            "label": "t:common.header"
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "t:common.text"
+        },
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "t:common.image"
+        },
+        {
+            "type": "image_picker",
+            "id": "image_mobile",
+            "label": "t:common.image-mobile"
+        },
+        {
+            "type": "text",
+            "id": "button_label",
+            "label": "t:common.button-label"
+        },
+        {
+            "type": "url",
+            "id": "button_url",
+            "label": "t:common.button-url"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "percent_value",
+            "name": "t:common.percent-value",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "range",
+                    "id": "percent_value",
+                    "label": "t:common.percent-value",
+                    "min": 0,
+                    "max": 100,
+                    "step": 1,
+                    "unit": "%",
+                    "default": 57
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.n_across-image-banner.name"
+        }
+    ]
+}
+{% endschema %}

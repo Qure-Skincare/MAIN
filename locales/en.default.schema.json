@@ -172,7 +172,8 @@
         "topic": "Topic",
         "target-datetime": "Target date/time (YYYY-MM-DDTHH:MM:SS)",
         "white": "White",
-        "black": "Black"
+        "black": "Black",
+        "modifier": "Modifier"
     },
     "blocks": {
         "block-card": {
@@ -187,6 +188,15 @@
     "sections": {
         "announcement-bar": {
             "name": "Announcement bar"
+        },
+        "n_across-image-banner": {
+            "name": "Across image banner",
+            "settings": {
+                "modifier-options": {
+                    "none": "none",
+                    "holidays": "holidays"
+                }
+            }
         },
         "collection": {
             "name": "Collection",

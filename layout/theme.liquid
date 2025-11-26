@@ -63,6 +63,16 @@
     <link rel="stylesheet" href="https://qureskincaredns.com/assets/css/theme-fonts.css" />
     <link rel="stylesheet" href="https://qureskincaredns.com/assets/css/base.css" />
     <link rel="stylesheet" href="https://qureskincaredns.com/assets/css/black-friday.css" />
+    <style>
+        :root {
+          {% if settings.primary-color != blank %}
+            --primary-color: {{ settings.primary-color }};
+          {% endif %}
+          {% if settings.discount-color != blank %}
+            --discount-color: {{ settings.discount-color }};
+          {% endif %}
+        }
+    </style>
     
     {{ content_for_header }}
 

@@ -81,6 +81,31 @@
       "disabled": true,
       "settings": {}
     },
+    "n_across_image_banner_wjbBCH": {
+      "type": "n_across-image-banner",
+      "blocks": {
+        "percent_value_imfnV7": {
+          "type": "percent_value",
+          "settings": {
+            "percent_value": 57
+          }
+        }
+      },
+      "block_order": [
+        "percent_value_imfnV7"
+      ],
+      "disabled": true,
+      "name": "t:sections.n_across-image-banner.name",
+      "settings": {
+        "modifier": "holidays",
+        "heading": "<h1>Give the gift of glowing skin</h1>",
+        "text": "<p>Best-selling products bundled for maximum results - and maximum savings.</p>",
+        "image": "shopify://shop_images/holidays.webp",
+        "image_mobile": "shopify://shop_images/holidays-mob.webp",
+        "button_label": "Save Up To 57%",
+        "button_url": "#"
+      }
+    },
     "index_banner_with_text_TNGNLJ": {
       "type": "index-banner-with-text",
       "disabled": true,
@@ -930,6 +955,7 @@
   },
   "order": [
     "index-mobile-category-slider",
+    "n_across_image_banner_wjbBCH",
     "index_banner_with_text_TNGNLJ",
     "bf_banner_with_text_7wEFDF",
     "bf_banner_with_text_4LMX6e",
