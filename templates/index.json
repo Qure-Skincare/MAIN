@@ -221,44 +221,6 @@
       ],
       "settings": {}
     },
-    "bf_bundle_banner_dTGjF7": {
-      "type": "bf-bundle-banner",
-      "blocks": {
-        "carousel_rRrz43": {
-          "type": "carousel",
-          "settings": {
-            "heading": "<h3>Celebrating the [logo] Community</h3>",
-            "text": "<p>Every purchase* enters you to <strong>win</strong> <strong>a 2025 Range Rover Evoque</strong></p>",
-            "percent_value": "",
-            "image": "shopify://shop_images/bundle-2.webp",
-            "image_mobile": "shopify://shop_images/bundle-2-mob.webp",
-            "button_label": "Shop To Enter",
-            "button_url": "https://qureskincare.com/pages/car-giveaway",
-            "sub_text": ""
-          }
-        },
-        "carousel_bjazym": {
-          "type": "carousel",
-          "settings": {
-            "heading": "<h3>Your Holiday Glow Starts Here</h3>",
-            "text": "<p>Our signature treatment in one carry-on approved set.</p>",
-            "percent_value": "68%",
-            "image": "shopify://shop_images/bundle-1.webp",
-            "image_mobile": "shopify://shop_images/bundle-1-mob.webp",
-            "button_label": "Get Yours Now",
-            "button_url": "https://qureskincare.com/products/micro-infusion-limited-edition-bundle-1#",
-            "sub_text": "<p><strong>Limited availability:</strong> Under 100 cases remaining</p>"
-          }
-        }
-      },
-      "block_order": [
-        "carousel_rRrz43",
-        "carousel_bjazym"
-      ],
-      "disabled": true,
-      "name": "t:sections.bf-bundle-banner.name",
-      "settings": {}
-    },
     "bf_bundle_bunner_mini_VD9qRR": {
       "type": "bf-bundle-banner-mini",
       "blocks": {
@@ -972,7 +934,6 @@
     "bf_banner_with_text_7wEFDF",
     "bf_banner_with_text_4LMX6e",
     "bf_top_products",
-    "bf_bundle_banner_dTGjF7",
     "bf_bundle_bunner_mini_VD9qRR",
     "index_banner_with_text_second_TNGNLJ",
     "bundle_banner_eEa7XN",
