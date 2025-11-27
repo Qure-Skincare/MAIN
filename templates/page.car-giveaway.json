@@ -412,9 +412,9 @@
       "type": "car-giveaway-countdown-timer-sticky",
       "name": "t:sections.car-giveaway-countdown-timer-sticky.name",
       "settings": {
-        "heading": "25X entries!",
-        "from": "2025-11-20",
-        "days": 7
+        "heading": "30X entries!",
+        "from": "2025-11-27",
+        "days": 4
       }
     }
   },
