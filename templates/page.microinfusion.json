@@ -605,19 +605,6 @@
             "product_text": ""
           }
         },
-        "slider_eCGH8c": {
-          "type": "slider",
-          "settings": {
-            "heading": "Fade after just two treatments",
-            "text": "<p>“I personally think my products absorbed better, my skin looks a bit brighter and that larger acne scar on my right cheek has started to fade after just TWO treatments!”</p>",
-            "compare_image": "shopify://shop_images/mona-p.webp",
-            "country_image": "shopify://shop_images/america_f.webp",
-            "username": "<p>Mona P.</p>",
-            "product_url": "",
-            "product_heading": "",
-            "product_text": ""
-          }
-        },
         "slider_78E6pj": {
           "type": "slider",
           "settings": {
@@ -626,6 +613,19 @@
             "compare_image": "shopify://shop_images/andrea.webp",
             "country_image": "shopify://shop_images/america_f.webp",
             "username": "<p>Andrea G.</p>",
+            "product_url": "",
+            "product_heading": "",
+            "product_text": ""
+          }
+        },
+        "slider_eCGH8c": {
+          "type": "slider",
+          "settings": {
+            "heading": "Fade after just two treatments",
+            "text": "<p>“I personally think my products absorbed better, my skin looks a bit brighter and that larger acne scar on my right cheek has started to fade after just TWO treatments!”</p>",
+            "compare_image": "shopify://shop_images/mona-p.webp",
+            "country_image": "shopify://shop_images/america_f.webp",
+            "username": "<p>Mona P.</p>",
             "product_url": "",
             "product_heading": "",
             "product_text": ""
@@ -778,8 +778,8 @@
       "block_order": [
         "slider_AbTEJa",
         "slider_qPwgBB",
-        "slider_eCGH8c",
         "slider_78E6pj",
+        "slider_eCGH8c",
         "slider_xqgHn6",
         "slider_Qab78U",
         "slider_VyHb4h",
