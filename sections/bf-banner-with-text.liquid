@@ -25,7 +25,7 @@
                 </div>
             </div>
             <div class="col-md-7 custom__block">
-                <div class="banner-text--media banner-text-mob-full">
+                <div class="banner-text--media banner-text-mob-full" onclick="window.location.href='{{ section.settings.button_url }}'" style="cursor:pointer">
                     {% assign carousel_blocks = section.blocks | where: "type", "carousel" %}
                     {% if carousel_blocks.size > 0 %}
                         <div class="qure__swiper-wrapper">
