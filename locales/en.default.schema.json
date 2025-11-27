@@ -198,6 +198,15 @@
                 }
             }
         },
+        "n_hero-banner": {
+            "name": "Hero banner",
+            "settings": {
+                "modifier-options": {
+                    "none": "none",
+                    "holidays": "holidays"
+                }
+            }
+        },
         "collection": {
             "name": "Collection",
             "blocks": {

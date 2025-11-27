@@ -1,0 +1,74 @@
+{% doc %}
+  Renders a hero banner section
+{% enddoc %}
+
+
+<link href="https://qureskincaredns.com/sections/new/hero-banner/hero-banner.css" rel="stylesheet" type="text/css"> 
+    <section class="hero-banner{% if section.settings.modifier == 'holidays' %} hero-banner--holidays{% endif %}">
+        <picture>
+            {% if section.settings.image != blank %}
+                <source media="(min-width:768px)" srcset="{{ section.settings.image | image_url }}">
+            {% endif %}
+            {% if section.settings.image_mobile != blank %}
+                <img src="{{ section.settings.image_mobile | image_url }}" alt="{{ section.settings.image_mobile.alt | escape }}">
+            {% endif %}
+        </picture>
+        <article data-badge="The holiday sale is here">
+            {% if section.settings.heading != blank %}
+                {{ section.settings.heading }}
+            {% endif %}
+            {% if section.settings.text != blank %}
+                {{ section.settings.text }}
+            {% endif %}
+        </article>
+    </section>
+
+
+{% schema %}
+{
+    "name": "t:sections.n_hero-banner.name",
+        "settings": [
+        {
+            "type": "select",
+            "id": "modifier",
+            "label": "t:common.modifier",
+            "default": "none",
+            "options": [
+                {
+                    "value": "none",
+                    "label": "t:sections.n_hero-banner.settings.modifier-options.none"
+                },
+                {
+                    "value": "holidays",
+                    "label": "t:sections.n_hero-banner.settings.modifier-options.holidays"
+                }
+            ]
+        },
+        {
+            "type": "richtext",
+            "id": "heading",
+            "label": "t:common.header"
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "t:common.text"
+        },
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "t:common.image"
+        },
+        {
+            "type": "image_picker",
+            "id": "image_mobile",
+            "label": "t:common.image-mobile"
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.n_hero-banner.name"
+        }
+    ]
+}
+{% endschema %}
