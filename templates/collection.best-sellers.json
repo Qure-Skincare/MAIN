@@ -23,6 +23,18 @@
         "link": "https://qureskincare.com/pages/exclusive-holiday-bundle-deal-new?"
       }
     },
+    "n_hero_banner_DxPjy7": {
+      "type": "n_hero-banner",
+      "disabled": true,
+      "name": "t:sections.n_hero-banner.name",
+      "settings": {
+        "modifier": "holidays",
+        "heading": "<h2>Give the gift of glowing skin</h2>",
+        "text": "<p>Unwrap radiant skin this holiday season with dermatologist-backed skincare solutions.</p>",
+        "image": "shopify://shop_images/holiday-banner.webp",
+        "image_mobile": "shopify://shop_images/holiday-banner-mob.webp"
+      }
+    },
     "bf_page_banner_pYKPB4": {
       "type": "bf-page-banner",
       "name": "t:sections.bf-page-banner.name",
@@ -302,6 +314,7 @@
   },
   "order": [
     "bf_clickable_banner_with_text_rTzUyC",
+    "n_hero_banner_DxPjy7",
     "bf_page_banner_pYKPB4",
     "page_banner_zUyTB8",
     "carousel_7YOxGy",
