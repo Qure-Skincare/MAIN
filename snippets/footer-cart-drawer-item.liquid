@@ -68,7 +68,7 @@
             <div class="product-price new igPrice">{{ cart_item_sale_price }}</div>
         </div>
 
-        {% unless gift_exists or insurance_exists or selling_plan_exists or discount_exists %}
+        {% unless gift_exists or insurance_exists or selling_plan_exists or discount_100_exists %}
             <div class="product-qty">
                 <div class="qty_box d-flex align-items-center justify-content-between">
                     <form id="{{ cart_item_id }}_minus" method="post" action="/cart/change" enctype="multipart/form-data">
