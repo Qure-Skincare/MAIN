@@ -266,21 +266,21 @@
         "text_with_progress_BcgRjM": {
           "type": "text_with_progress",
           "settings": {
-            "text": "<p>of users reported smoother facial wrinkles and fine lines</p>",
+            "text": "<p>of users reported smoother facial wrinkles and fine lines*</p>",
             "percent_value": "87%"
           }
         },
         "text_with_progress_YQWaPz": {
           "type": "text_with_progress",
           "settings": {
-            "text": "<p>noticed improved skin tone and enhanced smoothness</p>",
+            "text": "<p>noticed improved skin tone and enhanced smoothness*</p>",
             "percent_value": "97%"
           }
         },
         "text_with_progress_icezYk": {
           "type": "text_with_progress",
           "settings": {
-            "text": "<p>of participants note a reduction of acne breakouts</p>",
+            "text": "<p>of participants note a reduction of acne breakouts*</p>",
             "percent_value": "83%"
           }
         },
