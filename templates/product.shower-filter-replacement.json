@@ -129,7 +129,7 @@
         "product_gbPf3J": {
           "type": "product",
           "settings": {
-            "product": "shower-filter",
+            "product": "shower-filter-replacement",
             "product_variant_id": 46010772652271,
             "product_selling_plan": 6286082287,
             "preselected": true,
@@ -147,7 +147,7 @@
         "product_NEgEkN": {
           "type": "product",
           "settings": {
-            "product": "shower-filter",
+            "product": "shower-filter-replacement",
             "product_variant_id": 46010772685039,
             "product_selling_plan": 6286082287,
             "preselected": false,
