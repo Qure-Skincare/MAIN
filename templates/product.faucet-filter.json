@@ -87,6 +87,8 @@
       "settings": {
         "seo_heading": "QURE FAUCET FILTER",
         "heading": "Get clearer skin, on tap, with Qure Faucet Filter",
+        "rating": true,
+        "limited": false,
         "description": "<ul><li>Advanced water filter reduces up to 99% of irritants for clearer, hydrated skin.</li><li>Helps reduce pore-clogging contaminants and supports the reduction of premature aging, without any extra steps in your routine.</li><li>Optimizes skincare effectiveness, and provides the most purified cleanse your skin will drink up.</li></ul>",
         "reserved": false,
         "soldout": false
@@ -135,7 +137,7 @@
             "preselected": true,
             "heading": "White",
             "subheading": "",
-            "image": "shopify://shop_images/faucet_white_3b09bc4c-0464-4c4a-ae2a-bec3cd09cbd5.webp",
+            "image": "shopify://shop_images/Img_8.svg",
             "soldout": false,
             "preorder": false,
             "preorder_text": "30",
@@ -382,6 +384,7 @@
       "type": "trusted-recommended",
       "name": "t:sections.trusted-recommended.name",
       "settings": {
+        "background_color": "#ffffff",
         "heading": "Trusted and Recommended by Experts",
         "text": "<p>“How do you <strong>reduce the things in your water that are causing issues</strong> with your skin?<br/>This Qure filter is incredible – i<strong>t’s the only filter I personally use</strong> to [reduce] chlorine and anything else that’s going to make your water harsh for your skin.”</p>",
         "image_text": "",
@@ -640,6 +643,7 @@
       "name": "t:sections.how-to-use.name",
       "settings": {
         "heading": "Set up in 3 easy steps",
+        "text": "",
         "heading_mobile": "Set up in 3 easy steps",
         "wistia_url": "t0xzq5gdvm",
         "button_label": "",
