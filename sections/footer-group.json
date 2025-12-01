@@ -31,6 +31,10 @@
     "footer-gdpr": {
       "type": "footer-gdpr",
       "settings": {}
+    },
+    "footer-wistia": {
+      "type": "footer-wistia",
+      "settings": {}
     }
   },
   "order": [
@@ -38,6 +42,7 @@
     "footer-form",
     "footer",
     "footer-drawer",
-    "footer-gdpr"
+    "footer-gdpr",
+    "footer-wistia"
   ]
 }
