@@ -14,10 +14,7 @@
                             <img src="https://qureskincaredns.com/sections/isolated/micro-infusion-pdp/images/{{ 'bundle-header.settings.bf_badge_image' | t }}"/>
                         </a>
                     {% else %}
-                    <div class="exclusive_tag">
-                        <div class="tag_content color-background text-white" style="--section-background:#FF5429">{{ 'bundle-header.settings.exclusive' | t }}</div>
-                        <div class="tag_content color-background" style="--section-background:#FFEEEA">{{ 'bundle-header.settings.bundles' | t }}</div>
-                    </div>
+                        <div class="e-bundle-tag" style="--e-bundle-tag-color: {{ section.settings.bundle_tag_color }};">{{ 'bundle-header.settings.exclusive-bundles_html' | t }}</div>
                     {% endif %}
 
                     {% if section.settings.heading != blank %}
@@ -105,6 +102,12 @@
             "type": "url",
             "id": "button-url",
             "label": "t:common.button-url"
+        },
+        {
+            "type": "color",
+            "id": "bundle_tag_color",
+            "label": "t:common.bundle-tag-color",
+            "default": "#FF5429"
         }
   ]
 }

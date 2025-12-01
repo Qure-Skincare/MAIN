@@ -610,8 +610,7 @@
   },
   "bundle-header": {
     "settings": {
-      "exclusive": "LIMITED",
-      "bundles": "Bundles",
+      "exclusive-bundles_html": "<strong>Bundles</strong> Holiday",
       "easy-returns": "Easy 30-Day Returns",
       "shipping-text": "Free Worldwide Shipping",
       "recommended_html": "<strong>50+ Board Certified Dermatologists</strong> recommend Qure to their patients. <a href='https://qureskincare.com/pages/derm-reviews' class='text-black text-decoration-underline'>See More</a>.",
