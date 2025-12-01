@@ -10,7 +10,7 @@
 {
   "current": {
     "primary-color": "#212428",
-    "discount-color": "#FF5429",
+    "discount-color": "#91baec",
     "header_scrolling_hide": true,
     "header_slider1_title": "Discover Bundles",
     "header_slider1_image": "shopify://shop_images/new_image.png",
@@ -72,7 +72,7 @@
     "event_name": "LAST CHANCE Black Friday",
     "event_start_date": "2025-11-27",
     "event_end_date": "2025-12-02",
-    "enable_test": false,
+    "enable_test": true,
     "content_for_index": [],
     "blocks": {
       "2786716548061469553": {
