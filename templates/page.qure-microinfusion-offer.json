@@ -1064,7 +1064,7 @@
       }
     },
     "purchase_form_PwCCh6": {
-      "type": "endrock_purchase-form", 
+      "type": "endrock_purchase-form",
       "blocks": {
         "nextships_5rd2bS": {
           "type": "nextships",
@@ -1264,7 +1264,7 @@
             "heading": "3 Month Supply",
             "subheading": "(6 Treatments)",
             "image": "shopify://shop_images/MI_3_month_DS_W.png",
-            "soldout": false,
+            "soldout": true,
             "preorder": false,
             "total_treatments": 6,
             "left_items": 390,
