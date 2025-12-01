@@ -10,7 +10,7 @@
 {
   "current": {
     "primary-color": "#212428",
-    "discount-color": "#FF5429",
+    "discount-color": "#2ec253",
     "header_scrolling_hide": true,
     "header_slider1_title": "Discover Bundles",
     "header_slider1_image": "shopify://shop_images/new_image.png",
@@ -64,7 +64,7 @@
     "cart_upsell3_product": "q-rejuvalight-pro-facewear",
     "cart_upsell4_product": "neck-decolletage-led",
     "cart_upsell5_product": "micro-infusion-targeted-patches",
-    "black_friday_turn_on": true,
+    "black_friday_turn_on": false,
     "black_friday_discount": "BLACKFRIDAY25",
     "black_friday_discount_percent": 26,
     "black_friday_discount_exception": "qure-microinfusion-offer,qure-microinfusion-offer-men,micro-infusion-acne,micro-infusion-dark-spots,micro-infusion-faq-page-2,exclusive-holiday-bundle-deal-new",
