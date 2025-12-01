@@ -93,7 +93,9 @@
     
     {% sections 'header-group' %}
 
-    {{ content_for_layout }}
+    <main class="sections-stack">
+      {{ content_for_layout }}
+    </main>
 
     {% sections 'footer-group' %}
     {% render 'footer-scripts' %}
