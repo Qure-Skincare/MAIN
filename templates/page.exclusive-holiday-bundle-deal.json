@@ -294,7 +294,7 @@
           "settings": {
             "product": "fade-firm-bundle-essential-bf25",
             "preselected": false,
-            "soldout": true,
+            "soldout": false,
             "reserved": false
           }
         },
