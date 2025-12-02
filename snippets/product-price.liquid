@@ -50,5 +50,5 @@
   {% endif %}
 
 {%- else -%}
-  <h4 class="fw-500 fm-body mt-20 igPrice" style="--font-h4: 22px; --font-h4-mob: 20px;">{{ product_sale_price }}</h4>
+  <h4 class="fw-500 fm-body mt-20 igPrice" style="--font-h4: 22px; --font-h4-mob: 20px;" data-product-id="{{ product.id }}">{{ product_sale_price }}</h4>
 {%- endif -%}
