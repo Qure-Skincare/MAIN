@@ -72,7 +72,7 @@
     "event_name": "LAST CHANCE Black Friday",
     "event_start_date": "2025-11-28",
     "event_end_date": "2025-12-03",
-    "event_end_time_hour": 10,
+    "event_end_time_hour": 8,
     "enable_test": false,
     "content_for_index": [],
     "blocks": {
