@@ -247,6 +247,24 @@
             "preselected": false
           }
         },
+        "product_nyJ9n7": {
+          "type": "product",
+          "settings": {
+            "product": "micro-infusion-6-month-bundle-for-wrinkles",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "preselected": false,
+            "heading": "6 Month Supply Holiday Sale",
+            "subheading": "(12 Treatments)",
+            "image": "shopify://shop_images/Group_1000008549_1_b7489b95-a126-4469-bea5-681ec04ea8c4.png",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        },
         "product_EKAAzA": {
           "type": "product",
           "settings": {
@@ -257,24 +275,6 @@
             "heading": "3 Month Supply Holiday Sale",
             "subheading": "(6 Treatments)",
             "image": "shopify://shop_images/3m_wrinkles.png",
-            "soldout": false,
-            "preorder": false,
-            "preorder_text": "",
-            "preorder_date_soldout": "",
-            "preorder_date_reserved": "",
-            "preorder_percent": 55
-          }
-        },
-        "product_nyJ9n7": {
-          "type": "product",
-          "settings": {
-            "product": "micro-infusion-2-month-bundle-for-wrinkles",
-            "product_variant_id": 0,
-            "product_selling_plan": 0,
-            "preselected": false,
-            "heading": "2 Month Supply Holiday Sale",
-            "subheading": "(4 Treatments)",
-            "image": "shopify://shop_images/MI_2_month_W.png",
             "soldout": false,
             "preorder": false,
             "preorder_text": "",
@@ -381,8 +381,8 @@
         "product_RBCPe8",
         "type_aJwQ9q",
         "product_type_VLXcAn",
-        "product_EKAAzA",
         "product_nyJ9n7",
+        "product_EKAAzA",
         "product_eiY89h",
         "type_yDwWmt",
         "product_type_YrPQrV",
