@@ -94,7 +94,6 @@
       "block_order": [
         "percent_value_imfnV7"
       ],
-      "disabled": true,
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
         "modifier": "holidays",
@@ -123,6 +122,7 @@
     },
     "bf_banner_with_text_7wEFDF": {
       "type": "bf-banner-with-text",
+      "disabled": true,
       "name": "t:sections.bf-banner-with-text.name",
       "settings": {
         "heading": "<h2>26% Off Sitewide*</h2>",
