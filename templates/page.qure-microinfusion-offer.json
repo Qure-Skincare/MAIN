@@ -182,8 +182,8 @@
       "type": "stock-alert",
       "name": "t:sections.stock-alert.name",
       "settings": {
-        "text": "<p>Black Friday Sale!</p>",
-        "text_mobile": "<p>Black Friday Sale</p>",
+        "text": "<p>Holiday Sale!</p>",
+        "text_mobile": "<p>Holiday Sale!</p>",
         "style_color": "light_green"
       }
     },
