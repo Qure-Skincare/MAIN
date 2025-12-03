@@ -1315,12 +1315,31 @@
             "preselected": true
           }
         },
+        "product_DBd4ef": {
+          "type": "product",
+          "settings": {
+            "product": "micro-infusion-6-month-bundle-for-dark-spots",
+            "preselected": false,
+            "heading": "6 Month Supply Holiday Sale",
+            "subheading": "(12 Treatments)",
+            "image": "shopify://shop_images/MI_2_month_DS_1.png",
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 4,
+            "left_items": 142,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55,
+            "included_text": "<ul><li>2 Micro-Infusion devices (valued at $160)</li><li>10 Clinical-grade micro-needling heads (valued at $100)</li><li>12 clinically-formulated 4ml serums to treat your specific skin concerns (valued at $240)</li><li>Worldwide shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li><li>24/7 customer support access</li></ul>"
+          }
+        },
         "product_7dL4ci": {
           "type": "product",
           "settings": {
             "product": "micro-infusion-3-month-bundle-for-dark-spots",
             "preselected": true,
-            "heading": "3 Month Supply Black Friday Sale",
+            "heading": "3 Month Supply Holiday Sale",
             "subheading": "(6 Treatments)",
             "image": "shopify://shop_images/MI_3_month_Dark_Spots_a0e66e2b-6b6a-4127-9556-15d96d7882ea.png",
             "soldout": false,
@@ -1334,31 +1353,12 @@
             "included_text": "<ul><li>Micro-Infusion device (valued at $80)</li><li>5 Clinical-grade micro-needling heads (valued at $50)</li><li>6 clinically-formulated 4ml serum to treat your specific skin concerns (valued at $120)</li><li>Worldwide shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
           }
         },
-        "product_DBd4ef": {
-          "type": "product",
-          "settings": {
-            "product": "micro-infusion-2-month-bundle-for-dark-spots",
-            "preselected": false,
-            "heading": "2 Month Supply Black Friday Sale",
-            "subheading": "(4 Treatments)",
-            "image": "shopify://shop_images/MI_2_month_DS_1.png",
-            "soldout": false,
-            "preorder": false,
-            "total_treatments": 4,
-            "left_items": 142,
-            "preorder_text": "",
-            "preorder_date_soldout": "",
-            "preorder_date_reserved": "",
-            "preorder_percent": 55,
-            "included_text": "<ul><li>1 Micro-Infusion devices (valued at $160)</li><li>3 Clinical-grade micro-needling heads (valued at $100)</li><li>4 clinically-formulated 4ml serums to treat your specific skin concerns (valued at $240)</li><li>Worldwide shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li><li>24/7 customer support access</li></ul>"
-          }
-        },
         "product_Xf8A6C": {
           "type": "product",
           "settings": {
             "product": "micro-infusion-1-month-bundle-for-dark-spots",
             "preselected": false,
-            "heading": "1 Month Supply",
+            "heading": "1 Month Supply Holiday Sale",
             "subheading": "(2 Treatments)",
             "image": "shopify://shop_images/MI_1_month_Dark_Spots_7d57e659-33bb-410d-9e8b-b1390280705d.png",
             "soldout": false,
@@ -1389,7 +1389,7 @@
           "settings": {
             "product": "micro-infusion-3-month-bundle-for-wrinkles",
             "preselected": true,
-            "heading": "3 Month Supply Black Friday Sale",
+            "heading": "3 Month Supply Holiday Sale",
             "subheading": "(6 Treatments)",
             "image": "shopify://shop_images/MI_3_month_Wrinkles.png",
             "soldout": false,
@@ -1408,7 +1408,7 @@
           "settings": {
             "product": "micro-infusion-2-month-bundle-for-wrinkles",
             "preselected": false,
-            "heading": "2 Month Supply Black Friday Sale",
+            "heading": "2 Month Supply Holiday Sale",
             "subheading": "(4 Treatments)",
             "image": "shopify://shop_images/MI_2_month_W_1.png",
             "soldout": false,
@@ -1427,7 +1427,7 @@
           "settings": {
             "product": "micro-infusion-1-month-bundle-for-wrinkles",
             "preselected": false,
-            "heading": "1 Month Supply",
+            "heading": "1 Month Supply Holiday Sale",
             "subheading": "(2 Treatments)",
             "image": "shopify://shop_images/MI_1_month_Wrinkles_5659d0f2-6c5a-442f-aedf-b59240f139f5.png",
             "soldout": false,
@@ -1460,7 +1460,7 @@
           "settings": {
             "product": "micro-infusion-3-month-bundle-for-wrinkles-dark-spots",
             "preselected": true,
-            "heading": "3 Month Supply Black Friday Sale",
+            "heading": "3 Month Supply Holiday Sale",
             "subheading": "(6 Treatments)",
             "image": "shopify://shop_images/MI_3_month_DS_W.png",
             "soldout": true,
@@ -1480,7 +1480,7 @@
           "settings": {
             "product": "micro-infusion-2-month-bundle-for-wrinkles-dark-spots",
             "preselected": false,
-            "heading": "2 Month Supply Black Friday Sale",
+            "heading": "2 Month Supply Holiday Sale",
             "subheading": "(4 Treatments)",
             "image": "shopify://shop_images/MI_2_month_DS_W_1.png",
             "soldout": true,
@@ -1500,7 +1500,7 @@
           "settings": {
             "product": "micro-infusion-1-month-bundle-for-wrinkles-dark-spots",
             "preselected": false,
-            "heading": "1 Month Supply",
+            "heading": "1 Month Supply Holiday Sale",
             "subheading": "(2 Treatments)",
             "image": "shopify://shop_images/MI_1_month_DS_W_838230ac-8968-4e5b-b30d-5c0eeea7f9ad.png",
             "soldout": true,
@@ -1521,8 +1521,8 @@
         "payment_type_B6Pzbh",
         "type_hHPdgJ",
         "product_type_QKQhNr",
-        "product_7dL4ci",
         "product_DBd4ef",
+        "product_7dL4ci",
         "product_Xf8A6C",
         "type_aJwQ9q",
         "product_type_VLXcAn",
