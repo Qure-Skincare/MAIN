@@ -1685,7 +1685,7 @@
       "type": "sticky-button",
       "name": "t:sections.sticky-button.name",
       "settings": {
-        "heading": "Black Friday Sale",
+        "heading": "Holiday Sale",
         "text": "1,893 purchased in last 48 hours",
         "limited": false,
         "button-label": "Choose Your Supply",
