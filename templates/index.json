@@ -193,9 +193,9 @@
         "item2": {
           "type": "items",
           "settings": {
-            "heading": "Micro-Infusion Glowcase",
-            "link_url": "https://qureskincare.com/products/micro-infusion-limited-edition-bundle-1",
-            "image": "shopify://shop_images/Img_28.png",
+            "heading": "Best Sellers",
+            "link_url": "https://qureskincare.com/collections/best-sellers",
+            "image": "shopify://shop_images/Img_32.png",
             "new": false
           }
         },
