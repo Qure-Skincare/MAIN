@@ -25,7 +25,6 @@
     },
     "n_hero_banner_DxPjy7": {
       "type": "n_hero-banner",
-      "disabled": true,
       "name": "t:sections.n_hero-banner.name",
       "settings": {
         "modifier": "holidays",
@@ -37,6 +36,7 @@
     },
     "bf_page_banner_pYKPB4": {
       "type": "bf-page-banner",
+      "disabled": true,
       "name": "t:sections.bf-page-banner.name",
       "settings": {
         "heading": "<h2>26% Off Sitewide*</h2>",
@@ -166,6 +166,7 @@
         "image_dicxDW",
         "image_wCgyfh"
       ],
+      "disabled": true,
       "name": "t:sections.bf-bundle-banner-mini.name",
       "settings": {
         "heading": "<h3>Save Up to 57%</h3>",
