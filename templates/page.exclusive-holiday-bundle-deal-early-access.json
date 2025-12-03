@@ -309,7 +309,7 @@
         "product_NtbDxk": {
           "type": "product",
           "settings": {
-            "product": "line-refine-bundle-advanced-bf25",
+            "product": "line-refine-bundle-advanced",
             "preselected": false,
             "soldout": false,
             "reserved": false
