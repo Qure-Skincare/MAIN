@@ -338,7 +338,7 @@
         "product_6TBNNL": {
           "type": "product",
           "settings": {
-            "product": "breakout-control-pro-bf",
+            "product": "breakout-control-pro",
             "preselected": false,
             "soldout": false,
             "reserved": false
@@ -356,7 +356,7 @@
         "product_TkVDd8": {
           "type": "product",
           "settings": {
-            "product": "breakout-control-essential",
+            "product": "breakout-control-essentials-bf",
             "preselected": false,
             "soldout": false,
             "reserved": false
