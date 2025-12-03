@@ -307,16 +307,32 @@
         },
         "product_type_YrPQrV": {
           "type": "product_type",
-          "disabled": true,
           "settings": {
             "heading": "Mixed",
             "image": "shopify://shop_images/mix_393d5047-dff7-41cf-aba6-3dd09e5a32a7.png",
             "preselected": false
           }
         },
+        "product_hD69Aq": {
+          "type": "product",
+          "settings": {
+            "product": "6-month-micro-infusion-for-wrinkles-dark-spots",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "preselected": true,
+            "heading": "6 Month Supply Holiday Sale",
+            "subheading": "(12 Treatments)",
+            "image": "shopify://shop_images/MI_2_month_DS_W.png",
+            "soldout": true,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        },
         "product_DBd4ef": {
           "type": "product",
-          "disabled": true,
           "settings": {
             "product": "micro-infusion-3-month-bundle-for-wrinkles-dark-spots",
             "product_variant_id": 0,
@@ -333,28 +349,8 @@
             "preorder_percent": 55
           }
         },
-        "product_hD69Aq": {
-          "type": "product",
-          "disabled": true,
-          "settings": {
-            "product": "micro-infusion-2-month-bundle-for-wrinkles-dark-spots",
-            "product_variant_id": 0,
-            "product_selling_plan": 0,
-            "preselected": false,
-            "heading": "2 Month Supply Holiday Sale",
-            "subheading": "(4 Treatments)",
-            "image": "shopify://shop_images/MI_2_month_DS_W.png",
-            "soldout": true,
-            "preorder": false,
-            "preorder_text": "",
-            "preorder_date_soldout": "",
-            "preorder_date_reserved": "",
-            "preorder_percent": 55
-          }
-        },
         "product_Xf8A6C": {
           "type": "product",
-          "disabled": true,
           "settings": {
             "product": "micro-infusion-1-month-bundle-for-wrinkles-dark-spots",
             "product_variant_id": 0,
@@ -386,8 +382,8 @@
         "product_eiY89h",
         "type_yDwWmt",
         "product_type_YrPQrV",
-        "product_DBd4ef",
         "product_hD69Aq",
+        "product_DBd4ef",
         "product_Xf8A6C"
       ],
       "settings": {
