@@ -120,64 +120,6 @@
         "button_url_mobile": "https://qureskincare.com/collections/best-sellers"
       }
     },
-    "bf_banner_with_text_7wEFDF": {
-      "type": "bf-banner-with-text",
-      "disabled": true,
-      "name": "t:sections.bf-banner-with-text.name",
-      "settings": {
-        "heading": "<h2>26% Off Sitewide*</h2>",
-        "text": "<p>Shop our biggest sale of the year. The week only.</p>",
-        "image": "shopify://shop_images/stop-motion-square-v1.gif",
-        "bg_color": "white",
-        "button_label": "Shop Now",
-        "button_url": "https://qureskincare.com/collections/best-sellers",
-        "sub_text": "*Excludes Black Friday bundles"
-      }
-    },
-    "bf_banner_with_text_4LMX6e": {
-      "type": "bf-banner-with-text",
-      "blocks": {
-        "carousel_Wpd4xy": {
-          "type": "carousel",
-          "settings": {
-            "heading": "Acne",
-            "percent_value": "57%",
-            "image": "shopify://shop_images/home-banner-bf-bundle-1.webp"
-          }
-        },
-        "carousel_BigzyF": {
-          "type": "carousel",
-          "settings": {
-            "heading": "Wrinkles",
-            "percent_value": "57%",
-            "image": "shopify://shop_images/home-banner-bf-bundle-2.webp"
-          }
-        },
-        "carousel_C4JjyW": {
-          "type": "carousel",
-          "settings": {
-            "heading": "Dark Spots",
-            "percent_value": "57%",
-            "image": "shopify://shop_images/home-banner-bf-bundle-3.webp"
-          }
-        }
-      },
-      "block_order": [
-        "carousel_Wpd4xy",
-        "carousel_BigzyF",
-        "carousel_C4JjyW"
-      ],
-      "disabled": true,
-      "name": "t:sections.bf-banner-with-text.name",
-      "settings": {
-        "heading": "<h2>Save Up to 57%</h2>",
-        "text": "<p>Your Favorite Products, Perfectly Bundled</p>",
-        "bg_color": "black",
-        "button_label": "Shop Bundles Now",
-        "button_url": "https://qureskincare.com/pages/exclusive-holiday-bundle-deal-new#",
-        "sub_text": ""
-      }
-    },
     "bf_top_products": {
       "type": "bf-top-products",
       "blocks": {
@@ -245,45 +187,6 @@
         "item6"
       ],
       "settings": {}
-    },
-    "bf_bundle_bunner_mini_VD9qRR": {
-      "type": "bf-bundle-banner-mini",
-      "blocks": {
-        "image_rATyPJ": {
-          "type": "image",
-          "settings": {
-            "percent_value": "57%",
-            "image": "shopify://shop_images/bundle-mini-1.webp"
-          }
-        },
-        "image_dicxDW": {
-          "type": "image",
-          "settings": {
-            "percent_value": "",
-            "image": "shopify://shop_images/bundle-mini-2.webp"
-          }
-        },
-        "image_wCgyfh": {
-          "type": "image",
-          "settings": {
-            "percent_value": "",
-            "image": "shopify://shop_images/bundle-mini-3.webp"
-          }
-        }
-      },
-      "block_order": [
-        "image_rATyPJ",
-        "image_dicxDW",
-        "image_wCgyfh"
-      ],
-      "disabled": true,
-      "name": "t:sections.bf-bundle-banner-mini.name",
-      "settings": {
-        "heading": "<h3>Save Up to 57%</h3>",
-        "text": "<p>Your Favorite Products, Perfectly Bundled</p>",
-        "button_url": "https://qureskincare.com/pages/exclusive-holiday-bundle-deal-new",
-        "button_label": "Shop Bundles Now"
-      }
     },
     "index_banner_with_text_second_TNGNLJ": {
       "type": "index-banner-with-text-second",
@@ -957,10 +860,7 @@
     "index-mobile-category-slider",
     "n_across_image_banner_wjbBCH",
     "index_banner_with_text_TNGNLJ",
-    "bf_banner_with_text_7wEFDF",
-    "bf_banner_with_text_4LMX6e",
     "bf_top_products",
-    "bf_bundle_bunner_mini_VD9qRR",
     "index_banner_with_text_second_TNGNLJ",
     "bundle_banner_eEa7XN",
     "slider_featured_in_KgaUTN",
