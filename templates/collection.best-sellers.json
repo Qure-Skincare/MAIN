@@ -28,6 +28,7 @@
       "disabled": true,
       "name": "t:sections.n_hero-banner.name",
       "settings": {
+        "use_own_file": true,
         "modifier": "holidays",
         "heading": "<h2>Give the gift of glowing skin</h2>",
         "text": "<p>Unwrap radiant skin this holiday season with dermatologist-backed skincare solutions.</p>",

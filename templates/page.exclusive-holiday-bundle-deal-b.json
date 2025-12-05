@@ -494,7 +494,7 @@
           "type": "product",
           "disabled": true,
           "settings": {
-            "product": "water-filter-family-bundle-bf25",
+            "product": "water-filter-family-bundle",
             "preselected": false,
             "soldout": false,
             "reserved": false

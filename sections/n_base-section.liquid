@@ -1,0 +1,107 @@
+{% doc %}
+  Renders a base section
+{% enddoc %}
+
+<!-- BASE SECTION -->
+ {% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/base-section/base-section.css" />
+ {% endif %}
+<section class="base-section{% if section.settings.modifier == 'reverse' %} base-section--reverse{% endif %}{% if section.settings.background_color == 'grey' %} base-section--grey{% endif %}">
+    <div class="container">
+        <article>
+            {% if section.settings.heading != blank %}
+                {{ section.settings.heading }}
+            {% endif %}
+            {% if section.settings.image != blank %}
+                <picture>
+                    <img src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt | escape }}" />
+                </picture>
+            {% endif %}
+            {% if section.settings.text != blank %}
+                <div>
+                    {{ section.settings.text }}
+                </div>
+            {% endif %}
+            {% if section.settings.button_label != blank and section.settings.button_url != blank %}
+                <a href="{{ section.settings.button_url }}" class="btn btn--primary">{{ section.settings.button_label }}</a>
+            {% endif %}
+        </article>
+    </div>
+</section>
+<!-- BASE SECTION END -->
+
+{% schema %}
+    {
+        "name": "t:sections.n_base-section.name",
+            "settings": [
+                {
+                    "type": "checkbox",
+                    "id": "use_own_file",
+                    "label": "t:common.use-own-file",
+                    "default": false
+                },
+                {
+                    "type": "select",
+                    "id": "modifier",
+                    "label": "t:common.modifier",
+                    "default": "none",
+                    "options": [
+                        {
+                            "value": "none",
+                            "label": "t:sections.n_base-section.settings.modifier-options.none"
+                        },
+                        {
+                            "value": "reverse",
+                            "label": "t:sections.n_base-section.settings.modifier-options.reverse"
+                        }
+                    ]
+                },
+                {
+                    "type": "select",
+                    "id": "background_color",
+                    "label": "t:common.background-color",
+                    "default": "none",
+                    "options": [
+                        {
+                            "value": "none",
+                            "label": "t:sections.n_base-section.settings.background-color-options.none"
+                        },
+                        {
+                            "value": "grey",
+                            "label": "t:sections.n_base-section.settings.background-color-options.grey"
+                        }
+                    ]
+                },
+                {
+                    "type": "richtext",
+                    "id": "heading",
+                    "label": "t:common.header"
+                },
+                {
+                    "type": "richtext",
+                    "id": "text",
+                    "label": "t:common.text"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                },
+                {
+                    "type": "text",
+                    "id": "button_label",
+                    "label": "t:common.button-label"
+                },
+                {
+                    "type": "url",
+                    "id": "button_url",
+                    "label": "t:common.button-url"
+                }
+        ],
+        "presets": [
+            {
+                "name": "t:sections.n_base-section.name"
+            }
+        ]
+    }
+    {% endschema %}

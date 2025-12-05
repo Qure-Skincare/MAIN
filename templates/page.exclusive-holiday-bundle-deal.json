@@ -274,7 +274,7 @@
         "product_Ykma4b": {
           "type": "product",
           "settings": {
-            "product": "fade-firm-bundle-pro-bf25",
+            "product": "fade-firm-bundle-pro1",
             "preselected": false,
             "soldout": false,
             "reserved": false
@@ -283,7 +283,7 @@
         "product_8hJgNj": {
           "type": "product",
           "settings": {
-            "product": "fade-firm-bundle-advanced-bf25",
+            "product": "fade-firm-bundle-advanced",
             "preselected": false,
             "soldout": false,
             "reserved": false
@@ -292,7 +292,7 @@
         "product_BJXNMB": {
           "type": "product",
           "settings": {
-            "product": "fade-firm-bundle-essential-bf",
+            "product": "fade-firm-bundle-essential",
             "preselected": false,
             "soldout": false,
             "reserved": false
@@ -312,7 +312,7 @@
         "product_eiHVrp": {
           "type": "product",
           "settings": {
-            "product": "line-refine-bundle-pro-bf25",
+            "product": "line-refine-bundle-pro1",
             "preselected": false,
             "soldout": false,
             "reserved": false
@@ -321,7 +321,7 @@
         "product_xJpDep": {
           "type": "product",
           "settings": {
-            "product": "line-refine-bundle-advanced-bf25",
+            "product": "line-refine-bundle-advanced",
             "preselected": false,
             "soldout": false,
             "reserved": false
@@ -330,7 +330,7 @@
         "product_xwqzya": {
           "type": "product",
           "settings": {
-            "product": "line-refine-bundle-essential-bf25",
+            "product": "line-refine-bundle-essential",
             "preselected": false,
             "soldout": false,
             "reserved": false
@@ -359,7 +359,7 @@
         "product_KKbDAE": {
           "type": "product",
           "settings": {
-            "product": "breakout-control-pro-bf",
+            "product": "breakout-control-pro",
             "preselected": false,
             "soldout": false,
             "reserved": false
@@ -368,7 +368,7 @@
         "product_gia3hC": {
           "type": "product",
           "settings": {
-            "product": "breakout-control-advanced-bf",
+            "product": "breakout-control-advanced1",
             "preselected": false,
             "soldout": false,
             "reserved": false
@@ -377,7 +377,7 @@
         "product_gNjH9L": {
           "type": "product",
           "settings": {
-            "product": "breakout-control-essentials-bf",
+            "product": "breakout-control-essential",
             "preselected": false,
             "soldout": false,
             "reserved": false
@@ -386,7 +386,7 @@
         "product_e9YBCe": {
           "type": "product",
           "settings": {
-            "product": "water-filter-family-bundle-bf25",
+            "product": "water-filter-family-bundle",
             "preselected": false,
             "soldout": false,
             "reserved": false

@@ -10,6 +10,7 @@
  {
     "common": {
         "new": "New",
+        "use-own-file": "Use own file",
         "whitelist": "Whitelist",
         "compare-price": "Compare price",
         "discount-price": "Discount price",
@@ -174,7 +175,9 @@
         "target-datetime": "Target date/time (YYYY-MM-DDTHH:MM:SS)",
         "white": "White",
         "black": "Black",
-        "modifier": "Modifier"
+        "modifier": "Modifier",
+        "active": "Active",
+        "pills-navigation-item": "Pills navigation item"
     },
     "blocks": {
         "block-card": {
@@ -194,8 +197,9 @@
             "name": "Across image banner",
             "settings": {
                 "modifier-options": {
-                    "none": "none",
-                    "holidays": "holidays"
+                    "none": "None",
+                    "holidays": "Holidays",
+                    "hero": "Hero banner"
                 }
             }
         },
@@ -203,10 +207,38 @@
             "name": "Hero banner",
             "settings": {
                 "modifier-options": {
-                    "none": "none",
-                    "holidays": "holidays"
+                    "none": "None",
+                    "holidays": "Holidays"
                 }
             }
+        },
+        "n_pills-navigation": {
+            "name": "Pills navigation"
+        },
+        "n_base-section": {
+            "name": "Base section",
+            "settings": {
+                "modifier-options": {
+                    "none": "None",
+                    "reverse": "Reverse"
+                },
+                "background-color-options": {
+                    "none": "None",
+                    "grey": "Grey"
+                }
+            }
+        },
+        "n_trusted-recommended": {
+            "name": "Trusted recommended"
+        },
+        "n_video-slider": {
+            "name": "Video slider"
+        },
+        "n_results-comparison-slider": {
+            "name": "Results comparison slider"
+        },
+        "n_expert-board": {
+            "name": "Expert board"
         },
         "collection": {
             "name": "Collection",
