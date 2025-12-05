@@ -23,7 +23,7 @@
       "button_label": "Shop Now"
     },
     "bf-top-products": {
-      "header": "Shop Black Friday",
+      "header": "",
       "new": "New"
     },
     "bf-banner-with-text": {
@@ -232,7 +232,7 @@
     },
     "page-led-mask-offer-2-led-mask-form": {
       "settings": {
-        "limited": "Black Friday Sale",
+        "limited": "Holiday Sale",
         "header": "Q-Rejuvalight Pro LED Mask",
         "subheader": "+ FREE Neck & Décolletage LED System",
         "warranty": "Lifetime Warranty",
@@ -306,7 +306,7 @@
       }
     },
     "exclusive-offer": {
-      "header_html": "<div class='eo-header'><span>Black Friday </span><span>Sale</span></div>",
+      "header_html": "<div class='eo-header'><span>Holiday </span><span>Sale</span></div>",
       "guarantee-text": "1-Year Guarantee",
       "button-label": "Buy Now & Save",
       "shipping-text": "Free Shipping over $100",
@@ -328,7 +328,7 @@
       "link": "/pages/exclusive-holiday-bundle-deal-new"
     },
     "cart": {
-      "savings": "BLACK FRIDAY SAVINGS"
+      "savings": "HOLIDAY SAVINGS"
     }
   },
   "product": {
@@ -483,7 +483,7 @@
         "header": "Your cart is empty..",
         "text": "Fill it with amazing skincare.",
         "settings": {
-          "header": "Save up to 57% on our Black Friday bundles",
+          "header": "Save up to 57% on our Holiday bundles",
           "image": "https://qureskincaredns.com/sections/global/drawer/images/empty-cart.webp",
           "content_html": "<ul><li>Shop our devices & skincare at our best prices.</li><li>Target your skin concerns in one simple routine.</li><li>Get clinical results at home - no downtime.</li></ul>",
           "button-label": "Shop Bundles",
@@ -493,7 +493,7 @@
         }
       },
       "upsell": {
-        "header": "Exclusive Black Friday Deals! ",
+        "header": "Exclusive Holiday Deals! ",
         "buy-button-label": "Add"
       }
     }
@@ -610,7 +610,7 @@
   },
   "bundle-header": {
     "settings": {
-      "exclusive-bundles_html": "<strong>Bundles</strong> Holiday",
+      "exclusive-bundles_html": "<strong>HOLIDAY</strong> BUNDLES",
       "easy-returns": "Easy 30-Day Returns",
       "shipping-text": "Free Worldwide Shipping",
       "recommended_html": "<strong>50+ Board Certified Dermatologists</strong> recommend Qure to their patients. <a href='https://qureskincare.com/pages/derm-reviews' class='text-black text-decoration-underline'>See More</a>.",
@@ -619,7 +619,7 @@
   },
   "header": {
     "settings": {
-      "navigation_header_1": "Best Sellers",
+      "navigation_header_1": "Holiday Bundles",
       "navigation_header_2": "Products",
       "navigation_header_3": "Help Center",
       "navigation_header_4": "Learn More",

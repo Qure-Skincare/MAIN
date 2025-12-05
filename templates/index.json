@@ -94,7 +94,6 @@
       "block_order": [
         "percent_value_imfnV7"
       ],
-      "disabled": true,
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
         "use_own_file": true,
@@ -102,9 +101,9 @@
         "heading": "<h1>Give the gift of glowing skin</h1>",
         "text": "<p>Best-selling products bundled for maximum results - and maximum savings.</p>",
         "image": "shopify://shop_images/holidays.webp",
-        "image_mobile": "shopify://shop_images/holidays-mob.webp",
+        "image_mobile": "shopify://shop_images/Home_img_1.png",
         "button_label": "Save Up To 57%",
-        "button_url": "#"
+        "button_url": "https://qureskincare.com/pages/exclusive-holiday-bundle-deal-new"
       }
     },
     "index_banner_with_text_TNGNLJ": {
@@ -124,6 +123,7 @@
     },
     "bf_banner_with_text_7wEFDF": {
       "type": "bf-banner-with-text",
+      "disabled": true,
       "name": "t:sections.bf-banner-with-text.name",
       "settings": {
         "heading": "<h2>26% Off Sitewide*</h2>",
@@ -194,9 +194,9 @@
         "item2": {
           "type": "items",
           "settings": {
-            "heading": "Micro-Infusion Glowcase",
-            "link_url": "https://qureskincare.com/products/micro-infusion-limited-edition-bundle-1",
-            "image": "shopify://shop_images/Img_28.png",
+            "heading": "Best Sellers",
+            "link_url": "https://qureskincare.com/collections/best-sellers",
+            "image": "shopify://shop_images/Img_32.png",
             "new": false
           }
         },

@@ -44,7 +44,6 @@
         },
         "exclusive-offer_iaSzaD": {
           "type": "exclusive-offer",
-          "disabled": true,
           "settings": {
             "product": "q-rejuvalight-pro-facewear-3",
             "image_product1": "shopify://shop_images/Img_16.png",
@@ -325,8 +324,8 @@
       ],
       "name": "t:sections.proven-results.name",
       "settings": {
-        "heading": "Clinically proven results you can see",
-        "text": "<p>Real, visible results backed by clinical studies. Whether you're targeting fine lines, dark spots, or breakouts, Q-Rejuvalight Pro is proven to work beneath the skin’s surface to improve tone, clarity, and texture.</p>",
+        "heading": "Clinically studied wavelengths",
+        "text": "<p>Real, visible results backed by clinical studies. Whether you're targeting fine lines, dark spots, or breakouts, LED light therapy is proven to work beneath the skin’s surface to treat skin. </p>",
         "button_label": "Read more about the clinical trials",
         "button_url": "#"
       }

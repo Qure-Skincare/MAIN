@@ -87,6 +87,8 @@
       "settings": {
         "seo_heading": "SHOWER FILTER",
         "heading": "Save your hair and skin from dryness and irritation",
+        "rating": true,
+        "limited": false,
         "description": "<ul><li>Clinically proven to increase skin moisture by 15%, and scalp moisture by 22% after just 8 weeks.</li><li>Removes up to 99% of chlorine, heavy metals & contaminants that irritate the skin, for an overall more hydrated, clearer skin and hair.</li><li>Reduces limescale buildup, which can dry out skin and hair, for smoother, softer results.</li></ul>",
         "reserved": false,
         "soldout": false
@@ -103,7 +105,7 @@
             "subscription_discount_percent": 50,
             "product": "shower-filter-replacement",
             "product_discount_percent": 30,
-            "onetime_text": "Qure Faucet Filter"
+            "onetime_text": "One Time: Showerhead + 1 Filter"
           }
         },
         "nextships_4xp7uM": {
@@ -628,6 +630,7 @@
       "name": "t:sections.how-to-use.name",
       "settings": {
         "heading": "Set up in 3 easy steps",
+        "text": "",
         "heading_mobile": "",
         "wistia_url": "fsw2ted2a8",
         "button_label": "",

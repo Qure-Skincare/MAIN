@@ -182,8 +182,8 @@
       "type": "stock-alert",
       "name": "t:sections.stock-alert.name",
       "settings": {
-        "text": "<p>Black Friday Sale!</p>",
-        "text_mobile": "<p>Black Friday Sale</p>",
+        "text": "<p>Holiday Sale!</p>",
+        "text_mobile": "<p>Holiday Sale!</p>",
         "style_color": "light_green"
       }
     },
@@ -913,7 +913,7 @@
         "heading": "See how quick and easy it is to use",
         "text": "",
         "heading_mobile": "",
-        "wistia_url": "ptw4q3aod8",
+        "wistia_url": "68e0msztnb",
         "button_label": "buy now & SAVE UP TO 70%",
         "button_url": "#purchase-form-types"
       }
@@ -1046,7 +1046,7 @@
       "type": "sticky-button",
       "name": "t:sections.sticky-button.name",
       "settings": {
-        "heading": "Black Friday Sale",
+        "heading": "Holiday Sale",
         "text": "1,293 purchased in last 48 hours",
         "limited": false,
         "button-label": "BUY NOW & SAVE UP TO 70%",
@@ -1104,7 +1104,7 @@
           "settings": {
             "product": "micro-infusion-6-month-bundle-for-dark-spots",
             "preselected": true,
-            "heading": "6 Month Supply Black Friday Sale",
+            "heading": "6 Month Supply Holiday Sale",
             "subheading": "(12 Treatments)",
             "image": "shopify://shop_images/MI_6_month_Dark_Spots.png",
             "soldout": false,
@@ -1173,7 +1173,7 @@
           "settings": {
             "product": "micro-infusion-6-month-bundle-for-wrinkles",
             "preselected": true,
-            "heading": "6 Month Supply Black Friday Sale",
+            "heading": "6 Month Supply Holiday Sale",
             "subheading": "(12 Treatments)",
             "image": "shopify://shop_images/MI_6_month_Wrinkles.png",
             "soldout": false,
@@ -1242,7 +1242,7 @@
           "settings": {
             "product": "6-month-micro-infusion-for-wrinkles-dark-spots",
             "preselected": true,
-            "heading": "6 Month Supply Black Friday Sale",
+            "heading": "6 Month Supply Holiday Sale",
             "subheading": "(12 Treatments)",
             "image": "shopify://shop_images/MI_6_month_DS_W_7d6dc5df-3b35-44cb-b211-2e41e1cfbad7.jpg",
             "soldout": false,
