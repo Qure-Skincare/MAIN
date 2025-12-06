@@ -1,0 +1,135 @@
+{% doc %}
+  Renders an expert board section
+{% enddoc %}
+
+<!-- EXPERT BOARD -->
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/base-slider/base-slider.css" />
+{% endif %}
+<section class="base-slider">
+    <div class="container">
+        {% if section.settings.heading != blank %}
+            {{ section.settings.heading }}
+        {% endif %}
+        {% if section.settings.text != blank %}
+            {{ section.settings.text }}
+        {% endif %}
+        <div 
+            class="c-swiper"
+            data-swiper='{
+                "slidesPerView": 1.1,
+                "spaceBetween": 15,
+                "loop": false,
+                "pagination": { 
+                    "el": ".c-swiper-pagination", 
+                    "type": "custom" 
+                },
+                "navigation": {
+                    "prevEl": ".c-swiper-button-prev",
+                    "nextEl": ".c-swiper-button-next"
+                },
+                "breakpoints": {
+                    "580": { 
+                        "slidesPerView": 2
+                    },
+                    "992": { 
+                        "slidesPerView": 3
+                    },
+                    "1200": { 
+                        "slidesPerView": 4,
+                        "spaceBetween": 20
+                    }
+                }
+            }'
+        >
+            <div class="swiper-wrapper">
+                {% for block in section.blocks %}
+                    {% if block.type == 'slider' %}
+                        <div class="swiper-slide">
+                            <div class="c-advisory-collapse-card">
+                                <article data-bs-toggle="collapse" data-bs-target="#advisory-{{ forloop.index }}">
+                                    {% if block.settings.image != blank %}
+                                        <picture>
+                                            <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                        </picture>
+                                    {% endif %}
+                                    {% if block.settings.heading != blank %}
+                                        {{ block.settings.heading }}
+                                    {% endif %}
+                                </article>
+                                <div class="collapse" id="advisory-{{ forloop.index }}">
+                                    {% if block.settings.text != blank %}
+                                        {{ block.settings.text }}
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+            <div class="c-swiper-nav">
+                <button class="c-swiper-button-prev"></button>
+                <div class="c-swiper-pagination"></div>
+                <button class="c-swiper-button-next"></button>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        loadScriptOnce('base-slider', 'https://qureskincaredns.com/sections/new/base-slider/base-slider.js');
+    });
+</script>    
+<!-- BASE SLIDER END --> 
+
+{% schema %}
+{
+    "name": "t:sections.n_expert-board.name",
+        "settings": [
+            {
+                "type": "checkbox",
+                "id": "use_own_file",
+                "label": "t:common.use-own-file",
+                "default": false
+            },
+            {
+                "type": "richtext",
+                "id": "heading",
+                "label": "t:common.header"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "t:common.text"
+            }
+    ],
+    "blocks": [
+        {
+            "type": "slider",
+            "name": "t:common.slider",
+            "settings": [
+                {
+                    "type": "richtext",
+                    "id": "heading",
+                    "label": "t:common.header"
+                },
+                {
+                    "type": "text",
+                    "id": "text",
+                    "label": "t:common.text"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.n_expert-board.name"
+        }
+    ]
+}
+{% endschema %}

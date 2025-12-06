@@ -96,6 +96,7 @@
       ],
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
+        "use_own_file": true,
         "modifier": "holidays",
         "heading": "<h1>Give the gift of glowing skin</h1>",
         "text": "<p>Best-selling products bundled for maximum results - and maximum savings.</p>",

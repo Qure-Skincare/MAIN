@@ -1,0 +1,85 @@
+{% doc %}
+  Renders a pills navigation section
+{% enddoc %}
+
+
+<!-- PILLS NAVIGATION -->
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/pills-nav/pills-nav.css" />
+{% endif %}
+<section class="pills-nav">
+    <div class="container">
+        <div class="pills-nav__header">
+            {% if section.settings.text != blank %}
+                <span>{{ section.settings.text }}</span>
+            {% endif %}
+            {% if section.settings.sub_text != blank %}
+                <div>{{ section.settings.sub_text }} <i class="e-icon e-icon-arrow"></i></div>
+            {% endif %}
+        </div>
+        <ul class="c-pills-nav">
+            {% for block in section.blocks %}
+                {% if block.type == 'pills_navigation_item' %}
+                    {% if block.settings.url != blank and block.settings.text != blank %}
+                        <li><a href="{{ block.settings.url }}"{% if block.settings.active %} class="active{% endif %}">{{ block.settings.text }}</a></li>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+</section>
+<!-- PILLS NAVIGATION END -->
+
+
+{% schema %}
+{
+    "name": "t:sections.n_pills-navigation.name",
+        "settings": [
+            {
+                "type": "checkbox",
+                "id": "use_own_file",
+                "label": "t:common.use-own-file",
+                "default": false
+            },
+            {
+                "type": "text",
+                "id": "text",
+                "label": "t:common.text"
+            },
+            {
+                "type": "text",
+                "id": "sub_text",
+                "label": "t:common.sub-text"
+            }
+    ],
+    "blocks": [
+        {
+            "type": "pills_navigation_item",
+            "name": "t:common.pills-navigation-item",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "text",
+                    "label": "t:common.text"
+                },
+                {
+                    "type": "url",
+                    "id": "url",
+                    "label": "t:common.link-url"
+                },
+                {
+                    "type": "checkbox",
+                    "id": "active",
+                    "label": "t:common.active",
+                    "default": false
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.n_pills-navigation.name"
+        }
+    ]
+}
+{% endschema %}

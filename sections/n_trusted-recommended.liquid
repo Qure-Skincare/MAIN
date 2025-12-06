@@ -1,0 +1,85 @@
+{% doc %}
+  Renders a trusted recommended section
+{% enddoc %}
+
+<!-- BASE SECTION -->
+ {% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/base-section/base-section.css" />
+ {% endif %}
+<section class="base-section base-section--small-media">
+    <div class="container">
+        <article>
+            {% if section.settings.heading != blank %}
+                {{ section.settings.heading }}
+            {% endif %}
+            {% if section.settings.video_url != blank and section.settings.video_image_cover != blank %}
+                <picture data-url="{{ section.settings.video_url }}">
+                    <img src="{{ section.settings.video_image_cover | image_url }}" alt="{{ section.settings.video_image_cover.alt | escape }}" />
+                </picture>
+            {% endif %}
+            <div>
+                {% if section.settings.text != blank %}
+                    {{ section.settings.text }}
+                {% endif %}
+            </div>
+            {% if section.settings.badge_text != blank %}
+                <div class="e-pill-badge">
+                    <span class="e-checkmark"></span>
+                    {{ section.settings.badge_text }}
+                </div>
+            {% endif %}
+        </article>
+    </div>
+</section>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        loadScriptOnce('youtube-popup', 'https://qureskincaredns.com/assets/js-new/yt-popup.js');
+    });
+</script>
+<!-- BASE SECTION END -->
+
+
+{% schema %}
+{
+    "name": "t:sections.n_trusted-recommended.name",
+        "settings": [
+            {
+                "type": "checkbox",
+                "id": "use_own_file",
+                "label": "t:common.use-own-file",
+                "default": false
+            },
+            {
+                "type": "richtext",
+                "id": "heading",
+                "label": "t:common.header"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "t:common.text"
+            },
+            {
+                "type": "image_picker",
+                "id": "video_image_cover",
+                "label": "t:common.video-image-cover"
+            },
+            {
+                "type": "url",
+                "id": "video_url",
+                "label": "t:common.video-url"
+            },
+            {
+                "type": "text",
+                "id": "badge_text",
+                "label": "t:common.badge-text",
+                "default": "Dermatologist Reviewed"
+            }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.n_trusted-recommended.name"
+        }
+    ]
+}
+{% endschema %}

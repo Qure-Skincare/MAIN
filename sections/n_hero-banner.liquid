@@ -3,7 +3,9 @@
 {% enddoc %}
 
 
-<link href="https://qureskincaredns.com/sections/new/hero-banner/hero-banner.css" rel="stylesheet" type="text/css"> 
+{% if section.settings.use_own_file %}
+    <link href="https://qureskincaredns.com/sections/new/hero-banner/hero-banner.css" rel="stylesheet" type="text/css"> 
+{% endif %}
     <section class="hero-banner{% if section.settings.modifier == 'holidays' %} hero-banner--holidays{% endif %}">
         <picture>
             {% if section.settings.image != blank %}
@@ -28,6 +30,12 @@
 {
     "name": "t:sections.n_hero-banner.name",
         "settings": [
+        {
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": false
+        },
         {
             "type": "select",
             "id": "modifier",
