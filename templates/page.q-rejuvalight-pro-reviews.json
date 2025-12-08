@@ -115,9 +115,7 @@
           "settings": {
             "heading": "<p>\"I like using this between my in-office treatments and it's easy to use, even for beginners.\"</p>",
             "text": "<p>Dr. Alekandra Brown</p><p>[checkmark] Board-Certified Dermatologist</p>",
-            "image": "shopify://shop_images/lmv-1.webp",
-            "video_url": "qnxqysx3sg",
-            "youtube_url": false
+            "image": "shopify://shop_images/lmv-1.webp"
           }
         },
         "slider_4tVKJG": {
@@ -125,9 +123,7 @@
           "settings": {
             "heading": "<p>\"Qure's anti-aging treatment gets down deep into your skin to stimulate collagen & makes a big difference...\"</p>",
             "text": "<p>Dr. Dylan Greeney</p><p>[checkmark] Board-Certified Dermatologist</p>",
-            "image": "shopify://shop_images/lmv-2.webp",
-            "video_url": "https://www.youtube.com/watch?v=1iXBgh7WPOY",
-            "youtube_url": true
+            "image": "shopify://shop_images/lmv-2.webp"
           }
         },
         "slider_heTNad": {
@@ -135,9 +131,7 @@
           "settings": {
             "heading": "<p>\"This is one of my faves from @qureskincare. It's a high quality mask and personalizable.\"</p>",
             "text": "<p>Dr. Luke Maxfield</p><p>[checkmark] Board-Certified Dermatologist</p>",
-            "image": "shopify://shop_images/lmv-3.webp",
-            "video_url": "https://www.youtube.com/watch?v=AeksxRPZyrA",
-            "youtube_url": true
+            "image": "shopify://shop_images/lmv-3.webp"
           }
         },
         "slider_gwVt9z": {
@@ -145,9 +139,7 @@
           "settings": {
             "heading": "<p>\"This mask actively treats the entire face for clearer and more beautiful skin.\"</p>",
             "text": "<p>Dr. Anthony Youn</p><p>[checkmark] Plastic Surgeon</p>",
-            "image": "shopify://shop_images/lmv-4.webp",
-            "video_url": "https://www.youtube.com/watch?v=XtgmSadah48",
-            "youtube_url": true
+            "image": "shopify://shop_images/lmv-4.webp"
           }
         },
         "slider_mVUCAc": {
@@ -155,9 +147,7 @@
           "settings": {
             "heading": "<p>\"These wavelengths trigger cells to create even more collagen... helping reduce common signs of aging.\"</p>",
             "text": "<p>Dr. Yaseen Arsalan</p><p>[checkmark] Doctor of Pharmacy</p>",
-            "image": "shopify://shop_images/lmv-5.webp",
-            "video_url": "https://www.youtube.com/watch?v=lLkM7Q7It2A&t=154s",
-            "youtube_url": true
+            "image": "shopify://shop_images/lmv-5.webp"
           }
         },
         "slider_TjGDqh": {
@@ -165,9 +155,7 @@
           "settings": {
             "heading": "<p>\"Not your average LED mask... this is a deeper, more effective way to achieve healthy, radiant skin.\"</p>",
             "text": "<p>Dr. Davin Lim</p><p>[checkmark] Board-Certified Dermatologist</p>",
-            "image": "shopify://shop_images/lmv-6.webp",
-            "video_url": "https://www.youtube.com/watch?v=7nQcleLpPnk",
-            "youtube_url": true
+            "image": "shopify://shop_images/lmv-6.webp"
           }
         }
       },

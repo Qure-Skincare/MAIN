@@ -9,73 +9,6 @@
  */
 {
   "sections": {
-    "endrock_testimonial_carousel_k6Rkhj": {
-      "type": "endrock_testimonialCarousel",
-      "blocks": {
-        "testimonial_qr33Xh": {
-          "type": "testimonial",
-          "settings": {
-            "testimonial_video": "shopify://files/videos/testimonial-charinecheungg.mp4",
-            "poster_image": "shopify://shop_images/poster-img7.png"
-          }
-        },
-        "testimonial_N7RGgc": {
-          "type": "testimonial",
-          "settings": {
-            "testimonial_video": "shopify://files/videos/testimonial-wendyskin.mp4",
-            "poster_image": "shopify://shop_images/poster-img.png"
-          }
-        },
-        "testimonial_Rthe6c": {
-          "type": "testimonial",
-          "settings": {
-            "testimonial_video": "shopify://files/videos/testimonial-careclarkbsn.mp4",
-            "poster_image": "shopify://shop_images/poster-img2.png"
-          }
-        },
-        "testimonial_AQzQxe": {
-          "type": "testimonial",
-          "settings": {
-            "testimonial_video": "shopify://files/videos/testimonial-glowwithava.mp4",
-            "poster_image": "shopify://shop_images/poster-img6.png"
-          }
-        },
-        "testimonial_YFLjzQ": {
-          "type": "testimonial",
-          "settings": {
-            "testimonial_video": "shopify://files/videos/testimonial-fleurdeforce.mp4",
-            "poster_image": "shopify://shop_images/poster-img5.png"
-          }
-        },
-        "testimonial_wxDBYB": {
-          "type": "testimonial",
-          "settings": {
-            "testimonial_video": "shopify://files/videos/testimonial-sophieanneperry.mp4",
-            "poster_image": "shopify://shop_images/poster-img4.png"
-          }
-        },
-        "testimonial_df64JD": {
-          "type": "testimonial",
-          "settings": {
-            "testimonial_video": "shopify://files/videos/testimonial-gothamista.mp4",
-            "poster_image": "shopify://shop_images/poster-img3.png"
-          }
-        }
-      },
-      "block_order": [
-        "testimonial_qr33Xh",
-        "testimonial_N7RGgc",
-        "testimonial_Rthe6c",
-        "testimonial_AQzQxe",
-        "testimonial_YFLjzQ",
-        "testimonial_wxDBYB",
-        "testimonial_df64JD"
-      ],
-      "name": "Testimonial carousel",
-      "settings": {
-        "title": ""
-      }
-    },
     "page_header_V5N4T9": {
       "type": "page-header",
       "blocks": {
@@ -1686,7 +1619,6 @@
     }
   },
   "order": [
-    "endrock_testimonial_carousel_k6Rkhj",
     "page_header_V5N4T9",
     "purchase-form-landing",
     "slider_featured_in_qHHg4W",
