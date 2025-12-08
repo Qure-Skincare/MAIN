@@ -9,11 +9,6 @@
  */
 {
   "sections": {
-    "main": {
-      "type": "page-derm-reviews",
-      "disabled": true,
-      "settings": {}
-    },
     "n_across_image_banner_HVXdy7": {
       "type": "n_across-image-banner",
       "blocks": {
@@ -57,7 +52,7 @@
           "type": "pills_navigation_item",
           "settings": {
             "text": "Q-Rejuvalight Pro",
-            "url": "#",
+            "url": "shopify://pages/q-rejuvalight-pro-reviews",
             "active": false
           }
         },
@@ -65,7 +60,7 @@
           "type": "pills_navigation_item",
           "settings": {
             "text": "Neck & Décolletage LED System",
-            "url": "#",
+            "url": "shopify://pages/neck-decolletage-led-reviews",
             "active": false
           }
         },
@@ -73,7 +68,7 @@
           "type": "pills_navigation_item",
           "settings": {
             "text": "All-In-One Serum",
-            "url": "#",
+            "url": "shopify://pages/face-serum-reviews",
             "active": false
           }
         },
@@ -81,7 +76,7 @@
           "type": "pills_navigation_item",
           "settings": {
             "text": "Micro-Infusion Targeted Patches",
-            "url": "#",
+            "url": "shopify://pages/micro-infusion-targeted-patches-reviews",
             "active": false
           }
         }
@@ -120,7 +115,8 @@
           "settings": {
             "heading": "<p>\"I like using this between my in-office treatments and it's easy to use, even for beginners.\"</p>",
             "text": "<p>Dr. Alekandra Brown</p><p>[checkmark] Board-Certified Dermatologist</p>",
-            "wistia_url": "rehxqby0fq",
+            "video_url": "rehxqby0fq",
+            "youtube_url": false,
             "image": "shopify://shop_images/home-trusted_img_1.webp"
           }
         },
@@ -129,7 +125,8 @@
           "settings": {
             "heading": "<p>\"After just a few uses my wrinkles look less visible and my skin brighter and smoother.\"</p>",
             "text": "<p>Dr. Lindsey Zubritsky</p><p>[checkmark] Board-Certified Dermatologist</p>",
-            "wistia_url": "ug1o3j3d8w",
+            "video_url": "ug1o3j3d8w",
+            "youtube_url": false,
             "image": "shopify://shop_images/trusted_img_5.webp"
           }
         },
@@ -138,7 +135,8 @@
           "settings": {
             "heading": "<p>\"You can get a clinical treatment at home safely and conveniently... and it's particularly beneficial for those with melanin-rich skin\"</p>",
             "text": "<p>Dr. Alexis Stephens</p><p>[checkmark] Internal Medicine Doctor</p>",
-            "wistia_url": "wbf95ywhx4",
+            "video_url": "wbf95ywhx4",
+            "youtube_url": false,
             "image": "shopify://shop_images/trusted_img_6.webp"
           }
         },
@@ -147,7 +145,8 @@
           "settings": {
             "heading": "<p>\"With Qure's Micro-Infusion System - consistency is key.\"</p>",
             "text": "<p>Dr. Prem Tripati</p><p>[checkmark] Facial Plastic Surgeon</p>",
-            "wistia_url": "gzba345nd4",
+            "video_url": "gzba345nd4",
+            "youtube_url": false,
             "image": "shopify://shop_images/trusted_img_9.webp"
           }
         },
@@ -156,7 +155,8 @@
           "settings": {
             "heading": "<p>\"One of the best ways to treat hyperpigmentation at home.\"</p>",
             "text": "<p>Dr. Wallace Nozile</p><p>[checkmark] Board-Certified Dermatologist</p>",
-            "wistia_url": "ypvcdsgwkx",
+            "video_url": "ypvcdsgwkx",
+            "youtube_url": false,
             "image": "shopify://shop_images/trusted_img_8.webp"
           }
         },
@@ -165,7 +165,8 @@
           "settings": {
             "heading": "<p>\"With Micro-Infusion, you get to see the results almost instantly.\"</p>",
             "text": "<p>Dr. Davin Lim</p><p>[checkmark] Board-Certified Dermatologist</p>",
-            "wistia_url": "3bud7no0j9",
+            "video_url": "3bud7no0j9",
+            "youtube_url": false,
             "image": "shopify://shop_images/trusted_img_7.webp"
           }
         }
@@ -226,7 +227,7 @@
       "type": "n_base-section",
       "name": "t:sections.n_base-section.name",
       "settings": {
-        "use_own_file": false,
+        "use_own_file": true,
         "modifier": "reverse",
         "background_color": "grey",
         "heading": "<h2>Qure's Micro-Infusion goes where your skin cream can't…</h2>",
@@ -287,7 +288,6 @@
     }
   },
   "order": [
-    "main",
     "n_across_image_banner_HVXdy7",
     "n_pills_navigation_igpcBi",
     "n_base_section_JMrmYz",

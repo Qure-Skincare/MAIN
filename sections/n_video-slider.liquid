@@ -39,18 +39,30 @@
                     {% if block.type == 'slider' %}                    
                         <div class="swiper-slide">
                             <div class="c-trusted-video-card">
-                                <picture
-                                    {% if block.settings.wistia_url != blank %}
-                                        class="filter-card-video"
-                                        data-bs-toggle="modal" 
-                                        data-bs-target="#reusableWistiaModal"
-                                        data-video-id="{{ block.settings.wistia_url }}"
-                                    {% endif %} 
-                                    >
-                                    {% if block.settings.image != blank %}
-                                        <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+
+                                {% if block.settings.youtube_url %}
+                                    {% if block.settings.video_url != blank %}
+                                        <picture data-url="{{ block.settings.video_url }}">
+                                            {% if block.settings.image != blank %}
+                                                <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                            {% endif %}
+                                        </picture>
                                     {% endif %}
-                                </picture>
+                                {% else %}
+                                    {% if block.settings.video_url != blank %}
+                                        <picture
+                                                class="filter-card-video"
+                                                data-bs-toggle="modal" 
+                                                data-bs-target="#reusableWistiaModal"
+                                                data-video-id="{{ block.settings.video_url }}"
+                                            >
+                                            {% if block.settings.image != blank %}
+                                                <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                            {% endif %}
+                                        </picture>
+                                    {% endif %}
+                                {% endif %}
+
                                 <article>
                                     {% if block.settings.heading != blank %}
                                         {{ block.settings.heading }}
@@ -111,9 +123,15 @@
                     "label": "t:common.text"
                 },
                 {
+                    "type": "checkbox",
+                    "id": "youtube_url",
+                    "label": "t:common.youtube-url",
+                    "default": false
+                },
+                {
                     "type": "text",
-                    "id": "wistia_url",
-                    "label": "t:common.wistia-url"
+                    "id": "video_url",
+                    "label": "t:common.video-url"
                 },
                 {
                     "type": "image_picker",
