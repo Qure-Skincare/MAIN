@@ -8,14 +8,214 @@
  * ------------------------------------------------------------
  */
  {
-    "sections": {
-      "main": {
-        "type": "page-face-serum-reviews",
-        "settings": {}
+  "sections": {
+    "n_across_image_banner_m9YrJn": {
+      "type": "n_across-image-banner",
+      "blocks": {
+        "box_hLhcat": {
+          "type": "box",
+          "settings": {
+            "image_1": "shopify://shop_images/crt-1.webp",
+            "image_2": "shopify://shop_images/crt-2.webp",
+            "badge_text": "+50",
+            "text": "<p><strong>50+ Board Certified Dermatologists</strong> recommend Qure to their patients.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "box_hLhcat"
+      ],
+      "name": "t:sections.n_across-image-banner.name",
+      "settings": {
+        "use_own_file": true,
+        "modifier": "hero",
+        "heading": "<h1>Trusted by doctors for healthier, radiant skin</h1>",
+        "text": "",
+        "image": "shopify://shop_images/derma-hero.webp",
+        "image_mobile": "shopify://shop_images/derma-hero-mob.webp",
+        "button_label": "",
+        "button_url": ""
       }
     },
-    "order": [
-      "main"
-    ]
-  }
-  
+    "n_pills_navigation_c7CJ0N": {
+      "type": "n_pills-navigation",
+      "blocks": {
+        "pills_navigation_item_rELFxG": {
+          "type": "pills_navigation_item",
+          "settings": {
+            "text": "Micro-Infusion System",
+            "url": "shopify://pages/derm-reviews",
+            "active": false
+          }
+        },
+        "pills_navigation_item_3HY4ar": {
+          "type": "pills_navigation_item",
+          "settings": {
+            "text": "Q-Rejuvalight Pro",
+            "url": "shopify://pages/q-rejuvalight-pro-reviews",
+            "active": false
+          }
+        },
+        "pills_navigation_item_YFnCRE": {
+          "type": "pills_navigation_item",
+          "settings": {
+            "text": "Neck & Décolletage LED System",
+            "url": "shopify://pages/neck-decolletage-led-reviews",
+            "active": false
+          }
+        },
+        "pills_navigation_item_x7WGfd": {
+          "type": "pills_navigation_item",
+          "settings": {
+            "text": "All-In-One Serum",
+            "url": "shopify://pages/face-serum-reviews",
+            "active": true
+          }
+        },
+        "pills_navigation_item_KqWVKc": {
+          "type": "pills_navigation_item",
+          "settings": {
+            "text": "Micro-Infusion Targeted Patches",
+            "url": "shopify://pages/micro-infusion-targeted-patches-reviews",
+            "active": false
+          }
+        }
+      },
+      "block_order": [
+        "pills_navigation_item_rELFxG",
+        "pills_navigation_item_3HY4ar",
+        "pills_navigation_item_YFnCRE",
+        "pills_navigation_item_x7WGfd",
+        "pills_navigation_item_KqWVKc"
+      ],
+      "name": "t:sections.n_pills-navigation.name",
+      "settings": {
+        "use_own_file": true,
+        "text": "Filter by product",
+        "sub_text": "Swipe for more"
+      }
+    },
+    "n_base_section_wJkK0K": {
+      "type": "n_trusted-recommended",
+      "name": "t:sections.n_trusted-recommended.name",
+      "settings": {
+        "use_own_file": true,
+        "heading": "<h2>Trusted and Recommended by Experts</h2>",
+        "text": "<p>“Qure has a really good serum. It's probably <em>the best known peptide complex</em></p><p>It has awesome, complimenting ingredients and amazing antioxidants. It really helps to simplify and consolidate your night routine.”</p>",
+        "video_image_cover": "shopify://shop_images/dr-shah-maxfield.webp",
+        "video_url": "https://www.youtube.com/watch?v=PJt57LcFEQk",
+        "badge_text": "Dermatologist Reviewed"
+      }
+    },
+    "n_results_comparison_slider_jV06ZL": {
+      "type": "n_results-comparison-slider",
+      "blocks": {
+        "slider_wdMNzz": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>Proven to visually improve</p>",
+            "badge_text": "Acne & Breakouts",
+            "image": "shopify://shop_images/ab-6.webp"
+          }
+        },
+        "slider_FUNnqE": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>Proven to visually improve</p>",
+            "badge_text": "Fine Lines & Wrinkles",
+            "image": "shopify://shop_images/ab-7.webp"
+          }
+        },
+        "slider_QthVfb": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>Proven to visually improve</p>",
+            "badge_text": "Discoloration",
+            "image": "shopify://shop_images/ab-8.webp"
+          }
+        }
+      },
+      "block_order": [
+        "slider_wdMNzz",
+        "slider_FUNnqE",
+        "slider_QthVfb"
+      ],
+      "name": "t:sections.n_results-comparison-slider.name",
+      "settings": {
+        "use_own_file": true,
+        "heading": "<h2>Clinically proven results you can see</h2>"
+      }
+    },
+    "n_base_section_nZp674": {
+      "type": "n_base-section",
+      "name": "t:sections.n_base-section.name",
+      "settings": {
+        "use_own_file": true,
+        "modifier": "reverse",
+        "background_color": "grey",
+        "heading": "<h2>Everything you need in one serum</h2>",
+        "text": "<p>Simplify your skincare routine, get <em>maximum results with minimal effort</em>.</p><p>Packed with <em>clinically backed ingredients</em> like Argireline® Peptides, Retinol, Bakuchiol, Niacinamide, Hyaluronic Acid, Vitamin C, Vitamin E, Ferulic Acid. The All-In-One Serum hydrates, brightens, smooths look of fine lines in one easy step.</p><p>Vegan and cruelty-free. Free from fragrance, parabens, and PEG.</p>",
+        "image": "shopify://shop_images/in-one-serum.webp",
+        "button_label": "Shop All-In-One Serum",
+        "button_url": "#"
+      }
+    },
+    "n_expert_board_r6X737": {
+      "type": "n_expert-board",
+      "blocks": {
+        "slider_GUEWQ6": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>Dr.Shah <br /> Board Certified Dermatologist</p>",
+            "text": "“I like that they put a lot of R&D into their products - Ultimately, I think that they care a lot about the products they are putting out”",
+            "image": "shopify://shop_images/shah.webp"
+          }
+        },
+        "slider_JPz38A": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>Dr. Maxfield <br /> Board Certified Dermatologist</p>",
+            "text": "“Qure do studies on this, taking a look at how effective it is, so you can have confidence it's going to help what you're doing for your skincare routine”",
+            "image": "shopify://shop_images/maxfield.webp"
+          }
+        },
+        "slider_WiXPmU": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>Dr. Tripathi <br /> Double Board Certified Facial Plastic Surgeon</p>",
+            "text": "“I love that Qure Skincare products go beyond just topical treatments, helping to maintain the results of in-office procedures.”",
+            "image": "shopify://shop_images/tripathi.webp"
+          }
+        },
+        "slider_zLah4t": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>Dr. Stephens <br /> Board Certified Dermatologist</p>",
+            "text": "“What really sets Qure apart is the level of innovation and thoughtfulness they put into each product. Their commitment to quality and attention to detail really shines through in everything they create”",
+            "image": "shopify://shop_images/stephens.webp"
+          }
+        }
+      },
+      "block_order": [
+        "slider_GUEWQ6",
+        "slider_JPz38A",
+        "slider_WiXPmU",
+        "slider_zLah4t"
+      ],
+      "name": "t:sections.n_expert-board.name",
+      "settings": {
+        "use_own_file": true,
+        "heading": "<h2>Meet our board of advisors</h2>",
+        "text": "<p>At Qure Skincare, we are proud to have a team of esteemed Dermatologists guiding our mission to deliver high-quality skincare solutions.</p>"
+      }
+    }
+  },
+  "order": [
+    "n_across_image_banner_m9YrJn",
+    "n_pills_navigation_c7CJ0N",
+    "n_base_section_wJkK0K",
+    "n_results_comparison_slider_jV06ZL",
+    "n_base_section_nZp674",
+    "n_expert_board_r6X737"
+  ]
+}

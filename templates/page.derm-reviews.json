@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
     "n_across_image_banner_HVXdy7": {
       "type": "n_across-image-banner",
@@ -115,7 +115,8 @@
           "settings": {
             "heading": "<p>\"I like using this between my in-office treatments and it's easy to use, even for beginners.\"</p>",
             "text": "<p>Dr. Alekandra Brown</p><p>[checkmark] Board-Certified Dermatologist</p>",
-            "image": "shopify://shop_images/home-trusted_img_1.webp"
+            "image": "shopify://shop_images/home-trusted_img_1.webp",
+            "video_url": "rehxqby0fq"
           }
         },
         "slider_4tVKJG": {
@@ -123,7 +124,8 @@
           "settings": {
             "heading": "<p>\"After just a few uses my wrinkles look less visible and my skin brighter and smoother.\"</p>",
             "text": "<p>Dr. Lindsey Zubritsky</p><p>[checkmark] Board-Certified Dermatologist</p>",
-            "image": "shopify://shop_images/trusted_img_5.webp"
+            "image": "shopify://shop_images/trusted_img_5.webp",
+            "video_url": "ug1o3j3d8w"
           }
         },
         "slider_heTNad": {
@@ -131,7 +133,8 @@
           "settings": {
             "heading": "<p>\"You can get a clinical treatment at home safely and conveniently... and it's particularly beneficial for those with melanin-rich skin\"</p>",
             "text": "<p>Dr. Alexis Stephens</p><p>[checkmark] Internal Medicine Doctor</p>",
-            "image": "shopify://shop_images/trusted_img_6.webp"
+            "image": "shopify://shop_images/trusted_img_6.webp",
+            "video_url": "wbf95ywhx4"
           }
         },
         "slider_gwVt9z": {
@@ -139,7 +142,8 @@
           "settings": {
             "heading": "<p>\"With Qure's Micro-Infusion System - consistency is key.\"</p>",
             "text": "<p>Dr. Prem Tripati</p><p>[checkmark] Facial Plastic Surgeon</p>",
-            "image": "shopify://shop_images/trusted_img_9.webp"
+            "image": "shopify://shop_images/trusted_img_9.webp",
+            "video_url": "gzba345nd4"
           }
         },
         "slider_mVUCAc": {
@@ -147,7 +151,8 @@
           "settings": {
             "heading": "<p>\"One of the best ways to treat hyperpigmentation at home.\"</p>",
             "text": "<p>Dr. Wallace Nozile</p><p>[checkmark] Board-Certified Dermatologist</p>",
-            "image": "shopify://shop_images/trusted_img_8.webp"
+            "image": "shopify://shop_images/trusted_img_8.webp",
+            "video_url": "ypvcdsgwkx"
           }
         },
         "slider_TjGDqh": {
@@ -155,7 +160,8 @@
           "settings": {
             "heading": "<p>\"With Micro-Infusion, you get to see the results almost instantly.\"</p>",
             "text": "<p>Dr. Davin Lim</p><p>[checkmark] Board-Certified Dermatologist</p>",
-            "image": "shopify://shop_images/trusted_img_7.webp"
+            "image": "shopify://shop_images/trusted_img_7.webp",
+            "video_url": "3bud7no0j9"
           }
         }
       },
