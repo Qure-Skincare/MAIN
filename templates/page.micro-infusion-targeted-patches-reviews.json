@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "n_across_image_banner_y4V9MJ": {
       "type": "n_across-image-banner",
@@ -102,74 +102,9 @@
         "use_own_file": true,
         "heading": "<h2>Trusted and Recommended by Experts</h2>",
         "text": "<p>“To have Argireline in a very targeted patch is GENIUS; it's <em>a botox-like peptide</em> that really helps with fine lines”</p>",
-        "video_image_cover": "shopify://shop_images/micro-infusion.webp",
+        "video_image_cover": "shopify://shop_images/micro-infusion_72dcdf8b-ad2a-4827-a120-1b93d9911396.webp",
         "video_url": "https://www.youtube.com/watch?v=mVdncsTAXiA",
         "badge_text": "Dermatologist Reviewed"
-      }
-    },
-    "n_video_slider_r6L0M3": {
-      "type": "n_video-slider",
-      "blocks": {
-        "slider_gPmiWg": {
-          "type": "slider",
-          "settings": {
-            "heading": "<p>\"I like using this between my in-office treatments and it's easy to use, even for beginners.\"</p>",
-            "text": "<p>Dr. Alekandra Brown</p><p>[checkmark] Board-Certified Dermatologist</p>",
-            "image": "shopify://shop_images/home-trusted_img_1.webp"
-          }
-        },
-        "slider_4tVKJG": {
-          "type": "slider",
-          "settings": {
-            "heading": "<p>\"After just a few uses my wrinkles look less visible and my skin brighter and smoother.\"</p>",
-            "text": "<p>Dr. Lindsey Zubritsky</p><p>[checkmark] Board-Certified Dermatologist</p>",
-            "image": "shopify://shop_images/trusted_img_5.webp"
-          }
-        },
-        "slider_heTNad": {
-          "type": "slider",
-          "settings": {
-            "heading": "<p>\"You can get a clinical treatment at home safely and conveniently... and it's particularly beneficial for those with melanin-rich skin\"</p>",
-            "text": "<p>Dr. Alexis Stephens</p><p>[checkmark] Internal Medicine Doctor</p>",
-            "image": "shopify://shop_images/trusted_img_6.webp"
-          }
-        },
-        "slider_gwVt9z": {
-          "type": "slider",
-          "settings": {
-            "heading": "<p>\"With Qure's Micro-Infusion System - consistency is key.\"</p>",
-            "text": "<p>Dr. Prem Tripati</p><p>[checkmark] Facial Plastic Surgeon</p>",
-            "image": "shopify://shop_images/trusted_img_9.webp"
-          }
-        },
-        "slider_mVUCAc": {
-          "type": "slider",
-          "settings": {
-            "heading": "<p>\"One of the best ways to treat hyperpigmentation at home.\"</p>",
-            "text": "<p>Dr. Wallace Nozile</p><p>[checkmark] Board-Certified Dermatologist</p>",
-            "image": "shopify://shop_images/trusted_img_8.webp"
-          }
-        },
-        "slider_TjGDqh": {
-          "type": "slider",
-          "settings": {
-            "heading": "<p>\"With Micro-Infusion, you get to see the results almost instantly.\"</p>",
-            "text": "<p>Dr. Davin Lim</p><p>[checkmark] Board-Certified Dermatologist</p>",
-            "image": "shopify://shop_images/trusted_img_7.webp"
-          }
-        }
-      },
-      "block_order": [
-        "slider_gPmiWg",
-        "slider_4tVKJG",
-        "slider_heTNad",
-        "slider_gwVt9z",
-        "slider_mVUCAc",
-        "slider_TjGDqh"
-      ],
-      "name": "t:sections.n_video-slider.name",
-      "settings": {
-        "use_own_file": true
       }
     },
     "n_results_comparison_slider_jZP481": {
@@ -179,30 +114,21 @@
           "type": "slider",
           "settings": {
             "heading": "<p>Proven to visually improve</p>",
-            "badge_text": "Fine Lines & Wrinkles",
-            "image": "shopify://shop_images/no_hype_1.webp"
-          }
-        },
-        "slider_FUNnqE": {
-          "type": "slider",
-          "settings": {
-            "heading": "<p>Proven to visually improve</p>",
-            "badge_text": "Dark Spots & Texture",
-            "image": "shopify://shop_images/no_hype_3.webp"
+            "badge_text": "Crow's Feet",
+            "image": "shopify://shop_images/ab-2.webp"
           }
         },
         "slider_QthVfb": {
           "type": "slider",
           "settings": {
             "heading": "<p>Proven to visually improve</p>",
-            "badge_text": "Large Pores & Skin Texture",
-            "image": "shopify://shop_images/no_hype_2.webp"
+            "badge_text": "Dark Under Eyes",
+            "image": "shopify://shop_images/ab-1.webp"
           }
         }
       },
       "block_order": [
         "slider_wdMNzz",
-        "slider_FUNnqE",
         "slider_QthVfb"
       ],
       "name": "t:sections.n_results-comparison-slider.name",
@@ -218,10 +144,10 @@
         "use_own_file": true,
         "modifier": "reverse",
         "background_color": "grey",
-        "heading": "<h2>Qure's Micro-Infusion goes where your skin cream can't…</h2>",
-        "text": "<p>Its tiny, almost painless, 24K gold plated 0.5mm microneedles penetrate beyond the skin's surface to gently create controlled trauma in your skin which help <em>boost the feel of firmness, smooth texture and reduce the look of fine lines and wrinkles.</em></p><p>The invisible micro-channels then infuse science-backed serums into your skin that are tailored to <em>treat your specific skin concerns,</em> increasing absorption and delivering powerful active ingredients exactly where they're needed.</p>",
-        "image": "shopify://shop_images/skin-cream.webp",
-        "button_label": "Shop Micro-Infusion",
+        "heading": "<h2>80 Serum-Enriches Micro-Darts for precise improvement</h2>",
+        "text": "<p>Fast-acting patches feature 80 self-dissolving micro-darts designed to target and treat wrinkles, under-eye puffiness and dark circles.</p><p>While traditional patches lay flat on the surface of the skin, these ultra thin micro-darts gently penetrate the skin, <em>infusing serum for deeper delivery.</em></p><p>Precise and powerful, they infuse serum where you need it most and fully absorb into the skin for <em>deeper, better, faster results</em> - yet gentle enough for sensitive skin.</p>",
+        "image": "shopify://shop_images/serum-enriches.webp",
+        "button_label": "Shop Micro-Infusion Targeted Patches",
         "button_url": "#"
       }
     },
@@ -232,7 +158,7 @@
           "type": "slider",
           "settings": {
             "heading": "<p>Dr.Shah <br /> Board Certified Dermatologist</p>",
-            "text": "I like that they put a lot of R&D into their products - Ultimately, I think that they care a lot about the products they are putting out",
+            "text": "“I like that they put a lot of R&D into their products - Ultimately, I think that they care a lot about the products they are putting out”",
             "image": "shopify://shop_images/shah.webp"
           }
         },
@@ -240,7 +166,7 @@
           "type": "slider",
           "settings": {
             "heading": "<p>Dr. Maxfield <br /> Board Certified Dermatologist</p>",
-            "text": "Qure do studies on this, taking a look at how effective it is, so you can have confidence it's going to help what you're doing for your skincare routine",
+            "text": "“Qure do studies on this, taking a look at how effective it is, so you can have confidence it's going to help what you're doing for your skincare routine”",
             "image": "shopify://shop_images/maxfield.webp"
           }
         },
@@ -248,7 +174,7 @@
           "type": "slider",
           "settings": {
             "heading": "<p>Dr. Tripathi <br /> Double Board Certified Facial Plastic Surgeon</p>",
-            "text": "I love that Qure Skincare products go beyond just topical treatments, helping to maintain the results of in-office procedures.",
+            "text": "“I love that Qure Skincare products go beyond just topical treatments, helping to maintain the results of in-office procedures.”",
             "image": "shopify://shop_images/tripathi.webp"
           }
         },
@@ -256,7 +182,7 @@
           "type": "slider",
           "settings": {
             "heading": "<p>Dr. Stephens <br /> Board Certified Dermatologist</p>",
-            "text": "What really sets Qure apart is the level of innovation and thoughtfulness they put into each product. Their commitment to quality and attention to detail really shines through in everything they create",
+            "text": "“What really sets Qure apart is the level of innovation and thoughtfulness they put into each product. Their commitment to quality and attention to detail really shines through in everything they create”",
             "image": "shopify://shop_images/stephens.webp"
           }
         }
@@ -279,7 +205,6 @@
     "n_across_image_banner_y4V9MJ",
     "n_pills_navigation_qfP7N6",
     "n_base_section_Qf6R4G",
-    "n_video_slider_r6L0M3",
     "n_results_comparison_slider_jZP481",
     "n_base_section_9043J5",
     "n_expert_board_j75684"
