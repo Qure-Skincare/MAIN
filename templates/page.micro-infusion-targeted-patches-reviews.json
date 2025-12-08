@@ -9,7 +9,7 @@
  */
 {
   "sections": {
-    "n_across_image_banner_Hu7Qvb": {
+    "n_across_image_banner_Etg8qP": {
       "type": "n_across-image-banner",
       "blocks": {
         "box_hLhcat": {
@@ -37,7 +37,7 @@
         "button_url": ""
       }
     },
-    "n_pills_navigation_Xs6FSe": {
+    "n_pills_navigation_1Q7aMJ": {
       "type": "n_pills-navigation",
       "blocks": {
         "pills_navigation_item_rELFxG": {
@@ -95,7 +95,7 @@
         "sub_text": "Swipe for more"
       }
     },
-    "n_base_section_o1tIuR": {
+    "n_base_section_hfU761": {
       "type": "n_trusted-recommended",
       "name": "t:sections.n_trusted-recommended.name",
       "settings": {
@@ -107,7 +107,7 @@
         "badge_text": "Dermatologist Reviewed"
       }
     },
-    "n_results_comparison_slider_zQgHnF": {
+    "n_results_comparison_slider_q9Wg9n": {
       "type": "n_results-comparison-slider",
       "blocks": {
         "slider_wdMNzz": {
@@ -137,7 +137,7 @@
         "heading": "<h2>Clinically proven results you can see</h2>"
       }
     },
-    "n_base_section_KUyC8p": {
+    "n_base_section_g6457e": {
       "type": "n_base-section",
       "name": "t:sections.n_base-section.name",
       "settings": {
@@ -151,7 +151,7 @@
         "button_url": "#"
       }
     },
-    "n_expert_board_e58b64": {
+    "n_expert_board_9684e5": {
       "type": "n_expert-board",
       "blocks": {
         "slider_GUEWQ6": {
@@ -202,11 +202,11 @@
     }
   },
   "order": [
-    "n_across_image_banner_Hu7Qvb",
-    "n_pills_navigation_Xs6FSe",
-    "n_base_section_o1tIuR",
-    "n_results_comparison_slider_zQgHnF",
-    "n_base_section_KUyC8p",
-    "n_expert_board_e58b64"
+    "n_across_image_banner_Etg8qP",
+    "n_pills_navigation_1Q7aMJ",
+    "n_base_section_hfU761",
+    "n_results_comparison_slider_q9Wg9n",
+    "n_base_section_g6457e",
+    "n_expert_board_9684e5"
   ]
 }
