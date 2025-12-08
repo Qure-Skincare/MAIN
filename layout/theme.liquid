@@ -64,8 +64,9 @@
     <link rel="stylesheet" href="https://qureskincaredns.com/assets/css/spacings.css">
     <link rel="stylesheet" href="https://qureskincaredns.com/assets/css/theme-fonts.css" />
     <link rel="stylesheet" href="https://qureskincaredns.com/assets/css/base.css" />
-    <!-- <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/sections-stack/sections-stack.css" /> -->
-    <link rel="stylesheet" href="https://qureskincaredns.com/assets/css/black-friday.css" />
+
+    {% render '__render-sections-stack' %}
+
     <style>
         :root {
           {% if settings.primary-color != blank %}

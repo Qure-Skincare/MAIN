@@ -1,0 +1,11 @@
+{% assign show_css = false %}
+
+{%- case template -%}
+    {%- when 'page.neck-decolletage-led-pro-content-guide' -%}
+            {% assign show_css = false %}     
+{%- endcase -%}
+
+
+{% if show_css == true %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/sections-stack/sections-stack.css" />
+{% endif %}
