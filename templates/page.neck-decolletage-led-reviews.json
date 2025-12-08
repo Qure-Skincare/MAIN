@@ -8,14 +8,270 @@
  * ------------------------------------------------------------
  */
  {
-    "sections": {
-      "main": {
-        "type": "page-neck-decolletage-led-reviews",
-        "settings": {}
+  "sections": {
+    "n_across_image_banner_bf3Hqe": {
+      "type": "n_across-image-banner",
+      "blocks": {
+        "box_hLhcat": {
+          "type": "box",
+          "settings": {
+            "image_1": "shopify://shop_images/crt-1.webp",
+            "image_2": "shopify://shop_images/crt-2.webp",
+            "badge_text": "+50",
+            "text": "<p><strong>50+ Board Certified Dermatologists</strong> recommend Qure to their patients.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "box_hLhcat"
+      ],
+      "name": "t:sections.n_across-image-banner.name",
+      "settings": {
+        "use_own_file": true,
+        "modifier": "hero",
+        "heading": "<h1>Trusted by doctors for healthier, radiant skin</h1>",
+        "text": "",
+        "image": "shopify://shop_images/derma-hero.webp",
+        "image_mobile": "shopify://shop_images/derma-hero-mob.webp",
+        "button_label": "",
+        "button_url": ""
       }
     },
-    "order": [
-      "main"
-    ]
-  }
-  
+    "n_pills_navigation_jN66tU": {
+      "type": "n_pills-navigation",
+      "blocks": {
+        "pills_navigation_item_rELFxG": {
+          "type": "pills_navigation_item",
+          "settings": {
+            "text": "Micro-Infusion System",
+            "url": "shopify://pages/derm-reviews",
+            "active": false
+          }
+        },
+        "pills_navigation_item_3HY4ar": {
+          "type": "pills_navigation_item",
+          "settings": {
+            "text": "Q-Rejuvalight Pro",
+            "url": "shopify://pages/q-rejuvalight-pro-reviews",
+            "active": false
+          }
+        },
+        "pills_navigation_item_YFnCRE": {
+          "type": "pills_navigation_item",
+          "settings": {
+            "text": "Neck & Décolletage LED System",
+            "url": "shopify://pages/neck-decolletage-led-reviews",
+            "active": true
+          }
+        },
+        "pills_navigation_item_x7WGfd": {
+          "type": "pills_navigation_item",
+          "settings": {
+            "text": "All-In-One Serum",
+            "url": "shopify://pages/face-serum-reviews",
+            "active": false
+          }
+        },
+        "pills_navigation_item_KqWVKc": {
+          "type": "pills_navigation_item",
+          "settings": {
+            "text": "Micro-Infusion Targeted Patches",
+            "url": "shopify://pages/micro-infusion-targeted-patches-reviews",
+            "active": false
+          }
+        }
+      },
+      "block_order": [
+        "pills_navigation_item_rELFxG",
+        "pills_navigation_item_3HY4ar",
+        "pills_navigation_item_YFnCRE",
+        "pills_navigation_item_x7WGfd",
+        "pills_navigation_item_KqWVKc"
+      ],
+      "name": "t:sections.n_pills-navigation.name",
+      "settings": {
+        "use_own_file": true,
+        "text": "Filter by product",
+        "sub_text": "Swipe for more"
+      }
+    },
+    "n_base_section_LwJ9Hr": {
+      "type": "n_trusted-recommended",
+      "name": "t:sections.n_trusted-recommended.name",
+      "settings": {
+        "use_own_file": true,
+        "heading": "<h2>Trusted and Recommended by Experts</h2>",
+        "text": "<p>\"LED light targets fibroblasts to <em>increase collagen production</em> and has anti-aging benefits especially if you are seeing wrinkles and lines on your neck...\"</p>",
+        "video_image_cover": "shopify://shop_images/n-d-doctors.webp",
+        "video_url": "https://www.youtube.com/watch?v=W9KXAimjHCE",
+        "badge_text": "Dermatologist Reviewed"
+      }
+    },
+    "n_video_slider_MZzWKF": {
+      "type": "n_video-slider",
+      "blocks": {
+        "slider_gPmiWg": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>“Using a device like this consistently will fade brown spots and sun damage over time.”</p>",
+            "text": "<p>Dr. Prem Tripathi</p><p>[checkmark] Board-Certified Dermatologist</p>",
+            "video_url": "xoh5ew7v31",
+            "image": "shopify://shop_images/trusted_img_1.webp",
+            "youtube_url": false
+          }
+        },
+        "slider_4tVKJG": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>\"This device helps me fight early signs of aging like fine lines, redness and discoloration...\"</p>",
+            "text": "<p>Dr. Alexandra Zeitany</p><p>[checkmark] Board-Certified Dermatologist</p>",
+            "image": "shopify://shop_images/trusted_img_2.webp",
+            "video_url": "https://www.youtube.com/watch?v=1iXBgh7WPOY",
+            "youtube_url": true
+          }
+        },
+        "slider_heTNad": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>I personally suffer from tech neck from looking down ar my phone [...] it helps address signs of aging.</p>",
+            "text": "<p>Dr. Mona Patel</p><p>[checkmark] Internal Medicine Doctor</p>",
+            "image": "shopify://shop_images/trusted_img_3.webp",
+            "video_url": "k1wciiwksf",
+            "youtube_url": false
+          }
+        },
+        "slider_gwVt9z": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>“This is a simple treatment I love and recommend. It reduces redness and fine lines.”</p>",
+            "text": "<p>Dr. Nayiri Khatch</p><p>[checkmark] Resident Doctor</p>",
+            "image": "shopify://shop_images/trusted_img_4.webp",
+            "video_url": "9womummdjx",
+            "youtube_url": false
+          }
+        }
+      },
+      "block_order": [
+        "slider_gPmiWg",
+        "slider_4tVKJG",
+        "slider_heTNad",
+        "slider_gwVt9z"
+      ],
+      "name": "t:sections.n_video-slider.name",
+      "settings": {
+        "use_own_file": true
+      }
+    },
+    "n_results_comparison_slider_h954zQ": {
+      "type": "n_results-comparison-slider",
+      "blocks": {
+        "slider_wdMNzz": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>Proven to visually improve</p>",
+            "badge_text": "Wrinkles & Sun Damage",
+            "image": "shopify://shop_images/ab-3.webp"
+          }
+        },
+        "slider_FUNnqE": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>Proven to visually improve</p>",
+            "badge_text": "Sun Spots & Fine Lines",
+            "image": "shopify://shop_images/ab-4.webp"
+          }
+        },
+        "slider_QthVfb": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>Proven to visually improve</p>",
+            "badge_text": "Acne & Breakouts",
+            "image": "shopify://shop_images/ab-5.webp"
+          }
+        }
+      },
+      "block_order": [
+        "slider_wdMNzz",
+        "slider_FUNnqE",
+        "slider_QthVfb"
+      ],
+      "name": "t:sections.n_results-comparison-slider.name",
+      "settings": {
+        "use_own_file": true,
+        "heading": "<h2>Clinically proven results you can see</h2>"
+      }
+    },
+    "n_base_section_Bq8NxW": {
+      "type": "n_base-section",
+      "name": "t:sections.n_base-section.name",
+      "settings": {
+        "use_own_file": true,
+        "modifier": "reverse",
+        "background_color": "grey",
+        "heading": "<h2>All the skin firming, smoothing, clearing benefits with just 1 device</h2>",
+        "text": "<p>The Neck & Décolletage LED System uses red and near-infrared light to gently <em>activate your skin's natural repair process</em></p><p>These wavelengths help boost collagen, reduce inflammation, and improve circulation—leading to <em>firmer, smoother, and more even-toned skin </em> over time.</p>",
+        "image": "shopify://shop_images/n-d-image.webp",
+        "button_label": "Shop Neck & Décolletage LED System",
+        "button_url": "#"
+      }
+    },
+    "n_expert_board_d173Bq": {
+      "type": "n_expert-board",
+      "blocks": {
+        "slider_GUEWQ6": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>Dr.Shah <br /> Board Certified Dermatologist</p>",
+            "text": "“I like that they put a lot of R&D into their products - Ultimately, I think that they care a lot about the products they are putting out”",
+            "image": "shopify://shop_images/shah.webp"
+          }
+        },
+        "slider_JPz38A": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>Dr. Maxfield <br /> Board Certified Dermatologist</p>",
+            "text": "“Qure do studies on this, taking a look at how effective it is, so you can have confidence it's going to help what you're doing for your skincare routine”",
+            "image": "shopify://shop_images/maxfield.webp"
+          }
+        },
+        "slider_WiXPmU": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>Dr. Tripathi <br /> Double Board Certified Facial Plastic Surgeon</p>",
+            "text": "“I love that Qure Skincare products go beyond just topical treatments, helping to maintain the results of in-office procedures.”",
+            "image": "shopify://shop_images/tripathi.webp"
+          }
+        },
+        "slider_zLah4t": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>Dr. Stephens <br /> Board Certified Dermatologist</p>",
+            "text": "“What really sets Qure apart is the level of innovation and thoughtfulness they put into each product. Their commitment to quality and attention to detail really shines through in everything they create”",
+            "image": "shopify://shop_images/stephens.webp"
+          }
+        }
+      },
+      "block_order": [
+        "slider_GUEWQ6",
+        "slider_JPz38A",
+        "slider_WiXPmU",
+        "slider_zLah4t"
+      ],
+      "name": "t:sections.n_expert-board.name",
+      "settings": {
+        "use_own_file": true,
+        "heading": "<h2>Meet our board of advisors</h2>",
+        "text": "<p>At Qure Skincare, we are proud to have a team of esteemed Dermatologists guiding our mission to deliver high-quality skincare solutions.</p>"
+      }
+    }
+  },
+  "order": [
+    "n_across_image_banner_bf3Hqe",
+    "n_pills_navigation_jN66tU",
+    "n_base_section_LwJ9Hr",
+    "n_video_slider_MZzWKF",
+    "n_results_comparison_slider_h954zQ",
+    "n_base_section_Bq8NxW",
+    "n_expert_board_d173Bq"
+  ]
+}
