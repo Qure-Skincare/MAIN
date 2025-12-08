@@ -2,7 +2,17 @@
 
 {%- case template -%}
     {%- when 'page.neck-decolletage-led-pro-content-guide' -%}
-            {% assign show_css = false %}     
+            {% assign show_css = false %}    
+            {%- when 'page.derm-reviews' -%}
+                {% assign show_css = true %}
+            {%- when 'page.q-rejuvalight-pro-reviews' -%}
+                {% assign show_css = true %}
+            {%- when 'page.face-serum-reviews' -%}
+                {% assign show_css = true %}
+            {%- when 'page.micro-infusion-targeted-patches-reviews' -%}
+                {% assign show_css = true %}
+            {%- when 'page.neck-decolletage-led-reviews' -%}
+                {% assign show_css = true %}
 {%- endcase -%}
 
 
