@@ -9,7 +9,7 @@
  */
 {
   "sections": {
-    "n_across_image_banner_y4V9MJ": {
+    "n_across_image_banner_Etg8qP": {
       "type": "n_across-image-banner",
       "blocks": {
         "box_hLhcat": {
@@ -37,7 +37,7 @@
         "button_url": ""
       }
     },
-    "n_pills_navigation_qfP7N6": {
+    "n_pills_navigation_1Q7aMJ": {
       "type": "n_pills-navigation",
       "blocks": {
         "pills_navigation_item_rELFxG": {
@@ -95,7 +95,7 @@
         "sub_text": "Swipe for more"
       }
     },
-    "n_base_section_Qf6R4G": {
+    "n_base_section_hfU761": {
       "type": "n_trusted-recommended",
       "name": "t:sections.n_trusted-recommended.name",
       "settings": {
@@ -107,7 +107,7 @@
         "badge_text": "Dermatologist Reviewed"
       }
     },
-    "n_results_comparison_slider_jZP481": {
+    "n_results_comparison_slider_q9Wg9n": {
       "type": "n_results-comparison-slider",
       "blocks": {
         "slider_wdMNzz": {
@@ -118,7 +118,7 @@
             "image": "shopify://shop_images/ab-2.webp"
           }
         },
-        "slider_QthVfb": {
+        "slider_FUNnqE": {
           "type": "slider",
           "settings": {
             "heading": "<p>Proven to visually improve</p>",
@@ -129,7 +129,7 @@
       },
       "block_order": [
         "slider_wdMNzz",
-        "slider_QthVfb"
+        "slider_FUNnqE"
       ],
       "name": "t:sections.n_results-comparison-slider.name",
       "settings": {
@@ -137,7 +137,7 @@
         "heading": "<h2>Clinically proven results you can see</h2>"
       }
     },
-    "n_base_section_9043J5": {
+    "n_base_section_g6457e": {
       "type": "n_base-section",
       "name": "t:sections.n_base-section.name",
       "settings": {
@@ -151,7 +151,7 @@
         "button_url": "#"
       }
     },
-    "n_expert_board_j75684": {
+    "n_expert_board_9684e5": {
       "type": "n_expert-board",
       "blocks": {
         "slider_GUEWQ6": {
@@ -202,11 +202,11 @@
     }
   },
   "order": [
-    "n_across_image_banner_y4V9MJ",
-    "n_pills_navigation_qfP7N6",
-    "n_base_section_Qf6R4G",
-    "n_results_comparison_slider_jZP481",
-    "n_base_section_9043J5",
-    "n_expert_board_j75684"
+    "n_across_image_banner_Etg8qP",
+    "n_pills_navigation_1Q7aMJ",
+    "n_base_section_hfU761",
+    "n_results_comparison_slider_q9Wg9n",
+    "n_base_section_g6457e",
+    "n_expert_board_9684e5"
   ]
 }
