@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "n_across_image_banner_HVXdy7": {
       "type": "n_across-image-banner",
@@ -115,8 +115,9 @@
           "settings": {
             "heading": "<p>\"I like using this between my in-office treatments and it's easy to use, even for beginners.\"</p>",
             "text": "<p>Dr. Alekandra Brown</p><p>[checkmark] Board-Certified Dermatologist</p>",
-            "image": "shopify://shop_images/home-trusted_img_1.webp",
-            "video_url": "rehxqby0fq"
+            "youtube_url": false,
+            "video_url": "rehxqby0fq",
+            "image": "shopify://shop_images/home-trusted_img_1.webp"
           }
         },
         "slider_4tVKJG": {
@@ -124,8 +125,9 @@
           "settings": {
             "heading": "<p>\"After just a few uses my wrinkles look less visible and my skin brighter and smoother.\"</p>",
             "text": "<p>Dr. Lindsey Zubritsky</p><p>[checkmark] Board-Certified Dermatologist</p>",
-            "image": "shopify://shop_images/trusted_img_5.webp",
-            "video_url": "ug1o3j3d8w"
+            "youtube_url": false,
+            "video_url": "ug1o3j3d8w",
+            "image": "shopify://shop_images/trusted_img_5.webp"
           }
         },
         "slider_heTNad": {
@@ -133,8 +135,9 @@
           "settings": {
             "heading": "<p>\"You can get a clinical treatment at home safely and conveniently... and it's particularly beneficial for those with melanin-rich skin\"</p>",
             "text": "<p>Dr. Alexis Stephens</p><p>[checkmark] Internal Medicine Doctor</p>",
-            "image": "shopify://shop_images/trusted_img_6.webp",
-            "video_url": "wbf95ywhx4"
+            "youtube_url": false,
+            "video_url": "wbf95ywhx4",
+            "image": "shopify://shop_images/trusted_img_6.webp"
           }
         },
         "slider_gwVt9z": {
@@ -142,8 +145,9 @@
           "settings": {
             "heading": "<p>\"With Qure's Micro-Infusion System - consistency is key.\"</p>",
             "text": "<p>Dr. Prem Tripati</p><p>[checkmark] Facial Plastic Surgeon</p>",
-            "image": "shopify://shop_images/trusted_img_9.webp",
-            "video_url": "gzba345nd4"
+            "youtube_url": false,
+            "video_url": "gzba345nd4",
+            "image": "shopify://shop_images/trusted_img_9.webp"
           }
         },
         "slider_mVUCAc": {
@@ -151,8 +155,9 @@
           "settings": {
             "heading": "<p>\"One of the best ways to treat hyperpigmentation at home.\"</p>",
             "text": "<p>Dr. Wallace Nozile</p><p>[checkmark] Board-Certified Dermatologist</p>",
-            "image": "shopify://shop_images/trusted_img_8.webp",
-            "video_url": "ypvcdsgwkx"
+            "youtube_url": false,
+            "video_url": "ypvcdsgwkx",
+            "image": "shopify://shop_images/trusted_img_8.webp"
           }
         },
         "slider_TjGDqh": {
@@ -160,8 +165,9 @@
           "settings": {
             "heading": "<p>\"With Micro-Infusion, you get to see the results almost instantly.\"</p>",
             "text": "<p>Dr. Davin Lim</p><p>[checkmark] Board-Certified Dermatologist</p>",
-            "image": "shopify://shop_images/trusted_img_7.webp",
-            "video_url": "3bud7no0j9"
+            "youtube_url": false,
+            "video_url": "3bud7no0j9",
+            "image": "shopify://shop_images/trusted_img_7.webp"
           }
         }
       },
@@ -228,7 +234,7 @@
         "text": "<p>Its tiny, almost painless, 24K gold plated 0.5mm microneedles penetrate beyond the skin's surface to gently create controlled trauma in your skin which help <em>boost the feel of firmness, smooth texture and reduce the look of fine lines and wrinkles.</em></p><p>The invisible micro-channels then infuse science-backed serums into your skin that are tailored to <em>treat your specific skin concerns,</em> increasing absorption and delivering powerful active ingredients exactly where they're needed.</p>",
         "image": "shopify://shop_images/skin-cream.webp",
         "button_label": "Shop Micro-Infusion",
-        "button_url": "#"
+        "button_url": "https://qureskincare.com/pages/microinfusion"
       }
     },
     "n_expert_board_mhw3pU": {
