@@ -115,6 +115,8 @@
           "settings": {
             "heading": "<p>\"I like using this between my in-office treatments and it's easy to use, even for beginners.\"</p>",
             "text": "<p>Dr. Alekandra Brown</p><p>[checkmark] Board-Certified Dermatologist</p>",
+            "youtube_url": false,
+            "video_url": "",
             "image": "shopify://shop_images/lmv-1.webp"
           }
         },
@@ -123,6 +125,8 @@
           "settings": {
             "heading": "<p>\"Qure's anti-aging treatment gets down deep into your skin to stimulate collagen & makes a big difference...\"</p>",
             "text": "<p>Dr. Dylan Greeney</p><p>[checkmark] Board-Certified Dermatologist</p>",
+            "youtube_url": false,
+            "video_url": "",
             "image": "shopify://shop_images/lmv-2.webp"
           }
         },
@@ -131,6 +135,8 @@
           "settings": {
             "heading": "<p>\"This is one of my faves from @qureskincare. It's a high quality mask and personalizable.\"</p>",
             "text": "<p>Dr. Luke Maxfield</p><p>[checkmark] Board-Certified Dermatologist</p>",
+            "youtube_url": false,
+            "video_url": "",
             "image": "shopify://shop_images/lmv-3.webp"
           }
         },
@@ -139,6 +145,8 @@
           "settings": {
             "heading": "<p>\"This mask actively treats the entire face for clearer and more beautiful skin.\"</p>",
             "text": "<p>Dr. Anthony Youn</p><p>[checkmark] Plastic Surgeon</p>",
+            "youtube_url": false,
+            "video_url": "",
             "image": "shopify://shop_images/lmv-4.webp"
           }
         },
@@ -147,6 +155,8 @@
           "settings": {
             "heading": "<p>\"These wavelengths trigger cells to create even more collagen... helping reduce common signs of aging.\"</p>",
             "text": "<p>Dr. Yaseen Arsalan</p><p>[checkmark] Doctor of Pharmacy</p>",
+            "youtube_url": false,
+            "video_url": "",
             "image": "shopify://shop_images/lmv-5.webp"
           }
         },
@@ -155,6 +165,8 @@
           "settings": {
             "heading": "<p>\"Not your average LED mask... this is a deeper, more effective way to achieve healthy, radiant skin.\"</p>",
             "text": "<p>Dr. Davin Lim</p><p>[checkmark] Board-Certified Dermatologist</p>",
+            "youtube_url": false,
+            "video_url": "",
             "image": "shopify://shop_images/lmv-6.webp"
           }
         }
@@ -222,7 +234,7 @@
         "text": "<p>A portable, FDA-cleared, at-home LED light therapy treatment that is scientifically <em>proven to change your skin</em> for the better.</p><p>Q-Rejuvalight Pro utilizes a combination of <em>5 market-leading light wavelengths</em> to treat a multitude of skin concerns deep within the skin, where even the best creams and serums can't reach. </p>",
         "image": "shopify://shop_images/skin_firming.webp",
         "button_label": "Shop Q-Rejuvalight Pro Mask",
-        "button_url": "#"
+        "button_url": "https://qureskincare.com/products/q-rejuvalight-pro-facewear"
       }
     },
     "n_expert_board_e58b64": {
