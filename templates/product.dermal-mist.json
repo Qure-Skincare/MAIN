@@ -443,6 +443,13 @@
             "youtube_url": "",
             "wistia_url": "rnjpxbt35o"
           }
+        },
+        "slider_Edp9tC": {
+          "type": "slider",
+          "settings": {
+            "youtube_url": "",
+            "wistia_url": "130d1zoq72"
+          }
         }
       },
       "block_order": [
@@ -452,7 +459,8 @@
         "slider_CyVwN4",
         "slider_RCgU8W",
         "slider_BdbCUB",
-        "slider_8W7WkV"
+        "slider_8W7WkV",
+        "slider_Edp9tC"
       ],
       "name": "t:sections.video-review-slider.name",
       "settings": {
