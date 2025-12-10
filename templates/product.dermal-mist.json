@@ -185,7 +185,7 @@
       "settings": {
         "form_name": "purchase-form-landing",
         "hide_types": true,
-        "type": "box"
+        "type": "list"
       }
     },
     "logos_mUyKFd": {
