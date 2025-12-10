@@ -422,13 +422,21 @@
             "video_cover_image": "shopify://shop_images/Review_13.png",
             "wistia_url": "b1uix8g3y6"
           }
+        },
+        "slider_RCgU8W": {
+          "type": "slider",
+          "settings": {
+            "youtube_url": "",
+            "wistia_url": "a51zt8a6lt"
+          }
         }
       },
       "block_order": [
         "slider_jGWqkN",
         "slider_Wzywcy",
         "slider_Xhp3Wq",
-        "slider_CyVwN4"
+        "slider_CyVwN4",
+        "slider_RCgU8W"
       ],
       "name": "t:sections.video-review-slider.name",
       "settings": {
