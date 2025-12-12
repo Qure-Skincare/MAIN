@@ -795,17 +795,6 @@
             "image": "shopify://shop_images/trusted_img_9.webp"
           }
         },
-        "slider_QwHKTQ": {
-          "type": "slider",
-          "settings": {
-            "heading": "<p>\"One of the best ways to treat hyperpigmentation at home.\"</p>",
-            "text": "<p>Dr. Wallace Nozile</p>",
-            "sub_text": "<p>Board-Certified Dermatologist</p>",
-            "url": "ypvcdsgwkx",
-            "checkbox": false,
-            "image": "shopify://shop_images/trusted_img_8.webp"
-          }
-        },
         "slider_7TUNBU": {
           "type": "slider",
           "settings": {
@@ -846,7 +835,6 @@
         "slider_UgyjwC",
         "slider_fy9Whb",
         "slider_eMVGVa",
-        "slider_QwHKTQ",
         "slider_7TUNBU",
         "slider_tGGWhz",
         "slider_VqM8Qm"
