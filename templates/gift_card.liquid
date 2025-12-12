@@ -98,7 +98,16 @@
     {% comment %} {% sections 'header-group' %} {% endcomment %}
 
     <main class="sections-stack">
-      <div class="shopify-section pt-20 pb-20">
+
+      <style>
+        .gift-container {
+          display: grid;
+          place-items: center;
+          min-height: 100vh;
+        }
+      </style>
+      
+      <div class="shopify-section gift-container pt-20 pb-20">
           <h1>{{ gift_card.balance | money }}</h1>
 
           {% if gift_card.enabled == false or gift_card.expired %}
