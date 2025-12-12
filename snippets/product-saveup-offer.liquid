@@ -4,10 +4,11 @@
   @param {string} button_link - A string value.
 
   @example
-  {% render 'product-saveup' %}
+  {% render 'product-saveup-offer' %}
 
 {% enddoc %}
 
+<link rel="stylesheet" href="{{ 'product-saveup-offer.css' | asset_url }}">
 <div class="buy_bundle d-flex flex-column flex-md-row justify-content-between">
     <div class="d-flex flex-column flex-md-row align-items-center gap-4 mw"
         style="--mw:270px; --mw-mob:100%;">
@@ -30,7 +31,7 @@
                     stroke-linejoin="round"></path>
             </svg>
         </p>
-        {{ 'product.settings.saveup.heading_html' | t }}
+        {{ 'product.settings.saveup-offer.heading_html' | t }}
     </div>
-    {{ 'product.settings.saveup.button_html' | t: button_link: 'https://qureskincare.com/pages/exclusive-holiday-bundle-deal-new' }}
+    {{ 'product.settings.saveup-offer.button_html' | t: button_link: 'https://qureskincare.com/pages/exclusive-holiday-bundle-deal-new' }}
 </div>

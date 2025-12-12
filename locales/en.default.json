@@ -348,7 +348,7 @@
         "guaranteed_text": "30-Day Money-Back Guarantee",
         "shipping_text": "Free Shipping over $100"
       },
-      "saveup": {
+      "saveup-offer": {
         "heading_html": "<p>Save up to <strong>57%</strong> with our curated bundles</p>",
         "button_html": "<a href='{{ button_link }}' class='btn bg-white border-0 text-black mt-15 mt-md-0'>Shop Now <img src='https://qureskincaredns.com/assets/images/arrow_right.svg' alt='arrow'></a>"
       },

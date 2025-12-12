@@ -38,7 +38,7 @@
                         {% endif %} 
                     {% endif %}
 
-                    {% include 'product-page-blocks-render', allowed_types: 'limited-offer,nextships,button,description,price,section,black-friday-discount,exclusive-offer,money-back,reviews-videos' %}
+                    {% include 'product-page-blocks-render', allowed_types: 'saveup-offer,limited-offer,nextships,button,description,price,section,black-friday-discount,exclusive-offer,money-back,reviews-videos' %}
 
                     {% if black_friday_turn_on == true %}
                         {% render 'product-page-limited-offer-black-friday' %}
@@ -200,6 +200,12 @@
         {
             "type": "description",
             "name": "t:common.description",
+            "limit": 1,
+            "settings": []
+        },
+        {
+            "type": "saveup-offer",
+            "name": "t:common.saveup-offer",
             "limit": 1,
             "settings": []
         },

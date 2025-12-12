@@ -24,7 +24,8 @@
                 {%- for __id in array -%}
                     {% assign block = section.blocks | where: "id", __id | first %}
                     {% if block.type == 'product' %}
-                        {% include 'get-product-data', product_handle: block.settings.product, product_prefix: 'purchase-form-landing-products-items-' %}
+
+                        {% include 'get-product-data', product_handle: block.settings.product, product_current_variant_id: block.settings.product_variant_id, product_prefix: 'purchase-form-landing-products-items-' %}
 
                         {% if product_id %}
                             {% assign product_title_tag = block.settings.heading | strip_html | strip_newlines | strip | replace: ' ', '' | downcase %}
