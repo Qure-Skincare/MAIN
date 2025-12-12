@@ -177,7 +177,10 @@
         "black": "Black",
         "modifier": "Modifier",
         "active": "Active",
-        "pills-navigation-item": "Pills navigation item"
+        "pills-navigation-item": "Pills navigation item",
+        "menu-list-titles": "Menu list titles",
+        "slides-per-view": "Slides per view",
+        "image-slider": "Image slider"
     },
     "blocks": {
         "block-card": {
@@ -199,7 +202,8 @@
                 "modifier-options": {
                     "none": "None",
                     "holidays": "Holidays",
-                    "hero": "Hero banner"
+                    "hero": "Hero banner",
+                    "hero-reverse": "Hero reverse"
                 }
             }
         },
@@ -229,7 +233,13 @@
             }
         },
         "n_trusted-recommended": {
-            "name": "Trusted recommended"
+            "name": "Trusted recommended",
+            "settings": {
+                "background-color-options": {
+                    "none": "None",
+                    "grey": "Grey"
+                }
+            }
         },
         "n_video-slider": {
             "name": "Video slider"
@@ -239,6 +249,15 @@
         },
         "n_expert-board": {
             "name": "Expert board"
+        },
+        "n_intro": {
+            "name": "Intro"
+        },
+        "n_guide-menu": {
+            "name": "Guide menu"
+        },
+        "n_guide-content": {
+            "name": "Guide content"
         },
         "collection": {
             "name": "Collection",

@@ -1,0 +1,40 @@
+{% doc %}
+  Renders an across image banner section
+{% enddoc %}
+
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/intro-section/intro-section.css" />
+{% endif %}
+    <section class="intro-section">
+        <div class="container">
+            <article>
+                {% if section.settings.text != blank %}
+                    {{ section.settings.text }}
+                {% endif %}
+            </article>
+        </div>
+    </section> 
+
+{% schema %}
+{
+    "name": "t:sections.n_intro.name",
+        "settings": [
+            {
+                "type": "checkbox",
+                "id": "use_own_file",
+                "label": "t:common.use-own-file",
+                "default": false
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "t:common.text"
+            }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.n_intro.name"
+        }
+    ]
+}
+{% endschema %} 

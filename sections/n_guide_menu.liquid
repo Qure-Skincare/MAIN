@@ -1,0 +1,85 @@
+{% doc %}
+  Renders a menu section for guide pages
+{% enddoc %}
+
+
+<!-- GUIDE MENU -->
+ {% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/guide-menu/guide-menu.css" />
+ {% endif %}
+<section class="guide-menu">
+    <div class="container">
+        <div class="guide-menu__select">
+            {% assign menu_list_titles = section.settings.menu_list_titles | split: ',' %}
+            {% if menu_list_titles != blank %}
+                <select name="guide-select" id="guide-select">
+                    {% for menu_title in menu_list_titles %}
+                        {% assign menu_item = menu_title | strip %}
+                        {% assign menu_id = menu_item | downcase | replace: ' ', '-' %}
+                        {% if forloop.first %}
+                            <option value="" selected disabled>{{ menu_item }}</option>
+                        {% endif %}
+                        <option value="{{ menu_id }}">{{ menu_item }}</option>
+                    {% endfor %}
+                </select>
+            {% endif %}
+        </div>
+        <div class="guide-menu__list">
+            <p>{{ 'sections.n_guide_menu.contents' | t }}</p>
+            <ul class="tabs" role="tablist">
+                {% if menu_list_titles != blank %}
+                    {% for menu_title in menu_list_titles %}
+                        {% assign menu_item = menu_title | strip %}
+                        {% assign menu_id = menu_item | downcase | replace: ' ', '-' %}
+                        {% assign is_must_read = false %}
+                        {% if menu_item contains 'Content Requirements' %}
+                            {% assign is_must_read = true %}
+                        {% endif %}
+                        <li>
+                            <button 
+                                {% if forloop.first %}class="active" {% endif %}
+                                data-bs-toggle="tab"
+                                data-bs-target="#{{ menu_id }}-tab" 
+                                type="button" 
+                            >{{ menu_item }}{% if is_must_read %} <em>{{ 'sections.n_guide_menu.must-read' | t }}</em>{% endif %}</button>
+                        </li>
+                    {% endfor %}
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+</section>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        loadScriptOnce('guide-menu', 'https://qureskincaredns.com/sections/new/guide-menu/guide-menu.js');
+    });
+</script>
+<!-- GUIDE MENU END -->
+
+
+{% schema %}
+{
+    "name": "t:sections.n_guide-menu.name",
+    "class": "shopify-section--guide-menu",
+        "settings": [
+            {
+                "type": "checkbox",
+                "id": "use_own_file",
+                "label": "t:common.use-own-file",
+                "default": false
+            },
+            {
+                "type": "textarea",
+                "id": "menu_list_titles",
+                "label": "t:common.menu-list-titles"
+            }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.n_guide-menu.name"
+        }
+    ]
+}
+{% endschema %}
+
+
