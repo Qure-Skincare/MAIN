@@ -495,6 +495,7 @@
         },
         "slider_tdAnb9": {
           "type": "slider",
+          "disabled": true,
           "settings": {
             "heading": "<p>“One of the best ways to help improve the look of hyperpigmentation at home.”</p>",
             "text": "<p>Dr. Wallace Nozile</p>",
@@ -506,6 +507,7 @@
         },
         "slider_X4nVWN": {
           "type": "slider",
+          "disabled": true,
           "settings": {
             "heading": "<p>“With Micro-Infusion, you may notice visible results quickly after your first treatment.”</p>",
             "text": "<p>Dr. Davin Lim</p>",
