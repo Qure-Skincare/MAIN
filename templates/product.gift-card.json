@@ -33,7 +33,8 @@
         "saveup-offer"
       ],
       "custom_css": [
-        ".vp-img > img {max-height: 50px !important; margin-bottom: 12px !important;} .patch__variant-label {display:none !important}"
+        ".vp-img > img {max-height: 50px !important; margin-bottom: 12px !important;}",
+        ".patch__variant-label {display: none !important;}"
       ],
       "name": "t:sections.product-header.name",
       "settings": {
@@ -41,7 +42,7 @@
         "heading": "Qure Gift Card",
         "rating": true,
         "limited": false,
-        "description": "<p>Qure Gift Cards are the perfect way to show your friends and family that you care. With many of items to choose from and the opportunity to customize, you can show your friends and family just how special they are! Let the special people in your life know that they're appreciated with the Qure Gift Card</p><p>Gift Card valid for 5 years as of December 1st, 2023</p><p>Not applicable on already discounted Bundle offers</p>",
+        "description": "<p>Qure Gift Cards are the perfect way to show your friends and family that you care. With many of items to choose from and the opportunity to customize, you can show your friends and family just how special they are! Let the special people in your life know that they're appreciated with the Qure Gift Card</p>",
         "reserved": false,
         "soldout": false
       }
