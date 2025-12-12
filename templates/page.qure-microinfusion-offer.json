@@ -595,37 +595,13 @@
             "checkbox": false,
             "image": "shopify://shop_images/trusted_img_9.webp"
           }
-        },
-        "slider_QwHKTQ": {
-          "type": "slider",
-          "settings": {
-            "heading": "<p>“One of the best ways to help improve the look of hyperpigmentation at home.”</p>",
-            "text": "<p>Dr. Wallace Nozile</p>",
-            "sub_text": "<p>Board-Certified Dermatologist</p>",
-            "url": "ypvcdsgwkx",
-            "checkbox": false,
-            "image": "shopify://shop_images/trusted_img_8.webp"
-          }
-        },
-        "slider_7TUNBU": {
-          "type": "slider",
-          "settings": {
-            "heading": "<p>“With Micro-Infusion, you may notice visible results quickly after your first treatment.”</p>",
-            "text": "<p>Dr. Davin Lim</p>",
-            "sub_text": "<p>Board-Certified Dermatologist</p>",
-            "url": "3bud7no0j9",
-            "checkbox": false,
-            "image": "shopify://shop_images/trusted_img_7.webp"
-          }
         }
       },
       "block_order": [
         "slider_wDMYtK",
         "slider_UgyjwC",
         "slider_fy9Whb",
-        "slider_eMVGVa",
-        "slider_QwHKTQ",
-        "slider_7TUNBU"
+        "slider_eMVGVa"
       ],
       "name": "t:sections.video-slider.name",
       "settings": {}
