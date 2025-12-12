@@ -9,9 +9,172 @@
  */
 {
   "sections": {
-    "product": {
-      "type": "product-gift-card",
-      "settings": {}
+    "product_header_U6RBGz": {
+      "type": "product-header",
+      "blocks": {
+        "description_iPBNaS": {
+          "type": "description",
+          "settings": {}
+        },
+        "section_A0": {
+          "type": "section",
+          "settings": {
+            "section_id": "purchase-form-landing"
+          }
+        },
+        "saveup-offer": {
+          "type": "saveup-offer",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "description_iPBNaS",
+        "section_A0",
+        "saveup-offer"
+      ],
+      "custom_css": [
+        ".vp-img > img {max-height: 50px !important; margin-bottom: 12px !important;} .patch__variant-label {display:none !important}"
+      ],
+      "name": "t:sections.product-header.name",
+      "settings": {
+        "seo_heading": "",
+        "heading": "Qure Gift Card",
+        "rating": true,
+        "limited": false,
+        "description": "<p>Qure Gift Cards are the perfect way to show your friends and family that you care. With many of items to choose from and the opportunity to customize, you can show your friends and family just how special they are! Let the special people in your life know that they're appreciated with the Qure Gift Card</p><p>Gift Card valid for 5 years as of December 1st, 2023</p><p>Not applicable on already discounted Bundle offers</p>",
+        "reserved": false,
+        "soldout": false
+      }
+    },
+    "purchase-form-landing": {
+      "type": "purchase-form-landing",
+      "blocks": {
+        "nextships_4xp7uM": {
+          "type": "nextships",
+          "settings": {
+            "date": "25 September",
+            "percent": 55,
+            "date_soldout": "28 July",
+            "date_reserved": "3 August"
+          }
+        },
+        "type_hHPdgJ": {
+          "type": "type",
+          "settings": {}
+        },
+        "product_type_QKQhNr": {
+          "type": "product_type",
+          "settings": {
+            "heading": "Gift cards",
+            "preselected": false
+          }
+        },
+        "product_gbPf3J": {
+          "type": "product",
+          "settings": {
+            "product": "qure-gift-card",
+            "product_variant_id": 44226018902255,
+            "product_selling_plan": 0,
+            "preselected": true,
+            "heading": "50$ Gift Card",
+            "subheading": "",
+            "image": "shopify://shop_images/50.png",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        },
+        "product_NEgEkN": {
+          "type": "product",
+          "settings": {
+            "product": "qure-gift-card",
+            "product_variant_id": 44226018967791,
+            "product_selling_plan": 0,
+            "preselected": false,
+            "heading": "100$ Gift Card",
+            "subheading": "",
+            "image": "shopify://shop_images/100.png",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        },
+        "product_RBCPe8": {
+          "type": "product",
+          "settings": {
+            "product": "qure-gift-card",
+            "product_variant_id": 44226019000559,
+            "product_selling_plan": 0,
+            "preselected": false,
+            "heading": "150$ Gift Card",
+            "subheading": "",
+            "image": "shopify://shop_images/150.png",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        },
+        "product_RBCPe7": {
+          "type": "product",
+          "settings": {
+            "product": "qure-gift-card",
+            "product_variant_id": 44226019033327,
+            "product_selling_plan": 0,
+            "preselected": false,
+            "heading": "200$ Gift Card",
+            "subheading": "",
+            "image": "shopify://shop_images/200.png",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        },
+        "product_RBCPe6": {
+          "type": "product",
+          "settings": {
+            "product": "qure-gift-card",
+            "product_variant_id": 44318872961263,
+            "product_selling_plan": 0,
+            "preselected": false,
+            "heading": "300$ Gift Card",
+            "subheading": "",
+            "image": "shopify://shop_images/300.png",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        }
+      },
+      "block_order": [
+        "nextships_4xp7uM",
+        "type_hHPdgJ",
+        "product_type_QKQhNr",
+        "product_gbPf3J",
+        "product_NEgEkN",
+        "product_RBCPe8",
+        "product_RBCPe7",
+        "product_RBCPe6"
+      ],
+      "settings": {
+        "form_name": "purchase-form-landing",
+        "hide_types": true,
+        "type": "box"
+      }
     },
     "slider_featured_in_HDaUTN": {
       "type": "slider-featured-in",
@@ -129,7 +292,8 @@
     }
   },
   "order": [
-    "product",
+    "product_header_U6RBGz",
+    "purchase-form-landing",
     "slider_featured_in_HDaUTN",
     "trusted_reviews_HRLHtt",
     "you_may_also_like_HZi1bC"
