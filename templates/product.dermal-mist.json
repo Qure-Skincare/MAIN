@@ -393,6 +393,7 @@
       "blocks": {
         "slider_jGWqkN": {
           "type": "slider",
+          "disabled": true,
           "settings": {
             "youtube_url": "https://youtu.be/EjLx0IvKh7g?si=2hT_KAt-1w0rUjQz&t=825",
             "video_cover_image": "shopify://shop_images/Review_10.png",
@@ -465,7 +466,7 @@
       "name": "t:sections.video-review-slider.name",
       "settings": {
         "heading": "Confident skin starts here",
-        "background_color": "#F6F6F7"
+        "background_color": "#f6f6f7"
       }
     },
     "compare_8FkPMf": {
