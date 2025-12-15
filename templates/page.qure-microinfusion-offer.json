@@ -9,89 +9,40 @@
  */
 {
   "sections": {
-    "announcement_bar_iNbPEw": {
-      "type": "announcement-bar",
-      "name": "t:sections.announcement-bar.name",
-      "settings": {
-        "heading": "Autumn Glow Sale 67% OFF Micro-Infusion",
-        "button-label": "SHOP NOW",
-        "button-url": "https://qureskincare.com/pages/qure-microinfusion-offer",
-        "show": false
-      }
-    },
-    "page_header_SXJyMD": {
-      "type": "page-header",
+    "n_hero_section_xMcaXr": {
+      "type": "n_hero-section",
       "blocks": {
-        "link_iPBNaS": {
-          "type": "link",
-          "settings": {}
-        },
-        "description_iSDNaK": {
-          "type": "description",
-          "settings": {}
-        },
-        "video_jEEVjS": {
-          "type": "video",
+        "approved_by_aW7ELB": {
+          "type": "approved-by",
           "settings": {
-            "heading": "Watch: How To Use",
-            "image": "shopify://shop_images/how-to-use3_1.webp",
-            "wistia_url": "ptw4q3aod8"
+            "image": "shopify://shop_images/approved-by-1.webp",
+            "text": ""
           }
         },
-        "jumpto_jEyVj6": {
-          "type": "jumpto",
+        "approved_by_DpRR3G": {
+          "type": "approved-by",
           "settings": {
-            "button-label": "The Results",
-            "button-url": "#video-review-slider"
-          }
-        },
-        "jumpto_P7zN3P": {
-          "type": "jumpto",
-          "settings": {
-            "button-label": "How To Use",
-            "button-url": "#how_to_use"
-          }
-        },
-        "jumpto_F9gpDd": {
-          "type": "jumpto",
-          "settings": {
-            "button-label": "Serum Guide",
-            "button-url": "#science_backed"
-          }
-        },
-        "jumpto_GYW9XP": {
-          "type": "jumpto",
-          "settings": {
-            "button-label": "Expert Reviews",
-            "button-url": "#trusted_recommended"
-          }
-        },
-        "jumpto_Ybdp8V": {
-          "type": "jumpto",
-          "settings": {
-            "button-label": "FAQs",
-            "button-url": "#faq"
+            "image": "shopify://shop_images/approved-by-2.webp",
+            "text": "<p>Approved by <strong>Dr. Shah</strong> & <strong>Dr. Maxfield</strong></p>"
           }
         }
       },
       "block_order": [
-        "link_iPBNaS",
-        "description_iSDNaK",
-        "video_jEEVjS",
-        "jumpto_jEyVj6",
-        "jumpto_P7zN3P",
-        "jumpto_F9gpDd",
-        "jumpto_GYW9XP",
-        "jumpto_Ybdp8V"
+        "approved_by_aW7ELB",
+        "approved_by_DpRR3G"
       ],
-      "name": "t:sections.page-header.name",
+      "name": "t:sections.n_hero-section.name",
       "settings": {
-        "rating": "<p><strong>4.8</strong>/5 Rated by Customers</p>",
-        "rating-url": "#trusted-reviews",
-        "heading": "Transform dull looking skin with Micro-Infusion Facial System",
-        "description": "<ul><li>Helps reduce appearance of fine lines, smooth texture whilst helping to infuse active ingredients into your skin.</li><li>Virtually painless and performed in the comfort and convenience of your home.</li><li>Minimal to no downtime with visible results.</li></ul>",
-        "button-label": "BUY NOW & SAVE UP TO 70%",
-        "button-url": "#purchase-form-types"
+        "use_own_file": true,
+        "text": "<h1>Visibly reduce the appearance of wrinkles and dark spots - without injectables.</h1><p><strong>24K gold microneedles</strong> deliver <strong>targeted serums</strong> beyond your skin's barrier where traditional creams can't reach.</p>",
+        "image": "shopify://shop_images/micro-infusion-hero.webp",
+        "image_mobile": "shopify://shop_images/micro-infusion-hero-mob.webp",
+        "button_url": "#buy_box",
+        "button_label": "Start your transformation",
+        "sub_text": "<p><strong>Limited Time Offer:</strong> Save Up to 70%</p>",
+        "marked_list": "<ul><li>Helps reduce appearance of fine lines, smooth texture whilst helping to infuse active ingredients into your skin.</li><li>Virtually painless and performed in the comfort and convenience of your home.</li><li>Minimal to no downtime with visible results.</li></ul>",
+        "wistia_url": "8ymvdqzx92",
+        "video_image_cover": "shopify://shop_images/how-to-use_22b5bfef-ce09-4cdd-916d-a76f406dbe79.webp"
       }
     },
     "slider_featured_in_lVZt5L": {
@@ -959,7 +910,7 @@
           "type": "left_accordion",
           "settings": {
             "heading": "All Ingredients",
-            "text": "<p><strong>Epidermal Growth Factor (EGF):</strong> A science-backed ingredient known to support the look of smoother, hydrated, and more refreshed skin. Helps visibly reduce the look of fine lines and uneven tone.<br/><br/><strong>Niacinamide:</strong>A multi-benefit vitamin known to help improve the look of uneven tone, minimize visible pores, and support smoother-looking skin.<br/><br/><strong>Tranexamic Acid:</strong>A brightening ingredient that helps visibly improve the look of dark spots, uneven tone, and dullness.<br/>All ingredients: Rosa Damascena Flower Water, Propanediol, Glycerin, Tranexamic Acid, Niacinamide, Panthenol, Chrysanthellum Indicum Extract, Ethylhexylglycerin, Tripeptide-1, Xanthan Gum, Allantoin, Sh-Oligopeptide-1.</p><p><em>Please note that due to innovative updates and changing regulatory guidelines, the ingredient lists provided here may differ slightly from those on our packaging and distributor websites.</em></p>"
+            "text": "<p><strong>Epidermal Growth Factor (EGF):</strong> A science-backed ingredient known to support the look of smoother, hydrated, and more refreshed skin. Helps visibly reduce the look of fine lines and uneven tone.<br/><br/><strong>Niacinamide:</strong>A multi-benefit vitamin known to help improve the look of uneven tone, minimize visible pores, and support smoother-looking skin.<br/><br/><strong>Tranexamic Acid:</strong>A brightening ingredient that helps visibly improve the look of dark spots, uneven tone, and dullness.<br/>All ingredients:Rosa Damascena Flower Water, Propanediol, Glycerin, Tranexamic Acid, Niacinamide, Panthenol, Chrysanthellum Indicum Extract, Ethylhexylglycerin, Tripeptide-1, Xanthan Gum, Allantoin, Sh-Oligopeptide-1.</p><p><em>Please note that due to innovative updates and changing regulatory guidelines, the ingredient lists provided here may differ slightly from those on our packaging and distributor websites.</em></p>"
           }
         },
         "right_accordion_4V6QHp": {
@@ -973,7 +924,7 @@
           "type": "right_accordion",
           "settings": {
             "heading": "All Ingredients",
-            "text": "<p><strong>Beta Glucan:</strong> A deeply hydrating ingredient that helps the skin feel soothed, soft, and supple. Supports the look of a healthy skin barrier.<br/><br/><strong>GHK-Cu (Copper Peptide):</strong>A peptide complex known to help improve the appearance of firmness and smoothness for youthful-looking skin. Gives the serum its signature blue hue.<br/><br/><strong>Sodium Hyaluronate:</strong>A powerful hydrator that helps the skin feel supple, moisturized, and visibly smoother.<br/><br/><strong>All ingredients: </strong>Rosa Damascena Flower Water, Propanediol, Glycerin, Panthenol, Niacinamide, Myrothamnus Flabellifolia Leaf/Stem Extract, Water, Butylene Glycol, Hydroxyacetophenone, Copper Tripeptide-1, Beta-Glucan, Chrysanthellum Indicum Extract, Ethylhexylglycerin, Sodium Hyaluronate, Allantoin, Xanthan Gum.<br/></p><p><em>Please note that due to innovative updates and changing regulatory guidelines, the ingredient lists provided here may differ slightly from those on our packaging and distributor websites.</em></p>"
+            "text": "<p><strong>Beta Glucan:</strong> A deeply hydrating ingredient that helps the skin feel soothed, soft, and supple. Supports the look of a healthy skin barrier.<br/><br/><strong>GHK-Cu (Copper Peptide):</strong>A peptide complex known to help improve the appearance of firmness and smoothness for youthful-looking skin. Gives the serum its signature blue hue.<br/><br/><strong>Sodium Hyaluronate:</strong>A powerful hydrator that helps the skin feel supple, moisturized, and visibly smoother.<br/><br/><strong>All ingredients:</strong>Rosa Damascena Flower Water, Propanediol, Glycerin, Panthenol, Niacinamide, Myrothamnus Flabellifolia Leaf/Stem Extract, Water, Butylene Glycol, Hydroxyacetophenone, Copper Tripeptide-1, Beta-Glucan, Chrysanthellum Indicum Extract, Ethylhexylglycerin, Sodium Hyaluronate, Allantoin, Xanthan Gum.<br/></p><p><em>Please note that due to innovative updates and changing regulatory guidelines, the ingredient lists provided here may differ slightly from those on our packaging and distributor websites.</em></p>"
           }
         },
         "left_feedback_9KFACL": {
@@ -1478,8 +1429,7 @@
     }
   },
   "order": [
-    "announcement_bar_iNbPEw",
-    "page_header_SXJyMD",
+    "n_hero_section_xMcaXr",
     "slider_featured_in_lVZt5L",
     "banner_with_text_phJT4F",
     "stock_alert_egmbcj",

@@ -181,7 +181,9 @@
         "pills-navigation-item": "Pills navigation item",
         "menu-list-titles": "Menu list titles",
         "slides-per-view": "Slides per view",
-        "image-slider": "Image slider"
+        "image-slider": "Image slider",
+        "marked-list": "Marked list",
+        "approved-by": "Approved by"
     },
     "blocks": {
         "block-card": {
@@ -259,6 +261,9 @@
         },
         "n_guide-content": {
             "name": "Guide content"
+        },
+        "n_hero-section": {
+            "name": "Hero section"
         },
         "collection": {
             "name": "Collection",
