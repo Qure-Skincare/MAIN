@@ -1,0 +1,227 @@
+{% doc %}
+  Renders guide content section with accordion
+{% enddoc %}
+
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/guide-content/guide-content.css" />
+{% endif %}
+<section class="guide-content{% if section.settings.active %} active{% endif %}" id="{{ section.settings.heading | handleize }}-tab">
+    <div class="container">
+        <div class="accordion">
+            <button 
+                class="accordion-button" 
+                type="button"
+                data-bs-toggle="collapse" 
+                data-bs-target="#{{ section.settings.heading | handleize }}-collapse"
+                {% if section.settings.active %}
+                    aria-expanded="true"
+                {% endif %}
+            >
+                {% if section.settings.heading != blank %}
+                    {{ section.settings.heading }}
+                    {% if section.settings.must_read %}
+                        <em>{{ 'sections.n_guide_content.must-read' | t }}</em>
+                    {% endif %}
+                {% endif %}
+            </button>
+            <div 
+                id="{{ section.settings.heading | handleize }}-collapse" 
+                class="accordion-collapse{% if section.settings.active %} show{% endif %}"
+            >
+                <article>
+                    {% if section.settings.text != blank %}
+                        {{ section.settings.text }}
+                    {% endif %}
+                </article>
+
+                {% if section.settings.slides_per_view != blank %}
+                    <div class="c-swiper" data-swiper='{ "slidesPerView": 1.1, "spaceBetween": 16, "loop": false, "pagination": { "el": ".c-swiper-pagination", "type": "custom" }, "navigation": { "prevEl": ".c-swiper-button-prev","nextEl": ".c-swiper-button-next"}, "breakpoints": {"768": { "slidesPerView": {{ section.settings.slides_per_view }}}}}'>
+                        <div class="swiper-wrapper">
+
+                            {% for block in section.blocks %}
+                                {% if block.type == 'image_slider' %}
+                                    <div class="swiper-slide">
+                                        {% if block.settings.image != blank %}
+                                            <picture>
+                                                <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                            </picture>
+                                        {% endif %}
+                                    </div>
+                                {% endif %}
+                            {% endfor %}
+
+                            {% for block in section.blocks %}
+                                {% if block.type == 'video_slider' %}
+                                    <div class="swiper-slide">
+                                        {% if block.settings.youtube_url %}
+                                            <picture data-url="{{ block.settings.video_url }}">
+                                                {% if block.settings.image != blank %}
+                                                    <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                                {% endif %}
+                                            </picture>
+                                        {% else %}
+                                        <picture
+                                            {% if block.settings.video_url != blank %}
+                                                data-bs-toggle="modal" 
+                                                data-bs-target="#reusableWistiaModal"
+                                                data-video-id="{{ block.settings.video_url }}"
+                                            {% endif %}
+                                        >
+                                            {% if block.settings.image != blank %}
+                                                <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                            {% endif %}
+                                        </picture>
+                                        {% endif %}
+                                    </div>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                        <div class="c-swiper-nav">
+                            <button class="c-swiper-button-prev"></button>
+                            <div class="c-swiper-pagination"></div>
+                            <button class="c-swiper-button-next"></button>
+                        </div>       
+                    </div>
+                {% endif %}
+                
+                {% for block in section.blocks %}
+                    {% if block.type == 'quote' %}
+                        <div class="c-note c-note--info">
+                            {% if block.settings.text != blank %}
+                                {{ block.settings.text }}
+                            {% endif %}
+                        </div>
+                    {% endif %}
+                {% endfor %}
+
+                {% for block in section.blocks %}
+                    {% if block.type == 'link' %}
+                        {% if block.settings.link_text != blank and block.settings.link_url != blank %}
+                            <div class="guide-link"><a href="{{ block.settings.link_url }}">{{ block.settings.link_text }}</a></div>
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        loadScriptOnce('guide-content', 'https://qureskincaredns.com/sections/new/guide-content/guide-content.js');
+        loadScriptOnce('base-slider', 'https://qureskincaredns.com/sections/new/base-slider/base-slider.js');
+        loadScriptOnce('wistia-popup', 'https://qureskincaredns.com/assets/js-new/wistia-popup.js');
+        loadScriptOnce('youtube-popup', 'https://qureskincaredns.com/assets/js-new/yt-popup.js');
+        loadScriptOnce('wistia-script', 'https://fast.wistia.com/assets/external/E-v1.js');
+    });
+</script>
+
+{% schema %}
+{
+    "name": "t:sections.n_guide-content.name",
+    "class": "shopify-section--guide-content",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": false
+        },
+        {
+            "type": "checkbox",
+            "id": "active",
+            "label": "t:common.active",
+            "default": false
+        },
+        {
+            "type": "checkbox",
+            "id": "must_read",
+            "label": "t:common.must-read",
+            "default": false
+        },
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "t:common.header"
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "t:common.text"
+        },
+        {
+            "type": "text",
+            "id": "slides_per_view",
+            "label": "t:common.slides-per-view"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "link",
+            "name": "t:common.link",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "link_text",
+                    "label": "t:common.link-text"
+                },
+                {
+                    "type": "url",
+                    "id": "link_url",
+                    "label": "t:common.link-url"
+                }
+            ]
+        },
+        {
+            "type": "quote",
+            "name": "t:common.quote",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "richtext",
+                    "id": "text",
+                    "label": "t:common.text"
+                }
+            ]
+        },
+        {
+            "type": "image_slider",
+            "name": "t:common.image-slider",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                }
+            ]
+        },
+        {
+            "type": "video_slider",
+            "name": "t:common.video-slider",
+            "settings": [
+                {
+                    "type": "checkbox",
+                    "id": "youtube_url",
+                    "label": "t:common.youtube-url",
+                    "default": false
+                },
+                {
+                    "type": "text",
+                    "id": "video_url",
+                    "label": "t:common.video-url"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.n_guide-content.name"
+        }
+    ]
+}
+{% endschema %}

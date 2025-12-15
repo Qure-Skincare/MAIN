@@ -133,6 +133,7 @@
         "video-slider": "Video slider",
         "carousel": "Carousel",
         "items": "Items",
+        "item": "Item",
         "percent-value": "Percent value",
         "percent-scale-text": "Percent scale text",
         "heading-percent-scale": "Header percent scale",
@@ -179,11 +180,12 @@
         "modifier": "Modifier",
         "active": "Active",
         "pills-navigation-item": "Pills navigation item",
-        "menu-list-titles": "Menu list titles",
+        "menu-item": "Menu item",
         "slides-per-view": "Slides per view",
         "image-slider": "Image slider",
         "marked-list": "Marked list",
-        "approved-by": "Approved by"
+        "approved-by": "Approved by",
+        "must-read": "Must read"
     },
     "blocks": {
         "block-card": {
