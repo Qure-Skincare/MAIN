@@ -7,42 +7,91 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
-    "n_hero_section_xMcaXr": {
-      "type": "n_hero-section",
+    "announcement_bar_iNbPEw": {
+      "type": "announcement-bar",
+      "name": "t:sections.announcement-bar.name",
+      "settings": {
+        "heading": "Autumn Glow Sale 67% OFF Micro-Infusion",
+        "button-label": "SHOP NOW",
+        "button-url": "https://qureskincare.com/pages/qure-microinfusion-offer",
+        "show": false
+      }
+    },
+    "page_header_SXJyMD": {
+      "type": "page-header",
       "blocks": {
-        "approved_by_aW7ELB": {
-          "type": "approved-by",
+        "link_iPBNaS": {
+          "type": "link",
+          "settings": {}
+        },
+        "description_iSDNaK": {
+          "type": "description",
+          "settings": {}
+        },
+        "video_jEEVjS": {
+          "type": "video",
           "settings": {
-            "image": "shopify://shop_images/approved-by-1.webp",
-            "text": ""
+            "heading": "Watch: How To Use",
+            "image": "shopify://shop_images/how-to-use3_1.webp",
+            "wistia_url": "ptw4q3aod8"
           }
         },
-        "approved_by_DpRR3G": {
-          "type": "approved-by",
+        "jumpto_jEyVj6": {
+          "type": "jumpto",
           "settings": {
-            "image": "shopify://shop_images/approved-by-2.webp",
-            "text": "<p>Approved by <strong>Dr. Shah</strong> & <strong>Dr. Maxfield</strong></p>"
+            "button-label": "The Results",
+            "button-url": "#video-review-slider"
+          }
+        },
+        "jumpto_P7zN3P": {
+          "type": "jumpto",
+          "settings": {
+            "button-label": "How To Use",
+            "button-url": "#how_to_use"
+          }
+        },
+        "jumpto_F9gpDd": {
+          "type": "jumpto",
+          "settings": {
+            "button-label": "Serum Guide",
+            "button-url": "#science_backed"
+          }
+        },
+        "jumpto_GYW9XP": {
+          "type": "jumpto",
+          "settings": {
+            "button-label": "Expert Reviews",
+            "button-url": "#trusted_recommended"
+          }
+        },
+        "jumpto_Ybdp8V": {
+          "type": "jumpto",
+          "settings": {
+            "button-label": "FAQs",
+            "button-url": "#faq"
           }
         }
       },
       "block_order": [
-        "approved_by_aW7ELB",
-        "approved_by_DpRR3G"
+        "link_iPBNaS",
+        "description_iSDNaK",
+        "video_jEEVjS",
+        "jumpto_jEyVj6",
+        "jumpto_P7zN3P",
+        "jumpto_F9gpDd",
+        "jumpto_GYW9XP",
+        "jumpto_Ybdp8V"
       ],
-      "name": "t:sections.n_hero-section.name",
+      "name": "t:sections.page-header.name",
       "settings": {
-        "use_own_file": true,
-        "text": "<h1>Visibly reduce the appearance of wrinkles and dark spots - without injectables.</h1><p><strong>24K gold microneedles</strong> deliver <strong>targeted serums</strong> beyond your skin's barrier where traditional creams can't reach.</p>",
-        "image": "shopify://shop_images/micro-infusion-hero.webp",
-        "image_mobile": "shopify://shop_images/micro-infusion-hero-mob.webp",
-        "button_url": "#buy_box",
-        "button_label": "Start your transformation",
-        "sub_text": "<p><strong>Limited Time Offer:</strong> Save Up to 70%</p>",
-        "marked_list": "<ul><li>Helps reduce appearance of fine lines, smooth texture whilst helping to infuse active ingredients into your skin.</li><li>Virtually painless and performed in the comfort and convenience of your home.</li><li>Minimal to no downtime with visible results.</li></ul>",
-        "wistia_url": "8ymvdqzx92",
-        "video_image_cover": "shopify://shop_images/how-to-use_22b5bfef-ce09-4cdd-916d-a76f406dbe79.webp"
+        "rating": "<p><strong>4.8</strong>/5 Rated by Customers</p>",
+        "rating-url": "#trusted-reviews",
+        "heading": "Transform dull looking skin with Micro-Infusion Facial System",
+        "description": "<ul><li>Helps reduce appearance of fine lines, smooth texture whilst helping to infuse active ingredients into your skin.</li><li>Virtually painless and performed in the comfort and convenience of your home.</li><li>Minimal to no downtime with visible results.</li></ul>",
+        "button-label": "BUY NOW & SAVE UP TO 70%",
+        "button-url": "#purchase-form-types"
       }
     },
     "slider_featured_in_lVZt5L": {
@@ -546,13 +595,37 @@
             "checkbox": false,
             "image": "shopify://shop_images/trusted_img_9.webp"
           }
+        },
+        "slider_QwHKTQ": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>“One of the best ways to help improve the look of hyperpigmentation at home.”</p>",
+            "text": "<p>Dr. Wallace Nozile</p>",
+            "sub_text": "<p>Board-Certified Dermatologist</p>",
+            "url": "ypvcdsgwkx",
+            "checkbox": false,
+            "image": "shopify://shop_images/trusted_img_8.webp"
+          }
+        },
+        "slider_7TUNBU": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>“With Micro-Infusion, you may notice visible results quickly after your first treatment.”</p>",
+            "text": "<p>Dr. Davin Lim</p>",
+            "sub_text": "<p>Board-Certified Dermatologist</p>",
+            "url": "3bud7no0j9",
+            "checkbox": false,
+            "image": "shopify://shop_images/trusted_img_7.webp"
+          }
         }
       },
       "block_order": [
         "slider_wDMYtK",
         "slider_UgyjwC",
         "slider_fy9Whb",
-        "slider_eMVGVa"
+        "slider_eMVGVa",
+        "slider_QwHKTQ",
+        "slider_7TUNBU"
       ],
       "name": "t:sections.video-slider.name",
       "settings": {}
@@ -1429,7 +1502,8 @@
     }
   },
   "order": [
-    "n_hero_section_xMcaXr",
+    "announcement_bar_iNbPEw",
+    "page_header_SXJyMD",
     "slider_featured_in_lVZt5L",
     "banner_with_text_phJT4F",
     "stock_alert_egmbcj",
