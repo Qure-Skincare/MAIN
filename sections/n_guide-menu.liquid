@@ -1,0 +1,93 @@
+{% doc %}
+  Renders a menu section for guide pages
+{% enddoc %}
+
+
+<!-- GUIDE MENU -->
+
+<link rel="stylesheet" href="https://qureskincaredns.com/sections/new/guide-menu/guide-menu.css" />
+<section class="guide-menu">
+    <div class="container">
+        <div class="guide-menu__select">
+            <select name="guide-select" id="guide-select">
+                {% for block in section.blocks %}
+                    {% if block.type == 'menu_item' %}
+                        {% if forloop.first %}
+                            <option value="" selected disabled>{{ block.settings.item }}</option>
+                        {% endif %}
+                        <option value="{{ block.settings.item | handleize }}">{{ block.settings.item }}</option>
+                        {% if forloop.last %}
+                            <option value="content-examples">Content Examples</option>
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+            </select>
+        </div>
+        <div class="guide-menu__list">
+            <p>Contents</p>
+            <ul class="tabs" role="tablist">
+                {% for block in section.blocks%}
+                    {% if block.type == 'menu_item' %}
+                        <li>
+                            <button
+                            {% if forloop.first %}
+                                class="active"
+                            {% endif %}
+                                data-bs-toggle="tab"
+                                data-bs-target="#{{ block.settings.item | handleize }}-tab"
+                                type="button"
+                            >{{ block.settings.item }}{% if block.settings.must_read %} <em>{{ 'sections.n_guide_menu.must-read' | t }}</em>{% endif %}</button>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</section>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        loadScriptOnce('guide-menu', 'https://qureskincaredns.com/sections/new/guide-menu/guide-menu.js');
+    });
+</script>
+     
+<!-- GUIDE MENU END -->
+
+
+{% schema %}
+{
+    "name": "t:sections.n_guide-menu.name",
+    "class": "shopify-section--guide-menu",
+        "settings": [
+            {
+                "type": "checkbox",
+                "id": "use_own_file",
+                "label": "t:common.use-own-file",
+                "default": false
+            }
+    ],
+    "blocks": [
+        {
+            "type": "menu_item",
+            "name": "t:common.menu-item",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "item",
+                    "label": "t:common.item"
+                },
+                {
+                    "type": "checkbox",
+                    "id": "must_read",
+                    "label": "t:common.must-read",
+                    "default": false
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.n_guide-menu.name"
+        }
+    ]
+}
+{% endschema %}

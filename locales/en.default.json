@@ -7,8 +7,12 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
+    "n_guide_menu": {
+      "contents": "Contents",
+      "must-read": "Must read"
+    },
     "collection": {
       "bestseller": "Bestseller",
       "trending": "Trending",

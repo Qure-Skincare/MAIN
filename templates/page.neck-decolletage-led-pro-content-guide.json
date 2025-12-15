@@ -9,47 +9,304 @@
  */
 {
   "sections": {
-    "page_banner_richtext_p7esDz": {
-      "type": "page-banner-richtext",
-      "name": "t:sections.page-banner-richtext.name",
+    "n_across_image_banner_rQeweC": {
+      "type": "n_across-image-banner",
+      "name": "t:sections.n_across-image-banner.name",
       "settings": {
-        "heading": "Neck & Décolletage LED System Creative Content Guide",
-        "sub_heading": "",
+        "use_own_file": true,
+        "modifier": "hero_reverse",
+        "heading": "<h1>Neck & Décolletage LED System Creative Content Guide</h1>",
         "text": "",
         "image": "shopify://shop_images/neck___d-banner.webp",
-        "image_mobile": "shopify://shop_images/neck___d-bannerM.webp"
+        "image_mobile": "shopify://shop_images/neck___d-bannerM.webp",
+        "button_label": "",
+        "button_url": ""
       }
     },
-    "content_brief_MkPyxd": {
-      "type": "content-brief",
-      "name": "t:sections.content-brief.name",
+    "n_intro_9rCx4t": {
+      "type": "n_intro",
+      "name": "t:sections.n_intro.name",
       "settings": {
-        "text": "<p><strong>Discover how to make the most of the Qure Neck & Décolletage LED Device with our creative content guide.</strong></p><p>This brief will help you craft engaging content that showcases how our device transforms skincare routines for radiant, glowing skin.</p>"
+        "use_own_file": true,
+        "text": "<p><strong>Discover how to make the most of the Qure Neck & Décolletage LED System with our creative content guide.</strong></p><p>This brief will help you craft engaging content that showcases how our device transforms skincare routines for radiant, glowing skin.</p>"
       }
     },
-    "main": {
-      "type": "page-neck-decolletage-led-pro-content-guide",
-      "settings": {}
-    },
-    "trusted_recommended_jOyz1d": {
-      "type": "trusted-recommended",
-      "name": "t:sections.trusted-recommended.name",
+    "n_guide_menu_fYcEzd": {
+      "type": "n_guide-menu",
+      "blocks": {
+        "menu_item_UWg64N": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Product Information",
+            "must_read": false
+          }
+        },
+        "menu_item_fV9wjC": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Usage Instructions",
+            "must_read": false
+          }
+        },
+        "menu_item_d96K9Y": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Product Claims",
+            "must_read": false
+          }
+        },
+        "menu_item_X3FEQf": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Content Requirements",
+            "must_read": true
+          }
+        },
+        "menu_item_RyBJMN": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Creative Direction",
+            "must_read": false
+          }
+        },
+        "menu_item_hb4qWf": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Content Examples",
+            "must_read": false
+          }
+        }
+      },
+      "block_order": [
+        "menu_item_UWg64N",
+        "menu_item_fV9wjC",
+        "menu_item_d96K9Y",
+        "menu_item_X3FEQf",
+        "menu_item_RyBJMN",
+        "menu_item_hb4qWf"
+      ],
+      "name": "t:sections.n_guide-menu.name",
       "settings": {
-        "background_color": "#ffffff",
-        "heading": "Trusted and Recommended by Experts",
-        "text": "<p>\"LED light targets fibroblasts to <strong>increase collagen production</strong> and has anti-aging benefits especially if you are seeing <strong>wrinkles and lines</strong> on your neck...\"</p>",
-        "image_text": "",
-        "image": "shopify://shop_images/doctor_shah_desk.webp",
-        "image_mobile": "shopify://shop_images/doctor_shah_mob.webp",
+        "use_own_file": true
+      }
+    },
+    "n_guide_content_RzayTk": {
+      "type": "n_guide-content",
+      "blocks": {
+        "link_w6nrqh": {
+          "type": "link",
+          "settings": {
+            "link_text": "Learn more about Neck & Décolletage LED System",
+            "link_url": "#"
+          }
+        }
+      },
+      "block_order": [
+        "link_w6nrqh"
+      ],
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": true,
+        "heading": "Product Information",
+        "text": "<h2>Product information</h2><ul><li>10-minute LED treatment for neck & chest</li><li>Clinically supported wavelengths shown to help improve the look of firmness, smoothness, and overall skin tone</li><li>2 light wavelengths: 633nm (Red) and 830nm (Near-Infrared)</li><li>Helps address the look of crepey skin, fine lines, uneven tone, and reduced elasticity</li><li>Hands-free, rechargeable design with adjustable straps</li><li>Designed to treat the most neglected area in your routine</li></ul>",
+        "slides_per_view": ""
+      }
+    },
+    "n_guide_content_RmFxKy": {
+      "type": "n_guide-content",
+      "blocks": {
+        "link_AFnmyV": {
+          "type": "link",
+          "settings": {
+            "link_text": "Link to online guide",
+            "link_url": "#"
+          }
+        }
+      },
+      "block_order": [
+        "link_AFnmyV"
+      ],
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "heading": "Usage Instructions",
+        "text": "<h2>Usage Instructions</h2><p><strong>How To Use:</strong></p><ol><li>Clean and dry your neck and décolletage to ensure the area is clear from any dirt, sweat, or skincare products.</li><li>Insert the USB-C cable from the Neck & Décolletage LED System into the port located on the top of the controller.</li><li>Secure the system around the neck to comfortably treat the entire neck and décolletage area. Alternatively, position the strap across the shoulders to lower the LED panel slightly and extend coverage further across the décolletage.</li><li>Press the ON/OFF button on the controller. The treatment will automatically run for 10 minutes and shut off at the end of the session.<br/></li></ol>",
+        "slides_per_view": ""
+      }
+    },
+    "n_guide_content_X4ktM8": {
+      "type": "n_guide-content",
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "heading": "Product Claims",
+        "text": "<h2>Product Claims</h2><p>Key claims:</p><ul><li>This system features LED lights positioned to target the chest and neck area, where fine lines and loss of firmness commonly appear.</li><li>Our LED uses cosmetic-grade light technology to deliver safe, concentrated wavelengths of red and near-infrared light that help visibly improve the look of skin tone and texture.</li><li>The light energy supports the skin's natural renewal process, promoting a smoother, more refined, and radiant-looking appearance over time.</li></ul>",
+        "slides_per_view": ""
+      }
+    },
+    "n_guide_content_zLhLWp": {
+      "type": "n_guide-content",
+      "blocks": {
+        "quote_tRY3W6": {
+          "type": "quote",
+          "settings": {
+            "text": "<p>Remember to <strong>add a personal touch</strong> to the messaging, and talk about the main reasons you've chosen this system.</p><p>Examples:</p><ul><li>“When I turned 40, I noticed my neck was aging faster than my face... but this system has made a noticeable difference.”</li><li>“I never thought about my chest until I saw it in a photo.”</li><li>“I had a whole routine for my face, but done nothing to firm my neck - this system makes it easy.”</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "quote_tRY3W6"
+      ],
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "heading": "Content Requirements",
+        "text": "<h2>Content Requirements</h2><p>Messaging must include:</p><ul><li>Specifically designed to visibly refresh and smooth the neck and décolletage area, where the first signs of aging tend to appear.</li><li>Uses red and near-infrared wavelengths known to support the skin's natural renewal process for a firmer-looking, more radiant appearance.</li><li>Fits easily into your routine — just 10 minutes a day.</li><li>Achieve visible improvements from home, inspired by professional light-based technology.</li><li>Fully portable and hands-free, so you can multitask while using it.</li></ul>",
+        "slides_per_view": ""
+      }
+    },
+    "n_guide_content_DmwHfk": {
+      "type": "n_guide-content",
+      "blocks": {
+        "image_slider_aUmBMW": {
+          "type": "image_slider",
+          "settings": {
+            "image": "shopify://shop_images/n_d-brief.webp"
+          }
+        },
+        "image_slider_JyfYew": {
+          "type": "image_slider",
+          "settings": {
+            "image": "shopify://shop_images/n_d-brief2.webp"
+          }
+        },
+        "quote_fpAkgL": {
+          "type": "quote",
+          "settings": {
+            "text": "<p><strong>Tag and mention</strong> @qureskincare #QureSkincare #QureLEDMask #LEDlighttherapy #Neck&DécolletageLEDSystem</p><p>Include your affiliate or other links provided by Qure in Instagram Stories and content captions. If the link can't be placed in bio, include it in linktr.ee or similar.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "image_slider_aUmBMW",
+        "image_slider_JyfYew",
+        "quote_fpAkgL"
+      ],
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "heading": "Creative Direction",
+        "text": "<h2>Creative Direction</h2><p>Recording Guidelines</p><ul><li>Use bright, natural lighting. No filters.</li><li>Ensure the Qure Neck & Décolletage LED System is the main focus of the content.</li><li>Keep backgrounds clean and uncluttered.</li><li>In cover photos for video content always show yourself using the Qure Neck & Décolletage LED System (unless agreed otherwise).</li><li>Before and after imaging to showcase the results, if possible</li></ul>",
+        "slides_per_view": "2"
+      }
+    },
+    "n_guide_content_fNcHdT": {
+      "type": "n_guide-content",
+      "blocks": {
+        "video_slider_4DRKWH": {
+          "type": "video_slider",
+          "settings": {
+            "youtube_url": false,
+            "video_url": "rffwioglk5",
+            "image": "shopify://shop_images/n_d_thumb_98ba6ae3-e0c9-48b3-b5b8-dcb13e2d7b69.webp"
+          }
+        },
+        "video_slider_3FKQUQ": {
+          "type": "video_slider",
+          "settings": {
+            "youtube_url": false,
+            "video_url": "xqaygwj7nv",
+            "image": "shopify://shop_images/n_d_thumb1.webp"
+          }
+        },
+        "video_slider_LLzaBX": {
+          "type": "video_slider",
+          "settings": {
+            "youtube_url": false,
+            "video_url": "yrv6jnsupt",
+            "image": "shopify://shop_images/n_d_thumb2.webp"
+          }
+        },
+        "video_slider_ypT8t7": {
+          "type": "video_slider",
+          "settings": {
+            "youtube_url": true,
+            "video_url": "https://www.youtube.com/watch?v=PkjrqiwLJkU",
+            "image": "shopify://shop_images/n_d_thumb3.webp"
+          }
+        },
+        "video_slider_WeAcLn": {
+          "type": "video_slider",
+          "settings": {
+            "youtube_url": false,
+            "video_url": "9womummdjx",
+            "image": "shopify://shop_images/n_d_thumb4.webp"
+          }
+        },
+        "video_slider_hqFAfx": {
+          "type": "video_slider",
+          "settings": {
+            "youtube_url": false,
+            "video_url": "7j55r3vppg",
+            "image": "shopify://shop_images/n_d_thumb5.webp"
+          }
+        },
+        "video_slider_jLrka9": {
+          "type": "video_slider",
+          "settings": {
+            "youtube_url": true,
+            "video_url": "https://www.youtube.com/watch?v=81_RXXijXxU",
+            "image": "shopify://shop_images/n_d_thumb6.webp"
+          }
+        }
+      },
+      "block_order": [
+        "video_slider_4DRKWH",
+        "video_slider_3FKQUQ",
+        "video_slider_LLzaBX",
+        "video_slider_ypT8t7",
+        "video_slider_WeAcLn",
+        "video_slider_hqFAfx",
+        "video_slider_jLrka9"
+      ],
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "heading": "Content Examples",
+        "text": "<h2>Content Examples</h2>",
+        "slides_per_view": "3.1"
+      }
+    },
+    "n_trusted_recommended_KCewXy": {
+      "type": "n_trusted-recommended",
+      "name": "t:sections.n_trusted-recommended.name",
+      "settings": {
+        "use_own_file": true,
+        "background_color": "grey",
+        "heading": "<h2>Trusted and Recommended by Experts</h2>",
+        "text": "<p>LED light helps <em>support the skin's natural renewal process</em> for a smoother, more refined look — especially in areas prone to lines and wrinkles on the neck.</p>",
+        "video_image_cover": "shopify://shop_images/doctor_shah_desk.webp",
         "video_url": "",
-        "wistia_url": ""
+        "badge_text": "Dermatologist Reviewed"
       }
     }
   },
   "order": [
-    "page_banner_richtext_p7esDz",
-    "content_brief_MkPyxd",
-    "main",
-    "trusted_recommended_jOyz1d"
+    "n_across_image_banner_rQeweC",
+    "n_intro_9rCx4t",
+    "n_guide_menu_fYcEzd",
+    "n_guide_content_RzayTk",
+    "n_guide_content_RmFxKy",
+    "n_guide_content_X4ktM8",
+    "n_guide_content_zLhLWp",
+    "n_guide_content_DmwHfk",
+    "n_guide_content_fNcHdT",
+    "n_trusted_recommended_KCewXy"
   ]
 }
