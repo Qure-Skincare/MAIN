@@ -108,6 +108,7 @@
       "settings": {
         "use_own_file": true,
         "active": true,
+        "must_read": false,
         "heading": "Product Information",
         "text": "<h2>Product information</h2><ul><li>10-minute LED treatment for neck & chest</li><li>Clinically supported wavelengths shown to help improve the look of firmness, smoothness, and overall skin tone</li><li>2 light wavelengths: 633nm (Red) and 830nm (Near-Infrared)</li><li>Helps address the look of crepey skin, fine lines, uneven tone, and reduced elasticity</li><li>Hands-free, rechargeable design with adjustable straps</li><li>Designed to treat the most neglected area in your routine</li></ul>",
         "slides_per_view": ""
@@ -131,6 +132,7 @@
       "settings": {
         "use_own_file": true,
         "active": false,
+        "must_read": false,
         "heading": "Usage Instructions",
         "text": "<h2>Usage Instructions</h2><p><strong>How To Use:</strong></p><ol><li>Clean and dry your neck and décolletage to ensure the area is clear from any dirt, sweat, or skincare products.</li><li>Insert the USB-C cable from the Neck & Décolletage LED System into the port located on the top of the controller.</li><li>Secure the system around the neck to comfortably treat the entire neck and décolletage area. Alternatively, position the strap across the shoulders to lower the LED panel slightly and extend coverage further across the décolletage.</li><li>Press the ON/OFF button on the controller. The treatment will automatically run for 10 minutes and shut off at the end of the session.<br/></li></ol>",
         "slides_per_view": ""
@@ -142,6 +144,7 @@
       "settings": {
         "use_own_file": true,
         "active": false,
+        "must_read": false,
         "heading": "Product Claims",
         "text": "<h2>Product Claims</h2><p>Key claims:</p><ul><li>This system features LED lights positioned to target the chest and neck area, where fine lines and loss of firmness commonly appear.</li><li>Our LED uses cosmetic-grade light technology to deliver safe, concentrated wavelengths of red and near-infrared light that help visibly improve the look of skin tone and texture.</li><li>The light energy supports the skin's natural renewal process, promoting a smoother, more refined, and radiant-looking appearance over time.</li></ul>",
         "slides_per_view": ""
@@ -164,6 +167,7 @@
       "settings": {
         "use_own_file": true,
         "active": false,
+        "must_read": true,
         "heading": "Content Requirements",
         "text": "<h2>Content Requirements</h2><p>Messaging must include:</p><ul><li>Specifically designed to visibly refresh and smooth the neck and décolletage area, where the first signs of aging tend to appear.</li><li>Uses red and near-infrared wavelengths known to support the skin's natural renewal process for a firmer-looking, more radiant appearance.</li><li>Fits easily into your routine — just 10 minutes a day.</li><li>Achieve visible improvements from home, inspired by professional light-based technology.</li><li>Fully portable and hands-free, so you can multitask while using it.</li></ul>",
         "slides_per_view": ""
@@ -200,6 +204,7 @@
       "settings": {
         "use_own_file": true,
         "active": false,
+        "must_read": false,
         "heading": "Creative Direction",
         "text": "<h2>Creative Direction</h2><p>Recording Guidelines</p><ul><li>Use bright, natural lighting. No filters.</li><li>Ensure the Qure Neck & Décolletage LED System is the main focus of the content.</li><li>Keep backgrounds clean and uncluttered.</li><li>In cover photos for video content always show yourself using the Qure Neck & Décolletage LED System (unless agreed otherwise).</li><li>Before and after imaging to showcase the results, if possible</li></ul>",
         "slides_per_view": "2"
@@ -278,6 +283,7 @@
       "settings": {
         "use_own_file": true,
         "active": false,
+        "must_read": false,
         "heading": "Content Examples",
         "text": "<h2>Content Examples</h2>",
         "slides_per_view": "3.1"

@@ -19,8 +19,8 @@
             >
                 {% if section.settings.heading != blank %}
                     {{ section.settings.heading }}
-                    {% if section.settings.heading contains 'Content Requirements' %}
-                        <em>Must read</em>
+                    {% if section.settings.must_read %}
+                        <em>{{ 'sections.n_guide_content.must-read' | t }}</em>
                     {% endif %}
                 {% endif %}
             </button>
@@ -130,6 +130,12 @@
             "type": "checkbox",
             "id": "active",
             "label": "t:common.active",
+            "default": false
+        },
+        {
+            "type": "checkbox",
+            "id": "must_read",
+            "label": "t:common.must-read",
             "default": false
         },
         {

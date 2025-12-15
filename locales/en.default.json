@@ -13,6 +13,9 @@
       "contents": "Contents",
       "must-read": "Must read"
     },
+    "n_guide_content": {
+      "must-read": "Must read"
+    },
     "collection": {
       "bestseller": "Bestseller",
       "trending": "Trending",
