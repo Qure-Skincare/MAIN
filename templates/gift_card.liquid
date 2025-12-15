@@ -1,73 +1,160 @@
-{% layout none %}
-
 <!doctype html>
-<html lang="{{ request.locale.iso_code }}">
+<html lang="{{ shop.locale }}">
+
   <head>
-    {% # Inlined CSS Variables %}
-    {% render 'css-variables' %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-    {% # Load and preload the critical CSS %}
-    {{ 'critical.css' | asset_url | stylesheet_tag: preload: true }}
+    {% if template contains 'product' and product.metafields.custom.custom_canonical_url != blank %}
+        <link rel="canonical" href="{{ product.metafields.custom.custom_canonical_url }}">
+    {% elsif template contains 'collection' and collection.metafields.custom.custom_canonical_url %}
+        <link rel="canonical" href="{{ collection.metafields.custom.custom_canonical_url }}">
+    {% else %}
+        <link rel="canonical" href="{{ canonical_url }}">
+    {% endif %}
 
-    {% # Social, title, etc. %}
-    {% render 'meta-tags' %}
+    <meta name="p:domain_verify" content="67d2a1408f84408a05deffe883a0a523"/>
+    <meta name="google-site-verification" content="eJrHRDM9bifPc8Nf-ycIg275f3KrlSoWEHd5VM5M9LQ" />
+    <meta name="google-site-verification" content="N0QF9SQ35xUa1DQifP7jZgs_z2odMQBZlSB4L7n5fl4" /> 
+    <meta name="msvalidate.01" content="E6D2CFAEB841C8D3C13C6473265B99B6" />
 
-    {% style %}
-      main {
-        text-align: center;
-      }
-      main img {
-        display: unset;
-      }
-    {% endstyle %}
+    {% render 'robots' %}
 
+    {% capture seo_title %}
+      {{ page_title }}
+      {% if current_tags %}
+        {%- assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.tags' | t: tags: meta_tags -}}
+      {% endif %}
+      {% if current_page != 1 %}
+        &ndash; {{ 'general.page' | t: page: current_page }}
+      {% endif %}
+    {% endcapture %}
+
+    <title>{{ seo_title }}</title>
+
+    {%- if page_description -%}
+      <meta name="description" content="{{ page_description | escape }}">
+    {%- else -%}
+      <meta name="description" content="{{ seo_title | escape }}">
+    {%- endif -%}
+
+    {% render 'social-meta-tags' %}
+
+    {% if request.path == 'index' %}
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Qure Skincare",
+          "url": "https://www.qureskincare.com/",
+          "logo": "",
+          "sameAs": [
+            "https://www.facebook.com/Qureskincare/",
+            "https://www.instagram.com/qureskincare/",
+            "https://www.youtube.com/channel/UCGTi3BZn8GVlu30NtQ-reYA"
+          ]
+        }
+      </script>
+    {% endif %}
+
+    {% comment %} <script src="{{ 'redirect.js' | asset_url }}"></script> {% endcomment %}
+
+    <link rel="shortcut icon" href="https://qureskincaredns.com/assets/images/qure_32x32.webp" type="image/png">
+    <link rel="stylesheet" href="https://qureskincaredns.com/assets/css/vendor.css">
+    <link rel="stylesheet" href="https://qureskincaredns.com/assets/css/spacings.css">
+    <link rel="stylesheet" href="https://qureskincaredns.com/assets/css/theme-fonts.css" />
+    <link rel="stylesheet" href="https://qureskincaredns.com/assets/css/base.css" />
+
+    {% render '__render-sections-stack' %}
+
+    <style>
+        :root {
+          {% if settings.primary-color != blank %}
+            --primary-color: {{ settings.primary-color }};
+          {% endif %}
+          {% if settings.discount-color != blank %}
+            --discount-color: {{ settings.discount-color }};
+          {% endif %}
+        }
+    </style>
+    
     {{ content_for_header }}
+
+    {% render 'header-scripts' %}
+
+    <script src="https://qureskincaredns.com/shopify/js/datalayer.js"></script>
+    <script src="https://qureskincaredns.com/shopify/js/country-detect.js"></script>
   </head>
 
-  <body>
-    <main>
-      <div class="shopify-section">
-        <h1>{{ gift_card.balance | money }}</h1>
+  <body class="{{ template }}">
 
-        {% if gift_card.enabled == false or gift_card.expired %}
-          <p>{{ 'gift_card.expired' | t }}</p>
-        {% endif %}
+    <!-- Google Tag Manager (noscript) -->
+    
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MXV2ZDXR"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
+    <!-- End Google Tag Manager (noscript) -->
+    
+    {% comment %} {% sections 'header-group' %} {% endcomment %}
 
-        {% if gift_card.expires_on %}
-          {% assign expires_on = gift_card.expires_on | date: '%B %e, %Y' %}
-          <p>
-            {{ 'gift_card.expires_on' | t: expires_on: expires_on }}
-          </p>
-        {% endif %}
+    <main class="sections-stack">
 
-        <p>
-          {% if settings.logo %}
-            {{ settings.logo | image_url: width: 300 | image_tag: alt: shop.name }}
-          {% else %}
-            <img
-              src="{{ 'gift-card/card.svg' | shopify_asset_url }}"
-              alt="{{ 'gift_card.card' | t }}"
-              width="300"
-              height="200"
-            >
+      <style>
+        .gift-container {
+          display: grid;
+          place-items: center;
+        }
+      </style>
+      
+      <div class="shopify-section gift-container pt-20 pb-20">
+          <h1>{{ gift_card.balance | money }}</h1>
+
+          {% if gift_card.enabled == false or gift_card.expired %}
+            <p>{{ 'gift_card.expired' | t }}</p>
           {% endif %}
-        </p>
 
-        <h2>{{ shop.name }}</h2>
-        <p>{{ 'gift_card.use_at_checkout' | t }}</p>
-        <p>{{ gift_card.code | format_code }}</p>
+          {% if gift_card.expires_on %}
+            {% assign expires_on = gift_card.expires_on | date: '%B %e, %Y' %}
+            <p>
+              {{ 'gift_card.expires_on' | t: expires_on: expires_on }}
+            </p>
+          {% endif %}
 
-        {% if gift_card.pass_url %}
-          <a href="{{ gift_card.pass_url }}">
-            <img
-              src="{{ 'gift-card/add-to-apple-wallet.svg' | shopify_asset_url }}"
-              alt="{{ 'gift_card.add_to_apple_wallet' | t }}"
-              width="200"
-              height="60"
-            >
-          </a>
-        {% endif %}
-      </div>
+          <p>
+            {% if settings.logo %}
+              {{ settings.logo | image_url: width: 300 | image_tag: alt: shop.name }}
+            {% else %}
+              <img
+                src="{{ 'gift-card/card.svg' | shopify_asset_url }}"
+                alt="{{ 'gift_card.card' | t }}"
+                width="300"
+                height="200"
+              >
+            {% endif %}
+          </p>
+
+          <h2>{{ shop.name }}</h2>
+          <p>Please use the card at checkout page, thank you!</p>
+          <p>{{ gift_card.code | format_code }}</p>
+
+          {% if gift_card.pass_url %}
+            <a href="{{ gift_card.pass_url }}">
+              <img
+                src="{{ 'gift-card/add-to-apple-wallet.svg' | shopify_asset_url }}"
+                alt="{{ 'gift_card.add_to_apple_wallet' | t }}"
+                width="200"
+                height="60"
+              >
+            </a>
+          {% endif %}
+        </div>
     </main>
+
+    {% comment %} {% sections 'footer-group' %} {% endcomment %}
+    {% comment %} {% render 'footer-scripts' %} {% endcomment %}
+
+    <script src="https://qureskincaredns.com/assets/js/vendor.js" defer="defer"></script>
+    <script src="https://qureskincaredns.com/assets/js/header.js" defer="defer"></script>
+    <script src="https://qureskincaredns.com/assets/js/footer.js" defer="defer"></script>
   </body>
 </html>

@@ -149,35 +149,13 @@
             "video_url": "gzba345nd4",
             "image": "shopify://shop_images/trusted_img_9.webp"
           }
-        },
-        "slider_mVUCAc": {
-          "type": "slider",
-          "settings": {
-            "heading": "<p>\"One of the best ways to treat hyperpigmentation at home.\"</p>",
-            "text": "<p>Dr. Wallace Nozile</p><p>[checkmark] Board-Certified Dermatologist</p>",
-            "youtube_url": false,
-            "video_url": "ypvcdsgwkx",
-            "image": "shopify://shop_images/trusted_img_8.webp"
-          }
-        },
-        "slider_TjGDqh": {
-          "type": "slider",
-          "settings": {
-            "heading": "<p>\"With Micro-Infusion, you get to see the results almost instantly.\"</p>",
-            "text": "<p>Dr. Davin Lim</p><p>[checkmark] Board-Certified Dermatologist</p>",
-            "youtube_url": false,
-            "video_url": "3bud7no0j9",
-            "image": "shopify://shop_images/trusted_img_7.webp"
-          }
         }
       },
       "block_order": [
         "slider_gPmiWg",
         "slider_4tVKJG",
         "slider_heTNad",
-        "slider_gwVt9z",
-        "slider_mVUCAc",
-        "slider_TjGDqh"
+        "slider_gwVt9z"
       ],
       "name": "t:sections.n_video-slider.name",
       "settings": {

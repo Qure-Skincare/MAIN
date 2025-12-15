@@ -300,7 +300,7 @@
             "text": "<p>A 2007 clinical study found that red LED therapy visibly improved signs of sun damage, including skin texture and tone, <strong>after just 9 treatments</strong>. By week 12, 91% of participants reported brighter, more even skin, and 82% noticed smoother texture. <br/>[line]</p><p><strong>About the clinical trial</strong></p><p>5‑week single-arm trial with 13 photoaged participants. Results measured after 9 treatments via clinical photography and patient satisfaction scores at 6, 9, and 12 weeks</p><p>Reference: Baez, F., & Reilly, L. R. (2007). The use of light-emitting diode therapy in the treatment of photoaged skin. Journal of Cosmetic Dermatology, 6(3), 189–194.</p>",
             "image": "shopify://shop_images/q_rejuv_ab_2.webp",
             "button_label": "Dark Spots & Skin Tone",
-            "button_label_image": "Dark Spots"
+            "button_label_image": "Dark Spots & Skin Tone"
           }
         },
         "slider_jT4fBt": {
@@ -309,7 +309,7 @@
             "heading": "<p>Proven to visually improve</p>",
             "text": "<p>Q-Rejuvalight Pro combines blue (415 nm) and red (630 nm) LED wavelengths that are proven to improve mild to severe acne. A 2006 study found that after 8 sessions over 4 weeks, participants saw a <strong>46% reduction</strong> in lesion count at 4 weeks and an impressive <strong>81% reduction</strong> at 12 weeks, with minimal side effect.<br/>[line]</p><p><strong>About the clinical trial</strong></p><p>4-week trial with 24 participants with mild to severe facial acne vulgaris. Results measured after 8 treatments via lesion counts at weeks 2, 4, 8, and 12, along with dermatologist evaluation and patient self-assessment.</p><p>Reference: Goldberg, D. J., & Russell, B. A. (2006). Combination blue (415 nm) and red (633 nm) LED phototherapy in the treatment of mild to severe acne vulgaris. Journal of cosmetic and laser therapy : official publication of the European Society for Laser Dermatology, 8(2), 71–75.</p>",
             "image": "shopify://shop_images/q_rejuv_ab_3.webp",
-            "button_label": "Dark Spots & Skin Tone",
+            "button_label": "Acne & Breakouts",
             "button_label_image": "Acne & Breakouts"
           }
         }
@@ -721,7 +721,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Technical specifications",
-            "text": "<p><strong>TREATMENT TIME: </strong>3 minutes</p><p><strong>CERTIFICATES: </strong>FDA, TGA, CE, UKCA</p><p><strong>OPERATION: </strong>Wireless, hands-free</p><p><strong>WAVELENGTH: </strong>415nm (Blue), 605nm (Amber), 630nm (Red), 660nm (Deep Red), 880nm (Infrared)</p><p><strong>TREATMENT TIME: </strong>2 hours</p><p><strong>CHARGING TIME: </strong>3 minutes</p><p><strong>LEDs: </strong>160 dual core</p>"
+            "text": "<p><strong>TREATMENT TIME: </strong>3 minutes</p><p><strong>CERTIFICATES: </strong>FDA, TGA, CE, UKCA</p><p><strong>OPERATION: </strong>Wireless, hands-free</p><p><strong>WAVELENGTH: </strong>415nm (Blue), 605nm (Amber), 630nm (Red), 660nm (Deep Red), 880nm (Infrared)</p><p><strong>TREATMENT TIME: </strong>3 minutes</p><p><strong>CHARGING TIME: </strong>2 hours</p><p><strong>LEDs: </strong>160 dual core</p>"
           }
         },
         "accordion_tNf6Vj": {

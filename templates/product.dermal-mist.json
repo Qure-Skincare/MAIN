@@ -388,6 +388,87 @@
         "button_url": "#exampleModalToggle"
       }
     },
+    "video_review_slider_hTyGEF": {
+      "type": "video-review-slider",
+      "blocks": {
+        "slider_jGWqkN": {
+          "type": "slider",
+          "disabled": true,
+          "settings": {
+            "youtube_url": "https://youtu.be/EjLx0IvKh7g?si=2hT_KAt-1w0rUjQz&t=825",
+            "video_cover_image": "shopify://shop_images/Review_10.png",
+            "wistia_url": ""
+          }
+        },
+        "slider_Wzywcy": {
+          "type": "slider",
+          "settings": {
+            "youtube_url": "",
+            "video_cover_image": "shopify://shop_images/Review_11.png",
+            "wistia_url": "tbu0xx01l1"
+          }
+        },
+        "slider_Xhp3Wq": {
+          "type": "slider",
+          "settings": {
+            "youtube_url": "",
+            "video_cover_image": "shopify://shop_images/Review_12.png",
+            "wistia_url": "d4tmdfy8zz"
+          }
+        },
+        "slider_CyVwN4": {
+          "type": "slider",
+          "settings": {
+            "youtube_url": "",
+            "video_cover_image": "shopify://shop_images/Review_13.png",
+            "wistia_url": "b1uix8g3y6"
+          }
+        },
+        "slider_RCgU8W": {
+          "type": "slider",
+          "settings": {
+            "youtube_url": "",
+            "wistia_url": "a51zt8a6lt"
+          }
+        },
+        "slider_BdbCUB": {
+          "type": "slider",
+          "settings": {
+            "youtube_url": "",
+            "wistia_url": "db1dlwaul3"
+          }
+        },
+        "slider_8W7WkV": {
+          "type": "slider",
+          "settings": {
+            "youtube_url": "",
+            "wistia_url": "rnjpxbt35o"
+          }
+        },
+        "slider_Edp9tC": {
+          "type": "slider",
+          "settings": {
+            "youtube_url": "",
+            "wistia_url": "130d1zoq72"
+          }
+        }
+      },
+      "block_order": [
+        "slider_jGWqkN",
+        "slider_Wzywcy",
+        "slider_Xhp3Wq",
+        "slider_CyVwN4",
+        "slider_RCgU8W",
+        "slider_BdbCUB",
+        "slider_8W7WkV",
+        "slider_Edp9tC"
+      ],
+      "name": "t:sections.video-review-slider.name",
+      "settings": {
+        "heading": "Confident skin starts here",
+        "background_color": "#f6f6f7"
+      }
+    },
     "compare_8FkPMf": {
       "type": "compare",
       "blocks": {
@@ -620,6 +701,7 @@
     "trusted_recommended_8zit6t",
     "carousel_PjVxaQ",
     "product_info_popup_cJGGQN",
+    "video_review_slider_hTyGEF",
     "compare_8FkPMf",
     "text_header_LkTtUE",
     "17574126382ef36ccf",
