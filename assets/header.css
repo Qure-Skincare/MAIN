@@ -3,7 +3,7 @@ body[class="page.qure-micro-infusion-landing-page-b"] {
         top: 0px !important;
     }
     .hero-section {
-        margin-top: -25px !important;
+        margin-top: -35px !important;
     }
     .navigation-mobile {
         top: calc(var(--height-header)) !important;
