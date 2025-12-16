@@ -87,9 +87,7 @@
     },
     "header": {
       "type": "header",
-      "custom_css": [
-        ".page-header {top: 0px !important;}"
-      ],
+      "custom_css": [],
       "settings": {}
     }
   },
