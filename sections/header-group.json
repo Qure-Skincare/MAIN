@@ -87,7 +87,9 @@
     },
     "header": {
       "type": "header",
-      "custom_css": [],
+      "custom_css": [
+        "body[class=\"page.qure-micro-infusion-landing-page-b\"] header {top: 0px !important;}"
+      ],
       "settings": {}
     }
   },
