@@ -9,8 +9,11 @@
   {% endif %}
 {% endfor %}
 
+
+{% include '__endrock-get-data' %}
+
 <style>
-  {% if settings.enable_gamification == false %} 
+  {% if gamification_enable == false %} 
     #endrock_gamificationHeader {
       display: none;
     }

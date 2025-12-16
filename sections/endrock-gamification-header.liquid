@@ -1,5 +1,3 @@
-{{ "__endrock_gamification.css" | asset_url | stylesheet_tag }}
-
 {% include 'get-cart-global-data' %}
 
 {% assign header_text = settings.gamification_info_homepage | replace: ':', '' | append: '!' %}
@@ -18,7 +16,11 @@
   {% assign has_gamification_content = true %}
 {% endif %}
 
-{% if has_gamification_content and settings.enable_gamification %}
+{% include '__endrock-get-data' %}
+
+{% if has_gamification_content and gamification_enable %}
+  {{ "__endrock_gamification.css" | asset_url | stylesheet_tag }}
+
   <div id="endrock_gamificationHeader" class="gamification-container gamification-homepage">
     <div class="gamification-content">
       <div class="gamification-message">
@@ -36,10 +38,9 @@
       </div>
     </div>
   </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      loadScriptOnce('gamification_handler', '{{ "__endrock_gamificationHandler.js" | asset_url }}');
+    });
+  </script>
 {% endif %}
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    loadScriptOnce('gamification_handler', '{{ "__endrock_gamificationHandler.js" | asset_url }}');
-  });
-</script>
