@@ -1,10 +1,4 @@
-<style>
-   .page.qure-micro-infusion-landing-page-b .page-header {
-      marging-top: -35px !important;
-   }
-</style>
-
-<header class="page-header" id="page-header">
+<header class="page-header" id="page-header"{% if template == 'page.qure-micro-infusion-landing-page-b' %} style="marging-top: -35px !important;"{% endif %}>
    <div class="container">
       <div class="d-flex align-items-center">
          <div class="col-header-left mb-col-3 d-flex justify-content-start align-items-center">
