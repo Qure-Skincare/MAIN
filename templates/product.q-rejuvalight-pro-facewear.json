@@ -337,7 +337,7 @@
           "type": "slider",
           "settings": {
             "heading": "Can’t go a day without it",
-            "text": "<p>“Straight away I noticed results with Qure, after the first  had no active breakouts anymore. People ask me now how have I got my skin to be hydrated, acne-free, looking bright with no redness. I'm so reliant on the Qure mask now. I don't think I can go a day without using it.”</p>",
+            "text": "<p>“Straight away I noticed results with the Qure mask. After the first week my skin looked clearer and more balanced. People ask me now how I have got my skin to be hydrated and looking bright with reduced redness. I’m so reliant on the Qure mask now. I don’t think I can go a day without using it.”</p>",
             "compare_image": "shopify://shop_images/Image_13_bc21b22b-9f3d-4021-b82f-dd20246c38f8.png",
             "country_image": "shopify://shop_images/australia_f_69a48b5f-3193-49ab-a443-904ca676d1db.webp",
             "username": "<p>Anton M.</p>",
@@ -363,7 +363,7 @@
           "type": "slider",
           "settings": {
             "heading": "Amazing products",
-            "text": "<p>“I'm so happy, l've been using the products for 2 months and they have made such a difference in my skin. I had tried a lot of products before but with just one bottle of the serum, staying consistent with the Mask, and doing a few treatments of the micro infusion for scaring. l've seen a huge change in my skin.\"</p>",
+            "text": "<p>\"I'm so happy. I've been using the products for 2 months and they have made such a difference in my skin. I had tried a lot of products before but with just one bottle of serum, staying consistent with the mask, and doing a few treatments of the micro infusion... I've seen a huge change in my skin.\"</p>",
             "compare_image": "shopify://shop_images/ana.webp",
             "country_image": "shopify://shop_images/colombia_f.webp",
             "username": "<p>Ana L.</p>",
@@ -389,7 +389,7 @@
           "type": "slider",
           "settings": {
             "heading": "Thrilled with the results!",
-            "text": "<p>\"I am 45 so I am fighting signs of aging, but also still dealing  with acne flare ups. I haven’t had a single breakout since I started using the mask, plus I notice a definite smoothing of fine wrinkles on my cheeks & around my  eyes. I recommend this product to anyone. Well worth the investment.\"</p>",
+            "text": "<p>\"I am 45 so I am fighting signs of aging, but also still dealing with acne flare ups. ...I notice a definite smoothing of [the look of] fine wrinkles on my cheeks & around my eyes. I recommend this product to anyone. Well worth the investment.\" </p>",
             "compare_image": "shopify://shop_images/Jessica_rejuv.webp",
             "country_image": "shopify://shop_images/america_f.webp",
             "username": "<p>Jessica K.</p>",
@@ -440,9 +440,10 @@
         },
         "slider_LyiKBf": {
           "type": "slider",
+          "disabled": true,
           "settings": {
             "heading": "Amazing!!",
-            "text": "<p>“Amazing! Has made such a massive on my acne. Still getting breakouts but they disappear way quicker. Took maybe 2 days to start working. Pics are about 3 weeks difference.”</p>",
+            "text": "<p>“Amazing! Has made such a massive on my acne. Still getting breakouts but they disappear way quicker. Took maybe 2 days to start working. Pics are about 3 weeks difference.”</p>",
             "compare_image": "shopify://shop_images/Sophie.webp",
             "country_image": "shopify://shop_images/australia_f.webp",
             "username": "<p>Sophie R.</p>",
@@ -455,7 +456,7 @@
           "type": "slider",
           "settings": {
             "heading": "Best investment for my skin",
-            "text": "<p>“It has been amazing, so easy to use for a start. And I am already noticing massive improvements, the texture of my skin has gone from rough and bumpy to silky smooth and I have stopped breaking out since using the blue light feature. I love it, couldn’t recommend it highly enough!”</p>",
+            "text": "<p>\"It has been amazing, so easy to use for a start. And I am already noticing massive improvements, the texture of my skin has gone from [feeling] rough and bumpy to [feeling] silky smooth...I love it, couldn't recommend it highly enough!\"</p>",
             "compare_image": "shopify://shop_images/Saskia.webp",
             "country_image": "shopify://shop_images/england_f.webp",
             "username": "<p>Saskia Z.</p>",
@@ -466,6 +467,7 @@
         },
         "slider_eeRBxf": {
           "type": "slider",
+          "disabled": true,
           "settings": {
             "heading": "Saw a difference within 3 days",
             "text": "<p>“Incredible! The item is so well made, I had cystic acne on my jaw that went away within a week of use and my skin felt very soft. I have gotten 3 other people to purchase this product and will continue to rave about it!”</p>",
