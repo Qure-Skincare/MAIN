@@ -31,9 +31,7 @@
         "approved_by_aW7ELB",
         "approved_by_DpRR3G"
       ],
-      "custom_css": [
-        ".hero-section {margin-top: -35px !important;}"
-      ],
+      "custom_css": [],
       "name": "t:sections.n_hero-section.name",
       "settings": {
         "use_own_file": true,
