@@ -504,7 +504,7 @@
       "name": "t:sections.proven-results.name",
       "settings": {
         "heading": "No hype, just evidence",
-        "text": "<p>The results speak for themselves. In an independent user study, participants' skin was measured and showed proven visible improvement after just 6 treatments.<br/><br/><em>Tested by an independent lab, compiled by Regulatory Consultants</em></p>",
+        "text": "<p>The results speak for themselves. In an independent user study, participants' skin was measured and showed proven visible improvement after just 6 treatments.<br/><br/>Based on results after 6 treatments in a user study of 30 participants aged 25–65.</p>",
         "button_label": "",
         "button_url": ""
       }
@@ -516,7 +516,7 @@
           "type": "slider",
           "settings": {
             "heading": "My skin returned to life!",
-            "text": "<p>“I just turned 57 years. My skin was extremely dry and while using this product my skin RETURNED to LIFE! I am so impressed with it! My Coworkers ask me what I use in my skin.. and I tell them. Product easy to use and the needles are better that using a pen for microneedling. This is an amazing product that you will not regret in purchasing it. I really see the change in my skin. Outstanding job QURE!”</p>",
+            "text": "<p>“I just turned 57 years. My skin was extremely dry and while using this product my skin RETURNED to LIFE! I am so impressed with it! My coworkers ask me what I use in my skin.. and I tell them. Product easy to use... This is an amazing product that you will not regret in purchasing it. I really see the change in my skin. Outstanding job QURE!”</p>",
             "compare_image": "shopify://shop_images/ellie_6_treatments.webp",
             "country_image": "shopify://shop_images/america_f.webp",
             "username": "<p>Ellie V.</p>",
