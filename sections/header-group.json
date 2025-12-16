@@ -88,7 +88,7 @@
     "header": {
       "type": "header",
       "custom_css": [
-        ".qure-micro-infusion-landing-page-b {margin-top: -35px;}"
+        ".page-header-custom {margin-top: -35px !important;}"
       ],
       "settings": {}
     }
