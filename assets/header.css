@@ -1,3 +1,7 @@
 body[class="page.qure-micro-infusion-landing-page-b"] header {
   top: 0px !important;
 }
+
+body[class="page.qure-micro-infusion-landing-page-b"] .navigation-mobile {
+    top: calc(var(--height-header)) !important;
+}
