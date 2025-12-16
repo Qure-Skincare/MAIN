@@ -286,31 +286,31 @@
         "slider_hK6zKc": {
           "type": "slider",
           "settings": {
-            "heading": "<p>Proven to visually improve</p>",
+            "heading": "",
             "text": "<p>Q-Rejuvalight Pro utilizes a 630 nm red LED, a wavelength clinically shown to improve wrinkle depth and skin texture. In a 2009 trial, participants experienced a <strong>31% mean increase</strong> in type‑1 procollagen production, with <strong>over 90%</strong> also seeing a reduction in wrinkle depth and surface roughness <strong>after just 12 treatments</strong>. The trial also found that 87% of participants demonstrated lower Fitzpatrick wrinkling scores.<br/>[line]</p><p><strong>About the clinical trial</strong></p><p>8-week single-blinded split-face trial with participants aged 27 to 79. Results measured after 12 treatments using profilometry and Fitzpatrick wrinkle severity scoring.</p><p>Reference: Lee, S.-Y., Park, K.-H., Choi, J.-W., Kwon, J.-K., Lee, D.-H., & Shin, M.-H. (2009). Regulation of skin collagen metabolism in vitro using a pulsed 660 nm LED light source: Clinical correlation with a single-blinded study. Journal of Investigative Dermatology, 129(12), 2751–2759.</p>",
             "image": "shopify://shop_images/q_rejuv_ab_1.webp",
             "button_label": "Fine Lines & Wrinkles",
-            "button_label_image": "Fine Lines & Wrinkles"
+            "button_label_image": ""
           }
         },
         "slider_KYFhBe": {
           "type": "slider",
           "settings": {
-            "heading": "<p>Proven to visually improve</p>",
+            "heading": "",
             "text": "<p>A 2007 clinical study found that red LED therapy visibly improved signs of sun damage, including skin texture and tone, <strong>after just 9 treatments</strong>. By week 12, 91% of participants reported brighter, more even skin, and 82% noticed smoother texture. <br/>[line]</p><p><strong>About the clinical trial</strong></p><p>5‑week single-arm trial with 13 photoaged participants. Results measured after 9 treatments via clinical photography and patient satisfaction scores at 6, 9, and 12 weeks</p><p>Reference: Baez, F., & Reilly, L. R. (2007). The use of light-emitting diode therapy in the treatment of photoaged skin. Journal of Cosmetic Dermatology, 6(3), 189–194.</p>",
             "image": "shopify://shop_images/q_rejuv_ab_2.webp",
             "button_label": "Dark Spots & Skin Tone",
-            "button_label_image": "Dark Spots & Skin Tone"
+            "button_label_image": ""
           }
         },
         "slider_jT4fBt": {
           "type": "slider",
           "settings": {
-            "heading": "<p>Proven to visually improve</p>",
+            "heading": "",
             "text": "<p>Q-Rejuvalight Pro combines blue (415 nm) and red (630 nm) LED wavelengths that are proven to improve mild to severe acne. A 2006 study found that after 8 sessions over 4 weeks, participants saw a <strong>46% reduction</strong> in lesion count at 4 weeks and an impressive <strong>81% reduction</strong> at 12 weeks, with minimal side effect.<br/>[line]</p><p><strong>About the clinical trial</strong></p><p>4-week trial with 24 participants with mild to severe facial acne vulgaris. Results measured after 8 treatments via lesion counts at weeks 2, 4, 8, and 12, along with dermatologist evaluation and patient self-assessment.</p><p>Reference: Goldberg, D. J., & Russell, B. A. (2006). Combination blue (415 nm) and red (633 nm) LED phototherapy in the treatment of mild to severe acne vulgaris. Journal of cosmetic and laser therapy : official publication of the European Society for Laser Dermatology, 8(2), 71–75.</p>",
             "image": "shopify://shop_images/q_rejuv_ab_3.webp",
             "button_label": "Acne & Breakouts",
-            "button_label_image": "Acne & Breakouts"
+            "button_label_image": ""
           }
         }
       },
@@ -324,8 +324,8 @@
       ],
       "name": "t:sections.proven-results.name",
       "settings": {
-        "heading": "Clinically studied wavelengths",
-        "text": "<p>Real, visible results backed by clinical studies. Whether you're targeting fine lines, dark spots, or breakouts, LED light therapy is proven to work beneath the skin’s surface to treat skin. </p>",
+        "heading": "Clinically-studied wavelengths",
+        "text": "<p>Real, visible results backed by clinical studies. Q-Rejuvalight Pro uses 5 clinically-studied LED wavelengths proven to work beneath the skin’s surface to improve tone, clarity, and texture.</p>",
         "button_label": "Read more about the clinical trials",
         "button_url": "#"
       }
