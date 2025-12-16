@@ -1,10 +1,11 @@
 {% include 'get-cart-global-data' %}
+{% include '__endrock-get-data' %}
 
 <!-- drawer cart start -->
 <link rel="stylesheet" href="https://qureskincaredns.com/assets/css/component-drawer.css" />
 <div class="offcanvas offcanvas-end" tabindex="-1" id="cartCanvas" aria-labelledby="cartCanvasLabel">
    <div id="cart-dynamic-content" class="offcanvas-dynamic-content">
-      {% if settings.enable_gamification %}
+      {% if gamification_enable %}
          {% render '__endrock_timerCountDown', timer_location: "sidecart" %}
       {% else %}
          {% render 'footer-cart-drawer-timer', timer: global_timer %}
@@ -17,7 +18,7 @@
          <div class="cart-content-area d-flex justify-content-between flex-column">
             <div class="minicart-loop custom-scrollbar">
                {% include 'footer-cart-drawer-gift' %}
-               {% if settings.enable_gamification %}
+               {% if gamification_enable %}
                   {% include '__endrock_sideCartGamification', location_id: 'cart' %}
                {% else %}
                   {% include 'footer-cart-drawer-bar' %}
@@ -65,7 +66,8 @@
 </script>
 
 <script src="https://qureskincaredns.com/shopify/js/morphdom-umd.min.js" defer="defer"></script>
-<script src="https://qureskincaredns.com/shopify/js/footer-cart-drawer.js" defer="defer"></script>
+<script src="{{ 'footer-cart-drawer.js' | asset_url }}"></script>
+{% comment %} <script src="https://qureskincaredns.com/shopify/js/footer-cart-drawer.js" defer="defer"></script> {% endcomment %}
 
 {% schema %}
 {
