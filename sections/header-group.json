@@ -50,6 +50,12 @@
             "exclude-page": "exclusive-holiday-bundle-deal-new"
           }
         },
+        "exclude_page_fAmFcE": {
+          "type": "exclude-page",
+          "settings": {
+            "exclude-page": "qure-micro-infusion-landing-page-b"
+          }
+        },
         "exclude-page-2": {
           "type": "exclude-page",
           "settings": {
@@ -62,6 +68,7 @@
         "announcement-2",
         "announcement-3",
         "exclude-page-1",
+        "exclude_page_fAmFcE",
         "exclude-page-2"
       ],
       "settings": {
