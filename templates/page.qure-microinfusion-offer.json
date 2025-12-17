@@ -116,7 +116,9 @@
         "approved_by_aW7ELB",
         "approved_by_DpRR3G"
       ],
-      "custom_css": [],
+      "custom_css": [
+        ".hero-section {display:none;}"
+      ],
       "name": "t:sections.n_hero-section.name",
       "settings": {
         "use_own_file": true,
