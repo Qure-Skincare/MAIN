@@ -13,8 +13,8 @@
       "type": "announcement-bar",
       "name": "t:sections.announcement-bar.name",
       "settings": {
-        "heading": "Autumn Glow Sale 67% OFF Micro-Infusion",
-        "button-label": "SHOP NOW",
+        "heading": "",
+        "button-label": "",
         "button-url": "https://qureskincare.com/pages/qure-microinfusion-offer",
         "show": false
       }
@@ -117,7 +117,7 @@
         "approved_by_DpRR3G"
       ],
       "custom_css": [
-        ".hero-section {display:none;}"
+        ".hero-section {display: none;}"
       ],
       "name": "t:sections.n_hero-section.name",
       "settings": {
