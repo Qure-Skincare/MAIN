@@ -102,7 +102,7 @@
           "settings": {
             "subscription_onetime_text": "Faucet + 1 Filter",
             "subscription_days_text": "Filter Refill",
-            "subscription_discount_percent": 50,
+            "subscription_discount_percent": 41,
             "product": "faucet-filter-refill",
             "product_discount_percent": 30,
             "onetime_text": "One Time: Faucet + 1 Filter"
