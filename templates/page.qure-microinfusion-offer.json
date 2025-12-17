@@ -11,10 +11,9 @@
   "sections": {
     "announcement_bar_iNbPEw": {
       "type": "announcement-bar",
-      "disabled": true,
       "name": "t:sections.announcement-bar.name",
       "settings": {
-        "heading": "",
+        "heading": "Micro-Infusion",
         "button-label": "",
         "button-url": "https://qureskincare.com/pages/qure-microinfusion-offer",
         "show": false
