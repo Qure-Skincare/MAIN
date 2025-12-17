@@ -46,6 +46,81 @@
         "video_image_cover": "shopify://shop_images/how-to-use_22b5bfef-ce09-4cdd-916d-a76f406dbe79.webp"
       }
     },
+    "page_header_SXJyMD": {
+      "type": "page-header",
+      "blocks": {
+        "link_iPBNaS": {
+          "type": "link",
+          "settings": {}
+        },
+        "description_iSDNaK": {
+          "type": "description",
+          "settings": {}
+        },
+        "video_jEEVjS": {
+          "type": "video",
+          "settings": {
+            "heading": "Watch: How To Use",
+            "image": "shopify://shop_images/how-to-use3_1.webp",
+            "wistia_url": "ptw4q3aod8"
+          }
+        },
+        "jumpto_jEyVj6": {
+          "type": "jumpto",
+          "settings": {
+            "button-label": "The Results",
+            "button-url": "#video-review-slider"
+          }
+        },
+        "jumpto_P7zN3P": {
+          "type": "jumpto",
+          "settings": {
+            "button-label": "How To Use",
+            "button-url": "#how_to_use"
+          }
+        },
+        "jumpto_F9gpDd": {
+          "type": "jumpto",
+          "settings": {
+            "button-label": "Serum Guide",
+            "button-url": "#science_backed"
+          }
+        },
+        "jumpto_GYW9XP": {
+          "type": "jumpto",
+          "settings": {
+            "button-label": "Expert Reviews",
+            "button-url": "#trusted_recommended"
+          }
+        },
+        "jumpto_Ybdp8V": {
+          "type": "jumpto",
+          "settings": {
+            "button-label": "FAQs",
+            "button-url": "#faq"
+          }
+        }
+      },
+      "block_order": [
+        "link_iPBNaS",
+        "description_iSDNaK",
+        "video_jEEVjS",
+        "jumpto_jEyVj6",
+        "jumpto_P7zN3P",
+        "jumpto_F9gpDd",
+        "jumpto_GYW9XP",
+        "jumpto_Ybdp8V"
+      ],
+      "name": "t:sections.page-header.name",
+      "settings": {
+        "rating": "<p><strong>4.8</strong>/5 Rated by Customers</p>",
+        "rating-url": "#trusted-reviews",
+        "heading": "Transform dull looking skin with Micro-Infusion Facial System",
+        "description": "<ul><li>Helps reduce appearance of fine lines, smooth texture whilst helping to infuse active ingredients into your skin.</li><li>Virtually painless and performed in the comfort and convenience of your home.</li><li>Minimal to no downtime with visible results.</li></ul>",
+        "button-label": "BUY NOW & SAVE UP TO 70%",
+        "button-url": "#purchase-form-types"
+      }
+    },
     "slider_featured_in_lVZt5L": {
       "type": "slider-featured-in",
       "blocks": {
@@ -1431,6 +1506,7 @@
   },
   "order": [
     "n_hero_section_xMcaXr",
+    "page_header_SXJyMD",
     "slider_featured_in_lVZt5L",
     "banner_with_text_phJT4F",
     "stock_alert_egmbcj",
