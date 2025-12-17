@@ -13,7 +13,7 @@
       "type": "announcement-bar",
       "name": "t:sections.announcement-bar.name",
       "settings": {
-        "heading": "Micro-Infusion",
+        "heading": "",
         "button-label": "",
         "button-url": "https://qureskincare.com/pages/qure-microinfusion-offer",
         "show": false
