@@ -98,13 +98,31 @@
       {% if subscription_discount_percent > 0 %}
         {% assign subscription_discount = subscription_discount_percent %}
         {% assign product_subscription_discount_delta = product_price_original | times: subscription_discount | divided_by: 100 %}
-        {% assign product_subscription_price_original = product_price_original | minus: product_subscription_discount_delta %}   
+        {% assign product_subscription_price_original = product_price_original | minus: product_subscription_discount_delta | divided_by: 100.0 %}   
+        {% assign product_subscription_price_decimal = product_subscription_price_original | modulo: 1 %}
+        
+        {% if product_subscription_price_decimal >= 0.5 %}
+          {% assign product_subscription_price_original = product_subscription_price_original | ceil %}
+        {% else %}
+          {% assign product_subscription_price_original = product_subscription_price_original | floor %}
+        {% endif %}
+
+        {% assign product_subscription_price_original = product_subscription_price_original | times: 100 %}
         {% assign product_subscription_price = product_subscription_price_original | money_without_trailing_zeros %}
         {% assign product_subscription_price_divided = product_subscription_price_original | divided_by: 4 | money_without_trailing_zeros %}  
         
         {% if black_friday_discount_percent > 0 %}
           {% assign product_subscription_discount_delta = product_subscription_price_original | times: black_friday_discount_percent | divided_by: 100 %}      
-          {% assign black_friday_product_subscription_price_original = product_subscription_price_original | minus: product_subscription_discount_delta %}
+          {% assign black_friday_product_subscription_price_original = product_subscription_price_original | minus: product_subscription_discount_delta | divided_by: 100.0 %}
+          {% assign black_friday_product_subscription_price_decimal = black_friday_product_subscription_price_original | modulo: 1 %}
+
+          {% if black_friday_product_subscription_price_decimal >= 0.5 %}
+            {% assign black_friday_product_subscription_price_original = black_friday_product_subscription_price_original | ceil %}
+          {% else %}
+            {% assign black_friday_product_subscription_price_original = black_friday_product_subscription_price_original | floor %}
+          {% endif %}
+
+          {% assign black_friday_product_subscription_price_original = black_friday_product_subscription_price_original | times: 100 %}
           {% assign black_friday_product_subscription_price = black_friday_product_subscription_price_original | money_without_trailing_zeros %}
           {% assign black_friday_product_subscription_price_divided = black_friday_product_subscription_price_original | divided_by: 4 | money_without_trailing_zeros %} 
           {% assign subscription_discount_percent = black_friday_product_subscription_price_original | times: 1.0 | divided_by: product_price_original | minus: 1 | abs | times: 100 | floor %}
@@ -112,6 +130,8 @@
 
       {% endif %}
     {% endif %}
+
+    
 
 
     {% if black_friday_discount_percent > 0 %}
