@@ -36,12 +36,12 @@
       "settings": {
         "use_own_file": true,
         "text": "<h1>Visibly reduce the appearance of wrinkles and dark spots - without injectables.</h1><p><strong>24K gold microneedles</strong> deliver <strong>targeted serums</strong> beyond your skin's barrier where traditional creams can't reach.</p>",
-        "image": "shopify://shop_images/micro-infusion-hero_2_a0c1441a-9900-4b2d-9bd1-5ca829119b25.webp",
+        "image": "shopify://shop_images/micro-infusion-hero_2_d36a18db-6067-459d-ac17-60c0ef0b8edb.webp",
         "image_mobile": "shopify://shop_images/micro-infusion-hero-mob.webp",
         "button_url": "#purchase-form-types",
         "button_label": "Start your treatment",
         "sub_text": "<p><strong>Limited Time Offer:</strong> Save Up to 70%</p>",
-        "marked_list": "<ul><li>Helps reduce appearance of fine lines, smooth texture whilst helping to infuse active ingredients into your skin.</li><li>Virtually painless and performed in the comfort and convenience of your home.</li><li>Minimal to no downtime with visible results.</li></ul>",
+        "marked_list": "",
         "wistia_url": "8ymvdqzx92"
       }
     },
