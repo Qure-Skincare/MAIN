@@ -98,6 +98,74 @@
         "wistia_url": "a1pykz2tp0"
       }
     },
+    "beauty_benefits_Pzxmim": {
+      "type": "beauty-benefits",
+      "blocks": {
+        "heading_7ejDaF": {
+          "type": "heading",
+          "settings": {
+            "heading": "Minimize Fine Lines & Wrinkles"
+          }
+        },
+        "heading_TWn7Cf": {
+          "type": "heading",
+          "settings": {
+            "heading": "Improve Tone & Texture"
+          }
+        },
+        "heading_xJY33L": {
+          "type": "heading",
+          "settings": {
+            "heading": "Boost Skin’s Glow"
+          }
+        },
+        "content_kPiDiQ": {
+          "type": "content",
+          "settings": {
+            "heading": "Minimize Fine Lines and Wrinkles",
+            "text": "<p>Smooth, plump, and refresh your skin’s appearance from within. Qure’s Micro-Infusion helps improve the look of collagen-depleted skin, restores hydration, and supports the skin’s natural barrier — all in one step.</p>",
+            "list": "<p>Deeply hydrates to leave skin dewy and plump</p><p>Visibly softens fine lines for a smoother, more youthful look</p><p>Strengthens the skin barrier to support long-lasting firmness</p>",
+            "username": "Tami T.",
+            "image": "shopify://shop_images/tami.webp",
+            "country_image": "shopify://shop_images/america_f.webp"
+          }
+        },
+        "content_XrJqFM": {
+          "type": "content",
+          "settings": {
+            "heading": "Improve Tone & Texture",
+            "text": "<p>Gentle microneedling device boosts cell turnover and delivers brightening ingredients deep into the skin to visibly smooth, clarify, and even out tone.</p>",
+            "list": "<p>Refines rough texture by promoting skin renewal</p><p>Fades dark spots and post-acne marks for a more even tone</p><p>Helps minimize the look of pores for a smoother, clearer complexion</p>",
+            "username": "Monika J.",
+            "image": "shopify://shop_images/monika.webp",
+            "country_image": "shopify://shop_images/australia_f.webp"
+          }
+        },
+        "content_cQLdrN": {
+          "type": "content",
+          "settings": {
+            "heading": "Boost Glow and Radiance",
+            "text": "<p>Restore skin glow by infusing hydrating, brightening ingredients deep into the skin for a fresh, radiant finish that lasts.</p>",
+            "list": "<p>Brightens dull skin for a healthy, radiant complexion</p><p>Enhances serum absorption for more visible results</p><p>Leaves skin looking firmer, smoother, and refreshed</p>",
+            "username": "Ellie V.",
+            "image": "shopify://shop_images/ellie.webp",
+            "country_image": "shopify://shop_images/america_f.webp"
+          }
+        }
+      },
+      "block_order": [
+        "heading_7ejDaF",
+        "heading_TWn7Cf",
+        "heading_xJY33L",
+        "content_kPiDiQ",
+        "content_XrJqFM",
+        "content_cQLdrN"
+      ],
+      "name": "t:sections.beauty-benefits.name",
+      "settings": {
+        "heading": "Achieve your skincare goals"
+      }
+    },
     "slider_featured_in_lVZt5L": {
       "type": "slider-featured-in",
       "blocks": {
@@ -170,6 +238,7 @@
         "text_with_progress_fzrXwz",
         "text_with_progress_3wQ6gt"
       ],
+      "disabled": true,
       "name": "t:sections.banner-with-text.name",
       "settings": {
         "heading": "Qure’s Micro-Infusion goes where your skin cream can’t…",
@@ -185,6 +254,7 @@
     },
     "stock_alert_egmbcj": {
       "type": "stock-alert",
+      "disabled": true,
       "name": "t:sections.stock-alert.name",
       "settings": {
         "text": "<p>Holiday Sale!</p>",
@@ -267,6 +337,7 @@
         "carousel_kkigbk",
         "carousel_qmwxLc"
       ],
+      "disabled": true,
       "name": "t:sections.banner-with-text.name",
       "settings": {
         "heading": "Introducing the Qure Micro-Infusion System",
@@ -279,74 +350,6 @@
         "button_label": "BUY NOW & SAVE UP TO 70%",
         "button_url": "#purchase-form-types",
         "wistia_url": ""
-      }
-    },
-    "beauty_benefits_Pzxmim": {
-      "type": "beauty-benefits",
-      "blocks": {
-        "heading_7ejDaF": {
-          "type": "heading",
-          "settings": {
-            "heading": "Minimize Fine Lines & Wrinkles"
-          }
-        },
-        "heading_TWn7Cf": {
-          "type": "heading",
-          "settings": {
-            "heading": "Improve Tone & Texture"
-          }
-        },
-        "heading_xJY33L": {
-          "type": "heading",
-          "settings": {
-            "heading": "Boost Skin’s Glow"
-          }
-        },
-        "content_kPiDiQ": {
-          "type": "content",
-          "settings": {
-            "heading": "Minimize Fine Lines and Wrinkles",
-            "text": "<p>Smooth, plump, and refresh your skin’s appearance from within. Qure’s Micro-Infusion helps improve the look of collagen-depleted skin, restores hydration, and supports the skin’s natural barrier — all in one step.</p>",
-            "list": "<p>Deeply hydrates to leave skin dewy and plump</p><p>Visibly softens fine lines for a smoother, more youthful look</p><p>Strengthens the skin barrier to support long-lasting firmness</p>",
-            "username": "Tami T.",
-            "image": "shopify://shop_images/tami.webp",
-            "country_image": "shopify://shop_images/america_f.webp"
-          }
-        },
-        "content_XrJqFM": {
-          "type": "content",
-          "settings": {
-            "heading": "Improve Tone & Texture",
-            "text": "<p>Gentle microneedling device boosts cell turnover and delivers brightening ingredients deep into the skin to visibly smooth, clarify, and even out tone.</p>",
-            "list": "<p>Refines rough texture by promoting skin renewal</p><p>Fades dark spots and post-acne marks for a more even tone</p><p>Helps minimize the look of pores for a smoother, clearer complexion</p>",
-            "username": "Monika J.",
-            "image": "shopify://shop_images/monika.webp",
-            "country_image": "shopify://shop_images/australia_f.webp"
-          }
-        },
-        "content_cQLdrN": {
-          "type": "content",
-          "settings": {
-            "heading": "Boost Glow and Radiance",
-            "text": "<p>Restore skin glow by infusing hydrating, brightening ingredients deep into the skin for a fresh, radiant finish that lasts.</p>",
-            "list": "<p>Brightens dull skin for a healthy, radiant complexion</p><p>Enhances serum absorption for more visible results</p><p>Leaves skin looking firmer, smoother, and refreshed</p>",
-            "username": "Ellie V.",
-            "image": "shopify://shop_images/ellie.webp",
-            "country_image": "shopify://shop_images/america_f.webp"
-          }
-        }
-      },
-      "block_order": [
-        "heading_7ejDaF",
-        "heading_TWn7Cf",
-        "heading_xJY33L",
-        "content_kPiDiQ",
-        "content_XrJqFM",
-        "content_cQLdrN"
-      ],
-      "name": "t:sections.beauty-benefits.name",
-      "settings": {
-        "heading": "Achieve your skincare goals"
       }
     },
     "carousel_vMOx3w": {
@@ -387,6 +390,7 @@
         "items_tLjNh8",
         "items_EWjYfE"
       ],
+      "disabled": true,
       "name": "t:common.carousel",
       "settings": {
         "background_color": "#f6f6f7",
@@ -447,6 +451,7 @@
         "slider_VhUhEV",
         "slider_CaQwEh"
       ],
+      "disabled": true,
       "name": "t:sections.video-review-slider.name",
       "settings": {
         "heading": "Confident skin starts here",
@@ -727,7 +732,7 @@
       "name": "t:sections.trusted-reviews.name",
       "settings": {
         "background_color": "",
-        "heading": "Results you’ll see with your own eyes",
+        "heading": "Real stories, real results",
         "text": "",
         "text_mobile": "",
         "button_label": "buy now SAVE UP TO 70%",
@@ -1439,11 +1444,11 @@
     "n_hero_section_xMcaXr",
     "trusted_recommended_MlYLp4",
     "banner_with_text_3uBXrT",
+    "beauty_benefits_Pzxmim",
     "slider_featured_in_lVZt5L",
     "banner_with_text_phJT4F",
     "stock_alert_egmbcj",
     "banner_with_text_xzUU6n",
-    "beauty_benefits_Pzxmim",
     "carousel_vMOx3w",
     "video_review_slider_Gxn23M",
     "led_benefits_cj3RFv",
