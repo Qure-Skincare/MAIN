@@ -798,6 +798,7 @@
         "compare_nx8fW9",
         "compare_XyCyNE"
       ],
+      "disabled": true,
       "name": "t:sections.compare.name",
       "settings": {
         "heading": "Typically a more hygienic option than re-usable at-home rollers when used as directed",
@@ -859,6 +860,7 @@
     },
     "stock_alert_rFRFiz": {
       "type": "stock-alert",
+      "disabled": true,
       "name": "t:sections.stock-alert.name",
       "settings": {
         "text": "<p>INCLUDED IN THE SYSTEM:</p>",
@@ -970,6 +972,7 @@
         "left_feedback_9KFACL",
         "right_feedback_3gJyJD"
       ],
+      "disabled": true,
       "name": "t:sections.serum-selection.name",
       "settings": {
         "use_and_symbol": false,
@@ -994,6 +997,7 @@
     },
     "money_back_guarantee_J98b9K": {
       "type": "money-back-guarantee",
+      "disabled": true,
       "name": "t:sections.money-back-guarantee.name",
       "settings": {
         "heading": "<h2><br/>Try it now with zero risk. </h2><h2>Our 90-day money-back guarantee</h2>",
@@ -1325,6 +1329,7 @@
         "right_text_X4DfHq",
         "right_text_39VN4z"
       ],
+      "disabled": true,
       "name": "t:sections.safety-guide.name",
       "settings": {
         "heading": "What you should know for the best results",
@@ -1451,7 +1456,6 @@
     "banner_with_text_xzUU6n",
     "carousel_vMOx3w",
     "video_review_slider_Gxn23M",
-    "led_benefits_cj3RFv",
     "video_slider_PLEPyO",
     "trusted_reviews_DUlFYg",
     "compare_UfAfRr",
@@ -1463,6 +1467,7 @@
     "money_back_guarantee_J98b9K",
     "purchase_form_PwCCh6",
     "safety_guide_8jabz8",
+    "led_benefits_cj3RFv",
     "faq_RiGOh9"
   ]
 }
