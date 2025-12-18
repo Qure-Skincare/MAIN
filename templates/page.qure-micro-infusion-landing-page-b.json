@@ -36,7 +36,7 @@
       "settings": {
         "use_own_file": true,
         "text": "<h1>Visibly reduce the appearance of wrinkles and dark spots - without injectables.</h1><p><strong>24K gold microneedles</strong> deliver <strong>targeted serums</strong> beyond your skin's barrier where traditional creams can't reach.</p>",
-        "image": "shopify://shop_images/micro-infusion-hero.webp",
+        "image": "shopify://shop_images/micro-infusion-hero_2_a0c1441a-9900-4b2d-9bd1-5ca829119b25.webp",
         "image_mobile": "shopify://shop_images/micro-infusion-hero-mob.webp",
         "button_url": "#purchase-form-types",
         "button_label": "Start your treatment",
@@ -64,7 +64,7 @@
         "numbered_list_n6pbga": {
           "type": "numbered_list",
           "settings": {
-            "text": "𝗦𝘁𝗮𝗺𝗽 <br>Patented 24k Gold Hollow Needles create micro-channels."
+            "text": "𝗦𝘁𝗮𝗺𝗽 <br> Patented 24k Gold Hollow Needles create micro-channels."
           }
         },
         "numbered_list_nGHdDi": {
@@ -456,60 +456,6 @@
       "settings": {
         "heading": "Confident skin starts here",
         "background_color": "#ffffff"
-      }
-    },
-    "led_benefits_cj3RFv": {
-      "type": "led-benefits",
-      "blocks": {
-        "slider_YTrqVV": {
-          "type": "slider",
-          "settings": {
-            "text": "<p>Saves time, money and hassle compared to in-clinic treatments</p>",
-            "image": "shopify://shop_images/Micro-Infusion_Icons_11.svg"
-          }
-        },
-        "slider_3HLnzt": {
-          "type": "slider",
-          "settings": {
-            "text": "<p>Quick & easy 5-minute DIY facial from the convenience of home</p>",
-            "image": "shopify://shop_images/Micro-Infusion_Icons_12.svg"
-          }
-        },
-        "slider_kHUw7M": {
-          "type": "slider",
-          "settings": {
-            "text": "<p>Virtually painless, little to no downtime</p>",
-            "image": "shopify://shop_images/Micro-Infusion_Icons_13.svg"
-          }
-        },
-        "slider_XHHhXh": {
-          "type": "slider",
-          "settings": {
-            "text": "<p>2-in-1 system refreshes the<br/> look of skin for a visible<br/> glow.</p>",
-            "image": "shopify://shop_images/Micro-Infusion_Icons_14.svg"
-          }
-        },
-        "slider_mqbMLE": {
-          "type": "slider",
-          "settings": {
-            "text": "<p>Perfect for transforming dull-looking skin before events</p>",
-            "image": "shopify://shop_images/Micro-Infusion_Icons_15.svg"
-          }
-        }
-      },
-      "block_order": [
-        "slider_YTrqVV",
-        "slider_3HLnzt",
-        "slider_kHUw7M",
-        "slider_XHHhXh",
-        "slider_mqbMLE"
-      ],
-      "name": "t:sections.led-benefits.name",
-      "settings": {
-        "background_color": "#f6f6f7",
-        "heading": "5 reasons why everyone is using the Qure Micro-Infusion System",
-        "button_label": "BUY NOW & SAVE UP TO 70%",
-        "button_url": "#purchase-form-types"
       }
     },
     "video_slider_PLEPyO": {
@@ -1336,6 +1282,60 @@
         "text": "<p>The Qure Micro-Infusion System is designed with your safety in mind.</p><p>Unlike popular at-home derma rollers, our stamper device features single-use sterile heads that help minimize the risk of infection or unnecessary skin damage caused by blunt and multi-use needles.</p><p>Below are a few rules you should follow while using your Qure Micro-Infusion System:</p>",
         "button_label": "See Detailed Treatment Guide",
         "button_url": "https://qureskincare.com/pages/microinfusion-safety-guide"
+      }
+    },
+    "led_benefits_cj3RFv": {
+      "type": "led-benefits",
+      "blocks": {
+        "slider_YTrqVV": {
+          "type": "slider",
+          "settings": {
+            "text": "<p>Saves time, money and hassle compared to in-clinic treatments</p>",
+            "image": "shopify://shop_images/Micro-Infusion_Icons_11.svg"
+          }
+        },
+        "slider_3HLnzt": {
+          "type": "slider",
+          "settings": {
+            "text": "<p>Quick & easy 5-minute DIY facial from the convenience of home</p>",
+            "image": "shopify://shop_images/Micro-Infusion_Icons_12.svg"
+          }
+        },
+        "slider_kHUw7M": {
+          "type": "slider",
+          "settings": {
+            "text": "<p>Virtually painless, little to no downtime</p>",
+            "image": "shopify://shop_images/Micro-Infusion_Icons_13.svg"
+          }
+        },
+        "slider_XHHhXh": {
+          "type": "slider",
+          "settings": {
+            "text": "<p>2-in-1 system refreshes the<br/> look of skin for a visible<br/> glow.</p>",
+            "image": "shopify://shop_images/Micro-Infusion_Icons_14.svg"
+          }
+        },
+        "slider_mqbMLE": {
+          "type": "slider",
+          "settings": {
+            "text": "<p>Perfect for transforming dull-looking skin before events</p>",
+            "image": "shopify://shop_images/Micro-Infusion_Icons_15.svg"
+          }
+        }
+      },
+      "block_order": [
+        "slider_YTrqVV",
+        "slider_3HLnzt",
+        "slider_kHUw7M",
+        "slider_XHHhXh",
+        "slider_mqbMLE"
+      ],
+      "name": "t:sections.led-benefits.name",
+      "settings": {
+        "background_color": "#f6f6f7",
+        "heading": "5 reasons why everyone is using the Qure Micro-Infusion System",
+        "button_label": "BUY NOW & SAVE UP TO 70%",
+        "button_url": "#purchase-form-types"
       }
     },
     "faq_RiGOh9": {
