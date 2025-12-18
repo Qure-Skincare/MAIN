@@ -45,6 +45,59 @@
         "wistia_url": "8ymvdqzx92"
       }
     },
+    "trusted_recommended_MlYLp4": {
+      "type": "trusted-recommended",
+      "name": "t:sections.trusted-recommended.name",
+      "settings": {
+        "background_color": "#ffffff",
+        "heading": "Trusted and Recommended by Experts",
+        "text": "<p>“The Qure Micro-Infusion System uses a <strong>stamping motion</strong> while simultaneously infusing serum through the needles. Rather than dragging needles across the skin, it creates controlled punctures, <strong>helping the serum absorb</strong> into the skin’s surface more effectively.”</p>",
+        "image_text": "",
+        "video_cover_image": "shopify://shop_images/shah-maxfield.webp",
+        "video_url": "https://www.youtube.com/watch?v=JPWycy8cwN8&t=491s",
+        "wistia_url": ""
+      }
+    },
+    "banner_with_text_3uBXrT": {
+      "type": "banner-with-text",
+      "blocks": {
+        "numbered_list_n6pbga": {
+          "type": "numbered_list",
+          "settings": {
+            "text": "𝗦𝘁𝗮𝗺𝗽 <br>Patented 24k Gold Hollow Needles create micro-channels."
+          }
+        },
+        "numbered_list_nGHdDi": {
+          "type": "numbered_list",
+          "settings": {
+            "text": "𝗜𝗻𝗳𝘂𝘀𝗲 <br> Clinically formulated serum flows directly into the dermis, not on top of it."
+          }
+        },
+        "numbered_list_fLx89W": {
+          "type": "numbered_list",
+          "settings": {
+            "text": "𝗥𝗲𝗻𝗲𝘄𝘀 <br>Triggers your body's natural healing response to boost collagen."
+          }
+        }
+      },
+      "block_order": [
+        "numbered_list_n6pbga",
+        "numbered_list_nGHdDi",
+        "numbered_list_fLx89W"
+      ],
+      "name": "t:sections.banner-with-text.name",
+      "settings": {
+        "heading": "Qure’s Micro-Infusion goeswhere your skin cream can’t…",
+        "text": "<p>Its tiny, almost painless, microneedles penetrate beyond the skin’s surface increasing serum absorption and delivering powerful active ingredients exactly where they’re needed!<br/><br/><strong>How Qure repairs your skin in 3 easy steps:</strong></p>",
+        "quote": "",
+        "quote-mobile": "",
+        "image_position": "left",
+        "sub_text": "Perfect for anyone wanting to add a fresh, dewy glowing look to their skin, especially before an event or occasion.",
+        "button_label": "",
+        "button_url": "",
+        "wistia_url": "a1pykz2tp0"
+      }
+    },
     "slider_featured_in_lVZt5L": {
       "type": "slider-featured-in",
       "blocks": {
@@ -75,6 +128,7 @@
         "slider_EkJHPF",
         "slider_Haj4cd"
       ],
+      "disabled": true,
       "name": "t:sections.slider-featured-in.name",
       "settings": {}
     },
@@ -399,40 +453,6 @@
         "background_color": "#ffffff"
       }
     },
-    "banner_with_text_3uBXrT": {
-      "type": "banner-with-text",
-      "blocks": {
-        "numbered_list_n6pbga": {
-          "type": "numbered_list",
-          "settings": {
-            "text": "First, it uses tiny 24K gold-plated, EO-sterilized needles (thinner than a hair) to gently press against your skin. This helps visibly smooth and refine the look of fine lines."
-          }
-        },
-        "numbered_list_nGHdDi": {
-          "type": "numbered_list",
-          "settings": {
-            "text": "Next, it delivers serum through the tiny surface channels created, helping your skin better absorb the ingredients."
-          }
-        }
-      },
-      "block_order": [
-        "numbered_list_n6pbga",
-        "numbered_list_nGHdDi"
-      ],
-      "name": "t:sections.banner-with-text.name",
-      "settings": {
-        "heading": "Dual action for twice the results",
-        "text": "<p>Qure’s Micro-Infusion System has a one-two punch, making it uniquely effective.</p>",
-        "quote": "",
-        "quote-mobile": "",
-        "image_position": "left",
-        "sub_text": "Perfect for anyone wanting to add a fresh, dewy glowing look to their skin, especially before an event or occasion.",
-        "image": "shopify://shop_images/dual-action.webp",
-        "button_label": "",
-        "button_url": "",
-        "wistia_url": ""
-      }
-    },
     "led_benefits_cj3RFv": {
       "type": "led-benefits",
       "blocks": {
@@ -485,19 +505,6 @@
         "heading": "5 reasons why everyone is using the Qure Micro-Infusion System",
         "button_label": "BUY NOW & SAVE UP TO 70%",
         "button_url": "#purchase-form-types"
-      }
-    },
-    "trusted_recommended_MlYLp4": {
-      "type": "trusted-recommended",
-      "name": "t:sections.trusted-recommended.name",
-      "settings": {
-        "background_color": "#ffffff",
-        "heading": "Trusted and Recommended by Experts",
-        "text": "<p>“This treatment is an at-home option for those who want to <strong>avoid the hassle or cost of going to the office”.</strong></p>",
-        "image_text": "",
-        "video_cover_image": "shopify://shop_images/shah-maxfield.webp",
-        "video_url": "https://www.youtube.com/watch?v=JPWycy8cwN8&t=491s",
-        "wistia_url": ""
       }
     },
     "video_slider_PLEPyO": {
@@ -1430,6 +1437,8 @@
   },
   "order": [
     "n_hero_section_xMcaXr",
+    "trusted_recommended_MlYLp4",
+    "banner_with_text_3uBXrT",
     "slider_featured_in_lVZt5L",
     "banner_with_text_phJT4F",
     "stock_alert_egmbcj",
@@ -1437,9 +1446,7 @@
     "beauty_benefits_Pzxmim",
     "carousel_vMOx3w",
     "video_review_slider_Gxn23M",
-    "banner_with_text_3uBXrT",
     "led_benefits_cj3RFv",
-    "trusted_recommended_MlYLp4",
     "video_slider_PLEPyO",
     "trusted_reviews_DUlFYg",
     "compare_UfAfRr",
