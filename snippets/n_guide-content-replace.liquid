@@ -1,0 +1,52 @@
+{% assign quote_content_is_shown = false %}
+
+{% capture quote_content %}
+    {% for block in section.blocks %}
+        {% if block.type == 'quote' %}
+            <div class="c-note{% if block.settings.style == 'blue' %} c-note--info{% elsif block.settings.style == 'red' %} c-note--warning{% endif %}">
+                {% if block.settings.text != blank %}
+                    {{ block.settings.text }}
+                {% endif %}
+            </div>
+        {% endif %}
+    {% endfor %}
+{% endcapture %}
+
+{% capture wistia_video_content %}
+    {% for block in section.blocks %}
+        {% if block.type == 'wistia_video' %}
+            {% if block.settings.wistia_url != blank %}
+                <picture
+                    data-label-text="Watch: How To Use"
+                    data-bs-toggle="modal"
+                    data-bs-target="#reusableWistiaModal"
+                    data-video-id="{{ block.settings.wistia_url }}"
+                >
+                {% if block.settings.image != blank %}
+                    <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                {% endif %}
+                </picture>
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+{% endcapture %}
+
+{% if section.settings.text contains '[quote_content]' %}
+    {% assign quote_content_is_shown = true %} 
+{% endif %}
+
+{% if section.settings.text contains '[wistia_video]' %}
+    {% assign wistia_video_is_shown = true %}
+{% endif %}
+
+{% if section.settings.text != blank %}
+    {% if quote_content_is_shown == true %}
+        {% if quote_content != blank %}
+            {{ section.settings.text | replace: '[quote_content]', quote_content }}
+        {% else %}
+            {{ section.settings.text | replace: '[quote_content]', '' }}
+        {% endif %}
+    {% else %}
+        {{ section.settings.text }}
+    {% endif %}
+{% endif %}

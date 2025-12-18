@@ -9,12 +9,334 @@
  */
 {
   "sections": {
-    "main": {
-      "type": "page-q-rejuvalight-pro-led-mask-guide",
-      "settings": {}
+    "n_across_image_banner_Jhry7T": {
+      "type": "n_across-image-banner",
+      "name": "t:sections.n_across-image-banner.name",
+      "settings": {
+        "use_own_file": true,
+        "modifier": "hero_reverse",
+        "heading": "<h1>Q-Rejuvalight Pro Creative Content Guide</h1>",
+        "text": "",
+        "button_label": "",
+        "button_url": ""
+      }
+    },
+    "n_intro_BkRq5o": {
+      "type": "n_intro",
+      "name": "t:sections.n_intro.name",
+      "settings": {
+        "use_own_file": true,
+        "text": "<p><strong>Discover how to make the most of the Qure Q-Rejuvalight Pro LED Mask with our creative content guide.</strong></p><p>This brief will help you understand the key benefits of the Q-Rejuvalight Pro Mask and create content that is engaging and educational. </p>"
+      }
+    },
+    "n_guide_menu_EbHdME": {
+      "type": "n_guide-menu",
+      "blocks": {
+        "menu_item_TmeeFF": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Product Information",
+            "must_read": false
+          }
+        },
+        "menu_item_BbehzW": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Usage Instructions",
+            "must_read": false
+          }
+        },
+        "menu_item_CTfQjN": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Treatment Modes",
+            "must_read": false
+          }
+        },
+        "menu_item_MUr69X": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Product Claims & User Study",
+            "must_read": false
+          }
+        },
+        "menu_item_T7A96r": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Content Requirements",
+            "must_read": true
+          }
+        },
+        "menu_item_nttpF9": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Creative Direction",
+            "must_read": false
+          }
+        },
+        "menu_item_3NXLnw": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Content Examples",
+            "must_read": false
+          }
+        }
+      },
+      "block_order": [
+        "menu_item_TmeeFF",
+        "menu_item_BbehzW",
+        "menu_item_CTfQjN",
+        "menu_item_MUr69X",
+        "menu_item_T7A96r",
+        "menu_item_nttpF9",
+        "menu_item_3NXLnw"
+      ],
+      "name": "t:sections.n_guide-menu.name",
+      "settings": {
+        "use_own_file": true
+      }
+    },
+    "n_guide_content_AiUfdM": {
+      "type": "n_guide-content",
+      "blocks": {
+        "link_cmFGat": {
+          "type": "link",
+          "settings": {
+            "link_text": "Learn more about Q-Rejuvalight Pro LED Mask",
+            "link_url": "#"
+          }
+        }
+      },
+      "block_order": [
+        "link_cmFGat"
+      ],
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": true,
+        "must_read": false,
+        "heading": "Product Information",
+        "text": "<h2>Product Information</h2><ul><li>Quick, 3-minute fully personalized LED mask</li><li>Clinically studied LED wavelengths shown to improve skin’s firmness and texture</li><li>5 light wavelengths including 415nm (Blue), 605nm (Amber), 630nm (Red), 660nm (Deep Red), 880nm (Infrared)</li><li>Choose from 3 treatment modes: Skin Rejuvenation, Skin Clearing, or custom treatment via the app</li><li>Wireless, hands-free operation</li><li>Pairs perfectly with your skincare routine to boost absorption and results</li></ul>",
+        "slides_per_view": ""
+      }
+    },
+    "n_guide_content_M936LY": {
+      "type": "n_guide-content",
+      "blocks": {
+        "wistia_video_hUTnC8": {
+          "type": "wistia_video",
+          "settings": {
+            "wistia_url": "j7op01weqs",
+            "image": "shopify://shop_images/quick-start-guide.webp"
+          }
+        }
+      },
+      "block_order": [
+        "wistia_video_hUTnC8"
+      ],
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "must_read": false,
+        "heading": "Usage Instructions",
+        "text": "<h2>Usage Instructions</h2><p>[wistia_video]</p><p>Box out, mask on! To get started with your first treatment, you’ll need the following:</p><ul><li>Q-Rejuvalight Pro LED Mask</li><li>Adjustable head strap (provided)</li><li>Eye protection goggles (provided)</li></ul>",
+        "slides_per_view": ""
+      }
+    },
+    "n_guide_content_bApGN4": {
+      "type": "n_guide-content",
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "must_read": false,
+        "heading": "Treatment Modes",
+        "text": "",
+        "slides_per_view": ""
+      }
+    },
+    "n_guide_content_8qFAbx": {
+      "type": "n_guide-content",
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "must_read": false,
+        "heading": "Product Claims & User Study",
+        "text": "<h2>Product Claims & User Study</h2><p>Skin Rejuvenation Treatment:</p><ul><li>Helps support natural collagen for smoother, plumper-looking skin</li><li>Visibly refines texture and improves the look of firmness and elasticity</li><li>Enhances radiance and promotes a more even-toned appearance</li><li>Helps reduce the appearance of redness</li></ul><p>Skin Clearing Treatment:</p><ul><li>Blue and red light wavelengths shown in studies to help reduce mild-to-moderate acne</li><li>Helps balance oil and improve the look of clearer skin</li><li>Visibly soothes and calms post-breakout skin</li></ul><p>Findings from independent LED light studies:</p><ul><li>Up to 87% of participants reported <strong>smoother-looking skin</strong> and reduced fine lines</li><li>97% noticed <strong>visibly improved skin tone</strong> and enhanced smoothness</li><li>83% reported <strong>fewer visible breakouts</strong> after consistent use</li></ul><p>Insights supported by independent published studies on red, blue, and near-infrared light wavelengths commonly used in cosmetic LED therapy.</p>",
+        "slides_per_view": ""
+      }
+    },
+    "n_guide_content_ntcFrF": {
+      "type": "n_guide-content",
+      "blocks": {
+        "quote_cpz4xi": {
+          "type": "quote",
+          "settings": {
+            "style": "blue",
+            "text": "<p>Remember to <strong>add a personal touch</strong> to the messaging, talk about how the mask fits into your routine or how your skin has changed.</p><p>Examples:</p><ul><li>“This mask changed my skin.”</li><li>“My breakouts have calmed down so much since using this.”</li><li>“My skin looks smoother and more even after just a few weeks.”</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "quote_cpz4xi"
+      ],
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "must_read": true,
+        "heading": "Content Requirements",
+        "text": "<h2>Content Requirements</h2><p>Messaging must include:</p><ul><li>Backed by clinical research and </li><li>proven to work!</li><li>Clinical results from home - minus the 'clinical' costs</li><li>Personalized treatments - world's first customizable LED mask </li><li>App operated</li><li>Personal experience</li></ul>",
+        "slides_per_view": ""
+      }
+    },
+    "n_guide_content_4UHKUd": {
+      "type": "n_guide-content",
+      "blocks": {
+        "image_slider_GGfbJt": {
+          "type": "image_slider",
+          "settings": {}
+        },
+        "image_slider_N3Ux3e": {
+          "type": "image_slider",
+          "settings": {}
+        },
+        "quote_JNmqxE": {
+          "type": "quote",
+          "settings": {
+            "style": "blue",
+            "text": "<p><strong>Tag and mention</strong> @qureskincare #QRejuvalightPro #LEDtherapy</p><p>Include your affiliate or other links provided by Qure in Instagram Stories and content captions. If the link can't be placed in bio, include it in linktr.ee or similar.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "image_slider_GGfbJt",
+        "image_slider_N3Ux3e",
+        "quote_JNmqxE"
+      ],
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "must_read": false,
+        "heading": "Creative Direction",
+        "text": "<h2>Creative Direction</h2><p>Recording Guidelines</p><ul><li>Use bright, natural lighting. No filters.</li><li>Please do not wear makeup (unless to show makeup removal).</li><li>Ensure the Qure Q-Rejuvalight Pro LED Mask is the main focus of the content.</li><li>Keep backgrounds clean and uncluttered.</li><li>In cover photos for video content always show yourself using the Qure Q-Rejuvalight Pro LED Mask (unless agreed otherwise).</li><li>Before and after imaging to showcase the results, if possible</li></ul>",
+        "slides_per_view": "2"
+      }
+    },
+    "n_guide_content_NNeHDE": {
+      "type": "n_guide-content",
+      "blocks": {
+        "wistia_slider_wKePmw": {
+          "type": "wistia_slider",
+          "settings": {
+            "wistia_url": "qnxqysx3sg"
+          }
+        },
+        "wistia_slider_JVAATz": {
+          "type": "wistia_slider",
+          "settings": {
+            "wistia_url": "gw1rne236n"
+          }
+        },
+        "wistia_slider_BWzbMz": {
+          "type": "wistia_slider",
+          "settings": {
+            "wistia_url": "vkd8so2clv"
+          }
+        },
+        "wistia_slider_eGMAwJ": {
+          "type": "wistia_slider",
+          "settings": {
+            "wistia_url": "3dk53o20xw"
+          }
+        },
+        "wistia_slider_QpqaWj": {
+          "type": "wistia_slider",
+          "settings": {
+            "wistia_url": "i688q7ywip"
+          }
+        },
+        "wistia_slider_UXyxXa": {
+          "type": "wistia_slider",
+          "settings": {
+            "wistia_url": "nmgtj7w4at"
+          }
+        },
+        "wistia_slider_QDXtah": {
+          "type": "wistia_slider",
+          "settings": {
+            "wistia_url": "5kh8ymubw0"
+          }
+        },
+        "wistia_slider_FYNRJk": {
+          "type": "wistia_slider",
+          "settings": {
+            "wistia_url": "wl5y3puch1"
+          }
+        },
+        "wistia_slider_iMyXya": {
+          "type": "wistia_slider",
+          "settings": {
+            "wistia_url": "v955rlnldn"
+          }
+        },
+        "wistia_slider_UVPgaR": {
+          "type": "wistia_slider",
+          "settings": {
+            "wistia_url": "5vgchvxn6l"
+          }
+        }
+      },
+      "block_order": [
+        "wistia_slider_wKePmw",
+        "wistia_slider_JVAATz",
+        "wistia_slider_BWzbMz",
+        "wistia_slider_eGMAwJ",
+        "wistia_slider_QpqaWj",
+        "wistia_slider_UXyxXa",
+        "wistia_slider_QDXtah",
+        "wistia_slider_FYNRJk",
+        "wistia_slider_iMyXya",
+        "wistia_slider_UVPgaR"
+      ],
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "must_read": false,
+        "heading": "Content Examples",
+        "text": "",
+        "slides_per_view": "3.1"
+      }
+    },
+    "n_trusted_recommended_kHfpo4": {
+      "type": "n_trusted-recommended",
+      "name": "t:sections.n_trusted-recommended.name",
+      "settings": {
+        "use_own_file": true,
+        "background_color": "grey",
+        "heading": "<h2>Trusted and Recommended by Experts</h2>",
+        "text": "<p>“Of all the LED masks we’ve tried, <em>this is the best on the market right now...</em> It didn't lose in any category...”</p>",
+        "video_image_cover": "shopify://shop_images/doctor_shah_desk.webp",
+        "video_url": "",
+        "badge_text": "Dermatologist Reviewed"
+      }
     }
   },
   "order": [
-    "main"
+    "n_across_image_banner_Jhry7T",
+    "n_intro_BkRq5o",
+    "n_guide_menu_EbHdME",
+    "n_guide_content_AiUfdM",
+    "n_guide_content_M936LY",
+    "n_guide_content_bApGN4",
+    "n_guide_content_8qFAbx",
+    "n_guide_content_ntcFrF",
+    "n_guide_content_4UHKUd",
+    "n_guide_content_NNeHDE",
+    "n_trusted_recommended_kHfpo4"
   ]
 }

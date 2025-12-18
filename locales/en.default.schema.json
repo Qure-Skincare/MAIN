@@ -139,6 +139,7 @@
         "heading-percent-scale": "Header percent scale",
         "bundle": "Bundle",
         "wistia-url": "Wistia URL",
+        "wistia-video": "Wistia video",
         "youtube-url": "YouTube URL",
         "numbered-list": "Numbered list",
         "information-box": "Information box",
@@ -185,7 +186,10 @@
         "image-slider": "Image slider",
         "marked-list": "Marked list",
         "approved-by": "Approved by",
-        "must-read": "Must read"
+        "must-read": "Must read",
+        "wistia-slider": "Wistia slider",
+        "blue": "Blue",
+        "red": "Red"
     },
     "blocks": {
         "block-card": {

@@ -29,15 +29,14 @@
                 class="accordion-collapse{% if section.settings.active %} show{% endif %}"
             >
                 <article>
-                    {% if section.settings.text != blank %}
-                        {{ section.settings.text }}
-                    {% endif %}
+
+                    {% include 'n_guide-content-replace', section: section %}
+                    
                 </article>
 
                 {% if section.settings.slides_per_view != blank %}
                     <div class="c-swiper" data-swiper='{ "slidesPerView": 1.1, "spaceBetween": 16, "loop": false, "pagination": { "el": ".c-swiper-pagination", "type": "custom" }, "navigation": { "prevEl": ".c-swiper-button-prev","nextEl": ".c-swiper-button-next"}, "breakpoints": {"768": { "slidesPerView": {{ section.settings.slides_per_view }}}}}'>
                         <div class="swiper-wrapper">
-
                             {% for block in section.blocks %}
                                 {% if block.type == 'image_slider' %}
                                     <div class="swiper-slide">
@@ -75,6 +74,26 @@
                                     </div>
                                 {% endif %}
                             {% endfor %}
+
+                            {% for block in section.blocks %}
+                                {% if block.type == 'wistia_slider' %}
+                                    <div class="swiper-slide">
+                                        {% if block.settings.wistia_url != blank %}
+                                            <div class="wistia-embed-video">
+                                                <div class="wistia_responsive_padding">
+                                                    <div class="wistia_responsive_wrapper">
+                                                        <div class="wistia_embed wistia_async_{{ block.settings.wistia_url }} popover=true seo=false videoFoam=true">
+                                                            <div class="wistia_swatch">
+                                                                <img src="https://fast.wistia.com/embed/medias/{{ block.settings.wistia_url }}/swatch" alt="Wistia video thumbnail" style="filter: blur(5px);" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        {% endif %}
+                                    </div>
+                                {% endif %}
+                            {% endfor %}
                         </div>
                         <div class="c-swiper-nav">
                             <button class="c-swiper-button-prev"></button>
@@ -84,15 +103,11 @@
                     </div>
                 {% endif %}
                 
-                {% for block in section.blocks %}
-                    {% if block.type == 'quote' %}
-                        <div class="c-note c-note--info">
-                            {% if block.settings.text != blank %}
-                                {{ block.settings.text }}
-                            {% endif %}
-                        </div>
+                {% if quote_content_is_shown == false %}
+                    {% if quote_content != blank %}
+                        {{ quote_content }}
                     {% endif %}
-                {% endfor %}
+                {% endif %}
 
                 {% for block in section.blocks %}
                     {% if block.type == 'link' %}
@@ -178,6 +193,22 @@
             "limit": 1,
             "settings": [
                 {
+                    "type": "select",
+                    "id": "style",
+                    "label": "t:common.style",
+                    "default": "blue",
+                    "options": [
+                        {
+                            "value": "blue",
+                            "label": "t:common.blue"
+                        },
+                        {
+                            "value": "red",
+                            "label": "t:common.red"
+                        }
+                    ]
+                },
+                {
                     "type": "richtext",
                     "id": "text",
                     "label": "t:common.text"
@@ -209,6 +240,34 @@
                     "type": "text",
                     "id": "video_url",
                     "label": "t:common.video-url"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                }
+            ]
+        },
+        {
+            "type": "wistia_slider",
+            "name": "t:common.wistia-slider",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "wistia_url",
+                    "label": "t:common.wistia-url"
+                }
+            ]
+        },
+        {
+            "type": "wistia_video",
+            "name": "t:common.wistia-video",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "wistia_url",
+                    "label": "t:common.wistia-url"
                 },
                 {
                     "type": "image_picker",
