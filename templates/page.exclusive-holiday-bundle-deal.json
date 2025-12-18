@@ -338,6 +338,7 @@
         },
         "product_eAgqK8": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "micro-infusion-limited-edition-bundle-1",
             "preselected": false,
