@@ -40,13 +40,23 @@
 {% endif %}
 
 {% if section.settings.text != blank %}
+    {% assign processed_text = section.settings.text %}
+    
     {% if quote_content_is_shown == true %}
         {% if quote_content != blank %}
-            {{ section.settings.text | replace: '[quote_content]', quote_content }}
+            {% assign processed_text = processed_text | replace: '<p>[quote_content]', quote_content %}
         {% else %}
-            {{ section.settings.text | replace: '[quote_content]', '' }}
+            {% assign processed_text = processed_text | replace: '<p>[quote_content]', '' %}
         {% endif %}
-    {% else %}
-        {{ section.settings.text }}
     {% endif %}
+    
+    {% if wistia_video_is_shown == true %}
+        {% if wistia_video_content != blank %}
+            {% assign processed_text = processed_text | replace: '<p>[wistia_video]', wistia_video_content %}
+        {% else %}
+            {% assign processed_text = processed_text | replace: '<p>[wistia_video]', '' %}
+        {% endif %}
+    {% endif %}
+    
+    {{ processed_text }}
 {% endif %}

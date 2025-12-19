@@ -189,7 +189,8 @@
         "must-read": "Must read",
         "wistia-slider": "Wistia slider",
         "blue": "Blue",
-        "red": "Red"
+        "red": "Red",
+        "step-by-step": "Step by step"
     },
     "blocks": {
         "block-card": {
@@ -268,8 +269,14 @@
         "n_guide-content": {
             "name": "Guide content"
         },
+        "n_guide-content-step": {
+            "name": "Guide content step by step"
+        },
         "n_hero-section": {
             "name": "Hero section"
+        },
+        "n_guide-content-image-block": {
+            "name": "Guide content with image block"
         },
         "collection": {
             "name": "Collection",

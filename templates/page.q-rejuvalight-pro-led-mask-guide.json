@@ -17,6 +17,8 @@
         "modifier": "hero_reverse",
         "heading": "<h1>Q-Rejuvalight Pro Creative Content Guide</h1>",
         "text": "",
+        "image": "shopify://shop_images/q-rejuvalight-pro-mask.webp",
+        "image_mobile": "shopify://shop_images/q-rejuvalight-pro-mask-mob.webp",
         "button_label": "",
         "button_url": ""
       }
@@ -120,40 +122,122 @@
         "slides_per_view": ""
       }
     },
-    "n_guide_content_M936LY": {
-      "type": "n_guide-content",
+    "n_guide_content_step_hPhbKk": {
+      "type": "n_guide-content-step",
       "blocks": {
-        "wistia_video_hUTnC8": {
+        "step_by_step_mz9P9K": {
+          "type": "step_by_step",
+          "settings": {
+            "image": "shopify://shop_images/q-rejuvalight-pro-step-1.webp",
+            "text": "<h6>Step 1</h6><p>Set up your mask by attaching the adjustable strap.</p><p>With the logos facing down, slide the strap into the first clip. Loop the strap through the adjustor and second clip. </p>"
+          }
+        },
+        "step_by_step_HKgizn": {
+          "type": "step_by_step",
+          "settings": {
+            "image": "shopify://shop_images/q-rejuvalight-pro-step-2.webp",
+            "text": "<h6>Step 2</h6><p>Secure the strap with the provided pin on the inner side of the mask.</p>"
+          }
+        },
+        "step_by_step_WD3NBh": {
+          "type": "step_by_step",
+          "settings": {
+            "image": "shopify://shop_images/q-rejuvalight-pro-step-3.webp",
+            "text": "<h6>Step 3</h6><p>Insert goggles from the inside of the mask. </p><p>Ensure that the smaller side of the goggles go in first.</p>"
+          }
+        },
+        "step_by_step_yKczif": {
+          "type": "step_by_step",
+          "settings": {
+            "image": "shopify://shop_images/q-rejuvalight-pro-step-4.webp",
+            "text": "<h6>Step 4</h6><p>Prepare your skin for your treatment by cleansing and dry thoroughly.</p><p>[note_green]<strong> Tip:</strong> Use our Dermal Mist to further cleanse and prepare your skin.[/note]</p>"
+          }
+        },
+        "step_by_step_Gyp368": {
+          "type": "step_by_step",
+          "settings": {
+            "image": "shopify://shop_images/q-rejuvalight-pro-step-5.webp",
+            "text": "<h6>Step 5</h6><p>Press and hold the power button ON for 2-3 seconds until the indicator light turns on.</p><p>Position the mask on your face. Adjust the straps to fit your face comfortably.</p>"
+          }
+        },
+        "step_by_step_8HjUHy": {
+          "type": "step_by_step",
+          "settings": {
+            "image": "shopify://shop_images/q-rejuvalight-pro-step-6.webp",
+            "text": "<h6>Step 6</h6><p>Choose your treatment either in the Qure app or directly on the mask.</p><p>Press the power button once for Skin Rejuvenation mode, or press it twice for Skin Clearing mode.</p>"
+          }
+        },
+        "wistia_video_Dm3Ncf": {
           "type": "wistia_video",
           "settings": {
             "wistia_url": "j7op01weqs",
             "image": "shopify://shop_images/quick-start-guide.webp"
           }
+        },
+        "quote_AjeJze": {
+          "type": "quote",
+          "settings": {
+            "style": "red",
+            "text": "<p><strong>Light sensitivity test:</strong> We recommend performing a light sensitivity test 24 hours before using this device for your first treatment. To perform this, apply the product to your inner forearm, ensuring the light shines directly onto the skin. Use it for a full 3-minute treatment. Wait for 24 hours. If you experience pain, discomfort, or redness lasting more than 2 hours, you might be light-sensitive. Please consult a doctor for advice before continuing use.</p>"
+          }
+        },
+        "link_thbJM7": {
+          "type": "link",
+          "settings": {
+            "link_text": "Link to online guide",
+            "link_url": "#"
+          }
         }
       },
       "block_order": [
-        "wistia_video_hUTnC8"
+        "step_by_step_mz9P9K",
+        "step_by_step_HKgizn",
+        "step_by_step_WD3NBh",
+        "step_by_step_yKczif",
+        "step_by_step_Gyp368",
+        "step_by_step_8HjUHy",
+        "wistia_video_Dm3Ncf",
+        "quote_AjeJze",
+        "link_thbJM7"
       ],
-      "name": "t:sections.n_guide-content.name",
+      "name": "t:sections.n_guide-content-step.name",
       "settings": {
         "use_own_file": true,
         "active": false,
         "must_read": false,
         "heading": "Usage Instructions",
-        "text": "<h2>Usage Instructions</h2><p>[wistia_video]</p><p>Box out, mask on! To get started with your first treatment, you’ll need the following:</p><ul><li>Q-Rejuvalight Pro LED Mask</li><li>Adjustable head strap (provided)</li><li>Eye protection goggles (provided)</li></ul>",
-        "slides_per_view": ""
+        "text": "<h2>Usage Instructions</h2><p>[wistia_video]</p><p>Box out, mask on! To get started with your first treatment, you’ll need the following:</p><ul><li>Q-Rejuvalight Pro LED Mask</li><li>Adjustable head strap (provided)</li><li>Eye protection goggles (provided)</li></ul>"
       }
     },
-    "n_guide_content_bApGN4": {
-      "type": "n_guide-content",
-      "name": "t:sections.n_guide-content.name",
+    "n_guide_content_image_block_Kzrtb6": {
+      "type": "n_guide-content-image-block",
+      "blocks": {
+        "image_with_text_zzJinG": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/pro-aging-mode.webp",
+            "text": "<p><strong>Skin Rejuvenating Mode</strong></p><p>On Skin Rejuvenating Mode, red and infrared wavelengths work together to help improve the appearance of skin texture and firmness.</p>"
+          }
+        },
+        "image_with_text_KNKqHk": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/anti-breakout.webp",
+            "text": "<p><strong>Skin Clearing Mode</strong></p><p>Our Skin Clearing Mode combines blue and red light wavelengths. Blue targets the bacteria associated with mild-to-moderate acne, while red helps calm and soothe the appearance of irritated skin.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_zzJinG",
+        "image_with_text_KNKqHk"
+      ],
+      "name": "t:sections.n_guide-content-image-block.name",
       "settings": {
         "use_own_file": true,
         "active": false,
         "must_read": false,
         "heading": "Treatment Modes",
-        "text": "",
-        "slides_per_view": ""
+        "text": "<h2>Treatment Modes</h2><p>The Q-Rejuvalight Pro Mask has two complete treatment settings: Skin Rejuvenating or Skin Clearing.</p><p>Press the power button once for Skin Rejuvenating mode, or press it twice for Skin Clearing mode.</p>"
       }
     },
     "n_guide_content_8qFAbx": {
@@ -188,7 +272,7 @@
         "active": false,
         "must_read": true,
         "heading": "Content Requirements",
-        "text": "<h2>Content Requirements</h2><p>Messaging must include:</p><ul><li>Backed by clinical research and </li><li>proven to work!</li><li>Clinical results from home - minus the 'clinical' costs</li><li>Personalized treatments - world's first customizable LED mask </li><li>App operated</li><li>Personal experience</li></ul>",
+        "text": "<h2>Content Requirements</h2><p>Messaging must include:</p><ul><li>Backed by clinical research and </li><li>proven to work!</li><li>Clinical results from home - minus the 'clinical' costs</li><li>Personalized treatments - world's first customizable LED mask </li><li>App operated</li><li>Personal experience</li></ul><p>[quote_content]",
         "slides_per_view": ""
       }
     },
@@ -197,11 +281,15 @@
       "blocks": {
         "image_slider_GGfbJt": {
           "type": "image_slider",
-          "settings": {}
+          "settings": {
+            "image": "shopify://shop_images/q-rejuvalight-pro-guide-1.webp"
+          }
         },
         "image_slider_N3Ux3e": {
           "type": "image_slider",
-          "settings": {}
+          "settings": {
+            "image": "shopify://shop_images/q-rejuvalight-pro-guide-2.webp"
+          }
         },
         "quote_JNmqxE": {
           "type": "quote",
@@ -331,8 +419,8 @@
     "n_intro_BkRq5o",
     "n_guide_menu_EbHdME",
     "n_guide_content_AiUfdM",
-    "n_guide_content_M936LY",
-    "n_guide_content_bApGN4",
+    "n_guide_content_step_hPhbKk",
+    "n_guide_content_image_block_Kzrtb6",
     "n_guide_content_8qFAbx",
     "n_guide_content_ntcFrF",
     "n_guide_content_4UHKUd",
