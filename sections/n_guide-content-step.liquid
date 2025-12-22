@@ -1,0 +1,233 @@
+{% doc %}
+  Renders guide content step by step section
+{% enddoc %}
+
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/guide-content/guide-content.css" />
+{% endif %}
+<section class="guide-content{% if section.settings.active %} active{% endif %}" id="{{ section.settings.heading | handleize }}-tab">
+    <div class="container">
+        <div class="accordion">
+            <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#{{ section.settings.heading | handleize }}-collapse"
+                {% if section.settings.active %}
+                    aria-expanded="true"
+                {% endif %}
+            >
+                {% if section.settings.heading != blank %}
+                    {{ section.settings.heading }}
+                    {% if section.settings.must_read %}
+                        <em>{{ 'sections.n_guide_content.must-read' | t }}</em>
+                    {% endif %}
+                {% endif %}
+            </button>
+            <div
+                id="{{ section.settings.heading | handleize }}-collapse" 
+                class="accordion-collapse{% if section.settings.active %} show{% endif %}"
+            >
+                <article>
+                    {% include 'n_guide-content-replace', section: section %}
+                </article>
+
+                <div class="c-step-by-step">
+                    <div class="c-step-by-step__title">Step-By-Step Guide</div>
+                    <div class="c-step-by-step__slider">
+                        <div
+                            class="c-swiper"
+                            data-swiper='{
+                                "slidesPerView": 1.1,
+                                "spaceBetween": 22,
+                                "loop": false,
+                                "enableOn": "mobile",
+                                "pagination": {
+                                    "el": ".c-swiper-pagination",
+                                    "type": "custom"
+                                },
+                                "navigation": {
+                                    "prevEl": ".c-swiper-button-prev",
+                                    "nextEl": ".c-swiper-button-next"
+                                }
+                            }'
+                        >
+                            <div class="swiper-wrapper">
+                                {% for block in section.blocks %}
+                                    {% if block.type == 'step_by_step' %}
+                                        <div class="swiper-slide">
+                                            <div class="c-step-by-step__item" data-index="{{ forloop.index }}">
+                                                {% if block.settings.image != blank %}
+                                                    <picture>
+                                                        <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                                    </picture>
+                                                {% endif %}
+                                                <article>
+                                                    {% if block.settings.text != blank %}
+                                                        {{ block.settings.text | replace: '<p>[note_green]', '<div class="c-note">' | replace: '[/note]</p>', '</div>' }}
+                                                    {% endif %}
+                                                </article>
+                                            </div>
+                                        </div>
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                            <div class="c-swiper-nav">
+                                <button class="c-swiper-button-prev"></button>
+                                <div class="c-swiper-pagination"></div>
+                                <button class="c-swiper-button-next"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                {% if quote_content_is_shown == false %}
+                    {% if quote_content != blank %}
+                        {{ quote_content }}
+                    {% endif %}
+                {% endif %}
+
+                {% for block in section.blocks %}
+                    {% if block.type == 'link' %}
+                        {% if block.settings.link_text != blank and block.settings.link_url != blank %}
+                            <div class="guide-link"><a href="{{ block.settings.link_url }}">{{ block.settings.link_text }}</a></div>
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        loadScriptOnce('guide-content', 'https://qureskincaredns.com/sections/new/guide-content/guide-content.js');
+        loadScriptOnce('base-slider', 'https://qureskincaredns.com/sections/new/base-slider/base-slider.js');
+        loadScriptOnce('wistia-popup', 'https://qureskincaredns.com/assets/js-new/wistia-popup.js');
+        loadScriptOnce('youtube-popup', 'https://qureskincaredns.com/assets/js-new/yt-popup.js');
+        loadScriptOnce('wistia-script', 'https://fast.wistia.com/assets/external/E-v1.js');
+    });
+</script>
+
+{% schema %}
+{
+    "name": "t:sections.n_guide-content-step.name",
+    "class": "shopify-section--guide-content",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": false
+        },
+        {
+            "type": "checkbox",
+            "id": "active",
+            "label": "t:common.active",
+            "default": false
+        },
+        {
+            "type": "checkbox",
+            "id": "must_read",
+            "label": "t:common.must-read",
+            "default": false
+        },
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "t:common.header"
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "t:common.text"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "step_by_step",
+            "name": "t:common.step-by-step",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                },
+                {
+                    "type": "richtext",
+                    "id": "text",
+                    "label": "t:common.text"
+                }
+            ]
+        },
+        {
+            "type": "link",
+            "name": "t:common.link",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "link_text",
+                    "label": "t:common.link-text"
+                },
+                {
+                    "type": "url",
+                    "id": "link_url",
+                    "label": "t:common.link-url"
+                }
+            ]
+        },
+        {
+            "type": "quote",
+            "name": "t:common.quote",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "select",
+                    "id": "style",
+                    "label": "t:common.style",
+                    "default": "blue",
+                    "options": [
+                        {
+                            "value": "blue",
+                            "label": "t:common.blue"
+                        },
+                        {
+                            "value": "red",
+                            "label": "t:common.red"
+                        }
+                    ]
+                },
+                {
+                    "type": "richtext",
+                    "id": "text",
+                    "label": "t:common.text"
+                }
+            ]
+        },
+        {
+            "type": "wistia_video",
+            "name": "t:common.wistia-video",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "wistia_url",
+                    "label": "t:common.wistia-url"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.n_guide-content-step.name"
+        }
+    ]
+}
+{% endschema %}

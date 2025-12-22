@@ -1,0 +1,131 @@
+{% doc %}
+  Renders guide content with image block section
+{% enddoc %}
+
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/guide-content/guide-content.css" />
+{% endif %}
+<section class="guide-content{% if section.settings.active %} active{% endif %}" id="{{ section.settings.heading | handleize }}-tab">
+    <div class="container">
+        <div class="accordion">
+            <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#{{ section.settings.heading | handleize }}-collapse"
+                {% if section.settings.active %}
+                    aria-expanded="true"
+                {% endif %}
+            >
+                {% if section.settings.heading != blank %}
+                    {{ section.settings.heading }}
+                    {% if section.settings.must_read %}
+                        <em>{{ 'sections.n_guide_content.must-read' | t }}</em>
+                    {% endif %}
+                {% endif %}
+            </button>
+            <div
+                id="{{ section.settings.heading | handleize }}-collapse" 
+                class="accordion-collapse{% if section.settings.active %} show{% endif %}"
+            >
+                <article>
+
+                    {% include 'n_guide-content-replace', section: section %}
+
+                </article>
+
+                {% for block in section.blocks %}
+                    {% if block.type == 'image_with_text' %}{% assign has_image_with_text = true %}{% endif %}
+                {% endfor %}
+                {% if has_image_with_text %}
+                    <ul class="treatment-modes-list">
+                        {% for block in section.blocks %}
+                            {% if block.type == 'image_with_text' %}
+                                <li>
+                                    {% if block.settings.text != blank %}
+                                        {{ block.settings.text }}
+                                    {% endif %}
+                                    {% if block.settings.image != blank %}
+                                        <picture></picture>
+                                            <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                        </picture>
+                                    {% endif %}
+                                </li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        loadScriptOnce('guide-content', 'https://qureskincaredns.com/sections/new/guide-content/guide-content.js');
+        loadScriptOnce('base-slider', 'https://qureskincaredns.com/sections/new/base-slider/base-slider.js');
+        loadScriptOnce('wistia-popup', 'https://qureskincaredns.com/assets/js-new/wistia-popup.js');
+        loadScriptOnce('youtube-popup', 'https://qureskincaredns.com/assets/js-new/yt-popup.js');
+        loadScriptOnce('wistia-script', 'https://fast.wistia.com/assets/external/E-v1.js');
+    });
+</script>
+
+{% schema %}
+{
+    "name": "t:sections.n_guide-content-image-block.name",
+    "class": "shopify-section--guide-content",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": false
+        },
+        {
+            "type": "checkbox",
+            "id": "active",
+            "label": "t:common.active",
+            "default": false
+        },
+        {
+            "type": "checkbox",
+            "id": "must_read",
+            "label": "t:common.must-read",
+            "default": false
+        },
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "t:common.header"
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "t:common.text"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "image_with_text",
+            "name": "t:common.image-with-text",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                },
+                {
+                    "type": "richtext",
+                    "id": "text",
+                    "label": "t:common.text"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.n_guide-content-image-block.name"
+        }
+    ]
+}
+{% endschema %}
