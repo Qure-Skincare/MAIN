@@ -36,67 +36,33 @@
       "settings": {
         "use_own_file": true,
         "text": "<h1>Visibly reduce the appearance of wrinkles and dark spots - without injectables.</h1><p><strong>24K gold microneedles</strong> deliver <strong>targeted serums</strong> beyond your skin's barrier where traditional creams can't reach.</p>",
-        "image": "shopify://shop_images/micro-infusion-hero_2_d36a18db-6067-459d-ac17-60c0ef0b8edb.webp",
+        "image": "shopify://shop_images/micro-infusion-hero_99996f0e-41c4-4dc6-b59b-cd24d8aa9877.webp",
         "image_mobile": "shopify://shop_images/micro-infusion-hero-mob.webp",
         "button_url": "#purchase-form-types",
-        "button_label": "Start your treatment",
-        "sub_text": "<p><strong>Limited Time Offer:</strong> Save Up to 70%</p>",
+        "button_label": "Start your transformation",
+        "sub_text": "<p><strong>Limited Time Offer:</strong> Save Up to 43%</p>",
         "marked_list": "",
         "wistia_url": "8ymvdqzx92"
       }
     },
-    "trusted_recommended_MlYLp4": {
-      "type": "trusted-recommended",
-      "name": "t:sections.trusted-recommended.name",
+    "n_trusted_recommended_bbDrEA": {
+      "type": "n_trusted-recommended",
+      "name": "t:sections.n_trusted-recommended.name",
       "settings": {
-        "background_color": "#ffffff",
-        "heading": "Trusted and Recommended by Experts",
-        "text": "<p>“The Qure Micro-Infusion System uses a <strong>stamping motion</strong> while simultaneously infusing serum through the needles. Rather than dragging needles across the skin, it creates controlled punctures, <strong>helping the serum absorb</strong> into the skin’s surface more effectively.”</p>",
-        "image_text": "",
-        "video_cover_image": "shopify://shop_images/shah-maxfield.webp",
-        "video_url": "https://www.youtube.com/watch?v=JPWycy8cwN8&t=491s",
-        "wistia_url": ""
+        "use_own_file": true,
+        "background_color": "none",
+        "modifier": "reverse",
+        "heading": "<h2>Trusted and Recommended by Experts</h2>",
+        "text": "<p>“The Qure Micro-Infusion System uses <em>a stamping motion</em> while simultaneously infusing serum through the needles. Rather than dragging needles across the skin, it creates controlled punctures, <em>helping the serum absorb</em> into the skin's surface more effectively.”</p>",
+        "video_image_cover": "shopify://shop_images/shah-maxfield_d61dd8ca-51b3-4cf6-91e8-5c8ec121d96b.webp",
+        "video_url": "https://www.youtube.com/watch?v=mVdncsTAXiA",
+        "badge_text": "Dermatologist Reviewed"
       }
     },
     "banner_with_text_3uBXrT": {
-      "type": "banner-with-text",
-      "blocks": {
-        "numbered_list_n6pbga": {
-          "type": "numbered_list",
-          "settings": {
-            "text": "𝗦𝘁𝗮𝗺𝗽 <br> Patented 24k Gold Hollow Needles create micro-channels."
-          }
-        },
-        "numbered_list_nGHdDi": {
-          "type": "numbered_list",
-          "settings": {
-            "text": "𝗜𝗻𝗳𝘂𝘀𝗲 <br> Clinically formulated serum flows directly into the dermis, not on top of it."
-          }
-        },
-        "numbered_list_fLx89W": {
-          "type": "numbered_list",
-          "settings": {
-            "text": "𝗥𝗲𝗻𝗲𝘄𝘀 <br>Triggers your body's natural healing response to boost collagen."
-          }
-        }
-      },
-      "block_order": [
-        "numbered_list_n6pbga",
-        "numbered_list_nGHdDi",
-        "numbered_list_fLx89W"
-      ],
+      "type": "page-mi-lp-test-banner-w-text",
       "name": "t:sections.banner-with-text.name",
-      "settings": {
-        "heading": "Qure’s Micro-Infusion goeswhere your skin cream can’t…",
-        "text": "<p>Its tiny, almost painless, microneedles penetrate beyond the skin’s surface increasing serum absorption and delivering powerful active ingredients exactly where they’re needed!<br/><br/><strong>How Qure repairs your skin in 3 easy steps:</strong></p>",
-        "quote": "",
-        "quote-mobile": "",
-        "image_position": "left",
-        "sub_text": "",
-        "button_label": "",
-        "button_url": "",
-        "wistia_url": "a1pykz2tp0"
-      }
+      "settings": {}
     },
     "beauty_benefits_Pzxmim": {
       "type": "beauty-benefits",
@@ -347,7 +313,7 @@
         "image_position": "right",
         "sub_text": "",
         "image": "shopify://shop_images/qure-micro-infusion.webp",
-        "button_label": "BUY NOW & SAVE UP TO 70%",
+        "button_label": "BUY NOW & SAVE UP TO 43%",
         "button_url": "#purchase-form-types",
         "wistia_url": ""
       }
@@ -504,13 +470,37 @@
             "checkbox": false,
             "image": "shopify://shop_images/trusted_img_9.webp"
           }
+        },
+        "slider_7TUNBU": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>\"One of the best ways to treat hyperpigmentation at home.\"</p>",
+            "text": "<p>Dr. Wallace Nozile/p>",
+            "sub_text": "<p>Board-Certified Dermatologist</p>",
+            "url": "ypvcdsgwkx",
+            "checkbox": false,
+            "image": "shopify://shop_images/trusted_img_8.webp"
+          }
+        },
+        "slider_tGGWhz": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>\"With Micro-Infusion, you get to see the results almost instantly.\"</p>",
+            "text": "<p>Dr. Davin Lim</p>",
+            "sub_text": "<p>Board Certified Dermatologist</p>",
+            "url": "3bud7no0j9",
+            "checkbox": false,
+            "image": "shopify://shop_images/trusted_img_7.webp"
+          }
         }
       },
       "block_order": [
         "slider_wDMYtK",
         "slider_UgyjwC",
         "slider_fy9Whb",
-        "slider_eMVGVa"
+        "slider_eMVGVa",
+        "slider_7TUNBU",
+        "slider_tGGWhz"
       ],
       "name": "t:sections.video-slider.name",
       "settings": {}
@@ -678,10 +668,10 @@
       "name": "t:sections.trusted-reviews.name",
       "settings": {
         "background_color": "",
-        "heading": "Real stories, real results",
+        "heading": "Results you'll see with your own eyes",
         "text": "",
         "text_mobile": "",
-        "button_label": "buy now SAVE UP TO 70%",
+        "button_label": "buy now SAVE UP TO 43%",
         "button_url": "#purchase-form-types"
       }
     },
@@ -753,11 +743,6 @@
         "image_compare_cross": "shopify://shop_images/mist_img_4.webp"
       }
     },
-    "device_comparison_1_YFRWQi": {
-      "type": "device-comparison-1",
-      "name": "t:sections.device-comparison-1.name",
-      "settings": {}
-    },
     "how_to_use_AyUHT4": {
       "type": "how-to-use",
       "blocks": {
@@ -800,9 +785,14 @@
         "text": "",
         "heading_mobile": "",
         "wistia_url": "68e0msztnb",
-        "button_label": "buy now & SAVE UP TO 70%",
+        "button_label": "buy now & SAVE UP TO 43%",
         "button_url": "#purchase-form-types"
       }
+    },
+    "device_comparison_4_YFRWQi": {
+      "type": "device-comparison-4",
+      "name": "t:sections.device-comparison-4.name",
+      "settings": {}
     },
     "stock_alert_rFRFiz": {
       "type": "stock-alert",
@@ -937,7 +927,7 @@
         "heading": "Holiday Sale",
         "text": "1,293 purchased in last 48 hours",
         "limited": false,
-        "button-label": "BUY NOW & SAVE UP TO 70%",
+        "button-label": "BUY NOW & SAVE UP TO 43%",
         "button-url": "#purchase-form-types"
       }
     },
@@ -1334,7 +1324,7 @@
       "settings": {
         "background_color": "#f6f6f7",
         "heading": "5 reasons why everyone is using the Qure Micro-Infusion System",
-        "button_label": "BUY NOW & SAVE UP TO 70%",
+        "button_label": "BUY NOW & SAVE UP TO 43%",
         "button_url": "#purchase-form-types"
       }
     },
@@ -1447,7 +1437,7 @@
   },
   "order": [
     "n_hero_section_xMcaXr",
-    "trusted_recommended_MlYLp4",
+    "n_trusted_recommended_bbDrEA",
     "banner_with_text_3uBXrT",
     "beauty_benefits_Pzxmim",
     "slider_featured_in_lVZt5L",
@@ -1459,8 +1449,8 @@
     "video_slider_PLEPyO",
     "trusted_reviews_DUlFYg",
     "compare_UfAfRr",
-    "device_comparison_1_YFRWQi",
     "how_to_use_AyUHT4",
+    "device_comparison_4_YFRWQi",
     "stock_alert_rFRFiz",
     "serum_selection_6ehGih",
     "sticky_cta_d9dC8X",
