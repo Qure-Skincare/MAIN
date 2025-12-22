@@ -3,10 +3,10 @@
 {% enddoc %}
 
 <!-- BASE SECTION -->
- {% if section.settings.use_own_file %}
+{% if section.settings.use_own_file %}
     <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/base-section/base-section.css" />
- {% endif %}
-<section class="base-section base-section--small-media{% if section.settings.background_color == 'grey' %} base-section--grey{% endif %}">
+{% endif %}
+<section class="base-section base-section--small-media{% if section.settings.modifier == 'reverse' %} base-section--reverse{% endif %}{% if section.settings.background_color == 'grey' %} base-section--grey{% endif %}">
     <div class="container">
         <article>
             {% if section.settings.heading != blank %}
@@ -36,8 +36,8 @@
         loadScriptOnce('youtube-popup', 'https://qureskincaredns.com/assets/js-new/yt-popup.js');
     });
 </script>
-<!-- BASE SECTION END -->
 
+<!-- BASE SECTION END -->
 
 {% schema %}
 {
@@ -62,6 +62,22 @@
                     {
                         "value": "grey",
                         "label": "t:sections.n_trusted-recommended.settings.background-color-options.grey"
+                    }
+                ]
+            },
+            {
+                "type": "select",
+                "id": "modifier",
+                "label": "t:common.modifier",
+                "default": "none",
+                "options": [
+                    {
+                        "value": "none",
+                        "label": "t:sections.n_trusted-recommended.settings.modifier-options.none"
+                    },
+                    {
+                        "value": "reverse",
+                        "label": "t:sections.n_trusted-recommended.settings.modifier-options.reverse"
                     }
                 ]
             },
