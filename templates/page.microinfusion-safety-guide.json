@@ -9,67 +9,22 @@
  */
 {
   "sections": {
-    "page_banner_richtext_BFeADz": {
-      "type": "page-banner-richtext",
-      "name": "t:sections.page-banner-richtext.name",
+    "n_across_image_banner_Jhry7T": {
+      "type": "n_across-image-banner",
+      "name": "t:sections.n_across-image-banner.name",
       "settings": {
-        "heading": "Get started with Micro-Infusion",
-        "sub_heading": "IMPORTANT NOTICE:",
-        "text": "Please read this guideline carefully before proceeding with Micro-Infusion treatment.",
-        "image": "shopify://shop_images/mi_banner.webp",
-        "image_mobile": "shopify://shop_images/mi_banner-mob.webp"
+        "use_own_file": true,
+        "modifier": "hero_reverse",
+        "heading": "<h1>Q-Rejuvalight Pro Creative Content Guide</h1>",
+        "text": "",
+        "image": "shopify://shop_images/q-rejuvalight-pro-mask.webp",
+        "image_mobile": "shopify://shop_images/q-rejuvalight-pro-mask-mob.webp",
+        "button_label": "",
+        "button_url": ""
       }
-    },
-    "content_brief_MUBNxd": {
-      "type": "content-brief",
-      "name": "t:sections.content-brief.name",
-      "settings": {
-        "text": "<p><strong>Your new Qure Micro-Infusion device</strong> delivers targeted ingredients deep below the surface, helping reduce the look of fine lines, brighten tone, and boost your natural glow.</p><p>This guide will walk you through every step so you can get glowing results safely and confidently.</p>"
-      }
-    },
-    "main": {
-      "type": "page-microinfusion-safety-guide",
-      "settings": {}
-    },
-    "page-microinfusion-safety-guide-quick-guide-start": {
-      "type": "page-microinfusion-safety-guide-quick-guide-start",
-      "settings": {}
-    },
-    "page-microinfusion-safety-guide-learn-about-device": {
-      "type": "page-microinfusion-safety-guide-learn-about-device",
-      "settings": {}
-    },
-    "page-microinfusion-safety-guide-serum-ingredients": {
-      "type": "page-microinfusion-safety-guide-serum-ingredients",
-      "settings": {}
-    },
-    "page-microinfusion-safety-guide-where-to-use": {
-      "type": "page-microinfusion-safety-guide-where-to-use",
-      "settings": {}
-    },
-    "page-microinfusion-safety-guide-post-treatment": {
-      "type": "page-microinfusion-safety-guide-post-treatment",
-      "settings": {}
-    },
-    "page-microinfusion-safety-guide-safety": {
-      "type": "page-microinfusion-safety-guide-safety",
-      "settings": {}
-    },
-    "page-microinfusion-safety-guide-faqs": {
-      "type": "page-microinfusion-safety-guide-faqs",
-      "settings": {}
     }
+    
   },
   "order": [
-    "page_banner_richtext_BFeADz",
-    "content_brief_MUBNxd",
-    "main",
-    "page-microinfusion-safety-guide-quick-guide-start",
-    "page-microinfusion-safety-guide-learn-about-device",
-    "page-microinfusion-safety-guide-serum-ingredients",
-    "page-microinfusion-safety-guide-where-to-use",
-    "page-microinfusion-safety-guide-post-treatment",
-    "page-microinfusion-safety-guide-safety",
-    "page-microinfusion-safety-guide-faqs"
-  ]
+    "n_across_image_banner_Jhry7T"  ]
 }
