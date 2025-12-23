@@ -49,6 +49,7 @@
         "preselect": "Preselect",
         "type": "Type",
         "product-type": "Product type",
+        "product-type-accordion": "Product type accordion",
         "section": "Section",
         "section_id": "Section id",
         "seo_heading": "Seo header",

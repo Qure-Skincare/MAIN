@@ -8,11 +8,15 @@
 
     {% capture preorder-box-items %}{% endcapture %}
     {% capture product-included-dropdown %}{% endcapture %}
+    {% assign array_count = 1 %}
 
     {%- for __id in array -%}
         {% assign block = section.blocks | where: "id", __id | first %}
         {% if block.type == 'product_type' %}
             {% assign product_type_title = block.settings.heading | strip_newlines | strip | replace: ' ', '' | replace: ',', '_' | downcase %}
+        {% endif %}
+        {% if block.type == 'product' %}
+            {% assign array_count = array_count | plus: 1 %}
         {% endif %}
     {%- endfor -%}
 
@@ -20,15 +24,13 @@
         <div class="step_content" id="{{ section.id }}-{{ product_type_title }}">
             <div class="qure-bundle-container step_conten_blocks" style="--col-gap: 10px;--col-gap-mb:10px">
                 <div class="align-items-end bundle-supply col-gap d-flex flex-column" id="myTab" role="tablist">
-
-                    {% assign array_count = array.size %}
-
                     {%- for __id in array -%}
                         {% assign block = section.blocks | where: "id", __id | first %}
                         {% if block.type == 'product' %}
                             {% include 'get-product-data', product_handle: block.settings.product, product_prefix: 'purchase-form-products-type_list-item-' %}
 
                             {% if product_id %}
+                                {% assign product_type = product_type | plus: 1 %}
                                 {% assign product_title_tag = block.settings.heading | strip_html | strip_newlines | strip | replace: ' ', '' | replace: ',', '_' | downcase %}
 
                                 {% if block.settings.total_treatments > 0 %}
@@ -37,7 +39,7 @@
 
                                 {% assign array_count = array_count |  minus: 1 %}
                                 {% assign product_type = array_count %}
-                                
+
                                 {% capture product-included-dropdown %}
                                     {{ product-included-dropdown }}
                                     <div class="tab-pane collapsed-panel fade" id="{{ block.id }}-tabitem" role="tabpanel" aria-labelledby="{{ block.id }}-tab" tabindex="0">
