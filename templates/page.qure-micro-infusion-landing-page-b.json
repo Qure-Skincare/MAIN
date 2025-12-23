@@ -953,7 +953,7 @@
       }
     },
     "purchase_form_PwCCh6": {
-      "type": "endrock_purchase-form",
+      "type": "purchase-form",
       "blocks": {
         "nextships_5rd2bS": {
           "type": "nextships",
@@ -986,6 +986,20 @@
             "heading": "Dark Spots",
             "image": "shopify://shop_images/Dark_Spots_4.png",
             "preselected": true
+          }
+        },
+        "product_type_accordion_SQKQhNr": {
+          "type": "product_type_accordion",
+          "settings": {
+            "heading": "What can it do for your skin",
+            "text": "<p>Helps reveal a smoother-looking, more radiant complexion. Formulated to help improve the appearance of dark spots and uneven tone for skin that looks refreshed and luminous.</p><p><strong>Skin Concerns:</strong> Ideal for skin that appears uneven in tone or texture and shows visible dark spots or post-blemish marks.</p>"
+          }
+        },
+        "product_type_accordion_DQKQhNr": {
+          "type": "product_type_accordion",
+          "settings": {
+            "heading": "All Ingredients",
+            "text": "<p><strong>Epidermal Growth Factor (EGF):</strong> A science-backed ingredient known to support the look of smoother, hydrated, and more refreshed skin. Helps visibly reduce the look of fine lines and uneven tone.</p><p><strong>Niacinamide:</strong> A multi-benefit vitamin known to help improve the look of uneven tone, minimize visible pores, and support smoother-looking skin.</p><p><strong>Tranexamic Acid:</strong> A brightening ingredient that helps visibly improve the look of dark spots, uneven tone, and dullness.</p><p><strong>Full ingredients:</strong><br /> Rosa Damascena Flower Water, Propanediol, Glycerin, Tranexamic Acid, Niacinamide, Panthenol, Chrysanthellum Indicum Extract, Ethylhexylglycerin, Tripeptide-1, Xanthan Gum, Allantoin, Sh-Oligopeptide-1.</p><p><em>Please note that due to innovative updates and changing regulatory guidelines, the ingredient lists provided here may differ slightly from those on our packaging and distributor websites.</em></p>"
           }
         },
         "product_DBd4ef": {
@@ -1057,6 +1071,20 @@
             "preselected": false
           }
         },
+        "product_type_accordion_SVLXcAn": {
+          "type": "product_type_accordion",
+          "settings": {
+            "heading": "What can it do for your skin",
+            "text": "<p>Delivers lasting hydration to leave skin looking plumper, smoother, and refreshed. Helps reduce the look of fine lines and wrinkles while supporting visibly calm, balanced, and supple-feeling skin.</p><p><strong>Skin Concerns:</strong> Ideal for skin that appears dry, dull, or shows visible signs of aging such as fine lines, uneven tone, and temporary redness.</p>"
+          }
+        },
+        "product_type_accordion_DVLXcAn": {
+          "type": "product_type_accordion",
+          "settings": {
+            "heading": "All Ingredients",
+            "text": "<p><strong>Beta Glucan:</strong> A deeply hydrating ingredient that helps the skin feel soothed, soft, and supple. Supports the look of a healthy skin barrier.</p><p><strong>GHK-Cu (Copper Peptide):</strong> A peptide complex known to help improve the appearance of firmness and smoothness for youthful-looking skin. Gives the serum its signature blue hue.</p><p><strong>Sodium Hyaluronate:</strong> A powerful hydrator that helps the skin feel supple, moisturized, and visibly smoother.</p><p><strong>Full ingredients:</strong> Rosa Damascena Flower Water, Propanediol, Glycerin, Panthenol, Niacinamide, Myrothamnus Flabellifolia Leaf/Stem Extract, Water, Butylene Glycol, Hydroxyacetophenone, Copper Tripeptide-1, Beta-Glucan, Chrysanthellum Indicum Extract, Ethylhexylglycerin, Sodium Hyaluronate, Allantoin, Xanthan Gum.</p><p><em>Please note that due to innovative updates and changing regulatory guidelines, the ingredient lists provided here may differ slightly from those on our packaging and distributor websites.</em></p>"
+          }
+        },
         "product_nyJ9n7": {
           "type": "product",
           "settings": {
@@ -1126,6 +1154,20 @@
             "preselected": false
           }
         },
+        "product_type_accordion_SYrPQrV": {
+          "type": "product_type_accordion",
+          "settings": {
+            "heading": "What can it do for your skin",
+            "text": "<p>Designed to support smoother, brighter-looking skin with balanced hydration. </p><p>Helps soften the look of fine lines while improving the appearance of dark spots and uneven tone, leaving skin looking refreshed, plumper, and more luminous.</p>"
+          }
+        },
+        "product_type_accordion_DYrPQrV": {
+          "type": "product_type_accordion",
+          "settings": {
+            "heading": "All Ingredients",
+            "text": "<p><strong>Dark Spots Serum:</strong><br /> Rosa Damascena Flower Water, Propanediol, Glycerin, Tranexamic Acid, Niacinamide, Panthenol, Chrysanthellum Indicum Extract, Ethylhexylglycerin, Tripeptide-1, Xanthan Gum, Allantoin, Sh-Oligopeptide-1.</p><p><strong>Wrinkles Serum:</strong><br /> Rosa Damascena Flower Water, Propanediol, Glycerin, Panthenol, Niacinamide, Myrothamnus Flabellifolia Leaf/Stem Extract, Water, Butylene Glycol, Hydroxyacetophenone, Copper Tripeptide-1, Beta-Glucan, Chrysanthellum Indicum Extract, Ethylhexylglycerin, Sodium Hyaluronate, Allantoin, Xanthan Gum.</p><p><em>Please note that due to innovative updates and changing regulatory guidelines, the ingredient lists provided here may differ slightly from those on our packaging and distributor websites.</em></p>"
+          }
+        },
         "product_gbPf3J": {
           "type": "product",
           "settings": {
@@ -1190,16 +1232,22 @@
         "payment_type_B6Pzbh",
         "type_hHPdgJ",
         "product_type_QKQhNr",
+        "product_type_accordion_SQKQhNr",
+        "product_type_accordion_DQKQhNr",
         "product_DBd4ef",
         "product_7dL4ci",
         "product_Xf8A6C",
         "type_aJwQ9q",
         "product_type_VLXcAn",
+        "product_type_accordion_SVLXcAn",
+        "product_type_accordion_DVLXcAn",
         "product_nyJ9n7",
         "product_EKAAzA",
         "product_eiY89h",
         "type_yDwWmt",
         "product_type_YrPQrV",
+        "product_type_accordion_SYrPQrV",
+        "product_type_accordion_DYrPQrV",
         "product_gbPf3J",
         "product_NEgEkN",
         "product_RBCPe8"
