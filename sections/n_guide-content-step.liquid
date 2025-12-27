@@ -56,7 +56,7 @@
                                 {% for block in section.blocks %}
                                     {% if block.type == 'step_by_step' %}
                                         <div class="swiper-slide">
-                                            <div class="c-step-by-step__item" data-index="{{ forloop.index }}">
+                                            <div class="c-step-by-step__item"{% if block.settngs.image !=blank %} data-index="{{ forloop.index }}{% endif %}">
                                                 {% if block.settings.image != blank %}
                                                     <picture>
                                                         <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
@@ -216,6 +216,18 @@
                     "id": "wistia_url",
                     "label": "t:common.wistia-url"
                 },
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                }
+            ]
+        },
+        {
+            "type": "image",
+            "name": "t:common.image",
+            "limit": 1,
+            "settings": [
                 {
                     "type": "image_picker",
                     "id": "image",

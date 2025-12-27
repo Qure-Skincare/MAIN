@@ -9,32 +9,264 @@
  */
 {
   "sections": {
-    "page_banner_richtext_n2esDz": {
-      "type": "page-banner-richtext",
-      "name": "t:sections.page-banner-richtext.name",
+    "n_across_image_banner_uJpq01": {
+      "type": "n_across-image-banner",
+      "name": "t:sections.n_across-image-banner.name",
       "settings": {
-        "heading": "Get started with the Neck & Décolletage LED Device",
-        "sub_heading": "IMPORTANT NOTICE:",
-        "text": "Please read the complete instruction manual carefully before using the device.",
+        "use_own_file": true,
+        "modifier": "hero_reverse",
+        "heading": "<h1>Get started with the Neck & Décolletage LED System</h1>",
+        "text": "<h6>IMPORTANT NOTICE:</h6><p>Please read the complete instruction manual carefully before using the system.</p>",
         "image": "shopify://shop_images/neck-decollatage.webp",
-        "image_mobile": "shopify://shop_images/neck-decollatage-mob.webp"
+        "image_mobile": "shopify://shop_images/neck-decollatage-mob.webp",
+        "button_label": "",
+        "button_url": ""
       }
     },
-    "content_brief_M8Gyxd": {
-      "type": "content-brief",
-      "name": "t:sections.content-brief.name",
+    "n_intro_xbgVRU": {
+      "type": "n_intro",
+      "name": "t:sections.n_intro.name",
       "settings": {
-        "text": "<p><strong> The Qure Neck & Décolletage LED System uses LED light therapy to visibly firm, smooth, and brighten the delicate skin on your neck and chest.</p><p>This guide will show you exactly how to use it, care for it, and get the best results from your treatments.</p>"
+        "use_own_file": true,
+        "text": "<p><strong>The Qure Neck & Décolletage LED System</strong> uses LED light therapy to visibly firm, smooth, and brighten the delicate skin on your neck and chest. </p><p>This guide will show you exactly how to use it, care for it, and get the best results from your treatments.</p>"
       }
     },
-    "main": {
-      "type": "page-n-d-quickstart-guide",
-      "settings": {}
+    "n_guide_menu_48HGcg": {
+      "type": "n_guide-menu",
+      "blocks": {
+        "menu_item_nMcfzX": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Quick Start Guide",
+            "must_read": false
+          }
+        },
+        "menu_item_LHdFrN": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Charging Your Device",
+            "must_read": false
+          }
+        },
+        "menu_item_c6fikQ": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Care & Maintenance",
+            "must_read": false
+          }
+        },
+        "menu_item_wL93W7": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Troubleshooting & Adjustments",
+            "must_read": false
+          }
+        },
+        "menu_item_bynieX": {
+          "type": "menu_item",
+          "settings": {
+            "item": "FAQs",
+            "must_read": false
+          }
+        }
+      },
+      "block_order": [
+        "menu_item_nMcfzX",
+        "menu_item_LHdFrN",
+        "menu_item_c6fikQ",
+        "menu_item_wL93W7",
+        "menu_item_bynieX"
+      ],
+      "name": "t:sections.n_guide-menu.name",
+      "settings": {
+        "use_own_file": true
+      }
+    },
+    "n_guide_content_step_bfgn4t": {
+      "type": "n_guide-content-step",
+      "blocks": {
+        "step_by_step_p98rhw": {
+          "type": "step_by_step",
+          "settings": {
+            "text": "<h6>Step 1</h6><p>Clean and dry your neck and décolletage to ensure the area is clear from any dirt, sweat, or skincare products.</p>"
+          }
+        },
+        "step_by_step_rRiUhK": {
+          "type": "step_by_step",
+          "settings": {
+            "text": "<h6>Step 2</h6><p>Insert the USB-C cable from the Neck & Décolletage LED System into the port located on the top of the controller.</p>"
+          }
+        },
+        "step_by_step_9bwbiE": {
+          "type": "step_by_step",
+          "settings": {
+            "text": "<h6>Step 3</h6><p>Secure the system around the neck to comfortably treat the entire neck and décolletage area.</p><p>Alternatively, position the strap across the shoulders to lower the LED panel slightly and extend coverage further across the décolletage.</p>"
+          }
+        },
+        "step_by_step_pzjKh4": {
+          "type": "step_by_step",
+          "settings": {
+            "text": "<h6>Step 4</h6><p>Press the ON/OFF button on the controller. </p><p>The treatment will automatically run for 10 minutes and shut off at the end of the session.</p>"
+          }
+        },
+        "image_dNMfLP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/neck-decollatage-video.webp"
+          }
+        },
+        "quote_WEMwW4": {
+          "type": "quote",
+          "settings": {
+            "style": "red",
+            "text": "<p><strong>Light sensitivity test:</strong> We recommend performing a light sensitivity test 24 hours before using this system for your first treatment. To perform this, apply the product to your inner forearm, ensuring the light shines directly onto the skin. Use it for a full 10-minute treatment. Wait for 24 hours. If you experience pain, discomfort, or redness lasting more than 2 hours, you might be light-sensitive. Please consult a doctor for advice before continuing use.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "step_by_step_p98rhw",
+        "step_by_step_rRiUhK",
+        "step_by_step_9bwbiE",
+        "step_by_step_pzjKh4",
+        "image_dNMfLP",
+        "quote_WEMwW4"
+      ],
+      "name": "t:sections.n_guide-content-step.name",
+      "settings": {
+        "use_own_file": true,
+        "active": true,
+        "must_read": false,
+        "heading": "Quick Start Guide",
+        "text": "<h2>Quick Start Guide</h2><p>[image]</p><p>Ready to begin? To get started with your first treatment, you'll need the following:</p><ul><li>Neck & Décolletage LED System</li><li>Controller with double USB-C ports (provided)</li><li>Adjustable straps (provided)</li></ul>"
+      }
+    },
+    "n_guide_content_image_block_ptjFFA": {
+      "type": "n_guide-content-image-block",
+      "blocks": {
+        "image_P9f9r9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/charge_icon_2.webp"
+          }
+        }
+      },
+      "block_order": [
+        "image_P9f9r9"
+      ],
+      "name": "t:sections.n_guide-content-image-block.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "must_read": false,
+        "heading": "Charging Your Device",
+        "text": "<h2>Charging Your Device</h2><p>[image]</p><p>To charge your system, insert the USB-C cable into the bottom of the controller (look for the ⚡ symbol).</p><p>Connect the other end to a USB-C power source.</p><p>While charging, the indicator will flash white. </p><p>When the battery is fully charged, the indicator will be solid white.</p><p>Tips to maximize battery life:</p><ul><li>Avoid leaving your system charging for long periods of time.</li><li>Avoid letting the battery completely run out.</li><li>Do not use your system while it's connected to the charger.</li></ul>"
+      }
+    },
+    "n_guide_content_j3tkDV": {
+      "type": "n_guide-content",
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "must_read": false,
+        "heading": "Care & Maintenance",
+        "text": "<h2>Care & Maintenance</h2><p>Wipe the system down after each treatment. </p><p>Spray with our <a href=\"#\" title=\"#\">Dermal mist</a> to sanitize and keep the system clean for your next use.</p><p>When not in use, store your system in the provided storage pouch. Store it in a cool, moisture-free environment.</p>",
+        "slides_per_view": ""
+      }
+    },
+    "n_guide_content_gkdiDb": {
+      "type": "n_guide-content",
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "must_read": false,
+        "heading": "Troubleshooting & Adjustments",
+        "text": "<h2>Troubleshooting & Adjustments</h2><p>Having trouble? Don't worry, most issues are quick to solve.</p><h6>System is not turning on</h6><ul><li>Make sure the system is fully charged.</li><li>Ensure the USB-C cable is plugged into the correct port on the controller (look for the port marked with the lightning bolt battery symbol).</li><li>Check that the USB-C charging cable is fully inserted when charging.</li><li>Press and hold the ON/OFF button for a full second to activate the product.</li><li>Still nothing? Try a different outlet or charging cable to rule out charging issues.</li></ul><p>[hr]</p><h6>System is turning off too early</h6><p>The battery level may be too low — charge the product fully and try again.</p><p>[hr]</p><h6>Something else?</h6><p>DO NOT attempt to investigate or modify the product. It contains no serviceable parts.</p><p>If the issue persists, please contact Qure Support at <a href=\"mailto:support@qureskincare.com\" title=\"mailto:support@qureskincare.com\">support@qureskincare.com</a> for further assistance.</p>",
+        "slides_per_view": ""
+      }
+    },
+    "n_guide_faq_XGzmpC": {
+      "type": "n_guide-faq",
+      "blocks": {
+        "faq_item_Ypebcp": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "When will I see results?",
+            "text": "<p>Some people notice a glow after just one use, but visible improvements usually happen after a few weeks of consistent use.</p>"
+          }
+        },
+        "faq_item_kJGA6W": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "How often should I use the Neck & Décolletage LED System?",
+            "text": "<p>We recommend using it once per day for a minimum of 4 weeks. After that, continue based on your personal care routine.</p><p>Do not use this system more than 7 times per week.</p>"
+          }
+        },
+        "faq_item_D6GhrE": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "Can I use it everyday?",
+            "text": "<p>Yes, it’s safe for daily use. Just stick to one treatment per day.</p>"
+          }
+        },
+        "faq_item_bTrpib": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "Can I use it with my other skincare products?",
+            "text": "<p>Yes, but use the mask first on clean, dry skin. You can apply your serums and moisturizers afterward.</p>"
+          }
+        },
+        "faq_item_YTxURq": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "How do I clean the mask?",
+            "text": "<p>Use a soft, damp cloth to wipe the surface. Don’t use harsh cleaners or submerge it in water.</p>"
+          }
+        },
+        "faq_item_KHaJDB": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "How long does it take to charge?",
+            "text": "<p>The Neck & Décolletage fully charges in 4 hours.</p>"
+          }
+        },
+        "faq_ask_plate_Dyi6FK": {
+          "type": "faq_ask_plate",
+          "settings": {
+            "heading": "Don't see your question?",
+            "button_label": "Ask us",
+            "button_url": "#"
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_Ypebcp",
+        "faq_item_kJGA6W",
+        "faq_item_D6GhrE",
+        "faq_item_bTrpib",
+        "faq_item_YTxURq",
+        "faq_item_KHaJDB",
+        "faq_ask_plate_Dyi6FK"
+      ],
+      "name": "t:sections.n_guide-faq.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "must_read": false,
+        "heading": "FAQs",
+        "text": "<h2>Frequently Asked Questions</h2>"
+      }
     }
   },
   "order": [
-    "page_banner_richtext_n2esDz",
-    "content_brief_M8Gyxd",
-    "main"
+    "n_across_image_banner_uJpq01",
+    "n_intro_xbgVRU",
+    "n_guide_menu_48HGcg",
+    "n_guide_content_step_bfgn4t",
+    "n_guide_content_image_block_ptjFFA",
+    "n_guide_content_j3tkDV",
+    "n_guide_content_gkdiDb",
+    "n_guide_faq_XGzmpC"
   ]
 }
