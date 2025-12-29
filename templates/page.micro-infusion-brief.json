@@ -15,20 +15,32 @@
       "settings": {
         "use_own_file": true,
         "modifier": "hero_reverse",
-        "heading": "<h1>Q-Rejuvalight Pro Creative Content Guide</h1>",
+        "heading": "<h1>Micro-Infusion Creative Content Guide</h1>",
         "text": "",
-        "image": "shopify://shop_images/q-rejuvalight-pro-mask.webp",
-        "image_mobile": "shopify://shop_images/q-rejuvalight-pro-mask-mob.webp",
+        "image": "shopify://shop_images/mi__banner.webp",
+        "image_mobile": "shopify://shop_images/mi_banner--mob.webp",
         "button_label": "",
         "button_url": ""
       }
     },
     "n_intro_BkRq5o": {
       "type": "n_intro",
+      "blocks": {
+        "wistia_video_r9JWGi": {
+          "type": "wistia_video",
+          "settings": {
+            "wistia_url": "96okj0th48",
+            "image": "shopify://shop_images/how_to-mi.webp"
+          }
+        }
+      },
+      "block_order": [
+        "wistia_video_r9JWGi"
+      ],
       "name": "t:sections.n_intro.name",
       "settings": {
         "use_own_file": true,
-        "text": "<p><strong>Discover how to make the most of the Qure Q-Rejuvalight Pro LED Mask with our creative content guide.</strong></p><p>This brief will help you understand the key benefits of the Q-Rejuvalight Pro Mask and create content that is engaging and educational. </p>"
+        "text": "<p><strong>Discover how to make the most of the Qure Micro-Infusion System with our creative content guide</strong></p><p>This brief is designed to guide you in creating engaging, authentic content that highlights how our Micro-Infusion System transforms the skin. </p><p>You'll be showcasing its ability to visibly improve texture, boost softness, and deliver a lasting, healthy glow—helping your audience see the real, science-backed benefits of this at-home treatment.</p>"
       }
     },
     "n_guide_menu_EbHdME": {
@@ -51,14 +63,14 @@
         "menu_item_CTfQjN": {
           "type": "menu_item",
           "settings": {
-            "item": "Treatment Modes",
+            "item": "Serum Ingredients & Information",
             "must_read": false
           }
         },
         "menu_item_MUr69X": {
           "type": "menu_item",
           "settings": {
-            "item": "Product Claims & User Study",
+            "item": "Product Claims",
             "must_read": false
           }
         },
@@ -79,6 +91,13 @@
         "menu_item_3NXLnw": {
           "type": "menu_item",
           "settings": {
+            "item": "Content Angles & Ideas",
+            "must_read": false
+          }
+        },
+        "menu_item_9Iusb2": {
+          "type": "menu_item",
+          "settings": {
             "item": "Content Examples",
             "must_read": false
           }
@@ -91,7 +110,8 @@
         "menu_item_MUr69X",
         "menu_item_T7A96r",
         "menu_item_nttpF9",
-        "menu_item_3NXLnw"
+        "menu_item_3NXLnw",
+        "menu_item_9Iusb2"
       ],
       "name": "t:sections.n_guide-menu.name",
       "settings": {
