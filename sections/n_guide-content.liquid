@@ -38,63 +38,70 @@
                     <div class="c-swiper" data-swiper='{ "slidesPerView": 1.1, "spaceBetween": 16, "loop": false, "pagination": { "el": ".c-swiper-pagination", "type": "custom" }, "navigation": { "prevEl": ".c-swiper-button-prev","nextEl": ".c-swiper-button-next"}, "breakpoints": {"768": { "slidesPerView": {{ section.settings.slides_per_view }}}}}'>
                         <div class="swiper-wrapper">
                             {% for block in section.blocks %}
-                                {% if block.type == 'image_slider' %}
-                                    <div class="swiper-slide">
-                                        {% if block.settings.image != blank %}
-                                            <picture>
-                                                <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
-                                            </picture>
-                                        {% endif %}
-                                    </div>
-                                {% endif %}
-                            {% endfor %}
+                                {% case block.type %}
 
-                            {% for block in section.blocks %}
-                                {% if block.type == 'video_slider' %}
-                                    <div class="swiper-slide">
-                                        {% if block.settings.youtube_url %}
-                                            <picture data-url="{{ block.settings.video_url }}">
+                                    {% when 'image_slider' %}
+                                        <div class="swiper-slide">
+                                            {% if block.settings.image != blank %}
+                                                <picture>
+                                                    <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                                </picture>
+                                            {% endif %}
+                                        </div>
+
+                                    {% when 'video_slider' %}
+                                        <div class="swiper-slide">
+                                            {% if block.settings.youtube_url %}
+                                                <picture data-url="{{ block.settings.video_url }}">
+                                                    {% if block.settings.image != blank %}
+                                                        <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                                    {% endif %}
+                                                </picture>
+                                            {% else %}
+                                            <picture
+                                                {% if block.settings.video_url != blank %}
+                                                    data-bs-toggle="modal" 
+                                                    data-bs-target="#reusableWistiaModal"
+                                                    data-video-id="{{ block.settings.video_url }}"
+                                                {% endif %}
+                                            >
                                                 {% if block.settings.image != blank %}
                                                     <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                                                 {% endif %}
                                             </picture>
-                                        {% else %}
-                                        <picture
-                                            {% if block.settings.video_url != blank %}
-                                                data-bs-toggle="modal" 
-                                                data-bs-target="#reusableWistiaModal"
-                                                data-video-id="{{ block.settings.video_url }}"
                                             {% endif %}
-                                        >
-                                            {% if block.settings.image != blank %}
-                                                <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
-                                            {% endif %}
-                                        </picture>
-                                        {% endif %}
-                                    </div>
-                                {% endif %}
-                            {% endfor %}
-
-                            {% for block in section.blocks %}
-                                {% if block.type == 'wistia_slider' %}
-                                    <div class="swiper-slide">
-                                        {% if block.settings.wistia_url != blank %}
-                                            <div class="wistia-embed-video">
-                                                <div class="wistia_responsive_padding">
-                                                    <div class="wistia_responsive_wrapper">
-                                                        <div class="wistia_embed wistia_async_{{ block.settings.wistia_url }} popover=true seo=false videoFoam=true">
-                                                            <div class="wistia_swatch">
-                                                                <img src="https://fast.wistia.com/embed/medias/{{ block.settings.wistia_url }}/swatch" alt="Wistia video thumbnail" style="filter: blur(5px);" />
+                                        </div>
+                                    
+                                    {% when 'wistia_slider' %}
+                                        <div class="swiper-slide">
+                                            {% if block.settings.wistia_url != blank %}
+                                                <div class="wistia-embed-video">
+                                                    <div class="wistia_responsive_padding">
+                                                        <div class="wistia_responsive_wrapper">
+                                                            <div class="wistia_embed wistia_async_{{ block.settings.wistia_url }} popover=true seo=false videoFoam=true">
+                                                                <div class="wistia_swatch">
+                                                                    <img src="https://fast.wistia.com/embed/medias/{{ block.settings.wistia_url }}/swatch" alt="Wistia video thumbnail" style="filter: blur(5px);" />
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        {% endif %}
-                                    </div>
-                                {% endif %}
+                                            {% endif %}
+                                        </div>
+
+                                    {% when 'text_slider' %}
+                                        <div class="swiper-slide">
+                                            <article class="content-angles-ideas-card" data-index="{{ forloop.index }}">
+                                                {% if block.settings.text != blank %}
+                                                    {{ block.settings.text | replace: '<p>[note_gray]', '<div class="c-note"><p>' | replace: '[/note]</p>', '</p></div>' }}
+                                                {% endif %}
+                                            </article>
+                                        </div>
+                                {% endcase %}
                             {% endfor %}
+                            
                         </div>
+
                         <div class="c-swiper-nav">
                             <button class="c-swiper-button-prev"></button>
                             <div class="c-swiper-pagination"></div>
@@ -208,6 +215,17 @@
                         }
                     ]
                 },
+                {
+                    "type": "richtext",
+                    "id": "text",
+                    "label": "t:common.text"
+                }
+            ]
+        },
+        {
+            "type": "text_slider",
+            "name": "t:common.text-slider",
+            "settings": [
                 {
                     "type": "richtext",
                     "id": "text",
