@@ -1,0 +1,178 @@
+{% doc %}
+  Renders guide FAQ section
+{% enddoc %}
+
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/guide-content/guide-content.css" />
+{% endif %}
+<section class="guide-content{% if section.settings.active %} active{% endif %}" id="{{ section.settings.heading | handleize }}-tab">
+    <div class="container">
+        <div class="accordion">
+            <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#{{ section.settings.heading | handleize }}-collapse"
+                {% if section.settings.active %}
+                    aria-expanded="true"
+                {% endif %}
+            >
+                {% if section.settings.heading != blank %}
+                    {{ section.settings.heading }}
+                    {% if section.settings.must_read %}
+                        <em>{{ 'sections.n_guide_content.must-read' | t }}</em>
+                    {% endif %}
+                {% endif %}
+            </button>
+            <div
+                id="{{ section.settings.heading | handleize }}-collapse"
+                class="accordion-collapse{% if section.settings.active %} show{% endif %}"
+            >
+                {% if section.settings.text != blank %}
+                    <article>
+                        {{ section.settings.text }}
+                    </article>
+                {% endif %}
+                <div class="c-faq-accordion" id="c-faq-accordion">
+                    <div class="c-faq-accordion__list">
+                        {% for block in section.blocks %}
+                            {% if block.type == 'faq_item' %}
+                                <div class="c-faq-accordion__item">
+                                    <div class="c-faq-accordion__header">
+                                        <button
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#c-faq-accordion-{{ forloop.index }}"
+                                            aria-expanded="false"
+                                        >
+                                            {{ block.settings.heading }}
+                                        </button>
+                                    </div>
+                                    <div
+                                        id="c-faq-accordion-{{ forloop.index }}"
+                                        class="c-faq-accordion__body collapse"
+                                    >
+                                        <div class="c-faq-accordion__content">
+                                            {% include 'n_guide-content-replace-block', section: section, block: block %}
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                    {% for block in section.blocks %}
+                        {% if block.type == 'faq_ask_plate' %}
+                            {% if block.settings.heading != blank and block.settings.button_label != blank and block.settings.button_url != blank %}
+                                <div class="c-faq-accordion__ask-us">{{ block.settings.heading }}<a href="{{ block.settings.button_url }}" class="btn btn-sm btn--secondary">{{ block.settings.button_label }}<i class="e-icon e-icon-arrow"></i></a></div>
+                            {% endif %}
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    loadScriptOnce('guide-content', 'https://qureskincaredns.com/sections/new/guide-content/guide-content.js');
+    loadScriptOnce('base-slider', 'https://qureskincaredns.com/https://qureskincaredns.com/sections/new/base-slider/base-slider.js');
+    loadScriptOnce('wistia-popup', 'https://qureskincaredns.com/assets/js-new/wistia-popup.js');
+    loadScriptOnce('youtube-popup', 'https://qureskincaredns.com/assets/js-new/yt-popup.js');
+    loadScriptOnce('wistia-script', 'https://fast.wistia.com/assets/external/E-v1.js');
+
+    }); 
+</script>
+
+{% schema %}
+{
+    "name": "t:sections.n_guide-faq.name",
+    "class": "shopify-section--guide-content",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": false
+        },
+        {
+            "type": "checkbox",
+            "id": "active",
+            "label": "t:common.active",
+            "default": false
+        },
+        {
+            "type": "checkbox",
+            "id": "must_read",
+            "label": "t:common.must-read",
+            "default": false
+        },
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "t:common.header"
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "t:common.text"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "faq_item",
+            "name": "t:common.faq-item",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "t:common.header"
+                },
+                {
+                    "type": "richtext",
+                    "id": "text",
+                    "label": "t:common.text"
+                }
+            ]
+        },
+        {
+            "type": "faq_ask_plate",
+            "name": "t:common.faq-ask-plate",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "t:common.header",
+                    "default": "Don't see your question? "
+                },
+                {
+                    "type": "text",
+                    "id": "button_label",
+                    "label": "t:common.button-label",
+                    "default": "Ask us "
+                },
+                {
+                    "type": "url",
+                    "id": "button_url",
+                    "label": "t:common.button-url"
+                }
+            ]
+        },
+        {
+            "type": "image_faq",
+            "name": "t:common.image-faq",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.n_guide-faq.name"
+        }
+    ]
+}
+{% endschema %}

@@ -1,0 +1,29 @@
+{% assign image_faq_is_shown = false %}
+
+{% capture image_content %}
+    {% for block in section.blocks %}
+        {% if block.type == 'image_faq' %}
+            <picture>
+                <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+            </picture>
+        {% endif %}
+    {% endfor %}
+{% endcapture %}
+
+{% if block.settings.text contains '[image_faq]' %}
+    {% assign image_faq_is_shown = true %}
+{% endif %}
+
+{% if block.settings.text != blank %}
+    {% assign processed_text = block.settings.text %}
+    
+    {% if image_faq_is_shown == true %}
+        {% if image_content != blank %}
+            {% assign processed_text = processed_text | replace: '<p>[image_faq]', image_content | replace: '<p>[hr]</p>', '<hr />' %}
+        {% else %}
+            {% assign processed_text = processed_text | replace: '<p>[image_faq]', '' | replace: '<p>[hr]</p>', '<hr />' %}
+        {% endif %}
+    {% endif %}
+    
+    {{ processed_text }}
+{% endif %}

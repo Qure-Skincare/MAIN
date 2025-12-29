@@ -49,7 +49,6 @@
         "preselect": "Preselect",
         "type": "Type",
         "product-type": "Product type",
-        "product-type-accordion": "Product type accordion",
         "section": "Section",
         "section_id": "Section id",
         "seo_heading": "Seo header",
@@ -71,6 +70,7 @@
         "popup": "Popup",
         "popup-header": "Popup header",
         "popup-text": "Popup text",
+        "popup-quote": "Popup quote",
         "style-color": "Style color",
         "color-switch": "Color switch",
         "color-switch-heading": "Color switch header",
@@ -191,7 +191,11 @@
         "wistia-slider": "Wistia slider",
         "blue": "Blue",
         "red": "Red",
-        "step-by-step": "Step by step"
+        "step-by-step": "Step by step",
+        "bottom": "Bottom",
+        "faq-item": "FAQ item",
+        "image-faq": "Image FAQ",
+        "faq-ask-plate": "FAQ ask plate"
     },
     "blocks": {
         "block-card": {
@@ -278,6 +282,9 @@
         },
         "n_guide-content-image-block": {
             "name": "Guide content with image block"
+        },
+        "n_guide-faq": {
+            "name": "Guide FAQ"
         },
         "collection": {
             "name": "Collection",

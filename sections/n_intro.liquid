@@ -11,6 +11,21 @@
                 {% if section.settings.text != blank %}
                     {{ section.settings.text }}
                 {% endif %}
+                {% for block in section.blocks %}
+                    {% if block.type == 'wistia_video' %}
+                        {% if block.settings.wistia_url != blank and block.settings.image != blank %}
+                            <picture
+                                class="d-lg-none"
+                                data-label-text="Watch: How To Use"
+                                data-bs-toggle="modal"
+                                data-bs-target="#reusableWistiaModal"
+                                data-video-id="{{ block.settings.wistia_url }}"
+                            >
+                                <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                            </picture>
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
             </article>
         </div>
     </section> 
@@ -30,6 +45,26 @@
                 "id": "text",
                 "label": "t:common.text"
             }
+    ],
+    "blocks": [
+        {
+            "type": "wistia_video",
+            "name": "t:common.wistia-video",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "wistia_url",
+                    "label": "t:common.wistia-url"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                }
+            ]
+
+        }
     ],
     "presets": [
         {
