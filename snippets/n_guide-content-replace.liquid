@@ -61,7 +61,7 @@
     
     {% if quote_content_is_shown == true %}
         {% if quote_content != blank %}
-            {% assign processed_text = processed_text | replace: '<p>[quote_content]', quote_content | replace: '<p>[hr]</p>', '<hr />' %}
+            {% assign processed_text = processed_text | replace: '<p>[quote_content]', quote_content %}
         {% else %}
             {% assign processed_text = processed_text | replace: '<p>[quote_content]', '' %}
         {% endif %}
@@ -69,19 +69,21 @@
     
     {% if wistia_video_is_shown == true %}
         {% if wistia_video_content != blank %}
-            {% assign processed_text = processed_text | replace: '<p>[wistia_video]', wistia_video_content | replace: '<p>[hr]</p>', '<hr />' %}
+            {% assign processed_text = processed_text | replace: '<p>[wistia_video]', wistia_video_content %}
         {% else %}
-            {% assign processed_text = processed_text | replace: '<p>[wistia_video]', '' | replace: '<p>[hr]</p>', '<hr />' %}
+            {% assign processed_text = processed_text | replace: '<p>[wistia_video]', '' %}
         {% endif %}
     {% endif %}
     
     {% if image_is_shown == true %}
         {% if image_content != blank %}
-            {% assign processed_text = processed_text | replace: '<p>[image]', image_content | replace: '<p>[hr]</p>', '<hr />' %}
+            {% assign processed_text = processed_text | replace: '<p>[image]', image_content %}
         {% else %}
-            {% assign processed_text = processed_text | replace: '<p>[image]', '' | replace: '<p>[hr]</p>', '<hr />' %}
+            {% assign processed_text = processed_text | replace: '<p>[image]', '' %}
         {% endif %}
     {% endif %}
+    
+    {% assign processed_text = processed_text | replace: '<p>[hr]</p>', '<hr />' %}
     
     {{ processed_text }}
 {% endif %}
