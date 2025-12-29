@@ -29,133 +29,31 @@
                 class="accordion-collapse{% if section.settings.active %} show{% endif %}"
             >
                 <article>
+
                     {% include 'n_guide-content-replace', section: section %}
+
                 </article>
 
-                {% assign has_image_with_text = false %}
-                {% assign has_left_position = false %}
-                {% assign has_bottom_position = false %}
-                {% assign has_popup = false %}
-
                 {% for block in section.blocks %}
-                    {% if block.type == 'image_with_text' %}
-                        {% assign has_image_with_text = true %}
-                        {% if block.settings.image_position == 'left' %}
-                            {% assign has_left_position = true %}
-                        {% elsif block.settings.image_position == 'bottom' or block.settings.image_position == blank %}
-                            {% assign has_bottom_position = true %}
-                        {% endif %}
-                    {% endif %}
+                    {% if block.type == 'image_with_text' %}{% assign has_image_with_text = true %}{% endif %}
                 {% endfor %}
                 {% if has_image_with_text %}
-                    {% if has_bottom_position %}
-                        <ul class="treatment-modes-list">
-                            {% for block in section.blocks %}
-                                {% if block.type == 'image_with_text' %}
-                                    <li>
-                                        {% if block.settings.text != blank %}
-                                            {{ block.settings.text }}
-                                        {% endif %}
-                                        {% if block.settings.image != blank %}
-                                            <picture>
-                                                <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
-                                            </picture>
-                                        {% endif %}
-                                    </li>
-                                {% endif %}
-                            {% endfor %}
-                        </ul>
-                    {% elsif has_left_position %}
-                        <div class="serum-ingredients-list">
-                            <ul>
-                                {% for block in section.blocks %}
-                                    {% if block.type == 'image_with_text' %}
-                                        <li>
-                                            {% if block.settings.image != blank %}
-                                                <picture>
-                                                    <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
-                                                </picture>
-                                            {% endif %}
-                                            {% if block.settings.text != blank %}
-                                                {{ block.settings.text }}
-                                            {% endif %}
-                                        </li>
+                    <ul class="treatment-modes-list">
+                        {% for block in section.blocks %}
+                            {% if block.type == 'image_with_text' %}
+                                <li>
+                                    {% if block.settings.text != blank %}
+                                        {{ block.settings.text }}
                                     {% endif %}
-                                {% endfor %}
-                            </ul>
-                            {% for block in section.blocks %}
-                                {% if block.type == 'popup_header' %}
-                                    {% if block.settings.heading != blank %}
-                                        <a href="#" data-bs-toggle="modal" data-bs-target="#serum-ingredients-popup"><span>{{ block.settings.heading }}</span> <i class="e-icon e-icon-plus"></i></a>
+                                    {% if block.settings.image != blank %}
+                                        <picture></picture>
+                                            <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                        </picture>
                                     {% endif %}
-                                {% endif %}
-                            {% endfor %}
-                        </div>
-                    {% endif %}
-                {% endif %}
-                
-                {% for block in section.blocks %}
-                    {% if block.type == 'popup' %}
-                        {% assign has_popup = true %}
-                    {% endif %}
-                {% endfor %}
-
-                {% if has_popup %}
-                    <div class="modal c-modal c-modal--light" id="serum-ingredients-popup">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button class="btn btn-close" type="button" data-bs-dismiss="modal"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <div class="serum-ingredients-details">
-                                        <ul class="tabs" role="tablist">
-                                            {% assign popup_index = 0 %}
-                                            {% for block in section.blocks %}
-                                                {% if block.type == 'popup' %}
-                                                    {% assign popup_index = popup_index | plus: 1 %}
-                                                    {% if block.settings.heading != blank %}
-                                                        <li>
-                                                            <button
-                                                            {% if popup_index == 1 %}
-                                                                class="active"
-                                                            {% endif %}
-                                                                data-bs-toggle="tab"
-                                                                data-bs-target="#{{ block.settings.heading | handleize }}-tab"
-                                                                type="button"
-                                                            >{{ block.settings.heading }}</button>
-                                                        </li>
-                                                    {% endif %}
-                                                {% endif %}
-                                            {% endfor %}
-                                        </ul>
-                                        {% assign popup_index = 0 %}
-                                        {% for block in section.blocks %}
-                                            {% if block.type == 'popup' %}
-                                                {% assign popup_index = popup_index | plus: 1 %}
-                                                <div class="tab-content{% if popup_index == 1 %} show{% endif %}" id="{{ block.settings.heading | handleize }}-tab">
-                                                    {% if block.settings.text != blank %}
-                                                        <article>
-                                                            {{ block.settings.text }}
-                                                        </article>
-                                                    {% endif %}
-                                                </div>
-                                            {% endif %}
-                                        {% endfor %}
-                                        {% for block in section.blocks %}
-                                            {% if block.type == 'popup_quote' %}
-                                                {% if block.settings.text != blank %}
-                                                    <div class="c-note">
-                                                        {{ block.settings.text }}
-                                                    </div>
-                                                {% endif %}
-                                            {% endif %}
-                                        {% endfor %}
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                                </li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
                 {% endif %}
             </div>
         </div>
@@ -212,105 +110,10 @@
             "name": "t:common.image-with-text",
             "settings": [
                 {
-                    "type": "select",
-                    "id": "image_position",
-                    "label": "t:common.image-position",
-                    "default": "bottom",
-                    "options": [
-                        {
-                            "value": "bottom",
-                            "label": "t:common.bottom"
-                        },
-                        {
-                            "value": "left",
-                            "label": "t:common.left"
-                        }
-                    ]
-                },
-                {
                     "type": "image_picker",
                     "id": "image",
                     "label": "t:common.image"
                 },
-                {
-                    "type": "richtext",
-                    "id": "text",
-                    "label": "t:common.text"
-                }
-            ]
-        },
-        {
-            "type": "image",
-            "name": "t:common.image",
-            "limit": 1,
-            "settings": [
-                {
-                    "type": "image_picker",
-                    "id": "image",
-                    "label": "t:common.image"
-                }
-            ]
-        },
-        {
-            "type": "quote",
-            "name": "t:common.quote",
-            "limit": 1,
-            "settings": [
-                {
-                    "type": "select",
-                    "id": "style",
-                    "label": "t:common.style",
-                    "default": "blue",
-                    "options": [
-                        {
-                            "value": "blue",
-                            "label": "t:common.blue"
-                        },
-                        {
-                            "value": "red",
-                            "label": "t:common.red"
-                        }
-                    ]
-                },
-                {
-                    "type": "richtext",
-                    "id": "text",
-                    "label": "t:common.text"
-                }
-            ]
-        },
-        {
-            "type": "popup_header",
-            "name": "t:common.popup-header",
-            "settings": [
-                {
-                    "type": "text",
-                    "id": "heading",
-                    "label": "t:common.header"
-                }
-            ]
-        },
-        {
-            "type": "popup",
-            "name": "t:common.popup",
-            "settings": [
-                {
-                    "type": "text",
-                    "id": "heading",
-                    "label": "t:common.header"
-                },
-                {
-                    "type": "richtext",
-                    "id": "text",
-                    "label": "t:common.text"
-                }
-            ]
-        },
-        {
-            "type": "popup_quote",
-            "name": "t:common.popup-quote",
-            "limit": 1,
-            "settings": [
                 {
                     "type": "richtext",
                     "id": "text",
