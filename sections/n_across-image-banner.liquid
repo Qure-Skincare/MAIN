@@ -51,7 +51,17 @@
                 {% endfor %}
 
             </article>
-            
+
+            {% for block in section.blocks %}
+                {% if block.type == 'image' %}
+                    {% if block.settings.image != blank %}
+                        <figure>
+                            <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                        </figure>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+
             {% for block in section.blocks %}
                 {% if block.type == 'percent_value' %}
                     <div class="e-discount-badge" data-text-top="Up to" data-text-bottom="Off">
@@ -170,6 +180,18 @@
                     "type": "richtext",
                     "id": "text",
                     "label": "t:common.text"
+                }
+            ]
+        },
+        {
+            "type": "image",
+            "name": "t:common.image",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
                 }
             ]
         }
