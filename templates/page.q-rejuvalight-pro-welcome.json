@@ -9,56 +9,56 @@
  */
 {
   "sections": {
-    "q_rejuvalight_pro_welcome_intro_baNLij": {
-      "type": "q-rejuvalight-pro-welcome-intro",
+    "n_guide_welcome_UcLJ7U": {
+      "type": "n_guide-welcome",
       "blocks": {
-        "items_Apf9An": {
+        "items_ByQTKc": {
           "type": "items",
           "settings": {
-            "heading": "Let’s get started",
-            "subheader": "Welcome to Qure!",
-            "text": "<p>Everything you need to know to kickstart your journey with Q-Rejuvalight Pro.</p>",
+            "type": "start",
+            "text": "<h4>Let's get started</h4><p>Everything you need to know to kickstart your journey with Q-Rejuvalight Pro</p>",
             "button_label": "Quick-Start Guide",
-            "button_url": "https://qureskincare.com/pages/q-rejuvalight-pro-led-mask-guide",
-            "download_button_label": "Download Full Manual",
-            "download-button_url": "https://cdn.shopify.com/s/files/1/0441/1431/3365/files/Q-Rejuvalight_Pro_Facewear-FDA-Manual-Jun-2025-160x140mm-01-2.pdf?v=1751975828&ref=d6cb54b2-d73b-423e-8d66-3b5b3a661340"
+            "button_url": "#",
+            "button_light_label": "Download Full Manual",
+            "button_light_url": "#"
           }
         },
-        "items_FiaHnt": {
+        "items_NbTQpN": {
           "type": "items",
           "settings": {
-            "heading": "Need help or have questions?",
-            "subheader": "",
-            "text": "<p>We’re here to support you every step of the way.</p>",
+            "type": "contact",
+            "text": "<h4>Need help or have questions?</h4><p>We're here to support you every step of the way.</p>",
             "button_label": "Contact Us",
-            "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home",
-            "download_button_label": "",
-            "download-button_url": ""
+            "button_url": "#",
+            "button_light_label": "",
+            "button_light_url": ""
           }
         }
       },
       "block_order": [
-        "items_Apf9An",
-        "items_FiaHnt"
+        "items_ByQTKc",
+        "items_NbTQpN"
       ],
-      "name": "t:sections.q-rejuvalight-pro-welcome-intro.name",
+      "name": "t:sections.n_guide-welcome.name",
       "settings": {
-        "heading": "Welcome to Qure!",
+        "use_own_file": true,
+        "heading": "<h2>Welcome to Qure!</h2>",
         "wistia_url": "2jl8ah5r5n"
       }
     },
-    "q_rejuvalight_pro_welcome_action_banner_xWPa8T": {
-      "type": "q-rejuvalight-pro-welcome-action-banner",
-      "name": "t:sections.q-rejuvalight-pro-welcome-action-banner.name",
+    "n_guide-base-info_baNLij": {
+      "type": "n_guide-base-info",
+      "name": "t:sections.n_guide-base-info.name",
       "settings": {
+        "use_own_file": true,
         "text": "<p>Enjoy peace of mind with our 30 day money-back guarantee.</p>",
         "button_label": "Learn More",
-        "button_url": "https://qureskincare.com/pages/returns-exchanges"
+        "button_url": "#"
       }
     }
   },
   "order": [
-    "q_rejuvalight_pro_welcome_intro_baNLij",
-    "q_rejuvalight_pro_welcome_action_banner_xWPa8T"
+    "n_guide_welcome_UcLJ7U",
+    "n_guide-base-info_baNLij"
   ]
 }
