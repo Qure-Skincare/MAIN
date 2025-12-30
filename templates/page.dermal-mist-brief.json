@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
     "n_across_image_banner_Jhry7T": {
       "type": "n_across-image-banner",
@@ -251,14 +251,6 @@
             "image": "shopify://shop_images/mist_thumb6.webp"
           }
         },
-        "video_slider_V9r8G6": {
-          "type": "video_slider",
-          "settings": {
-            "youtube_url": false,
-            "video_url": "3ju1jzs8kh",
-            "image": "shopify://shop_images/mist_thumb6.webp"
-          }
-        },
         "video_slider_Armcx8": {
           "type": "video_slider",
           "settings": {
@@ -291,7 +283,6 @@
         "video_slider_JfbhnQ",
         "video_slider_fQRDyw",
         "video_slider_KMxXFV",
-        "video_slider_V9r8G6",
         "video_slider_Armcx8",
         "video_slider_jiLqYb",
         "video_slider_bbM3Gd"
