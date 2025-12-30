@@ -9,46 +9,437 @@
  */
 {
   "sections": {
-    "page_banner_richtext_0Pmyc6": {
-      "type": "page-banner-richtext",
-      "name": "t:sections.page-banner-richtext.name",
+    "n_across_image_banner_Jhry7T": {
+      "type": "n_across-image-banner",
+      "name": "t:sections.n_across-image-banner.name",
       "settings": {
-        "heading": "Shower Filter Creative Content Guide",
-        "sub_heading": "",
+        "use_own_file": true,
+        "modifier": "hero_reverse",
+        "heading": "<h1>Shower Filter Creative Content Guide</h1>",
         "text": "",
         "image": "shopify://shop_images/shower_banner.webp",
-        "image_mobile": "shopify://shop_images/shower_banner-mob.webp"
+        "image_mobile": "shopify://shop_images/shower_banner-mob.webp",
+        "button_label": "",
+        "button_url": ""
       }
     },
-    "content_brief_MPxJg6": {
-      "type": "content-brief",
-      "name": "t:sections.content-brief.name",
+    "n_intro_BkRq5o": {
+      "type": "n_intro",
+      "blocks": {
+        "wistia_video_r9JWGi": {
+          "type": "wistia_video",
+          "settings": {
+            "wistia_url": "9562sh5iwf",
+            "image": "shopify://shop_images/how-to-use-shower.webp"
+          }
+        }
+      },
+      "block_order": [
+        "wistia_video_r9JWGi"
+      ],
+      "name": "t:sections.n_intro.name",
       "settings": {
+        "use_own_file": true,
         "text": "<p><strong>Discover how to make the most of the Qure Shower Filter with our creative content guide</strong></p><p>This brief will help you craft compelling content that highlights how our innovative filter reduces skin-irritating contaminants, supports clearer, more hydrated skin.</p><p>It enhances the effectiveness of every step in your skincare routine, and is backed by a lifetime warranty.</p>"
       }
     },
-    "main": {
-      "type": "page-shower-filter-creative-brief",
-      "settings": {}
-    },
-    "trusted_recommended_3kKz1d": {
-      "type": "trusted-recommended",
-      "name": "t:sections.trusted-recommended.name",
+    "n_guide_menu_EbHdME": {
+      "type": "n_guide-menu",
+      "blocks": {
+        "menu_item_TmeeFF": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Product Information",
+            "must_read": false
+          }
+        },
+        "menu_item_BbehzW": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Installation Guide",
+            "must_read": false
+          }
+        },
+        "menu_item_CTfQjN": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Product Claims & User Study",
+            "must_read": false
+          }
+        },
+        "menu_item_MUr69X": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Content Requirements",
+            "must_read": true
+          }
+        },
+        "menu_item_T7A96r": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Creative Direction",
+            "must_read": false
+          }
+        },
+        "menu_item_nttpF9": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Content Angles & Ideas",
+            "must_read": false
+          }
+        },
+        "menu_item_3NXLnw": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Content Examples",
+            "must_read": false
+          }
+        }
+      },
+      "block_order": [
+        "menu_item_TmeeFF",
+        "menu_item_BbehzW",
+        "menu_item_CTfQjN",
+        "menu_item_MUr69X",
+        "menu_item_T7A96r",
+        "menu_item_nttpF9",
+        "menu_item_3NXLnw"
+      ],
+      "name": "t:sections.n_guide-menu.name",
       "settings": {
-        "heading": "Trusted and Recommended by Experts",
-        "text": "<p>“Throughout my life…living in Wilmington, [my] skin was great. Then I… move to Charlotte and… every week my skin would get irritated especially after showering. Even my hair wouldn't cooperate. I was convinced it was the water I was exposed to.</p><p>Turns out, <strong>there’s an overwhelming amount of data that the water hardness could affect your skin.</strong>”</p>",
-        "image_text": "",
-        "image": "shopify://shop_images/doctor_shah_desk.webp",
-        "image_mobile": "shopify://shop_images/doctor_shah_mob.webp",
+        "use_own_file": true
+      }
+    },
+    "n_guide_content_a3bghQ": {
+      "type": "n_guide-content",
+      "blocks": {
+        "link_HCxMXt": {
+          "type": "link",
+          "settings": {
+            "link_text": "Learn more about Qure Shower Filter",
+            "link_url": "#"
+          }
+        }
+      },
+      "block_order": [
+        "link_HCxMXt"
+      ],
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": true,
+        "must_read": false,
+        "heading": "Product Information",
+        "text": "<h2>Product Information</h2><ul><li>Triple the Filtration Tech (for Triple the Clean)</li><li>Carbon Fiber Layer - Removes up to 99% of chlorine, reducing skin irritation and dryness, leaving your skin and hair healthier.</li><li>KDF Layer - Targets and removes heavy metals like lead and mercury, providing cleaner water for your shower.</li><li>FOF (Filter of Future) - Reduces limescale buildup and helps minimize heavy mineral residue on skin, scalp, and hair for a softer, more refreshed feeling.</li></ul>",
+        "slides_per_view": ""
+      }
+    },
+    "n_guide_content_step_rmGmXc": {
+      "type": "n_guide-content-step",
+      "blocks": {
+        "step_by_step_7NEdVW": {
+          "type": "step_by_step",
+          "settings": {
+            "image": "shopify://shop_images/shower-step-1.webp",
+            "text": "<h6>Step 1</h6><p>Remove your old showerhead by unscrewing it from the wall or shower arm.</p>"
+          }
+        },
+        "step_by_step_gzeyrU": {
+          "type": "step_by_step",
+          "settings": {
+            "image": "shopify://shop_images/shower-step-2.webp",
+            "text": "<h6>Step 2</h6><p>Attach your new Qure filter by twisting the filter onto the shower pipe.</p><p>Make sure the rubber washer is inside to prevent leaks.</p>"
+          }
+        },
+        "step_by_step_UxUCaX": {
+          "type": "step_by_step",
+          "settings": {
+            "image": "shopify://shop_images/shower-step-3.webp",
+            "text": "<h6>Step 3</h6><p>Tighten until secure. Make sure it's snug but not forced.</p>"
+          }
+        },
+        "step_by_step_zBKRa3": {
+          "type": "step_by_step",
+          "settings": {
+            "image": "shopify://shop_images/shower-step-4.webp",
+            "text": "<h6>Step 4</h6><p>Let it run for 2-3 minutes to flush out any loose particles.</p><p>Done! You're ready to enjoy filtered, skin-friendly water.</p>"
+          }
+        },
+        "link_3RK4gT": {
+          "type": "link",
+          "settings": {
+            "link_text": "Link to online guide",
+            "link_url": "#"
+          }
+        },
+        "wistia_video_hDtcUL": {
+          "type": "wistia_video",
+          "settings": {
+            "wistia_url": "9562sh5iwf",
+            "image": "shopify://shop_images/how-to-use-shower.webp"
+          }
+        },
+        "quote_b6D6hb": {
+          "type": "quote",
+          "settings": {
+            "style": "red",
+            "text": "<p>Qure Skincare Pty Ltd is not liable for individual results, which may vary by skin condition and water quality. This product is not a medical device and does not treat or cure diseases. Use as directed. Discontinue use if adverse reactions occur, and consult a professional.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "step_by_step_7NEdVW",
+        "step_by_step_gzeyrU",
+        "step_by_step_UxUCaX",
+        "step_by_step_zBKRa3",
+        "link_3RK4gT",
+        "wistia_video_hDtcUL",
+        "quote_b6D6hb"
+      ],
+      "name": "t:sections.n_guide-content-step.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "must_read": false,
+        "heading": "Installation Guide",
+        "text": "<h2>Installation Guide</h2><p>[wistia_video]</p><p>To install your new Shower Filter, you'll need the following:</p><ul><li>Qure Shower Filter</li><li>(Optional) Plumber's tape for extra leak protection (provided)</li><li>(Optional) A towel or cloth for better grip when unscrewing the showerhead</li></ul>"
+      }
+    },
+    "n_guide_content_kMxw9W": {
+      "type": "n_guide-content",
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "must_read": false,
+        "heading": "Product Claims & User Study",
+        "text": "<h2>Product Claims & User Study</h2><p>Key claims:</p><ul><li>Fewer breakouts</li><li>Happier, hydrated skin</li><li>Less redness & irritation</li><li>Shinier & buildup free hair</li><li>Less green hues on dyed hair</li></ul><p>Results from an 8-week user study:</p><ul><li>83% reported softer hair and skin</li><li>80% saw less skin irritation, including a reduction in acne, redness, and eczema</li><li>83% noticed reduced scalp dryness, irritation, or flakiness</li></ul>",
+        "slides_per_view": ""
+      }
+    },
+    "n_guide_content_Fipjki": {
+      "type": "n_guide-content",
+      "blocks": {
+        "quote_TYC4wj": {
+          "type": "quote",
+          "settings": {
+            "style": "blue",
+            "text": "<p>Remember to <strong>add a personal touch</strong> to the messaging, talk about how the filter makes your skin feel.</p><p>Examples:</p><ul><li>“This filter changed my skin.”</li><li>“Since using this filter, my hair has never looked better!”</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "quote_TYC4wj"
+      ],
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "must_read": true,
+        "heading": "Content Requirements",
+        "text": "<h2>Content Requirements</h2><p>Messaging must include:</p><ul><li>Easy installation of the triple-filter showerhead for the purest head-to-toe hydration.</li><li>Reduces chlorine, heavy metals & contaminants that irritate the skin, for an overall more hydrated, clearer skin.</li><li>Reduces limescale buildup which can dry out skin & hair, for smoother & softer skin and tresses.</li><li>Customizable water flow settings: Rainfall, Massage and Power Spray</li></ul>",
+        "slides_per_view": ""
+      }
+    },
+    "n_guide_content_Y4Bq4W": {
+      "type": "n_guide-content",
+      "blocks": {
+        "image_slider_WtLzEk": {
+          "type": "image_slider",
+          "settings": {
+            "image": "shopify://shop_images/shower_creative-guide1.webp"
+          }
+        },
+        "image_slider_pXhj7Q": {
+          "type": "image_slider",
+          "settings": {
+            "image": "shopify://shop_images/shower_creative-guide2.webp"
+          }
+        },
+        "quote_iBWnUz": {
+          "type": "quote",
+          "settings": {
+            "style": "blue",
+            "text": "<p><strong>Tag and mention</strong> @qureskincare #QureSkincare #showerfilter #Skincare #qureshowerfilter #qurefilter</p><p>Include your affiliate or other links provided by Qure in Instagram Stories and content captions. If the link can't be placed in bio, include it in linktr.ee or similar.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "image_slider_WtLzEk",
+        "image_slider_pXhj7Q",
+        "quote_iBWnUz"
+      ],
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "must_read": false,
+        "heading": "Creative Direction",
+        "text": "<h2>Creative Direction</h2><p>Recording Guidelines</p><ul><li>Use bright, natural lighting. No filters.</li><li>Please do not wear makeup (unless to show makeup removal).</li><li>Ensure the Qure Shower filter is the main focus of the content.</li><li>Keep backgrounds clean and uncluttered.</li><li>In cover photos, always show the filter in use (unless agreed otherwise).</li></ul>",
+        "slides_per_view": "2"
+      }
+    },
+    "n_guide_content_6FT6Ci": {
+      "type": "n_guide-content",
+      "blocks": {
+        "text_slider_K4LyR4": {
+          "type": "text_slider",
+          "settings": {
+            "text": "<p><strong>The Hidden Skin Dangers in Every Drop</strong></p><p>Highlight the unseen contaminants in tap water that negatively affect skin, positioning the Qure Shower Filter as the solution to purer, skin-loving water.</p><p>[note_grey]<strong>Hook:</strong>\"Think your water is clean? Think again. Chlorine, heavy metals, and microplastics can hide in your water and harm your skin over time. The Qure Shower Filter removes up to 99% of these impurities, giving your skin a clean slate every time you wash.\"[/note]</p>"
+          }
+        },
+        "text_slider_cm9GmM": {
+          "type": "text_slider",
+          "settings": {
+            "text": "<p><strong>Before & After Transformation</strong></p><p>Showcase a clear before-and-after transformation to emphasize the positive effects of filtered water on skin health. Focus on the visible results and the real impact the filter has had over time.</p><p>[note_grey]<strong>Hook:</strong>\"I’ve been using the Qure Shower Filter for 2 months, and here’s the difference: This is my skin before (show redness/acne), and now (show glowy skin, no makeup). The change has been amazing, and I owe it all to purer water.\"[/note]</p>"
+          }
+        },
+        "text_slider_CCUqjY": {
+          "type": "text_slider",
+          "settings": {
+            "text": "<p><strong>City Girl Struggle</strong></p><p>Target urban dwellers by sharing a relatable story of how city living impacted skin health, with the Qure Shower Filter as the solution to improve it. Connect emotionally by sharing a personal struggle and transformation.</p><p>[note_grey]<strong>Hook:</strong>\"Can you believe this was how my skin looked when I first moved to the city? After using the Qure Shower Filter, my skin is now clearer, smoother, and my hair is glossy. It’s crazy what the right water can do for you”.[/note]</p>"
+          }
+        },
+        "text_slider_RAiRHD": {
+          "type": "text_slider",
+          "settings": {
+            "text": "<p><strong>The Skincare Secret You’ve Been Missing</strong></p><p>Unfiltered tap water can strip your skin, cause irritation, and prevent your skincare from working its best. Qure Shower Filter calms skin, reducing breakouts and boosting hydration retention.</p><p>[note_grey]<strong>Hook:</strong>“Spending hundreds on skincare products but still not seeing results? I was too, until I realized the REAL problem wasn’t my products—it was the water I was using.”[/note]</p>"
+          }
+        },
+        "text_slider_ymd9tD": {
+          "type": "text_slider",
+          "settings": {
+            "text": "<p><strong>The Worst Skincare Mistake</strong></p><p>Educate viewers about the common mistake of using unfiltered tap water for skincare. Position the Qure Shower Filter as an easy and effective solution that is proven to improve skin health.</p><p>[note_grey]<strong>Hook:</strong>Friend 1: \"What’s the worst skincare mistake you see?\"  Friend 2: \"Washing your face with unfiltered tap water!\"[/note]</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_slider_K4LyR4",
+        "text_slider_cm9GmM",
+        "text_slider_CCUqjY",
+        "text_slider_RAiRHD",
+        "text_slider_ymd9tD"
+      ],
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "must_read": false,
+        "heading": "Content Angles & Ideas",
+        "text": "<h2>Content Angles & Ideas</h2>",
+        "slides_per_view": "2.5"
+      }
+    },
+    "n_guide_content_eJjMTa": {
+      "type": "n_guide-content",
+      "blocks": {
+        "video_slider_tQmWWE": {
+          "type": "video_slider",
+          "settings": {
+            "youtube_url": false,
+            "video_url": "2427ztggvj"
+          }
+        },
+        "video_slider_kcweTA": {
+          "type": "video_slider",
+          "settings": {
+            "youtube_url": false,
+            "video_url": "7gmsmvvkqh"
+          }
+        },
+        "video_slider_VE4UM8": {
+          "type": "video_slider",
+          "settings": {
+            "youtube_url": true,
+            "video_url": "https://www.youtube.com/watch?v=EiOtAKlUHdg",
+            "image": "shopify://shop_images/shower_review_fdc72e57-89bd-4611-b63f-774651012bf4.webp"
+          }
+        },
+        "video_slider_6Mdebw": {
+          "type": "video_slider",
+          "settings": {
+            "youtube_url": false,
+            "video_url": "lmnn8fcnp4"
+          }
+        },
+        "video_slider_HjGWUH": {
+          "type": "video_slider",
+          "settings": {
+            "youtube_url": true,
+            "video_url": "https://www.youtube.com/watch?v=fFszkXzq6Dk",
+            "image": "shopify://shop_images/shower_review3.webp"
+          }
+        },
+        "video_slider_pedbCx": {
+          "type": "video_slider",
+          "settings": {
+            "youtube_url": true,
+            "video_url": "https://www.youtube.com/watch?v=YulGNwbRp7w",
+            "image": "shopify://shop_images/shower_review4.webp"
+          }
+        },
+        "video_slider_6G3gB8": {
+          "type": "video_slider",
+          "settings": {
+            "youtube_url": true,
+            "video_url": "https://www.youtube.com/watch?v=-JELsZmxlAM",
+            "image": "shopify://shop_images/shower_review5.webp"
+          }
+        },
+        "video_slider_7jAiVG": {
+          "type": "video_slider",
+          "settings": {
+            "youtube_url": false,
+            "video_url": "0vu4f6h4h8"
+          }
+        }
+      },
+      "block_order": [
+        "video_slider_tQmWWE",
+        "video_slider_kcweTA",
+        "video_slider_VE4UM8",
+        "video_slider_6Mdebw",
+        "video_slider_HjGWUH",
+        "video_slider_pedbCx",
+        "video_slider_6G3gB8",
+        "video_slider_7jAiVG"
+      ],
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "must_read": false,
+        "heading": "Content Examples",
+        "text": "<h2>Content Examples</h2>",
+        "slides_per_view": "3.1"
+      }
+    },
+    "n_trusted_recommended_kHfpo4": {
+      "type": "n_trusted-recommended",
+      "name": "t:sections.n_trusted-recommended.name",
+      "settings": {
+        "use_own_file": true,
+        "background_color": "grey",
+        "modifier": "none",
+        "heading": "<h2>Trusted and Recommended by Experts</h2>",
+        "text": "<p>“Throughout my life…living in Wilmington, [my] skin was great. Then I… move to Charlotte and… every week my skin would get irritated especially after showering. Even my hair wouldn't cooperate. I was convinced it was the water I was exposed to.</p><p>Turns out, <em>there's an overwhelming amount of data that the water hardness could affect your skin</em>.”</p>",
+        "video_image_cover": "shopify://shop_images/doctor_shah_desk_f278ae6e-e203-43de-a826-23ddef34c258.webp",
         "video_url": "",
-        "wistia_url": ""
+        "badge_text": "Dermatologist Reviewed"
       }
     }
   },
   "order": [
-    "page_banner_richtext_0Pmyc6",
-    "content_brief_MPxJg6",
-    "main",
-    "trusted_recommended_3kKz1d"
+    "n_across_image_banner_Jhry7T",
+    "n_intro_BkRq5o",
+    "n_guide_menu_EbHdME",
+    "n_guide_content_a3bghQ",
+    "n_guide_content_step_rmGmXc",
+    "n_guide_content_kMxw9W",
+    "n_guide_content_Fipjki",
+    "n_guide_content_Y4Bq4W",
+    "n_guide_content_6FT6Ci",
+    "n_guide_content_eJjMTa",
+    "n_trusted_recommended_kHfpo4"
   ]
 }
