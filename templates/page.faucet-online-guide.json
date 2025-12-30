@@ -9,32 +9,431 @@
  */
 {
   "sections": {
-    "page_banner_richtext_tFqADz": {
-      "type": "page-banner-richtext",
-      "name": "t:sections.page-banner-richtext.name",
+    "n_across_image_banner_Jhry7T": {
+      "type": "n_across-image-banner",
+      "name": "t:sections.n_across-image-banner.name",
       "settings": {
-        "heading": "Faucet Filter Guide",
-        "sub_heading": "IMPORTANT NOTICE:",
-        "text": "Please read the complete instruction manual carefully before installing and using your Qure Faucet Filter.",
+        "use_own_file": true,
+        "modifier": "hero_reverse",
+        "heading": "<h1>Faucet Filter Guide</h1><h6>IMPORTANT NOTICE:</h6><p>Please read the complete instruction manual carefully before installing and using your Qure&nbsp;Faucet Filter.</p>",
+        "text": "",
         "image": "shopify://shop_images/faucet_guide-banner.webp",
-        "image_mobile": "shopify://shop_images/faucet_banner-mob.webp"
+        "image_mobile": "shopify://shop_images/faucet_guide-banner-mob.webp",
+        "button_label": "",
+        "button_url": ""
       }
     },
-    "content_brief_MUaBpxd": {
-      "type": "content-brief",
-      "name": "t:sections.content-brief.name",
+    "n_intro_BkRq5o": {
+      "type": "n_intro",
+      "blocks": {
+        "wistia_video_JmJcYa": {
+          "type": "wistia_video",
+          "settings": {
+            "wistia_url": "t0xzq5gdvm",
+            "image": "shopify://shop_images/how_to_install.webp"
+          }
+        }
+      },
+      "block_order": [
+        "wistia_video_JmJcYa"
+      ],
+      "name": "t:sections.n_intro.name",
       "settings": {
+        "use_own_file": true,
         "text": "<p><strong>The Qure Faucet Filter</strong> is designed to remove harmful impurities from your water, ensuring your skin remains clear, hydrated, and free from irritants.</p><p>This guide will walk you through the installation process so you can start enjoying cleaner, skin-friendly water in just a few minutes.</p>"
       }
     },
-    "main": {
-      "type": "page-faucet-online-guide",
-      "settings": {}
+    "n_guide_menu_EbHdME": {
+      "type": "n_guide-menu",
+      "blocks": {
+        "menu_item_MeirNq": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Quick Start Guide",
+            "must_read": false
+          }
+        },
+        "menu_item_NEQKHW": {
+          "type": "menu_item",
+          "settings": {
+            "item": "How To Replace The Filter",
+            "must_read": false
+          }
+        },
+        "menu_item_JAQtB3": {
+          "type": "menu_item",
+          "settings": {
+            "item": "What's Included In The Box",
+            "must_read": false
+          }
+        },
+        "menu_item_jJMdAY": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Water Mode Selection",
+            "must_read": false
+          }
+        },
+        "menu_item_bpePgr": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Care & Maintenance",
+            "must_read": false
+          }
+        },
+        "menu_item_HXArMe": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Troubleshooting & Adjustments",
+            "must_read": false
+          }
+        },
+        "menu_item_TMz7Jz": {
+          "type": "menu_item",
+          "settings": {
+            "item": "FAQs",
+            "must_read": false
+          }
+        }
+      },
+      "block_order": [
+        "menu_item_MeirNq",
+        "menu_item_NEQKHW",
+        "menu_item_JAQtB3",
+        "menu_item_jJMdAY",
+        "menu_item_bpePgr",
+        "menu_item_HXArMe",
+        "menu_item_TMz7Jz"
+      ],
+      "name": "t:sections.n_guide-menu.name",
+      "settings": {
+        "use_own_file": true
+      }
+    },
+    "n_guide_content_step_XzrxG3": {
+      "type": "n_guide-content-step",
+      "blocks": {
+        "step_by_step_77Waft": {
+          "type": "step_by_step",
+          "settings": {
+            "image": "shopify://shop_images/faucet-step-1.webp",
+            "text": "<h6>Step 1</h6><p>Remove your faucet's aerator or rectifier using the bubbler wrench.</p><p>Locate the threading and identify if it is internal or external. If there's no threading, you'll need the multi-functional adapter.</p>"
+          }
+        },
+        "step_by_step_mVFznz": {
+          "type": "step_by_step",
+          "settings": {
+            "image": "shopify://shop_images/faucet-step-2.webp",
+            "text": "<h6>Step 2</h6><p>Use the adapter that matches your faucet type (internal, external, or no threading).</p><p>Make sure the sealing ring is in place inside the adapter.</p>"
+          }
+        },
+        "step_by_step_KEwBab": {
+          "type": "step_by_step",
+          "settings": {
+            "image": "shopify://shop_images/faucet-step-3.webp",
+            "text": "<h6>Step 3</h6><p>Screw the adapter onto your faucet by hand first.</p><p>Use the wrench provided to tighten it gently (don't over-tighten).</p>"
+          }
+        },
+        "step_by_step_xmPFwj": {
+          "type": "step_by_step",
+          "settings": {
+            "image": "shopify://shop_images/faucet-step-4.webp",
+            "text": "<h6>Step 4</h6><p>Once the adapter is secure, twist on the Qure Faucet Filter. Make sure it's snug but not forced.</p><p>[note_green]<strong>Tip:</strong>You should hear 2 clicks when the Faucet Filter is correctly secured.[/note]</p>"
+          }
+        },
+        "step_by_step_UwCyYB": {
+          "type": "step_by_step",
+          "settings": {
+            "image": "shopify://shop_images/faucet-step-5.webp",
+            "text": "<h6>Step 5</h6><p>Let cold water run through the filter for 30-60 seconds to flush the system.</p><p>Done! You're ready to enjoy filtered, skin-friendly water.</p>"
+          }
+        },
+        "wistia_video_WDx3E6": {
+          "type": "wistia_video",
+          "settings": {
+            "desktop": true,
+            "wistia_url": "t0xzq5gdvm",
+            "image": "shopify://shop_images/how_to_install.webp"
+          }
+        },
+        "quote_a84MEQ": {
+          "type": "quote",
+          "settings": {
+            "style": "red",
+            "text": "<p>The Qure Faucet Filter is intended for skincare purposes only. It should not be used for drinking water or any other non-skincare applications. Replace the filter every three months for optimal performance. If you experience any issues such as water leaks or reduced flow, follow the maintenance guidelines in this manual.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "step_by_step_77Waft",
+        "step_by_step_mVFznz",
+        "step_by_step_KEwBab",
+        "step_by_step_xmPFwj",
+        "step_by_step_UwCyYB",
+        "wistia_video_WDx3E6",
+        "quote_a84MEQ"
+      ],
+      "name": "t:sections.n_guide-content-step.name",
+      "settings": {
+        "use_own_file": true,
+        "active": true,
+        "must_read": false,
+        "heading": "Quick Start Guide",
+        "text": "<h2>Quick Start Guide</h2><p>[wistia_video]</p><p>To install your new Faucet Filter, you'll need the following:</p><ul><li>Qure Faucet Filter with 360° nozzle</li><li>Multi-functional adapter (provided)</li><li>Adapter wrench (provided)</li><li>Bubbler wrench (provided)</li><li>Thread adapters (provided)</li><li>Silicone ring (provided)</li></ul>"
+      }
+    },
+    "n_guide_content_step_g8LF3K": {
+      "type": "n_guide-content-step",
+      "blocks": {
+        "step_by_step_3fNAar": {
+          "type": "step_by_step",
+          "settings": {
+            "image": "shopify://shop_images/faucet-replace-step-1.webp",
+            "text": "<h6>Step 1</h6><p>Turn off the faucet. Rotate the filter cartridge cover counterclockwise to remove the old filter cartridge.</p>"
+          }
+        },
+        "step_by_step_gnWHrn": {
+          "type": "step_by_step",
+          "settings": {
+            "image": "shopify://shop_images/faucet-replace-step-2.webp",
+            "text": "<h6>Step 2</h6><p>Peel off the seal from the new filter cartridge. Install the cartridge into the faucet housing.</p>"
+          }
+        },
+        "step_by_step_BMxdhh": {
+          "type": "step_by_step",
+          "settings": {
+            "image": "shopify://shop_images/faucet-replace-step-3.webp",
+            "text": "<h6>Step 3</h6><p>Screw the filter cartridge cover clockwise to secure it.</p>"
+          }
+        },
+        "step_by_step_bkQAj8": {
+          "type": "step_by_step",
+          "settings": {
+            "image": "shopify://shop_images/faucet-replace-step-4.webp",
+            "text": "<h6>Step 4</h6><p>Turn on the faucet and let raw water flow for 5 seconds, then switch to purified water mode and let it run for 3 minutes before first use.</p>"
+          }
+        },
+        "wistia_video_bAfYVy": {
+          "type": "wistia_video",
+          "settings": {
+            "desktop": false,
+            "wistia_url": "1no4jx6uxf",
+            "image": "shopify://shop_images/how_to_replace.webp"
+          }
+        }
+      },
+      "block_order": [
+        "step_by_step_3fNAar",
+        "step_by_step_gnWHrn",
+        "step_by_step_BMxdhh",
+        "step_by_step_bkQAj8",
+        "wistia_video_bAfYVy"
+      ],
+      "name": "t:sections.n_guide-content-step.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "must_read": false,
+        "heading": "How To Replace The Filter",
+        "text": "<h2>Quick How To Replace The Filter Guide</h2><p>[wistia_video]</p><p>We recommend replacing your filter every 3 months to ensure optimal filtration.</p><p>You may find that water flow slows sooner than this 3 month guideline. In this case, you can replace the filter sooner to maintain strong flow and effective filtration.</p><p>To replace the filter, you'll need a new replacement filter cartridge.</p>"
+      }
+    },
+    "n_guide_included_box_7wF37U": {
+      "type": "n_guide-included-box",
+      "blocks": {
+        "items_BgT9Pr": {
+          "type": "items",
+          "settings": {
+            "image": "shopify://shop_images/included-box-filter.webp",
+            "text": "<p>Qure Faucet Filter with 360° nozzle (filter cartridge preinstalled in the unit)</p><p>1pc</p>"
+          }
+        },
+        "items_7wCBBJ": {
+          "type": "items",
+          "settings": {
+            "image": "shopify://shop_images/included-box-m-adapters.webp",
+            "text": "<p>Multi-functional Adapters</p><p>1pc</p>"
+          }
+        },
+        "items_rATazN": {
+          "type": "items",
+          "settings": {
+            "image": "shopify://shop_images/included-box-adapter-wrench.webp",
+            "text": "<p>Adapter Wrench</p><p>1pc</p>"
+          }
+        },
+        "items_Nzn37k": {
+          "type": "items",
+          "settings": {
+            "image": "shopify://shop_images/included-box-bubble-wrench.webp",
+            "text": "<p>Bubbler Wrench</p><p>1pc</p>"
+          }
+        },
+        "items_xT9FRa": {
+          "type": "items",
+          "settings": {
+            "image": "shopify://shop_images/included-box-thread-adapters.webp",
+            "text": "<p>Thread Adapters</p><p>12pcs</p>"
+          }
+        },
+        "items_7GzMAK": {
+          "type": "items",
+          "settings": {
+            "image": "shopify://shop_images/included-box-silicone-ring.webp",
+            "text": "<p>Silicone Rings</p><p>12pcs</p>"
+          }
+        },
+        "items_8FFY8T": {
+          "type": "items",
+          "settings": {
+            "image": "shopify://shop_images/included-box-user-manual.webp",
+            "text": "<p>User Manual</p><p>1pc</p>"
+          }
+        }
+      },
+      "block_order": [
+        "items_BgT9Pr",
+        "items_7wCBBJ",
+        "items_rATazN",
+        "items_Nzn37k",
+        "items_xT9FRa",
+        "items_7GzMAK",
+        "items_8FFY8T"
+      ],
+      "name": "t:sections.n_guide-included-box.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "must_read": false,
+        "heading": "What's Included In The Box",
+        "text": "<h2>What's Included In The Box</h2>",
+        "slides_per_view": ""
+      }
+    },
+    "n_guide_content_image_block_c7qkcC": {
+      "type": "n_guide-content-image-block",
+      "blocks": {
+        "image_with_text_Brt6yd": {
+          "type": "image_with_text",
+          "settings": {
+            "image_position": "bottom_shower_image",
+            "image": "shopify://shop_images/Q-fitler.webp",
+            "text": "<p><strong>Filtered water mode</strong></p><p>When the dial is turned to the Q position, the water flows through the filter cartridge located at the front of the device.</p><p>The filtered water then exits through the lower outlet, providing clean, purified water ideal for facial cleansing and other skincare routines.</p>"
+          }
+        },
+        "image_with_text_hEpzBY": {
+          "type": "image_with_text",
+          "settings": {
+            "image_position": "bottom_shower_image",
+            "image": "shopify://shop_images/Q-fitler2.webp",
+            "text": "<p><strong>Tap water mode</strong></p><p>By turning the dial to the tap water symbol, the water bypasses the filter cartridge and exits directly from the upper outlet of the device.</p><p>This mode is perfect for tasks where filtered water is not required, such as rinsing your hands or filling a container with unfiltered water.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_Brt6yd",
+        "image_with_text_hEpzBY"
+      ],
+      "name": "t:sections.n_guide-content-image-block.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "must_read": false,
+        "heading": "Water Mode Selection",
+        "text": "<h2>Water Mode Selection</h2><p>The mode selection toggle is located on the side of the faucet filter.</p><p>It is clearly labeled with two symbols: a Q for filtered water and a tap water symbol for unfiltered water.</p>"
+      }
+    },
+    "n_guide_content_nnexwb": {
+      "type": "n_guide-content",
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "must_read": false,
+        "heading": "Care & Maintenance",
+        "text": "<h2>Care & Maintenance</h2><p>To ensure your Qure Faucet Filter works optimally, regular maintenance is important:</p><ul><li>Wipe the filter's surface with a damp cloth.</li><li>Avoid harsh chemicals when cleaning, and do not use steel wool, abrasive cleaners, or corrosive liquids.</li><li>Replace the filter every 3 months, or sooner if the water flow slows down.</li><li>Periodically check the connections to ensure there are no leaks.</li></ul>",
+        "slides_per_view": ""
+      }
+    },
+    "n_guide_content_4idDGr": {
+      "type": "n_guide-content",
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "must_read": false,
+        "heading": "Troubleshooting & Adjustments",
+        "text": "<h2>Troubleshooting & Adjustments</h2><p>Having trouble? Don't worry, most issues are quick to solve.</p><p>[hr]</p><h6>Water leaks</h6><p>Ensure that all silicone rings and adapters are properly fitted. If leaks persist, check the connections and tighten as needed.</p><p>[hr]</p><h6>Odor in the water</h6><p>If you notice any unusual odors, flush the filter by running water through the system for several minutes.</p><p>[hr]</p><h6>Low or uneven water pressure</h6><p>Low flow can occur if the filter is clogged. Remove and clean or replace the filter as needed.</p>",
+        "slides_per_view": ""
+      }
+    },
+    "n_guide_faq_VCcdx9": {
+      "type": "n_guide-faq",
+      "blocks": {
+        "faq_item_3Laqmb": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "How often should I replace the filter cartridge?",
+            "text": "<p>The filter should be replaced every 3 months to ensure optimal performance.</p>"
+          }
+        },
+        "faq_item_RjHhJ4": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "Can I use the water for drinking?",
+            "text": "<p>No, the Qure Faucet Filter is designed specifically for skincare purposes and is not suitable for drinking water.</p>"
+          }
+        },
+        "faq_item_UBDQFH": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "What should I do if the water flow slows down?",
+            "text": "<p>Remove the filter and clean surface impurities. If the flow doesn't improve, replace the filter.</p>"
+          }
+        },
+        "faq_item_8tRtCr": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "Is this filter compatible with all faucets?",
+            "text": "<p>The filter is compatible with most standard faucets, but not with shower heads, induction faucets, or pull-out faucets without detachable aerators.</p>"
+          }
+        },
+        "faq_ask_plate_UEcjUD": {
+          "type": "faq_ask_plate",
+          "settings": {
+            "heading": "Don't see your question?",
+            "button_label": "Ask us",
+            "button_url": "#"
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_3Laqmb",
+        "faq_item_RjHhJ4",
+        "faq_item_UBDQFH",
+        "faq_item_8tRtCr",
+        "faq_ask_plate_UEcjUD"
+      ],
+      "name": "t:sections.n_guide-faq.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "must_read": false,
+        "heading": "FAQs",
+        "text": "<h2>Frequently Asked Questions</h2>"
+      }
     }
   },
   "order": [
-    "page_banner_richtext_tFqADz",
-    "content_brief_MUaBpxd",
-    "main"
+    "n_across_image_banner_Jhry7T",
+    "n_intro_BkRq5o",
+    "n_guide_menu_EbHdME",
+    "n_guide_content_step_XzrxG3",
+    "n_guide_content_step_g8LF3K",
+    "n_guide_included_box_7wF37U",
+    "n_guide_content_image_block_c7qkcC",
+    "n_guide_content_nnexwb",
+    "n_guide_content_4idDGr",
+    "n_guide_faq_VCcdx9"
   ]
 }
