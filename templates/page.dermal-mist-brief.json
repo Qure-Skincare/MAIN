@@ -1,0 +1,336 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "n_across_image_banner_Jhry7T": {
+      "type": "n_across-image-banner",
+      "name": "t:sections.n_across-image-banner.name",
+      "settings": {
+        "use_own_file": true,
+        "modifier": "hero_reverse",
+        "heading": "<h1>Dermal Mist Creative Content Guide</h1>",
+        "text": "",
+        "image": "shopify://shop_images/dermal_mist-banner.webp",
+        "image_mobile": "shopify://shop_images/dermal_mist-bannerM.webp",
+        "button_label": "",
+        "button_url": ""
+      }
+    },
+    "n_intro_BkRq5o": {
+      "type": "n_intro",
+      "name": "t:sections.n_intro.name",
+      "settings": {
+        "use_own_file": true,
+        "text": "<p><strong>Discover how to make the most of the Qure Dermal Mist with our creative content guide.</strong></p><p>This brief will help you elevate your skincare routine with the Qure Dermal Mist. Powered by hypochlorous acid spray and designed to prevent breakouts, this mist can be used to reduce impurities during the day or cleanse before your favorite Micro-Infusion treatment.</p>"
+      }
+    },
+    "n_guide_menu_EbHdME": {
+      "type": "n_guide-menu",
+      "blocks": {
+        "menu_item_TmeeFF": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Product Information",
+            "must_read": false
+          }
+        },
+        "menu_item_BbehzW": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Usage Instructions",
+            "must_read": false
+          }
+        },
+        "menu_item_CTfQjN": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Product Claims",
+            "must_read": false
+          }
+        },
+        "menu_item_MUr69X": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Content Requirements",
+            "must_read": true
+          }
+        },
+        "menu_item_T7A96r": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Creative Direction",
+            "must_read": false
+          }
+        },
+        "menu_item_nttpF9": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Content Examples",
+            "must_read": false
+          }
+        }
+      },
+      "block_order": [
+        "menu_item_TmeeFF",
+        "menu_item_BbehzW",
+        "menu_item_CTfQjN",
+        "menu_item_MUr69X",
+        "menu_item_T7A96r",
+        "menu_item_nttpF9"
+      ],
+      "name": "t:sections.n_guide-menu.name",
+      "settings": {
+        "use_own_file": true
+      }
+    },
+    "n_guide_content_dcTLny": {
+      "type": "n_guide-content",
+      "blocks": {
+        "link_pEAgJM": {
+          "type": "link",
+          "settings": {
+            "link_text": "Learn more about Qure Dermal Mist",
+            "link_url": "#"
+          }
+        }
+      },
+      "block_order": [
+        "link_pEAgJM"
+      ],
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": true,
+        "must_read": false,
+        "heading": "Product Information",
+        "text": "<h2>Product Information</h2><ul><li>Powered by Hypochlorous Acid and enriched with Chamomile</li><li>Safe for face, body, and surfaces</li><li>Hypoallergenic and suitable for sensitive skin</li><li>Clinically proven to reduce bacteria and inflammation</li><li>Non-drying and leaves no residue</li><li>Light, natural HOCl scent that dissipates quickly</li></ul>",
+        "slides_per_view": ""
+      }
+    },
+    "n_guide_content_werVVb": {
+      "type": "n_guide-content",
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "must_read": false,
+        "heading": "Usage Instructions",
+        "text": "<h2>Usage Instructions</h2><p><strong>How To Use:</strong></p><ol><li><strong>Post-workout essential:</strong> Spray right after a gym session to help keep breakouts at bay before you can get to a full cleanse.</li><li><strong>Post-workout essential:</strong> In between washes, a spray on your pillowcase can help keep breakout-causing germs under control.</li><li><strong>Pre-treatments purifier:</strong> Before Micro-Infusion, give your skin a spritz to cleanse and prep for better results.</li><li><strong>Device defender:</strong> After using your Q-Rejuvalight Pro, a light spray and wipe inside your device keeps it clean.</li></ol>",
+        "slides_per_view": ""
+      }
+    },
+    "n_guide_content_p7UQPA": {
+      "type": "n_guide-content",
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "must_read": false,
+        "heading": "Product Claims",
+        "text": "<h2>Product Claims</h2><p>Key claims:</p><ul><li>Reduces impurities and prevents breakouts without stripping or drying out the skin.</li><li>Accelerates skin healing post-treatment or during flare-ups.</li><li>Use on-the-go to keep skin calm and clear - no rising needed.</li><li>Dermatologically tested, versatile and safe for use on your face, body, and devices.</li><li>Safe for sensitive skin and gentle enough for daily use.</li><li>Travel-friendly breakout control, available in two sizes.</li></ul>",
+        "slides_per_view": ""
+      }
+    },
+    "n_guide_content_TwxkfN": {
+      "type": "n_guide-content",
+      "blocks": {
+        "quote_jzqpe6": {
+          "type": "quote",
+          "settings": {
+            "style": "blue",
+            "text": "<p>Remember to <strong>add a personal touch</strong> to the messaging, talk about how it makes your skin feel and when you use it.</p><p>Examples:</p><ul><li>“My skin flares up after the gym, and this calms it down instantly.”</li><li>“I always keep this in my bag to use when I'm traveling.”</li><li>“It feels so light and refreshing, but makes my skin feel clean and refreshed.”</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "quote_jzqpe6"
+      ],
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "must_read": true,
+        "heading": "Content Requirements",
+        "text": "<h2>Content Requirements</h2><p>Messaging must include:</p><ul><li>Light and calming spray, and doesn't leave skin sticky or tight.</li><li>Soothes redness and irritation without stinging or dryness.</li><li>Just mist and go — no rinsing, no mess.</li><li>Use after cleansing, post-workout, during travel, or anytime skin feels off.</li><li>100ml for everyday use, 15ml for on-the-go breakout control.</li><li>Gentle enough for sensitive or reactive skin.</li></ul>",
+        "slides_per_view": ""
+      }
+    },
+    "n_guide_content_cLJTqK": {
+      "type": "n_guide-content",
+      "blocks": {
+        "image_slider_X3Kiyx": {
+          "type": "image_slider",
+          "settings": {
+            "image": "shopify://shop_images/dermal_mist-brief.webp"
+          }
+        },
+        "image_slider_njkH4n": {
+          "type": "image_slider",
+          "settings": {
+            "image": "shopify://shop_images/dermal_mist-brief1.webp"
+          }
+        },
+        "quote_XicHzb": {
+          "type": "quote",
+          "settings": {
+            "style": "blue",
+            "text": "<p><strong>Tag and mention</strong> @qureskincare #DermalMist #hypochlorousacid #qureskincare</p><p>Include your affiliate or other links provided by Qure in Instagram Stories and content captions. If the link can't be placed in bio, include it in linktr.ee or similar.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "image_slider_X3Kiyx",
+        "image_slider_njkH4n",
+        "quote_XicHzb"
+      ],
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "must_read": false,
+        "heading": "Creative Direction",
+        "text": "<h2>Creative Direction</h2><p>Recording Guidelines</p><ul><li>Use bright, natural lighting. No filters.</li><li>Ensure the Qure Dermal Mist is the main focus of the content.</li><li>Keep backgrounds clean and uncluttered.</li><li>In cover photos, always show the filter in use (unless agreed otherwise).</li></ul>",
+        "slides_per_view": "2"
+      }
+    },
+    "n_guide_content_eJjMTa": {
+      "type": "n_guide-content",
+      "blocks": {
+        "video_slider_dR6AG9": {
+          "type": "video_slider",
+          "settings": {
+            "youtube_url": true,
+            "video_url": "https://www.youtube.com/watch?v=EjLx0IvKh7g",
+            "image": "shopify://shop_images/mist_thumb_ab5e36d4-b2b5-4004-906c-c5d1ad3aa0e0.webp"
+          }
+        },
+        "video_slider_aD7p6j": {
+          "type": "video_slider",
+          "settings": {
+            "youtube_url": false,
+            "video_url": "yn6z8yyb27",
+            "image": "shopify://shop_images/mist_thumb2.webp"
+          }
+        },
+        "video_slider_hdT34t": {
+          "type": "video_slider",
+          "settings": {
+            "youtube_url": false,
+            "video_url": "8gyyf2dcvi",
+            "image": "shopify://shop_images/mist_thumb3.webp"
+          }
+        },
+        "video_slider_JfbhnQ": {
+          "type": "video_slider",
+          "settings": {
+            "youtube_url": false,
+            "video_url": "1n99gjr2s0",
+            "image": "shopify://shop_images/mist_thumb4.webp"
+          }
+        },
+        "video_slider_fQRDyw": {
+          "type": "video_slider",
+          "settings": {
+            "youtube_url": false,
+            "video_url": "70whuifdz9",
+            "image": "shopify://shop_images/mist_thumb5.webp"
+          }
+        },
+        "video_slider_KMxXFV": {
+          "type": "video_slider",
+          "settings": {
+            "youtube_url": false,
+            "video_url": "3ju1jzs8kh",
+            "image": "shopify://shop_images/mist_thumb6.webp"
+          }
+        },
+        "video_slider_V9r8G6": {
+          "type": "video_slider",
+          "settings": {
+            "youtube_url": false,
+            "video_url": "3ju1jzs8kh",
+            "image": "shopify://shop_images/mist_thumb6.webp"
+          }
+        },
+        "video_slider_Armcx8": {
+          "type": "video_slider",
+          "settings": {
+            "youtube_url": false,
+            "video_url": "8oaekyxuea",
+            "image": "shopify://shop_images/mist_thumb7.webp"
+          }
+        },
+        "video_slider_jiLqYb": {
+          "type": "video_slider",
+          "settings": {
+            "youtube_url": false,
+            "video_url": "73f18l0mq1",
+            "image": "shopify://shop_images/mist_thumb8.webp"
+          }
+        },
+        "video_slider_bbM3Gd": {
+          "type": "video_slider",
+          "settings": {
+            "youtube_url": false,
+            "video_url": "yerwu83f6q",
+            "image": "shopify://shop_images/mist_thumb9.webp"
+          }
+        }
+      },
+      "block_order": [
+        "video_slider_dR6AG9",
+        "video_slider_aD7p6j",
+        "video_slider_hdT34t",
+        "video_slider_JfbhnQ",
+        "video_slider_fQRDyw",
+        "video_slider_KMxXFV",
+        "video_slider_V9r8G6",
+        "video_slider_Armcx8",
+        "video_slider_jiLqYb",
+        "video_slider_bbM3Gd"
+      ],
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "must_read": false,
+        "heading": "Content Examples",
+        "text": "<h2>Content Examples</h2>",
+        "slides_per_view": "3.1"
+      }
+    },
+    "n_trusted_recommended_kHfpo4": {
+      "type": "n_trusted-recommended",
+      "name": "t:sections.n_trusted-recommended.name",
+      "settings": {
+        "use_own_file": true,
+        "background_color": "grey",
+        "modifier": "none",
+        "heading": "<h2>Trusted and Recommended by Experts</h2>",
+        "text": "<p>\"...Spray your skin to sanitize it before using your Micro-Infusion device. <em>It's absolutely genius</em>.\"</p>",
+        "video_image_cover": "shopify://shop_images/doctor_shah_desk.webp",
+        "video_url": "",
+        "badge_text": "Dermatologist Reviewed"
+      }
+    }
+  },
+  "order": [
+    "n_across_image_banner_Jhry7T",
+    "n_intro_BkRq5o",
+    "n_guide_menu_EbHdME",
+    "n_guide_content_dcTLny",
+    "n_guide_content_werVVb",
+    "n_guide_content_p7UQPA",
+    "n_guide_content_TwxkfN",
+    "n_guide_content_cLJTqK",
+    "n_guide_content_eJjMTa",
+    "n_trusted_recommended_kHfpo4"
+  ]
+}
