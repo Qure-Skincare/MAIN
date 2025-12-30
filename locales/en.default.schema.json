@@ -254,6 +254,10 @@
                 "background-color-options": {
                     "none": "None",
                     "grey": "Grey"
+                },
+                "modifier-options": {
+                    "none": "None",
+                    "reverse": "Reverse"
                 }
             }
         },
