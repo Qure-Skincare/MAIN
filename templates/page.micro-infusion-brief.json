@@ -406,7 +406,7 @@
         "text_slider_ztbtYC": {
           "type": "text_slider",
           "settings": {
-            "text": "<p><strong>Stubborn Dark Spots?</strong></p><p>Topical creams often sit on the surface, but micro-infusion delivers brightening ingredients beneath the skin barrier—helping to fade stubborn dark spots more effectively by targeting them at the source.</p><p>[note4_grey]<strong>Hook:</strong>“Have dark marks like this that won't seem to fade with creams? Here's what you need to know”[/note]</p>"
+            "text": "<p><strong>Stubborn Dark Spots?</strong></p><p>Topical creams often sit on the surface, but micro-infusion delivers brightening ingredients beneath the skin barrier—helping to fade stubborn dark spots more effectively by targeting them at the source.</p><p>[note_grey]<strong>Hook:</strong>“Have dark marks like this that won't seem to fade with creams? Here's what you need to know”[/note]</p>"
           }
         }
       },
