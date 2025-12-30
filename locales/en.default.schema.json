@@ -131,6 +131,7 @@
         "accordion": "Accordion",
         "accordion-image": "Accordion image",
         "slider": "Slider",
+        "text-slider": "Text slider",
         "video-slider": "Video slider",
         "carousel": "Carousel",
         "items": "Items",
@@ -285,6 +286,9 @@
         },
         "n_guide-faq": {
             "name": "Guide FAQ"
+        },
+        "n_guide-included-box": {
+            "name": "Guide included box"
         },
         "collection": {
             "name": "Collection",

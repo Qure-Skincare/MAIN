@@ -157,6 +157,13 @@
                         </div>
                     </div>
                 {% endif %}
+                {% for block in section.blocks %}
+                    {% if block.type == 'link' %}
+                        {% if block.settings.link_text != blank and block.settings.link_url != blank %}
+                            <div class="guide-link"><a href="{{ block.settings.link_url }}">{{ block.settings.link_text }}</a></div>
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
             </div>
         </div>
     </div>
@@ -207,6 +214,23 @@
         }
     ],
     "blocks": [
+        {
+            "type": "link",
+            "name": "t:common.link",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "link_text",
+                    "label": "t:common.link-text"
+                },
+                {
+                    "type": "url",
+                    "id": "link_url",
+                    "label": "t:common.link-url"
+                }
+            ]
+        },
         {
             "type": "image_with_text",
             "name": "t:common.image-with-text",
