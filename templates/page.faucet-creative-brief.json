@@ -9,46 +9,352 @@
  */
 {
   "sections": {
-    "page_banner_richtext_mqFADz": {
-      "type": "page-banner-richtext",
-      "name": "t:sections.page-banner-richtext.name",
+    "n_across_image_banner_Jhry7T": {
+      "type": "n_across-image-banner",
+      "name": "t:sections.n_across-image-banner.name",
       "settings": {
-        "heading": "Faucet Filter Creative Content Guide",
-        "sub_heading": "",
+        "use_own_file": true,
+        "modifier": "hero_reverse",
+        "heading": "<h1>Faucet Filter Creative Content Guide</h1>",
         "text": "",
         "image": "shopify://shop_images/faucet_banner.webp",
-        "image_mobile": "shopify://shop_images/faucet_banner-mob.webp"
+        "image_mobile": "shopify://shop_images/faucet_banner-mob.webp",
+        "button_label": "",
+        "button_url": ""
       }
     },
-    "content_brief_MUaJ76": {
-      "type": "content-brief",
-      "name": "t:sections.content-brief.name",
+    "n_intro_BkRq5o": {
+      "type": "n_intro",
+      "name": "t:sections.n_intro.name",
       "settings": {
+        "use_own_file": true,
         "text": "<p><strong>Discover how to make the most of the Qure Faucet Filter with our creative content guide.</strong></p><p>This brief will help you craft compelling content that highlights how our innovative filter reduces skin-irritating contaminants, supports clearer, more hydrated skin.</p><p>It enhances the effectiveness of every step in your skincare routine, and is backed by a lifetime warranty.</p>"
       }
     },
-    "main": {
-      "type": "page-faucet-creative-brief",
-      "settings": {}
-    },
-    "trusted_recommended_3HKQ7d": {
-      "type": "trusted-recommended",
-      "name": "t:sections.trusted-recommended.name",
+    "n_guide_menu_EbHdME": {
+      "type": "n_guide-menu",
+      "blocks": {
+        "menu_item_TmeeFF": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Product Information",
+            "must_read": false
+          }
+        },
+        "menu_item_BbehzW": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Usage Instructions",
+            "must_read": false
+          }
+        },
+        "menu_item_CTfQjN": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Product Claims & User Study",
+            "must_read": false
+          }
+        },
+        "menu_item_MUr69X": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Content Requirements",
+            "must_read": true
+          }
+        },
+        "menu_item_T7A96r": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Creative Direction",
+            "must_read": false
+          }
+        },
+        "menu_item_nttpF9": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Content Angles & Ideas",
+            "must_read": false
+          }
+        },
+        "menu_item_3NXLnw": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Content Examples",
+            "must_read": false
+          }
+        }
+      },
+      "block_order": [
+        "menu_item_TmeeFF",
+        "menu_item_BbehzW",
+        "menu_item_CTfQjN",
+        "menu_item_MUr69X",
+        "menu_item_T7A96r",
+        "menu_item_nttpF9",
+        "menu_item_3NXLnw"
+      ],
+      "name": "t:sections.n_guide-menu.name",
       "settings": {
-        "heading": "Trusted and Recommended by Experts",
-        "text": "<p>“Harsh water can definitely damage your skin on daily basis and <strong>it impacts everything</strong> you are doing with your skincare.”</p>",
-        "image_text": "",
-        "image": "shopify://shop_images/doctor-maxfield.webp",
-        "image_mobile": "shopify://shop_images/doctor-maxfieldM.webp",
+        "use_own_file": true
+      }
+    },
+    "n_guide_content_TQ99qf": {
+      "type": "n_guide-content",
+      "blocks": {
+        "link_WDDktD": {
+          "type": "link",
+          "settings": {
+            "link_text": "Learn more about Qure Faucet Filter",
+            "link_url": "#"
+          }
+        }
+      },
+      "block_order": [
+        "link_WDDktD"
+      ],
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": true,
+        "must_read": false,
+        "heading": "Product Information",
+        "text": "<h2>Product Information</h2><ul><li>4 stage filtration system removes up to 99% of skin-damaging contaminants.</li><li>360° rotating nozzle for easier face washing.</li><li>Compact design fits into sinks of all shapes and sizes.</li><li>2 minute easy installation with filter replacement needed just once every 3 months.</li><li>Alternate between filtered and unfiltered water modes.</li><li>Meets NSF standards</li></ul>",
+        "slides_per_view": ""
+      }
+    },
+    "n_guide_content_d3J7cJ": {
+      "type": "n_guide-content",
+      "blocks": {
+        "link_TbzrQr": {
+          "type": "link",
+          "settings": {
+            "link_text": "Link to online guide",
+            "link_url": "#"
+          }
+        }
+      },
+      "block_order": [
+        "link_TbzrQr"
+      ],
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "must_read": false,
+        "heading": "Usage Instructions",
+        "text": "<h2>Usage Instructions</h2><p>The Faucet Filter can be installed in 2 minutes, with filter replacement needed just once every 3 months.</p><p><strong>How To Install:</strong></p><ol><li>Remove faucet aerator. Simply attach and twist it off using the key for removal.</li><li>Find the faucet thread accessory which best fits your faucet size.</li><li>Clip Qure Faucet Filter onto the faucet. Once you hear it click, it is installed. Turn the toggle button to “Q” mark on the filter and enjoy healthier, clearer skin!</li></ol>",
+        "slides_per_view": ""
+      }
+    },
+    "n_guide_content_kqaH3N": {
+      "type": "n_guide-content",
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "must_read": false,
+        "heading": "Product Claims & User Study",
+        "text": "<h2>Product Claims & User Study</h2><p>Key claims:</p><ul><li>Safe for sensitive, dry, and acne-prone skin.</li><li>Filtered water helps improve the performance of skincare products.</li><li>Clinically proven to boost hydration in just 4 weeks.</li><li>Reduces the appearance of fine lines and wrinkles with daily use.</li></ul><p>Results from a 4-week user study:</p><ul><li>80% reported reduced dryness after 4 weeks</li><li>77% said tightness after washing decreased</li><li>Many users saw better product absorption and improved glow</li></ul>",
+        "slides_per_view": ""
+      }
+    },
+    "n_guide_content_97j94F": {
+      "type": "n_guide-content",
+      "blocks": {
+        "quote_eEhzyk": {
+          "type": "quote",
+          "settings": {
+            "style": "blue",
+            "text": "<p>Remember to <strong>add a personal touch</strong> to the messaging, talk about how the filter makes your skin feel.</p><p>Examples:</p><ul><li>“This filter changed my skin.”</li><li>“Since using this filter, my hair has never looked better!”</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "quote_eEhzyk"
+      ],
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "must_read": true,
+        "heading": "Content Requirements",
+        "text": "<h2>Content Requirements</h2><p>Messaging must include:</p><ul><li>Tap water often contains irritants that affect skin health.</li><li>The Qure Filter helps remove them with no extra steps — just clearer water at the source.</li><li>Filtered water make your skincare work better.</li></ul>",
+        "slides_per_view": ""
+      }
+    },
+    "n_guide_content_jVpC8G": {
+      "type": "n_guide-content",
+      "blocks": {
+        "image_slider_xPVCct": {
+          "type": "image_slider",
+          "settings": {
+            "image": "shopify://shop_images/creative-dir-1.webp"
+          }
+        },
+        "image_slider_XjbWCj": {
+          "type": "image_slider",
+          "settings": {
+            "image": "shopify://shop_images/creative-dir-1.webp"
+          }
+        },
+        "quote_f9FVNc": {
+          "type": "quote",
+          "settings": {
+            "style": "blue",
+            "text": "<p><strong>Tag and mention</strong> @qureskincare #QureSkincare #faucetfilter #Skincare #qurefaucetfilter #qurefilter</p><p>Include your affiliate or other links provided by Qure in Instagram Stories and content captions. If the link can't be placed in bio, include it in linktr.ee or similar.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "image_slider_xPVCct",
+        "image_slider_XjbWCj",
+        "quote_f9FVNc"
+      ],
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "must_read": false,
+        "heading": "Creative Direction",
+        "text": "<h2>Creative Direction</h2><p>Recording Guidelines</p><ul><li>Use bright, natural lighting. No filters.</li><li>Please do not wear makeup (unless to show makeup removal).</li><li>Ensure the Qure Faucet filter is the main focus of the content.</li><li>Keep backgrounds clean and uncluttered.</li><li>In cover photos, always show the filter in use (unless agreed otherwise).</li></ul><p>Content Guidelines</p><ul><li>Please showcase the <strong>360° rotating nozzle</strong> in action.</li><li>Include shots of the filter installation.</li><li>Include shots of old dirty faucet accelerator when removing it.</li><li>If changing the filter, showcase the dirty old filter and compare with the new filter.</li></ul>",
+        "slides_per_view": "2"
+      }
+    },
+    "n_guide_content_6FT6Ci": {
+      "type": "n_guide-content",
+      "blocks": {
+        "text_slider_K4LyR4": {
+          "type": "text_slider",
+          "settings": {
+            "text": "<p><strong>The Hidden Skin Dangers in Every Drop</strong></p><p>Highlight the unseen contaminants in tap water that negatively affect skin, positioning the Qure Faucet Filter as the solution to purer, skin-loving water.</p><p>[note_grey]<strong>Hook:</strong>\"Think your tap water is clean? Think again. Chlorine, heavy metals, and microplastics can hide in your water and harm your skin over time. The Qure Faucet Filter removes up to 99% of these impurities, giving your skin a clean slate every time you wash.\"[/note]</p>"
+          }
+        },
+        "text_slider_cm9GmM": {
+          "type": "text_slider",
+          "settings": {
+            "text": "<p><strong>Before & After Transformation</strong></p><p>Showcase a clear before-and-after transformation to emphasize the positive effects of filtered water on skin health. Focus on the visible results and the real impact the filter has had over time.</p><p>[note_grey]<strong>Hook:</strong>\"I’ve been using the Qure Faucet Filter for 2 months, and here’s the difference: This is my skin before (show redness/acne), and now (show glowy skin, no makeup). The change has been amazing, and I owe it all to purer water.\"[/note]</p>"
+          }
+        },
+        "text_slider_CCUqjY": {
+          "type": "text_slider",
+          "settings": {
+            "text": "<p><strong>City Girl Struggle</strong></p><p>Target urban dwellers by sharing a relatable story of how city living impacted skin health, with the Qure Faucet Filter as the solution to improve it. Connect emotionally by sharing a personal struggle and transformation.</p><p>[note_grey]<strong>Hook:</strong>\"Can you believe this was how my skin looked when I first moved to the city? After using the Qure Faucet Filter, my skin is now clearer, smoother, and glowing. It’s crazy what the right water can do for you”.[/note]</p>"
+          }
+        },
+        "text_slider_RAiRHD": {
+          "type": "text_slider",
+          "settings": {
+            "text": "<p><strong>The Skincare Secret You’ve Been Missing</strong></p><p>Unfiltered tap water can strip your skin, cause irritation, and prevent your skincare from working its best. Once I switched to Qure Faucet Filter, my skin calmed down, I got way less breakouts and my skin was more hydrated -  finally looking the way I wanted it to.</p><p>[note_grey]<strong>Hook:</strong>“Spending hundreds on skincare products but still not seeing results? I was too, until I realized the REAL problem wasn’t my products—it was the water I was using.”[/note]</p>"
+          }
+        },
+        "text_slider_ymd9tD": {
+          "type": "text_slider",
+          "settings": {
+            "text": "<p><strong>The Worst Skincare Mistake</strong></p><p>Educate viewers about the common mistake of using unfiltered tap water for skincare. Position the Qure Faucet Filter as an easy and effective solution that is proven to improve skin health.</p><p>[note_grey]<strong>Hook:</strong>Friend 1: \"What’s the worst skincare mistake you see?\" / Friend 2: \"Washing your face with unfiltered tap water!\"[/note]</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_slider_K4LyR4",
+        "text_slider_cm9GmM",
+        "text_slider_CCUqjY",
+        "text_slider_RAiRHD",
+        "text_slider_ymd9tD"
+      ],
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "must_read": false,
+        "heading": "Content Angles & Ideas",
+        "text": "<h2>Content Angles & Ideas</h2>",
+        "slides_per_view": "2.5"
+      }
+    },
+    "n_guide_content_eJjMTa": {
+      "type": "n_guide-content",
+      "blocks": {
+        "wistia_slider_dR6AG9": {
+          "type": "wistia_slider",
+          "settings": {
+            "wistia_url": "yvm1h7gbig"
+          }
+        },
+        "wistia_slider_aD7p6j": {
+          "type": "wistia_slider",
+          "settings": {
+            "wistia_url": "l754b3m8ii"
+          }
+        },
+        "wistia_slider_hdT34t": {
+          "type": "wistia_slider",
+          "settings": {
+            "wistia_url": "l37pw1rg6z"
+          }
+        },
+        "wistia_slider_KQRkWV": {
+          "type": "wistia_slider",
+          "settings": {
+            "wistia_url": "tw9t09jts0"
+          }
+        },
+        "wistia_slider_fQRDyw": {
+          "type": "wistia_slider",
+          "settings": {
+            "wistia_url": "o0wghi5h89"
+          }
+        },
+        "wistia_slider_KMxXFV": {
+          "type": "wistia_slider",
+          "settings": {
+            "wistia_url": "dfp3k20txu"
+          }
+        }
+      },
+      "block_order": [
+        "wistia_slider_dR6AG9",
+        "wistia_slider_aD7p6j",
+        "wistia_slider_hdT34t",
+        "wistia_slider_KQRkWV",
+        "wistia_slider_fQRDyw",
+        "wistia_slider_KMxXFV"
+      ],
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "must_read": false,
+        "heading": "Content Examples",
+        "text": "<h2>Content Examples</h2>",
+        "slides_per_view": "3.1"
+      }
+    },
+    "n_trusted_recommended_kHfpo4": {
+      "type": "n_trusted-recommended",
+      "name": "t:sections.n_trusted-recommended.name",
+      "settings": {
+        "use_own_file": true,
+        "background_color": "grey",
+        "modifier": "none",
+        "heading": "<h2>Trusted and Recommended by Experts</h2>",
+        "text": "<p>“Harsh water can definitely damage your skin on daily basis and <em>it impacts everything</em> you are doing with your skincare.”</p>",
+        "video_image_cover": "shopify://shop_images/doctor-maxfield.webp",
         "video_url": "",
-        "wistia_url": ""
+        "badge_text": "Dermatologist Reviewed"
       }
     }
   },
   "order": [
-    "page_banner_richtext_mqFADz",
-    "content_brief_MUaJ76",
-    "main",
-    "trusted_recommended_3HKQ7d"
+    "n_across_image_banner_Jhry7T",
+    "n_intro_BkRq5o",
+    "n_guide_menu_EbHdME",
+    "n_guide_content_TQ99qf",
+    "n_guide_content_d3J7cJ",
+    "n_guide_content_kqaH3N",
+    "n_guide_content_97j94F",
+    "n_guide_content_jVpC8G",
+    "n_guide_content_6FT6Ci",
+    "n_guide_content_eJjMTa",
+    "n_trusted_recommended_kHfpo4"
   ]
 }
