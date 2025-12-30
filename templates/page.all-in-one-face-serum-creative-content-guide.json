@@ -9,46 +9,283 @@
  */
 {
   "sections": {
-    "page_banner_richtext_7Hjf9": {
-      "type": "page-banner-richtext",
-      "name": "t:sections.page-banner-richtext.name",
+    "n_across_image_banner_Jhry7T": {
+      "type": "n_across-image-banner",
+      "name": "t:sections.n_across-image-banner.name",
       "settings": {
-        "heading": "All-In-One Face Serum Creative Content Guide",
-        "sub_heading": "",
+        "use_own_file": true,
+        "modifier": "hero_reverse",
+        "heading": "<h1>All-In-One Face Serum Creative Content Guide</h1>",
         "text": "",
         "image": "shopify://shop_images/all_in_one-banner.webp",
-        "image_mobile": "shopify://shop_images/all_in_one-bannerM.webp"
+        "image_mobile": "shopify://shop_images/all_in_one-bannerM.webp",
+        "button_label": "",
+        "button_url": ""
       }
     },
-    "content_brief_mKtt6l": {
-      "type": "content-brief",
-      "name": "t:sections.content-brief.name",
+    "n_intro_BkRq5o": {
+      "type": "n_intro",
+      "name": "t:sections.n_intro.name",
       "settings": {
-        "text": "<p><strong>Discover how to make the most of the Qure All-In-One Face Serum with our creative content guide.</strong></p><p>This brief will help you craft engaging content that showcases how the science-backed ingredients transform skincare routines for radiant, glowing skin.</p>"
+        "use_own_file": true,
+        "text": "<p><strong>Discover how to make the most of the Qure All-In-One Face Serum  with our creative content guide.</strong></p><p>This brief will help you craft engaging content that showcases how the science-backed ingredients transform skincare routines for radiant, glowing skin.</p>"
       }
     },
-    "main": {
-      "type": "page-all-in-one-face-serum-creative-content-guide",
-      "settings": {}
-    },
-    "trusted_recommended_JhfncP": {
-      "type": "trusted-recommended",
-      "name": "t:sections.trusted-recommended.name",
+    "n_guide_menu_EbHdME": {
+      "type": "n_guide-menu",
+      "blocks": {
+        "menu_item_TmeeFF": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Product Information",
+            "must_read": false
+          }
+        },
+        "menu_item_BbehzW": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Usage Instructions",
+            "must_read": false
+          }
+        },
+        "menu_item_CTfQjN": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Product Claims",
+            "must_read": false
+          }
+        },
+        "menu_item_MUr69X": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Content Requirements",
+            "must_read": true
+          }
+        },
+        "menu_item_T7A96r": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Creative Direction",
+            "must_read": false
+          }
+        },
+        "menu_item_nttpF9": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Content Examples",
+            "must_read": false
+          }
+        }
+      },
+      "block_order": [
+        "menu_item_TmeeFF",
+        "menu_item_BbehzW",
+        "menu_item_CTfQjN",
+        "menu_item_MUr69X",
+        "menu_item_T7A96r",
+        "menu_item_nttpF9"
+      ],
+      "name": "t:sections.n_guide-menu.name",
       "settings": {
-        "heading": "Trusted and Recommended by Experts",
-        "text": "<p>“Qure has an amazing serum… it has retinol and Bakuchiol, which is an awesome dynamic complimenting ingredient, amazing antioxidants, Argireline, vitamin C. <strong>It can really help simplify and consolidate steps!”</strong></p>",
-        "image_text": "",
-        "image": "shopify://shop_images/doctor-maxfield.webp",
-        "image_mobile": "shopify://shop_images/doctor-maxfieldM.webp",
+        "use_own_file": true
+      }
+    },
+    "n_guide_content_PERW6D": {
+      "type": "n_guide-content",
+      "blocks": {
+        "link_RmmK4R": {
+          "type": "link",
+          "settings": {
+            "link_text": "Learn more about Qure All-In-One Face Serum",
+            "link_url": "#"
+          }
+        }
+      },
+      "block_order": [
+        "link_RmmK4R"
+      ],
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": true,
+        "must_read": false,
+        "heading": "Product Information",
+        "text": "<h2>Product Information</h2><p>The All-In-One Serum brightens, plumps & smooths the look of skin using a unique blend of active ingredients:</p><ul><li><strong>Niacinamide</strong> clarifies and evens tone, refines pores, calms redness</li><li><strong>Retinol and Bakuchiol</strong> boost cell turnover and collagen production, reducing fine lines, wrinkles, and pigmentation</li><li><strong>Lactic and Mandelic Acids</strong> gently exfoliate to smooth texture and enhance radiance</li><li><strong>Argireline® Peptides</strong> reduce wrinkle depth by up to 48% in clinical use</li><li><strong>Ethyl Ascorbic Acid (Vitamin C) and Ferulic Acid</strong> brightens and protect against oxidative damage</li><li><strong>Hyaluronic Acid</strong> delivers lasting hydration, plumping fine lines and smoothing skin</li></ul>",
+        "slides_per_view": ""
+      }
+    },
+    "n_guide_content_4HMtMy": {
+      "type": "n_guide-content",
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "must_read": false,
+        "heading": "Usage Instructions",
+        "text": "<h2>Usage Instructions</h2><p><strong>How To Use:</strong></p><ol><li>After cleansing, apply 1-2 pumps to cleansed skin (face and neck).</li><li>Use every second night during the first two weeks of use whilst your skin builds tolerance.</li><li>Use daily for best results.</li></ol>",
+        "slides_per_view": ""
+      }
+    },
+    "n_guide_content_Daptpc": {
+      "type": "n_guide-content",
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "must_read": false,
+        "heading": "Product Claims",
+        "text": "<h2>Product Claims & User Study</h2><p>Key claims:</p><ul><li>Targets uneven texture, fine lines, and discoloration with clinically-backed ingredients that work together to smooth, firm, and visibly brighten your skin over time.</li><li>Contains active ingredients such as retinol and niacinamide to help reduce the visibility of wrinkles and age spots, and smooth skin texture.</li><li>Deeply hydrates skin to make fine lines less visible for more plumper, younger looking skin.</li><li>Even skin tone for a more radiant complexion, and reduces the appearance of dark spots and help to prevent discoloration with continued use.</li></ul>",
+        "slides_per_view": ""
+      }
+    },
+    "n_guide_content_6LUnay": {
+      "type": "n_guide-content",
+      "blocks": {
+        "quote_KxAi43": {
+          "type": "quote",
+          "settings": {
+            "style": "blue",
+            "text": "<p>Remember to <strong>add a personal touch</strong> to the messaging, talk about how the filter makes your skin feel.</p><p>Examples:</p><ul><li>“This serum gave me my glow back.”</li><li>“Nothing else has faded my dark spots like this.”</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "quote_KxAi43"
+      ],
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "must_read": true,
+        "heading": "Content Requirements",
+        "text": "<h2>Content Requirements</h2><p>Messaging must include:</p><ul><li>Formulated to target three key skin concerns: uneven texture, fine lines and wrinkles, and dark spots or discoloration.</li><li>Powered by clinically backed actives like peptides, niacinamide, and hyaluronic acid.</li><li>Supports skin renewal and barrier health with daily use</li><li>Lightweight, fast-absorbing, and non-irritating.</li><li>Simplifies your routine with one serum that does it all.</li><li>Visible results with consistent use.</li></ul>",
+        "slides_per_view": ""
+      }
+    },
+    "n_guide_content_mi8GFd": {
+      "type": "n_guide-content",
+      "blocks": {
+        "image_slider_qHfQNf": {
+          "type": "image_slider",
+          "settings": {
+            "image": "shopify://shop_images/aio_brief1.webp"
+          }
+        },
+        "image_slider_8qxxc8": {
+          "type": "image_slider",
+          "settings": {
+            "image": "shopify://shop_images/aio_brief2.webp"
+          }
+        },
+        "quote_cKgYnD": {
+          "type": "quote",
+          "settings": {
+            "style": "blue",
+            "text": "<p><strong>Tag and mention</strong> @qureskincare #QureSkincare #QureLEDMask #LEDlighttherapy #Neck&DécolletageLEDSystem</p><p>Include your affiliate or other links provided by Qure in Instagram Stories and content captions. If the link can't be placed in bio, include it in linktr.ee or similar.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "image_slider_qHfQNf",
+        "image_slider_8qxxc8",
+        "quote_cKgYnD"
+      ],
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "must_read": false,
+        "heading": "Creative Direction",
+        "text": "<h2>Creative Direction</h2><p>Recording Guidelines</p><ul><li>Use bright, natural lighting. No filters.</li><li>Please do not wear makeup (unless to show makeup removal).</li><li>Ensure the Qure All-In-One Face Serum is the main focus of the content.</li><li>Keep backgrounds clean and uncluttered.</li><li>In cover photos, always show the filter in use (unless agreed otherwise).</li></ul>",
+        "slides_per_view": "2"
+      }
+    },
+    "n_guide_content_bcR64k": {
+      "type": "n_guide-content",
+      "blocks": {
+        "video_slider_ETp7Nz": {
+          "type": "video_slider",
+          "settings": {
+            "youtube_url": true,
+            "video_url": "https://www.youtube.com/watch?v=Jb99E6ztDIM",
+            "image": "shopify://shop_images/aio_thumb-6_b85b1d33-5946-457a-bea6-f9ae3dc50054.webp"
+          }
+        },
+        "video_slider_yMcKMA": {
+          "type": "video_slider",
+          "settings": {
+            "youtube_url": true,
+            "video_url": "https://www.youtube.com/watch?v=wuIjXhlFUTU",
+            "image": "shopify://shop_images/aio_thumb-2_f05625ad-7e90-43fe-88fc-e4fc3137662b.webp"
+          }
+        },
+        "video_slider_bFBbik": {
+          "type": "video_slider",
+          "settings": {
+            "youtube_url": false,
+            "video_url": "7ghlcv9xqg",
+            "image": "shopify://shop_images/aio_thumb-3_52ae7470-3274-4a3b-9005-399782803ab3.webp"
+          }
+        },
+        "video_slider_Pxwnwg": {
+          "type": "video_slider",
+          "settings": {
+            "youtube_url": false,
+            "video_url": "cdyj6o3q28",
+            "image": "shopify://shop_images/aio_thumb-4_1964ca74-1611-4c16-8ef7-1f7388d68db1.webp"
+          }
+        },
+        "video_slider_JHwDxi": {
+          "type": "video_slider",
+          "settings": {
+            "youtube_url": true,
+            "video_url": "https://www.youtube.com/watch?v=j0L38mO7XaY",
+            "image": "shopify://shop_images/aio_thumb-5_ce9960c2-2c6f-473b-84fd-e27d3022311b.webp"
+          }
+        }
+      },
+      "block_order": [
+        "video_slider_ETp7Nz",
+        "video_slider_yMcKMA",
+        "video_slider_bFBbik",
+        "video_slider_Pxwnwg",
+        "video_slider_JHwDxi"
+      ],
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "must_read": false,
+        "heading": "Content Examples",
+        "text": "<h2>Content Examples</h2>",
+        "slides_per_view": "3.1"
+      }
+    },
+    "n_trusted_recommended_kHfpo4": {
+      "type": "n_trusted-recommended",
+      "name": "t:sections.n_trusted-recommended.name",
+      "settings": {
+        "use_own_file": true,
+        "background_color": "grey",
+        "modifier": "none",
+        "heading": "<h2>Trusted and Recommended by Experts</h2>",
+        "text": "<p>“Qure has an amazing serum… it has retinol and Bakuchiol, which is an awesome dynamic complimenting ingredient, amazing antioxidants, Argireline, vitamin C. <em>It can really help simplify and consolidate steps!</em>”</p>",
+        "video_image_cover": "shopify://shop_images/doctor-maxfield.webp",
         "video_url": "",
-        "wistia_url": ""
+        "badge_text": "Dermatologist Reviewed"
       }
     }
   },
   "order": [
-    "page_banner_richtext_7Hjf9",
-    "content_brief_mKtt6l",
-    "main",
-    "trusted_recommended_JhfncP"
+    "n_across_image_banner_Jhry7T",
+    "n_intro_BkRq5o",
+    "n_guide_menu_EbHdME",
+    "n_guide_content_PERW6D",
+    "n_guide_content_4HMtMy",
+    "n_guide_content_Daptpc",
+    "n_guide_content_6LUnay",
+    "n_guide_content_mi8GFd",
+    "n_guide_content_bcR64k",
+    "n_trusted_recommended_kHfpo4"
   ]
 }
