@@ -507,7 +507,6 @@
     },
     "sticky_cta_BpPQpM": {
       "type": "sticky-cta",
-      "disabled": true,
       "name": "t:sections.static-sticky-cta.name",
       "settings": {}
     }
