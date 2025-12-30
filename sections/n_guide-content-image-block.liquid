@@ -36,14 +36,17 @@
                 {% assign has_left_position = false %}
                 {% assign has_bottom_position = false %}
                 {% assign has_popup = false %}
+                {% assign has_bottom_shower_image = false %}
 
                 {% for block in section.blocks %}
                     {% if block.type == 'image_with_text' %}
                         {% assign has_image_with_text = true %}
                         {% if block.settings.image_position == 'left' %}
                             {% assign has_left_position = true %}
-                        {% elsif block.settings.image_position == 'bottom' or block.settings.image_position == blank %}
+                        {% elsif block.settings.image_position == 'bottom' %}
                             {% assign has_bottom_position = true %}
+                        {% elsif block.settings.image_position == 'bottom_shower_image' %}
+                            {% assign has_bottom_shower_image = true %}
                         {% endif %}
                     {% endif %}
                 {% endfor %}
@@ -91,6 +94,23 @@
                                 {% endif %}
                             {% endfor %}
                         </div>
+                    {% elsif has_bottom_shower_image %}
+                        <ul class="water-modes-list">
+                            {% for block in section.blocks %}
+                                {% if block.type == 'image_with_text' %}
+                                    <li>
+                                        {% if block.settings.text != blank %}
+                                            {{ block.settings.text }}
+                                        {% endif %}
+                                        {% if block.settings.image != blank %}
+                                            <picture>
+                                                <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                            </picture>
+                                        {% endif %}
+                                    </li>
+                                {% endif %}
+                            {% endfor %}
+                        </ul>
                     {% endif %}
                 {% endif %}
                 
@@ -248,6 +268,10 @@
                         {
                             "value": "left",
                             "label": "t:common.left"
+                        },
+                        {
+                            "value": "bottom_shower_image",
+                            "label": "t:sections.n_guide-content-image-block.blocks.image_with_text.settings.bottom-shower-image"
                         }
                     ]
                 },
