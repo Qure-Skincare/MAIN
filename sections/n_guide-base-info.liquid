@@ -1,0 +1,54 @@
+{% doc %}
+  Renders a guide base info section
+{% enddoc %}
+
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/base-info/base-info.css" />
+{% endif %}
+<section class="base-info base-info--grey">
+    <div class="container">
+      {% if section.settings.text != blank %}
+        <article>
+            {{ section.settings.text }}
+        </article>
+      {% endif %}
+      {% if section.settings.button_label != blank and section.settings.button_url != blank %}
+        <a href="{{ section.settings.button_url }}" class="btn">{{ section.settings.button_label }}</a>
+      {% endif %}
+    </div>
+</section>
+
+{% schema %}
+{
+  "name": "t:sections.n_guide-base-info.name",
+  "settings": [
+    {
+        "type": "checkbox",
+        "id": "use_own_file",
+        "label": "t:common.use-own-file",
+        "default": false
+    },
+    {
+        "type": "richtext",
+        "id": "text",
+        "label": "t:common.text"
+    },
+    {
+        "type": "text",
+        "id": "button_label",
+        "label": "t:common.button-label"
+    },
+    {
+        "type": "url",
+        "id": "button_url",
+        "label": "t:common.button-url"
+    }
+  ],
+  "presets": [
+    {
+        "name": "t:sections.n_guide-base-info.name"
+    }
+  ]
+}
+{% endschema %}
+

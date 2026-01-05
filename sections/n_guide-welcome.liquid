@@ -1,0 +1,125 @@
+{% doc %}
+  Renders a welcome section for guide pages
+{% enddoc %}
+
+
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/guide-welcome/guide-welcome.css" />
+{% endif %}
+<section class="guide-welcome">
+    <div class="container">
+        {% if section.settings.heading != blank %}
+            <div class="guide-welcome__title">
+                {{ section.settings.heading }}
+            </div>
+        {% endif %}
+        {% if section.settings.wistia_url != blank %}
+            <div class="guide-welcome__video">
+                <div class="wistia_responsive_padding">
+                    <div class="wistia_responsive_wrapper">
+                        <div class="wistia_embed wistia_async_{{ section.settings.wistia_url }} seo=false videoFoam=true">&nbsp;</div>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+        {% for block in section.blocks %}
+            {% if block.type == 'items' %}
+                <div class="guide-welcome__card{% if block.settings.type == 'start' %} guide-welcome__card--start{% elsif block.settings.type == 'contact' %} guide-welcome__card--contact{% endif %}">
+                    {% if block.settings.text != blank %}
+                        {{ block.settings.text }}
+                    {% endif %}
+                    {% if block.settings.button_label != blank and block.settings.button_url != blank %}
+                        <a href="{{ block.settings.button_url }}" class="btn btn--primary">{{ block.settings.button_label }}</a>
+                    {% endif %}
+                    {% if block.settings.button_light_label != blank and block.settings.button_light_url != blank %}
+                        <div class="c-hr-with-text"><span>Or</span></div>
+                        <a href="{{ block.settings.button_light_url }}" class="btn btn--light">{{ block.settings.button_light_label }}</a>
+                    {% endif %}
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</section>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        loadScriptOnce('wistia-script', 'https://fast.wistia.com/assets/external/E-v1.js');
+    });
+</script>
+
+
+{% schema %}
+{
+    "name": "t:sections.n_guide-welcome.name",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": false
+        },
+        {
+            "type": "richtext",
+            "id": "heading",
+            "label": "t:common.header"
+        },
+        {
+            "type": "text",
+            "id": "wistia_url",
+            "label": "t:common.wistia-url"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "items",
+            "name": "t:common.items",
+            "settings": [
+                {
+                    "type": "select",
+                    "id": "type",
+                    "label": "t:common.type",
+                    "options": [
+                        {
+                            "value": "start",
+                            "label": "t:common.start"
+                        },
+                        {
+                            "value": "contact",
+                            "label": "t:common.contact"
+                        }
+                    ]
+                },
+                {
+                    "type": "richtext",
+                    "id": "text",
+                    "label": "t:common.text"
+                },
+                {
+                    "type": "text",
+                    "id": "button_label",
+                    "label": "t:common.button-label"
+                },
+                {
+                    "type": "url",
+                    "id": "button_url",
+                    "label": "t:common.button-url"
+                },
+                {
+                    "type": "text",
+                    "id": "button_light_label",
+                    "label": "t:common.button-light-label"
+                },
+                {
+                    "type": "url",
+                    "id": "button_light_url",
+                    "label": "t:common.button-light-url"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.n_guide-welcome.name"
+        }
+    ]
+}
+{% endschema %}
