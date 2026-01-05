@@ -176,6 +176,7 @@
         "wistia_video_yTdh9R": {
           "type": "wistia_video",
           "settings": {
+            "desktop": true,
             "wistia_url": "68e0msztnb",
             "image": "shopify://shop_images/how_to-mi.webp"
           }
@@ -441,7 +442,7 @@
           "settings": {
             "heading": "Don't see your question?",
             "button_label": "Ask us",
-            "button_url": "#"
+            "button_url": "https://qureskincare.customerdesk.io/?ref=49949480-3b91-401e-9cd9-888a90834e70&sub_id=#rp-customer-widget-home"
           }
         }
       },
