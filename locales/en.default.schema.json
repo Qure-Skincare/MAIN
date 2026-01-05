@@ -120,6 +120,8 @@
         "rating-url": "Rating url",
         "button-label-mobile": "Mobile button label",
         "button-url-mobile": "Mobile button url",
+        "button-light-label": "Light button label",
+        "button-light-url": "Light button url",
         "link-url": "Link URL",
         "video-url": "Video URL",
         "hash": "Hash",
@@ -302,6 +304,12 @@
         "n_guide-included-box": {
             "name": "Guide included box"
         },
+        "n_guide-welcome": {
+            "name": "Guide welcome"
+        },
+        "n_guide-base-info": {
+            "name": "Guide base info"
+        },
         "collection": {
             "name": "Collection",
             "blocks": {
@@ -438,9 +446,6 @@
                     "download-button-url": "Download button URL"
                 }
             }
-        },
-        "q-rejuvalight-pro-welcome-action-banner": {
-            "name": "Action banner"
         },
         "returns-exchanges-card-slider": {
             "name": "Returns exchanges card slider"

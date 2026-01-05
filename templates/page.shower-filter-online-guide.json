@@ -9,32 +9,437 @@
  */
 {
   "sections": {
-    "page_banner_richtext_tFqADz": {
-      "type": "page-banner-richtext",
-      "name": "t:sections.page-banner-richtext.name",
+    "n_across_image_banner_Jhry7T": {
+      "type": "n_across-image-banner",
+      "name": "t:sections.n_across-image-banner.name",
       "settings": {
-        "heading": "Shower Filter Guide",
-        "sub_heading": "IMPORTANT NOTICE:",
-        "text": "Please read the complete instruction manual carefully before installing and using your Qure Shower Filter.",
+        "use_own_file": true,
+        "modifier": "hero_reverse",
+        "heading": "<h1>Shower Filter Guide</h1>",
+        "text": "<h6>IMPORTANT NOTICE:</h6><p>Please read the complete instruction manual carefully before installing and using your Qure&nbsp;Shower Filter.</p>",
         "image": "shopify://shop_images/shower-filter-guide.webp",
-        "image_mobile": "shopify://shop_images/shower-filter-guide-mob.webp"
+        "image_mobile": "shopify://shop_images/shower-filter-guide-mob.webp",
+        "button_label": "",
+        "button_url": ""
       }
     },
-    "content_brief_MUaBpxd": {
-      "type": "content-brief",
-      "name": "t:sections.content-brief.name",
+    "n_intro_BkRq5o": {
+      "type": "n_intro",
+      "blocks": {
+        "wistia_video_JmJcYa": {
+          "type": "wistia_video",
+          "settings": {
+            "wistia_url": "9562sh5iwf",
+            "image": "shopify://shop_images/how-to-use-shower.webp"
+          }
+        }
+      },
+      "block_order": [
+        "wistia_video_JmJcYa"
+      ],
+      "name": "t:sections.n_intro.name",
       "settings": {
-        "text": "<p><strong>The Qure Faucet Filter</strong> is designed to remove harmful impurities from your water, ensuring your skin remains clear, hydrated, and free from irritants.</p><p>This guide will walk you through the installation process so you can start enjoying cleaner, skin-friendly water in just a few minutes.</p>"
+        "use_own_file": true,
+        "text": "<p><strong>The Qure Shower Filter</strong> is designed to remove harmful impurities from your water, ensuring your skin remains clear, hydrated, and free from irritants.</p><p>This guide will walk you through the installation process so you can start enjoying cleaner, skin-friendly water in just a few minutes.</p>"
       }
     },
-    "main": {
-      "type": "page-shower-filter-online-guide",
-      "settings": {}
+    "n_guide_menu_EbHdME": {
+      "type": "n_guide-menu",
+      "blocks": {
+        "menu_item_MeirNq": {
+          "type": "menu_item",
+          "settings": {
+            "item": "How To Install",
+            "must_read": false
+          }
+        },
+        "menu_item_NEQKHW": {
+          "type": "menu_item",
+          "settings": {
+            "item": "How To Replace The Filter",
+            "must_read": false
+          }
+        },
+        "menu_item_JAQtB3": {
+          "type": "menu_item",
+          "settings": {
+            "item": "What's Included In The Box",
+            "must_read": false
+          }
+        },
+        "menu_item_jJMdAY": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Water Mode Selection",
+            "must_read": false
+          }
+        },
+        "menu_item_bpePgr": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Care & Maintenance",
+            "must_read": false
+          }
+        },
+        "menu_item_HXArMe": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Troubleshooting & Adjustments",
+            "must_read": false
+          }
+        },
+        "menu_item_HXArMx": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Warranty Information",
+            "must_read": false
+          }
+        },
+        "menu_item_TMz7Jz": {
+          "type": "menu_item",
+          "settings": {
+            "item": "FAQs",
+            "must_read": false
+          }
+        }
+      },
+      "block_order": [
+        "menu_item_MeirNq",
+        "menu_item_NEQKHW",
+        "menu_item_JAQtB3",
+        "menu_item_jJMdAY",
+        "menu_item_bpePgr",
+        "menu_item_HXArMe",
+        "menu_item_HXArMx",
+        "menu_item_TMz7Jz"
+      ],
+      "name": "t:sections.n_guide-menu.name",
+      "settings": {
+        "use_own_file": true
+      }
+    },
+    "n_guide_content_step_7M7FkN": {
+      "type": "n_guide-content-step",
+      "blocks": {
+        "step_by_step_iJNnYR": {
+          "type": "step_by_step",
+          "settings": {
+            "image": "shopify://shop_images/shower-step-1.webp",
+            "text": "<h6>Step 1</h6><p>Remove your old showerhead by unscrewing it from the wall or shower arm.</p>"
+          }
+        },
+        "step_by_step_KBkKG3": {
+          "type": "step_by_step",
+          "settings": {
+            "image": "shopify://shop_images/shower-step-2.webp",
+            "text": "<h6>Step 2</h6><p>Attach your new Qure filter by twisting the filter onto the shower pipe.</p><p>Make sure the rubber washer is inside to prevent leaks.</p>"
+          }
+        },
+        "step_by_step_HKGe7w": {
+          "type": "step_by_step",
+          "settings": {
+            "image": "shopify://shop_images/shower-step-3.webp",
+            "text": "<h6>Step 3</h6><p>Tighten until secure. Make sure it's snug but not forced.</p>"
+          }
+        },
+        "step_by_step_GhGLbX": {
+          "type": "step_by_step",
+          "settings": {
+            "image": "shopify://shop_images/shower-step-4.webp",
+            "text": "<h6>Step 4</h6><p>Let it run for 2-3 minutes to flush out any loose particles.</p><p>Done! You're ready to enjoy filtered, skin-friendly water.</p>"
+          }
+        },
+        "wistia_video_pKinQq": {
+          "type": "wistia_video",
+          "settings": {
+            "desktop": true,
+            "wistia_url": "9562sh5iwf",
+            "image": "shopify://shop_images/how-to-use-shower.webp"
+          }
+        },
+        "quote_KqVc6F": {
+          "type": "quote",
+          "settings": {
+            "style": "red",
+            "text": "<p>Qure Skincare Pty Ltd is not liable for individual results, which may vary by skin condition and water quality. This product is not a medical device and does not treat or cure diseases. Use as directed. Discontinue use if adverse reactions occur, and consult a professional.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "step_by_step_iJNnYR",
+        "step_by_step_KBkKG3",
+        "step_by_step_HKGe7w",
+        "step_by_step_GhGLbX",
+        "wistia_video_pKinQq",
+        "quote_KqVc6F"
+      ],
+      "name": "t:sections.n_guide-content-step.name",
+      "settings": {
+        "use_own_file": true,
+        "active": true,
+        "must_read": false,
+        "heading": "How To Install",
+        "text": "<h2>How To Install</h2><p>[wistia_video]</p><p>To install your new Shower Filter, you'll need the following:</p><ul><li>Qure Shower Filter</li><li>(Optional) Plumber's tape for extra leak protection (provided)</li><li>(Optional) A towel or cloth for better grip when unscrewing the showerhead</li></ul>"
+      }
+    },
+    "n_guide_content_step_cKmWrD": {
+      "type": "n_guide-content-step",
+      "blocks": {
+        "step_by_step_EgndKU": {
+          "type": "step_by_step",
+          "settings": {
+            "image": "shopify://shop_images/shower-replace-step-1.webp",
+            "text": "<h6>Step 1</h6><p>Turn off the shower. Rotate the shower cover counterclockwise to remove it.</p>"
+          }
+        },
+        "step_by_step_xggPcF": {
+          "type": "step_by_step",
+          "settings": {
+            "image": "shopify://shop_images/shower-replace-step-2.webp",
+            "text": "<h6>Step 2</h6><p>Remove the old cartridge and replace with a new cartridge. Firmly press the new cartridge into the filter housing.</p>"
+          }
+        },
+        "step_by_step_iKiiwJ": {
+          "type": "step_by_step",
+          "settings": {
+            "image": "shopify://shop_images/shower-replace-step-3.webp",
+            "text": "<h6>Step 3</h6><p>Replace the shower cover and turn clockwise to secure it.</p>"
+          }
+        },
+        "step_by_step_zzitBL": {
+          "type": "step_by_step",
+          "settings": {
+            "image": "shopify://shop_images/shower-replace-step-4.webp",
+            "text": "<h6>Step 4</h6><p>Turn on the shower and let the system flush for 2-3 minutes to wash out any initial impurities.</p>"
+          }
+        },
+        "wistia_video_mmfeUT": {
+          "type": "wistia_video",
+          "settings": {
+            "desktop": false,
+            "wistia_url": "bwhqvtar9u",
+            "image": "shopify://shop_images/replace_filter.webp"
+          }
+        }
+      },
+      "block_order": [
+        "step_by_step_EgndKU",
+        "step_by_step_xggPcF",
+        "step_by_step_iKiiwJ",
+        "step_by_step_zzitBL",
+        "wistia_video_mmfeUT"
+      ],
+      "name": "t:sections.n_guide-content-step.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "must_read": false,
+        "heading": "How To Replace The Filter",
+        "text": "<h2>Quick How To Replace The Filter Guide</h2><p>[wistia_video]</p><p>We recommend replacing your filter every 3 months to ensure optimal filtration.</p><p>You may find that water flow slows sooner than this 3 month guideline. In this case, you can replace the filter sooner to maintain strong flow and effective filtration.</p><p>To replace the filter, you'll need a new replacement filter cartridge.</p>"
+      }
+    },
+    "n_guide_included_box_3MQPJf": {
+      "type": "n_guide-included-box",
+      "blocks": {
+        "items_HhLmwX": {
+          "type": "items",
+          "settings": {
+            "image": "shopify://shop_images/included-box-shower.webp",
+            "text": "<p>Qure Shower Filter with pre-installed 2.5 GPM Restrictor</p><p>1pc</p>"
+          }
+        },
+        "items_mjLq3i": {
+          "type": "items",
+          "settings": {
+            "image": "shopify://shop_images/included-box-wrench-installation.webp",
+            "text": "<p>Wrench for installation</p><p>1pc</p>"
+          }
+        },
+        "items_j3cwbx": {
+          "type": "items",
+          "settings": {
+            "image": "shopify://shop_images/included-box-gpm-restrictor.webp",
+            "text": "<p>1.8 GPM restrictor (for states with lower flow requirements)</p><p>1pc</p>"
+          }
+        },
+        "items_tWrCKt": {
+          "type": "items",
+          "settings": {
+            "image": "shopify://shop_images/included-box-plumber-tape.webp",
+            "text": "<p>Plumber tape</p><p>1pc</p>"
+          }
+        },
+        "items_8DixRm": {
+          "type": "items",
+          "settings": {
+            "image": "shopify://shop_images/included-box-thread-adapters.webp",
+            "text": "<p>Extra leak-proof gasket</p><p>2pcs</p>"
+          }
+        },
+        "items_n6nTWQ": {
+          "type": "items",
+          "settings": {
+            "image": "shopify://shop_images/included-box-user-manual.webp",
+            "text": "<p>User Manual</p><p>1pc</p>"
+          }
+        }
+      },
+      "block_order": [
+        "items_HhLmwX",
+        "items_mjLq3i",
+        "items_j3cwbx",
+        "items_tWrCKt",
+        "items_8DixRm",
+        "items_n6nTWQ"
+      ],
+      "name": "t:sections.n_guide-included-box.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "must_read": false,
+        "heading": "What's Included In The Box",
+        "text": "<h2>What's Included In The Box</h2>",
+        "slides_per_view": ""
+      }
+    },
+    "n_guide_content_image_block_P3JwQJ": {
+      "type": "n_guide-content-image-block",
+      "blocks": {
+        "image_with_text_kqMAmW": {
+          "type": "image_with_text",
+          "settings": {
+            "image_position": "bottom_shower_image",
+            "image": "shopify://shop_images/rainfall-mode.webp",
+            "text": "<p><strong>I. Rainfall Mode</strong></p>"
+          }
+        },
+        "image_with_text_Yyj9hr": {
+          "type": "image_with_text",
+          "settings": {
+            "image_position": "bottom_shower_image",
+            "image": "shopify://shop_images/massage-mode.webp",
+            "text": "<p><strong>II. Massage Mode</strong></p>"
+          }
+        },
+        "image_with_text_VDc67Q": {
+          "type": "image_with_text",
+          "settings": {
+            "image_position": "bottom_shower_image",
+            "image": "shopify://shop_images/power-spray.webp",
+            "text": "<p><strong>III. Power Spray Mode</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_kqMAmW",
+        "image_with_text_Yyj9hr",
+        "image_with_text_VDc67Q"
+      ],
+      "name": "t:sections.n_guide-content-image-block.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "must_read": false,
+        "heading": "Water Mode Selection",
+        "text": "<h2>Water Mode Selection</h2><p>The mode selection toggle is located on the side of the shower filte</p>"
+      }
+    },
+    "n_guide_content_mRjCrB": {
+      "type": "n_guide-content",
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "must_read": false,
+        "heading": "Care & Maintenance",
+        "text": "<h2>Care & Maintenance</h2><p>To ensure your Qure Shower Filter works optimally, regular maintenance is important:</p><ul><li>Wipe the filter's surface with a damp cloth to remove soap scum and build-up.</li><li>Avoid harsh chemicals when cleaning, and do not use steel wool, abrasive cleaners, or corrosive liquids.</li><li>Replace the filter every 3 months, or sooner if the water flow slows down.</li><li>Periodically check the connections to ensure there are no leaks.</li></ul>",
+        "slides_per_view": ""
+      }
+    },
+    "n_guide_content_mn6QrA": {
+      "type": "n_guide-content",
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "must_read": false,
+        "heading": "Troubleshooting & Adjustments",
+        "text": "<h2>Troubleshooting & Adjustments</h2><p>Having trouble? Don't worry, most issues are quick to solve.</p><h6>Water leaks</h6><p>Check that the shower head is tightly secured, and plumber tape is correctly applied. Add more tape if needed.</p><p>[hr]</p><h6>Odor in the water</h6><p>If you notice any unusual odors, flush the filter by running water through the system for several minutes. Remove and clean or replace the filter as needed.</p><p>[hr]</p><h6>Low or uneven water pressure</h6><p>Low flow can occur for a couple of reasons if the filter is clogged. If the pressure from your Qure Shower Filter feels too low, try these steps:</p><ul><li>Check the washer and flow restrictor: Unscrew the filter from your shower arm and look inside both ends. Some homes have low water pressure already, and the built-in restrictor might be making it worse. You can remove the small black rubber ring with a plastic insert (the flow restrictor) to improve pressure.</li><li>Clean the mesh screen: Sometimes debris from your water supply can clog the filter mesh. Remove and rinse the filter under water or gently scrub it with a toothbrush to remove any impurities.</li><li>Make sure it's fully tightened: A loose connection can cause pressure loss. Reinstall the filter, making sure it's snug but not overtightened.</li></ul>",
+        "slides_per_view": ""
+      }
+    },
+    "n_guide_content_JjTLe8": {
+      "type": "n_guide-content",
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "must_read": false,
+        "heading": "Warranty Information",
+        "text": "<h2>Warranty Information</h2><p>We offer a lifetime warranty for the original purchaser, covering defects in materials and workmanship.</p><p>This warranty does not cover misuse, improper care, foreign objects, the filter cartridge, or issues arising from unauthorized components (e.g., malfunctions, reduced performance, or property damage).</p><p>To make a claim, <a href=\"http://127.0.0.1:5500/page.shower-filter-online-guide.html#\">contact our customer support</a> via email or live chat.</p><p>Be sure to include your name, proof of purchase, device serial number, and a description of the issue.</p>",
+        "slides_per_view": ""
+      }
+    },
+    "n_guide_faq_VCcdx9": {
+      "type": "n_guide-faq",
+      "blocks": {
+        "faq_item_3Laqmb": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "How often should I replace the filter cartridge?",
+            "text": "<p>The filter should be replaced every 3 months to ensure optimal performance.</p>"
+          }
+        },
+        "faq_item_RjHhJ4": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "What should I do if the water flow slows down?",
+            "text": "<p>If the pressure from your Qure Shower Filter feels too low, try these steps:</p><ul><p>Check the washer and flow restrictor: Unscrew the filter from your shower arm and look inside both ends. Some homes have low water pressure already, and the built-in restrictor might be making it worse. You can remove the small black rubber ring with a plastic insert (the flow restrictor) to improve pressure.</p><p>Clean the mesh screen: Sometimes debris from your water supply can clog the filter mesh. Remove and rinse the filter under water or gently scrub it with a toothbrush to remove any impurities.</p><p>Make sure it's fully tightened: A loose connection can cause pressure loss. Reinstall the filter, making sure it's snug but not overtightened.</p></ul>"
+          }
+        },
+        "faq_item_UBDQFH": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "Is this filter compatible with all showerheads?",
+            "text": "<p>The Qure Shower Filter fits most standard showerheads. The filter is not compatible with showers that have built-in or custom fittings that do not feature standard threads.</p>"
+          }
+        },
+        "faq_ask_plate_UEcjUD": {
+          "type": "faq_ask_plate",
+          "settings": {
+            "heading": "Don't see your question?",
+            "button_label": "Ask us",
+            "button_url": "#"
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_3Laqmb",
+        "faq_item_RjHhJ4",
+        "faq_item_UBDQFH",
+        "faq_ask_plate_UEcjUD"
+      ],
+      "name": "t:sections.n_guide-faq.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "must_read": false,
+        "heading": "FAQs",
+        "text": "<h2>Frequently Asked Questions</h2>"
+      }
     }
   },
   "order": [
-    "page_banner_richtext_tFqADz",
-    "content_brief_MUaBpxd",
-    "main"
+    "n_across_image_banner_Jhry7T",
+    "n_intro_BkRq5o",
+    "n_guide_menu_EbHdME",
+    "n_guide_content_step_7M7FkN",
+    "n_guide_content_step_cKmWrD",
+    "n_guide_included_box_3MQPJf",
+    "n_guide_content_image_block_P3JwQJ",
+    "n_guide_content_mRjCrB",
+    "n_guide_content_mn6QrA",
+    "n_guide_content_JjTLe8",
+    "n_guide_faq_VCcdx9"
   ]
 }
