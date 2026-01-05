@@ -324,9 +324,9 @@
       ],
       "name": "t:sections.proven-results.name",
       "settings": {
-        "heading": "Clinically-studied wavelengths",
+        "heading": "Combines clinically-studied wavelengths",
         "text": "<p>Results supported by light therapy studies:</p>",
-        "button_label": "Read more about the clinical trials",
+        "button_label": "Explore the research behind LED light therapy",
         "button_url": "#"
       }
     },
