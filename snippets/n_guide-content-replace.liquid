@@ -19,7 +19,9 @@
         {% if block.type == 'wistia_video' %}
             {% if block.settings.wistia_url != blank %}
                 <picture
-                    class="d-none d-lg-block"
+                    {% if block.settings.desktop %}
+                        class="d-none d-lg-block"
+                    {% endif %} 
                     data-label-text="Watch: How To Use"
                     data-bs-toggle="modal"
                     data-bs-target="#reusableWistiaModal"

@@ -7,6 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
+ 
  {
     "common": {
         "new": "New",
@@ -288,7 +289,14 @@
             "name": "Hero section"
         },
         "n_guide-content-image-block": {
-            "name": "Guide content with image block"
+            "name": "Guide content with image block",
+            "blocks": {
+                "image_with_text": {
+                    "settings": {
+                        "bottom-shower-image": "Bottom shower image"
+                    }
+                }
+            }
         },
         "n_guide-faq": {
             "name": "Guide FAQ"
