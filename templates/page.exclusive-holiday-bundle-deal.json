@@ -268,7 +268,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Dark Spots & Hyperpigmentation",
-            "preselected": false
+            "preselected": true
           }
         },
         "product_Ykma4b": {
@@ -306,7 +306,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Signs of Aging",
-            "preselected": true
+            "preselected": false
           }
         },
         "product_eiHVrp": {
