@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "n_across_image_banner_JuY7t53": {
       "type": "n_across-image-banner",
@@ -176,7 +176,7 @@
         "wistia_video_yTdh9R": {
           "type": "wistia_video",
           "settings": {
-            "wistia_url": "96okj0th48",
+            "wistia_url": "68e0msztnb",
             "image": "shopify://shop_images/how_to-mi.webp"
           }
         },
