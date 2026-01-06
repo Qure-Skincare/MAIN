@@ -9,12 +9,270 @@
  */
 {
   "sections": {
-    "main": {
-      "type": "page-hairgrowth-helmet-brief",
-      "settings": {}
+    "n_across_image_banner_Jhry7T": {
+      "type": "n_across-image-banner",
+      "name": "t:sections.n_across-image-banner.name",
+      "settings": {
+        "use_own_file": true,
+        "modifier": "hero_reverse",
+        "heading": "<h1>Q-Renew LLLT Helmet Creative Content Guide</h1>",
+        "text": "",
+        "image": "shopify://shop_images/helmet_banner.webp",
+        "image_mobile": "shopify://shop_images/helmet_banner_mob.webp",
+        "button_label": "",
+        "button_url": ""
+      }
+    },
+    "n_intro_BkRq5o": {
+      "type": "n_intro",
+      "name": "t:sections.n_intro.name",
+      "settings": {
+        "use_own_file": true,
+        "text": "<p><strong>Discover how to make the most of the Qure Q-Renew LLLT Helmet Guide with our creative content guide.</strong></p><p>This brief will guide you in creating engaging content that highlights how our device improves hair growth and reduces thinning.</p>"
+      }
+    },
+    "n_guide_menu_EbHdME": {
+      "type": "n_guide-menu",
+      "blocks": {
+        "menu_item_kDGAMN": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Product Information",
+            "must_read": false
+          }
+        },
+        "menu_item_8WAgE4": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Usage Instructions",
+            "must_read": false
+          }
+        },
+        "menu_item_T4HxdL": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Product Claims",
+            "must_read": false
+          }
+        },
+        "menu_item_UigVdW": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Content Requirements",
+            "must_read": true
+          }
+        },
+        "menu_item_98LqQ7": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Creative Direction",
+            "must_read": false
+          }
+        },
+        "menu_item_GG9hjm": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Content Angles & Ideas",
+            "must_read": false
+          }
+        }
+      },
+      "block_order": [
+        "menu_item_kDGAMN",
+        "menu_item_8WAgE4",
+        "menu_item_T4HxdL",
+        "menu_item_UigVdW",
+        "menu_item_98LqQ7",
+        "menu_item_GG9hjm"
+      ],
+      "name": "t:sections.n_guide-menu.name",
+      "settings": {
+        "use_own_file": true
+      }
+    },
+    "n_guide_content_YthwVW": {
+      "type": "n_guide-content",
+      "blocks": {
+        "link_PfNr4G": {
+          "type": "link",
+          "settings": {
+            "link_text": "Learn more about Q-Renew LLLT Helmet",
+            "link_url": "#"
+          }
+        }
+      },
+      "block_order": [
+        "link_PfNr4G"
+      ],
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": true,
+        "must_read": false,
+        "heading": "Product Information",
+        "text": "<h2>Product Information</h2><ul><li>The Q-Renew LLLT Helmet combines red light therapy (LEDs) and low-level laser therapy (LLLT) to stimulate dormant follicles, support regrowth, and improve scalp health.</li><li>It offers a safe alternative to medications or surgical treatments for hair loss.</li><li>The Q-Renew LLLT Helmet is equipped with 370 medical-grade lights (LEDs + lasers) across optimal wavelengths proven to boost circulation and follicle activity.</li><li>Only requires 12 minutes per session, once daily, 4-7 times a week</li><li>LCD screen allows users to select targeted zones for more personalized treatment.</li><li>Built-in sensors ensure proper placement, with auto-pause if removed.</li><li>Lightweight helmet with adjustable sizing for secure wear</li><li>Rechargeable battery with a sleek charging dock for convenience</li><li>Comes with a 3-year warranty.</li></ul>",
+        "slides_per_view": ""
+      }
+    },
+    "n_guide_content_ydzpUb": {
+      "type": "n_guide-content",
+      "blocks": {
+        "link_aJXqza": {
+          "type": "link",
+          "settings": {
+            "link_text": "Learn how to use the Q-Renew LLLT Helmet",
+            "link_url": "#"
+          }
+        }
+      },
+      "block_order": [
+        "link_aJXqza"
+      ],
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "must_read": false,
+        "heading": "Usage Instructions",
+        "text": "<h2>Usage Instructions</h2><p><strong>How To Use:</strong></p><ol><li>Ensure your hair is clean, dry, and worn down (no clips or ties).</li><li>Unplug the helmet from the charging base. Press the Q button to turn it on.</li><li>Use the LCD screen to select your treatment zone (if applicable). Press Play to begin.</li><li>Place the helmet on your head and adjust fit using the back dial. The light activates only when properly positioned.</li><li>To pause, remove the helmet; placing it back on will resume the session.</li><li>Each session lasts 12 minutes and ends automatically.</li></ol>",
+        "slides_per_view": ""
+      }
+    },
+    "n_guide_content_kydpDU": {
+      "type": "n_guide-content",
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "must_read": false,
+        "heading": "Product Claims",
+        "text": "<h2>Product Claims</h2><p>Key claims:</p><ul><li>Combines red LED light therapy and medical-grade lasers to support scalp health.</li><li>Helps to re-activate dormant follicles and keep hair in the growth phase.</li><li>Encourages the appearance of thicker-looking hair with just 12 minutes per session.</li></ul>",
+        "slides_per_view": ""
+      }
+    },
+    "n_guide_content_BiRnR4": {
+      "type": "n_guide-content",
+      "blocks": {
+        "quote_A4R7yb": {
+          "type": "quote",
+          "settings": {
+            "style": "blue",
+            "text": "<p>Remember to <strong>add a personal touch</strong> to the messaging, and talk about the main reasons you've chosen this device.</p><p>Examples:</p><ul><li>“I've tried so many products for thinning hair, but this is the first device that actually fits into my routine without any hassle.”</li><li>“I chose this helmet because it's backed by science — 370 lights, clinical studies, and it's completely painless.”</li><li>“For me, it wasn't just about hair — it was about feeling like myself again. That's why I chose this helmet.”</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "quote_A4R7yb"
+      ],
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "must_read": true,
+        "heading": "Content Requirements",
+        "text": "<h2>Content Requirements</h2><p>Messaging must include:</p><ul><li>This device combines red light therapy and low-level laser therapy (LLLT) to help stimulate hair follicles and promote regrowth.</li><li>The Q-Renew LLLT Helmet is a safe at-home solution for thinning hair — just 12 minutes per day, a few times per week.</li><li>Lightweight, wireless, and rechargeable with an adjustable fit, making it easy to use anytime, anywhere.</li><li>Features a smart LCD screen that allows users to target specific treatment zones for a customized experience.</li><li>Built-in safety sensors, auto-pause functionality, and a 3-year warranty ensure peace of mind with every treatment.</li></ul>",
+        "slides_per_view": ""
+      }
+    },
+    "n_guide_content_YHEBdR": {
+      "type": "n_guide-content",
+      "blocks": {
+        "image_slider_LCtERx": {
+          "type": "image_slider",
+          "settings": {
+            "image": "shopify://shop_images/helmet_qure.webp"
+          }
+        },
+        "image_slider_Uth8xE": {
+          "type": "image_slider",
+          "settings": {
+            "image": "shopify://shop_images/helmet_qure_inner.webp"
+          }
+        },
+        "quote_mKpWmV": {
+          "type": "quote",
+          "settings": {
+            "style": "blue",
+            "text": "<p><strong>Tag and mention</strong> @qureskincare #QureSkincare #QureHelmet #LLLT #QRenewLLLTHelmet</p><p>Include your affiliate or other links provided by Qure in Instagram Stories and content captions. If the link can't be placed in bio, include it in linktr.ee or similar.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "image_slider_LCtERx",
+        "image_slider_Uth8xE",
+        "quote_mKpWmV"
+      ],
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "must_read": false,
+        "heading": "Creative Direction",
+        "text": "<h2>Creative Direction</h2><p>Recording Guidelines</p><ul><li>Use bright, natural lighting. No filters.</li><li>Ensure the Qure Q-Renew LLLT Helmet is the main focus of the content.</li><li>Keep backgrounds clean and uncluttered.</li><li>In cover photos for video content always show yourself using the Q-Renew LLLT Helmet (unless agreed otherwise).</li><li>Before and after imaging to showcase the results, if possible.</li></ul>",
+        "slides_per_view": "2"
+      }
+    },
+    "n_guide_content_dyBBL9": {
+      "type": "n_guide-content",
+      "blocks": {
+        "text_slider_7WWG98": {
+          "type": "text_slider",
+          "settings": {
+            "text": "<p><strong>My Transformation Journey (Before & After)</strong></p><p>Share a personal or follower story about hair thinning and its impact on confidence, focusing on the challenges faced and the journey to finding a solution. Show yourself using the Q-Renew Helmet over weeks, talking about how easy it is to fit into daily life. Share a before and after.</p><p>[note_grey]<strong>Hook:</strong>Show the helmet routine over weeks, talking about how easy it is to fit into daily life. Share a before and after.[/note]</p>"
+          }
+        },
+        "text_slider_QrLQz4": {
+          "type": "text_slider",
+          "settings": {
+            "text": "<p><strong>Daily Routine Integration</strong></p><p>Show how simple the 12-minute treatment is with a GRWM or nigh routine, where the Q-Renew Helmet is used in a relaxed setting, such as while reading, scrolling TikTok, etc. too emphasize its ease of use and convenience.</p><p>[note_grey]<strong>Hook:</strong></p><ul><li>“This helmet is the easiest part of my night routine… and the one part that’s actually working.”</li><li>“This is everything I do while my hair grows back…”</li></ul><p>[/note]</p>"
+          }
+        },
+        "text_slider_CkyYD9": {
+          "type": "text_slider",
+          "settings": {
+            "text": "<p><strong>Tech & Innovation Highlight</strong></p><p>Present the Q-Renew Helmet as a cutting-edge beauty/wellness device with an unboxing or tech-demo style video. Draw attention to the 370 lights, LCD screen, adjustable fit, and wireless charging dock.</p><p>[note_grey]<strong>Hook:</strong></p><ul><li>“Unboxing the hair growth device that looks straight out of the future…”</li><li>“If Apple made a hair growth device, it would look like this.”</li></ul><p>[/note]</p>"
+          }
+        },
+        "text_slider_7KXdyw": {
+          "type": "text_slider",
+          "settings": {
+            "text": "<p><strong>Confidence & Self-Care Routine</strong></p><p>Position hair growth as part of self-care and confidence building, talking about how investing in your hair is investing in your confidence. Pair the helmet with your other wellness/beauty rituals.</p><p>[note_grey]<strong>Hook:</strong>“For me, growing my hair back hasn’t just been about looks. It’s been about feeling like myself again, and that’s why I count it as part of my self-care routine.”[/note]</p>"
+          }
+        },
+        "text_slider_tBPeBn": {
+          "type": "text_slider",
+          "settings": {
+            "text": "<p><strong>Expert/Authority-Driven Education</strong></p><p>Educate the audience on red light therapy and Low-Level Laser Therapy (LLLT) in simple, easy-to-understand terms. Break down how the light stimulates hair follicles, increases blood flow, and supports natural regrowth without using complex medical jargon. </p><p>[note_grey]<strong>Hook:</strong>“Did you know that red light therapy can stimulate follicles and support regrowth? Here’s how the Q-Renew Helmet makes it easy at home.”[/note]</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_slider_7WWG98",
+        "text_slider_QrLQz4",
+        "text_slider_CkyYD9",
+        "text_slider_7KXdyw",
+        "text_slider_tBPeBn"
+      ],
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "must_read": false,
+        "heading": "Content Angles & Ideas",
+        "text": "<h2>Content Angles & Ideas</h2>",
+        "slides_per_view": "2.5"
+      }
     }
   },
   "order": [
-    "main"
+    "n_across_image_banner_Jhry7T",
+    "n_intro_BkRq5o",
+    "n_guide_menu_EbHdME",
+    "n_guide_content_YthwVW",
+    "n_guide_content_ydzpUb",
+    "n_guide_content_kydpDU",
+    "n_guide_content_BiRnR4",
+    "n_guide_content_YHEBdR",
+    "n_guide_content_dyBBL9"
   ]
 }
