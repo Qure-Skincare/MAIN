@@ -124,21 +124,30 @@
     "bf_top_products": {
       "type": "bf-top-products",
       "blocks": {
-        "item1": {
-          "type": "items",
-          "settings": {
-            "heading": "Skincare Bundles",
-            "link_url": "/pages/exclusive-holiday-bundle-deal-new",
-            "image": "shopify://shop_images/skincare-bundles.webp",
-            "new": false
-          }
-        },
         "item2": {
           "type": "items",
           "settings": {
             "heading": "Best Sellers",
             "link_url": "https://qureskincare.com/collections/best-sellers",
             "image": "shopify://shop_images/Img_32.png",
+            "new": false
+          }
+        },
+        "item1": {
+          "type": "items",
+          "settings": {
+            "heading": "Holliday Bundles",
+            "link_url": "/pages/exclusive-holiday-bundle-deal-new",
+            "image": "shopify://shop_images/skincare-bundles.webp",
+            "new": false
+          }
+        },
+        "item6": {
+          "type": "items",
+          "settings": {
+            "heading": "Micro-Infusion System",
+            "link_url": "/pages/microinfusion",
+            "image": "shopify://shop_images/mi-system.webp",
             "new": false
           }
         },
@@ -151,6 +160,15 @@
             "new": true
           }
         },
+        "item5": {
+          "type": "items",
+          "settings": {
+            "heading": "Shower Filter",
+            "link_url": "https://qureskincare.com/products/shower-filter",
+            "image": "shopify://shop_images/Img_27_5889c257-bf53-4d9a-9efd-55d611c7c79e.png",
+            "new": false
+          }
+        },
         "item4": {
           "type": "items",
           "settings": {
@@ -159,33 +177,15 @@
             "image": "shopify://shop_images/led-mask.webp",
             "new": false
           }
-        },
-        "item5": {
-          "type": "items",
-          "settings": {
-            "heading": "Neck & Décolletage LED System",
-            "link_url": "/products/neck-decolletage-led",
-            "image": "shopify://shop_images/neck-decolletage.webp",
-            "new": false
-          }
-        },
-        "item6": {
-          "type": "items",
-          "settings": {
-            "heading": "Micro-Infusion System",
-            "link_url": "/pages/microinfusion",
-            "image": "shopify://shop_images/mi-system.webp",
-            "new": false
-          }
         }
       },
       "block_order": [
-        "item1",
         "item2",
+        "item1",
+        "item6",
         "item3",
-        "item4",
         "item5",
-        "item6"
+        "item4"
       ],
       "settings": {}
     },
