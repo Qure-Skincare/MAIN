@@ -29,7 +29,7 @@
             "type": "contact",
             "text": "<h4>Need help or have questions?</h4><p>We're here to support you every step of the way.</p>",
             "button_label": "Contact Us",
-            "button_url": "#",
+            "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home",
             "button_light_label": "",
             "button_light_url": ""
           }
