@@ -30,7 +30,8 @@
           "type": "wistia_video",
           "settings": {
             "wistia_url": "j7op01weqs",
-            "image": "shopify://shop_images/quick-start-guide.webp"
+            "image": "shopify://shop_images/quick-start-guide.webp",
+            "label_text": "Watch: Quick Start Guide"
           }
         }
       },
@@ -152,7 +153,8 @@
           "settings": {
             "desktop": true,
             "wistia_url": "j7op01weqs",
-            "image": "shopify://shop_images/quick-start-guide.webp"
+            "image": "shopify://shop_images/quick-start-guide.webp",
+            "label_text": "Watch: Quick Start Guide"
           }
         },
         "quote_nLdfQ3": {
@@ -189,7 +191,8 @@
           "type": "wistia_video",
           "settings": {
             "wistia_url": "13uddtjxhe",
-            "image": "shopify://shop_images/charging-guid.webp"
+            "image": "shopify://shop_images/charging-guid.webp",
+            "label_text": "Watch: Charging Guide"
           }
         }
       },

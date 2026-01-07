@@ -16,7 +16,7 @@
                         {% if block.settings.wistia_url != blank and block.settings.image != blank %}
                             <picture
                                 class="d-lg-none"
-                                data-label-text="Watch: How To Use"
+                                data-label-text="{{ block.settings.label_text }}"
                                 data-bs-toggle="modal"
                                 data-bs-target="#reusableWistiaModal"
                                 data-video-id="{{ block.settings.wistia_url }}"
@@ -61,6 +61,12 @@
                     "type": "image_picker",
                     "id": "image",
                     "label": "t:common.image"
+                },
+                {
+                    "type": "text",
+                    "id": "label_text",
+                    "label": "t:common.label-text",
+                    "default": "Watch: How To Use"
                 }
             ]
 
