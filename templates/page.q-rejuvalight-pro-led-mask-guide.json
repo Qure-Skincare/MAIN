@@ -15,221 +15,223 @@
       "settings": {
         "use_own_file": true,
         "modifier": "hero_reverse",
-        "heading": "<h1>Q-Rejuvalight Pro Creative Content Guide</h1>",
-        "text": "",
-        "image": "shopify://shop_images/q-rejuvalight-pro-mask.webp",
-        "image_mobile": "shopify://shop_images/q-rejuvalight-pro-mask-mob.webp",
+        "heading": "<h1>Get started with Q‑Rejuvalight Pro</h1>",
+        "text": "<h6>IMPORTANT NOTICE:</h6><p>Please read the complete instruction manual carefully before using the device.</p>",
+        "image": "shopify://shop_images/q-rejuvalight-pro-mask_4178f8e9-a37c-4441-8dc3-78a1966c5618.webp",
+        "image_mobile": "shopify://shop_images/q-rejuvalight-pro-mask-mob_0b67aaa9-7ceb-4339-96b7-bdd0f7a326d0.webp",
         "button_label": "",
         "button_url": ""
       }
     },
     "n_intro_BkRq5o": {
       "type": "n_intro",
+      "blocks": {
+        "wistia_video_znT6UG": {
+          "type": "wistia_video",
+          "settings": {
+            "wistia_url": "j7op01weqs",
+            "image": "shopify://shop_images/quick-start-guide.webp",
+            "label_text": "Watch: Quick Start Guide"
+          }
+        }
+      },
+      "block_order": [
+        "wistia_video_znT6UG"
+      ],
       "name": "t:sections.n_intro.name",
       "settings": {
         "use_own_file": true,
-        "text": "<p><strong>Discover how to make the most of the Qure Q-Rejuvalight Pro LED Mask with our creative content guide.</strong></p><p>This brief will help you understand the key benefits of the Q-Rejuvalight Pro Mask and create content that is engaging and educational. </p>"
+        "text": "<p><strong>The Qure Q-Rejuvalight Pro LED Mask</strong> is an at-home LED light therapy device designed to target fine lines, breakouts, and dullness in just one 3-minute treatment.</p><p>This guide will show you exactly how to use it, care for it, and get the best results from your treatments.</p>"
       }
     },
     "n_guide_menu_EbHdME": {
       "type": "n_guide-menu",
       "blocks": {
-        "menu_item_TmeeFF": {
+        "menu_item_AzhiGG": {
           "type": "menu_item",
           "settings": {
-            "item": "Product Information",
+            "item": "Quick Start Guide",
             "must_read": false
           }
         },
-        "menu_item_BbehzW": {
+        "menu_item_Vtph6k": {
           "type": "menu_item",
           "settings": {
-            "item": "Usage Instructions",
+            "item": "Charging Your Device",
             "must_read": false
           }
         },
-        "menu_item_CTfQjN": {
+        "menu_item_xPYDMC": {
           "type": "menu_item",
           "settings": {
             "item": "Treatment Modes",
             "must_read": false
           }
         },
-        "menu_item_MUr69X": {
+        "menu_item_K36e46": {
           "type": "menu_item",
           "settings": {
-            "item": "Product Claims & User Study",
+            "item": "Care & Maintenance",
             "must_read": false
           }
         },
-        "menu_item_T7A96r": {
+        "menu_item_4Dtemt": {
           "type": "menu_item",
           "settings": {
-            "item": "Content Requirements",
-            "must_read": true
-          }
-        },
-        "menu_item_nttpF9": {
-          "type": "menu_item",
-          "settings": {
-            "item": "Creative Direction",
+            "item": "Troubleshooting & Adjustments",
             "must_read": false
           }
         },
-        "menu_item_3NXLnw": {
+        "menu_item_bU8ENG": {
           "type": "menu_item",
           "settings": {
-            "item": "Content Examples",
+            "item": "FAQs",
             "must_read": false
           }
         }
       },
       "block_order": [
-        "menu_item_TmeeFF",
-        "menu_item_BbehzW",
-        "menu_item_CTfQjN",
-        "menu_item_MUr69X",
-        "menu_item_T7A96r",
-        "menu_item_nttpF9",
-        "menu_item_3NXLnw"
+        "menu_item_AzhiGG",
+        "menu_item_Vtph6k",
+        "menu_item_xPYDMC",
+        "menu_item_K36e46",
+        "menu_item_4Dtemt",
+        "menu_item_bU8ENG"
       ],
       "name": "t:sections.n_guide-menu.name",
       "settings": {
         "use_own_file": true
       }
     },
-    "n_guide_content_AiUfdM": {
-      "type": "n_guide-content",
-      "blocks": {
-        "link_cmFGat": {
-          "type": "link",
-          "settings": {
-            "link_text": "Learn more about Q-Rejuvalight Pro LED Mask",
-            "link_url": "#"
-          }
-        }
-      },
-      "block_order": [
-        "link_cmFGat"
-      ],
-      "name": "t:sections.n_guide-content.name",
-      "settings": {
-        "use_own_file": true,
-        "active": true,
-        "must_read": false,
-        "heading": "Product Information",
-        "text": "<h2>Product Information</h2><ul><li>Quick, 3-minute fully personalized LED mask</li><li>Clinically studied LED wavelengths shown to improve skin’s firmness and texture</li><li>5 light wavelengths including 415nm (Blue), 605nm (Amber), 630nm (Red), 660nm (Deep Red), 880nm (Infrared)</li><li>Choose from 3 treatment modes: Skin Rejuvenation, Skin Clearing, or custom treatment via the app</li><li>Wireless, hands-free operation</li><li>Pairs perfectly with your skincare routine to boost absorption and results</li></ul>",
-        "slides_per_view": ""
-      }
-    },
-    "n_guide_content_step_hPhbKk": {
+    "n_guide_content_step_abi9bF": {
       "type": "n_guide-content-step",
       "blocks": {
-        "step_by_step_mz9P9K": {
+        "step_by_step_JF67Bn": {
           "type": "step_by_step",
           "settings": {
-            "image": "shopify://shop_images/q-rejuvalight-pro-step-1.webp",
+            "image": "shopify://shop_images/q-rejuvalight-pro-step-1_e2d527e9-861d-4c96-b54d-5dc5318eaf88.webp",
             "text": "<h6>Step 1</h6><p>Set up your mask by attaching the adjustable strap.</p><p>With the logos facing down, slide the strap into the first clip. Loop the strap through the adjustor and second clip. </p>"
           }
         },
-        "step_by_step_HKgizn": {
+        "step_by_step_eQEzeJ": {
           "type": "step_by_step",
           "settings": {
-            "image": "shopify://shop_images/q-rejuvalight-pro-step-2.webp",
+            "image": "shopify://shop_images/q-rejuvalight-pro-step-2_be5d4ec2-ece3-43c4-9822-23c13ef963cb.webp",
             "text": "<h6>Step 2</h6><p>Secure the strap with the provided pin on the inner side of the mask.</p>"
           }
         },
-        "step_by_step_WD3NBh": {
+        "step_by_step_Te3GP7": {
           "type": "step_by_step",
           "settings": {
-            "image": "shopify://shop_images/q-rejuvalight-pro-step-3.webp",
+            "image": "shopify://shop_images/q-rejuvalight-pro-step-3_96e3327a-e8f5-40c2-8325-6f5a2803c032.webp",
             "text": "<h6>Step 3</h6><p>Insert goggles from the inside of the mask. </p><p>Ensure that the smaller side of the goggles go in first.</p>"
           }
         },
-        "step_by_step_yKczif": {
+        "step_by_step_tQ9VtV": {
           "type": "step_by_step",
           "settings": {
-            "image": "shopify://shop_images/q-rejuvalight-pro-step-4.webp",
-            "text": "<h6>Step 4</h6><p>Prepare your skin for your treatment by cleansing and dry thoroughly.</p><p>[note_green]<strong> Tip:</strong> Use our Dermal Mist to further cleanse and prepare your skin.[/note]</p>"
+            "image": "shopify://shop_images/q-rejuvalight-pro-step-4_f322baf5-59d9-4635-b243-f8d19f81047e.webp",
+            "text": "<h6>Step 4</h6><p>Prepare your skin for your treatment by cleansing and dry thoroughly.</p><p>[note_green]<strong>Tip:</strong>Use our Dermal Mist to further cleanse and prepare your skin.[/note]</p>"
           }
         },
-        "step_by_step_Gyp368": {
+        "step_by_step_qxHmBK": {
           "type": "step_by_step",
           "settings": {
-            "image": "shopify://shop_images/q-rejuvalight-pro-step-5.webp",
+            "image": "shopify://shop_images/q-rejuvalight-pro-step-5_6736dd64-1d94-4e1e-b77c-e8144d84824d.webp",
             "text": "<h6>Step 5</h6><p>Press and hold the power button ON for 2-3 seconds until the indicator light turns on.</p><p>Position the mask on your face. Adjust the straps to fit your face comfortably.</p>"
           }
         },
-        "step_by_step_8HjUHy": {
+        "step_by_step_WnrY8L": {
           "type": "step_by_step",
           "settings": {
-            "image": "shopify://shop_images/q-rejuvalight-pro-step-6.webp",
+            "image": "shopify://shop_images/q-rejuvalight-pro-step-6_8c9bfa6f-f329-4c5e-8e88-ce01533ba462.webp",
             "text": "<h6>Step 6</h6><p>Choose your treatment either in the Qure app or directly on the mask.</p><p>Press the power button once for Skin Rejuvenation mode, or press it twice for Skin Clearing mode.</p>"
           }
         },
-        "wistia_video_Dm3Ncf": {
+        "wistia_video_x766ef": {
           "type": "wistia_video",
           "settings": {
+            "desktop": true,
             "wistia_url": "j7op01weqs",
-            "image": "shopify://shop_images/quick-start-guide.webp"
+            "image": "shopify://shop_images/quick-start-guide.webp",
+            "label_text": "Watch: Quick Start Guide"
           }
         },
-        "quote_AjeJze": {
+        "quote_nLdfQ3": {
           "type": "quote",
           "settings": {
             "style": "red",
-            "text": "<p><strong>Light sensitivity test:</strong> We recommend performing a light sensitivity test 24 hours before using this device for your first treatment. To perform this, apply the product to your inner forearm, ensuring the light shines directly onto the skin. Use it for a full 3-minute treatment. Wait for 24 hours. If you experience pain, discomfort, or redness lasting more than 2 hours, you might be light-sensitive. Please consult a doctor for advice before continuing use.</p>"
-          }
-        },
-        "link_thbJM7": {
-          "type": "link",
-          "settings": {
-            "link_text": "Link to online guide",
-            "link_url": "#"
+            "text": "<p><strong>Light sensitivity test:</strong>We recommend performing a light sensitivity test 24 hours before using this device for your first treatment. To perform this, apply the product to your inner forearm, ensuring the light shines directly onto the skin. Use it for a full 3-minute treatment. Wait for 24 hours. If you experience pain, discomfort, or redness lasting more than 2 hours, you might be light-sensitive. Please consult a doctor for advice before continuing use.</p>"
           }
         }
       },
       "block_order": [
-        "step_by_step_mz9P9K",
-        "step_by_step_HKgizn",
-        "step_by_step_WD3NBh",
-        "step_by_step_yKczif",
-        "step_by_step_Gyp368",
-        "step_by_step_8HjUHy",
-        "wistia_video_Dm3Ncf",
-        "quote_AjeJze",
-        "link_thbJM7"
+        "step_by_step_JF67Bn",
+        "step_by_step_eQEzeJ",
+        "step_by_step_Te3GP7",
+        "step_by_step_tQ9VtV",
+        "step_by_step_qxHmBK",
+        "step_by_step_WnrY8L",
+        "wistia_video_x766ef",
+        "quote_nLdfQ3"
       ],
       "name": "t:sections.n_guide-content-step.name",
       "settings": {
         "use_own_file": true,
-        "active": false,
+        "active": true,
         "must_read": false,
-        "heading": "Usage Instructions",
-        "text": "<h2>Usage Instructions</h2><p>[wistia_video]</p><p>Box out, mask on! To get started with your first treatment, you’ll need the following:</p><ul><li>Q-Rejuvalight Pro LED Mask</li><li>Adjustable head strap (provided)</li><li>Eye protection goggles (provided)</li></ul>"
+        "heading": "Quick Start Guide",
+        "text": "<h2>Quick Start Guide</h2><p>[wistia_video]</p><p>Box out, mask on! To get started with your first treatment, you'll need the following:</p><ul><li>Q-Rejuvalight Pro LED Mask</li><li>Adjustable head strap (provided)</li><li>Eye protection goggles (provided)</li></ul>"
       }
     },
-    "n_guide_content_image_block_Kzrtb6": {
+    "n_guide_content_mPnR88": {
+      "type": "n_guide-content",
+      "blocks": {
+        "wistia_video_VKQPYd": {
+          "type": "wistia_video",
+          "settings": {
+            "wistia_url": "13uddtjxhe",
+            "image": "shopify://shop_images/charging-guid.webp",
+            "label_text": "Watch: Charging Guide"
+          }
+        }
+      },
+      "block_order": [
+        "wistia_video_VKQPYd"
+      ],
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "must_read": false,
+        "heading": "Charging Your Device",
+        "text": "<h2>Charging Your Device</h2><p>[wistia_video]</p><p>To charge your device, connect the supplied USB-C cord to your Q-Rejuvalight Pro and plug into a USB power adapter.</p><p>While charging, the indicator will flash white.</p><p>When the battery is fully charged, the indicator will be solid white.</p><p>No light when plugged in means the device is fully charged already.</p><p>Tips to maximize battery life:</p><ul><li>Avoid leaving your device charging for long periods of time.</li><li>Avoid letting the battery completely run out.</li><li>Do not use your device while it's connected to the charger.</li></ul>",
+        "slides_per_view": ""
+      }
+    },
+    "n_guide_content_image_block_cPibDj": {
       "type": "n_guide-content-image-block",
       "blocks": {
-        "image_with_text_zzJinG": {
+        "image_with_text_K9ehRX": {
           "type": "image_with_text",
           "settings": {
-            "image": "shopify://shop_images/pro-aging-mode.webp",
+            "image_position": "bottom",
+            "image": "shopify://shop_images/pro-aging-mode_48e6573e-1352-4139-a9f2-f196e7ae9c9e.webp",
             "text": "<p><strong>Skin Rejuvenating Mode</strong></p><p>On Skin Rejuvenating Mode, red and infrared wavelengths work together to help improve the appearance of skin texture and firmness.</p>"
           }
         },
-        "image_with_text_KNKqHk": {
+        "image_with_text_MhmTwm": {
           "type": "image_with_text",
           "settings": {
-            "image": "shopify://shop_images/anti-breakout.webp",
+            "image_position": "bottom",
+            "image": "shopify://shop_images/anti-breakout_73b4be2a-03f4-450b-842f-70de73a3421b.webp",
             "text": "<p><strong>Skin Clearing Mode</strong></p><p>Our Skin Clearing Mode combines blue and red light wavelengths. Blue targets the bacteria associated with mild-to-moderate acne, while red helps calm and soothe the appearance of irritated skin.</p>"
           }
         }
       },
       "block_order": [
-        "image_with_text_zzJinG",
-        "image_with_text_KNKqHk"
+        "image_with_text_K9ehRX",
+        "image_with_text_MhmTwm"
       ],
       "name": "t:sections.n_guide-content-image-block.name",
       "settings": {
@@ -240,177 +242,108 @@
         "text": "<h2>Treatment Modes</h2><p>The Q-Rejuvalight Pro Mask has two complete treatment settings: Skin Rejuvenating or Skin Clearing.</p><p>Press the power button once for Skin Rejuvenating mode, or press it twice for Skin Clearing mode.</p>"
       }
     },
-    "n_guide_content_8qFAbx": {
+    "n_guide_content_zTqxWp": {
       "type": "n_guide-content",
       "name": "t:sections.n_guide-content.name",
       "settings": {
         "use_own_file": true,
         "active": false,
         "must_read": false,
-        "heading": "Product Claims & User Study",
-        "text": "<h2>Product Claims & User Study</h2><p>Skin Rejuvenation Treatment:</p><ul><li>Helps support natural collagen for smoother, plumper-looking skin</li><li>Visibly refines texture and improves the look of firmness and elasticity</li><li>Enhances radiance and promotes a more even-toned appearance</li><li>Helps reduce the appearance of redness</li></ul><p>Skin Clearing Treatment:</p><ul><li>Blue and red light wavelengths shown in studies to help reduce mild-to-moderate acne</li><li>Helps balance oil and improve the look of clearer skin</li><li>Visibly soothes and calms post-breakout skin</li></ul><p>Findings from independent LED light studies:</p><ul><li>Up to 87% of participants reported <strong>smoother-looking skin</strong> and reduced fine lines</li><li>97% noticed <strong>visibly improved skin tone</strong> and enhanced smoothness</li><li>83% reported <strong>fewer visible breakouts</strong> after consistent use</li></ul><p>Insights supported by independent published studies on red, blue, and near-infrared light wavelengths commonly used in cosmetic LED therapy.</p>",
+        "heading": "Care & Maintenance",
+        "text": "<h2>Care & Maintenance</h2><p>Wipe the mask down after each treatment.</p><p>Spray with our <a href=\"http://127.0.0.1:5500/page.q-rejuvalight-pro-led-mask-guide.html#\">Dermal Mist</a> to sanitize and keep the mask clean for your next use.</p><p>When not in use, place your mask in the luxury storage bag provided with your set. Store it in a cool, moisture-free environment.</p>",
         "slides_per_view": ""
       }
     },
-    "n_guide_content_ntcFrF": {
+    "n_guide_content_mLg4J7": {
       "type": "n_guide-content",
-      "blocks": {
-        "quote_cpz4xi": {
-          "type": "quote",
-          "settings": {
-            "style": "blue",
-            "text": "<p>Remember to <strong>add a personal touch</strong> to the messaging, talk about how the mask fits into your routine or how your skin has changed.</p><p>Examples:</p><ul><li>“This mask changed my skin.”</li><li>“My breakouts have calmed down so much since using this.”</li><li>“My skin looks smoother and more even after just a few weeks.”</li></ul>"
-          }
-        }
-      },
-      "block_order": [
-        "quote_cpz4xi"
-      ],
       "name": "t:sections.n_guide-content.name",
       "settings": {
         "use_own_file": true,
         "active": false,
-        "must_read": true,
-        "heading": "Content Requirements",
-        "text": "<h2>Content Requirements</h2><p>Messaging must include:</p><ul><li>Backed by clinical research and </li><li>proven to work!</li><li>Clinical results from home - minus the 'clinical' costs</li><li>Personalized treatments - world's first customizable LED mask </li><li>App operated</li><li>Personal experience</li></ul><p>[quote_content]",
+        "must_read": false,
+        "heading": "Troubleshooting & Adjustments",
+        "text": "<h2>Troubleshooting & Adjustments</h2><p>Having trouble? Don't worry, most issues are quick to solve.</p><h6>Mask not turning on</h6><ul><li>Make sure the device is fully charged (you'll see a blinking light when charging).</li><li>Remove the mask from the charging cable, as the mask cannot be used while plugged in.</li><li>Check that the USB-C charging cable is fully inserted when charging.</li><li>Still nothing? Try a different outlet or charging cable to rule out charging issues.</li></ul><p>[hr]</p><h6>Mask turning off too early</h6><p>The treatment auto-stops after 3 minutes per treatment. If it's stopping earlier, your mask may need a full recharge.</p><p>[hr]</p><h6>Mask not connecting to the app</h6><p>Ensure your phone/tablet's Location Sharing is on. If connectivity issues persist, try closing the app and reopening to reload it.</p>",
         "slides_per_view": ""
       }
     },
-    "n_guide_content_4UHKUd": {
-      "type": "n_guide-content",
+    "n_guide_faq_rGxrx9": {
+      "type": "n_guide-faq",
       "blocks": {
-        "image_slider_GGfbJt": {
-          "type": "image_slider",
+        "faq_item_bR4tTE": {
+          "type": "faq_item",
           "settings": {
-            "image": "shopify://shop_images/q-rejuvalight-pro-guide-1.webp"
+            "heading": "When will I see results?",
+            "text": "<p>Some people notice a glow after just one use, but visible improvements usually happen after a few weeks of consistent use.</p>"
           }
         },
-        "image_slider_N3Ux3e": {
-          "type": "image_slider",
+        "faq_item_RmpLrX": {
+          "type": "faq_item",
           "settings": {
-            "image": "shopify://shop_images/q-rejuvalight-pro-guide-2.webp"
+            "heading": "How often should I use the Q-Rejuvalight Pro Mask?",
+            "text": "<p>We recommend using it at least 3–5 times per week for best results. Each session only takes 3 minutes.</p>"
           }
         },
-        "quote_JNmqxE": {
-          "type": "quote",
+        "faq_item_K4miU7": {
+          "type": "faq_item",
           "settings": {
-            "style": "blue",
-            "text": "<p><strong>Tag and mention</strong> @qureskincare #QRejuvalightPro #LEDtherapy</p><p>Include your affiliate or other links provided by Qure in Instagram Stories and content captions. If the link can't be placed in bio, include it in linktr.ee or similar.</p>"
+            "heading": "Can I use it everyday?",
+            "text": "<p>Yes, it's safe for daily use. Just stick to one treatment per day.</p>"
+          }
+        },
+        "faq_item_gNcaFt": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "Can I use it with my other skincare products?",
+            "text": "<p>Yes, but use the mask first on clean, dry skin. You can apply your serums and moisturizers afterward.</p>"
+          }
+        },
+        "faq_item_mgTx8f": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "Is it okay to use if I’ve had Botox or filler?",
+            "text": "<p>It’s best to wait at least a week post-treatment. When in doubt, check with your practitioner.</p>"
+          }
+        },
+        "faq_item_FEJRDd": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "How do I clean the mask?",
+            "text": "<p>Use a soft, damp cloth to wipe the surface. Don’t use harsh cleaners or submerge it in water.</p>"
+          }
+        },
+        "faq_item_rPNTJK": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "How long does it take to charge?",
+            "text": "<p>The Q-Rejuvalight Pro LED Mask fully charges in 2.5 hours. A full battery will then delivery 10 complete treatments.</p><p>The light indicator will blink white to signal low battery.</p>"
+          }
+        },
+        "faq_ask_plate_TeJ9b9": {
+          "type": "faq_ask_plate",
+          "settings": {
+            "heading": "Don't see your question?",
+            "button_label": "Ask us",
+            "button_url": "#"
           }
         }
       },
       "block_order": [
-        "image_slider_GGfbJt",
-        "image_slider_N3Ux3e",
-        "quote_JNmqxE"
+        "faq_item_bR4tTE",
+        "faq_item_RmpLrX",
+        "faq_item_K4miU7",
+        "faq_item_gNcaFt",
+        "faq_item_mgTx8f",
+        "faq_item_FEJRDd",
+        "faq_item_rPNTJK",
+        "faq_ask_plate_TeJ9b9"
       ],
-      "name": "t:sections.n_guide-content.name",
+      "name": "t:sections.n_guide-faq.name",
       "settings": {
         "use_own_file": true,
         "active": false,
         "must_read": false,
-        "heading": "Creative Direction",
-        "text": "<h2>Creative Direction</h2><p>Recording Guidelines</p><ul><li>Use bright, natural lighting. No filters.</li><li>Please do not wear makeup (unless to show makeup removal).</li><li>Ensure the Qure Q-Rejuvalight Pro LED Mask is the main focus of the content.</li><li>Keep backgrounds clean and uncluttered.</li><li>In cover photos for video content always show yourself using the Qure Q-Rejuvalight Pro LED Mask (unless agreed otherwise).</li><li>Before and after imaging to showcase the results, if possible</li></ul>",
-        "slides_per_view": "2"
-      }
-    },
-    "n_guide_content_NNeHDE": {
-      "type": "n_guide-content",
-      "blocks": {
-        "wistia_slider_wKePmw": {
-          "type": "wistia_slider",
-          "settings": {
-            "wistia_url": "qnxqysx3sg"
-          }
-        },
-        "wistia_slider_JVAATz": {
-          "type": "wistia_slider",
-          "settings": {
-            "wistia_url": "gw1rne236n"
-          }
-        },
-        "wistia_slider_BWzbMz": {
-          "type": "wistia_slider",
-          "settings": {
-            "wistia_url": "vkd8so2clv"
-          }
-        },
-        "wistia_slider_eGMAwJ": {
-          "type": "wistia_slider",
-          "settings": {
-            "wistia_url": "3dk53o20xw"
-          }
-        },
-        "wistia_slider_QpqaWj": {
-          "type": "wistia_slider",
-          "settings": {
-            "wistia_url": "i688q7ywip"
-          }
-        },
-        "wistia_slider_UXyxXa": {
-          "type": "wistia_slider",
-          "settings": {
-            "wistia_url": "nmgtj7w4at"
-          }
-        },
-        "wistia_slider_QDXtah": {
-          "type": "wistia_slider",
-          "settings": {
-            "wistia_url": "5kh8ymubw0"
-          }
-        },
-        "wistia_slider_FYNRJk": {
-          "type": "wistia_slider",
-          "settings": {
-            "wistia_url": "wl5y3puch1"
-          }
-        },
-        "wistia_slider_iMyXya": {
-          "type": "wistia_slider",
-          "settings": {
-            "wistia_url": "v955rlnldn"
-          }
-        },
-        "wistia_slider_UVPgaR": {
-          "type": "wistia_slider",
-          "settings": {
-            "wistia_url": "5vgchvxn6l"
-          }
-        }
-      },
-      "block_order": [
-        "wistia_slider_wKePmw",
-        "wistia_slider_JVAATz",
-        "wistia_slider_BWzbMz",
-        "wistia_slider_eGMAwJ",
-        "wistia_slider_QpqaWj",
-        "wistia_slider_UXyxXa",
-        "wistia_slider_QDXtah",
-        "wistia_slider_FYNRJk",
-        "wistia_slider_iMyXya",
-        "wistia_slider_UVPgaR"
-      ],
-      "name": "t:sections.n_guide-content.name",
-      "settings": {
-        "use_own_file": true,
-        "active": false,
-        "must_read": false,
-        "heading": "Content Examples",
-        "text": "",
-        "slides_per_view": "3.1"
-      }
-    },
-    "n_trusted_recommended_kHfpo4": {
-      "type": "n_trusted-recommended",
-      "name": "t:sections.n_trusted-recommended.name",
-      "settings": {
-        "use_own_file": true,
-        "background_color": "grey",
-        "heading": "<h2>Trusted and Recommended by Experts</h2>",
-        "text": "<p>“Of all the LED masks we’ve tried, <em>this is the best on the market right now...</em> It didn't lose in any category...”</p>",
-        "video_image_cover": "shopify://shop_images/doctor_shah_desk.webp",
-        "video_url": "",
-        "badge_text": "Dermatologist Reviewed"
+        "heading": "FAQs",
+        "text": "<h2>Frequently Asked Questions</h2>"
       }
     }
   },
@@ -418,13 +351,11 @@
     "n_across_image_banner_Jhry7T",
     "n_intro_BkRq5o",
     "n_guide_menu_EbHdME",
-    "n_guide_content_AiUfdM",
-    "n_guide_content_step_hPhbKk",
-    "n_guide_content_image_block_Kzrtb6",
-    "n_guide_content_8qFAbx",
-    "n_guide_content_ntcFrF",
-    "n_guide_content_4UHKUd",
-    "n_guide_content_NNeHDE",
-    "n_trusted_recommended_kHfpo4"
+    "n_guide_content_step_abi9bF",
+    "n_guide_content_mPnR88",
+    "n_guide_content_image_block_cPibDj",
+    "n_guide_content_zTqxWp",
+    "n_guide_content_mLg4J7",
+    "n_guide_faq_rGxrx9"
   ]
 }

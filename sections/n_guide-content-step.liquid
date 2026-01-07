@@ -53,10 +53,12 @@
                             }'
                         >
                             <div class="swiper-wrapper">
+                                {% assign step_counter = 0 %}
                                 {% for block in section.blocks %}
                                     {% if block.type == 'step_by_step' %}
+                                        {% assign step_counter = step_counter | plus: 1 %}
                                         <div class="swiper-slide">
-                                            <div class="c-step-by-step__item"{% if block.settngs.image !=blank %} data-index="{{ forloop.index }}{% endif %}">
+                                            <div class="c-step-by-step__item"{% if block.settings.image != blank %} data-index="{{ step_counter }}"{% endif %}>
                                                 {% if block.settings.image != blank %}
                                                     <picture>
                                                         <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
@@ -226,6 +228,12 @@
                     "type": "image_picker",
                     "id": "image",
                     "label": "t:common.image"
+                },
+                {
+                    "type": "text",
+                    "id": "label_text",
+                    "label": "t:common.label-text",
+                    "default": "Watch: How To Use"
                 }
             ]
         },
