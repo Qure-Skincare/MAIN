@@ -323,7 +323,7 @@
           "settings": {
             "heading": "Don't see your question?",
             "button_label": "Ask us",
-            "button_url": "#"
+            "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
           }
         }
       },
