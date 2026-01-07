@@ -94,6 +94,7 @@
       "block_order": [
         "percent_value_imfnV7"
       ],
+      "disabled": true,
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
         "use_own_file": true,
@@ -108,10 +109,9 @@
     },
     "index_banner_with_text_TNGNLJ": {
       "type": "index-banner-with-text",
-      "disabled": true,
       "name": "t:sections.index-banner-with-text.name",
       "settings": {
-        "heading": "Get clinic-level results from home – minus the ‘clinical’ costs!!!",
+        "heading": "Get clinic-level results from home – minus the ‘clinical’ costs.",
         "text": "<p>Join <strong>30,000+ customers</strong> feeling more confident.</p>",
         "image": "shopify://shop_images/hero.webp",
         "image_mobile": "shopify://shop_images/hero-mob.webp",
