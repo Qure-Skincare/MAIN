@@ -230,10 +230,10 @@
         "nextships_5rd2bS": {
           "type": "nextships",
           "settings": {
-            "date": "25 September",
+            "date": "21 January",
             "percent": 55,
-            "date_soldout": "28 July",
-            "date_reserved": "3 August"
+            "date_soldout": "7 January",
+            "date_reserved": "8 January"
           }
         },
         "payment_type_3zQTmH": {
@@ -376,7 +376,7 @@
             "subheading": "(2 Treatments)",
             "image": "shopify://shop_images/MI_1_month_Wrinkles_5659d0f2-6c5a-442f-aedf-b59240f139f5.png",
             "soldout": false,
-            "preorder": false,
+            "preorder": true,
             "total_treatments": 0,
             "left_items": 0,
             "preorder_text": "",
