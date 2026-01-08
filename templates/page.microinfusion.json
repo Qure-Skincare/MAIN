@@ -227,7 +227,7 @@
             "subheading": "(2 Treatments)",
             "image": "shopify://shop_images/1m_wrinkles.png",
             "soldout": false,
-            "preorder": false,
+            "preorder": true,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
