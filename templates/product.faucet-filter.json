@@ -289,7 +289,7 @@
           "type": "value",
           "settings": {
             "text": "<p>noticed less dryness after 4 weeks</p>",
-            "value": "83%"
+            "value": "80%"
           }
         },
         "value_XTFAXw": {
@@ -315,7 +315,7 @@
       "name": "t:sections.improve-skin-hydration.name",
       "settings": {
         "heading": "Clinically proven to improve skin hydration in just 4 weeks",
-        "text": "An independent user study with 30 participants, validated by certified third-party skin hydration testing, showed visible improvements in skin hydration and wrinkle appearance after just 4 weeks of using the Qure Faucet Filter daily. <br> <br> Tested by an independent lab, compiled by Regulatory Consultants",
+        "text": "An independent user study with 30 participants, validated by certified third-party skin hydration testing, showed visible improvements in skin hydration and wrinkle appearance after just 4 weeks of using the Qure Faucet Filter daily.   Tested by an independent lab, compiled by Regulatory Consultants",
         "sub_text": "",
         "image_before": "shopify://shop_images/graph_before-1.webp",
         "image_after": "shopify://shop_images/graph_after-1.webp",
