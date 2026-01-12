@@ -11,6 +11,7 @@
   "sections": {
     "announcement_bar_abkmWb": {
       "type": "announcement-bar",
+      "disabled": true,
       "name": "t:sections.announcement-bar.name",
       "settings": {
         "heading": "Autumn Glow Sale 67% OFF Micro-Infusion",
