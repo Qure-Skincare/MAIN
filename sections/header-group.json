@@ -38,8 +38,8 @@
         "announcement-3": {
           "type": "announcement",
           "settings": {
-            "heading": "<p><strong>Clinically Proven,</strong> Visible Results</p>",
-            "button-label": "",
+            "heading": "<p><strong>Holiday Bundles </strong></p>",
+            "button-label": "Shop Now",
             "button-url": "",
             "icon": "shopify://shop_images/icon-shield.png"
           }
