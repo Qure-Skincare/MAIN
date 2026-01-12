@@ -43,12 +43,6 @@
             "button-url": "https://qureskincare.com/pages/exclusive-holiday-bundle-deal-new"
           }
         },
-        "exclude-page-1": {
-          "type": "exclude-page",
-          "settings": {
-            "exclude-page": "exclusive-holiday-bundle-deal-new"
-          }
-        },
         "exclude_page_fAmFcE": {
           "type": "exclude-page",
           "settings": {
@@ -66,7 +60,6 @@
         "announcement-1",
         "announcement-2",
         "announcement-3",
-        "exclude-page-1",
         "exclude_page_fAmFcE",
         "exclude-page-2"
       ],
