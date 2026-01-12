@@ -33,54 +33,80 @@
                 </article>
 
                 <div class="c-step-by-step">
-                    <div class="c-step-by-step__title">{{ 'sections.n_guide_content_step.step-by-step-guide' | t }}</div>
-                    <div class="c-step-by-step__slider">
-                        <div
-                            class="c-swiper"
-                            data-swiper='{
-                                "slidesPerView": 1.1,
-                                "spaceBetween": 22,
-                                "loop": false,
-                                "enableOn": "mobile",
-                                "pagination": {
-                                    "el": ".c-swiper-pagination",
-                                    "type": "custom"
-                                },
-                                "navigation": {
-                                    "prevEl": ".c-swiper-button-prev",
-                                    "nextEl": ".c-swiper-button-next"
-                                }
-                            }'
-                        >
-                            <div class="swiper-wrapper">
-                                {% assign step_counter = 0 %}
-                                {% for block in section.blocks %}
-                                    {% if block.type == 'step_by_step' %}
-                                        {% assign step_counter = step_counter | plus: 1 %}
-                                        <div class="swiper-slide">
-                                            <div class="c-step-by-step__item"{% if block.settings.image != blank %} data-index="{{ step_counter }}"{% endif %}>
-                                                {% if block.settings.image != blank %}
-                                                    <picture>
-                                                        <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
-                                                    </picture>
-                                                {% endif %}
-                                                <article>
-                                                    {% if block.settings.text != blank %}
-                                                        {{ block.settings.text | replace: '<p>[note_green]', '<div class="c-note">' | replace: '[/note]</p>', '</div>' }}
-                                                    {% endif %}
-                                                </article>
-                                            </div>
-                                        </div>
+                    {% assign has_numbered_list = false %}
+                    {% assign has_text_with_image = false %}
+                    {% for block in section.blocks %}
+                        {% if block.type == 'step_by_step' %}
+                            {% if block.settings.modifier == 'numbered_list' %}
+                                {% assign has_numbered_list = true %}
+                            {% elsif block.settings.modifier == 'text_with_image' %}
+                                {% assign has_text_with_image = true %}
+                            {% endif %}
+                        {% endif %}
+                    {% endfor %}
+
+                    {% if has_numbered_list %}
+                        <div class="c-step-by-step__title">{{ 'sections.n_guide_content_step.step-by-step-guide' | t }}</div>
+                        <div class="c-step-by-step__list">
+                            {% for block in section.blocks %}
+                                {% if block.type == 'step_by_step' %}
+                                    {% if block.settings.text != blank %}
+                                        {{ block.settings.text }}
                                     {% endif %}
-                                {% endfor %}
-                            </div>
-                            <div class="c-swiper-nav">
-                                <button class="c-swiper-button-prev"></button>
-                                <div class="c-swiper-pagination"></div>
-                                <button class="c-swiper-button-next"></button>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    {% elsif has_text_with_image %}
+                        <div class="c-step-by-step__title">{{ 'sections.n_guide_content_step.step-by-step-guide' | t }}</div>
+                        <div class="c-step-by-step__slider">
+                            <div
+                                class="c-swiper"
+                                data-swiper='{
+                                    "slidesPerView": 1.1,
+                                    "spaceBetween": 22,
+                                    "loop": false,
+                                    "enableOn": "mobile",
+                                    "pagination": {
+                                        "el": ".c-swiper-pagination",
+                                        "type": "custom"
+                                    },
+                                    "navigation": {
+                                        "prevEl": ".c-swiper-button-prev",
+                                        "nextEl": ".c-swiper-button-next"
+                                    }
+                                }'
+                            >
+                                <div class="swiper-wrapper">
+                                    {% assign step_counter = 0 %}
+                                    {% for block in section.blocks %}
+                                        {% if block.type == 'step_by_step' and block.settings.modifier == 'text_with_image' %}
+                                            {% assign step_counter = step_counter | plus: 1 %}
+                                            <div class="swiper-slide">
+                                                <div class="c-step-by-step__item"{% if block.settings.image != blank %} data-index="{{ step_counter }}"{% endif %}>
+                                                    {% if block.settings.image != blank %}
+                                                        <picture>
+                                                            <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                                        </picture>
+                                                    {% endif %}
+                                                    <article>
+                                                        {% if block.settings.text != blank %}
+                                                            {{ block.settings.text | replace: '<p>[note_green]', '<div class="c-note">' | replace: '[/note]</p>', '</div>' }}
+                                                        {% endif %}
+                                                    </article>
+                                                </div>
+                                            </div>
+                                        {% endif %}
+                                    {% endfor %}
+                                </div>
+                                <div class="c-swiper-nav">
+                                    <button class="c-swiper-button-prev"></button>
+                                    <div class="c-swiper-pagination"></div>
+                                    <button class="c-swiper-button-next"></button>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    {% endif %}
+
                 </div>
                 
                 {% if quote_content_is_shown == false %}
@@ -151,6 +177,22 @@
             "type": "step_by_step",
             "name": "t:common.step-by-step",
             "settings": [
+                {
+                    "type": "select",
+                    "id": "modifier",
+                    "label": "t:common.modifier",
+                    "default": "text_with_image",
+                    "options": [
+                        {
+                            "value": "text_with_image",
+                            "label": "t:common.text-with-image"
+                        },
+                        {
+                            "value": "numbered_list",
+                            "label": "t:common.numbered-list"
+                        }
+                    ]
+                },
                 {
                     "type": "image_picker",
                     "id": "image",

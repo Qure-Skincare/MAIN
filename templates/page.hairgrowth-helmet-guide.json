@@ -9,12 +9,260 @@
  */
 {
   "sections": {
-    "main": {
-      "type": "page-hairgrowth-helmet-guide",
-      "settings": {}
+    "n_across_image_banner_Jhry7T": {
+      "type": "n_across-image-banner",
+      "name": "t:sections.n_across-image-banner.name",
+      "settings": {
+        "use_own_file": true,
+        "modifier": "hero_reverse",
+        "heading": "<h1>Get started with the Q‑Renew LLLT Helmet</h1>",
+        "text": "<h6>IMPORTANT NOTICE:</h6><p>Please read the complete instruction manual carefully before using the device.</p>",
+        "image": "shopify://shop_images/helmet_banner.webp",
+        "image_mobile": "shopify://shop_images/helmet_banner_mob.webp",
+        "button_label": "",
+        "button_url": ""
+      }
+    },
+    "n_intro_BkRq5o": {
+      "type": "n_intro",
+      "blocks": {
+        "wistia_video_znT6UG": {
+          "type": "wistia_video",
+          "settings": {
+            "wistia_url": "wvoucso35j",
+            "image": "shopify://shop_images/quick-start-guide-helmet.webp",
+            "label_text": "Watch: Quick Start Guide"
+          }
+        }
+      },
+      "block_order": [
+        "wistia_video_znT6UG"
+      ],
+      "name": "t:sections.n_intro.name",
+      "settings": {
+        "use_own_file": true,
+        "text": "<p><strong>The Q-Renew LLLT Helmet</strong> is designed to support you in your journey toward fuller, healthier-looking hair. Whether you're just beginning your routine or maintaining results, this device fits seamlessly into your lifestyle.</p><p>This guide will show you exactly how to use it, care for it, and get the best results from your treatments.</p>"
+      }
+    },
+    "n_guide_menu_EbHdME": {
+      "type": "n_guide-menu",
+      "blocks": {
+        "menu_item_kerFJg": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Quick Start Guide",
+            "must_read": false
+          }
+        },
+        "menu_item_AHmaMm": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Charging Your Device",
+            "must_read": false
+          }
+        },
+        "menu_item_e9gmcT": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Care & Storage",
+            "must_read": false
+          }
+        },
+        "menu_item_h7PNDp": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Troubleshooting & Adjustments",
+            "must_read": false
+          }
+        },
+        "menu_item_AN36Lg": {
+          "type": "menu_item",
+          "settings": {
+            "item": "FAQs",
+            "must_read": false
+          }
+        }
+      },
+      "block_order": [
+        "menu_item_kerFJg",
+        "menu_item_AHmaMm",
+        "menu_item_e9gmcT",
+        "menu_item_h7PNDp",
+        "menu_item_AN36Lg"
+      ],
+      "name": "t:sections.n_guide-menu.name",
+      "settings": {
+        "use_own_file": true
+      }
+    },
+    "n_guide_content_step_EHn488": {
+      "type": "n_guide-content-step",
+      "blocks": {
+        "step_by_step_9kt87n": {
+          "type": "step_by_step",
+          "settings": {
+            "modifier": "numbered_list",
+            "text": "<ol><li>Ensure your hair is clean, dry, and worn down (no clips or ties).</li><li>Unplug the helmet from the charging base. Press the Q button to turn it on.</li><li>Use the LCD screen to select your treatment zone (if applicable). Press Play to begin.</li><li>Place the helmet on your head and adjust fit using the back dial. The light activates only when properly positioned.</li><li>To pause, remove the helmet; placing it back on will resume the session. Each session lasts 12 minutes and ends automatically.</li></ol>"
+          }
+        },
+        "wistia_video_GiGfVe": {
+          "type": "wistia_video",
+          "settings": {
+            "desktop": true,
+            "wistia_url": "wvoucso35j",
+            "image": "shopify://shop_images/quick-start-guide-helmet.webp",
+            "label_text": "Watch: How To Use"
+          }
+        },
+        "quote_HWjhEK": {
+          "type": "quote",
+          "settings": {
+            "style": "red",
+            "text": "<p><strong>Light sensitivity test:</strong>We recommend performing a light sensitivity test 24 hours before using this device for your first treatment. To perform this, apply the product to your inner forearm, ensuring the light shines directly onto the skin. Use it for a full 3-minute treatment. Wait for 24 hours. If you experience pain, discomfort, or redness lasting more than 2 hours, you might be light-sensitive. Please consult a doctor for advice before continuing use.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "step_by_step_9kt87n",
+        "wistia_video_GiGfVe",
+        "quote_HWjhEK"
+      ],
+      "name": "t:sections.n_guide-content-step.name",
+      "settings": {
+        "use_own_file": true,
+        "active": true,
+        "must_read": false,
+        "heading": "Quick Start Guide",
+        "text": "<h2>Quick Start Guide</h2><p>[wistia_video]</p><p>Ready to begin? To get started with your first treatment, you’ll need the following:</p><ul><li>Q-Renew LLLT Helmet</li><li>Charging Base (provided)</li><li>USB-C Charging Cable (provided)</li></ul>"
+      }
+    },
+    "n_guide_content_image_block_JXe8LY": {
+      "type": "n_guide-content-image-block",
+      "blocks": {
+        "image_iGGw9N": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/charging_device.webp"
+          }
+        }
+      },
+      "block_order": [
+        "image_iGGw9N"
+      ],
+      "name": "t:sections.n_guide-content-image-block.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "must_read": false,
+        "heading": "Charging Your Device",
+        "text": "<h2>Charging Your Device</h2><p>[image]</p><p>Connect the included USB-C cable to the charging base and plug it into a 5V power adapter (not included).</p><p>Tap the LCD screen to check charging progress.</p><p>Full charge time is approximately 4 hours.</p><ul><li>The device will not operate while charging.</li><li>Ensure all ports are completely dry before charging.</li></ul><p>Tips to maximize battery life:</p><ul><li>Avoid leaving your device charging for long periods of time.</li><li>Avoid letting the battery completely run out.</li><li>Do not use your device while it’s connected to the charger.</li></ul>"
+      }
+    },
+    "n_guide_content_EgcRqf": {
+      "type": "n_guide-content",
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "must_read": false,
+        "heading": "Care & Storage",
+        "text": "<h2>Care & Storage</h2><h6>Cleaning</h6><ul><li>Wipe with a damp cloth or water-based wipe.</li><li>For stubborn spots, gently use 70% alcohol.</li><li>Optionally, spray the inside with Qure Dermal Mist before wiping to help maintain freshness.</li><li>Do not clean while the device is on or charging.</li><li>Avoid abrasive materials, solvents, or cleaners.</li></ul><p>[hr]</p><h6>Storage</h6><ul><li>Allow the device to cool completely before storing.</li><li>Keep in a dry, room-temperature location, away from sunlight or humidity.</li><li>Use the charging base or original box for safe storage.</li><li>Do not expose to extreme temperatures or physical damage.</li></ul>",
+        "slides_per_view": ""
+      }
+    },
+    "n_guide_content_DDFqeM": {
+      "type": "n_guide-content",
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "must_read": false,
+        "heading": "Troubleshooting & Adjustments",
+        "text": "<h2>Troubleshooting & Adjustments</h2><p>Having trouble? Don’t worry, most issues are quick to solve.</p><h6>Device is not turning on</h6><ul><li>Ensure the charging cable is securely connected to the power outlet.</li><li>Ensure the charging cable is securely connected to the device and charge it fully.</li><li>Try a different power outlet.</li><li>Press and hold the on/off button for at least one second.</li></ul><p>[hr]</p><h6>Device is turning off too early</h6><p>The battery level may be too low — charge the product fully and try again.</p><p>[hr]</p><h6>Something else?</h6><p>DO NOT attempt to investigate or modify the product. It contains no serviceable parts.</p><p>If the issue persists, please contact Qure Support at <a href=\"mailto:support@qureskincare.com\">support@qureskincare.com</a> for further assistance.</p>",
+        "slides_per_view": ""
+      }
+    },
+    "n_guide_faq_rGxrx9": {
+      "type": "n_guide-faq",
+      "blocks": {
+        "faq_item_LwnnrR": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "How often should I use it?",
+            "text": "<p>Use it 4-7 times per week for 16 weeks, then every other day to maintain results.</p>"
+          }
+        },
+        "faq_item_M7ynJy": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "Can I use it while charging?",
+            "text": "<p>No. Always unplug the device before use.</p>"
+          }
+        },
+        "faq_item_zeiE7c": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "What if I have sensitive skin?",
+            "text": "<p>The helmet is suitable for sensitive skin, but always perform the light sensitivity test first.</p>"
+          }
+        },
+        "faq_item_KxNJg7": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "It won’t turn on — what do I do?",
+            "text": "<p>Ensure it’s fully charged, the cable is secure, and press the Q button for at least 1 second.</p>"
+          }
+        },
+        "faq_item_JYybFJ": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "It turns off during use?",
+            "text": "<p>The battery may be low — recharge fully and try again.</p>"
+          }
+        },
+        "faq_item_ENEWkj": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "How do I clean it?",
+            "text": "<p>Wipe with a damp cloth or water-based wipe. For stains, use 70% alcohol. You can also lightly spray Qure Dermal Mist inside before wiping for extra freshness.</p>"
+          }
+        },
+        "faq_ask_plate_Dba44r": {
+          "type": "faq_ask_plate",
+          "settings": {
+            "heading": "Don't see your question?",
+            "button_label": "Ask us",
+            "button_url": "#"
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_LwnnrR",
+        "faq_item_M7ynJy",
+        "faq_item_zeiE7c",
+        "faq_item_KxNJg7",
+        "faq_item_JYybFJ",
+        "faq_item_ENEWkj",
+        "faq_ask_plate_Dba44r"
+      ],
+      "name": "t:sections.n_guide-faq.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "must_read": false,
+        "heading": "FAQs",
+        "text": "<h2>Frequently Asked Questions</h2>"
+      }
     }
   },
   "order": [
-    "main"
+    "n_across_image_banner_Jhry7T",
+    "n_intro_BkRq5o",
+    "n_guide_menu_EbHdME",
+    "n_guide_content_step_EHn488",
+    "n_guide_content_image_block_JXe8LY",
+    "n_guide_content_EgcRqf",
+    "n_guide_content_DDFqeM",
+    "n_guide_faq_rGxrx9"
   ]
 }
