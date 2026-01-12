@@ -136,7 +136,7 @@
         "item1": {
           "type": "items",
           "settings": {
-            "heading": "Holliday Bundles",
+            "heading": "Holiday Bundles",
             "link_url": "/pages/exclusive-holiday-bundle-deal-new",
             "image": "shopify://shop_images/skincare-bundles.webp",
             "new": false
