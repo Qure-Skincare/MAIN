@@ -40,8 +40,7 @@
           "settings": {
             "heading": "<p><strong>Holiday Bundles </strong></p>",
             "button-label": "Shop Now",
-            "button-url": "",
-            "icon": "shopify://shop_images/icon-shield.png"
+            "button-url": "https://qureskincare.com/pages/exclusive-holiday-bundle-deal-new"
           }
         },
         "exclude-page-1": {
