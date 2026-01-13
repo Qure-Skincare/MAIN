@@ -25,6 +25,23 @@
                     {{ section.settings.text }}
                 {% endif %}
 
+                {% for block in section.blocks %}
+                    {% if block.type == 'rating' %}
+                        <div class="trustpilot-rating">
+                            <ul>
+                                <li><i class="e-icon e-icon-trustpilot"></i></li>
+                                <li><i class="e-icon e-icon-trustpilot"></i></li>
+                                <li><i class="e-icon e-icon-trustpilot"></i></li>
+                                <li><i class="e-icon e-icon-trustpilot"></i></li>
+                                <li><i class="e-icon e-icon-trustpilot"></i></li>
+                            </ul>
+                            {% if block.settings.rating_text != blank %}
+                                <div>{{ block.settings.rating_text | replace : '<p>', '' | replace : '</p>', '' }}</div>
+                            {% endif %}
+                        </div>
+                    {% endif %}
+                {% endfor %}
+
                 {% if section.settings.button_label != blank and section.settings.button_url != blank %}
                     <a href="{{ section.settings.button_url }}" class="btn btn--primary">{{ section.settings.button_label }}</a>
                 {% endif %}
@@ -192,6 +209,18 @@
                     "type": "image_picker",
                     "id": "image",
                     "label": "t:common.image"
+                }
+            ]
+        },
+        {
+            "type": "rating",
+            "name": "t:common.rating",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "richtext",
+                    "id": "rating_text",
+                    "label": "t:common.rating-text"
                 }
             ]
         }

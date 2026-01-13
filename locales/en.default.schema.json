@@ -177,6 +177,8 @@
         "am": "AM",
         "pm": "PM",
         "none": "None",
+        "two-cards": "Two cards",
+        "three-cards": "Three cards",
         "number-of-views": "Number of views",
         "nubmber-of-shared": "Number of shared",
         "contact": "Contact",

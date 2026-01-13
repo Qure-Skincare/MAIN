@@ -9,12 +9,205 @@
  */
 {
   "sections": {
-    "main": {
-      "type": "page-reviews",
-      "settings": {}
+    "n_across_image_banner_HVXdy7": {
+      "type": "n_across-image-banner",
+      "blocks": {
+        "rating_8XiHCq": {
+          "type": "rating",
+          "settings": {
+            "rating_text": "<p>Rated <strong>Great</strong> on Trustpilot</p>"
+          }
+        }
+      },
+      "block_order": [
+        "rating_8XiHCq"
+      ],
+      "name": "t:sections.n_across-image-banner.name",
+      "settings": {
+        "use_own_file": true,
+        "modifier": "hero",
+        "heading": "<h1>500K+ Happy Customers</h1>",
+        "text": "",
+        "image": "shopify://shop_images/customer_reviews_banner.webp",
+        "image_mobile": "shopify://shop_images/customer_reviews_banner_mob.webp",
+        "button_label": "",
+        "button_url": ""
+      }
+    },
+    "n_pills_navigation_igpcBi": {
+      "type": "n_pills-navigation",
+      "blocks": {
+        "pills_navigation_item_rELFxG": {
+          "type": "pills_navigation_item",
+          "settings": {
+            "text": "Micro-Infusion System",
+            "url": "shopify://pages/reviews",
+            "active": true
+          }
+        },
+        "pills_navigation_item_3HY4ar": {
+          "type": "pills_navigation_item",
+          "settings": {
+            "text": "Q-Rejuvalight Pro",
+            "url": "shopify://pages/q-rejuvalight-pro-customer-reviews",
+            "active": false
+          }
+        },
+        "pills_navigation_item_YFnCRE": {
+          "type": "pills_navigation_item",
+          "settings": {
+            "text": "Neck & Décolletage LED System",
+            "url": "shopify://pages/neck-decolletage-led-customer-reviews",
+            "active": false
+          }
+        },
+        "pills_navigation_item_x7WGfd": {
+          "type": "pills_navigation_item",
+          "settings": {
+            "text": "All-In-One Serum",
+            "url": "shopify://pages/all-in-one-serum-customer-reviews",
+            "active": false
+          }
+        },
+        "pills_navigation_item_KqWVKc": {
+          "type": "pills_navigation_item",
+          "settings": {
+            "text": "Micro-Infusion Targeted Patches",
+            "url": "shopify://pages/micro-infusion-targeted-patches-customer-reviews",
+            "active": false
+          }
+        }
+      },
+      "block_order": [
+        "pills_navigation_item_rELFxG",
+        "pills_navigation_item_3HY4ar",
+        "pills_navigation_item_YFnCRE",
+        "pills_navigation_item_x7WGfd",
+        "pills_navigation_item_KqWVKc"
+      ],
+      "name": "t:sections.n_pills-navigation.name",
+      "settings": {
+        "use_own_file": true,
+        "text": "Filter by product",
+        "sub_text": "Swipe for more"
+      }
+    },
+    "n_video_slider_Dip3aR": {
+      "type": "n_video-slider",
+      "blocks": {
+        "slider_R8XNF4": {
+          "type": "slider",
+          "settings": {
+            "heading": "",
+            "text": "",
+            "youtube_url": false,
+            "video_url": "zs3ddb0qly"
+          }
+        },
+        "slider_Y9wVTf": {
+          "type": "slider",
+          "settings": {
+            "heading": "",
+            "text": "",
+            "youtube_url": false,
+            "video_url": "v5e5op6ap7"
+          }
+        },
+        "slider_c7q6zp": {
+          "type": "slider",
+          "settings": {
+            "heading": "",
+            "text": "",
+            "youtube_url": false,
+            "video_url": "zhb1w8ise9"
+          }
+        },
+        "slider_CLnaHD": {
+          "type": "slider",
+          "settings": {
+            "heading": "",
+            "text": "",
+            "youtube_url": false,
+            "video_url": "opfbh936fc"
+          }
+        },
+        "slider_4WHtib": {
+          "type": "slider",
+          "settings": {
+            "heading": "",
+            "text": "",
+            "youtube_url": false,
+            "video_url": "nei98l696b"
+          }
+        },
+        "slider_QTXJnf": {
+          "type": "slider",
+          "settings": {
+            "heading": "",
+            "text": "",
+            "youtube_url": false,
+            "video_url": "jcgxarsfbj"
+          }
+        }
+      },
+      "block_order": [
+        "slider_R8XNF4",
+        "slider_Y9wVTf",
+        "slider_c7q6zp",
+        "slider_CLnaHD",
+        "slider_4WHtib",
+        "slider_QTXJnf"
+      ],
+      "name": "t:sections.n_video-slider.name",
+      "settings": {
+        "use_own_file": true,
+        "modifier": "none"
+      }
+    },
+    "n_results_comparison_slider_NENwHd": {
+      "type": "n_results-comparison-slider",
+      "blocks": {
+        "slider_wdMNzz": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>Proven to visually improve</p>",
+            "badge_text": "Fine Lines & Wrinkles",
+            "image": "shopify://shop_images/no_hype_1.webp"
+          }
+        },
+        "slider_FUNnqE": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>Proven to visually improve</p>",
+            "badge_text": "Dark Spots & Texture",
+            "image": "shopify://shop_images/no_hype_3.webp"
+          }
+        },
+        "slider_QthVfb": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>Proven to visually improve</p>",
+            "badge_text": "Large Pores & Skin Texture",
+            "image": "shopify://shop_images/no_hype_2.webp"
+          }
+        }
+      },
+      "block_order": [
+        "slider_wdMNzz",
+        "slider_FUNnqE",
+        "slider_QthVfb"
+      ],
+      "name": "t:sections.n_results-comparison-slider.name",
+      "settings": {
+        "use_own_file": true,
+        "heading": "<h2>Clinically proven results you can see</h2>"
+      }
     }
   },
   "order": [
-    "main"
+    "n_across_image_banner_HVXdy7",
+    "n_pills_navigation_igpcBi",
+    "n_video_slider_Dip3aR",
+    "n_results_comparison_slider_NENwHd"
   ]
 }
