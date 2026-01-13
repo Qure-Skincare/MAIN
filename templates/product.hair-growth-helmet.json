@@ -53,7 +53,6 @@
         },
         "jumpto_user_study": {
           "type": "jumpto",
-          "disabled": true,
           "settings": {
             "button-label": "User Study",
             "button-url": "#backed-by-real-results"
@@ -171,8 +170,8 @@
       "settings": {
         "heading": "<h2>See the change, feel the difference</h2>",
         "text": "<p>Join real people experiencing real transformations with consistent use of Q-Renew.</p>",
-        "button_label": "",
-        "button_url": "#"
+        "button_label": "Read the Study",
+        "button_url": "#backed-by-real-results"
       }
     },
     "hair_growth_helmet_banner_with_modal_BnqA3f": {
