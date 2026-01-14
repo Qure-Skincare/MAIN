@@ -68,15 +68,15 @@
           "settings": {
             "image": "shopify://shop_images/iMockup_-_iPhone_16_Pro_Max-4_2_1.png",
             "heading": "Get Reminders",
-            "text": "<p>Schedule in your LED treatments on your own time. Get reminders straight to your phone so you never miss a treatment, consistency is key to seeing the best results!</p>"
+            "text": "<p>Schedule in your treatments on your own time. Get reminders straight to your phone so you never miss a treatment.</p>"
           }
         },
         "slider_jb96LL": {
           "type": "slider",
           "settings": {
             "image": "shopify://shop_images/iMockup_-_iPhone_16_Pro_Max-4_5.png",
-            "heading": "",
-            "text": ""
+            "heading": "Track Your Progress",
+            "text": "<p>See your skin change over time with progress photos, notes, and treatment history in one place.</p>"
           }
         }
       },
