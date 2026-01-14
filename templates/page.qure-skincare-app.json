@@ -52,7 +52,7 @@
           "settings": {
             "image": "shopify://shop_images/iMockup_-_iPhone_16_Pro_Max-4_1.png",
             "heading": "Customize Your Treatments",
-            "text": "<p>Customize your LED treatments for a personalized program that’s unique to your skin’s profile. Choose between the Pro-Aging or Anti-Breakout treatment on 5 facial areas to treat your specific skin concerns.</p>"
+            "text": "<p>Customize your LED treatments for a personalized program that’s unique to your skin’s profile. </p>"
           }
         },
         "slider_qkdCJq": {
@@ -60,7 +60,7 @@
           "settings": {
             "image": "shopify://shop_images/iMockup_-_iPhone_16_Pro_Max-4_2.png",
             "heading": "Plan and Schedule Your Routine",
-            "text": "<p>The Qure planner shows your treatment history and scheduled treatments in a monthly calendar. View your total summary of completed challenges, monthly and yearly treatments.</p>"
+            "text": "<p>The Qure planner shows your treatment history and scheduled treatments in a monthly calendar. </p>"
           }
         },
         "slider_B8hQt3": {
@@ -89,7 +89,7 @@
       "name": "t:sections.new-app-page-app-slider.name",
       "settings": {
         "heading": "An app for out-of-this world skincare",
-        "text": "Your skin's unique. So your treatment should be. Step into the world of personalized skincare with the Qure Skincare App. It gives you full control of your clinical-grade LED light therapy treatments. No more visits to beauty clinics, no more waiting rooms at the dermatologist."
+        "text": "Your skin is unique, and your treatment should reflect that. The Qure Skincare App gives you full control of your clinical-grade LED sessions, all from home. No clinics, no waiting rooms, just personalized treatment when you need it."
       }
     },
     "slider_featured_in_y9qbn3": {
