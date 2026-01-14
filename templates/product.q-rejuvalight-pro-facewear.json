@@ -530,6 +530,19 @@
             "product_heading": "",
             "product_text": ""
           }
+        },
+        "slider_kNV8cA": {
+          "type": "slider",
+          "settings": {
+            "heading": "Plump & Glowy",
+            "text": "<p>“After using this LED face mask consistently for a month, I can honestly say I’m impressed with the results. My skin looks noticeably healthier and more radiant, with a natural glow that wasn’t there before. It also feels fuller and more plump, and I’ve noticed a subtle softening of fine lines. The changes aren’t extreme or fake-looking—just a refreshed, well-rested version of my skin. I’ve really enjoyed adding this to my routine and will definitely continue using it.”</p>",
+            "compare_image": "shopify://shop_images/Image_1_5107b8e5-a58b-4e1d-8714-728b42fb2c7e.png",
+            "country_image": "shopify://shop_images/USA_07.png",
+            "username": "<p>Megan M.</p>",
+            "product_url": "",
+            "product_heading": "",
+            "product_text": ""
+          }
         }
       },
       "block_order": [
@@ -547,7 +560,8 @@
         "slider_7Ktpnh",
         "slider_bzTbmR",
         "slider_3yLDfg",
-        "slider_WWFUjn"
+        "slider_WWFUjn",
+        "slider_kNV8cA"
       ],
       "name": "t:sections.trusted-reviews.name",
       "settings": {
