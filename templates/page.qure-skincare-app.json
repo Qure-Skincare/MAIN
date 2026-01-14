@@ -70,12 +70,21 @@
             "heading": "Get Reminders",
             "text": "<p>Schedule in your LED treatments on your own time. Get reminders straight to your phone so you never miss a treatment, consistency is key to seeing the best results!</p>"
           }
+        },
+        "slider_jb96LL": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/iMockup_-_iPhone_16_Pro_Max-4_5.png",
+            "heading": "",
+            "text": ""
+          }
         }
       },
       "block_order": [
         "slider_iRQdH8",
         "slider_qkdCJq",
-        "slider_B8hQt3"
+        "slider_B8hQt3",
+        "slider_jb96LL"
       ],
       "name": "t:sections.new-app-page-app-slider.name",
       "settings": {
