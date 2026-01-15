@@ -489,7 +489,7 @@
         "bundle_PJeUr8": {
           "type": "bundle",
           "settings": {
-            "product": "micro-infusion-3-month-bundle",
+            "product": "micro-infusion-3-month-bundle-for-dark-spots",
             "button_label": "Add to Bundle"
           }
         },
@@ -522,7 +522,7 @@
     },
     "sticky_cta_hd4dLE": {
       "type": "sticky-cta",
-      "disabled": true,
+      "disabled": false,
       "name": "t:sections.static-sticky-cta.name",
       "settings": {}
     }

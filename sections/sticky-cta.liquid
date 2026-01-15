@@ -4,6 +4,7 @@
 
 
 <link rel="stylesheet" href="https://qureskincaredns.com/sections/isolated/sticky-cta/skincare-sticky-cta.css" />
+<link rel="stylesheet" href="{{ 'bundle-selection.css' | asset_url }}" />
 <div id="sticky_cta_cart" class="qure__sticky-atc skincare_plan_cta">
     <div class="container-fluid px-0">
         <div class="accordion accordion-flush tp-product-accordion border-0" id="tp-product-qure">
@@ -58,11 +59,11 @@
                                 </div>
                             </div>
 
-                            <!-- Subtotal -->
+                            <!-- Subtotal - hidden by default via CSS, shown when items selected -->
                             <div class="d-flex subtotal_cta gap-3">
                                 <p>Subtotal:</p>
-                                <p class="compare_price">$528.00</p>
-                                <p class="discounted_price">$422.40</p>
+                                <p class="compare_price"></p>
+                                <p class="discounted_price"></p>
                             </div>
 
                             <!-- Button -->
@@ -81,6 +82,7 @@
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         loadScriptOnce('skincare-sticky-cta', 'https://qureskincaredns.com/assets/js/skincare-sticky-cta.js');
+        loadScriptOnce('bundle-selection', '{{ 'bundle-selection.js' | asset_url }}');
     });
 </script>
 

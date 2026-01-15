@@ -30,7 +30,16 @@ Renders a bundle routine section.
                                 {% endif %}
                             </div>
                             {% if block.settings.button_label != blank %}
-                                {% render 'product-page-buy-button', product_price: null, product_variant_id: product_variant_id, section: block, product_available: product_available %}
+                                {% assign current_button_id = 'bundle-routine-' | append: forloop.index %}
+                                {% render 'bundle-page-buy-button', 
+                                  product_variant_id: product_variant_id, 
+                                  product_handle: product_handle,
+                                  product_title: product_title,
+                                  product_price_original: product_price_original,
+                                  product_featured_image: product_featured_image,
+                                  section: block,
+                                  button_id: current_button_id
+                                %}
                             {% endif %}
                         </div>
                     </div>
