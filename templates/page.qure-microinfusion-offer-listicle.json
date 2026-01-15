@@ -9,12 +9,237 @@
  */
 {
   "sections": {
+    "n_hero_section_UtrpHw": {
+      "type": "n_hero-section",
+      "blocks": {
+        "note_K9fbKd": {
+          "type": "note",
+          "settings": {
+            "text": "93% saw glow after 1 treatment."
+          }
+        },
+        "approved_by_FBA7TC": {
+          "type": "approved-by",
+          "settings": {
+            "image": "shopify://shop_images/approved-by-1.webp",
+            "text": ""
+          }
+        },
+        "approved_by_UXEnqM": {
+          "type": "approved-by",
+          "settings": {
+            "image": "shopify://shop_images/approved-by-2.webp",
+            "text": "<p>Approved by <strong>Dr. Shah</strong> & <strong>Dr. Maxfield</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "note_K9fbKd",
+        "approved_by_FBA7TC",
+        "approved_by_UXEnqM"
+      ],
+      "name": "t:sections.n_hero-section.name",
+      "settings": {
+        "use_own_file": true,
+        "text": "<h1>5 Reasons Micro-Infusion Is the Smarter Alternative to Expensive Creams</h1><p><strong>Finally:</strong> A painless, sterile, at-home treatment that targets wrinkles and dark spots… even when skincare stops working.</p>",
+        "image": "shopify://shop_images/micro-infusion-listicle-hero.webp",
+        "image_mobile": "shopify://shop_images/micro-infusion-listicle-hero-mob.webp",
+        "button_url": "",
+        "button_label": "",
+        "sub_text": "",
+        "marked_list": "",
+        "wistia_url": ""
+      }
+    },
+    "n_text_QpAYcP": {
+      "type": "n_text",
+      "name": "t:sections.n_text.name",
+      "settings": {
+        "use_own_file": true,
+        "text": "<p>If you've seen board-certified dermatologists talking about Micro-Infusion, you're not imagining it.</p><p>This treatment is quickly becoming the go-to alternative to expensive creams because it delivers active ingredients past the skin barrier - without the waste, waiting, or watching your serums evaporate on the surface.</p>"
+      }
+    },
+    "n_base_section_tdiheA": {
+      "type": "n_base-section",
+      "name": "t:sections.n_base-section.name",
+      "settings": {
+        "use_own_file": true,
+        "modifier": "reverse",
+        "background_color": "none",
+        "heading": "<p><strong>Reason #1</strong></p><h2>Your Creams Stop at the Surface</h2>",
+        "text": "<p>Here's the truth most skincare brands won't tell you: expensive creams and serums can only sit on top of your skin.</p><p>Your skin's natural barrier blocks most active ingredients from reaching the deeper layers where they actually work.</p><p>Qure's Micro-Infusion System changes the game. Using 24K gold-plated microneedles (thinner than a strand of hair), it creates tiny surface channels that allow powerful serums to penetrate beyond your skin's barrier—delivering ingredients exactly where they're needed for visible results.</p><p>[note_green]\"Traditional creams and serums struggle to penetrate the skin barrier effectively. Micro-infusion technology creates precise channels that allow active ingredients to reach the deeper layers where they can actually transform your skin.\"</p><p><strong>- Dr. Shah, Board Certified Dermatologist</strong>[/note]</p>",
+        "button_label": "",
+        "button_url": "",
+        "wistia_url": "a1pykz2tp0"
+      }
+    },
+    "n_base_section_qY9eAx": {
+      "type": "n_base-section",
+      "name": "t:sections.n_base-section.name",
+      "settings": {
+        "use_own_file": true,
+        "modifier": "reverse",
+        "background_color": "none",
+        "heading": "<p><strong>Reason #2</strong></p><h2>Dermatologists Say It's More Effective</h2>",
+        "text": "<p>You've probably spent hundreds on luxury creams that promised miracles but delivered disappointment.</p><p>Here's what leading dermatologists recommend instead: micro-infusion technology.</p><p>This medical-grade approach combines two proven actions in one treatment—mechanical stimulation that helps visibly smooth fine lines, plus direct serum delivery through microscopic channels for maximum absorption.</p><p>The result? Professional-level efficacy without the clinic price tag or appointment hassle.</p><p>[note_green]\"Micro-infusion combines the benefits of targeted serum delivery with mechanical stimulation. It's a dual-action approach that outperforms topical application alone - giving you professional results at home.\"</p><p><strong>- Dr. Shah, Board Certified Dermatologist</strong>[/note]</p>",
+        "image": "shopify://shop_images/microinfusion-listicle-1.webp",
+        "button_label": "",
+        "button_url": "",
+        "wistia_url": ""
+      }
+    },
+    "n_base_section_a6aBTX": {
+      "type": "n_base-section",
+      "name": "t:sections.n_base-section.name",
+      "settings": {
+        "use_own_file": true,
+        "modifier": "reverse",
+        "background_color": "none",
+        "heading": "<p><strong>Reason #3</strong></p><h2>See Results Overnight (Not in 8-12 Weeks)</h2>",
+        "text": "<p>Remember reading \"results in 8-12 weeks\" on your last cream purchase?</p><p>That's the skincare industry's way of managing expectations—because surface-level products take months to show minimal change.</p><p>Qure users report visible differences after just one treatment. That glass-skin glow, refreshed texture, and dewy radiance you've been chasing? It's achievable in a single 5-minute session.</p><p>Perfect for transforming dull, tired-looking skin before events or any time you want to feel camera-ready.</p><p>[note_green]\"When active ingredients penetrate beyond the surface barrier, you see results dramatically faster. What takes creams 8-12 weeks can happen in days with proper delivery technology.\"</p><p><strong>- Dr. Shah, Board Certified Dermatologist</strong>[/note]</p>",
+        "image": "shopify://shop_images/microinfusion-listicle-2.webp",
+        "button_label": "",
+        "button_url": "",
+        "wistia_url": ""
+      }
+    },
+    "n_base_section_Xf8xcJ": {
+      "type": "n_base-section",
+      "name": "t:sections.n_base-section.name",
+      "settings": {
+        "use_own_file": true,
+        "modifier": "reverse",
+        "background_color": "none",
+        "heading": "<p><strong>Reason #4</strong></p><h2>Stop Wasting Money on Products That Can't Penetrate</h2>",
+        "text": "<p>Let's do the math on your current routine:<br/>Vitamin C serum ($65), retinol cream ($80), dark spot treatment ($75), hyaluronic acid ($55).</p><p>That's $275+ every 2-3 months on products that mostly evaporate or rub off on your pillowcase.</p><p>Qure's targeted serum delivery ensures you're not wasting a single drop. The micro-infusion channels allow significantly more absorption compared to topical application alone.</p><p>You use less product and get exponentially better results.</p><p>[note_green]\"Most patients don't realize that up to 90% of their expensive serums never penetrate the skin. Micro-infusion technology maximizes absorption, making every drop count.\"</p><p><strong>- Dr. Shah, Board Certified Dermatologist</strong>[/note]</p>",
+        "image": "shopify://shop_images/microinfusion-listicle-3.webp",
+        "button_label": "",
+        "button_url": "",
+        "wistia_url": ""
+      }
+    },
+    "n_base_section_tTiBbr": {
+      "type": "n_base-section",
+      "name": "t:sections.n_base-section.name",
+      "settings": {
+        "use_own_file": true,
+        "modifier": "reverse",
+        "background_color": "none",
+        "heading": "<p><strong>Reason #5</strong></p><h2>Virtually Painless & Zero Downtime</h2>",
+        "text": "<p>Here's what you won't experience with Qure:<br/>The burning sensation of harsh chemical peels, the irritation of overloaded cream formulas, or the redness and peeling from aggressive treatments.</p><p>The EO-sterilized 24K gold needles are so fine (0.5mm) that most users describe the sensation as a gentle pressing—not piercing.</p><p>Minimal redness typically fades by morning. You can literally do your treatment before bed and wake up glowing the next day.</p><p>[note_green]\"The 24K gold-plated needles at 0.5mm are designed for comfort. Most patients report minimal discomfort and can resume their normal routine immediately, unlike aggressive treatments that require days of recovery.\"</p><p><strong>- Dr. Shah, Board Certified Dermatologist</strong>[/note]</p>",
+        "image": "shopify://shop_images/microinfusion-listicle-4.webp",
+        "button_label": "",
+        "button_url": "",
+        "wistia_url": ""
+      }
+    },
+    "n_text_Cjt9wE": {
+      "type": "n_text",
+      "name": "t:sections.n_text.name",
+      "settings": {
+        "use_own_file": true,
+        "text": "<h2>Stop Settling for Surface-Level Results</h2><p>If you've been frustrated by creams that don't work, serums that don't sink in, or routines that drain your wallet without transforming your skin, it's time to go deeper.</p><p>Qure's Micro-Infusion System delivers clinical-quality results in the comfort of your home—in just 5 minutes.</p>"
+      }
+    },
     "main": {
       "type": "page-qure-microinfusion-offer-listicle",
       "settings": {}
+    },
+    "n_reviews_GKYEdE": {
+      "type": "n_reviews",
+      "blocks": {
+        "review_69cGNJ": {
+          "type": "review",
+          "settings": {
+            "username": "Hendri H.",
+            "badge_text": "Verified review",
+            "date": "10/20/25",
+            "heading": "Loveeeeeeeeee",
+            "text": "<p>Easy to use and made my skin is smoother. I'm on my second treatment now, and I can just see the result going to be amazaaaaiiiiiingggg...... I bought the 6months bundle and loving it so far... so worth it</p>",
+            "sub_text": "<p><strong>Skin Type:</strong> Combination</p><p><strong>Skin Concerns:</strong> Fine Lines and Wrinkles</p>"
+          }
+        },
+        "review_pMfEmq": {
+          "type": "review",
+          "settings": {
+            "username": "Alexia N.",
+            "badge_text": "Verified review",
+            "date": "10/20/25",
+            "heading": "Love it!",
+            "text": "<p>I did microneedling in a practice, I liked the results but I found it expensive and it's recommended to do several sessions (with intervals). So when I found Qure and read the good reviews I decided to try it. I used it 3 times and I can really see an improvement with my skin! I think it looks overall better, glowing more and plumpier as well. I really make an experience out of it as it needs to be done properly, it's nice to take care of yourself and take your time doing it. I'm glad I bought the micro-infusion kit and I recommend it!</p>",
+            "sub_text": ""
+          }
+        },
+        "review_collapsed_aWAUyY": {
+          "type": "review_collapsed",
+          "settings": {
+            "username": "Kerry M.",
+            "badge_text": "Verified review",
+            "date": "10/16/25",
+            "heading": "This is amazing",
+            "text": "<p>Really noticed a decrease in my wrinkles especially on my forehead. Will definitely continue to use this produc</p>",
+            "sub_text": "<p><strong>Skin Type:</strong> Normal</p><p><strong>Skin Concerns:</strong> Fine Lines and Wrinkles</p>"
+          }
+        },
+        "review_collapsed_KqYAAa": {
+          "type": "review_collapsed",
+          "settings": {
+            "username": "Katerina G.",
+            "badge_text": "Verified review",
+            "date": "10/10/25",
+            "heading": "So simple to use!",
+            "text": "<p>Firstly the presentation of the product is exceptional - on opening the box everything is beautifully set-out. I absolutely enjoyed using the micro-infusion system - the explanation how to use was very concise and simple and I certainly believe that a few days after my skin was looking much better than before using the product.</p>",
+            "sub_text": "<p><strong>Skin Type:</strong> Normal</p><p><strong>Skin Concerns:</strong> Fine Lines and Wrinkles, Dark Spots and Uneven Skin Tone</p>"
+          }
+        },
+        "review_collapsed_wFxCgp": {
+          "type": "review_collapsed",
+          "settings": {
+            "username": "Carmen V.",
+            "badge_text": "Verified review",
+            "date": "10/09/25",
+            "heading": "Great!",
+            "text": "<p>I been using Qure micro-infusion for about a month and I love it. After the first treatment, my skin looked smoother and had a natural glow. I am so happy that I decided to use it, I can see the difference on my skin :)</p>",
+            "sub_text": "<p><strong>Skin Type:</strong> Combination</p><p><strong>Skin Concerns:</strong> Fine Lines and Wrinkles, Redness</p>"
+          }
+        }
+      },
+      "block_order": [
+        "review_69cGNJ",
+        "review_pMfEmq",
+        "review_collapsed_aWAUyY",
+        "review_collapsed_KqYAAa",
+        "review_collapsed_wFxCgp"
+      ],
+      "name": "t:sections.n_reviews.name",
+      "settings": {
+        "use_own_file": true,
+        "heading": "People Around The World Are Rediscovering Their Natural Glow."
+      }
+    },
+    "sticky_button_yEBzkA": {
+      "type": "sticky-button",
+      "name": "t:sections.sticky-button.name",
+      "settings": {
+        "heading": "Micro-Infusion Facial System",
+        "text": "393 purchased in last 48 hours",
+        "limited": false,
+        "button-label": "BUY NOW AND SAVE UP TO 43%",
+        "button-url": "#"
+      }
     }
   },
   "order": [
-    "main"
+    "n_hero_section_UtrpHw",
+    "n_text_QpAYcP",
+    "n_base_section_tdiheA",
+    "n_base_section_qY9eAx",
+    "n_base_section_a6aBTX",
+    "n_base_section_Xf8xcJ",
+    "n_base_section_tTiBbr",
+    "n_text_Cjt9wE",
+    "main",
+    "n_reviews_GKYEdE",
+    "sticky_button_yEBzkA"
   ]
 }
