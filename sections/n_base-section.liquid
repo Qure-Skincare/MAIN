@@ -10,16 +10,25 @@
     <div class="container">
         <article>
             {% if section.settings.heading != blank %}
-                {{ section.settings.heading }}
+                {{ section.settings.heading | replace: '<p>', '' | replace: '</p>', '' }}
             {% endif %}
             {% if section.settings.image != blank %}
                 <picture>
                     <img src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt | escape }}" />
                 </picture>
             {% endif %}
+            {% if section.settings.wistia_url != blank %}
+                <div class="wistia-embed-video">
+                    <div class="wistia_responsive_padding">
+                        <div class="wistia_responsive_wrapper">
+                            <div class="wistia_embed wistia_async_{{ section.settings.wistia_url }} seo=false videoFoam=true"></div>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
             {% if section.settings.text != blank %}
                 <div>
-                    {{ section.settings.text }}
+                    {{ section.settings.text | replace: '<p>[note_green]', '<div class="c-note">' | replace: '[/note]</p>', '</div>' }}
                 </div>
             {% endif %}
             {% if section.settings.button_label != blank and section.settings.button_url != blank %}
@@ -28,6 +37,11 @@
         </article>
     </div>
 </section>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        loadScriptOnce('wistia-script', 'https://fast.wistia.com/assets/external/E-v1.js');
+    });
+</script>
 <!-- BASE SECTION END -->
 
 {% schema %}
@@ -96,6 +110,11 @@
                     "type": "url",
                     "id": "button_url",
                     "label": "t:common.button-url"
+                },
+                {
+                    "type": "text",
+                    "id": "wistia_url",
+                    "label": "t:common.wistia-url"
                 }
         ],
         "presets": [
@@ -104,4 +123,4 @@
             }
         ]
     }
-    {% endschema %}
+{% endschema %}

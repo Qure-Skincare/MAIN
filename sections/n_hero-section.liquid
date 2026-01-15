@@ -37,15 +37,29 @@
                     {{ section.settings.text }}
                 {% endif %}
             </div>
-            <div class="hero-section__content-button">
-                {% if section.settings.button_url != blank and section.settings.button_label != blank %}
-                    <a href="{{ section.settings.button_url }}" class="btn btn--primary">{{ section.settings.button_label }}</a>
-                {% endif %}
-                {% if section.settings.sub_text != blank %}
-                    <div class="c-info-bar">{{ section.settings.sub_text | replace: '<p>', '' | replace: '</p>', '' }}</div>
-                {% endif %}
-            </div>
+            {% if section.settings.button_url != blank and section.settings.button_label != blank %}
+                <div class="hero-section__content-button">
+                    
+                        <a href="{{ section.settings.button_url }}" class="btn btn--primary">{{ section.settings.button_label }}</a>
+                    
+                    {% if section.settings.sub_text != blank %}
+                        <div class="c-info-bar">{{ section.settings.sub_text | replace: '<p>', '' | replace: '</p>', '' }}</div>
+                    {% endif %}
+                </div>
+            {% endif %}
             <div class="hero-section__content-footer">
+                {% for block in section.blocks %}
+                    {% if block.type == 'note' %}
+                        {% if block.settings.text != blank %}
+                            <div class="hero-section__content-footer">
+                                <div class="c-note">
+                                    <i class="e-icon e-icon-stars"></i>
+                                    {{ block.settings.text }}
+                                </div>
+                            </div>
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
                 {% if section.settings.marked_list != blank %}
                     {{ section.settings.marked_list | replace: '<ul>', '<ul class="c-marked-list">' }}
                 {% endif %}
@@ -157,6 +171,18 @@
                 },
                 {
                     "type": "richtext",
+                    "id": "text",
+                    "label": "t:common.text"
+                }
+            ]
+        },
+        {
+            "type": "note",
+            "name": "t:common.note",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "text",
                     "id": "text",
                     "label": "t:common.text"
                 }

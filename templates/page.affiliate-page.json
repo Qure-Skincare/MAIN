@@ -15,12 +15,12 @@
       "settings": {
         "heading": "Are you a Content Creator?",
         "text": "<p>Qure is proud to support creators on their journey to sharing innovative, science-backed skincare solutions. Because everyone deserves to feel beautiful in their skin.</p><p>Join the numerous faces that help shape the future of skincare.</p><p>I'm a:</p>",
-        "creator_button_label": "UGC Creator",
+        "creator_button_label": "",
         "creator_button_url": "#",
-        "influencer_button_label": "Influencer",
+        "influencer_button_label": "Influencer/UGC Creator",
         "influencer_button_url": "#how-it-works",
-        "popup_heading": "Thank you for your interest in creating UGC content for Qure Skincare.",
-        "popup_text": "Please contact ugc@qureskincare.com with your portfolio and we will be in touch if we have any collaboration opportunities available."
+        "popup_heading": "",
+        "popup_text": ""
       }
     },
     "affiliate_page_step_by_step_Hd8bTP": {

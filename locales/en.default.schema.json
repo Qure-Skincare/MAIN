@@ -67,6 +67,8 @@
         "badge-text": "Badge text",
         "review-header": "Review header",
         "review-text": "Review text",
+        "review": "Review",
+        "review-collapsed": "Review collapsed",
         "text-with-progress": "Text with progress",
         "popup": "Popup",
         "popup-header": "Popup header",
@@ -202,7 +204,8 @@
         "bottom": "Bottom",
         "faq-item": "FAQ item",
         "image-faq": "Image FAQ",
-        "faq-ask-plate": "FAQ ask plate"
+        "faq-ask-plate": "FAQ ask plate",
+        "note": "Note"
     },
     "blocks": {
         "block-card": {
@@ -312,6 +315,12 @@
         },
         "n_guide-base-info": {
             "name": "Guide base info"
+        },
+        "n_text": {
+            "name": "Text"
+        },
+        "n_reviews": {
+            "name": "Reviews"
         },
         "collection": {
             "name": "Collection",
