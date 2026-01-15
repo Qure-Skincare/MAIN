@@ -4,93 +4,178 @@
 
 
 <!-- BASE SLIDER -->
- {% if section.settings.use_own_file %}
-    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/base-slider/base-slider.css" /> 
- {% endif %}
-<section class="base-slider base-slider--tree-cards">
-    <div class="container">
-        <div 
-            class="c-swiper"
-            data-swiper='{
-                "slidesPerView": 1.1,
-                "spaceBetween": 13,
-                "loop": false,
-                "pagination": { 
-                    "el": ".c-swiper-pagination", 
-                    "type": "custom" 
-                },
-                "navigation": {
-                    "prevEl": ".c-swiper-button-prev",
-                    "nextEl": ".c-swiper-button-next"
-                },
-                "breakpoints": {
-                    "768": { 
-                        "slidesPerView": 2
-                    },
-                    "1200": { 
-                        "slidesPerView": 3,
-                        "spaceBetween": 16
-                    }
-                }
-            }'
-        >
-            <div class="swiper-wrapper">
-                {% for block in section.blocks %}
-                    {% if block.type == 'slider' %}                    
-                        <div class="swiper-slide">
-                            <div class="c-trusted-video-card">
+{% if section.settings.use_own_file %}
+<link rel="stylesheet" href="https://qureskincaredns.com/sections/new/base-slider/base-slider.css" /> 
+{% endif %}
 
-                                {% if block.settings.youtube_url %}
-                                    {% if block.settings.video_url != blank %}
-                                        <picture data-url="{{ block.settings.video_url }}">
-                                            {% if block.settings.image != blank %}
-                                                <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+{% case section.settings.modifier %}
+    {% when 'three_cards' %}
+        <section class="base-slider base-slider--tree-cards">
+            <div class="container">
+                <div 
+                    class="c-swiper"
+                    data-swiper='{
+                        "slidesPerView": 1.1,
+                        "spaceBetween": 13,
+                        "loop": false,
+                        "pagination": { 
+                            "el": ".c-swiper-pagination", 
+                            "type": "custom" 
+                        },
+                        "navigation": {
+                            "prevEl": ".c-swiper-button-prev",
+                            "nextEl": ".c-swiper-button-next"
+                        },
+                        "breakpoints": {
+                            "768": { 
+                                "slidesPerView": 2
+                            },
+                            "1200": { 
+                                "slidesPerView": 3,
+                                "spaceBetween": 16
+                            }
+                        }
+                    }'
+                >
+                    <div class="swiper-wrapper">
+                        {% for block in section.blocks %}
+                            {% if block.type == 'slider' %}                    
+                                <div class="swiper-slide">
+                                    <div class="c-trusted-video-card">
+
+                                        {% if block.settings.youtube_url %}
+                                            {% if block.settings.video_url != blank %}
+                                                <picture data-url="{{ block.settings.video_url }}">
+                                                    {% if block.settings.image != blank %}
+                                                        <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                                    {% endif %}
+                                                </picture>
                                             {% endif %}
-                                        </picture>
-                                    {% endif %}
-                                {% else %}
-                                    {% if block.settings.video_url != blank %}
-                                        <picture
-                                                class="filter-card-video"
-                                                data-bs-toggle="modal" 
+                                        {% else %}
+                                            {% if block.settings.video_url != blank %}
+                                                <picture
+                                                        class="filter-card-video"
+                                                        data-bs-toggle="modal" 
+                                                        data-bs-target="#reusableWistiaModal"
+                                                        data-video-id="{{ block.settings.video_url }}"
+                                                    >
+                                                    {% if block.settings.image != blank %}
+                                                        <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                                    {% endif %}
+                                                </picture>
+                                            {% endif %}
+                                        {% endif %}
+
+                                        <article>
+                                            {% if block.settings.heading != blank %}
+                                                {{ block.settings.heading }}
+                                            {% endif %}
+                                            {% if block.settings.text != blank %}
+                                                <div>
+                                                    {{ block.settings.text | replace: '[checkmark]', '<span class="e-checkmark"></span>' }}
+                                                </div>
+                                            {% endif %}
+                                        </article>
+                                    </div>
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                    <div class="c-swiper-nav">
+                        <button class="c-swiper-button-prev"></button>
+                        <div class="c-swiper-pagination"></div>
+                        <button class="c-swiper-button-next"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    {% when 'none' %}
+        <section class="base-slider">
+            <div class="container">
+                <div
+                    class="c-swiper"
+                    data-swiper='{
+                        "slidesPerView": 1.2,
+                        "spaceBetween": 16,
+                        "loop": false,
+                        "pagination": {
+                            "el": ".c-swiper-pagination",
+                            "type": "custom"
+                        },
+                        "navigation": {
+                            "prevEl": ".c-swiper-button-prev",
+                            "nextEl": ".c-swiper-button-next"
+                        },
+                        "breakpoints": {
+                            "480": {
+                                "slidesPerView": 2.2
+                            },
+                            "768": {
+                                "slidesPerView": 4
+                            }
+                        }
+                    }'
+                >
+                    <div class="swiper-wrapper">
+                        {% for block in section.blocks %}
+                            {% if block.type == 'slider' %}
+                                <div class="swiper-slide">
+                                    {% if block.settings.youtube_url %}
+                                        {% if block.settings.video_url != blank %}
+                                            <picture data-url="{{ block.settings.video_url }}">
+                                                {% if block.settings.image != blank %}
+                                                    <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                                {% endif %}
+                                            </picture>
+                                        {% endif %}
+                                    {% else %}
+                                        {% if block.settings.video_url != blank and block.settings.image == blank %}
+                                            <div class="wistia-embed-video">
+                                                <div class="wistia_responsive_padding">
+                                                    <div class="wistia_responsive_wrapper">
+                                                        <div class="wistia_embed wistia_async_{{ block.settings.video_url }} popover=true seo=false videoFoam=true">
+                                                            <div class="wistia_swatch">
+                                                                <img src="https://fast.wistia.com/embed/medias/{{ block.settings.video_url }}/swatch" alt="Wistia video thumbnail" style="filter: blur(5px);"/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        {% endif %}
+                                        {% if block.settings.video_url != blank and block.settings.image != blank %}
+                                            <picture
+                                                data-bs-toggle="modal"
                                                 data-bs-target="#reusableWistiaModal"
                                                 data-video-id="{{ block.settings.video_url }}"
                                             >
-                                            {% if block.settings.image != blank %}
                                                 <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
-                                            {% endif %}
-                                        </picture>
+                                            </picture>
+                                        {% endif %}
                                     {% endif %}
-                                {% endif %}
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                    <div class="c-swiper-nav">
+                        <button class="c-swiper-button-prev"></button>
+                        <div class="c-swiper-pagination"></div>
+                        <button class="c-swiper-button-next"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                                <article>
-                                    {% if block.settings.heading != blank %}
-                                        {{ block.settings.heading }}
-                                    {% endif %}
-                                    {% if block.settings.text != blank %}
-                                        <div>
-                                            {{ block.settings.text | replace: '[checkmark]', '<span class="e-checkmark"></span>' }}
-                                        </div>
-                                    {% endif %}
-                                </article>
-                            </div>
-                        </div>
-                    {% endif %}
-                {% endfor %}
-            </div>
-            <div class="c-swiper-nav">
-                <button class="c-swiper-button-prev"></button>
-                <div class="c-swiper-pagination"></div>
-                <button class="c-swiper-button-next"></button>
-            </div>
-        </div>
-    </div>
-</section>
+    {% endcase %}
+
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         loadScriptOnce('base-slider', 'https://qureskincaredns.com/sections/new/base-slider/base-slider.js');
         loadScriptOnce('wistia-script', 'https://fast.wistia.com/assets/external/E-v1.js');
         loadScriptOnce('video-slider', 'https://qureskincaredns.com/assets/js-new/wistia-popup.js');
+        loadScriptOnce('wistia-popup', 'https://qureskincaredns.com/assets/js-new/wistia-popup.js');
+        loadScriptOnce('youtube-popup', 'https://qureskincaredns.com/assets/js-new/yt-popup.js');
     });
 </script>    
 <!-- BASE SLIDER END -->
@@ -106,6 +191,22 @@
                 "label": "t:common.use-own-file",
                 "default": false
             },
+            {
+                "type": "select",
+                "id": "modifier",
+                "label": "t:common.modifier",
+                "default": "three_cards",
+                "options": [
+                    {
+                        "value": "none",
+                        "label": "t:common.none"
+                    },
+                    {
+                        "value": "three_cards",
+                        "label": "t:common.three-cards"
+                    }
+                ]
+            }
     ],
     "blocks": [
         {
