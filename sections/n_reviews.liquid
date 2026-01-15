@@ -1,0 +1,220 @@
+{% doc %}
+  Renders a reviews section
+{% enddoc %}
+
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/testimonials/testimonials.css" />
+{% endif %}
+
+<section class="testimonials">
+    <div class="container">
+        {% if section.settings.heading != blank %}
+            <div class="testimonials__title">{{ section.settings.heading }}</div>
+        {% endif %}
+        <div class="testimonials__content">
+            <div class="testimonials__intro">
+                {% for block in section.blocks %}
+                    {% if block.type == 'review' %}
+                        <div class="testimonials__card">
+                            <div class="c-testimonial-card">
+                                <div class="c-testimonial-card__header">
+                                    {% if block.settings.username != blank %}
+                                        <div class="c-testimonial-card__header-name">{{ block.settings.username }}</div>
+                                    {% endif %}
+                                    {% if block.settings.badge_text != blank %}
+                                        <div class="c-testimonial-card__header-verified">
+                                            <span class="e-checkmark"></span>
+                                            {{ block.settings.badge_text }}
+                                        </div>
+                                    {% endif %}
+                                    {% if block.settings.date != blank %}
+                                        <div class="c-testimonial-card__header-date">{{ block.settings.date }}</div>
+                                    {% endif %}
+                                </div>
+                                <div class="c-testimonial-card__content">
+                                    <div class="c-testimonial-card__content-rating e-rating-stars">
+                                        <i class="e-icon e-icon-rating-fill"></i>
+                                        <i class="e-icon e-icon-rating-fill"></i>
+                                        <i class="e-icon e-icon-rating-fill"></i>
+                                        <i class="e-icon e-icon-rating-fill"></i>
+                                        <i class="e-icon e-icon-rating-fill"></i>
+                                    </div>
+                                    {% if block.settings.heading != blank %}
+                                        <div class="c-testimonial-card__content-title">{{ block.settings.heading }}</div>
+                                    {% endif %}
+                                    {% if block.settings.text != blank %}
+                                        <div class="c-testimonial-card__content-text">
+                                            {{ block.settings.text }}
+                                    </div>
+                                    {% endif %}
+                                </div>
+                                {% if block.settings.sub_text != blank %}
+                                    <hr />
+                                    <div class="c-testimonial-card__footer">
+                                        {{ block.settings.sub_text }}
+                                    </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+            <div class="testimonials__other collapse" id="more-testimonials">
+                {% for block in section.blocks %}
+                    {% if block.type == 'review_collapsed' %}
+                        <div class="testimonials__card">
+                            <div class="c-testimonial-card">
+                                <div class="c-testimonial-card__header">
+                                    {% if block.settings.username != blank %}
+                                        <div class="c-testimonial-card__header-name">{{ block.settings.username }}</div>
+                                    {% endif %}
+                                    {% if block.settings.badge_text != blank %}
+                                        <div class="c-testimonial-card__header-verified">
+                                            <span class="e-checkmark"></span>
+                                            {{ block.settings.badge_text }}
+                                        </div>
+                                    {% endif %}
+                                    {% if block.settings.date != blank %}
+                                        <div class="c-testimonial-card__header-date">{{ block.settings.date }}</div>
+                                    {% endif %}
+                                </div>
+                                <div class="c-testimonial-card__content">
+                                    <div class="c-testimonial-card__content-rating e-rating-stars">
+                                        <i class="e-icon e-icon-rating-fill"></i>
+                                        <i class="e-icon e-icon-rating-fill"></i>
+                                        <i class="e-icon e-icon-rating-fill"></i>
+                                        <i class="e-icon e-icon-rating-fill"></i>
+                                        <i class="e-icon e-icon-rating-fill"></i>
+                                    </div>
+                                    {% if block.settings.heading != blank %}
+                                        <div class="c-testimonial-card__content-title">{{ block.settings.heading }}</div>
+                                    {% endif %}
+                                    {% if block.settings.text != blank %}
+                                        <div class="c-testimonial-card__content-text">
+                                            {{ block.settings.text }}
+                                    </div>
+                                    {% endif %}
+                                </div>
+                                {% if block.settings.sub_text != blank %}
+                                    <hr />
+                                    <div class="c-testimonial-card__footer">
+                                        {{ block.settings.sub_text }}
+                                    </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+            <a
+                class="testimonials__button"
+                href="#more-testimonials"
+                data-bs-toggle="collapse"
+                data-text-more="Read more"
+                data-text-less="Read less"
+                aria-expanded="false"
+            ></a>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+    {
+        "name": "t:sections.n_reviews.name",
+            "settings": [
+                {
+                    "type": "checkbox",
+                    "id": "use_own_file",
+                    "label": "t:common.use-own-file",
+                    "default": false
+                },
+                {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "t:common.header"
+                }
+        ],
+        "blocks": [
+            {
+                "type": "review",
+                "name": "t:common.review",
+                "limit": 2,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "username",
+                        "label": "t:common.username"
+                    },
+                    {
+                        "type": "text",
+                        "id": "badge_text",
+                        "label": "t:common.badge-text",
+                        "default": "Verified review"
+                    },
+                    {
+                        "type": "text",
+                        "id": "date",
+                        "label": "t:common.date"
+                    },
+                    {
+                        "type": "text",
+                        "id": "heading",
+                        "label": "t:common.header"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text",
+                        "label": "t:common.text"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "sub_text",
+                        "label": "t:common.sub-text"
+                    }
+                ]
+            },
+            {
+                "type": "review_collapsed",
+                "name": "t:common.review-collapsed",
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "username",
+                        "label": "t:common.username"
+                    },
+                    {
+                        "type": "text",
+                        "id": "badge_text",
+                        "label": "t:common.badge-text",
+                        "default": "Verified review"
+                    },
+                    {
+                        "type": "text",
+                        "id": "date",
+                        "label": "t:common.date"
+                    },
+                    {
+                        "type": "text",
+                        "id": "heading",
+                        "label": "t:common.header"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text",
+                        "label": "t:common.text"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "sub_text",
+                        "label": "t:common.sub-text"
+                    }
+                ]
+            }
+        ],
+        "presets": [
+            {
+                "name": "t:sections.n_reviews.name"
+            }
+        ]
+    }
+{% endschema %}

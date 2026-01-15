@@ -1,0 +1,42 @@
+{% doc %}
+  Renders a text section
+{% enddoc %}
+
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/text-section/text-section.css" />
+{% endif %}
+
+<section class="text-section">
+    <div class="container">
+        {% if section.settings.text != blank %}
+            <article>
+                {{ section.settings.text }}
+            </article>
+        {% endif %}
+    </div>
+</section>
+
+
+{% schema %}
+    {
+        "name": "t:sections.n_text.name",
+            "settings": [
+            {
+                "type": "checkbox",
+                "id": "use_own_file",
+                "label": "t:common.use-own-file",
+                "default": false
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "t:common.text"
+            }
+        ],
+        "presets": [
+            {
+                "name": "t:sections.n_text.name"
+            }
+        ]
+    }
+    {% endschema %}
