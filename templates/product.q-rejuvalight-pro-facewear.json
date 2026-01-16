@@ -346,6 +346,32 @@
             "product_text": ""
           }
         },
+        "slider_3yLDfg": {
+          "type": "slider",
+          "settings": {
+            "heading": "Amazing",
+            "text": "<p>“I have been using my mask since 2023. It has completely evened out my skin tone and smoothed my forehead lines. I'm almost 32 with no lines on my forehead.”</p>",
+            "compare_image": "shopify://shop_images/Image_30.png",
+            "country_image": "shopify://shop_images/Mask_Group_3384840c-26f5-4d6f-a1d0-a4a49195f654.png",
+            "username": "<p>Amy B.</p>",
+            "product_url": "",
+            "product_heading": "",
+            "product_text": ""
+          }
+        },
+        "slider_AiXzax": {
+          "type": "slider",
+          "settings": {
+            "heading": "Thrilled with the results!",
+            "text": "<p>\"I am 45 so I am fighting signs of aging, but also still dealing with acne flare ups. ...I notice a definite smoothing of [the look of] fine wrinkles on my cheeks & around my eyes. I recommend this product to anyone. Well worth the investment.\" </p>",
+            "compare_image": "shopify://shop_images/Jessica_rejuv.webp",
+            "country_image": "shopify://shop_images/america_f.webp",
+            "username": "<p>Jessica K.</p>",
+            "product_url": "",
+            "product_heading": "",
+            "product_text": ""
+          }
+        },
         "slider_P7Wz9M": {
           "type": "slider",
           "settings": {
@@ -393,19 +419,6 @@
             "compare_image": "shopify://shop_images/Image_1_5107b8e5-a58b-4e1d-8714-728b42fb2c7e.png",
             "country_image": "shopify://shop_images/USA_07.png",
             "username": "<p>Megan M.</p>",
-            "product_url": "",
-            "product_heading": "",
-            "product_text": ""
-          }
-        },
-        "slider_AiXzax": {
-          "type": "slider",
-          "settings": {
-            "heading": "Thrilled with the results!",
-            "text": "<p>\"I am 45 so I am fighting signs of aging, but also still dealing with acne flare ups. ...I notice a definite smoothing of [the look of] fine wrinkles on my cheeks & around my eyes. I recommend this product to anyone. Well worth the investment.\" </p>",
-            "compare_image": "shopify://shop_images/Jessica_rejuv.webp",
-            "country_image": "shopify://shop_images/america_f.webp",
-            "username": "<p>Jessica K.</p>",
             "product_url": "",
             "product_heading": "",
             "product_text": ""
@@ -518,19 +531,6 @@
             "product_text": ""
           }
         },
-        "slider_3yLDfg": {
-          "type": "slider",
-          "settings": {
-            "heading": "Amazing",
-            "text": "<p>“I have been using my mask since 2023. It has completely evened out my skin tone and smoothed my forehead lines. I'm almost 32 with no lines on my forehead.”</p>",
-            "compare_image": "shopify://shop_images/Image_30.png",
-            "country_image": "shopify://shop_images/Mask_Group_3384840c-26f5-4d6f-a1d0-a4a49195f654.png",
-            "username": "<p>Amy B.</p>",
-            "product_url": "",
-            "product_heading": "",
-            "product_text": ""
-          }
-        },
         "slider_WWFUjn": {
           "type": "slider",
           "settings": {
@@ -547,11 +547,12 @@
       },
       "block_order": [
         "slider_cAenwW",
+        "slider_3yLDfg",
+        "slider_AiXzax",
         "slider_P7Wz9M",
         "slider_t9L4gF",
         "slider_7nREYk",
         "slider_kNV8cA",
-        "slider_AiXzax",
         "slider_g7UTtU",
         "slider_3UdTjx",
         "slider_EBwfmY",
@@ -560,7 +561,6 @@
         "slider_eeRBxf",
         "slider_7Ktpnh",
         "slider_bzTbmR",
-        "slider_3yLDfg",
         "slider_WWFUjn"
       ],
       "name": "t:sections.trusted-reviews.name",
