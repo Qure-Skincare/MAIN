@@ -9,11 +9,11 @@
  */
 {
   "sections": {
-    "product": {
-      "type": "product",
+    "product-bundle": {
+      "type": "product-bundle",
       "settings": {}
     },
-    "slider_featured_in_HDaUTN": {
+    "slider_featured_in_DDaUTN": {
       "type": "slider-featured-in",
       "blocks": {
         "slider_rczj6t": {
@@ -62,7 +62,7 @@
       "name": "t:sections.slider-featured-in.name",
       "settings": {}
     },
-    "trusted_reviews_HRLHtt": {
+    "trusted_reviews_mRLHtt": {
       "type": "trusted-reviews",
       "blocks": {
         "slider_iCfR9d": {
@@ -123,15 +123,15 @@
         "button_url": ""
       }
     },
-    "you_may_also_like_HZi1bC": {
+    "you_may_also_like_uZi1bC": {
       "type": "product-you-may-also-like",
       "settings": {}
     }
   },
   "order": [
-    "product",
-    "slider_featured_in_HDaUTN",
-    "trusted_reviews_HRLHtt",
-    "you_may_also_like_HZi1bC"
+    "product-bundle",
+    "slider_featured_in_DDaUTN",
+    "trusted_reviews_mRLHtt",
+    "you_may_also_like_uZi1bC"
   ]
 }
