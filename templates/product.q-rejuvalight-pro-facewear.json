@@ -359,19 +359,6 @@
             "product_text": ""
           }
         },
-        "slider_3yLDfg": {
-          "type": "slider",
-          "settings": {
-            "heading": "Amazing",
-            "text": "<p>“I have been using my mask since 2023. It has completely evened out my skin tone and smoothed my forehead lines. I'm almost 32 with no lines on my forehead.”</p>",
-            "compare_image": "shopify://shop_images/Image_30.png",
-            "country_image": "shopify://shop_images/Mask_Group_3384840c-26f5-4d6f-a1d0-a4a49195f654.png",
-            "username": "<p>Amy B.</p>",
-            "product_url": "",
-            "product_heading": "",
-            "product_text": ""
-          }
-        },
         "slider_AiXzax": {
           "type": "slider",
           "settings": {
@@ -406,6 +393,19 @@
             "compare_image": "shopify://shop_images/ana.webp",
             "country_image": "shopify://shop_images/colombia_f.webp",
             "username": "<p>Ana L.</p>",
+            "product_url": "",
+            "product_heading": "",
+            "product_text": ""
+          }
+        },
+        "slider_3yLDfg": {
+          "type": "slider",
+          "settings": {
+            "heading": "Amazing",
+            "text": "<p>“I have been using my mask since 2023. It has completely evened out my skin tone and smoothed my forehead lines. I'm almost 32 with no lines on my forehead.”</p>",
+            "compare_image": "shopify://shop_images/Image_30.png",
+            "country_image": "shopify://shop_images/Mask_Group_3384840c-26f5-4d6f-a1d0-a4a49195f654.png",
+            "username": "<p>Amy B.</p>",
             "product_url": "",
             "product_heading": "",
             "product_text": ""
@@ -548,10 +548,10 @@
       "block_order": [
         "slider_kNV8cA",
         "slider_cAenwW",
-        "slider_3yLDfg",
         "slider_AiXzax",
         "slider_P7Wz9M",
         "slider_t9L4gF",
+        "slider_3yLDfg",
         "slider_7nREYk",
         "slider_g7UTtU",
         "slider_3UdTjx",
