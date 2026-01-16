@@ -19,24 +19,57 @@
 
   /**
    * Initialize the bundle selection system
-   * Clears previous selection on page load for fresh start
+   * Restores selection state from cart on page load
    */
-  function init() {
-    clearStorage();
+  async function init() {
     bindEvents();
+    await restoreFromCart();
     updateUI();
   }
 
   /**
-   * Clear localStorage on page load
-   * This ensures fresh state on every page refresh
+   * Restore selection state from cart
+   * Checks which bundle products are already in cart and restores their selected state
    */
-  function clearStorage() {
+  async function restoreFromCart() {
     try {
-      localStorage.removeItem(STORAGE_KEY);
+      const response = await fetch('/cart.js');
+      const cart = await response.json();
+      
+      // Get all bundle buttons on the page
+      const buttons = document.querySelectorAll('[data-bundle-button]');
+      const pageVariantIds = new Set();
+      const buttonDataMap = {};
+      
+      // Build a map of variant IDs to button data
+      buttons.forEach(button => {
+        const variantId = parseInt(button.dataset.variantId);
+        pageVariantIds.add(variantId);
+        buttonDataMap[variantId] = {
+          variantId: variantId,
+          handle: button.dataset.handle,
+          title: button.dataset.title,
+          price: parseFloat(button.dataset.price) || 0,
+          image: button.dataset.image
+        };
+      });
+      
+      // Find cart items that match bundle products on this page
       selectedProducts = [];
+      cart.items.forEach(item => {
+        if (pageVariantIds.has(item.variant_id) && buttonDataMap[item.variant_id]) {
+          selectedProducts.push(buttonDataMap[item.variant_id]);
+        }
+      });
+      
+      // Limit to 4 products max
+      if (selectedProducts.length > 4) {
+        selectedProducts = selectedProducts.slice(0, 4);
+      }
+      
+      saveToStorage();
     } catch (e) {
-      console.warn('Bundle Selection: Failed to clear storage', e);
+      console.warn('Bundle Selection: Failed to restore from cart', e);
       selectedProducts = [];
     }
   }
@@ -344,7 +377,7 @@
 
   // Initialize when DOM is ready
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
+    document.addEventListener('DOMContentLoaded', () => init());
   } else {
     init();
   }
