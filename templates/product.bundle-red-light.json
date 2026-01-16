@@ -18,11 +18,11 @@
       "name": "t:sections.banner-with-text.name",
       "settings": {
         "heading": "Red Light Therapy at Home",
-        "text": "<p>Experience the transformative power of <strong>Red Light Therapy</strong> from the comfort of your home. No need for expensive salon visits or long treatment times-just a few minutes with our <strong>Breakout Control Advanced</strong> bundle provides the therapeutic benefits of <strong>LED light therapy</strong>, helping to clear acne, reduce inflammation, and promote healthier skin.</p>",
+        "text": "<p>Experience the transformative power of <strong>Red Light Therapy</strong> from the comfort of your home. No need for expensive salon visits or long treatment times-just a few minutes with our <strong>Breakout Control Advanced</strong> bundle provides the therapeutic benefits of <strong>LED light therapy</strong>, helping to clear acne, reduce inflammation, and promote healthier skin.<br/><br/>This at-home treatment delivers targeted results with ease, allowing you to seamlessly incorporate <strong>Red Light Therapy</strong> into your daily skincare routine. With consistent use, you’ll enjoy smoother, clearer skin, all while saving time and money on in-clinic treatments. <strong>Red Light Therapy</strong> has never been more accessible or effective-your skin will thank you!</p>",
         "quote": "",
         "quote-mobile": "",
         "image_position": "left",
-        "sub_text": "This at-home treatment delivers targeted results with ease, allowing you to seamlessly incorporate Red Light Therapy into your daily skincare routine. With consistent use, you’ll enjoy smoother, clearer skin, all while saving time and money on in-clinic treatments. Red Light Therapy has never been more accessible or effective-your skin will thank you!",
+        "sub_text": "",
         "image": "shopify://shop_images/red_light_for_scars.webp",
         "button_label": "",
         "button_url": "",
