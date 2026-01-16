@@ -252,6 +252,11 @@
       // Apply discount code
       await fetch('/discount/' + tier.code);
 
+      // Toggle free gifts based on cart total (uses global CartDrawer from footer-cart-drawer.js)
+      if (window.CartDrawer && typeof window.CartDrawer.toogleGift === 'function') {
+        await window.CartDrawer.toogleGift();
+      }
+
       // Dispatch cart.requestComplete event to trigger slide cart opening
       // This integrates with footer-cart-drawer.js
       const event = new CustomEvent('cart.requestComplete', { 

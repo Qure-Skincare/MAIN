@@ -362,3 +362,10 @@ const updateCartMany = (updates) => {
         console.error('Error updating cart:', error);
       });
 };
+
+// Expose cart functions globally for use in other scripts (e.g., bundle-selection.js)
+window.CartDrawer = {
+    toogleGift,
+    addToCartJson,
+    getCartState
+};
