@@ -139,6 +139,52 @@
         "button_url": ""
       }
     },
+    "faq_8ra9aV": {
+      "type": "faq",
+      "blocks": {
+        "accordion_kJHtcE": {
+          "type": "accordion",
+          "settings": {
+            "heading": "How Red Light Therapy Works for Acne?",
+            "text": "<p>Harness the power of <strong>Red Light Therapy</strong> to penetrate deep into the skin, targeting the root causes of acne. The therapeutic wavelengths of light reduce inflammation, calm redness, and kill acne-causing bacteria, giving you healthier skin with consistent use. <strong>LED light therapy</strong> is clinically proven to help clear up blemishes and prevent new breakouts from forming.</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "accordion_Hj9wiN": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Why Choose Breakout Control Advanced?",
+            "text": "<p>Our <strong>Breakout Control Advanced</strong> formula uses a unique blend of <strong>Red Light Therapy</strong>, soothing botanicals, and acne-fighting ingredients that work together to help you achieve clearer skin. It reduces inflammation, heals active breakouts, and helps prevent the formation of new acne-all while being gentle on your skin. It’s your solution for reducing acne without harsh chemicals or aggressive treatments.</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "accordion_iTKLYy": {
+          "type": "accordion",
+          "settings": {
+            "heading": "How To Achieve Acne-Free, Radiant Skin?",
+            "text": "<p>Perfect for all skin types, <strong>Breakout Control Advanced</strong> is designed to treat acne without causing dryness or irritation. Experience the combined benefits of <strong>Red Light Therapy</strong> and advanced skincare technology for visible results in fewer treatments. With consistent use, you’ll enjoy smooth, radiant skin that feels healthier and looks clearer.</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "accordion_kJHtcE",
+        "accordion_Hj9wiN",
+        "accordion_iTKLYy"
+      ],
+      "name": "t:sections.faq.name",
+      "settings": {
+        "heading": "What To Expect:",
+        "text": "",
+        "button_label": "Ask us",
+        "button_url": "",
+        "terms-conditions": false,
+        "promotional_terms_and_conditions": ""
+      }
+    },
     "you_may_also_like_uZi1bC": {
       "type": "product-you-may-also-like",
       "settings": {}
@@ -149,6 +195,7 @@
     "banner_with_text_RnXaHd",
     "slider_featured_in_DDaUTN",
     "trusted_reviews_mRLHtt",
+    "faq_8ra9aV",
     "you_may_also_like_uZi1bC"
   ]
 }
