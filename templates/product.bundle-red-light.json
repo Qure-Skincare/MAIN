@@ -112,15 +112,15 @@
         "slider_ea3hLd": {
           "type": "slider",
           "settings": {
-            "heading": "Works better than I imagined!",
-            "text": "<p>“I am really stunned by how well this product works. I have had professional micro-needling and I wanted the benefits without the downtime. I did my treatment, went to bed and woke up the next morning and was ready to go. My skin looks better than it has in years.”</p>",
-            "compare_image": "shopify://shop_images/jennifer-n.webp",
-            "country_image": "shopify://shop_images/america_f.webp",
-            "username": "<p>Jennifer N.</p>",
+            "heading": "Amazing",
+            "text": "<p>“I love my mask, I use it everyday! Just 3 min and we go on. I have been using it for 1 month and feel my skin is smoother and the tone is more uniform. I am very satisfied!</p>",
+            "compare_image": "shopify://shop_images/Diane.webp",
+            "country_image": "shopify://shop_images/canada_f.svg",
+            "username": "<p>Diane F.</p>",
             "product_url": "#",
-            "product_heading": "Jennifer uses...",
-            "product_text": "Micro-Infusion Facial System",
-            "product_image": "shopify://shop_images/micro-infusion-facial-system_f0e75ccc-2fd2-48d6-aea7-fe662896adaa.webp"
+            "product_heading": "Diane uses...",
+            "product_text": "Q-Rejuvalight Pro LED Mask",
+            "product_image": "shopify://shop_images/q-rejuvalight-mask.webp"
           }
         }
       },
