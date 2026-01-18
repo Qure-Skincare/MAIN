@@ -1233,7 +1233,7 @@
           "settings": {
             "heading": "Dark Spots",
             "image": "shopify://shop_images/Dark_Spots_4.png",
-            "preselected": true
+            "preselected": false
           }
         },
         "product_7dL4ci": {
@@ -1302,7 +1302,7 @@
           "settings": {
             "heading": "Wrinkles",
             "image": "shopify://shop_images/Wrinkles_2.png",
-            "preselected": false
+            "preselected": true
           }
         },
         "product_EKAAzA": {
