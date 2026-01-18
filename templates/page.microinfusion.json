@@ -248,6 +248,7 @@
         },
         "product_hD69Aq": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "6-month-micro-infusion-for-wrinkles-dark-spots",
             "product_variant_id": 0,
@@ -271,7 +272,7 @@
             "product_variant_id": 0,
             "product_selling_plan": 0,
             "preselected": false,
-            "heading": "3 Month Supply Holiday Sale",
+            "heading": "3 Month Supply",
             "subheading": "(6 Treatments)",
             "image": "shopify://shop_images/3m_mix.png",
             "soldout": true,
