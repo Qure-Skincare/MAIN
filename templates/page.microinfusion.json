@@ -1376,6 +1376,7 @@
         },
         "product_gbPf3J": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "6-month-micro-infusion-for-wrinkles-dark-spots",
             "preselected": true,
