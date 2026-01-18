@@ -111,7 +111,7 @@
           "settings": {
             "heading": "Dark Spots",
             "image": "shopify://shop_images/Dark_Spots_6.png",
-            "preselected": true
+            "preselected": false
           }
         },
         "product_NEgEkN": {
@@ -177,7 +177,7 @@
           "settings": {
             "heading": "Wrinkles",
             "image": "shopify://shop_images/Frame_1073714897.png",
-            "preselected": false
+            "preselected": true
           }
         },
         "product_EKAAzA": {
@@ -187,7 +187,7 @@
             "product_variant_id": 0,
             "product_selling_plan": 0,
             "preselected": false,
-            "heading": "3 Month Supply Holiday Sale",
+            "heading": "3 Month Supply",
             "subheading": "(6 Treatments)",
             "image": "shopify://shop_images/3m_wrinkles.png",
             "soldout": false,
