@@ -875,6 +875,7 @@
       "block_order": [
         "bookx_app_blocks_YVMFC3"
       ],
+      "disabled": true,
       "settings": {}
     }
   },
