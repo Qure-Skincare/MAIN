@@ -172,7 +172,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "How can I update my order or cancel my order?",
-            "text": "<p>If your order has not been shipped then please email us at <a href=\"mailto:support@qureskincare.com\">support@qureskincare.com</a> as soon as possible if you would like to cancel or change your order. Our fulfillment center processes orders quickly, but we’ll do our best to process your request.</p>",
+            "text": "<p>If your order has not been shipped then please contact us via <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Customer Portal</a> as soon as possible if you would like to cancel or change your order. Our fulfillment center processes orders quickly, but we’ll do our best to process your request.</p>",
             "section_id": ""
           }
         },
