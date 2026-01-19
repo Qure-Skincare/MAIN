@@ -11,7 +11,9 @@
   "sections": {
     "product-bundle": {
       "type": "product-bundle",
-      "settings": {}
+      "settings": {
+        "heading": "Breakout Control Advanced",
+      }
     },
     "banner_with_text_RnXaHd": {
       "type": "banner-with-text",
