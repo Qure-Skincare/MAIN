@@ -857,6 +857,26 @@
         "block_card_CwMxwz"
       ],
       "settings": {}
+    },
+    "1768836404997c6fa7": {
+      "type": "apps",
+      "blocks": {
+        "bookx_app_blocks_YVMFC3": {
+          "type": "shopify://apps/bookx/blocks/app-blocks/865cd10f-9515-4d8b-8e41-efece9c83f71",
+          "settings": {
+            "bookeasy-app-id": "htGfwdi1vmeEiPRv6XLQuo",
+            "bookeasy-app-title": "booking",
+            "bookeasy-app-subtitle": "booking",
+            "bookeasy-app-description": "",
+            "bookeasy-app-alignment": "flex-start"
+          }
+        }
+      },
+      "block_order": [
+        "bookx_app_blocks_YVMFC3"
+      ],
+      "disabled": true,
+      "settings": {}
     }
   },
   "order": [
@@ -876,6 +896,7 @@
     "our_advisors_LPVVBm",
     "quiz_wdnen7",
     "index-read-our-story",
-    "blocks"
+    "blocks",
+    "1768836404997c6fa7"
   ]
 }
