@@ -51,3 +51,16 @@
 </div>
 
 {% render 'product-data-json', product: product %}
+
+{% schema %}
+{
+    "name": "t:sections.product-header.name",
+    "settings": [
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "t:common.header"
+        }
+    ]
+}
+{% endschema %}
