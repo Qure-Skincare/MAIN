@@ -14,7 +14,7 @@
       "name": "t:sections.n_intro.name",
       "settings": {
         "use_own_file": true,
-        "modifier": "simple",
+        "modifier": "none",
         "text": "<h1>Frequently Asked Questions</h1>"
       }
     },
@@ -136,7 +136,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "I’m having problems tracking my order.",
-            "text": "<p>Sorry about that! Please note the carrier could take 1-2 business days to register your shipment status online. </p><p>If your tracking number isn’t updating or working at all after this time period, please reach out to us via <a href=\"mailto:support@qureskincare.com\" title=\"mailto:support@qureskincare.com\">support@qureskincare.com</a>. We can give you the inside info.</p>",
+            "text": "<p>Sorry about that! Please note the carrier could take 1-2 business days to register your shipment status online. </p><p>If your tracking number isn’t updating or working at all after this time period, please reach out to us via <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Customer Portal.</a> We can give you the inside info.</p>",
             "section_id": ""
           }
         },

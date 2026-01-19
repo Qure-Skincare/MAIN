@@ -522,7 +522,6 @@
     },
     "sticky_cta_hd4dLE": {
       "type": "sticky-cta",
-      "disabled": false,
       "name": "t:sections.static-sticky-cta.name",
       "settings": {}
     }

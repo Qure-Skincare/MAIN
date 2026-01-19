@@ -539,7 +539,6 @@
     },
     "sticky_cta_nTPkm8": {
       "type": "sticky-cta",
-      "disabled": false,
       "name": "t:sections.static-sticky-cta.name",
       "settings": {}
     }
