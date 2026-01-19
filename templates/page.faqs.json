@@ -163,7 +163,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "Where is my order?",
-            "text": "<p>You may track your order via the link in your shipping confirmation email. If you're having trouble doing this, please email us at <a href=\"mailto:support@qureskincare.com\">support@qureskincare.com</a>.</p>",
+            "text": "<p>You may track your order via the link in your shipping confirmation email. If you're having trouble doing this, please contact us via <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Customer Portal. </a></p>",
             "section_id": ""
           }
         },
