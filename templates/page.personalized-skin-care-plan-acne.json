@@ -21,7 +21,7 @@
         "sub_text": "",
         "image": "shopify://shop_images/transform_aging_acne.webp",
         "button_label": "Shop Now",
-        "button_url": "#",
+        "button_url": "#skincare_goals",
         "wistia_url": ""
       }
     },
@@ -59,18 +59,18 @@
             "review_video": "https://www.youtube.com/embed/Jqw2lZirHz4?autoplay=1&mute=1"
           }
         },
-        "items_Q3cFkr": {
+        "items_kDMBBt": {
           "type": "items",
           "settings": {
-            "product": "all-in-one-face-serum",
+            "product": "face-serum",
             "text": "A multi-tasking formula designed to hydrate, brighten, and strengthen skin barrier in one step.",
-            "list": "<p>Helps improve skin texture and reduce the appearance of hyperpigmentation.</p><p>Lightweight, non-sticky formula that absorbs quickly and layers well.</p><p>Formulated with soothing botanicals to calm and comfort the skin.</p>",
+            "list": "<p>Hydrates and plumps with hyaluronic acid and soothing ingredients.</p><p>Deeply hydrates and evens tone with gentle, skin-renewing actives.</p><p>Lightweight, non-sticky formula that absorbs quickly and layers well.</p>",
             "button_label": "Add to Bundle",
             "review_heading": "<p><strong>“This product is a keeper.</strong></p>",
             "review_text": "<p>My skin looks better than ever after just 2 weeks.”</p>",
             "product_image": "shopify://shop_images/all-in-prod.webp",
             "product_hover_image": "shopify://shop_images/hov_img_3.webp",
-            "results_image": "shopify://shop_images/all_in_res_acne.webp",
+            "results_image": "shopify://shop_images/all-in-result.webp",
             "review_video": "https://www.youtube.com/embed/PJt57LcFEQk?autoplay=1&mute=1"
           }
         },
@@ -92,7 +92,7 @@
       "block_order": [
         "items_KN7Ke9",
         "items_cHtPBq",
-        "items_Q3cFkr",
+        "items_kDMBBt",
         "items_iH7rhd"
       ],
       "name": "t:sections.skincare-plan.name",
@@ -539,7 +539,7 @@
     },
     "sticky_cta_nTPkm8": {
       "type": "sticky-cta",
-      "disabled": true,
+      "disabled": false,
       "name": "t:sections.static-sticky-cta.name",
       "settings": {}
     }
