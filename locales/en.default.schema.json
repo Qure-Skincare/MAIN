@@ -205,7 +205,18 @@
         "faq-item": "FAQ item",
         "image-faq": "Image FAQ",
         "faq-ask-plate": "FAQ ask plate",
-        "note": "Note"
+        "note": "Note",
+        "icon": "Icon",
+        "simple": "Simple",
+        "shipping-order": "Shipping order",
+        "rejuvalight-pro-facewear": "Q-Rejuvalight Pro Facewear",
+        "micro-infusion-system": "Micro-Infusion System",
+        "renew-lllt-helmet": "Q-Renew LLLT Helmet",
+        "returns-exchanges": "Returns & Exchanges",
+        "billing-payment": "Billing & Payments",
+        "warranty": "Warranty",
+        "qure-app": "Q-App",
+        "troubleshooting": "Troubleshooting"
     },
     "blocks": {
         "block-card": {
@@ -321,6 +332,17 @@
         },
         "n_reviews": {
             "name": "Reviews"
+        },
+        "n_faq-menu": {
+            "name": "FAQ menu"
+        },
+        "n_faq-content": {
+            "name": "FAQ content",
+            "blocks": {
+                "settings": {
+                    "secure-strap" : "Secure straps"
+                }
+            }
         },
         "collection": {
             "name": "Collection",

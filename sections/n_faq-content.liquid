@@ -1,0 +1,131 @@
+{% doc %}
+  Renders FAQ menu section
+{% enddoc %}
+
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/faqs-content/faqs-content.css" />
+{% endif %}
+
+<section class="faqs-content{% if section.settings.active %} active{% endif %}" id="faqs-{{ section.settings.section_id | handleize }}-tab">
+    <div class="container">
+        {% if section.settings.heading != blank %}
+            {{ section.settings.heading }}
+        {% endif %}
+        <div class="c-faq-accordion">
+            <div class="c-faq-accordion__list">
+                {% for block in section.blocks %}
+                    {% if block.type == 'faq_item' %}
+                        <div class="c-faq-accordion__item"{% if block.settings.section_id != blank %} data-title="{{ block.settings.section_id }}"{% endif %}>
+                            <div class="c-faq-accordion__header">
+                                <button
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#c-faq-accordion-{{ forloop.index }}"
+                                    aria-expanded="false"
+                                >
+                                    {{ block.settings.heading }}
+                                </button>
+                            </div>
+                            <div
+                                id="c-faq-accordion-{{ forloop.index }}"
+                                class="c-faq-accordion__body collapse"
+                            >
+                                {% if block.settings.secure_strap %}
+                                    {% include 'faq-faq-item' %}
+                                    
+                                {% else %}
+                                    {% if block.settings.text != blank %}
+                                        <div class="c-faq-accordion__content">
+                                            {% if block.settings.image != blank %}
+                                                {% assign image_url = block.settings.image | image_url %}
+                                                {% assign image_alt = block.settings.image.alt | escape %}
+                                                {% assign image_tag = '<picture><img src="' | append: image_url | append: '" alt="' | append: image_alt | append: '" /></picture>' %}
+                                                {{ block.settings.text | replace: '<p>[image]</p>', image_tag }}
+                                            {% else %}
+                                                {{ block.settings.text }}
+                                            {% endif %}
+                                        </div>
+                                    {% endif %}
+                                {% endif %}
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        loadScriptOnce('guide-content', 'https://qureskincaredns.com/sections/new/guide-content/guide-content.js');
+    });
+</script>
+
+{% schema %}
+{
+    "name": "t:sections.n_faq-content.name",
+    "class": "shopify-section--faqs-content",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": false
+        },
+        {
+            "type": "checkbox",
+            "id": "active",
+            "label": "t:common.active",
+            "default": false
+        },
+        {
+            "type": "richtext",
+            "id": "heading",
+            "label": "t:common.header"
+        },
+        {
+            "type": "text",
+            "id": "section_id",
+            "label": "t:common.section_id"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "faq_item",
+            "name": "t:common.faq-item",
+            "settings": [
+                {
+                    "type": "checkbox",
+                    "id": "secure_strap",
+                    "label": "t:sections.n_faq-content.blocks.settings.secure-strap"
+                },
+                {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "t:common.header"
+                },
+                {
+                    "type": "richtext",
+                    "id": "text",
+                    "label": "t:common.text"
+                },
+                {
+                    "type": "text",
+                    "id": "section_id",
+                    "label": "t:common.section_id"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.n_faq-content.name"
+        }
+    ]
+}
+{% endschema %}

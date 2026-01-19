@@ -9,12 +9,977 @@
  */
 {
   "sections": {
-    "main": {
-      "type": "page-faqs",
-      "settings": {}
+    "n_intro_jEp8bH": {
+      "type": "n_intro",
+      "name": "t:sections.n_intro.name",
+      "settings": {
+        "use_own_file": true,
+        "modifier": "simple",
+        "text": "<h1>Frequently Asked Questions</h1>"
+      }
+    },
+    "n_faq_menu_q7hh7f": {
+      "type": "n_faq-menu",
+      "blocks": {
+        "menu_item_HUEzBd": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Shipping & Orders",
+            "icon": "shipping_order"
+          }
+        },
+        "menu_item_4DQPEg": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Q-Rejuvalight Pro Facewear",
+            "icon": "rejuvalight_pro_facewear"
+          }
+        },
+        "menu_item_qCXEg4": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Micro-Infusion System",
+            "icon": "micro_infusion_system"
+          }
+        },
+        "menu_item_getDiq": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Q-Renew LLLT Helmet",
+            "icon": "renew_lllt_helmet"
+          }
+        },
+        "menu_item_fh3LrY": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Returns & Exchanges",
+            "icon": "returns_exchanges"
+          }
+        },
+        "menu_item_UWRfAP": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Billing & Payments",
+            "icon": "billing_payment"
+          }
+        },
+        "menu_item_URNyHV": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Warranty",
+            "icon": "warranty"
+          }
+        },
+        "menu_item_VzLxKT": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Qure Skincare App",
+            "icon": "qure_app"
+          }
+        },
+        "menu_item_jMg87m": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Troubleshooting",
+            "icon": "troubleshooting"
+          }
+        }
+      },
+      "block_order": [
+        "menu_item_HUEzBd",
+        "menu_item_4DQPEg",
+        "menu_item_qCXEg4",
+        "menu_item_getDiq",
+        "menu_item_fh3LrY",
+        "menu_item_UWRfAP",
+        "menu_item_URNyHV",
+        "menu_item_VzLxKT",
+        "menu_item_jMg87m"
+      ],
+      "name": "t:sections.n_faq-menu.name",
+      "settings": {
+        "use_own_file": true
+      }
+    },
+    "n_faq_content_gxGnmA": {
+      "type": "n_faq-content",
+      "blocks": {
+        "faq_item_Qkyqtx": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "When can I expect to receive my Qure package?",
+            "text": "<p>We are working closely with our external partners and carriers to ensure your Order can reach you as quickly as possible. See below for the most up-to-date information (excluding potential courier delays)*:</p><p>Estimated Shipping Time</p><p>Australia: 7-14 business days <br/>United States: 3-6 business days<br/>Canada: 3-10 business days<br/>United Kingdom: 7-14 business days<br/>Europe: 7-14 business days</p><p>* During the Black Friday and holiday seasons, please be aware that packages may experience delays due to high order volume.</p>",
+            "section_id": "Shipping"
+          }
+        },
+        "faq_item_J8LQPm": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "Where does Qure ship to?",
+            "text": "<p>Qure currently ships worldwide! Packages are shipped via FedEx, USPS or DHL courier with standard shipping services.</p><p>In Spain we don't ship to Balears Province (also known as the Balearic Islands), Las Palmas, and Santa Cruz de Tenerife.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_wiXHBi": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "When will my order ship?",
+            "text": "<p>Here’s how it works: you order, we process, then we ship. Ordering takes a few seconds. </p><p>Processing takes 1 to 3 business days (and orders placed after 9am ET are processed the next business day). Then one of our carriers takes it from there. </p><p>You’ll get a shipment notification email with a tracking number as soon as your package ships and it’s on the way!</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_JJCJwr": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "I’m having problems tracking my order.",
+            "text": "<p>Sorry about that! Please note the carrier could take 1-2 business days to register your shipment status online. </p><p>If your tracking number isn’t updating or working at all after this time period, please reach out to us via <a href=\"mailto:support@qureskincare.com\" title=\"mailto:support@qureskincare.com\">support@qureskincare.com</a>. We can give you the inside info.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_tgNbME": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "Do I need to pay for Taxes and Duties?",
+            "text": "<p>Please note that depending on your order and country, you may be liable to pay local taxes and duties on receipt of your order, for which Qure cannot accept liability. International shipments may be subject to the imposition of customs or import duties once they reach their destination. You will be liable for all of these duties and it is your sole responsibility to pay the charges to release the goods from the shipment. We are legally required to declare the full value of the shipment and will provide an invoice to customs should they require it.</p><p>Please be aware that customers are responsible for payment of any local customs duties. If customs duties are refused or unpaid, these will be deducted from any future refund if applicable. We have no control over these charges as customs policies vary by country. Should you opt not to accept delivery and return the package to sender (RTS), a $10 restocking fee will be deducted from your refund once we receive the item back in our warehouse. If you have any questions related to customs charges, we advise you to contact your local customs office.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_4EgMGi": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "My order was lost, damaged, or missing something!",
+            "text": "<p>If your order has not arrived from the day you received your tracking number, or if you notice your package arrived damaged or with missing items, <a href=\"#\">please contact us</a> within 15 days.</a> </p><p>Provide your order number and details of the missing items, and we will assist you in resolving the issue as quickly as possible. Please prepare a photo of all items received, the packing slip, barcode, and the shipping label affixed to the box. </p><p>Any relevant information about the package you received will also be helpful.</p>",
+            "section_id": "Orders"
+          }
+        },
+        "faq_item_kHLgRg": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "Where is my order?",
+            "text": "<p>You may track your order via the link in your shipping confirmation email. If you're having trouble doing this, please email us at <a href=\"mailto:support@qureskincare.com\">support@qureskincare.com</a>.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_ErhU7D": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "How can I update my order or cancel my order?",
+            "text": "<p>If your order has not been shipped then please email us at <a href=\"mailto:support@qureskincare.com\">support@qureskincare.com</a> as soon as possible if you would like to cancel or change your order. Our fulfillment center processes orders quickly, but we’ll do our best to process your request.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_xczpmx": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "My promo code isn’t working.",
+            "text": "<p>If your promo code won’t apply or you get an error message, check whether the following applies to you:</p><ul><li>You haven't entered the code exactly as it was advertised - Try copying and pasting it and don't leave any extra characters or spaces.</li><li>The code is expired - All codes' life eventually comes to an end, make sure you use it before that happens.</li><li>The code is being used on an already discounted bundle.</li><li>The code is only valid for a particular product - Double check that you're purchasing the right product for the code you want to use.</li><li>You didn't obtain your coupon from a valid source - These are: our website banner, social media post, or email promotions - be sure to <a href=\"#\">subscribe to our newsletter</a>!</li></ul><p>If you are still experiencing problems after checking all the points above, please contact us at <a href=\"mailto:support@qureskincare.com\">support@qureskincare.com</a>. Include the details of the coupon code you're trying to use and the items you have in your cart - we’ll be happy to help!</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_9enLGF": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "Can I use multiple promo codes at checkout?",
+            "text": "<p>You can use one promo code per order. If you’ve encountered two valid Qure promo codes then please choose the one you want to use more.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_yhbpCU": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "What is SecureShip?",
+            "text": "<p>SecureShip provides shipping insurance for our customers’ online purchases that are lost or damaged while in transit or “porch pirated” (“porch pirated” meaning the carrier reports the status as “delivered” but the parcel has been stolen from the delivery address).</p><p>Customers who do not purchase SecureShip shipping insurance are not eligible for coverage on items lost or damaged in transit.</p><p>How to make a claim:</p><p>All packaging material and damaged goods must be kept in the original form as received. Packaging and damaged goods should not be disposed of or released to the carrier before a claim is completed as photographs will be required. Failure to comply will result in the denial of the claim due to insufficient packaging.</p><p>Concealed damage allows for the discovery of loss or damage up to 15 days after final delivery. The loss is deemed to have possibly occurred during the insured transit. Discovery of loss or damage occurring 16 days or later after final delivery is deemed to have occurred while the shipment was NOT in transit, and therefore, is not covered.</p><p>In case of loss or damage to the covered parcel or freight the following must be completed:</p><ul><li>The Insured will file immediate notice of non-delivery, damage, or shortage with the Qure Customer Service Team. The Insured will not file a claim with the Carrier as all rights to the carrier provided coverage is assigned to Qure Customer Service Team.</li></ul><p>Once a claim has been accepted and approved by us, prompt payment will be made to the Insured. SecureShip will rely on the determination of responsibility made by the original Carrier to assist in substantiating the loss.</p><p>All fees paid for the Services are non-refundable and non-transferable except as may be expressly provided in these Terms.</p>",
+            "section_id": ""
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_Qkyqtx",
+        "faq_item_J8LQPm",
+        "faq_item_wiXHBi",
+        "faq_item_JJCJwr",
+        "faq_item_tgNbME",
+        "faq_item_4EgMGi",
+        "faq_item_kHLgRg",
+        "faq_item_ErhU7D",
+        "faq_item_xczpmx",
+        "faq_item_9enLGF",
+        "faq_item_yhbpCU"
+      ],
+      "name": "t:sections.n_faq-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": true,
+        "heading": "<h2>Shipping & Orders</h2>",
+        "section_id": "Shipping & Orders"
+      }
+    },
+    "n_faq_content_BEUB9R": {
+      "type": "n_faq-content",
+      "blocks": {
+        "faq_item_aTR4Yi": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "What is the Q-Rejuvalight Pro Facewear?",
+            "text": "<p>Q-Rejuvalight Pro Facewear is a face mask that puts professional LED therapy in your hands so you can operate easily, all by yourself, in the comfort of your own home!</p><p>It comes with a compatible iOS/Android app that allows you to fully customize, track and plan your treatments.</p>",
+            "section_id": "Technology"
+          }
+        },
+        "faq_item_a4miCD": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "How does Qure’s Light Therapy technology work?",
+            "text": "<p>Q-Rejuvalight Pro Facewear uses clinical-grade technology to deliver safe, concentrated wavelengths of light directly to the underlying layers of your skin. </p><p>The optimal wavelengths of light are absorbed by your skin cells and kick start the production of collagen, elastin, and fibroblasts. </p><p>In turn, this stimulates mechanisms within the skin that solve skin problems and concerns from the inside out.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_Pj7A8R": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "How many LEDs does the Q-Rejuvalight Pro have and what wavelengths?",
+            "text": "<p>The Q-Rejuvalight Pro has a total of 5 clinically-proven wavelengths of lights:</p><ul><li>Infrared light (880 nm): Increases circulation, protects existing collagen and enhances product absorption.</li><li>Deep Red (660 nm): Accelerates skin healing to fade and prevent scarring. Builds collagen to help reduce wrinkles.</li><li>Red (630 nm): Stimulates collagen and elastin production, firms and plumps skin, repairs skin cells and promotes hydration to help reduce inflammation, redness and rosacea.</li><li>Amber (605 nm): Reduces appearance of dark spots. Soothes skin and calms swelling and inflammation.</li><li>Blue (415 nm): Anti-bacterial, eliminates and prevents acne breakouts. Soothes and calms skin.</li></ul><p>There are three treatment modes:</p><ul><li>The Pro-Aging Treatment</li><li>The Anti-Breakout Treatment</li><li>Custom zone selection on five facial areas via the Qure app.</li></ul>",
+            "section_id": ""
+          }
+        },
+        "faq_item_g4mtBM": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "Does the Q-Rejuvalight Pro Facewear use infrared light as well?",
+            "text": "<p>Yes! The Q-Rejuvalight Pro Facewear uses red, infrared, amber, and deep red lights for the Pro-Aging treatment.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_PienAH": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "What does the Skin Rejuvenating mode treat?",
+            "text": "<p>The Skin Rejuvenating Treatment combines red, deep red, infrared and amber wavelengths which is why the LED lights appear to be an orange color. This combination stimulates collagen, help reduce redness, fine lines, dark spots while encouraging the skin to heal and rejuvenate itself, for visibly smoother, firmer, younger-looking skin. </p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_AXrMDh": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "What does the Skin Clearing mode treat?",
+            "text": "<p>The Skin Clearing Treatment combines red and blue wavelengths to destroy the bacteria that causes acne, regulate oil production, reduce redness and other symptoms when a flare-up occurs for clearer skin.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_wjtMGF": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "Can I customize my Q-Rejuvalight Pro Facewear treatment routine?",
+            "text": "<p>Yes! While each Q-Rejuvalight Pro Facewear comes with a recommended pre-programmed treatment routine, you can personalize your treatments and experience by creating your own treatment routine via the Qure Skincare app. </p><p>You can choose your preferred treatment mode (Pro-Aging or Anti-Breakout) on 5 different facial areas.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_GN3gtL": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "Is the Q-Rejuvalight Pro Facewear safe to use?",
+            "text": "<p>Yes! Light therapy has been studied and tested across hundreds of peer-reviewed clinical trials, with overwhelmingly positive results for skin health. </p><p>The treatment is pain free, non-invasive, requires no surgery and is a completely safe and effective treatment for all skin types.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_pEnpkb": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "Should I protect and close my eyes during treatment?",
+            "text": "<p>The Q-Rejuvalight Pro has been tested and cleared for eye safety. It has successfully passed the IEC62471 evaluation for eye safety test, which is used to determine whether a device's light output is safe for the eyes or not.Regardless, we recommend closing your eyes and wearing protective eyewear duringtreatment.The light can be bright when powered on and some users may experience sensitivity, even when closing their eyes.</p><p>As part of our unwavering commitment to your safety we decided to take the initiative to include certified light blocking protective eyewear with our Q-Rejuvalight Pro LED mask.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_agNxHf": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "Does my Q-Rejuvalight Pro Facewear work without the app?",
+            "text": "<p>You can manually use your Q-Rejuvalight Pro Facewear without using the app. However if you’re wanting to customize your treatment on different areas on your face, then this will need to be done via the Qure Skincare app.</p><p>To choose/change a full treatment without using the app, follow the instructions below:</p><ul><li>Power on the device by holding the Q button on forehead until the led indicator light is on</li><li>Press the button once for Pro-Aging Treatment</li><li>Press it again for Anti-Breakout Treatment</li><li>Switch off the device by holding down the Q button until the indicator light turns off</li></ul>",
+            "section_id": ""
+          }
+        },
+        "faq_item_B4BF94": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "Where can I fit in the Q-Rejuvalight Pro Facewear in my daily skin care routine?",
+            "text": "<p>You may easily fit in a 3-minute treatment right after you wash and dry your face. The only important thing to remember is that your face should be clean before the treatment. Once the treatment is done, you may proceed in applying serums and creams to your skin as desired!</p>",
+            "section_id": "Results"
+          }
+        },
+        "faq_item_rchTtz": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "How often can I use my Q-Rejuvalight Pro Facewear?",
+            "text": "<p>One of the best things about the Q-Rejuvalight Pro Facewear is that you only need to use it once per day. That's how effective the treatment is! </p><p>For best results, we recommend that you do your 3 minute treatment daily. You may also do one full Pro-Aging treatment and one full Anti-Breakout treatment per day.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_6eXwmb": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "How long will it take before I start seeing results?",
+            "text": "<p>Depending on what skin concern you’re wanting to treat.</p><p>With daily use, users will typically notice a reduction in acne breakouts after just 2 weeks!</p><p>While users typically see visible improvement of wrinkles, fine lines and signs of aging, as well as improved skin tone and smoothness after 8-12 weeks.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_UQdzLj": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "Can I use the Q-Rejuvalight Pro Facewear with retinol and microneedling routine?",
+            "text": "<p>You can use the Q-Rejuvalight Pro Facewear within days of microneedling since light therapy can speed up recovery time! Retinol is a treatment that helps slough skin away so you can use light therapy after this as well.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_fKVwF6": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "How do I start my first treatment?",
+            "text": "<p>Activate your Q-Rejuvalight Pro Facewear via the Qure Skincare app, or follow the How To Use guide, which can be found inside the box.</p><p>After cleansing your face, place our Q-Rejuvalight Pro Facewear comfortably over the face, securing strap around head. Press and hold the Q power button on forehead for 3 seconds to turn on our Q-Rejuvalight Pro Facewear, select treatment mode on the app (Pro-Aging or Anti-Breakout) and start your treatment!</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_xVbCJY": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "How do I charge my Q-Rejuvalight Pro Facewear?",
+            "text": "<p>The Q-Rejuvalight Pro is USB-rechargeable. A two and a half hour charge can deliver up to 10 treatments. Plug into an USB power adaptor,input should be 5V/1A, the voltage should no more than 5V.</p><p>Plug the USB-C power/charging cord into the port connector of your Q-Rejuvalight Pro Facewear, then plug it into a universal USB power adapter. Device is fully charged when the red power indicator light next to the charging port is turned off.</p>",
+            "section_id": "Charging Q-Rejuvalight Pro"
+          }
+        },
+        "faq_item_jwxEAE": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "Can the Q Rejuvalight Pro Facewear be used while charging?",
+            "text": "<p>No, you cannot turn on the device while charging for safety reasons.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_HJ84eW": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "What does it mean when my Q-Rejuvalight Pro is continuously blinking?",
+            "text": "<p>A blinking light around device indicates that your Q-Rejuvalight Pro Facewear is low in battery and needs to be charged.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_3y4nPr": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "What’s included in the box?",
+            "text": "<p>Inside the box, you'll find:</p><ul><li>Q-Rejuvalight Pro LED Face Mask</li><li>Adjustable head strap for a secure, comfortable fit</li><li>USB-C charging cable</li><li>Portable luxury storage pouch</li><li>Clear setup instructions and user manual</li></ul>",
+            "section_id": "Storing Q-Rejuvalight Pro"
+          }
+        },
+        "faq_item_cQM6Bi": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "How do I properly store my Q-Rejuvalight Pro Facewear?",
+            "text": "<p>We recommend to keep your Q-Rejuvalight Pro Facewear in a dry environment and always keeping your Q-Rejuvalight Pro in the storage bag when not using it. </p><p>Usually, the bathroom is not the best place for keeping your Qure device due to the heightened moisture in a bathroom.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_N3q6zf": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "What is the best way to clean the Q-Rejuvalight Pro after use?",
+            "text": "<p>Wipe the inside with a damp cloth to remove any residue from skin oils after each use. Make sure the Q-Rejuvalight Pro Facewear is unplugged and turned off. Then use a damp, soft, or microfiber cloth to clean the facial area. Repeat until the Q-Rejuvalight Pro Facewear is clean and then dry with a clean dry cloth.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_7wwtna": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "How do I prevent the inner mask silicone from discoloration?",
+            "text": "<p>Make sure to clean your face thoroughly before use! Residue from make ups or other creams/serums can cause discoloration.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_dL9jdc": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": true,
+            "heading": "How do I secure the strap to my Q-Rejuvalight Pro?",
+            "text": "",
+            "section_id": ""
+          }
+        },
+        "faq_item_qKKEke": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "Is the Q-Rejuvalight Pro Facewear BPA free?",
+            "text": "<p>We always aim to provide excellent products to our customers to make them beautiful and healthy! Therefore, the Q-Rejuvalight Pro Facewear is BPA free.</p>",
+            "section_id": "Safety"
+          }
+        },
+        "faq_item_dJxNtJ": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "Is it safe to use LED light therapy while pregnant or breastfeeding?",
+            "text": "<p>For those pregnant or breastfeeding, we recommend checking with your doctor before starting Red Light therapy treatments.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_eez4Xg": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "Does the Q-Rejuvalight Pro Facewear come with a warranty?",
+            "text": "<p>Q-Rejuvalight Pro Facewear comes with one (1) year warranty covering any manufacturer related problems resulting from everyday use of the product. However, this device is designed to last years! </p><p>For more information on warranty, please visit <a href=\"#\">Our Warranty Policy</a></p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_GdiJfU": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "Is the Q-Rejuvalight Pro FDA-cleared?",
+            "text": "<p>Yes! Our Q-Rejuvalight Pro LED mask is the world’s first customizable, FDA-cleared at-home LED mask that's proven to be an effective and safe treatment for acne and aging skin concerns.</p>",
+            "section_id": ""
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_aTR4Yi",
+        "faq_item_a4miCD",
+        "faq_item_Pj7A8R",
+        "faq_item_g4mtBM",
+        "faq_item_PienAH",
+        "faq_item_AXrMDh",
+        "faq_item_wjtMGF",
+        "faq_item_GN3gtL",
+        "faq_item_pEnpkb",
+        "faq_item_agNxHf",
+        "faq_item_B4BF94",
+        "faq_item_rchTtz",
+        "faq_item_6eXwmb",
+        "faq_item_UQdzLj",
+        "faq_item_fKVwF6",
+        "faq_item_xVbCJY",
+        "faq_item_jwxEAE",
+        "faq_item_HJ84eW",
+        "faq_item_3y4nPr",
+        "faq_item_cQM6Bi",
+        "faq_item_N3q6zf",
+        "faq_item_7wwtna",
+        "faq_item_dL9jdc",
+        "faq_item_qKKEke",
+        "faq_item_dJxNtJ",
+        "faq_item_eez4Xg",
+        "faq_item_GdiJfU"
+      ],
+      "name": "t:sections.n_faq-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "heading": "<h2>Q-Rejuvalight Pro Facewear</h2>",
+        "section_id": "Q-Rejuvalight Pro Facewear"
+      }
+    },
+    "n_faq_content_q8XJzU": {
+      "type": "n_faq-content",
+      "blocks": {
+        "faq_item_hCeHLk": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "What are the benefits of Micro-Infusion?",
+            "text": "<p>Micro-Infusion treatment is an effective skin booster treatment, and you’ll likely notice a radiance boost, softer fine lines and overall a healthy fresh complexion in the next day or two.</p><p>The more treatments you perform the greater skin benefits over time you’ll receive. This quick and easy home facial is perfect to perform a day or two before a big event, when you need to look to boost your skin’s complexion, fast.</p><p>Don’t forget to keep up with your everyday skincare routine to boost the effectiveness of your Micro-Infusion results and keep skin healthy, hydrated, and glowing long-term.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_qRAjhJ": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "When will I see results?",
+            "text": "<p>Micro-Infusion treatment is an effective skin booster treatment, and you’ll likely notice a radiance boost, softer fine lines and overall a healthy fresh complexion in the next day or two.</p><p>The more treatments you perform the greater skin benefits over time you’ll receive. This quick and easy home facial is perfect to perform a day or two before a big event, when you need to look to boost your skin’s complexion, fast.</p><p>Don’t forget to keep up with your everyday skincare routine to boost the effectiveness of your Micro-Infusion results and keep skin healthy, hydrated, and glowing long-term.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_663VzC": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "How often can I do this treatment?",
+            "text": "<p>We recommend a Micro-Infusion treatment every 2 weeks for the best results!</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_awj7Em": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "How do you open the serum ampoule?",
+            "text": "<p>Our serums come sealed with aluminum to ensure the serum stays sterile for treatment.</p><p>[image]</p><p></p><ol><li>Firmly hold the ampoule bottle. Find the arrow on the cap lid and flip to open from the end where the arrow is located.</li><li>Once the seal has been broken, hold the cap and steadily bend the silver seal away from the serum ampoule until it almost snaps off.</li><li>Peel back the silver seal from around the top of the serum ampoule and dispose of it.</li><li>Remove the rubber stopper and pour the serum into your Micro-Infusion device.</li></ol><p>If you’re mixing serums for your treatment, put back the rubber stopper on the vial to save the remaining serum for your next session!</p>",
+            "section_id": "",
+            "image": "shopify://shop_images/faq-1.webp"
+          }
+        },
+        "faq_item_Txn6b6": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "How many treatments do I get out of one Micro-Infusion device?",
+            "text": "<p>Each needle head is to be used one time per treatment, and disposed of after each treatment. This minimizes the risk of infection and unnecessary damage to the skin. Use one full serum ampoule per treatment.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_YBQCFb": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "Can I use any serum with my Micro-Infusion device?",
+            "text": "<p>Not all serums are suitable for Micro-Infusion. We have developed our potent serum ampoules that are perfect for Qure’s Micro-Infusion System. They are formulated to have low risk of irritation and with no fragrance.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_G8KdpL": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "How do I clean the device?",
+            "text": "<p>Once you’ve finished stamping your way to brighter and plumper skin, follow the below cleaning instructions:</p><ul><li>Twist off the needle head with the cap attached and safely dispose.</li><li>Wash the chamber out with water and gentle cleanser.</li><li>Let the device air dry completely, on a clean surface, before packing away.</li><li>Open a brand new needle head packet and attach the needle head onto the device. Ensure hands are clean and don’t open the cap of the needle head.</li></ul>",
+            "section_id": ""
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_hCeHLk",
+        "faq_item_qRAjhJ",
+        "faq_item_663VzC",
+        "faq_item_awj7Em",
+        "faq_item_Txn6b6",
+        "faq_item_YBQCFb",
+        "faq_item_G8KdpL"
+      ],
+      "name": "t:sections.n_faq-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "heading": "<h2>Micro-Infusion System</h2>",
+        "section_id": "Micro-Infusion System"
+      }
+    },
+    "n_faq_content_eLwabw": {
+      "type": "n_faq-content",
+      "blocks": {
+        "faq_item_mp6NG9": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "What is the Q-Renew LLLT Helmet?",
+            "text": "<p>The Q-Renew LLLT Helmet is a medical-grade light therapy device designed to support healthier hair growth by delivering low-level red light and laser energy directly to the scalp. </p><p>It uses 220 LED diodes and 150 medical-grade, low-level laser diodes to target follicles with clinically studied wavelengths that help stimulate cellular activity, improve scalp circulation, and support thicker, fuller-looking hair over time.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_t3NcGF": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "How does the technology work?",
+            "text": "<p>The Q-Renew LLLT Helmet works by delivering specific red-light wavelengths and low-level laser energy into the scalp, where the follicles absorb the light and convert it into cellular energy. This helps support healthier follicle activity, improve circulation, reduce mild inflammation, and encourage fuller, denser-looking hair over time.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_EAFyJB": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "How many LEDs does the Q-Renew LLLT Helmet have and what wavelengths?",
+            "text": "<p>The Q-Renew LLLT Helmet contains 220 LED diodes that operate at 630 nm, 660 nm, and 680 nm, along with 150 medical-grade, low-level laser diodes that emit light at 655 nm, providing a total of 370 targeted light sources for comprehensive scalp coverage.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_LjtEUT": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "Can I customize my treatment?",
+            "text": "<p>On the LCD screen you’re able to select your desired treatment zone before starting the session. This means you aren’t locked into a single full-head mode. You can choose where you want the light therapy to focus.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_AmWhYd": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "Where should I fit in the Q-Renew LLLT Helmet in my haircare routine?",
+            "text": "<p>Use the Q-Renew LLLT Helmet on clean, dry, product-free hair before applying any styling products, oils, serums, or treatments.</p><p>We recommend using the helmet 5-7 times per week for at least 16 weeks. After that, continue every other day to maintain results. Each treatment lasts 12 minutes and ends automatically.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_cHY4bn": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "How often can I use my Q-Renew LLLT Helmet?",
+            "text": "<p>We recommend using the helmet 5-7 times per week.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_zNGrCK": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "How long will it take before I start seeing results?",
+            "text": "<p>Visible changes take time. Most users should expect to use the helmet consistently for at least 3–6 months before noticing fuller, healthier-looking hair. Like any long-term treatment, consistency is key!</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_AGVVrM": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "How do I charge my Q-Renew LLLT Helmet?",
+            "text": "<p>To charge your Q-Renew LLLT Helmet, connect the provided USB-C cable to the charging port, located at the back of the charging base. Plug the other end into a power supply. Only use the provided USB-C cable and a 5V DC adapter for charging.</p><p>When your device is charging, the LCD screen will display the charging status. If inactive, tap the screen to check progress.  The device will take 240 minutes or 4 hours to fully change.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_aFhwqP": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "How do I properly store my Q-Renew LLLT Helmet?",
+            "text": "<p>The best way to store your Q-Renew LLLT Helmet is in a cool, dry place away from direct sunlight. We recommend storing your helmet on the charging base to keep it ready for your next treatment, or in the provided box.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_dMeKDV": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "What is the best way to clean the Q-Renew LLLT Helmet?",
+            "text": "<p>The device can be cleaned with a water-based wipe or a damp, clean cloth. For stubborn stains, we recommend gently wiping with 70% alcohol. Avoid using harsh abrasive cleaners, solvents, or other chemical products as this may harm the device.</p><p><strong>Optional:</strong> For an enhanced cleaning experience, lightly spray the inside of the helmet with the <a href=\"#\">Qure Dermal Mist</a> and gently wipe to help maintain hygiene and freshness. </p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_HRgQME": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "Who is the Q-Renew LLLT Helmet not suitable for?",
+            "text": "<p>Do not use this product if you are under 18, pregnant, breastfeeding, photosensitive, on light-sensitizing medications, prone to light-triggered headaches or seizures, or have open wounds or infections on the scalp.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_e6KPtw": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "Does the Q-Renew LLLT Helmet come with a warranty?",
+            "text": "<p>We provide a 3-year limited warranty covering defects in materials and workmanship for the Q-Renew LLLT Helmet when purchased directly from Qure Skincare.</p><p>For more information on warranty, please visit <a href=\"#\">Our Warranty Policy</a>.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_QCdqtq": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "Is it FDA-cleared?",
+            "text": "<p>Yes, the Q-Renew LLLT Helmet is FDA-cleared. </p><p>The Q-Renew LLLT Helmet is indicated for the promotion of hair growth in males who have Norwood-Hamilton classifications of IIa–V, and in females with androgenetic alopecia who have Ludwig-Savin Classifications of I–II, and in both, Fitzpatrick Classification of Skin Phototypes I to IV.</p>",
+            "section_id": ""
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_mp6NG9",
+        "faq_item_t3NcGF",
+        "faq_item_EAFyJB",
+        "faq_item_LjtEUT",
+        "faq_item_AmWhYd",
+        "faq_item_cHY4bn",
+        "faq_item_zNGrCK",
+        "faq_item_AGVVrM",
+        "faq_item_aFhwqP",
+        "faq_item_dMeKDV",
+        "faq_item_HRgQME",
+        "faq_item_e6KPtw",
+        "faq_item_QCdqtq"
+      ],
+      "name": "t:sections.n_faq-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "heading": "<h2>Q-Renew LLLT Helmet</h2>",
+        "section_id": "Q-Renew LLLT Helmet"
+      }
+    },
+    "n_faq_content_bDxKBP": {
+      "type": "n_faq-content",
+      "blocks": {
+        "faq_item_eBzKTC": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "How do I place a return or exchange?",
+            "text": "<p>Please submit your return via <a href=\"#\">our portal here</a> for products you'd like to exchange or return, and we'll take care of the rest.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_Hrgtcf": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "How long does it take to credit my account for refunds?",
+            "text": "<p>Credit card refunds usually take 5-10 business days to appear on your statement.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_3MDwaa": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "What should I do if I receive the wrong product?",
+            "text": "<p>If you received a product different from the one that you ordered, please contact us at <a href=\"mailto:support@qureskincare.com\">support@qureskincare.com</a> and we’ll be sure to make this right!</p>",
+            "section_id": ""
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_eBzKTC",
+        "faq_item_Hrgtcf",
+        "faq_item_3MDwaa"
+      ],
+      "name": "t:sections.n_faq-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "heading": "<h2>Returns & Exchanges</h2>",
+        "section_id": "Returns & Exchanges"
+      }
+    },
+    "n_faq_content_HytWFG": {
+      "type": "n_faq-content",
+      "blocks": {
+        "faq_item_P3za9Y": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "What forms of payment do you accept?",
+            "text": "<p>We accept Visa, Mastercard, American Express credit cards or debit cards and PayPal.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_RTFQjx": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "When will my credit card be charged?",
+            "text": "<p>Your credit card will be charged as soon as your order is accepted and processed.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_3LXGiw": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "Can I remove a saved payment method?",
+            "text": "<p>Of course! You can make this change on your account page. If you need help, email us at <a href=\"mailto:support@qureskincare.com\">support@qureskincare.com</a>.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_yKAk6a": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "What is the credit card statement or PayPal statement name?",
+            "text": "<p>Please look out for “QURE SKIN” or “INSPIREBRANDS” charge on your credit card statement or PayPal account after you have placed your order. </p><p>If you’re not sure what charge description you should be looking for then please send us an email at <a href=\"mailto:support@qureskincare.com\">support@qureskincare.com</a>.</p>",
+            "section_id": ""
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_P3za9Y",
+        "faq_item_RTFQjx",
+        "faq_item_3LXGiw",
+        "faq_item_yKAk6a"
+      ],
+      "name": "t:sections.n_faq-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "heading": "<h2>Billing & Payments</h2>",
+        "section_id": "Billing & Payments"
+      }
+    },
+    "n_faq_content_EgyaBi": {
+      "type": "n_faq-content",
+      "blocks": {
+        "faq_item_mVNEnW": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "Q-Rejuvalight Pro Facewear Warranty",
+            "text": "<p>This 1-year limited warranty covers defects in materials and workmanship in your Q-Rejuvalight Pro Facewear when purchased directly from Qure Skincare. Your 1-year limited warranty is valid for you alone, the original purchaser, and cannot be transferred.</p><p>If the product was a gift then please obtain a copy of the original receipt or have the original purchaser process the warranty claim on your behalf. This warranty does not cover: damage, defects, failure caused by abuse or misuse, improper care, impact or insertion of foreign objects, use with a voltage connector, or loss of device.</p><p>The limited warranty begins from the date of delivery and expires after one year. The warranty period is not extended if your device is replaced by Qure during the warranty period.</p><p><strong>To make a warranty claim:</strong><br /> If you discover a defect in your Q-Rejuvalight Pro Facewear that is covered by the warranty, before the warranty period expires, contact Qure customer support for assistance via email or live chat.</p><p>If we confirm a defect covered by this limited warranty, Qure will decide whether to replace your device. If we find that your device is not defective, we will notify you and return the device to you. All limited warranty services must be authorized and performed by Qure.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_QkCPUR": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "Q-Renew LLLT Helmet Warranty",
+            "text": "<p>The 24-month limited warranty covers defects in materials and workmanship in your Q-Renew LLLT Helmet when purchased directly from Qure Skincare. Your 1-year limited warranty is valid for you alone, the original purchaser, and cannot be transferred.</p><p>If the product was a gift then please obtain a copy of the original receipt or have the original purchaser process the warranty claim on your behalf. This warranty does not cover: damage, defects, failure caused by abuse or misuse, improper care, impact or insertion of foreign objects, use with a voltage connector, or loss of device.</p><p>The limited warranty begins from the date of purchase and expires after 24 months. The warranty period is not extended if your device is replaced by Qure during the warranty period.</p><p><strong>To make a warranty claim:</strong><br /> If you discover a defect in your Q-Renew LLLT Helmet that is covered by the warranty, before the warranty period expires, contact Qure customer support for assistance via email or live chat. </p><p>Provide your full name, proof of purchase, device serial number, a detailed description of the issues, and photos or videos if available. If a defect is confirmed, Qure Skincare will replace the device. Non-defective devices will be returned to you.</p>",
+            "section_id": ""
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_mVNEnW",
+        "faq_item_QkCPUR"
+      ],
+      "name": "t:sections.n_faq-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "heading": "<h2>Warranty</h2>",
+        "section_id": "Warranty"
+      }
+    },
+    "n_faq_content_mx6HbE": {
+      "type": "n_faq-content",
+      "blocks": {
+        "faq_item_WymVHH": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "What is the Qure Skincare App?",
+            "text": "<p>The Qure Skincare app allows you to unlock all the best features of your Q-Rejuvalight Pro Facewear! You can fully customize, track and plan your light therapy treatments. It gives you full control of your skincare treatments, with a personalized program that's unique to your skin profile.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_pccJCJ": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "What does it mean to “customize” my Q-Rejuvalight Pro treatment?",
+            "text": "<p>The Q-Rejuvalight Pro Facewear is the world’s first customizable LED light therapy home device. You can personalize your treatments by selecting either the Pro-Aging or Anti-Breakout mode on 5 different facial areas (or even full face) via the Qure Skincare app.</p><p>Not everyone has the same concerns or skin issues that they want to Qure.</p><p>So, if you were wanting to target breakout concerns on your chin and nose, then you can program the Anti-Breakout treatment on those facial areas, while having the Pro-Aging treatment on the rest of your face like your forehead, eyes and cheeks.</p><p>It’s your own personalized LED light therapy treatment, that you can tailor to your own skin’s needs and concerns.</p><p>For more information on how to select your treatments on different facial areas, click the question mark icon on the top left hand corner of the treatment page of the app.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_He8KcE": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "How do I pair the Qure Skincare app with my Q-Rejuvalight Pro Facewear?",
+            "text": "<p>To pair the app with your Q-Rejuvalight Pro Facewear, follow these steps:</p><ol><li>Open the app on your mobile device and follow the instructions to set up your profile and pair your Q-Rejuvalight Pro Facewear with the app.</li><li>Turn on your Bluetooth on your phone.</li><li>Turn on Q-Rejuvalight Pro Facewear by holding the center button on the forehead until the light is on.</li><li>Once your Q-Rejuvalight Pro Facewear appears on the Bluetooth available devices list, click on it to connect.</li><li>You should then see on your app that the Q-Rejuvalight Pro Facewear has been successfully paired.</li></ol>",
+            "section_id": ""
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_WymVHH",
+        "faq_item_pccJCJ",
+        "faq_item_He8KcE"
+      ],
+      "name": "t:sections.n_faq-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "heading": "<h2>Qure Skincare App</h2>",
+        "section_id": "Qure Skincare App"
+      }
+    },
+    "n_faq_content_wBiRQJ": {
+      "type": "n_faq-content",
+      "blocks": {
+        "faq_item_dbrEcB": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "Why is my Q-Rejuvalight Pro not turning on?",
+            "text": "<p>If your Q-Rejuvalight Pro Facewear is not turning on, follow these troubleshooting steps:</p><ul><li>Make sure the device is fully charged (you’ll see a blinking light when charging).</li><li>Remove the mask from the charging cable, as the mask cannot be used while plugged in.</li><li>Check that the USB-C charging cable is fully inserted when charging.</li></ul><p>Still nothing? Try a different outlet or charging cable to rule out charging issues.</p><p>If the Q-Rejuvalight Pro Facewear is fully charged and still does not turn on, please contact us and our team will help futher.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_9yzzUp": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "The Qure Skincare App does not connect to the Q-Rejuvalight Pro Facewear. What should I do?",
+            "text": "<p>Make sure that Location Sharing is enabled on your phone. Once confirmed, exit out of the app, and reopen - then connect to the Q-Rejuvalight Pro Facewear.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_FgVXPt": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "Why is my Q-Rejuvalight Pro shutting off abruptly, prior to completion of 3-minute treatment?",
+            "text": "<p>The Q-Rejuvalight Pro treatment is designed to shut off automatically after 3 minutes. It also may shut off after multiple repeated uses if it exceeds desired temperature. Allow the Q-Rejuvalight Pro to cool for several minutes and try again.</p><p>If the Q-Rejuvalight Pro is low in battery then it can shut off prior to the 3 minute treatment so ensure that the battery is fully charged.</p><p>If you're still experiencing the same issue and continues to shut off prior to 3 minutes, please contact us at <a href=\"mailto:support@qureskincare.com\">support@qureskincare.com</a>.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_tA4Tqh": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "Why is a PIN code being asked when I'm trying to connect my Q-Rejuvalight Pro with the Qure app?",
+            "text": "<p>You may have been connecting the mask via the Bluetooth menu on your phone hence why this occurred. Please connect directly by opening the Qure app and connect to your phone bluetooth.</p>",
+            "section_id": ""
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_dbrEcB",
+        "faq_item_9yzzUp",
+        "faq_item_FgVXPt",
+        "faq_item_tA4Tqh"
+      ],
+      "name": "t:sections.n_faq-content.name",
+      "settings": {
+        "use_own_file": true,
+        "active": false,
+        "heading": "<h2>Troubleshooting</h2>",
+        "section_id": "Troubleshooting"
+      }
     }
   },
   "order": [
-    "main"
+    "n_intro_jEp8bH",
+    "n_faq_menu_q7hh7f",
+    "n_faq_content_gxGnmA",
+    "n_faq_content_BEUB9R",
+    "n_faq_content_q8XJzU",
+    "n_faq_content_eLwabw",
+    "n_faq_content_bDxKBP",
+    "n_faq_content_HytWFG",
+    "n_faq_content_EgyaBi",
+    "n_faq_content_mx6HbE",
+    "n_faq_content_wBiRQJ"
   ]
 }

@@ -1,0 +1,173 @@
+{% doc %}
+  Renders FAQ menu section
+{% enddoc %}
+
+
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/faqs-menu/faqs-menu.css" />
+{% endif %}
+<section class="faqs-menu">
+    <div class="container">
+        <div class="dropdown">
+            <button
+                class="dropdown-toggle"
+                type="button"
+                id="dropdown-menu"
+                data-bs-toggle="dropdown"
+            >
+                {% for block in section.blocks %}
+                    {% if block.type == 'menu_item' and forloop.first %}
+                        {% assign icon_class = '' %}
+                        {% if block.settings.icon == 'shipping_order' %}
+                            {% assign icon_class = 'e-icon-shipping-order' %}
+                        {% elsif block.settings.icon == 'rejuvalight_pro_facewear' %}
+                            {% assign icon_class = 'e-icon-rejuvalight-pro-facewear' %}
+                        {% elsif block.settings.icon == 'micro_infusion_system' %}
+                            {% assign icon_class = 'e-icon-micro-infusion-system' %}
+                        {% elsif block.settings.icon == 'renew_lllt_helmet' %}
+                            {% assign icon_class = 'e-icon-renew-lllt-helmet' %}
+                        {% elsif block.settings.icon == 'returns_exchanges' %}
+                            {% assign icon_class = 'e-icon-returns-exchanges' %}
+                        {% elsif block.settings.icon == 'billing_payment' %}
+                            {% assign icon_class = 'e-icon-billing-payment' %}
+                        {% elsif block.settings.icon == 'warranty' %}
+                            {% assign icon_class = 'e-icon-warranty' %}
+                        {% elsif block.settings.icon == 'qure_app' %}
+                            {% assign icon_class = 'e-icon-qure-app' %}
+                        {% elsif block.settings.icon == 'troubleshooting' %}
+                            {% assign icon_class = 'e-icon-troubleshooting' %}
+                        {% endif %}
+                        {% if icon_class != '' %}
+                            <i class="e-icon {{ icon_class }}"></i>
+                        {% endif %}
+                        {{ block.settings.item }}
+                    {% endif %}
+                {% endfor %}
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdown-menu">
+                <p>Contents</p>
+                <ul class="tabs" role="tablist">
+                    {% for block in section.blocks %}
+                        {% if block.type == 'menu_item' %}
+                            {% assign icon_class = '' %}
+                            {% if block.settings.icon == 'shipping_order' %}
+                                {% assign icon_class = 'e-icon-shipping-order' %}
+                            {% elsif block.settings.icon == 'rejuvalight_pro_facewear' %}
+                                {% assign icon_class = 'e-icon-rejuvalight-pro-facewear' %}
+                            {% elsif block.settings.icon == 'micro_infusion_system' %}
+                                {% assign icon_class = 'e-icon-micro-infusion-system' %}
+                            {% elsif block.settings.icon == 'renew_lllt_helmet' %}
+                                {% assign icon_class = 'e-icon-renew-lllt-helmet' %}
+                            {% elsif block.settings.icon == 'returns_exchanges' %}
+                                {% assign icon_class = 'e-icon-returns-exchanges' %}
+                            {% elsif block.settings.icon == 'billing_payment' %}
+                                {% assign icon_class = 'e-icon-billing-payment' %}
+                            {% elsif block.settings.icon == 'warranty' %}
+                                {% assign icon_class = 'e-icon-warranty' %}
+                            {% elsif block.settings.icon == 'qure_app' %}
+                                {% assign icon_class = 'e-icon-qure-app' %}
+                            {% elsif block.settings.icon == 'troubleshooting' %}
+                                {% assign icon_class = 'e-icon-troubleshooting' %}
+                            {% endif %}
+                            <li>
+                                <button
+                                    {% if forloop.first %}
+                                        class="active"
+                                    {% endif %}
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#faqs-{{ block.settings.item | handleize }}-tab"
+                                    type="button"
+                                >
+                                        <i class="e-icon {{ icon_class }}"></i>   
+                                    {{ block.settings.item }}
+                                </button>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        loadScriptOnce('guide-menu', 'https://qureskincaredns.com/sections/new/faqs-menu/faqs-menu.js');
+    });
+</script>
+
+
+{% schema %}
+{
+    "name": "t:sections.n_faq-menu.name",
+    "class": "shopify-section--faqs-menu",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": false
+        }
+    ],
+    "blocks": [
+        {
+            "type": "menu_item",
+            "name": "t:common.menu-item",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "item",
+                    "label": "t:common.item"
+                },
+                {
+                    "type": "select",
+                    "id": "icon",
+                    "label": "t:common.icon",
+                    "options": [
+                        {
+                            "value": "shipping_order",
+                            "label": "t:common.shipping-order"
+                        },
+                        {
+                            "value": "rejuvalight_pro_facewear",
+                            "label": "t:common.rejuvalight-pro-facewear"
+                        },
+                        {
+                            "value": "micro_infusion_system",
+                            "label": "t:common.micro-infusion-system"
+                        },
+                        {
+                            "value": "renew_lllt_helmet",
+                            "label": "t:common.renew-lllt-helmet"
+                        },
+                        {
+                            "value": "returns_exchanges",
+                            "label": "t:common.returns-exchanges"
+                        },
+                        {
+                            "value": "billing_payment",
+                            "label": "t:common.billing-payment"
+                        },
+                        {
+                            "value": "warranty",
+                            "label": "t:common.warranty"
+                        },
+                        {
+                            "value": "qure_app",
+                            "label": "t:common.qure-app"
+                        },
+                        {
+                            "value": "troubleshooting",
+                            "label": "t:common.troubleshooting"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.n_faq-menu.name"
+        }
+    ]
+}
+{% endschema %}
