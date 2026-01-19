@@ -114,6 +114,13 @@
         "type": "shopify://apps/microsoft-clarity/blocks/clarity_js/31c3d126-8116-4b4a-8ba1-baeda7c4aeea",
         "disabled": false,
         "settings": {}
+      },
+      "15659862187755629035": {
+        "type": "shopify://apps/bookx/blocks/app-embed/865cd10f-9515-4d8b-8e41-efece9c83f71",
+        "disabled": false,
+        "settings": {
+          "enable_cart_validation": true
+        }
       }
     }
   }
