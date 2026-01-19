@@ -24,7 +24,12 @@
                     {% render 'product-page-slider', product: product, page: blank, class: 'tp-product-gallery d-block d-lg-none mb-30', element_id: 'mobile-slider' %}
                     {% render 'product-rating' %}
 
-                    <h1 class="qure__product-title mb-10">{{ product_title }}</h1>
+                    {% if section.settings.heading != blank %}
+                        <h1 class="qure__product-title mb-10">{{ section.settings.heading }}</h1>
+                    {% else %}
+                        <h1 class="qure__product-title mb-10">{{ product_title }}</h1>
+                    {%  endif %}
+
                     <div class="patch__single-shortdes mt-25 mb-25">
                         <p>{{ product_description }}</p>
                     </div>
