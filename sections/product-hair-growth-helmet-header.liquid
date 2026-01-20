@@ -2,7 +2,13 @@
   Renders a product hair growth helmet header section
 {% enddoc %}
 
-{% include 'get-product-data' %}
+{% if template.name == 'page' %}
+    {% include 'get-product-data', product_handle: 'hair-growth-helmet' %}
+    {% assign carousel_media = page.metafields.custom.carousel_media.value %}
+{% else %}
+    {% include 'get-product-data' %}
+    {% assign carousel_media = product.metafields.custom.carousel_media.value %}
+{% endif %}
 
 <link rel="stylesheet" href="https://qureskincaredns.com/alex/sections/isolated/helmet-home/helmet-home.css" />
 <style>
@@ -79,7 +85,7 @@
                         {{ 'sections.hair-growth-helmet.header.info_html' | t }}
                     </div>
 
-                    {% render 'product-page-collapsed', product: product, page: blank, class: 'helmet-home__according' %}
+                    {% render 'product-page-collapsed', product: product, page: page, class: 'helmet-home__according' %}
                     {% include 'product-page-blocks-render', allowed_types: 'money-back' %}
 
                     <div class="helmet-home__jump-to">
@@ -113,15 +119,15 @@
                 <div class="helmet-home__gallery">
                     <div class="swiper helmet-home__gallery-main" id="helmet-gallery">
                         <div class="swiper-wrapper">
-                            {% if product.metafields.custom.carousel_media.value != blank %}
-                                {% render 'product-page-media-carousel', input_media_carousel: product.metafields.custom.carousel_media.value, classname: 'slide-image', size: '720x' %}
+                            {% if carousel_media != blank %}
+                                {% render 'product-page-media-carousel', input_media_carousel: carousel_media, classname: 'slide-image', size: '720x' %}
                             {% endif %}
                         </div>
                     </div>
                     <div class="swiper helmet-home__gallery-thumbs d-md-none" id="helmet-gallery-thumbs">
                         <div class="swiper-wrapper">
                             {% if product.metafields.custom.carousel_media.value != blank %}
-                                {% render 'product-page-media-carousel', input_media_carousel: product.metafields.custom.carousel_media.value, classname: 'slide-thumbnail', size: '240x', thumbnails: true %}
+                                {% render 'product-page-media-carousel', input_media_carousel: carousel_media, classname: 'slide-thumbnail', size: '240x', thumbnails: true %}
                             {% endif %}
                         </div>
                     </div>
