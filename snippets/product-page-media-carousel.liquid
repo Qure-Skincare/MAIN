@@ -17,6 +17,7 @@
 {% if input_media_carousel != blank %}
 
     {% assign objects = '' %}
+    {% assign watch_objects = '' %}
 
     {% for item in input_media_carousel.wistia_index_for_video_list.value %}
         {% if item != blank %}
@@ -25,6 +26,16 @@
     {% endfor %}
 
     {% assign objects_array = objects | split: "," %}
+
+    {% if input_media_carousel.wistia_index_for_watch_video_list.value != blank %}
+        {% for item in input_media_carousel.wistia_index_for_watch_video_list.value %}
+            {% if item != blank %}
+                {% assign watch_objects = watch_objects | append: item | append: "," %}
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+
+    {% assign watch_objects_array = watch_objects | split: "," %}
 
     {% for media in input_media_carousel.image_or_video.value %}
         {% assign index = forloop.index0 %}
@@ -66,6 +77,17 @@
                         <img src="{{ media | img_url: size }}" alt="{{ title }}" data-product-handle="{{ title | escape }}" class="img-fluid" />
                         {% if forloop.index == 1 and thumbnails == false and input_media_carousel.coming_soon.value == true %}
                             <div class="coming-soon">{{ 'product.settings.coming_soon' | t }}</div>
+                        {% endif %}
+                        {% if forloop.index == 1 and thumbnails == false and watch_objects_array[index] != blank and watch_objects_array[index] != 'none' %}
+                            <div
+                                class="watch-how-it-works watch-wistia-video"
+                                data-bs-toggle="modal"
+                                data-bs-target="#reusableWistiaModal"
+                                data-video-id="{{ watch_objects_array[index] }}"
+                            >
+                                <i class="e-icon e-icon-watch"></i>
+                                <div><strong>Watch:</strong> How It Works</div>
+                            </div>
                         {% endif %}
                     </div>
                 </div>
