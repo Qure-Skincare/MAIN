@@ -249,6 +249,9 @@
                     </div>
                 </div>
             </div>
+            <div class="helmet-home-modal__disclaimer">
+                *Results based on a 16-week study. Participants used the helmet 7 times per week. Individual results may vary.
+            </div>
             <button type="button" class="btn-close" data-bs-dismiss="modal">
                 <img src="https://qureskincaredns.com/assets/images/cross_black.svg" alt="cross_black" />
             </button>
@@ -272,10 +275,29 @@
 {% endif %}
 <!-- MODALS -->
 
+<!-- Reusable Wistia Modal -->
+<div class="modal fade filter-modal" id="reusableWistiaModal" data-bs-backdrop="static" data-bs-keyboard="false"
+    tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-md filter-dialog">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <button type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="wistiaVideoContainer" class="filter-modal-video"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Reusable Wistia Modal end -->
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         loadScriptOnce('helmet-home-swiper', 'https://qureskincaredns.com/alex/sections/isolated/helmet-home/helmet-home.js');
+        loadScriptOnce('wistia-popup', 'https://qureskincaredns.com/assets/js-new/wistia-popup.js');
+        loadScriptOnce('wistia-script', 'https://fast.wistia.com/assets/external/E-v1.js');
     });
 </script>
 
