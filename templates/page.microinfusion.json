@@ -578,6 +578,19 @@
             "product_text": ""
           }
         },
+        "slider_JwXnch": {
+          "type": "slider",
+          "settings": {
+            "heading": "What an amazing product this is.",
+            "text": "<p>“I’ve done two treatments so far since I got this and my gosh, I have an extreme loss of dark spots. My skin is smooth and I got the dark spot treatment, but it Oohh amazed at this I keep telling everybody about this I cannot believe what an amazing product this is I will continue to buy it, and I will not stop using this for a treatment that you would spend $300 in the salon for just one treatment, how amazing is it to be able to do it at home?”</p>",
+            "compare_image": "shopify://shop_images/Image_2_9c05b808-aa78-4254-8031-9fea7eda6afe.png",
+            "country_image": "shopify://shop_images/usa_flag.svg",
+            "username": "<p>Janeda T.</p>",
+            "product_url": "",
+            "product_heading": "",
+            "product_text": ""
+          }
+        },
         "slider_MHwxjr": {
           "type": "slider",
           "settings": {
@@ -715,6 +728,7 @@
         "slider_xqgHn6",
         "slider_78E6pj",
         "slider_eCGH8c",
+        "slider_JwXnch",
         "slider_MHwxjr",
         "slider_Qab78U",
         "slider_VyHb4h",
