@@ -599,6 +599,15 @@
             "link_url": "",
             "link_text": ""
           }
+        },
+        "accordion_EWgPBA": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Does the Neck & Décolletage LED System have a warranty?",
+            "text": "<p>The Neck & Décolletage LED System comes with one (1) year limited warranty covering any manufacturer related problems resulting from regular use of the product. <br/><br/>To submit a claim within the warranty period, simply get in touch with our customer support team and they’ll be happy to help! </p>",
+            "link_url": "",
+            "link_text": ""
+          }
         }
       },
       "block_order": [
@@ -609,7 +618,8 @@
         "accordion_89RQWE",
         "accordion_gPeUiw",
         "accordion_y9NWCC",
-        "accordion_gQeTYM"
+        "accordion_gQeTYM",
+        "accordion_EWgPBA"
       ],
       "name": "t:sections.faq.name",
       "settings": {
