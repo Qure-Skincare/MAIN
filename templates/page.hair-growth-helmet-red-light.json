@@ -454,9 +454,9 @@
       "name": "t:sections.faq.name",
       "settings": {
         "heading": "Red Light Therapy: Common Hair Concerns",
-        "text": "",
+        "text": "Have a concern we didn’t cover?",
         "button_label": "Ask us",
-        "button_url": "",
+        "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home",
         "terms-conditions": false,
         "promotional_terms_and_conditions": ""
       }
