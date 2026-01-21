@@ -240,6 +240,18 @@
         "button_label": "Explore The Features"
       }
     },
+    "faq_gNfg8G": {
+      "type": "faq",
+      "name": "t:sections.faq.name",
+      "settings": {
+        "heading": "vdgdgfh",
+        "text": "",
+        "button_label": "",
+        "button_url": "",
+        "terms-conditions": false,
+        "promotional_terms_and_conditions": ""
+      }
+    },
     "hair_growth_helmet_feature_carousel_HtN8C4": {
       "type": "hair-growth-helmet-feature-carousel",
       "blocks": {
@@ -669,6 +681,7 @@
     "header",
     "hair_growth_helmet_image_slider_9KL6Kj",
     "hair_growth_helmet_banner_with_modal_BnqA3f",
+    "faq_gNfg8G",
     "hair_growth_helmet_feature_carousel_HtN8C4",
     "results_slider_DKCtmR",
     "carousel_jHy7Zp",
