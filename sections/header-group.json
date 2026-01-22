@@ -21,9 +21,9 @@
         "announcement-1": {
           "type": "announcement",
           "settings": {
-            "heading": "<p><strong>Holiday Sale </strong>70% OFF Micro-Infusion</p>",
+            "heading": "<p><strong>Valentine’s Day Promo </strong>-<strong> </strong>70% OFF Micro-Infusion</p>",
             "button-label": "Shop Now",
-            "button-url": "https://qureskincare.com/pages/microinfusion"
+            "button-url": "https://qureskincare.com/pages/qure-microinfusion-offer"
           }
         },
         "announcement-2": {
