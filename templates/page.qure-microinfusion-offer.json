@@ -222,8 +222,8 @@
       "type": "stock-alert",
       "name": "t:sections.stock-alert.name",
       "settings": {
-        "text": "<p>Holiday Sale!</p>",
-        "text_mobile": "<p>Holiday Sale!</p>",
+        "text": "<p>Valentine’s Day Promo!</p>",
+        "text_mobile": "<p>Valentine’s Day Promo!</p>",
         "style_color": "light_green"
       }
     },
