@@ -1062,7 +1062,7 @@
       "type": "sticky-button",
       "name": "t:sections.sticky-button.name",
       "settings": {
-        "heading": "Holiday Sale",
+        "heading": "Valentine’s Day Promo",
         "text": "1,293 purchased in last 48 hours",
         "limited": false,
         "button-label": "BUY NOW & SAVE UP TO 70%",
