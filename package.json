@@ -1,7 +1,7 @@
 {
   "name": "commands",
   "scripts": {
-    "start": "shopify theme dev --live-reload=hot-reload --theme-editor-sync --force",
+    "start": "shopify theme dev --store=qure-skincare --live-reload=hot-reload --theme-editor-sync --force",
     "publish": "shopify theme push --unpublished",
     "sync": "git checkout production; git pull origin production; git fetch --prune",
     "open": "git checkout production; git pull origin production; git checkout -b feature/$npm_config_name",
