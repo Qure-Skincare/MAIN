@@ -16,7 +16,13 @@
                 {% if column != blank %}
                     {% if __link.title == column %}
                         {%- for __child in __link.links -%}
-                            <li class="submenu-item"><a href="{{ __child.url }}" aria-label="{{ __child.title | escape }}" role="link" class="submenu-menu-link">{{ __child.title }}</a></li>
+                            {%- if __child.title == 'Shower Filter' -%}
+                                {% if localization.country.iso_code == 'US' %}
+                                    <li class="submenu-item"><a href="{{ __child.url }}" aria-label="{{ __child.title | escape }}" role="link" class="submenu-menu-link">{{ __child.title }}</a></li>
+                                {% endif %}
+                            {%- else -%}
+                                <li class="submenu-item"><a href="{{ __child.url }}" aria-label="{{ __child.title | escape }}" role="link" class="submenu-menu-link">{{ __child.title }}</a></li>
+                            {%- endif -%}
                         {%- endfor -%}
                     {% endif %}
                 {% else %}
