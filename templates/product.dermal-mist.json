@@ -243,8 +243,8 @@
       "type": "banner-with-text",
       "name": "t:sections.banner-with-text.name",
       "settings": {
-        "heading": "A mist to treat breakouts, redness, and irritation",
-        "text": "<p>Powered by pure hypochlorous acid (HOCl), Dermal Mist helps calm inflammation, speed up healing, and support your skin’s natural barrier — all without irritation. </p><p>Perfect for breakouts, redness, or post-treatment care, <em>this mist instantly soothes skin while fighting off bacteria</em></p><p>and environmental triggers. It’s fragrance-free, non-drying, and gentle enough <strong>to use anytime, anywhere</strong> even over makeup.</p>",
+        "heading": "A mist to refresh skin prone to breakouts, redness and sensitivity",
+        "text": "<p>Powered by hypochlorous acid (HOCl), Dermal Mist helps calm the look and feel of stressed skin and support a fresh, balanced complexion—without irritation.<br/></p><p>Perfect for skin that experiences <em>breakouts, visible redness, or post-treatment sensitivity</em>, this lightweight mist helps soothe the look of skin and protect against everyday environmental stressors.<br/></p><p>It’s fragrance-free, non-drying, and gentle enough to use anytime, anywhere, even over makeup.</p>",
         "quote": "",
         "quote-mobile": "",
         "image_position": "left",
