@@ -154,6 +154,13 @@
             "image": "shopify://shop_images/before-after-8.webp",
             "text": "<p>Visibly improved: <em>Receding hairline</em></p>"
           }
+        },
+        "slider_PFymJc": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/Image_4_cb91be41-2dc1-40fb-872d-dbeb4da7c044.png",
+            "text": "<p>Visibly improved: Thinning at temples</p>"
+          }
         }
       },
       "block_order": [
@@ -164,7 +171,8 @@
         "slider_YQxmM3",
         "slider_kVwewq",
         "slider_7LQiLd",
-        "slider_KhCe6h"
+        "slider_KhCe6h",
+        "slider_PFymJc"
       ],
       "name": "t:sections.hair-growth-helmet-image-slider.name",
       "settings": {
