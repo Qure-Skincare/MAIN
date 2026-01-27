@@ -472,6 +472,13 @@
     "compare_8FkPMf": {
       "type": "compare",
       "blocks": {
+        "heading_YBVNNp": {
+          "type": "heading",
+          "settings": {
+            "heading_check": "<p>Qure Dermal Mist</p>",
+            "heading_cross": "<p>Traditional Skin Mists</p>"
+          }
+        },
         "compare_3CP3fq": {
           "type": "compare",
           "settings": {
@@ -522,6 +529,7 @@
         }
       },
       "block_order": [
+        "heading_YBVNNp",
         "compare_3CP3fq",
         "compare_QcqhJN",
         "compare_9LDCBh",
