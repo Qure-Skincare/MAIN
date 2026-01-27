@@ -115,7 +115,7 @@
       "name": "t:sections.product-header.name",
       "settings": {
         "seo_heading": "MICRO-INFUSION DART PATCHES",
-        "heading": "Smooth, firm and plump stubborn areas with Micro-InfusionTargeted Patches",
+        "heading": "Smooth and firm the look of skin with Micro-Infusion Targeted Patches",
         "rating": true,
         "limited": false,
         "description": "<ul><li>Reduces appearance of fine lines and wrinkles, under-eye darkness, and puffiness. </li><li>Serum infused micro-darts dissolve into the skin to deliver active ingredients beyond the surface for faster results.</li><li>Science backed, age-defying ingredients such as retinol, caffeine, niacinamide, and peptides.</li></ul>",
@@ -236,8 +236,8 @@
       "type": "banner-with-text",
       "name": "t:sections.banner-with-text.name",
       "settings": {
-        "heading": "80 Serum-Enriches Micro-Darts for precise improvement",
-        "text": "<p>Fast-acting patches feature 80 self-dissolving micro-darts designed to target and treat wrinkles, under-eye puffiness and dark circles.</p><p>While traditional patches lay flat on the surface of the skin, these ultra thin micro-darts gently penetrate the skin, <em>infusing serum for deeper delivery.</em></p><p>Precise and powerful, they infuse serum where you need it most and fully absorb into the skin for <em>deeper, better, faster results</em> – yet gentle enough for sensitive skin.</p>",
+        "heading": "80 serum-infused micro-darts for targeted care",
+        "text": "<p>These advanced patches feature 80 ultra-fine, self-dissolving micro-darts designed to target and help <em>improve the appearance of fine lines, under-eye puffiness, and dark circles.</em><br/><br/>While traditional patches lay flat on the skin, the micro-dart design allows the serum to be applied in a more targeted, close-to-skin manner for enhanced contact and absorption. <br/><br/>Precisely engineered, the patches help support smoother-looking, more refreshed skin with consistent cosmetic use — including on delicate under-eye areas.</p>",
         "quote": "",
         "quote-mobile": "",
         "image_position": "left",
