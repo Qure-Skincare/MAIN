@@ -314,7 +314,7 @@
           "type": "slider",
           "settings": {
             "heading": "Dark circles less visible",
-            "text": "<p>“Didn't expect it to work but they proved me wrong. It looks much more clear in person than the photos. My dark circles and puffiness are less visible. There's no pain at all they're comfortable while wearing to sleep.”</p>",
+            "text": "<p>“Didn't expect it to work but they proved me wrong. It looks much more clear in person than the photos. My dark circles and puffiness are less visible. There's no pain at all they're comfortable while wearing to sleep.\"</p>",
             "compare_image": "shopify://shop_images/a-1_4e5c4822-7f2d-4301-837a-2ee875cd3ccf.webp",
             "country_image": "shopify://shop_images/america_f.webp",
             "username": "<p>Katie.</p>",
@@ -327,7 +327,7 @@
           "type": "slider",
           "settings": {
             "heading": "Love these patches!",
-            "text": "<p>“I found Qure's Micro-Infusion Patches as a targeted solution for my laugh lines. These impressed me so much that now I want to tape them all over my face to target all wrinkles. These patches have become an essential part of my skincare routine, and I highly recommend them to anyone seeking a non-invasive, effective solution for aging skin.”</p>",
+            "text": "<p>“I found these as a targeted solution for the look of my laugh lines. These impressed me so much that now I want to tape them all over my face to target the appearance of all of my wrinkles. They’ve become an essential part of my skincare routine, and I highly recommend them.”</p>",
             "compare_image": "shopify://shop_images/a-2_43fd5417-17b0-4720-98aa-b7a7ee272b48.webp",
             "country_image": "shopify://shop_images/america_f.webp",
             "username": "<p>Shannon</p>",
@@ -340,7 +340,7 @@
           "type": "slider",
           "settings": {
             "heading": "Can see the difference after one use!",
-            "text": "<p>“I did the patches last night and I swear just after one use I already see a result. The difference in my under-eye is wild!”</p>",
+            "text": "<p>“I did the patches last night and I swear just after one use I already see a change. The difference in the look of my under-eye is wild!”</p>",
             "compare_image": "shopify://shop_images/cassandra.webp",
             "country_image": "shopify://shop_images/america_f.webp",
             "username": "<p>Cassandra</p>",
@@ -353,7 +353,7 @@
           "type": "slider",
           "settings": {
             "heading": "Love these patches!",
-            "text": "<p>“I started to see fine lines around my eyes and these patches work wonders! I wear them overnight and they don’t come off. I’VE SEEN A HUGE DIFFERENCE, leaving my skin smoother and firmer after just a few uses. Highly recommend.”</p>",
+            "text": "<p>“I started to see fine lines around my eyes and I think these patches work wonders! I wear them overnight and they didn't come off. I'VE SEEN A HUGE DIFFERENCE, leaving my skin looking smoother and firmer after just a few uses. Highly recommend!”</p>",
             "compare_image": "shopify://shop_images/a-4.webp",
             "country_image": "shopify://shop_images/england_f.webp",
             "username": "<p>Mary</p>",
@@ -365,11 +365,11 @@
         "slider_RLcm4c": {
           "type": "slider",
           "settings": {
-            "heading": "Plumped up wrinkles",
-            "text": "<p>“I've been using these patches once a week, I'm absolutely stoked with the results. I'm already noticing a gradual improvement in my laugh lines. I'm really looking forward to seeing even more progress as I keep using them in my routine.”</p>",
+            "heading": "Thin skin feels hydrated",
+            "text": "<p>“I just tried out the Qure Micro-Infusion Patches for one night and let me tell you, my skin felt so hydrated and refreshed when I woke up. I could even see a subtle improvement in the look of my fine lines already. I can only imagine how much better it'll look with consistent use! For now, I can definitely say my skin looks smoother.”</p>",
             "compare_image": "shopify://shop_images/a-5.webp",
-            "country_image": "shopify://shop_images/england_f.webp",
-            "username": "<p>Harper</p>",
+            "country_image": "shopify://shop_images/usa_flag.svg",
+            "username": "<p>Lisa N.</p>",
             "product_url": "",
             "product_heading": "",
             "product_text": ""
@@ -378,11 +378,11 @@
         "slider_kWiRwt": {
           "type": "slider",
           "settings": {
-            "heading": "Thin skin feels hydrated",
-            "text": "<p>“I just tried out the Qure Micro-Infusion Patches for one night, and let me tell you, my skin felt so hydrated and refreshed when I woke up. I could even see a subtle improvement in my fine lines already. I can only imagine how much better it'll get with consistent use! For now, I can definitely say my skin looks smoother.”</p>",
+            "heading": "Plumped up wrinkles",
+            "text": "<p>“I've been using these patches once a week. I'm absolutely stoked with the results. I'm already noticing a gradual improvement in the look of my laugh lines. I'm really looking forward to seeing even more changes as I keep using them in my routine.”</p>",
             "compare_image": "shopify://shop_images/a-6.webp",
-            "country_image": "shopify://shop_images/america_f.webp",
-            "username": "<p>Lisa N.</p>",
+            "country_image": "shopify://shop_images/australia_f_69a48b5f-3193-49ab-a443-904ca676d1db.webp",
+            "username": "<p>Harper</p>",
             "product_url": "",
             "product_heading": "",
             "product_text": ""
@@ -392,7 +392,7 @@
           "type": "slider",
           "settings": {
             "heading": "Reduced my dark circles",
-            "text": "<p>“My under eye area is usually very sensitive and I was hesitant about these patches because they have little cones and I was afraid they would irritate my skin. They turned out to do wonders for my dark circles and I don't look tired anymore! I used them 2x a week to get these results. The shipping was very fast too!”</p>",
+            "text": "<p>“My under eye area is usually very sensitive and I was hesitant about these patches because they have little cones and I was afraid they would irritate my skin. They turned out to do wonders for the look of my dark circles and I don't think I look tired anymore! I used them 2x a week...The shipping was very fast too!”</p>",
             "compare_image": "shopify://shop_images/a-7.webp",
             "country_image": "shopify://shop_images/america_f.webp",
             "username": "<p>Lucy</p>",
@@ -418,7 +418,7 @@
           "type": "slider",
           "settings": {
             "heading": "Blown away by the results",
-            "text": "<p>“I am loving these new micro-infusion patches. You can put these patches anywhere you have concerns, number 11’s, under eyes, marionette lines, forehead- you choose! You put these on clean skin and leave on at least 2-3 hours, but I sleep in them over night! I do them once a week and I am blown away by the results!”</p>",
+            "text": "<p>“I am loving these new micro-infusion patches. I put these patches anywhere I have concerns, number 11’s, under eyes, marionette lines, forehead- you choose! You can put these on clean skin and leave on at least 2-3 hours, but I sleep in them over night! I do them once a week and I am blown away by the results!\"</p>",
             "compare_image": "shopify://shop_images/a-9.webp",
             "country_image": "shopify://shop_images/america_f.webp",
             "username": "<p>Andrea</p>",
@@ -431,7 +431,7 @@
           "type": "slider",
           "settings": {
             "heading": "I’m loving the results so far",
-            "text": "<p>“I’m loving the results so far and look forward to continuing!”</p>",
+            "text": "<p>\"I’m loving the results so far and look forward to continuing!\"</p>",
             "compare_image": "shopify://shop_images/a-10.webp",
             "country_image": "shopify://shop_images/america_f.webp",
             "username": "<p>Denise</p>",
