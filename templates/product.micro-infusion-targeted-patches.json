@@ -491,8 +491,8 @@
         "list_W8x3X8": {
           "type": "list",
           "settings": {
-            "heading": "Protect",
-            "heading-mobile": "Protect",
+            "heading": "Finish",
+            "heading-mobile": "Finish",
             "text": "<p>After 2 hours, the skin is left looking smoother and more radiant.</p>",
             "text-mobile": "<p>After 2 hours, the skin is left looking smoother and more radiant.</p>",
             "image": "shopify://shop_images/Img_17.png",
