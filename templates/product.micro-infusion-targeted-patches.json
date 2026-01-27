@@ -253,7 +253,7 @@
         "slider_Hpr74b": {
           "type": "slider",
           "settings": {
-            "heading": "<p>Proven to visually improve</p>",
+            "heading": "<p>Shown to visually improve</p>",
             "text": "",
             "image": "shopify://shop_images/ab-2.webp",
             "button_label": "",
@@ -263,7 +263,7 @@
         "slider_FhLRG7": {
           "type": "slider",
           "settings": {
-            "heading": "<p>Proven to visually improve</p>",
+            "heading": "<p>Shown to visually improve</p>",
             "text": "",
             "image": "shopify://shop_images/ab-1.webp",
             "button_label": "",
@@ -273,7 +273,7 @@
         "text_with_progress_VM8Uqg": {
           "type": "text_with_progress",
           "settings": {
-            "text": "<p>noticed continued improvement in wrinkle reduction. </p>",
+            "text": "<p>noticed improvement in the appearance of wrinkles. </p>",
             "percent_value": "77%"
           }
         },
@@ -302,7 +302,7 @@
       "name": "t:sections.proven-results.name",
       "settings": {
         "heading": "No hype, just evidence",
-        "text": "<p>In an independent user study, participants' skin was measured and showed proven visible improvement after just one month.<br/><br/>Tested by an independent lab, compiled by Regulatory Consultants</p>",
+        "text": "<p>In an independent study of 30 subjects over 4 weeks of use, participants' skin was measured and showed a visible improvement after just one month.<br/><br/><em>Tested by an independent lab, compiled by Regulatory Consultants</em></p>",
         "button_label": "",
         "button_url": ""
       }
@@ -471,8 +471,8 @@
           "settings": {
             "heading": "Target",
             "heading-mobile": "Target",
-            "text": "<p>80 micro-darts painlessly reach below the surface to target fine lines, dullness, and dark circles.</p>",
-            "text-mobile": "<p>80 micro-darts painlessly reach below the surface to target fine lines, dullness, and dark circles.</p>",
+            "text": "<p>80 micro-darts painlessly reach below the surface to target the look of fine lines and dullness. </p>",
+            "text-mobile": "<p>80 micro-darts painlessly reach below the surface to target the look of fine lines and dullness. </p>",
             "image": "shopify://shop_images/a-1.webp",
             "image-mobile": "shopify://shop_images/a-1-m.webp"
           }
@@ -482,8 +482,8 @@
           "settings": {
             "heading": "Absorb",
             "heading-mobile": "Absorb",
-            "text": "<p>The darts dissolve on contact, releasing a potent dose of skin-brightening ingredients.</p>",
-            "text-mobile": "<p>The darts dissolve on contact, releasing a potent dose of skin-brightening ingredients.</p>",
+            "text": "<p>The micro-darts gradually dissolve upon contact, allowing the serum to be absorbed for plumper-looking skin.</p>",
+            "text-mobile": "<p>The micro-darts gradually dissolve upon contact, allowing the serum to be absorbed for plumper-looking skin.</p>",
             "image": "shopify://shop_images/a-2.webp",
             "image-mobile": "shopify://shop_images/a-2-m.webp"
           }
@@ -493,8 +493,8 @@
           "settings": {
             "heading": "Protect",
             "heading-mobile": "Protect",
-            "text": "<p>After 2 hours, ingredients are sealed in, visibly boosting glow and smoothing skin.</p>",
-            "text-mobile": "<p>After 2 hours, ingredients are sealed in, visibly boosting glow and smoothing skin.</p>",
+            "text": "<p>After 2 hours, the skin is left looking smoother and more radiant.</p>",
+            "text-mobile": "<p>After 2 hours, the skin is left looking smoother and more radiant.</p>",
             "image": "shopify://shop_images/Img_17.png",
             "image-mobile": "shopify://shop_images/1_2.png"
           }
@@ -507,10 +507,10 @@
       ],
       "name": "t:sections.how-to-use-picture.name",
       "settings": {
-        "heading": "Powerful ingredients directly to the source",
-        "heading-mobile": "Powered by actives, designed for daily use",
-        "text": "<p>As thin and gentle as a hair and as powerful as a needle, each micro-dart painlessly penetrates the skin to deliver the nutrients where they’ll be absorbed at maximum potential.</p>",
-        "text-mobile": "<p>With encapsulated retinol, bakuchiol, and soothing antioxidants, this daily serum works hard without stressing your skin.</p>",
+        "heading": "Targeted ingredients, thoughtfully applied",
+        "heading-mobile": "Targeted ingredients, thoughtfully applied",
+        "text": "<p>Ultra-fine, serum-infused micro-darts help apply ingredients in a precise, targeted way. The lightweight design allows the patch to sit comfortably on the skin while the formula is released over time for optimal contact.</p>",
+        "text-mobile": "<p>Ultra-fine, serum-infused micro-darts help apply ingredients in a precise, targeted way. The lightweight design allows the patch to sit comfortably on the skin while the formula is released over time for optimal contact.</p>",
         "sub-text": ""
       }
     },
