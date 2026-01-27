@@ -841,7 +841,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Retinol",
-            "text": "<p>A natural derivative of vitamin A, this hero ingredient speeds up the removal of old skin cells to reveal your best, most rejuvenated skin underneath.</p>",
+            "text": "<p>A vitamin A derivative commonly used in skincare to help improve the appearance of skin texture and radiance, leaving skin looking smoother</p>",
             "image": "shopify://shop_images/retinol.webp"
           }
         },
@@ -849,7 +849,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Peptides",
-            "text": "<p>Our powerful peptide blend works to boost collagen and elastin for firmer, plumper skin, while protecting against barrier damage.</p>",
+            "text": "<p>A blend of peptides designed to help support skin that looks firmer and more resilient, contributing to a plumper, more youthful look.</p>",
             "image": "shopify://shop_images/peptides.webp"
           }
         },
@@ -857,7 +857,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Caffeine",
-            "text": "<p>Caffeine works through micro-circulation, helping to fade the look of dark circles and under-eye bags – like a pick-me-up for the skin.</p>",
+            "text": "<p>Known for its refreshing properties, caffeine helps energize the look of tired skin and reduce the appearance of under-eye dullness and puffiness for a more awake look.</p>",
             "image": "shopify://shop_images/caffeine.webp"
           }
         },
@@ -865,7 +865,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Licorice",
-            "text": "<p>Licorice boasts anti-inflammatory properties that work wonders in reducing puffiness and soothing irritated skin.</p>",
+            "text": "<p>A botanical ingredient traditionally used in skincare to help soothe the look of stressed skin and promote a more even, calm-looking complexion.</p>",
             "image": "shopify://shop_images/licorice.webp"
           }
         }
