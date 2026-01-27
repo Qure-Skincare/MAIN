@@ -257,24 +257,13 @@
     "how_to_use_picture_WHyQTm": {
       "type": "how-to-use-picture",
       "blocks": {
-        "list_pUcded": {
-          "type": "list",
-          "settings": {
-            "heading": "Pre-Treatment Purifier",
-            "heading-mobile": "Pre-Treatment Purifier",
-            "text": "<p>Use after cleansing to hydrate and prep your skin for better absorption.</p>",
-            "text-mobile": "<p>Use after cleansing to hydrate and prep your skin for better absorption.</p>",
-            "image": "shopify://shop_images/bacteria_defence_1.webp",
-            "image-mobile": "shopify://shop_images/bacteria_defence_mob_1.webp"
-          }
-        },
         "list_HBDgx6": {
           "type": "list",
           "settings": {
             "heading": "Post-Workout Refresh",
             "heading-mobile": "Post-Workout Refresh",
-            "text": "<p>Mist onto skin throughout the day to reduce redness and irritation.</p>",
-            "text-mobile": "<p>Mist onto skin throughout the day to reduce redness and irritation.</p>",
+            "text": "<p>Mist onto skin after workouts or throughout the day to help calm the look of flushed, stressed skin.</p>",
+            "text-mobile": "<p>Mist onto skin after workouts or throughout the day to help calm the look of flushed, stressed skin.</p>",
             "image": "shopify://shop_images/bacteria_defence_2.webp",
             "image-mobile": "shopify://shop_images/bacteria_defence_mob_2.webp"
           }
@@ -284,28 +273,39 @@
           "settings": {
             "heading": "Pillow Protector",
             "heading-mobile": "Pillow Protector",
-            "text": "<p>Spritz on your pillowcase at night to wake up with hydrated and calm skin.</p>",
-            "text-mobile": "<p>Spritz on your pillowcase at night to wake up with hydrated and calm skin.</p>",
+            "text": "<p>Lightly spritz your pillowcase at night as part of your routine to help create a fresh, comfortable skin environment while you rest.</p>",
+            "text-mobile": "<p>Lightly spritz your pillowcase at night as part of your routine to help create a fresh, comfortable skin environment while you rest.</p>",
             "image": "shopify://shop_images/bacteria_defence_3.webp",
             "image-mobile": "shopify://shop_images/bacteria_defence_mob_3.webp"
+          }
+        },
+        "list_pUcded": {
+          "type": "list",
+          "settings": {
+            "heading": "Pre-Treatment Purifier",
+            "heading-mobile": "Pre-Treatment Purifier",
+            "text": "<p>Use after cleansing to hydrate and balance the skin.</p>",
+            "text-mobile": "<p>Use after cleansing to hydrate and balance the skin.</p>",
+            "image": "shopify://shop_images/bacteria_defence_1.webp",
+            "image-mobile": "shopify://shop_images/bacteria_defence_mob_1.webp"
           }
         },
         "list_MVwKh7": {
           "type": "list",
           "settings": {
-            "heading": "Device Sanitizer",
-            "heading-mobile": "Device Sanitizer",
-            "text": "<p>After using your Q-Rejuvalight Pro, a light spray and wipe inside your device keeps it clean.</p>",
-            "text-mobile": "<p>After using your Q-Rejuvalight Pro, a light spray and wipe inside your device keeps it clean.</p>",
+            "heading": "Device Care",
+            "heading-mobile": "Device Care",
+            "text": "<p>After using your Q-Rejuvalight Pro, a light spray and wipe inside your device keeps it refreshed.</p>",
+            "text-mobile": "<p>After using your Q-Rejuvalight Pro, a light spray and wipe inside your device keeps it refreshed.</p>",
             "image": "shopify://shop_images/bacteria_defence_4.webp",
             "image-mobile": "shopify://shop_images/bacteria_defence_mob_4.webp"
           }
         }
       },
       "block_order": [
-        "list_pUcded",
         "list_HBDgx6",
         "list_6AjmAj",
+        "list_pUcded",
         "list_MVwKh7"
       ],
       "name": "t:sections.how-to-use-picture.name",
