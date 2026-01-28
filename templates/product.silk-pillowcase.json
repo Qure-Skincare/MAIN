@@ -19,7 +19,9 @@
         },
         "price_A11": {
           "type": "price",
-          "settings": {}
+          "settings": {
+            "show_discount": false
+          }
         },
         "description_iPBNaS": {
           "type": "description",
@@ -61,6 +63,8 @@
       "settings": {
         "seo_heading": "PURE SILK PILLOWCASE",
         "heading": "Minimize the formation of wrinkles while you sleep",
+        "rating": true,
+        "limited": false,
         "description": "<ul><li>Causes less friction against the skin, helping minimize the formation of sleep lines and wrinkles.</li><li>Reduces the accumulation of oils and bacteria that can clog pores and cause acne.</li><li>Helps to retain moisture: Absorbs less face cream, helping you maintain hydration for a more healthy-looking complexion.</li></ul>",
         "reserved": false,
         "soldout": false
@@ -139,7 +143,7 @@
         "items_itqcCq": {
           "type": "items",
           "settings": {
-            "heading": "Free Shipping On Orders Over $100",
+            "heading": "Free US Shipping On Orders Over $100",
             "image": "shopify://shop_images/guarantee.svg"
           }
         },
