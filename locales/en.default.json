@@ -364,7 +364,7 @@
       },
       "benefits-list": {
         "guaranteed_text": "90-Day Money-Back Guarantee",
-        "shipping_text": "Free World-Wide Shipping over $100",
+        "shipping_text": "Free US Shipping over $100",
         "science_text": "Backed by Science"
       },
       "cross-sell": {
@@ -622,7 +622,7 @@
     "settings": {
       "exclusive-bundles_html": "<strong>HOLIDAY</strong> BUNDLES",
       "easy-returns": "Easy 30-Day Returns",
-      "shipping-text": "Free Worldwide Shipping",
+      "shipping-text": "Free US Shipping",
       "recommended_html": "<strong>50+ Board Certified Dermatologists</strong> recommend Qure to their patients. <a href='https://qureskincare.com/pages/derm-reviews' class='text-black text-decoration-underline'>See More</a>.",
       "bf_badge_image": "black-friday-silver-badge.webp"
     }
@@ -658,7 +658,7 @@
   "footer-perks": {
     "settings": {
       "slider-1": {
-        "header": "Free Worldwide Shipping",
+        "header": "Free US Shipping",
         "text": "Enjoy free delivery when you spend $100 USD or more.",
         "text-mobile": "Free shipping on orders over $100 USD.",
         "image": "box.svg"
