@@ -234,7 +234,7 @@
         "button_label_save": "Subscribe Now & Save",
         "waranty_html": "<strong class='fw-600'>Covered by our Lifetime Warranty. </strong><br> Backed by our 30-Day Money-Back Guarantee.",
         "dermatologist": "Dermatologist Reviewed",
-        "shipping": "Free Shipping over $100",
+        "shipping": "Free US Shipping over $100",
         "science": "Backed by Science",
         "discount_text": "OFF",
         "more_details_html": "<strong class='fw-600'>Skip pause/modify or cancel anytime.</strong> <br> <a href='/pages/subscriptions' class='text-black text-decoration-underline'> See more details</a>."
@@ -259,7 +259,7 @@
         "order-today": " Order today to lock in your deal and get FREE Shipping",
         "button-label": "Shop Now & Save $299",
         "guarantee-text": "1-Year Guarantee",
-        "shipping-text": "Free Shipping over $100",
+        "shipping-text": "Free US Shipping over $100",
         "free": "FREE",
         "discount-text": "% OFF",
         "sold": "Sold",
@@ -319,7 +319,7 @@
       "header_html": "<div class='eo-header'><span>Valentine's</span><span> Day</span></div>",
       "guarantee-text": "1-Year Guarantee",
       "button-label": "Buy Now & Save",
-      "shipping-text": "Free Shipping over $100",
+      "shipping-text": "Free US Shipping over $100",
       "free": "FREE"
     }
   },
@@ -356,7 +356,7 @@
         "heading_html": "OR pay 4 monthly payments of <span class='pay_today'>{{ product_price_divided }}</span> with",
         "recommended_html": "<strong>50+ Board Certified Dermatologists</strong> recommend Qure to their patients. <a href='https://qureskincare.com/pages/derm-reviews' class='text-black text-decoration-underline'>See More</a>.",
         "guaranteed_text": "30-Day Money-Back Guarantee",
-        "shipping_text": "Free Shipping over $100"
+        "shipping_text": "Free US Shipping over $100"
       },
       "saveup-offer": {
         "heading_html": "<p>Save up to <strong>57%</strong> with our curated bundles</p>",
