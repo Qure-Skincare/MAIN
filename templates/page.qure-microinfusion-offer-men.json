@@ -191,7 +191,7 @@
         "carousel_qQqrwE": {
           "type": "carousel",
           "settings": {
-            "text": "<p>Free <strong>World-Wide</strong> Shipping over $100</p>",
+            "text": "<p>Free US Shipping over $100</p>",
             "text_mobile": "",
             "image": "shopify://shop_images/shipping.svg"
           }
@@ -272,7 +272,7 @@
         "items_cjrKFC": {
           "type": "items",
           "settings": {
-            "heading": "Free Shipping On Orders Over $100",
+            "heading": "Free US Shipping Over $100",
             "image": "shopify://shop_images/guarantee.svg"
           }
         },
