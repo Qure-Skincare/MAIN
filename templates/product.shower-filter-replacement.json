@@ -87,6 +87,8 @@
       "settings": {
         "seo_heading": "SHOWER FILTER REFILL CARTRIDGE",
         "heading": "Keep your skin & hair protected with the Shower Filter Refill",
+        "rating": true,
+        "limited": false,
         "description": "<ul><li>Replace Shower Filter cartridge every 3 months for consistently hydrated, healthier hair and skin. </li><li>Removes up to 99% chlorine, heavy metals & contaminants that harms your skin and hair.</li><li>Easy to refill, only 2 minutes, no tools needed.</li></ul>",
         "reserved": false,
         "soldout": false
@@ -413,6 +415,7 @@
       "type": "trusted-recommended",
       "name": "t:sections.trusted-recommended.name",
       "settings": {
+        "background_color": "#ffffff",
         "heading": "Trusted and Recommended by Experts",
         "text": "<p>“How do you<strong> reduce the things in your water that are causing issues </strong>with your skin?<br/>This Qure filter is incredible – <strong>it’s the only filter I personally use</strong> to [reduce] chlorine and anything else that’s going to make your water harsh for your skin.”</p>",
         "image_text": "",
@@ -531,7 +534,7 @@
         "items_rrrewh": {
           "type": "items",
           "settings": {
-            "heading": "Free Shipping On Orders Over $100",
+            "heading": "Free US Shipping On Orders Over $100",
             "image": "shopify://shop_images/guarantee.svg"
           }
         },
@@ -608,6 +611,7 @@
       "name": "t:sections.how-to-use.name",
       "settings": {
         "heading": "How to replace your filter refill cartridge",
+        "text": "",
         "heading_mobile": "How to replace your filter refill cartridge",
         "wistia_url": "bwhqvtar9u",
         "button_label": "",
