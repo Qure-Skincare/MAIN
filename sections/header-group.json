@@ -29,7 +29,7 @@
         "announcement-2": {
           "type": "announcement",
           "settings": {
-            "heading": "<p><strong>Free Shipping</strong> on Orders Over $100 — <strong>U.S. & UK</strong></p>",
+            "heading": "<p><strong>Free Shipping</strong> on Orders Over $100 in the <strong>U.S.</strong></p>",
             "button-label": "",
             "button-url": "",
             "icon": "shopify://shop_images/icon-cart.png"
