@@ -9,17 +9,6 @@
  */
 {
   "sections": {
-    "announcement_bar_abkmWb": {
-      "type": "announcement-bar",
-      "disabled": true,
-      "name": "t:sections.announcement-bar.name",
-      "settings": {
-        "heading": "Autumn Glow Sale 67% OFF Micro-Infusion",
-        "button-label": "SHOP NOW",
-        "button-url": "https://qureskincare.com/pages/qure-microinfusion-offer",
-        "show": false
-      }
-    },
     "bundle-header": {
       "type": "bundle-header",
       "custom_css": [],
@@ -258,7 +247,162 @@
         "trating_image": "shopify://shop_images/stars_d8d678e4-b245-4e2a-bf95-2e655cd1cd17.svg"
       }
     },
+    "purchase_form_bundle_v2": {
+      "type": "purchase-form-bundle-v2",
+      "blocks": {
+        "type_hHPdgJ": {
+          "type": "type",
+          "settings": {}
+        },
+        "product_type_QKQhNr": {
+          "type": "product_type",
+          "settings": {
+            "heading": "Signs of Aging",
+            "image": "shopify://shop_images/category-signs-of-aging.webp",
+            "preselected": true
+          }
+        },
+        "product_Ykma4b": {
+          "type": "product",
+          "settings": {
+            "product": "line-refine-bundle-pro1",
+            "image": "shopify://shop_images/fade-firm-pro.webp",
+            "preselected": false,
+            "soldout": false,
+            "reserved": false
+          }
+        },
+        "product_8hJgNj": {
+          "type": "product",
+          "settings": {
+            "product": "line-refine-bundle-advanced",
+            "image": "shopify://shop_images/fade-firm-advanced.webp",
+            "preselected": false,
+            "soldout": false,
+            "reserved": false
+          }
+        },
+        "product_BJXNMB": {
+          "type": "product",
+          "settings": {
+            "product": "line-refine-bundle-essential",
+            "image": "shopify://shop_images/fade-firm-essentials.webp",
+            "preselected": false,
+            "soldout": false,
+            "reserved": false
+          }
+        },
+        "type_aJwQ9q": {
+          "type": "type",
+          "settings": {}
+        },
+        "product_type_VLXcAn": {
+          "type": "product_type",
+          "settings": {
+            "heading": "Dark Spots & Wrinkles",
+            "image": "shopify://shop_images/category-dark-spots-wrinkles.webp",
+            "preselected": false
+          }
+        },
+        "product_eiHVrp": {
+          "type": "product",
+          "settings": {
+            "product": "fade-firm-bundle-pro1",
+            "image": "shopify://shop_images/fade-firm-pro.webp",
+            "preselected": false,
+            "soldout": false,
+            "reserved": false
+          }
+        },
+        "product_xJpDep": {
+          "type": "product",
+          "settings": {
+            "product": "fade-firm-bundle-advanced",
+            "image": "shopify://shop_images/fade-firm-advanced.webp",
+            "preselected": false,
+            "soldout": false,
+            "reserved": false
+          }
+        },
+        "product_xwqzya": {
+          "type": "product",
+          "settings": {
+            "product": "fade-firm-bundle-essentials",
+            "image": "shopify://shop_images/fade-firm-essentials.webp",
+            "preselected": false,
+            "soldout": false,
+            "reserved": false
+          }
+        },
+        "type_yDwWmt": {
+          "type": "type",
+          "settings": {}
+        },
+        "product_type_YrPQrV": {
+          "type": "product_type",
+          "settings": {
+            "heading": "Acne & Breakouts",
+            "image": "shopify://shop_images/category-acne-breakouts.webp",
+            "preselected": false
+          }
+        },
+        "product_KKbDAE": {
+          "type": "product",
+          "settings": {
+            "product": "breakout-control-pro",
+            "image": "shopify://shop_images/breakout-control-pro-v2.webp",
+            "preselected": false,
+            "soldout": false,
+            "reserved": false
+          }
+        },
+        "product_gia3hC": {
+          "type": "product",
+          "settings": {
+            "product": "breakout-control-advanced1",
+            "image": "shopify://shop_images/breakout-control-advanced-v2.webp",
+            "preselected": false,
+            "soldout": false,
+            "reserved": false
+          }
+        },
+        "product_gNjH9L": {
+          "type": "product",
+          "settings": {
+            "product": "breakout-control-essential",
+            "image": "shopify://shop_images/breakout-control-essentials-v2.webp",
+            "preselected": false,
+            "soldout": false,
+            "reserved": false
+          }
+        }
+      },
+      "block_order": [
+        "type_hHPdgJ",
+        "product_type_QKQhNr",
+        "product_Ykma4b",
+        "product_8hJgNj",
+        "product_BJXNMB",
+        "type_aJwQ9q",
+        "product_type_VLXcAn",
+        "product_eiHVrp",
+        "product_xJpDep",
+        "product_xwqzya",
+        "type_yDwWmt",
+        "product_type_YrPQrV",
+        "product_KKbDAE",
+        "product_gia3hC",
+        "product_gNjH9L"
+      ],
+      "settings": {
+        "heading": "Choose Your Bundle",
+        "text": "",
+        "form_name": "purchase-form-bundle-v2",
+        "hide_types": true
+      }
+    },
     "purchase_form_bundle_Lj9cVS": {
+      "disabled": true,
       "type": "purchase-form-bundle",
       "blocks": {
         "type_hHPdgJ": {
@@ -987,12 +1131,12 @@
     }
   },
   "order": [
-    "announcement_bar_abkmWb",
     "bundle-header",
     "bf_bundle_banner_jHuIO7",
     "carousel_BHi3nq",
     "slider_featured_in_RUfV4m",
     "page_exclusive_holiday_bundle_trusted_reviews_img_kCfC33",
+    "purchase_form_bundle_v2",
     "purchase_form_bundle_Lj9cVS",
     "quiz_V6p9AW",
     "trusted_reviews_9WdXCj",

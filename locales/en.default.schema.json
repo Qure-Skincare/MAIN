@@ -1138,7 +1138,8 @@
         "purchase-form-bundle": {
             "name": "Purchase form bundle",
             "settings": {
-                "form_name": "Form name"
+                "form_name": "Form name",
+                "hide_types": "Hide product types"
             },
             "blocks": {
                 "product": {
