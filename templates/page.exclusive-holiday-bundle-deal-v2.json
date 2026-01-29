@@ -327,7 +327,7 @@
         "product_xwqzya": {
           "type": "product",
           "settings": {
-            "product": "fade-firm-bundle-essentials",
+            "product": "fade-firm-bundle-essential",
             "image": "shopify://shop_images/fade-firm-essentials.webp",
             "preselected": false,
             "soldout": false,
@@ -397,12 +397,11 @@
       "settings": {
         "heading": "Choose Your Bundle",
         "text": "",
-        "form_name": "purchase-form-bundle-v2",
-        "hide_types": true
+        "hide_types": true,
+        "form_name": "purchase-form-bundle-v2"
       }
     },
     "purchase_form_bundle_Lj9cVS": {
-      "disabled": true,
       "type": "purchase-form-bundle",
       "blocks": {
         "type_hHPdgJ": {
@@ -558,6 +557,7 @@
         "product_gNjH9L",
         "product_e9YBCe"
       ],
+      "disabled": true,
       "settings": {
         "heading": "Choose Your Bundle",
         "text": "Long term healthy skin and better self-esteem starts here.",
