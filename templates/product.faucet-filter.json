@@ -459,7 +459,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Carbon Fiber Layer",
-            "text": "<p>Removes up to 99% of chlorine, reducing skin irritation and dryness, leaving your skin and hair healthier.</p>",
+            "text": "<p>Removes up to 99% of chlorine which can reduce dry and irritated feeling skin leaving skin and hair looking healthier.</p>",
             "image": "shopify://shop_images/filter_cartiage1.webp"
           }
         },
@@ -475,7 +475,7 @@
           "type": "accordion",
           "settings": {
             "heading": "NOK Ultra Filter",
-            "text": "<p>Japan-made, top-range ultra-filter that reduces microscopic particles, including bacteria and some viruses, down to 0.01μm for enhanced purification.</p>",
+            "text": "<p>Japan-made, top-range ultra-filter designed to reduce certain microorganisms and other microscopic particles through physical filtration, with filtration media rated to capture particles as small as 0.01 μm.*<br/><br/>*Based on laboratory testing. Performance may vary depending on water quality and usage.</p>",
             "image": "shopify://shop_images/filter_cartiage3.webp"
           }
         },
@@ -483,7 +483,7 @@
           "type": "accordion",
           "settings": {
             "heading": "ASP-Descaler",
-            "text": "<p>Reduces limescale buildup by preventing the accumulation of hard water minerals, helping to protect your shower system.</p>",
+            "text": "<p>Reduces limescale buildup by preventing the accumulation of hard water minerals which can help to protect your shower system.</p>",
             "image": "shopify://shop_images/filter_cartiage4.webp"
           }
         },
