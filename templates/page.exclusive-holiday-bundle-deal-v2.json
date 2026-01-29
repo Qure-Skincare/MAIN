@@ -1031,7 +1031,7 @@
           "type": "image_with_text",
           "settings": {
             "image": "shopify://shop_images/shipping.svg",
-            "text": "Free Shipping over $100"
+            "text": "Free Shipping in US over $100"
           }
         }
       },
