@@ -722,7 +722,7 @@
         "compare_tBYGUE": {
           "type": "compare",
           "settings": {
-            "check_text": "<p>Reduces chlorine and heavy metals</p>",
+            "check_text": "<p>Reduces chlorine and select heavy metals*</p>",
             "cross_text": "<p>Reduces some chlorine and metals</p>",
             "checkbox": false
           }
