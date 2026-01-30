@@ -56,6 +56,8 @@
                     {% render 'page-video', section: section, block: block %}
                 {% when 'section' %}
                     {% render 'product-page-async-section', section: section, block: block %}
+                {% when 'results' %}
+                    {% render 'product-page-results', section: section, block: block %}
                 {% when 'link' %}
                     {% render 'page-link-button', section: section %}
                 {% when 'money-back' %}

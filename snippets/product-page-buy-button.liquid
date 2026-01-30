@@ -46,7 +46,7 @@
   {% capture button-label %}{{ 'product.settings.soldout-button-label' | t }}{% endcapture %}
 {% endif %}
 
-<div class="qure__product-action-inner mt-30 mt-md-30 mb-10 max-w-ctm" style="--max-w-ctm:500px">
+<div class="qure__product-action-inner mt-30 mt-md-30 mb-10 max-w-ctm mw-100" style="--max-w-ctm:500px">
   <form method="post" action="/cart/add" enctype="multipart/form-data"{% if static %} data-static="true"{% endif %}>
     <button type="submit" class="add-cart-button product-form__submit btn btn--primary w-100{% if skip_black_friday_label == true %} skip_black_friday_label{% endif %}"{% if soldout %} disabled{% endif %}{% if close_modal %} data-bs-toggle="modal"{% endif %}>{{ button-label }}</button>
     <input type="hidden" name="quantity" id="quantity" value="1">
