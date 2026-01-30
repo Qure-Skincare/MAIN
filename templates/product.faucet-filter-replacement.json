@@ -426,7 +426,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Carbon Fiber Layer",
-            "text": "<p>Removes up to 99% of chlorine, reducing skin irritation and dryness, leaving your skin and hair healthier.</p>",
+            "text": "<p>Removes up to 99% of chlorine which can reduce dry and irritated feeling skin leaving skin and hair looking healthier.</p>",
             "image_with_text": "shopify://shop_images/carbon.svg",
             "image": "shopify://shop_images/filter_cartiage1.webp"
           }
@@ -453,7 +453,7 @@
           "type": "accordion",
           "settings": {
             "heading": "ASP-Descaler",
-            "text": "<p>Reduces limescale buildup by preventing the accumulation of hard water minerals, helping to protect your shower system.</p>",
+            "text": "<p>Reduces limescale buildup by preventing the accumulation of hard water minerals which can help to protect your shower system.</p>",
             "image_with_text": "shopify://shop_images/asp.svg",
             "image": "shopify://shop_images/filter_cartiage4.webp"
           }
