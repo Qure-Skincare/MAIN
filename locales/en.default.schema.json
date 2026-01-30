@@ -10,6 +10,7 @@
  
  {
     "common": {
+        "results": "Results",
         "popular": "Popular",
         "new": "New",
         "use-own-file": "Use own file",
