@@ -751,6 +751,12 @@
             "cross_text": "<p>Limited or no warranty</p>",
             "checkbox": false
           }
+        },
+        "disclaimer_dQrQg7": {
+          "type": "disclaimer",
+          "settings": {
+            "text": "*Based on laboratory testing under controlled conditions. Performance may vary depending on water quality and usage."
+          }
         }
       },
       "block_order": [
@@ -759,7 +765,8 @@
         "compare_6MCxTe",
         "compare_cNVUQc",
         "compare_BYY6FL",
-        "compare_Q7kmUm"
+        "compare_Q7kmUm",
+        "disclaimer_dQrQg7"
       ],
       "name": "t:sections.compare.name",
       "settings": {
