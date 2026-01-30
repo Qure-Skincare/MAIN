@@ -280,12 +280,20 @@
             "text": "<p>of participants wouldn’t go back to regular tap water</p>",
             "value": "96%"
           }
+        },
+        "value_gaDRJz": {
+          "type": "value",
+          "settings": {
+            "text": "<p>Testing conducted by an independent laboratory. Results based on user perception and instrumental measurements of daily use over 4 weeks.</p>",
+            "value": ""
+          }
         }
       },
       "block_order": [
         "value_wEGp6Y",
         "value_NVgzVM",
-        "value_64bc7d"
+        "value_64bc7d",
+        "value_gaDRJz"
       ],
       "name": "t:sections.improve-skin-hydration.name",
       "settings": {
