@@ -729,7 +729,7 @@
           "type": "compare",
           "settings": {
             "check_text": "<p>Reduces chlorine and select heavy metals*</p>",
-            "cross_text": "<p>Reduces some chlorine and metals</p>",
+            "cross_text": "<p>May reduce some chlorine and metals</p>",
             "checkbox": false
           }
         },
@@ -744,8 +744,8 @@
         "compare_MaqH8V": {
           "type": "compare",
           "settings": {
-            "check_text": "<p>Made with advanced filtration</p>",
-            "cross_text": "<p>Standard filtration</p>",
+            "check_text": "<p>Designed with multi-stage filtration technology</p>",
+            "cross_text": "<p>Basic filtration technology</p>",
             "checkbox": false
           }
         },
@@ -753,7 +753,7 @@
           "type": "compare",
           "settings": {
             "check_text": "<p>Customizable water flow</p>",
-            "cross_text": "<p>No customization options</p>",
+            "cross_text": "<p>Limited water flow options</p>",
             "checkbox": false
           }
         },
