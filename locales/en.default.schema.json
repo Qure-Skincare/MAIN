@@ -217,7 +217,8 @@
         "warranty": "Warranty",
         "qure-app": "Q-App",
         "troubleshooting": "Troubleshooting",
-        "gallery-sticky-video": "Gallery sticky video"
+        "gallery-sticky-video": "Gallery sticky video",
+        "disclaimer": "Disclaimer"
     },
     "blocks": {
         "block-card": {

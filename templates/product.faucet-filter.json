@@ -712,6 +712,12 @@
     "compare_nG8JYr": {
       "type": "compare",
       "blocks": {
+        "disclaimer_kVW4yb": {
+          "type": "disclaimer",
+          "settings": {
+            "text": "*Based on laboratory testing under controlled conditions. Performance may vary depending on water quality and usage."
+          }
+        },
         "heading_Ci7DKC": {
           "type": "heading",
           "settings": {
@@ -761,6 +767,7 @@
         }
       },
       "block_order": [
+        "disclaimer_kVW4yb",
         "heading_Ci7DKC",
         "compare_tBYGUE",
         "compare_hmkkP6",
