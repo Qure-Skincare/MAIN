@@ -255,7 +255,7 @@
       "name": "t:sections.banner-with-text.name",
       "settings": {
         "heading": "Everything you need in one serum",
-        "text": "<p>Simplify your skincare routine, get <em>maximum results with minimal effort</em>.</p><p>Packed with <em>clinically backed ingredients</em> like Argireline® Peptides, Retinol, Bakuchiol, Niacinamide, Hyaluronic Acid, Vitamin C, Vitamin E, Ferulic Acid. The All-In-One Serum hydrates, brightens, smooths look of fine lines in one easy step.</p><p>Vegan and cruelty-free. Free from fragrance, parabens, and PEG.</p>",
+        "text": "<p>Simplify your skincare routine, get <em>maximum results with minimal effort.</em><br/><br/>Packed with <em>clinically backed ingredients</em> like peptides, Retinol, Bakuchiol, Niacinamide, Hyaluronic Acid, Vitamin C, Vitamin E, Ferulic Acid. The All-In-One Serum hydrates, brightens, smooths look of fine lines in one easy step. <br/><br/>Vegan and cruelty-free. Free from fragrance, parabens, and PEG.</p>",
         "quote": "",
         "quote-mobile": "",
         "image_position": "left",
