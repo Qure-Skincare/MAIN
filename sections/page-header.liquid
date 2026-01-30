@@ -47,6 +47,12 @@
    </div>
 </div>
 
+<script>
+      document.addEventListener("DOMContentLoaded", function () {
+         loadScriptOnce('gallery-sticky-video', 'https://qureskincaredns.com/assets/js-new/gallery-sticky-video.js');
+      });
+   </script>
+
 {% schema %}
 {
     "name": "t:sections.page-header.name",
@@ -173,6 +179,18 @@
                     "type": "url",
                     "id": "button-url",
                     "label": "t:common.button-url"
+                }
+            ]
+        },
+        {
+            "type": "gallery-sticky-video",
+            "name": "t:common.gallery-sticky-video",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "video_url",
+                    "label": "t:common.video-url"
                 }
             ]
         }
