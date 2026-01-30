@@ -62,6 +62,20 @@
         </div>
         <!-- Thumbnails End-->
     {% endif %}
+    {% for block in section.blocks %}
+        {% if block.type == 'gallery-sticky-video' %}
+            <div class="gallery-sticky-video">
+                {% if block.settings.video_url != blank %}
+                    <video loop preload="metadata" playsinline="true">
+                        <source src="{{ block.settings.video_url }}" type="video/mp4" />
+                    </video>
+                {% endif %}
+                <div class="gallery-sticky-video__close">
+                    <i class="e-icon e-icon-cross"></i>
+                </div>
+            </div>
+        {% endif %}
+    {% endfor %}
 </slide-with-thumbs>
 
 <!-- Reusable Wistia Modal (outside slider) -->
