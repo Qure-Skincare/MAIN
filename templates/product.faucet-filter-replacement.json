@@ -264,21 +264,21 @@
           "type": "value",
           "settings": {
             "text": "<p>noticed less dryness after 4 weeks</p>",
-            "value": "83%"
+            "value": "80%"
           }
         },
         "value_NVgzVM": {
           "type": "value",
           "settings": {
-            "text": "<p>reported reduced tightness after filtered water wash</p>",
-            "value": "77%"
+            "text": "<p>reported feeling reduced tightness after filtered water wash</p>",
+            "value": "76%"
           }
         },
         "value_64bc7d": {
           "type": "value",
           "settings": {
             "text": "<p>of participants wouldn’t go back to regular tap water</p>",
-            "value": "97%"
+            "value": "96%"
           }
         }
       },
@@ -289,8 +289,8 @@
       ],
       "name": "t:sections.improve-skin-hydration.name",
       "settings": {
-        "heading": "Clinically proven to improve skin hydration in just 4 weeks",
-        "text": "An independent user study with 30 participants, validated by certified third-party skin hydration testing, showed visible improvements in skin hydration and wrinkle appearance after just 4 weeks of using the Qure Faucet Filter daily.",
+        "heading": "Measured improvement in skin hydration after just 4 weeks",
+        "text": "An independent user study with 30 participants, supported by third-party skin hydration measurements, showed improvements in measured skin hydration after 4 weeks of daily use of the Qure Faucet Filter.",
         "sub_text": "",
         "image_before": "shopify://shop_images/graph_before-1.webp",
         "image_after": "shopify://shop_images/graph_after-1.webp",
