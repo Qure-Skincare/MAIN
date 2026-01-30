@@ -121,24 +121,6 @@
             "preselected": false
           }
         },
-        "product_NEgEkN": {
-          "type": "product",
-          "settings": {
-            "product": "micro-infusion-3-month-bundle-for-dark-spots",
-            "product_variant_id": 0,
-            "product_selling_plan": 0,
-            "preselected": false,
-            "heading": "3 Month Supply",
-            "subheading": "(6 Treatments)",
-            "image": "shopify://shop_images/3m_dark_spot.png",
-            "soldout": false,
-            "preorder": false,
-            "preorder_text": "",
-            "preorder_date_soldout": "",
-            "preorder_date_reserved": "",
-            "preorder_percent": 55
-          }
-        },
         "product_gbPf3J": {
           "type": "product",
           "settings": {
@@ -154,6 +136,24 @@
             "preorder_text": "",
             "preorder_date_soldout": "27 July",
             "preorder_date_reserved": "15 july",
+            "preorder_percent": 55
+          }
+        },
+        "product_NEgEkN": {
+          "type": "product",
+          "settings": {
+            "product": "micro-infusion-3-month-bundle-for-dark-spots",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "preselected": false,
+            "heading": "3 Month Supply",
+            "subheading": "(6 Treatments)",
+            "image": "shopify://shop_images/3m_dark_spot.png",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
             "preorder_percent": 55
           }
         },
@@ -314,8 +314,8 @@
         "nextships_4xp7uM",
         "type_hHPdgJ",
         "product_type_QKQhNr",
-        "product_NEgEkN",
         "product_gbPf3J",
+        "product_NEgEkN",
         "product_RBCPe8",
         "type_aJwQ9q",
         "product_type_VLXcAn",
