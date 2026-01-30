@@ -142,12 +142,12 @@
         "product_gbPf3J": {
           "type": "product",
           "settings": {
-            "product": "micro-infusion-2-month-bundle-for-dark-spots",
+            "product": "micro-infusion-6-month-bundle-for-dark-spots",
             "product_variant_id": 0,
             "product_selling_plan": 0,
             "preselected": true,
-            "heading": "2 Month Supply",
-            "subheading": "(4 Treatments)",
+            "heading": "6 Month Supply",
+            "subheading": "(12 Treatments)",
             "image": "shopify://shop_images/Group_1000008549_7.png",
             "soldout": false,
             "preorder": false,
