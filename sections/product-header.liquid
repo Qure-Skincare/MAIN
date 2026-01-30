@@ -61,6 +61,8 @@
         loadScriptOnce('main-slider', 'https://qureskincaredns.com/assets/js/main-slider.js');
         loadScriptOnce('youtube-popup', 'https://qureskincaredns.com/assets/js/yt-popup.js');
         loadScriptOnce('slider-with-thumb', 'https://qureskincaredns.com/assets/js/slider-with-thumb.js');
+        loadScriptOnce('sale-countdown', 'https://qureskincaredns.com/sections/isolated/targeted-patches/section-targeted-patches.js');
+        loadScriptOnce('gallery-sticky-video', 'https://qureskincaredns.com/assets/js-new/gallery-sticky-video.js');
     });
 </script>
 
@@ -278,6 +280,18 @@
                     "type": "text",
                     "id": "date_reserved",
                     "label": "t:common.reserved"
+                }
+            ]
+        },
+        {
+            "type": "gallery-sticky-video",
+            "name": "t:common.gallery-sticky-video",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "video_url",
+                    "label": "t:common.video-url"
                 }
             ]
         }

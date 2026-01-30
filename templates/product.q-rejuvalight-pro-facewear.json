@@ -23,6 +23,12 @@
     "product_header_V3N3T8": {
       "type": "product-header",
       "blocks": {
+        "gallery_sticky_video_ty3KMw": {
+          "type": "gallery-sticky-video",
+          "settings": {
+            "video_url": "https://embed-ssl.wistia.com/deliveries/8f6d91b28ba7df92bcbcb43c882f0bf62e778bc5.bin?disposition=attachment&filename=led-mask-pdp-video.mp4"
+          }
+        },
         "black_friday_discount_A12": {
           "type": "black-friday-discount",
           "disabled": true,
@@ -116,6 +122,7 @@
         }
       },
       "block_order": [
+        "gallery_sticky_video_ty3KMw",
         "black_friday_discount_A12",
         "price_A11",
         "description_A10",

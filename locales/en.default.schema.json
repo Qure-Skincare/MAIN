@@ -216,7 +216,8 @@
         "billing-payment": "Billing & Payments",
         "warranty": "Warranty",
         "qure-app": "Q-App",
-        "troubleshooting": "Troubleshooting"
+        "troubleshooting": "Troubleshooting",
+        "gallery-sticky-video": "Gallery sticky video"
     },
     "blocks": {
         "block-card": {
