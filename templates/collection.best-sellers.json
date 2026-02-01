@@ -25,6 +25,7 @@
     },
     "n_hero_banner_DxPjy7": {
       "type": "n_hero-banner",
+      "disabled": true,
       "name": "t:sections.n_hero-banner.name",
       "settings": {
         "use_own_file": true,
@@ -48,7 +49,6 @@
     },
     "page_banner_zUyTB8": {
       "type": "page-banner",
-      "disabled": true,
       "name": "t:sections.page-banner.name",
       "settings": {
         "heading": "Shop our best sellers",
