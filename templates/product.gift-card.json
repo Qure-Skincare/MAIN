@@ -76,6 +76,8 @@
             "product": "qure-gift-card",
             "product_variant_id": 44226018902255,
             "product_selling_plan": 0,
+            "popular": false,
+            "best": false,
             "preselected": true,
             "heading": "50$ Gift Card",
             "subheading": "",
@@ -94,6 +96,8 @@
             "product": "qure-gift-card",
             "product_variant_id": 44226018967791,
             "product_selling_plan": 0,
+            "popular": false,
+            "best": false,
             "preselected": false,
             "heading": "100$ Gift Card",
             "subheading": "",
@@ -112,6 +116,8 @@
             "product": "qure-gift-card",
             "product_variant_id": 44226019000559,
             "product_selling_plan": 0,
+            "popular": false,
+            "best": false,
             "preselected": false,
             "heading": "150$ Gift Card",
             "subheading": "",
@@ -130,6 +136,8 @@
             "product": "qure-gift-card",
             "product_variant_id": 44226019033327,
             "product_selling_plan": 0,
+            "popular": false,
+            "best": false,
             "preselected": false,
             "heading": "200$ Gift Card",
             "subheading": "",
@@ -148,6 +156,8 @@
             "product": "qure-gift-card",
             "product_variant_id": 44318872961263,
             "product_selling_plan": 0,
+            "popular": false,
+            "best": false,
             "preselected": false,
             "heading": "300$ Gift Card",
             "subheading": "",
@@ -240,7 +250,7 @@
             "product_url": "#",
             "product_heading": "Ellie uses...",
             "product_text": "Micro-Infusion Facial System",
-            "product_image": "shopify://shop_images/micro-infusion-facial-system_f0e75ccc-2fd2-48d6-aea7-fe662896adaa.webp"
+            "product_image": "shopify://shop_images/pdp_mi_1_month_dsw.webp"
           }
         },
         "slider_xqHC8P": {
@@ -268,7 +278,7 @@
             "product_url": "#",
             "product_heading": "Jennifer uses...",
             "product_text": "Micro-Infusion Facial System",
-            "product_image": "shopify://shop_images/micro-infusion-facial-system_f0e75ccc-2fd2-48d6-aea7-fe662896adaa.webp"
+            "product_image": "shopify://shop_images/pdp_mi_1_month_dsw.webp"
           }
         }
       },
