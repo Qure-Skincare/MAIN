@@ -182,6 +182,14 @@
             "text": "<h6>Step 7</h6><p>Carefully unscrew the needle head, put the cap back on, and dispose of the used needle head. Each one is single-use only.</p><p>[note_green]<strong>Tip:</strong> Do not reuse needle heads - even if it looks clean. It is designed for one treatment only.[/note]</p>"
           }
         },
+        "step_by_step_HYnXRq": {
+          "type": "step_by_step",
+          "settings": {
+            "modifier": "text_with_image",
+            "image": "shopify://shop_images/Layer_x0020_1.svg",
+            "text": "<p>Treatment Stamping Face Map Guide</p>"
+          }
+        },
         "wistia_video_yTdh9R": {
           "type": "wistia_video",
           "settings": {
@@ -207,6 +215,7 @@
         "step_by_step_jnfmDm",
         "step_by_step_QtBTaD",
         "step_by_step_DVFgC6",
+        "step_by_step_HYnXRq",
         "wistia_video_yTdh9R",
         "quote_Updmkd"
       ],
