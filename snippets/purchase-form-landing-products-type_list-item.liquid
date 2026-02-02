@@ -65,6 +65,10 @@
                                     <div class="vp-best-value">{{ 'purchase-form.settings.popular' | t }}</div>
                                 {% endif %}
 
+                                {% if block.settings.best == true %}
+                                    <div class="vp-best-value vp-best-value-black">{{ 'purchase-form.settings.best-value' | t }}</div>
+                                {% endif %}
+
                                 <input type="radio" class="variant__input" name="monthlyPlan_{{ section.settings.form_name }}" id="{% if section.settings.hide_types %}{{ product_title_tag }}{% else %}{{ section.id }}-{{ product_title_tag }}{% endif %}" {% if block.settings.preselected == true %} checked{% endif %}>
                                 <label for="{% if section.settings.hide_types %}{{ product_title_tag }}{% else %}{{ section.id }}-{{ product_title_tag }}{% endif %}" class="qure__variant-box">
                                     <div class="bf-buy-Wrapper">
@@ -96,8 +100,10 @@
                                             <div class="vp-price">
                                                 {% if product_before_price != blank %}
                                                     <span class="vp-price-sale regular_price igComparePrice">{{ product_before_price }}</span>
+                                                    <span class="vp-price-reg sale_price igPrice">{{ product_sale_price }}</span>
+                                                {% else %}
+                                                    <span class="sale_price igPrice">{{ product_sale_price }}</span>
                                                 {% endif %}
-                                                <span class="vp-price-reg sale_price igPrice">{{ product_sale_price }}</span>
                                             </div>
                                             {% if product_discount != blank %}
                                                 <div class="text-end off-value">{{ product_discount }}% {{ 'purchase-form.settings.off' | t }}</div>

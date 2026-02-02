@@ -10,6 +10,7 @@
  
  {
     "common": {
+        "best-value": "Best value",
         "results": "Results",
         "popular": "Popular",
         "new": "New",
