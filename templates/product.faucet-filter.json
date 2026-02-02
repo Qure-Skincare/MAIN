@@ -460,6 +460,7 @@
           "settings": {
             "heading": "Carbon Fiber Layer",
             "text": "<p>Removes up to 99% of chlorine which can reduce dry and irritated feeling skin leaving skin and hair looking healthier.</p>",
+            "image_with_text": "shopify://shop_images/carbon.svg",
             "image": "shopify://shop_images/filter_cartiage1.webp"
           }
         },
@@ -468,6 +469,7 @@
           "settings": {
             "heading": "PP Filter",
             "text": "<p>Captures larger particles such as dirt, rust, and sediment, providing the first stage of filtration.</p>",
+            "image_with_text": "shopify://shop_images/KDF.svg",
             "image": "shopify://shop_images/filter_cartiage2.webp"
           }
         },
@@ -476,6 +478,7 @@
           "settings": {
             "heading": "NOK Ultra Filter",
             "text": "<p>Japan-made, top-range ultra-filter designed to reduce certain microorganisms and other microscopic particles through physical filtration, with filtration media rated to capture particles as small as 0.01 μm.*<br/><br/>*Based on laboratory testing. Performance may vary depending on water quality and usage.</p>",
+            "image_with_text": "shopify://shop_images/FOF_61e34818-4b9e-47f1-b015-89cd9d8d41e9.svg",
             "image": "shopify://shop_images/filter_cartiage3.webp"
           }
         },
