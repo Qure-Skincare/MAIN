@@ -754,10 +754,58 @@
     },
     "why_it_works_QQ4dHH": {
       "type": "why-it-works",
+      "blocks": {
+        "accordion_g4KTGN": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Carbon Fiber Layer",
+            "text": "<p>Removes up to 99% of chlorine, reducing skin irritation and dryness, leaving your skin and hair healthier.</p>",
+            "image_with_text": "shopify://shop_images/carbon.svg",
+            "image": "shopify://shop_images/shower_point1.webp"
+          }
+        },
+        "accordion_Ymht98": {
+          "type": "accordion",
+          "settings": {
+            "heading": "KDF-55 Layer",
+            "text": "<p>Targets and removes heavy metals like lead and mercury, providing cleaner water for your shower.</p>",
+            "image_with_text": "shopify://shop_images/KDF.svg",
+            "image": "shopify://shop_images/shower_point2.webp"
+          }
+        },
+        "accordion_JW4kkT": {
+          "type": "accordion",
+          "settings": {
+            "heading": "FOF (Filter of Future)",
+            "text": "<p>Helps with descaling by preventing the buildup of hard water minerals, reducing scale formation and improving water flow.</p>",
+            "image_with_text": "shopify://shop_images/FOF_61e34818-4b9e-47f1-b015-89cd9d8d41e9.svg",
+            "image": "shopify://shop_images/shower_point3.webp"
+          }
+        },
+        "items_wgKNPe": {
+          "type": "items",
+          "settings": {
+            "text_item_1": "Carbon Filter Layer",
+            "image_1": "shopify://shop_images/shower_point1.webp",
+            "text_item_2": "KDF-55 Layer",
+            "image_2": "shopify://shop_images/shower_point2.webp",
+            "text_item_3": "Filter of Future",
+            "image_3": "shopify://shop_images/shower_point3.webp",
+            "text_item_4": ""
+          }
+        }
+      },
+      "block_order": [
+        "accordion_g4KTGN",
+        "accordion_Ymht98",
+        "accordion_JW4kkT",
+        "items_wgKNPe"
+      ],
       "name": "t:sections.why-it-works.name",
       "settings": {
-        "heading": "",
-        "text": "",
+        "heading": "Why It Works",
+        "text": "<p>Our triple filtration technology filters the water to remove heavy metals and purify.</p>",
+        "image": "shopify://shop_images/shower_point0.webp",
         "checkbox": true
       }
     },
