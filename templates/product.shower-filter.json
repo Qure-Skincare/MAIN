@@ -26,6 +26,15 @@
             "section_id": "purchase-form-landing"
           }
         },
+        "results": {
+          "type": "results",
+          "settings": {
+            "heading": "Clinically Proven Results",
+            "text1": "agree skin feels hydrated",
+            "text2": "agree skin feels softer",
+            "text3": "agree hair feels less frizzy"
+          }
+        },
         "nextships_nN4CpM": {
           "type": "nextships",
           "disabled": true,
@@ -76,12 +85,16 @@
         "black_friday_discount_eUhwh7",
         "description_9VBwaX",
         "section_A0",
+        "results",
         "nextships_nN4CpM",
         "jumpto_jzQqUH",
         "jumpto_RKQfLC",
         "jumpto_7JzPHz",
         "jumpto_EY6mqw",
         "jumpto_YV6XMK"
+      ],
+      "custom_css": [
+        ".product-page-buy-button-bottom {display: none;}"
       ],
       "name": "t:sections.product-header.name",
       "settings": {
@@ -96,6 +109,251 @@
     },
     "purchase-form-landing": {
       "type": "purchase-form-landing",
+      "blocks": {
+        "nextships_4xp7uM": {
+          "type": "nextships",
+          "settings": {
+            "date": "23rd January",
+            "percent": 55,
+            "date_soldout": "7 January",
+            "date_reserved": "8 January"
+          }
+        },
+        "type_hHPdgJ": {
+          "type": "type",
+          "settings": {}
+        },
+        "product_type_QKQhNr": {
+          "type": "product_type",
+          "settings": {
+            "heading": "White",
+            "image": "shopify://shop_images/variant-white-1.webp",
+            "preselected": false
+          }
+        },
+        "product_NEgEkN": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "product_variant_id": 45909763522799,
+            "product_selling_plan": 0,
+            "preselected": false,
+            "heading": "3 Months Supply",
+            "subheading": "(Showerhead + 1 Filter)",
+            "image": "",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        },
+        "product_gbPf3J": {
+          "type": "product",
+          "settings": {
+            "product": "shower-bundle-6-month-white",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "preselected": true,
+            "popular": true,
+            "heading": "6 Months Supply",
+            "subheading": "(Showerhead + 2 Filter)",
+            "image": "",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "27 July",
+            "preorder_date_reserved": "15 july",
+            "preorder_percent": 55
+          }
+        },
+        "product_RBCPe8": {
+          "type": "product",
+          "settings": {
+            "product": "shower-black-12-month-bundle-copy",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "preselected": false,
+            "popular": false,
+            "best": true,
+            "heading": "12 Months Supply",
+            "subheading": "(Showerhead + 4 Filter)",
+            "image": "",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        },
+        "type_aJwQ9q": {
+          "type": "type",
+          "settings": {}
+        },
+        "product_type_VLXcAn": {
+          "type": "product_type",
+          "settings": {
+            "heading": "Black",
+            "image": "shopify://shop_images/variant-black-1.webp",
+            "preselected": true
+          }
+        },
+        "product_EKAAzA": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "product_variant_id": 45909763490031,
+            "product_selling_plan": 0,
+            "preselected": true,
+            "heading": "3 Months Supply",
+            "subheading": "(Showerhead + 1 Filter)",
+            "image": "",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        },
+        "product_nyJ9n7": {
+          "type": "product",
+          "settings": {
+            "product": "shower-white-6-month-bundle-copy",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "preselected": false,
+            "popular": true,
+            "heading": "6 Months Supply",
+            "subheading": "(Showerhead + 2 Filter)",
+            "image": "",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        },
+        "product_eiY89h": {
+          "type": "product",
+          "settings": {
+            "product": "shower-silver-12-month-bundle-copy",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "preselected": false,
+            "popular": false,
+            "best": true,
+            "heading": "12 Months Supply",
+            "subheading": "(Showerhead + 4 Filter)",
+            "image": "",
+            "soldout": true,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        },
+        "type_yDwWmt": {
+          "type": "type",
+          "settings": {}
+        },
+        "product_type_YrPQrV": {
+          "type": "product_type",
+          "settings": {
+            "heading": "Silver",
+            "image": "shopify://shop_images/variant-silver-1.webp",
+            "preselected": false
+          }
+        },
+        "product_hD69Aq": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "product_variant_id": 46544976969967,
+            "product_selling_plan": 0,
+            "preselected": true,
+            "heading": "3 Months Supply",
+            "subheading": "(Showerhead + 1 Filter)",
+            "image": "",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        },
+        "product_DBd4ef": {
+          "type": "product",
+          "settings": {
+            "product": "shower-white-6-month-bundle-copy-1",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "preselected": false,
+            "popular": true,
+            "heading": "6 Months Supply",
+            "subheading": "(Showerhead + 2 Filter)",
+            "image": "",
+            "soldout": true,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        },
+        "product_Xf8A6C": {
+          "type": "product",
+          "settings": {
+            "product": "shower-silver-6-month-bundle-copy",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "preselected": false,
+            "popular": false,
+            "best": true,
+            "heading": "12 Months Supply",
+            "subheading": "(Showerhead + 4 Filter)",
+            "image": "",
+            "soldout": true,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        }
+      },
+      "block_order": [
+        "nextships_4xp7uM",
+        "type_hHPdgJ",
+        "product_type_QKQhNr",
+        "product_NEgEkN",
+        "product_gbPf3J",
+        "product_RBCPe8",
+        "type_aJwQ9q",
+        "product_type_VLXcAn",
+        "product_EKAAzA",
+        "product_nyJ9n7",
+        "product_eiY89h",
+        "type_yDwWmt",
+        "product_type_YrPQrV",
+        "product_hD69Aq",
+        "product_DBd4ef",
+        "product_Xf8A6C"
+      ],
+      "settings": {
+        "form_name": "purchase-form-landing",
+        "hide_types": false,
+        "type": "list"
+      }
+    },
+    "purchase-form-landing-8kjhjka": {
+      "type": "purchase-form-landing",
+      "disabled": true,
       "blocks": {
         "subscription_6xp1uL": {
           "type": "subscription",
@@ -892,6 +1150,7 @@
     },
     "sticky_cta_ggPFXx": {
       "type": "sticky-button-variants",
+      "disabled": true,
       "blocks": {
         "variant_43xxGi": {
           "type": "variant",
@@ -932,6 +1191,7 @@
   "order": [
     "product_header_prNYyf",
     "purchase-form-landing",
+    "purchase-form-landing-8kjhjka",
     "information_about_water_yAtd3i",
     "banner_with_text_XJrLnE",
     "improve_skin_hydration_q6fqbg",
