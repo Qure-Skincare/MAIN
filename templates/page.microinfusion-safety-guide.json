@@ -191,12 +191,6 @@
             "label_text": "Watch: How To Use"
           }
         },
-        "image_qBCg4K": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Frame_1073714991.png"
-          }
-        },
         "quote_Updmkd": {
           "type": "quote",
           "settings": {
@@ -214,7 +208,6 @@
         "step_by_step_QtBTaD",
         "step_by_step_DVFgC6",
         "wistia_video_yTdh9R",
-        "image_qBCg4K",
         "quote_Updmkd"
       ],
       "name": "t:sections.n_guide-content-step.name",
