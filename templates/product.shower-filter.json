@@ -553,15 +553,15 @@
         "value_TD9f3V": {
           "type": "value",
           "settings": {
-            "text": "<p>say fewer skin irritations (redness, eczema, acne)</p>",
-            "value": "80%"
+            "text": "<p>noticed feeling reduced scalp dryness, irritation, or flakiness</p>",
+            "value": "83%"
           }
         },
         "value_pxXFtg": {
           "type": "value",
           "settings": {
-            "text": "<p>noticed reduced scalp dryness, irritation, or flakiness</p>",
-            "value": "83%"
+            "text": "<p>reported fewer signs of skin irritation including redness or breakouts</p>",
+            "value": "80%"
           }
         }
       },
@@ -572,8 +572,8 @@
       ],
       "name": "t:sections.improve-skin-hydration.name",
       "settings": {
-        "heading": "Clinically proven to improve skin and scalp hydration in just 8 weeks",
-        "text": "In an independent user study, the Qure Shower Filter demonstrated significant visible improvements after just two months of daily filtered showers.  Tested by an independent lab, compiled by Regulatory Consultant",
+        "heading": "Improve skin and scalp hydration in just 8 weeks",
+        "text": "The Qure Shower Filter demonstrated visible improvements after two months of daily filtered showers.",
         "sub_text": "",
         "image_before": "shopify://shop_images/graph_before.webp",
         "image_after": "shopify://shop_images/Untitled_design_31.png",
