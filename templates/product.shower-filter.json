@@ -519,7 +519,7 @@
       "name": "t:sections.information-about-water.name",
       "settings": {
         "heading": "Do you know what’s in your water?",
-        "text": "<p>Research has shown tap water is contaminated with over 320* chemicals that your skin is absorbing daily. These micro-contaminants in water can clog pores, dry out and irritate sensitive skin.</p>",
+        "text": "<p>Research has shown that tap water can contain over 320* different chemicals that come into contact with your skin daily. These micro-contaminants in water may contribute to clogged pores, dryness, and irritation, especially for sensitive skin.</p>",
         "button_label": "",
         "button_url": ""
       }
@@ -529,7 +529,7 @@
       "name": "t:sections.banner-with-text.name",
       "settings": {
         "heading": "Meet the Qure Shower Filter",
-        "text": "<p>At Qure, we believe great skin starts at the source – and that’s the water you use every day. The Qure Shower Filter helps <em>remove sneaky chemicals and minerals</em> that live in your water and linger on your skin. </p>",
+        "text": "<p>At Qure, we believe great skin starts at the source—and that’s the water you use every day. The Qure Shower Filter helps <em>reduce certain chemicals and minerals</em> found in tap water that can linger on your skin after showering.</p>",
         "quote": "",
         "quote-mobile": "",
         "image_position": "left",
