@@ -248,7 +248,7 @@
           "type": "image_with_text",
           "settings": {
             "image_position": "left",
-            "image": "shopify://shop_images/white_serum.webp",
+            "image": "shopify://shop_images/MI_DS_1.png",
             "text": "<p><strong>For Dark Spots</strong></p><p>Smoothes and evens skin to promote a brighter looking complexion.</p>"
           }
         },
@@ -256,7 +256,7 @@
           "type": "image_with_text",
           "settings": {
             "image_position": "left",
-            "image": "shopify://shop_images/blue_serum.webp",
+            "image": "shopify://shop_images/MI_DS_1_1.png",
             "text": "<p><strong>For Wrinkles</strong></p><p>Helps to plump skin, reducing the look of fine lines and wrinkles.</p>"
           }
         },
