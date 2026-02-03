@@ -136,6 +136,8 @@
             "product": "all-in-one-face-serum-6-month-bundle",
             "product_variant_id": 0,
             "product_selling_plan": 0,
+            "popular": false,
+            "best": false,
             "preselected": true,
             "heading": "6 Months",
             "subheading": "(3 bottles)",
@@ -154,6 +156,8 @@
             "product": "all-in-one-face-serum-4-month-bundle",
             "product_variant_id": 0,
             "product_selling_plan": 0,
+            "popular": false,
+            "best": false,
             "preselected": false,
             "heading": "4 Months",
             "subheading": "(2 bottles)",
@@ -172,6 +176,8 @@
             "product": "face-serum",
             "product_variant_id": 0,
             "product_selling_plan": 0,
+            "popular": false,
+            "best": false,
             "preselected": false,
             "heading": "2 Months",
             "subheading": "(1 bottle)",
@@ -820,7 +826,7 @@
       "name": "t:sections.sticky-button-variants.name",
       "settings": {
         "heading": "",
-        "text": "580 Units Reserved in last 48 hours",
+        "text": "275 Units Reserved in last 48 hours",
         "button-label": "",
         "button-url": ""
       }
