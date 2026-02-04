@@ -30,4 +30,9 @@
     {% elsif page.metafields.custom.key_benefits != blank %}
         {% render 'product-page-collapsed-item' input: page.metafields.custom.what_s_included, index: 'fourth', title: 'What’s Included' %}
     {% endif %}
+    {% if product.metafields.custom.technical_specifications != blank %}
+        {% render 'product-page-collapsed-item' input: product.metafields.custom.technical_specifications, index: 'five', title: 'Technical Specifications' %}
+    {% elsif page.metafields.custom.technical_specifications != blank %}
+        {% render 'product-page-collapsed-item' input: page.metafields.custom.technical_specifications, index: 'five', title: 'Technical Specifications' %}
+    {% endif %}
 </div>
