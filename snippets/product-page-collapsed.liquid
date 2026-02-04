@@ -35,4 +35,9 @@
     {% elsif page.metafields.custom.technical_specifications != blank %}
         {% render 'product-page-collapsed-item' input: page.metafields.custom.technical_specifications, index: 'five', title: 'Technical Specifications' %}
     {% endif %}
+    {% if product.metafields.custom.full_ingredient_list != blank %}
+        {% render 'product-page-collapsed-item' input: product.metafields.custom.full_ingredient_list, index: 'six', title: 'Full ingredient list' %}
+    {% elsif page.metafields.custom.full_ingredient_list != blank %}
+        {% render 'product-page-collapsed-item' input: page.metafields.custom.full_ingredient_list, index: 'six', title: 'Full ingredient list' %}
+    {% endif %}
 </div>
