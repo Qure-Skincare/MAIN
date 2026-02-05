@@ -757,6 +757,19 @@
             "product_heading": "",
             "product_text": ""
           }
+        },
+        "slider_JGNbxw": {
+          "type": "slider",
+          "settings": {
+            "heading": "Reduces acne scars",
+            "text": "<p>“I was skeptical, but wanted to try this out after seeing an ad.  I started with the dark spots serum and have also incorporated some of the wrinkle serum.  I wish I had taken a before picture. The pictures attached are after 3 and 10 treatments. You can really see how it softened the scars. It really works!”</p>",
+            "compare_image": "shopify://shop_images/Image_33_f5ab91d1-4b56-4b96-9089-b9d7ab58aff7.png",
+            "country_image": "shopify://shop_images/usa_flag.svg",
+            "username": "<p>Janis S.</p>",
+            "product_url": "",
+            "product_heading": "",
+            "product_text": ""
+          }
         }
       },
       "block_order": [
@@ -776,7 +789,8 @@
         "slider_6tprhW",
         "slider_9NRFNC",
         "slider_NW88g8",
-        "slider_VMhi4U"
+        "slider_VMhi4U",
+        "slider_JGNbxw"
       ],
       "name": "t:sections.trusted-reviews.name",
       "settings": {
