@@ -221,7 +221,14 @@
         "qure-app": "Q-App",
         "troubleshooting": "Troubleshooting",
         "gallery-sticky-video": "Gallery sticky video",
-        "disclaimer": "Disclaimer"
+        "disclaimer": "Disclaimer",
+        "tab": "Tab",
+        "tab-content": "Tab content",
+        "tab-list": "Tab list",
+        "tab-slider": "Tab slider",
+        "percent-value-style": "Percent value style",
+        "circle": "Circle",
+        "line": "Line"
     },
     "blocks": {
         "block-card": {
@@ -348,6 +355,9 @@
                     "secure-strap" : "Secure straps"
                 }
             }
+        },
+        "n_product-result": {
+            "name": "Product results"
         },
         "collection": {
             "name": "Collection",

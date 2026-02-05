@@ -1,0 +1,314 @@
+{% doc %}
+    Renders a numbered steps section for sunil chest pdp page.
+{% enddoc %}
+
+
+<!-- PRODUCT RESULTS -->
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/product-results/product-results.css" />
+{% endif %}
+<section class="product-results">
+
+    {% assign tab_blocks = section.blocks | where: "type", "tab" %}
+    {% assign tab_content_blocks = section.blocks | where: "type", "tab_content" %}
+    {% assign tab_slider_blocks = section.blocks | where: "type", "tab_slider" %}
+    {% assign percent_value_blocks = section.blocks | where: "type", "percent_value" %}
+    {% assign disclaimer_blocks = section.blocks | where: "type", "disclaimer" %}
+    {% assign image_blocks = section.blocks | where: "type", "image" %}
+
+    <div class="container">
+        <div class="product-results__header">
+            {% if section.settings.heading != blank %}
+                {{ section.settings.heading }}
+            {% endif %}
+            {% if tab_blocks.size > 0 %}
+                <ul class="e-pill-tabs" role="tablist">
+                    {% for tab_block in tab_blocks %}
+                        <li>
+                            <button
+                                {% if tab_block.settings.active %}
+                                    class="active"
+                                {% endif %}
+                                type="button"
+                                data-bs-toggle="tab"
+                                data-bs-target="#{{ tab_block.settings.heading | strip | handleize }}"
+                            >
+                                {{ tab_block.settings.heading }}
+                            </button>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        </div>
+        {% for tab_block in tab_blocks %}
+            {% assign current_tab_id = tab_block.settings.heading | strip | handleize %}
+            <div class="product-results__content{% if tab_block.settings.active %} show{% endif %}" id="{{ current_tab_id }}">
+                {% assign has_sliders_for_tab = false %}
+                {% for block in section.blocks %}
+                    {% if block.type == "tab_slider" and block.settings.section_id != blank %}
+                        {% assign block_tab_id = block.settings.section_id | strip | handleize %}
+                        {% if block_tab_id == current_tab_id %}
+                            {% assign has_sliders_for_tab = true %}
+                            {% break %}
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+                {% if has_sliders_for_tab %}
+                    <div
+                        class="c-swiper"
+                        data-swiper='{
+                            "slidesPerView": 1,
+                            "spaceBetween": 16,
+                            "loop": false,
+                            "pagination": {
+                                "el": ".c-swiper-pagination",
+                                "type": "custom"
+                            },
+                            "navigation": {
+                                "prevEl": ".c-swiper-button-prev",
+                                "nextEl": ".c-swiper-button-next"
+                            }
+                        }'
+                    >
+                        <div class="swiper-wrapper">
+                            {% for block in section.blocks %}
+                                {% if block.type == "tab_slider" and block.settings.section_id != blank %}
+                                    {% assign block_tab_id = block.settings.section_id | strip | handleize %}
+                                    {% if block_tab_id == current_tab_id %}
+                                        <div class="swiper-slide">
+                                            <div class="c-visual-compare-card">
+                                                {% if block.settings.image != blank %}
+                                                    <picture>
+                                                        <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                                    </picture>
+                                                {% endif %}
+                                                {% if block.settings.text != blank %}
+                                                    <article>
+                                                        {{ block.settings.text | replace: '<p>[span]', '<span>' | replace: '[/span]</p>', '</span>' }}
+                                                    </article>
+                                                {% endif %}
+                                            </div>
+                                        </div>
+                                    {% endif %}
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                        <div class="c-swiper-nav">
+                            <button class="c-swiper-button-prev"></button>
+                            <div class="c-swiper-pagination"></div>
+                            <button class="c-swiper-button-next"></button>
+                        </div>
+                    </div>
+                {% endif %}
+                {% for block in section.blocks %}
+                    {% if block.type == "image" and block.settings.section_id != blank %}
+                        {% assign block_tab_id = block.settings.section_id | strip | handleize %}
+                        {% if block_tab_id == current_tab_id %}
+                            <picture>
+                                <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                            </picture>
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+                <article>
+                    {% for block in section.blocks %}
+                        {% if block.type == "tab_content" and block.settings.section_id != blank %}
+                            {% assign block_tab_id = block.settings.section_id | strip | handleize %}
+                            {% if block_tab_id == current_tab_id %}
+                                {{ block.settings.text }}
+                            {% endif %}
+                        {% endif %}
+                    {% endfor %}
+                    <ul class="stats-list">
+                        {% for block in section.blocks %}
+                            {% if block.type == "percent_value" and block.settings.section_id != blank %}
+                                {% assign block_tab_id = block.settings.section_id | strip | handleize %}
+                                {% if block_tab_id == current_tab_id %}
+                                    {% if block.settings.percent_value_style == "circle" %}
+                                        <li>
+                                            {% if block.settings.percent_value != blank %}
+                                                <div class="e-circle-percent" style="--percent-value: {{ block.settings.percent_value }};"><span>{{ block.settings.percent_value }}%</span></div>
+                                            {% endif %}
+                                            {% if block.settings.text != blank %}
+                                                <span>{{ block.settings.text }}</span>
+                                            {% endif %}
+                                        </li>
+                                    {% elsif block.settings.percent_value_style == "line" %}
+                                        <li><i class="e-icon e-icon-top"></i> <strong>+{{ block.settings.percent_value }}%</strong> {{ block.settings.text }}</li>
+                                    {% endif %}
+                                {% endif %}
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                    {% for block in section.blocks %}
+                        {% if block.type == "disclaimer" and block.settings.section_id != blank %}
+                            {% assign block_tab_id = block.settings.section_id | strip | handleize %}
+                            {% if block_tab_id == current_tab_id %}
+                                <small>{{ block.settings.text }}</small>
+                            {% endif %}
+                        {% endif %}
+                    {% endfor %}
+                </article>
+            </div>
+        {% endfor %}
+    </div>
+</section>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        loadScriptOnce('swiper', 'https://qureskincaredns.com/assets/js-new/swiper.js');
+    });
+</script>
+<!-- PRODUCT RESULTS END -->
+
+{% schema %}
+{
+    "name": "t:sections.n_product-result.name",
+        "settings": [
+        {
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": false
+        },
+        {
+            "type": "richtext",
+            "id": "heading",
+            "label": "t:common.header"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "tab",
+            "name": "t:common.tab",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "t:common.header"
+                },
+                {
+                    "type": "checkbox",
+                    "id": "active",
+                    "label": "t:common.active",
+                    "default": false
+                }
+            ]
+        },
+        {
+            "type": "tab_content",
+            "name": "t:common.tab-content",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "section_id",
+                    "label": "t:common.section_id"
+                },
+                {
+                    "type": "richtext",
+                    "id": "text",
+                    "label": "t:common.text"
+                }
+            ]
+        },
+        {
+            "type": "tab_slider",
+            "name": "t:common.tab-slider",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "section_id",
+                    "label": "t:common.section_id"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                },
+                {
+                    "type": "richtext",
+                    "id": "text",
+                    "label": "t:common.text"
+                }
+            ]
+        },
+        {
+            "type": "percent_value",
+            "name": "t:common.percent-value",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "section_id",
+                    "label": "t:common.section_id"
+                },
+                {
+                    "type": "select",
+                    "id": "percent_value_style",
+                    "label": "t:common.percent-value-style",
+                    "default": "circle",
+                    "options": [
+                        {
+                            "value": "circle",
+                            "label": "t:common.circle"
+                        },
+                        {
+                            "value": "line",
+                            "label": "t:common.line"
+                        }
+                    ]
+                },
+                {
+                    "type": "range",
+                    "id": "percent_value",
+                    "label": "t:common.percent-value",
+                    "min": 0,
+                    "max": 100,
+                    "unit": "%",
+                    "default": 57
+                },
+                {
+                    "type": "text",
+                    "id": "text",
+                    "label": "t:common.text"
+                }
+            ]
+        },
+        {
+            "type": "disclaimer",
+            "name": "t:common.disclaimer",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "section_id",
+                    "label": "t:common.section_id"
+                },
+                {
+                    "type": "text",
+                    "id": "text",
+                    "label": "t:common.text"
+                }
+            ]
+        },
+        {
+            "type": "image",
+            "name": "t:common.image",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "section_id",
+                    "label": "t:common.section_id"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.n_product-result.name"
+        }
+    ]
+}
+{% endschema %}
