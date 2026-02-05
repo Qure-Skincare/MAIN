@@ -26,7 +26,7 @@
                     {% for tab_block in tab_blocks %}
                         <li>
                             <button
-                                {% if forloop.first %}
+                                {% if tab_block.settings.active %}
                                     class="active"
                                 {% endif %}
                                 type="button"
@@ -42,7 +42,7 @@
         </div>
         {% for tab_block in tab_blocks %}
             {% assign current_tab_id = tab_block.settings.heading | strip | handleize %}
-            <div class="product-results__content{% if forloop.first %} show{% endif %}" id="{{ current_tab_id }}">
+            <div class="product-results__content{% if tab_block.settings.active %} show{% endif %}" id="{{ current_tab_id }}">
                 {% assign has_sliders_for_tab = false %}
                 {% for block in section.blocks %}
                     {% if block.type == "tab_slider" and block.settings.section_id != blank %}
@@ -185,6 +185,12 @@
                     "type": "text",
                     "id": "heading",
                     "label": "t:common.header"
+                },
+                {
+                    "type": "checkbox",
+                    "id": "active",
+                    "label": "t:common.active",
+                    "default": false
                 }
             ]
         },

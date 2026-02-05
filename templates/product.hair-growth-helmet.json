@@ -294,7 +294,8 @@
         "tab_3fzpwb": {
           "type": "tab",
           "settings": {
-            "heading": "User Results"
+            "heading": "User Results",
+            "active": false
           }
         },
         "tab_content_NCAG4f": {
@@ -365,7 +366,8 @@
         "tab_tHeG6R": {
           "type": "tab",
           "settings": {
-            "heading": "Clinical Data"
+            "heading": "Clinical Data",
+            "active": true
           }
         },
         "tab_content_LQ7aRQ": {
