@@ -21,45 +21,54 @@
         <div class="how-compares__data" id="compare-data">
             <div class="how-compares__data-item" data-option="prof">
                 <div class="how-compares__data-content">
-                    <ul class="how-compares__parameters">
+                    <div class="how-compares__parameters">
+                        <ul>
+                            {% for block in section.blocks %}
+                                {% if block.type == 'text_prof' %}
+                                    <li>
+                                        {% if block.settings.description_1 != blank %}
+                                            <span>{{ block.settings.description_1 }}</span>
+                                        {% endif %}
+                                        {% if block.settings.heading_1 != blank %}
+                                            {{ block.settings.heading_1 }}
+                                        {% endif %}
+                                        {% if block.settings.text_1 != blank %}
+                                            {{ block.settings.text_1 }}
+                                        {% endif %}
+                                    </li>
+                                    <li>
+                                        {% if block.settings.description_2 != blank %}
+                                            <span>{{ block.settings.description_2 }}</span>
+                                        {% endif %}
+                                        {% if block.settings.heading_2 != blank %}
+                                            {{ block.settings.heading_2}}
+                                        {% endif %}
+                                        {% if block.settings.text_2 != blank %}
+                                            {{ block.settings.text_2 }}
+                                        {% endif %}
+                                    </li>
+                                    <li>
+                                        {% if block.settings.description_3 != blank %}
+                                            <span>{{ block.settings.description_3 }}</span>
+                                        {% endif %}
+                                        {% if block.settings.heading_3 != blank %}
+                                            {{ block.settings.heading_3 }}
+                                        {% endif %}
+                                        {% if block.settings.text_3 != blank %}
+                                            {{ block.settings.text_3 }}
+                                        {% endif %}
+                                    </li>
+                                {% endif %}
+                            {% endfor %}
+                        </ul>
                         {% for block in section.blocks %}
                             {% if block.type == 'text_prof' %}
-                                <li>
-                                    {% if block.settings.description_1 != blank %}
-                                        <span>{{ block.settings.description_1 }}</span>
-                                    {% endif %}
-                                    {% if block.settings.heading_1 != blank %}
-                                        {{ block.settings.heading_1 }}
-                                    {% endif %}
-                                    {% if block.settings.text_1 != blank %}
-                                        {{ block.settings.text_1 }}
-                                    {% endif %}
-                                </li>
-                                <li>
-                                    {% if block.settings.description_2 != blank %}
-                                        <span>{{ block.settings.description_2 }}</span>
-                                    {% endif %}
-                                    {% if block.settings.heading_2 != blank %}
-                                        {{ block.settings.heading_2}}
-                                    {% endif %}
-                                    {% if block.settings.text_2 != blank %}
-                                        {{ block.settings.text_2 }}
-                                    {% endif %}
-                                </li>
-                                <li>
-                                    {% if block.settings.description_3 != blank %}
-                                        <span>{{ block.settings.description_3 }}</span>
-                                    {% endif %}
-                                    {% if block.settings.heading_3 != blank %}
-                                        {{ block.settings.heading_3 }}
-                                    {% endif %}
-                                    {% if block.settings.text_3 != blank %}
-                                        {{ block.settings.text_3 }}
-                                    {% endif %}
-                                </li>
+                                {% if block.settings.disclaimer != blank %}
+                                    <small>{{ block.settings.disclaimer }}</small>
+                                {% endif %}
                             {% endif %}
                         {% endfor %}
-                    </ul>
+                    </div>
                     <div class="how-compares__table">
                         <div class="table-header">&nbsp;</div>
                         {% for block in section.blocks %}
@@ -181,45 +190,54 @@
             </div>
             <div class="how-compares__data-item" data-option="hair-growth" style="display: none;">
                 <div class="how-compares__data-content">
-                    <ul class="how-compares__parameters">
+                    <div class="how-compares__parameters">
+                        <ul>
+                            {% for block in section.blocks %}
+                                {% if block.type == 'text_hair_growth' %}
+                                    <li>
+                                        {% if block.settings.description_1 != blank %}
+                                            <span>{{ block.settings.description_1 }}</span>
+                                        {% endif %}
+                                        {% if block.settings.heading_1 != blank %}
+                                            {{ block.settings.heading_1 }}
+                                        {% endif %}
+                                        {% if block.settings.text_1 != blank %}
+                                            {{ block.settings.text_1 }}
+                                        {% endif %}
+                                    </li>
+                                    <li>
+                                        {% if block.settings.description_2 != blank %}
+                                            <span>{{ block.settings.description_2 }}</span>
+                                        {% endif %}
+                                        {% if block.settings.heading_2 != blank %}
+                                            {{ block.settings.heading_2}}
+                                        {% endif %}
+                                        {% if block.settings.text_2 != blank %}
+                                            {{ block.settings.text_2 }}
+                                        {% endif %}
+                                    </li>
+                                    <li>
+                                        {% if block.settings.description_3 != blank %}
+                                            <span>{{ block.settings.description_3 }}</span>
+                                        {% endif %}
+                                        {% if block.settings.heading_3 != blank %}
+                                            {{ block.settings.heading_3 }}
+                                        {% endif %}
+                                        {% if block.settings.text_3 != blank %}
+                                            {{ block.settings.text_3 }}
+                                        {% endif %}
+                                    </li>
+                                {% endif %}
+                            {% endfor %}
+                        </ul>
                         {% for block in section.blocks %}
                             {% if block.type == 'text_hair_growth' %}
-                                <li>
-                                    {% if block.settings.description_1 != blank %}
-                                        <span>{{ block.settings.description_1 }}</span>
-                                    {% endif %}
-                                    {% if block.settings.heading_1 != blank %}
-                                        {{ block.settings.heading_1 }}
-                                    {% endif %}
-                                    {% if block.settings.text_1 != blank %}
-                                        {{ block.settings.text_1 }}
-                                    {% endif %}
-                                </li>
-                                <li>
-                                    {% if block.settings.description_2 != blank %}
-                                        <span>{{ block.settings.description_2 }}</span>
-                                    {% endif %}
-                                    {% if block.settings.heading_2 != blank %}
-                                        {{ block.settings.heading_2}}
-                                    {% endif %}
-                                    {% if block.settings.text_2 != blank %}
-                                        {{ block.settings.text_2 }}
-                                    {% endif %}
-                                </li>
-                                <li>
-                                    {% if block.settings.description_3 != blank %}
-                                        <span>{{ block.settings.description_3 }}</span>
-                                    {% endif %}
-                                    {% if block.settings.heading_3 != blank %}
-                                        {{ block.settings.heading_3 }}
-                                    {% endif %}
-                                    {% if block.settings.text_3 != blank %}
-                                        {{ block.settings.text_3 }}
-                                    {% endif %}
-                                </li>
+                                {% if block.settings.disclaimer != blank %}
+                                    <small>{{ block.settings.disclaimer }}</small>
+                                {% endif %}
                             {% endif %}
                         {% endfor %}
-                    </ul>
+                    </div>
                     <div class="how-compares__table">
                         <div class="table-header">&nbsp;</div>
                         {% for block in section.blocks %}
@@ -341,45 +359,54 @@
             </div>
             <div class="how-compares__data-item" data-option="red-light-hat" style="display: none;">
                 <div class="how-compares__data-content">
-                    <ul class="how-compares__parameters">
+                    <div class="how-compares__parameters">
+                        <ul>
+                            {% for block in section.blocks %}
+                                {% if block.type == 'text_red_light_hat' %}
+                                    <li>
+                                        {% if block.settings.description_1 != blank %}
+                                            <span>{{ block.settings.description_1 }}</span>
+                                        {% endif %}
+                                        {% if block.settings.heading_1 != blank %}
+                                            {{ block.settings.heading_1 }}
+                                        {% endif %}
+                                        {% if block.settings.text_1 != blank %}
+                                            {{ block.settings.text_1 }}
+                                        {% endif %}
+                                    </li>
+                                    <li>
+                                        {% if block.settings.description_2 != blank %}
+                                            <span>{{ block.settings.description_2 }}</span>
+                                        {% endif %}
+                                        {% if block.settings.heading_2 != blank %}
+                                            {{ block.settings.heading_2}}
+                                        {% endif %}
+                                        {% if block.settings.text_2 != blank %}
+                                            {{ block.settings.text_2 }}
+                                        {% endif %}
+                                    </li>
+                                    <li>
+                                        {% if block.settings.description_3 != blank %}
+                                            <span>{{ block.settings.description_3 }}</span>
+                                        {% endif %}
+                                        {% if block.settings.heading_3 != blank %}
+                                            {{ block.settings.heading_3 }}
+                                        {% endif %}
+                                        {% if block.settings.text_3 != blank %}
+                                            {{ block.settings.text_3 }}
+                                        {% endif %}
+                                    </li>
+                                {% endif %}
+                            {% endfor %}
+                        </ul>
                         {% for block in section.blocks %}
                             {% if block.type == 'text_red_light_hat' %}
-                                <li>
-                                    {% if block.settings.description_1 != blank %}
-                                        <span>{{ block.settings.description_1 }}</span>
-                                    {% endif %}
-                                    {% if block.settings.heading_1 != blank %}
-                                        {{ block.settings.heading_1 }}
-                                    {% endif %}
-                                    {% if block.settings.text_1 != blank %}
-                                        {{ block.settings.text_1 }}
-                                    {% endif %}
-                                </li>
-                                <li>
-                                    {% if block.settings.description_2 != blank %}
-                                        <span>{{ block.settings.description_2 }}</span>
-                                    {% endif %}
-                                    {% if block.settings.heading_2 != blank %}
-                                        {{ block.settings.heading_2}}
-                                    {% endif %}
-                                    {% if block.settings.text_2 != blank %}
-                                        {{ block.settings.text_2 }}
-                                    {% endif %}
-                                </li>
-                                <li>
-                                    {% if block.settings.description_3 != blank %}
-                                        <span>{{ block.settings.description_3 }}</span>
-                                    {% endif %}
-                                    {% if block.settings.heading_3 != blank %}
-                                        {{ block.settings.heading_3 }}
-                                    {% endif %}
-                                    {% if block.settings.text_3 != blank %}
-                                        {{ block.settings.text_3 }}
-                                    {% endif %}
-                                </li>
+                                {% if block.settings.disclaimer != blank %}
+                                    <small>{{ block.settings.disclaimer }}</small>
+                                {% endif %}
                             {% endif %}
                         {% endfor %}
-                    </ul>
+                    </div>
                     <div class="how-compares__table">
                         <div class="table-header">&nbsp;</div>
                         {% for block in section.blocks %}
@@ -649,6 +676,11 @@
                 "type": "richtext",
                 "id": "text_3",
                 "label": "t:common.text"
+            },
+            {
+                "type": "text",
+                "id": "disclaimer",
+                "label": "t:common.disclaimer"
             }
         ]
     },
@@ -701,6 +733,11 @@
                 "type": "richtext",
                 "id": "text_3",
                 "label": "t:common.text"
+            },
+            {
+                "type": "text",
+                "id": "disclaimer",
+                "label": "t:common.disclaimer"
             }
         ]
     },
@@ -753,6 +790,11 @@
                 "type": "richtext",
                 "id": "text_3",
                 "label": "t:common.text"
+            },
+            {
+                "type": "text",
+                "id": "disclaimer",
+                "label": "t:common.disclaimer"
             }
         ]
     },

@@ -288,65 +288,157 @@
         "button_url": "#helmet-home"
       }
     },
-    "results_slider_DKCtmR": {
-      "type": "results-slider",
+    "n_product_result_8nCd9m": {
+      "type": "n_product-result",
       "blocks": {
-        "slider_nk3MnN": {
-          "type": "slider",
+        "tab_3fzpwb": {
+          "type": "tab",
           "settings": {
+            "heading": "User Results"
+          }
+        },
+        "tab_content_NCAG4f": {
+          "type": "tab_content",
+          "settings": {
+            "section_id": "User Results",
+            "text": "<p>In a user study, participants reported fuller-looking hair and healthier-feeling scalps after 16 weeks of regular treatments with Q-Renew.</p>"
+          }
+        },
+        "percent_value_EMKxHA": {
+          "type": "percent_value",
+          "settings": {
+            "section_id": "User Results",
+            "percent_value_style": "circle",
+            "percent_value": 100,
+            "text": "experienced visibly thicker hair strands after 16 weeks"
+          }
+        },
+        "percent_value_6hhBpr": {
+          "type": "percent_value",
+          "settings": {
+            "section_id": "User Results",
+            "percent_value_style": "circle",
+            "percent_value": 90,
+            "text": "showed improvements in hair density and thickness"
+          }
+        },
+        "percent_value_C4mrkd": {
+          "type": "percent_value",
+          "settings": {
+            "section_id": "User Results",
+            "percent_value_style": "circle",
+            "percent_value": 90,
+            "text": "saw a visible increase in active growth-phase hairs"
+          }
+        },
+        "tab_slider_qgUzTL": {
+          "type": "tab_slider",
+          "settings": {
+            "section_id": "User Results",
             "image": "shopify://shop_images/backed-real-results-1.webp",
-            "text": "<p>Shown to visually improve <em>Thinning Crown</em></p>"
+            "text": "<p>Proven to visually improve</p><p>[span]Thinning Crown[/span]</p>"
           }
         },
-        "slider_4eTEbC": {
-          "type": "slider",
+        "tab_slider_qzjEkj": {
+          "type": "tab_slider",
           "settings": {
+            "section_id": "User Results",
             "image": "shopify://shop_images/backed-real-results-2.webp",
-            "text": "<p>Shown to visually improve <em>Receding Hairline</em></p>"
+            "text": "<p>Proven to visually improve</p><p>[span]Receding Hairline[/span]</p>"
           }
         },
-        "slider_ffYVxx": {
-          "type": "slider",
+        "tab_slider_n9k7JT": {
+          "type": "tab_slider",
           "settings": {
+            "section_id": "User Results",
             "image": "shopify://shop_images/backed-real-results-3.webp",
-            "text": "<p>Shown to visually improve <em>Temporal Thinning</em></p>"
+            "text": "<p>Proven to visually improve</p><p>[span]Temporal Thinning[/span]</p>"
           }
         },
-        "text_with_progress_cdXLi9": {
-          "type": "text_with_progress",
+        "disclaimer_NVyLbg": {
+          "type": "disclaimer",
           "settings": {
-            "percent_value": "100%",
-            "text": "saw an improvement in hair quality after 16 weeks*"
+            "section_id": "User Results",
+            "text": "Results based on a 16-week self reported user study. Individual results may vary."
           }
         },
-        "text_with_progress_F4bjaQ": {
-          "type": "text_with_progress",
+        "tab_tHeG6R": {
+          "type": "tab",
           "settings": {
-            "percent_value": "89%",
-            "text": "experienced fuller-looking, more voluminous hair*"
+            "heading": "Clinical Data"
           }
         },
-        "text_with_progress_Bf4pzi": {
-          "type": "text_with_progress",
+        "tab_content_LQ7aRQ": {
+          "type": "tab_content",
           "settings": {
-            "percent_value": "82%",
-            "text": "reported thicker-looking hair with consistent use*"
+            "section_id": "Clinical Data",
+            "text": "<p>Over the course of a 16 week user study, regular use of the hair growth helmet was shown to support measurable improvements in multiple aspects of hair health.</p><p>Using HairMetrix® trichoscopy and phototrichogram analysis, researchers observed increases in hair growth rate, individual hair thickness, and total hair width per cm², which together contribute to the look of fuller, denser hair.</p><p><strong>After 16 weeks, participants experienced:</strong></p>"
+          }
+        },
+        "percent_value_petBdr": {
+          "type": "percent_value",
+          "settings": {
+            "section_id": "Clinical Data",
+            "percent_value_style": "line",
+            "percent_value": 27,
+            "text": "increase in hair growth rate"
+          }
+        },
+        "percent_value_CzjkRi": {
+          "type": "percent_value",
+          "settings": {
+            "section_id": "Clinical Data",
+            "percent_value_style": "line",
+            "percent_value": 19,
+            "text": "increase in total hair width per cm²"
+          }
+        },
+        "percent_value_iTNjNW": {
+          "type": "percent_value",
+          "settings": {
+            "section_id": "Clinical Data",
+            "percent_value_style": "line",
+            "percent_value": 12,
+            "text": "increase in average hair thickness"
+          }
+        },
+        "image_YFX4Bm": {
+          "type": "image",
+          "settings": {
+            "section_id": "Clinical Data",
+            "image": "shopify://shop_images/clinical-data.webp"
+          }
+        },
+        "disclaimer_WrVpBq": {
+          "type": "disclaimer",
+          "settings": {
+            "section_id": "Clinical Data",
+            "text": "Measured using HairMetrix® Trichoscopy/Phototrichogram analysis during a 16-week self-user study."
           }
         }
       },
       "block_order": [
-        "slider_nk3MnN",
-        "slider_4eTEbC",
-        "slider_ffYVxx",
-        "text_with_progress_cdXLi9",
-        "text_with_progress_F4bjaQ",
-        "text_with_progress_Bf4pzi"
+        "tab_3fzpwb",
+        "tab_content_NCAG4f",
+        "percent_value_EMKxHA",
+        "percent_value_6hhBpr",
+        "percent_value_C4mrkd",
+        "tab_slider_qgUzTL",
+        "tab_slider_qzjEkj",
+        "tab_slider_n9k7JT",
+        "disclaimer_NVyLbg",
+        "tab_tHeG6R",
+        "tab_content_LQ7aRQ",
+        "percent_value_petBdr",
+        "percent_value_CzjkRi",
+        "percent_value_iTNjNW",
+        "image_YFX4Bm",
+        "disclaimer_WrVpBq"
       ],
-      "name": "t:sections.results-slider.name",
+      "name": "t:sections.n_product-result.name",
       "settings": {
-        "heading": "<h2>Backed by real results</h2>",
-        "text": "<p>In a user study, participants reported fuller-looking hair and healthier-feeling scalps after 16 weeks of regular treatments with Q-Renew.</p>",
-        "sub_text": "<p>*Results based on a 16-week study. Individual results may vary.</p>"
+        "use_own_file": true,
+        "heading": "<h2>Baked by real results</h2>"
       }
     },
     "carousel_jHy7Zp": {
@@ -477,7 +569,8 @@
             "text_2": "<p>1850 mW vs. 1410 mW</p>",
             "description_3": "Quicker sessions",
             "heading_3": "<h3>2.1x faster treatments</h3>",
-            "text_3": "<p>12 minutes vs. 25 minutes per session</p>"
+            "text_3": "<p>12 minutes vs. 25 minutes per session</p>",
+            "disclaimer": "Comparison based on publicly available product information and for general comparison only. Features may vary by model."
           }
         },
         "text_hair_growth_H8n7ft": {
@@ -491,7 +584,8 @@
             "text_2": "<p>3 LED wavelengths vs. 1 wavelength</p>",
             "description_3": "Triple the trust",
             "heading_3": "<h3>3x longer protection</h3>",
-            "text_3": "<p>3-year vs. 1-year warranty for peace of mind</p>"
+            "text_3": "<p>3-year vs. 1-year warranty for peace of mind</p>",
+            "disclaimer": "Comparison based on publicly available product information and for general comparison only. Features may vary by model."
           }
         },
         "text_red_light_hat_gYVyxy": {
@@ -505,7 +599,8 @@
             "text_2": "<p>3-year vs. 1-year warranty for peace of mind.</p>",
             "description_3": "Broader stimulation",
             "heading_3": "<h3>300% more wavelengths</h3>",
-            "text_3": "<p>3 wavelengths vs. 1 wavelength for broader stimulation</p>"
+            "text_3": "<p>3 wavelengths vs. 1 wavelength for broader stimulation</p>",
+            "disclaimer": "Comparison based on publicly available product information and for general comparison only. Features may vary by model."
           }
         },
         "compare_prof_AKgYfB": {
@@ -678,7 +773,7 @@
     "hair_growth_helmet_image_slider_9KL6Kj",
     "hair_growth_helmet_banner_with_modal_BnqA3f",
     "hair_growth_helmet_feature_carousel_HtN8C4",
-    "results_slider_DKCtmR",
+    "n_product_result_8nCd9m",
     "carousel_jHy7Zp",
     "hair_growth_helmet_usage_guide_HQaYec",
     "hair_growth_helmet_product_comparison_CxQNNe",
