@@ -513,11 +513,11 @@
           "type": "items",
           "settings": {
             "text_item_1": "Carbon Filter Layer",
-            "image_1": "shopify://shop_images/shower_point1.webp",
+            "image_1": "shopify://shop_images/shower_cartiage_point1.webp",
             "text_item_2": "KDF-55 Layer",
-            "image_2": "shopify://shop_images/shower_point2.webp",
+            "image_2": "shopify://shop_images/shower_cartiage_point2.webp",
             "text_item_3": "Filter of Future",
-            "image_3": "shopify://shop_images/shower_point3.webp",
+            "image_3": "shopify://shop_images/shower_cartiage_point3.webp",
             "text_item_4": ""
           }
         }
