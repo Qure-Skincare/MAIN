@@ -5,8 +5,8 @@
 {% if section.settings.checkbox %}
 <link rel="stylesheet" href="https://qureskincaredns.com/sections/isolated/why-it-works/section-why-it-works.css">
 <link rel="stylesheet" href="https://qureskincaredns.com/assets/css/animate.css">
-<div class="why_it_works qure__section" style="--section-padding-top: 80px; --section-padding-bottom: 40px;">
-    <div class="container" style="--column-gap:50px; --column-gap-mobile:18px;" id="why_it_works">
+<div class="why_it_works qure__section">
+    <div class="container" id="why_it_works">
         <div class="section_header text-center pb-md-0 pb-30">
             {% if section.settings.heading != blank %}
                 <h2 class="title-lg mb-md-30">{{ section.settings.heading }}</h2>
@@ -17,7 +17,7 @@
         </div>
         <div class="row custom__grid align-items-center">
             <div class="col-md-6 custom__block">
-                <div style="--heading-font: 'TT Commons';" class="pr-md-30">
+                <div class="pr-md-30">
                     <div class="accordion accordion-flush" id="qure_benefit-main">
                         {% for block in section.blocks %}
                             {% if block.type == 'accordion' %}
@@ -44,21 +44,21 @@
                     <img id="benefit-image" src="{{ section.settings.image | image_url }}" class="img-fluid" alt="{{ section.settings.image.alt | escape }}">
                     {% for block in section.blocks %}
                         {% if block.type == 'items' %}
-                            <div class="point_column p_one top_0 right_0 wow fadeInDown" style="--top:90px; --top-mob: 40px;">
+                            <div class="point_column p_one top_0 right_0 wow fadeInDown" style="--top:105px; --top-mob: 60px;">
                                 <div class="accordion-button collapsed fs-18 gap-2" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#qure_benefit-1" aria-expanded="false" aria-controls="qure_benefit-1"
                                     data-img-url="{{ block.settings.image_1 | image_url }}">
                                     <span class="p_text">{{ block.settings.text_item_1 }}</span>
                                 </div>
                             </div>
-                            <div class="point_column p_two top_0 left_0 wow fadeInDown" data-wow-delay="0.4s" style="--top:140px; --top-mob: 80px;">
+                            <div class="point_column p_two top_0 left_0 wow fadeInDown" data-wow-delay="0.4s" style="--top:190px; --top-mob: 80px;">
                                 <div class="accordion-button collapsed fs-18 gap-2" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#qure_benefit-2" aria-expanded="false" aria-controls="qure_benefit-2"
                                     data-img-url="{{ block.settings.image_2 | image_url }}">
                                     <span class="p_text">{{ block.settings.text_item_2 }}</span>
                                 </div>
                             </div>
-                            <div class="point_column p_three top_0 right_0 wow fadeInDown" data-wow-delay="0.6s" style="--top:76%; --top-mob: 72%;">
+                            <div class="point_column p_three top_0 right_0 wow fadeInDown" data-wow-delay="0.6s" style="--top:67%; --top-mob: 65%;">
                                 <div class="accordion-button collapsed fs-18 gap-2" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#qure_benefit-3" aria-expanded="false" aria-controls="qure_benefit-3"
                                     data-img-url="{{ block.settings.image_3 | image_url }}">
