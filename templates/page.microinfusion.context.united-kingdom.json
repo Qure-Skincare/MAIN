@@ -12,16 +12,5 @@
     "market": "united-kingdom"
   },
   "parent": "page.microinfusion.json",
-  "sections": {
-    "purchase-form-landing": {
-      "settings": {},
-      "blocks": {
-        "product_nyJ9n7": {
-          "settings": {
-            "product": "micro-infusion-6-month-bundle-for-wrinkles-uk"
-          }
-        }
-      }
-    }
-  }
+  "sections": {}
 }
