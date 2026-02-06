@@ -712,6 +712,22 @@
       "name": "t:sections.video-slider.name",
       "settings": {}
     },
+    "banner_with_text_MqEdEN": {
+      "type": "banner-with-text",
+      "name": "t:sections.banner-with-text.name",
+      "settings": {
+        "heading": "Why we started Qure",
+        "text": "<p>We had one belief: Feeling good in your skin is a fundamental right — not a luxury. Because how you feel in your skin affects how you show up in your life.<br/><br/>As a brother-and-sister duo, we saw that <em>clinically proven skincare</em> was often expensive, or out of reach for many people. <br/><br/>So we set out to remove unnecessary barriers and make effective <em>science-backed treatments </em>accessible from home.</p>",
+        "quote": "",
+        "quote-mobile": "",
+        "image_position": "left",
+        "sub_text": "",
+        "image": "shopify://shop_images/skincare_rev.webp",
+        "button_label": "Read Our Story",
+        "button_url": "https://qureskincare.com/pages/our-story",
+        "wistia_url": ""
+      }
+    },
     "our_advisors_LPVVBm": {
       "type": "our-advisors",
       "blocks": {
@@ -893,6 +909,7 @@
     "carousel_qXW6Gd",
     "trusted_recommended_KHYLQ9",
     "video_slider_MWbVWw",
+    "banner_with_text_MqEdEN",
     "our_advisors_LPVVBm",
     "quiz_wdnen7",
     "index-read-our-story",
