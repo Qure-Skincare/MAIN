@@ -495,7 +495,7 @@
           "type": "accordion",
           "settings": {
             "heading": "KDF-55 Layer",
-            "text": "<p>Targets and removes heavy metals like lead and mercury, providing cleaner water for your shower.</p>",
+            "text": "<p>Helps reduce heavy metals such as lead and mercury, supporting cleaner shower water.</p>",
             "image_with_text": "shopify://shop_images/KDF.svg",
             "image": "shopify://shop_images/shower_cartiage_point2.webp"
           }
@@ -504,7 +504,7 @@
           "type": "accordion",
           "settings": {
             "heading": "FOF (Filter of Future)",
-            "text": "<p>Helps with descaling by preventing the buildup of hard water minerals, reducing scale formation and improving water flow.</p>",
+            "text": "<p>Helps limit limescale buildup by reducing hard water mineral accumulation, which can support improved water flow over time.</p>",
             "image_with_text": "shopify://shop_images/FOF_61e34818-4b9e-47f1-b015-89cd9d8d41e9.svg",
             "image": "shopify://shop_images/shower_cartiage_point3.webp"
           }
