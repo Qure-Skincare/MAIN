@@ -134,6 +134,8 @@
             "product": "shower-filter-replacement",
             "product_variant_id": 46010772652271,
             "product_selling_plan": 6286082287,
+            "popular": false,
+            "best": false,
             "preselected": true,
             "heading": "White",
             "subheading": "",
@@ -152,6 +154,8 @@
             "product": "shower-filter-replacement",
             "product_variant_id": 46010772685039,
             "product_selling_plan": 6286082287,
+            "popular": false,
+            "best": false,
             "preselected": false,
             "heading": "Black",
             "subheading": "",
@@ -484,7 +488,7 @@
             "heading": "Carbon Fiber Layer",
             "text": "<p>Removes up to 99% of chlorine, reducing skin irritation and dryness, leaving your skin and hair healthier.</p>",
             "image_with_text": "shopify://shop_images/carbon.svg",
-            "image": "shopify://shop_images/shower_point1.webp"
+            "image": "shopify://shop_images/shower_cartiage_point1.webp"
           }
         },
         "accordion_Ymht98": {
@@ -493,7 +497,7 @@
             "heading": "KDF-55 Layer",
             "text": "<p>Targets and removes heavy metals like lead and mercury, providing cleaner water for your shower.</p>",
             "image_with_text": "shopify://shop_images/KDF.svg",
-            "image": "shopify://shop_images/shower_point2.webp"
+            "image": "shopify://shop_images/shower_cartiage_point2.webp"
           }
         },
         "accordion_JW4kkT": {
@@ -502,18 +506,18 @@
             "heading": "FOF (Filter of Future)",
             "text": "<p>Helps with descaling by preventing the buildup of hard water minerals, reducing scale formation and improving water flow.</p>",
             "image_with_text": "shopify://shop_images/FOF_61e34818-4b9e-47f1-b015-89cd9d8d41e9.svg",
-            "image": "shopify://shop_images/shower_point3.webp"
+            "image": "shopify://shop_images/shower_cartiage_point3.webp"
           }
         },
         "items_wgKNPe": {
           "type": "items",
           "settings": {
             "text_item_1": "Carbon Filter Layer",
-            "image_1": "shopify://shop_images/shower_point1.webp",
+            "image_1": "shopify://shop_images/shower_cartiage_point1.webp",
             "text_item_2": "KDF-55 Layer",
-            "image_2": "shopify://shop_images/shower_point2.webp",
+            "image_2": "shopify://shop_images/shower_cartiage_point2.webp",
             "text_item_3": "Filter of Future",
-            "image_3": "shopify://shop_images/shower_point3.webp",
+            "image_3": "shopify://shop_images/shower_cartiage_point3.webp",
             "text_item_4": ""
           }
         }
@@ -528,7 +532,7 @@
       "settings": {
         "heading": "Why It Works",
         "text": "<p>Our triple filtration technology filters the water to remove heavy metals and purify.</p>",
-        "image": "shopify://shop_images/shower_point0.webp",
+        "image": "shopify://shop_images/shower_cartiage_point0.webp",
         "checkbox": true
       }
     },
