@@ -683,8 +683,8 @@
         "compare_TqEdJL": {
           "type": "compare",
           "settings": {
-            "check_text": "<p>Reduces chlorine and heavy metals</p>",
-            "cross_text": "<p>Reduces some chlorine and metals</p>",
+            "check_text": "<p>Reduces chlorine and heavy metals*</p>",
+            "cross_text": "<p>May reduce some chlorine and metals</p>",
             "checkbox": false
           }
         },
@@ -699,8 +699,8 @@
         "compare_cNVUQc": {
           "type": "compare",
           "settings": {
-            "check_text": "<p>NSF-standard tested</p>",
-            "cross_text": "<p>No certificates</p>",
+            "check_text": "<p>Exceeds NSF-177 certifications </p>",
+            "cross_text": "<p>Limited third-party testing information</p>",
             "checkbox": false
           }
         },
