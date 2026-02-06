@@ -200,3 +200,40 @@
 <script type="text/javascript" experiment_id= "monitoring_15102025" src="https://pdq-scripts.pdqprod.link/pdq-text-abtest.js" id="pdq_custom_ab_test_script"></script>
 
 <script defer src="https://static.shopmy.us/Affiliates/sms_aff_clicktrack.js?domain=qureskincare.com&expires=30"></script>
+
+<script>
+	function getUrlParams() {
+		return window.location.search.replace(/^\?/, '');
+	}
+
+	function concatLinkWithParams(url, params) {
+		url = url || '/';
+		var separator = url.includes('?') ? '&' : '?';
+		return `${url}${url.endsWith('?') || url.endsWith('&') ? '' : separator}${params}`;
+	}
+
+	function isOutsideLink(link) {
+		if (!/^https?/.test(link)) {
+			return false;
+		}
+		const url = new URL(link);
+		return url.hostname !== window.location.hostname;
+	}
+
+	function setParams2Links(onlyOutside = true) {
+		const links = document.querySelectorAll('a');
+		const params = getUrlParams();
+		links.forEach((link) => {
+			const href = link.getAttribute('href');
+			if (href === null) {
+			return;
+			}
+			if (onlyOutside && !isOutsideLink(href)) {
+			return;
+			}
+			link.setAttribute('href', concatLinkWithParams(href, params));
+		});
+	}
+
+	document.addEventListener('DOMContentLoaded',function(){setParams2Links()});
+</script>
