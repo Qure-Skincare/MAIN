@@ -268,7 +268,7 @@
             "product": "line-refine-bundle-pro1",
             "image": "shopify://shop_images/Frame_1073715060_c77e2cfa-e828-4323-b69e-4b3af1fd177f.png",
             "preselected": false,
-            "soldout": true,
+            "soldout": false,
             "reserved": false
           }
         },
@@ -278,7 +278,7 @@
             "product": "line-refine-bundle-advanced",
             "image": "shopify://shop_images/Frame_1073715060-1.png",
             "preselected": false,
-            "soldout": true,
+            "soldout": false,
             "reserved": false
           }
         },
@@ -288,7 +288,7 @@
             "product": "line-refine-bundle-essential",
             "image": "shopify://shop_images/Frame_1073715060-2.png",
             "preselected": false,
-            "soldout": true,
+            "soldout": false,
             "reserved": false
           }
         },
