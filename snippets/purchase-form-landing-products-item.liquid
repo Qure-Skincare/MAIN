@@ -65,7 +65,7 @@
                                 <input type="radio" class="vp__input" name="monthlyPlan_{{ section.settings.form_name }}" id="{% if section.settings.hide_types %}{{ product_title_tag }}{% else %}{{ section.id }}-{{ product_title_tag }}{% endif %}" {% if block.settings.preselected == true %} checked{% endif %}>
                                 <label for="{% if section.settings.hide_types %}{{ product_title_tag }}{% else %}{{ section.id }}-{{ product_title_tag }}{% endif %}" class="vp-pack vp-best-pack{% if product_type == 3 %} pt-0{% endif %}">
                                     {% if product_type == 3 %}
-                                        <div class="vp-best-value">{{ 'purchase-form.settings.best-value' | t }} <i class="fa-sharp fa-solid fa-star-sharp"></i></div>
+                                        <div class="vp-best-value">{{ 'purchase-form.settings.best' | t }} <i class="fa-sharp fa-solid fa-star-sharp"></i></div>
                                     {% endif %}
                                     
                                     {% if block.settings.image != blank %}

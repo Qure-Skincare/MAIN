@@ -84,6 +84,11 @@
                                     {% else %}
                                     data-preselected="false"
                                     {% endif %}
+                                    {% if block.settings.soldout == true %}
+                                        onclick="document.getElementById('back-in-stock').classList.remove('hide')"
+                                    {% else %}
+                                        onclick="document.getElementById('back-in-stock').classList.add('hide')"
+                                    {% endif %}
                                     data-product-price="{{ product_sale_price }}">
 
                                     {% if product_type == 3 %}
@@ -162,7 +167,8 @@
                             {% endif %}
                         {% endif %}
                     {%- endfor -%}
-                
+
+                    <div id="back-in-stock" class="klaviyo-form-SvCm4c hide">back-in-stock</div>
                 </div>
             </div>
 

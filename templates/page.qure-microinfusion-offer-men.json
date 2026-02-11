@@ -891,6 +891,7 @@
       }
     },
     "purchase_form_Lv4fWn": {
+      "disabled": false,
       "type": "purchase-form",
       "blocks": {
         "nextships_5rd2bS": {
