@@ -1,0 +1,89 @@
+{% doc %}
+  Renders a features marquee section.
+{% enddoc %}
+
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/features-marquee/features-marquee.css" />
+{% endif %}
+<div class="features-marquee">
+    <div class="container" id="features-marquee-container">
+        <ul class="features-marquee__list">
+            {% for block in section.blocks %}
+                {% if block.type == 'image_with_text' %}
+                    <li>
+                        {% case block.settings.icon %}
+                            {% when 'shipping-order' %}
+                                <i class="e-icon e-icon-shipping-order"></i>
+                            {% when 'reviewed' %}
+                                <i class="e-icon e-icon-reviewed"></i>
+                            {% when 'pay-later' %}
+                                <i class="e-icon e-icon-pay-later"></i>
+                            {% when 'proven' %}
+                                <i class="e-icon e-icon-proven"></i>
+                        {% endcase %}
+                        {{ block.settings.text }}
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        loadScriptOnce("features-marquee", "https://qureskincaredns.com/sections/new/features-marquee/features-marquee.js");
+    });
+</script>
+
+{% schema %}
+{
+    "name": "t:sections.n_features-marquee.name",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": false
+        }
+    ],
+    "blocks": [
+        {
+            "type": "image_with_text",
+            "name": "t:common.image-with-text",
+            "settings": [
+                {
+                    "type": "select",
+                    "id": "icon",
+                    "label": "t:common.icon",
+                    "options": [
+                        { 
+                            "value": "shipping-order", 
+                            "label": "t:sections.n_features-marquee.blocks.icon.settings.shipping-order" 
+                        },
+                        { 
+                            "value": "reviewed", 
+                            "label": "t:sections.n_features-marquee.blocks.icon.settings.reviewed" 
+                        },
+                        {   "value": "pay-later", 
+                            "label": "t:sections.n_features-marquee.blocks.icon.settings.pay-later" 
+                        },
+                        { 
+                            "value": "proven", 
+                            "label": "t:sections.n_features-marquee.blocks.icon.settings.proven" 
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "id": "text",
+                    "label": "t:common.text"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.n_features-marquee.name"
+        }
+    ]
+}
+{% endschema %}

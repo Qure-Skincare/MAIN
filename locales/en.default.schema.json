@@ -228,7 +228,10 @@
         "tab-slider": "Tab slider",
         "percent-value-style": "Percent value style",
         "circle": "Circle",
-        "line": "Line"
+        "line": "Line",
+        "left-header": "Left header",
+        "right-header": "Right header",
+        "text-between": "Text between"
     },
     "blocks": {
         "block-card": {
@@ -358,6 +361,36 @@
         },
         "n_product-result": {
             "name": "Product results"
+        },
+        "n_logos": {
+            "name": "Logos"
+        },
+        "n_features-marquee": {
+            "name": "Features marquee",
+            "blocks": {
+                "icon": {
+                    "settings": {
+                        "shipping-order": "Shipping order",
+                        "reviewed": "Reviewed",
+                        "pay-later": "Pay later",
+                        "proven": "Proven"
+                    }
+                }
+            }
+        },
+        "n_comparison": {
+            "name": "Comparison",
+            "blocks": {
+                "left-column": {
+                    "name": "Left column"
+                },
+                "right-column": {
+                    "name": "Right column"
+                }
+            }
+        },
+        "n_faq": {
+            "name": "FAQ"
         },
         "collection": {
             "name": "Collection",

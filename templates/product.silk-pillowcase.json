@@ -70,8 +70,8 @@
         "soldout": false
       }
     },
-    "logos_69iJ8B": {
-      "type": "logos",
+    "n_logos_69iJ8B": {
+      "type": "n_logos",
       "blocks": {
         "carousel_f4zPNY": {
           "type": "carousel",
@@ -119,198 +119,227 @@
         "carousel_FVFUFG"
       ],
       "name": "t:sections.logos.name",
-      "settings": {}
-    },
-    "banner_with_text_tHRN67": {
-      "type": "banner-with-text",
-      "name": "t:sections.banner-with-text.name",
       "settings": {
-        "heading": "Meet the easiest skincare swap you'll ever make",
-        "text": "<p>You spend over 2,500 hours a year with your pillow, so what it’s made of matters.</p><p>Our silk pillowcase <em>reduces friction on your skin and hair</em> while you sleep, helping prevent sleep creases, minimize tugging on delicate facial skin, and reduce breakage and frizz. It’s a small switch that supports cell renewal overnight—and keeps both your skin and hair looking smoother over time.</p>",
-        "quote": "",
-        "quote-mobile": "",
-        "image_position": "left",
-        "sub_text": "",
+        "use_own_file": true
+      }
+    },
+    "n_base_section_QaiCgJ": {
+      "type": "n_base-section",
+      "name": "t:sections.n_base-section.name",
+      "settings": {
+        "use_own_file": true,
+        "modifier": "reverse",
+        "background_color": "none",
+        "heading": "<h2>Meet the easiest skincare swap you'll ever make</h2>",
+        "text": "<p>You spend over 2,500 hours a year with your pillow, so what it’s made of matters.</p><p>Our silk pillowcase <em>reduces friction on your skin</em> and hair while you sleep, helping prevent sleep creases, minimize tugging on delicate facial skin, and reduce breakage and frizz. It’s a small switch that supports cell renewal overnight—and keeps both your skin and hair looking smoother over time.</p>",
         "image": "shopify://shop_images/pillowcase_img.webp",
-        "button_label": "Shop Now",
-        "button_url": "#buy_box",
+        "button_label": "Shop now",
+        "button_url": "#",
         "wistia_url": ""
       }
     },
-    "carousel_gVUM3e": {
-      "type": "carousel",
+    "n_features_marquee_Jd3wG4": {
+      "type": "n_features-marquee",
       "blocks": {
-        "items_itqcCq": {
-          "type": "items",
+        "image_with_text_PG86Ky": {
+          "type": "image_with_text",
           "settings": {
-            "heading": "Free US Shipping On Orders Over $100",
-            "image": "shopify://shop_images/guarantee.svg"
+            "icon": "shipping-order",
+            "text": "Free Shipping On<br>Orders Over 100$"
           }
         },
-        "items_ih6g9U": {
-          "type": "items",
+        "image_with_text_Qwe4LW": {
+          "type": "image_with_text",
           "settings": {
-            "heading": "Dermatologist Reviewed",
-            "image": "shopify://shop_images/Guarantee_Icons.svg"
+            "icon": "reviewed",
+            "text": "Dermatologist<br>Reviewed"
           }
         },
-        "items_dVfXJ9": {
-          "type": "items",
+        "image_with_text_xEnxg6": {
+          "type": "image_with_text",
           "settings": {
-            "heading": "Buy Now, Pay Later Options Available",
-            "image": "shopify://shop_images/pay-later.svg"
+            "icon": "pay-later",
+            "text": "Buy Now, Pay Later<br>Options Available"
           }
         },
-        "items_g46Ldx": {
-          "type": "items",
+        "image_with_text_zNpHwP": {
+          "type": "image_with_text",
           "settings": {
-            "heading": "Proven Results, Backed By Science",
-            "image": "shopify://shop_images/proven-result.svg"
+            "icon": "proven",
+            "text": "Proven Results,<br>Backed By Science"
           }
         }
       },
       "block_order": [
-        "items_itqcCq",
-        "items_ih6g9U",
-        "items_dVfXJ9",
-        "items_g46Ldx"
+        "image_with_text_PG86Ky",
+        "image_with_text_Qwe4LW",
+        "image_with_text_xEnxg6",
+        "image_with_text_zNpHwP"
       ],
-      "name": "t:common.carousel",
+      "name": "t:sections.n_features-marquee.name",
       "settings": {
-        "background_color": "#f6f6f7",
-        "display_mode": "both"
+        "use_own_file": true
       }
     },
-    "compare_Cxatrm": {
-      "type": "compare",
+    "n_comparison_xaNFTr": {
+      "type": "n_comparison",
       "blocks": {
-        "heading_G8tNqT": {
-          "type": "heading",
+        "left_heading_LTgR68": {
+          "type": "left_heading",
           "settings": {
-            "heading_check": "<p>Silk</p>",
-            "heading_cross": "<p>Cotton</p>"
+            "heading": "<h4>Silk</h4>",
+            "image": "shopify://shop_images/compare_pillowcase1.webp"
           }
         },
-        "compare_7jn4xY": {
-          "type": "compare",
+        "right_heading_znDFmw": {
+          "type": "right_heading",
           "settings": {
-            "check_text": "<p>Soft on skin, reducing pulling and tugging<br/><br/></p>",
-            "cross_text": "<p>Can contribute to sleep lines & wrinkle formation<br/><br/></p>",
-            "checkbox": false
+            "heading": "<h4>Cotton</h4>",
+            "image": "shopify://shop_images/compare_pillowcase2.webp"
           }
         },
-        "compare_hrahpP": {
-          "type": "compare",
+        "text_between_4B3mdg": {
+          "type": "text_between",
           "settings": {
-            "check_text": "<p>Helps retain skin’s moisture</p>",
-            "cross_text": "<p>Absorbs skin’s moisture & skincare products</p>",
-            "checkbox": false
+            "text": "vs"
           }
         },
-        "compare_xyRJ8Q": {
-          "type": "compare",
+        "left_column_c8bx6D": {
+          "type": "left_column",
           "settings": {
-            "check_text": "<p>Naturally hypoallergenic with non-toxic dyes</p>",
-            "cross_text": "<p>Can contribute to skin stress</p>",
-            "checkbox": false
+            "text": "Soft on skin, reducing pulling and tugging"
           }
         },
-        "compare_8zc8mU": {
-          "type": "compare",
+        "left_column_FKfc6Q": {
+          "type": "left_column",
           "settings": {
-            "check_text": "<p>Helps prevent oil buildup</p>",
-            "cross_text": "<p>Oil & product buildup can cause breakouts/clogged pores</p>",
-            "checkbox": false
+            "text": "Helps retain skin's moisture"
           }
         },
-        "compare_UmpWQz": {
-          "type": "compare",
+        "left_column_XgtRbh": {
+          "type": "left_column",
           "settings": {
-            "check_text": "<p>Allows your hair to glide, reducing breakage</p>",
-            "cross_text": "<p>Can cause bedhead & breakage</p>",
-            "checkbox": false
+            "text": "Naturally hypoallergenic with non-toxic dyes"
+          }
+        },
+        "left_column_zrxpqt": {
+          "type": "left_column",
+          "settings": {
+            "text": "Helps prevent oil buildup"
+          }
+        },
+        "left_column_iYtnhL": {
+          "type": "left_column",
+          "settings": {
+            "text": "Allows your hair to glide, reducing breakage"
+          }
+        },
+        "right_column_mqBjdE": {
+          "type": "right_column",
+          "settings": {
+            "text": "Can contribute to sleep lines & wrinkle formation"
+          }
+        },
+        "right_column_GDwVaf": {
+          "type": "right_column",
+          "settings": {
+            "text": "Absorbs skin's moisture & skincare products"
+          }
+        },
+        "right_column_cR7pqg": {
+          "type": "right_column",
+          "settings": {
+            "text": "Can contribute to skin stress"
+          }
+        },
+        "right_column_Uririm": {
+          "type": "right_column",
+          "settings": {
+            "text": "Oil & product buildup can cause breakouts/clogged pores"
+          }
+        },
+        "right_column_wj8PdC": {
+          "type": "right_column",
+          "settings": {
+            "text": "Can cause bedhead & breakage"
           }
         }
       },
       "block_order": [
-        "heading_G8tNqT",
-        "compare_7jn4xY",
-        "compare_hrahpP",
-        "compare_xyRJ8Q",
-        "compare_8zc8mU",
-        "compare_UmpWQz"
+        "left_heading_LTgR68",
+        "right_heading_znDFmw",
+        "text_between_4B3mdg",
+        "left_column_c8bx6D",
+        "left_column_FKfc6Q",
+        "left_column_XgtRbh",
+        "left_column_zrxpqt",
+        "left_column_iYtnhL",
+        "right_column_mqBjdE",
+        "right_column_GDwVaf",
+        "right_column_cR7pqg",
+        "right_column_Uririm",
+        "right_column_wj8PdC"
       ],
-      "name": "t:sections.compare.name",
+      "name": "t:sections.n_comparison.name",
       "settings": {
-        "heading": "The case against cotton",
-        "text": "<p>Your cotton pillowcase has a lot to answer for as they are holding back your advanced skincare routine. Cotton is a highly absorbent fabric! So while you take time every night to remove your makeup and put on your most powerful and effective skincare, cotton can suck it in, leading to clogged pores, breakouts, and puffy eyes from the product migration</p>",
-        "image_compare_check": "shopify://shop_images/compare_pillowcase1.webp",
-        "image_compare_cross": "shopify://shop_images/compare_pillowcase2.webp"
+        "use_own_file": true,
+        "text": "<h2>The case against cotton</h2><p>Your cotton pillowcase has a lot to answer for as they are holding back your advanced skincare routine. Cotton is a highly absorbent fabric! So while you take time every night to remove your makeup and put on your most powerful and effective skincare, cotton can suck it in, leading to clogged pores, breakouts, and puffy eyes from the product migration</p>"
       }
     },
-    "faq_bwxxBr": {
-      "type": "faq",
+    "n_faq_zrizF4": {
+      "type": "n_faq",
       "blocks": {
-        "accordion_d6UthP": {
+        "accordion_TjWWGT": {
           "type": "accordion",
           "settings": {
             "heading": "What kind of silk material is used?",
-            "text": "<p>We use the highest grade (6A) long fiber mulberry silk, with a thickness of 22 momme and enforce the strictest quality guidelines, including non-toxic dyes.</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>We use the highest grade (6A) long fiber mulberry silk, with a thickness of 22 momme and enforce the strictest quality guidelines, including non-toxic dyes.</p>"
           }
         },
-        "accordion_g4mNaf": {
+        "accordion_dDKCcA": {
           "type": "accordion",
           "settings": {
             "heading": "How do I care for the silk pillowcase?",
-            "text": "<p>The better you can care for your Silk Pillowcase, the better it can care for you. To keep your pillowcase in top condition, wash it in cold water or temperatures no higher than 30°C. Avoid powder detergents or bleach. Always air dry your pillowcase flat or hanging. Never tumble dry or wring it out.</p><p>Washing by hand:</p><ul><li>Use pH neutral, liquid detergent</li><li>Wash in cold water</li><li>Don’t leave to soak</li><li>Don’t wring the pillowcase</li><li>Air dry flat or hanging</li><li>Iron or steam on lowest setting</li></ul><p>Machine washing:</p><ul><li>Use pH neutral, liquid detergent</li><li>Use hand wash setting</li><li>Wash in 30°C (86°F)</li><li>Don’t wring the pillowcase</li><li>Use washing bag for delicates</li><li>Air dry flat or hanging</li><li>Iron or steam on lowest setting</li></ul>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>The better you can care for your Silk Pillowcase, the better it can care for you. To keep your pillowcase in top condition, wash it in cold water or temperatures no higher than 30°C. Avoid powder detergents or bleach. Always air dry your pillowcase flat or hanging. Never tumble dry or wring it out.</p><p>Washing by hand:</p><ul><li>Use pH neutral, liquid detergent</li><li>Wash in cold water</li><li>Don’t leave to soak</li><li>Don’t wring the pillowcase</li><li>Air dry flat or hanging</li><li>Iron or steam on lowest setting</li></ul><p>Machine washing:</p><ul><li>Use pH neutral, liquid detergent</li><li>Use hand wash setting</li><li>Wash in 30°C (86°F)</li><li>Use washing bag for delicates</li><li>Air dry flat or hanging</li><li>Iron or steam on lowest setting</li></ul>"
           }
         },
-        "accordion_j8DUW3": {
+        "accordion_ARzgWW": {
           "type": "accordion",
           "settings": {
             "heading": "Who is this pillowcase best for?",
-            "text": "<p>Anyone who wants to wake up with smoother skin and healthier hair. </p><p>It’s especially great for:</p><ul><li>Side and stomach sleepers who are more prone to sleep creases</li><li>People with sensitive or aging skin, since silk reduces friction and irritation</li><li>Those with curly, fine, or damaged hair looking to prevent breakage and frizz</li><li>Beauty minimalists who want a low-effort way to support skin and hair health overnight</li><li>Anyone investing in skincare—because what touches your face for 7+ hours a day should be part of the routine too.</li></ul>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>Anyone who wants to wake up with smoother skin and healthier hair.</p><p>It’s especially great for:</p><ul><li>Side and stomach sleepers who are more prone to sleep creases</li><li>People with sensitive or aging skin, since silk reduces friction and irritation</li><li>Those with curly, fine, or damaged hair looking to prevent breakage and frizz</li><li>Beauty minimalists who want a low-effort way to support skin and hair health overnight</li><li>Anyone investing in skincare—because what touches your face for 7+ hours a day should be part of the routine too.</li></ul>"
           }
         },
-        "accordion_ijLEy8": {
+        "accordion_YQCRwQ": {
           "type": "accordion",
           "settings": {
             "heading": "What’s the difference between satin and silk pillowcases?",
-            "text": "<p>Satin refers to a finish rather than a fabric, and when people talk about \"satin pillowcases,\" they often mean those made from synthetic materials like polyester. While these synthetic satin options may feel smooth initially, they don't provide the same benefits for your skin and hair as real silk. </p><p>Silk, a natural fiber, offers superior softness and breathability compared to synthetic alternatives, which can feel rougher and less comfortable over time. To identify genuine silk, look for a natural, subtle sheen, rather than the overly shiny appearance of synthetic alternatives.</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>Satin refers to a finish rather than a fabric, and when people talk about \"satin pillowcases,\" they often mean those made from synthetic materials like polyester. While these synthetic satin options may feel smooth initially, they don't provide the same benefits for your skin and hair as real silk.</p><p>Silk, a natural fiber, offers superior softness and breathability compared to synthetic alternatives, which can feel rougher and less comfortable over time. To identify genuine silk, look for a natural, subtle sheen, rather than the overly shiny appearance of synthetic alternatives.</p>"
           }
         }
       },
       "block_order": [
-        "accordion_d6UthP",
-        "accordion_g4mNaf",
-        "accordion_j8DUW3",
-        "accordion_ijLEy8"
+        "accordion_TjWWGT",
+        "accordion_dDKCcA",
+        "accordion_ARzgWW",
+        "accordion_YQCRwQ"
       ],
-      "name": "t:sections.faq.name",
+      "name": "t:sections.n_faq.name",
       "settings": {
-        "heading": "Have questions?",
-        "text": "",
+        "use_own_file": true,
+        "heading": "<h2>Have questions?</h2>",
+        "text": "Don't see your question?",
         "button_label": "Ask us",
-        "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home",
-        "terms-conditions": false,
-        "promotional_terms_and_conditions": ""
+        "button_url": "#"
       }
     }
   },
   "order": [
     "product_header_AR9QDc",
-    "logos_69iJ8B",
-    "banner_with_text_tHRN67",
-    "carousel_gVUM3e",
-    "compare_Cxatrm",
-    "faq_bwxxBr"
+    "n_logos_69iJ8B",
+    "n_base_section_QaiCgJ",
+    "n_features_marquee_Jd3wG4",
+    "n_comparison_xaNFTr",
+    "n_faq_zrizF4"
   ]
 }
