@@ -4,21 +4,17 @@ document.addEventListener('DOMContentLoaded', () => {
     bindForms();
 });
 
-// Handle browser back/forward navigation (bfcache restore)
-// This fixes the issue where cart appears empty after pressing "Back" from checkout
-window.addEventListener('pageshow', (event) => {
-    // Always refresh cart drawer on pageshow (works for both bfcache and regular navigation)
-    // This ensures cart content is always up-to-date after navigating back from checkout
-    updateSection('footer-cart-drawer', 'cart-dynamic-content').then(() => {
-        getCartState().then(cart => {
-            const cartCount = document.querySelector('.cart-count');
-            if (cartCount) {
-                cartCount.textContent = cart.item_count;
-            }
-        });
-        bindForms();
-    }).catch(console.error);
-});
+// window.addEventListener('pageshow', (event) => {
+//     updateSection('footer-cart-drawer', 'cart-dynamic-content').then(() => {
+//         getCartState().then(cart => {
+//             const cartCount = document.querySelector('.cart-count');
+//             if (cartCount) {
+//                 cartCount.textContent = cart.item_count;
+//             }
+//         });
+//         bindForms();
+//     }).catch(console.error);
+// });
 
 document.addEventListener('cart.requestComplete', (event) => {
     if(footer_cart_drawer_template == 'cart') {
