@@ -764,8 +764,8 @@
         "list_UakLx3": {
           "type": "list",
           "settings": {
-            "heading": "Prepare",
-            "text": "<p>Twist open the Micro-Infusion device and fill with one ampule of serum.</p>",
+            "heading": "Cleanse",
+            "text": "<p>Cleanse your face thoroughly and spritz the <span style=\"text-decoration:underline\">Dermal Mist</span> to refresh and prepare your skin further.</p>",
             "image": "shopify://shop_images/mixed_mi_1.webp",
             "image_mobile": "shopify://shop_images/mi-1-mob_10d274d3-9488-48b7-bc9c-4f36e48e9ce1.webp"
           }
@@ -773,8 +773,8 @@
         "list_q4irTP": {
           "type": "list",
           "settings": {
-            "heading": "Treatment",
-            "text": "<p>Start at the centre of the face and work your way outward to cover the full face.</p>",
+            "heading": "Prepare",
+            "text": "<p>Twist off the cap of the serum vial and screw on the sterile needle head.</p>",
             "image": "shopify://shop_images/mixed_mi_2.webp",
             "image_mobile": "shopify://shop_images/mi-2-mob_0692c2e6-eb84-4d03-ac7a-f8f386d88f25.webp"
           }
@@ -782,8 +782,8 @@
         "list_MRCUbi": {
           "type": "list",
           "settings": {
-            "heading": "Aftercare",
-            "text": "<p>Once treatment is completed, place lid back on the needle head. Twist the lid off and dispose safely.</p>",
+            "heading": "Treat",
+            "text": "<p>Remove the cap and stamp gently across your face using light pressure, working section-by-section.</p>",
             "image": "shopify://shop_images/mixed_mi_3.webp",
             "image_mobile": "shopify://shop_images/mi-3-mob_474650ff-a9f7-4ec8-b784-d9c7da333689.webp"
           }
