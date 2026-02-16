@@ -166,7 +166,7 @@
           "settings": {
             "modifier": "text_with_image",
             "image": "shopify://shop_images/micro-infusion-step-2.webp",
-            "text": "<h6>Step 2</h6><p>Pour one full Qure serum ampoule into the device chamber.</p><p>[note_green]<strong>Tip:</strong> Use one ampoule per treatment. The serum should only fill the Device halfway.[/note]</p>"
+            "text": "<h6>Step 2</h6><p>Twist off the cap of the serum vial and screw on the sterile needle head.</p><p>Hold the device upside down for 1-2 minutes to let the serum flow into the needle head and saturate the area around the needles.</p>"
           }
         },
         "step_by_step_BF9ixp": {
