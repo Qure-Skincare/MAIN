@@ -260,7 +260,7 @@
         "active": false,
         "must_read": false,
         "heading": "Usage Instructions",
-        "text": "<h2>Usage Instructions</h2><p>[wistia_video]</p><p>To get started with your first treatment, you'll need the following:</p><ul><li>Micro-Infusion Device</li><li>1 sterile needle head</li><li>Micro-Infusion serum</li></ul><p>Ensure your hands are clean before and during the treatment and do not rush yourself.</p>"
+        "text": "<h2>Usage Instructions</h2><p>[wistia_video]</p><p>To get started with your first treatment, you'll need the following:</p><ul><li>1 sterile needle head (provided)</li><li>Micro-Infusion serum vial (provided)</li></ul><p>Ensure your hands are clean before and during the treatment and do not rush yourself.</p>"
       }
     },
     "n_guide_content_image_block_GTfejE": {
