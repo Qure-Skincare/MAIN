@@ -350,7 +350,7 @@
           "type": "product",
           "settings": {
             "product": "breakout-control-pro",
-            "image": "shopify://shop_images/breakout-control-pro-v2.webp",
+            "image": "shopify://shop_images/Breakout_Control_Pro_8de66a6b-fcc0-4094-9631-1e8ecfea484c.png",
             "preselected": false,
             "soldout": false,
             "reserved": false
@@ -360,7 +360,7 @@
           "type": "product",
           "settings": {
             "product": "breakout-control-advanced1",
-            "image": "shopify://shop_images/breakout-control-advanced-v2.webp",
+            "image": "shopify://shop_images/Breakout_Control_Advanced_51fc5ee9-bf6a-4054-ae80-c310f78cdc70.png",
             "preselected": false,
             "soldout": false,
             "reserved": false
@@ -370,7 +370,7 @@
           "type": "product",
           "settings": {
             "product": "breakout-control-essential",
-            "image": "shopify://shop_images/breakout-control-essentials-v2.webp",
+            "image": "shopify://shop_images/Breakout_Control_Essentials_77973ba3-73e9-4d44-911f-ca59f04f4d30.png",
             "preselected": false,
             "soldout": false,
             "reserved": false
