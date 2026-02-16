@@ -203,6 +203,7 @@
         },
         "step_by_step_aR4rNF": {
           "type": "step_by_step",
+          "disabled": true,
           "settings": {
             "modifier": "text_with_image",
             "image": "shopify://shop_images/micro-infusion-step-7.webp",
@@ -211,6 +212,7 @@
         },
         "step_by_step_9N7zCt": {
           "type": "step_by_step",
+          "disabled": true,
           "settings": {
             "modifier": "text_with_image",
             "image": "shopify://shop_images/micro-infusion-step-8.webp",
