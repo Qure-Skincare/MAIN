@@ -359,6 +359,9 @@
         "n_product-result": {
             "name": "Product results"
         },
+        "n_guide-shedule": {
+            "name": "Guide shedule"
+        },
         "collection": {
             "name": "Collection",
             "blocks": {

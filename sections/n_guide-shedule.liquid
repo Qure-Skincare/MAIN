@@ -1,0 +1,94 @@
+{% doc %}
+  Renders guide shedule and set reminders section
+{% enddoc %}
+
+<section class="guide-content{% if section.settings.active %} active{% endif %}" id="{{ section.settings.heading | handleize }}-tab">
+    <div class="container">
+        <div class="accordion">
+            <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#{{ section.settings.heading | handleize }}-collapse"
+                    {% if section.settings.active %}
+                        aria-expanded="true"
+                    {% endif %}
+                >
+                    {% if section.settings.heading != blank %}
+                        {{ section.settings.heading }}
+                        {% if section.settings.must_read %}
+                            <em>{{ 'sections.n_guide_content.must-read' | t }}</em>
+                        {% endif %}
+                    {% endif %}
+                </button>
+            <div
+                id="{{ section.settings.heading | handleize }}-collapse"
+                class="accordion-collapse{% if section.settings.active %} show{% endif %}"
+            >
+                <article>
+                    {% if section.blocks.size > 0 %}
+                        <div class="c-app-stores">
+                            {% for block in section.blocks %}
+                                {% if block.type == 'link' %}
+                                    <a href="{{ block.settings.link_url }}" target="_blank" rel="nofollow">
+                                        <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}">
+                                    </a>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                    {{ section.settings.text }}
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+    "name": "t:sections.n_guide-shedule.name",
+    "class": "shopify-section--guide-content",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "active",
+            "label": "t:common.active",
+            "default": false
+        },
+        {
+            "type": "checkbox",
+            "id": "must_read",
+            "label": "t:common.must-read",
+            "default": false
+        },
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "t:common.header"
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "t:common.text"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "link",
+            "name": "t:common.link",
+            "settings": [
+                {
+                    "type": "url",
+                    "id": "link_url",
+                    "label": "t:common.link-url"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}

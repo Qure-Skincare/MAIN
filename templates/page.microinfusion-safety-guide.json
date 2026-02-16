@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
     "n_across_image_banner_JuY7t53": {
       "type": "n_across-image-banner",
@@ -15,7 +15,7 @@
         "image_YpTcrD": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Group_2202.png"
+            "image": "shopify://shop_images/micro-infusion-bottles.webp"
           }
         }
       },
@@ -53,7 +53,7 @@
       "settings": {
         "use_own_file": true,
         "modifier": "none",
-        "text": "<p><strong>Your new Qure Micro-Infusion device </strong>delivers targeted ingredients deep below the surface, helping reduce the look of fine lines, brighten tone, and boost your natural glow.<br/><br/>This guide will walk you through every step so you can get glowing results safely and confidently.</p>"
+        "text": "<p><strong>Discover how to make the most of the Qure Q-Rejuvalight Pro LED Mask with our creative content guide.</strong></p><p>This brief will help you understand the key benefits of the Q-Rejuvalight Pro Mask and create content that is engaging and educational. </p>"
       }
     },
     "n_guide_menu_9t6Yay": {
@@ -87,6 +87,13 @@
             "must_read": false
           }
         },
+        "menu_item_u8Y20n": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Schedule & Set Reminders",
+            "must_read": false
+          }
+        },
         "menu_item_UzLheA": {
           "type": "menu_item",
           "settings": {
@@ -114,6 +121,7 @@
         "menu_item_zx4BVc",
         "menu_item_Jq4tTQ",
         "menu_item_aJXK4Y",
+        "menu_item_u8Y20n",
         "menu_item_UzLheA",
         "menu_item_FfdP9X",
         "menu_item_RA8pkC"
@@ -182,14 +190,6 @@
             "text": "<h6>Step 7</h6><p>Carefully unscrew the needle head, put the cap back on, and dispose of the used needle head. Each one is single-use only.</p><p>[note_green]<strong>Tip:</strong> Do not reuse needle heads - even if it looks clean. It is designed for one treatment only.[/note]</p>"
           }
         },
-        "step_by_step_HYnXRq": {
-          "type": "step_by_step",
-          "settings": {
-            "modifier": "text_with_image",
-            "image": "shopify://shop_images/Layer_x0020_1.svg",
-            "text": "<p>Treatment Stamping Face Map Guide</p>"
-          }
-        },
         "wistia_video_yTdh9R": {
           "type": "wistia_video",
           "settings": {
@@ -215,7 +215,6 @@
         "step_by_step_jnfmDm",
         "step_by_step_QtBTaD",
         "step_by_step_DVFgC6",
-        "step_by_step_HYnXRq",
         "wistia_video_yTdh9R",
         "quote_Updmkd"
       ],
@@ -257,7 +256,7 @@
           "type": "image_with_text",
           "settings": {
             "image_position": "left",
-            "image": "shopify://shop_images/MI_DS_1.png",
+            "image": "shopify://shop_images/white_serum.webp",
             "text": "<p><strong>For Dark Spots</strong></p><p>Smoothes and evens skin to promote a brighter looking complexion.</p>"
           }
         },
@@ -265,7 +264,7 @@
           "type": "image_with_text",
           "settings": {
             "image_position": "left",
-            "image": "shopify://shop_images/MI_DS_1_1.png",
+            "image": "shopify://shop_images/blue_serum.webp",
             "text": "<p><strong>For Wrinkles</strong></p><p>Helps to plump skin, reducing the look of fine lines and wrinkles.</p>"
           }
         },
@@ -341,6 +340,36 @@
         "must_read": false,
         "heading": "Where to Use",
         "text": "<h2>Where to Use</h2><p>[image]</p><p>The Qure Micro-Infusion device is designed for use on the face and neck only.</p><p>You can safely treat the forehead, cheeks, nose, chin, jawline, and the under-eye area (up to the orbital bone). </p><p>Use light, even pressure and pass over each area 2-3 times. If a section feels too sensitive, it's okay to skip it.</p><p>[quote_content]</p>"
+      }
+    },
+    "n_guide_shedule_dY167v": {
+      "type": "n_guide-shedule",
+      "blocks": {
+        "link_jVzXrL": {
+          "type": "link",
+          "settings": {
+            "link_url": "https://apps.apple.com/us/app/qure-skincare/id1670113821",
+            "image": "shopify://shop_images/app_store_200x_ac25bdd1-4c0d-4f5c-9133-6481e5c7d85a.svg"
+          }
+        },
+        "link_jVzju7": {
+          "type": "link",
+          "settings": {
+            "link_url": "https://play.google.com/store/apps/details?id=com.lighttreeventures.qure&ref=d6cb54b2-d73b-423e-8d66-3b5b3a661340&pli=1",
+            "image": "shopify://shop_images/google_play_200x_bbd57f1c-4ffd-4010-9f3c-62438d152aa6.svg"
+          }
+        }
+      },
+      "block_order": [
+        "link_jVzXrL",
+        "link_jVzju7"
+      ],
+      "name": "t:sections.n_guide-shedule.name",
+      "settings": {
+        "active": false,
+        "must_read": false,
+        "heading": "Schedule & Set Reminders",
+        "text": "<h2>Schedule & Set Reminders</h2><p>The Qure app supports your Micro-Infusion routine by keeping everything simple.</p><p>It helps you track treatments and stay consistent over time, without needing to think about timing or schedules.</p>"
       }
     },
     "n_guide_content_4Fb4fm": {
@@ -495,6 +524,7 @@
     "n_guide_content_image_block_QJD6bj",
     "n_guide_content_image_block_GA6tJ4",
     "n_guide_content_image_block_qFgEQw",
+    "n_guide_shedule_dY167v",
     "n_guide_content_4Fb4fm",
     "n_guide_content_khNGFA",
     "n_guide_faq_QKJdhz"
