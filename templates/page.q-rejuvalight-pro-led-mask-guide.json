@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
     "n_across_image_banner_Jhry7T": {
       "type": "n_across-image-banner",
@@ -68,6 +68,13 @@
             "must_read": false
           }
         },
+        "menu_item_u8Y20n": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Schedule & Set Reminders",
+            "must_read": false
+          }
+        },
         "menu_item_K36e46": {
           "type": "menu_item",
           "settings": {
@@ -94,6 +101,7 @@
         "menu_item_AzhiGG",
         "menu_item_Vtph6k",
         "menu_item_xPYDMC",
+        "menu_item_u8Y20n",
         "menu_item_K36e46",
         "menu_item_4Dtemt",
         "menu_item_bU8ENG"
@@ -242,6 +250,36 @@
         "text": "<h2>Treatment Modes</h2><p>The Q-Rejuvalight Pro Mask has two complete treatment settings: Skin Rejuvenating or Skin Clearing.</p><p>Press the power button once for Skin Rejuvenating mode, or press it twice for Skin Clearing mode.</p>"
       }
     },
+    "n_guide_shedule_dY167v": {
+      "type": "n_guide-shedule",
+      "blocks": {
+        "link_jVzXrL": {
+          "type": "link",
+          "settings": {
+            "link_url": "https://apps.apple.com/us/app/qure-skincare/id1670113821",
+            "image": "shopify://shop_images/app_store_200x_ac25bdd1-4c0d-4f5c-9133-6481e5c7d85a.svg"
+          }
+        },
+        "link_jVzju7": {
+          "type": "link",
+          "settings": {
+            "link_url": "https://play.google.com/store/apps/details?id=com.lighttreeventures.qure&ref=d6cb54b2-d73b-423e-8d66-3b5b3a661340&pli=1",
+            "image": "shopify://shop_images/google_play_200x_bbd57f1c-4ffd-4010-9f3c-62438d152aa6.svg"
+          }
+        }
+      },
+      "block_order": [
+        "link_jVzXrL",
+        "link_jVzju7"
+      ],
+      "name": "t:sections.n_guide-shedule.name",
+      "settings": {
+        "active": false,
+        "must_read": false,
+        "heading": "Schedule & Set Reminders",
+        "text": "<h2>Schedule & Set Reminders</h2><p>The Qure app is designed to make your Q-Rejuvalight Pro routine feel effortless.</p><p>It guides each session, keeps track of your treatments, and helps consistency build naturally over time, without needing to think about timing or progress.</p>"
+      }
+    },
     "n_guide_content_zTqxWp": {
       "type": "n_guide-content",
       "name": "t:sections.n_guide-content.name",
@@ -351,6 +389,7 @@
     "n_across_image_banner_Jhry7T",
     "n_intro_BkRq5o",
     "n_guide_menu_EbHdME",
+    "n_guide_shedule_dY167v",
     "n_guide_content_step_abi9bF",
     "n_guide_content_mPnR88",
     "n_guide_content_image_block_cPibDj",
