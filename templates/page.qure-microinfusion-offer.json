@@ -222,8 +222,8 @@
       "type": "stock-alert",
       "name": "t:sections.stock-alert.name",
       "settings": {
-        "text": "<p>Valentine’s Day Promo!</p>",
-        "text_mobile": "<p>Valentine’s Day Promo!</p>",
+        "text": "<p>THE ONLY FACIAL TREATMENTS YOUR SKIN NEEDS</p>",
+        "text_mobile": "<p>THE ONLY FACIAL TREATMENTS YOUR SKIN NEEDS</p>",
         "style_color": "light_green"
       }
     },
