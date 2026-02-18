@@ -716,35 +716,35 @@
         "list_73gPg9": {
           "type": "list",
           "settings": {
-            "heading": "Prepare",
-            "text": "<p>Twist open the Micro-Infusion device and fill with one ampule of serum.</p>",
-            "image": "shopify://shop_images/mixed_mi_1_1284d5cb-b091-4486-8c61-8e7fb91f0ee3.webp",
-            "image_mobile": "shopify://shop_images/mixed_mi_1_mob_9befa158-b63c-4fdb-9ec1-355b2c21df91.webp"
-          }
-        },
-        "list_8Gbzp6": {
-          "type": "list",
-          "settings": {
-            "heading": "Treatment",
-            "text": "<p>Start at the centre of the face and work your way outward to cover the full face.</p>",
-            "image": "shopify://shop_images/how_quick_men_2.webp",
-            "image_mobile": "shopify://shop_images/how_quick_men_2_mob.webp"
+            "heading": "Cleanse",
+            "text": "<p>Cleanse your face thoroughly and spritz the <span style=\"text-decoration:underline\">Dermal Mist</span> to refresh and prepare your skin further.</p>",
+            "image": "shopify://shop_images/mixed_mi_1_de161d36-94b8-4368-967a-92309960e8bd.webp",
+            "image_mobile": "shopify://shop_images/mi-1-mob_827569f6-409b-4bab-acfa-653baf8de4b5.webp"
           }
         },
         "list_aYAWPp": {
           "type": "list",
           "settings": {
-            "heading": "Aftercare",
-            "text": "<p>Once treatment is completed, place lid back on the needle head. Twist the lid off and dispose safely.</p>",
-            "image": "shopify://shop_images/mixed_mi_3_91f2474a-d637-4864-9324-f49cd5d5bf72.webp",
-            "image_mobile": "shopify://shop_images/mixed_mi_3_mob_32eae610-029c-499f-aa52-ca74e5d64ed4.webp"
+            "heading": "Prepare",
+            "text": "<p>Twist off the cap of the serum vial and screw on the sterile needle head.</p>",
+            "image": "shopify://shop_images/mixed_mi_2_1.webp",
+            "image_mobile": "shopify://shop_images/mi-2-mob_e24b700f-e9d9-450c-a3a9-b3471d78bb7b.webp"
+          }
+        },
+        "list_8Gbzp6": {
+          "type": "list",
+          "settings": {
+            "heading": "Treat",
+            "text": "<p>Remove the cap and stamp gently across your face using light pressure, working section-by-section.</p>",
+            "image": "shopify://shop_images/how_quick_men_2.webp",
+            "image_mobile": "shopify://shop_images/how_quick_men_2_mob.webp"
           }
         }
       },
       "block_order": [
         "list_73gPg9",
-        "list_8Gbzp6",
-        "list_aYAWPp"
+        "list_aYAWPp",
+        "list_8Gbzp6"
       ],
       "name": "t:sections.how-to-use.name",
       "settings": {
