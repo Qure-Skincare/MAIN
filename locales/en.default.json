@@ -376,10 +376,13 @@
         "header": "Next batch ships",
         "text": "Due to high demand, our {{ product_title }} is sold out. Order now and secure yours from the next shipment.",
         "soldout": "SOLD OUT",
-        "reserved": "% Reserved"
+        "reserved": "Reserved"
       },
       "product-rating": {
         "static_html": "<span><strong id='rating'>{{ rating }}</strong>/5 Rated by Customers</span>"
+      },
+      "n-product-rating": {
+        "static_html": "<small><strong id='rating'>{{ rating }}</strong>/5 Rated by Customers</small>"
       },
       "product-buy-button-sticky": {
         "color": "Set color",

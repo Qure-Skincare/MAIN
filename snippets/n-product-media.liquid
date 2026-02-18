@@ -1,0 +1,29 @@
+{% doc %}
+  Renders a product media array for the product section.
+
+  @param {array} product_media - A product media array.
+  @param {string} size - A string value.
+
+  @example
+  {% render 'n-product-page-media', product_media: product.media, size: '240x' %}
+{% enddoc %}
+
+
+{% if product_media %}
+    {% for media in product_media %}
+        {% if media.media_type == 'video' %}
+            {% if media.sources[1].url != blank %}
+                {% assign video_source_url = media.sources[1].url %}
+            {% else %}
+                {% assign video_source_url = media.sources[0].url %}
+            {% endif %}
+            <div class="swiper-slide">
+                <img src="{{ media | img_url: size }}" alt="{{ media.alt | escape }}" class="img-fluid">
+            </div>
+        {% else %}
+            <div class="swiper-slide">
+                <img src="{{ media | img_url: size }}" alt="{{ media.alt | escape }}" class="img-fluid">
+            </div>
+        {% endif %}
+    {% endfor %}
+{% endif %}

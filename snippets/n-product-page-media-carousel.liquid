@@ -1,0 +1,65 @@
+{% doc %}
+  Renders a product/page media carousel array.
+
+  @param {array} input_media_carousel - A product/page media carousel array.
+  @param {string} size - A string value.
+  @param {boolean} thumbnails - A boolean value.
+
+  @example
+  {% render 'n-product-page-media-carousel', input_media_carousel: '', size: '240x', thumbnails: false %}
+{% enddoc %}
+
+{% if thumbnails == blank %}
+    {%- assign thumbnails = false -%}
+{% endif %}
+
+{% if input_media_carousel != blank %}
+
+    {% assign objects = '' %}
+    {% assign watch_objects = '' %}
+
+    {% for item in input_media_carousel.wistia_index_for_video_list.value %}
+        {% if item != blank %}
+            {% assign objects = objects | append: item | append: "," %}
+        {% endif %}
+    {% endfor %}
+
+    {% assign objects_array = objects | split: "," %}
+
+    {% if input_media_carousel.wistia_index_for_watch_video_list.value != blank %}
+        {% for item in input_media_carousel.wistia_index_for_watch_video_list.value %}
+            {% if item != blank %}
+                {% assign watch_objects = watch_objects | append: item | append: "," %}
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+
+    {% assign watch_objects_array = watch_objects | split: "," %}
+
+    {% for media in input_media_carousel.image_or_video.value %}
+        {% assign index = forloop.index0 %}
+        {% assign title = media |  replace: 'files/', '' | replace: '.webp', '' %}
+
+        {% if media.media_type == 'video' %}
+            {% if media.sources[1].url != blank %}
+                {% assign video_source_url = media.sources[1].url %}
+            {% else %}
+                {% assign video_source_url = media.sources[0].url %}
+            {% endif %}
+            <div class="swiper-slide">
+                <img src="{{ media | img_url: size }}" alt="{{ title }}" data-product-handle="{{ title | escape }}" class="img-fluid">
+            </div>
+        {% else %}
+            {% if thumbnails == false and objects_array[index] != blank and objects_array[index] != 'none' %}
+                {% comment %} wistia {% endcomment %}
+                <div class="swiper-slide">
+                    <img src="{{ media | img_url: size }}" alt="{{ title }}" data-product-handle="{{ title | escape }}" class="img-fluid">
+                </div>
+            {% else %}
+                <div class="swiper-slide">
+                    <img src="{{ media | img_url: size }}" alt="{{ title }}" data-product-handle="{{ title | escape }}" class="img-fluid">
+                </div>
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+{% endif %}

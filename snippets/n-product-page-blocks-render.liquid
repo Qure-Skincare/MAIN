@@ -1,0 +1,37 @@
+{% doc %}
+  Renders sections blocks according to allowed_types for product-header/page-header section
+
+  @param {section} - A section object.
+  @param {allowed_types} - A string value.
+  @param {render} - A string value.
+
+  @example
+  {% render 'n-product-page-blocks-render', section: section, allowed_types: '', render: '' %}
+{% enddoc %}
+
+{% if render != blank %}
+    {{ render }}
+{% endif %}
+
+{% if allowed_types != blank %}
+    {% assign allowed_types = allowed_types | split: "," %}
+    
+    {% for block in section.blocks %}
+        {% if allowed_types contains block.type %}
+            {% case block.type %}
+                {% when 'price' %}
+                    {% if black_friday_discount_percent > 0 %}
+                        
+                    {%- else -%}
+                        {% render 'n-product-price', product_sale_price: product_sale_price, product_before_price: product_before_price, product_discount: product_discount, section: section, block: block %}
+                    {%- endif -%}
+                {% when 'description' %}
+                    {% render 'n-product-description', description: section.settings.description %}
+                {% when 'nextships' %}        
+                    {% render 'n-product-page-next-ships', section: section, block: block %}
+                {% when 'button' %}
+                    {% render 'n-product-page-buy-button', product_price: null, product_variant_id: product_variant_id, product_price_divided: product_price_divided, section: section, product_available: product_available, block: block %}
+            {% endcase %}
+        {% endif %}
+    {% endfor %}
+{% endif %}

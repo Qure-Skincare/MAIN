@@ -1,0 +1,46 @@
+{% doc %}
+  Renders product price
+
+  @param {product_sale_price} - A string value.
+  @param {product_before_price} - A string value.
+  @param {product_discount} - A string value.
+  @param {object} - A section object.
+  @param {object} - A block object.
+
+  @example
+  {% render 'product-price', product_sale_price: '', product_before_price: '', product_discount: '', section: '', block: '' %}
+{% enddoc %}
+
+{% assign reserved = false %}
+{% assign soldout = false %}
+
+{% if block == blank %}
+  {% for _block in section.blocks %}
+      {% if _block.type == 'price' %}
+          {% assign block = _block %}
+      {% endif %}
+  {% endfor %}
+{% endif %}
+
+{% if section != blank %}
+  {% if section.settings.reserved != blank %}
+    {% assign reserved = true %}
+  {% endif %}
+  {% if section.settings.soldout != blank %}
+    {% assign soldout = true %}
+  {% endif %}
+{% endif %}
+
+{%- if block.settings.show_discount != blank -%}
+  <div class="e-price">
+      <div class="e-price__main">
+          <div class="e-price__current" data-product-id="{{ product.id }}">{{ product_sale_price }}</div>
+      </div>
+  </div>
+{%- else -%}
+  <div class="e-price">
+      <div class="e-price__main">
+          <div class="e-price__current" data-product-id="{{ product.id }}">{{ product_sale_price }}</div>
+      </div>
+  </div>
+{%- endif -%}

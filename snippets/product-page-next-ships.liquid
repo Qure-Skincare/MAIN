@@ -31,7 +31,7 @@
 
         {% if block.settings.date_reserved != blank %}
             <div class="patch-bar preorder_percent_style" role="progressbar" style="--progress-bg:#91BAEC;--text-color:#212428;--progress-width:{{ block.settings.percent }}%">
-                <span class="patch__date preorder_date_reserved">{{ block.settings.date_reserved }}</span><span class="patch__status"><span class="preorder_percent">{{ block.settings.percent }}</span>{{ 'product.settings.product-next-ships.reserved' | t }}</span>
+                <span class="patch__date preorder_date_reserved">{{ block.settings.date_reserved }}</span><span class="patch__status"><span class="preorder_percent">{{ block.settings.percent }}%</span>{{ 'product.settings.product-next-ships.reserved' | t }}</span>
             </div>
         {% endif %}
     </div>

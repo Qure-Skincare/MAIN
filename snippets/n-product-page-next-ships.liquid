@@ -1,0 +1,39 @@
+{% doc %}
+  Renders a "Next Ships" snippet for the product-header/page-header section
+
+  @param {object} - A section object.
+  @param {object} - A block object.
+  @param {string} - A string value.
+
+  @example
+  {% render 'product-page-next-ships', section: '', block: '', class: '' %}
+{% enddoc %}
+
+{% if block == blank %}
+    {% for _block in section.blocks %}
+        {% if _block.type == 'nextships' %}
+            {% assign block = _block %}
+        {% endif %}
+    {% endfor %}
+{% endif %}
+
+<div class="c-next-batch">
+    <p>
+        {{ 'product.settings.product-next-ships.header' | t }} {{ block.settings.date }}:<br />
+        {{ 'product.settings.product-next-ships.text' | t: product_title: 'product' }}
+    </p>
+    <ul>
+        {% if block.settings.date_soldout != blank %}
+            <li>
+                <span>{{ block.settings.date_soldout }}</span>
+                <span>{{ 'product.settings.product-next-ships.soldout' | t }}</span>
+            </li>
+        {% endif %}
+        {% if block.settings.date_reserved != blank %}
+            <li style="--data-reserved: {{ block.settings.percent }}%">
+                <span>{{ block.settings.date_reserved }}</span>
+                <span>{{ block.settings.percent }}% {{ 'product.settings.product-next-ships.reserved' | t }}</span>
+            </li> 
+        {% endif %}
+    </ul>
+</div>

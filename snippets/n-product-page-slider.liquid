@@ -1,0 +1,34 @@
+{% doc %}
+  Renders a product/page slider section for the product-header/page-header section.
+
+  @param {object} - A product object.
+  @param {object} - A page object.
+  @param {element_id} - A string value.
+  @param {slidesPerView} - A integer value.
+  @param {element_id} - A integer value.
+
+  @example
+  {% render 'n-product-page-slider', product: product, page: page ,element_id: element_id, slidesPerView: 1, element_id: 16  %}
+{% enddoc %}
+
+<div
+    class="c-swiper"
+    data-swiper-thumbs="{{ element_id }} .c-swiper-thumbs"
+    data-swiper='{
+        "slidesPerView": {{ slidesPerView }},
+        "spaceBetween": {{ spaceBetween }},
+        "navigation": {
+            "prevEl": "{{ element_id }} .c-swiper-button-prev",
+            "nextEl": "{{ element_id }} .c-swiper-button-next"
+        }
+    }'>
+    <div class="swiper-wrapper">
+        {% if product.metafields.custom.carousel_media.value != blank %}
+            {% render 'n-product-page-media-carousel', input_media_carousel: product.metafields.custom.carousel_media.value, size: '720x' %}
+        {% elsif page.metafields.custom.carousel_media.value != blank %}
+            {% render 'n-product-page-media-carousel', input_media_carousel: page.metafields.custom.carousel_media.value, size: '720x' %}
+        {% else %}
+            {% render 'n-product-media', product_media: product.media, size: '720x' %}
+        {% endif %}
+    </div>
+</div>
