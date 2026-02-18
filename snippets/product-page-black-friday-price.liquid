@@ -9,8 +9,9 @@
   {% render 'product-page-black-friday-price', product_sale_price: '', product_before_price: '', product_discount: product_discount, product_black_friday_price: '', black_friday_discount: '' %}
 {% enddoc %}
 
+<link rel="stylesheet" href="https://qureskincaredns.com/assets/css/black-friday.css">
 <div class="bundle_price black_friday_wrapper">
-  <div class="black_friday_pricing">{{ 'black-friday.settings.header' | t }}:</div>
+  <div class="black_friday_pricing">{{ 'special-offer.settings.header' | t }}:</div>
   <div class="dis_red_line">
     {% if product_before_price != blank %}
       <div class="bef_price text-decoration-line-through">{{ product_before_price }}</div>

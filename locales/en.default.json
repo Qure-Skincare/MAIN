@@ -323,18 +323,18 @@
       "free": "FREE"
     }
   },
-  "black-friday": {
+  "special-offer": {
     "settings": {
-      "header": "Black Friday",
+      "header": "Special Offer",
       "total-value": "Total value"
     },
     "menu": {
-      "header": "Black Friday Bundles",
+      "header": "Special Offer Bundles",
       "link": "/pages/exclusive-holiday-bundle-deal-new"
     },
     "limited-offer": {
       "header": "UP TO 57% OFF",
-      "text": "Save with Black Friday bundle deals",
+      "text": "Save with Special offer bundle deals",
       "link": "/pages/exclusive-holiday-bundle-deal-new"
     },
     "cart": {
@@ -392,7 +392,7 @@
         "header": "Jump To"
       },
       "limited-offer": {
-        "header": "Black Friday Sale",
+        "header": "Special Offer Sale",
         "text_html": "<p class='qs-offer'>Get <span class='qs-badge'>{{ sum }} OFF</span> with code {{ code }}</p>",
         "days": "DAYS",
         "hours": "HOURS",
@@ -402,8 +402,8 @@
       "you-may-also-like": {
         "header": "You may also like..."
       },
-      "black-friday-discount": {
-        "header": "BLACK FRIDAY",
+      "special-offer-discount": {
+        "header": "SPECIAL OFFER",
         "save": "SAVE EXTRA"
       },
       "money-back": {

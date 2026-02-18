@@ -17,8 +17,9 @@
 {% endif %}
 
 {% if settings.black_friday_discount_percent > 0 %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/assets/css/black-friday.css">
     <div class="black_friday_wrapper">
-        <p class="black_friday_pricing">{{ 'product.settings.black-friday-discount.header' | t }}</p>
-        <a href="javascript:void();" class="save_perc">{{ 'product.settings.black-friday-discount.save' | t }} {{ settings.black_friday_discount_percent }}%</a>
+        <p class="black_friday_pricing">{{ 'product.settings.special-offer-discount.header' | t }}</p>
+        <a href="javascript:void();" class="save_perc">{{ 'product.settings.special-offer-discount.save' | t }} {{ settings.black_friday_discount_percent }}%</a>
     </div>
 {% endif %}
