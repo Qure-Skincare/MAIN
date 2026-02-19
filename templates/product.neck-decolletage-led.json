@@ -40,6 +40,10 @@
             "days": 5
           }
         },
+        "reviews-videos": {
+          "type": "reviews-videos",
+          "settings": {}
+        },
         "nextships_BtDkBp": {
           "type": "nextships",
           "disabled": true,
@@ -93,6 +97,7 @@
         "button_A9",
         "limited_offer_A8",
         "nextships_BtDkBp",
+        "reviews-videos",
         "jumpto_dAPn3y",
         "jumpto_P4RwRV",
         "jumpto_nNgEr7",

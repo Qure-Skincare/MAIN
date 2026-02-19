@@ -6,10 +6,9 @@
   @param {string} product_price_divided - A string value.
   @param {object} section - A object value.
   @param {bool} static - A static value.
-  @param {object} - A block object.
 
   @example
-  {% render 'product-page-buy-button', product_price: '', product_variant_id: '', product_price_divided: '', section: '', product_available: '', block: '', static: '' %}
+  {% render 'product-page-buy-button', product_price: '', product_variant_id: '', product_price_divided: '', section: '', product_available: '', static: '' %}
 {% enddoc %}
 
 {% assign reserved = null %}
@@ -38,6 +37,14 @@
   {% if section.settings.soldout != blank %}
     {% assign soldout = true %}
   {% endif %}
+
+  {% if block == blank %}
+    {% for _block in section.blocks %}
+        {% if _block.type == 'button' %}
+            {% assign block = _block %}
+        {% endif %}
+    {% endfor %}
+  {% endif %}
 {% endif %}
 
 {% if reserved == true %}
@@ -47,7 +54,6 @@
 {% if soldout == true %}
   {% capture button-label %}{{ 'product.settings.soldout-button-label' | t }}{% endcapture %}
 {% endif %}
-
 
 <div class="c-buy-block">
     <div class="c-order-button">

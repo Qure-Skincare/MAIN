@@ -29,7 +29,8 @@
         },
         "button_A9": {
           "type": "button",
-          "settings": {}
+          "settings": {
+          }
         },
         "limited_offer_A8": {
           "type": "limited-offer",

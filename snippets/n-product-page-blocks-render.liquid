@@ -28,9 +28,9 @@
                 {% when 'description' %}
                     {% render 'n-product-description', description: section.settings.description %}
                 {% when 'nextships' %}        
-                    {% render 'n-product-page-next-ships', section: section, block: block %}
+                    {% render 'n-product-page-next-ships', section: section %}
                 {% when 'button' %}
-                    {% render 'n-product-page-buy-button', product_price: null, product_variant_id: product_variant_id, product_price_divided: product_price_divided, section: section, product_available: product_available, block: block %}
+                    {% render 'n-product-page-buy-button', product_price: null, product_variant_id: product_variant_id, product_price_divided: product_price_divided, section: section, product_available: product_available %}
             {% endcase %}
         {% endif %}
     {% endfor %}
