@@ -7,14 +7,243 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
-    "main": {
-      "type": "page",
+    "page_banner_zUyTB8": {
+      "type": "page-banner",
+      "name": "t:sections.page-banner.name",
+      "settings": {
+        "heading": "Build Your Own",
+        "text": "",
+        "sub_text": "",
+        "button": "",
+        "button_url": "",
+        "button_mobile": "",
+        "button_url_mobile": "",
+        "image": "shopify://shop_images/best-seller-banner.webp",
+        "image_mobile": "shopify://shop_images/best-seller-banner-mob.webp"
+      }
+    },
+    "carousel_7YOxGy": {
+      "type": "carousel",
+      "blocks": {
+        "items_3xewxx": {
+          "type": "items",
+          "settings": {
+            "heading": "Free Shipping On Orders Over $100",
+            "image": "shopify://shop_images/guarantee.svg"
+          }
+        },
+        "items_AUjmAT": {
+          "type": "items",
+          "settings": {
+            "heading": "Dermatologist Reviewed",
+            "image": "shopify://shop_images/sheild.svg"
+          }
+        },
+        "items_Ub9bKD": {
+          "type": "items",
+          "settings": {
+            "heading": "Buy Now, Pay Later Options Available",
+            "image": "shopify://shop_images/pay-later.svg"
+          }
+        },
+        "items_CVMfzL": {
+          "type": "items",
+          "settings": {
+            "heading": "Proven Results, <br> Backed By Science",
+            "image": "shopify://shop_images/proven-result.svg"
+          }
+        }
+      },
+      "block_order": [
+        "items_3xewxx",
+        "items_AUjmAT",
+        "items_Ub9bKD",
+        "items_CVMfzL"
+      ],
+      "disabled": true,
+      "name": "t:common.carousel",
+      "settings": {
+        "background_color": "#f6f6f7",
+        "display_mode": "both"
+      }
+    },
+    "byo_fXMjkJ": {
+      "type": "build-your-own",
+      "name": "t:sections.collection.name",
       "settings": {}
+    },
+    "bf_bundle_bunner_mini_JhrEmz": {
+      "type": "bf-bundle-banner-mini",
+      "blocks": {
+        "image_rATyPJ": {
+          "type": "image",
+          "settings": {
+            "percent_value": "57%",
+            "image": "shopify://shop_images/bundle-mini-1.webp"
+          }
+        },
+        "image_dicxDW": {
+          "type": "image",
+          "settings": {
+            "percent_value": "",
+            "image": "shopify://shop_images/bundle-mini-2.webp"
+          }
+        },
+        "image_wCgyfh": {
+          "type": "image",
+          "settings": {
+            "percent_value": "",
+            "image": "shopify://shop_images/bundle-mini-3.webp"
+          }
+        }
+      },
+      "block_order": [
+        "image_rATyPJ",
+        "image_dicxDW",
+        "image_wCgyfh"
+      ],
+      "disabled": true,
+      "name": "t:sections.bf-bundle-banner-mini.name",
+      "settings": {
+        "heading": "<h3>Save Up to 57%</h3>",
+        "text": "<p>Your Favorite Products, Perfectly Bundled</p>",
+        "button_url": "https://qureskincare.com/pages/exclusive-holiday-bundle-deal-new",
+        "button_label": "Shop Bundles Now"
+      }
+    },
+    "bf_bundle_banner_dTU6Q7": {
+      "type": "bf-bundle-banner",
+      "blocks": {
+        "carousel_rRrz43": {
+          "type": "carousel",
+          "settings": {
+            "heading": "<h3>Celebrating the [logo] Community</h3>",
+            "text": "<p>Every purchase* enters you to <strong>win</strong> <strong>a 2025 Range Rover Evoque</strong></p>",
+            "percent_value": "",
+            "image": "shopify://shop_images/bundle-2.webp",
+            "image_mobile": "shopify://shop_images/bundle-2-mob.webp",
+            "button_label": "Shop To Enter",
+            "button_url": "https://qureskincare.com/pages/car-giveaway",
+            "sub_text": ""
+          }
+        },
+        "carousel_bjazym": {
+          "type": "carousel",
+          "settings": {
+            "heading": "<h3>Your Holiday Glow Starts Here</h3>",
+            "text": "<p>Our signature treatment in one carry-on approved set.</p>",
+            "percent_value": "68%",
+            "image": "shopify://shop_images/bundle-1.webp",
+            "image_mobile": "shopify://shop_images/bundle-1-mob.webp",
+            "button_label": "Get Yours Now",
+            "button_url": "https://qureskincare.com/products/micro-infusion-limited-edition-bundle-1",
+            "sub_text": "<p><strong>Limited availability:</strong> Under 100 cases remaining</p>"
+          }
+        }
+      },
+      "block_order": [
+        "carousel_rRrz43",
+        "carousel_bjazym"
+      ],
+      "disabled": true,
+      "name": "t:sections.bf-bundle-banner.name",
+      "settings": {}
+    },
+    "trusted_reviews_mRLHtt": {
+      "type": "trusted-reviews",
+      "blocks": {
+        "slider_iCfR9d": {
+          "type": "slider",
+          "settings": {
+            "heading": "My skin returned to life!",
+            "text": "<p>“I just turned 57 years. My skin was extremely dry and while using this product my skin RETURNED to LIFE! I am so impressed with it! You will not regret in purchasing it. I really see the change in my skin. Outstanding job QURE!”</p>",
+            "compare_image": "shopify://shop_images/Image_12_7a7b017a-c3dc-48b6-b46d-8381372cc87c.png",
+            "country_image": "shopify://shop_images/america_f.webp",
+            "username": "<p>Ellie V.</p>",
+            "product_url": "https://qureskincare.com/pages/microinfusion",
+            "product_heading": "Ellie uses...",
+            "product_text": "Micro-Infusion Facial System",
+            "product_image": "shopify://shop_images/pdp_mi_1_month_dsw.webp"
+          }
+        },
+        "slider_xqHC8P": {
+          "type": "slider",
+          "settings": {
+            "heading": "Can’t go a day without it",
+            "text": "<p>“Straight away I noticed results with the Qure mask. After the first week my skin looked clearer and more balanced. People ask me now how I have got my skin to be hydrated and looking bright with reduced redness. I’m so reliant on the Qure mask now. I don’t think I can go a day without using it.”</p>",
+            "compare_image": "shopify://shop_images/Image_13_bc21b22b-9f3d-4021-b82f-dd20246c38f8.png",
+            "country_image": "shopify://shop_images/australia_f.webp",
+            "username": "<p>Anton M.</p>",
+            "product_url": "https://qureskincare.com/products/q-rejuvalight-pro-facewear",
+            "product_heading": "Anton uses...",
+            "product_text": "Q-Rejuvalight Pro LED Mask",
+            "product_image": "shopify://shop_images/Img_10.png"
+          }
+        },
+        "slider_ea3hLd": {
+          "type": "slider",
+          "settings": {
+            "heading": "Works better than I imagined!",
+            "text": "<p>“I am really stunned by how well this product works. I have had professional micro-needling and I wanted the benefits without the downtime. I did my treatment, went to bed and woke up the next morning and was ready to go. My skin looks better than it has in years.”</p>",
+            "compare_image": "shopify://shop_images/Image_14_e4f17107-9f08-48d2-ac29-0ad001741697.png",
+            "country_image": "shopify://shop_images/america_f.webp",
+            "username": "<p>Jennifer N.</p>",
+            "product_url": "https://qureskincare.com/pages/microinfusion",
+            "product_heading": "Jennifer uses...",
+            "product_text": "Micro-Infusion Facial System",
+            "product_image": "shopify://shop_images/pdp_mi_1_month_dsw.webp"
+          }
+        }
+      },
+      "block_order": [
+        "slider_iCfR9d",
+        "slider_xqHC8P",
+        "slider_ea3hLd"
+      ],
+      "name": "t:sections.trusted-reviews.name",
+      "settings": {
+        "background_color": "#ffffff",
+        "heading": "Results you’ll see with your own eyes",
+        "text": "",
+        "text_mobile": "",
+        "button_label": "",
+        "button_url": ""
+      }
+    },
+    "quiz_DfRXwD": {
+      "type": "quiz",
+      "blocks": {
+        "take_quiz_xbNNGM": {
+          "type": "take_quiz",
+          "settings": {
+            "heading": "Take The Quiz",
+            "text": "<p>Then get a custom skincare plan, backed by science.</p>",
+            "image_text": "<p>Only takes 60 seconds</p>",
+            "button-label": "Take The Quiz",
+            "button-url": "https://qureskincare.com/pages/skin-consultation"
+          }
+        }
+      },
+      "block_order": [
+        "take_quiz_xbNNGM"
+      ],
+      "name": "t:sections.quiz.name",
+      "settings": {
+        "heading": "Unlock Your Personalized Skincare Routine",
+        "text": "<p>You don’t have time for products that don’t work. We’ll prescribe you a personalized routine with clinically proven products and tips - just for your skin.</p>",
+        "sub_text": "Here’s your personalized skincare routine…"
+      }
     }
   },
   "order": [
-    "main"
+    "page_banner_zUyTB8",
+    "carousel_7YOxGy",
+    "byo_fXMjkJ",
+    "bf_bundle_bunner_mini_JhrEmz",
+    "bf_bundle_banner_dTU6Q7",
+    "trusted_reviews_mRLHtt",
+    "quiz_DfRXwD"
   ]
 }

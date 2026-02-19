@@ -1,0 +1,80 @@
+{% doc %}
+  Renders a build your own section
+{% enddoc %}
+
+{% assign collection = collections['easter-collection'] %}
+
+<link rel="stylesheet"
+    href="https://qureskincaredns.com/sections/isolated/collection-block/section-collection-block.css">
+<div class="collection_block qure__section" style="--section-padding-top:10px; --section-padding-top-mob:10px;">
+    <div class="container">
+        <div class="collection_content">
+            <div id="collection-products" class="row projects custom__grid" style="--column-gap:32px; --column-gap-mobile:16px;">
+                {% for product in collection.products %}
+
+                    {% include 'get-product-data', product_handle: product.handle, product_prefix: 'collection-' %}
+
+                    {% if product_handle contains 'micro-infusion' %}
+                        {% assign product_url = '/pages/microinfusion' %}
+                    {% endif %}
+
+                    <div class="col-6 col-md-3 custom__block project" data-filter="fine_lines dark_spots breakouts">
+                        <div class="qure__product-item{% if black_friday_discount_percent > 0 %} silver-badge{% endif %}">
+                            <a href="{{ product_url }}" aria-label="{{ product_title }}" class="qure__product-img overflow-hidden position-relative d-block">
+                                {% for media in product_media limit:2 %}
+                                    <div class="{% if forloop.index == 1 %}qure__product-main-img{% else %}qure__product-hover-img position-absolute inset-0{% endif %}">
+                                        <img src="{{ media | img_url: '720x' }}" alt="{{ product_title | escape }}" />
+                                    </div>
+                                {% endfor %}
+
+                                {% for tag in product_tags %}
+                                    {% if tag contains 'Best Seller' %}
+                                        <div class="badge rounded-pill badge-bestseller">{{ 'sections.collection.bestseller' | t }}</div>
+                                    {% endif %}
+                                {% endfor %}
+                            </a>
+                            <div class="qure__product-details">
+                                {% render 'collection-product-rating', product: product %}
+
+                                <h3 class="fm-body mb-0 qure__product-name">
+                                    <a class="limited-line capitalize d-block" href="{{ product_url }}" aria-label="{{ product_title }}">{{ product_title }}</a>
+                                </h3>
+
+                                {% if black_friday_discount_percent > 0 %}
+                                    <div class="qure__product-price">
+                                        <div class="dis_red_line">
+                                            {% if product_before_price != blank %}
+                                                <span class="bef_price text-decoration-line-through">{{ product_before_price }}</span>
+                                            {% endif %}
+                                            <span class="aft_price">{{ product_sale_price }}</span>
+                                        </div>
+                                        <div class="black_friday_price">{{ product_black_friday_price }}</div>
+                                    </div>
+                                {% else %}
+                                    <div class="d-flex gap-2">
+                                        {% if product_before_price != blank %}
+                                            <div class="bef_price text-decoration-line-through text-black-50 igComparePrice">{{ product_before_price }}</div>
+                                        {% endif %}
+                                        
+                                        <div class="qure__product-price igPrice">{{ product_sale_price }}</div>
+                                    </div>
+                                {% endif %}
+                            </div>
+                            
+                            <div class="d-none d-lg-block">
+                                {% render 'product-page-buy-button', product_price: null, product_variant_id: product_variant_id, section: blank, product_available: product_available %}
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    loadScriptOnce('section-collection-block', 'https://qureskincaredns.com/shopify/js/section-collection-block.js');
+    loadScriptOnce('collection', 'https://qureskincaredns.com/shopify/js/collection.js');
+  });
+</script>
