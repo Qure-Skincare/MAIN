@@ -16,11 +16,11 @@
       "settings": {}
     },
     "footer-form": {
-      "type": "footer-form",
+      "type": "n-footer-form",
       "settings": {}
     },
     "footer": {
-      "type": "footer",
+      "type": "n-footer",
       "settings": {}
     },
     "footer-drawer": {

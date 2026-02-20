@@ -1,0 +1,44 @@
+{% doc %}
+  Renders a footer menu snippet for the footer section
+
+  @example
+  {% render 'n-footer-menu' %}
+{% enddoc %}
+
+
+<div class="footer__nav-column">
+    <h6 data-toggle="accordion">{{ 'footer.settings.navigation_header_1' | t }}</h6>
+    <ul>
+        {% for link in linklists['main-footer-menu'].links %}
+            {% if link.title == 'Shop' %}
+                {%- for __link in link.links -%}
+                    <li><a href="{{ __link.url }}" aria-label="{{ __link.title | escape }}">{{ __link.title }}</a></li>
+                {%- endfor -%}
+            {% endif %}
+        {% endfor %}
+    </ul>
+</div>
+<div class="footer__nav-column">
+    <h6 data-toggle="accordion">{{ 'footer.settings.navigation_header_2' | t }}</h6>
+    <ul>
+        {% for link in linklists['main-footer-menu'].links %}
+            {% if link.title == 'Learn' %}
+                {%- for __link in link.links -%}
+                    <li><a href="{{ __link.url }}" aria-label="{{ __link.title | escape }}">{{ __link.title }}</a></li>
+                {%- endfor -%}
+            {% endif %}
+        {% endfor %}
+    </ul>
+</div>
+<div class="footer__nav-column">
+    <h6 data-toggle="accordion">{{ 'footer.settings.navigation_header_3' | t }}</h6>
+    <ul>
+        {% for link in linklists['main-footer-menu'].links %}
+            {% if link.title == 'Qure' %}
+                {%- for __link in link.links -%}
+                    <li><a href="{{ __link.url }}" aria-label="{{ __link.title | escape }}">{{ __link.title }}</a></li>
+                {%- endfor -%}
+            {% endif %}
+        {% endfor %}
+    </ul>
+</div>
