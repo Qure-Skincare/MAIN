@@ -46,6 +46,14 @@
                     <a href="{{ section.settings.button_url }}" class="btn btn--primary">{{ section.settings.button_label }}</a>
                 {% endif %}
 
+                {% for block in section.blocks %}
+                    {% if block.type == 'disclaimer' %}
+                        {% if block.settings.text != blank %}
+                            <small>{{ block.settings.text }}</small>
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+
                 {% for block in section.blocks%}
                     {% if block.type == 'box' %}
                         <div class="c-certified-box">
@@ -221,6 +229,18 @@
                     "type": "richtext",
                     "id": "rating_text",
                     "label": "t:common.rating-text"
+                }
+            ]
+        },
+        {
+            "type": "disclaimer",
+            "name": "t:common.disclaimer",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "text",
+                    "label": "t:common.text"
                 }
             ]
         }
