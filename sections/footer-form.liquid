@@ -1,31 +1,22 @@
-<!-- Section Subscribe Form -->
-<link rel="stylesheet" href="https://qureskincaredns.com/sections/isolated/subscribe-form/subscribe-form.css" />
-<div class="qure__section qure__subcribe-form color-background"
-   style="--section-padding-top: 50px; --section-padding-bottom: 50px; --section-background:#212428;">
-   <div class="container" style="--column-gap:30px; --column-gap-mobile:30px;">
-      <div class="row justify-content-between custom__grid">
-         <!-- Email Signup -->
-         <div class="col-md-5 offset-md-2 custom__block">
-            <div class="qure__section_form-content text-center">
-               <div class="qure__section-header" style="--heading-size:32px; --heading-color:#fff">
-                  <h2 class="qure__section-heading">{{ 'footer.settings.subscribe_text' | t }}</h2>
-               </div>
-               {% render 'klaviyo-subscription-form' %}
+<!-- FOOTER PROMO -->
+<link rel="stylesheet" href="https://qureskincaredns.com/sections/new/footer-promo/footer-promo.css" />
+<section class="footer-promo">
+    <div class="container">
+        <div class="footer-promo__content">
+            <div class="c-subscribe-form">
+                <h2>{{ 'footer.settings.subscribe_text' | t }}</h2>
+                {% render 'klaviyo-subscription-form' %}
             </div>
-         </div>
-         <!-- Social Icons -->
-         <div class="col-md-5 custom__block">
-            <div class="qure__section-header text-center" style="--heading-size:32px;--heading-color:#fff;">
-               <h2 class="qure__section-heading">{{ 'footer.settings.follow_us_text' | t }}</h2>
+            <div class="c-follow-us">
+                <h2>{{ 'footer.settings.follow_us_text' | t }}</h2>
+                <ul>
+                    <li><a href="https://www.instagram.com/qureskincare/"><i class="e-icon e-icon-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/Qureskincare/"><i class="e-icon e-icon-facebook"></i></a></li>
+                    <li><a href="https://www.tiktok.com/@qureskincare?lang=en"><i class="e-icon e-icon-tiktok"></i></a></li>
+                    <li><a href="https://youtube.com/channel/UCGTi3BZn8GVlu30NtQ-reYA"><i class="e-icon e-icon-youtube"></i></a></li>
+                </ul>
             </div>
-            <div class="quer__social d-flex justify-content-center gap-5">
-               <a href="https://www.instagram.com/qureskincare/" class="social-link" target="_blank" rel="nofollow" aria-label="Instagram"><i class="icon qure-instagram"></i></a>
-               <a href="https://www.facebook.com/Qureskincare/" class="social-link" target="_blank" rel="nofollow" aria-label="Facebook"><i class="icon qure-facebook"></i></a>
-               <a href="https://www.tiktok.com/@qureskincare?lang=en" class="social-link" target="_blank" rel="nofollow" aria-label="TikTok"><i class="icon qure-tik-tok"></i></a>
-               <a href="https://youtube.com/channel/UCGTi3BZn8GVlu30NtQ-reYA" class="social-link" target="_blank" rel="nofollow" aria-label="YouTube"><i class="icon qure-youtube"></i></a>
-            </div>
-         </div>
-      </div>
-   </div>
-</div>
-<!-- Section Subscribe Form End-->
+        </div>
+    </div>
+</section>
+<!-- FOOTER PROMO END -->
