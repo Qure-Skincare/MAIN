@@ -15,14 +15,13 @@
                 <img src="{{ section.settings.image_mobile | image_url }}" alt="{{ section.settings.image_mobile.alt | escape }}">
             {% endif %}
         </picture>
-        <article data-badge="The holiday sale is here">
-            {% if section.settings.heading != blank %}
-                {{ section.settings.heading }}
-            {% endif %}
-            {% if section.settings.text != blank %}
-                {{ section.settings.text }}
-            {% endif %}
-        </article>
+        <div class="container">
+            <article>
+                {% if section.settings.text != blank %}
+                    {{ section.settings.text }}
+                {% endif %}
+            </article>
+        </div>
     </section>
 
 
@@ -51,11 +50,6 @@
                     "label": "t:sections.n_hero-banner.settings.modifier-options.holidays"
                 }
             ]
-        },
-        {
-            "type": "richtext",
-            "id": "heading",
-            "label": "t:common.header"
         },
         {
             "type": "richtext",
