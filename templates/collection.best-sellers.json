@@ -30,7 +30,6 @@
       "settings": {
         "use_own_file": true,
         "modifier": "holidays",
-        "heading": "<h2>Give the gift of glowing skin</h2>",
         "text": "<p>Unwrap radiant skin this holiday season with dermatologist-backed skincare solutions.</p>",
         "image": "shopify://shop_images/holiday-banner.webp",
         "image_mobile": "shopify://shop_images/holiday-banner-mob.webp"
@@ -60,6 +59,18 @@
         "button_url_mobile": "",
         "image": "shopify://shop_images/best-seller-banner.webp",
         "image_mobile": "shopify://shop_images/best-seller-banner-mob.webp"
+      }
+    },
+    "n_hero_banner_Vpjfjd": {
+      "type": "n_hero-banner",
+      "disabled": true,
+      "name": "t:sections.n_hero-banner.name",
+      "settings": {
+        "use_own_file": true,
+        "modifier": "holidays",
+        "text": "<h2>Together, We Rise</h2><p>This International Women’s Day $2 from every order will be donated to <strong>Impact for Women</strong> to help women rebuild their lives and regain confidence.</p>",
+        "image": "shopify://shop_images/iwd_1.webp",
+        "image_mobile": "shopify://shop_images/iwd-mob_1.webp"
       }
     },
     "carousel_7YOxGy": {
@@ -319,6 +330,7 @@
     "n_hero_banner_DxPjy7",
     "bf_page_banner_pYKPB4",
     "page_banner_zUyTB8",
+    "n_hero_banner_Vpjfjd",
     "carousel_7YOxGy",
     "collection_fXMjkJ",
     "bf_bundle_bunner_mini_JhrEmz",
