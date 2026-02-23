@@ -10,7 +10,7 @@
 {
   "sections": {
     "product_header_KpLxTq": {
-      "type": "product-header",
+      "type": "n-product-header",
       "blocks": {
         "black_friday_discount_PYGjBx": {
           "type": "black-friday-discount",

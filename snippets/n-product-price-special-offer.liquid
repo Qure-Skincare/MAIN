@@ -1,0 +1,22 @@
+{% doc %}
+  Renders special offer product price
+
+  @param {product_sale_price} - A string value.
+  @param {product_before_price} - A string value.
+  @param {product_discount} - A string value.
+  @param {object} - A section object.
+  @param {object} - A block object.
+
+  @example
+  {% render 'product-price-special-offer', product_sale_price: '', product_before_price: '', product_discount: product_discount, product_black_friday_price: '', black_friday_discount: '' %}
+{% enddoc %}
+
+<div class="c-special-offer" data-label="{{ 'special-offer.settings.header' | t }}">
+    <div class="e-price">
+        <div class="e-price__main">
+            <div class="e-price__current">{{ product_sale_price }}</div>
+            <div class="e-price__old">{{ product_black_friday_price }}</div>
+        </div>
+    </div>
+    <div class="e-pill-save">{{ 'product.settings.save' | t }} {{ black_friday_discount }}%</div>
+</div>

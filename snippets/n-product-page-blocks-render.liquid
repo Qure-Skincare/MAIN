@@ -21,7 +21,7 @@
             {% case block.type %}
                 {% when 'price' %}
                     {% if black_friday_discount_percent > 0 %}
-                        
+                        {% render 'n-product-price-special-offer', product_sale_price: product_sale_price, product_before_price: product_before_price, product_discount: product_discount, product_black_friday_price: product_black_friday_price, black_friday_discount: black_friday_discount %}
                     {%- else -%}
                         {% render 'n-product-price', product_sale_price: product_sale_price, product_before_price: product_before_price, product_discount: product_discount, section: section, block: block %}
                     {%- endif -%}
