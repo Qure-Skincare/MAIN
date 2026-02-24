@@ -1,0 +1,54 @@
+{% doc %}
+  Renders a marquee logos section.
+{% enddoc %}
+
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/logos-marquee/logos-marquee.css" />
+{% endif %}
+<div class="logos-marquee">
+    <div class="container">
+        <ul class="logos-marquee__list">
+            {% for block in section.blocks %}
+                {% if block.type == 'carousel' %}
+                    {% if block.settings.image != blank %}
+                        <li>
+                            <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                        </li>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
+{% schema %}
+{
+    "name": "t:sections.n_logos.name",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": false
+        }
+    ],
+    "blocks": [
+        {
+            "type": "carousel",
+            "name": "t:common.carousel",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.n_logos.name"
+        }
+    ]
+}
+{% endschema %}
