@@ -4,18 +4,23 @@
 
 {% include 'get-product-data' %}
 
-<!-- BUY SECTION -->
 <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/hero-product/hero-product.css" />
 <section class="hero-product" id="hero-product">
     <div class="hero-product__container container">
         <div class="hero-product__gallery">
-            {% render 'n-product-page-slider', product: product, page: blank, element_id: '#hero-product', slidesPerView: 1, spaceBetween: 16 %}
-            {% render 'n-product-page-slider-thumbs', product: product, page: blank, slidesPerView: 'auto', spaceBetween: 12 %}
+            {% render 'n-product-page-slider', product: product, page: page, element_id: '#hero-product', slidesPerView: 1, spaceBetween: 16 %}
+            {% render 'n-product-page-slider-thumbs', product: product, page: page, slidesPerView: 'auto', spaceBetween: 12 %}
+            {% render 'n-product-page-slider-sticky-video', section: section %}
         </div>
         <div class="hero-product__main">
-            {% if section.settings.rating != blank %}
-                {% render 'n-product-rating', product: product %}
-            {% endif %}
+            {%- if product != blank -%}
+                {% if section.settings.rating != blank %}
+                    {% render 'n-product-rating', product: product %}
+                {% endif %}
+            {%- else -%}
+                {% render 'n-page-rating', section: section %}
+            {%- endif -%}
+
 
             {% if section.settings.seo_heading != blank %}
                 <p>{{ section.settings.seo_heading }}</p>
@@ -25,19 +30,19 @@
                 <h1>{{ section.settings.heading }}</h1>
             {% endif %}
 
-            {% include 'n-product-page-blocks-render', allowed_types: 'saveup-offer,limited-offer,nextships,button,description,price,section,results,black-friday-discount,exclusive-offer,money-back,reviews-videos' %}
+            {% include 'n-product-page-blocks-render' %}
         </div>
-        {% include 'n-product-page-cross-sell', product: product %}
+        <div class="hero-product__extra">
+            {% include 'n-product-page-cross-sell', product: product %}
+            {% render 'n-product-page-collapsed', product: product, page: page %}
+            {% render 'n-product-page-jumpto', section: section %}
+        </div>
     </div>
 </section>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        loadScriptOnce("swiper", "https://qureskincaredns.com/assets/js-new/swiper.js");
-    });
-</script>
-<!-- BUY SECTION END -->
 
-{% render 'product-data-json', product: product %}
+{% if product %}
+    {% render 'product-data-json', product: product %} 
+{% endif %}
 
 {% schema %}
 {
@@ -81,9 +86,47 @@
             "id": "soldout",
             "label": "t:common.soldout",
             "default": false
+        },
+        {
+            "type": "text",
+            "id": "button-label",
+            "label": "t:common.button-label"
+        },
+        {
+            "type": "url",
+            "id": "button-url",
+            "label": "t:common.button-url"
         }
     ],
     "blocks": [
+        {
+            "type": "video",
+            "name": "t:common.video",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "t:common.header"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                },
+                {
+                    "type": "text",
+                    "id": "wistia_url",
+                    "label": "t:common.wistia-url"
+                }
+            ]
+        },
+        {
+            "type": "link",
+            "name": "t:common.link",
+            "limit": 1,
+            "settings": []
+        },
         {
             "type": "jumpto",
             "name": "t:common.jumpto",

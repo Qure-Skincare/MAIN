@@ -10,7 +10,12 @@
 {
   "sections": {
     "product_header_U6RBGz": {
-      "type": "product-header",
+      "type": "n-product-header",
+      "custom_css": [
+        ".vp-img > img {max-height: 50px !important; margin-bottom: 12px !important;}",
+        ".patch__variant-label {display: none !important;}",
+        ".hero-product {padding-top: 60px; padding-bottom: 60px;} @media screen and (max-width: 767px){.hero-product {padding-top: 40px; padding-bottom: 40px;}}"
+      ],
       "blocks": {
         "description_iPBNaS": {
           "type": "description",
@@ -31,10 +36,6 @@
         "description_iPBNaS",
         "section_A0",
         "saveup-offer"
-      ],
-      "custom_css": [
-        ".vp-img > img {max-height: 50px !important; margin-bottom: 12px !important;}",
-        ".patch__variant-label {display: none !important;}"
       ],
       "name": "t:sections.product-header.name",
       "settings": {

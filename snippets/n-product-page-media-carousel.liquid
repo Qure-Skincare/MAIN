@@ -47,7 +47,7 @@
                 {% assign video_source_url = media.sources[0].url %}
             {% endif %}
             <div class="swiper-slide">
-                <img src="{{ media | img_url: size }}" alt="{{ title }}" data-product-handle="{{ title | escape }}" class="img-fluid">
+            <img src="{{ media | img_url: size }}" alt="{{ title }}" data-url="{{ video_source_url }}" {% if thumbnails == false %}class="lvideo"{% endif %} />
             </div>
         {% else %}
             {% if thumbnails == false and objects_array[index] != blank and objects_array[index] != 'none' %}
@@ -57,7 +57,7 @@
                 </div>
             {% else %}
                 <div class="swiper-slide">
-                    <img src="{{ media | img_url: size }}" alt="{{ title }}" data-product-handle="{{ title | escape }}" class="img-fluid">
+                    <img src="{{ media | img_url: size }}" alt="{{ title }}" data-product-handle="{{ title | escape }}">
                 </div>
             {% endif %}
         {% endif %}

@@ -317,6 +317,7 @@
     },
     "exclusive-offer": {
       "header_html": "<div class='eo-header'><span>EXCLUSIVE</span><span> OFFER</span></div>",
+      "n_header_html": "<div class='e-double-tag'><strong>Bundles</strong> Holiday</div>",
       "guarantee-text": "1-Year Guarantee",
       "button-label": "Buy Now & Save",
       "shipping-text": "Free US Shipping over $100",
@@ -360,7 +361,8 @@
       },
       "saveup-offer": {
         "heading_html": "<p>Save up to <strong>57%</strong> with our curated bundles</p>",
-        "button_html": "<a href='{{ button_link }}' class='btn bg-white border-0 text-black mt-15 mt-md-0'>Shop Now <img src='https://qureskincaredns.com/assets/images/arrow_right.svg' alt='arrow'></a>"
+        "button_html": "<a href='{{ button_link }}' class='btn bg-white border-0 text-black mt-15 mt-md-0'>Shop Now <img src='https://qureskincaredns.com/assets/images/arrow_right.svg' alt='arrow'></a>",
+        "n_button_html": "<a href='{{ button_link }}' class='btn btn--primary-white'>Shop Now <i class='e-icon e-icon-arrow'></i></a>"
       },
       "benefits-list": {
         "guaranteed_text": "90-Day Money-Back Guarantee",
@@ -397,6 +399,7 @@
       "limited-offer": {
         "header": "Special Offer Sale",
         "text_html": "<p class='qs-offer'>Get <span class='qs-badge'>{{ sum }} OFF</span> with code {{ code }}</p>",
+        "n_text_html": "<p>Get <span class='e-pill-save'>{{ sum }} OFF</span> with code {{ code }}</p>",
         "days": "DAYS",
         "hours": "HOURS",
         "minutes": "MINUTES",

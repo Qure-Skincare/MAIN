@@ -19,43 +19,41 @@
 {% endif %}
 
 {% if source != blank %}
-    <div class="hero-product__extra">
-        <div class="hero-product__best-with">
-            <h6>{{ 'product.settings.cross-sell.header' | t }}</h6>
-            <div
-                class="c-swiper"
-                data-swiper='{
-                    "slidesPerView": "1.25",
-                    "spaceBetween": 12,
-                    "breakpoints": {
-                        "992": {
-                            "slidesPerView": 2
-                        }
+    <div class="hero-product__best-with">
+        <h6>{{ 'product.settings.cross-sell.header' | t }}</h6>
+        <div
+            class="c-swiper"
+            data-swiper='{
+                "slidesPerView": "1.25",
+                "spaceBetween": 12,
+                "breakpoints": {
+                    "992": {
+                        "slidesPerView": 2
                     }
-                }'>
-                <div class="swiper-wrapper">
-                    {% for item in source %}
-                        {% include 'get-product-data', product_handle: item.product.value.handle, product_prefix: 'product-page-cross-sell-' %}
-                        <div class="swiper-slide">
-                            <img src="{{ product_featured_image | img_url: '240x' }}" alt="{{ product_title | escape }}" />
-                            <a href="{{ product_url }}" aria-label="{{ product_handle | escape }}">{{ product_title }}</a>
+                }
+            }'>
+            <div class="swiper-wrapper">
+                {% for item in source %}
+                    {% include 'get-product-data', product_handle: item.product.value.handle, product_prefix: 'product-page-cross-sell-' %}
+                    <div class="swiper-slide">
+                        <img src="{{ product_featured_image | img_url: '240x' }}" alt="{{ product_title | escape }}" />
+                        <a href="{{ product_url }}" aria-label="{{ product_handle | escape }}">{{ product_title }}</a>
 
-                            {% if product_available == true %}
-                                <form method="post" action="/cart/add" enctype="multipart/form-data">
-                                {% if black_friday_discount_percent > 0 %}
-                                    <button type="submit" class="btn btn--primary btn--sm">{{ 'product.settings.cross-sell.buy-button-label' | t }} - <span class="igPrice">{{ product_black_friday_price }}</span></button>
-                                {% else %}
-                                    <button type="submit" class="btn btn--primary btn--sm">{{ 'product.settings.cross-sell.buy-button-label' | t }} - <span class="igPrice">{{ product_sale_price }}</span></button>
-                                {% endif %}
-                                <input type="hidden" name="quantity" id="quantity" value="1">
-                                <input type="hidden" name="id" value="{{ product_variant_id }}">
-                            </form>
-                            {%- else -%}
-                                <button class="btn btn--primary btn--sm" disabled="true">{{ 'product.settings.cross-sell.soldout-button-label' | t }}</button>
-                            {%- endif -%}
-                        </div>
-                    {% endfor %}
-                </div>
+                        {% if product_available == true %}
+                            <form method="post" action="/cart/add" enctype="multipart/form-data">
+                            {% if black_friday_discount_percent > 0 %}
+                                <button type="submit" class="btn btn--primary btn--sm">{{ 'product.settings.cross-sell.buy-button-label' | t }} - <span class="igPrice">{{ product_black_friday_price }}</span></button>
+                            {% else %}
+                                <button type="submit" class="btn btn--primary btn--sm">{{ 'product.settings.cross-sell.buy-button-label' | t }} - <span class="igPrice">{{ product_sale_price }}</span></button>
+                            {% endif %}
+                            <input type="hidden" name="quantity" id="quantity" value="1">
+                            <input type="hidden" name="id" value="{{ product_variant_id }}">
+                        </form>
+                        {%- else -%}
+                            <button class="btn btn--primary btn--sm" disabled="true">{{ 'product.settings.cross-sell.soldout-button-label' | t }}</button>
+                        {%- endif -%}
+                    </div>
+                {% endfor %}
             </div>
         </div>
     </div>

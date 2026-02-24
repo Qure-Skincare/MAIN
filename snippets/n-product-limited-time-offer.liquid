@@ -1,0 +1,38 @@
+{% doc %}
+  Renders a product limited time offer snippet for the product-header section.
+
+  @param {object} - A section object.
+  @param {object} - A block object.
+
+  @example
+  {% render 'n-product-limited-time-offer', section: '', block: '' %}
+{% enddoc %}
+
+{% if block == blank %}
+    {% for _block in section.blocks %}
+        {% if _block.type == 'limited-offer' %}
+            {% assign block = _block %}
+        {% endif %}
+    {% endfor %}
+{% endif %}
+
+<div class="c-limited-offer">
+    <p>{{ 'product.settings.limited-offer.header' | t }}</p>
+    <div class="e-countdown" data-deadline="">
+        <div data-key="{{ 'product.settings.limited-offer.days' | t }}">00</div>
+        <div data-key="{{ 'product.settings.limited-offer.hours' | t }}">00</div>
+        <div data-key="{{ 'product.settings.limited-offer.minutes' | t }}">00</div>
+        <div data-key="{{ 'product.settings.limited-offer.seconds' | t }}">00</div>
+    </div>
+    {{ 'product.settings.limited-offer.n_text_html' | t: sum: block.settings.sum, code: block.settings.code }}
+</div>
+
+{% if block.settings.days > 0 %}
+    <script>
+        let customDays = {{ block.settings.days }} - 1;
+
+        document.addEventListener("DOMContentLoaded", function () {
+            loadScriptOnce("countdown", "https://qureskincaredns.com/assets/js-new/countdown.js");
+        });
+    </script>
+{% endif %}

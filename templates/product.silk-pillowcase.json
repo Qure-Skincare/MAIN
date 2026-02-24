@@ -9,71 +9,8 @@
  */
 {
   "sections": {
-    "n-product_header_AR9QDc": {
-      "type": "n-product-header",
-      "blocks": {
-        "black_friday_discount_QJ3R78": {
-          "type": "black-friday-discount",
-          "disabled": true,
-          "settings": {}
-        },
-        "price_A11": {
-          "type": "price",
-          "settings": {
-            "show_discount": false
-          }
-        },
-        "description_iPBNaS": {
-          "type": "description",
-          "settings": {}
-        },
-        "button_A9": {
-          "type": "button",
-          "settings": {
-          }
-        },
-        "limited_offer_A8": {
-          "type": "limited-offer",
-          "disabled": true,
-          "settings": {
-            "sum": "$100",
-            "code": "QURE100",
-            "days": 5
-          }
-        },
-        "nextships_iPBNaP": {
-          "type": "nextships",
-          "disabled": true,
-          "settings": {
-            "date": "{date}:",
-            "percent": 48,
-            "date_soldout": "{Previous date}",
-            "date_reserved": "{date}"
-          }
-        }
-      },
-      "block_order": [
-        "black_friday_discount_QJ3R78",
-        "price_A11",
-        "description_iPBNaS",
-        "button_A9",
-        "limited_offer_A8",
-        "nextships_iPBNaP"
-      ],
-      "name": "t:sections.product-header.name",
-      "settings": {
-        "seo_heading": "PURE SILK PILLOWCASE",
-        "heading": "Minimize the formation of wrinkles while you sleep",
-        "rating": true,
-        "limited": false,
-        "description": "<ul><li>Causes less friction against the skin, helping minimize the formation of sleep lines and wrinkles.</li><li>Reduces the accumulation of oils and bacteria that can clog pores and cause acne.</li><li>Helps to retain moisture: Absorbs less face cream, helping you maintain hydration for a more healthy-looking complexion.</li></ul>",
-        "reserved": false,
-        "soldout": false
-      }
-    },
     "product_header_AR9QDc": {
-      "disabled": true,
-      "type": "product-header",
+      "type": "n-product-header",
       "blocks": {
         "black_friday_discount_QJ3R78": {
           "type": "black-friday-discount",
@@ -369,7 +306,6 @@
     }
   },
   "order": [
-    "n-product_header_AR9QDc",
     "product_header_AR9QDc",
     "logos_69iJ8B",
     "banner_with_text_tHRN67",

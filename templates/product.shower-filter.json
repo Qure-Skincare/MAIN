@@ -10,7 +10,10 @@
 {
   "sections": {
     "product_header_prNYyf": {
-      "type": "product-header",
+      "type": "n-product-header",
+      "custom_css": [
+        ".product-page-buy-button-bottom {display: none;} .hero-product {padding-top: 60px; padding-bottom: 60px;} @media screen and (max-width: 767px){.hero-product {padding-top: 40px; padding-bottom: 40px;}}"
+      ],
       "blocks": {
         "black_friday_discount_eUhwh7": {
           "type": "black-friday-discount",
@@ -92,9 +95,6 @@
         "jumpto_7JzPHz",
         "jumpto_EY6mqw",
         "jumpto_YV6XMK"
-      ],
-      "custom_css": [
-        ".product-page-buy-button-bottom {display: none;}"
       ],
       "name": "t:sections.product-header.name",
       "settings": {

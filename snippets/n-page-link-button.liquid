@@ -1,0 +1,12 @@
+{% doc %}
+  Renders a link button snippet.
+
+  @param {object} section - A object value.
+
+  @example
+  {% render 'n-page-link-button', section: '' %}
+{% enddoc %}
+
+{% if section.settings.button-label != blank %}
+    <a href="{{ section.settings.button-url }}" class="btn btn--primary add-cart-button" aria-label="{{ section.settings.button-label | escape }}">{{ section.settings.button-label }}</a>
+{% endif %}
