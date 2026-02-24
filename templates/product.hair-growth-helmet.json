@@ -99,6 +99,13 @@
     "hair_growth_helmet_image_slider_9KL6Kj": {
       "type": "hair-growth-helmet-image-slider",
       "blocks": {
+        "slider_V86bzz": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/Image_35_1.webp",
+            "text": "<p>Visibly improved: <em>Thinning at temples</em></p>"
+          }
+        },
         "slider_UGthBb": {
           "type": "slider",
           "settings": {
@@ -164,6 +171,7 @@
         }
       },
       "block_order": [
+        "slider_V86bzz",
         "slider_UGthBb",
         "slider_g6xXyH",
         "slider_4H7qGT",
