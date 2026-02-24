@@ -680,7 +680,7 @@
           "type": "accordion",
           "settings": {
             "heading": "How does the Qure Q-Renew LLLT Helmet work?",
-            "text": "<p>The Q-Renew LLLT Helmet uses a combination of low-level laser therapy (LLLT) and red LED light therapy to help support hair follicle activity and promote healthier-looking, fuller hair. The lasers deliver focused light to the scalp, while LEDs provide broader coverage</p>",
+            "text": "<p>The Q-Renew LLLT Helmet uses a combination of low-level laser therapy (LLLT) and red LED light therapy to help support hair follicle activity and promote healthier-looking, fuller hair. The lasers deliver focused light to the scalp, while LEDs provide broader coverage to support overall scalp exposure.</p>",
             "link_url": "",
             "link_text": ""
           }
@@ -689,7 +689,7 @@
           "type": "accordion",
           "settings": {
             "heading": "How often can I use this treatment?",
-            "text": "<p>We recommend using the helmet 5-7 times per week for at least 16 weeks. After that, continue every other day to help maintain results. <br/><br/>Each treatment lasts 12 minutes and ends automatically.</p>",
+            "text": "<p>Use the helmet once per day, 5–7 times per week. Consistent weekly use is recommended for best results.<br/><br/>Each treatment lasts 12 minutes and ends automatically.</p>",
             "link_url": "",
             "link_text": ""
           }
@@ -698,7 +698,43 @@
           "type": "accordion",
           "settings": {
             "heading": "How quickly will I see the results?",
-            "text": "<p>Visible changes take time. Most users should expect to use the helmet consistently for at least 3-6 months before noticing fuller, healthier-looking hair. Like any long-term treatment, consistency is key!</p>",
+            "text": "<p>Hair growth takes time. In a 16-week consumer use study with consistent use, participants showed visible improvements in hair thickness, density, and overall hair quality. Clinical measurements demonstrated increases in hair growth rate, average hair thickness, and total hair width after 16 weeks.<br/><br/>Results are gradual and become more noticeable with continued use. Individual results may vary.</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "accordion_ErmUaV": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Do I need to wash my hair before use?",
+            "text": "<p>Your hair does not need to be freshly washed, but it must be clean, completely dry, and free from any styling products, oils, serums, sprays, fibers, or topical treatments on the scalp. This ensures proper light exposure and consistent performance.</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "accordion_JyVe8h": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Can I use it with hair products?",
+            "text": "<p>No. Use only on clean, completely dry hair with no styling products, oils, serums, sprays, fibers, or topical treatments on the scalp. Products can interfere with light delivery and reduce treatment consistency.</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "accordion_BD8Yxr": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Should I use it on wet or dry hair?",
+            "text": "<p>Always use on dry hair. Do not use on wet or damp hair.</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "accordion_4P8e4c": {
+          "type": "accordion",
+          "settings": {
+            "heading": "What happens if I miss sessions?",
+            "text": "<p>If you miss a session, resume your regular schedule. Hair growth support depends on consistency over time. Occasional missed sessions will not undo progress, but regular use is associated with stronger visible results.</p>",
             "link_url": "",
             "link_text": ""
           }
@@ -725,7 +761,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Is Q-Renew LLLT Helmet safe and FDA cleared?",
-            "text": "<p>Yes, the Q-Renew LLLT Helmet is FDA-cleared and designed for safe home use.<br/><br/>The device is also listed on the Australian Register of Therapeutic Goods (ARTG 522231) as a Class IIa medical device.<br/>In the United States, the Q-Renew LLLT Helmet is indicated for the promotion of hair growth in males with Norwood-Hamilton classifications of IIa–V and in females with androgenetic alopecia who have Ludwig-Savin classifications of I–II.<br/><br/>The device includes built-in safety sensors that activate the lights only when properly positioned on the head and automatically pause when removed. Maximum operating temperature is 35°C (95°F).”</p>",
+            "text": "<p>Yes. The Q-Renew LLLT Helmet is FDA-cleared for the promotion of hair growth in males who have Norwood-Hamilton classifications of IIa–V, and in females with androgenetic alopecia who have Ludwig-Savin Classifications of I–II, and in both, Fitzpatrick Classification of Skin Phototypes I to IV.<br/><br/>It is also Included on the Australian Register of Therapeutic Goods (ARTG 522231) as a Class IIa medical device.<br/><br/>The device includes built-in safety sensors that activate the lights only when properly positioned on the head and automatically pause when removed. Maximum operating temperature is 35°C (95°F). Review all contraindications before use.</p>",
             "link_url": "",
             "link_text": ""
           }
@@ -735,6 +771,24 @@
           "settings": {
             "heading": "Who is it not recommended for?",
             "text": "<p>Do not use this product if you are under 18, pregnant, breastfeeding, photosensitive, on light-sensitizing medications, prone to light-triggered headaches or seizures, or have open wounds or infections on the scalp.</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "accordion_wkhUtP": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Can I travel with it?",
+            "text": "<p>Yes. The helmet is lightweight, wireless, and rechargeable via USB-C, making it suitable for travel.</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "accordion_c3YiLp": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Does it work for postpartum shedding?",
+            "text": "<p>Postpartum shedding is commonly linked to temporary hormonal shifts after pregnancy, which can cause more hairs than usual to move into the resting phase at the same time.<br/><br/>While the Q-Renew LLLT Helmet has not been specifically studied in a clinical trial focused solely on postpartum shedding, it is designed to support overall hair follicle activity and encourage the appearance of hairs in the active growth phase.<br/><br/>The device uses low-level laser and red light therapy to help support hair density, thickness, and overall hair quality. In a 16-week consumer use study with consistent use, participants showed visible improvements in hair thickness, density, total hair width, and measured increases in hair growth rate.<br/><br/>Because postpartum shedding is typically temporary and hormone-related, results may vary depending on your individual hair cycle and overall health. If unsure whether the device is suitable for you, consult your healthcare provider.<br/><br/>Do not use if pregnant or breastfeeding.</p>",
             "link_url": "",
             "link_text": ""
           }
@@ -753,10 +807,16 @@
         "accordion_aJd9jV",
         "accordion_EAdrMB",
         "accordion_WVdct6",
+        "accordion_ErmUaV",
+        "accordion_JyVe8h",
+        "accordion_BD8Yxr",
+        "accordion_4P8e4c",
         "accordion_4xbifb",
         "accordion_mkVbPN",
         "accordion_mAjjJj",
         "accordion_M7qFY8",
+        "accordion_wkhUtP",
+        "accordion_c3YiLp",
         "accordion_fgq9EN"
       ],
       "name": "t:sections.faq.name",
