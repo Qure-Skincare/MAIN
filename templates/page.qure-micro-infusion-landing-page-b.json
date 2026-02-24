@@ -47,6 +47,7 @@
     },
     "trusted_recommended_MlYLp4": {
       "type": "trusted-recommended",
+      "disabled": true,
       "name": "t:sections.trusted-recommended.name",
       "settings": {
         "background_color": "#ffffff",
