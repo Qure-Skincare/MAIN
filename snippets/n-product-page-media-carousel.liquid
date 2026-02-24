@@ -51,9 +51,15 @@
             </div>
         {% else %}
             {% if thumbnails == false and objects_array[index] != blank and objects_array[index] != 'none' %}
-                {% comment %} wistia {% endcomment %}
                 <div class="swiper-slide">
-                    <img src="{{ media | img_url: size }}" alt="{{ title }}" data-product-handle="{{ title | escape }}" class="img-fluid">
+                    <img
+                        class="watch-wistia-video"
+                        src="{{ media | img_url: size }}"
+                        alt="{{ title | escape }}"
+                        data-bs-toggle="modal"
+                        data-bs-target="#reusableWistiaModal"
+                        data-video-id="{{ objects_array[index] }}"
+                    />
                 </div>
             {% else %}
                 <div class="swiper-slide">
