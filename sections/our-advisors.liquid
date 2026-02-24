@@ -8,10 +8,10 @@
    style="--section-padding-top: 70px;--section-padding-bottom: 40px;--section-padding-top-mob: 50px;--section-padding-bottom-mob: 30px;">
    <div class="container">
       <div class="qure__section-header text-center mb-30 mb-md-60 ctm-width mx-auto" style="--ctm-width: 800px;">
-         {% if section.settings.heading != blank and section.settings.text != blank %}
+         {% if section.settings.heading != blank %}
                <h2 class="qure__section-heading mb-20 mb-md-24">{{ section.settings.heading }}</h2>
-               {{ section.settings.text | replace: '<p>', '' }}
          {% endif %}
+         {{ section.settings.text | replace: '<p>', '' }}
       </div>
    </div>
    <div class="container offset-container-mobile">
