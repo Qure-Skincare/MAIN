@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
     "product_header_KpLxTq": {
       "type": "n-product-header",
@@ -23,7 +23,7 @@
         "price_A11": {
           "type": "price",
           "settings": {
-            "show_discount": false
+            "show_discount": true
           }
         },
         "description_iPBNaS": {

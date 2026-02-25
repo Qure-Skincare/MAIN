@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
     "product_header_U6RBGz": {
       "type": "n-product-header",
@@ -479,8 +479,8 @@
             "heading-mobile": "Target",
             "text": "<p>80 micro-darts painlessly reach below the surface to target the look of fine lines and dullness. </p>",
             "text-mobile": "<p>80 micro-darts painlessly reach below the surface to target the look of fine lines and dullness. </p>",
-            "image": "shopify://shop_images/a-1.webp",
-            "image-mobile": "shopify://shop_images/a-1-m.webp"
+            "image": "shopify://shop_images/Img_43.webp",
+            "image-mobile": "shopify://shop_images/1_7.webp"
           }
         },
         "list_GXXzax": {
@@ -846,17 +846,17 @@
         "accordion_iPmkaU": {
           "type": "accordion",
           "settings": {
-            "heading": "Retinol",
-            "text": "<p>A vitamin A derivative commonly used in skincare to help improve the appearance of skin texture and radiance, leaving skin looking smoother</p>",
-            "image": "shopify://shop_images/retinol.webp"
+            "heading": "Retinol (Vitamin A)",
+            "text": "<p>Retinol supports faster cell turnover to reveal smoother, more refined skin. It helps fade hyperpigmentation, improve texture, and reduce fine lines, without the typical irritation.</p>",
+            "image": "shopify://shop_images/4_webp.webp"
           }
         },
         "accordion_Fyfcy4": {
           "type": "accordion",
           "settings": {
-            "heading": "Peptides",
+            "heading": "Copper Peptides ",
             "text": "<p>A blend of peptides designed to help support skin that looks firmer and more resilient, contributing to a plumper, more youthful look.</p>",
-            "image": "shopify://shop_images/peptides.webp"
+            "image": "shopify://shop_images/Ingredient_1.webp"
           }
         },
         "accordion_AEacWH": {

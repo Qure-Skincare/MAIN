@@ -8,7 +8,7 @@
   @param {bool} static - A static value.
 
   @example
-  {% render 'product-page-buy-button', product_price: '', product_variant_id: '', product_price_divided: '', section: '', product_available: '', static: '' %}
+  {% render 'n-product-page-buy-button', product_price: '', product_variant_id: '', product_price_divided: '', section: '', product_available: '', static: '' %}
 {% enddoc %}
 
 {% assign reserved = null %}
@@ -107,7 +107,7 @@
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      loadScriptOnce('product-buy-button', 'https://qureskincaredns.com/shopify/js/product-buy-button.js');
+      loadScriptOnce('n-product-page-buy-button.js', '{{ 'n-product-page-buy-button.js' | asset_url }}');
     });
   </script>
 {% endif %}

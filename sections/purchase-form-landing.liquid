@@ -1,6 +1,9 @@
 {% include 'assoc-array', section: section, __parent_title: 'type', __separator: '###' %}
 
 <template id="async">
+    {% if settings.black_friday_discount_percent > 0 %}
+        <link rel="stylesheet" href="https://qureskincaredns.com/assets/css/black-friday.css">
+    {% endif %}
     <link rel="stylesheet" href="https://qureskincaredns.com/sections/global/purchase-form-landing/purchase-form-landing.css">
     <link rel="stylesheet" href="https://qureskincaredns.com/sections/isolated/targeted-patches/section-targeted-patches.css" />
     <div class="{{ section.id }}">

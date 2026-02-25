@@ -8,7 +8,7 @@
   @param {object} - A block object.
 
   @example
-  {% render 'product-price', product_sale_price: '', product_before_price: '', product_discount: '', section: '', block: '' %}
+  {% render 'n-product-price', product_sale_price: '', product_before_price: '', product_discount: '', section: '', block: '' %}
 {% enddoc %}
 
 {% assign reserved = false %}
@@ -31,12 +31,27 @@
   {% endif %}
 {% endif %}
 
-{%- if block.settings.show_discount != blank -%}
-  <div class="e-price">
-      <div class="e-price__main">
-          <div class="e-price__current" data-product-id="{{ product.id }}">{{ product_sale_price }}</div>
+
+{%- if block.settings.show_discount != blank and product_discount != blank -%}
+    <div class="c-special-offer">
+      <div class="e-price">
+          <div class="e-price__main">
+              <div class="e-price__current">{{ product_sale_price }}</div>
+              <div class="e-price__old">{{ product_before_price }}</div>
+          </div>
       </div>
+      <div class="e-pill-save">{{ 'product.settings.save' | t }} {{ product_discount }}%</div>
   </div>
+
+  {% if reserved == false and soldout == false %}
+    <script>
+      let buy_and_save_button_label = '{{ 'product.settings.buy-and-save-button-label' | t }} {{ product_discount }}%';
+
+      document.addEventListener("DOMContentLoaded", function () {
+        loadScriptOnce('n-product-price.js', '{{ 'n-product-price.js' | asset_url }}');
+      });
+    </script>
+  {%- endif -%}
 {%- else -%}
   <div class="e-price">
       <div class="e-price__main">

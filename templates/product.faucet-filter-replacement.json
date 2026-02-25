@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
     "product_header_FnMCMD": {
       "type": "n-product-header",
@@ -137,6 +137,8 @@
             "product": "faucet-filter-refill",
             "product_variant_id": 45852989653231,
             "product_selling_plan": 6180143343,
+            "popular": false,
+            "best": false,
             "preselected": true,
             "heading": "White",
             "subheading": "",
@@ -155,6 +157,8 @@
             "product": "faucet-filter-refill",
             "product_variant_id": 45852989620463,
             "product_selling_plan": 6180143343,
+            "popular": false,
+            "best": false,
             "preselected": false,
             "heading": "Black",
             "subheading": "",
