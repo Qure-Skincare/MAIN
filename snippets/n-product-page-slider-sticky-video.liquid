@@ -1,0 +1,30 @@
+{% doc %}
+  Renders a product/page slider sticky video block for the product-header/page-header section.
+
+  @param {section} - A section object.
+
+  @example
+  {% render 'n-product-page-slider-sticky-video', section: '' %}
+{% enddoc %}
+
+{% if section != blank %}
+    {% for block in section.blocks %}
+        {% if block.type == 'gallery-sticky-video' %}
+            {% if block.settings.video_url != blank %}
+                <div class="e-sticky-thumb-video">
+                    <video loop preload="metadata" playsinline="true">
+                        <source src="{{ block.settings.video_url }}" type="video/mp4" />
+                    </video>
+                    <button type="button">
+                        <i class="e-icon e-icon-cross"></i>
+                    </button>
+                </div>
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        loadScriptOnce("gallery-sticky-video", "https://qureskincaredns.com/assets/js-new/gallery-sticky-video.js");
+                    });
+                </script>
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+{% endif %}

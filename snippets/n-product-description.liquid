@@ -1,0 +1,14 @@
+{% doc %}
+  Renders product description
+
+  @param {description} - A string value.
+
+  @example
+  {% render 'n-product-description', description: '' %}
+{% enddoc %}
+
+{% if description != blank %}
+    <article>
+      {{ description }}
+  </article>
+{% endif %}

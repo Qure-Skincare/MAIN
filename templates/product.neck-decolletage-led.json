@@ -7,10 +7,13 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
     "product_header_KpLxTq": {
-      "type": "product-header",
+      "type": "n-product-header",
+      "custom_css": [
+        ".hero-product {padding-top: 60px; padding-bottom: 60px;} @media screen and (max-width: 767px){.hero-product {padding-top: 40px; padding-bottom: 40px;}}"
+      ],
       "blocks": {
         "black_friday_discount_PYGjBx": {
           "type": "black-friday-discount",
@@ -20,7 +23,7 @@
         "price_A11": {
           "type": "price",
           "settings": {
-            "show_discount": false
+            "show_discount": true
           }
         },
         "description_iPBNaS": {
@@ -39,6 +42,10 @@
             "code": "QURE100",
             "days": 5
           }
+        },
+        "reviews-videos": {
+          "type": "reviews-videos",
+          "settings": {}
         },
         "nextships_BtDkBp": {
           "type": "nextships",
@@ -93,6 +100,7 @@
         "button_A9",
         "limited_offer_A8",
         "nextships_BtDkBp",
+        "reviews-videos",
         "jumpto_dAPn3y",
         "jumpto_P4RwRV",
         "jumpto_nNgEr7",

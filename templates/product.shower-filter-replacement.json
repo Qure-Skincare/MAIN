@@ -7,10 +7,13 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
     "product_header_5nXYyf": {
-      "type": "product-header",
+      "type": "n-product-header",
+      "custom_css": [
+        ".hero-product {padding-top: 60px; padding-bottom: 60px;} @media screen and (max-width: 767px){.hero-product {padding-top: 40px; padding-bottom: 40px;}}"
+      ],
       "blocks": {
         "black_friday_discount_8mFNP9": {
           "type": "black-friday-discount",

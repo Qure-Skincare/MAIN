@@ -7,10 +7,10 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
     "product_header_AR9QDc": {
-      "type": "product-header",
+      "type": "n-product-header",
       "blocks": {
         "black_friday_discount_QJ3R78": {
           "type": "black-friday-discount",

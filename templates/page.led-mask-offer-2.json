@@ -7,10 +7,13 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
     "page_header_6BFNQx": {
-      "type": "page-header",
+      "type": "n-product-header",
+      "custom_css": [
+        ".hero-product {padding-top: 60px; padding-bottom: 60px;} @media screen and (max-width: 767px){.hero-product {padding-top: 40px; padding-bottom: 40px;}}"
+      ],
       "blocks": {
         "description_iSDNaK": {
           "type": "description",

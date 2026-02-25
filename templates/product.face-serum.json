@@ -7,10 +7,13 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
     "product_header_kHW3Cn": {
-      "type": "product-header",
+      "type": "n-product-header",
+      "custom_css": [
+        ".vp-img > img {max-height: 50px !important; margin-bottom: 12px !important;} .hero-product {padding-top: 60px; padding-bottom: 60px;} @media screen and (max-width: 767px){.hero-product {padding-top: 40px; padding-bottom: 40px;}}"
+      ],
       "blocks": {
         "black_friday_discount_A9": {
           "type": "black-friday-discount",
@@ -92,9 +95,6 @@
         "jumpto_UrBwXR",
         "jumpto_hcQKEq",
         "jumpto_hQdAPf"
-      ],
-      "custom_css": [
-        ".vp-img > img {max-height: 50px !important; margin-bottom: 12px !important;}"
       ],
       "name": "t:sections.product-header.name",
       "settings": {

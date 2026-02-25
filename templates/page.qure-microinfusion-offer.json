@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
     "announcement_bar_iNbPEw": {
       "type": "announcement-bar",
@@ -21,7 +21,10 @@
       }
     },
     "page_header_SXJyMD": {
-      "type": "page-header",
+      "type": "n-product-header",
+      "custom_css": [
+        ".hero-product {padding-top: 60px; padding-bottom: 60px;} @media screen and (max-width: 767px){.hero-product {padding-top: 40px; padding-bottom: 40px;}}"
+      ],
       "blocks": {
         "link_iPBNaS": {
           "type": "link",

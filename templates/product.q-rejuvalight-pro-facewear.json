@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
     "announcement_bar_jkkyg7": {
       "type": "announcement-bar",
@@ -21,7 +21,10 @@
       }
     },
     "product_header_V3N3T8": {
-      "type": "product-header",
+      "type": "n-product-header",
+      "custom_css": [
+        ".hero-product {padding-top: 60px; padding-bottom: 60px;} @media screen and (max-width: 767px){.hero-product {padding-top: 40px; padding-bottom: 40px;}}"
+      ],
       "blocks": {
         "gallery_sticky_video_ty3KMw": {
           "type": "gallery-sticky-video",

@@ -1,0 +1,23 @@
+{% doc %}
+  Renders a product limited time offer snippet for the product-header section.
+
+  @param {object} - A section object.
+  @param {object} - A block object.
+
+  @example
+  {% render 'n-product-page-black-friday-discount', section: '', block: '', %}
+{% enddoc %}
+
+{% if block == blank %}
+    {% for _block in section.blocks %}
+        {% if _block.type == 'black-friday-discount' %}
+            {% assign block = _block %}
+        {% endif %}
+    {% endfor %}
+{% endif %}
+
+{% if settings.black_friday_discount_percent > 0 %}
+    <div class="c-special-offer" data-label="{{ 'product.settings.special-offer-discount.header' | t }}">
+        <div class="e-pill-save">{{ 'product.settings.special-offer-discount.save' | t }} {{ settings.black_friday_discount_percent }}%</div>
+    </div>
+{% endif %}

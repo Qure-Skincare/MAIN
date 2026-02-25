@@ -1,0 +1,27 @@
+{% doc %}
+  Renders a "Jump To" snippet for the product-header/page-header section
+
+  @param {object} - A section object.
+
+  @example
+  {% render 'n-product-jumpto', section: product %}
+{% enddoc %}
+
+{% capture jumpto %}
+    {% for block in section.blocks %}
+        {% if block.type == 'jumpto' %}
+            {% if block.settings.button-label != blank %}
+                <li><a href="{{ block.settings.button-url }}" class="patch-badge">{{ block.settings.button-label }}<i class="fa-regular fa-arrow-down fs-14"></i></a></li>
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+{% endcapture %}
+
+{% if jumpto != blank %}
+    <div class="c-jump-to">
+        <div class="c-jump-to__title">{{ 'product.settings.jumpto.header' | t }}</div>
+        <ul class="c-jump-to__buttons">
+            {{ jumpto }}
+        </ul>
+    </div>
+{% endif %}
