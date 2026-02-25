@@ -1,0 +1,49 @@
+<link rel="stylesheet" href="https://qureskincaredns.com/sections/new/footer-benefits/footer-benefits.css" />
+<section class="footer-benefits">
+    <div class="container">
+        <div
+            class="c-swiper"
+            data-swiper='{
+            "slidesPerView": 1,
+            "spaceBetween": 20,
+            "loop": true,
+            "autoplay": true,
+            "breakpoints": {
+                "768": {
+                    "slidesPerView": 3
+                },
+                "991": {
+                    "slidesPerView": 4
+                }
+            }
+        }'>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <i class="e-icon e-icon-benefits-box"></i>
+                    <h6>{{ 'footer-perks.settings.slider-1.header' | t }}</h6>
+                    <p>{{ 'footer-perks.settings.slider-1.text' | t }}</p>
+                </div>
+                <div class="swiper-slide">
+                    <i class="e-icon e-icon-benefits-restart"></i>
+                    <h6>{{ 'footer-perks.settings.slider-2.header' | t }}</h6>
+                    <p>{{ 'footer-perks.settings.slider-2.text' | t }}</p>
+                </div>
+                <div class="swiper-slide">
+                    <i class="e-icon e-icon-benefits-gift"></i>
+                    <h6>{{ 'footer-perks.settings.slider-3.header' | t }}</h6>
+                    <p>{{ 'footer-perks.settings.slider-3.text-mobile' | t }}</p>
+                </div>
+                <div class="swiper-slide">
+                    <i class="e-icon e-icon-benefits-headphone"></i>
+                    <h6>{{ 'footer-perks.settings.slider-4.header' | t }}</h6>
+                    <p>{{ 'footer-perks.settings.slider-4.text' | t }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        loadScriptOnce("swiper", "https://qureskincaredns.com/assets/js-new/swiper.js");
+    });
+</script>

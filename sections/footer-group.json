@@ -12,15 +12,15 @@
   "name": "t:sections-group.footer.name",
   "sections": {
     "footer-perks": {
-      "type": "footer-perks",
+      "type": "n-footer-perks",
       "settings": {}
     },
     "footer-form": {
-      "type": "footer-form",
+      "type": "n-footer-form",
       "settings": {}
     },
     "footer": {
-      "type": "footer",
+      "type": "n-footer",
       "settings": {}
     },
     "footer-drawer": {
@@ -33,7 +33,7 @@
       "settings": {}
     },
     "footer-wistia": {
-      "type": "footer-wistia",
+      "type": "n-footer-wistia",
       "settings": {}
     }
   },

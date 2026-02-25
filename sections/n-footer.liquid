@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="https://qureskincaredns.com/sections/new/footer/footer.css" />
+<footer class="footer">
+    <div class="container">
+        <div class="footer__content">
+            <div class="footer__content-main">
+                <a href="#" class="footer__logo"><i class="e-icon e-icon-q"></i></a>
+                {% render 'n-footer-menu' %}
+                <div class="footer__app">
+                    <h6>{{ 'footer.settings.app.header' | t }}</h6>
+                    <p>{{ 'footer.settings.app.text' | t }}</p>
+                    <ul>
+                        <li>
+                            <a href="https://apps.apple.com/nl/app/qure-skincare/id1670113821" target="_blank" rel="nofollow">
+                                <img src="https://qureskincaredns.com/assets/images/app_store_200x.svg" alt="App Store">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://play.google.com/store/apps/details?id=com.lighttreeventures.qure" target="_blank" rel="nofollow">
+                                <img src="https://qureskincaredns.com/assets/images/google_play_200x.svg" alt="Google Play">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr />
+            <div class="footer__content-bottom">
+                <div class="footer__copyright">
+                    <p>{{ 'footer.settings.rights.header' | t }}</p>
+                    {% render 'n-footer-menu-bottom' %}
+                </div>
+                <div class="footer__disclaimer">{{ 'footer.settings.rights.text' | t }}</div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://qureskincaredns.com/sections/new/footer/footer.js" defer="defer"></script>
