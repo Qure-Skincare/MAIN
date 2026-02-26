@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "n_guide_menu": {
       "contents": "Contents",
@@ -330,7 +330,7 @@
       "total-value": "Total value"
     },
     "menu": {
-      "header": "Special Offer Bundles",
+      "header": "",
       "link": "/pages/exclusive-holiday-bundle-deal-new"
     },
     "limited-offer": {
