@@ -7,13 +7,10 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "product_header_U6RBGz": {
       "type": "n-product-header",
-      "custom_css": [
-        ".vp-img > img {max-height: 50px !important; margin-bottom: 12px !important;} .hero-product {padding-top: 60px; padding-bottom: 60px;} @media screen and (max-width: 767px){.hero-product {padding-top: 40px; padding-bottom: 40px;}}"
-      ],
       "blocks": {
         "black_friday_discount_AXVH8g": {
           "type": "black-friday-discount",
@@ -112,6 +109,11 @@
         "jumpto_7JzPHz",
         "jumpto_YV6XMK"
       ],
+      "custom_css": [
+        ".vp-img > img {max-height: 50px !important; margin-bottom: 12px !important;}",
+        ".hero-product {padding-top: 60px; padding-bottom: 60px;}",
+        "@media screen and (max-width: 767px) {.hero-product {padding-top: 40px; padding-bottom: 40px; }}"
+      ],
       "name": "t:sections.product-header.name",
       "settings": {
         "seo_heading": "MICRO-INFUSION DART PATCHES",
@@ -120,7 +122,9 @@
         "limited": false,
         "description": "<ul><li>Reduces appearance of fine lines and wrinkles, under-eye darkness, and puffiness. </li><li>Serum infused micro-darts dissolve into the skin to deliver active ingredients beyond the surface for faster results.</li><li>Science backed, age-defying ingredients such as retinol, caffeine, niacinamide, and peptides.</li></ul>",
         "reserved": false,
-        "soldout": false
+        "soldout": false,
+        "button-label": "",
+        "button-url": ""
       }
     },
     "purchase-form-landing": {
@@ -218,7 +222,7 @@
       "settings": {
         "form_name": "purchase-form-landing",
         "hide_types": true,
-        "type": "box"
+        "type": "list"
       }
     },
     "slider_featured_in_biQEht": {
