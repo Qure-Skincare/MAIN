@@ -7,13 +7,10 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "page_header_6BFNQx": {
       "type": "n-product-header",
-      "custom_css": [
-        ".hero-product {padding-top: 60px; padding-bottom: 60px;} @media screen and (max-width: 767px){.hero-product {padding-top: 40px; padding-bottom: 40px;}}"
-      ],
       "blocks": {
         "description_iSDNaK": {
           "type": "description",
@@ -26,7 +23,9 @@
         "exclusive-offer_iaSzaK": {
           "type": "exclusive-offer",
           "settings": {
+            "product": "",
             "image_product1": "shopify://shop_images/Img_16.png",
+            "product2": "",
             "image_product2": "shopify://shop_images/ndBox.webp",
             "text": "<p>Buy the Q-Rejuvalight Pro and get the Neck & Décolletage LED System for FREE (value $299)</p>"
           }
@@ -37,12 +36,19 @@
         "link_iPBNaS",
         "exclusive-offer_iaSzaK"
       ],
+      "custom_css": [
+        ".hero-product {padding-top: 60px; padding-bottom: 60px;}",
+        "@media screen and (max-width: 767px) {.hero-product {padding-top: 40px; padding-bottom: 40px; }}"
+      ],
       "name": "t:sections.page-header.name",
       "settings": {
-        "rating": "<p><strong>4.8</strong>/5 Rated by Customers</p>",
-        "rating-url": "",
+        "seo_heading": "",
         "heading": "Feel Confident Makeup-Free with Q-Rejuvalight Pro",
+        "rating": false,
+        "limited": false,
         "description": "<ul><li>FDA-cleared device designed to treat wrinkles and mild-to-moderate inflammatory acne.</li><li>Quick & convenient 3-minute wireless treatments</li><li>Customize, track & schedule treatments with app</li></ul>",
+        "reserved": false,
+        "soldout": false,
         "button-label": "Shop Now & Save $299",
         "button-url": "#buy-form"
       }
@@ -512,7 +518,7 @@
       "name": "t:sections.exclusive-offer.name",
       "settings": {
         "heading": "Experience face and neck rejuvenation in one bundle",
-        "text": "<p>Exclusive</p><p>Offer</p>",
+        "text": "<p> International  Women’s Day</p><p>Offer</p>",
         "text_mobile": "<p>Includes 2 LED Devices:</p>"
       }
     },
