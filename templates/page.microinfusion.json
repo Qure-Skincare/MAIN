@@ -7,14 +7,10 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "page_header_V5N4T9": {
       "type": "n-product-header",
-      "custom_css": [
-        ".vp-img > img {max-height: 50px !important; margin-bottom: 12px !important;}",
-        ".hero-product {padding-top: 60px; padding-bottom: 60px;} @media screen and (max-width: 767px){.hero-product {padding-top: 40px; padding-bottom: 40px;}}"
-      ],
       "blocks": {
         "gallery_sticky_video_63bnFe": {
           "type": "gallery-sticky-video",
@@ -91,12 +87,20 @@
         "jumpto_A5",
         "jumpto_A6"
       ],
+      "custom_css": [
+        ".vp-img > img {max-height: 50px !important; margin-bottom: 12px !important;}",
+        ".hero-product {padding-top: 60px; padding-bottom: 60px;}",
+        "@media screen and (max-width: 767px) {.hero-product {padding-top: 40px; padding-bottom: 40px; }}"
+      ],
       "name": "t:sections.page-header.name",
       "settings": {
-        "rating": "<p><strong>4.8</strong>/5 Rated by Customers</p>",
-        "rating-url": "",
+        "seo_heading": "",
         "heading": "Refresh the look of dull skin with the Micro-Infusion Facial System",
+        "rating": false,
+        "limited": false,
         "description": "<ul><li>Helps reduce the appearance of fine lines and smooths skin texture, while helping infuse active ingredients onto the skin’s surface.</li><li>Virtually painless and performed in the comfort and convenience of your home.</li><li>Minimal to no downtime, with visible improvements reported by customers.</li></ul>",
+        "reserved": false,
+        "soldout": false,
         "button-label": "",
         "button-url": ""
       }
@@ -125,26 +129,6 @@
             "preselected": false
           }
         },
-        "product_gbPf3J": {
-          "type": "product",
-          "settings": {
-            "product": "micro-infusion-6-month-bundle-for-dark-spots",
-            "product_variant_id": 0,
-            "product_selling_plan": 0,
-            "popular": false,
-            "best": false,
-            "preselected": true,
-            "heading": "6 Month Supply Promo",
-            "subheading": "(12 Treatments)",
-            "image": "shopify://shop_images/pdp_MI_6_month_DS.webp",
-            "soldout": false,
-            "preorder": false,
-            "preorder_text": "",
-            "preorder_date_soldout": "27 July",
-            "preorder_date_reserved": "15 july",
-            "preorder_percent": 55
-          }
-        },
         "product_NEgEkN": {
           "type": "product",
           "settings": {
@@ -162,6 +146,26 @@
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        },
+        "product_gbPf3J": {
+          "type": "product",
+          "settings": {
+            "product": "micro-infusion-2-month-bundle-for-dark-spots",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "popular": false,
+            "best": false,
+            "preselected": true,
+            "heading": "2 Month Supply",
+            "subheading": "(12 Treatments)",
+            "image": "shopify://shop_images/MI_1.5_2month_DS_1.webp",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "27 July",
+            "preorder_date_reserved": "15 july",
             "preorder_percent": 55
           }
         },
@@ -334,8 +338,8 @@
         "nextships_4xp7uM",
         "type_hHPdgJ",
         "product_type_QKQhNr",
-        "product_gbPf3J",
         "product_NEgEkN",
+        "product_gbPf3J",
         "product_RBCPe8",
         "type_aJwQ9q",
         "product_type_VLXcAn",
