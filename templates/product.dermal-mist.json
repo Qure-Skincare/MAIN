@@ -7,14 +7,10 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "product_header_c7eEXx": {
       "type": "n-product-header",
-      "custom_css": [
-        ".vp-img > img {max-height: 50px !important; margin-bottom: 12px !important;}",
-        ".hero-product {padding-top: 60px; padding-bottom: 60px;} @media screen and (max-width: 767px){.hero-product {padding-top: 40px; padding-bottom: 40px;}}"
-      ],
       "blocks": {
         "black_friday_discount_MCCNDL": {
           "type": "black-friday-discount",
@@ -89,6 +85,11 @@
         "jumpto_wCrT8L",
         "jumpto_UfjfzQ"
       ],
+      "custom_css": [
+        ".vp-img > img {max-height: 50px !important; margin-bottom: 12px !important;}",
+        ".hero-product {padding-top: 60px; padding-bottom: 60px;}",
+        "@media screen and (max-width: 767px) {.hero-product {padding-top: 40px; padding-bottom: 40px; }}"
+      ],
       "name": "t:sections.product-header.name",
       "settings": {
         "seo_heading": "HYPOCHLOROUS ACID SPRAY DERMAL MIST",
@@ -97,7 +98,9 @@
         "limited": false,
         "description": "<ul><li>A hypochlorous acid mist to rebalance skin, kills breakout-causing bacteria, and supports barrier repair.</li><li>Use on clean skin to soothe visible redness, calm irritation or as a no-rinse refresher throughout the day. </li><li>Comes as a duo: 100ml for daily use and a travel-friendly 15ml.</li></ul>",
         "reserved": false,
-        "soldout": false
+        "soldout": false,
+        "button-label": "",
+        "button-url": ""
       }
     },
     "purchase-form-landing": {
@@ -129,6 +132,8 @@
             "product": "derma-mist-6-month-bundle",
             "product_variant_id": 0,
             "product_selling_plan": 0,
+            "popular": false,
+            "best": false,
             "preselected": true,
             "heading": "6 Months",
             "subheading": "(3 bottles)",
@@ -147,6 +152,8 @@
             "product": "dermal-mist-4-month-bundle",
             "product_variant_id": 0,
             "product_selling_plan": 0,
+            "popular": false,
+            "best": false,
             "preselected": false,
             "heading": "4 Months",
             "subheading": "(2 bottles)",
@@ -165,6 +172,8 @@
             "product": "dermal-mist",
             "product_variant_id": 0,
             "product_selling_plan": 0,
+            "popular": false,
+            "best": false,
             "preselected": false,
             "heading": "2 Months",
             "subheading": "(1 bottle)",
@@ -189,7 +198,7 @@
       "settings": {
         "form_name": "purchase-form-landing",
         "hide_types": true,
-        "type": "box"
+        "type": "list"
       }
     },
     "logos_mUyKFd": {
