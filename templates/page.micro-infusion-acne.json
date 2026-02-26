@@ -7,13 +7,10 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "page_header_jUJyfG": {
       "type": "n-product-header",
-      "custom_css": [
-        ".hero-product {padding-top: 60px; padding-bottom: 60px;} @media screen and (max-width: 767px){.hero-product {padding-top: 40px; padding-bottom: 40px;}}"
-      ],
       "blocks": {
         "link_iPBNaS": {
           "type": "link",
@@ -77,12 +74,19 @@
         "jumpto_GYW9XP",
         "jumpto_Ybdp8V"
       ],
+      "custom_css": [
+        ".hero-product {padding-top: 60px; padding-bottom: 60px;}",
+        "@media screen and (max-width: 767px) {.hero-product {padding-top: 40px; padding-bottom: 40px; }}"
+      ],
       "name": "t:sections.page-header.name",
       "settings": {
-        "rating": "<p><strong>4.8</strong>/5 Rated by Customers</p>",
-        "rating-url": "",
+        "seo_heading": "",
         "heading": "Refresh your skin and visibly smooth the look of acne scars",
+        "rating": false,
+        "limited": false,
         "description": "<ul><li>Helps refine skin texture for smoother-looking skin and visibly softer scars</li><li>Easy 5-minute treatment that supports skin renewal for a more even-toned complexion</li><li>With consistent use, skin looks smoother and marks appear less visible — with most users noticing visible improvement after a few sessions</li></ul>",
+        "reserved": false,
+        "soldout": false,
         "button-label": "Get Smoother, Glowing Skin",
         "button-url": "#purchase-form"
       }
@@ -909,7 +913,7 @@
           "settings": {
             "product": "micro-infusion-6-month-bundle-for-dark-spots",
             "preselected": true,
-            "heading": "6 Month Supply Promo",
+            "heading": "6 Month Supply International <br>Women’s Day Promo",
             "subheading": "(12 Treatments)",
             "image": "shopify://shop_images/MI_6_month_DS.webp",
             "soldout": false,
