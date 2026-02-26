@@ -7,13 +7,10 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "product_header_kHW3Cn": {
       "type": "n-product-header",
-      "custom_css": [
-        ".vp-img > img {max-height: 50px !important; margin-bottom: 12px !important;} .hero-product {padding-top: 60px; padding-bottom: 60px;} @media screen and (max-width: 767px){.hero-product {padding-top: 40px; padding-bottom: 40px;}}"
-      ],
       "blocks": {
         "black_friday_discount_A9": {
           "type": "black-friday-discount",
@@ -96,6 +93,11 @@
         "jumpto_hcQKEq",
         "jumpto_hQdAPf"
       ],
+      "custom_css": [
+        ".vp-img > img {max-height: 50px !important; margin-bottom: 12px !important;}",
+        ".hero-product {padding-top: 60px; padding-bottom: 60px;}",
+        "@media screen and (max-width: 767px) {.hero-product {padding-top: 40px; padding-bottom: 40px; }}"
+      ],
       "name": "t:sections.product-header.name",
       "settings": {
         "seo_heading": "ANTI-AGING & ALL-IN-ONE SERUM",
@@ -104,7 +106,9 @@
         "limited": false,
         "description": "<ul><li>Helps reduce the appearance of fine lines and dark spots, for smoother, firmer feeling skin.</li><li>Save money buying multiple skincare products to treat various concerns.</li><li>Argireline® Peptides, Retinol, Bakuchiol, Niacinamide, Vitamin C, Vitamin E, Ferulic Acid.</li></ul>",
         "reserved": false,
-        "soldout": false
+        "soldout": false,
+        "button-label": "",
+        "button-url": ""
       }
     },
     "purchase-form-landing": {
@@ -202,7 +206,7 @@
       "settings": {
         "form_name": "purchase-form-landing",
         "hide_types": true,
-        "type": "box"
+        "type": "list"
       }
     },
     "logos_89qVYW": {
