@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "announcement_bar_iNbPEw": {
       "type": "announcement-bar",
@@ -22,9 +22,6 @@
     },
     "page_header_SXJyMD": {
       "type": "n-product-header",
-      "custom_css": [
-        ".hero-product {padding-top: 60px; padding-bottom: 60px;} @media screen and (max-width: 767px){.hero-product {padding-top: 40px; padding-bottom: 40px;}}"
-      ],
       "blocks": {
         "link_iPBNaS": {
           "type": "link",
@@ -88,12 +85,19 @@
         "jumpto_GYW9XP",
         "jumpto_Ybdp8V"
       ],
+      "custom_css": [
+        ".hero-product {padding-top: 60px; padding-bottom: 60px;}",
+        "@media screen and (max-width: 767px) {.hero-product {padding-top: 40px; padding-bottom: 40px; }}"
+      ],
       "name": "t:sections.page-header.name",
       "settings": {
-        "rating": "<p><strong>4.8</strong>/5 Rated by Customers</p>",
-        "rating-url": "#trusted-reviews",
+        "seo_heading": "",
         "heading": "Transform dull looking skin with Micro-Infusion Facial System",
+        "rating": false,
+        "limited": false,
         "description": "<ul><li>Helps reduce appearance of fine lines, smooth texture whilst helping to infuse active ingredients into your skin.</li><li>Virtually painless and performed in the comfort and convenience of your home.</li><li>Minimal to no downtime with visible results.</li></ul>",
+        "reserved": false,
+        "soldout": false,
         "button-label": "BUY NOW & SAVE UP TO 70%",
         "button-url": "#purchase-form-types"
       }
@@ -1123,7 +1127,7 @@
           "settings": {
             "product": "micro-infusion-6-month-bundle-for-dark-spots",
             "preselected": true,
-            "heading": "6 Month Supply  Promo",
+            "heading": "6 Month Supply International <br>Women’s Day Promo",
             "subheading": "(12 Treatments)",
             "image": "shopify://shop_images/MI_6_month_DS.webp",
             "soldout": false,
