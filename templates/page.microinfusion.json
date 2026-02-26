@@ -1319,7 +1319,7 @@
           "type": "product",
           "settings": {
             "product": "micro-infusion-3-month-bundle-for-dark-spots",
-            "preselected": false,
+            "preselected": true,
             "heading": "3 Month Supply",
             "subheading": "(6 Treatments)",
             "image": "shopify://shop_images/MI_3_month_DS.webp",
@@ -1338,7 +1338,7 @@
           "type": "product",
           "settings": {
             "product": "micro-infusion-2-month-bundle-for-dark-spots",
-            "preselected": true,
+            "preselected": false,
             "heading": "2 Month Supply",
             "subheading": "(4 Treatments)",
             "image": "shopify://shop_images/MI_1.5_2month_DS_1_b7d62a5a-e357-4d97-8ef5-ed298b073b50.webp",
