@@ -60,7 +60,7 @@
     "black_friday_turn_on": true,
     "black_friday_discount": "WomensDay26",
     "black_friday_discount_percent": 20,
-    "black_friday_discount_exception": "qure-microinfusion-offer,qure-microinfusion-offer-men,micro-infusion-acne,micro-infusion-dark-spots,micro-infusion-faq-page-2,exclusive-holiday-bundle-deal-new,qure-micro-infusion-landing-page-b,xclusive-holiday-bundle-deal-v2",
+    "black_friday_discount_exception": "qure-microinfusion-offer,qure-microinfusion-offer-men,micro-infusion-acne,micro-infusion-dark-spots,micro-infusion-faq-page-2,exclusive-holiday-bundle-deal-new,qure-micro-infusion-landing-page-b,exclusive-holiday-bundle-deal-v2",
     "enable_gamification": false,
     "gamification_exception": "qure-microinfusion-offer,qure-micro-infusion-landing-page-b",
     "event_name": "HOLIDAY SALE",
