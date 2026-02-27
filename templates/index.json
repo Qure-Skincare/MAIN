@@ -140,7 +140,7 @@
         "use_own_file": true,
         "modifier": "holidays",
         "heading": "<h1>Celebrate International Women’s Day with 20% off*</h1>",
-        "text": "<p>$2 from every order will be donated to<strong>Impact for Women</strong>to help women rebuild their lives and regain confidence.</p>",
+        "text": "<p>$2 from every order will be donated to <strong>Impact for Women </strong>to help women rebuild their lives and regain confidence.</p>",
         "image": "shopify://shop_images/iwd.webp",
         "image_mobile": "shopify://shop_images/iwd-mob.webp",
         "button_label": "Get 20% Off Sitewide",
