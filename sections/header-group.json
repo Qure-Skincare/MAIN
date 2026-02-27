@@ -78,7 +78,7 @@
       }
     },
     "header": {
-      "type": "header",
+      "type": "n-header",
       "custom_css": [],
       "settings": {}
     }

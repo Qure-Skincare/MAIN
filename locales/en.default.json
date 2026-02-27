@@ -317,7 +317,7 @@
     },
     "exclusive-offer": {
       "header_html": "<div class='eo-header'><span>EXCLUSIVE</span><span> OFFER</span></div>",
-      "n_header_html": "<div class='e-double-tag'><strong>Bundles</strong> Holiday</div>",
+      "n_header_html": "<div class='e-double-tag'><strong>International Women’s Day </strong> Promo</div>",
       "guarantee-text": "1-Year Guarantee",
       "button-label": "Buy Now & Save",
       "shipping-text": "Free US Shipping over $100",
@@ -330,7 +330,7 @@
       "total-value": "Total value"
     },
     "menu": {
-      "header": "Special Offer Bundles",
+      "header": "",
       "link": "/pages/exclusive-holiday-bundle-deal-new"
     },
     "limited-offer": {

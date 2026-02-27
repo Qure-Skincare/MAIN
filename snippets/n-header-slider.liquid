@@ -1,0 +1,126 @@
+{% doc %}
+  Renders header slider
+
+  @param {menu_title} - A string value.
+  @param {thumbs} - A string value.
+  @param {slide_per_view} - A integer value.
+
+  @example
+  {% render 'n-header-slider', menu_title: '', thumbs: '', slide_per_view: 1 %}
+{% enddoc %}
+
+{%- case menu_title -%}
+    {%- when 'Products' -%}
+        {%- assign title = settings.header_slider1_button_label -%}
+        {%- assign image = settings.header_slider1_image -%}
+        {%- assign url = settings.header_slider1_button_url -%}
+
+        {%- assign title2 = settings.header_slider2_button_label -%}
+        {%- assign image2 = settings.header_slider2_image -%}
+        {%- assign url2 = settings.header_slider2_button_url -%}
+
+        {%- assign title3 = settings.header_slider3_button_label -%}
+        {%- assign image3 = settings.header_slider3_image -%}
+        {%- assign url3 = settings.header_slider3_button_url -%}
+
+        {%- assign title4 = settings.header_slider4_button_label -%}
+        {%- assign image4 = settings.header_slider4_image -%}
+        {%- assign url4 = settings.header_slider4_button_url -%}
+
+        {%- assign title5 = settings.header_slider5_button_label -%}
+        {%- assign image5 = settings.header_slider5_image -%}
+        {%- assign url5 = settings.header_slider5_button_url -%}
+
+        {%- assign title6 = settings.header_slider6_button_label -%}
+        {%- assign image6 = settings.header_slider6_image -%}
+        {%- assign url6 = settings.header_slider6_button_url -%}
+
+        {%- assign title7 = settings.header_slider7_button_label -%}
+        {%- assign image7 = settings.header_slider7_image -%}
+        {%- assign url7 = settings.header_slider7_button_url -%}
+
+        {%- assign title8 = settings.header_slider8_button_label -%}
+        {%- assign image8 = settings.header_slider8_image -%}
+        {%- assign url8 = settings.header_slider8_button_url -%}
+
+        {%- assign title9 = settings.header_slider9_button_label -%}
+        {%- assign image9 = settings.header_slider9_image -%}
+        {%- assign url9 = settings.header_slider9_button_url -%}
+
+    {%- when 'Help Center' -%}
+        {%- assign title = settings.header_help_center_menu1_title -%}
+        {%- assign image = settings.header_help_center_menu1_image -%}
+        {%- assign url = settings.header_help_center_menu1_url -%}
+        
+        {%- assign title2 = settings.header_help_center_menu2_title -%}
+        {%- assign image2 = settings.header_help_center_menu2_image -%}
+        {%- assign url2 = settings.header_help_center_menu2_url -%}
+    {%- when 'Learn More' -%}
+        {%- assign title = settings.header_learn_more_menu1_title -%}
+        {%- assign image = settings.header_learn_more_menu1_image -%}
+        {%- assign url = settings.header_learn_more_menu1_url -%}
+        
+        {%- assign title2 = settings.header_learn_more_menu2_title -%}
+        {%- assign image2 = settings.header_learn_more_menu2_image -%}
+        {%- assign url2 = settings.header_learn_more_menu2_url -%}
+{%- endcase -%}
+
+<div class="header__content-slider">
+    <div
+        class="c-swiper"
+        {% if thumbs != blank %}
+            data-swiper-thumbs="{{ thumbs }} .c-swiper-thumbs"
+        {% endif %}
+        data-swiper='{
+            "slidesPerView": {{ slide_per_view }},
+            "spaceBetween": 16,
+            {% if thumbs == blank %}
+            "breakpoints": {
+                "992": {
+                    "slidesPerView": 2
+                }
+            }
+            {% endif %}
+            {% if thumbs != blank %}
+            "navigation": {
+                "prevEl": "{{ thumbs }} .c-swiper-button-prev",
+                "nextEl": "{{ thumbs }} .c-swiper-button-next"
+            }
+            {% endif %}
+        }'>
+        <div class="swiper-wrapper">
+            {% render 'n-header-slider-item', title: title, image: image, url: url %}
+            {% render 'n-header-slider-item', title: title2, image: image2, url: url2 %}
+            {% render 'n-header-slider-item', title: title3, image: image3, url: url3 %}
+            {% render 'n-header-slider-item', title: title4, image: image4, url: url4 %}
+            {% render 'n-header-slider-item', title: title5, image: image5, url: url5 %}
+            {% render 'n-header-slider-item', title: title6, image: image6, url: url6 %}
+            {% render 'n-header-slider-item', title: title7, image: image7, url: url7 %}
+            {% render 'n-header-slider-item', title: title8, image: image8, url: url8 %}
+            {% render 'n-header-slider-item', title: title9, image: image9, url: url9 %}
+        </div>
+    </div>
+
+    {% if thumbs != blank and title2 != blank %}
+        <button class="c-swiper-button-prev"></button>
+        <div class="c-swiper c-swiper-thumbs"
+            data-swiper='{
+                "slidesPerView": 4,
+                "spaceBetween": 8
+            }'
+            >
+            <div class="swiper-wrapper">
+                {% render 'n-header-slider-item', title: title, image: image, url: url, thumbs: thumbs %}
+                {% render 'n-header-slider-item', title: title2, image: image2, url: url2, thumbs: thumbs %}
+                {% render 'n-header-slider-item', title: title3, image: image3, url: url3, thumbs: thumbs %}
+                {% render 'n-header-slider-item', title: title4, image: image4, url: url4, thumbs: thumbs %}
+                {% render 'n-header-slider-item', title: title5, image: image5, url: url5, thumbs: thumbs %}
+                {% render 'n-header-slider-item', title: title6, image: image6, url: url6, thumbs: thumbs %}
+                {% render 'n-header-slider-item', title: title7, image: image7, url: url7, thumbs: thumbs %}
+                {% render 'n-header-slider-item', title: title8, image: image8, url: url8, thumbs: thumbs %}
+                {% render 'n-header-slider-item', title: title9, image: image9, url: url9, thumbs: thumbs %}
+            </div>
+        </div>
+        <button class="c-swiper-button-next"></button>
+    {% endif %}
+</div>
