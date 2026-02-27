@@ -4,9 +4,10 @@
   @param {menu_title} - A string value.
   @param {thumbs} - A string value.
   @param {slide_per_view} - A integer value.
+  @param {class} - A integer value.
 
   @example
-  {% render 'n-header-slider', menu_title: '', thumbs: '', slide_per_view: 1 %}
+  {% render 'n-header-slider', menu_title: '', thumbs: '', slide_per_view: 1, class: '' %}
 {% enddoc %}
 
 {%- case menu_title -%}
@@ -89,7 +90,7 @@
             {% endif %}
         }'>
         <div class="swiper-wrapper">
-            {% render 'n-header-slider-item', title: title, image: image, url: url %}
+            {% render 'n-header-slider-item', title: title, image: image, url: url, class: class %}
             {% render 'n-header-slider-item', title: title2, image: image2, url: url2 %}
             {% render 'n-header-slider-item', title: title3, image: image3, url: url3 %}
             {% render 'n-header-slider-item', title: title4, image: image4, url: url4 %}
