@@ -1,0 +1,24 @@
+{% doc %}
+  Renders header menu
+
+  @param {menu_title} - A string value.
+
+  @example
+  {% render 'n-header-menu',  %}
+{% enddoc %}
+
+{% for link in linklists['main-header'].links %}
+    {% if link.title == menu_title %}
+        {% if link.links.size > 0 %}
+            {% for child_link in link.links %}
+                {% if child_link.links.size > 0 %}
+                    <ul class="header__content-menu"{% if child_link.title != 'FOLDER' %} data-title="{{ child_link.title }}"{% endif %}>
+                        {% for grandchild_link in child_link.links %}
+                            <li><a href="{{ grandchild_link.url }}">{{ grandchild_link.title }}</a></li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+    {% endif %}
+{% endfor %}

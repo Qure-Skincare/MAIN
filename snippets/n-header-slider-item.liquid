@@ -1,0 +1,25 @@
+{% doc %}
+  Renders headers slider item
+
+  @param {title} - A string value.
+  @param {image} - A string value.
+  @param {url} - A string value.
+  @param {class} - A string value.
+  @param {thumbs} - A string value.
+
+  @example
+  {% render 'n-header-slider-item', title: '', image: '', url: '', class: '', thumbs: '' %}
+{% enddoc %}
+
+{% if title != blank %}
+    <div class="swiper-slide">
+        <a href="{{ url }}"><img src="{{ image | image_url }}" alt="{{ title | escape }}" /></a>
+        {% if thumbs != blank %}
+            <p>{{ title }}</p>
+        {% else %}
+            <a href="{{ url }}" class="btn btn--primary-white{% if class %} {{ class }}{% endif %}">
+                {{ title }} <i class="e-icon e-icon-arrow"></i>
+            </a>
+        {% endif %}
+    </div>
+{% endif %}
