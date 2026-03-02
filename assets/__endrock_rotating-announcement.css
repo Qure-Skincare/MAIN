@@ -171,5 +171,6 @@
     width: 21px;
   }
 }
+.announcement-bar-rotating.scroll-hiding { transform: translateY(-100px); }
 
 /*============================ Announcement Bar End ====================================== */
