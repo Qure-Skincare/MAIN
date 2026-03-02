@@ -20,6 +20,7 @@
       "blocks": {
         "announcement-1": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "heading": "<p><strong>International Women’s Day</strong> – 20% off sitewide</p>",
             "button-label": "Shop Now",
@@ -37,6 +38,7 @@
         },
         "announcement-3": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "heading": "<p><strong>Exclusive Bundles</strong> <strong>Sale</strong></p>",
             "button-label": "Shop Now",
