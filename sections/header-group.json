@@ -45,12 +45,14 @@
         },
         "exclude_page_fAmFcE": {
           "type": "exclude-page",
+          "disabled": true,
           "settings": {
             "exclude-page": "qure-micro-infusion-landing-page-b"
           }
         },
         "exclude-page-2": {
           "type": "exclude-page",
+          "disabled": true,
           "settings": {
             "exclude-page": "qure-microinfusion-offer"
           }
