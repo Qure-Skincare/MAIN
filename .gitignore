@@ -18,3 +18,8 @@ release
 
 .cursor
 .playwright-mcp
+
+# Claude Code
+CLAUDE.md
+.claude/
+.env
