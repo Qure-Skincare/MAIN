@@ -20,7 +20,6 @@
       "blocks": {
         "announcement-1": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
             "heading": "<p><strong>International Women’s Day</strong> – 20% off sitewide</p>",
             "button-label": "Shop Now",
@@ -38,7 +37,6 @@
         },
         "announcement-3": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
             "heading": "<p><strong>Exclusive Bundles</strong> <strong>Sale</strong></p>",
             "button-label": "Shop Now",
@@ -47,14 +45,12 @@
         },
         "exclude_page_fAmFcE": {
           "type": "exclude-page",
-          "disabled": true,
           "settings": {
             "exclude-page": "qure-micro-infusion-landing-page-b"
           }
         },
         "exclude-page-2": {
           "type": "exclude-page",
-          "disabled": true,
           "settings": {
             "exclude-page": "qure-microinfusion-offer"
           }
