@@ -3,8 +3,10 @@
 {% enddoc %}
 
 
+{{ 'n_hero-banner.css' | asset_url | stylesheet_tag }}
+
 {% if section.settings.use_own_file %}
-    <link href="https://qureskincaredns.com/sections/new/hero-banner/hero-banner.css" rel="stylesheet" type="text/css"> 
+    <link href="https://qureskincaredns.com/sections/new/hero-banner/hero-banner.css" rel="stylesheet" type="text/css">
 {% endif %}
     <section class="hero-banner{% if section.settings.modifier == 'holidays' %} hero-banner--holidays{% endif %}">
         <picture>
