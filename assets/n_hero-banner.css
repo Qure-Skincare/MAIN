@@ -1,8 +1,0 @@
-.hero-banner picture img,
-.hero-banner picture source {
-  filter: hue-rotate(200deg) saturate(1.5) brightness(0.9);
-}
-
-.hero-banner picture {
-  filter: hue-rotate(200deg) saturate(1.5) brightness(0.9);
-}

@@ -1,0 +1,3 @@
+.across-image-banner picture {
+  filter: hue-rotate(200deg) saturate(1.5) brightness(0.9);
+}

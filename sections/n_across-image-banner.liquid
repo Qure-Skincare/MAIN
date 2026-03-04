@@ -2,6 +2,8 @@
   Renders an across image banner section
 {% enddoc %}
 
+{{ 'n_across-image-banner.css' | asset_url | stylesheet_tag }}
+
 {% if section.settings.use_own_file %}
     <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/across-image-banner/across-image-banner.css" />
 {% endif %}
