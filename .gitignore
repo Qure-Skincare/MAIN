@@ -21,5 +21,6 @@ release
 
 # Claude Code
 CLAUDE.md
+CLAUDE.local.md
 .claude/
-.env
+.theme_ids/
