@@ -36,5 +36,10 @@ document.querySelectorAll('[data-async-section-id]').forEach(container => {
             console.error('Section not found in response:', sectionId);
         }
     })
+    .then(() => {
+        if (typeof showKlaviyoPopup === 'function') {
+            showKlaviyoPopup();
+        }
+    })
     .catch(err => console.error(err));
 });

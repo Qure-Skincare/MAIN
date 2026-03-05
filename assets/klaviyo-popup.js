@@ -1,5 +1,29 @@
+document.addEventListener('click', function(event) {
+    var trigger = event.target.closest('.trigger-klaviyo-popup');
+    if (trigger) {
+        event.preventDefault();
+        var showPopup = document.querySelector('.show-klaviyo-popup');
+        if (showPopup) {
+            showPopup.click();
+        }
+    }
+});
+
+
+document.addEventListener('click', function(event) {
+    var trigger = event.target.closest('.trigger-klaviyo-popup-landing');
+    if (trigger) {
+        event.preventDefault();
+        var showPopup = document.querySelector('.show-klaviyo-popup-landing');
+        if (showPopup) {
+            showPopup.click();
+        }
+    }
+});
+
+
 function showKlaviyoPopup() {
-    var klaviyoButtons = document.querySelectorAll('.show-klaviyo-popup');
+    var klaviyoButtons = document.querySelectorAll('.show-klaviyo-popup, .show-klaviyo-popup-landing');
     var klaviyoModal = document.getElementById('reusableKlaviyoModal');
     var klaviyoContainer = document.getElementById('KlaviyoContainer');
 
@@ -16,8 +40,9 @@ function showKlaviyoPopup() {
             if (!klaviyoForm) return;
 
             // Save the reference for hiding after
+
             currentForm = klaviyoForm;
-            klaviyoForm.style.display = 'block';
+            klaviyoForm.style.setProperty('display', 'block', 'important');
             klaviyoContainer.appendChild(klaviyoForm);
         });
     });
@@ -40,14 +65,3 @@ function showKlaviyoPopup() {
 }
 
 showKlaviyoPopup();
-
-document.addEventListener('click', function(event) {
-    var trigger = event.target.closest('.trigger-klaviyo-popup');
-    if (trigger) {
-        event.preventDefault();
-        var showPopup = document.querySelector('.show-klaviyo-popup');
-        if (showPopup) {
-            showPopup.click();
-        }
-    }
-});

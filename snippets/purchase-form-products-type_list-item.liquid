@@ -147,7 +147,7 @@
 
                                 {% if section.settings.klaviyo_form_name != blank %}
                                     {% if block.settings.soldout == true %}
-                                        <button id="back-in-stock" class="btn btn-sm btn--secondary trigger-klaviyo-popup">Notify Me When Available</button>
+                                        <button id="back-in-stock" class="btn btn-sm btn--secondary trigger-klaviyo-popup w-100">{{ 'purchase-form.settings.notify-me-when-available' | t }}</button>
                                     {% endif %}
                                 {% endif %}
 
