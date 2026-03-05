@@ -82,6 +82,11 @@
                                     {% else %}
                                     data-preselected="false"
                                     {% endif %}
+                                    {% if block.settings.soldout == true %}
+                                        onclick="document.getElementById('back-in-stock').classList.remove('hide')"
+                                    {% else %}
+                                        onclick="document.getElementById('back-in-stock').classList.add('hide')"
+                                    {% endif %}
                                     data-product-price="{{ product_sale_price }}">
 
                                     <input type="radio" name="monthlyPlan_{{ section.settings.form_name }}" id="{{ section.id }}-{{ product_title_tag }}"{% if block.settings.preselected == true %} checked{% endif %}>
@@ -119,6 +124,12 @@
                                         </div>
                                     </label>
                                 </div>
+
+                                {% if section.settings.klaviyo_form_name != blank %}
+                                    {% if block.settings.soldout == true %}
+                                        <button id="back-in-stock" class="btn btn-sm btn--secondary trigger-klaviyo-popup">Notify Me When Available</button>
+                                    {% endif %}
+                                {% endif %}
 
                                 {% if block.settings.preorder == true %}
                                     

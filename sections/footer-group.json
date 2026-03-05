@@ -35,6 +35,10 @@
     "footer-wistia": {
       "type": "n-footer-wistia",
       "settings": {}
+    },
+    "footer-klaviyo": {
+      "type": "n-footer-klaviyo",
+      "settings": {}
     }
   },
   "order": [
@@ -43,6 +47,7 @@
     "footer",
     "footer-drawer",
     "footer-gdpr",
-    "footer-wistia"
+    "footer-wistia",
+    "footer-klaviyo"
   ]
 }

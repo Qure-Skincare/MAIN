@@ -84,8 +84,12 @@
                                     {% else %}
                                     data-preselected="false"
                                     {% endif %}
+                                    {% if block.settings.soldout == true %}
+                                        onclick="document.getElementById('back-in-stock').classList.remove('hide')"
+                                    {% else %}
+                                        onclick="document.getElementById('back-in-stock').classList.add('hide')"
+                                    {% endif %}
                                     data-product-price="{{ product_sale_price }}">
-
                                     {% if product_type == 3 %}
                                         <div class="best_value">
                                             <p>{{ 'purchase-form.settings.best-value' | t }} <img src="https://qureskincaredns.com/assets/images/star_white.svg" alt="star white"></p>
@@ -140,6 +144,12 @@
                                         {% endcase %}
                                     </label>
                                 </div>
+
+                                {% if section.settings.klaviyo_form_name != blank %}
+                                    {% if block.settings.soldout == true %}
+                                        <button id="back-in-stock" class="btn btn-sm btn--secondary trigger-klaviyo-popup">Notify Me When Available</button>
+                                    {% endif %}
+                                {% endif %}
 
                                 {% if block.settings.preorder == true %}
                                     

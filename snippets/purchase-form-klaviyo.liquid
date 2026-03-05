@@ -1,0 +1,4 @@
+{% if section.settings.klaviyo_form_name != blank %}
+    <div class="klaviyo-form-{{ section.settings.klaviyo_form_name }} hide"></div>
+    <button class="show-klaviyo-popup btn btn-sm btn--secondary hide" data-bs-toggle="modal" data-bs-target="#reusableKlaviyoModal" data-form-id="klaviyo-form-{{ section.settings.klaviyo_form_name }}">{{ 'purchase-form.settings.notify-me-when-available' | t }}</button>
+{% endif %}
