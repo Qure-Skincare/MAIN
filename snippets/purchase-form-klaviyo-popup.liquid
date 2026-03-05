@@ -1,0 +1,18 @@
+<div class="klaviyo-form-{{ form_id }} hide"></div>
+<button class="show-klaviyo-popup btn btn-sm btn--secondary hide" data-bs-toggle="modal" data-bs-target="#reusableKlaviyoModal" data-form-id="klaviyo-form-{{ form_id }}">Notify Me When Available</button>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      loadScriptOnce('klaviyo-popup', '{{ 'klaviyo-popup.js' | asset_url }}');
+    });
+</script>
+
+<div class="modal c-modal c-modal--wistia" id="reusableKlaviyoModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div id="KlaviyoContainer" class="c-modal__video"></div>
+            </div>
+        </div>
+    </div>
+</div>

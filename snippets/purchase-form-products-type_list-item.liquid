@@ -146,6 +146,10 @@
                                     </label>
                                 </div>
 
+                                {% if block.settings.soldout == true %}
+                                    <button id="back-in-stock" class="btn btn-sm btn--secondary trigger-klaviyo-popup">Notify Me When Available</button>
+                                {% endif %}
+
                                 {% if block.settings.preorder == true %}
                                     
                                     {% capture preorder-box-items %}{{ preorder-box-items }}<div class="{{ section.settings.form_name }}-preorder-box-item {{ section.settings.form_name }}-preorder-box__{{ product_variant_id }}"></div>{% endcapture %}
@@ -167,7 +171,6 @@
                             {% endif %}
                         {% endif %}
                     {%- endfor -%}
-                    <a id="back-in-stock" class="klaviyo-bis-trigger hide" href="#">Notify Me When Available</a>
                 </div>
             </div>
 
