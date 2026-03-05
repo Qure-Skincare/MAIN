@@ -10,6 +10,7 @@
  
  {
     "common": {
+        "klaviyo_form_name": "Klaviyo form",
         "best-value": "Best value",
         "results": "Results",
         "popular": "Popular",
