@@ -7,13 +7,10 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "page_header_jUJySS": {
       "type": "n-product-header",
-      "custom_css": [
-        ".hero-product {padding-top: 60px; padding-bottom: 60px;} @media screen and (max-width: 767px){.hero-product {padding-top: 40px; padding-bottom: 40px;}}"
-      ],
       "blocks": {
         "link_iPBNaS": {
           "type": "link",
@@ -85,11 +82,13 @@
         "jumpto_GYW9XP",
         "jumpto_Ybdp8V"
       ],
+      "custom_css": [
+        ".hero-product {padding-top: 60px; padding-bottom: 60px;} @media screen and (max-width: 767px){.hero-product {padding-top: 40px; padding-bottom: 40px;}}"
+      ],
       "name": "t:sections.page-header.name",
       "settings": {
-        "rating": "<p><strong>4.8</strong>/5 Rated by Customers</p>",
-        "rating-url": "",
         "heading": "Visibly fade dark spots with this 5-minute treatment",
+        "rating": "<p><strong>4.8</strong>/5 Rated by Customers</p>",
         "description": "<ul><li>Helps reduce the look of dark spots and uneven tone where topicals may not reach</li><li>Improves the appearance of uneven skin tone for a smoother, brighter-looking complexion</li><li>Minimal to no downtime, virtually painless, and easy to perform conveniently from home</li></ul>",
         "button-label": "Get Smoother, Glowing Skin",
         "button-url": "#purchase-form"
