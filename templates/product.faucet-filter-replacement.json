@@ -7,13 +7,10 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "product_header_FnMCMD": {
       "type": "n-product-header",
-      "custom_css": [
-        ".hero-product {padding-top: 60px; padding-bottom: 60px;} @media screen and (max-width: 767px){.hero-product {padding-top: 40px; padding-bottom: 40px;}}"
-      ],
       "blocks": {
         "black_friday_discount_CKPMip": {
           "type": "black-friday-discount",
@@ -86,6 +83,10 @@
         "jumpto_EY6mqw",
         "jumpto_YV6XMK"
       ],
+      "custom_css": [
+        ".hero-product {padding-top: 60px; padding-bottom: 60px;}",
+        "@media screen and (max-width: 767px) {.hero-product {padding-top: 40px; padding-bottom: 40px; }}"
+      ],
       "name": "t:sections.product-header.name",
       "settings": {
         "seo_heading": "FAUCET FILTER REFILL CARTRIDGER",
@@ -94,7 +95,9 @@
         "limited": false,
         "description": "<ul><li>Qure Faucet Filter Refill cartridge provides up to 3 months or 13,000 liters of purified, filtered water.</li><li>Shown to reduce up to 99% of possible irritants for clearer-looking, hydrated skin.</li><li>Easy to refill, only 2 minutes, no tools needed.</li></ul>",
         "reserved": false,
-        "soldout": false
+        "soldout": false,
+        "button-label": "",
+        "button-url": ""
       }
     },
     "purchase-form-landing": {
@@ -186,66 +189,144 @@
         "type": "variant"
       }
     },
-    "information_about_water_QHm8d8": {
-      "type": "information-about-water",
+    "n_base_section_CGMUkn": {
+      "type": "n_base-section",
       "blocks": {
-        "image_with_text_Vf4bJC": {
+        "image_with_text_XqJXjt": {
           "type": "image_with_text",
           "settings": {
-            "text": "<p>Limescale</p>",
-            "image": "shopify://shop_images/limescale.svg"
+            "select": "limescale",
+            "text": "Limescale"
           }
         },
-        "image_with_text_gE3ger": {
+        "image_with_text_DY6EPT": {
           "type": "image_with_text",
           "settings": {
-            "text": "<p>Heavy Metals</p>",
-            "image": "shopify://shop_images/heavy_metals.svg"
+            "select": "heavy-metals",
+            "text": "Heavy Metals"
           }
         },
-        "image_with_text_ghNAKM": {
+        "image_with_text_rgFUj7": {
           "type": "image_with_text",
           "settings": {
-            "text": "<p>Chlorine</p>",
-            "image": "shopify://shop_images/chlorine.svg"
+            "select": "chlorine",
+            "text": "Chlorine"
           }
         },
-        "image_with_text_jGRJfx": {
+        "image_with_text_Y4Uda6": {
           "type": "image_with_text",
           "settings": {
-            "text": "<p>Micro-plastics</p>",
-            "image": "shopify://shop_images/Micro-plastics.svg"
+            "select": "micro-plastics",
+            "text": "Micro-plastics"
           }
         },
-        "image_with_text_KnReDj": {
+        "image_with_text_awhNGn": {
           "type": "image_with_text",
           "settings": {
-            "text": "<p>Copper</p>",
-            "image": "shopify://shop_images/Copper.svg"
+            "select": "copper",
+            "text": "Copper"
           }
         },
-        "image_with_text_e7VwAj": {
+        "image_with_text_iTa6Kk": {
           "type": "image_with_text",
           "settings": {
-            "text": "<p>Micro-organisms</p>",
-            "image": "shopify://shop_images/micro-organisms.svg"
+            "select": "micro-organisms",
+            "text": "Micro-organisms"
           }
         }
       },
       "block_order": [
-        "image_with_text_Vf4bJC",
-        "image_with_text_gE3ger",
-        "image_with_text_ghNAKM",
-        "image_with_text_jGRJfx",
-        "image_with_text_KnReDj",
-        "image_with_text_e7VwAj"
+        "image_with_text_XqJXjt",
+        "image_with_text_DY6EPT",
+        "image_with_text_rgFUj7",
+        "image_with_text_Y4Uda6",
+        "image_with_text_awhNGn",
+        "image_with_text_iTa6Kk"
       ],
-      "name": "t:sections.information-about-water.name",
+      "name": "t:sections.n_base-section.name",
       "settings": {
-        "heading": "Do you know what’s in your water?",
+        "use_own_file": true,
+        "modifier": "reverse",
+        "background_color": "grey",
+        "heading": "<h2>Do you know what’s in your water?</h2>",
         "text": "<p>Research has shown tap water is contaminated with over 320* chemicals that your skin is absorbing daily. These micro-contaminants in water can clog pores, dry out and irritate sensitive skin.</p>",
         "button_label": "",
-        "button_url": ""
+        "button_url": "",
+        "wistia_url": ""
+      }
+    },
+    "n_base_section_Fx3gV9": {
+      "type": "n_base-section",
+      "name": "t:sections.n_base-section.name",
+      "settings": {
+        "use_own_file": true,
+        "modifier": "reverse",
+        "background_color": "grey",
+        "heading": "<h2>Meet the Qure Faucet Filter</h2>",
+        "text": "<p>Great skin begins with the source – the water you use daily. The Qure Faucet Filter <em>effectively reduces harmful skin irritants</em> that can affect your skin's health and appearance.</p>",
+        "image": "shopify://shop_images/facewashing_faucet.webp",
+        "button_label": "SHOP NOW",
+        "button_url": "#buy_box",
+        "wistia_url": ""
+      }
+    },
+    "n_progress_metrics_X8KGmr": {
+      "type": "n_progress-metrics",
+      "blocks": {
+        "image_MpXX9T": {
+          "type": "image",
+          "settings": {
+            "heading": "Before",
+            "image": "shopify://shop_images/graph_before-1.webp"
+          }
+        },
+        "image_8rCbmg": {
+          "type": "image",
+          "settings": {
+            "heading": "After",
+            "image": "shopify://shop_images/Before_3.png"
+          }
+        },
+        "percent_value_XXx6fj": {
+          "type": "percent_value",
+          "settings": {
+            "percent_value": 80,
+            "text": "noticed less dryness after 4 weeks"
+          }
+        },
+        "percent_value_7YhrzR": {
+          "type": "percent_value",
+          "settings": {
+            "percent_value": 76,
+            "text": "reported feeling reduced tightness after filtered water wash"
+          }
+        },
+        "percent_value_EMJ3KF": {
+          "type": "percent_value",
+          "settings": {
+            "percent_value": 96,
+            "text": "of participants wouldn’t go back to regular tap water"
+          }
+        },
+        "disclaimer_r4Bm6h": {
+          "type": "disclaimer",
+          "settings": {
+            "text": "Testing conducted by an independent laboratory. Results based on user perception and instrumental measurements of daily use over 4 weeks."
+          }
+        }
+      },
+      "block_order": [
+        "image_MpXX9T",
+        "image_8rCbmg",
+        "percent_value_XXx6fj",
+        "percent_value_7YhrzR",
+        "percent_value_EMJ3KF",
+        "disclaimer_r4Bm6h"
+      ],
+      "name": "t:sections.n_progress-metrics.name",
+      "settings": {
+        "use_own_file": true,
+        "text": "<h2>Measured improvement in skin hydration after just 4 weeks</h2><p>An independent user study with 30 participants, supported by third-party skin hydration measurements, showed improvements in measured skin hydration after 4 weeks of daily use of the Qure Faucet Filter.</p>"
       }
     },
     "banner_with_text_kcnLnP": {
@@ -877,7 +958,9 @@
   "order": [
     "product_header_FnMCMD",
     "purchase-form-landing",
-    "information_about_water_QHm8d8",
+    "n_base_section_CGMUkn",
+    "n_base_section_Fx3gV9",
+    "n_progress_metrics_X8KGmr",
     "banner_with_text_kcnLnP",
     "improve_skin_hydration_e8i3th",
     "trusted_reviews_eR9QJW",

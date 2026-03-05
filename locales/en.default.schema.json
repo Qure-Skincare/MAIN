@@ -224,14 +224,19 @@
         "disclaimer": "Disclaimer",
         "tab": "Tab",
         "tab-content": "Tab content",
-        "tab-list": "Tab list",
+        "tab-list": "Tab list", 
         "tab-slider": "Tab slider",
+        "tab-heading": "Tab header",
         "percent-value-style": "Percent value style",
         "circle": "Circle",
         "line": "Line",
         "left-header": "Left header",
         "right-header": "Right header",
-        "text-between": "Text between"
+        "text-between": "Text between",
+        "select": "Select",
+        "flag": "Flag",
+        "verified-customer": "Verified customer",
+        "component": "Component"
     },
     "blocks": {
         "block-card": {
@@ -280,6 +285,18 @@
                 "background-color-options": {
                     "none": "None",
                     "grey": "Grey"
+                }
+            },
+            "blocks": {
+                "image_with_text": {
+                    "settings": {
+                        "limescale": "Limescale",
+                        "heavy-metals": "Heavy Metals",
+                        "chlorine": "Chlorine",
+                        "micro-plastics": "Micro-plastics",
+                        "copper": "Copper",
+                        "micro-organisms": "Micro-organisms"
+                    }
                 }
             }
         },
@@ -394,6 +411,45 @@
         },
         "n_faq": {
             "name": "FAQ"
+        },
+        "n_progress-metrics": {
+            "name": "Progress metrics"
+        },
+        "n_trusted-reviews": {
+            "name": "Trusted reviews"
+        },
+        "n_why-it-works": {
+            "name": "Why it works",
+            "blocks": {
+                "accordion": {
+                    "settings": {
+                        "image": {
+                            "carbon": "Carbon",
+                            "pp-filter": "PP filter",
+                            "nok-filter": "NOK filter",
+                            "asp-descaler": "ASP descaler"
+                        },
+                        "components": {
+                            "none": "None",
+                            "vertical-reverse": "Vertical reverse",
+                            "vertical": "Vertical"
+                        }
+                    }
+                }
+            }
+        },
+        "n_easy-steps": {
+            "name": "Easy steps"
+        },
+        "n_product-settings": {
+            "name": "Product settings",
+            "blocks": {
+                "icon": {
+                    "settings": {
+                        "verified-shield": "Verified shield"
+                    }
+                }
+            }
         },
         "collection": {
             "name": "Collection",
