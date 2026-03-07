@@ -1,0 +1,45 @@
+{% doc %}
+  Renders a cart timer snippet for the cart drawer section
+
+  @example
+  {% include 'n-footer-cart-drawer-timer' %}
+{% enddoc %}
+
+{% if timer > 0 %}
+   {% comment %} {% if cart.item_count > 0 %} {% endcomment %}
+        <div class="cart-countdown-time" data-countdown-time="{{ timer }}" data-timeout-message="{{ 'cart.drawer.settings.notification_time_end' | t }}">
+            <span class="">{{ 'cart.drawer.settings.notification_html' | t }}</span>
+            <span class="cart-counter d-flex">
+                    <span class="cart-counter-block countdown-timer-minute">00</span>
+                    <span class="cart-counter-block countdown-timer-sec">00</span>
+            </span>
+            <span class="countdown-message"></span>
+        </div>
+    {% comment %} {% endif %} {% endcomment %}
+
+   <!-- countdown-timer start  -->
+   <link rel="stylesheet" href="https://qureskincaredns.com/sections/isolated/countdown-timer/countdown-timer.css">
+   {% comment %} <div class="color-background" style="--section-background:#F6F6F7;">
+      <div class="container cart_counter_container">
+            <p class="extra_entries extra_entries_cart">Black Friday Ends In:</p>
+            <div class="countdown countdown_cart" data-target="2025-10-30T00:00:00">
+               <div>
+                  <div class="days">00</div><span>DAYS</span>
+               </div>
+               <div><img src="https://qureskincaredns.com/sections/isolated/countdown-timer/images/white_line.svg" alt=""></div>
+               <div>
+                  <div class="hours">00</div><span>HOURS</span>
+               </div>
+               <div><img src="https://qureskincaredns.com/sections/isolated/countdown-timer/images/white_line.svg" alt=""></div>
+               <div>
+                  <div class="minutes">00</div><span>MINUTES</span>
+               </div>
+               <div><img src="https://qureskincaredns.com/sections/isolated/countdown-timer/images/white_line.svg" alt=""></div>
+               <div>
+                  <div class="seconds">00</div><span>SECONDS</span>
+               </div>
+            </div>
+      </div>
+   </div> {% endcomment %}
+   <!-- countdown-timer end  -->
+{% endif %}

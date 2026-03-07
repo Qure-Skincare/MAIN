@@ -24,7 +24,7 @@
       "settings": {}
     },
     "footer-drawer": {
-      "type": "footer-cart-drawer",
+      "type": "n-footer-cart-drawer",
       "name": "t:sections.footer-cart-drawer.name",
       "settings": {}
     },
