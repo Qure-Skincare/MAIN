@@ -420,6 +420,11 @@
         },
         "n_why-it-works": {
             "name": "Why it works",
+            "settings": {
+                "modifier-options": {
+                    "faucet-filter": "Faucet filter"
+                }
+            },
             "blocks": {
                 "accordion": {
                     "settings": {

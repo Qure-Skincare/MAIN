@@ -38,7 +38,7 @@
                 </div>
             </div>
             <div class="why-it-works__components">
-                <div class="c-product-components">
+                <div class="c-product-components{% if section.settings.modifier == 'faucet-filter' %} c-product-components--faucet-filter{% endif %}">
                     {% if section.settings.image != blank %}
                         <img src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt | escape}}" />
                     {% endif %}
@@ -72,6 +72,22 @@
             "id": "use_own_file",
             "label": "t:common.use-own-file",
             "default": false
+        },
+        {
+            "type": "select",
+            "id": "modifier",
+            "label": "t:common.modifier",
+            "default": "none",
+            "options": [
+                {
+                    "value": "none",
+                    "label": "t:common.none"
+                },
+                {
+                    "value": "faucet-filter",
+                    "label": "t:sections.n_why-it-works.settings.modifier-options.faucet-filter"
+                }
+            ]
         },
         {
             "type": "richtext",

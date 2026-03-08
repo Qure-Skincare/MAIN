@@ -84,7 +84,8 @@
         "jumpto_YV6XMK"
       ],
       "custom_css": [
-        ".hero-product {padding-top: 0; padding-bottom: 0;} @media screen and (max-width: 767px){.hero-product {padding-top: 0; padding-bottom: 0;}}"
+        ".hero-product {padding-top: 0; padding-bottom: 0;}",
+        "@media screen and (max-width: 767px) {.hero-product {padding-top: 0; padding-bottom: 0; }}"
       ],
       "name": "t:sections.product-header.name",
       "settings": {
@@ -288,7 +289,7 @@
         "heading": "<h2>Meet the Qure Faucet Filter</h2>",
         "text": "<p>Great skin begins with the source – the water you use daily. The Qure Faucet Filter<em>effectively reduces harmful skin irritants</em>that can affect your skin's health and appearance.</p>",
         "button_label": "Shop Now",
-        "button_url": "#buy_box",
+        "button_url": "#hero-product",
         "wistia_url": "tev066z6pv"
       }
     },
@@ -404,7 +405,7 @@
         "background_color": "none",
         "modifier": "none",
         "heading": "<h2>Trusted and Recommended by Experts</h2>",
-        "text": "<p>“How do you <em>reduce the things in your water that may be causing issues </em>with your skin?<br/><br/>This Qure filter is incredible – it’s <em>the only filter I personally use to</em> [reduce] chlorine and anything else that’s going to make your water harsh for your skin.”</p>",
+        "text": "<p>“How do you <em>reduce the things in your water that may be causing issues</em> with your skin?<br/><br/>This Qure filter is incredible – it’s <em>the only filter I personally use to</em> [reduce] chlorine and anything else that’s going to make your water harsh for your skin.”</p>",
         "video_image_cover": "shopify://shop_images/doctor_img_1.png",
         "video_url": "https://www.youtube.com/watch?v=Tk39sbR8Nak&t=433s",
         "badge_text": "Dermatologist Reviewed"
@@ -516,6 +517,7 @@
       "name": "t:sections.n_why-it-works.name",
       "settings": {
         "use_own_file": true,
+        "modifier": "faucet-filter",
         "text": "<h2>Why It Works</h2><p>Our triple filtration technology filters the water to remove heavy metals and purify.</p>",
         "image": "shopify://shop_images/faucet-filter.webp"
       }
@@ -963,7 +965,7 @@
         "heading": "",
         "text": "580 Units Reserved in last 48 hours",
         "button-label": "Subscribe & Save",
-        "button-url": ""
+        "button-url": "#hero-product"
       }
     }
   },
