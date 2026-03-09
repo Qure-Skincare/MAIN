@@ -12,9 +12,9 @@
             <div class="qure_tabs_wrap d-flex flex-wrap flex-md-nowrap justify-content-between gap-10 align-items-center fs-16">
                 <ul class="filters qure_tabs">
                     <li><a href="#section-mi" class="active">Micro-Infusion</a></li>
-                    <li><a href="#section-devices">Devices</a></li>
+                    {% comment %} <li><a href="#section-devices">Devices</a></li>
                     <li><a href="#section-filters">Water Filters</a></li>
-                    <li><a href="#section-skincare">Skincare</a></li>
+                    <li><a href="#section-skincare">Skincare</a></li> {% endcomment %}
                 </ul>
             </div>
             <div class="row projects custom__grid" style="--column-gap: 32px; --column-gap-mobile: 16px" id="section-mi" data-label="Micro-Infusion">
@@ -167,7 +167,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row projects custom__grid" style="--column-gap: 32px; --column-gap-mobile: 16px" id="section-devices" data-label="Devices">
+            {% comment %} <div class="row projects custom__grid" style="--column-gap: 32px; --column-gap-mobile: 16px" id="section-devices" data-label="Devices">
                 <div class="col-6 col-md-3 custom__block project">
                     <div class="qure__product-item silver-badge">
                         <a href="#" class="qure__product-img overflow-hidden position-relative d-block">
@@ -488,7 +488,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> {% endcomment %}
         </div>
     </div>
 </div>
@@ -500,78 +500,77 @@
 </script>
 <!--Collection Block-->
 
-
-{% comment %} <link rel="stylesheet"
-    href="https://qureskincaredns.com/sections/isolated/collection-block/section-collection-block.css">
-<div class="collection_block qure__section" style="--section-padding-top:10px; --section-padding-top-mob:10px;">
+<section class="build-your-own-products qure__section">
     <div class="container">
-        <div class="collection_content">
-            <div id="collection-products" class="row projects custom__grid" style="--column-gap:32px; --column-gap-mobile:16px;">
-                {% for product in collection.products %}
+        {% if section.settings.title != blank %}
+            <h2 class="fs-32 mb-30 text-center">{{ section.settings.title }}</h2>
+        {% endif %}
 
-                    {% include 'get-product-data', product_handle: product.handle, product_prefix: 'collection-' %}
-
-                    {% if product_handle contains 'micro-infusion' %}
-                        {% assign product_url = '/pages/microinfusion' %}
-                    {% endif %}
-
-                    <div class="col-6 col-md-3 custom__block project" data-filter="fine_lines dark_spots breakouts">
-                        <div class="qure__product-item{% if black_friday_discount_percent > 0 %} silver-badge{% endif %}">
-                            <a href="{{ product_url }}" aria-label="{{ product_title }}" class="qure__product-img overflow-hidden position-relative d-block">
-                                {% for media in product_media limit:2 %}
-                                    <div class="{% if forloop.index == 1 %}qure__product-main-img{% else %}qure__product-hover-img position-absolute inset-0{% endif %}">
-                                        <img src="{{ media | img_url: '720x' }}" alt="{{ product_title | escape }}" />
+        {% if section.blocks.size > 0 %}
+            <div class="row projects custom__grid" style="--column-gap: 32px; --column-gap-mobile: 16px">
+                {% for block in section.blocks %}
+                    {% assign product = block.settings.product %}
+                    {% if product != blank %}
+                        <div class="col-6 col-md-3 custom__block project" {{ block.shopify_attributes }}>
+                            <div class="qure__product-item">
+                                <a href="{{ product.url }}" class="qure__product-img overflow-hidden position-relative d-block">
+                                    <div class="qure__product-main-img">
+                                        <img src="{{ product.featured_image | image_url: width: 400 }}" alt="{{ product.featured_image.alt | escape }}" loading="lazy" width="400" />
                                     </div>
-                                {% endfor %}
-
-                                {% for tag in product_tags %}
-                                    {% if tag contains 'Best Seller' %}
-                                        <div class="badge rounded-pill badge-bestseller">{{ 'sections.collection.bestseller' | t }}</div>
-                                    {% endif %}
-                                {% endfor %}
-                            </a>
-                            <div class="qure__product-details">
-                                {% render 'collection-product-rating', product: product %}
-
-                                <h3 class="fm-body mb-0 qure__product-name">
-                                    <a class="limited-line capitalize d-block" href="{{ product_url }}" aria-label="{{ product_title }}">{{ product_title }}</a>
-                                </h3>
-
-                                {% if black_friday_discount_percent > 0 %}
+                                </a>
+                                <div class="qure__product-details">
+                                    <h3 class="fm-body mb-0 qure__product-name">
+                                        <a class="limited-line capitalize d-block" href="{{ product.url }}">{{ product.title }}</a>
+                                    </h3>
                                     <div class="qure__product-price">
-                                        <div class="dis_red_line">
-                                            {% if product_before_price != blank %}
-                                                <span class="bef_price text-decoration-line-through">{{ product_before_price }}</span>
-                                            {% endif %}
-                                            <span class="aft_price">{{ product_sale_price }}</span>
-                                        </div>
-                                        <div class="black_friday_price">{{ product_black_friday_price }}</div>
-                                    </div>
-                                {% else %}
-                                    <div class="d-flex gap-2">
-                                        {% if product_before_price != blank %}
-                                            <div class="bef_price text-decoration-line-through text-black-50 igComparePrice">{{ product_before_price }}</div>
+                                        {% if product.compare_at_price > product.price %}
+                                            <div class="dis_red_line">
+                                                <span class="bef_price text-decoration-line-through">{{ product.compare_at_price | money }}</span>
+                                                <span class="aft_price">{{ product.price | money }}</span>
+                                            </div>
+                                        {% else %}
+                                            <span>{{ product.price | money }}</span>
                                         {% endif %}
-                                        
-                                        <div class="qure__product-price igPrice">{{ product_sale_price }}</div>
                                     </div>
-                                {% endif %}
-                            </div>
-                            
-                            <div class="d-none d-lg-block">
-                                {% render 'product-page-buy-button', product_price: null, product_variant_id: product_variant_id, section: blank, product_available: product_available %}
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    {% endif %}
                 {% endfor %}
             </div>
-        </div>
+        {% endif %}
     </div>
-</div>
+</section>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    loadScriptOnce('section-collection-block', 'https://qureskincaredns.com/shopify/js/section-collection-block.js');
-    loadScriptOnce('collection', 'https://qureskincaredns.com/shopify/js/collection.js');
-  });
-</script> {% endcomment %}
+{% schema %}
+{
+    "name": "Build Your Own Products",
+    "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "Build Your Own"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "product",
+            "name": "Product",
+            "limit": 4,
+            "settings": [
+                {
+                    "type": "product",
+                    "id": "product",
+                    "label": "Product"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Build Your Own Products"
+        }
+    ]
+}
+{% endschema %}
