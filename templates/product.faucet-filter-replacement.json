@@ -601,6 +601,48 @@
         "use_own_file": true
       }
     },
+    "n_easy_steps_ntE9Cf": {
+      "type": "n_easy-steps",
+      "blocks": {
+        "items_tx94Jg": {
+          "type": "items",
+          "settings": {
+            "text": "<h6>Remove</h6><p>Turn off the faucet. Rotate the filter cartridge cover counterclockwise to remove the old filter cartridge.</p>",
+            "image": "shopify://shop_images/faucet_replace1.webp",
+            "image_mobile": "shopify://shop_images/faucet_replace1-m.webp"
+          }
+        },
+        "items_3PLjd7": {
+          "type": "items",
+          "settings": {
+            "text": "<h6>Insert</h6><p>Peel off the seal from the new filter cartridge. Install the cartridge into the faucet housing. Screw the filter cartridge cover clockwise to secure it.</p>",
+            "image": "shopify://shop_images/faucet_replace2.webp",
+            "image_mobile": "shopify://shop_images/faucet_replace2-m.webp"
+          }
+        },
+        "items_cgcPBm": {
+          "type": "items",
+          "settings": {
+            "text": "<h6>Flush</h6><p>Turn on the faucet and let raw water flow for 5 seconds, then switch to purified water mode and let it run for 3 minutes before first use.</p>",
+            "image": "shopify://shop_images/faucet_replace2.webp",
+            "image_mobile": "shopify://shop_images/faucet_replace2-m.webp"
+          }
+        }
+      },
+      "block_order": [
+        "items_tx94Jg",
+        "items_3PLjd7",
+        "items_cgcPBm"
+      ],
+      "name": "t:sections.n_easy-steps.name",
+      "settings": {
+        "use_own_file": true,
+        "text": "<h2>Set up in 3 easy steps</h2>",
+        "image": "shopify://shop_images/shower-filter-refill-video.webp",
+        "image_mobile": "shopify://shop_images/shower-filter-refill-video-mob.webp",
+        "wistia_url": "bwhqvtar9u"
+      }
+    },
     "n_comparison_wGQ6da": {
       "type": "n_comparison",
       "blocks": {
@@ -867,6 +909,7 @@
     "n_why_it_works_gwdxhE",
     "n_video_slider_UbQYbp",
     "n_features_marquee_h4hRGq",
+    "n_easy_steps_ntE9Cf",
     "n_comparison_wGQ6da",
     "text_header_r6mPbB",
     "17574115467f0c78e8",
