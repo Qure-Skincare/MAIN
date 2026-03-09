@@ -18,28 +18,37 @@
                 </ul>
             </div>
             <div class="row projects custom__grid" style="--column-gap: 32px; --column-gap-mobile: 16px" id="section-mi" data-label="Micro-Infusion">
-                <div class="col-6 col-md-3 custom__block project" data-filter="fine_lines dark_spots">
+                {% for block in section.blocks %}
+                {% assign product = block.settings.product %}
+                {% if product != blank %}
+                <div class="col-6 col-md-3 custom__block project" data-filter="fine_lines dark_spots" {{ block.shopify_attributes }}>
                     <div class="qure__product-item silver-badge">
-                        <a href="#" class="qure__product-img overflow-hidden position-relative d-block">
-                            <div class="qure__product-main-img"><img src="https://qureskincaredns.com/sections/isolated/top-products/images/micro-infusion-facial-system.webp" alt="" /></div>
-                            <div class="qure__product-hover-img position-absolute inset-0"><img src="https://qureskincaredns.com/sections/isolated/top-products/images/micro-infusion-facial-system-hover.webp" alt="" /></div>
+                        <a href="{{ product.url }}" class="qure__product-img overflow-hidden position-relative d-block">
+                            <div class="qure__product-main-img"><img src="{{ product.featured_image | image_url: width: 720 }}" alt="{{ product.featured_image.alt | escape }}" /></div>
+                            {% if product.images.size > 1 %}
+                            <div class="qure__product-hover-img position-absolute inset-0"><img src="{{ product.images[1] | image_url: width: 720 }}" alt="{{ product.title | escape }}" /></div>
+                            {% endif %}
                             <div class="badge rounded-pill badge-bestseller">Bestseller</div>
                         </a>
                         <div class="qure__product-details">
                             <div class="qure__product-reviews fs-14 d-flex gap-3 align-items-center"><img src="https://qureskincaredns.com/sections/isolated/top-products/images/stars.svg" alt="" /><span>1,312 Reviews</span></div>
                             <h3 class="fm-body mb-0 qure__product-name">
-                                <a class="limited-line capitalize d-block" href="#">Micro-Infusion Facial System</a>
+                                <a class="limited-line capitalize d-block" href="{{ product.url }}">{{ product.title }}</a>
                             </h3>
                             <div class="qure__product-price">
+                                {% if product.compare_at_price > product.price %}
                                 <div class="dis_red_line">
-                                    <span class="bef_price text-decoration-line-through">$238</span>
-                                    <span class="aft_price">$149</span>
+                                    <span class="bef_price text-decoration-line-through">{{ product.compare_at_price | money }}</span>
+                                    <span class="aft_price">{{ product.price | money }}</span>
                                 </div>
-                                <div class="black_friday_price">$133.51</div>
+                                {% else %}
+                                <span>{{ product.price | money }}</span>
+                                {% endif %}
                             </div>
                         </div>
                         <div class="qure__product-action-inner">
-                            <form method="post" action="#" enctype="multipart/form-data">
+                            <form method="post" action="/cart/add" enctype="multipart/form-data">
+                                <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" />
                                 <input type="checkbox" name="added_in_cart" value="" />
                                 <button type="button" class="add-cart-button product-form__submit btn btn--primary w-100">Add <i class="e-icon e-icon-plus"></i></button>
                                 <div class="e-quantity e-quantity--pill-xl" data-e-quantity>
@@ -55,117 +64,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6 col-md-3 custom__block project" data-filter="fine_lines dark_spots">
-                    <div class="qure__product-item silver-badge">
-                        <a href="#" class="qure__product-img overflow-hidden position-relative d-block">
-                            <div class="qure__product-main-img"><img src="https://qureskincaredns.com/sections/isolated/top-products/images/micro-infusion-facial-system.webp" alt="" /></div>
-                            <div class="qure__product-hover-img position-absolute inset-0"><img src="https://qureskincaredns.com/sections/isolated/top-products/images/micro-infusion-facial-system-hover.webp" alt="" /></div>
-                            <div class="badge rounded-pill badge-bestseller">Bestseller</div>
-                        </a>
-                        <div class="qure__product-details">
-                            <div class="qure__product-reviews fs-14 d-flex gap-3 align-items-center"><img src="https://qureskincaredns.com/sections/isolated/top-products/images/stars.svg" alt="" /><span>1,312 Reviews</span></div>
-                            <h3 class="fm-body mb-0 qure__product-name">
-                                <a class="limited-line capitalize d-block" href="#">Micro-Infusion Facial System</a>
-                            </h3>
-                            <div class="qure__product-price">
-                                <div class="dis_red_line">
-                                    <span class="bef_price text-decoration-line-through">$238</span>
-                                    <span class="aft_price">$149</span>
-                                </div>
-                                <div class="black_friday_price">$133.51</div>
-                            </div>
-                        </div>
-                        <div class="qure__product-action-inner">
-                            <form method="post" action="#" enctype="multipart/form-data">
-                                <input type="checkbox" name="added_in_cart" value="" />
-                                <button type="button" class="add-cart-button product-form__submit btn btn--primary w-100">Add <i class="e-icon e-icon-plus"></i></button>
-                                <div class="e-quantity e-quantity--pill-xl" data-e-quantity>
-                                    <button type="button" data-e-quantity-action="decrement">
-                                        <i class="e-icon e-icon-minus"></i>
-                                    </button>
-                                    <input type="number" name="qty" value="1" min="1" readonly="readonly" />
-                                    <button type="button" data-e-quantity-action="increment">
-                                        <i class="e-icon e-icon-plus"></i>
-                                    </button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3 custom__block project" data-filter="fine_lines dark_spots">
-                    <div class="qure__product-item silver-badge">
-                        <a href="#" class="qure__product-img overflow-hidden position-relative d-block">
-                            <div class="qure__product-main-img"><img src="https://qureskincaredns.com/sections/isolated/top-products/images/micro-infusion-facial-system.webp" alt="" /></div>
-                            <div class="qure__product-hover-img position-absolute inset-0"><img src="https://qureskincaredns.com/sections/isolated/top-products/images/micro-infusion-facial-system-hover.webp" alt="" /></div>
-                            <div class="badge rounded-pill badge-bestseller">Bestseller</div>
-                        </a>
-                        <div class="qure__product-details">
-                            <div class="qure__product-reviews fs-14 d-flex gap-3 align-items-center"><img src="https://qureskincaredns.com/sections/isolated/top-products/images/stars.svg" alt="" /><span>1,312 Reviews</span></div>
-                            <h3 class="fm-body mb-0 qure__product-name">
-                                <a class="limited-line capitalize d-block" href="#">Micro-Infusion Facial System</a>
-                            </h3>
-                            <div class="qure__product-price">
-                                <div class="dis_red_line">
-                                    <span class="bef_price text-decoration-line-through">$238</span>
-                                    <span class="aft_price">$149</span>
-                                </div>
-                                <div class="black_friday_price">$133.51</div>
-                            </div>
-                        </div>
-                        <div class="qure__product-action-inner">
-                            <form method="post" action="#" enctype="multipart/form-data">
-                                <input type="checkbox" name="added_in_cart" value="" />
-                                <button type="button" class="add-cart-button product-form__submit btn btn--primary w-100">Add <i class="e-icon e-icon-plus"></i></button>
-                                <div class="e-quantity e-quantity--pill-xl" data-e-quantity>
-                                    <button type="button" data-e-quantity-action="decrement">
-                                        <i class="e-icon e-icon-minus"></i>
-                                    </button>
-                                    <input type="number" name="qty" value="1" min="1" readonly="readonly" />
-                                    <button type="button" data-e-quantity-action="increment">
-                                        <i class="e-icon e-icon-plus"></i>
-                                    </button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3 custom__block project" data-filter="fine_lines dark_spots">
-                    <div class="qure__product-item silver-badge">
-                        <a href="#" class="qure__product-img overflow-hidden position-relative d-block">
-                            <div class="qure__product-main-img"><img src="https://qureskincaredns.com/sections/isolated/top-products/images/micro-infusion-facial-system.webp" alt="" /></div>
-                            <div class="qure__product-hover-img position-absolute inset-0"><img src="https://qureskincaredns.com/sections/isolated/top-products/images/micro-infusion-facial-system-hover.webp" alt="" /></div>
-                            <div class="badge rounded-pill badge-bestseller">Bestseller</div>
-                        </a>
-                        <div class="qure__product-details">
-                            <div class="qure__product-reviews fs-14 d-flex gap-3 align-items-center"><img src="https://qureskincaredns.com/sections/isolated/top-products/images/stars.svg" alt="" /><span>1,312 Reviews</span></div>
-                            <h3 class="fm-body mb-0 qure__product-name">
-                                <a class="limited-line capitalize d-block" href="#">Micro-Infusion Facial System</a>
-                            </h3>
-                            <div class="qure__product-price">
-                                <div class="dis_red_line">
-                                    <span class="bef_price text-decoration-line-through">$238</span>
-                                    <span class="aft_price">$149</span>
-                                </div>
-                                <div class="black_friday_price">$133.51</div>
-                            </div>
-                        </div>
-                        <div class="qure__product-action-inner">
-                            <form method="post" action="#" enctype="multipart/form-data">
-                                <input type="checkbox" name="added_in_cart" value="" />
-                                <button type="button" class="add-cart-button product-form__submit btn btn--primary w-100">Add <i class="e-icon e-icon-plus"></i></button>
-                                <div class="e-quantity e-quantity--pill-xl" data-e-quantity>
-                                    <button type="button" data-e-quantity-action="decrement">
-                                        <i class="e-icon e-icon-minus"></i>
-                                    </button>
-                                    <input type="number" name="qty" value="1" min="1" readonly="readonly" />
-                                    <button type="button" data-e-quantity-action="increment">
-                                        <i class="e-icon e-icon-plus"></i>
-                                    </button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+                {% endif %}
+                {% endfor %}
             </div>
             {% comment %} <div class="row projects custom__grid" style="--column-gap: 32px; --column-gap-mobile: 16px" id="section-devices" data-label="Devices">
                 <div class="col-6 col-md-3 custom__block project">
@@ -499,48 +399,6 @@
     });
 </script>
 <!--Collection Block-->
-
-<section class="build-your-own-products qure__section">
-    <div class="container">
-        {% if section.settings.title != blank %}
-            <h2 class="fs-32 mb-30 text-center">{{ section.settings.title }}</h2>
-        {% endif %}
-
-        {% if section.blocks.size > 0 %}
-            <div class="row projects custom__grid" style="--column-gap: 32px; --column-gap-mobile: 16px">
-                {% for block in section.blocks %}
-                    {% assign product = block.settings.product %}
-                    {% if product != blank %}
-                        <div class="col-6 col-md-3 custom__block project" {{ block.shopify_attributes }}>
-                            <div class="qure__product-item">
-                                <a href="{{ product.url }}" class="qure__product-img overflow-hidden position-relative d-block">
-                                    <div class="qure__product-main-img">
-                                        <img src="{{ product.featured_image | image_url: width: 400 }}" alt="{{ product.featured_image.alt | escape }}" loading="lazy" width="400" />
-                                    </div>
-                                </a>
-                                <div class="qure__product-details">
-                                    <h3 class="fm-body mb-0 qure__product-name">
-                                        <a class="limited-line capitalize d-block" href="{{ product.url }}">{{ product.title }}</a>
-                                    </h3>
-                                    <div class="qure__product-price">
-                                        {% if product.compare_at_price > product.price %}
-                                            <div class="dis_red_line">
-                                                <span class="bef_price text-decoration-line-through">{{ product.compare_at_price | money }}</span>
-                                                <span class="aft_price">{{ product.price | money }}</span>
-                                            </div>
-                                        {% else %}
-                                            <span>{{ product.price | money }}</span>
-                                        {% endif %}
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    {% endif %}
-                {% endfor %}
-            </div>
-        {% endif %}
-    </div>
-</section>
 
 {% schema %}
 {
