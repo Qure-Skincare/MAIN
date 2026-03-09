@@ -298,7 +298,6 @@
         "product_DBd4ef",
         "product_Xf8A6C"
       ],
-      "disabled": true,
       "settings": {
         "form_name": "purchase-form-landing",
         "hide_types": false,
@@ -409,6 +408,7 @@
         "product_NEgEkN",
         "product_DEgEkN"
       ],
+      "disabled": true,
       "settings": {
         "form_name": "purchase-form-landing",
         "hide_types": true,
