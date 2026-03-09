@@ -85,10 +85,10 @@
                                         <div>
                                             <div class="vp-price dis_red_line">
                                                 {% if product_before_price != blank %}
-                                                    <span data-variant-id="{{ product_variant_id }}" class="vp-price-sale regular_price igComparePrice">{{ product_before_price }}</span>
-                                                    <span data-variant-id="{{ product_variant_id }}" class="igPrice">{{ product_sale_price }}</span>
+                                                    <span data-variant-id="{{ product_variant_id }}" class="vp-price-sale regular_price igComparePrice" data-product-id="{{ product_id }}">{{ product_before_price }}</span>
+                                                    <span data-variant-id="{{ product_variant_id }}" class="igPrice" data-product-id="{{ product_id }}">{{ product_sale_price }}</span>
                                                 {% else %}
-                                                    <span data-variant-id="{{ product_variant_id }}" class="igPrice">{{ product_sale_price }}</span>
+                                                    <span data-variant-id="{{ product_variant_id }}" class="igPrice" data-product-id="{{ product_id }}">{{ product_sale_price }}</span>
                                                 {% endif %}
                                             </div>
                                             {% if product_black_friday_price != blank %}
