@@ -7,13 +7,10 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "product_header_YnMCRD": {
       "type": "n-product-header",
-      "custom_css": [
-        ".hero-product {padding-top: 60px; padding-bottom: 60px;} @media screen and (max-width: 767px){.hero-product {padding-top: 40px; padding-bottom: 40px;}}"
-      ],
       "blocks": {
         "black_friday_discount_tmNq3D": {
           "type": "black-friday-discount",
@@ -86,6 +83,10 @@
         "jumpto_EY6mqw",
         "jumpto_YV6XMK"
       ],
+      "custom_css": [
+        ".hero-product {padding-top: 60px; padding-bottom: 60px;}",
+        "@media screen and (max-width: 767px) {.hero-product {padding-top: 40px; padding-bottom: 40px; }}"
+      ],
       "name": "t:sections.product-header.name",
       "settings": {
         "seo_heading": "QURE FAUCET FILTER",
@@ -94,7 +95,9 @@
         "limited": false,
         "description": "<ul><li>Advanced water filter shown to reduce up to 99% of possible irritants for clearer-looking, hydrated skin.</li><li>Helps limit exposure to common water impurities that can contribute to dryness or discomfort, supporting skin that looks healthier.</li><li>Designed to work seamlessly with your existing routine, delivering filtered water for daily cleansing without extra steps.</li></ul>",
         "reserved": false,
-        "soldout": false
+        "soldout": false,
+        "button-label": "",
+        "button-url": ""
       }
     },
     "purchase-form-landing": {
@@ -119,6 +122,25 @@
             "heading": "White",
             "image": "shopify://shop_images/variant-white-1.webp",
             "preselected": false
+          }
+        },
+        "product_x3jeL8": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "popular": false,
+            "best": false,
+            "preselected": false,
+            "heading": "",
+            "subheading": "",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
           }
         },
         "product_gbPf3J": {
@@ -264,6 +286,7 @@
         "nextships_4xp7uM",
         "type_hHPdgJ",
         "product_type_QKQhNr",
+        "product_x3jeL8",
         "product_gbPf3J",
         "product_RBCPe8",
         "type_aJwQ9q",
@@ -275,6 +298,7 @@
         "product_DBd4ef",
         "product_Xf8A6C"
       ],
+      "disabled": true,
       "settings": {
         "form_name": "purchase-form-landing",
         "hide_types": false,
@@ -283,7 +307,6 @@
     },
     "purchase-form-landing-old": {
       "type": "purchase-form-landing",
-      "disabled": true,
       "blocks": {
         "subscription_6xp1uL": {
           "type": "subscription",
@@ -322,6 +345,8 @@
             "product": "faucet-filter",
             "product_variant_id": 45852978348271,
             "product_selling_plan": 6190465263,
+            "popular": false,
+            "best": false,
             "preselected": true,
             "heading": "White",
             "subheading": "",
@@ -340,6 +365,8 @@
             "product": "faucet-filter",
             "product_variant_id": 45852978315503,
             "product_selling_plan": 6190465263,
+            "popular": false,
+            "best": false,
             "preselected": false,
             "heading": "Black",
             "subheading": "",
@@ -358,6 +385,8 @@
             "product": "faucet-filter",
             "product_variant_id": 46852913987823,
             "product_selling_plan": 6190465263,
+            "popular": false,
+            "best": false,
             "preselected": false,
             "heading": "Silver",
             "subheading": "",
@@ -1101,7 +1130,6 @@
     },
     "sticky_cta_9hzULB": {
       "type": "sticky-button-variants",
-      "disabled": true,
       "blocks": {
         "variant_43xxGi": {
           "type": "variant",
@@ -1130,6 +1158,7 @@
         "variant_45xfGi",
         "variant_46xfGi"
       ],
+      "disabled": true,
       "name": "t:sections.sticky-button-variants.name",
       "settings": {
         "heading": "",
