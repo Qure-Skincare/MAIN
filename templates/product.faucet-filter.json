@@ -193,6 +193,25 @@
             "preselected": false
           }
         },
+        "product_AJPQaQ": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "product_variant_id": 45852978315503,
+            "product_selling_plan": 0,
+            "popular": false,
+            "best": false,
+            "preselected": false,
+            "heading": "3 Months Supply",
+            "subheading": "(Faucet + 1 Filter)",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        },
         "product_nyJ9n7": {
           "type": "product",
           "settings": {
@@ -291,6 +310,7 @@
         "product_RBCPe8",
         "type_aJwQ9q",
         "product_type_VLXcAn",
+        "product_AJPQaQ",
         "product_nyJ9n7",
         "product_eiY89h",
         "type_yDwWmt",
