@@ -235,6 +235,11 @@
         "text": "<p>You don’t have time for products that don’t work. We’ll prescribe you a personalized routine with clinically proven products and tips - just for your skin.</p>",
         "sub_text": "Here’s your personalized skincare routine…"
       }
+    },
+    "sticky-cta-build-your-own": {
+      "type": "sticky-cta-build-your-own",
+      "name": "t:sections.static-sticky-cta.name",
+      "settings": {}
     }
   },
   "order": [
@@ -244,6 +249,7 @@
     "bf_bundle_bunner_mini_JhrEmz",
     "bf_bundle_banner_dTU6Q7",
     "trusted_reviews_mRLHtt",
-    "quiz_DfRXwD"
+    "quiz_DfRXwD",
+    "sticky-cta-build-your-own"
   ]
 }
