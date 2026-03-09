@@ -222,7 +222,7 @@
       "settings": {
         "form_name": "purchase-form-landing",
         "hide_types": true,
-        "type": "list"
+        "type": "box"
       }
     },
     "slider_featured_in_biQEht": {
