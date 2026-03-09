@@ -59,10 +59,6 @@
         "limited_offer_A8",
         "nextships_iPBNaP"
       ],
-      "custom_css": [
-        "#buy_box.qure__trageted-patches {--section-padding-top: 0 !important; --section-padding-bottom: 0 !important;}",
-        "#buy_box .container {--column-gap: 0 !important; --column-gap-mobile: 0 !important;}"
-      ],
       "name": "t:sections.product-header.name",
       "settings": {
         "seo_heading": "PURE SILK PILLOWCASE",

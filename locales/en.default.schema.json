@@ -422,7 +422,8 @@
             "name": "Why it works",
             "settings": {
                 "modifier-options": {
-                    "faucet-filter": "Faucet filter"
+                    "faucet-filter": "Faucet filter",
+                    "shower-filter": "Shower filter"
                 }
             },
             "blocks": {
@@ -437,7 +438,8 @@
                         "components": {
                             "none": "None",
                             "vertical-reverse": "Vertical reverse",
-                            "vertical": "Vertical"
+                            "vertical": "Vertical",
+                            "reverse": "Reverse"
                         }
                     }
                 }

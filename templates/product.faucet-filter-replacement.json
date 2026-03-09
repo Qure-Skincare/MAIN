@@ -83,10 +83,6 @@
         "jumpto_EY6mqw",
         "jumpto_YV6XMK"
       ],
-      "custom_css": [
-        ".hero-product {padding-top: 60px; padding-bottom: 60px;}",
-        "@media screen and (max-width: 767px) {.hero-product {padding-top: 40px; padding-bottom: 40px; }}"
-      ],
       "name": "t:sections.product-header.name",
       "settings": {
         "seo_heading": "FAUCET FILTER REFILL CARTRIDGER",
@@ -266,7 +262,7 @@
         "text": "<p>Great skin begins with the source – the water you use daily. The Qure Faucet Filter <em>effectively reduces harmful skin irritants</em> that can affect your skin's health and appearance.</p>",
         "image": "shopify://shop_images/facewashing_faucet.webp",
         "button_label": "SHOP NOW",
-        "button_url": "#buy_box",
+        "button_url": "#hero-product",
         "wistia_url": ""
       }
     },

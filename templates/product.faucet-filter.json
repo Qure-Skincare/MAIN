@@ -83,10 +83,6 @@
         "jumpto_EY6mqw",
         "jumpto_YV6XMK"
       ],
-      "custom_css": [
-        ".hero-product {padding-top: 0; padding-bottom: 0;}",
-        "@media screen and (max-width: 767px) {.hero-product {padding-top: 0; padding-bottom: 0; }}"
-      ],
       "name": "t:sections.product-header.name",
       "settings": {
         "seo_heading": "QURE FAUCET FILTER",
@@ -203,9 +199,6 @@
         "product_gbPf3J",
         "product_NEgEkN",
         "product_DEgEkN"
-      ],
-      "custom_css": [
-        ".purchase-form-landing {padding-bottom: 0 !important;}"
       ],
       "settings": {
         "form_name": "purchase-form-landing",
@@ -965,7 +958,7 @@
         "heading": "",
         "text": "580 Units Reserved in last 48 hours",
         "button-label": "Subscribe & Save",
-        "button-url": "#hero-product"
+        "button-url": ""
       }
     }
   },

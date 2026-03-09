@@ -38,14 +38,14 @@
                 </div>
             </div>
             <div class="why-it-works__components">
-                <div class="c-product-components{% if section.settings.modifier == 'faucet-filter' %} c-product-components--faucet-filter{% endif %}">
+                <div class="c-product-components{% if section.settings.modifier != 'none' %} c-product-components--{{ section.settings.modifier }}{% endif %}">
                     {% if section.settings.image != blank %}
                         <img src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt | escape}}" />
                     {% endif %}
                     {% for block in section.blocks %}
                         {% if block.type == 'accordion' %}
                             {% if block.settings.heading != blank %}
-                                <div class="e-component-pointer{% if block.settings.component == 'vertical-reverse' %} e-component-pointer--vertical-reverse{% elsif block.settings.component == 'vertical' %} e-component-pointer--vertical{% endif %}">
+                                <div class="e-component-pointer{% if block.settings.component != 'none' %} e-component-pointer--{{ block.settings.component }}{% endif %}">
                                     <hr />
                                     <a href="#{{ block.settings.section_id | handleize }}">{{ block.settings.heading }}</a>
                                 </div>
@@ -86,6 +86,10 @@
                 {
                     "value": "faucet-filter",
                     "label": "t:sections.n_why-it-works.settings.modifier-options.faucet-filter"
+                },
+                {
+                    "value": "shower-filter",
+                    "label": "t:sections.n_why-it-works.settings.modifier-options.shower-filter"
                 }
             ]
         },
@@ -126,6 +130,10 @@
                         {
                             "value": "vertical",
                             "label": "t:sections.n_why-it-works.blocks.accordion.settings.components.vertical"
+                        },
+                        {
+                            "value": "reverse",
+                            "label": "t:sections.n_why-it-works.blocks.accordion.settings.components.reverse"
                         }
                     ]
                 },
