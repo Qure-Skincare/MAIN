@@ -878,7 +878,7 @@
           "settings": {
             "text": "<h6>Remove</h6><p>Remove faucet aerator. Simply attach and twist it off using the key for removal.</p>",
             "image": "shopify://shop_images/faucet_remove.webp",
-            "image_mobile": "shopify://shop_images/faucet_remove-m.webp"
+            "image_mobile": "shopify://shop_images/faucet_remove-mob.webp"
           }
         },
         "items_3PLjd7": {
