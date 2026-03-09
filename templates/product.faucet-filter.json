@@ -189,7 +189,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Black",
-            "image": "shopify://shop_images/variant-black-1.webp",
+            "image": "shopify://shop_images/Img_45.png",
             "preselected": false
           }
         },
@@ -239,7 +239,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Silver",
-            "image": "shopify://shop_images/variant-silver-1.webp",
+            "image": "shopify://shop_images/Img_46.png",
             "preselected": true
           }
         },
