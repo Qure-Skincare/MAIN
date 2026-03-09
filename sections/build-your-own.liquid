@@ -2,110 +2,89 @@
   Renders a build your own section
 {% enddoc %}
 
-{% assign collection = collections['easter-collection'] %}
+{% assign section_title = section.settings.heading | strip_newlines | strip | replace: ' ', '' | downcase %}
 
-<!--Collection Block-->
-<link rel="stylesheet" href="https://qureskincaredns.com/sections/isolated/collection-block/section-collection-block.css" />
-<div class="collection_block qure__section" style="--section-padding-top: 30px; --section-padding-top-mob: 30px">
-    <div class="container">
-        <div class="collection_content">
-            <div class="qure_tabs_wrap d-flex flex-wrap flex-md-nowrap justify-content-between gap-10 align-items-center fs-16">
-                <ul class="filters qure_tabs">
-                    <li><a href="#section-mi" class="active">Micro-Infusion</a></li>
-                </ul>
-            </div>
-            <div class="row projects custom__grid" style="--column-gap: 32px; --column-gap-mobile: 16px" id="section-mi" data-label="Micro-Infusion">
-                {% for block in section.blocks %}
-                    {% if block.type == 'hover_image' %}
-                        {% if block.settings.product != blank %}
-                            {% include 'get-product-data', product_handle: block.settings.product, product_prefix: 'index-qure-products-' %}
+<template id="{{ section_title }}">
+    {% for block in section.blocks %}
+        {% if block.type == 'product_card' %}
+            {% if block.settings.product != blank %}
+                {% include 'get-product-data', product_handle: block.settings.product, product_prefix: 'build-your-own-products-' %}
+            {% endif %}
+            <div class="col-6 col-md-3 custom__block project">
+                <div class="qure__product-item silver-badge">
+                    <a href="{{ block.settings.url }}" class="qure__product-img overflow-hidden position-relative d-block">
+                        {% if block.settings.image != blank %}
+                            <div class="qure__product-main-img">
+                                <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                            </div>
                         {% endif %}
 
-                        <div class="col-6 col-md-3 custom__block project" data-filter="fine_lines dark_spots">
-                            <div class="qure__product-item silver-badge">
-                                <a href="{{ block.settings.url }}" class="qure__product-img overflow-hidden position-relative d-block">
-                                    {% if block.settings.image != blank %}
-                                        <div class="qure__product-main-img">
-                                            <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
-                                        </div>
-                                    {% endif %}
-
-                                    {% if block.settings.hover_image != blank %}
-                                        <div class="qure__product-hover-img position-absolute inset-0">
-                                            <img src="{{ block.settings.hover_image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
-                                        </div>
-                                    {% endif %}
-
-                                    {% assign image_text = block.settings.image_text | downcase %}
-
-                                    {% if image_text == 'bestseller' %}
-                                        <div class="badge rounded-pill badge-bestseller">{{ block.settings.image_text }}</div>    
-                                    {% endif %}
-                                </a>
-                                <div class="qure__product-details">
-                                    {% if block.settings.rating_image != blank %}
-                                        <div class="qure__product-reviews fs-14 d-flex gap-3 align-items-center">
-                                            <img src="{{ block.settings.rating_image |  image_url }}" alt="{{ block.settings.image.alt | escape }}" /><span>{{ block.settings.rating_text }}</span>
-                                        </div>
-                                    {% endif %}
-
-                                    <h3 class="fm-body mb-0 qure__product-name">
-                                        <a class="limited-line capitalize d-block" href="{{ block.settings.url }}">{{ block.settings.heading }}</a>
-                                    </h3>
-
-
-                                    {% if product_sale_price != blank %}
-                                        {% if black_friday_discount_percent > 0 %}
-                                            <div class="qure__product-price">
-                                                <div class="dis_red_line">
-                                                    {% if product_before_price != blank %}
-                                                        <span class="bef_price text-decoration-line-through">{{ product_before_price }}</span>
-                                                    {% endif %}
-                                                    <span class="aft_price">{{ product_sale_price }}</span>
-                                                </div>
-                                                <div class="black_friday_price">{{ product_black_friday_price }}</div>
-                                            </div>
-                                        {% else %}
-                                            <div class="qure__product-price">{{ block.settings.label_price }} <span class="igPrice">{{ product_sale_price }}</span></div>
-                                        {% endif %}
-                                    {% endif %}
-                                </div>
-
-
-                                <div class="qure__product-action-inner">
-                                    <form method="post" action="#" enctype="multipart/form-data">
-                                        <input type="checkbox" name="added_in_cart" value="" />
-                                        <button type="button" class="add-cart-button product-form__submit btn btn--primary w-100">Add <i class="e-icon e-icon-plus"></i></button>
-                                        <div class="e-quantity e-quantity--pill-xl" data-e-quantity>
-                                            <button type="button" data-e-quantity-action="decrement">
-                                                <i class="e-icon e-icon-minus"></i>
-                                            </button>
-                                            <input type="number" name="qty" value="1" min="1" readonly="readonly" />
-                                            <button type="button" data-e-quantity-action="increment">
-                                                <i class="e-icon e-icon-plus"></i>
-                                            </button>
-                                        </div>
-                                    </form>
-                                </div>
+                        {% if block.settings.hover_image != blank %}
+                            <div class="qure__product-hover-img position-absolute inset-0">
+                                <img src="{{ block.settings.hover_image | image_url }}" alt="{{ block.settings.hover_image.alt | escape }}" />
                             </div>
-                        </div>
-                    {% endif %}
-                {% endfor %}
+                        {% endif %}
+
+                        {% assign image_text = block.settings.image_text | downcase %}
+
+                        {% if image_text == 'bestseller' %}
+                            <div class="badge rounded-pill badge-bestseller">{{ block.settings.image_text }}</div>    
+                        {% endif %}
+                    </a>
+                    <div class="qure__product-details">
+                        {% if block.settings.rating_image != blank %}
+                            <div class="qure__product-reviews fs-14 d-flex gap-3 align-items-center">
+                                <img src="{{ block.settings.rating_image |  image_url }}" alt="{{ block.settings.image.alt | escape }}" /><span>{{ block.settings.rating_text }}</span>
+                            </div>
+                        {% endif %}
+
+                        <h3 class="fm-body mb-0 qure__product-name">
+                            <a class="limited-line capitalize d-block" href="{{ block.settings.url }}">{{ block.settings.heading }}</a>
+                        </h3>
+
+
+                        {% if product_sale_price != blank %}
+                            {% if black_friday_discount_percent > 0 %}
+                                <div class="qure__product-price">
+                                    <div class="dis_red_line">
+                                        {% if product_before_price != blank %}
+                                            <span class="bef_price text-decoration-line-through">{{ product_before_price }}</span>
+                                        {% endif %}
+                                        <span class="aft_price">{{ product_sale_price }}</span>
+                                    </div>
+                                    <div class="black_friday_price">{{ product_black_friday_price }}</div>
+                                </div>
+                            {% else %}
+                                <div class="qure__product-price">{{ block.settings.label_price }} <span class="igPrice">{{ product_sale_price }}</span></div>
+                            {% endif %}
+                        {% endif %}
+                    </div>
+
+
+                    <div class="qure__product-action-inner">
+                        <form method="post" action="#" enctype="multipart/form-data">
+                            <input type="checkbox" name="added_in_cart" value="" />
+                            <button type="button" class="add-cart-button product-form__submit btn btn--primary w-100">Add <i class="e-icon e-icon-plus"></i></button>
+                            <div class="e-quantity e-quantity--pill-xl" data-e-quantity>
+                                <button type="button" data-e-quantity-action="decrement">
+                                    <i class="e-icon e-icon-minus"></i>
+                                </button>
+                                <input type="number" name="qty" value="1" min="1" readonly="readonly" />
+                                <button type="button" data-e-quantity-action="increment">
+                                    <i class="e-icon e-icon-plus"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</div>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        loadScriptOnce("build-your-own", "https://qureskincaredns.com/sections/isolated/collection-block/build-your-own.js");
-        loadScriptOnce("quantity", "https://qureskincaredns.com/assets/js-new/quantity.js");
-    });
-</script>
-<!--Collection Block-->
+        {% endif %}
+    {% endfor %}
+</template>
 
 {% schema %}
 {
-  "name": "Build Your Own Products",
+  "name": "t:sections.build-your-own-products.name",
   "settings": [
     {
         "type": "text",
@@ -115,8 +94,8 @@
   ],
   "blocks": [
     {
-        "type": "hover_image",
-        "name": "t:sections.index-qure-products.blocks.hover-image.name",
+        "type": "product_card",
+        "name": "t:common.product",
         "settings": [
             {
                 "type": "text",
@@ -131,7 +110,7 @@
             {
                 "type": "text",
                 "id": "image_text",
-                "label": "t:sections.index-qure-products.blocks.image-text.name"
+                "label": "t:sections.build-your-own-products.blocks.image-text.name"
             },
             {
                 "type": "image_picker",
@@ -142,7 +121,7 @@
             {
                 "type": "image_picker",
                 "id": "hover_image",
-                "label": "t:sections.index-qure-products.blocks.hover-image.name"
+                "label": "t:sections.build-your-own-products.blocks.hover_image.name"
             },
             {
                 "type": "url",
@@ -157,12 +136,7 @@
             {
                 "type": "image_picker",
                 "id": "rating_image",
-                "label": "t:sections.index-qure-products.blocks.rating-image.name"
-            },
-            {
-                "type": "text",
-                "id": "label_price",
-                "label": "t:sections.index-qure-products.blocks.label-price.name"
+                "label": "t:sections.build-your-own-products.blocks.rating-image.name"
             }
         ]
     }
