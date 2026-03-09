@@ -120,7 +120,7 @@
           "type": "product_type",
           "settings": {
             "heading": "White",
-            "image": "shopify://shop_images/variant-white-1.webp",
+            "image": "shopify://shop_images/faucet_white.png",
             "preselected": false
           }
         },
