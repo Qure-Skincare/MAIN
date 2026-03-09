@@ -18,3 +18,9 @@ release
 
 .cursor
 .playwright-mcp
+
+# Claude Code
+CLAUDE.md
+CLAUDE.local.md
+.claude/
+.theme_ids/

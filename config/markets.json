@@ -18,9 +18,6 @@
     "europe": {
       "parent": "@default"
     },
-    "france": {
-      "parent": "@default"
-    },
     "israel": {
       "parent": "@default"
     }
