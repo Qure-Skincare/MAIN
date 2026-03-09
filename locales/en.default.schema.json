@@ -942,7 +942,7 @@
          "build-your-own-container": {
             "name": "BYO container",
             "blocks": {
-                "section": {
+                "tab": {
                     "name": "tab"
                 }
             }
@@ -950,7 +950,7 @@
          "build-your-own-products": {
             "name": "BYO products",
             "blocks": {
-                "product-cart": {
+                "hover_image": {
                     "name": "Hover image"
                 },
                 "image-text":{
