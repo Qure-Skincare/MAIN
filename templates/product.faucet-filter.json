@@ -83,6 +83,10 @@
         "jumpto_EY6mqw",
         "jumpto_YV6XMK"
       ],
+      "custom_css": [
+        ".hero-product {padding-top: 60px; padding-bottom: 60px;}",
+        "@media screen and (max-width: 767px) {.hero-product {padding-top: 40px; padding-bottom: 40px; }}"
+      ],
       "name": "t:sections.product-header.name",
       "settings": {
         "seo_heading": "QURE FAUCET FILTER",
@@ -97,6 +101,250 @@
       }
     },
     "purchase-form-landing": {
+      "type": "purchase-form-landing",
+      "blocks": {
+        "nextships_4xp7uM": {
+          "type": "nextships",
+          "settings": {
+            "date": "23rd January",
+            "percent": 55,
+            "date_soldout": "7 January",
+            "date_reserved": "8 January"
+          }
+        },
+        "type_hHPdgJ": {
+          "type": "type",
+          "settings": {}
+        },
+        "product_type_QKQhNr": {
+          "type": "product_type",
+          "settings": {
+            "heading": "White",
+            "image": "shopify://shop_images/Img_44.png",
+            "preselected": false
+          }
+        },
+        "product_x3jeL8": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "product_variant_id": 45852978348271,
+            "product_selling_plan": 0,
+            "popular": false,
+            "best": false,
+            "preselected": false,
+            "heading": "3 Months Supply",
+            "subheading": "(Faucet + 1 Filter)",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        },
+        "product_gbPf3J": {
+          "type": "product",
+          "settings": {
+            "product": "faucet-white-6-month-bundle",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "popular": true,
+            "best": false,
+            "preselected": false,
+            "heading": "6 Months Supply",
+            "subheading": "Faucet + 2 Filters",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "27 July",
+            "preorder_date_reserved": "15 july",
+            "preorder_percent": 55
+          }
+        },
+        "product_RBCPe8": {
+          "type": "product",
+          "settings": {
+            "product": "faucet-white-12-month-bundle",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "popular": false,
+            "best": true,
+            "preselected": true,
+            "heading": "12 Months Supply",
+            "subheading": "Faucet + 4 Filters",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        },
+        "type_aJwQ9q": {
+          "type": "type",
+          "settings": {}
+        },
+        "product_type_VLXcAn": {
+          "type": "product_type",
+          "settings": {
+            "heading": "Black",
+            "image": "shopify://shop_images/Img_45.png",
+            "preselected": false
+          }
+        },
+        "product_AJPQaQ": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "product_variant_id": 45852978315503,
+            "product_selling_plan": 0,
+            "popular": false,
+            "best": false,
+            "preselected": false,
+            "heading": "3 Months Supply",
+            "subheading": "(Faucet + 1 Filter)",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        },
+        "product_nyJ9n7": {
+          "type": "product",
+          "settings": {
+            "product": "faucet-black-6-month-bundle",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "popular": true,
+            "best": false,
+            "preselected": false,
+            "heading": "6 Months Supply",
+            "subheading": "Faucet + 2 Filters",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        },
+        "product_eiY89h": {
+          "type": "product",
+          "settings": {
+            "product": "faucet-black-12-month-bundle",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "popular": false,
+            "best": true,
+            "preselected": true,
+            "heading": "12 Months Supply",
+            "subheading": "",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        },
+        "type_yDwWmt": {
+          "type": "type",
+          "settings": {}
+        },
+        "product_type_YrPQrV": {
+          "type": "product_type",
+          "settings": {
+            "heading": "Silver",
+            "image": "shopify://shop_images/Img_46.png",
+            "preselected": true
+          }
+        },
+        "product_iFQte9": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "product_variant_id": 46852913987823,
+            "product_selling_plan": 0,
+            "popular": false,
+            "best": false,
+            "preselected": false,
+            "heading": "3 Months Supply",
+            "subheading": "(Faucet + 1 Filter)",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        },
+        "product_DBd4ef": {
+          "type": "product",
+          "settings": {
+            "product": "faucet-silver-6-month-bundle",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "popular": true,
+            "best": false,
+            "preselected": false,
+            "heading": "6 Months Supply",
+            "subheading": "Faucet + 2 Filters",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        },
+        "product_Xf8A6C": {
+          "type": "product",
+          "settings": {
+            "product": "faucet-silver-12-month-bundle",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "popular": false,
+            "best": true,
+            "preselected": true,
+            "heading": "12 Months Supply",
+            "subheading": "",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        }
+      },
+      "block_order": [
+        "nextships_4xp7uM",
+        "type_hHPdgJ",
+        "product_type_QKQhNr",
+        "product_x3jeL8",
+        "product_gbPf3J",
+        "product_RBCPe8",
+        "type_aJwQ9q",
+        "product_type_VLXcAn",
+        "product_AJPQaQ",
+        "product_nyJ9n7",
+        "product_eiY89h",
+        "type_yDwWmt",
+        "product_type_YrPQrV",
+        "product_iFQte9",
+        "product_DBd4ef",
+        "product_Xf8A6C"
+      ],
+      "settings": {
+        "form_name": "purchase-form-landing",
+        "hide_types": false,
+        "type": "list"
+      }
+    },
+    "purchase-form-landing-old": {
       "type": "purchase-form-landing",
       "blocks": {
         "subscription_6xp1uL": {
@@ -200,6 +448,7 @@
         "product_NEgEkN",
         "product_DEgEkN"
       ],
+      "disabled": true,
       "settings": {
         "form_name": "purchase-form-landing",
         "hide_types": true,
@@ -953,6 +1202,7 @@
         "variant_45xfGi",
         "variant_46xfGi"
       ],
+      "disabled": true,
       "name": "t:sections.sticky-button-variants.name",
       "settings": {
         "heading": "",

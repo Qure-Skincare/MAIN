@@ -81,35 +81,8 @@
       "disabled": true,
       "settings": {}
     },
-    "n_across_image_banner_wjbBCH": {
-      "type": "n_across-image-banner",
-      "blocks": {
-        "percent_value_imfnV7": {
-          "type": "percent_value",
-          "settings": {
-            "percent_value": 57
-          }
-        }
-      },
-      "block_order": [
-        "percent_value_imfnV7"
-      ],
-      "disabled": true,
-      "name": "t:sections.n_across-image-banner.name",
-      "settings": {
-        "use_own_file": true,
-        "modifier": "holidays",
-        "heading": "<h1>Give the gift of glowing skin</h1>",
-        "text": "<p>Best-selling products bundled for maximum results - and maximum savings.</p>",
-        "image": "shopify://shop_images/holidays.webp",
-        "image_mobile": "shopify://shop_images/Home_img_1.png",
-        "button_label": "Save Up To 57%",
-        "button_url": "https://qureskincare.com/pages/exclusive-holiday-bundle-deal-new"
-      }
-    },
     "index_banner_with_text_TNGNLJ": {
       "type": "index-banner-with-text",
-      "disabled": true,
       "name": "t:sections.index-banner-with-text.name",
       "settings": {
         "heading": "Get clinic-level results from home – minus the ‘clinical’ costs.",
@@ -120,31 +93,6 @@
         "button_url": "shopify://collections/best-sellers",
         "button_label_mobile": "Shop Best Sellers",
         "button_url_mobile": "https://qureskincare.com/collections/best-sellers"
-      }
-    },
-    "n_across_image_banner_gpCcTk": {
-      "type": "n_across-image-banner",
-      "blocks": {
-        "disclaimer_WqdUmy": {
-          "type": "disclaimer",
-          "settings": {
-            "text": "*Excludes Bundles & Micro-Infusion 6 Month Bundle Offers"
-          }
-        }
-      },
-      "block_order": [
-        "disclaimer_WqdUmy"
-      ],
-      "name": "t:sections.n_across-image-banner.name",
-      "settings": {
-        "use_own_file": true,
-        "modifier": "holidays",
-        "heading": "<h1>Celebrate International Women’s Day with 20% off*</h1>",
-        "text": "<p>$2 from every order will be donated to <strong>Impact for Women </strong>to help women rebuild their lives and regain confidence.</p>",
-        "image": "shopify://shop_images/iwd.webp",
-        "image_mobile": "shopify://shop_images/iwd-mob.webp",
-        "button_label": "Get 20% Off Sitewide",
-        "button_url": "https://qureskincare.com/collections/best-sellers"
       }
     },
     "bf_top_products": {
@@ -923,9 +871,7 @@
   },
   "order": [
     "index-mobile-category-slider",
-    "n_across_image_banner_wjbBCH",
     "index_banner_with_text_TNGNLJ",
-    "n_across_image_banner_gpCcTk",
     "bf_top_products",
     "index_banner_with_text_second_TNGNLJ",
     "bundle_banner_eEa7XN",
