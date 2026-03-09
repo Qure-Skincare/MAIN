@@ -8,21 +8,22 @@
 {% assign black_friday_turn_on = settings.black_friday_turn_on %}
 
 <div class="flyout-cart__footer">
-    <div class="flyout-cart__secure-ship">
-        <img src="https://qureskincaredns.com/sections/global/drawer/images/secure-ship.svg" alt="Secure Ship" />
-        <p>{{ 'cart.drawer.settings.insurance-text' | t }} + <strong>{{ global_insurance_price }}</strong></p>
-        <label class="e-switcher">
-            <form method="post" action="/cart/add" enctype="multipart/form-data">
-                <input type="checkbox" id="insurance" name="insurance" {% if summary_insurance_exists %} checked{% endif %}/>
-                <span></span>
-                <input type="hidden" name="quantity" id="quantity" value="{% if summary_insurance_exists %}0{% else %}1{% endif %}">
-                <input type="hidden" id="insurance_id" name="id" value="{{ global_insurance_variant_id }}">
-            </form>
-        </label>
-    </div>
-    <ul class="flyout-cart__summary">
-        {% if summary_saving_price != null %}
-            {% if black_friday_turn_on == true %}
+    <div class="cart-footer">
+        <div class="cart-footer__secure-ship">
+            <img src="https://qureskincaredns.com/sections/global/drawer/images/secure-ship.svg" alt="Secure Ship" />
+            <p>{{ 'cart.drawer.settings.insurance-text' | t }} + <strong>{{ global_insurance_price }}</strong></p>
+            <label class="e-switcher">
+                <form method="post" action="/cart/add" enctype="multipart/form-data">
+                    <input type="checkbox" id="insurance" name="insurance" {% if summary_insurance_exists %} checked{% endif %}/>
+                    <span></span>
+                    <input type="hidden" name="quantity" id="quantity" value="{% if summary_insurance_exists %}0{% else %}1{% endif %}">
+                    <input type="hidden" id="insurance_id" name="id" value="{{ global_insurance_variant_id }}">
+                </form>
+            </label>
+        </div>
+        <ul class="cart-footer__summary">
+            {% if summary_saving_price != null %}
+                {% if black_friday_turn_on == true %}
                 <li>
                     <div><div class="e-pill-save">{{ 'special-offer.cart.savings' | t }}</div></div>
                     <div class="e-price e-price--highlight">
@@ -31,7 +32,7 @@
                         </div>
                     </div>
                 </li>
-            {% else %}
+                {% else %}
                 <li>
                     <div>{{ 'cart.drawer.settings.savings' | t }}:</div>
                     <div class="e-price e-price--profit">
@@ -40,42 +41,43 @@
                         </div>
                     </div>
                 </li>
+                {% endif %}
             {% endif %}
-        {% endif %}
-        <li>
-            <div>{{ 'cart.drawer.settings.shipping' | t }}:</div>
-            <div class="e-price">
-                <div class="e-price__main">
+            <li>
+                <div>{{ 'cart.drawer.settings.shipping' | t }}:</div>
+                <div class="e-price">
+                    <div class="e-price__main">
                     {% if global_shipping_price != null %}
                         <div class="e-price__current">{{ global_shipping_price }}</div>
                     {% else %}
                         <div class="e-price__current">{{ 'cart.drawer.settings.free' | t }}</div>
                     {% endif %}
+                    </div>
                 </div>
-            </div>
-        </li>
-        <li>
-            <div>{{ 'cart.drawer.settings.subtotal' | t }}:</div>
-            <div class="e-price">
-                <div class="e-price__main">
+            </li>
+            <li>
+                <div>{{ 'cart.drawer.settings.subtotal' | t }}:</div>
+                <div class="e-price">
+                    <div class="e-price__main">
                     {% if summary_before_price != null %}
                         <div class="e-price__old">{{ summary_before_price }}</div>
                     {% endif %}
                     <div class="e-price__current">{{ summary_sale_price }}</div>
+                    </div>
                 </div>
-            </div>
-        </li>
-    </ul>
-    <div class="flyout-cart__checkout">
-        <form method="post" action="/checkout" enctype="multipart/form-data">
-            <button class="btn btn--primary" type="submit" name="checkout">
-                {{ 'cart.drawer.settings.checkout' | t }}
-                <i class="e-icon e-icon-lock"></i>
-            </button>
-        </form>
-        <p>
-            <i class="e-icon e-icon-guarantee"></i>
-            {{ 'cart.drawer.settings.guarantee-text' | t }}
-        </p>
+            </li>
+        </ul>
+        <div class="cart-footer__checkout">
+            <form method="post" action="/checkout" enctype="multipart/form-data">
+                <button class="btn btn--primary" type="submit" name="checkout">
+                    {{ 'cart.drawer.settings.checkout' | t }}
+                    <i class="e-icon e-icon-lock"></i>
+                </button>
+            </form>
+            <p>
+                <i class="e-icon e-icon-guarantee"></i>
+                {{ 'cart.drawer.settings.guarantee-text' | t }}
+            </p>
+        </div>
     </div>
 </div>
