@@ -48,7 +48,7 @@
                 {% endfor %}
                 <ul>
                     {% for block in section.blocks %}
-                        {% if block.type == 'left_column' %}
+                        {% if block.type == 'right_column' %}
                             {% if block.settings.text != blank %}
                                 <li><i class="e-icon e-icon-cross"></i>{{ block.settings.text }}</li>
                             {% endif %}
@@ -57,6 +57,13 @@
                 </ul>
             </div>
         </div>
+        {% for block in section.blocks %}
+            {% if block.type == 'disclaimer' %}
+                {% if block.settings.text != blank %}
+                    <div class="comparison__declaimer">{{ block.settings.text }}</div>
+                {% endif %}
+            {% endif %}
+        {% endfor %}
     </div>
 </div>
 
@@ -137,6 +144,18 @@
     {
         "type": "right_column",
         "name": "t:sections.n_comparison.blocks.right-column.name",
+        "settings": [
+            {
+                "type": "text",
+                "id": "text",
+                "label": "t:common.text"
+            }
+        ]
+    },
+    {
+        "type": "disclaimer",
+        "name": "t:common.disclaimer",
+        "limit": 1,
         "settings": [
             {
                 "type": "text",

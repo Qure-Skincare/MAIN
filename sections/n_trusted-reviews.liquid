@@ -1,0 +1,139 @@
+{% doc %}
+  Renders a trusted reviews section
+{% enddoc %}
+
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/trusted-reviews/trusted-reviews.css" />
+{% endif %}
+<section class="trusted-reviews">
+    <div class="container">
+        {{ section.settings.text }}
+        <div
+            class="c-swiper"
+            data-swiper='{
+            "slidesPerView": 1.1,
+            "spaceBetween": 16,
+            "loop": false,
+            "pagination": {
+                "el": ".c-swiper-pagination",
+                "type": "custom"
+            },
+            "navigation": {
+                "prevEl": ".c-swiper-button-prev",
+                "nextEl": ".c-swiper-button-next"
+            },
+            "breakpoints": {
+                "768": {
+                    "slidesPerView": 2,
+                    "spaceBetween": 24
+                },
+                "992": {
+                    "slidesPerView": 3
+                }
+            }
+        }'>
+            <div class="swiper-wrapper">
+                {% for block in section.blocks %}
+                    {% if block.type == 'slider' %}
+                        <div class="swiper-slide">
+                            <div class="c-trusted-review-card">
+                                {% if block.settings.image != blank %}
+                                    <picture>
+                                        <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                    </picture>
+                                {% endif %}
+                                {% if block.settings.flag != blank and block.settings.username != blank %}
+                                    <div class="e-author">
+                                        <img src="{{ block.settings.flag | image_url }}" alt="{{ block.settings.flag.alt | escape }}" />
+                                        {{ block.settings.username }}
+                                    </div>
+                                {% endif %}
+                                {% if block.settings.verified_customer != blank %}
+                                    <div class="e-verified-customer">
+                                        <div class="e-checkmark"></div>
+                                        {{ block.settings.verified_customer }}
+                                    </div>
+                                {% endif %}
+                                {% if block.settings.text != blank %}
+                                    <article>
+                                        {{ block.settings.text }}
+                                    </article>
+                                {% endif %}
+                                
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+                
+            </div>
+            <div class="c-swiper-nav">
+                <button class="c-swiper-button-prev"></button>
+                <div class="c-swiper-pagination"></div>
+                <button class="c-swiper-button-next"></button>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        loadScriptOnce("swiper", "https://qureskincaredns.com/assets/js/swiper.js");
+    });
+</script>
+
+{% schema %}
+{
+    "name": "t:sections.n_trusted-reviews.name",
+        "settings": [
+            {
+                "type": "checkbox",
+                "id": "use_own_file",
+                "label": "t:common.use-own-file",
+                "default": false
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "t:common.text"
+            }
+    ],
+    "blocks": [
+        {
+            "type": "slider",
+            "name": "t:common.slider",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "flag",
+                    "label": "t:common.flag"
+                },
+                {
+                    "type": "text",
+                    "id": "username",
+                    "label": "t:common.username"
+                },
+                {
+                    "type": "text",
+                    "id": "verified_customer",
+                    "label": "t:common.verified-customer",
+                    "default": "Verified customer"
+                },
+                {
+                    "type": "richtext",
+                    "id": "text",
+                    "label": "t:common.text"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.n_trusted-reviews.name"
+        }
+    ]
+}
+{% endschema %}

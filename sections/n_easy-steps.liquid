@@ -1,0 +1,107 @@
+{% doc %}
+  Renders a easy steps section.
+{% enddoc %}
+
+<!-- SET UP -->
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/set-up/set-up.css" />
+{% endif %}
+<section class="set-up" id="easy_steps">
+    <div class="container">
+        {% if section.settings.wistia_url != blank %}
+            <picture data-bs-toggle="modal" data-bs-target="#reusableWistiaModal" data-video-id="{{ section.settings.wistia_url }}">
+                {% if section.settings.image != blank %}
+                    <source media="(min-width:767px)" srcset="{{ section.settings.image | image_url }}" />
+                {% endif %}
+                {% if section.settings.image_mobile != blank %}
+                    <img src="{{ section.settings.image_mobile | image_url }}" alt="{{ section.settings.image_mobile.alt | escape }}" />
+                {% endif %}
+            </picture>
+        {% endif %}
+        {{ section.settings.text }}
+        <ol>
+            {% for block in section.blocks %}
+                {% if block.type == 'items' %}
+                    <li>
+                        {% if block.settings.image != blank and block.settings.image_mobile != blank %}
+                            <picture>
+                                <source media="(min-width:767px)" srcset="{{ block.settings.image | image_url }}" />
+                                <img src="{{ block.settings.image_mobile | image_url }}" alt="{{ block.settings.image_mobile.alt | escape }}" />
+                            </picture>
+                        {% endif %}
+                        {{ block.settings.text }}
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ol>
+    </div>
+</section>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        loadScriptOnce("wistia-popup", "https://qureskincaredns.com/assets/js-new/wistia-popup.js");
+        loadScriptOnce("wistia-script", "https://fast.wistia.com/assets/external/E-v1.js");
+    });
+</script>
+<!-- SET UP END -->
+
+{% schema %}
+{
+    "name": "t:sections.n_easy-steps.name",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": false
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "t:common.text"
+        },
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "t:common.image"
+        },
+        {
+            "type": "image_picker",
+            "id": "image_mobile",
+            "label": "t:common.image-mobile"
+        },
+        {
+            "type": "text",
+            "id": "wistia_url",
+            "label": "t:common.wistia-url"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "items",
+            "name": "t:common.items",
+            "settings": [
+                {
+                    "type": "richtext",
+                    "id": "text",
+                    "label": "t:common.text"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image_mobile",
+                    "label": "t:common.image-mobile"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.n_easy-steps.name"
+        }
+    ]
+}
+{% endschema %}

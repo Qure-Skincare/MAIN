@@ -1,0 +1,145 @@
+{% doc %}
+  Renders a progress metrics section
+{% enddoc %}
+
+<!-- PROGRESS METRICS -->
+ {% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/progress-metrics/progress-metrics.css" />
+ {% endif %}
+<section class="progress-metrics" id="improve_skin">
+    <div class="container">
+        {% if section.settings.text != blank %}
+            <article>
+                {{ section.settings.text }}
+            </article>
+        {% endif %}
+        
+        {%  assign image_blocks = section.blocks | where: "type", "image" %}
+        {% if image_blocks.size > 0 %}
+            <div class="c-pill-tabs">
+                <ul class="c-pill-tabs__buttons e-pill-tabs" role="tablist">
+                    {% assign image_tab_index = 0 %}
+                    {% for block in section.blocks %}
+                        {% if block.type == 'image' %}
+                            {% assign image_tab_index = image_tab_index | plus: 1 %}
+                            <li>
+                                <button {% if image_tab_index == 1 %}class="active"{% endif %} type="button" data-bs-toggle="tab" data-bs-target="#pill-tabs-{{ block.settings.heading | strip | handleize }}">{{ block.settings.heading }}</button>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+                {% assign image_pane_index = 0 %}
+                {% for block in section.blocks %}
+                    {% if block.type == "image" %}
+                        {% assign image_pane_index = image_pane_index | plus: 1 %}
+                        <div class="c-pill-tabs__pane{% if image_pane_index == 1 %} show{% endif %}" id="pill-tabs-{{ block.settings.heading | strip | handleize }}">
+                            {% if block.settings.image != blank %}
+                                <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                            {% endif %}
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        {% endif %}
+
+        {%  assign percent_value_blocks = section.blocks | where: "type", "percent_value" %}
+        {% if percent_value_blocks.size > 0 %}
+            <div>
+                <ul class="c-percent-list">
+                    {% for block in section.blocks %}
+                        {% if block.type == "percent_value" %}
+                            <li>
+                                {% if block.settings.percent_value != blank %}
+                                    <div class="e-circle-percent" style="--percent-value: {{ block.settings.percent_value }}"><span>{{ block.settings.percent_value }}%</span></div>
+                                {% endif %}
+                                {% if block.settings.text != blank %}
+                                    <span>{{ block.settings.text }}</span>
+                                {% endif %}
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+                {% for block in section.blocks %}
+                    {% if block.type == "disclaimer" %}
+                        <small>{{ block.settings.text }}</small>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+</section>
+<!-- PROGRESS METRICS END -->
+
+{% schema %}
+{
+    "name": "t:sections.n_progress-metrics.name",
+        "settings": [
+            {
+                "type": "checkbox",
+                "id": "use_own_file",
+                "label": "t:common.use-own-file",
+                "default": false
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "t:common.text"
+            }
+    ],
+    "blocks": [
+        {
+            "type": "image",
+            "name": "t:common.image",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "t:common.header"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                }
+            ]
+        },
+        {
+            "type": "percent_value",
+            "name": "t:common.percent-value",
+            "settings": [
+                {
+                    "type": "range",
+                    "id": "percent_value",
+                    "label": "t:common.percent-value",
+                    "min": 0,
+                    "max": 100,
+                    "unit": "%",
+                    "default": 57
+                },
+                {
+                    "type": "text",
+                    "id": "text",
+                    "label": "t:common.text"
+                }
+            ]
+        },
+        {
+            "type": "disclaimer",
+            "name": "t:common.disclaimer",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "text",
+                    "label": "t:common.text"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.n_progress-metrics.name"
+        }
+    ]
+}
+{% endschema %}

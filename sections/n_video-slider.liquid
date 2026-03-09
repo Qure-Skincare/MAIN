@@ -5,7 +5,7 @@
 
 <!-- BASE SLIDER -->
 {% if section.settings.use_own_file %}
-<link rel="stylesheet" href="https://qureskincaredns.com/sections/new/base-slider/base-slider.css" /> 
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/base-slider/base-slider.css" /> 
 {% endif %}
 
 {% case section.settings.modifier %}
@@ -52,16 +52,14 @@
                                                 </picture>
                                             {% endif %}
                                         {% else %}
-                                            {% if block.settings.video_url != blank %}
+                                            {% if block.settings.video_url != blank and block.settings.image != blank %}
                                                 <picture
                                                         class="filter-card-video"
                                                         data-bs-toggle="modal" 
                                                         data-bs-target="#reusableWistiaModal"
                                                         data-video-id="{{ block.settings.video_url }}"
                                                     >
-                                                    {% if block.settings.image != blank %}
                                                         <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
-                                                    {% endif %}
                                                 </picture>
                                             {% endif %}
                                         {% endif %}
@@ -92,8 +90,9 @@
 
 
     {% when 'none' %}
-        <section class="base-slider">
+        <section class="base-slider" id="crystal_clear">
             <div class="container">
+                {{ section.settings.text }}
                 <div
                     class="c-swiper"
                     data-swiper='{
@@ -131,7 +130,7 @@
                                             </picture>
                                         {% endif %}
                                     {% else %}
-                                        {% if block.settings.video_url != blank and block.settings.image == blank %}
+                                        {% if block.settings.video_url != blank %}
                                             <div class="wistia-embed-video">
                                                 <div class="wistia_responsive_padding">
                                                     <div class="wistia_responsive_wrapper">
@@ -206,6 +205,11 @@
                         "label": "t:common.three-cards"
                     }
                 ]
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "t:common.text"
             }
     ],
     "blocks": [
