@@ -100,6 +100,191 @@
     "purchase-form-landing": {
       "type": "purchase-form-landing",
       "blocks": {
+        "nextships_4xp7uM": {
+          "type": "nextships",
+          "settings": {
+            "date": "23rd January",
+            "percent": 55,
+            "date_soldout": "7 January",
+            "date_reserved": "8 January"
+          }
+        },
+        "type_hHPdgJ": {
+          "type": "type",
+          "settings": {}
+        },
+        "product_type_QKQhNr": {
+          "type": "product_type",
+          "settings": {
+            "heading": "White",
+            "image": "shopify://shop_images/variant-white-1.webp",
+            "preselected": false
+          }
+        },
+        "product_gbPf3J": {
+          "type": "product",
+          "settings": {
+            "product": "faucet-white-6-month-bundle",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "popular": true,
+            "best": false,
+            "preselected": false,
+            "heading": "6 Months Supply",
+            "subheading": "",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "27 July",
+            "preorder_date_reserved": "15 july",
+            "preorder_percent": 55
+          }
+        },
+        "product_RBCPe8": {
+          "type": "product",
+          "settings": {
+            "product": "faucet-black-6-month-bundle",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "popular": false,
+            "best": true,
+            "preselected": true,
+            "heading": "12 Months Supply",
+            "subheading": "",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        },
+        "type_aJwQ9q": {
+          "type": "type",
+          "settings": {}
+        },
+        "product_type_VLXcAn": {
+          "type": "product_type",
+          "settings": {
+            "heading": "Black",
+            "image": "shopify://shop_images/variant-black-1.webp",
+            "preselected": false
+          }
+        },
+        "product_nyJ9n7": {
+          "type": "product",
+          "settings": {
+            "product": "faucet-black-6-month-bundle",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "popular": true,
+            "best": false,
+            "preselected": false,
+            "heading": "6 Months Supply",
+            "subheading": "",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        },
+        "product_eiY89h": {
+          "type": "product",
+          "settings": {
+            "product": "faucet-black-12-month-bundle",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "popular": false,
+            "best": true,
+            "preselected": true,
+            "heading": "12 Months Supply",
+            "subheading": "",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        },
+        "type_yDwWmt": {
+          "type": "type",
+          "settings": {}
+        },
+        "product_type_YrPQrV": {
+          "type": "product_type",
+          "settings": {
+            "heading": "Silver",
+            "image": "shopify://shop_images/variant-silver-1.webp",
+            "preselected": true
+          }
+        },
+        "product_DBd4ef": {
+          "type": "product",
+          "settings": {
+            "product": "faucet-silver-6-month-bundle",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "popular": true,
+            "best": false,
+            "preselected": false,
+            "heading": "6 Months Supply",
+            "subheading": "",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        },
+        "product_Xf8A6C": {
+          "type": "product",
+          "settings": {
+            "product": "faucet-silver-12-month-bundle",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "popular": false,
+            "best": true,
+            "preselected": true,
+            "heading": "12 Months Supply",
+            "subheading": "",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        }
+      },
+      "block_order": [
+        "nextships_4xp7uM",
+        "type_hHPdgJ",
+        "product_type_QKQhNr",
+        "product_gbPf3J",
+        "product_RBCPe8",
+        "type_aJwQ9q",
+        "product_type_VLXcAn",
+        "product_nyJ9n7",
+        "product_eiY89h",
+        "type_yDwWmt",
+        "product_type_YrPQrV",
+        "product_DBd4ef",
+        "product_Xf8A6C"
+      ],
+      "settings": {
+        "form_name": "purchase-form-landing",
+        "hide_types": false,
+        "type": "list"
+      }
+    },
+    "purchase-form-landing-old": {
+      "type": "purchase-form-landing",
+      "disabled": true,
+      "blocks": {
         "subscription_6xp1uL": {
           "type": "subscription",
           "settings": {
@@ -916,6 +1101,7 @@
     },
     "sticky_cta_9hzULB": {
       "type": "sticky-button-variants",
+      "disabled": true,
       "blocks": {
         "variant_43xxGi": {
           "type": "variant",
@@ -956,6 +1142,7 @@
   "order": [
     "product_header_YnMCRD",
     "purchase-form-landing",
+    "purchase-form-landing-old",
     "information_about_water_4Fm0Sq",
     "banner_with_text_kCE4Ux",
     "improve_skin_hydration_ztBPAj",
