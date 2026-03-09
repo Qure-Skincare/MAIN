@@ -63,7 +63,7 @@
           "type": "carousel",
           "settings": {
             "heading": "Go to the returns portal",
-            "text": "<p><a href=\"https://returns.qureskincare.com/?ref=d6cb54b2-d73b-423e-8d66-3b5b3a661340#/\" title=\"https://returns.qureskincare.com/?ref=d6cb54b2-d73b-423e-8d66-3b5b3a661340#/\">Click here to visit our returns & exchanges portal page.</a> Enter your order number and either your shipping code or email address.&lt;</p>",
+            "text": "<p><a href=\"https://qureskincare.return.richpanel.com/create\" title=\"https://qureskincare.return.richpanel.com/create\">Click here to visit our returns & exchanges portal page.</a> Enter your order number and either your shipping code or email address.&lt;</p>",
             "image": "shopify://shop_images/1_1_892353e6-f97a-4808-a986-a51211d67d44.png"
           }
         },
