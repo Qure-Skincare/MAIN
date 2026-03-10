@@ -59,6 +59,11 @@
                                 {% else %}
                                 data-preselected="false"
                                 {% endif %}
+                                {% if block.settings.soldout == true %}
+                                    onclick="document.getElementById('back-in-stock-landing').classList.remove('hide')"
+                                {% else %}
+                                    onclick="document.getElementById('back-in-stock-landing').classList.add('hide')"
+                                {% endif %}
                                 data-variant-title="{{ product_title_tag }}"
                                 data-product-price="{{ product_sale_price }}">
                                 

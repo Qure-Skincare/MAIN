@@ -1,0 +1,15 @@
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      loadScriptOnce('klaviyo-popup', '{{ 'klaviyo-popup.js' | asset_url }}');
+    });
+</script>
+
+<div class="modal c-modal c-modal--wistia" id="reusableKlaviyoModal" style="margin-top:200px">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div id="KlaviyoContainer" class="c-modal__video"></div>
+            </div>
+        </div>
+    </div>
+</div>

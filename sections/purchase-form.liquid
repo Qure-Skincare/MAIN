@@ -49,6 +49,7 @@
                     <div class="qure__bundle-form">
                         {% render 'purchase-form-types' section: section, __idsArray1: __idsArray1, __idsArray2: __idsArray2, __idsArray3: __idsArray3 %}
                         {% include 'purchase-form-products' section: section, __idsArray1: __idsArray1, __idsArray2: __idsArray2, __idsArray3: __idsArray3 %}
+                        {% render 'purchase-form-klaviyo', section: section %}
                         {% render 'purchase-form-payments' section: section %}
                     </div>
 
@@ -105,6 +106,11 @@
             "type": "image_picker",
             "id": "image",
             "label": "t:common.image"
+        },
+        {
+            "type": "text",
+            "id": "klaviyo_form_name",
+            "label": "t:common.klaviyo_form_name",
         },
         {
             "type": "text",

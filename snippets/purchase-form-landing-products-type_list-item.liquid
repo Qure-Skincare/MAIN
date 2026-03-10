@@ -58,6 +58,11 @@
                                 {% else %}
                                 data-preselected="false"
                                 {% endif %}
+                                {% if block.settings.soldout == true %}
+                                    onclick="document.getElementById('back-in-stock-landing').classList.remove('hide')"
+                                {% else %}
+                                    onclick="document.getElementById('back-in-stock-landing').classList.add('hide')"
+                                {% endif %}
                                 data-variant-title="{{ product_title_tag }}"
                                 data-product-price="{{ product_sale_price }}">
 
@@ -110,6 +115,12 @@
                                     </div>
                                 </label>
                             </div>
+
+                            {% if section.settings.klaviyo_form_name != blank %}
+                                {% if block.settings.soldout == true %}
+                                    <button id="back-in-stock-landing" class="btn btn-sm btn--secondary trigger-klaviyo-popup-landing w-100">{{ 'purchase-form.settings.notify-me-when-available' | t }}</button>
+                                {% endif %}
+                            {% endif %}
 
                             {% if block.settings.preorder == true %}
                                 

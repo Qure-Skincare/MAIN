@@ -82,6 +82,11 @@
                                     {% else %}
                                     data-preselected="false"
                                     {% endif %}
+                                    {% if block.settings.soldout == true %}
+                                        onclick="document.getElementById('back-in-stock').classList.remove('hide')"
+                                    {% else %}
+                                        onclick="document.getElementById('back-in-stock').classList.add('hide')"
+                                    {% endif %}
                                     data-product-price="{{ product_sale_price }}">
 
                                     <input type="radio" name="monthlyPlan_{{ section.settings.form_name }}" id="{{ section.id }}-{{ product_title_tag }}"{% if block.settings.preselected == true %} checked{% endif %}>

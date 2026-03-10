@@ -10,6 +10,7 @@
  
  {
     "common": {
+        "klaviyo_form_name": "Klaviyo form",
         "best-value": "Best value",
         "results": "Results",
         "popular": "Popular",
@@ -1233,6 +1234,7 @@
         "purchase-form-landing": {
             "name": "Purchase form landing",
             "settings": {
+                "klaviyo_form_name": "Klaviyo form name",
                 "form_name": "Form name",
                 "hide_types": "Hide product types"
             },
