@@ -331,25 +331,43 @@
     try {
       var response = await fetch('/cart.js');
       var cart = await response.json();
-      var cartVariantIds = cart.items.map(function(item) { return item.variant_id; });
+      var available = getAvailableProducts();
+      var availableVariantIds = Object.keys(available).map(Number);
+      var changed = false;
 
-      var previousSize = selectedProducts.size;
+      // Build map of cart quantities for BYO products
+      var cartQtyMap = {};
+      cart.items.forEach(function(item) {
+        if (availableVariantIds.indexOf(item.variant_id) !== -1) {
+          cartQtyMap[item.variant_id] = item.quantity;
+        }
+      });
+
+      // Remove products no longer in cart
       var toRemove = [];
-
       selectedProducts.forEach(function(p, variantId) {
-        if (cartVariantIds.indexOf(variantId) === -1) {
+        if (!(variantId in cartQtyMap)) {
           toRemove.push(variantId);
         }
       });
 
       toRemove.forEach(function(variantId) {
         selectedProducts.delete(variantId);
-        // Reset visual state for removed products
         var cards = document.querySelectorAll('[data-byo-product][data-variant-id="' + variantId + '"]');
         cards.forEach(function(card) { hideQuantityControls(card); });
+        changed = true;
       });
 
-      if (selectedProducts.size !== previousSize) {
+      // Update quantities for products still in cart
+      selectedProducts.forEach(function(p, variantId) {
+        if (variantId in cartQtyMap && p.quantity !== cartQtyMap[variantId]) {
+          p.quantity = cartQtyMap[variantId];
+          syncQuantityAcrossCards(variantId, p.quantity);
+          changed = true;
+        }
+      });
+
+      if (changed) {
         saveToStorage();
         updateStickyBar();
 
