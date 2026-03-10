@@ -1317,7 +1317,7 @@
           "type": "product",
           "settings": {
             "product": "micro-infusion-6-month-bundle-for-dark-spots",
-            "preselected": false,
+            "preselected": true,
             "heading": "6 Month Supply",
             "subheading": "(12 Treatments)",
             "image": "shopify://shop_images/MI_1.5_6month_DSno_mist.webp",
@@ -1336,7 +1336,7 @@
           "type": "product",
           "settings": {
             "product": "micro-infusion-3-month-bundle-for-dark-spots",
-            "preselected": true,
+            "preselected": false,
             "heading": "3 Month Supply",
             "subheading": "(6 Treatments)",
             "image": "shopify://shop_images/MI_3_month_DS.webp",
@@ -1404,11 +1404,11 @@
         "product_nyJ9n7": {
           "type": "product",
           "settings": {
-            "product": "micro-infusion-2-month-bundle-for-wrinkles",
+            "product": "micro-infusion-6-month-bundle-for-wrinkles",
             "preselected": false,
-            "heading": "2 Month Supply",
-            "subheading": "(4 Treatments)",
-            "image": "shopify://shop_images/pdp_MI_1.5_2month_W_1_b78a804d-3461-4c87-be1f-767c19526aa8.webp",
+            "heading": "6 Month Supply",
+            "subheading": "(12 Treatments)",
+            "image": "shopify://shop_images/MI_1.5_6month_DS_W-1_no_mist.webp",
             "soldout": false,
             "preorder": false,
             "total_treatments": 4,
@@ -1417,7 +1417,7 @@
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
             "preorder_percent": 55,
-            "included_text": "<ul><li>4 clinically formulated 4ml serums to treat your specific skin concerns (valued at $238)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
+            "included_text": "<ul><li>4 clinically formulated 4ml serums to treat your specific skin concerns (valued at $719)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
           }
         },
         "product_eiY89h": {
@@ -1445,7 +1445,6 @@
         },
         "product_type_YrPQrV": {
           "type": "product_type",
-          "disabled": true,
           "settings": {
             "heading": "Mixed",
             "image": "shopify://shop_images/Mixed_3.png",
@@ -1454,7 +1453,6 @@
         },
         "product_gbPf3J": {
           "type": "product",
-          "disabled": true,
           "settings": {
             "product": "6-month-micro-infusion-for-wrinkles-dark-spots",
             "preselected": true,
