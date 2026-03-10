@@ -448,7 +448,7 @@
       "name": "t:sections.n_product-result.name",
       "settings": {
         "use_own_file": true,
-        "heading": "<h2>Baked by real results</h2>"
+        "heading": "<h2>Backed<strong> </strong>by real results</h2>"
       }
     },
     "carousel_jHy7Zp": {
