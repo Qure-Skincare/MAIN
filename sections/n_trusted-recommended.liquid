@@ -12,10 +12,27 @@
             {% if section.settings.heading != blank %}
                 {{ section.settings.heading }}
             {% endif %}
-            {% if section.settings.video_image_cover != blank %}
-                <picture{% if section.settings.video_url != blank %} data-url="{{ section.settings.video_url }}"{% endif %}>
-                    <img src="{{ section.settings.video_image_cover | image_url }}" alt="{{ section.settings.video_image_cover.alt | escape }}" />
-                </picture>
+            {% if section.settings.wistia_url %}
+                {% if section.settings.video_url != blank %}
+                    <figure class="watch-wistia-video" data-bs-toggle="modal" data-bs-target="#reusableWistiaModal" data-video-id="{{ section.settings.video_url }}">
+                        {% if section.settings.video_image_cover != blank %}
+                                <picture>
+                                <img src="{{ section.settings.video_image_cover | image_url }}" alt="{{ section.settings.video_image_cover.alt | escape }}" />
+                            </picture>
+                        {% endif %}
+                        {% if section.settings.text_on_image != blank %}
+                            <figcaption>
+                                {{ section.settings.text_on_image | replace: '<p>', '' | replace: '</p>', '' }}
+                            </figcaption>
+                        {% endif %}
+                    </figure>
+                {% endif %}
+            {% else %}
+                {% if section.settings.video_image_cover != blank %}
+                    <picture{% if section.settings.video_url != blank %} data-url="{{ section.settings.video_url }}"{% endif %}>
+                        <img src="{{ section.settings.video_image_cover | image_url }}" alt="{{ section.settings.video_image_cover.alt | escape }}" />
+                    </picture>
+                {% endif %} 
             {% endif %}
             <div>
                 {% if section.settings.text != blank %}
@@ -33,7 +50,10 @@
 </section>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-        loadScriptOnce('youtube-popup', 'https://qureskincaredns.com/assets/js-new/yt-popup.js');
+        loadScriptOnce("dialog", "https://qureskincaredns.com/assets/js-new/dialog.js");
+        loadScriptOnce("youtube-popup", "https://qureskincaredns.com/assets/js-new/yt-popup.js");
+        loadScriptOnce("wistia-popup", "https://qureskincaredns.com/assets/js-new/wistia-popup.js");
+        loadScriptOnce("wistia-script", "https://fast.wistia.com/assets/external/E-v1.js");
     });
 </script>
 
@@ -41,77 +61,87 @@
 
 {% schema %}
 {
-    "name": "t:sections.n_trusted-recommended.name",
-        "settings": [
-            {
-                "type": "checkbox",
-                "id": "use_own_file",
-                "label": "t:common.use-own-file",
-                "default": false
-            },
-            {
-                "type": "select",
-                "id": "background_color",
-                "label": "t:common.background-color",
-                "default": "none",
-                "options": [
-                    {
-                        "value": "none",
-                        "label": "t:sections.n_trusted-recommended.settings.background-color-options.none"
-                    },
-                    {
-                        "value": "grey",
-                        "label": "t:sections.n_trusted-recommended.settings.background-color-options.grey"
-                    }
-                ]
-            },
-            {
-                "type": "select",
-                "id": "modifier",
-                "label": "t:common.modifier",
-                "default": "none",
-                "options": [
-                    {
-                        "value": "none",
-                        "label": "t:sections.n_trusted-recommended.settings.modifier-options.none"
-                    },
-                    {
-                        "value": "reverse",
-                        "label": "t:sections.n_trusted-recommended.settings.modifier-options.reverse"
-                    }
-                ]
-            },
-            {
-                "type": "richtext",
-                "id": "heading",
-                "label": "t:common.header"
-            },
-            {
-                "type": "richtext",
-                "id": "text",
-                "label": "t:common.text"
-            },
-            {
-                "type": "image_picker",
-                "id": "video_image_cover",
-                "label": "t:common.video-image-cover"
-            },
-            {
-                "type": "url",
-                "id": "video_url",
-                "label": "t:common.video-url"
-            },
-            {
-                "type": "text",
-                "id": "badge_text",
-                "label": "t:common.badge-text",
-                "default": "Dermatologist Reviewed"
-            }
-    ],
-    "presets": [
+"name": "t:sections.n_trusted-recommended.name",
+    "settings": [
         {
-            "name": "t:sections.n_trusted-recommended.name"
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": false
+        },
+        {
+            "type": "select",
+            "id": "background_color",
+            "label": "t:common.background-color",
+            "default": "none",
+            "options": [
+                {
+                    "value": "none",
+                    "label": "t:sections.n_trusted-recommended.settings.background-color-options.none"
+                },
+                {
+                    "value": "grey",
+                    "label": "t:sections.n_trusted-recommended.settings.background-color-options.grey"
+                }
+            ]
+        },
+        {
+            "type": "select",
+            "id": "modifier",
+            "label": "t:common.modifier",
+            "default": "none",
+            "options": [
+                {
+                    "value": "none",
+                    "label": "t:sections.n_trusted-recommended.settings.modifier-options.none"
+                },
+                {
+                    "value": "reverse",
+                    "label": "t:sections.n_trusted-recommended.settings.modifier-options.reverse"
+                }
+            ]
+        },
+        {
+            "type": "richtext",
+            "id": "heading",
+            "label": "t:common.header"
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "t:common.text"
+        },
+        {
+            "type": "image_picker",
+            "id": "video_image_cover",
+            "label": "t:common.video-image-cover"
+        },
+        {
+            "type": "richtext",
+            "id": "text_on_image",
+            "label": "t:common.text-on-image"
+        },
+        {
+            "type": "checkbox",
+            "id": "wistia_url",
+            "label": "t:common.wistia-url"
+        },
+        {
+            "type": "text",
+            "id": "video_url",
+            "label": "t:common.video-url"
+        },
+        {
+            "type": "text",
+            "id": "badge_text",
+            "label": "t:common.badge-text",
+            "default": "Dermatologist Reviewed"
         }
-    ]
+],
+"presets": [
+    {
+        "name": "t:sections.n_trusted-recommended.name"
+    }
+]
 }
 {% endschema %}
