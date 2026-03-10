@@ -32,31 +32,10 @@
           "settings": {
             "heading": "Micro-Infusion"
           }
-        },
-        "tab_y8Fn4G": {
-          "type": "tabs",
-          "settings": {
-            "heading": "Devices"
-          }
-        },
-        "tab_y8Fn5G": {
-          "type": "tabs",
-          "settings": {
-            "heading": "Water Filters"
-          }
-        },
-        "tab_y8Fn6G": {
-          "type": "tabs",
-          "settings": {
-            "heading": "Scincare"
-          }
         }
       },
       "block_order": [
-        "tab_y8Fn3G",
-        "tab_y8Fn4G",
-        "tab_y8Fn5G",
-        "tab_y8Fn6G"
+        "tab_y8Fn3G"
       ],
       "settings": {}
     },
