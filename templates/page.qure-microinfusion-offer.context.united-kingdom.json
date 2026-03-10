@@ -12,5 +12,26 @@
     "market": "united-kingdom"
   },
   "parent": "page.qure-microinfusion-offer.json",
-  "sections": {}
+  "sections": {
+    "purchase_form_PwCCh6": {
+      "settings": {},
+      "blocks": {
+        "product_DBd4ef": {
+          "settings": {
+            "product": "micro-infusion-6-month-bundle-for-dark-spots-uk"
+          }
+        },
+        "product_nyJ9n7": {
+          "settings": {
+            "product": "micro-infusion-6-month-bundle-for-wrinkles-uk"
+          }
+        },
+        "product_gbPf3J": {
+          "settings": {
+            "product": "micro-infusion-6-month-for-wrinkles-dark-spots-uk"
+          }
+        }
+      }
+    }
+  }
 }
