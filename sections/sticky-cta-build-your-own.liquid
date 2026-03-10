@@ -4,6 +4,7 @@
 
 <!-- Sticky CTA start -->
 <link rel="stylesheet" href="https://qureskincaredns.com/sections/isolated/sticky-cta/build-your-own-sticky-cta.css" />
+{{ 'build-your-own-selection.css' | asset_url | stylesheet_tag }}
 <div id="sticky_cta_cart" class="qure__sticky-atc skincare_plan_cta">
     <div class="container-fluid px-0">
         <div class="accordion accordion-flush tp-product-accordion border-0" id="tp-product-qure">
@@ -69,13 +70,13 @@
                             <!-- Subtotal -->
                             <div class="d-flex subtotal_cta gap-3">
                                 <p>Subtotal:</p>
-                                <p class="compare_price">$528.00</p>
-                                <p class="discounted_price">$422.40</p>
+                                <p class="compare_price"></p>
+                                <p class="discounted_price"></p>
                             </div>
 
                             <!-- Button -->
                             <div class="btn_wrap">
-                                <button class="btn">CHECKOUT <i class="e-icon e-icon-lock"></i></button>
+                                <button class="btn" disabled>Add an item to unlock savings!</button>
                             </div>
                         </div>
                     </div>

@@ -11,7 +11,13 @@
                 {% include 'get-product-data', product_handle: block.settings.product, product_prefix: 'build-your-own-products-' %}
             {% endif %}
             <div class="col-6 col-md-3 custom__block project">
-                <div class="qure__product-item silver-badge">
+                <div class="qure__product-item silver-badge"
+                    data-byo-product
+                    data-variant-id="{{ product_variant_id }}"
+                    data-handle="{{ product_handle }}"
+                    data-title="{{ product_title | escape }}"
+                    data-price="{{ product_price_original }}"
+                    data-image="{{ product_featured_image | img_url: '250x' }}">
                     <a href="{{ block.settings.url }}" class="qure__product-img overflow-hidden position-relative d-block">
                         {% if block.settings.image != blank %}
                             <div class="qure__product-main-img">
