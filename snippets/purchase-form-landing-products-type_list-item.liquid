@@ -99,9 +99,9 @@
                                         {% else %}
                                             <div class="vp-price">
                                                 {% if product_before_price != blank %}
-                                                    <span class="vp-price-sale regular_price igComparePrice">{{ product_before_price }}</span>
+                                                    <span data-variant-id="{{ product_variant_id }}" class="vp-price-sale regular_price igComparePrice">{{ product_before_price }}</span>
                                                 {% endif %}
-                                                <span class="sale_price igPrice">{{ product_sale_price }}</span>
+                                                <span data-variant-id="{{ product_variant_id }}" class="sale_price igPrice">{{ product_sale_price }}</span>
                                             </div>
                                             {% if product_discount != blank %}
                                                 <div class="text-end off-value">{{ product_discount }}% {{ 'purchase-form.settings.off' | t }}</div>
