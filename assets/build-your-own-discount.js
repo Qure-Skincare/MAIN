@@ -149,12 +149,21 @@
   }
 
   /**
-   * Get current discount tier
+   * Get total quantity across all selected products
+   */
+  function getTotalQuantity() {
+    var total = 0;
+    selectedProducts.forEach(function(p) { total += p.quantity; });
+    return total;
+  }
+
+  /**
+   * Get current discount tier (based on total quantity, not unique products)
    */
   function getCurrentTier() {
-    var count = selectedProducts.size;
-    if (count === 0) return null;
-    return DISCOUNT_TIERS[Math.min(count, 4)];
+    var qty = getTotalQuantity();
+    if (qty === 0) return null;
+    return DISCOUNT_TIERS[Math.min(qty, 4)];
   }
 
   /**
@@ -190,19 +199,18 @@
    * Update sticky bar UI
    */
   function updateStickyBar() {
-    var count = selectedProducts.size;
-    var tier = getCurrentTier();
+    var qty = getTotalQuantity();
 
-    // Discount boxes — progressive activation
+    // Discount boxes — progressive activation (based on total quantity)
     var bundleItems = document.querySelectorAll('.bundle-progress .bundle-item');
     bundleItems.forEach(function(item, index) {
-      item.classList.toggle('active', (index + 1) <= count);
+      item.classList.toggle('active', (index + 1) <= qty);
     });
 
     // Progress line
     var progressFill = document.querySelector('.progress-fill');
     if (progressFill) {
-      progressFill.style.width = (count > 0 ? (count / 4) * 100 : 0) + '%';
+      progressFill.style.width = (qty > 0 ? (Math.min(qty, 4) / 4) * 100 : 0) + '%';
     }
 
     // Subtotal
@@ -211,7 +219,7 @@
     var discountedPriceEl = document.querySelector('.subtotal_cta .discounted_price');
 
     if (subtotalBlock) {
-      subtotalBlock.classList.toggle('subtotal-visible', count > 0);
+      subtotalBlock.classList.toggle('subtotal-visible', qty > 0);
     }
 
     if (comparePriceEl) {
@@ -225,7 +233,7 @@
     // CTA button state and text
     var ctaButton = document.querySelector('.skincare_plan_cta .btn_wrap .btn');
     if (ctaButton) {
-      if (count === 0) {
+      if (qty === 0) {
         ctaButton.disabled = true;
         ctaButton.innerHTML = 'Add an item to unlock savings!';
       } else {
