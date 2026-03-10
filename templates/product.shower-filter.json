@@ -857,28 +857,28 @@
           "type": "image_with_text",
           "settings": {
             "icon": "shipping-order",
-            "text": "Free Shipping On<br>Orders Over 100$"
+            "text": "Free Shipping On<br> Orders Over 100$"
           }
         },
         "image_with_text_dBhwq7": {
           "type": "image_with_text",
           "settings": {
             "icon": "reviewed",
-            "text": "Dermatologist<br>Reviewed"
+            "text": "Dermatologist<br> Reviewed"
           }
         },
         "image_with_text_C6aRqT": {
           "type": "image_with_text",
           "settings": {
             "icon": "pay-later",
-            "text": "Buy Now, Pay Later<br>Options Available"
+            "text": "Buy Now, Pay Later<br> Options Available"
           }
         },
         "image_with_text_HP7mtc": {
           "type": "image_with_text",
           "settings": {
             "icon": "proven",
-            "text": "Proven Results,<br>Backed By Science"
+            "text": "Proven Results,<br> Backed By Science"
           }
         }
       },
@@ -1191,92 +1191,6 @@
         "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
       }
     },
-    "faq_nqVXbY": {
-      "type": "faq",
-      "blocks": {
-        "accordion_43xxGi": {
-          "type": "accordion",
-          "settings": {
-            "heading": "How will the Qure Shower Filter benefit my hair/skin?",
-            "text": "<p>The Qure Shower Filter removes harmful impurities like heavy metals, chlorine, and unwanted minerals from your water, helping to protect your skin and hair from damage caused by hard water.</p><p>By filtering out water impurities, the Qure Shower Filter helps reduce dryness, irritation, and brittleness, leaving your skin hydrated and your hair smoother and more manageable.</p>",
-            "link_url": "",
-            "link_text": ""
-          }
-        },
-        "accordion_g8WAFD": {
-          "type": "accordion",
-          "settings": {
-            "heading": "Is it compatible with all showerheads?",
-            "text": "<p>The Qure Shower Filter fits most standard showerheads, but we recommend checking your showerhead's specifications to ensure compatibility.</p>",
-            "link_url": "",
-            "link_text": ""
-          }
-        },
-        "accordion_PezYfC": {
-          "type": "accordion",
-          "settings": {
-            "heading": "Does it affect water pressure?",
-            "text": "<p>The Qure Shower Filter is designed to maintain water pressure while effectively filtering impurities. You’ll enjoy clean water without compromising your shower experience.</p>",
-            "link_url": "",
-            "link_text": ""
-          }
-        },
-        "accordion_3aNpTz": {
-          "type": "accordion",
-          "settings": {
-            "heading": "Is the Qure Shower Filter certified, tested, and safe to use?",
-            "text": "<p>Yes — it’s third-party tested to meet NSF water filtration standards and made with certified BPA-free, non-toxic, and skin-friendly materials. It’s also leak-resistant and built to last. </p>",
-            "link_url": "",
-            "link_text": ""
-          }
-        },
-        "accordion_t3jDQB": {
-          "type": "accordion",
-          "settings": {
-            "heading": "Do I need to change/replace the filter?",
-            "text": "<p>The Qure Shower Filter lasts approximately 3 months, depending on your water quality and usage. We recommend replacing it after 3 months for optimal performance.</p>",
-            "link_url": "",
-            "link_text": ""
-          }
-        },
-        "accordion_7jdjGx": {
-          "type": "accordion",
-          "settings": {
-            "heading": "How easy is it to install?",
-            "text": "<p>Yes, the Qure Shower Filter is designed for easy, tool-free installation. It fits most standard showerheads, so you can quickly start enjoying clean, filtered water.</p>",
-            "link_url": "",
-            "link_text": ""
-          }
-        },
-        "accordion_xKE888": {
-          "type": "accordion",
-          "settings": {
-            "heading": "Why should I subscribe?",
-            "text": "<p>Regularly replacing your Qure Shower Filter ensures it continues to effectively remove chlorine, heavy metals, and impurities from your water. Over time, the filtration media becomes saturated, reducing its ability to provide clean, skin-friendly water.</p><p>By subscribing, you prevent buildup of contaminants that can diminish the filter’s effectiveness, and consistently reduce exposure to harmful chemicals that cause hair and skin irritation and dryness.</p>",
-            "link_url": "",
-            "link_text": ""
-          }
-        }
-      },
-      "block_order": [
-        "accordion_43xxGi",
-        "accordion_g8WAFD",
-        "accordion_PezYfC",
-        "accordion_3aNpTz",
-        "accordion_t3jDQB",
-        "accordion_7jdjGx",
-        "accordion_xKE888"
-      ],
-      "name": "t:sections.faq.name",
-      "settings": {
-        "heading": "Have questions?",
-        "text": "",
-        "button_label": "Ask us",
-        "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home",
-        "terms-conditions": false,
-        "promotional_terms_and_conditions": ""
-      }
-    },
     "sticky_cta_ggPFXx": {
       "type": "sticky-button-variants",
       "blocks": {
@@ -1336,7 +1250,6 @@
     "text_header_4XxWzV",
     "1757411492448c8907",
     "n_faq_CqC3HU",
-    "faq_nqVXbY",
     "sticky_cta_ggPFXx"
   ]
 }

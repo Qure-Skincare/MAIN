@@ -67,6 +67,7 @@
         "tip": "Tip",
         "left-tip": "Left tip",
         "text": "Text",
+        "text-on-image": "Text on image",
         "text-with-image": "Text with image",
         "badge-text": "Badge text",
         "review-header": "Review header",
@@ -237,7 +238,9 @@
         "select": "Select",
         "flag": "Flag",
         "verified-customer": "Verified customer",
-        "component": "Component"
+        "component": "Component",
+        "dialog": "Dialog"
+
     },
     "blocks": {
         "block-card": {
@@ -458,6 +461,9 @@
                     }
                 }
             }
+        },
+        "n_how-to-use": {
+            "name": "How to use"
         },
         "collection": {
             "name": "Collection",

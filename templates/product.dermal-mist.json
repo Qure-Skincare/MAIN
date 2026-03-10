@@ -198,43 +198,44 @@
       "settings": {
         "form_name": "purchase-form-landing",
         "hide_types": true,
-        "type": "box"
+        "type": "box",
+        "klaviyo_form_name": ""
       }
     },
-    "logos_mUyKFd": {
-      "type": "logos",
+    "n_logos_d77Mmj": {
+      "type": "n_logos",
       "blocks": {
-        "carousel_X6pBbT": {
+        "carousel_GYhQRa": {
           "type": "carousel",
           "settings": {
             "image": "shopify://shop_images/vogue.svg"
           }
         },
-        "carousel_HPeNA3": {
+        "carousel_P7CVKh": {
           "type": "carousel",
           "settings": {
             "image": "shopify://shop_images/womens_health.svg"
           }
         },
-        "carousel_w6WCLA": {
+        "carousel_TitRAQ": {
           "type": "carousel",
           "settings": {
             "image": "shopify://shop_images/elle.webp"
           }
         },
-        "carousel_T8QRgh": {
+        "carousel_JEYQq6": {
           "type": "carousel",
           "settings": {
             "image": "shopify://shop_images/cosmopolitan.svg"
           }
         },
-        "carousel_iVcWiq": {
+        "carousel_w6xRjX": {
           "type": "carousel",
           "settings": {
             "image": "shopify://shop_images/grazia.svg"
           }
         },
-        "carousel_DAY3PM": {
+        "carousel_TzxxQ4": {
           "type": "carousel",
           "settings": {
             "image": "shopify://shop_images/qq.svg"
@@ -242,320 +243,365 @@
         }
       },
       "block_order": [
-        "carousel_X6pBbT",
-        "carousel_HPeNA3",
-        "carousel_w6WCLA",
-        "carousel_T8QRgh",
-        "carousel_iVcWiq",
-        "carousel_DAY3PM"
+        "carousel_GYhQRa",
+        "carousel_P7CVKh",
+        "carousel_TitRAQ",
+        "carousel_JEYQq6",
+        "carousel_w6xRjX",
+        "carousel_TzxxQ4"
       ],
-      "name": "t:sections.logos.name",
-      "settings": {}
-    },
-    "banner_with_text_3trYVA": {
-      "type": "banner-with-text",
-      "name": "t:sections.banner-with-text.name",
+      "name": "t:sections.n_logos.name",
       "settings": {
-        "heading": "A mist to refresh skin prone to breakouts, redness and sensitivity",
-        "text": "<p>Powered by hypochlorous acid (HOCl), Dermal Mist helps calm the look and feel of stressed skin and support a fresh, balanced complexion—without irritation.<br/></p><p>Perfect for skin that experiences <em>breakouts, visible redness, or post-treatment sensitivity</em>, this lightweight mist helps soothe the look of skin and protect against everyday environmental stressors.<br/></p><p>It’s fragrance-free, non-drying, and gentle enough to use anytime, anywhere, even over makeup.</p>",
-        "quote": "",
-        "quote-mobile": "",
-        "image_position": "left",
-        "sub_text": "",
-        "button_label": "Shop Now",
-        "button_url": "#buy_box-patches",
+        "use_own_file": true
+      }
+    },
+    "n_base_section_T8jB96": {
+      "type": "n_base-section",
+      "name": "t:sections.n_base-section.name",
+      "settings": {
+        "use_own_file": true,
+        "modifier": "reverse",
+        "background_color": "none",
+        "heading": "<h2>A mist to refresh skin prone to breakouts, redness and sensitivity</h2>",
+        "text": "<p>Powered by hypochlorous acid (HOCl), Dermal Mist helps calm the look and feel of stressed skin and support a fresh, balanced complexion—without irritation.<br/></p><p>Perfect for skin that experiences <em>breakouts, visible redness, or post-treatment sensitivity</em>, this lightweight mist helps soothe the look of skin and protect against everyday environmental stressors.<br/></p><p>It’s fragrance-free, non-drying, and gentle enough to use anytime, anywhere, even over makeup.</p>",
+        "button_label": "SHOP NOW",
+        "button_url": "#hero-product",
         "wistia_url": "getx3xc27m"
       }
     },
-    "how_to_use_picture_WHyQTm": {
-      "type": "how-to-use-picture",
+    "n_how_to_use_xnx9jj": {
+      "type": "n_how-to-use",
       "blocks": {
-        "list_HBDgx6": {
-          "type": "list",
+        "image_with_text_aiW8mt": {
+          "type": "image_with_text",
           "settings": {
-            "heading": "Post-Workout Refresh",
-            "heading-mobile": "Post-Workout Refresh",
-            "text": "<p>Mist onto skin after workouts or throughout the day to help calm the look of flushed, stressed skin.</p>",
-            "text-mobile": "<p>Mist onto skin after workouts or throughout the day to help calm the look of flushed, stressed skin.</p>",
-            "image": "shopify://shop_images/bacteria_defence_2.webp",
-            "image-mobile": "shopify://shop_images/bacteria_defence_mob_2.webp"
+            "text": "<h6>Post-Workout Refresh</h6><p>Mist onto skin after workouts or throughout the day to help calm the look of flushed, stressed skin.</p>",
+            "image": "shopify://shop_images/dermal-mist-1.webp",
+            "image_mobile": "shopify://shop_images/dermal-mist-1-mob.webp"
           }
         },
-        "list_6AjmAj": {
-          "type": "list",
+        "image_with_text_LGRtHr": {
+          "type": "image_with_text",
           "settings": {
-            "heading": "Pillow Protector",
-            "heading-mobile": "Pillow Protector",
-            "text": "<p>Lightly spritz your pillowcase at night as part of your routine to help create a fresh, comfortable skin environment while you rest.</p>",
-            "text-mobile": "<p>Lightly spritz your pillowcase at night as part of your routine to help create a fresh, comfortable skin environment while you rest.</p>",
-            "image": "shopify://shop_images/bacteria_defence_3.webp",
-            "image-mobile": "shopify://shop_images/bacteria_defence_mob_3.webp"
+            "text": "<h6>Pillow Protector</h6><p>Spritz on your pillowcase at night to keep your pillow fresh and cool.</p>",
+            "image": "shopify://shop_images/dermal-mist-2.webp",
+            "image_mobile": "shopify://shop_images/dermal-mist-2-mob.webp"
           }
         },
-        "list_pUcded": {
-          "type": "list",
+        "image_with_text_JBGXmB": {
+          "type": "image_with_text",
           "settings": {
-            "heading": "Pre-Treatment Purifier",
-            "heading-mobile": "Pre-Treatment Purifier",
-            "text": "<p>Use after cleansing to hydrate and balance the skin.</p>",
-            "text-mobile": "<p>Use after cleansing to hydrate and balance the skin.</p>",
-            "image": "shopify://shop_images/bacteria_defence_1.webp",
-            "image-mobile": "shopify://shop_images/bacteria_defence_mob_1.webp"
+            "text": "<h6>Pre-Treatment Purifier</h6><p>Use after cleansing to hydrate and balance the skin.</p>",
+            "image": "shopify://shop_images/dermal-mist-3.webp",
+            "image_mobile": "shopify://shop_images/dermal-mist-3-mob.webp"
           }
         },
-        "list_MVwKh7": {
-          "type": "list",
+        "image_with_text_Nr7jd4": {
+          "type": "image_with_text",
           "settings": {
-            "heading": "Device Care",
-            "heading-mobile": "Device Care",
-            "text": "<p>After using your Q-Rejuvalight Pro, a light spray and wipe inside your device keeps it refreshed.</p>",
-            "text-mobile": "<p>After using your Q-Rejuvalight Pro, a light spray and wipe inside your device keeps it refreshed.</p>",
-            "image": "shopify://shop_images/bacteria_defence_4.webp",
-            "image-mobile": "shopify://shop_images/bacteria_defence_mob_4.webp"
+            "text": "<h6>Device Care</h6><p>After using your Q-Rejuvalight Pro, a light spray and wipe inside your device keeps it refreshed.</p>",
+            "image": "shopify://shop_images/dermal-mist-4.webp",
+            "image_mobile": "shopify://shop_images/dermal-mist-4-mob.webp"
           }
         }
       },
       "block_order": [
-        "list_HBDgx6",
-        "list_6AjmAj",
-        "list_pUcded",
-        "list_MVwKh7"
+        "image_with_text_aiW8mt",
+        "image_with_text_LGRtHr",
+        "image_with_text_JBGXmB",
+        "image_with_text_Nr7jd4"
       ],
-      "name": "t:sections.how-to-use-picture.name",
+      "name": "t:sections.n_how-to-use.name",
       "settings": {
-        "heading": "Bacteria defense that fits your day",
-        "heading-mobile": "Reset your skin with one spray",
-        "text": "<p>Fresh, comfortable skin wherever you are. Dermal Mist comes in two sizes: a 100 ml bottle for consistent at-home use, and a 15 ml travel size for easy, on-the-go refreshment. </p>",
-        "text-mobile": "<p>Dermal Mist uses hypochlorous acid and electrolyzed water to calm irritation, support healing, and reinforce your skin barrier in one refreshing step.</p>",
-        "sub-text": "<p>Use it in 4 ways.</p>"
+        "use_own_file": true,
+        "heading": "<h2>Bacteria defense that fits your day</h2>",
+        "text": "<p>Fresh, comfortable skin wherever you are. Dermal Mist comes in two sizes: a 100 ml bottle for consistent at-home use, and a 15 ml travel size for easy, on-the-go refreshment.</p><p><strong>Use it in 4 ways.</strong></p>"
       }
     },
-    "trusted_recommended_8zit6t": {
-      "type": "trusted-recommended",
-      "name": "t:sections.trusted-recommended.name",
+    "n_trusted_recommended_Akm4BH": {
+      "type": "n_trusted-recommended",
+      "name": "t:sections.n_trusted-recommended.name",
       "settings": {
-        "background_color": "#ffffff",
-        "heading": "Trusted and Recommended by Experts",
-        "text": "<p>“Dermal Mist is great for use after the gym, but the best use of hypocholorus acid is in combination with Qure’s Micro-Infusion. <strong>Dermal Mist preps your skin, allowing  ingredients placed on top to penetrate your skin even further.</strong>”</p>",
-        "image_text": "<p>Dr. Shah & Dr. Maxfield <strong>Board certified dermatologists</strong></p>",
-        "video_cover_image": "shopify://shop_images/dr_shah_max.webp",
-        "video_url": "",
-        "wistia_url": "zd9o2f2jp7"
+        "use_own_file": true,
+        "background_color": "none",
+        "modifier": "none",
+        "heading": "<h2>Trusted and Recommended by Experts</h2>",
+        "text": "<p>“Dermal Mist is great for use after the gym, but the best use of hypocholorus acid is in combination with Qure’s Micro-Infusion. <em>Dermal Mist preps your skin, allowing  ingredients placed on top to penetrate your skin even further.</em>”</p>",
+        "video_image_cover": "shopify://shop_images/dr_shah_max.webp",
+        "text_on_image": "<p><strong>Dr. Shah & Dr. Maxfield</strong>Board Certified Dermatologists</p>",
+        "wistia_url": true,
+        "video_url": "zd9o2f2jp7",
+        "badge_text": "Dermatologist Reviewed"
       }
     },
-    "carousel_PjVxaQ": {
-      "type": "carousel",
+    "n_features_marquee_h4hRGq": {
+      "type": "n_features-marquee",
       "blocks": {
-        "items_NtkT4h": {
-          "type": "items",
+        "image_with_text_Hnxp4K": {
+          "type": "image_with_text",
           "settings": {
-            "heading": "Free US Shipping On Orders Over $100",
-            "image": "shopify://shop_images/guarantee.svg"
+            "icon": "shipping-order",
+            "text": "Free Shipping On<br> Orders Over 100$"
           }
         },
-        "items_bYnXxJ": {
-          "type": "items",
+        "image_with_text_dBhwq7": {
+          "type": "image_with_text",
           "settings": {
-            "heading": "Dermatologist Reviewed",
-            "image": "shopify://shop_images/Guarantee_Icons.svg"
+            "icon": "reviewed",
+            "text": "Dermatologist<br> Reviewed"
           }
         },
-        "items_tLjNh8": {
-          "type": "items",
+        "image_with_text_C6aRqT": {
+          "type": "image_with_text",
           "settings": {
-            "heading": "Buy Now, Pay Later Options Available",
-            "image": "shopify://shop_images/pay-later.svg"
+            "icon": "pay-later",
+            "text": "Buy Now, Pay Later<br> Options Available"
           }
         },
-        "items_EWjYfE": {
-          "type": "items",
+        "image_with_text_HP7mtc": {
+          "type": "image_with_text",
           "settings": {
-            "heading": "Proven Results, Backed By Science",
-            "image": "shopify://shop_images/proven-result.svg"
+            "icon": "proven",
+            "text": "Proven Results,<br> Backed By Science"
           }
         }
       },
       "block_order": [
-        "items_NtkT4h",
-        "items_bYnXxJ",
-        "items_tLjNh8",
-        "items_EWjYfE"
+        "image_with_text_Hnxp4K",
+        "image_with_text_dBhwq7",
+        "image_with_text_C6aRqT",
+        "image_with_text_HP7mtc"
       ],
-      "name": "t:common.carousel",
+      "name": "t:sections.n_features-marquee.name",
       "settings": {
-        "background_color": "#f6f6f7",
-        "display_mode": "both"
+        "use_own_file": true
       }
     },
-    "product_info_popup_cJGGQN": {
-      "type": "product-info-popup",
-      "name": "t:sections.product-info-popup.name",
+    "n_base_section_tDwkbA": {
+      "type": "n_base-section",
+      "blocks": {
+        "dialog_RaLVUK": {
+          "type": "dialog",
+          "settings": {
+            "button_label": "View Full Ingredient List",
+            "text": "<p><strong>Dermal Mist Ingredients</strong></p><p>Water (aqua)*, Chrysanthellum indicum flower water, sodium chloride, sodium phosphate, disodium phosphate, hypochlorous acid. *Ultra pure water.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "dialog_RaLVUK"
+      ],
+      "name": "t:sections.n_base-section.name",
       "settings": {
-        "heading": "Powered by Hypochlorus Acid",
-        "text": "<p><strong>Hypochlorous Acid (HOCl)</strong> is a gentle, skin-compatible ingredient commonly used in cosmetics to help refresh the skin and support a clean, balanced feel.<br/><br/>Combined with botanical extracts, this lightweight mist is designed to help soothe the look of stressed skin and provide a refreshing boost throughout the day.<br/><br/>Ideal for skin that feels sensitive, looks flushed, or needs a quick reset as part of your daily routine.</p>",
+        "use_own_file": true,
+        "modifier": "reverse",
+        "background_color": "none",
+        "heading": "<h2>Powered by Hypochlorus Acid</h2>",
+        "text": "<p><em>Hypochlorous Acid (HOCl)</em> is a gentle, skin-compatible ingredient commonly used in cosmetics to help refresh the skin and support a clean, balanced feel.<br/><br/>Combined with botanical extracts, this lightweight mist is designed to help soothe the look of stressed skin and provide a refreshing boost throughout the day.<br/><br/>Ideal for skin that feels sensitive, looks flushed, or needs a quick reset as part of your daily routine.</p>",
         "image": "shopify://shop_images/hypo_acid.webp",
-        "image_mobile": "shopify://shop_images/hypo_acid_mob.webp",
-        "popup_heading": "Dermal Mist Ingredients",
-        "popup_text": "<p>Water (aqua)*, Chrysanthellum indicum flower water, sodium chloride, sodium phosphate, disodium phosphate, hypochlorous acid. *Ultra pure water.</p>",
-        "button_label": "View Full Ingredient List",
-        "button_url": "#exampleModalToggle"
+        "button_label": "",
+        "button_url": "",
+        "wistia_url": ""
       }
     },
-    "video_review_slider_hTyGEF": {
-      "type": "video-review-slider",
+    "n_video_slider_HiYyrf": {
+      "type": "n_video-slider",
       "blocks": {
-        "slider_jGWqkN": {
+        "slider_pJeAjG": {
           "type": "slider",
           "disabled": true,
           "settings": {
-            "youtube_url": "https://youtu.be/EjLx0IvKh7g?si=2hT_KAt-1w0rUjQz&t=825",
-            "video_cover_image": "shopify://shop_images/Review_10.png",
-            "wistia_url": ""
+            "heading": "",
+            "text": "",
+            "youtube_url": true,
+            "video_url": "https://youtu.be/EjLx0IvKh7g?si=2hT_KAt-1w0rUjQz&t=825"
           }
         },
-        "slider_Wzywcy": {
+        "slider_4H3jzH": {
           "type": "slider",
           "settings": {
-            "youtube_url": "",
-            "video_cover_image": "shopify://shop_images/Review_11.png",
-            "wistia_url": "tbu0xx01l1"
+            "heading": "",
+            "text": "",
+            "youtube_url": false,
+            "video_url": "tbu0xx01l1"
           }
         },
-        "slider_Xhp3Wq": {
+        "slider_W6pRrt": {
           "type": "slider",
           "settings": {
-            "youtube_url": "",
-            "video_cover_image": "shopify://shop_images/Review_12.png",
-            "wistia_url": "d4tmdfy8zz"
+            "heading": "",
+            "text": "",
+            "youtube_url": false,
+            "video_url": "d4tmdfy8zz"
           }
         },
-        "slider_CyVwN4": {
+        "slider_EPMyKa": {
           "type": "slider",
           "settings": {
-            "youtube_url": "",
-            "video_cover_image": "shopify://shop_images/Review_13.png",
-            "wistia_url": "b1uix8g3y6"
+            "heading": "",
+            "text": "",
+            "youtube_url": false,
+            "video_url": "b1uix8g3y6"
           }
         },
-        "slider_RCgU8W": {
+        "slider_kRqYgt": {
           "type": "slider",
           "settings": {
-            "youtube_url": "",
-            "wistia_url": "a51zt8a6lt"
+            "heading": "",
+            "text": "",
+            "youtube_url": false,
+            "video_url": "a51zt8a6lt"
           }
         },
-        "slider_BdbCUB": {
+        "slider_p3BpRi": {
           "type": "slider",
           "settings": {
-            "youtube_url": "",
-            "wistia_url": "db1dlwaul3"
+            "heading": "",
+            "text": "",
+            "youtube_url": false,
+            "video_url": "db1dlwaul3"
           }
         },
-        "slider_8W7WkV": {
+        "slider_MWLNFX": {
           "type": "slider",
           "settings": {
-            "youtube_url": "",
-            "wistia_url": "rnjpxbt35o"
+            "heading": "",
+            "text": "",
+            "youtube_url": false,
+            "video_url": "rnjpxbt35o"
           }
         },
-        "slider_Edp9tC": {
+        "slider_BaCWAm": {
           "type": "slider",
           "settings": {
-            "youtube_url": "",
-            "wistia_url": "130d1zoq72"
+            "heading": "",
+            "text": "",
+            "youtube_url": false,
+            "video_url": "130d1zoq72"
           }
         }
       },
       "block_order": [
-        "slider_jGWqkN",
-        "slider_Wzywcy",
-        "slider_Xhp3Wq",
-        "slider_CyVwN4",
-        "slider_RCgU8W",
-        "slider_BdbCUB",
-        "slider_8W7WkV",
-        "slider_Edp9tC"
+        "slider_pJeAjG",
+        "slider_4H3jzH",
+        "slider_W6pRrt",
+        "slider_EPMyKa",
+        "slider_kRqYgt",
+        "slider_p3BpRi",
+        "slider_MWLNFX",
+        "slider_BaCWAm"
       ],
-      "name": "t:sections.video-review-slider.name",
+      "name": "t:sections.n_video-slider.name",
       "settings": {
-        "heading": "Confident skin starts here",
-        "background_color": "#f6f6f7"
+        "use_own_file": true,
+        "modifier": "none",
+        "text": "<h2>Confident skin starts here</h2>"
       }
     },
-    "compare_8FkPMf": {
-      "type": "compare",
+    
+    "n_comparison_WktgAV": {
+      "type": "n_comparison",
       "blocks": {
-        "heading_YBVNNp": {
-          "type": "heading",
+        "left_heading_Rt33nh": {
+          "type": "left_heading",
           "settings": {
-            "heading_check": "<p>Qure Dermal Mist</p>",
-            "heading_cross": "<p>Traditional Skin Mists</p>"
+            "heading": "<h4>Qure Dermal Mist</h4>",
+            "image": "shopify://shop_images/mist_img_1.webp"
           }
         },
-        "compare_3CP3fq": {
-          "type": "compare",
+        "right_heading_aGT3in": {
+          "type": "right_heading",
           "settings": {
-            "check_text": "",
-            "cross_text": "",
-            "checkbox": false
+            "heading": "<h4>Traditional Skin Mists</h4>",
+            "image": "shopify://shop_images/mist_img_2.webp"
           }
         },
-        "compare_QcqhJN": {
-          "type": "compare",
+        "text_between_3kgb3C": {
+          "type": "text_between",
           "settings": {
-            "check_text": "<p>Powered by Hypochlorous Acid and enriched with Chamomile</p>",
-            "cross_text": "<p>Often alcohol-based or contain added fragrances</p>",
-            "checkbox": false
+            "text": "VS"
           }
         },
-        "compare_9LDCBh": {
-          "type": "compare",
+        "left_column_LQezf9": {
+          "type": "left_column",
           "settings": {
-            "check_text": "<p>Designed for face, body & anywhere your skin touches</p>",
-            "cross_text": "<p>Primarily designed for facial use only</p>",
-            "checkbox": false
+            "text": "Powered by Hypochlorous Acid and enriched with Chamomile"
           }
         },
-        "compare_dc6JHY": {
-          "type": "compare",
+        "left_column_PEb8Dm": {
+          "type": "left_column",
           "settings": {
-            "check_text": "<p>Hypoallergenic and suitable for sensitive skin</p>",
-            "cross_text": "<p>May contain irritants not ideal for sensitive skin</p>",
-            "checkbox": false
+            "text": "Designed for face, body & anywhere your skin touches"
           }
         },
-        "compare_tiPRmy": {
-          "type": "compare",
+        "left_column_hLFQzh": {
+          "type": "left_column",
           "settings": {
-            "check_text": "<p>Clinically proven to reduce bacteria and inflammation</p>",
-            "cross_text": "<p>Usually focused on hydration without these benefits</p>",
-            "checkbox": false
+            "text": "Hypoallergenic and suitable for sensitive skin"
           }
         },
-        "compare_cFDGbr": {
-          "type": "compare",
+        "left_column_DCbgFW": {
+          "type": "left_column",
           "settings": {
-            "check_text": "<p>Light, natural scent that dissipates quickly</p>",
-            "cross_text": "<p>Often has a fragrance which can cause irritation</p>",
-            "checkbox": false
+            "text": "Clinically proven to reduce bacteria and inflammation"
+          }
+        },
+        "left_column_xYN4cp": {
+          "type": "left_column",
+          "settings": {
+            "text": "Light, natural scent that dissipates quickly"
+          }
+        },
+        "right_column_x9Emqy": {
+          "type": "right_column",
+          "settings": {
+            "text": "Often alcohol-based or contain added fragrances"
+          }
+        },
+        "right_column_TeaHpQ": {
+          "type": "right_column",
+          "settings": {
+            "text": "Primarily designed for facial use only"
+          }
+        },
+        "right_column_8eqnm9": {
+          "type": "right_column",
+          "settings": {
+            "text": "May contain irritants not ideal for sensitive skin"
+          }
+        },
+        "right_column_zqNUxg": {
+          "type": "right_column",
+          "settings": {
+            "text": "Usually focused on hydration without these benefits"
+          }
+        },
+        "right_column_MBye8M": {
+          "type": "right_column",
+          "settings": {
+            "text": "Often has a fragrance which can cause irritation"
           }
         }
       },
       "block_order": [
-        "heading_YBVNNp",
-        "compare_3CP3fq",
-        "compare_QcqhJN",
-        "compare_9LDCBh",
-        "compare_dc6JHY",
-        "compare_tiPRmy",
-        "compare_cFDGbr"
+        "left_heading_Rt33nh",
+        "right_heading_aGT3in",
+        "text_between_3kgb3C",
+        "left_column_LQezf9",
+        "left_column_PEb8Dm",
+        "left_column_hLFQzh",
+        "left_column_DCbgFW",
+        "left_column_xYN4cp",
+        "right_column_x9Emqy",
+        "right_column_TeaHpQ",
+        "right_column_8eqnm9",
+        "right_column_zqNUxg",
+        "right_column_MBye8M"
       ],
-      "name": "t:sections.compare.name",
+      "name": "t:sections.n_comparison.name",
       "settings": {
-        "heading": "A mist that does more than refresh",
-        "text": "",
-        "image_compare_check": "shopify://shop_images/mist_img_1.webp",
-        "image_compare_cross": "shopify://shop_images/mist_img_2.webp"
+        "use_own_file": true,
+        "text": "<h2>A mist that does more than refresh<h2>"
       }
     },
     "text_header_LkTtUE": {
@@ -586,80 +632,67 @@
       ],
       "settings": {}
     },
-    "faq_RhychY": {
-      "type": "faq",
+    "n_faq_CqC3HU": {
+      "type": "n_faq",
       "blocks": {
-        "accordion_bzVwQ9": {
+        "accordion_hUUmjW": {
           "type": "accordion",
           "settings": {
             "heading": "What makes Dermal Mist different from other facial sprays?",
-            "text": "<p>Unlike many face mists that are fragranced or water-heavy with little skin benefit, our Dermal Mist is formulated specifically for sensitive and post-treatment skin.</p><p>Dermal Mist is powered by hypochlorous acid and enriched with chamomile, offering anti-inflammatory and antibacterial benefits without any harsh chemicals. It's pH balanced and gentle enough for all skin types, making it a versatile addition to your daily routine.</p><p>It hydrates without irritation, soothes redness, and helps your skin bounce back faster.</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>Unlike many face mists that are fragranced or water-heavy with little skin benefit, our Dermal Mist is formulated specifically for sensitive and post-treatment skin.</p><p>Dermal Mist is powered by hypochlorous acid and enriched with chamomile, offering anti-inflammatory and antibacterial benefits without any harsh chemicals. It's pH balanced and gentle enough for all skin types, making it a versatile addition to your daily routine.</p><p>It hydrates without irritation, soothes redness, and helps your skin bounce back faster.</p>"
           }
         },
-        "accordion_ntebHQ": {
+        "accordion_pdt7DG": {
           "type": "accordion",
           "settings": {
             "heading": "What are the benefits of Dermal Mist and hypochlorous acid?",
-            "text": "<p>Our Dermal Mist is powered by hypochlorous acid — a gentle yet effective ingredient known for its soothing, antibacterial, and barrier-supporting properties. </p><p>Hypochlorous acid (HOCl) helps soothe redness, reduce inflammation, and acceleratehealing, making it especially useful for sensitive, acne-prone, or post-treatment skin. </p><p>Unlike harsher actives, HOCl supports the skin barrier while eliminating harmful bacteria — all without causing dryness or disrupting the skin’s natural balance. It is safe for all skin types, it’s a gentle but effective way to calm, protect, and refresh the skin.</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>Our Dermal Mist is powered by hypochlorous acid — a gentle yet effective ingredient known for its soothing, antibacterial, and barrier-supporting properties. </p><p>Hypochlorous acid (HOCl) helps soothe redness, reduce inflammation, and acceleratehealing, making it especially useful for sensitive, acne-prone, or post-treatment skin. </p><p>Unlike harsher actives, HOCl supports the skin barrier while eliminating harmful bacteria — all without causing dryness or disrupting the skin’s natural balance. It is safe for all skin types, it’s a gentle but effective way to calm, protect, and refresh the skin.</p>"
           }
         },
-        "accordion_ChNyjh": {
+        "accordion_c7cgBG": {
           "type": "accordion",
           "settings": {
             "heading": "How should I incorporate Dermal Mist into my skincare routine?",
-            "text": "<p>You can use Dermal Mist morning and evening as a purifying step before applying treatments. It’s also great for refreshing your skin throughout the day, post-workout, or to disinfect surfaces such as your pillow and your skincare tools.</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>You can use Dermal Mist morning and evening as a purifying step before applying treatments. It’s also great for refreshing your skin throughout the day, post-workout, or to disinfect surfaces such as your pillow and your skincare tools.</p>"
           }
         },
-        "accordion_DmeWrE": {
+        "accordion_MBipKL": {
           "type": "accordion",
           "settings": {
             "heading": "What’s the concentration of hypochlorous acid in Dermal Mist?",
-            "text": "<p>Dermal Mist contains a precise 0.02% concentration of hypochlorous acid, which is effective enough to deliver antibacterial and anti-inflammatory benefits while remaining gentle on the skin. </p><p>We don’t add any fragrances, so you may notice the light, natural scent of hypochlorous acid. This should fade soon after spraying.</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>Dermal Mist contains a precise 0.02% concentration of hypochlorous acid, which is effective enough to deliver antibacterial and anti-inflammatory benefits while remaining gentle on the skin. </p><p>We don’t add any fragrances, so you may notice the light, natural scent of hypochlorous acid. This should fade soon after spraying.</p>"
           }
         },
-        "accordion_kMxmkE": {
+        "accordion_QEKfMc": {
           "type": "accordion",
           "settings": {
             "heading": "Can I use Dermal Mist on sensitive skin?",
-            "text": "<p>Absolutely. Dermal Mist is dermatologically tested, hypoallergenic, and formulated specifically to be kind to even the most sensitive skin. It’s designed to soothe, purify, and protect without causing irritation. </p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>Absolutely. Dermal Mist is dermatologically tested, hypoallergenic, and formulated specifically to be kind to even the most sensitive skin. It’s designed to soothe, purify, and protect without causing irritation. </p>"
           }
         },
-        "accordion_zhxE3N": {
+        "accordion_yjzwqw": {
           "type": "accordion",
           "settings": {
             "heading": "Is this product vegan and cruelty-free?",
-            "text": "<p>Yes, Dermal Mist is both vegan and cruelty-free. We are committed to creating products that are kind to both your skin and the environment.</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>Yes, Dermal Mist is both vegan and cruelty-free. We are committed to creating products that are kind to both your skin and the environment.</p>"
           }
         }
       },
       "block_order": [
-        "accordion_bzVwQ9",
-        "accordion_ntebHQ",
-        "accordion_ChNyjh",
-        "accordion_DmeWrE",
-        "accordion_kMxmkE",
-        "accordion_zhxE3N"
+        "accordion_hUUmjW",
+        "accordion_pdt7DG",
+        "accordion_c7cgBG",
+        "accordion_MBipKL",
+        "accordion_QEKfMc",
+        "accordion_yjzwqw"
       ],
-      "name": "t:sections.faq.name",
+      "name": "t:sections.n_faq.name",
       "settings": {
-        "heading": "Have questions?",
-        "text": "Don’t see your question?",
+        "use_own_file": true,
+        "heading": "<h2>Have questions?</h2>",
+        "text": "Don't see your question?",
         "button_label": "Ask us",
-        "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home",
-        "terms-conditions": false,
-        "promotional_terms_and_conditions": ""
+        "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
       }
     },
     "sticky_cta_KmhMmz": {
@@ -716,17 +749,17 @@
   "order": [
     "product_header_c7eEXx",
     "purchase-form-landing",
-    "logos_mUyKFd",
-    "banner_with_text_3trYVA",
-    "how_to_use_picture_WHyQTm",
-    "trusted_recommended_8zit6t",
-    "carousel_PjVxaQ",
-    "product_info_popup_cJGGQN",
-    "video_review_slider_hTyGEF",
-    "compare_8FkPMf",
+    "n_logos_d77Mmj",
+    "n_base_section_T8jB96",
+    "n_how_to_use_xnx9jj",
+    "n_trusted_recommended_Akm4BH",
+    "n_features_marquee_h4hRGq",
+    "n_base_section_tDwkbA",
+    "n_video_slider_HiYyrf",
+    "n_comparison_WktgAV",
     "text_header_LkTtUE",
     "17574126382ef36ccf",
-    "faq_RhychY",
+    "n_faq_CqC3HU",
     "sticky_cta_KmhMmz",
     "sticky_cta_ddPFdd"
   ]

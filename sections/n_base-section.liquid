@@ -9,9 +9,7 @@
 <section class="base-section{% if section.settings.modifier == 'reverse' %} base-section--reverse{% endif %}{% if section.settings.background_color == 'grey' %} base-section--grey{% endif %}">
     <div class="container">
         <article>
-            {% if section.settings.heading != blank %}
-                {{ section.settings.heading | replace: '<p>', '' | replace: '</p>', '' }}
-            {% endif %}
+                {{ section.settings.heading }}
             {% if section.settings.image != blank %}
                 <picture>
                     <img src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt | escape }}" />
@@ -53,6 +51,25 @@
                     {{ section.settings.text | replace: '<p>[note_green]', '<div class="c-note">' | replace: '[/note]</p>', '</div>' }}
                 </div>
             {% endif %}
+
+            {% for block in section.blocks %}
+                {% if block.type == 'dialog' %}
+                    {% if block.settings.button_label != blank %}
+                        <button class="btn btn--primary-grey" type="button" onclick="fullIngredient.showModal()">{{ block.settings.button_label }}</button>
+                    {% endif %}
+                    <dialog class="c-dialog" id="fullIngredient">
+                        {% if block.settings.text != blank %}
+                            <div class="c-dialog__content">
+                                {{ block.settings.text }}
+                                <button type="button" class="btn-close" onclick="fullIngredient.close()">
+                                    <img src="{{ 'sections.n_base-section.image' | t }}" alt="" />
+                                </button>
+                            </div>
+                        {% endif %}
+                    </dialog>
+                {% endif %}
+            {% endfor %}
+
             {% if section.settings.button_label != blank and section.settings.button_url != blank %}
                 <a href="{{ section.settings.button_url }}" class="btn btn--primary">{{ section.settings.button_label }}</a>
             {% endif %}
@@ -62,6 +79,7 @@
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         loadScriptOnce('wistia-script', 'https://fast.wistia.com/assets/external/E-v1.js');
+        loadScriptOnce("dialog", "https://qureskincaredns.com/assets/js-new/dialog.js");
     });
 </script>
 <!-- BASE SECTION END -->
@@ -177,6 +195,23 @@
                 },
                 {
                     "type": "text",
+                    "id": "text",
+                    "label": "t:common.text"
+                }
+            ]
+        },
+        {
+            "type": "dialog",
+            "name": "t:common.dialog",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "button_label",
+                    "label": "t:common.button-label"
+                },
+                {
+                    "type": "richtext",
                     "id": "text",
                     "label": "t:common.text"
                 }
