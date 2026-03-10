@@ -23,7 +23,11 @@
         <div
             class="icon-with-text d-flex flex-wrap flex-lg-nowrap flex-column flex-lg-row align-items-center fs-16 text-center text-lg-start">
             <img src="https://qureskincaredns.com/sections/isolated/protect-your-skin/images/dermatologist.svg" alt="dermatologist" class="mr-0 mr-md-10 mb-10 mb-md-0">
-            <span>{{ 'product.settings.buy-button-bottom.guaranteed_text' | t }}</span>
+            {% if template == 'page.microinfusion' %}
+                <span>{{ 'product.settings.buy-button-bottom.guaranteed_text_90' | t }}</span>
+            {% else %}
+                <span>{{ 'product.settings.buy-button-bottom.guaranteed_text' | t }}</span>
+            {% endif %}
         </div>
         <div
             class="icon-with-text d-flex flex-wrap flex-lg-nowrap flex-column flex-lg-row align-items-center fs-16 text-center text-lg-start">
