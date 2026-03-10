@@ -110,10 +110,10 @@
                                             <div>
                                                 <div class="qure__supply-price">
                                                     {% if product_before_price != blank %}
-                                                        <span class="qure__supply-price-sale regular_price igComparePrice">{{ product_before_price }}</span>
-                                                        <span class="qure__supply-price-reg-sale sale_price igPrice">{{ product_sale_price }}</span>
+                                                        <span data-variant-id="{{ product_variant_id }}" class="qure__supply-price-sale regular_price igComparePrice">{{ product_before_price }}</span>
+                                                        <span data-variant-id="{{ product_variant_id }}" class="qure__supply-price-reg-sale sale_price igPrice">{{ product_sale_price }}</span>
                                                     {% else %}
-                                                        <span class="qure__supply-price-reg sale_price igPrice">{{ product_sale_price }}</span>
+                                                        <span data-variant-id="{{ product_variant_id }}" class="qure__supply-price-reg sale_price igPrice">{{ product_sale_price }}</span>
                                                     {% endif %}
                                                 </div>
                                                 {% if product_discount != blank %}

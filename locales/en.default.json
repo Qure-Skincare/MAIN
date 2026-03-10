@@ -397,7 +397,7 @@
         "header": "Jump To"
       },
       "limited-offer": {
-        "header": "Special Offer Sale",
+        "header": "Mother's Day UK Offer",
         "text_html": "<p class='qs-offer'>Get <span class='qs-badge'>{{ sum }} OFF</span> with code {{ code }}</p>",
         "n_text_html": "<p>Get <span class='e-pill-save'>{{ sum }} OFF</span> with code {{ code }}</p>",
         "days": "DAYS",

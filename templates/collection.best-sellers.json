@@ -9,46 +9,8 @@
  */
 {
   "sections": {
-    "bf_clickable_banner_with_text_rTzUyC": {
-      "type": "bf-clickable-banner-with-text",
-      "disabled": true,
-      "name": "t:sections.bf-clickable-banner-with-text.name",
-      "settings": {
-        "heading": "<h2>Save Up to 57%</h2>",
-        "text": "<p>Your Favorite Products, Perfectly Bundled</p>",
-        "percent_value": "57%",
-        "left_image": "shopify://shop_images/best-seller-bf-bundle-1.webp",
-        "left_image_mobile": "shopify://shop_images/best-seller-bf-bundle-1-mob.webp",
-        "right_image": "shopify://shop_images/best-seller-bf-bundle-2.webp",
-        "link": "https://qureskincare.com/pages/exclusive-holiday-bundle-deal-new?"
-      }
-    },
-    "n_hero_banner_DxPjy7": {
-      "type": "n_hero-banner",
-      "disabled": true,
-      "name": "t:sections.n_hero-banner.name",
-      "settings": {
-        "use_own_file": true,
-        "modifier": "holidays",
-        "text": "<p>Unwrap radiant skin this holiday season with dermatologist-backed skincare solutions.</p>",
-        "image": "shopify://shop_images/holiday-banner.webp",
-        "image_mobile": "shopify://shop_images/holiday-banner-mob.webp"
-      }
-    },
-    "bf_page_banner_pYKPB4": {
-      "type": "bf-page-banner",
-      "disabled": true,
-      "name": "t:sections.bf-page-banner.name",
-      "settings": {
-        "heading": "<h2>26% Off Sitewide*</h2>",
-        "text": "<p>Shop our biggest sale of the year. The week only.</p>",
-        "image": "shopify://shop_images/collection-bf-26-off_ae1a11bb-5919-469e-b536-450b81e77009.webp",
-        "image_mobile": "shopify://shop_images/collection-bf-26-off-mob_e29f051e-0856-4027-a370-98d3413db81d.webp"
-      }
-    },
     "page_banner_zUyTB8": {
       "type": "page-banner",
-      "disabled": true,
       "name": "t:sections.page-banner.name",
       "settings": {
         "heading": "Shop our best sellers",
@@ -60,17 +22,6 @@
         "button_url_mobile": "",
         "image": "shopify://shop_images/best-seller-banner.webp",
         "image_mobile": "shopify://shop_images/best-seller-banner-mob.webp"
-      }
-    },
-    "n_hero_banner_Vpjfjd": {
-      "type": "n_hero-banner",
-      "name": "t:sections.n_hero-banner.name",
-      "settings": {
-        "use_own_file": true,
-        "modifier": "holidays",
-        "text": "<h2>Together, We Rise</h2><p>This International Women’s Day $2 from every order will be donated to <strong>Impact for Women</strong> to help women rebuild their lives and regain confidence.</p>",
-        "image": "shopify://shop_images/iwd_1.webp",
-        "image_mobile": "shopify://shop_images/iwd-mob_1.webp"
       }
     },
     "carousel_7YOxGy": {
@@ -326,11 +277,7 @@
     }
   },
   "order": [
-    "bf_clickable_banner_with_text_rTzUyC",
-    "n_hero_banner_DxPjy7",
-    "bf_page_banner_pYKPB4",
     "page_banner_zUyTB8",
-    "n_hero_banner_Vpjfjd",
     "carousel_7YOxGy",
     "collection_fXMjkJ",
     "bf_bundle_bunner_mini_JhrEmz",

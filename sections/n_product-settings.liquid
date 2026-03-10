@@ -1,0 +1,127 @@
+{% doc %}
+  Renders a product settings section.
+{% enddoc %}
+
+<!-- PRODUCT SETTINGS -->
+ {% if section.settings.use_own_file %}
+     <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/product-settings/product-settings.css" />
+ {% endif %}
+<section class="product-settings">
+    <div class="container">
+        {% if section.settings.text != blank %}
+            <article>
+                {{ section.settings.text }}
+            </article>
+        {% endif %}
+
+        {% assign image_with_text_blocks = section.blocks | where: 'type', 'image_with_text' %}
+        {% if image_with_text_blocks.size > 0 %}
+            <div class="c-lifetime-warranty">
+                {% for block in section.blocks %}
+                    {% if block.type == 'image_with_text' %}
+                        <i class="e-icon e-icon-{{ block.settings.icon }}"></i>
+                        {{ block.settings.text }}
+                    {% endif %}
+                {% endfor %}
+            </div>
+        {% endif %}
+        <div class="c-pill-tabs">
+            {{ section.settings.tab_header }}
+            <ul class="c-pill-tabs__buttons e-pill-tabs" role="tablist">
+                {% assign tab_index = 0 %}
+                {% for block in section.blocks %}
+                    {% if block.type == 'tab' %}
+                        {% assign tab_index = tab_index | plus: 1 %}
+                        {% if block.settings.heading != blank %}
+                            <li>
+                                <button{% if tab_index == 1 %} class="active"{% endif %} type="button" data-bs-toggle="tab" data-bs-target="#pill-tabs-{{ block.settings.heading | strip | handleize }}">{{ block.settings.heading }}</button>
+                            </li>
+                        {% endif %}
+                        
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            {% assign tab_index = 0 %}
+            {% for block in section.blocks %}
+                {% if block.type == 'tab' %}
+                    {% assign tab_index = tab_index | plus: 1 %}
+                    {% if block.settings.image != blank %}
+                        <div class="c-pill-tabs__pane{% if tab_index == 1 %} show{% endif %}" id="pill-tabs-{{ block.settings.heading | strip | handleize }}">
+                            <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                        </div>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<!-- PRODUCT SETTINGS END -->
+
+{% schema %}
+{
+    "name": "t:sections.n_product-settings.name",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": false
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "t:common.text"
+        },
+        {
+            "type": "richtext",
+            "id": "tab_header",
+            "label": "t:common.tab-heading"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "tab",
+            "name": "t:common.tab",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "t:common.header"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                }
+            ]
+        },
+        {
+            "type": "image_with_text",
+            "name": "t:common.image-with-text",
+            "settings": [
+                {
+                    "type": "select",
+                    "id": "icon",
+                    "label": "t:common.icon",
+                    "options": [
+                        {
+                            "value": "verified-shield",
+                            "label": "t:sections.n_product-settings.blocks.icon.settings.verified-shield"
+                        }
+                    ]
+                },
+                {
+                    "type": "richtext",
+                    "id": "text",
+                    "label": "t:common.text"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.n_product-settings.name"
+        }
+    ]
+}
+{% endschema %}

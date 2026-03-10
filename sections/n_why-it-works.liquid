@@ -1,0 +1,182 @@
+{% doc %}
+  Renders a why it works section.
+{% enddoc %}
+
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/why-it-works/why-it-works.css" />
+{% endif %}
+<section class="why-it-works" id="why_it_works">
+    <div class="container">
+        {% if section.settings.text != blank %}
+            <article class="why-it-works__text">
+                {{ section.settings.text }}
+            </article>
+        {% endif %}
+        
+        <div class="why-it-works__main">
+            <div class="why-it-works__according">
+                <div class="c-accordion c-accordion--lines">
+                    <div class="c-accordion__list">
+                        {% for block in section.blocks %}
+                            {% if block.type == 'accordion' %}
+                                <details class="c-accordion__item" id="{{ block.settings.section_id | handleize }}">
+                                    {% if block.settings.heading != blank %}
+                                        <summary class="c-accordion__summary">
+                                            <i class="e-icon e-icon-{{ block.settings.icon }}"></i>
+                                            {{ block.settings.heading }}
+                                        </summary>
+                                    {% endif %}
+                                    {% if block.settings.text != blank %}
+                                        <article class="c-accordion__content">
+                                            {{ block.settings.text }}
+                                        </article>
+                                    {% endif %}
+                                </details>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <div class="why-it-works__components">
+                <div class="c-product-components{% if section.settings.modifier != 'none' %} c-product-components--{{ section.settings.modifier }}{% endif %}">
+                    {% if section.settings.image != blank %}
+                        <img src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt | escape}}" />
+                    {% endif %}
+                    {% for block in section.blocks %}
+                        {% if block.type == 'accordion' %}
+                            {% if block.settings.heading != blank %}
+                                <div class="e-component-pointer{% if block.settings.component != 'none' %} e-component-pointer--{{ block.settings.component }}{% endif %}">
+                                    <hr />
+                                    <a href="#{{ block.settings.section_id | handleize }}">{{ block.settings.heading }}</a>
+                                </div>
+                            {% endif %}
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        loadScriptOnce("why-it-works", "https://qureskincaredns.com/sections/new/why-it-works/why-it-works.js");
+    });
+</script>
+
+{% schema %}
+{
+    "name": "t:sections.n_why-it-works.name",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": false
+        },
+        {
+            "type": "select",
+            "id": "modifier",
+            "label": "t:common.modifier",
+            "default": "none",
+            "options": [
+                {
+                    "value": "none",
+                    "label": "t:common.none"
+                },
+                {
+                    "value": "faucet-filter",
+                    "label": "t:sections.n_why-it-works.settings.modifier-options.faucet-filter"
+                },
+                {
+                    "value": "shower-filter",
+                    "label": "t:sections.n_why-it-works.settings.modifier-options.shower-filter"
+                }
+            ]
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "t:common.text"
+        },
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "t:common.image"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "accordion",
+            "name": "t:common.accordion",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "section_id",
+                    "label": "t:common.section_id"
+                },
+                {
+                    "type": "select",
+                    "id": "component",
+                    "label": "t:common.component",
+                    "options": [
+                        {
+                            "value": "none",
+                            "label": "t:sections.n_why-it-works.blocks.accordion.settings.components.none"
+                        },
+                        {
+                            "value": "vertical-reverse",
+                            "label": "t:sections.n_why-it-works.blocks.accordion.settings.components.vertical-reverse"
+                        },
+                        {
+                            "value": "vertical",
+                            "label": "t:sections.n_why-it-works.blocks.accordion.settings.components.vertical"
+                        },
+                        {
+                            "value": "reverse",
+                            "label": "t:sections.n_why-it-works.blocks.accordion.settings.components.reverse"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "t:common.header"
+                },
+                {
+                    "type": "richtext",
+                    "id": "text",
+                    "label": "t:common.text"
+                },
+                {
+                    "type": "select",
+                    "id": "icon",
+                    "label": "t:common.icon",
+                    "options": [
+                        {
+                            "value": "carbon",
+                            "label": "t:sections.n_why-it-works.blocks.accordion.settings.image.carbon"
+                        },
+                        {
+                            "value": "pp-filter",
+                            "label": "t:sections.n_why-it-works.blocks.accordion.settings.image.pp-filter"
+                        },
+                        {
+                            "value": "nok-filter",
+                            "label": "t:sections.n_why-it-works.blocks.accordion.settings.image.nok-filter"
+                        },
+                        {
+                            "value": "asp-descaler",
+                            "label": "t:sections.n_why-it-works.blocks.accordion.settings.image.asp-descaler"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.n_why-it-works.name"
+        }
+    ]
+}
+{% endschema %}

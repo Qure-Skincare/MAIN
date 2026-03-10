@@ -11,16 +11,24 @@
   "context": {
     "market": "united-kingdom"
   },
-  "parent": "product.q-rejuvalight-pro-facewear.json",
+  "parent": "page.qure-microinfusion-offer.json",
   "sections": {
-    "product_header_V3N3T8": {
+    "purchase_form_PwCCh6": {
       "settings": {},
       "blocks": {
-        "limited_offer_A8": {
-          "disabled": false,
+        "product_DBd4ef": {
           "settings": {
-            "code": "QURE100UK",
-            "sum": "£100"
+            "product": "micro-infusion-6-month-bundle-for-dark-spots-uk"
+          }
+        },
+        "product_nyJ9n7": {
+          "settings": {
+            "product": "micro-infusion-6-month-bundle-for-wrinkles-uk"
+          }
+        },
+        "product_gbPf3J": {
+          "settings": {
+            "product": "micro-infusion-6-month-for-wrinkles-dark-spots-uk"
           }
         }
       }

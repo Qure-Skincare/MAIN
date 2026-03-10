@@ -12,5 +12,26 @@
     "market": "united-kingdom"
   },
   "parent": "page.microinfusion.json",
-  "sections": {}
+  "sections": {
+    "purchase-form-landing": {
+      "settings": {},
+      "blocks": {
+        "product_gbPf3J": {
+          "settings": {
+            "product": "micro-infusion-6-month-bundle-for-dark-spots-uk"
+          }
+        },
+        "product_nyJ9n7": {
+          "settings": {
+            "product": "micro-infusion-6-month-bundle-for-wrinkles-uk"
+          }
+        },
+        "product_hD69Aq": {
+          "settings": {
+            "product": "micro-infusion-6-month-for-wrinkles-dark-spots-uk"
+          }
+        }
+      }
+    }
+  }
 }

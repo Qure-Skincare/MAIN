@@ -15,13 +15,7 @@
   "sections": {
     "purchase-form-landing": {
       "settings": {},
-      "blocks": {
-        "subscription_6xp1uL": {
-          "settings": {
-            "subscription_discount_percent": 39
-          }
-        }
-      }
+      "blocks": {}
     }
   }
 }
