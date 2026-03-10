@@ -356,7 +356,8 @@
       "buy-button-bottom": {
         "heading_html": "OR pay 4 monthly payments of <span class='pay_today'>{{ product_price_divided }}</span> with",
         "recommended_html": "<strong>50+ Board Certified Dermatologists</strong> recommend Qure to their patients. <a href='https://qureskincare.com/pages/derm-reviews' class='text-black text-decoration-underline'>See More</a>.",
-        "guaranteed_text": "30-Day Money-Back Guarantee",
+        "guaranteed_text": "90-Day Money-Back Guarantee",
+        "guaranteed_text_90": "90-Day Money-Back Guarantee",
         "shipping_text": "Free US Shipping over $100"
       },
       "saveup-offer": {
