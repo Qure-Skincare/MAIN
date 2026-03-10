@@ -9,10 +9,10 @@
   var STORAGE_KEY = 'byoBundleSelection';
   var PRODUCT_DATA_PREFIX = 'build-your-own-products-';
   var DISCOUNT_TIERS = {
-    1: { percent: 15, code: 'BUNDLE15' },
-    2: { percent: 20, code: 'BUNDLE20' },
-    3: { percent: 25, code: 'BUNDLE25' },
-    4: { percent: 30, code: 'BUNDLE30' }
+    1: { percent: 15, code: 'BYO15' },
+    2: { percent: 20, code: 'BYO20' },
+    3: { percent: 25, code: 'BYO25' },
+    4: { percent: 30, code: 'BYO30' }
   };
 
   // State: Map<variantId, { variantId, handle, title, price, image, quantity }>
