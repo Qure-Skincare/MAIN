@@ -196,15 +196,48 @@
   }
 
   /**
+   * Build expanded product list (each product repeated by its quantity, max 4)
+   * E.g. Product A (qty=2) + Product B (qty=1) → [A, A, B]
+   */
+  function getExpandedProductList() {
+    var list = [];
+    selectedProducts.forEach(function(p) {
+      for (var i = 0; i < p.quantity && list.length < 4; i++) {
+        list.push(p);
+      }
+    });
+    return list;
+  }
+
+  /**
    * Update sticky bar UI
    */
   function updateStickyBar() {
     var qty = getTotalQuantity();
+    var expandedList = getExpandedProductList();
 
-    // Discount boxes — progressive activation (based on total quantity)
+    // Bundle items — swap discount-box ↔ item-box based on active state
     var bundleItems = document.querySelectorAll('.bundle-progress .bundle-item');
     bundleItems.forEach(function(item, index) {
-      item.classList.toggle('active', (index + 1) <= qty);
+      var isActive = index < expandedList.length;
+      item.classList.toggle('active', isActive);
+
+      var discountBox = item.querySelector('.discount-box');
+      var itemBox = item.querySelector('.item-box');
+
+      if (isActive && itemBox) {
+        if (discountBox) discountBox.classList.add('d-none');
+        itemBox.classList.remove('d-none');
+        var img = itemBox.querySelector('img');
+        if (img) {
+          img.src = expandedList[index].image;
+          img.alt = expandedList[index].title;
+        }
+        itemBox.dataset.variantId = expandedList[index].variantId;
+      } else {
+        if (discountBox) discountBox.classList.remove('d-none');
+        if (itemBox) itemBox.classList.add('d-none');
+      }
     });
 
     // Progress line
@@ -444,6 +477,29 @@
               // Remove product
               selectedProducts.delete(variantId);
               // Reset ALL cards for this variant
+              var allCards = document.querySelectorAll('[data-byo-product][data-variant-id="' + variantId + '"]');
+              allCards.forEach(function(c) { hideQuantityControls(c); });
+            }
+            saveToStorage();
+            updateStickyBar();
+          }
+        }
+      }
+
+      // Remove item button in sticky bar
+      var removeBtn = e.target.closest('.bundle-item .remove-item');
+      if (removeBtn) {
+        e.preventDefault();
+        var itemBox = removeBtn.closest('.item-box');
+        if (itemBox && itemBox.dataset.variantId) {
+          var variantId = parseInt(itemBox.dataset.variantId);
+          var product = selectedProducts.get(variantId);
+          if (product) {
+            if (product.quantity > 1) {
+              product.quantity--;
+              syncQuantityAcrossCards(variantId, product.quantity);
+            } else {
+              selectedProducts.delete(variantId);
               var allCards = document.querySelectorAll('[data-byo-product][data-variant-id="' + variantId + '"]');
               allCards.forEach(function(c) { hideQuantityControls(c); });
             }
