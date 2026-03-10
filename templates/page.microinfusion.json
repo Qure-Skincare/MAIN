@@ -1382,30 +1382,11 @@
             "preselected": true
           }
         },
-        "product_EKAAzA": {
-          "type": "product",
-          "settings": {
-            "product": "micro-infusion-3-month-bundle-for-wrinkles",
-            "preselected": true,
-            "heading": "3 Month Supply",
-            "subheading": "(6 Treatments)",
-            "image": "shopify://shop_images/MI_3_month_W.webp",
-            "soldout": false,
-            "preorder": false,
-            "total_treatments": 6,
-            "left_items": 456,
-            "preorder_text": "",
-            "preorder_date_soldout": "",
-            "preorder_date_reserved": "",
-            "preorder_percent": 55,
-            "included_text": "<ul><li>6 clinically formulated 4ml serums to treat your specific skin concerns (valued at $375)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
-          }
-        },
         "product_nyJ9n7": {
           "type": "product",
           "settings": {
             "product": "micro-infusion-6-month-bundle-for-wrinkles",
-            "preselected": false,
+            "preselected": true,
             "heading": "6 Month Supply",
             "subheading": "(12 Treatments)",
             "image": "shopify://shop_images/MI_1.5_6month_DS_W-1_no_mist.webp",
@@ -1418,6 +1399,25 @@
             "preorder_date_reserved": "",
             "preorder_percent": 55,
             "included_text": "<ul><li>4 clinically formulated 4ml serums to treat your specific skin concerns (valued at $719)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
+          }
+        },
+        "product_EKAAzA": {
+          "type": "product",
+          "settings": {
+            "product": "micro-infusion-3-month-bundle-for-wrinkles",
+            "preselected": false,
+            "heading": "3 Month Supply",
+            "subheading": "(6 Treatments)",
+            "image": "shopify://shop_images/MI_3_month_W.webp",
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 6,
+            "left_items": 456,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55,
+            "included_text": "<ul><li>6 clinically formulated 4ml serums to treat your specific skin concerns (valued at $375)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
           }
         },
         "product_eiY89h": {
@@ -1522,8 +1522,8 @@
         "product_Xf8A6C",
         "type_aJwQ9q",
         "product_type_VLXcAn",
-        "product_EKAAzA",
         "product_nyJ9n7",
+        "product_EKAAzA",
         "product_eiY89h",
         "type_yDwWmt",
         "product_type_YrPQrV",
