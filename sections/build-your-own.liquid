@@ -52,13 +52,22 @@
                             {% if product_variants.size > 1 %}
                                 <div class="select-color" data-text="Select Color:">
                                     {% for variant in product_variants %}
+                                        {% assign option = variant.option1 | handleize %}
                                         <label data-option-value="{{ variant.option1 | handleize }}">
                                             <input type="radio"
                                                 name="variant-{{ product_id }}"
+                                                {% case option %}
+                                                    {% when 'white' %}
+                                                        value="light"
+                                                    {% when 'black' %}
+                                                        value="dark"
+                                                    {% when 'silver' %}
+                                                        value="silver"
+                                                {% endcase %}
                                                 data-value="{{ variant.id }}"
                                                 data-variant-price="{{ variant.price }}"
                                                 data-variant-image="{{ variant.featured_image | img_url: '250x' }}"
-                                                {% if variant.id == product_variant_id %}checked="checked"{% endif %} />
+                                                {% if forloop.index == 1 %}checked="checked"{% endif %} />
                                         </label>
                                     {% endfor %}
                                 </div>
