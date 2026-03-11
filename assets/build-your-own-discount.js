@@ -26,6 +26,12 @@
       if (key.indexOf(PRODUCT_DATA_PREFIX) === 0) {
         var p = data[key];
         products[p.variant_id] = p;
+        if (p.variants) {
+          Object.keys(p.variants).forEach(function(title) {
+            var vid = p.variants[title];
+            if (!products[vid]) products[vid] = p;
+          });
+        }
       }
     });
     return products;
@@ -97,7 +103,22 @@
       var variantId = parseInt(card.dataset.variantId);
       var product = selectedProducts.get(variantId);
 
+      // If not found by current variant, check by handle (variant-switched products)
+      if (!product) {
+        var handle = card.dataset.handle;
+        selectedProducts.forEach(function(p) {
+          if (p.handle === handle) product = p;
+        });
+      }
+
       if (product) {
+        // Restore variant radio selection
+        var radio = card.querySelector('.select-color input[value="' + product.variantId + '"]');
+        if (radio) {
+          radio.checked = true;
+          card.dataset.variantId = String(product.variantId);
+          if (radio.dataset.variantPrice) card.dataset.price = radio.dataset.variantPrice;
+        }
         showQuantityControls(card, product.quantity);
       }
     });
@@ -383,8 +404,13 @@
       });
 
       toRemove.forEach(function(variantId) {
+        var removedProduct = selectedProducts.get(variantId);
         selectedProducts.delete(variantId);
+        // Find cards by variant ID or by handle (for variant-switched products)
         var cards = document.querySelectorAll('[data-byo-product][data-variant-id="' + variantId + '"]');
+        if (cards.length === 0 && removedProduct) {
+          cards = document.querySelectorAll('[data-byo-product][data-handle="' + removedProduct.handle + '"]');
+        }
         cards.forEach(function(card) { hideQuantityControls(card); });
         changed = true;
       });
@@ -422,6 +448,21 @@
       if (addButton) {
         var card = addButton.closest('[data-byo-product]');
         if (card) {
+          // Validate variant selection for products with color selector
+          var colorSelector = card.querySelector('.select-color');
+          if (colorSelector) {
+            var selectedRadio = colorSelector.querySelector('input[type="radio"]:checked');
+            if (!selectedRadio) {
+              colorSelector.classList.add('select-color--error');
+              setTimeout(function() { colorSelector.classList.remove('select-color--error'); }, 2000);
+              return;
+            }
+            card.dataset.variantId = selectedRadio.value;
+            if (selectedRadio.dataset.variantPrice) {
+              card.dataset.price = selectedRadio.dataset.variantPrice;
+            }
+          }
+
           var variantId = parseInt(card.dataset.variantId);
 
           // Already selected — ignore (CDN handles toggle)
@@ -512,6 +553,19 @@
       if (ctaButton && !ctaButton.disabled) {
         e.preventDefault();
         addToCartWithDiscount();
+      }
+    });
+
+    // Variant radio change — update card data attributes
+    document.addEventListener('change', function(e) {
+      var radio = e.target.closest('.select-color input[type="radio"]');
+      if (radio) {
+        var card = radio.closest('[data-byo-product]');
+        if (card) {
+          card.dataset.variantId = radio.value;
+          if (radio.dataset.variantPrice) card.dataset.price = radio.dataset.variantPrice;
+          card.querySelector('.select-color').classList.remove('select-color--error');
+        }
       }
     });
 

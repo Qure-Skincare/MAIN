@@ -49,17 +49,20 @@
                         </h3>
 
                         {% if block.settings.product == 'shower-filter' or block.settings.product == 'faucet-filter' %}
-                            <div class="select-color" data-text="Select Color:">
-                                <label>
-                                    <input type="radio" name="shower-color" value="light" />
-                                </label>
-                                <label>
-                                    <input type="radio" name="shower-color" value="silver" checked="checked" />
-                                </label>
-                                <label>
-                                    <input type="radio" name="shower-color" value="dark" />
-                                </label>
-                            </div>
+                            {% if product_variants.size > 1 %}
+                                <div class="select-color" data-text="Select Color:">
+                                    {% for variant in product_variants %}
+                                        <label data-option-value="{{ variant.option1 | handleize }}">
+                                            <input type="radio"
+                                                name="variant-{{ product_id }}"
+                                                value="{{ variant.id }}"
+                                                data-variant-price="{{ variant.price }}"
+                                                data-variant-image="{{ variant.featured_image | img_url: '250x' }}"
+                                                {% if variant.id == product_variant_id %}checked="checked"{% endif %} />
+                                        </label>
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
                         {% endif %}
 
                         {% if product_sale_price != blank %}

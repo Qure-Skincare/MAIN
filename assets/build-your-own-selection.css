@@ -56,3 +56,17 @@
   opacity: 0.6;
   cursor: not-allowed;
 }
+
+/* Variant selector validation error */
+.select-color--error {
+  animation: shake 0.4s ease;
+  outline: 2px solid #dc3545;
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-6px); }
+  75% { transform: translateX(6px); }
+}
