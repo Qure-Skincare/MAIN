@@ -9,10 +9,8 @@
   var STORAGE_KEY = 'byoBundleSelection';
   var PRODUCT_DATA_PREFIX = 'build-your-own-products-';
   var DISCOUNT_TIERS = {
-    1: { percent: 15, code: 'BYO15' },
-    2: { percent: 20, code: 'BYO20' },
-    3: { percent: 25, code: 'BYO25' },
-    4: { percent: 30, code: 'BYO30' }
+    1: { percent: 20, code: 'BYO20' },
+    2: { percent: 25, code: 'BYO25' }
   };
 
   // State: Map<variantId, { variantId, handle, title, price, image, quantity }>
@@ -68,9 +66,9 @@
         }
       });
 
-      // Max 4 unique products
-      if (selectedProducts.size > 4) {
-        var entries = Array.from(selectedProducts.entries()).slice(0, 4);
+      // Max 2 unique products
+      if (selectedProducts.size > 2) {
+        var entries = Array.from(selectedProducts.entries()).slice(0, 2);
         selectedProducts = new Map(entries);
       }
 
@@ -163,7 +161,7 @@
   function getCurrentTier() {
     var qty = getTotalQuantity();
     if (qty === 0) return null;
-    return DISCOUNT_TIERS[Math.min(qty, 4)];
+    return DISCOUNT_TIERS[Math.min(qty, 2)];
   }
 
   /**
@@ -202,7 +200,7 @@
   function getExpandedProductList() {
     var list = [];
     selectedProducts.forEach(function(p) {
-      for (var i = 0; i < p.quantity && list.length < 4; i++) {
+      for (var i = 0; i < p.quantity && list.length < 2; i++) {
         list.push(p);
       }
     });
@@ -243,7 +241,7 @@
     // Progress line
     var progressFill = document.querySelector('.progress-fill');
     if (progressFill) {
-      progressFill.style.width = (qty > 0 ? (Math.min(qty, 4) / 4) * 100 : 0) + '%';
+      progressFill.style.width = (qty > 0 ? (Math.min(qty, 2) / 2) * 100 : 0) + '%';
     }
 
     // Subtotal
@@ -429,8 +427,8 @@
           // Already selected — ignore (CDN handles toggle)
           if (selectedProducts.has(variantId)) return;
 
-          // Max 4 unique products
-          if (selectedProducts.size >= 4) return;
+          // Max 2 unique products
+          if (selectedProducts.size >= 2) return;
 
           selectedProducts.set(variantId, {
             variantId: variantId,
