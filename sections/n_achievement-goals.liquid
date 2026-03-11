@@ -1,0 +1,160 @@
+{% doc %}
+  Renders a achievement goals section
+{% enddoc %}
+
+<!-- ACHIEVE GOALS -->
+ {% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/achieve-goals/achieve-goals.css" />
+ {% endif %}
+<section class="achieve-goals">
+    <div class="container">
+        {{ section.settings.heading }}
+        <div
+            class="c-swiper c-swiper-thumbs"
+            data-swiper='{
+            "slidesPerView": 1.8,
+            "spaceBetween": 8,
+            "breakpoints": {
+                "992": {
+                    "slidesPerView": 3,
+                    "spaceBetween": 12
+                }
+            }
+        }'>
+            <div class="swiper-wrapper">
+                {% for block in section.blocks %}
+                    {% if block.type == 'image_with_text' %}
+                        <div class="swiper-slide">
+                            {% if block.settings.tab_heading != blank %}
+                                <div class="btn btn--secondary btn--md" type="button">{{ block.settings.tab_heading }}</div>
+                            {% endif %}
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+        <div
+            class="c-swiper"
+            data-swiper-thumbs=".achieve-goals .c-swiper-thumbs"
+            data-swiper='{
+            "slidesPerView": 1,
+            "spaceBetween": 16,
+            "loop": true,
+            "pagination": {
+                "el": ".c-swiper-pagination",
+                "type": "custom"
+            },
+            "navigation": {
+                "prevEl": ".c-swiper-button-prev",
+                "nextEl": ".c-swiper-button-next"
+            }
+        }'>
+        <div class="swiper-wrapper">
+            {% for block in section.blocks %}
+                {% if block.type == 'image_with_text' %}
+                    <div class="swiper-slide">
+                        <div class="c-trusted-review-card c-trusted-review-card--short">
+                            {% if block.settings.image != blank %}
+                                <picture>
+                                    <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                </picture>
+                            {% endif %}
+                            {% if block.settings.flag != blank and block.settings.username != blank %}
+                                <div class="e-author">
+                                    <img src="{{ block.settings.flag | image_url }}" alt="{{ block.settings.flag.alt | escape }}" />
+                                    {{ block.settings.username }}
+                                </div>
+                            {% endif %}
+                            {% if block.settings.badge_text != blank %}
+                                <div class="e-verified-customer">
+                                    <div class="e-checkmark"></div>
+                                    {{ block.settings.badge_text }}
+                                </div>
+                            {% endif %}
+                        </div>
+                        {% if block.settings.text != blank %}
+                            <article>
+                                {{ block.settings.text | replace: '<p>[hr]</p>', '<hr />' }}
+                            </article>
+                        {% endif %}
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+            <div class="c-swiper-nav">
+                <button class="c-swiper-button-prev"></button>
+                <div class="c-swiper-pagination"></div>
+                <button class="c-swiper-button-next"></button>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        loadScriptOnce("swiper", "https://qureskincaredns.com/assets/js-new/swiper.js");
+    });
+</script>
+<!-- ACHIEVE GOALS END -->
+
+{% schema %}
+{
+"name": "t:sections.n_achievement-goals.name",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": false
+        },
+        {
+            "type": "richtext",
+            "id": "heading",
+            "label": "t:common.header"
+        }
+],
+"blocks": [
+    {
+        "type": "image_with_text",
+        "name": "t:common.image-with-text",
+        "settings": [
+            {
+                "type": "text",
+                "id": "tab_heading",
+                "label": "t:common.tab-heading"
+            },
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "t:common.image"
+            },
+            {
+                "type": "image_picker",
+                "id": "flag",
+                "label": "t:common.flag"
+            },
+            {
+                "type": "text",
+                "id": "badge_text",
+                "label": "t:common.badge-text",
+                "default": "Verified"
+            },
+            {
+                "type": "text",
+                "id": "username",
+                "label": "t:common.username"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "t:common.text"
+            }
+        ]
+    }
+],
+"presets": [
+    {
+        "name": "t:sections.n_achievement-goals.name"
+    }
+]
+}
+{% endschema %}

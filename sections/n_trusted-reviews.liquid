@@ -72,6 +72,9 @@
                 <button class="c-swiper-button-next"></button>
             </div>
         </div>
+        {% if section.settings.button_label != blank %}
+            <button class="btn btn--primary" type="button">{{ section.settings.button_label }}</button>
+        {% endif %}
     </div>
 </section>
 <script>
@@ -94,6 +97,11 @@
                 "type": "richtext",
                 "id": "text",
                 "label": "t:common.text"
+            },
+            {
+                "type": "text",
+                "id": "button_label",
+                "label": "t:common.button-label"
             }
     ],
     "blocks": [

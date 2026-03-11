@@ -20,6 +20,8 @@
         "compare-price": "Compare price",
         "discount-price": "Discount price",
         "compare": "Compare",
+        "comparison-table": "Comparison table",
+        "comparison-table-heading": "Comparison table header",
         "show_discount": "Show discount",
         "reviews-videos": "Reviews-videos",
         "money-back": "Money Back",
@@ -239,8 +241,9 @@
         "flag": "Flag",
         "verified-customer": "Verified customer",
         "component": "Component",
-        "dialog": "Dialog"
-
+        "dialog": "Dialog",
+        "cross": "Cross",
+        "checkmark": "Checkmark"
     },
     "blocks": {
         "block-card": {
@@ -413,6 +416,9 @@
                 }
             }
         },
+        "n_comparison-table": {
+            "name": "Comparison table"
+        },
         "n_faq": {
             "name": "FAQ"
         },
@@ -464,6 +470,26 @@
         },
         "n_how-to-use": {
             "name": "How to use"
+        },
+        "n_achievement-goals": {
+            "name": "Achievement goals slider"
+        },
+        "n_mi-new": {
+            "name": "MI New"
+        },
+        "n_why-using": {
+            "name": "Why using",
+            "blocks": {
+                "image_with_text": {
+                    "settings": {
+                        "save-money": "Save money",
+                        "mi-quick": "MI quick",
+                        "mi-painless": "MI painless",
+                        "mi-seamless": "MI seamless",
+                        "perfect-transforming": "Perfect transforming"
+                    }
+                }
+            }
         },
         "collection": {
             "name": "Collection",

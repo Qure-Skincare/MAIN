@@ -48,7 +48,10 @@
 
             {% if section.settings.text != blank %}
                 <div>
-                    {{ section.settings.text | replace: '<p>[note_green]', '<div class="c-note">' | replace: '[/note]</p>', '</div>' }}
+                    {{ section.settings.text 
+                    | replace: '<p>[note_green]', '<div class="c-note">' 
+                    | replace: '[/note]</p>', '</div>' 
+                    | replace: '<p>[step]</p><ul>', '<ul class="e-steps-list">'}}
                 </div>
             {% endif %}
 
@@ -86,142 +89,142 @@
 
 {% schema %}
 {
-    "name": "t:sections.n_base-section.name",
+"name": "t:sections.n_base-section.name",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": false
+        },
+        {
+            "type": "select",
+            "id": "modifier",
+            "label": "t:common.modifier",
+            "default": "none",
+            "options": [
+                {
+                    "value": "none",
+                    "label": "t:common.none"
+                },
+                {
+                    "value": "reverse",
+                    "label": "t:sections.n_base-section.settings.modifier-options.reverse"
+                }
+            ]
+        },
+        {
+            "type": "select",
+            "id": "background_color",
+            "label": "t:common.background-color",
+            "default": "none",
+            "options": [
+                {
+                    "value": "none",
+                    "label": "t:sections.n_base-section.settings.background-color-options.none"
+                },
+                {
+                    "value": "grey",
+                    "label": "t:sections.n_base-section.settings.background-color-options.grey"
+                }
+            ]
+        },
+        {
+            "type": "richtext",
+            "id": "heading",
+            "label": "t:common.header"
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "t:common.text"
+        },
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "t:common.image"
+        },
+        {
+            "type": "text",
+            "id": "button_label",
+            "label": "t:common.button-label"
+        },
+        {
+            "type": "url",
+            "id": "button_url",
+            "label": "t:common.button-url"
+        },
+        {
+            "type": "text",
+            "id": "wistia_url",
+            "label": "t:common.wistia-url"
+        }
+],
+"blocks": [
+    {
+        "type": "image_with_text",
+        "name": "t:common.image-with-text",
         "settings": [
             {
-                "type": "checkbox",
-                "id": "use_own_file",
-                "label": "t:common.use-own-file",
-                "default": false
-            },
-            {
                 "type": "select",
-                "id": "modifier",
-                "label": "t:common.modifier",
-                "default": "none",
+                "id": "select",
+                "label": "t:common.select",
                 "options": [
                     {
-                        "value": "none",
-                        "label": "t:common.none"
+                        "value": "limescale",
+                        "label": "t:sections.n_base-section.blocks.image_with_text.settings.limescale"
                     },
                     {
-                        "value": "reverse",
-                        "label": "t:sections.n_base-section.settings.modifier-options.reverse"
+                        "value": "heavy-metals",
+                        "label": "t:sections.n_base-section.blocks.image_with_text.settings.heavy-metals"
+                    },
+                    {
+                        "value": "chlorine",
+                        "label": "t:sections.n_base-section.blocks.image_with_text.settings.chlorine"
+                    },
+                    {
+                        "value": "micro-plastics",
+                        "label": "t:sections.n_base-section.blocks.image_with_text.settings.micro-plastics"
+                    },
+                    {
+                        "value": "copper",
+                        "label": "t:sections.n_base-section.blocks.image_with_text.settings.copper"
+                    },
+                    {
+                        "value": "micro-organisms",
+                        "label": "t:sections.n_base-section.blocks.image_with_text.settings.micro-organisms"
                     }
                 ]
             },
             {
-                "type": "select",
-                "id": "background_color",
-                "label": "t:common.background-color",
-                "default": "none",
-                "options": [
-                    {
-                        "value": "none",
-                        "label": "t:sections.n_base-section.settings.background-color-options.none"
-                    },
-                    {
-                        "value": "grey",
-                        "label": "t:sections.n_base-section.settings.background-color-options.grey"
-                    }
-                ]
-            },
-            {
-                "type": "richtext",
-                "id": "heading",
-                "label": "t:common.header"
-            },
-            {
-                "type": "richtext",
+                "type": "text",
                 "id": "text",
                 "label": "t:common.text"
-            },
-            {
-                "type": "image_picker",
-                "id": "image",
-                "label": "t:common.image"
-            },
+            }
+        ]
+    },
+    {
+        "type": "dialog",
+        "name": "t:common.dialog",
+        "limit": 1,
+        "settings": [
             {
                 "type": "text",
                 "id": "button_label",
                 "label": "t:common.button-label"
             },
             {
-                "type": "url",
-                "id": "button_url",
-                "label": "t:common.button-url"
-            },
-            {
-                "type": "text",
-                "id": "wistia_url",
-                "label": "t:common.wistia-url"
+                "type": "richtext",
+                "id": "text",
+                "label": "t:common.text"
             }
-    ],
-    "blocks": [
-        {
-            "type": "image_with_text",
-            "name": "t:common.image-with-text",
-            "settings": [
-                {
-                    "type": "select",
-                    "id": "select",
-                    "label": "t:common.select",
-                    "options": [
-                        {
-                            "value": "limescale",
-                            "label": "t:sections.n_base-section.blocks.image_with_text.settings.limescale"
-                        },
-                        {
-                            "value": "heavy-metals",
-                            "label": "t:sections.n_base-section.blocks.image_with_text.settings.heavy-metals"
-                        },
-                        {
-                            "value": "chlorine",
-                            "label": "t:sections.n_base-section.blocks.image_with_text.settings.chlorine"
-                        },
-                        {
-                            "value": "micro-plastics",
-                            "label": "t:sections.n_base-section.blocks.image_with_text.settings.micro-plastics"
-                        },
-                        {
-                            "value": "copper",
-                            "label": "t:sections.n_base-section.blocks.image_with_text.settings.copper"
-                        },
-                        {
-                            "value": "micro-organisms",
-                            "label": "t:sections.n_base-section.blocks.image_with_text.settings.micro-organisms"
-                        }
-                    ]
-                },
-                {
-                    "type": "text",
-                    "id": "text",
-                    "label": "t:common.text"
-                }
-            ]
-        },
-        {
-            "type": "dialog",
-            "name": "t:common.dialog",
-            "limit": 1,
-            "settings": [
-                {
-                    "type": "text",
-                    "id": "button_label",
-                    "label": "t:common.button-label"
-                },
-                {
-                    "type": "richtext",
-                    "id": "text",
-                    "label": "t:common.text"
-                }
-            ]
-        }
-    ],
-    "presets": [
-        {
-            "name": "t:sections.n_base-section.name"
-        }
-    ]
+        ]
+    }
+],
+"presets": [
+    {
+        "name": "t:sections.n_base-section.name"
+    }
+]
 }
 {% endschema %}
