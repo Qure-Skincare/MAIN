@@ -12,22 +12,9 @@
     "main": {
       "type": "page",
       "settings": {}
-    },
-    "page_header_7eheLM": {
-      "type": "page-header",
-      "name": "t:sections.page-header.name",
-      "settings": {
-        "rating": "<p><strong>4.8</strong>/5 Rated by Customers</p>",
-        "rating-url": "",
-        "heading": "",
-        "description": "",
-        "button-label": "",
-        "button-url": ""
-      }
     }
   },
   "order": [
-    "main",
-    "page_header_7eheLM"
+    "main"
   ]
 }
