@@ -118,6 +118,7 @@
           radio.checked = true;
           card.dataset.variantId = String(product.variantId);
           if (radio.dataset.variantPrice) card.dataset.price = radio.dataset.variantPrice;
+          if (radio.dataset.variantImage) product.image = radio.dataset.variantImage;
         }
         showQuantityControls(card, product.quantity);
       }
@@ -479,12 +480,18 @@
           // Max 2 unique products
           if (selectedProducts.size >= 2) return;
 
+          var image = card.dataset.image;
+          var selectedRadio = card.querySelector('.select-color input[type="radio"]:checked');
+          if (selectedRadio && selectedRadio.dataset.variantImage) {
+            image = selectedRadio.dataset.variantImage;
+          }
+
           selectedProducts.set(variantId, {
             variantId: variantId,
             handle: card.dataset.handle,
             title: card.dataset.title,
             price: parseFloat(card.dataset.price) || 0,
-            image: card.dataset.image,
+            image: image,
             quantity: 1
           });
 
