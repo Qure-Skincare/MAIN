@@ -49,7 +49,7 @@
                                         </form>
                                     </div>
                                     <form id="static_{{ cart_item_id }}_remove" method="post" action="/cart/change" enctype="multipart/form-data" class="text-center">
-                                        <button type="submit">{{ 'cart.static.settings.remove' | t }}</button>
+                                        <button type="submit" class="btn-remove">{{ 'cart.static.settings.remove' | t }}</button>
                                         <input type="hidden" name="quantity" value="0">
                                         <input type="hidden" name="id" value="{{ cart_item_key }}">
                                     </form>
