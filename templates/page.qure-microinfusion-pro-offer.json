@@ -499,10 +499,9 @@
         "button_label": "buy now & SAVE up to 70%"
       }
     },
-    "n_treatment_static": {
+    "n_treatment_static_xyz": {
       "type": "n_treatment-static",
-      "settings": {
-      }
+      "settings": {}
     },
     "n_mi_new_48dffw": {
       "type": "n_mi-new",
@@ -700,7 +699,7 @@
     "n_trusted_reviews_ALTmPW",
     "n_comparison_table_Kjf3QH",
     "n_easy_steps_qgni9T",
-    "purchase_form_PwCCh6",
+    "n_treatment_static_xyz",
     "n_mi_new_48dffw",
     "n_why_using_LdrKDL",
     "n_faq_iRf3ki"
