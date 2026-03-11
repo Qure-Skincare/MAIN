@@ -243,7 +243,9 @@
         "component": "Component",
         "dialog": "Dialog",
         "cross": "Cross",
-        "checkmark": "Checkmark"
+        "checkmark": "Checkmark",
+        "light": "Light",
+        "grey": "Grey"
     },
     "blocks": {
         "block-card": {
@@ -308,17 +310,7 @@
             }
         },
         "n_trusted-recommended": {
-            "name": "Trusted recommended",
-            "settings": {
-                "background-color-options": {
-                    "none": "None",
-                    "grey": "Grey"
-                },
-                "modifier-options": {
-                    "none": "None",
-                    "reverse": "Reverse"
-                }
-            }
+            "name": "Trusted recommended"
         },
         "n_video-slider": {
             "name": "Video slider"
@@ -426,7 +418,13 @@
             "name": "Progress metrics"
         },
         "n_trusted-reviews": {
-            "name": "Trusted reviews"
+            "name": "Trusted reviews",
+            "settings": {
+                "background-color-options": {
+                    "light": "Light",
+                    "grey": "Grey"
+                }
+            }
         },
         "n_why-it-works": {
             "name": "Why it works",

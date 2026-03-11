@@ -5,7 +5,7 @@
 {% if section.settings.use_own_file %}
     <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/trusted-reviews/trusted-reviews.css" />
 {% endif %}
-<section class="trusted-reviews">
+<section class="trusted-reviews {% if section.settings.background_color != 'none' %}trusted-reviews--{{ section.settings.background_color }}{% endif %}">
     <div class="container">
         {{ section.settings.text }}
         <div
@@ -92,6 +92,22 @@
                 "id": "use_own_file",
                 "label": "t:common.use-own-file",
                 "default": false
+            },
+            {
+                "type": "select",
+                "id": "background_color",
+                "label": "t:common.background-color",
+                "default": "none",
+                "options": [
+                    {
+                        "value": "none",
+                        "label": "t:common.none"
+                    },
+                    {
+                        "value": "light",
+                        "label": "t:common.light"
+                    }
+                ]
             },
             {
                 "type": "richtext",
