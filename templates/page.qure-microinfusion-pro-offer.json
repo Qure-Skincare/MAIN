@@ -763,11 +763,6 @@
         "form_name": "purchase-form-second"
       }
     },
-    "n_treatment_static_xyz": {
-      "disabled": true,
-      "type": "n_treatment-static",
-      "settings": {}
-    },
     "n_mi_new_48dffw": {
       "type": "n_mi-new",
       "blocks": {
@@ -965,7 +960,6 @@
     "n_comparison_table_Kjf3QH",
     "n_easy_steps_qgni9T",
     "purchase_form_Lj9cVS",
-    "n_treatment_static_xyz",
     "n_mi_new_48dffw",
     "n_why_using_LdrKDL",
     "n_faq_iRf3ki"
