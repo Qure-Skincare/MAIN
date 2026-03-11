@@ -20,6 +20,8 @@
         "compare-price": "Compare price",
         "discount-price": "Discount price",
         "compare": "Compare",
+        "comparison-table": "Comparison table",
+        "comparison-table-heading": "Comparison table header",
         "show_discount": "Show discount",
         "reviews-videos": "Reviews-videos",
         "money-back": "Money Back",
@@ -239,8 +241,11 @@
         "flag": "Flag",
         "verified-customer": "Verified customer",
         "component": "Component",
-        "dialog": "Dialog"
-
+        "dialog": "Dialog",
+        "cross": "Cross",
+        "checkmark": "Checkmark",
+        "light": "Light",
+        "grey": "Grey"
     },
     "blocks": {
         "block-card": {
@@ -305,17 +310,7 @@
             }
         },
         "n_trusted-recommended": {
-            "name": "Trusted recommended",
-            "settings": {
-                "background-color-options": {
-                    "none": "None",
-                    "grey": "Grey"
-                },
-                "modifier-options": {
-                    "none": "None",
-                    "reverse": "Reverse"
-                }
-            }
+            "name": "Trusted recommended"
         },
         "n_video-slider": {
             "name": "Video slider"
@@ -413,6 +408,9 @@
                 }
             }
         },
+        "n_comparison-table": {
+            "name": "Comparison table"
+        },
         "n_faq": {
             "name": "FAQ"
         },
@@ -420,7 +418,13 @@
             "name": "Progress metrics"
         },
         "n_trusted-reviews": {
-            "name": "Trusted reviews"
+            "name": "Trusted reviews",
+            "settings": {
+                "background-color-options": {
+                    "light": "Light",
+                    "grey": "Grey"
+                }
+            }
         },
         "n_why-it-works": {
             "name": "Why it works",
@@ -464,6 +468,26 @@
         },
         "n_how-to-use": {
             "name": "How to use"
+        },
+        "n_achievement-goals": {
+            "name": "Achievement goals slider"
+        },
+        "n_mi-new": {
+            "name": "MI New"
+        },
+        "n_why-using": {
+            "name": "Why using",
+            "blocks": {
+                "image_with_text": {
+                    "settings": {
+                        "save-money": "Save money",
+                        "mi-quick": "MI quick",
+                        "mi-painless": "MI painless",
+                        "mi-seamless": "MI seamless",
+                        "perfect-transforming": "Perfect transforming"
+                    }
+                }
+            }
         },
         "collection": {
             "name": "Collection",

@@ -20,6 +20,12 @@
     },
     "israel": {
       "parent": "@default"
+    },
+    "united-kingdom": {
+      "parent": "@default"
+    },
+    "germany": {
+      "parent": "@default"
     }
   }
 }

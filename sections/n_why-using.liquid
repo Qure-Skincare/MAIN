@@ -1,0 +1,98 @@
+{% doc %}
+  Renders a Why Using section.
+{% enddoc %}
+
+<!-- WHY USING -->
+ {% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/why-using/why-using.css" />
+ {% endif %}
+<section class="why-using">
+    <div class="container">
+        <article>
+            {{ section.settings.text }}
+            <ul>
+                {% for block in section.blocks %}
+                    {% if block.type == 'image_with_text' %}
+                        <li>
+                            <i class="e-icon e-icon-{{ block.settings.icon }}"></i>
+                            {{ block.settings.text }}
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            {% if section.settings.button_label != blank %}
+                <button class="btn btn--primary" type="button">{{ section.settings.button_label }}</button>
+            {% endif %}
+        </article>
+    </div>
+</section>
+<!-- WHY USING END -->
+
+{% schema %}
+{
+"name": "t:sections.n_why-using.name",
+"settings": [
+    {
+        "type": "checkbox",
+        "id": "use_own_file",
+        "label": "t:common.use-own-file",
+        "default": false
+    },
+    {
+        "type": "richtext",
+        "id": "text",
+        "label": "t:common.text"
+    },
+    {
+        "type": "text",
+        "id": "button_label",
+        "label": "t:common.button-label"
+    }
+],
+"blocks": [
+    {
+        "type": "image_with_text",
+        "name": "t:common.image-with-text",
+        "settings": [
+            {
+                "type": "select",
+                "id": "icon",
+                "label": "t:common.icon",
+                "options": [
+                    {
+                        "value": "save-money",
+                        "label": "t:sections.n_why-using.blocks.image_with_text.settings.save-money"
+                    },
+                    {
+                        "value": "mi-quick",
+                        "label": "t:sections.n_why-using.blocks.image_with_text.settings.mi-quick"
+                    },
+                    {
+                        "value": "mi-painless",
+                        "label": "t:sections.n_why-using.blocks.image_with_text.settings.mi-painless"
+                    },
+                    {
+                        "value": "mi-seamless",
+                        "label": "t:sections.n_why-using.blocks.image_with_text.settings.mi-seamless"
+                    },
+                    {
+                        "value": "perfect-transforming",
+                        "label": "t:sections.n_why-using.blocks.image_with_text.settings.perfect-transforming"
+                    }
+                ]
+            },
+            {
+                "type": "text",
+                "id": "text",
+                "label": "t:common.text"
+            }
+        ]
+    }
+],
+"presets": [
+    {
+        "name": "t:sections.n_why-using.name"
+    }
+]
+}
+{% endschema %}

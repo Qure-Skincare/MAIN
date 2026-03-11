@@ -1,0 +1,224 @@
+{% doc %}
+  Renders a trusted reviews section
+{% enddoc %}
+
+<!-- COMPARISON TABLE -->
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/comparison-table/comparison-table.css" />
+{% endif %}
+<section class="comparison-table">
+    <div class="container">
+        {{ section.settings.heading }}
+        <div class="comparison-table__content">
+            <ul>
+                {% for block in section.blocks %}
+                    {% if block.type == 'comparison_table_heading' %}
+                        {% if block.settings.heading != blank %}
+                            <li>{{ block.settings.heading }}</li>
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <div
+                class="c-swiper"
+                data-swiper='{
+                "slidesPerView": 1,
+                "spaceBetween": 0,
+                "loop": true,
+                "pagination": {
+                    "el": ".comparison-table .c-swiper-pagination",
+                    "type": "custom"
+                },
+                "navigation": {
+                    "prevEl": ".comparison-table .c-swiper-button-prev",
+                    "nextEl": ".comparison-table .c-swiper-button-next"
+                },
+                "breakpoints": {
+                    "768": {
+                        "slidesPerView": 2
+                    },
+                    "1200": {
+                        "slidesPerView": 3
+                    }
+                }
+            }'>
+                <div class="swiper-wrapper">
+                    {% for block in section.blocks %}
+                        {% if block.type == 'comparison_table' %}
+                            <div class="swiper-slide">
+                                <article>
+                                    {% if block.settings.image != blank %}
+                                        <picture>
+                                            <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                        </picture>
+                                    {% endif %}
+
+                                    {{ section.settings.heading }}
+
+                                    <ul>
+                                        {% if block.settings.text_1 != blank %}
+                                            <li><i class="e-icon e-icon-{{ block.settings.select_1 }}-fill"></i> <span>{{ block.settings.text_1 }}</span></li>
+                                        {% endif %}
+                                        {% if block.settings.text_2 != blank %}
+                                            <li><i class="e-icon e-icon-{{ block.settings.select_2 }}-fill"></i> <span>{{ block.settings.text_2 }}</span></li>
+                                        {% endif %}
+                                        {% if block.settings.text_3 != blank %}
+                                            <li><i class="e-icon e-icon-{{ block.settings.select_3 }}-fill"></i> <span>{{ block.settings.text_3 }}</span></li>
+                                        {% endif %}
+                                        {% if block.settings.text_4 != blank %}
+                                            <li><i class="e-icon e-icon-{{ block.settings.select_4 }}-fill"></i> <span>{{ block.settings.text_4 }}</span></li>
+                                        {% endif %}
+                                    </ul>
+                                </article>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <div class="c-swiper-nav">
+            <button class="c-swiper-button-prev"></button>
+            <div class="c-swiper-pagination"></div>
+            <button class="c-swiper-button-next"></button>
+        </div>
+    </div>
+</section>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        loadScriptOnce("swiper", "https://qureskincaredns.com/assets/js/swiper.js");
+    });
+</script>
+<!-- COMPARISON TABLE END -->
+
+{% schema %}
+{
+"name": "t:sections.n_comparison-table.name",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": false
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "t:common.text"
+        }
+],
+"blocks": [
+    {
+        "type": "comparison_table_heading",
+        "name": "t:common.comparison-table-heading",
+        "settings": [
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "t:common.header"
+            }
+        ]
+    },
+    {
+        "type": "comparison_table",
+        "name": "t:common.comparison-table",
+        "settings": [
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "t:common.image"
+            },
+            {
+                "type": "richtext",
+                "id": "heading",
+                "label": "t:common.header"
+            },
+            {
+                "type": "text",
+                "id": "text_1",
+                "label": "t:common.text"
+            },
+            {
+                "type": "select",
+                "id": "select_1",
+                "label": "t:common.select",
+                "options": [
+                    {
+                        "value": "checkmark",
+                        "label": "t:common.checkmark"
+                    },
+                    {
+                        "value": "cross",
+                        "label": "t:common.cross"
+                    }
+                ]
+            },
+            {
+                "type": "text",
+                "id": "text_2",
+                "label": "t:common.text"
+            },
+            {
+                "type": "select",
+                "id": "select_2",
+                "label": "t:common.select",
+                "options": [
+                    {
+                        "value": "checkmark",
+                        "label": "t:common.checkmark"
+                    },
+                    {
+                        "value": "cross",
+                        "label": "t:common.cross"
+                    }
+                ]
+            },
+            {
+                "type": "text",
+                "id": "text_3",
+                "label": "t:common.text"
+            },
+            {
+                "type": "select",
+                "id": "select_3",
+                "label": "t:common.select",
+                "options": [
+                    {
+                        "value": "checkmark",
+                        "label": "t:common.checkmark"
+                    },
+                    {
+                        "value": "cross",
+                        "label": "t:common.cross"
+                    }
+                ]
+            },
+            {
+                "type": "text",
+                "id": "text_4",
+                "label": "t:common.text"
+            },
+            {
+                "type": "select",
+                "id": "select_4",
+                "label": "t:common.select",
+                "options": [
+                    {
+                        "value": "checkmark",
+                        "label": "t:common.checkmark"
+                    },
+                    {
+                        "value": "cross",
+                        "label": "t:common.cross"
+                    }
+                ]
+            }
+        ]
+    }
+],
+"presets": [
+    {
+        "name": "t:sections.n_comparison-table.name"
+    }
+]
+}
+{% endschema %}

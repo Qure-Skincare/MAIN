@@ -9,12 +9,700 @@
  */
 {
   "sections": {
-    "main": {
-      "type": "page",
+    "n_hero_section_4c7XgD": {
+      "type": "n_hero-section",
+      "blocks": {
+        "approved_by_8xTYbL": {
+          "type": "approved-by",
+          "settings": {
+            "image": "shopify://shop_images/approved-by-1.webp",
+            "text": ""
+          }
+        },
+        "approved_by_CgFwPf": {
+          "type": "approved-by",
+          "settings": {
+            "image": "shopify://shop_images/approved-by-2.webp",
+            "text": "<p>Approved by <strong>Dr. Shah</strong> & <strong>Dr. Maxfield</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "approved_by_8xTYbL",
+        "approved_by_CgFwPf"
+      ],
+      "name": "t:sections.n_hero-section.name",
+      "settings": {
+        "use_own_file": true,
+        "text": "<h1>Visibly reduce the appearance of wrinkles and dark spots - without injectables.</h1><p><strong>24K gold microneedles</strong> deliver <strong>targeted serums</strong> beyond your skin's barrier where traditional creams can't reach.</p>",
+        "image": "shopify://shop_images/micro-infusion-pro-hero.webp",
+        "image_mobile": "shopify://shop_images/micro-infusion-pro-hero-mob.webp",
+        "button_url": "#buy_box",
+        "button_label": "Start your transformation",
+        "sub_text": "<p><strong>Limited Time Offer:</strong> Save Up to 70%</p>",
+        "marked_list": "",
+        "wistia_url": ""
+      }
+    },
+    "n_expert_board_mhw3pU": {
+      "type": "n_expert-board",
+      "blocks": {
+        "slider_GUEWQ6": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>Dr.Shah <br /> Board Certified Dermatologist</p>",
+            "text": "<p>“This treatment is an at-home option for those who want to avoid the hassle or cost of going to the office.”</p>",
+            "image": "shopify://shop_images/shah.webp"
+          }
+        },
+        "slider_JPz38A": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>Dr. Maxfield <br /> Board Certified Dermatologist</p>",
+            "text": "<p>“Qure do studies on this, taking a look at how effective it is, so you can have confidence it’s going to help what you’re doing for your skincare routine.”</p>",
+            "image": "shopify://shop_images/maxfield.webp"
+          }
+        },
+        "slider_WiXPmU": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>Dr. Tripathi <br /> Double Board Certified Facial Plastic Surgeon</p>",
+            "text": "<p>“I love that Qure Skincare products go beyond just topical treatments, helping to maintain the results of in-office procedures.”</p>",
+            "image": "shopify://shop_images/tripathi.webp"
+          }
+        },
+        "slider_zLah4t": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>Dr. Stephens <br /> Board Certified Dermatologist</p>",
+            "text": "<p>“The Qure Micro-Infusion stamping device offers a safe and effective solution for a variety of different skin conditions.”</p>",
+            "image": "shopify://shop_images/stephens.webp"
+          }
+        }
+      },
+      "block_order": [
+        "slider_GUEWQ6",
+        "slider_JPz38A",
+        "slider_WiXPmU",
+        "slider_zLah4t"
+      ],
+      "name": "t:sections.n_expert-board.name",
+      "settings": {
+        "use_own_file": true,
+        "heading": "<h2>Trusted and Recommended by Skin Experts</h2>",
+        "text": ""
+      }
+    },
+    "n_base_section_a9gtbj": {
+      "type": "n_base-section",
+      "name": "t:sections.n_base-section.name",
+      "settings": {
+        "use_own_file": true,
+        "modifier": "none",
+        "background_color": "none",
+        "heading": "<h2>Qure’s Micro-Infusion goes where your skin cream can’t…</h2>",
+        "text": "<p>The patent-pending system uses tiny, almost painless, microneedles penetrate beyond the skin’s surface increasing serum absorption and delivering powerful active ingredients exactly where they’re needed!</p><p><strong>How Qure refreshes your skin in 3 easy steps:</strong></p><p>[step]</p><ul><li><strong>Stamp</strong>Patented 24k gold needles create micro-channels.</li><li><strong>Infuse</strong>Clinically formulated serum flows directly into the dermis, not on top of it.</li><li><strong>Renews</strong>Helps skin look refreshed and visibly renewed.</li></ul>",
+        "button_label": "",
+        "button_url": "",
+        "wistia_url": "a1pykz2tp0"
+      }
+    },
+    "n_achievement_goals_Tqcedk": {
+      "type": "n_achievement-goals",
+      "blocks": {
+        "image_with_text_3d9AtR": {
+          "type": "image_with_text",
+          "settings": {
+            "tab_heading": "Minimize Fine Lines",
+            "image": "shopify://shop_images/tami.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "badge_text": "Verified",
+            "username": "Kim L.",
+            "text": "<h3>Minimize Fine Lines and Wrinkles</h3><p>Smooth, plump, and refresh your skin’s appearance from within. Qure’s Micro-Infusion helps improve the look of collagen-depleted skin, restores hydration, and supports the skin’s natural barrier — all in one step.</p><p>[hr]</p><ul><li>Deeply hydrates to leave skin dewy and plump</li><li>Visibly softens fine lines for a smoother, more youthful look</li><li>Strengthens the skin barrier to support long-lasting firmness</li></ul>"
+          }
+        },
+        "image_with_text_7wz3Pq": {
+          "type": "image_with_text",
+          "settings": {
+            "tab_heading": "Improve Tone and Texture",
+            "image": "shopify://shop_images/monika.webp",
+            "flag": "shopify://shop_images/australia_f.webp",
+            "badge_text": "Verified",
+            "username": "Monika J.",
+            "text": "<h3>Improve Tone and Texture</h3><p>Gentle microneedling device boosts cell turnover and delivers brightening ingredients deep into the skin to visibly smooth, clarify, and even out tone.</p><p>[hr]</p><ul><li>Refines rough texture by promoting skin renewal</li><li>Fades dark spots and post-acne marks for a more even tone</li><li>Helps minimize the look of pores for a smoother, clearer complexion</li></ul>"
+          }
+        },
+        "image_with_text_ejWnWz": {
+          "type": "image_with_text",
+          "settings": {
+            "tab_heading": "Boost Glow and Radiance",
+            "image": "shopify://shop_images/ellie_6_treatments.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "badge_text": "Verified",
+            "username": "Ellie V.",
+            "text": "<h3>Boost Glow and Radiance</h3><p>Restore skin glow by infusing hydrating, brightening ingredients deep into the skin for a fresh, radiant finish that lasts.</p><p>[hr]</p><ul><li>Brightens dull skin for a healthy, radiant complexion</li><li>Enhances serum absorption for more visible results</li><li>Leaves skin looking firmer, smoother, and refreshed</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_3d9AtR",
+        "image_with_text_7wz3Pq",
+        "image_with_text_ejWnWz"
+      ],
+      "name": "t:sections.n_achievement-goals.name",
+      "settings": {
+        "use_own_file": true,
+        "heading": "<h2>The results are crystal clear</h2>"
+      }
+    },
+    "n_video_slider_Dip3aR": {
+      "type": "n_video-slider",
+      "blocks": {
+        "slider_gPmiWg": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>\"I like using this between my in-office treatments and it's easy to use, even for beginners.\"</p>",
+            "text": "<p>Dr. Alekandra Brown</p><p>[checkmark] Board-Certified Dermatologist</p>",
+            "youtube_url": false,
+            "video_url": "rehxqby0fq",
+            "image": "shopify://shop_images/home-trusted_img_1.webp"
+          }
+        },
+        "slider_4tVKJG": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>\"After just a few uses my wrinkles look less visible and my skin brighter and smoother.\"</p>",
+            "text": "<p>Dr. Lindsey Zubritsky</p><p>[checkmark] Board-Certified Dermatologist</p>",
+            "youtube_url": false,
+            "video_url": "ug1o3j3d8w",
+            "image": "shopify://shop_images/trusted_img_5.webp"
+          }
+        },
+        "slider_heTNad": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>\"You can get a clinical treatment at home safely and conveniently... and it's particularly beneficial for those with melanin-rich skin\"</p>",
+            "text": "<p>Dr. Alexis Stephens</p><p>[checkmark] Internal Medicine Doctor</p>",
+            "youtube_url": false,
+            "video_url": "wbf95ywhx4",
+            "image": "shopify://shop_images/trusted_img_6.webp"
+          }
+        },
+        "slider_gwVt9z": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>\"With Qure's Micro-Infusion System - consistency is key.\"</p>",
+            "text": "<p>Dr. Prem Tripati</p><p>[checkmark] Facial Plastic Surgeon</p>",
+            "youtube_url": false,
+            "video_url": "gzba345nd4",
+            "image": "shopify://shop_images/trusted_img_9.webp"
+          }
+        },
+        "slider_fqweE1": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>\"One of the best ways to treat hyperpigmentation at home.\"</p>",
+            "text": "<p>Dr. Wallace Nozile</p><p>[checkmark] Board-Certified Dermatologist</p>",
+            "youtube_url": false,
+            "video_url": "ypvcdsgwkx",
+            "image": "shopify://shop_images/trusted_img_8.webp"
+          }
+        },
+        "slider_fqsE21": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>\"With Micro-Infusion, you get to see the results almost instantly.\"</p>",
+            "text": "<p>Dr. Davin Lim</p><p>[checkmark] Board-Certified Dermatologist</p>",
+            "youtube_url": false,
+            "video_url": "3bud7no0j9",
+            "image": "shopify://shop_images/trusted_img_7.webp"
+          }
+        }
+      },
+      "block_order": [
+        "slider_gPmiWg",
+        "slider_4tVKJG",
+        "slider_heTNad",
+        "slider_gwVt9z",
+        "slider_fqweE1",
+        "slider_fqsE21"
+      ],
+      "name": "t:sections.n_video-slider.name",
+      "settings": {
+        "use_own_file": true,
+        "modifier": "three_cards",
+        "text": ""
+      }
+    },
+    "n_trusted_reviews_ALTmPW": {
+      "type": "n_trusted-reviews",
+      "blocks": {
+        "slider_8iLrfN": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/ellie_6_treatments.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Kim L.",
+            "verified_customer": "Verified customer",
+            "text": "<h6>My skin returned to life!</h6><p>“I just turned 57 years. My skin was extremely dry and while using this product my skin RETURNED to LIFE! I am so impressed with it! My Coworkers ask me what I use in my skin.. and I tell them. Product easy to use and the needles are better that using a pen for microneedling. This is an amazing product that you will not regret in purchasing it. I really see the change in my skin. Outstanding job QURE!”</p>"
+          }
+        },
+        "slider_J6UPA6": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/mona-p.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Mona P.",
+            "verified_customer": "Verified customer",
+            "text": "<h6>Fade after just two treatments</h6><p>“I personally think my products absorbed better, my skin looks a bit brighter and that larger acne scar on my right cheek has started to fade after just TWO treatments!”</p>"
+          }
+        },
+        "slider_cAjTXb": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/andrea.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Andrea G.",
+            "verified_customer": "Verified customer",
+            "text": "<h6>Definitely be re-ordering</h6><p>“Still a newbie but so far so great! I have dermarolled for more than a decade -still do with .25 at least one a week. I’ve avoided getting a pen because there’s so much involved- but the Qure system is just awesome. So easy and user friendly and my skin loves the serum! Doing my third treatment Saturday and will definitely be re-ordering 🤗</p>"
+          }
+        },
+        "slider_nTt9BF": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/jessica-k.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Jessica K.",
+            "verified_customer": "Verified customer",
+            "text": "<h6>Thrilled with the results!</h6><p>\"I have been using the mask & microneedling for 6 weeks & am truly impressed with the results. I have noticed a dramatic reduction in redness, an improvement in my dark spots, scars & overall skin tone & firmness, and a smoothing of fine lines & wrinkles.\"</p>"
+          }
+        },
+        "slider_Rnyj49": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/ela-o.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Ela O.",
+            "verified_customer": "Verified customer",
+            "text": "<h6>Shocked at the results</h6><p>“Shocked at the results after just one treatment! I’m not one to usually leave reviews... but I was shocked at how my skin looked the morning after my first treatment! Texture was soooo much smoother, my skin looked clear, glowy and healthy. The system was so easy to use and I can’t wait until my next treatment.”</p>"
+          }
+        },
+        "slider_Q9qKwL": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/shelly.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Shelly S.",
+            "verified_customer": "Verified customer",
+            "text": "<h6>Looking better and better</h6><p>“I have used the Qure Micro- Infusion System for 3 monthly treatments. The results are clearer, plumper and firmer skin. With further treatments I am looking forward to looking better and better.”</p>"
+          }
+        },
+        "slider_iTCha7": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/chelsea.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Chelsea J.",
+            "verified_customer": "Verified customer",
+            "text": "<h6>Amazing results!</h6><p>\"Amazing results. I am just in shock at how great my skin is looking. This stuff has been amazing for hyperpigmentation and also some hormonal cystic acne. I will be continuing to support this business because it has brought the skin I know back. I was at my wits end with a hormonal breakout and bad hyperpigmentation.\"</p>"
+          }
+        },
+        "slider_GmAA3f": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/akina.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Akina M.",
+            "verified_customer": "Verified customer",
+            "text": "<h6>It really works!!</h6><p>“I used three time so far. I can see the results from first time I used. I love this product but only thing is it’s take time to apply till used all serum per application. I tried many different way to press to my skin so the serum come out more but then a lot of time not.”</p>"
+          }
+        },
+        "slider_dQnYNc": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/jess.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Jess",
+            "verified_customer": "Verified customer",
+            "text": "<h6>It really works!!</h6><p>“I committed to the 3 month saver bundle and after 6 treatments (2 weeks apart) I’m SO happy with the results!!! My pores are smaller and I have mainly noticed a difference in my skin texture. My skin goes a little red straight after the treatment but that quickly goes away. It’s a little uncomfortable when I do it on my forehead but it’s fine everywhere else. Totally worth it!!!”</p>"
+          }
+        },
+        "slider_ixfCQe": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/priya.webp",
+            "flag": "shopify://shop_images/england_f.webp",
+            "username": "Priya P.",
+            "verified_customer": "Verified customer",
+            "text": "<h6>Plumper, more hydrated!</h6><p>“After the first use of EGF, my skin was plumper, more hydrated and skin tone improved radically, literally the next day. Love this product, will definitely be purchasing more as its really helped smooth out the fine lines also”</p>"
+          }
+        },
+        "slider_PDbmkb": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/Jennifer_1_treatment.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Jennifer N.",
+            "verified_customer": "Verified customer",
+            "text": "<h6>Works better than I imagined!</h6><p>“I am really stunned by how well this product works. I have had professional micro-needling and I wanted the benefits without the downtime. I did my treatment, went to bed and woke up the next morning and was ready to go. My skin looks better than it has in years.”</p>"
+          }
+        }
+      },
+      "block_order": [
+        "slider_8iLrfN",
+        "slider_J6UPA6",
+        "slider_cAjTXb",
+        "slider_nTt9BF",
+        "slider_Rnyj49",
+        "slider_Q9qKwL",
+        "slider_iTCha7",
+        "slider_GmAA3f",
+        "slider_dQnYNc",
+        "slider_ixfCQe",
+        "slider_PDbmkb"
+      ],
+      "name": "t:sections.n_trusted-reviews.name",
+      "settings": {
+        "use_own_file": true,
+        "background_color": "light",
+        "text": "<h2>Results you’ll see with your own eyes</h2>",
+        "button_label": "buy now & SAVE up to 70%"
+      }
+    },
+    "n_comparison_table_Kjf3QH": {
+      "type": "n_comparison-table",
+      "blocks": {
+        "comparison_table_UL6TVw": {
+          "type": "comparison_table",
+          "settings": {
+            "image": "shopify://shop_images/mi-20.webp",
+            "heading": "<h5>Qure<br />Micro-Infusion System</h5>",
+            "text_1": "As little as 1-2 days",
+            "select_1": "checkmark",
+            "text_2": "Tailored to your needs",
+            "select_2": "checkmark",
+            "text_3": "Minimal downtime",
+            "select_3": "checkmark",
+            "text_4": "< $20 per treatment",
+            "select_4": "checkmark"
+          }
+        },
+        "comparison_table_CprMGy": {
+          "type": "comparison_table",
+          "settings": {
+            "image": "shopify://shop_images/clinic-treatment.webp",
+            "heading": "<h5>Micro-Infusion<br />Clinic Treatment</h5>",
+            "text_1": "As little as 1-2 days",
+            "select_1": "checkmark",
+            "text_2": "Tailored to your needs",
+            "select_2": "checkmark",
+            "text_3": "Minimal downtime",
+            "select_3": "checkmark",
+            "text_4": "$300+ per treatment",
+            "select_4": "cross"
+          }
+        },
+        "comparison_table_f6x7AR": {
+          "type": "comparison_table",
+          "settings": {
+            "image": "shopify://shop_images/home-treatment.webp",
+            "heading": "<h5>Derma Roller<br />At-Home Treatment</h5>",
+            "text_1": "A few days",
+            "select_1": "cross",
+            "text_2": "Not customized",
+            "select_2": "cross",
+            "text_3": "Potential side effects",
+            "select_3": "cross",
+            "text_4": "< $10 per treatment",
+            "select_4": "checkmark"
+          }
+        },
+        "comparison_table_heading_GdDqRQ": {
+          "type": "comparison_table_heading",
+          "settings": {
+            "heading": "Results in"
+          }
+        },
+        "comparison_table_heading_VnV9cX": {
+          "type": "comparison_table_heading",
+          "settings": {
+            "heading": "Customized"
+          }
+        },
+        "comparison_table_heading_pk7q98": {
+          "type": "comparison_table_heading",
+          "settings": {
+            "heading": "Skin Safe"
+          }
+        },
+        "comparison_table_heading_Y36J4p": {
+          "type": "comparison_table_heading",
+          "settings": {
+            "heading": "Cost"
+          }
+        }
+      },
+      "block_order": [
+        "comparison_table_UL6TVw",
+        "comparison_table_CprMGy",
+        "comparison_table_f6x7AR",
+        "comparison_table_heading_GdDqRQ",
+        "comparison_table_heading_VnV9cX",
+        "comparison_table_heading_pk7q98",
+        "comparison_table_heading_Y36J4p"
+      ],
+      "name": "t:sections.n_comparison-table.name",
+      "settings": {
+        "use_own_file": true,
+        "text": "<h2>Give yourself a Clinic Quality glow up without the Clinical Prices</h2>"
+      }
+    },
+    "n_easy_steps_qgni9T": {
+      "type": "n_easy-steps",
+      "blocks": {
+        "items_eRFKwA": {
+          "type": "items",
+          "settings": {
+            "text": "<h6>Cleanse</h6><p>Cleanse your face thoroughly and spritz the <a href=\"#\" title=\"#\">Dermal Mist</a> to refresh and prepare your skin further.</p>",
+            "image": "shopify://shop_images/mi-20-use-step-1.webp",
+            "image_mobile": "shopify://shop_images/mi-20-use-step-1-mob.webp"
+          }
+        },
+        "items_bEPjhx": {
+          "type": "items",
+          "settings": {
+            "text": "<h6>Treatment</h6><p>Start at the centre of the face and work your way outward to cover the full face.</p>",
+            "image": "shopify://shop_images/mi-20-use-step-2.webp",
+            "image_mobile": "shopify://shop_images/mi-20-use-step-2-mob.webp"
+          }
+        },
+        "items_8dR6hD": {
+          "type": "items",
+          "settings": {
+            "text": "<h6>Aftercare</h6><p>Once the treatment is complete, pat the remaining serum into skin. The system is designed for single use.</p>",
+            "image": "shopify://shop_images/mi-20-use-step-3.webp",
+            "image_mobile": "shopify://shop_images/mi-20-use-step-3-mob.webp"
+          }
+        }
+      },
+      "block_order": [
+        "items_eRFKwA",
+        "items_bEPjhx",
+        "items_8dR6hD"
+      ],
+      "name": "t:sections.n_easy-steps.name",
+      "settings": {
+        "use_own_file": true,
+        "text": "<h2>See how quick and easy it is to use</h2>",
+        "image": "shopify://shop_images/mi-20-use-video.webp",
+        "image_mobile": "shopify://shop_images/mi-20-use-video-mob.webp",
+        "wistia_url": "hwf5rmmxsm",
+        "button_label": "buy now & SAVE up to 70%"
+      }
+    },
+    "n_treatment_static_xyz": {
+      "type": "n_treatment-static",
       "settings": {}
+    },
+    "n_mi_new_48dffw": {
+      "type": "n_mi-new",
+      "blocks": {
+        "items_UBcqfp": {
+          "type": "items",
+          "settings": {
+            "badge_text": "No Set-Up Required",
+            "text": "<p>Easy to use. No manual assembly – just remove the cap and start the treatment.</p>"
+          }
+        },
+        "items_AcTdpp": {
+          "type": "items",
+          "settings": {
+            "badge_text": "Single-Use & Disposable",
+            "text": "<p>Reduces the risk of infection or irritation. Made from recycled plastic.</p>"
+          }
+        },
+        "items_PEKmAr": {
+          "type": "items",
+          "settings": {
+            "badge_text": "Patent-pending design",
+            "text": "<p>Seamless serum dispensing delivers the right amount of serum with each press.</p>"
+          }
+        },
+        "items_cmnrtH": {
+          "type": "items",
+          "settings": {
+            "badge_text": "Under $20 per use",
+            "text": "<p>Get clinic-quality results at a fraction of the cost.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "items_UBcqfp",
+        "items_AcTdpp",
+        "items_PEKmAr",
+        "items_cmnrtH"
+      ],
+      "name": "t:sections.n_mi-new.name",
+      "settings": {
+        "use_own_file": true,
+        "text": "<h2>Built for real results</h2>",
+        "image": "shopify://shop_images/mi-new.webp",
+        "button_label": "Shop Now"
+      }
+    },
+    "n_why_using_LdrKDL": {
+      "type": "n_why-using",
+      "blocks": {
+        "image_with_text_3w4J7Q": {
+          "type": "image_with_text",
+          "settings": {
+            "icon": "save-money",
+            "text": "Saves time, money and hassle compared to in-clinic treatments"
+          }
+        },
+        "image_with_text_PikkzW": {
+          "type": "image_with_text",
+          "settings": {
+            "icon": "mi-quick",
+            "text": "Quick &amp; easy 5-minute DIY facial from the convenience of home"
+          }
+        },
+        "image_with_text_BBQdbN": {
+          "type": "image_with_text",
+          "settings": {
+            "icon": "mi-painless",
+            "text": "Virtually painless, little to no downtime"
+          }
+        },
+        "image_with_text_kbQAqE": {
+          "type": "image_with_text",
+          "settings": {
+            "icon": "mi-seamless",
+            "text": "Seamless serum dispensing with each press"
+          }
+        },
+        "image_with_text_RnzpCy": {
+          "type": "image_with_text",
+          "settings": {
+            "icon": "perfect-transforming",
+            "text": "Perfect for transforming dull-looking skin before events"
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_3w4J7Q",
+        "image_with_text_PikkzW",
+        "image_with_text_BBQdbN",
+        "image_with_text_kbQAqE",
+        "image_with_text_RnzpCy"
+      ],
+      "name": "t:sections.n_why-using.name",
+      "settings": {
+        "use_own_file": true,
+        "text": "<h2>5 reasons why everyone is using the Qure Micro-Infusion System</h2>",
+        "button_label": "buy now &amp; SAVE UP TO 70%"
+      }
+    },
+    "n_faq_iRf3ki": {
+      "type": "n_faq",
+      "blocks": {
+        "accordion_CWhHay": {
+          "type": "accordion",
+          "settings": {
+            "heading": "What are the benefits of Micro-Infusion?",
+            "text": "<p>The stamping action of the Micro-Infusion device creates tiny micro-channels on the surface of the skin, helping to enhance the absorption of active ingredients and visibly refresh the complexion.</p><p>The serum you choose during your Micro-Infusion treatment will deliver visible results over time. Very fine needles help apply concentrated ingredients exactly where they’re needed to target specific skin concerns with precision.</p><p>You can switch up your treatments or even mix the two serums together!</p><p>Visible benefits of Micro-Infusion may include:</p><ul><li>More even-looking skin tone and texture</li><li>Glowing, refreshed-looking complexion</li><li>Softer-looking fine lines</li><li>Skin that feels renewed and rejuvenated</li></ul>"
+          }
+        },
+        "accordion_HJWmwf": {
+          "type": "accordion",
+          "settings": {
+            "heading": "How quickly will I see results?",
+            "text": "<p>Micro-Infusion treatment is an effective skin booster treatment, and you’ll notice a radiance boost, smaller pores, more hydrated and overall a healthy fresh complexion in the next day or two.</p><p>The more treatments you perform the greater skin benefits over time you’ll receive! This quick and easy home facial is perfect to perform a day or two before a big event, when you need to look to boost your skin’s complexion, fast.</p><p>Don’t forget to keep up with your everyday skincare routine to boost the effectiveness of your Micro-Infusion results and keep skin glowing long-term.</p>"
+          }
+        },
+        "accordion_L9pLeh": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Is it painful to use?",
+            "text": "<p>You get to experience minimal discomfort and maximum results with Qure's Micro-Infusion System.</p><p>Although the needles themselves are actually longer than most at-home needling systems (making it more effective), the ultra-fine needles are thinner than a human hair, so that means you’ll feel minimal to no pain during treatment.</p><p>During the initial stages of treatment, you may experience a slight sensation or prickling feeling as the needles make contact with the skin but you’ll quickly get used to the feeling quickly.</p>"
+          }
+        },
+        "accordion_KPnU4d": {
+          "type": "accordion",
+          "settings": {
+            "heading": "How often can I use the treatment?",
+            "text": "<p>We recommend a Micro-Infusion treatment once every 2 weeks for the best results.</p>"
+          }
+        },
+        "accordion_fWADQm": {
+          "type": "accordion",
+          "settings": {
+            "heading": "When is the best time to do Micro-Infusion?",
+            "text": "<p>We recommend doing the treatment at night before bed. Avoid being in the sun and using makeup for 24 hours after the treatment. For more information on post treatment care, visit our safety guide.</p>"
+          }
+        },
+        "accordion_6GEJdi": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Can I use it around the eyes and on the neck?",
+            "text": "<p>Yes, you can use Micro-Infusion around the eye area to help smooth crow’s feet. Just ensure to apply a very gentle pressure and only do one pass. Monitor your skin accordingly as everyone’s skin is different!</p><p>Performing Micro-Infusion on the neck can help improve the appearance of fine lines, and rejuvenate skin. It can target issues such as neck creases, horizontal lines, and age-related skin concerns to help enhance the overall texture, tone, and youthfulness of the skin.</p                                "
+          }
+        },
+        "accordion_grRXEq": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Can I use a different serum with the Micro-Infusion device?",
+            "text": "<p>No - only use the provided Qure serum with your Micro-Infusion Device.</p><p>Please keep in mind that not all serums are suitable for Micro-Infusion. Some may cause irritation and should be avoided! Our potent serum ampoules are specifically developed for our Micro-Infusion System, with gentle, fragrance-free formulas designed for deep delivery and low risk of sensitivity.</p>"
+          }
+        },
+        "accordion_Qp6BeD": {
+          "type": "accordion",
+          "settings": {
+            "heading": "How is this different to micro-rolling?",
+            "text": "<p>Micro-Infusion focuses on improving the skin’s appearance by creating micro-channels on the skin’s surface. It does not alter or affect skin structure or function.</p><p>With Micro-Infusion, you not only enjoy the visible benefits of micro-needling, but also deliver science-backed ingredients to targeted areas with precision — helping the skin appear smoother and more radiant.</p>"
+          }
+        },
+        "accordion_N4UU47": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Tranexamic Acid Notice",
+            "text": "<p>If you live in Australia, you may receive a notice from Border Force regarding tranexamic acid (TXA) in your order. Here’s what you need to know:</p><p>In Australia, TXA is classified as a Schedule 4 (prescription-only) drug only when used orally or by injection for treating melasma or other medical conditions. However, <strong>topical TXA in cosmetic formulations is permitted</strong>.</p><p>Our serums are purely for cosmetic use and do not claim to treat medical conditions. They are applied topically (not injected) and are classified as a cosmetic product rather than a prescription medicine.</p><p>Our products are compliant with Australian regulations. Facial serums containing up to 3% TXA for cosmetic purposes are not classified as prescription-only medicines and do not require inclusion in the Australian Register of Therapeutic Goods (ARTG).</p><p>If Border Force requires clarification, you can provide the information above to confirm that the product complies with Australian regulations. If further details are needed, they can refer to the Therapeutic Goods Administration (TGA) guidelines on cosmetic formulations.</p><p>If you need further assistance, feel free to contact our support team—we’re happy to help!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_CWhHay",
+        "accordion_HJWmwf",
+        "accordion_L9pLeh",
+        "accordion_KPnU4d",
+        "accordion_fWADQm",
+        "accordion_6GEJdi",
+        "accordion_grRXEq",
+        "accordion_Qp6BeD",
+        "accordion_N4UU47"
+      ],
+      "name": "t:sections.n_faq.name",
+      "settings": {
+        "use_own_file": true,
+        "heading": "<h2>Have questions?</h2>",
+        "text": "Don't see your question?",
+        "button_label": "Ask us",
+        "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
+      }
     }
   },
   "order": [
-    "main"
+    "n_hero_section_4c7XgD",
+    "n_expert_board_mhw3pU",
+    "n_base_section_a9gtbj",
+    "n_achievement_goals_Tqcedk",
+    "n_video_slider_Dip3aR",
+    "n_trusted_reviews_ALTmPW",
+    "n_comparison_table_Kjf3QH",
+    "n_easy_steps_qgni9T",
+    "n_treatment_static_xyz",
+    "n_mi_new_48dffw",
+    "n_why_using_LdrKDL",
+    "n_faq_iRf3ki"
   ]
 }
