@@ -468,6 +468,14 @@
           // Already selected — ignore (CDN handles toggle)
           if (selectedProducts.has(variantId)) return;
 
+          // Check if same product (by handle) already in bundle with different variant
+          var handle = card.dataset.handle;
+          var alreadyByHandle = false;
+          selectedProducts.forEach(function(p) {
+            if (p.handle === handle) alreadyByHandle = true;
+          });
+          if (alreadyByHandle) return;
+
           // Max 2 unique products
           if (selectedProducts.size >= 2) return;
 
@@ -556,15 +564,29 @@
       }
     });
 
-    // Variant radio change — update card data attributes
+    // Variant radio change — update card data and selectedProducts if already in bundle
     document.addEventListener('change', function(e) {
       var radio = e.target.closest('.select-color input[type="radio"]');
       if (radio) {
         var card = radio.closest('[data-byo-product]');
         if (card) {
+          var oldVariantId = parseInt(card.dataset.variantId);
+          var newVariantId = parseInt(radio.value);
           card.dataset.variantId = radio.value;
           if (radio.dataset.variantPrice) card.dataset.price = radio.dataset.variantPrice;
           card.querySelector('.select-color').classList.remove('select-color--error');
+
+          // Update selectedProducts if this product is already in bundle
+          var product = selectedProducts.get(oldVariantId);
+          if (product && oldVariantId !== newVariantId) {
+            selectedProducts.delete(oldVariantId);
+            product.variantId = newVariantId;
+            product.price = parseInt(radio.dataset.variantPrice) || product.price;
+            if (radio.dataset.variantImage) product.image = radio.dataset.variantImage;
+            selectedProducts.set(newVariantId, product);
+            saveToStorage();
+            updateStickyBar();
+          }
         }
       }
     });
