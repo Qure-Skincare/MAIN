@@ -55,7 +55,7 @@
                                         <label data-option-value="{{ variant.option1 | handleize }}">
                                             <input type="radio"
                                                 name="variant-{{ product_id }}"
-                                                value="{{ variant.id }}"
+                                                data-value="{{ variant.id }}"
                                                 data-variant-price="{{ variant.price }}"
                                                 data-variant-image="{{ variant.featured_image | img_url: '250x' }}"
                                                 {% if variant.id == product_variant_id %}checked="checked"{% endif %} />

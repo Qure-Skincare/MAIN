@@ -113,7 +113,7 @@
 
       if (product) {
         // Restore variant radio selection
-        var radio = card.querySelector('.select-color input[value="' + product.variantId + '"]');
+        var radio = card.querySelector('.select-color input[data-value="' + product.variantId + '"]');
         if (radio) {
           radio.checked = true;
           card.dataset.variantId = String(product.variantId);
@@ -457,7 +457,7 @@
               setTimeout(function() { colorSelector.classList.remove('select-color--error'); }, 2000);
               return;
             }
-            card.dataset.variantId = selectedRadio.value;
+            card.dataset.variantId = selectedRadio.dataset.value;
             if (selectedRadio.dataset.variantPrice) {
               card.dataset.price = selectedRadio.dataset.variantPrice;
             }
@@ -571,8 +571,8 @@
         var card = radio.closest('[data-byo-product]');
         if (card) {
           var oldVariantId = parseInt(card.dataset.variantId);
-          var newVariantId = parseInt(radio.value);
-          card.dataset.variantId = radio.value;
+          var newVariantId = parseInt(radio.dataset.value);
+          card.dataset.variantId = radio.dataset.value;
           if (radio.dataset.variantPrice) card.dataset.price = radio.dataset.variantPrice;
           card.querySelector('.select-color').classList.remove('select-color--error');
 
