@@ -32,10 +32,31 @@
           "settings": {
             "heading": "Micro-Infusion"
           }
+        },
+        "tab_y8Fn4G": {
+          "type": "tabs",
+          "settings": {
+            "heading": "Devices"
+          }
+        },
+        "tab_y8Fn5G": {
+          "type": "tabs",
+          "settings": {
+            "heading": "Water Filters"
+          }
+        },
+        "tab_y8Fn6G": {
+          "type": "tabs",
+          "settings": {
+            "heading": "Scincare"
+          }
         }
       },
       "block_order": [
-        "tab_y8Fn3G"
+        "tab_y8Fn3G",
+        "tab_y8Fn4G",
+        "tab_y8Fn5G",
+        "tab_y8Fn6G"
       ],
       "settings": {}
     },
@@ -53,10 +74,20 @@
             "url": "https://qureskincare.com/pages/microinfusion",
             "rating_text": "1,312 Reviews",
             "rating_image": "shopify://shop_images/stars_28fec7ee-9c78-4fd9-a20e-79d5fd6f89e3.svg",
-            "label_price": "from"
           }
-        },
-        "product_card_FDAa4d": {
+        }
+      },
+      "block_order": [
+        "product_card_y8Fn3G"
+      ],
+      "settings": {
+        "heading": "Micro-Infusion"
+      }
+    },
+    "byo_fXMjk2": {
+      "type": "build-your-own",
+      "blocks": {
+        "product_card_FDAa4d1": {
           "type": "product_card",
           "settings": {
             "heading": "Q-Rejuvalight Pro Facewear",
@@ -67,46 +98,121 @@
             "url": "https://qureskincare.com/products/q-rejuvalight-pro-facewear",
             "rating_text": "1,375 Reviews",
             "rating_image": "shopify://shop_images/stars_28fec7ee-9c78-4fd9-a20e-79d5fd6f89e3.svg",
-            "label_price": ""
           }
         },
-        "product_card_hm3rHW": {
+        "product_card_FDAa4d2": {
           "type": "product_card",
           "settings": {
-            "heading": "All-In-One Face Serum",
-            "product": "face-serum",
-            "image_text": "tending",
-            "image": "shopify://shop_images/all-in-one-face-serum.webp",
-            "hover_image": "shopify://shop_images/Img_7.png",
-            "url": "https://qureskincare.com/products/face-serum",
-            "rating_text": "380 Reviews",
+            "heading": "Neck & Décolletage LED Device",
+            "product": "neck-decolletage-led",
+            "image_text": "",
+            "image": "shopify://shop_images/neck-and-deck-byo.webp",
+            "hover_image": "shopify://shop_images/neck-and-deck-hover-byo.webp",
+            "url": "https://qureskincare.com/products/neck-decolletage-led",
+            "rating_text": "1,275 Reviews",
             "rating_image": "shopify://shop_images/stars_28fec7ee-9c78-4fd9-a20e-79d5fd6f89e3.svg",
-            "label_price": ""
           }
-        },
-        "product_card_kQWMy8": {
+        }
+      },
+      "block_order": [
+        "product_card_FDAa4d1",
+        "product_card_FDAa4d2"
+      ],
+      "settings": {
+        "heading": "Devices"
+      }
+    },
+    "byo_fXMjk3": {
+      "type": "build-your-own",
+      "blocks": {
+        "product_card_y8Fn3G1": {
           "type": "product_card",
           "settings": {
-            "heading": "Micro-Infusion Targeted Patches",
-            "product": "micro-infusion-targeted-patches",
-            "image_text": "Trending",
-            "image": "shopify://shop_images/micro-infusion-targeted-patches.webp",
-            "hover_image": "shopify://shop_images/Patches_f35d5219-aea3-4fe7-804d-052768dce864.png",
-            "url": "https://qureskincare.com/products/micro-infusion-targeted-patches",
-            "rating_text": "157 Reviews",
+            "heading": "Shower Filter",
+            "product": "shower-filter",
+            "image_text": "",
+            "image": "shopify://shop_images/shower-filter-byo.webp",
+            "hover_image": "shopify://shop_images/shower-filter-hover-byo.webp",
+            "url": "https://qureskincare.com/pages/shower-filter",
+            "rating_text": "1,312 Reviews",
+            "rating_image": "shopify://shop_images/stars_28fec7ee-9c78-4fd9-a20e-79d5fd6f89e3.svg",
+            "label_price": "from"
+          }
+        },
+        "product_card_FDAa4d2": {
+          "type": "product_card",
+          "settings": {
+            "heading": "Faucet Filter",
+            "product": "faucet-filter",
+            "image_text": "",
+            "image": "shopify://shop_images/faucet-filter-byo.webp",
+            "hover_image": "shopify://shop_images/faucet-filter-hover-byo.webp",
+            "url": "https://qureskincare.com/products/q-rejuvalight-pro-facewear",
+            "rating_text": "1,375 Reviews",
             "rating_image": "shopify://shop_images/stars_28fec7ee-9c78-4fd9-a20e-79d5fd6f89e3.svg",
             "label_price": ""
           }
         }
       },
       "block_order": [
-        "product_card_y8Fn3G",
-        "product_card_FDAa4d",
-        "product_card_hm3rHW",
-        "product_card_kQWMy8"
+        "product_card_y8Fn3G1",
+        "product_card_FDAa4d2"
       ],
       "settings": {
-        "heading": "Micro-Infusion"
+        "heading": "Water Filters"
+      }
+    },
+    "byo_fXMjk4": {
+      "type": "build-your-own",
+      "blocks": {
+        "product_card_kQWMy1": {
+          "type": "product_card",
+          "settings": {
+            "heading": "All-In-One Face Serum",
+            "product": "face-serum",
+            "image_text": "",
+            "image": "shopify://shop_images/all-in-one-face-serum.webp",
+            "hover_image": "shopify://shop_images/Img_7.png",
+            "url": "https://qureskincare.com/products/face-serum",
+            "rating_text": "380 Reviews",
+            "rating_image": "shopify://shop_images/stars_28fec7ee-9c78-4fd9-a20e-79d5fd6f89e3.svg",
+          }
+        },
+        "product_card_kQWMy2": {
+          "type": "product_card",
+          "settings": {
+            "heading": "Micro-Infusion Targeted Patches",
+            "product": "micro-infusion-targeted-patches",
+            "image_text": "",
+            "image": "shopify://shop_images/micro-infusion-targeted-patches.webp",
+            "hover_image": "shopify://shop_images/Patches_f35d5219-aea3-4fe7-804d-052768dce864.png",
+            "url": "https://qureskincare.com/products/micro-infusion-targeted-patches",
+            "rating_text": "157 Reviews",
+            "rating_image": "shopify://shop_images/stars_28fec7ee-9c78-4fd9-a20e-79d5fd6f89e3.svg",
+          }
+        },
+        "product_card_kQWMy3": {
+          "type": "product_card",
+          "settings": {
+            "heading": "Dermal Mist",
+            "product": "dermal-mist",
+            "image_text": "",
+            "image": "shopify://shop_images/dermal-mist-byo.webp",
+            "hover_image": "shopify://shop_images/dermal-mist-hover-byo.webp",
+            "url": "https://qureskincare.com/products/dermal-mist",
+            "rating_text": "127 Reviews",
+            "rating_image": "shopify://shop_images/stars_28fec7ee-9c78-4fd9-a20e-79d5fd6f89e3.svg",
+            "label_price": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_card_kQWMy1",
+        "product_card_kQWMy2",
+        "product_card_kQWMy3"
+      ],
+      "settings": {
+        "heading": "Scincare"
       }
     },
     "bf_bundle_bunner_mini_JhrEmz": {
@@ -281,6 +387,9 @@
     "page_banner_zUyTB8",
     "byo_container_fXMjkJ",
     "byo_fXMjk1",
+    "byo_fXMjk2",
+    "byo_fXMjk3",
+    "byo_fXMjk4",
     "bf_bundle_bunner_mini_JhrEmz",
     "bf_bundle_banner_dTU6Q7",
     "trusted_reviews_mRLHtt",
