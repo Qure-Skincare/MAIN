@@ -68,19 +68,23 @@
 
 
                     <div class="qure__product-action-inner">
-                        <form method="post" action="#" enctype="multipart/form-data">
-                            <input type="checkbox" name="added_in_cart" value="" />
-                            <button type="button" class="add-cart-button product-form__submit btn btn--primary w-100">Add <i class="e-icon e-icon-plus"></i></button>
-                            <div class="e-quantity e-quantity--pill-xl" data-e-quantity>
-                                <button type="button" data-e-quantity-action="decrement">
-                                    <i class="e-icon e-icon-minus"></i>
-                                </button>
-                                <input type="number" name="qty" value="1" min="1" readonly="readonly" />
-                                <button type="button" data-e-quantity-action="increment">
-                                    <i class="e-icon e-icon-plus"></i>
-                                </button>
-                            </div>
-                        </form>
+                        {% if block.settings.soldout == true %}
+                            <button type="button" class="btn btn--primary w-100" disabled>{{ 'product.settings.soldout-button-label' | t }}</button>
+                        {% else %}
+                            <form method="post" action="#" enctype="multipart/form-data">
+                                <input type="checkbox" name="added_in_cart" value="" />
+                                <button type="button" class="add-cart-button product-form__submit btn btn--primary w-100">Add <i class="e-icon e-icon-plus"></i></button>
+                                <div class="e-quantity e-quantity--pill-xl" data-e-quantity>
+                                    <button type="button" data-e-quantity-action="decrement">
+                                        <i class="e-icon e-icon-minus"></i>
+                                    </button>
+                                    <input type="number" name="qty" value="1" min="1" readonly="readonly" />
+                                    <button type="button" data-e-quantity-action="increment">
+                                        <i class="e-icon e-icon-plus"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        {% endif %}
                     </div>
                 </div>
             </div>
@@ -112,6 +116,12 @@
                 "type": "product",
                 "id": "product",
                 "label": "t:common.product"
+            },
+            {
+                "type": "checkbox",
+                "id": "soldout",
+                "label": "t:common.soldout",
+                "default": false
             },
             {
                 "type": "text",
