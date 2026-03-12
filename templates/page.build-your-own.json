@@ -7,8 +7,38 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
+    "n_hero_banner_PBhFUd": {
+      "type": "n_hero-banner",
+      "blocks": {
+        "text_eAKaam": {
+          "type": "text",
+          "settings": {
+            "text": "<p>[small]Buy 2 products[/small] <strong>-20%</strong></p>"
+          }
+        },
+        "text_A97KHX": {
+          "type": "text",
+          "settings": {
+            "text": "<p>[small]Buy 3+ products[/small] <strong>-25%</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_eAKaam",
+        "text_A97KHX"
+      ],
+      "disabled": true,
+      "name": "t:sections.n_hero-banner.name",
+      "settings": {
+        "use_own_file": true,
+        "modifier": "easter",
+        "text": "<h2>More Glow, More Savings</h2>",
+        "image": "shopify://shop_images/easter_1.webp",
+        "image_mobile": "shopify://shop_images/easter-mob_1.webp"
+      }
+    },
     "page_banner_zUyTB8": {
       "type": "page-banner",
       "name": "t:sections.page-banner.name",
@@ -238,6 +268,7 @@
     }
   },
   "order": [
+    "n_hero_banner_PBhFUd",
     "page_banner_zUyTB8",
     "carousel_7YOxGy",
     "byo_fXMjkJ",

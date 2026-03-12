@@ -277,7 +277,8 @@
             "settings": {
                 "modifier-options": {
                     "none": "None",
-                    "holidays": "Holidays"
+                    "holidays": "Holidays",
+                    "easter": "Easter"
                 }
             }
         },
