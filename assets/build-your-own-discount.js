@@ -9,8 +9,8 @@
   var STORAGE_KEY = 'byoBundleSelection';
   var PRODUCT_DATA_PREFIX = 'build-your-own-products-';
   var DISCOUNT_TIERS = {
-    1: { percent: 20, code: 'BYO20' },
-    2: { percent: 25, code: 'BYO25' }
+    2: { percent: 20, code: 'BYO20' },
+    3: { percent: 25, code: 'BYO25' }
   };
 
   // State: Map<variantId, { variantId, handle, title, price, image, quantity }>
@@ -72,11 +72,6 @@
         }
       });
 
-      // Max 2 unique products
-      if (selectedProducts.size > 2) {
-        var entries = Array.from(selectedProducts.entries()).slice(0, 2);
-        selectedProducts = new Map(entries);
-      }
 
       saveToStorage();
       restoreVisualState();
@@ -169,21 +164,12 @@
   }
 
   /**
-   * Get total quantity across all selected products
-   */
-  function getTotalQuantity() {
-    var total = 0;
-    selectedProducts.forEach(function(p) { total += p.quantity; });
-    return total;
-  }
-
-  /**
-   * Get current discount tier (based on total quantity, not unique products)
+   * Get current discount tier (based on unique product count)
    */
   function getCurrentTier() {
-    var qty = getTotalQuantity();
-    if (qty === 0) return null;
-    return DISCOUNT_TIERS[Math.min(qty, 2)];
+    var count = selectedProducts.size;
+    if (count < 2) return null;
+    return DISCOUNT_TIERS[Math.min(count, 3)];
   }
 
   /**
@@ -216,15 +202,12 @@
   }
 
   /**
-   * Build expanded product list (each product repeated by its quantity, max 4)
-   * E.g. Product A (qty=2) + Product B (qty=1) → [A, A, B]
+   * Get list of unique selected products (for sticky bar display, max 4 slots)
    */
-  function getExpandedProductList() {
+  function getUniqueProductList() {
     var list = [];
     selectedProducts.forEach(function(p) {
-      for (var i = 0; i < p.quantity && list.length < 2; i++) {
-        list.push(p);
-      }
+      list.push(p);
     });
     return list;
   }
@@ -233,27 +216,30 @@
    * Update sticky bar UI
    */
   function updateStickyBar() {
-    var qty = getTotalQuantity();
-    var expandedList = getExpandedProductList();
+    var count = selectedProducts.size;
+    var productList = getUniqueProductList();
+    var tier = getCurrentTier();
 
     // Bundle items — swap discount-box ↔ item-box based on active state
     var bundleItems = document.querySelectorAll('.bundle-progress .bundle-item');
+    var productIndex = 0;
     bundleItems.forEach(function(item, index) {
-      var isActive = index < expandedList.length;
+      var isActive = index < count;
       item.classList.toggle('active', isActive);
 
       var discountBox = item.querySelector('.discount-box');
       var itemBox = item.querySelector('.item-box');
 
-      if (isActive && itemBox) {
+      if (isActive && itemBox && productIndex < productList.length) {
         if (discountBox) discountBox.classList.add('d-none');
         itemBox.classList.remove('d-none');
         var img = itemBox.querySelector('img');
         if (img) {
-          img.src = expandedList[index].image;
-          img.alt = expandedList[index].title;
+          img.src = productList[productIndex].image;
+          img.alt = productList[productIndex].title;
         }
-        itemBox.dataset.variantId = expandedList[index].variantId;
+        itemBox.dataset.variantId = productList[productIndex].variantId;
+        productIndex++;
       } else {
         if (discountBox) discountBox.classList.remove('d-none');
         if (itemBox) itemBox.classList.add('d-none');
@@ -263,7 +249,8 @@
     // Progress line
     var progressFill = document.querySelector('.progress-fill');
     if (progressFill) {
-      progressFill.style.width = (qty > 0 ? (Math.min(qty, 2) / 2) * 100 : 0) + '%';
+      var maxSteps = bundleItems.length || 4;
+      progressFill.style.width = (count > 0 ? (Math.min(count, maxSteps) / maxSteps) * 100 : 0) + '%';
     }
 
     // Subtotal
@@ -272,7 +259,7 @@
     var discountedPriceEl = document.querySelector('.subtotal_cta .discounted_price');
 
     if (subtotalBlock) {
-      subtotalBlock.classList.toggle('subtotal-visible', qty > 0);
+      subtotalBlock.classList.toggle('subtotal-visible', count > 0);
     }
 
     if (comparePriceEl) {
@@ -280,15 +267,18 @@
     }
 
     if (discountedPriceEl) {
-      discountedPriceEl.textContent = formatPrice(calculateDiscountedPrice());
+      discountedPriceEl.textContent = tier ? formatPrice(calculateDiscountedPrice()) : formatPrice(calculateSubtotal());
     }
 
     // CTA button state and text
     var ctaButton = document.querySelector('.skincare_plan_cta .btn_wrap .btn');
     if (ctaButton) {
-      if (qty === 0) {
+      if (count === 0) {
         ctaButton.disabled = true;
         ctaButton.innerHTML = 'Add an item to unlock savings!';
+      } else if (count === 1) {
+        ctaButton.disabled = false;
+        ctaButton.innerHTML = 'CHECKOUT <i class="e-icon e-icon-lock"></i>';
       } else {
         ctaButton.disabled = false;
         ctaButton.innerHTML = 'CHECKOUT <i class="e-icon e-icon-lock"></i>';
@@ -314,7 +304,6 @@
     if (selectedProducts.size === 0) return;
 
     var tier = getCurrentTier();
-    if (!tier) return;
 
     try {
       // Get current cart to check for duplicates
@@ -331,7 +320,6 @@
           // Update quantity for existing items
           var cartItem = cart.items.find(function(item) { return item.variant_id === p.variantId; });
           if (cartItem && cartItem.quantity !== p.quantity) {
-            // Will update via change endpoint
             itemsToAdd.push({ id: p.variantId, quantity: p.quantity, _update: true });
           }
         }
@@ -358,8 +346,10 @@
         });
       }
 
-      // Apply discount code
-      await fetch('/discount/' + tier.code);
+      // Apply discount code only if tier exists (2+ unique products)
+      if (tier) {
+        await fetch('/discount/' + tier.code);
+      }
 
       // Toggle free gifts
       if (window.CartDrawer && typeof window.CartDrawer.toogleGift === 'function') {
@@ -477,8 +467,6 @@
           });
           if (alreadyByHandle) return;
 
-          // Max 2 unique products
-          if (selectedProducts.size >= 2) return;
 
           var image = card.dataset.image;
           var selectedRadio = card.querySelector('.select-color input[type="radio"]:checked');
