@@ -320,24 +320,27 @@
       // Get current cart to check for duplicates
       var cartResponse = await fetch('/cart.js');
       var cart = await cartResponse.json();
-      var cartVariantIds = cart.items.map(function(item) { return item.variant_id; });
 
-      // Build items array with quantities
-      var itemsToAdd = [];
+      // Separate new items and items needing quantity update
+      var cartVariantMap = {};
+      cart.items.forEach(function(item) {
+        cartVariantMap[item.variant_id] = item.quantity;
+      });
+
+      var newItems = [];
+      var updates = {};
+      var needsUpdate = false;
+
       selectedProducts.forEach(function(p) {
-        if (cartVariantIds.indexOf(p.variantId) === -1) {
-          itemsToAdd.push({ id: p.variantId, quantity: p.quantity });
-        } else {
-          // Update quantity for existing items
-          var cartItem = cart.items.find(function(item) { return item.variant_id === p.variantId; });
-          if (cartItem && cartItem.quantity !== p.quantity) {
-            itemsToAdd.push({ id: p.variantId, quantity: p.quantity, _update: true });
-          }
+        if (!(p.variantId in cartVariantMap)) {
+          newItems.push({ id: p.variantId, quantity: p.quantity });
+        } else if (cartVariantMap[p.variantId] !== p.quantity) {
+          updates[p.variantId] = p.quantity;
+          needsUpdate = true;
         }
       });
 
       // Add new items
-      var newItems = itemsToAdd.filter(function(i) { return !i._update; });
       if (newItems.length > 0) {
         var addResponse = await fetch('/cart/add.js', {
           method: 'POST',
@@ -347,13 +350,12 @@
         if (!addResponse.ok) throw new Error('Failed to add to cart');
       }
 
-      // Update existing items quantities
-      var updateItems = itemsToAdd.filter(function(i) { return i._update; });
-      for (var i = 0; i < updateItems.length; i++) {
-        await fetch('/cart/change.js', {
+      // Batch update existing items via /cart/update.js
+      if (needsUpdate) {
+        await fetch('/cart/update.js', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ id: updateItems[i].id, quantity: updateItems[i].quantity })
+          body: JSON.stringify({ updates: updates })
         });
       }
 
