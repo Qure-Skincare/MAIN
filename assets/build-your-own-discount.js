@@ -443,6 +443,10 @@
         saveToStorage();
         updateStickyBar();
         await reapplyDiscount();
+        // Re-render cart drawer with updated discount prices
+        document.dispatchEvent(new CustomEvent('cart.requestComplete', {
+          detail: { source: 'byoDiscountApplied' }
+        }));
       }
     } catch (e) {
       console.warn('BYO Discount: Failed to sync with cart', e);
