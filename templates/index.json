@@ -95,6 +95,21 @@
         "button_url_mobile": "https://qureskincare.com/collections/best-sellers"
       }
     },
+    "n_across_image_banner_tL47T8": {
+      "type": "n_across-image-banner",
+      "disabled": true,
+      "name": "t:sections.n_across-image-banner.name",
+      "settings": {
+        "use_own_file": true,
+        "modifier": "holidays",
+        "heading": "<h1>Easter Offer More Glow, More Savings</h1>",
+        "text": "<p>For a limited time only, save on your skincare favorites.</p>",
+        "image": "shopify://shop_images/easter.webp",
+        "image_mobile": "shopify://shop_images/easter-mob.webp",
+        "button_label": "Bundle & Save Up To 25%",
+        "button_url": "#"
+      }
+    },
     "bf_top_products": {
       "type": "bf-top-products",
       "blocks": {
@@ -872,6 +887,7 @@
   "order": [
     "index-mobile-category-slider",
     "index_banner_with_text_TNGNLJ",
+    "n_across_image_banner_tL47T8",
     "bf_top_products",
     "index_banner_with_text_second_TNGNLJ",
     "bundle_banner_eEa7XN",
