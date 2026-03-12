@@ -36,6 +36,23 @@
           }
         }
       }
+    },
+    "purchase_form_Lj9cVS": {
+      "settings": {},
+      "blocks": {
+        "product_nyJ9n7": {
+          "settings": {
+            "preorder": false,
+            "heading": "6 Month Supply"
+          }
+        },
+        "product_gbPf3J": {
+          "settings": {
+            "preorder": false,
+            "heading": "6 Month Supply Promo"
+          }
+        }
+      }
     }
   }
 }
