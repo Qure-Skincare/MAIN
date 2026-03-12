@@ -23,12 +23,16 @@
         },
         "product_nyJ9n7": {
           "settings": {
-            "product": "micro-infusion-6-month-bundle-for-wrinkles-uk"
+            "product": "micro-infusion-6-month-bundle-for-wrinkles-uk",
+            "heading": "6 Month Supply",
+            "preorder": false
           }
         },
         "product_hD69Aq": {
           "settings": {
-            "product": "micro-infusion-6-month-for-wrinkles-dark-spots-uk"
+            "product": "micro-infusion-6-month-for-wrinkles-dark-spots-uk",
+            "heading": "6 Month Supply Promo",
+            "preorder": false
           }
         }
       }
