@@ -15,6 +15,7 @@
 
   // State: Map<variantId, { variantId, handle, title, price, image, quantity }>
   var selectedProducts = new Map();
+  var cartCurrency = 'USD';
 
   /**
    * Get available BYO products from window.get_products_data (inline scripts, sync)
@@ -53,6 +54,7 @@
     try {
       var response = await fetch('/cart.js');
       var cart = await response.json();
+      if (cart.currency) cartCurrency = cart.currency;
       var available = getAvailableProducts();
       var availableVariantIds = Object.keys(available).map(Number);
 
@@ -203,11 +205,21 @@
   }
 
   /**
-   * Format price (cents to dollars)
+   * Format price (cents to local currency)
    */
   function formatPrice(cents) {
-    var dollars = cents / 100;
-    return '$' + dollars.toFixed(2).replace(/\.00$/, '');
+    var amount = cents / 100;
+    try {
+      var formatted = new Intl.NumberFormat(undefined, {
+        style: 'currency',
+        currency: cartCurrency,
+        minimumFractionDigits: 0,
+        maximumFractionDigits: 2
+      }).format(amount);
+      return formatted.replace(/\.00$/, '');
+    } catch (e) {
+      return '$' + amount.toFixed(2).replace(/\.00$/, '');
+    }
   }
 
   /**
@@ -398,6 +410,7 @@
     try {
       var response = await fetch('/cart.js');
       var cart = await response.json();
+      if (cart.currency) cartCurrency = cart.currency;
       var available = getAvailableProducts();
       var availableVariantIds = Object.keys(available).map(Number);
       var changed = false;
