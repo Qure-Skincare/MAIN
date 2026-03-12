@@ -681,6 +681,27 @@
         "heading": "How It Compares"
       }
     },
+    "1773337341b2168cc6": {
+      "type": "apps",
+      "blocks": {
+        "stamped_reviews_main_widget_4gnDt6": {
+          "type": "shopify://apps/stamped-reviews/blocks/main-widget/a103faaf-2125-4b0e-89fa-de5149736723",
+          "settings": {
+            "animation": true,
+            "tags_exclude": "",
+            "tags_include": "",
+            "search": "",
+            "linkify": true,
+            "use_metafields": false,
+            "sku_tagtype": "sku"
+          }
+        }
+      },
+      "block_order": [
+        "stamped_reviews_main_widget_4gnDt6"
+      ],
+      "settings": {}
+    },
     "faq_8dzUGE": {
       "type": "faq",
       "blocks": {
@@ -847,6 +868,7 @@
     "carousel_jHy7Zp",
     "hair_growth_helmet_usage_guide_HQaYec",
     "hair_growth_helmet_product_comparison_CxQNNe",
+    "1773337341b2168cc6",
     "faq_8dzUGE"
   ]
 }
