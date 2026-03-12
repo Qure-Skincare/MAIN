@@ -1311,7 +1311,7 @@
           "settings": {
             "heading": "Dark Spots",
             "image": "shopify://shop_images/Dark_Spots_4.png",
-            "preselected": false
+            "preselected": true
           }
         },
         "product_DBd4ef": {
@@ -1380,7 +1380,7 @@
           "settings": {
             "heading": "Wrinkles",
             "image": "shopify://shop_images/Wrinkles_2.png",
-            "preselected": true
+            "preselected": false
           }
         },
         "product_nyJ9n7": {
@@ -1392,7 +1392,7 @@
             "subheading": "(12 Treatments)",
             "image": "shopify://shop_images/MI_1.5_6month_DS_W-1_no_mist.webp",
             "soldout": false,
-            "preorder": false,
+            "preorder": true,
             "total_treatments": 4,
             "left_items": 265,
             "preorder_text": "",
