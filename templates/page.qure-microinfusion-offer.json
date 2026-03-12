@@ -1255,7 +1255,7 @@
             "subheading": "(12 Treatments)",
             "image": "shopify://shop_images/MI_6_month_DSW.webp",
             "soldout": false,
-            "preorder": false,
+            "preorder": true,
             "total_treatments": 12,
             "left_items": 178,
             "preorder_text": "",
