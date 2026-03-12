@@ -1172,7 +1172,7 @@
             "subheading": "(12 Treatments)",
             "image": "shopify://shop_images/MI_6_month_W.webp",
             "soldout": false,
-            "preorder": false,
+            "preorder": true,
             "total_treatments": 12,
             "left_items": 89,
             "preorder_text": "",
@@ -1191,7 +1191,7 @@
             "subheading": "(6 Treatments)",
             "image": "shopify://shop_images/MI_3_month_W.webp",
             "soldout": false,
-            "preorder": false,
+            "preorder": true,
             "total_treatments": 6,
             "left_items": 500,
             "preorder_text": "",
@@ -1337,6 +1337,7 @@
         "heading": "Choose your treatment",
         "text": "All orders are one-time purchases. No extra charges, and no hidden fees.",
         "image": "shopify://shop_images/tami-cropped.webp",
+        "klaviyo_form_name": "",
         "form_name": "purchase-form-second"
       }
     },
