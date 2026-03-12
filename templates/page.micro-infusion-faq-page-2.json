@@ -230,10 +230,10 @@
         "nextships_5rd2bS": {
           "type": "nextships",
           "settings": {
-            "date": "21 January",
+            "date": "24th March",
             "percent": 55,
-            "date_soldout": "7 January",
-            "date_reserved": "8 January"
+            "date_soldout": "7 March",
+            "date_reserved": "12th March"
           }
         },
         "payment_type_3zQTmH": {
