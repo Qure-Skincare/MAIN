@@ -51,6 +51,11 @@
   color: #28a745;
 }
 
+.subtotal_cta .discounted_price.no-discount {
+  font-weight: 400;
+  color: #666;
+}
+
 /* CTA Button disabled state */
 .skincare_plan_cta .btn_wrap .btn:disabled {
   opacity: 0.6;

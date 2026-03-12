@@ -164,10 +164,19 @@
   }
 
   /**
-   * Get current discount tier (based on unique product count)
+   * Get total quantity of all selected products
+   */
+  function getTotalQuantity() {
+    var total = 0;
+    selectedProducts.forEach(function(p) { total += p.quantity; });
+    return total;
+  }
+
+  /**
+   * Get current discount tier (based on total item count)
    */
   function getCurrentTier() {
-    var count = selectedProducts.size;
+    var count = getTotalQuantity();
     if (count < 2) return null;
     return DISCOUNT_TIERS[Math.min(count, 3)];
   }
@@ -202,12 +211,14 @@
   }
 
   /**
-   * Get list of unique selected products (for sticky bar display, max 4 slots)
+   * Get expanded product list (repeated by quantity, for sticky bar slots)
    */
-  function getUniqueProductList() {
+  function getExpandedProductList() {
     var list = [];
     selectedProducts.forEach(function(p) {
-      list.push(p);
+      for (var i = 0; i < p.quantity; i++) {
+        list.push(p);
+      }
     });
     return list;
   }
@@ -216,8 +227,8 @@
    * Update sticky bar UI
    */
   function updateStickyBar() {
-    var count = selectedProducts.size;
-    var productList = getUniqueProductList();
+    var count = getTotalQuantity();
+    var productList = getExpandedProductList();
     var tier = getCurrentTier();
 
     // Bundle items — swap discount-box ↔ item-box based on active state
@@ -264,10 +275,12 @@
 
     if (comparePriceEl) {
       comparePriceEl.textContent = formatPrice(calculateSubtotal());
+      comparePriceEl.classList.toggle('d-none', !tier);
     }
 
     if (discountedPriceEl) {
       discountedPriceEl.textContent = tier ? formatPrice(calculateDiscountedPrice()) : formatPrice(calculateSubtotal());
+      discountedPriceEl.classList.toggle('no-discount', !tier);
     }
 
     // CTA button state and text
@@ -458,14 +471,6 @@
 
           // Already selected — ignore (CDN handles toggle)
           if (selectedProducts.has(variantId)) return;
-
-          // Check if same product (by handle) already in bundle with different variant
-          var handle = card.dataset.handle;
-          var alreadyByHandle = false;
-          selectedProducts.forEach(function(p) {
-            if (p.handle === handle) alreadyByHandle = true;
-          });
-          if (alreadyByHandle) return;
 
 
           var image = card.dataset.image;
