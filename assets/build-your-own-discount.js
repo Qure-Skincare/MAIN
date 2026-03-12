@@ -316,8 +316,6 @@
   async function addToCartWithDiscount() {
     if (selectedProducts.size === 0) return;
 
-    var tier = getCurrentTier();
-
     try {
       // Get current cart to check for duplicates
       var cartResponse = await fetch('/cart.js');
@@ -359,10 +357,8 @@
         });
       }
 
-      // Apply discount code only if tier exists (2+ unique products)
-      if (tier) {
-        await fetch('/discount/' + tier.code);
-      }
+      // Apply or clear discount code based on current tier
+      await reapplyDiscount();
 
       // Toggle free gifts
       if (window.CartDrawer && typeof window.CartDrawer.toogleGift === 'function') {
@@ -377,6 +373,19 @@
     } catch (error) {
       console.error('BYO Discount: Error adding to cart', error);
       alert('Error adding items to cart. Please try again.');
+    }
+  }
+
+  /**
+   * Re-apply correct discount code or clear it based on current tier
+   */
+  async function reapplyDiscount() {
+    var tier = getCurrentTier();
+    if (tier) {
+      await fetch('/discount/' + tier.code);
+    } else {
+      // Clear any previously applied BYO discount
+      await fetch('/discount/');
     }
   }
 
@@ -431,11 +440,7 @@
       if (changed) {
         saveToStorage();
         updateStickyBar();
-
-        var tier = getCurrentTier();
-        if (tier) {
-          await fetch('/discount/' + tier.code);
-        }
+        await reapplyDiscount();
       }
     } catch (e) {
       console.warn('BYO Discount: Failed to sync with cart', e);
