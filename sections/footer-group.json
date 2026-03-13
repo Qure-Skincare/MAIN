@@ -30,6 +30,7 @@
     },
     "footer-gdpr": {
       "type": "footer-gdpr",
+      "disabled": true,
       "settings": {}
     },
     "footer-wistia": {

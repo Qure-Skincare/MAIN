@@ -87,7 +87,7 @@
       "name": "t:sections.product-hair-growth-helmet-header.name",
       "settings": {
         "seo_heading": "Backed by Dermatologists",
-        "heading": "Red Light Therapy for Hair Loss Using an FDA-Cleared LLLT Helmet",
+        "heading": "FDA-Cleared Red Light Therapy for Androgenetic Alopecia",
         "rating": true,
         "limited": false,
         "description": "<p>Targeted <strong>red light therapy for hair loss</strong> combines LED light and medical-grade lasers to support scalp health and promote the appearance of thicker-looking hair in just 12 minutes per session.</p>",
@@ -545,7 +545,8 @@
             "text_2": "<p>1850 mW vs. 1410 mW</p>",
             "description_3": "Quicker results",
             "heading_3": "<h3>2.1x faster treatments</h3>",
-            "text_3": "<p>12 minutes vs. 25 minutes per session</p>"
+            "text_3": "<p>12 minutes vs. 25 minutes per session</p>",
+            "disclaimer": ""
           }
         },
         "text_hair_growth_H8n7ft": {
@@ -559,7 +560,8 @@
             "text_2": "<p>3 LED wavelengths vs. 1 wavelength</p>",
             "description_3": "Triple the trust",
             "heading_3": "<h3>3x longer protection</h3>",
-            "text_3": "<p>3-year vs. 1-year warranty for peace of mind</p>"
+            "text_3": "<p>3-year vs. 1-year warranty for peace of mind</p>",
+            "disclaimer": ""
           }
         },
         "text_red_light_hat_gYVyxy": {
@@ -573,7 +575,8 @@
             "text_2": "<p>3-year vs. 1-year warranty for peace of mind.</p>",
             "description_3": "Deeper stimulation",
             "heading_3": "<h3>300% more wavelengths</h3>",
-            "text_3": "<p>3 wavelengths vs. 1 wavelength for broader stimulation</p>"
+            "text_3": "<p>3 wavelengths vs. 1 wavelength for broader stimulation</p>",
+            "disclaimer": ""
           }
         },
         "compare_prof_AKgYfB": {
