@@ -489,6 +489,9 @@
                 }
             }
         },
+        "n_press-reviews": {
+            "name": "Press reviews"
+        },
         "collection": {
             "name": "Collection",
             "blocks": {
