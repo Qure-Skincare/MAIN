@@ -490,6 +490,9 @@
                 }
             }
         },
+        "n_expert-reviews": {
+            "name": "Expert reviews"
+        },
         "collection": {
             "name": "Collection",
             "blocks": {
