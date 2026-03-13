@@ -110,6 +110,7 @@
       "blocks": {
         "nextships_4xp7uM": {
           "type": "nextships",
+          "disabled": true,
           "settings": {
             "date": "24th March",
             "percent": 55,
