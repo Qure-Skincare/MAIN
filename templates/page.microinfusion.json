@@ -73,15 +73,6 @@
             "button-label": "FAQs",
             "button-url": "#faq"
           }
-        },
-        "nextships_8QppbM": {
-          "type": "nextships",
-          "settings": {
-            "date": "13th March",
-            "percent": 74,
-            "date_soldout": "5 Marh",
-            "date_reserved": "30th March"
-          }
         }
       },
       "block_order": [
@@ -94,8 +85,7 @@
         "jumpto_A3",
         "jumpto_A4",
         "jumpto_A5",
-        "jumpto_A6",
-        "nextships_8QppbM"
+        "jumpto_A6"
       ],
       "custom_css": [
         ".vp-img > img {max-height: 50px !important; margin-bottom: 12px !important;}",
