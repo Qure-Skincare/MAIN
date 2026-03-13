@@ -381,7 +381,7 @@
       ],
       "name": "t:common.carousel",
       "settings": {
-        "background_color": "#f6f6f7",
+        "background_color": "#ffffff",
         "display_mode": "both"
       }
     },
