@@ -210,14 +210,14 @@
             "popular": false,
             "best": false,
             "preselected": true,
-            "heading": "6 Month Supply <br> (Pre-Order)",
+            "heading": "6 Month Supply  (Pre-Order)",
             "subheading": "(12 Treatments)",
             "image": "shopify://shop_images/PDP_MI_6_month_W.webp",
             "soldout": false,
             "preorder": true,
-            "preorder_text": "",
-            "preorder_date_soldout": "",
-            "preorder_date_reserved": "",
+            "preorder_text": "12",
+            "preorder_date_soldout": "15",
+            "preorder_date_reserved": "14",
             "preorder_percent": 55
           }
         },
