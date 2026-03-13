@@ -110,7 +110,6 @@
       "blocks": {
         "nextships_4xp7uM": {
           "type": "nextships",
-          "disabled": true,
           "settings": {
             "date": "24th March",
             "percent": 55,
@@ -216,9 +215,9 @@
             "image": "shopify://shop_images/PDP_MI_6_month_W.webp",
             "soldout": false,
             "preorder": true,
-            "preorder_text": "12",
-            "preorder_date_soldout": "15",
-            "preorder_date_reserved": "14",
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
             "preorder_percent": 55
           }
         },
