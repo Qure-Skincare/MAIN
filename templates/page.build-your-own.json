@@ -7,22 +7,12 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "page_banner_zUyTB8": {
-      "type": "page-banner",
+      "type": "build-your-own-banner",
       "name": "t:sections.page-banner.name",
-      "settings": {
-        "heading": "Build Your Own",
-        "text": "",
-        "sub_text": "",
-        "button": "",
-        "button_url": "",
-        "button_mobile": "",
-        "button_url_mobile": "",
-        "image": "shopify://shop_images/best-seller-banner.webp",
-        "image_mobile": "shopify://shop_images/best-seller-banner-mob.webp"
-      }
+      "settings": {}
     },
     "byo_container_fXMjkJ": {
       "type": "build-your-own-container",
