@@ -391,8 +391,8 @@
         "accordion_PTLUG3": {
           "type": "accordion",
           "settings": {
-            "heading": "What is crown thinning and how can red light therapy for hair loss help?",
-            "text": "<p>For many women, the crown is one of the first areas to show visible thinning. Hormonal changes, stress, and genetics can shorten the natural hair growth cycle, causing follicles in this area to gradually shrink and produce finer strands. Over time, this can make the scalp more visible at the top or back of the head.</p><p><strong>Red light therapy for hair loss</strong> delivers targeted red light energy deep into the scalp to support follicle activity in the crown area. With consistent use, red light therapy for hair loss can help improve the appearance of coverage, reduce the visibility of thinning, and support a healthier-looking scalp over time.</p>",
+            "heading": " What is androgenetic alopecia and how can LLLT help?",
+            "text": "<p>Androgenetic alopecia is a common, genetic form of hair loss affecting up to 50% of males and females. LLLT (low-level light therapy) is an FDA-cleared treatment that uses red light and laser energy to stimulate hair follicles, promoting regrowth and improving hair density.</p>",
             "link_url": "",
             "link_text": ""
           }
@@ -400,8 +400,8 @@
         "accordion_NKwfPK": {
           "type": "accordion",
           "settings": {
-            "heading": "What causes a widening part line and how does red light therapy for hair loss support it?",
-            "text": "<p>A widening part line is one of the most common and noticeable signs of hair thinning. It occurs when follicles along the central scalp gradually miniaturize, producing finer, weaker strands over time. As density decreases, the scalp becomes more visible through the part.</p><p><strong>Red light therapy for hair loss</strong> delivers targeted light energy evenly across the scalp, with focused coverage along the central part where thinning is most apparent. By supporting follicle activity in this area, consistent use of red light therapy for hair loss can help encourage thicker-looking strands and improve the appearance of density—resulting in a more balanced, fuller-looking part line over time.</p>",
+            "heading": "Is the Q-Renew helmet effective for both men and women?",
+            "text": "<p>Yes, the Q-Renew helmet is FDA-cleared for both men (Norwood-Hamilton scale IIa-V) and women (Ludwig-Savin scale I-II) with androgenetic alopecia.</p>",
             "link_url": "",
             "link_text": ""
           }
@@ -409,8 +409,8 @@
         "accordion_YEffqy": {
           "type": "accordion",
           "settings": {
-            "heading": "Can red light therapy for hair loss help with a receding hairline?",
-            "text": "<p>Thinning around the temples and hairline can affect both hair volume and the overall shape of the face. This area is especially sensitive to hormonal changes, stress, and genetic factors, and the finer hairs along the hairline are often among the first to weaken or become less visible.</p><p><strong>Red light therapy for hair loss</strong> delivers targeted light energy across the front of the scalp, with focused coverage at the temples and hairline. By supporting follicle activity in these delicate areas, consistent use of red light therapy for hair loss helps encourage healthier-looking hair and supports the appearance of a fuller, more defined hairline over time.</p>",
+            "heading": "How long does it take to see results?",
+            "text": "<p>With consistent daily use, most users start to see visible results within 12-16 weeks. Results can vary based on individual factors and the severity of hair loss.</p>",
             "link_url": "",
             "link_text": ""
           }
@@ -418,8 +418,8 @@
         "accordion_NHBERr": {
           "type": "accordion",
           "settings": {
-            "heading": "Why does my hair look flat or lack volume, and can red light therapy for hair loss help?",
-            "text": "<p>Hair that looks flat or lacks body is often a sign that follicles are producing finer strands over time. As overall density decreases, hair can lose its natural lift, movement, and fullness—making thinning more noticeable throughout the scalp.</p><p><strong>Red light therapy for hair loss</strong> supports follicle function across the entire scalp by delivering consistent light energy to areas affected by thinning. With regular use, red light therapy for hair loss helps encourage thicker-looking, stronger strands, supporting improved density and restoring the appearance of volume, lift, and natural fullness.</p>",
+            "heading": "Is LLLT safe for androgenetic alopecia treatment?",
+            "text": "<p>Yes, LLLT is a non-invasive, pain-free treatment with a well-established safety profile. The Q-Renew helmet is FDA-cleared and includes built-in safety features.</p>",
             "link_url": "",
             "link_text": ""
           }
@@ -427,14 +427,15 @@
         "accordion_rQ3dFk": {
           "type": "accordion",
           "settings": {
-            "heading": "What causes weaker hair strands and how does red light therapy for hair loss support strength?",
-            "text": "<p>When follicles aren’t functioning optimally, the hair they produce can grow in finer and more fragile. These weaker strands are more prone to breakage and may struggle to grow longer, making hair feel stuck at a shorter length and lacking strength.</p><p><strong>Red light therapy for hair loss</strong> supports follicle activity at the root by delivering targeted light energy to the scalp. With consistent use, red light therapy for hair loss helps encourage the growth of thicker, more resilient-looking strands—supporting reduced breakage and restoring a healthier appearance and feel over time.</p>",
+            "heading": "Can I use Q-Renew with other hair loss treatments?",
+            "text": "<p>The Q-Renew helmet can be used as a standalone treatment or in conjunction with other hair loss treatments. We recommend consulting with your doctor to create a comprehensive treatment plan.</p>",
             "link_url": "",
             "link_text": ""
           }
         },
         "accordion_LPeTme": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "heading": "Can red light therapy for hair loss help reduce shedding?",
             "text": "<p>Excessive daily shedding can feel constant and discouraging, with hair collecting in the shower, on your pillow, or in your brush. This often happens when follicles exit the growth phase too early—a process commonly influenced by stress, hormonal changes, or genetic factors.</p><p><strong>Red light therapy for hair loss</strong> works in sync with the natural hair growth cycle by supporting follicles during the active growth phase. With consistent use, many people notice a reduced appearance of excessive shedding before seeing improvements in overall density—helping create the foundation for stronger, fuller-looking hair over time.</p>",
@@ -451,10 +452,9 @@
         "accordion_rQ3dFk",
         "accordion_LPeTme"
       ],
-      "disabled": true,
       "name": "t:sections.faq.name",
       "settings": {
-        "heading": "Red Light Therapy: Common Hair Concerns",
+        "heading": "Your Androgenetic Alopecia Questions Answered",
         "text": "Have a concern we didn’t cover?",
         "button_label": "Ask us",
         "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home",
