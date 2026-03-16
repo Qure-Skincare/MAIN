@@ -88,7 +88,7 @@
           "settings": {
             "heading": "Micro-Infusion 3 Month Bundle (For Wrinkles)",
             "product": "micro-infusion-3-month-bundle-for-wrinkles",
-            "soldout": false,
+            "soldout": true,
             "image_text": "Bestseller",
             "image": "shopify://shop_images/mi_3months_wrinkles.webp",
             "hover_image": "shopify://shop_images/Frame_1073714796_3.png",
@@ -116,7 +116,7 @@
           "settings": {
             "heading": "Micro-Infusion 1 Month Bundle (For Wrinkles)",
             "product": "micro-infusion-1-month-bundle-for-wrinkles",
-            "soldout": false,
+            "soldout": true,
             "image_text": "",
             "image": "shopify://shop_images/mi_1_month_wrinkles.webp",
             "hover_image": "shopify://shop_images/MI_2.png",
