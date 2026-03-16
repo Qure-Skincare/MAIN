@@ -252,7 +252,7 @@
           "settings": {
             "heading": "Dermal Mist",
             "product": "dermal-mist",
-            "soldout": false,
+            "soldout": true,
             "image_text": "",
             "image": "shopify://shop_images/derma_mist_qure.webp",
             "hover_image": "shopify://shop_images/dermal-mist-hover-byo.webp",
@@ -266,7 +266,7 @@
           "settings": {
             "heading": "Micro-Infusion Targeted Patches",
             "product": "micro-infusion-targeted-patches",
-            "soldout": false,
+            "soldout": true,
             "image_text": "",
             "image": "shopify://shop_images/Patches_1.webp",
             "hover_image": "shopify://shop_images/Patches_f35d5219-aea3-4fe7-804d-052768dce864.png",
