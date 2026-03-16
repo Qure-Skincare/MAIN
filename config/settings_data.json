@@ -10,7 +10,7 @@
 {
   "current": {
     "primary-color": "#212428",
-    "discount-color": "#ff5429",
+    "discount-color": "#db5e40",
     "header_scrolling_hide": true,
     "header_slider1_title": "Discover Bundles",
     "header_slider1_image": "shopify://shop_images/qurebunnles.webp",
@@ -45,7 +45,7 @@
     "shipping_price": 10,
     "shipping_price_limit": 100,
     "cart_gift1_title": "",
-    "cart_gift1_product": "micro-infusion-dark-spots-1-treatment",
+    "cart_gift1_product": "",
     "cart_gift1_price_limit": 0,
     "cart_gift2_title": "Free Silk Pillowcase",
     "cart_gift2_product": "silk-pillowcase",
