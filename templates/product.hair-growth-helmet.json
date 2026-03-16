@@ -746,6 +746,7 @@
           "type": "slider",
           "settings": {
             "youtube_url": "",
+            "video_cover_image": "shopify://shop_images/Review_14.png",
             "wistia_url": ""
           }
         }
