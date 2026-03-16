@@ -29,7 +29,6 @@
         "text_eAKaam",
         "text_A97KHX"
       ],
-      "disabled": true,
       "name": "t:sections.n_hero-banner.name",
       "settings": {
         "use_own_file": true,
@@ -41,6 +40,7 @@
     },
     "page_banner_zUyTB8": {
       "type": "build-your-own-banner",
+      "disabled": true,
       "name": "t:sections.page-banner.name",
       "settings": {}
     },
