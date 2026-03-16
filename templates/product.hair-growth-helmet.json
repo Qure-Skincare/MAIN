@@ -718,6 +718,50 @@
         "heading": "How It Compares"
       }
     },
+    "video_review_slider_p78WDL": {
+      "type": "video-review-slider",
+      "blocks": {
+        "slider_QGDTJm": {
+          "type": "slider",
+          "settings": {
+            "youtube_url": "",
+            "wistia_url": "hr1ahbnrgn"
+          }
+        },
+        "slider_QgKh3p": {
+          "type": "slider",
+          "settings": {
+            "youtube_url": "",
+            "wistia_url": "hr1ahbnrgn"
+          }
+        },
+        "slider_CRV373": {
+          "type": "slider",
+          "settings": {
+            "youtube_url": "",
+            "wistia_url": "hr1ahbnrgn"
+          }
+        },
+        "slider_jeLq7G": {
+          "type": "slider",
+          "settings": {
+            "youtube_url": "",
+            "wistia_url": "hr1ahbnrgn"
+          }
+        }
+      },
+      "block_order": [
+        "slider_QGDTJm",
+        "slider_QgKh3p",
+        "slider_CRV373",
+        "slider_jeLq7G"
+      ],
+      "name": "t:sections.video-review-slider.name",
+      "settings": {
+        "heading": "",
+        "background_color": "#F6F6F7"
+      }
+    },
     "1773337341b2168cc6": {
       "type": "apps",
       "blocks": {
@@ -906,6 +950,7 @@
     "carousel_jHy7Zp",
     "hair_growth_helmet_usage_guide_HQaYec",
     "hair_growth_helmet_product_comparison_CxQNNe",
+    "video_review_slider_p78WDL",
     "1773337341b2168cc6",
     "faq_8dzUGE"
   ]
