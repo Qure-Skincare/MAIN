@@ -119,7 +119,7 @@
             "image_text": "",
             "image": "shopify://shop_images/mi_1_month_wrinkles.webp",
             "url": "",
-            "rating_text": "1,312 Reviews",
+            "rating_text": "1,112 Reviews",
             "rating_image": "shopify://shop_images/stars_1d5cf106-3e77-4e4e-9567-30216e7fd87f.svg"
           }
         },
@@ -171,7 +171,7 @@
             "product": "neck-decolletage-led",
             "soldout": false,
             "image_text": "",
-            "image": "shopify://shop_images/neck-and-deck-byo.webp",
+            "image": "shopify://shop_images/Frame_1073714814_5.webp",
             "hover_image": "shopify://shop_images/neck-and-deck-hover-byo.webp",
             "url": "https://qureskincare.com/products/neck-decolletage-led",
             "rating_text": "367 Reviews",
@@ -465,6 +465,7 @@
       "block_order": [
         "take_quiz_xbNNGM"
       ],
+      "disabled": true,
       "name": "t:sections.quiz.name",
       "settings": {
         "heading": "Unlock Your Personalized Skincare Routine",
