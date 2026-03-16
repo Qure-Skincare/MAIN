@@ -244,6 +244,20 @@
     "byo_fXMjk4": {
       "type": "build-your-own",
       "blocks": {
+        "product_card_kQWMy3": {
+          "type": "product_card",
+          "settings": {
+            "heading": "Dermal Mist",
+            "product": "dermal-mist",
+            "soldout": false,
+            "image_text": "",
+            "image": "shopify://shop_images/dermal-mist-byo.webp",
+            "hover_image": "shopify://shop_images/dermal-mist-hover-byo.webp",
+            "url": "https://qureskincare.com/products/dermal-mist",
+            "rating_text": "127 Reviews",
+            "rating_image": "shopify://shop_images/stars_28fec7ee-9c78-4fd9-a20e-79d5fd6f89e3.svg"
+          }
+        },
         "product_card_kQWMy1": {
           "type": "product_card",
           "settings": {
@@ -251,7 +265,7 @@
             "product": "face-serum",
             "soldout": false,
             "image_text": "",
-            "image": "shopify://shop_images/all-in-one-face-serum.webp",
+            "image": "shopify://shop_images/all_in_one.webp",
             "hover_image": "shopify://shop_images/Img_7.png",
             "url": "https://qureskincare.com/products/face-serum",
             "rating_text": "380 Reviews",
@@ -271,26 +285,12 @@
             "rating_text": "157 Reviews",
             "rating_image": "shopify://shop_images/stars_28fec7ee-9c78-4fd9-a20e-79d5fd6f89e3.svg"
           }
-        },
-        "product_card_kQWMy3": {
-          "type": "product_card",
-          "settings": {
-            "heading": "Dermal Mist",
-            "product": "dermal-mist",
-            "soldout": false,
-            "image_text": "",
-            "image": "shopify://shop_images/dermal-mist-byo.webp",
-            "hover_image": "shopify://shop_images/dermal-mist-hover-byo.webp",
-            "url": "https://qureskincare.com/products/dermal-mist",
-            "rating_text": "127 Reviews",
-            "rating_image": "shopify://shop_images/stars_28fec7ee-9c78-4fd9-a20e-79d5fd6f89e3.svg"
-          }
         }
       },
       "block_order": [
+        "product_card_kQWMy3",
         "product_card_kQWMy1",
-        "product_card_kQWMy2",
-        "product_card_kQWMy3"
+        "product_card_kQWMy2"
       ],
       "settings": {
         "heading": "Scincare"
