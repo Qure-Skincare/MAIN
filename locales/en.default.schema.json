@@ -1037,6 +1037,31 @@
                 }
             }
         },
+         "build-your-own-container": {
+            "name": "BYO container",
+            "blocks": {
+                "tab": {
+                    "name": "tab"
+                }
+            }
+        },
+         "build-your-own-products": {
+            "name": "BYO products",
+            "blocks": {
+                "hover_image": {
+                    "name": "Hover image"
+                },
+                "image-text":{
+                    "name": "Text on image"
+                },
+                "label-price":{
+                    "name": "Label price"
+                },
+                "rating-image":{
+                    "name": "Rating image"
+                }
+            }
+        },
          "index-get-qure": {
             "name": "Get the Qure",
             "blocks": {
