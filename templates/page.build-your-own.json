@@ -100,7 +100,7 @@
         "product_card_63wEYk": {
           "type": "product_card",
           "settings": {
-            "heading": "Micro-Infusion 3 Month Bundle (For Dark Spots)",
+            "heading": "Micro-Infusion 3 Month Bundle (Dark Spots)",
             "product": "micro-infusion-3-month-bundle-for-dark-spots",
             "soldout": false,
             "image_text": "Bestseller",
@@ -114,7 +114,7 @@
         "product_card_trCBXF": {
           "type": "product_card",
           "settings": {
-            "heading": "Micro-Infusion 1 Month Bundle (For Wrinkles)",
+            "heading": "Micro-Infusion 1 Month Bundle (Wrinkles)",
             "product": "micro-infusion-1-month-bundle-for-wrinkles",
             "soldout": true,
             "image_text": "",
