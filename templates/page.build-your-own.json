@@ -122,12 +122,26 @@
             "rating_text": "1,312 Reviews",
             "rating_image": "shopify://shop_images/stars_1d5cf106-3e77-4e4e-9567-30216e7fd87f.svg"
           }
+        },
+        "product_card_VXPLEC": {
+          "type": "product_card",
+          "settings": {
+            "heading": "Micro-Infusion 1 Month Bundle (For Dark Spots)",
+            "product": "micro-infusion-1-month-bundle-for-dark-spots",
+            "soldout": false,
+            "image_text": "",
+            "image": "shopify://shop_images/mi_1_month_dark_spots.webp",
+            "url": "",
+            "rating_text": "987 Reviews",
+            "rating_image": "shopify://shop_images/stars_1d5cf106-3e77-4e4e-9567-30216e7fd87f.svg"
+          }
         }
       },
       "block_order": [
         "product_card_y8Fn3G",
         "product_card_63wEYk",
-        "product_card_trCBXF"
+        "product_card_trCBXF",
+        "product_card_VXPLEC"
       ],
       "settings": {
         "heading": "Micro-Infusion"
