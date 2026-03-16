@@ -493,6 +493,9 @@
         "n_expert-reviews": {
             "name": "Expert reviews"
         },
+        "n_press-reviews": {
+            "name": "Press reviews"
+        },
         "collection": {
             "name": "Collection",
             "blocks": {

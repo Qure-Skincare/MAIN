@@ -74,10 +74,7 @@
         "jumpto_GYW9XP",
         "jumpto_Ybdp8V"
       ],
-      "custom_css": [
-        ".hero-product {padding-top: 60px; padding-bottom: 60px;}",
-        "@media screen and (max-width: 767px) {.hero-product {padding-top: 40px; padding-bottom: 40px; }}"
-      ],
+      "custom_css": [],
       "name": "t:sections.page-header.name",
       "settings": {
         "seo_heading": "",
@@ -91,38 +88,41 @@
         "button-url": "#purchase-form"
       }
     },
-    "slider_featured_in_rHHg4W": {
-      "type": "slider-featured-in",
+    "n_press_reviews_cxhHAa": {
+      "type": "n_press-reviews",
       "blocks": {
-        "slider_7tzexM": {
-          "type": "slider",
+        "image_with_text_7Yamzg": {
+          "type": "image_with_text",
           "settings": {
-            "heading": "“Few beauty trends are actually worth adopting, but Qure’s take on at-home Micro-Infusion is a viral skin trend with merit.”",
+            "text": "<p>“Few beauty trends are actually worth adopting, but Qure’s take on at-home Micro-Infusion is a viral skin trend with merit.”</p>",
             "image": "shopify://shop_images/forbes.svg"
           }
         },
-        "slider_EkJHPF": {
-          "type": "slider",
+        "image_with_text_bktgDm": {
+          "type": "image_with_text",
           "settings": {
-            "heading": "“A true micro-infusion treatment — creating microchannels that help enhance serum absorption and support visibly smoother-looking skin.”",
+            "text": "<p>“A true micro-infusion treatment — creating microchannels that help enhance serum absorption and support visibly smoother-looking skin.”</p>",
             "image": "shopify://shop_images/bazzar.svg"
           }
         },
-        "slider_Haj4cd": {
-          "type": "slider",
+        "image_with_text_tWfjVb": {
+          "type": "image_with_text",
           "settings": {
-            "heading": "“This microneedling alternative is my secret to glowing skin.”",
+            "text": "<p>“This microneedling alternative is my secret to glowing skin.”</p>",
             "image": "shopify://shop_images/ps.svg"
           }
         }
       },
       "block_order": [
-        "slider_7tzexM",
-        "slider_EkJHPF",
-        "slider_Haj4cd"
+        "image_with_text_7Yamzg",
+        "image_with_text_bktgDm",
+        "image_with_text_tWfjVb"
       ],
-      "name": "t:sections.slider-featured-in.name",
-      "settings": {}
+      "name": "t:sections.n_press-reviews.name",
+      "settings": {
+        "use_own_file": true,
+        "text": "<h6>FEATURED IN</h6>"
+      }
     },
     "banner_with_text_KaMmfy": {
       "type": "banner-with-text",
@@ -1351,7 +1351,7 @@
   },
   "order": [
     "page_header_jUJyDD",
-    "slider_featured_in_rHHg4W",
+    "n_press_reviews_cxhHAa",
     "banner_with_text_KaMmfy",
     "stock_alert_TFYk6U",
     "banner_with_text_MY7DYa",
