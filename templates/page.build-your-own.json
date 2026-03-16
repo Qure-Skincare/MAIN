@@ -285,12 +285,26 @@
             "rating_text": "380 Reviews",
             "rating_image": "shopify://shop_images/stars_28fec7ee-9c78-4fd9-a20e-79d5fd6f89e3.svg"
           }
+        },
+        "product_card_bFeyGQ": {
+          "type": "product_card",
+          "settings": {
+            "heading": "Silk Pillowcase",
+            "product": "silk-pillowcase",
+            "soldout": false,
+            "image_text": "",
+            "image": "shopify://shop_images/Frame_1073714797_1_1.webp",
+            "url": "",
+            "rating_text": "187 Reviews",
+            "rating_image": "shopify://shop_images/stars_1d5cf106-3e77-4e4e-9567-30216e7fd87f.svg"
+          }
         }
       },
       "block_order": [
         "product_card_kQWMy3",
         "product_card_kQWMy2",
-        "product_card_kQWMy1"
+        "product_card_kQWMy1",
+        "product_card_bFeyGQ"
       ],
       "settings": {
         "heading": "Scincare"
