@@ -174,14 +174,28 @@
             "image": "shopify://shop_images/neck-and-deck-byo.webp",
             "hover_image": "shopify://shop_images/neck-and-deck-hover-byo.webp",
             "url": "https://qureskincare.com/products/neck-decolletage-led",
-            "rating_text": "1,275 Reviews",
+            "rating_text": "367 Reviews",
             "rating_image": "shopify://shop_images/stars_28fec7ee-9c78-4fd9-a20e-79d5fd6f89e3.svg"
+          }
+        },
+        "product_card_XzPTLK": {
+          "type": "product_card",
+          "settings": {
+            "heading": "Q-Rejuvalight Pro Facewear",
+            "product": "hair-growth-helmet",
+            "soldout": false,
+            "image_text": "",
+            "image": "shopify://shop_images/helmet_qure_2b9a254b-41cb-4f7a-8e61-bb54601ffb41.webp",
+            "url": "",
+            "rating_text": "99 Reviews",
+            "rating_image": "shopify://shop_images/stars_1d5cf106-3e77-4e4e-9567-30216e7fd87f.svg"
           }
         }
       },
       "block_order": [
         "product_card_FDAa4d1",
-        "product_card_FDAa4d2"
+        "product_card_FDAa4d2",
+        "product_card_XzPTLK"
       ],
       "settings": {
         "heading": "Devices"
