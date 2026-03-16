@@ -109,11 +109,25 @@
             "rating_text": "912 Reviews",
             "rating_image": "shopify://shop_images/stars_1d5cf106-3e77-4e4e-9567-30216e7fd87f.svg"
           }
+        },
+        "product_card_trCBXF": {
+          "type": "product_card",
+          "settings": {
+            "heading": "Micro-Infusion 1 Month Bundle (For Wrinkles)",
+            "product": "micro-infusion-1-month-bundle-for-wrinkles",
+            "soldout": false,
+            "image_text": "",
+            "image": "shopify://shop_images/mi_1_month_wrinkles.webp",
+            "url": "",
+            "rating_text": "1,312 Reviews",
+            "rating_image": "shopify://shop_images/stars_1d5cf106-3e77-4e4e-9567-30216e7fd87f.svg"
+          }
         }
       },
       "block_order": [
         "product_card_y8Fn3G",
-        "product_card_63wEYk"
+        "product_card_63wEYk",
+        "product_card_trCBXF"
       ],
       "settings": {
         "heading": "Micro-Infusion"
