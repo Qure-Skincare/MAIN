@@ -230,7 +230,7 @@
             "image_text": "",
             "image": "shopify://shop_images/faucet_qure.webp",
             "hover_image": "shopify://shop_images/faucet-filter-hover-byo.webp",
-            "url": "https://qureskincare.com/products/q-rejuvalight-pro-facewear",
+            "url": "shopify://products/faucet-filter",
             "rating_text": "567 Reviews",
             "rating_image": "shopify://shop_images/stars_28fec7ee-9c78-4fd9-a20e-79d5fd6f89e3.svg"
           }
