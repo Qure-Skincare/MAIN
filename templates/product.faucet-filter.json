@@ -83,10 +83,6 @@
         "jumpto_EY6mqw",
         "jumpto_YV6XMK"
       ],
-      "custom_css": [
-        ".hero-product {padding-top: 60px; padding-bottom: 60px;}",
-        "@media screen and (max-width: 767px) {.hero-product {padding-top: 40px; padding-bottom: 40px; }}"
-      ],
       "name": "t:sections.product-header.name",
       "settings": {
         "seo_heading": "QURE FAUCET FILTER",
