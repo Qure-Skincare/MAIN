@@ -1286,8 +1286,8 @@
           "settings": {
             "date": "24th March",
             "percent": 55,
-            "date_soldout": "9th March",
-            "date_reserved": "12th March"
+            "date_soldout": "23rd March",
+            "date_reserved": "24th April"
           }
         },
         "payment_type_3zQTmH": {
@@ -1417,7 +1417,7 @@
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
-            "preorder_percent": 55,
+            "preorder_percent": 67,
             "included_text": "<ul><li>6 clinically formulated 4ml serums to treat your specific skin concerns (valued at $375)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
           }
         },
