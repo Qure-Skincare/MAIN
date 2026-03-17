@@ -113,8 +113,8 @@
           "settings": {
             "date": "24th March",
             "percent": 73,
-            "date_soldout": "9th March",
-            "date_reserved": "12th March"
+            "date_soldout": "23rd March",
+            "date_reserved": "23rd April"
           }
         },
         "type_hHPdgJ": {
@@ -230,7 +230,7 @@
             "popular": false,
             "best": false,
             "preselected": false,
-            "heading": "3 Month Supply <br> (Pre-Order)",
+            "heading": "3 Month Supply  (Pre-Order)",
             "subheading": "(6 Treatments)",
             "image": "shopify://shop_images/PDP_MI_3_month_W.webp",
             "soldout": false,
@@ -238,7 +238,7 @@
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
-            "preorder_percent": 55
+            "preorder_percent": 67
           }
         },
         "product_eiY89h": {
