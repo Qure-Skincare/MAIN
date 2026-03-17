@@ -86,9 +86,7 @@
         "jumpto_UfjfzQ"
       ],
       "custom_css": [
-        ".vp-img > img {max-height: 50px !important; margin-bottom: 12px !important;}",
-        ".hero-product {padding-top: 60px; padding-bottom: 60px;}",
-        "@media screen and (max-width: 767px) {.hero-product {padding-top: 40px; padding-bottom: 40px; }}"
+        ".vp-img > img {max-height: 50px !important; margin-bottom: 12px !important;}"
       ],
       "name": "t:sections.product-header.name",
       "settings": {
