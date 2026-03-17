@@ -1,0 +1,67 @@
+{% doc %}
+  Renders a cart item snippet for the cart drawer section
+
+  @example
+  {% include 'n-footer-cart-drawer-item' %}
+{% enddoc %}
+
+<div class="flyout-cart__item">
+    <div class="c-cart-tile">
+        <a href="{{ cart_item_url }}" aria-label="{{ cart_item_title | escape }}" class="c-cart-tile__image">
+            <img src="{{ cart_item_image | img_url: 'master' }}" alt="{{ cart_item_title | escape }}" />
+        </a>
+        <h2 class="c-cart-tile__name"><a href="{{ cart_item_url }}" aria-label="{{ cart_item_title | escape }}">{{ cart_item_title }}</a></h2>
+        <div class="c-cart-tile__reviews">
+            <div class="e-rating-stars" style="--rating: 4.5;"></div>
+            <a href="#">78 Reviews</a>
+        </div>
+        {% unless preorder_exists %}
+            <div class="c-cart-tile__available">
+                <span class="e-checkmark"></span>
+                {% if cart_item_selling_plan_name != null %}
+                    {{ cart_item_selling_plan_name }}
+                {% else %}
+                    {{ 'cart.drawer.settings.item-text-2days' | t }}
+                {% endif %}
+            </div>
+        {% endunless %}
+        <div class="c-cart-tile__footer">
+            <div class="c-cart-tile__price">
+                <div class="e-price">
+                    <div class="e-price__main">
+                        {% if cart_item_before_price != blank %}
+                            <div class="e-price__old">{{ cart_item_before_price }}</div>
+                        {% endif %}
+                        <div class="e-price__current">{{ cart_item_sale_price }}</div>
+                    </div>
+                </div>
+            </div>
+            {% unless gift_exists or insurance_exists or selling_plan_exists or discount_100_exists %}
+                <div class="c-cart-tile__pcs">
+                    <div class="e-quantity">
+                        <form id="{{ cart_item_id }}_minus" method="post" action="/cart/change" enctype="multipart/form-data">
+                            <button type="submit"><i class="e-icon e-icon-minus"></i></button>
+                            <input type="hidden" name="quantity" value="{{ cart_item_quantity_minus }}">
+                            <input type="hidden" name="id" value="{{ cart_item_key }}">
+                        </form>
+                        <input type="number" name="qty" value="{{ cart_item_quantity }}" min="0" />
+                        <form id="{{ cart_item_id }}_plus" method="post" action="/cart/change" enctype="multipart/form-data">
+                            <button type="submit"><i class="e-icon e-icon-plus"></i></button>
+                            <input type="hidden" name="quantity" value="{{ cart_item_quantity_plus }}">
+                            <input type="hidden" name="id" value="{{ cart_item_key }}">
+                        </form>
+                    </div>
+                </div>
+            {% endunless %}
+        </div>
+        {% unless gift_exists %}
+            <form id="{{ cart_item_id }}_remove" method="post" action="/cart/change" enctype="multipart/form-data">
+                <button type="submit" class="c-cart-tile__remove">
+                    <i class="e-icon e-icon-cross"></i>
+                </button>
+                <input type="hidden" name="quantity" value="0">
+                <input type="hidden" name="id" value="{{ cart_item_key }}">
+            </form>
+        {% endunless %}
+    </div>
+</div>
