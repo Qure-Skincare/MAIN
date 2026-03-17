@@ -143,14 +143,32 @@
       { "type": "text", "id": "cart_gift1_title", "label": "Title" },
       { "type": "product", "id": "cart_gift1_product", "label": "Product" },
       { "type": "image_picker", "id": "cart_gift1_image", "label": "Image" },
-      { "type": "text", "id": "cart_gift1_icon", "label": "Icon" },
+      { "type": "select", 
+        "id": "cart_gift1_icon", 
+        "label": "Icon",
+        "options": [
+          { "value": "none", "label": "None" },
+          { "value": "patches", "label": "Patches" },
+          { "value": "pillow", "label": "Pillow" }
+        ],
+        "default": "pillow"
+      },
       { "type": "range", "id": "cart_gift1_price_limit", "label": "Price limit", "min": 0, "max": 1000, "step": 10, "unit": "$", "default": 200 },
 
       { "type": "header", "content": "Gift #2" },
       { "type": "text", "id": "cart_gift2_title", "label": "Title" },
       { "type": "product", "id": "cart_gift2_product", "label": "Product" },
       { "type": "image_picker", "id": "cart_gift2_image", "label": "Image" },
-      { "type": "text", "id": "cart_gift2_icon", "label": "Icon" },
+      { "type": "select", 
+        "id": "cart_gift2_icon", 
+        "label": "Icon",
+        "options": [
+          { "value": "none", "label": "None" },
+          { "value": "patches", "label": "Patches" },
+          { "value": "pillow", "label": "Pillow" }
+        ],
+        "default": "pillow"
+      },
       { "type": "range", "id": "cart_gift2_price_limit", "label": "Price limit", "min": 0, "max": 1000, "step": 10, "unit": "$", "default": 400 }
     ]
   },
@@ -165,9 +183,9 @@
     ]
   },
   {
-    "name": "Black friday",
+    "name": "Special offer",
     "settings": [
-      { "type": "checkbox", "id": "black_friday_turn_on", "label": "BF Turn on" },
+      { "type": "checkbox", "id": "black_friday_turn_on", "label": "Special offer Turn on" },
       { "type": "text", "id": "black_friday_discount", "label": "Discount" },
       { "type": "range", "id": "black_friday_discount_percent", "label": "Percent", "min": 0, "max": 100, "step": 1, "unit": "%", "default": 26 },
       { "type": "textarea", "id": "black_friday_discount_exception", "label": "Exception" }

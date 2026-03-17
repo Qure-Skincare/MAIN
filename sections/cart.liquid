@@ -83,22 +83,27 @@
                             </label>
                         </div>
                         <ul class="cart-footer__summary">
-                            <li>
-                                <div><div class="e-pill-save">Exclusive savings</div></div>
-                                <div class="e-price e-price--highlight">
-                                    <div class="e-price__main">
-                                        <div class="e-price__current">$187</div>
+                            {% if summary_saving_price != null %}
+                                {% if black_friday_turn_on == true %}
+                                <li>
+                                    <div><div class="e-pill-save">{{ 'special-offer.cart.savings' | t }}</div></div>
+                                    <div class="e-price e-price--highlight">
+                                        <div class="e-price__main">
+                                            <div class="e-price__current">{{ summary_saving_price }}</div>
+                                        </div>
                                     </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div>Savings:</div>
-                                <div class="e-price e-price--profit">
-                                    <div class="e-price__main">
-                                        <div class="e-price__current">$87</div>
+                                </li>
+                                {% else %}
+                                <li>
+                                    <div>{{ 'cart.drawer.settings.savings' | t }}:</div>
+                                    <div class="e-price e-price--profit">
+                                        <div class="e-price__main">
+                                            <div class="e-price__current">{{ summary_saving_price }}</div>
+                                        </div>
                                     </div>
-                                </div>
-                            </li>
+                                </li>
+                                {% endif %}
+                            {% endif %}
                             <li>
                                 <div>{{ 'cart.drawer.settings.shipping' | t }}:</div>
                                 <div class="e-price">

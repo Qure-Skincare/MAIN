@@ -10,7 +10,7 @@
 {
   "current": {
     "primary-color": "#212428",
-    "discount-color": "#ff5429",
+    "discount-color": "#db5e40",
     "header_scrolling_hide": true,
     "header_slider1_title": "Discover Bundles",
     "header_slider1_image": "shopify://shop_images/qurebunnles.webp",
@@ -46,9 +46,9 @@
     "shipping_price": 10,
     "shipping_price_limit": 100,
     "cart_gift1_title": "",
-    "cart_gift1_product": "micro-infusion-dark-spots-1-treatment",
+    "cart_gift1_product": "",
     "cart_gift1_price_limit": 0,
-    "cart_gift1_icon": "patches",
+    "cart_gift1_icon": "none",
     "cart_gift2_title": "Free Silk Pillowcase",
     "cart_gift2_product": "silk-pillowcase",
     "cart_gift2_image": "shopify://shop_images/pillow_72c62128-5e60-4cdb-bdec-f344de6a90ad.svg",
@@ -59,9 +59,9 @@
     "cart_upsell3_product": "q-rejuvalight-pro-facewear",
     "cart_upsell4_product": "neck-decolletage-led",
     "cart_upsell5_product": "micro-infusion-targeted-patches",
-    "black_friday_turn_on": true,
-    "black_friday_discount": "WomensDay26",
-    "black_friday_discount_percent": 20,
+    "black_friday_turn_on": false,
+    "black_friday_discount": "",
+    "black_friday_discount_percent": 0,
     "black_friday_discount_exception": "qure-microinfusion-offer,qure-microinfusion-offer-men,micro-infusion-acne,micro-infusion-dark-spots,micro-infusion-faq-page-2,exclusive-holiday-bundle-deal-new,qure-micro-infusion-landing-page-b,exclusive-holiday-bundle-deal-v2",
     "enable_gamification": false,
     "gamification_exception": "qure-microinfusion-offer,qure-micro-infusion-landing-page-b",
@@ -123,6 +123,11 @@
         "settings": {
           "enable_cart_validation": true
         }
+      },
+      "17174303574952363282": {
+        "type": "shopify://apps/fondue-cashback-promotions/blocks/caseback-embed/dcfd972d-99c5-4526-b55b-2d76e990dec8",
+        "disabled": false,
+        "settings": {}
       }
     }
   }
