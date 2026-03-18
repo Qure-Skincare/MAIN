@@ -11,7 +11,24 @@
   "sections": {
     "product-bundle": {
       "type": "product-bundle",
-      "settings": {}
+      "blocks": {
+        "nextships_5rd2bS": {
+          "type": "nextships",
+          "disabled": true,
+          "settings": {
+            "date": "24th April",
+            "percent": 55,
+            "date_soldout": "23rd March",
+            "date_reserved": "23rd April"
+          }
+        }
+      },
+      "block_order": [
+        "nextships_5rd2bS"
+      ],
+      "settings": {
+        "reserved": false
+      }
     },
     "slider_featured_in_DDaUTN": {
       "type": "slider-featured-in",
