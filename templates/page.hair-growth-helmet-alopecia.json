@@ -505,6 +505,51 @@
         "youtube_url": false
       }
     },
+    "video_review_slider_3h9U8Q": {
+      "type": "video-review-slider",
+      "blocks": {
+        "slider_PrUUTL": {
+          "type": "slider",
+          "settings": {
+            "youtube_url": "",
+            "wistia_url": "hr1ahbnrgn"
+          }
+        },
+        "slider_qLdRNB": {
+          "type": "slider",
+          "settings": {
+            "youtube_url": "",
+            "wistia_url": "cp1yzbnyd4"
+          }
+        },
+        "slider_E8KKcf": {
+          "type": "slider",
+          "settings": {
+            "youtube_url": "",
+            "wistia_url": "yx9d5s1s0w"
+          }
+        },
+        "slider_Fqmhtj": {
+          "type": "slider",
+          "settings": {
+            "youtube_url": "https://youtu.be/nv5oKEULitQ?si=lLgvFaReEu4qh9uq",
+            "video_cover_image": "shopify://shop_images/Review_14.png",
+            "wistia_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "slider_PrUUTL",
+        "slider_qLdRNB",
+        "slider_E8KKcf",
+        "slider_Fqmhtj"
+      ],
+      "name": "t:sections.video-review-slider.name",
+      "settings": {
+        "heading": "Confidence starts here - at the roots",
+        "background_color": "#F6F6F7"
+      }
+    },
     "hair_growth_helmet_product_comparison_CxQNNe": {
       "type": "hair-growth-helmet-product-comparison",
       "blocks": {
@@ -754,6 +799,7 @@
     "carousel_jHy7Zp",
     "faq_VwkhRa",
     "hair_growth_helmet_usage_guide_HQaYec",
+    "video_review_slider_3h9U8Q",
     "hair_growth_helmet_product_comparison_CxQNNe",
     "faq_8dzUGE"
   ]
