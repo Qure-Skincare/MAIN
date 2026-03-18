@@ -5,6 +5,15 @@
   {% include 'n-footer-cart-drawer-item' %}
 {% enddoc %}
 
+
+{% assign rating_value = cart_item_product.metafields.reviews.rating.value %}
+{% assign rating_count = cart_item_product.metafields.reviews.rating_count.value %}
+{% assign show_rating = rating_value | slice: 0, 3 %}
+
+{% if rating_count < 5 %}
+    {% assign rating_count = 30 %}
+{% endif %}
+
 <div class="flyout-cart__item">
     <div class="c-cart-tile">
         <a href="{{ cart_item_url }}" aria-label="{{ cart_item_title | escape }}" class="c-cart-tile__image">
@@ -12,8 +21,8 @@
         </a>
         <h2 class="c-cart-tile__name"><a href="{{ cart_item_url }}" aria-label="{{ cart_item_title | escape }}">{{ cart_item_title }}</a></h2>
         <div class="c-cart-tile__reviews">
-            <div class="e-rating-stars" style="--rating: 4.5;"></div>
-            <a href="#">78 Reviews</a>
+            <div class="e-rating-stars" style="--rating: {{ show_rating }};"></div>
+            {{ rating_count }} {{ 'cart.drawer.settings.reviews' | t }}
         </div>
         {% unless preorder_exists %}
             <div class="c-cart-tile__available">
