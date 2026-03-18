@@ -202,7 +202,7 @@
             "heading": "1 Months",
             "subheading": "(1 box, 8 pairs)",
             "image": "shopify://shop_images/8-pairs.webp",
-            "soldout": true,
+            "soldout": false,
             "preorder": false,
             "preorder_text": "",
             "preorder_date_soldout": "",
