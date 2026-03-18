@@ -41,6 +41,7 @@
      
     {% assign cart_item_id = item.id %}
     {% assign cart_item_key = item.key %}
+    {% assign cart_item_product = item.product %}
     {% assign cart_item_quantity = item.quantity %}
     {% assign cart_item_quantity_minus = item.quantity |  minus: 1 %}
     {% assign cart_item_quantity_plus = item.quantity |  plus: 1 %}
@@ -55,7 +56,7 @@
     {% assign cart_item_compare_price = item.variant.compare_at_price | times: item.quantity %}
     {% assign cart_item_selling_plan = item.selling_plan_allocation %}
     {% assign cart_item_selling_plan_name = item.selling_plan_allocation.selling_plan.name %}
-    
+
     {% assign __cart_item_title = cart_item_title | downcase %}
 
     {% if settings.enable_test %}
