@@ -247,24 +247,24 @@
           "type": "section",
           "settings": {
             "image": "shopify://shop_images/6_aa559435-67ea-4abf-a608-b4bc6120687e.svg",
-            "heading": "<h6>Stimulates hair follicles</h6>",
-            "text": "<p>LLLT delivers targeted light energy deep into the scalp, reactivating dormant follicles affected by androgenetic alopecia and promoting the anagen (growth) phase of the hair cycle.</p>"
+            "heading": "<p><strong>Supports hair follicles</strong></p>",
+            "text": "<p>Low-level lasers reach deep into the scalp to energize dormant follicles, a critical step for those experiencing the early stages of androgenetic alopecia. This clinically tested technology works with the hair growth cycle to support fuller-looking hair over time, making it an effective approach for managing mild to moderate thinning.</p>"
           }
         },
         "section_gxTc4q": {
           "type": "section",
           "settings": {
             "image": "shopify://shop_images/8_cc4881c0-6c79-41b3-a3cd-887524f4a85d.svg",
-            "heading": "<h6>Improves hair thickness <strong>and density</strong></h6>",
-            "text": "<p>By enhancing blood flow and nutrient delivery to the scalp, LLLT helps to strengthen existing hair and encourage the growth of thicker, more resilient strands.</p>"
+            "heading": "<p><strong>Improves thickness</strong></p>",
+            "text": "<p>LED light supports circulation and nutrient delivery around the follicle, which is essential for combating the miniaturization of hair strands often seen in alopecia. Over time, this helps new strands grow in stronger-looking and more resilient, with clinical studies showing a significant increase in hair width and density.</p><p><br/></p>"
           }
         },
         "section_BTCCyz": {
           "type": "section",
           "settings": {
             "image": "shopify://shop_images/7_b652c035-154f-446a-8c7f-dbda4f7cf104.svg",
-            "heading": "<h6>Reduces shedding</h6>",
-            "text": "<p>LLLT helps to normalize the hair growth cycle, reducing the excessive shedding often associated with androgenetic alopecia and leading to a fuller appearance over time.</p>"
+            "heading": "<p><strong>Reduces visible shedding</strong></p>",
+            "text": "<p>By working with your natural growth cycle, light therapy may help prolong the active growth (anagen) phase, counteracting the shortened growth cycle characteristic of androgenetic alopecia. The result is fewer hairs lost daily, creating fuller-looking coverage and helping you feel more confident about your hair.</p>"
           }
         }
       },
@@ -547,7 +547,7 @@
       "name": "t:sections.video-review-slider.name",
       "settings": {
         "heading": "Confidence starts here - at the roots",
-        "background_color": "#F6F6F7"
+        "background_color": "#f6f6f7"
       }
     },
     "hair_growth_helmet_product_comparison_CxQNNe": {
