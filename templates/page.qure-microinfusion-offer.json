@@ -1010,6 +1010,7 @@
     },
     "sticky_cta_d9dC8X": {
       "type": "sticky-button",
+      "disabled": true,
       "name": "t:sections.sticky-button.name",
       "settings": {
         "heading": "Micro-Infusion Facial System",
