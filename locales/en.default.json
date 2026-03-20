@@ -379,7 +379,7 @@
         "soldout-button-label": "Sold Out"
       },
       "product-next-ships": {
-        "header": "Your Delivery Timeline: Next batch ships",
+        "header": "Your Delivery Timeline: next batch ships",
         "text": "Due to high demand, our {{ product_title }} is sold out. Order now and secure yours from the next shipment.",
         "soldout": "SOLD OUT",
         "reserved": "Reserved"
