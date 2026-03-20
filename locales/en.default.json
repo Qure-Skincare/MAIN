@@ -525,7 +525,7 @@
       "subscribe-button-label": "Subscribe Now",
       "subscribe-and-save-button-label": "Subscribe Now & Save {{ value }}%",
       "reserve-and-save-button-label": "Pre-Order Now & Save {{ value }}%",
-      "reserve-button-label": "Reserve Now",
+      "reserve-button-label": "Pre-Order Now & Save",
       "soldout-button-label": "Sold Out",
       "select-type": "Select Your Product:",
       "select-product": "Select Your supply:",
