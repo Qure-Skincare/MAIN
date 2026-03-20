@@ -521,7 +521,7 @@
   },
   "purchase-form": {
     "settings": {
-      "buy-button-label": "Reserve",
+      "buy-button-label": "Buy Now",
       "subscribe-button-label": "Subscribe Now",
       "subscribe-and-save-button-label": "Subscribe Now & Save {{ value }}%",
       "reserve-and-save-button-label": "Pre-Order Now & Save {{ value }}%",
