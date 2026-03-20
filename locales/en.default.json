@@ -347,7 +347,7 @@
   },
   "product": {
     "settings": {
-      "buy-button-label": "Reserve Now ",
+      "buy-button-label": "Buy Now ",
       "reserved-button-label": "Reserve Now",
       "soldout-button-label": "Sold Out",
       "save": "SAVE",
