@@ -85,6 +85,7 @@
       "blocks": {
         "product_card_y8Fn3G": {
           "type": "product_card",
+          "disabled": true,
           "settings": {
             "heading": "Micro-Infusion 3 Month Bundle (Wrinkles)",
             "product": "micro-infusion-3-month-bundle-for-wrinkles",
@@ -113,6 +114,7 @@
         },
         "product_card_trCBXF": {
           "type": "product_card",
+          "disabled": true,
           "settings": {
             "heading": "Micro-Infusion 1 Month Bundle (Wrinkles)",
             "product": "micro-infusion-1-month-bundle-for-wrinkles",
