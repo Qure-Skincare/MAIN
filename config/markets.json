@@ -29,6 +29,9 @@
     },
     "canada": {
       "parent": "@default"
+    },
+    "international": {
+      "parent": "@default"
     }
   }
 }
