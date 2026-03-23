@@ -12,5 +12,26 @@
     "market": "canada"
   },
   "parent": "product.micro-infusion-targeted-patches.json",
-  "sections": {}
+  "sections": {
+    "purchase-form-landing": {
+      "settings": {},
+      "blocks": {
+        "product_gbPf3J": {
+          "settings": {
+            "soldout": true
+          }
+        },
+        "product_NEgEkN": {
+          "settings": {
+            "soldout": true
+          }
+        },
+        "product_RBCPe8": {
+          "settings": {
+            "soldout": true
+          }
+        }
+      }
+    }
+  }
 }
