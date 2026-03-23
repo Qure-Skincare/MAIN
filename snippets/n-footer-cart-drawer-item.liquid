@@ -6,6 +6,7 @@
 {% enddoc %}
 
 
+{% assign preorder_date = cart_item_product.metafields.custom.preorder_date %}
 {% assign rating_value = cart_item_product.metafields.reviews.rating.value %}
 {% assign rating_count = cart_item_product.metafields.reviews.rating_count.value %}
 {% assign show_rating = rating_value | slice: 0, 3 %}
@@ -34,6 +35,12 @@
                 {% endif %}
             </div>
         {% endunless %}
+        {% if preorder_date != blank %}
+            <div class="c-cart-tile__pre-order">
+                <i class="e-icon e-icon-i"></i>
+                <div><strong>{{ 'cart.drawer.settings.preorder' | t }}</strong> {{ 'cart.drawer.settings.ships' | t }} {{ preorder_date | date: "%B %-d" }}.</div>
+            </div>
+        {% endif %}
         <div class="c-cart-tile__footer">
             <div class="c-cart-tile__price">
                 <div class="e-price">
