@@ -10,6 +10,8 @@
  
  {
     "common": {
+        "color": "Color",
+        "exception": "Exception",
         "klaviyo_form_name": "Klaviyo form",
         "best-value": "Best value",
         "results": "Results",
@@ -258,6 +260,9 @@
         }
     },
     "sections": {
+        "announcement-bar-gamification": {
+            "name": "Announcement bar gamification"
+        },
         "announcement-bar": {
             "name": "Announcement bar"
         },

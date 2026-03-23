@@ -1,0 +1,97 @@
+{% doc %}
+  Renders an announcement bar gamification section
+{% enddoc %}
+
+
+{% if section.settings.exception != blank %}
+    {% assign exception_list = section.settings.exception | split: ',' %}
+    {% assign path_lower = request.path | downcase %}
+
+    {% for exception in exception_list %}
+        {% assign exception = exception | downcase %}
+        {% capture _exception %}{{ exception | replace: ' ', '' }}{% endcapture %}
+        {% if exception != blank and path_lower contains _exception %}
+            {% assign is_exception = true %}
+            {% break %}
+        {% endif %}
+    {% endfor %}
+{% endif %}
+
+
+{% unless is_exception %}
+  <!-- ANNOUNCEMENT BAR -->
+  <style>
+    .announcement-bar-offer-countdown p {
+      color: {{ section.settings.color }} !important;
+    }
+  </style>
+  <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/announcement/announcement-bar.css" />
+  <div id="announcement-bar" class="announcement-bar" style="--ans-bar-font-size: 16px; --anc-bar-font-weight: 400">
+      <div class="container">
+          <div class="announcement-bar-content text-center">
+              <div class="announcement-bar-offer-countdown">
+                  {% if section.settings.heading != blank %}
+                    {{ section.settings.heading }}
+                  {% endif %}
+
+                  <div class="e-countdown" data-deadline="" style="--colorize-color: #ff5429">
+                      <div data-key="{{ 'n-announcement-bar-gamification.settings.days' | t }}">00</div>
+                      <div data-key="{{ 'n-announcement-bar-gamification.settings.hours' | t }}">00</div>
+                      <div data-key="{{ 'n-announcement-bar-gamification.settings.minutes' | t }}">00</div>
+                      <div data-key="{{ 'n-announcement-bar-gamification.settings.seconds' | t }}">00</div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  {% if section.settings.days > 0 %}
+      <script>
+          let customDays = {{ section.settings.days }} - 1;
+
+          document.addEventListener("DOMContentLoaded", function () {
+              loadScriptOnce("n-announcement-bar-gamification.js", "{{ 'n-announcement-bar-gamification.js' | asset_url }}");
+          });
+      </script>
+  {% endif %}
+  <!-- ANNOUNCEMENT BAR END -->
+{% endunless %}
+
+{% schema %}
+{
+  "name": "t:sections.announcement-bar-gamification.name",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "heading",
+      "label": "t:common.header"
+    },
+    {
+        "type": "color",
+        "id": "color",
+        "label": "t:common.color",
+        "default": "#000000"
+    },
+    { 
+      "type": "textarea", 
+      "id": "exception", 
+      "label": "t:common.exception" 
+    },
+    {
+        "type": "range",
+        "id": "days",
+        "min": 1,
+        "max": 30,
+        "step": 1,
+        "unit": "day",
+        "label": "t:common.days",
+        "default": 5
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.announcement-bar-gamification.name"
+    }
+  ]
+}
+{% endschema %}

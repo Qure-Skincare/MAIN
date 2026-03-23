@@ -345,6 +345,14 @@
       "savings": "EXCLUSIVE SAVINGS"
     }
   },
+  "n-announcement-bar-gamification": {
+    "settings": {
+        "days": "days",
+        "hours": "hours",
+        "minutes": "minutes",
+        "seconds": "seconds"
+    }
+  },
   "product": {
     "settings": {
       "buy-button-label": "Buy Now ",
