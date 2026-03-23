@@ -11,12 +11,16 @@
   "type": "header",
   "name": "t:sections-group.header.name",
   "sections": {
-    "endrock-gamification-header": {
-      "type": "endrock-gamification-header",
-      "settings": {}
+    "announcement-bar-gamification": {
+      "type": "n-announcement-bar-gamification",
+      "settings": {
+        "heading": "<p><strong>Limited Time Easter Offer</strong> - Save Up To 25%</p>",
+        "exception": "q-rejuvalight-pro-facewear, shower-filter"
+      }
     },
     "endrock-rotating-announcement": {
       "type": "endrock__rotating-announcement",
+      "disabled": true,
       "blocks": {
         "announcement-1": {
           "type": "announcement",
@@ -68,7 +72,7 @@
         "delay": 3000
       }
     },
-    "footer-form": {
+    "announcement-bar": {
       "type": "announcement-bar",
       "disabled": true,
       "settings": {
@@ -85,9 +89,9 @@
     }
   },
   "order": [
-    "endrock-gamification-header",
+    "announcement-bar-gamification",
     "endrock-rotating-announcement",
-    "footer-form",
+    "announcement-bar",
     "header"
   ]
 }
