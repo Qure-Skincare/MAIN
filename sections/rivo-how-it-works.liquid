@@ -1,0 +1,564 @@
+{% comment %}
+  Rivo LP - Coming Soon Steps (3 steps)
+  Structure required:
+  .rivo-section → .rivo-content-wrapper → .rivo-container → .rivo-lp-content
+{% endcomment %}
+
+<section
+  id="rivo-lp-{{ section.id }}"
+  class="rivo-section rivo-lp-section"
+  style="
+    {% if section.settings.background_image != blank %}
+      background-image: url({{ section.settings.background_image | image_url: width: 2400 }});
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    {% else %}
+      background-color: {{ section.settings.background_color }};
+    {% endif %}
+  "
+>
+  <div class="rivo-content-wrapper rivo-how-it-works-custom">
+    <div class="rivo-container">
+      <div class="rivo-lp-content">
+
+        <div class="rivo-lp-grid">
+          <!-- LEFT -->
+          <div class="rivo-lp-left">
+            {% if section.settings.badge_text != blank %}
+              <div class="rivo-lp-badge">
+                <span class="rivo-lp-badge-text">{{ section.settings.badge_text }}</span>
+              </div>
+            {% endif %}
+
+            {% if section.settings.heading != blank %}
+              <h2 class="rivo-lp-title">{{ section.settings.heading }}</h2>
+            {% endif %}
+
+            {% if section.settings.body != blank %}
+              <div class="rivo-lp-body">
+                {{ section.settings.body }}
+              </div>
+            {% endif %}
+
+            {% if section.settings.button_label != blank and section.settings.button_link != blank %}
+              <div class="rivo-lp-actions">
+                <a class="rivo-lp-btn rivo-lp-btn-outline" href="{{ section.settings.button_link }}">
+                  <span class="rivo-lp-btn-text">{{ section.settings.button_label }}</span>
+                </a>
+              </div>
+            {% endif %}
+          </div>
+
+          <!-- RIGHT -->
+          <div class="rivo-lp-right">
+            {% if section.settings.right_intro != blank %}
+              <div class="rivo-lp-right-intro">
+                {{ section.settings.right_intro }}
+              </div>
+            {% endif %}
+
+            <div class="rivo-lp-steps">
+              <div class="rivo-lp-steps-line" aria-hidden="true"></div>
+
+              {% for block in section.blocks %}
+                {% if block.type == 'step' %}
+                  <div class="rivo-lp-step" {{ block.shopify_attributes }}>
+                    <div class="rivo-lp-step-marker">
+                      <div class="rivo-lp-step-number">
+                        <span class="rivo-lp-step-number-text">{{ forloop.index }}</span>
+                      </div>
+                    </div>
+
+                    <div class="rivo-lp-step-content">
+                      {% if block.settings.title != blank %}
+                        <div class="rivo-lp-step-title">{{ block.settings.title }}</div>
+                      {% endif %}
+
+                      {% if block.settings.description != blank %}
+                        <div class="rivo-lp-step-description">{{ block.settings.description }}</div>
+                      {% endif %}
+                    </div>
+                  </div>
+                {% endif %}
+              {% endfor %}
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <style>
+    /* =========================
+       SECTION BASE
+    ========================= */
+    #rivo-lp-{{ section.id }}.rivo-lp-section {
+      color: {{ section.settings.text_color }};
+    }
+
+    #rivo-lp-{{ section.id }} .rivo-content-wrapper {
+      width: 100%;
+    }
+
+    #rivo-lp-{{ section.id }} .rivo-container {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+
+    #rivo-lp-{{ section.id }} .rivo-lp-content {
+      padding-top: {{ section.settings.section_padding_top }}px;
+      padding-right: 0px;
+      padding-bottom: {{ section.settings.section_padding_bottom }}px;
+      padding-left: 0px;
+    }
+
+    /* =========================
+       GRID
+    ========================= */
+    #rivo-lp-{{ section.id }} .rivo-lp-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 56px;
+      row-gap: 36px;
+      align-items: start;
+    }
+
+    /* =========================
+       LEFT
+    ========================= */
+    #rivo-lp-{{ section.id }} .rivo-lp-left {
+      max-width: 560px;
+      text-align:left;
+    }
+
+    #rivo-lp-{{ section.id }} .rivo-lp-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background-color: {{ section.settings.badge_bg_color }};
+      border-width: 1px;
+      border-style: solid;
+      border-color: {{ section.settings.badge_border_color }};
+      border-radius: 999px;
+      padding-top: 8px;
+      padding-right: 14px;
+      padding-bottom: 8px;
+      padding-left: 14px;
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 14px;
+      margin-left: 0px;
+    }
+
+    #rivo-lp-{{ section.id }} .rivo-lp-badge-text {
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: {{ section.settings.badge_text_color }};
+    }
+
+    #rivo-lp-{{ section.id }} .rivo-lp-title {
+      font-size: 32px;
+      line-height: 1.2;
+      font-weight: 300;
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 14px;
+      margin-left: 0px;
+      letter-spacing: -0.6px;
+    }
+
+    #rivo-lp-{{ section.id }} .rivo-lp-body {
+      font-size: 16px;
+      line-height: 24px;
+      color: {{ section.settings.muted_text_color }};
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 18px;
+      margin-left: 0px;
+      max-width: 520px;
+    }
+
+    #rivo-lp-{{ section.id }} .rivo-lp-body p {
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 10px;
+      margin-left: 0px;
+    }
+
+    #rivo-lp-{{ section.id }} .rivo-lp-actions {
+      margin-top: 18px;
+      margin-right: 0px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+    }
+
+    #rivo-lp-{{ section.id }} .rivo-lp-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      border-radius: 999px;
+      padding-top: 12px;
+      padding-right: 20px;
+      padding-bottom: 12px;
+      padding-left: 20px;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 18px;
+      transition-property: background-color, color, border-color, transform;
+      transition-duration: 200ms;
+      transition-timing-function: ease;
+    }
+
+    #rivo-lp-{{ section.id }} .rivo-lp-btn-outline {
+      background-color: transparent;
+      border-width: 2px;
+      border-style: solid;
+      border-color: {{ section.settings.accent_color }};
+      color: {{ section.settings.accent_color }};
+    }
+
+    #rivo-lp-{{ section.id }} .rivo-lp-btn-outline:hover {
+      background-color: {{ section.settings.accent_color }};
+      color: {{ section.settings.button_hover_text_color }};
+      transform: translateY(-1px);
+    }
+
+    /* =========================
+       RIGHT
+    ========================= */
+    #rivo-lp-{{ section.id }} .rivo-lp-right {
+      width: 100%;
+    }
+
+    #rivo-lp-{{ section.id }} .rivo-lp-right-intro {
+      font-size: 14px;
+      line-height: 22px;
+      color: {{ section.settings.muted_text_color }};
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 18px;
+      margin-left: 0px;
+      max-width: 520px;
+    }
+
+    #rivo-lp-{{ section.id }} .rivo-lp-right-intro p {
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 10px;
+      margin-left: 0px;
+      text-align: left;
+    }
+
+    /* =========================
+       STEPS (TIMELINE)
+    ========================= */
+    #rivo-lp-{{ section.id }} .rivo-lp-steps {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      row-gap: 18px;
+      padding-top: 8px;
+      padding-right: 0px;
+      padding-bottom: 8px;
+      padding-left: 0px;
+    }
+
+    #rivo-lp-{{ section.id }} .rivo-lp-steps-line {
+      position: absolute;
+      left: 21px;
+      top: 21px;
+      bottom: 42px;
+      width: 2px;
+      background-color: {{ section.settings.line_color }};
+      opacity: 1;
+    }
+
+    #rivo-lp-{{ section.id }} .rivo-lp-step {
+      display: grid;
+      grid-template-columns: 44px 1fr;
+      column-gap: 14px;
+      align-items: start;
+      position: relative;
+    }
+
+    #rivo-lp-{{ section.id }} .rivo-lp-step-marker {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding-top: 0px;
+      padding-right: 0px;
+      padding-bottom: 0px;
+      padding-left: 0px;
+      position: relative;
+      z-index: 1;
+    }
+
+    #rivo-lp-{{ section.id }} .rivo-lp-step-number {
+      width: 36px;
+      height: 36px;
+      border-radius: 999px;
+      background-color: {{ section.settings.accent_color }};
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.18);
+    }
+
+    #rivo-lp-{{ section.id }} .rivo-lp-step-number-text {
+      font-size: 14px;
+      line-height: 14px;
+      font-weight: 400;
+      color: {{ section.settings.step_number_text_color }};
+    }
+
+    #rivo-lp-{{ section.id }} .rivo-lp-step-content {
+      padding-top: 2px;
+      padding-right: 0px;
+      padding-bottom: 0px;
+      padding-left: 0px;
+      max-width: 520px;
+      text-align: left;
+    }
+
+    #rivo-lp-{{ section.id }} .rivo-lp-step-title {
+      font-family: "Canela";
+      font-size: 20px;
+      line-height: 22px;
+      font-weight: 400;
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 4px;
+      margin-left: 0px;
+      color: {{ section.settings.text_color }};
+    }
+
+    #rivo-lp-{{ section.id }} .rivo-lp-step-description {
+      font-size: 16px;
+      line-height: 20px;
+      color: {{ section.settings.muted_text_color }};
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+    }
+
+    /* =========================
+       MOBILE
+    ========================= */
+    @media screen and (max-width: 749px) {
+    #rivo-lp-{{ section.id }} .rivo-lp-left,
+    #rivo-lp-{{ section.id }} .rivo-lp-right-intro p {
+      text-align: center;
+    }
+
+    .rivo-lp-steps-line {
+        left: 22px !important;
+        top: 22px !important;
+        bottom: 44px !important;
+    }
+      #rivo-lp-{{ section.id }} .rivo-container {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+
+      #rivo-lp-{{ section.id }} .rivo-lp-grid {
+        grid-template-columns: 1fr;
+        column-gap: 0px;
+        row-gap: 26px;
+      }
+
+      #rivo-lp-{{ section.id }} .rivo-lp-title {
+        font-size: 34px;
+        line-height: 40px;
+      }
+
+      #rivo-lp-{{ section.id }} .rivo-lp-steps-line {
+        left: 18px;
+        top: 18px;
+        bottom: 18px;
+      }
+
+      #rivo-lp-{{ section.id }} .rivo-lp-step {
+        grid-template-columns: 44px 1fr;
+        column-gap: 12px;
+      }
+
+      #rivo-lp-{{ section.id }} .rivo-lp-right-intro {
+        max-width: 100%;
+      }
+
+      #rivo-lp-{{ section.id }} .rivo-lp-left {
+        max-width: 100%;
+      }
+    }
+  </style>
+</section>
+
+{% schema %}
+{
+  "name": "Rivo How It Work",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background image"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color (used if no image)",
+      "default": "#F3C872"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Primary text color",
+      "default": "#2A1E12"
+    },
+    {
+      "type": "color",
+      "id": "muted_text_color",
+      "label": "Muted text color",
+      "default": "#5A4633"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accent color",
+      "default": "#3A2A1C"
+    },
+    {
+      "type": "color",
+      "id": "line_color",
+      "label": "Timeline line color",
+      "default": "#3A2A1C"
+    },
+    {
+      "type": "text",
+      "id": "badge_text",
+      "label": "Badge text",
+      "default": "SWEET UPDATES"
+    },
+    {
+      "type": "color",
+      "id": "badge_bg_color",
+      "label": "Badge background color",
+      "default": "rgba(255,255,255,0.35)"
+    },
+    {
+      "type": "color",
+      "id": "badge_border_color",
+      "label": "Badge border color",
+      "default": "rgba(58,42,28,0.35)"
+    },
+    {
+      "type": "color",
+      "id": "badge_text_color",
+      "label": "Badge text color",
+      "default": "#2A1E12"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Next Batch Coming Soon!"
+    },
+    {
+      "type": "richtext",
+      "id": "body",
+      "label": "Body text",
+      "default": "<p>Remember, good things come to those who wait! Join our list for updates and be the first to know when we start taking orders again.</p>"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label",
+      "default": "Join The Sweetness Squad"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_text_color",
+      "label": "Button hover text color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "richtext",
+      "id": "right_intro",
+      "label": "Right side intro text",
+      "default": "<p>Our kitchen is currently busy crafting sweet moments for existing orders. Here’s how you can be ready for the next batch:</p>"
+    },
+    {
+      "type": "color",
+      "id": "step_number_text_color",
+      "label": "Step number text color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top",
+      "label": "Section padding top",
+      "min": 0,
+      "max": 140,
+      "step": 4,
+      "unit": "px",
+      "default": 56
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom",
+      "label": "Section padding bottom",
+      "min": 0,
+      "max": 140,
+      "step": 4,
+      "unit": "px",
+      "default": 56
+    }
+  ],
+  "blocks": [
+    {
+      "type": "step",
+      "name": "Step",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Step title",
+          "default": "Subscribe for updates"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Step description",
+          "default": "Get notified as soon as ordering reopens."
+        }
+      ]
+    }
+  ],
+  "max_blocks": 3,
+  "presets": [
+    {
+      "name": "Rivo How It Works",
+      "blocks": [
+        { "type": "step" },
+        { "type": "step" },
+        { "type": "step" }
+      ]
+    }
+  ]
+}
+{% endschema %}

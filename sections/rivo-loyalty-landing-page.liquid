@@ -4,6 +4,19 @@
 
 <link rel="stylesheet" type="text/css" href="{{ shop.metafields.ba_global.config.asset_urls.loy.lp_css }}"/>
 
+{% if customer %}
+  <style>
+    #rivo-how-it-works { display: block !important; }
+    .rivo-how-it-works-custom { display: none !important; }
+  </style>
+{% else %}
+  <style>
+    #rivo-how-it-works,
+ #rivo-lp-explainer { display: none !important; }
+    .rivo-how-it-works-custom { display: block !important; }
+  </style>
+{% endif %}
+
 <style type="text/css">
   :root {
     --rivo-title-font-family: {{ section.settings.title_font_family }};
