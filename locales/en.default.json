@@ -506,7 +506,9 @@
         "subtotal": "Subtotal",
         "insurance-text": "Protect your order from loss, damage and theft",
         "guarantee-text": "Backed by our 30-Day Money-Back Guarantee",
-        "checkout": "CHECKOUT"
+        "checkout": "CHECKOUT",
+        "preorder": "Pre-order.",
+        "ships": "Ships"
       },
       "empty": {
         "header": "Your cart is empty..",
