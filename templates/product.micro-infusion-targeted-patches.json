@@ -162,7 +162,7 @@
             "heading": "3 Months",
             "subheading": "(3 boxes, 24 pairs)",
             "image": "shopify://shop_images/24-pairs.webp",
-            "soldout": true,
+            "soldout": false,
             "preorder": false,
             "preorder_text": "",
             "preorder_date_soldout": "",
@@ -182,7 +182,7 @@
             "heading": "2 Months",
             "subheading": "(2 boxes, 16 pairs)",
             "image": "shopify://shop_images/16-pairs.webp",
-            "soldout": true,
+            "soldout": false,
             "preorder": false,
             "preorder_text": "",
             "preorder_date_soldout": "",
@@ -202,7 +202,7 @@
             "heading": "1 Months",
             "subheading": "(1 box, 8 pairs)",
             "image": "shopify://shop_images/8-pairs.webp",
-            "soldout": true,
+            "soldout": false,
             "preorder": false,
             "preorder_text": "",
             "preorder_date_soldout": "",
@@ -223,7 +223,7 @@
         "form_name": "purchase-form-landing",
         "hide_types": true,
         "type": "box",
-        "klaviyo_form_name": "WN4W5P"
+        "klaviyo_form_name": ""
       }
     },
     "slider_featured_in_biQEht": {
