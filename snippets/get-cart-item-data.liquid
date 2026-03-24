@@ -34,6 +34,10 @@
     {% assign cart_item_original_price = null %}
     {% assign discount_exists = null %}
     {% assign discount_100_exists = null %}
+    {% assign cart_item_preorder_date = null %}
+    {% assign cart_item_rating_value = null %}
+    {% assign cart_item_rating_count = null %}
+    {% assign cart_item_show_rating = null %}
 
 
 
@@ -42,6 +46,7 @@
     {% assign cart_item_id = item.id %}
     {% assign cart_item_key = item.key %}
     {% assign cart_item_product = item.product %}
+    {% assign cart_item_product_variant_id = item.variant.id %}
     {% assign cart_item_quantity = item.quantity %}
     {% assign cart_item_quantity_minus = item.quantity |  minus: 1 %}
     {% assign cart_item_quantity_plus = item.quantity |  plus: 1 %}
@@ -151,6 +156,17 @@
     {% if total_compare_price > total_price  %}
       {% assign summary_before_price = total_compare_price | money_without_trailing_zeros %}
       {% assign summary_saving_price = total_saving_price | money_without_trailing_zeros %}
+    {% endif %}
+
+
+
+    {% assign cart_item_preorder_date = cart_item_product.metafields.custom.preorder_date %}
+    {% assign cart_item_rating_value = cart_item_product.metafields.reviews.rating.value %}
+    {% assign cart_item_rating_count = cart_item_product.metafields.reviews.rating_count.value %}
+    {% assign cart_item_show_rating = cart_item_rating_value | slice: 0, 3 %}
+
+    {% if cart_item_rating_count < 5 %}
+        {% assign cart_item_rating_count = 30 %}
     {% endif %}
 
 {% endif %}
