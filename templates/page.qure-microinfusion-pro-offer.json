@@ -99,6 +99,7 @@
       "settings": {
         "use_own_file": true,
         "modifier": "none",
+        "modifier_2": "none",
         "background_color": "none",
         "heading": "<h2>Qure’s Micro-Infusion goes where your skin cream can’t…</h2>",
         "text": "<p>The patent-pending system uses tiny, almost painless, microneedles penetrate beyond the skin’s surface increasing serum absorption and delivering powerful active ingredients exactly where they’re needed!</p><p><strong>How Qure refreshes your skin in 3 easy steps:</strong></p><p>[step]</p><ul><li><strong>Stamp</strong>Patented 24k gold needles create micro-channels.</li><li><strong>Infuse</strong>Clinically formulated serum flows directly into the dermis, not on top of it.</li><li><strong>Renews</strong>Helps skin look refreshed and visibly renewed.</li></ul>",
@@ -420,25 +421,29 @@
         "comparison_table_heading_GdDqRQ": {
           "type": "comparison_table_heading",
           "settings": {
-            "heading": "Results in"
+            "heading": "Results in",
+            "color": "none"
           }
         },
         "comparison_table_heading_VnV9cX": {
           "type": "comparison_table_heading",
           "settings": {
-            "heading": "Customized"
+            "heading": "Customized",
+            "color": "none"
           }
         },
         "comparison_table_heading_pk7q98": {
           "type": "comparison_table_heading",
           "settings": {
-            "heading": "Skin Safe"
+            "heading": "Skin Safe",
+            "color": "colorize"
           }
         },
         "comparison_table_heading_Y36J4p": {
           "type": "comparison_table_heading",
           "settings": {
-            "heading": "Cost"
+            "heading": "Cost",
+            "color": "none"
           }
         }
       },
@@ -904,7 +909,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Can I use it around the eyes and on the neck?",
-            "text": "<p>Yes, you can use Micro-Infusion around the eye area to help smooth crow’s feet. Just ensure to apply a very gentle pressure and only do one pass. Monitor your skin accordingly as everyone’s skin is different!</p><p>Performing Micro-Infusion on the neck can help improve the appearance of fine lines, and rejuvenate skin. It can target issues such as neck creases, horizontal lines, and age-related skin concerns to help enhance the overall texture, tone, and youthfulness of the skin.</p                                "
+            "text": "<p>Yes, you can use Micro-Infusion around the eye area to help smooth crow’s feet. Just ensure to apply a very gentle pressure and only do one pass. Monitor your skin accordingly as everyone’s skin is different!</p><p>Performing Micro-Infusion on the neck can help improve the appearance of fine lines, and rejuvenate skin. It can target issues such as neck creases, horizontal lines, and age-related skin concerns to help enhance the overall texture, tone, and youthfulness of the skin.</p"
           }
         },
         "accordion_grRXEq": {

@@ -1,0 +1,113 @@
+{% doc %}
+  Renders an accordion tiles section with optional ingredient dialog.
+{% enddoc %}
+
+<!-- ACCORDION TILES -->
+{% if section.settings.use_own_file %}
+  <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/accordion-tiles/accordion-tiles.css" />
+{% endif %}
+<section class="accordion-tiles">
+  <div class="container">
+    <article>
+      {{ section.settings.text }}
+      {% for block in section.blocks %}
+        {% if block.type == 'accordion' %}
+          <details>
+            <summary>
+              {% if block.settings.image != blank %}
+                <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+              {% endif %}
+              <span>{{ block.settings.heading }} <i class="e-icon e-icon-chevron"></i> </span>
+            </summary>
+            {{ block.settings.text }}
+          </details>
+        {% endif %}
+      {% endfor %}
+      {% for block in section.blocks %}
+        {% if block.type == 'dialog' %}
+          {% if block.settings.button_label != blank %}
+            <button class="btn btn--primary-grey" type="button" onclick="fullIngredient.showModal()">{{ block.settings.button_label }}</button>
+          {% endif %}
+          <dialog class="c-dialog" id="fullIngredient">
+            <div class="c-dialog__content">
+              {{ block.settings.text }}
+              <button type="button" class="btn-close" onclick="fullIngredient.close()">
+                <i class="e-icon e-icon-cross"></i>
+              </button>
+            </div>
+          </dialog>
+        {% endif %}
+      {% endfor %}
+    </article>
+  </div>
+</section>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    loadScriptOnce("dialog", "https://qureskincaredns.com/assets/js-new/dialog.js");
+  });
+</script>
+<!-- ACCORDION TILES END -->
+
+{% schema %}
+{
+  "name": "t:sections.n_accordion-tiles.name",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "use_own_file",
+      "label": "t:common.use-own-file",
+      "default": false
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "t:common.text"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "accordion",
+      "name": "t:common.accordion",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:common.image"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "t:common.header"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "t:common.text"
+        }
+      ]
+    },
+    {
+      "type": "dialog",
+      "name": "t:common.dialog",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "t:common.button-label"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "t:common.text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.n_accordion-tiles.name"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,60 @@
+{% doc %}
+  Renders a guarantee section with icon, heading, and body text.
+{% enddoc %}
+
+<!-- GUARANTEE -->
+{% if section.settings.use_own_file %}
+  <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/guarantee/guarantee.css" />
+{% endif %}
+<section class="guarantee">
+  <div class="container">
+    <article>
+      {% if section.settings.image != blank %}
+        <img src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt | escape }}" loading="lazy" />
+      {% endif %}
+      {% if section.settings.heading != blank %}
+        {{ section.settings.heading }}
+      {% endif %}
+      {% if section.settings.text != blank %}
+        <div>
+          {{ section.settings.text }}
+        </div>
+      {% endif %}
+    </article>
+  </div>
+</section>
+<!-- GUARANTEE END -->
+
+{% schema %}
+{
+  "name": "t:sections.n_guarantee.name",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "use_own_file",
+      "label": "t:common.use-own-file",
+      "default": false
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "t:common.image"
+    },
+    {
+      "type": "richtext",
+      "id": "heading",
+      "label": "t:common.header"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "t:common.text"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.n_guarantee.name"
+    }
+  ]
+}
+{% endschema %}

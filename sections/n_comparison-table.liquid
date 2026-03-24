@@ -8,13 +8,13 @@
 {% endif %}
 <section class="comparison-table">
     <div class="container">
-        {{ section.settings.heading }}
+        {{ section.settings.text }}
         <div class="comparison-table__content">
             <ul>
                 {% for block in section.blocks %}
                     {% if block.type == 'comparison_table_heading' %}
                         {% if block.settings.heading != blank %}
-                            <li>{{ block.settings.heading }}</li>
+                            <li{% if block.settings.color == 'colorize' %} class="colorize"{% endif %}>{{ block.settings.heading }}</li>
                         {% endif %}
                     {% endif %}
                 {% endfor %}
@@ -53,7 +53,7 @@
                                         </picture>
                                     {% endif %}
 
-                                    {{ section.settings.heading }}
+                                    {{ block.settings.heading }}
 
                                     <ul>
                                         {% if block.settings.text_1 != blank %}
@@ -115,6 +115,22 @@
                 "type": "text",
                 "id": "heading",
                 "label": "t:common.header"
+            },
+            {
+                "type": "select",
+                "id": "color",
+                "label": "t:common.color",
+                "default": "none",
+                "options": [
+                    {
+                        "value": "none",
+                        "label": "t:common.none"
+                    },
+                    {
+                        "value": "colorize",
+                        "label": "t:common.colorize"
+                    }
+                ]
             }
         ]
     },

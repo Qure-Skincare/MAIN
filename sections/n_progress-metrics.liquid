@@ -3,9 +3,9 @@
 {% enddoc %}
 
 <!-- PROGRESS METRICS -->
- {% if section.settings.use_own_file %}
-    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/progress-metrics/progress-metrics.css" />
- {% endif %}
+{% if section.settings.use_own_file %}
+<link rel="stylesheet" href="https://qureskincaredns.com/sections/new/progress-metrics/progress-metrics.css" />
+{% endif %}
 <section class="progress-metrics" id="improve_skin">
     <div class="container">
         {% if section.settings.text != blank %}
@@ -13,6 +13,53 @@
                 {{ section.settings.text }}
             </article>
         {% endif %}
+        
+        {% assign compare_image_blocks = section.blocks | where: "type", "compare_image" %}
+        {% if compare_image_blocks.size > 0 %}
+            <div
+                class="c-swiper"
+                data-swiper='{
+                        "slidesPerView": 1,
+                        "spaceBetween": 16,
+                        "loop": false,
+                        "pagination": {
+                            "el": ".progress-metrics .c-swiper-pagination",
+                            "type": "custom"
+                        },
+                        "navigation": {
+                            "prevEl": ".progress-metrics .c-swiper-button-prev",
+                            "nextEl": ".progress-metrics .c-swiper-button-next"
+                        }
+                    }'>
+                <div class="swiper-wrapper">
+                    {% for block in section.blocks %}
+                        {% if block.type == 'compare_image' %}
+                            <div class="swiper-slide">
+                                <div class="c-visual-compare-card">
+                                    {% if block.settings.image != blank %}
+                                        <picture>
+                                            <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                        </picture>
+                                    {% endif %}
+                                    {% if block.settings.text != blank %}
+                                        <article>
+                                            {{ block.settings.text | replace: '<p>[span]', '<span>' | replace: '[/span]</p>', '</span>' }}
+                                        </article>
+                                    {% endif %}
+                                    
+                                </div>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                <div class="c-swiper-nav">
+                    <button class="c-swiper-button-prev"></button>
+                    <div class="c-swiper-pagination"></div>
+                    <button class="c-swiper-button-next"></button>
+                </div>
+            </div>
+        {% endif %}
+
         
         {%  assign image_blocks = section.blocks | where: "type", "image" %}
         {% if image_blocks.size > 0 %}
@@ -118,6 +165,22 @@
                 },
                 {
                     "type": "text",
+                    "id": "text",
+                    "label": "t:common.text"
+                }
+            ]
+        },
+        {
+            "type": "compare_image",
+            "name": "t:common.compare-image",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                },
+                {
+                    "type": "richtext",
                     "id": "text",
                     "label": "t:common.text"
                 }

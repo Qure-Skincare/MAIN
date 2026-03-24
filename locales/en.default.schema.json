@@ -20,6 +20,7 @@
         "compare-price": "Compare price",
         "discount-price": "Discount price",
         "compare": "Compare",
+        "compare-image": "Compare image",
         "comparison-table": "Comparison table",
         "comparison-table-heading": "Comparison table header",
         "show_discount": "Show discount",
@@ -84,6 +85,7 @@
         "style-color": "Style color",
         "color-switch": "Color switch",
         "color-switch-heading": "Color switch header",
+        "color": "Color",
         "bundle-tag-color": "Bundle tag color",
         "green": "Green",
         "light-green": "Light green",
@@ -181,8 +183,11 @@
         "shower": "Shower",
         "static": "Static",
         "buy-box": "Buy box",
+        "buy-button": "Buy button",
         "background-color": "Background color",
         "feedback": "Feedback",
+        "left-feedback": "Left feedback",
+        "right-feedback": "Right feedback",
         "am": "AM",
         "pm": "PM",
         "none": "None",
@@ -214,7 +219,15 @@
         "faq-ask-plate": "FAQ ask plate",
         "note": "Note",
         "icon": "Icon",
+        "icon-with-text": "Icon with text",
         "simple": "Simple",
+        "fine-lines": "Fine lines",
+        "wrinkles": "Wrinkles",
+        "dark-spots": "Dark spots",
+        "blemishes": "Blemishes",
+        "rough-texture": "Rough texture",
+        "eye-bags": "Eye bags",
+        "puffiness": "Puffiness",
         "shipping-order": "Shipping order",
         "rejuvalight-pro-facewear": "Q-Rejuvalight Pro Facewear",
         "micro-infusion-system": "Micro-Infusion System",
@@ -245,7 +258,18 @@
         "cross": "Cross",
         "checkmark": "Checkmark",
         "light": "Light",
-        "grey": "Grey"
+        "grey": "Grey",
+        "orange": "Orange",
+        "perfect-transforming": "Perfect transforming",
+        "two-in-one": "Two in one",
+        "even-looking": "Even looking",
+        "smooths": "Smooths",
+        "calms-redness": "Calms redness",
+        "deeply-hydrates": "Deeply hydrates",
+        "guarantee": "Guarantee",
+        "shipping-order": "Shipping order",
+        "reverse": "Reverse",
+        "colorize": "Colorize"
     },
     "blocks": {
         "block-card": {
@@ -260,6 +284,9 @@
     "sections": {
         "announcement-bar": {
             "name": "Announcement bar"
+        },
+        "n_accordion-tiles": {
+            "name": "Accordion tiles"
         },
         "n_across-image-banner": {
             "name": "Across image banner",
@@ -290,7 +317,8 @@
             "settings": {
                 "modifier-options": {
                     "none": "None",
-                    "reverse": "Reverse"
+                    "reverse": "Reverse",
+                    "simple-grid": "Simple grid"
                 },
                 "background-color-options": {
                     "none": "None",
@@ -307,6 +335,12 @@
                         "copper": "Copper",
                         "micro-organisms": "Micro-organisms"
                     }
+                },
+                "certified_box": {
+                    "name": "Certified box"
+                },
+                "features_list": {
+                    "name": "Features list"
                 }
             }
         },
@@ -415,6 +449,9 @@
         "n_faq": {
             "name": "FAQ"
         },
+        "n_guarantee": {
+            "name": "Guarantee"
+        },
         "n_progress-metrics": {
             "name": "Progress metrics"
         },
@@ -485,7 +522,8 @@
                         "mi-quick": "MI quick",
                         "mi-painless": "MI painless",
                         "mi-seamless": "MI seamless",
-                        "perfect-transforming": "Perfect transforming"
+                        "perfect-transforming": "Perfect transforming",
+                        "two-in-one": "Two in one"
                     }
                 }
             }
@@ -495,6 +533,41 @@
         },
         "n_press-reviews": {
             "name": "Press reviews"
+        },
+        "n_highlight": {
+            "name": "Highlight",
+            "settings": {
+                "modifier-options": {
+                    "green": "Green",
+                    "dark": "Dark"
+                }
+            }
+        },
+        "n_should-know": {
+            "name": "Should know"
+        },
+        "n_science-backed": {
+            "name": "Science backed",
+            "blocks": {
+                "left_accordion": {
+                    "name": "Left accordion"
+                },
+                "right_accordion": {
+                    "name": "Right accordion"
+                },
+                "left_text_with_image": {
+                    "name": "Left text with image"
+                },
+                "right_text_with_image": {
+                    "name": "Right text with image"
+                },
+                "left_feedback": {
+                    "name": "Left feedback"
+                },
+                "right_feedback": {
+                    "name": "Right feedback"
+                }
+            }
         },
         "collection": {
             "name": "Collection",
