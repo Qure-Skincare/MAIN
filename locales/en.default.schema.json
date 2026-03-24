@@ -271,7 +271,8 @@
         "guarantee": "Guarantee",
         "shipping-order": "Shipping order",
         "reverse": "Reverse",
-        "colorize": "Colorize"
+        "colorize": "Colorize",
+        "guide": "Guide"
     },
     "blocks": {
         "block-card": {
