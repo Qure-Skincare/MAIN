@@ -6,11 +6,14 @@
     <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/text-section/text-section.css" />
 {% endif %}
 
-<section class="text-section">
+<section class="text-section{% if section.settings.modifier != 'none' %} text-section--{{ section.settings.modifier }}{% endif %}">
     <div class="container">
         {% if section.settings.text != blank %}
             <article>
                 {{ section.settings.text }}
+                {% if section.settings.button_label != blank and section.settings.button_url != blank %}
+                    <a class="btn btn--primary" href="{{ section.settings.button_url }}">{{ section.settings.button_label }} <i class="e-icon e-icon-arrow"></i> </a>
+                {% endif %}
             </article>
         {% endif %}
     </div>
@@ -28,9 +31,35 @@
                 "default": false
             },
             {
+                "type": "select",
+                "id": "modifier",
+                "label": "t:common.modifier",
+                "default": "none",
+                "options": [
+                    {
+                        "value": "none",
+                        "label": "t:common.none"
+                    },
+                    {
+                        "value": "guide",
+                        "label": "t:common.guide"
+                    }
+                ]
+            },
+            {
                 "type": "richtext",
                 "id": "text",
                 "label": "t:common.text"
+            },
+            {
+                "type": "text",
+                "id": "button_label",
+                "label": "t:common.button-label"
+            },
+            {
+                "type": "url",
+                "id": "button_url",
+                "label": "t:common.button-url"
             }
         ],
         "presets": [
