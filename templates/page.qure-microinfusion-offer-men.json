@@ -724,29 +724,25 @@
         "comparison_table_heading_xyncQd": {
           "type": "comparison_table_heading",
           "settings": {
-            "heading": "Results in",
-            "color": "none"
+            "heading": "Results in"
           }
         },
         "comparison_table_heading_RFR6L8": {
           "type": "comparison_table_heading",
           "settings": {
-            "heading": "Customized",
-            "color": "none"
+            "heading": "Customized"
           }
         },
         "comparison_table_heading_86rDzQ": {
           "type": "comparison_table_heading",
           "settings": {
-            "heading": "Skin Safe",
-            "color": "colorize"
+            "heading": "Skin Safe"
           }
         },
         "comparison_table_heading_rfBMbF": {
           "type": "comparison_table_heading",
           "settings": {
-            "heading": "Cost",
-            "color": "none"
+            "heading": "Cost"
           }
         },
         "comparison_table_JULNzp": {

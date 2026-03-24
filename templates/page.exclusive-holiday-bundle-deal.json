@@ -315,7 +315,7 @@
           "settings": {
             "product": "line-refine-bundle-pro1",
             "preselected": false,
-            "soldout": false,
+            "soldout": true,
             "reserved": false
           }
         },

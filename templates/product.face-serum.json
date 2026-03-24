@@ -741,29 +741,25 @@
         "comparison_table_heading_b6fAAH": {
           "type": "comparison_table_heading",
           "settings": {
-            "heading": "Active Ingredients",
-            "color": "none"
+            "heading": "Active Ingredients"
           }
         },
         "comparison_table_heading_PTcf36": {
           "type": "comparison_table_heading",
           "settings": {
-            "heading": "Multi-Benefit Formula",
-            "color": "none"
+            "heading": "Multi-Benefit Formula"
           }
         },
         "comparison_table_heading_BTUB3F": {
           "type": "comparison_table_heading",
           "settings": {
-            "heading": "Ease of Use",
-            "color": "colorize"
+            "heading": "Ease of Use"
           }
         },
         "comparison_table_heading_w3ziN9": {
           "type": "comparison_table_heading",
           "settings": {
-            "heading": "Cost",
-            "color": "none"
+            "heading": "Cost"
           }
         },
         "comparison_table_UY3pRQ": {
