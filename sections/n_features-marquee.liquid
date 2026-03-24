@@ -27,54 +27,54 @@
 
 {% schema %}
 {
-    "name": "t:sections.n_features-marquee.name",
-    "settings": [
-        {
-            "type": "checkbox",
-            "id": "use_own_file",
-            "label": "t:common.use-own-file",
-            "default": false
-        }
-    ],
-    "blocks": [
-        {
-            "type": "image_with_text",
-            "name": "t:common.image-with-text",
-            "settings": [
-                {
-                    "type": "select",
-                    "id": "icon",
-                    "label": "t:common.icon",
-                    "options": [
-                        { 
-                            "value": "shipping-order", 
-                            "label": "t:sections.n_features-marquee.blocks.icon.settings.shipping-order" 
-                        },
-                        { 
-                            "value": "reviewed", 
-                            "label": "t:sections.n_features-marquee.blocks.icon.settings.reviewed" 
-                        },
-                        {   "value": "pay-later", 
-                            "label": "t:sections.n_features-marquee.blocks.icon.settings.pay-later" 
-                        },
-                        { 
-                            "value": "proven", 
-                            "label": "t:sections.n_features-marquee.blocks.icon.settings.proven" 
-                        }
-                    ]
-                },
-                {
-                    "type": "text",
-                    "id": "text",
-                    "label": "t:common.text"
-                }
-            ]
-        }
-    ],
-    "presets": [
-        {
-            "name": "t:sections.n_features-marquee.name"
-        }
-    ]
+"name": "t:sections.n_features-marquee.name",
+"settings": [
+    {
+        "type": "checkbox",
+        "id": "use_own_file",
+        "label": "t:common.use-own-file",
+        "default": false
+    }
+],
+"blocks": [
+    {
+        "type": "image_with_text",
+        "name": "t:common.image-with-text",
+        "settings": [
+            {
+                "type": "select",
+                "id": "icon",
+                "label": "t:common.icon",
+                "options": [
+                    { 
+                        "value": "shipping-order", 
+                        "label": "t:sections.n_features-marquee.blocks.icon.settings.shipping-order" 
+                    },
+                    { 
+                        "value": "reviewed", 
+                        "label": "t:sections.n_features-marquee.blocks.icon.settings.reviewed" 
+                    },
+                    {   "value": "pay-later", 
+                        "label": "t:sections.n_features-marquee.blocks.icon.settings.pay-later" 
+                    },
+                    { 
+                        "value": "proven", 
+                        "label": "t:sections.n_features-marquee.blocks.icon.settings.proven" 
+                    }
+                ]
+            },
+            {
+                "type": "text",
+                "id": "text",
+                "label": "t:common.text"
+            }
+        ]
+    }
+],
+"presets": [
+    {
+        "name": "t:sections.n_features-marquee.name"
+    }
+]
 }
 {% endschema %}

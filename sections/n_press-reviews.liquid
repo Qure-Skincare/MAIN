@@ -1,0 +1,107 @@
+{% doc %}
+  Renders a press reviews section
+{% enddoc %}
+
+<!-- PRESS REVIEWS -->
+ {% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/press-reviews/press-reviews.css" />
+ {% endif %}
+<section class="press-reviews">
+    <div class="container">
+        {{ section.settings.text }}
+        <div
+            class="c-swiper"
+            data-swiper-thumbs=".press-reviews .c-swiper-thumbs"
+            data-swiper='{
+                "slidesPerView": 1,
+                "spaceBetween": 16,
+                "loop": true,
+                "autoplay": {
+                    "delay": 5000
+                }
+            }'>
+            <div class="swiper-wrapper">
+                {% for block in section.blocks %}
+                    {% if block.type == 'image_with_text' %}
+                        {% if block.settings.text != blank %}
+                            <div class="swiper-slide">
+                                {{ block.settings.text }}
+                            </div>
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+        <div
+            class="c-swiper c-swiper-thumbs"
+            data-swiper='{
+                "slidesPerView": 3,
+                "spaceBetween": 30,
+                "breakpoints": {
+                    "992": {
+                        "spaceBetween": 80
+                    }
+                }
+            }'>
+            <div class="swiper-wrapper">
+                {% for block in section.blocks %}
+                    {% if block.type == 'image_with_text' %}
+                        {% if block.settings.image != blank %}
+                            <div class="swiper-slide">
+                                <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt }}" />
+                            </div>
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        loadScriptOnce("swiper", "https://qureskincaredns.com/assets/js-new/swiper.js");
+    });
+</script>
+<!-- PRESS REVIEWS END -->
+
+{% schema %}
+{
+"name": "t:sections.n_press-reviews.name",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": false
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "t:common.text"
+        }
+],
+"blocks": [
+    {
+        "type": "image_with_text",
+        "name": "t:common.image-with-text",
+        "settings": [
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "t:common.text"
+            },
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "t:common.image"
+            }
+        ]
+    }
+],
+"presets": [
+    {
+        "name": "t:sections.n_press-reviews.name"
+    }
+]
+}
+{% endschema %}

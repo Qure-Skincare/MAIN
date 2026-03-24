@@ -6,7 +6,7 @@
  {% if section.settings.use_own_file %}
     <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/base-section/base-section.css" />
  {% endif %}
-<section class="base-section{% if section.settings.modifier == 'reverse' %} base-section--reverse{% endif %}{% if section.settings.background_color == 'grey' %} base-section--grey{% endif %}">
+<section class="base-section{% if section.setiings.modifier_2 != 'none' %} base-section--{{ section.settings.modifier_2 }}{% endif %}{% if section.settings.modifier != 'none' %} base-section--{{ section.settings.modifier }}{% endif %}{% if section.settings.background_color == 'grey' %} base-section--grey{% endif %}">
     <div class="container">
         <article>
                 {{ section.settings.heading }}
@@ -22,6 +22,29 @@
                             <div class="wistia_embed wistia_async_{{ section.settings.wistia_url }} seo=false videoFoam=true"></div>
                         </div>
                     </div>
+                </div>
+            {% endif %}
+
+            {% assign has_icon_with_text = false %}
+            {% for block in section.blocks %}
+                {% if block.type == 'icon_with_text' %}
+                    {% assign has_icon_with_text = true %}
+                {% endif %}
+            {% endfor %}
+            {% if has_icon_with_text %}
+                <div>
+                    <ul class="circle-icons-list">
+                        {% for block in section.blocks %}
+                            {% if block.type == 'icon_with_text' %}
+                                {% if block.settings.text != blank %}
+                                    <li>
+                                        <div><i class="e-icon e-icon-{{ block.settings.icon }}"></i></div>
+                                        {{ block.settings.text }}
+                                    </li>
+                                {% endif %}
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
                 </div>
             {% endif %}
 
@@ -51,7 +74,8 @@
                     {{ section.settings.text 
                     | replace: '<p>[note_green]', '<div class="c-note">' 
                     | replace: '[/note]</p>', '</div>' 
-                    | replace: '<p>[step]</p><ul>', '<ul class="e-steps-list">'}}
+                    | replace: '<p>[step]</p><ul>', '<ul class="e-steps-list">' 
+                    | replace: '<p>[marked_list]</p><ul>', '<ul class="c-marked-list">' }}
                 </div>
             {% endif %}
 
@@ -73,9 +97,99 @@
                 {% endif %}
             {% endfor %}
 
+            {% assign has_text_with_progress = false %}
+            {% for block in section.blocks %}
+                {% if block.type == 'text_with_progress' %}
+                    {% assign has_text_with_progress = true %}
+                {% endif %}
+            {% endfor %}
+            {% if has_text_with_progress %}
+                <ul class="c-percent-list c-percent-list--columns">
+                    {% for block in section.blocks %}
+                        {% if block.type == 'text_with_progress' %}
+                            <li>
+                                {% if block.settings.percent_value != blank %}
+                                    <div class="e-circle-percent" style="--percent-value: {{ block.settings.percent_value }}"><span>{{ block.settings.percent_value }}%</span></div>
+                                {% endif %}
+                                {% if block.settings.text != blank %}
+                                    <span>{{ block.settings.text }}</span>
+                                {% endif %}
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            {% endif %}
+
             {% if section.settings.button_label != blank and section.settings.button_url != blank %}
                 <a href="{{ section.settings.button_url }}" class="btn btn--primary">{{ section.settings.button_label }}</a>
             {% endif %}
+
+            {% assign has_buy_block = false %}
+            {% assign has_certified_box = false %}
+            {% assign has_features_list = false %}
+            {% for block in section.blocks %}
+                {% if block.type == 'buy_button' %}
+                    {% assign has_buy_block = true %}
+                {% elsif block.type == 'certified_box' %}
+                    {% assign has_certified_box = true %}
+                    {% assign has_buy_block = true %}
+                {% elsif block.type == 'features_list' %}
+                    {% assign has_features_list = true %}
+                    {% assign has_buy_block = true %}
+                {% endif %}
+            {% endfor %}
+
+            {% if has_buy_block %}
+                <div class="c-buy-block">
+                    {% for block in section.blocks %}
+                        {% if block.type == 'buy_button' %}
+                            <div class="c-order-button">
+                                {% if block.settings.button_label != blank %}
+                                    <button class="btn btn--primary" type="button">{{ block.settings.button_label }}</button>
+                                {% endif %}
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                    {% if has_certified_box %}
+                        <div class="c-certified-box">
+                            <ul>
+                                {% for block in section.blocks %}
+                                    {% if block.type == 'certified_box' %}
+                                        {% if block.settings.image != blank or block.settings.text != blank %}
+                                            <li>
+                                                {% if block.settings.image != blank %}
+                                                    <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                                {% endif %}
+                                                {{ block.settings.text }}
+                                            </li>
+                                        {% endif %}
+                                    {% endif %}
+                                {% endfor %}
+                            </ul>
+                            {% for block in section.blocks %}
+                                {% if block.type == 'certified_box' %}
+                                    {{ block.settings.sub_text }}
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                    {% if has_features_list %}
+                        <ul class="e-features-list">
+                            {% for block in section.blocks %}
+                                {% if block.type == 'features_list' %}
+                                    {% if  block.settings.text != blank %}
+                                        <li>
+                                            <i class="e-icon e-icon-{{ block.settings.icon }}"></i>
+                                            {{ block.settings.text }}
+                                        </li>
+                                    {% endif %}
+                                {% endif %}
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                </div>
+            {% endif %}
+
         </article>
     </div>
 </section>
@@ -110,6 +224,22 @@
                 {
                     "value": "reverse",
                     "label": "t:sections.n_base-section.settings.modifier-options.reverse"
+                }
+            ]
+        },
+        {
+            "type": "select",
+            "id": "modifier_2",
+            "label": "t:common.modifier",
+            "default": "none",
+            "options": [
+                {
+                    "value": "none",
+                    "label": "t:common.none"
+                },
+                {
+                    "value": "simple-grid",
+                    "label": "t:sections.n_base-section.settings.modifier-options.simple-grid"
                 }
             ]
         },
@@ -215,6 +345,131 @@
             },
             {
                 "type": "richtext",
+                "id": "text",
+                "label": "t:common.text"
+            }
+        ]
+    },
+    {
+        "type": "text_with_progress",
+        "name": "t:common.text-with-progress",
+        "settings": [
+            {
+                "type": "range",
+                "id": "percent_value",
+                "label": "t:common.percent-value",
+                "min": 0,
+                "max": 100,
+                "unit": "%",
+                "default": 57
+            },
+            {
+                "type": "text",
+                "id": "text",
+                "label": "t:common.text"
+            }
+        ]
+    },
+    {
+        "type": "buy_button",
+        "name": "t:common.buy-button",
+        "limit": 1,
+        "settings": [
+            {
+                "type": "text",
+                "id": "button_label",
+                "label": "t:common.button-label"
+            }
+        ]
+    },
+    {
+        "type": "certified_box",
+        "name": "t:sections.n_base-section.blocks.certified_box.name",
+        "settings": [
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "t:common.image"
+            },
+            {
+                "type": "text",
+                "id": "text",
+                "label": "t:common.text"
+            },
+            {
+                "type": "richtext",
+                "id": "sub_text",
+                "label": "t:common.sub-text"
+            }
+        ]
+    },
+    {
+        "type": "features_list",
+        "name": "t:sections.n_base-section.blocks.features_list.name",
+        "settings": [
+            {
+                "type": "select",
+                "id": "icon",
+                "label": "t:common.icon",
+                "options": [
+                    {
+                        "value": "guarantee",
+                        "label": "t:common.guarantee"
+                    },
+                    {
+                        "value": "shipping-order",
+                        "label": "t:common.shipping-order"
+                    }
+                ]
+            },
+            {
+                "type": "text",
+                "id": "text",
+                "label": "t:common.text"
+            }
+        ]
+    },
+    {
+        "type": "icon_with_text",
+        "name": "t:common.icon-with-text",
+        "settings": [
+            {
+                "type": "select",
+                "id": "icon",
+                "label": "t:common.icon",
+                "options": [
+                    {
+                        "value": "fine-lines",
+                        "label": "t:common.fine-lines"
+                    },
+                    {
+                        "value": "wrinkles",
+                        "label": "t:common.wrinkles"
+                    },
+                    {
+                        "value": "dark-spots",
+                        "label": "t:common.dark-spots"
+                    },
+                    {
+                        "value": "blemishes",
+                        "label": "t:common.blemishes"
+                    },
+                    {
+                        "value": "rough-texture",
+                        "label": "t:common.rough-texture"
+                    },
+                    {
+                        "value": "eye-bags",
+                        "label": "t:common.eye-bags"
+                    },
+                    {
+                        "value": "puffiness",
+                        "label": "t:common.puffiness"
+                    }
+                ]
+            },
+            {
+                "type": "text",
                 "id": "text",
                 "label": "t:common.text"
             }

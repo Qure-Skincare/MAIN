@@ -1,0 +1,63 @@
+{% doc %}
+  Renders a highlight section
+{% enddoc %}
+
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/highlight/highlight.css" />
+{% endif %}
+<section class="highlight{% if section.settings.modifier != 'green' %} highlight--{{ section.settings.modifier }}{% endif %}">
+    <div class="container">
+        {% if section.settings.text != blank %}
+            <div class="highlight__desktop">{{ section.settings.text }}</div>
+        {% endif %}
+        {% if section.settings.text_mobile != blank %}
+            <div class="highlight__mobile">{{ section.settings.text_mobile }}</div>
+        {% endif %}
+    </div>
+</section>
+<!-- HIGHLIGHT END -->
+
+{% schema %}
+{
+"name": "t:sections.n_highlight.name",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": false
+        },
+        {
+            "type": "select",
+            "id": "modifier",
+            "label": "t:common.modifier",
+            "default": "green",
+            "options": [
+                {
+                    "value": "green",
+                    "label": "t:sections.n_highlight.settings.modifier-options.green"
+                },
+                {
+                    "value": "dark",
+                    "label": "t:sections.n_highlight.settings.modifier-options.dark"
+                }
+            ]
+        },
+        {
+            "type": "text",
+            "id": "text",
+            "label": "t:common.text"
+        },
+        {
+            "type": "text",
+            "id": "text_mobile",
+            "label": "t:common.text-mobile"
+        }
+],
+"presets": [
+    {
+        "name": "t:sections.n_highlight.name"
+    }
+]
+}
+{% endschema %}
