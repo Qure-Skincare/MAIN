@@ -230,10 +230,10 @@
         "nextships_5rd2bS": {
           "type": "nextships",
           "settings": {
-            "date": "24th March",
+            "date": "24th April",
             "percent": 55,
-            "date_soldout": "7 March",
-            "date_reserved": "12th March"
+            "date_soldout": "23rd March",
+            "date_reserved": "23rd April"
           }
         },
         "payment_type_3zQTmH": {
@@ -334,7 +334,7 @@
           "settings": {
             "product": "micro-infusion-6-month-bundle-for-wrinkles",
             "preselected": true,
-            "heading": "6 Month Supply Promo",
+            "heading": "6 Month Supply Promo (PRE-ORDER)",
             "subheading": "(12 Treatments)",
             "image": "shopify://shop_images/MI_6_month_W.webp",
             "soldout": false,
@@ -344,7 +344,7 @@
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
-            "preorder_percent": 55,
+            "preorder_percent": 73,
             "included_text": "<ul><li>12 clinically formulated 4ml serums to treat your specific skin concerns (valued at $719)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
           }
         },
@@ -353,7 +353,7 @@
           "settings": {
             "product": "micro-infusion-3-month-bundle-for-wrinkles",
             "preselected": false,
-            "heading": "3 Month Supply",
+            "heading": "3 Month Supply (PRE-ORDER)",
             "subheading": "(6 Treatments)",
             "image": "shopify://shop_images/MI_3_month_W.webp",
             "soldout": false,
@@ -363,7 +363,7 @@
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
-            "preorder_percent": 55,
+            "preorder_percent": 67,
             "included_text": "<ul><li>6 clinically formulated 4ml serums to treat your specific skin concerns (valued at $375)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
           }
         },
@@ -403,7 +403,7 @@
           "settings": {
             "product": "6-month-micro-infusion-for-wrinkles-dark-spots",
             "preselected": true,
-            "heading": "6 Month Supply Promo",
+            "heading": "6 Month Supply Promo (PRE-ORDER)",
             "subheading": "(12 Treatments)",
             "image": "shopify://shop_images/MI_6_month_DSW.webp",
             "soldout": false,

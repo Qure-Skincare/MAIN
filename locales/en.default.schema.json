@@ -10,6 +10,8 @@
  
  {
     "common": {
+        "color": "Color",
+        "exception": "Exception",
         "klaviyo_form_name": "Klaviyo form",
         "best-value": "Best value",
         "results": "Results",
@@ -282,6 +284,9 @@
         }
     },
     "sections": {
+        "announcement-bar-gamification": {
+            "name": "Announcement bar gamification"
+        },
         "announcement-bar": {
             "name": "Announcement bar"
         },
@@ -1100,6 +1105,31 @@
             "name": "Qure products",
             "blocks": {
                 "hover-image": {
+                    "name": "Hover image"
+                },
+                "image-text":{
+                    "name": "Text on image"
+                },
+                "label-price":{
+                    "name": "Label price"
+                },
+                "rating-image":{
+                    "name": "Rating image"
+                }
+            }
+        },
+         "build-your-own-container": {
+            "name": "BYO container",
+            "blocks": {
+                "tab": {
+                    "name": "tab"
+                }
+            }
+        },
+         "build-your-own-products": {
+            "name": "BYO products",
+            "blocks": {
+                "hover_image": {
                     "name": "Hover image"
                 },
                 "image-text":{

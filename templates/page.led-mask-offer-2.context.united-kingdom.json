@@ -11,19 +11,13 @@
   "context": {
     "market": "united-kingdom"
   },
-  "parent": "product.q-rejuvalight-pro-facewear.json",
+  "parent": "page.led-mask-offer-2.json",
   "sections": {
-    "product_header_V3N3T8": {
-      "settings": {},
-      "blocks": {
-        "limited_offer_A8": {
-          "disabled": false,
-          "settings": {
-            "code": "QURE100UK",
-            "sum": "£100"
-          }
-        }
-      }
+    "page_header_6BFNQx": {
+      "settings": {
+        "soldout": true
+      },
+      "blocks": {}
     }
   }
 }

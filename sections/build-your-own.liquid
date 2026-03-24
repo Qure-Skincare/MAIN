@@ -2,79 +2,185 @@
   Renders a build your own section
 {% enddoc %}
 
-{% assign collection = collections['easter-collection'] %}
+{% assign section_title = section.settings.heading | strip_newlines | strip | replace: ' ', '' | downcase %}
 
-<link rel="stylesheet"
-    href="https://qureskincaredns.com/sections/isolated/collection-block/section-collection-block.css">
-<div class="collection_block qure__section" style="--section-padding-top:10px; --section-padding-top-mob:10px;">
-    <div class="container">
-        <div class="collection_content">
-            <div id="collection-products" class="row projects custom__grid" style="--column-gap:32px; --column-gap-mobile:16px;">
-                {% for product in collection.products %}
+<template id="{{ section_title }}">
+    {% for block in section.blocks %}
+        {% if block.type == 'product_card' %}
+            {% if block.settings.product != blank %}
+                {% include 'get-product-data', product_handle: block.settings.product, product_prefix: 'build-your-own-products-' %}
+            {% endif %}
+            <div class="col-6 col-md-3 custom__block project">
+                <div class="qure__product-item silver-badge"
+                    data-byo-product
+                    data-variant-id="{{ product_variant_id }}"
+                    data-handle="{{ product_handle }}"
+                    data-title="{{ product_title | escape }}"
+                    data-price="{{ product_price_original }}"
+                    data-image="{{ product_featured_image | img_url: '250x' }}">
+                    <a href="{{ block.settings.url }}" class="qure__product-img overflow-hidden position-relative d-block">
+                        {% if block.settings.image != blank %}
+                            <div class="qure__product-main-img">
+                                <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                            </div>
+                        {% endif %}
 
-                    {% include 'get-product-data', product_handle: product.handle, product_prefix: 'collection-' %}
+                        {% if block.settings.hover_image != blank %}
+                            <div class="qure__product-hover-img position-absolute inset-0">
+                                <img src="{{ block.settings.hover_image | image_url }}" alt="{{ block.settings.hover_image.alt | escape }}" />
+                            </div>
+                        {% endif %}
 
-                    {% if product_handle contains 'micro-infusion' %}
-                        {% assign product_url = '/pages/microinfusion' %}
-                    {% endif %}
+                        {% assign image_text = block.settings.image_text | downcase %}
 
-                    <div class="col-6 col-md-3 custom__block project" data-filter="fine_lines dark_spots breakouts">
-                        <div class="qure__product-item{% if black_friday_discount_percent > 0 %} silver-badge{% endif %}">
-                            <a href="{{ product_url }}" aria-label="{{ product_title }}" class="qure__product-img overflow-hidden position-relative d-block">
-                                {% for media in product_media limit:2 %}
-                                    <div class="{% if forloop.index == 1 %}qure__product-main-img{% else %}qure__product-hover-img position-absolute inset-0{% endif %}">
-                                        <img src="{{ media | img_url: '720x' }}" alt="{{ product_title | escape }}" />
-                                    </div>
-                                {% endfor %}
+                        {% if image_text == 'bestseller' %}
+                            <div class="badge rounded-pill badge-bestseller">{{ block.settings.image_text }}</div>    
+                        {% endif %}
+                    </a>
+                    <div class="qure__product-details">
+                        {% if block.settings.rating_image != blank %}
+                            <div class="qure__product-reviews fs-14 d-flex gap-3 align-items-center">
+                                <img src="{{ block.settings.rating_image |  image_url }}" alt="{{ block.settings.image.alt | escape }}" /><span>{{ block.settings.rating_text }}</span>
+                            </div>
+                        {% endif %}
 
-                                {% for tag in product_tags %}
-                                    {% if tag contains 'Best Seller' %}
-                                        <div class="badge rounded-pill badge-bestseller">{{ 'sections.collection.bestseller' | t }}</div>
-                                    {% endif %}
-                                {% endfor %}
-                            </a>
-                            <div class="qure__product-details">
-                                {% render 'collection-product-rating', product: product %}
+                        <h3 class="fm-body mb-0 qure__product-name">
+                            <a class="limited-line capitalize d-block" href="{{ block.settings.url }}">{{ block.settings.heading }}</a>
+                        </h3>
 
-                                <h3 class="fm-body mb-0 qure__product-name">
-                                    <a class="limited-line capitalize d-block" href="{{ product_url }}" aria-label="{{ product_title }}">{{ product_title }}</a>
-                                </h3>
+                        {% if block.settings.product == 'shower-filter' or block.settings.product == 'faucet-filter' %}
+                            {% if product_variants.size > 1 %}
+                                <div class="select-color" data-text="Select Color:">
+                                    {% for variant in product_variants %}
+                                        {% assign option = variant.option1 | handleize %}
+                                        <label data-option-value="{{ variant.option1 | handleize }}">
+                                            <input type="radio"
+                                                name="variant-{{ product_id }}"
+                                                {% case option %}
+                                                    {% when 'white' %}
+                                                        value="light"
+                                                    {% when 'black' %}
+                                                        value="dark"
+                                                    {% when 'silver' %}
+                                                        value="silver"
+                                                {% endcase %}
+                                                data-value="{{ variant.id }}"
+                                                data-variant-price="{{ variant.price }}"
+                                                data-variant-image="{{ variant.featured_image | img_url: '250x' }}"
+                                                {% if forloop.index == 1 %}checked="checked"{% endif %} />
+                                        </label>
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                        {% endif %}
 
-                                {% if black_friday_discount_percent > 0 %}
-                                    <div class="qure__product-price">
-                                        <div class="dis_red_line">
-                                            {% if product_before_price != blank %}
-                                                <span class="bef_price text-decoration-line-through">{{ product_before_price }}</span>
-                                            {% endif %}
-                                            <span class="aft_price">{{ product_sale_price }}</span>
-                                        </div>
-                                        <div class="black_friday_price">{{ product_black_friday_price }}</div>
-                                    </div>
-                                {% else %}
-                                    <div class="d-flex gap-2">
+                        {% if product_sale_price != blank %}
+                            {% if black_friday_discount_percent > 0 %}
+                                <div class="qure__product-price">
+                                    <div class="dis_red_line">
                                         {% if product_before_price != blank %}
-                                            <div class="bef_price text-decoration-line-through text-black-50 igComparePrice">{{ product_before_price }}</div>
+                                            <span class="bef_price text-decoration-line-through">{{ product_before_price }}</span>
                                         {% endif %}
-                                        
-                                        <div class="qure__product-price igPrice">{{ product_sale_price }}</div>
+                                        <span class="aft_price">{{ product_sale_price }}</span>
                                     </div>
-                                {% endif %}
-                            </div>
-                            
-                            <div class="d-none d-lg-block">
-                                {% render 'product-page-buy-button', product_price: null, product_variant_id: product_variant_id, section: blank, product_available: product_available %}
-                            </div>
-                        </div>
+                                    <div class="black_friday_price">{{ product_black_friday_price }}</div>
+                                </div>
+                            {% else %}
+                                <div class="qure__product-price">{{ block.settings.label_price }} <span class="igPrice">{{ product_sale_price }}</span></div>
+                            {% endif %}
+                        {% endif %}
                     </div>
-                {% endfor %}
-            </div>
-        </div>
-    </div>
-</div>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    loadScriptOnce('section-collection-block', 'https://qureskincaredns.com/shopify/js/section-collection-block.js');
-    loadScriptOnce('collection', 'https://qureskincaredns.com/shopify/js/collection.js');
-  });
-</script>
+
+                    <div class="qure__product-action-inner">
+                        {% if block.settings.soldout == true %}
+                            <button type="button" class="btn btn--primary w-100" disabled>{{ 'product.settings.soldout-button-label' | t }}</button>
+                        {% else %}
+                            <form method="post" action="#" enctype="multipart/form-data">
+                                <input type="checkbox" name="added_in_cart" value="" />
+                                <button type="button" class="add-cart-button product-form__submit btn btn--primary w-100">Add <i class="e-icon e-icon-plus"></i></button>
+                                <div class="e-quantity e-quantity--pill-xl" data-e-quantity>
+                                    <button type="button" data-e-quantity-action="decrement">
+                                        <i class="e-icon e-icon-minus"></i>
+                                    </button>
+                                    <input type="number" name="qty" value="1" min="1" readonly="readonly" />
+                                    <button type="button" data-e-quantity-action="increment">
+                                        <i class="e-icon e-icon-plus"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+    {% endfor %}
+</template>
+
+{% schema %}
+{
+  "name": "t:sections.build-your-own-products.name",
+  "settings": [
+    {
+        "type": "text",
+        "id": "heading",
+        "label": "t:common.header"
+    }
+  ],
+  "blocks": [
+    {
+        "type": "product_card",
+        "name": "t:common.product",
+        "settings": [
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "t:common.header"
+            },
+            {
+                "type": "product",
+                "id": "product",
+                "label": "t:common.product"
+            },
+            {
+                "type": "checkbox",
+                "id": "soldout",
+                "label": "t:common.soldout",
+                "default": false
+            },
+            {
+                "type": "text",
+                "id": "image_text",
+                "label": "t:sections.build-your-own-products.blocks.image-text.name"
+            },
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "t:common.image"
+            },
+            
+            {
+                "type": "image_picker",
+                "id": "hover_image",
+                "label": "t:sections.build-your-own-products.blocks.hover_image.name"
+            },
+            {
+                "type": "url",
+                "id": "url",
+                "label": "t:common.link-url"
+            },
+            {
+                "type": "text",
+                "id": "rating_text",
+                "label": "t:common.rating-text"
+            },
+            {
+                "type": "image_picker",
+                "id": "rating_image",
+                "label": "t:sections.build-your-own-products.blocks.rating-image.name"
+            }
+        ]
+    }
+   ]
+}
+{% endschema %}

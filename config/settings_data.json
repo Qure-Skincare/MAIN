@@ -42,14 +42,17 @@
     "cart_freegift_price_limit": 10,
     "shipping_title": "Free Shipping U.S Only",
     "shipping_image": "shopify://shop_images/free-shipping_575ce407-01ac-44bc-bf6e-16f88494c9ad.svg",
+    "shipping_icon": "shipping",
     "shipping_price": 10,
     "shipping_price_limit": 100,
     "cart_gift1_title": "",
     "cart_gift1_product": "",
+    "cart_gift1_icon": "none",
     "cart_gift1_price_limit": 0,
     "cart_gift2_title": "Free Silk Pillowcase",
     "cart_gift2_product": "silk-pillowcase",
     "cart_gift2_image": "shopify://shop_images/pillow_72c62128-5e60-4cdb-bdec-f344de6a90ad.svg",
+    "cart_gift2_icon": "pillow",
     "cart_gift2_price_limit": 400,
     "cart_upsell1_product": "faucet-filter",
     "cart_upsell2_product": "shower-filter",
@@ -89,11 +92,6 @@
         "disabled": false,
         "settings": {}
       },
-      "471852632697159186": {
-        "type": "shopify://apps/stamped-loyalty-referrals/blocks/rewards-launcher/93b8fd18-14d4-464f-a49a-0093afb7e10a",
-        "disabled": false,
-        "settings": {}
-      },
       "10312807297210203588": {
         "type": "shopify://apps/aftersell-by-rokt/blocks/utm-triggers/509ec35d-0632-4dfc-a105-fa799cd9d149",
         "disabled": true,
@@ -120,6 +118,21 @@
         "settings": {
           "enable_cart_validation": true
         }
+      },
+      "17174303574952363282": {
+        "type": "shopify://apps/fondue-cashback-promotions/blocks/caseback-embed/dcfd972d-99c5-4526-b55b-2d76e990dec8",
+        "disabled": false,
+        "settings": {}
+      },
+      "11560147490181472608": {
+        "type": "shopify://apps/rivo-loyalty-rewards-referrals/blocks/app-embed/580e9665-b2cd-4dbc-b6ba-6445ac9e6871",
+        "disabled": false,
+        "settings": {}
+      },
+      "471852632697159186": {
+        "type": "shopify://apps/stamped-loyalty-referrals/blocks/rewards-launcher/93b8fd18-14d4-464f-a49a-0093afb7e10a",
+        "disabled": true,
+        "settings": {}
       }
     }
   }

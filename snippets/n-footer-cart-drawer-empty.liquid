@@ -1,0 +1,26 @@
+{% doc %}
+  Renders a cart empty snippet for the cart drawer section
+
+  @example
+  {% include 'n-footer-cart-drawer-empty' %}
+{% enddoc %}
+
+<div class="flyout-cart__placeholder _d-none">
+    <div class="flyout-cart__placeholder-header">
+        <h4>{{ 'cart.drawer.empty.header' | t }}</h4>
+        <p>{{ 'cart.drawer.empty.text' | t }}</p>
+    </div>
+    <div class="flyout-cart__placeholder-wrapper">
+        <div class="flyout-cart__placeholder-content">
+            <img src="{{ 'cart.drawer.empty.settings.image' | t }}" alt="image" />
+            <h6>{{ 'cart.drawer.empty.settings.header' | t }}</h6>
+            {{ 'cart.drawer.empty.settings.content_html' | t }}
+            <a class="btn btn--primary" href="{{ 'cart.drawer.empty.settings.button-url' | t }}">{{ 'cart.drawer.empty.settings.button-label' | t }}</a>
+        </div>
+        <div class="flyout-cart__placeholder-footer">
+            <div class="e-rating-stars" style="--rating: 4.5;"></div>
+            <strong>{{ 'cart.drawer.empty.settings.text' | t }}</strong>
+            <p>{{ 'cart.drawer.empty.settings.subtext' | t }}</p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,412 @@
+{% comment %}
+RIVO: REDEEM PRODUCTS SECTION
+True horizontal carousel:
+- Desktop: 2 cards (odd count -> 1)
+- Mobile: 1 card
+- No card peeking
+- Smooth scrolling
+{% endcomment %}
+
+<div
+  id="rivo-redeem-products-{{ section.id }}"
+  class="rivo-redeem"
+  style="background-color: {{ section.settings.section_bg }}"
+>
+  {% if section.settings.section_title != blank or section.settings.section_subtitle != blank %}
+    <div class="rivo-redeem-header">
+      {% if section.settings.section_title != blank %}
+        <h2 class="rivo-redeem-title">{{ section.settings.section_title }}</h2>
+      {% endif %}
+      {% if section.settings.section_subtitle != blank %}
+        <p class="rivo-redeem-subtitle">{{ section.settings.section_subtitle }}</p>
+      {% endif %}
+    </div>
+  {% endif %}
+
+  <div id="rivo-app-block-wrapper">
+    {% for block in section.blocks %}
+      <div class="rivo-app-block" {{ block.shopify_attributes }}>
+        {% render block %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+.rivo-redeem#rivo-redeem-products-{{ section.id }} {
+  padding: 0;
+}
+
+.rivo-redeem .rivo-app-block {
+  width: 100%;
+}
+
+/* Custom Title & Subtitle Styles */
+.rivo-redeem-header {
+  text-align: center;
+  padding: 40px 20px 20px;
+}
+
+.rivo-redeem-title {
+  font-size: 32px;
+  margin: 0 0 10px;
+  color: #212428;
+}
+
+.rivo-redeem-subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  color: #212428;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 749px) {
+  .rivo-redeem-title {
+    font-size: 24px;
+  }
+  .rivo-redeem-subtitle {
+    font-size: 14px;
+  }
+}
+
+.rivo-redeem#rivo-redeem-products-{{ section.id }} #rivo-ways-to-redeem {
+  position: relative;
+
+  /* defaults */
+  --rivo-gap: 20px;
+  --rivo-per-view: 2;
+
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  max-width: 970px; 
+  margin: auto;
+}
+
+/* Hide the default Rivo title/subtitle */
+.rivo-redeem#rivo-redeem-products-{{ section.id }} .rivo-lp-section-title,
+.rivo-redeem#rivo-redeem-products-{{ section.id }} .rivo-lp-section-subtitle,
+.rivo-redeem#rivo-redeem-products-{{ section.id }} #rivo-ways-to-redeem h2,
+.rivo-redeem#rivo-redeem-products-{{ section.id }} #rivo-ways-to-redeem h3,
+.rivo-redeem#rivo-redeem-products-{{ section.id }} #rivo-ways-to-redeem .rivo-header,
+.rivo-redeem#rivo-redeem-products-{{ section.id }} #rivo-ways-to-redeem .rivo-title,
+.rivo-redeem#rivo-redeem-products-{{ section.id }} #rivo-ways-to-redeem .rivo-subtitle {
+  display: none !important;
+}
+
+/* odd number of cards → force 1 per view */
+.rivo-redeem#rivo-redeem-products-{{ section.id }}.rivo-odd-count #rivo-ways-to-redeem {
+  --rivo-per-view: 1;
+}
+
+/* mobile → always 1 per view */
+@media (max-width: 749px) {
+  .rivo-redeem#rivo-redeem-products-{{ section.id }} #rivo-ways-to-redeem {
+    --rivo-per-view: 1;
+  }
+  .rivo-redeem#rivo-redeem-products-{{ section.id }}
+  #rivo-ways-to-redeem .rivo-lp-cards-container {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+
+    /* makes snap/scroll feel correct with padding */
+    scroll-padding-left: 16px;
+    scroll-padding-right: 16px;
+    max-width: 100%;
+  }
+  
+  .rivo-redeem#rivo-redeem-products-{{ section.id }} .rivo-carousel-btn {
+    display: none;
+  }
+}
+
+/* track */
+.rivo-redeem#rivo-redeem-products-{{ section.id }}
+#rivo-ways-to-redeem .rivo-lp-cards-container {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  justify-content: flex-start;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+
+  gap: 8px;
+  padding: 0 !important;
+
+  scrollbar-width: none;
+  padding-top: 0 !important;
+  margin-top: 0;
+  flex: 1;
+  max-width: 100%;
+}
+.rivo-redeem#rivo-redeem-products-{{ section.id }}
+#rivo-ways-to-redeem .rivo-lp-cards-container::-webkit-scrollbar {
+  display: none;
+}
+
+.rivo-redeem#rivo-redeem-products-{{ section.id }} #rivo-ways-to-redeem .rivo-card-description {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 6px 16px;
+  background: #212428;
+  color: #FFF;
+  font-weight: 600;
+  line-height: 1;
+  border-radius: 60px;
+}
+
+.rivo-redeem#rivo-redeem-products-{{ section.id }}
+#rivo-ways-to-redeem
+.rivo-card-title::after {
+  display: none !important;
+}
+
+/* cards */
+.rivo-redeem#rivo-redeem-products-{{ section.id }}
+#rivo-ways-to-redeem .rivo-card {
+  flex: 0 0 calc(
+    (100% - (var(--rivo-gap) * (var(--rivo-per-view) - 1)))
+    / var(--rivo-per-view)
+  ) !important;
+
+  max-width: 300px !important;
+  scroll-snap-align: start;
+  padding: 12px!important;
+  position: relative;
+  overflow: auto;
+  background: #f6f6f7;
+}
+
+/* =========================================================
+   CARD CONTENT
+   ========================================================= */
+
+.rivo-redeem #rivo-ways-to-redeem .rivo-card-icon img {
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 6px;
+}
+
+.rivo-redeem #rivo-ways-to-redeem .rivo-card-body {
+  padding: 10px;
+  width: 90%;
+}
+
+{% if customer %}
+.rivo-redeem #rivo-ways-to-redeem .rivo-card-title {
+  min-height: 70px;
+}
+{% endif %}
+
+/* =========================================================
+   CTA
+   ========================================================= */
+
+.rivo-redeem #rivo-ways-to-redeem .rivo-arrow-icon svg {
+  display: none;
+}
+
+.rivo-redeem #rivo-ways-to-redeem .rivo-arrow-icon::after {
+  content: "Redeem now";
+  background: #000;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  width: 100%;
+  padding: 10px 0;
+  margin-top: 10px;
+}
+
+{% unless customer %}
+.rivo-redeem #rivo-ways-to-redeem .rivo-arrow-icon,
+.rivo-redeem #rivo-ways-to-redeem .rivo-arrow-icon::after {
+  display: none;
+}
+{% endunless %}
+
+/* =========================================================
+   DISABLED
+   ========================================================= */
+
+.rivo-redeem #rivo-ways-to-redeem .rivo-card--disabled {
+  opacity: .7;
+  pointer-events: none;
+}
+
+{% if customer %}
+.rivo-redeem #rivo-ways-to-redeem
+.rivo-card--disabled .rivo-arrow-icon::after {
+  content: "Not enough points";
+  background: transparent;
+  color: #000;
+  font-weight: 400;
+}
+{% endif %}
+
+/* =========================================================
+   NAV BUTTONS
+   ========================================================= */
+
+.rivo-redeem#rivo-redeem-products-{{ section.id }} #rivo-ways-to-redeem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.rivo-redeem#rivo-redeem-products-{{ section.id }} .rivo-carousel-btn {
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  border-radius: 999px;
+  background: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.rivo-carousel-btn--prev { order: -1; }
+.rivo-carousel-btn--next { order: 1; }
+
+.rivo-carousel-btn:disabled {
+  opacity: .3;
+  cursor: default;
+}
+
+{%- if section.settings.hide_ways_to_redeem_ids != blank -%}
+  {%- assign hide_ways_ids = section.settings.hide_ways_to_redeem_ids | split: ',' -%}
+  {%- for id in hide_ways_ids -%}
+    {%- assign trimmed_id = id | strip -%}
+    #rivo-ways-to-redeem #rivo-reward-{{ trimmed_id }} {
+      display: none !important;
+    }
+  {%- endfor -%}
+
+  /* 2) Override: show those rewards inside THIS "Rivo: Redeem Coupons" section */
+  {%- for id in hide_ways_ids -%}
+    {%- assign trimmed_id = id | strip -%}
+    .rivo-redeem#rivo-redeem-products-{{ section.id }} #rivo-ways-to-redeem #rivo-reward-{{ trimmed_id }} {
+      display: flex !important;
+    }
+  {%- endfor -%}
+{%- endif -%}
+
+/* Hide rewards ONLY on THIS section */
+{%- if section.settings.hide_reward_ids != blank -%}
+  {%- assign reward_ids = section.settings.hide_reward_ids | split: ',' -%}
+  {%- for id in reward_ids -%}
+    {%- assign trimmed_id = id | strip -%}
+    .rivo-redeem#rivo-redeem-products-{{ section.id }} #rivo-reward-{{ trimmed_id }} {
+      display: none !important;
+    }
+  {%- endfor -%}
+{%- endif -%}
+
+</style>
+
+<script>
+(function () {
+  const section = document.querySelector(
+    '.rivo-redeem#rivo-redeem-products-{{ section.id }}'
+  );
+  if (!section) return;
+
+  function getContainer() {
+    return section.querySelector(
+      '#rivo-ways-to-redeem .rivo-lp-cards-container'
+    );
+  }
+
+  function applyOddRule(container) {
+    const cards = container.querySelectorAll('.rivo-card');
+    section.classList.toggle('rivo-odd-count', cards.length % 2 === 1);
+  }
+
+  function initCarousel() {
+    const container = getContainer();
+    const ways = section.querySelector('#rivo-ways-to-redeem');
+    if (!container || !ways) return;
+
+    applyOddRule(container);
+
+    if (ways.querySelector('.rivo-carousel-btn')) return;
+
+    const prev = document.createElement('button');
+    prev.className = 'rivo-carousel-btn rivo-carousel-btn--prev';
+    prev.innerHTML = '&#10094;';
+
+    const next = document.createElement('button');
+    next.className = 'rivo-carousel-btn rivo-carousel-btn--next';
+    next.innerHTML = '&#10095;';
+
+    ways.append(prev, next);
+
+    const scrollPage = dir => {
+      container.scrollBy({
+        left: dir * container.clientWidth,
+        behavior: 'smooth'
+      });
+    };
+
+    prev.onclick = () => scrollPage(-1);
+    next.onclick = () => scrollPage(1);
+
+    const update = () => {
+      // Keep arrows always enabled for continuous scrolling
+      prev.disabled = false;
+      next.disabled = false;
+    };
+
+    container.addEventListener('scroll', update);
+    window.addEventListener('resize', () => {
+      applyOddRule(container);
+      update();
+    });
+
+    setTimeout(update, 100);
+  }
+
+  document.addEventListener('DOMContentLoaded', initCarousel);
+  document.addEventListener('rivo-js-loaded', () => {
+    initCarousel();
+    setTimeout(initCarousel, 300);
+    setTimeout(initCarousel, 900);
+  });
+
+  document.addEventListener('shopify:section:load', e => {
+    if (String(e.detail.sectionId) === String('{{ section.id }}')) {
+      initCarousel();
+    }
+  });
+})();
+</script>
+
+
+
+{% schema %}
+{
+  "name": "Rivo: Redeem Coupons",
+  "settings": [
+    { "type": "color", "id": "section_bg", "label": "Background Color", "default": "#ffffff" },
+    { "type": "text", "id": "section_title", "label": "Section Title", "default": "Redeem Your Rewards" },
+    { "type": "textarea", "id": "section_subtitle", "label": "Section Subtitle" },
+    { "type": "textarea", "id": "hide_ways_to_redeem_ids", "label": "Hide Rewards on Ways to Redeem" },
+    { "type": "textarea", "id": "hide_reward_ids", "label": "Hide Rewards on This Section" }
+  ],
+  "blocks": [{ "type": "@app" }],
+  "presets": [{ "name": "Rivo: Redeem Coupons" }]
+}
+{% endschema %}

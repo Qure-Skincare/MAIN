@@ -248,7 +248,7 @@
         "limited": "EXCLUSIVE OFFER",
         "header": "Q-Rejuvalight Pro LED Mask",
         "subheader": "+ FREE Neck & Décolletage LED System",
-        "warranty": "Lifetime Warranty",
+        "warranty": "1 Year Warranty",
         "fda": "FDA Cleared",
         "text": "Elevate your LED routine with full face and neck coverage for consistent all-over results.",
         "included": "What’s Included:",
@@ -261,7 +261,7 @@
         "low-stock-text": "Due to high demand, this offer is only available while stock lasts.",
         "order-today": " Order today to lock in your deal and get FREE Shipping",
         "button-label": "Shop Now & Save $299",
-        "guarantee-text": "1-Year Guarantee",
+        "guarantee-text": "30-Day Money-Back Guarantee",
         "shipping-text": "Free US Shipping over $100",
         "free": "FREE",
         "discount-text": "% OFF",
@@ -345,6 +345,14 @@
       "savings": "EXCLUSIVE SAVINGS"
     }
   },
+  "n-announcement-bar-gamification": {
+    "settings": {
+        "days": "days",
+        "hours": "hours",
+        "minutes": "minutes",
+        "seconds": "seconds"
+    }
+  },
   "product": {
     "settings": {
       "buy-button-label": "Buy Now ",
@@ -352,7 +360,7 @@
       "soldout-button-label": "Sold Out",
       "save": "SAVE",
       "buy-and-save-button-label": "Buy Now & Save",
-      "reserve-and-save-button-label": "Reserve Now & Save",
+      "reserve-and-save-button-label": "Pre-Order Now & Save",
       "limited-edition": "Limited Edition",
       "discount-text": "OFF",
       "coming_soon": "Coming soon",
@@ -379,7 +387,7 @@
         "soldout-button-label": "Sold Out"
       },
       "product-next-ships": {
-        "header": "Next batch ships",
+        "header": "Your Delivery Timeline: next batch ships",
         "text": "Due to high demand, our {{ product_title }} is sold out. Order now and secure yours from the next shipment.",
         "soldout": "SOLD OUT",
         "reserved": "Reserved"
@@ -491,13 +499,16 @@
         "bar_header_completed_html": "Congrats! You've unlocked your <strong>Free Gifts!</strong>",
         "header": "Your Cart",
         "item-text-2days": "In stock. Shipped within 2 days",
+        "reviews": "Reviews",
         "savings": "Savings",
         "shipping": "Shipping",
         "free": "Free",
         "subtotal": "Subtotal",
         "insurance-text": "Protect your order from loss, damage and theft",
         "guarantee-text": "Backed by our 30-Day Money-Back Guarantee",
-        "checkout": "CHECKOUT"
+        "checkout": "CHECKOUT",
+        "preorder": "Pre-order.",
+        "ships": "Ships"
       },
       "empty": {
         "header": "Your cart is empty..",
@@ -523,8 +534,8 @@
       "buy-button-label": "Buy Now",
       "subscribe-button-label": "Subscribe Now",
       "subscribe-and-save-button-label": "Subscribe Now & Save {{ value }}%",
-      "reserve-and-save-button-label": "Reserve Now & Save {{ value }}%",
-      "reserve-button-label": "Reserve Now",
+      "reserve-and-save-button-label": "Pre-Order Now & Save {{ value }}%",
+      "reserve-button-label": "Pre-Order Now",
       "soldout-button-label": "Sold Out",
       "select-type": "Select Your Product:",
       "select-product": "Select Your supply:",

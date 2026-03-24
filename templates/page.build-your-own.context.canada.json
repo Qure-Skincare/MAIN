@@ -8,9 +8,25 @@
  * ------------------------------------------------------------
  */
 {
-  "parent": "index.json",
   "context": {
-    "market": "us"
+    "market": "canada"
   },
-  "sections": {}
+  "parent": "page.build-your-own.json",
+  "sections": {
+    "byo_fXMjk4": {
+      "settings": {},
+      "blocks": {
+        "product_card_kQWMy2": {
+          "settings": {
+            "soldout": true
+          }
+        },
+        "product_card_kQWMy1": {
+          "settings": {
+            "soldout": true
+          }
+        }
+      }
+    }
+  }
 }

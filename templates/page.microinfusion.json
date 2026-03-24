@@ -111,10 +111,10 @@
         "nextships_4xp7uM": {
           "type": "nextships",
           "settings": {
-            "date": "24th March",
-            "percent": 55,
-            "date_soldout": "9th March",
-            "date_reserved": "12th March"
+            "date": "23rd April",
+            "percent": 73,
+            "date_soldout": "23rd March",
+            "date_reserved": "23rd April"
           }
         },
         "type_hHPdgJ": {
@@ -146,7 +146,7 @@
             "preorder_text": "",
             "preorder_date_soldout": "27 July",
             "preorder_date_reserved": "15 july",
-            "preorder_percent": 55
+            "preorder_percent": 73
           }
         },
         "product_NEgEkN": {
@@ -210,7 +210,7 @@
             "popular": false,
             "best": false,
             "preselected": true,
-            "heading": "6 Month Supply  (Pre-Order)",
+            "heading": "6 Month Supply <br> (PRE-ORDER)",
             "subheading": "(12 Treatments)",
             "image": "shopify://shop_images/PDP_MI_6_month_W.webp",
             "soldout": false,
@@ -218,7 +218,7 @@
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
-            "preorder_percent": 55
+            "preorder_percent": 73
           }
         },
         "product_EKAAzA": {
@@ -230,7 +230,7 @@
             "popular": false,
             "best": false,
             "preselected": false,
-            "heading": "3 Month Supply <br> (Pre-Order)",
+            "heading": "3 Month Supply <br> (PRE-ORDER)",
             "subheading": "(6 Treatments)",
             "image": "shopify://shop_images/PDP_MI_3_month_W.webp",
             "soldout": false,
@@ -238,7 +238,7 @@
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
-            "preorder_percent": 55
+            "preorder_percent": 67
           }
         },
         "product_eiY89h": {
@@ -282,7 +282,7 @@
             "popular": false,
             "best": false,
             "preselected": true,
-            "heading": "6 Month Supply Promo (Pre-Order)",
+            "heading": "6 Month Supply Promo  <br>(PRE-ORDER)",
             "subheading": "(12 Treatments)",
             "image": "shopify://shop_images/pdp_MI_6_month_DSW.webp",
             "soldout": false,
@@ -1158,7 +1158,7 @@
           "type": "list",
           "settings": {
             "heading": "Cleanse",
-            "text": "<p>Cleanse your face thoroughly and spritz the <span style=\"text-decoration:underline\">Dermal Mist</span> to refresh and prepare your skin further.</p>",
+            "text": "<p>Cleanse your face thoroughly and spritz the <a href=\"https://qureskincare.com/products/dermal-mist\" title=\"https://qureskincare.com/products/dermal-mist\"><span style=\"text-decoration:underline\">Dermal Mist</span></a> to refresh and prepare your skin further.</p>",
             "image": "shopify://shop_images/mixed_mi_1.webp",
             "image_mobile": "shopify://shop_images/mi-1-mob_10d274d3-9488-48b7-bc9c-4f36e48e9ce1.webp"
           }
@@ -1284,10 +1284,10 @@
         "nextships_5rd2bS": {
           "type": "nextships",
           "settings": {
-            "date": "24th March",
+            "date": "23rd April",
             "percent": 55,
-            "date_soldout": "9th March",
-            "date_reserved": "12th March"
+            "date_soldout": "23rd March",
+            "date_reserved": "23rd April"
           }
         },
         "payment_type_3zQTmH": {
@@ -1388,7 +1388,7 @@
           "settings": {
             "product": "micro-infusion-6-month-bundle-for-wrinkles",
             "preselected": true,
-            "heading": "6 Month Supply (Pre-Order)",
+            "heading": "6 Month Supply (PRE-ORDER)",
             "subheading": "(12 Treatments)",
             "image": "shopify://shop_images/MI_1.5_6month_DS_W-1_no_mist.webp",
             "soldout": false,
@@ -1398,7 +1398,7 @@
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
-            "preorder_percent": 55,
+            "preorder_percent": 73,
             "included_text": "<ul><li>4 clinically formulated 4ml serums to treat your specific skin concerns (valued at $719)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
           }
         },
@@ -1407,7 +1407,7 @@
           "settings": {
             "product": "micro-infusion-3-month-bundle-for-wrinkles",
             "preselected": false,
-            "heading": "3 Month Supply (Pre-Order)",
+            "heading": "3 Month Supply (PRE-ORDER)",
             "subheading": "(6 Treatments)",
             "image": "shopify://shop_images/MI_3_month_W.webp",
             "soldout": false,
@@ -1417,7 +1417,7 @@
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
-            "preorder_percent": 55,
+            "preorder_percent": 67,
             "included_text": "<ul><li>6 clinically formulated 4ml serums to treat your specific skin concerns (valued at $375)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
           }
         },
@@ -1457,7 +1457,7 @@
           "settings": {
             "product": "6-month-micro-infusion-for-wrinkles-dark-spots",
             "preselected": true,
-            "heading": "6 Month Supply Promo (Pre-Order)",
+            "heading": "6 Month Supply Promo (PRE-ORDER)",
             "subheading": "(12 Treatments)",
             "image": "shopify://shop_images/MI_6_month_DSW.webp",
             "soldout": false,
@@ -1467,7 +1467,7 @@
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
-            "preorder_percent": 55,
+            "preorder_percent": 64,
             "included_text": "<ul><li>12 clinically formulated 4ml serums to treat your specific skin concerns (valued at $719)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
           }
         },

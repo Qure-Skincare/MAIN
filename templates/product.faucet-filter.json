@@ -337,7 +337,8 @@
       "settings": {
         "form_name": "purchase-form-landing",
         "hide_types": false,
-        "type": "list"
+        "type": "list",
+        "klaviyo_form_name": ""
       }
     },
     "purchase-form-landing-old": {
@@ -448,7 +449,8 @@
       "settings": {
         "form_name": "purchase-form-landing",
         "hide_types": true,
-        "type": "variant"
+        "type": "variant",
+        "klaviyo_form_name": ""
       }
     },
     "n_base_section_CGMUkn": {
@@ -525,7 +527,7 @@
         "modifier": "reverse",
         "background_color": "none",
         "heading": "<h2>Meet the Qure Faucet Filter</h2>",
-        "text": "<p>Great skin begins with the source – the water you use daily. The Qure Faucet Filter<em>effectively reduces harmful skin irritants</em>that can affect your skin's health and appearance.</p>",
+        "text": "<p>Great skin begins with the source – the water you use daily. The Qure Faucet Filter <em>effectively reduces harmful skin irritants </em>that can affect your skin's health and appearance.</p>",
         "button_label": "Shop Now",
         "button_url": "#hero-product",
         "wistia_url": "tev066z6pv"
@@ -632,7 +634,9 @@
       "name": "t:sections.n_trusted-reviews.name",
       "settings": {
         "use_own_file": true,
-        "text": "<h2>The results are crystal clear</h2>"
+        "background_color": "none",
+        "text": "<h2>The results are crystal clear</h2>",
+        "button_label": ""
       }
     },
     "n_trusted_recommended_Akm4BH": {
@@ -645,6 +649,8 @@
         "heading": "<h2>Trusted and Recommended by Experts</h2>",
         "text": "<p>“How do you <em>reduce the things in your water that may be causing issues</em> with your skin?<br/><br/>This Qure filter is incredible – it’s <em>the only filter I personally use to</em> [reduce] chlorine and anything else that’s going to make your water harsh for your skin.”</p>",
         "video_image_cover": "shopify://shop_images/doctor_img_1.png",
+        "text_on_image": "",
+        "wistia_url": false,
         "video_url": "https://www.youtube.com/watch?v=Tk39sbR8Nak&t=433s",
         "badge_text": "Dermatologist Reviewed"
       }
@@ -873,8 +879,7 @@
           "type": "items",
           "settings": {
             "text": "<h6>Remove</h6><p>Remove faucet aerator. Simply attach and twist it off using the key for removal.</p>",
-            "image": "shopify://shop_images/faucet_remove.webp",
-            "image_mobile": "shopify://shop_images/faucet_remove-mob.webp"
+            "image": "shopify://shop_images/faucet_remove.webp"
           }
         },
         "items_3PLjd7": {
@@ -905,7 +910,8 @@
         "text": "<h2>Set up in 3 easy steps</h2>",
         "image": "shopify://shop_images/faucet_thumbnail.webp",
         "image_mobile": "shopify://shop_images/faucet_thumbnail-mob.webp",
-        "wistia_url": "t0xzq5gdvm"
+        "wistia_url": "t0xzq5gdvm",
+        "button_label": ""
       }
     },
     "n_product_settings_rDjiPj": {

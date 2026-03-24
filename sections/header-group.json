@@ -11,6 +11,14 @@
   "type": "header",
   "name": "t:sections-group.header.name",
   "sections": {
+    "announcement-bar-gamification": {
+      "type": "n-announcement-bar-gamification",
+      "disabled": true,
+      "settings": {
+        "heading": "<p><strong>Limited Time Easter Offer</strong> - Save Up To 25%</p>",
+        "exception": ""
+      }
+    },
     "endrock-gamification-header": {
       "type": "endrock-gamification-header",
       "settings": {}
@@ -39,7 +47,7 @@
         "announcement-3": {
           "type": "announcement",
           "settings": {
-            "heading": "<p><strong>Exclusive Bundles</strong> <strong>Sale</strong></p>",
+            "heading": "<p>Exclusive Bundles Sale <strong>Save Up To 57%</strong></p>",
             "button-label": "Shop Now",
             "button-url": "https://qureskincare.com/pages/exclusive-holiday-bundle-deal-new"
           }
@@ -85,6 +93,7 @@
     }
   },
   "order": [
+    "announcement-bar-gamification",
     "endrock-gamification-header",
     "endrock-rotating-announcement",
     "footer-form",

@@ -60,7 +60,7 @@
       "name": "t:sections.n_hero-section.name",
       "settings": {
         "use_own_file": true,
-        "text": "<h1>Visibly reduce the appearance of wrinkles and dark spots - without injectables.</h1><p><strong>24K gold microneedles</strong> deliver <strong>targeted serums</strong> beyond your skin's barrier where traditional creams can't reach.</p>",
+        "text": "<h1>Visibly reduce the appearance of wrinkles and dark spots - without injectables.</h1><p><strong>24K gold-plated microneedles</strong> deliver <strong>targeted serums</strong> beyond your skin's barrier where traditional creams can't reach.</p>",
         "image": "shopify://shop_images/micro-infusion-hero_2_d36a18db-6067-459d-ac17-60c0ef0b8edb.webp",
         "image_mobile": "shopify://shop_images/micro-infusion-hero-mob.webp",
         "button_url": "#purchase-form-types",
@@ -142,7 +142,7 @@
         "numbered_list_n6pbga": {
           "type": "numbered_list",
           "settings": {
-            "text": "𝗦𝘁𝗮𝗺𝗽 <br> Patented 24k gold needles create micro-channels."
+            "text": "𝗦𝘁𝗮𝗺𝗽  Patented 24k gold-plated needles create micro-channels."
           }
         },
         "numbered_list_nGHdDi": {
@@ -843,7 +843,7 @@
           "type": "list",
           "settings": {
             "heading": "Cleanse",
-            "text": "<p>Cleanse your face thoroughly and spritz the <span style=\"text-decoration:underline\">Dermal Mist</span> to refresh and prepare your skin further.</p>",
+            "text": "<p>Cleanse your face thoroughly and spritz the <a href=\"https://qureskincare.com/products/dermal-mist\" title=\"https://qureskincare.com/products/dermal-mist\"><span style=\"text-decoration:underline\">Dermal Mist</span> </a>to refresh and prepare your skin further.</p>",
             "image": "shopify://shop_images/mixed_mi_1.webp",
             "image_mobile": "shopify://shop_images/mi-1-mob_10d274d3-9488-48b7-bc9c-4f36e48e9ce1.webp"
           }
@@ -1015,7 +1015,7 @@
         "heading": "Micro-Infusion Facial System",
         "text": "1,293 purchased in last 48 hours",
         "limited": false,
-        "button-label": "BUY NOW & SAVE UP TO 70%",
+        "button-label": "Choose Your Supply",
         "button-url": "#purchase-form-types"
       }
     },
@@ -1036,10 +1036,10 @@
         "nextships_5rd2bS": {
           "type": "nextships",
           "settings": {
-            "date": "24th March",
+            "date": "23rd April",
             "percent": 66,
-            "date_soldout": "9th March",
-            "date_reserved": "12th March"
+            "date_soldout": "23rd  March",
+            "date_reserved": "23rd April"
           }
         },
         "payment_type_3zQTmH": {
@@ -1168,7 +1168,7 @@
           "settings": {
             "product": "micro-infusion-6-month-bundle-for-wrinkles",
             "preselected": true,
-            "heading": "6 Month Supply Promo (Pre-Order)",
+            "heading": "6 Month Supply Promo (PRE-ORDER)",
             "subheading": "(12 Treatments)",
             "image": "shopify://shop_images/MI_6_month_W.webp",
             "soldout": false,
@@ -1178,7 +1178,7 @@
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
-            "preorder_percent": 55,
+            "preorder_percent": 73,
             "included_text": "<ul><li>12 clinically formulated 4ml serums to treat your specific skin concerns (valued at $719)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
           }
         },
@@ -1187,7 +1187,7 @@
           "settings": {
             "product": "micro-infusion-3-month-bundle-for-wrinkles",
             "preselected": false,
-            "heading": "3 Month Supply (Pre-Order)",
+            "heading": "3 Month Supply (PRE-ORDER)",
             "subheading": "(6 Treatments)",
             "image": "shopify://shop_images/MI_3_month_W.webp",
             "soldout": false,
@@ -1197,7 +1197,7 @@
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
-            "preorder_percent": 55,
+            "preorder_percent": 67,
             "included_text": "<ul><li>6 clinically formulated 4ml serums to treat your specific skin concerns (valued at $375)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
           }
         },
@@ -1251,7 +1251,7 @@
           "settings": {
             "product": "6-month-micro-infusion-for-wrinkles-dark-spots",
             "preselected": true,
-            "heading": "6 Month Supply Promo (Pre-Order)",
+            "heading": "6 Month Supply Promo (PRE-ORDER)",
             "subheading": "(12 Treatments)",
             "image": "shopify://shop_images/MI_6_month_DSW.webp",
             "soldout": false,
@@ -1261,7 +1261,7 @@
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
-            "preorder_percent": 55,
+            "preorder_percent": 63,
             "included_text": "<ul><li>12 clinically formulated 4ml serums to treat your specific skin concerns (valued at $719)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
           }
         },

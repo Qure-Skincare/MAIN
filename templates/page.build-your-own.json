@@ -29,7 +29,6 @@
         "text_eAKaam",
         "text_A97KHX"
       ],
-      "disabled": true,
       "name": "t:sections.n_hero-banner.name",
       "settings": {
         "use_own_file": true,
@@ -40,69 +39,282 @@
       }
     },
     "page_banner_zUyTB8": {
-      "type": "page-banner",
+      "type": "build-your-own-banner",
+      "disabled": true,
       "name": "t:sections.page-banner.name",
-      "settings": {
-        "heading": "Build Your Own",
-        "text": "",
-        "sub_text": "",
-        "button": "",
-        "button_url": "",
-        "button_mobile": "",
-        "button_url_mobile": "",
-        "image": "shopify://shop_images/best-seller-banner.webp",
-        "image_mobile": "shopify://shop_images/best-seller-banner-mob.webp"
-      }
+      "settings": {}
     },
-    "carousel_7YOxGy": {
-      "type": "carousel",
+    "byo_container_fXMjkJ": {
+      "type": "build-your-own-container",
       "blocks": {
-        "items_3xewxx": {
-          "type": "items",
+        "tab_y8Fn3G": {
+          "type": "tabs",
           "settings": {
-            "heading": "Free Shipping On Orders Over $100",
-            "image": "shopify://shop_images/guarantee.svg"
+            "heading": "Micro-Infusion"
           }
         },
-        "items_AUjmAT": {
-          "type": "items",
+        "tab_y8Fn4G": {
+          "type": "tabs",
           "settings": {
-            "heading": "Dermatologist Reviewed",
-            "image": "shopify://shop_images/sheild.svg"
+            "heading": "Devices"
           }
         },
-        "items_Ub9bKD": {
-          "type": "items",
+        "tab_y8Fn5G": {
+          "type": "tabs",
           "settings": {
-            "heading": "Buy Now, Pay Later Options Available",
-            "image": "shopify://shop_images/pay-later.svg"
+            "heading": "Water Filters"
           }
         },
-        "items_CVMfzL": {
-          "type": "items",
+        "tab_y8Fn6G": {
+          "type": "tabs",
           "settings": {
-            "heading": "Proven Results, <br> Backed By Science",
-            "image": "shopify://shop_images/proven-result.svg"
+            "heading": "Scincare"
           }
         }
       },
       "block_order": [
-        "items_3xewxx",
-        "items_AUjmAT",
-        "items_Ub9bKD",
-        "items_CVMfzL"
+        "tab_y8Fn3G",
+        "tab_y8Fn4G",
+        "tab_y8Fn5G",
+        "tab_y8Fn6G"
       ],
-      "disabled": true,
-      "name": "t:common.carousel",
+      "settings": {}
+    },
+    "byo_fXMjk1": {
+      "type": "build-your-own",
+      "blocks": {
+        "product_card_y8Fn3G": {
+          "type": "product_card",
+          "disabled": true,
+          "settings": {
+            "heading": "Micro-Infusion 3 Month Bundle (Wrinkles)",
+            "product": "micro-infusion-3-month-bundle-for-wrinkles",
+            "soldout": true,
+            "image_text": "Bestseller",
+            "image": "shopify://shop_images/mi_3months_wrinkles.webp",
+            "hover_image": "shopify://shop_images/Frame_1073714796_3.png",
+            "url": "https://qureskincare.com/pages/microinfusion",
+            "rating_text": "1,312 Reviews",
+            "rating_image": "shopify://shop_images/stars_28fec7ee-9c78-4fd9-a20e-79d5fd6f89e3.svg"
+          }
+        },
+        "product_card_63wEYk": {
+          "type": "product_card",
+          "settings": {
+            "heading": "Micro-Infusion 3 Month Bundle (Dark Spots)",
+            "product": "micro-infusion-3-month-bundle-for-dark-spots",
+            "soldout": false,
+            "image_text": "Bestseller",
+            "image": "shopify://shop_images/mi_3_months_dark_spots.webp",
+            "hover_image": "shopify://shop_images/MI_2.png",
+            "url": "https://qureskincare.com/pages/microinfusion",
+            "rating_text": "912 Reviews",
+            "rating_image": "shopify://shop_images/stars_1d5cf106-3e77-4e4e-9567-30216e7fd87f.svg"
+          }
+        },
+        "product_card_trCBXF": {
+          "type": "product_card",
+          "disabled": true,
+          "settings": {
+            "heading": "Micro-Infusion 1 Month Bundle (Wrinkles)",
+            "product": "micro-infusion-1-month-bundle-for-wrinkles",
+            "soldout": true,
+            "image_text": "",
+            "image": "shopify://shop_images/mi_1_month_wrinkles.webp",
+            "hover_image": "shopify://shop_images/MI_2.png",
+            "url": "https://qureskincare.com/pages/microinfusion",
+            "rating_text": "1,112 Reviews",
+            "rating_image": "shopify://shop_images/stars_1d5cf106-3e77-4e4e-9567-30216e7fd87f.svg"
+          }
+        },
+        "product_card_VXPLEC": {
+          "type": "product_card",
+          "settings": {
+            "heading": "Micro-Infusion 1 Month Bundle (Dark Spots)",
+            "product": "micro-infusion-1-month-bundle-for-dark-spots",
+            "soldout": false,
+            "image_text": "",
+            "image": "shopify://shop_images/mi_1_month_dark_spots.webp",
+            "hover_image": "shopify://shop_images/MI_2.png",
+            "url": "https://qureskincare.com/pages/microinfusion",
+            "rating_text": "987 Reviews",
+            "rating_image": "shopify://shop_images/stars_1d5cf106-3e77-4e4e-9567-30216e7fd87f.svg"
+          }
+        }
+      },
+      "block_order": [
+        "product_card_y8Fn3G",
+        "product_card_63wEYk",
+        "product_card_trCBXF",
+        "product_card_VXPLEC"
+      ],
       "settings": {
-        "background_color": "#f6f6f7",
-        "display_mode": "both"
+        "heading": "Micro-Infusion"
       }
     },
-    "byo_fXMjkJ": {
+    "byo_fXMjk2": {
       "type": "build-your-own",
-      "name": "t:sections.collection.name",
-      "settings": {}
+      "blocks": {
+        "product_card_FDAa4d1": {
+          "type": "product_card",
+          "settings": {
+            "heading": "Q-Rejuvalight Pro Facewear",
+            "product": "q-rejuvalight-pro-facewear",
+            "soldout": false,
+            "image_text": "Bestseller",
+            "image": "shopify://shop_images/mask_led_qure.webp",
+            "hover_image": "shopify://shop_images/Frame_1073714814_1.png",
+            "url": "https://qureskincare.com/products/q-rejuvalight-pro-facewear",
+            "rating_text": "1,675 Reviews",
+            "rating_image": "shopify://shop_images/stars_28fec7ee-9c78-4fd9-a20e-79d5fd6f89e3.svg"
+          }
+        },
+        "product_card_FDAa4d2": {
+          "type": "product_card",
+          "settings": {
+            "heading": "Neck & Décolletage LED Device",
+            "product": "neck-decolletage-led",
+            "soldout": false,
+            "image_text": "",
+            "image": "shopify://shop_images/Frame_1073714814_5.webp",
+            "hover_image": "shopify://shop_images/neck-and-deck-hover-byo.webp",
+            "url": "https://qureskincare.com/products/neck-decolletage-led",
+            "rating_text": "367 Reviews",
+            "rating_image": "shopify://shop_images/stars_28fec7ee-9c78-4fd9-a20e-79d5fd6f89e3.svg"
+          }
+        },
+        "product_card_XzPTLK": {
+          "type": "product_card",
+          "settings": {
+            "heading": "Q-Rejuvalight Pro Facewear",
+            "product": "hair-growth-helmet",
+            "soldout": false,
+            "image_text": "",
+            "image": "shopify://shop_images/helmet_qure_2b9a254b-41cb-4f7a-8e61-bb54601ffb41.webp",
+            "hover_image": "shopify://shop_images/Helmet_948bc905-34a7-487c-8e03-09f503946b47.png",
+            "url": "shopify://products/hair-growth-helmet",
+            "rating_text": "99 Reviews",
+            "rating_image": "shopify://shop_images/stars_1d5cf106-3e77-4e4e-9567-30216e7fd87f.svg"
+          }
+        }
+      },
+      "block_order": [
+        "product_card_FDAa4d1",
+        "product_card_FDAa4d2",
+        "product_card_XzPTLK"
+      ],
+      "settings": {
+        "heading": "Devices"
+      }
+    },
+    "byo_fXMjk3": {
+      "type": "build-your-own",
+      "blocks": {
+        "product_card_y8Fn3G1": {
+          "type": "product_card",
+          "settings": {
+            "heading": "Shower Filter",
+            "product": "shower-filter",
+            "soldout": false,
+            "image_text": "",
+            "image": "shopify://shop_images/Frame_1073714796_10.webp",
+            "hover_image": "shopify://shop_images/shower-filter-hover-byo.webp",
+            "url": "https://qureskincare.com/pages/shower-filter",
+            "rating_text": "712 Reviews",
+            "rating_image": "shopify://shop_images/stars_28fec7ee-9c78-4fd9-a20e-79d5fd6f89e3.svg"
+          }
+        },
+        "product_card_FDAa4d2": {
+          "type": "product_card",
+          "settings": {
+            "heading": "Faucet Filter",
+            "product": "faucet-filter",
+            "soldout": false,
+            "image_text": "",
+            "image": "shopify://shop_images/faucet_qure.webp",
+            "hover_image": "shopify://shop_images/faucet-filter-hover-byo.webp",
+            "url": "shopify://products/faucet-filter",
+            "rating_text": "567 Reviews",
+            "rating_image": "shopify://shop_images/stars_28fec7ee-9c78-4fd9-a20e-79d5fd6f89e3.svg"
+          }
+        }
+      },
+      "block_order": [
+        "product_card_y8Fn3G1",
+        "product_card_FDAa4d2"
+      ],
+      "settings": {
+        "heading": "Water Filters"
+      }
+    },
+    "byo_fXMjk4": {
+      "type": "build-your-own",
+      "blocks": {
+        "product_card_kQWMy3": {
+          "type": "product_card",
+          "settings": {
+            "heading": "Dermal Mist",
+            "product": "dermal-mist",
+            "soldout": false,
+            "image_text": "",
+            "image": "shopify://shop_images/derma_mist_qure.webp",
+            "hover_image": "shopify://shop_images/dermal-mist-hover-byo.webp",
+            "url": "https://qureskincare.com/products/dermal-mist",
+            "rating_text": "127 Reviews",
+            "rating_image": "shopify://shop_images/stars_28fec7ee-9c78-4fd9-a20e-79d5fd6f89e3.svg"
+          }
+        },
+        "product_card_kQWMy2": {
+          "type": "product_card",
+          "settings": {
+            "heading": "Micro-Infusion Targeted Patches",
+            "product": "micro-infusion-targeted-patches",
+            "soldout": false,
+            "image_text": "",
+            "image": "shopify://shop_images/Patches_1.webp",
+            "hover_image": "shopify://shop_images/Patches_f35d5219-aea3-4fe7-804d-052768dce864.png",
+            "url": "https://qureskincare.com/products/micro-infusion-targeted-patches",
+            "rating_text": "157 Reviews",
+            "rating_image": "shopify://shop_images/stars_28fec7ee-9c78-4fd9-a20e-79d5fd6f89e3.svg"
+          }
+        },
+        "product_card_kQWMy1": {
+          "type": "product_card",
+          "settings": {
+            "heading": "All-In-One Face Serum",
+            "product": "face-serum",
+            "soldout": false,
+            "image_text": "",
+            "image": "shopify://shop_images/all_in_one.webp",
+            "hover_image": "shopify://shop_images/Img_7.png",
+            "url": "https://qureskincare.com/products/face-serum",
+            "rating_text": "380 Reviews",
+            "rating_image": "shopify://shop_images/stars_28fec7ee-9c78-4fd9-a20e-79d5fd6f89e3.svg"
+          }
+        },
+        "product_card_bFeyGQ": {
+          "type": "product_card",
+          "settings": {
+            "heading": "Silk Pillowcase",
+            "product": "silk-pillowcase",
+            "soldout": false,
+            "image_text": "",
+            "image": "shopify://shop_images/Frame_1073714797_1_1.webp",
+            "url": "shopify://products/silk-pillowcase",
+            "rating_text": "187 Reviews",
+            "rating_image": "shopify://shop_images/stars_1d5cf106-3e77-4e4e-9567-30216e7fd87f.svg"
+          }
+        }
+      },
+      "block_order": [
+        "product_card_kQWMy3",
+        "product_card_kQWMy2",
+        "product_card_kQWMy1",
+        "product_card_bFeyGQ"
+      ],
+      "settings": {
+        "heading": "Scincare"
+      }
     },
     "bf_bundle_bunner_mini_JhrEmz": {
       "type": "bf-bundle-banner-mini",
@@ -259,22 +471,32 @@
       "block_order": [
         "take_quiz_xbNNGM"
       ],
+      "disabled": true,
       "name": "t:sections.quiz.name",
       "settings": {
         "heading": "Unlock Your Personalized Skincare Routine",
         "text": "<p>You don’t have time for products that don’t work. We’ll prescribe you a personalized routine with clinically proven products and tips - just for your skin.</p>",
         "sub_text": "Here’s your personalized skincare routine…"
       }
+    },
+    "sticky-cta-build-your-own": {
+      "type": "sticky-cta-build-your-own",
+      "name": "t:sections.static-sticky-cta.name",
+      "settings": {}
     }
   },
   "order": [
     "n_hero_banner_PBhFUd",
     "page_banner_zUyTB8",
-    "carousel_7YOxGy",
-    "byo_fXMjkJ",
+    "byo_container_fXMjkJ",
+    "byo_fXMjk1",
+    "byo_fXMjk2",
+    "byo_fXMjk3",
+    "byo_fXMjk4",
     "bf_bundle_bunner_mini_JhrEmz",
     "bf_bundle_banner_dTU6Q7",
     "trusted_reviews_mRLHtt",
-    "quiz_DfRXwD"
+    "quiz_DfRXwD",
+    "sticky-cta-build-your-own"
   ]
 }

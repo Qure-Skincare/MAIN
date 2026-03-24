@@ -2,7 +2,7 @@
 
 {% for block in section.blocks %}
   {% if block.type == 'exclude-page' %}
-    {% if page.handle == block.settings['exclude-page'].handle %}
+    {% if block.settings['exclude-page'].handle != blank and page.handle == block.settings['exclude-page'].handle %}
       {% assign excluded = true %}
       {% break %}
     {% endif %}
