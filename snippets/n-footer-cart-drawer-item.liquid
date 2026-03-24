@@ -38,9 +38,9 @@
                 <div class="e-price">
                     <div class="e-price__main">
                         {% if cart_item_before_price != blank %}
-                            <div class="e-price__old" data-variant-id="{{ cart_item_product_variant_id }}">{{ cart_item_before_price }}</div>
+                            <div class="e-price__old igComparePrice" data-variant-id="{{ cart_item_product_variant_id }}">{{ cart_item_before_price }}</div>
                         {% endif %}
-                        <div class="e-price__current" data-variant-id="{{ cart_item_product_variant_id }}">{{ cart_item_sale_price }}</div>
+                        <div class="e-price__current igPrice" data-variant-id="{{ cart_item_product_variant_id }}">{{ cart_item_sale_price }}</div>
                     </div>
                 </div>
             </div>
