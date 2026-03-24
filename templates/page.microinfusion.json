@@ -106,7 +106,7 @@
         "nextships_4xp7uM": {
           "type": "nextships",
           "settings": {
-            "date": "23rd April",
+            "date": "30th April",
             "percent": 73,
             "date_soldout": "23rd March",
             "date_reserved": "23rd April"
@@ -205,7 +205,7 @@
             "popular": false,
             "best": false,
             "preselected": true,
-            "heading": "6 Month Supply <br> (PRE-ORDER)",
+            "heading": "6 Month Supply<br>  (PRE-ORDER)",
             "subheading": "(12 Treatments)",
             "image": "shopify://shop_images/PDP_MI_6_month_W.webp",
             "soldout": false,
@@ -225,7 +225,7 @@
             "popular": false,
             "best": false,
             "preselected": false,
-            "heading": "3 Month Supply <br> (PRE-ORDER)",
+            "heading": "3 Month Supply  <br>(PRE-ORDER)",
             "subheading": "(6 Treatments)",
             "image": "shopify://shop_images/PDP_MI_3_month_W.webp",
             "soldout": false,
@@ -277,7 +277,7 @@
             "popular": false,
             "best": false,
             "preselected": true,
-            "heading": "6 Month Supply Promo  <br>(PRE-ORDER)",
+            "heading": "6 Month Supply Promo <br> (PRE-ORDER)",
             "subheading": "(12 Treatments)",
             "image": "shopify://shop_images/pdp_MI_6_month_DSW.webp",
             "soldout": false,
