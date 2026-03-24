@@ -389,7 +389,8 @@
       "name": "t:sections.n_press-reviews.name",
       "settings": {
         "use_own_file": true,
-        "text": "<h6>FEATURED IN</h6>"
+        "text": "<h6>FEATURED IN</h6>",
+        "settings": "\"spaceBetween\": 80"
       }
     },
     "n_why_using_z3TUgk": {
@@ -1242,7 +1243,7 @@
         "left_heading_h889JG": {
           "type": "left_heading",
           "settings": {
-            "heading": "<h2>Qure Micro-Infusion System</h2>",
+            "heading": "<h4>Qure Micro-Infusion System</h4>",
             "image": "shopify://shop_images/mist_img_3.webp"
           }
         },
@@ -1285,7 +1286,7 @@
         "right_heading_fk9MUJ": {
           "type": "right_heading",
           "settings": {
-            "heading": "<h2>Other At-Home Needling Devices</h2>",
+            "heading": "<h4>Other At-Home Needling Devices</h4>",
             "image": "shopify://shop_images/mist_img_4.webp"
           }
         },

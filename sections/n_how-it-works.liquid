@@ -1,0 +1,198 @@
+{% doc %}
+  Renders How It Works tab panels with wavelength scale and accordion.
+{% enddoc %}
+
+<!-- WHY IT WORK -->
+ {% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/why-it-work/why-it-work.css" />
+{% endif %}
+<section class="why-it-work" id="how_it_works">
+    <div class="container">
+        <div class="why-it-work__header">
+            {{ section.settings.heading }}
+            <ul class="e-pill-tabs" role="tablist">
+                {% for block in section.blocks %}
+                    {% if block.type == 'tab' %}
+                        <li>
+                            <button{% if forloop.first %} class="active"{% endif %} type="button" data-bs-toggle="tab" data-bs-target="#why-it-work-{{ block.settings.tab_heading | strip | handleize }}">{{ block.settings.tab_heading }}</button>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+        {% for block in section.blocks %}
+            {% if block.type == 'tab' %}
+                <div class="why-it-work__content{% if forloop.first %} show{% endif %}" id="why-it-work-{{ block.settings.tab_heading | strip | handleize }}">
+                    <figure>
+                        {% if block.settings.text != blank %}
+                            <figcaption>{{  block.settings.text }}</figcaption>
+                        {% endif %}
+                        {% if block.settings.image != blank %}
+                            <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                        {% endif %}
+                    </figure>
+                    {% if block.settings.sub_heading != blank %}
+                        <article>
+                            {{ block.settings.sub_heading }}
+                            {% if block.settings.sub_text != blank %}
+                                <div>
+                                    {{ block.settings.sub_text }}
+                                </div>
+                            {% endif %}
+                            
+                            <ul class="e-scale">
+                                {% if block.settings.color_1 != blank %}
+                                    <li style="--graduation-color: {{ block.settings.color_1 }}">{{ block.settings.color_text_1 | replace: '<strong>', '<span">' | replace: '</strong>', '</span>' | replace: '<p>', '' | replace: '</p>', '' }}</li>
+                                {% endif %}
+                                {% if block.settings.color_2 != blank %}
+                                    <li style="--graduation-color: {{ block.settings.color_2 }}">{{ block.settings.color_text_2 | replace: '<strong>', '<span">' | replace: '</strong>', '</span>' | replace: '<p>', '' | replace: '</p>', '' }}</li>
+                                {% endif %}
+                                {% if block.settings.color_3 != blank %}
+                                    <li style="--graduation-color: {{ block.settings.color_3 }}">{{ block.settings.color_text_3 | replace: '<strong>', '<span">' | replace: '</strong>', '</span>' | replace: '<p>', '' | replace: '</p>', '' }}</li>
+                                {% endif %}
+                                {% if block.settings.color_4 != blank %}
+                                    <li style="--graduation-color: {{ block.settings.color_4 }}">{{ block.settings.color_text_4 | replace: '<strong>', '<span">' | replace: '</strong>', '</span>' | replace: '<p>', '' | replace: '</p>', '' }}</li>
+                                {% endif %}
+                            </ul>
+                        </article>
+                    {% endif %}
+                </div>
+            {% endif %}
+        {% endfor %}
+        <div class="why-it-work__accordion">
+            <hr />
+            <div class="c-accordion">
+                <div class="c-accordion__list">
+                    {% for block in section.blocks %}
+                        {% if block.type == 'accordion' %}
+                            <details class="c-accordion__item">
+                                {% if block.settings.heading != blank %}
+                                    <summary class="c-accordion__summary">{{ block.settings.heading }}</summary>
+                                {% endif %}
+                                {% if block.settings.text != blank %}
+                                    <article class="c-accordion__content">
+                                        {{ block.settings.text }}
+                                    </article>
+                                {% endif %}
+                            </details>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- WHY IT WORK END -->
+
+{% schema %}
+{
+  "name": "t:sections.n_how-it-works.name",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "use_own_file",
+      "label": "t:common.use-own-file",
+      "default": false
+    },
+    {
+      "type": "richtext",
+      "id": "heading",
+      "label": "t:common.header"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "tab",
+      "name": "t:common.tab",
+      "settings": [
+        {
+          "type": "text",
+          "id": "tab_heading",
+          "label": "t:common.tab-heading"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "t:common.text"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:common.image"
+        },
+        {
+          "type": "richtext",
+          "id": "sub_heading",
+          "label": "t:common.subheader"
+        },
+        {
+          "type": "richtext",
+          "id": "sub_text",
+          "label": "t:common.sub-text"
+        },
+        {
+            "type": "text",
+            "id": "color_1",
+            "label": "t:common.color"
+        },
+        {
+            "type": "richtext",
+            "id": "color_text_1",
+            "label": "t:sections.n_how-it-works.blocks.tab.settings.color_text"
+        },
+        {
+            "type": "text",
+            "id": "color_2",
+            "label": "t:common.color"
+        },
+        {
+            "type": "richtext",
+            "id": "color_text_2",
+            "label": "t:sections.n_how-it-works.blocks.tab.settings.color_text"
+        },
+        {
+            "type": "text",
+            "id": "color_3",
+            "label": "t:common.color"
+        },
+        {
+            "type": "richtext",
+            "id": "color_text_3",
+            "label": "t:sections.n_how-it-works.blocks.tab.settings.color_text"
+        },
+        {
+            "type": "text",
+            "id": "color_4",
+            "label": "t:common.color"
+        },
+        {
+            "type": "richtext",
+            "id": "color_text_4",
+            "label": "t:sections.n_how-it-works.blocks.tab.settings.color_text"
+        }
+      ]
+    },
+    {
+      "type": "accordion",
+      "name": "t:common.accordion",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "t:common.header"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "t:common.text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.n_how-it-works.name"
+    }
+  ]
+}
+{% endschema %}

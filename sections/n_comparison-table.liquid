@@ -68,6 +68,9 @@
                                         {% if block.settings.text_4 != blank %}
                                             <li><i class="e-icon e-icon-{{ block.settings.select_4 }}-fill"></i> <span>{{ block.settings.text_4 }}</span></li>
                                         {% endif %}
+                                        {% if block.settings.text_5 != blank %}
+                                            <li><i class="e-icon e-icon-{{ block.settings.select_5 }}-fill"></i> <span>{{ block.settings.text_5 }}</span></li>
+                                        {% endif %}
                                     </ul>
                                 </article>
                             </div>
@@ -81,6 +84,7 @@
             <div class="c-swiper-pagination"></div>
             <button class="c-swiper-button-next"></button>
         </div>
+        <small class="e-declaimer">Based on publicly available information. For general comparison only.</small>
     </div>
 </section>
 <script>
@@ -227,6 +231,37 @@
                         "label": "t:common.cross"
                     }
                 ]
+            },
+            {
+                "type": "text",
+                "id": "text_5",
+                "label": "t:common.text"
+            },
+            {
+                "type": "select",
+                "id": "select_5",
+                "label": "t:common.select",
+                "options": [
+                    {
+                        "value": "checkmark",
+                        "label": "t:common.checkmark"
+                    },
+                    {
+                        "value": "cross",
+                        "label": "t:common.cross"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "disclaimer",
+        "name": "t:common.disclaimer",
+        "settings": [
+            {
+                "type": "text",
+                "id": "text",
+                "label": "t:common.text"
             }
         ]
     }

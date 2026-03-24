@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "announcement_bar_jkkyg7": {
       "type": "announcement-bar",
@@ -22,9 +22,6 @@
     },
     "product_header_V3N3T8": {
       "type": "n-product-header",
-      "custom_css": [
-        ".hero-product {padding-top: 60px; padding-bottom: 60px;} @media screen and (max-width: 767px){.hero-product {padding-top: 40px; padding-bottom: 40px;}}"
-      ],
       "blocks": {
         "gallery_sticky_video_ty3KMw": {
           "type": "gallery-sticky-video",
@@ -49,7 +46,10 @@
         },
         "button_A9": {
           "type": "button",
-          "settings": {}
+          "settings": {
+            "hide_payments": false,
+            "hide_bottom": false
+          }
         },
         "exclusive-offer_iaSzaD": {
           "type": "exclusive-offer",
@@ -148,1002 +148,1171 @@
         "limited": false,
         "description": "<ul><li>FDA-cleared device designed to treat wrinkles and acne.</li><li>Customizable treatment on 5 facial areas for your specific skin concerns.</li><li>Quick 3 minute, wireless daily treatments with convenient hands-free operation.</li></ul>",
         "reserved": false,
-        "soldout": false
+        "soldout": false,
+        "button-label": "",
+        "button-url": ""
       }
     },
-    "slider_featured_in_KyQXpD": {
-      "type": "slider-featured-in",
+    "n_press_reviews_fxy6Uf": {
+      "type": "n_press-reviews",
       "blocks": {
-        "slider_N6Vj8B": {
-          "type": "slider",
+        "image_with_text_gyfzMY": {
+          "type": "image_with_text",
           "settings": {
-            "heading": "“The professional grade is the perfect addition to any at-home skincare routine.”",
+            "text": "<h4>“The professional grade is the perfect addition to any at-home skincare routine.”</h4>",
             "image": "shopify://shop_images/vogue-black_c45fe341-b302-48e8-a35f-ff09061f2491.svg"
           }
         },
-        "slider_wghLee": {
-          "type": "slider",
+        "image_with_text_MpVT6F": {
+          "type": "image_with_text",
           "settings": {
-            "heading": "\"Treatment time is only three minutes—among the fastest of all devices.\"",
+            "text": "<h4>\"Treatment time is only three minutes—among the fastest of all devices.\"</h4>",
             "image": "shopify://shop_images/women-health_9fb39053-930a-4312-a5c1-a5d629cdecd2.svg"
           }
         },
-        "slider_WbrVmC": {
-          "type": "slider",
+        "image_with_text_w86gwk": {
+          "type": "image_with_text",
           "settings": {
-            "heading": "“A multi-use LED mask with five different light setting options to refresh, smooth, and revitalize the look of all skin types.”",
+            "text": "<h4>“A multi-use LED mask with five different light setting options to refresh, smooth, and revitalize the look of all skin types.”</h4>",
             "image": "shopify://shop_images/elle-black_82b43549-bc96-4896-af71-0e6bb925e98c.svg"
           }
         },
-        "slider_YPUGce": {
-          "type": "slider",
+        "image_with_text_ra9ChA": {
+          "type": "image_with_text",
           "settings": {
-            "heading": "“The combination of colors allows you to customize which lights are used, maximizing its benefits to help your skin... ”",
+            "text": "<h4>“The combination of colors allows you to customize which lights are used, maximizing its benefits to help your skin... ”</h4>",
             "image": "shopify://shop_images/cosmopolitan_70c5f571-db67-4d3f-8998-714fa10f89be.svg"
           }
         },
-        "slider_67Pdpr": {
-          "type": "slider",
+        "image_with_text_dnKxTC": {
+          "type": "image_with_text",
           "settings": {
-            "heading": "Q-Rejuvalight Pro harnesses a range of LED wavelengths—from blue to infrared—to help improve the appearance of multiple skin concerns.",
+            "text": "<h4>Q-Rejuvalight Pro harnesses a range of LED wavelengths—from blue to infrared—to help improve the appearance of multiple skin concerns.</h4>",
             "image": "shopify://shop_images/gq_f5ab15ae-1608-435c-ae5a-00f10a826384.svg"
           }
         }
       },
       "block_order": [
-        "slider_N6Vj8B",
-        "slider_wghLee",
-        "slider_WbrVmC",
-        "slider_YPUGce",
-        "slider_67Pdpr"
+        "image_with_text_gyfzMY",
+        "image_with_text_MpVT6F",
+        "image_with_text_w86gwk",
+        "image_with_text_ra9ChA",
+        "image_with_text_dnKxTC"
       ],
-      "name": "t:sections.slider-featured-in.name",
-      "settings": {}
-    },
-    "banner_with_text_M34aAK": {
-      "type": "banner-with-text",
-      "name": "t:sections.banner-with-text.name",
+      "name": "t:sections.n_press-reviews.name",
       "settings": {
-        "heading": "Helps address multiple skin concerns with just one device",
+        "use_own_file": true,
+        "text": "<p>FEATURED IN</p>",
+        "settings": "\"slidesPerView\": 5"
+      }
+    },
+    "n_base_section_UEpGJ4": {
+      "type": "n_base-section",
+      "name": "t:sections.n_base-section.name",
+      "settings": {
+        "use_own_file": true,
+        "modifier": "reverse",
+        "modifier_2": "none",
+        "background_color": "none",
+        "heading": "<h2>Helps address multiple skin concerns with just one device</h2>",
         "text": "<p>A portable, FDA-cleared, at-home LED light therapy device that is <em>clinically validated</em> to <em>improve the appearance of wrinkles</em> and mild to moderate inflammatory acne.<br/><br/>Q-Rejuvalight Pro uses five clinically backed light wavelengths to deliver light energy designed to <em>target multiple visible skin concerns,</em> supporting clearer-looking, smoother-looking skin where topical care can’t reach.</p>",
-        "quote": "",
-        "quote-mobile": "",
-        "image_position": "left",
-        "sub_text": "",
         "image": "shopify://shop_images/skin_firming.webp",
         "button_label": "Shop Now",
-        "button_url": "#buy_box",
+        "button_url": "#hero_product",
         "wistia_url": ""
       }
     },
-    "led_benefits_eqJTF8": {
-      "type": "led-benefits",
+    "n_why_using_zc4dzf": {
+      "type": "n_why-using",
       "blocks": {
-        "slider_AyUkwP": {
-          "type": "slider",
+        "image_with_text_NLQ3yn": {
+          "type": "image_with_text",
           "settings": {
-            "text": "<p>Reduce the look of fine<br/> lines and wrinkles</p>",
-            "image": "shopify://shop_images/Micro-Infusion_Icons_6_ec6c579e-dacd-4fb4-8003-01ae0f27157c.svg"
+            "icon": "smooth-skin",
+            "text": "Reduce the look of fine lines and wrinkles"
           }
         },
-        "slider_Nq4jQt": {
-          "type": "slider",
+        "image_with_text_t3KBzz": {
+          "type": "image_with_text",
           "settings": {
-            "text": "<p>Helps improve the look of<br/> uneven tone</p>",
-            "image": "shopify://shop_images/Micro-Infusion_Icons_7.svg"
+            "icon": "tone-balance",
+            "text": "Helps improve the look of uneven tone"
           }
         },
-        "slider_ifPfiR": {
-          "type": "slider",
+        "image_with_text_JtgDUG": {
+          "type": "image_with_text",
           "settings": {
-            "text": "<p>Helps visibly calm and <br/>balance the look of skin</p>",
-            "image": "shopify://shop_images/Micro-Infusion_Icons_8.svg"
+            "icon": "calms-redness",
+            "text": "Helps visibly calm and balance the look of skin"
           }
         },
-        "slider_rhnxB4": {
-          "type": "slider",
+        "image_with_text_A6Vm6R": {
+          "type": "image_with_text",
           "settings": {
-            "text": "<p>Helps skin appear firmer<br/> and smoother</p>",
-            "image": "shopify://shop_images/Micro-Infusion_Icons_9.svg"
+            "icon": "skin-firming",
+            "text": "Helps skin appear firmer and smoother"
           }
         },
-        "slider_X7Tpw4": {
-          "type": "slider",
+        "image_with_text_7qUygM": {
+          "type": "image_with_text",
           "settings": {
-            "text": "<p>Helps promote a healthy-<br/>looking, radiant complexion</p>",
-            "image": "shopify://shop_images/Micro-Infusion_Icons_10.svg"
+            "icon": "perfect-transforming",
+            "text": "Helps promote a healthy-looking, radiant complexion"
           }
         }
       },
       "block_order": [
-        "slider_AyUkwP",
-        "slider_Nq4jQt",
-        "slider_ifPfiR",
-        "slider_rhnxB4",
-        "slider_X7Tpw4"
+        "image_with_text_NLQ3yn",
+        "image_with_text_t3KBzz",
+        "image_with_text_JtgDUG",
+        "image_with_text_A6Vm6R",
+        "image_with_text_7qUygM"
       ],
-      "name": "t:sections.led-benefits.name",
+      "name": "t:sections.n_why-using.name",
       "settings": {
-        "background_color": "",
-        "heading": "5 reasons why you’ll love LED Light Therapy",
-        "button_label": "",
-        "button_url": ""
+        "use_own_file": true,
+        "text": "<h2>5 reasons why you’ll love LED Light Therapy</h2>",
+        "button_label": ""
       }
     },
-    "proven_results_CQ9FBU": {
-      "type": "proven-results",
+    "n_progress_metrics_t4rYrV": {
+      "type": "n_progress-metrics",
       "blocks": {
-        "text_with_progress_BcgRjM": {
-          "type": "text_with_progress",
+        "compare_image_hCB3AF": {
+          "type": "compare_image",
           "settings": {
-            "text": "<p>of users reported smoother facial wrinkles and fine lines*</p>",
-            "percent_value": "87%"
-          }
-        },
-        "text_with_progress_YQWaPz": {
-          "type": "text_with_progress",
-          "settings": {
-            "text": "<p>noticed improved skin tone and enhanced smoothness*</p>",
-            "percent_value": "97%"
-          }
-        },
-        "text_with_progress_icezYk": {
-          "type": "text_with_progress",
-          "settings": {
-            "text": "<p>of participants note a reduction of acne breakouts*</p>",
-            "percent_value": "83%"
-          }
-        },
-        "slider_hK6zKc": {
-          "type": "slider",
-          "settings": {
-            "heading": "",
-            "text": "<p>Q-Rejuvalight Pro utilizes a 630 nm red LED, a wavelength clinically shown to improve wrinkle depth and skin texture. In a 2009 trial, participants experienced a <strong>31% mean increase</strong> in type‑1 procollagen production, with <strong>over 90%</strong> also seeing a reduction in wrinkle depth and surface roughness <strong>after just 12 treatments</strong>. The trial also found that 87% of participants demonstrated lower Fitzpatrick wrinkling scores.<br/>[line]</p><p><strong>About the clinical trial</strong></p><p>8-week single-blinded split-face trial with participants aged 27 to 79. Results measured after 12 treatments using profilometry and Fitzpatrick wrinkle severity scoring.</p><p>Reference: Lee, S.-Y., Park, K.-H., Choi, J.-W., Kwon, J.-K., Lee, D.-H., & Shin, M.-H. (2009). Regulation of skin collagen metabolism in vitro using a pulsed 660 nm LED light source: Clinical correlation with a single-blinded study. Journal of Investigative Dermatology, 129(12), 2751–2759.</p>",
             "image": "shopify://shop_images/q_rejuv_ab_1.webp",
-            "button_label": "Fine Lines & Wrinkles",
-            "button_label_image": ""
+            "text": ""
           }
         },
-        "slider_KYFhBe": {
-          "type": "slider",
+        "compare_image_zzkLeP": {
+          "type": "compare_image",
           "settings": {
-            "heading": "",
-            "text": "<p>A 2007 clinical study found that red LED therapy visibly improved signs of sun damage, including skin texture and tone, <strong>after just 9 treatments</strong>. By week 12, 91% of participants reported brighter, more even skin, and 82% noticed smoother texture. <br/>[line]</p><p><strong>About the clinical trial</strong></p><p>5‑week single-arm trial with 13 photoaged participants. Results measured after 9 treatments via clinical photography and patient satisfaction scores at 6, 9, and 12 weeks</p><p>Reference: Baez, F., & Reilly, L. R. (2007). The use of light-emitting diode therapy in the treatment of photoaged skin. Journal of Cosmetic Dermatology, 6(3), 189–194.</p>",
             "image": "shopify://shop_images/q_rejuv_ab_2.webp",
-            "button_label": "Dark Spots & Skin Tone",
-            "button_label_image": ""
+            "text": ""
           }
         },
-        "slider_jT4fBt": {
-          "type": "slider",
+        "compare_image_G4hXEw": {
+          "type": "compare_image",
           "settings": {
-            "heading": "",
-            "text": "<p>Q-Rejuvalight Pro combines blue (415 nm) and red (630 nm) LED wavelengths that are proven to improve mild to severe acne. A 2006 study found that after 8 sessions over 4 weeks, participants saw a <strong>46% reduction</strong> in lesion count at 4 weeks and an impressive <strong>81% reduction</strong> at 12 weeks, with minimal side effect.<br/>[line]</p><p><strong>About the clinical trial</strong></p><p>4-week trial with 24 participants with mild to severe facial acne vulgaris. Results measured after 8 treatments via lesion counts at weeks 2, 4, 8, and 12, along with dermatologist evaluation and patient self-assessment.</p><p>Reference: Goldberg, D. J., & Russell, B. A. (2006). Combination blue (415 nm) and red (633 nm) LED phototherapy in the treatment of mild to severe acne vulgaris. Journal of cosmetic and laser therapy : official publication of the European Society for Laser Dermatology, 8(2), 71–75.</p>",
             "image": "shopify://shop_images/q_rejuv_ab_3.webp",
-            "button_label": "Acne & Breakouts",
-            "button_label_image": ""
+            "text": ""
+          }
+        },
+        "percent_value_RDyn8J": {
+          "type": "percent_value",
+          "settings": {
+            "percent_value": 87,
+            "text": "of users reported smoother facial wrinkles and fine lines*"
+          }
+        },
+        "percent_value_NaHEKW": {
+          "type": "percent_value",
+          "settings": {
+            "percent_value": 97,
+            "text": "noticed improved skin tone and enhanced smoothness*"
+          }
+        },
+        "percent_value_caFMF9": {
+          "type": "percent_value",
+          "settings": {
+            "percent_value": 83,
+            "text": "of participants note a reduction of acne breakouts*"
+          }
+        },
+        "button_FcKfgR": {
+          "type": "button",
+          "settings": {
+            "button_label": "Explore the research behind LED light therapy",
+            "button_url": "#"
           }
         }
       },
       "block_order": [
-        "text_with_progress_BcgRjM",
-        "text_with_progress_YQWaPz",
-        "text_with_progress_icezYk",
-        "slider_hK6zKc",
-        "slider_KYFhBe",
-        "slider_jT4fBt"
+        "compare_image_hCB3AF",
+        "compare_image_zzkLeP",
+        "compare_image_G4hXEw",
+        "percent_value_RDyn8J",
+        "percent_value_NaHEKW",
+        "percent_value_caFMF9",
+        "button_FcKfgR"
       ],
-      "name": "t:sections.proven-results.name",
+      "name": "t:sections.n_progress-metrics.name",
       "settings": {
-        "heading": "Combines clinically-studied wavelengths",
-        "text": "<p>Results supported by light therapy studies:</p>",
-        "button_label": "Explore the research behind LED light therapy",
-        "button_url": "#"
+        "use_own_file": true,
+        "text": "<h2>Combines clinically-studied wavelengths</h2><p>Results supported by light therapy studies:</p>"
       }
     },
-    "trusted_reviews_AXrmjM": {
-      "type": "trusted-reviews",
+    "n_trusted_reviews_LNcYzb": {
+      "type": "n_trusted-reviews",
       "blocks": {
-        "slider_kNV8cA": {
+        "slider_eyGA9z": {
           "type": "slider",
           "settings": {
-            "heading": "Plump & Glowy",
-            "text": "<p>“After using this LED face mask consistently for a month, I can honestly say I’m impressed with the results. My skin looks noticeably healthier and more radiant, with a natural glow that wasn’t there before. It also feels fuller and more plump, and I’ve noticed a subtle softening of fine lines. The changes aren’t extreme or fake-looking—just a refreshed, well-rested version of my skin. I’ve really enjoyed adding this to my routine and will definitely continue using it.”</p>",
-            "compare_image": "shopify://shop_images/Image_1_5107b8e5-a58b-4e1d-8714-728b42fb2c7e.png",
-            "country_image": "shopify://shop_images/USA_07.png",
-            "username": "<p>Megan M.</p>",
-            "product_url": "",
-            "product_heading": "",
-            "product_text": ""
+            "image": "shopify://shop_images/Image_1_5107b8e5-a58b-4e1d-8714-728b42fb2c7e.png",
+            "flag": "shopify://shop_images/USA_07.png",
+            "username": "Megan M.",
+            "verified_customer": "Verified customer",
+            "text": "<p><strong>Plump & Glowy</strong></p><p>“After using this LED face mask consistently for a month, I can honestly say I’m impressed with the results. My skin looks noticeably healthier and more radiant, with a natural glow that wasn’t there before. It also feels fuller and more plump, and I’ve noticed a subtle softening of fine lines. The changes aren’t extreme or fake-looking—just a refreshed, well-rested version of my skin. I’ve really enjoyed adding this to my routine and will definitely continue using it.”</p>"
           }
         },
-        "slider_cAenwW": {
+        "slider_HYJYjr": {
           "type": "slider",
           "settings": {
-            "heading": "Can’t go a day without it",
-            "text": "<p>“Straight away I noticed results with the Qure mask. After the first week my skin looked clearer and more balanced. People ask me now how I have got my skin to be hydrated and looking bright with reduced redness. I’m so reliant on the Qure mask now. I don’t think I can go a day without using it.”</p>",
-            "compare_image": "shopify://shop_images/Image_13_bc21b22b-9f3d-4021-b82f-dd20246c38f8.png",
-            "country_image": "shopify://shop_images/australia_f_69a48b5f-3193-49ab-a443-904ca676d1db.webp",
-            "username": "<p>Anton M.</p>",
-            "product_url": "",
-            "product_heading": "",
-            "product_text": ""
+            "image": "shopify://shop_images/Image_13_bc21b22b-9f3d-4021-b82f-dd20246c38f8.png",
+            "flag": "shopify://shop_images/australia_f_69a48b5f-3193-49ab-a443-904ca676d1db.webp",
+            "username": "Anton M.",
+            "verified_customer": "Verified customer",
+            "text": "<p><strong>Can’t go a day without it</strong></p><p>“Straight away I noticed results with the Qure mask. After the first week my skin looked clearer and more balanced. People ask me now how I have got my skin to be hydrated and looking bright with reduced redness. I’m so reliant on the Qure mask now. I don’t think I can go a day without using it.”</p>"
           }
         },
-        "slider_AiXzax": {
+        "slider_7jpqCr": {
           "type": "slider",
           "settings": {
-            "heading": "Thrilled with the results!",
-            "text": "<p>\"I am 45 so I am fighting signs of aging, but also still dealing with acne flare ups. ...I notice a definite smoothing of [the look of] fine wrinkles on my cheeks & around my eyes. I recommend this product to anyone. Well worth the investment.\" </p>",
-            "compare_image": "shopify://shop_images/Jessica_rejuv.webp",
-            "country_image": "shopify://shop_images/america_f.webp",
-            "username": "<p>Jessica K.</p>",
-            "product_url": "",
-            "product_heading": "",
-            "product_text": ""
+            "image": "shopify://shop_images/Jessica_rejuv.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Jessica K.",
+            "verified_customer": "Verified customer",
+            "text": "<p><strong>Thrilled with the results!</strong></p><p>\"I am 45 so I am fighting signs of aging, but also still dealing with acne flare ups. ...I notice a definite smoothing of [the look of] fine wrinkles on my cheeks & around my eyes. I recommend this product to anyone. Well worth the investment.\" </p>"
           }
         },
-        "slider_P7Wz9M": {
+        "slider_wEyeMx": {
           "type": "slider",
           "settings": {
-            "heading": "Wish I started years ago",
-            "text": "<p>“After two weeks I began to see results and after six weeks the changes in my skin were dramatic. I have now been using Qure six months and  loving the compliments! I bought masks for my daughters for Christmas so they could start at a younger age…. I wish this technology had been available when I was younger.”</p>",
-            "compare_image": "shopify://shop_images/Image_15_4c3b7577-4da7-4f8d-894d-302159d2581e.png",
-            "country_image": "shopify://shop_images/america_f.webp",
-            "username": "<p>Terri P.</p>",
-            "product_url": "",
-            "product_heading": "",
-            "product_text": ""
+            "image": "shopify://shop_images/Image_15_4c3b7577-4da7-4f8d-894d-302159d2581e.png",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Terri P.",
+            "verified_customer": "Verified customer",
+            "text": "<p><strong>Wish I started years ago</strong></p><p>“After two weeks I began to see results and after six weeks the changes in my skin were dramatic. I have now been using Qure six months and  loving the compliments! I bought masks for my daughters for Christmas so they could start at a younger age…. I wish this technology had been available when I was younger.”</p>"
           }
         },
-        "slider_t9L4gF": {
+        "slider_LXdKBJ": {
           "type": "slider",
           "settings": {
-            "heading": "Amazing products",
-            "text": "<p>\"I'm so happy. I've been using the products for 2 months and they have made such a difference in my skin. I had tried a lot of products before but with just one bottle of serum, staying consistent with the mask, and doing a few treatments of the micro infusion... I've seen a huge change in my skin.\"</p>",
-            "compare_image": "shopify://shop_images/ana.webp",
-            "country_image": "shopify://shop_images/colombia_f.webp",
-            "username": "<p>Ana L.</p>",
-            "product_url": "",
-            "product_heading": "",
-            "product_text": ""
+            "image": "shopify://shop_images/ana.webp",
+            "flag": "shopify://shop_images/colombia_f.webp",
+            "username": "Ana L.",
+            "verified_customer": "Verified customer",
+            "text": "<p><strong>Amazing products</strong></p><p>\"I'm so happy. I've been using the products for 2 months and they have made such a difference in my skin. I had tried a lot of products before but with just one bottle of serum, staying consistent with the mask, and doing a few treatments of the micro infusion... I've seen a huge change in my skin.\"</p>"
           }
         },
-        "slider_3yLDfg": {
+        "slider_Cz7rWL": {
           "type": "slider",
           "settings": {
-            "heading": "Amazing",
-            "text": "<p>“I have been using my mask since 2023. It has completely evened out my skin tone and smoothed my forehead lines. I'm almost 32 with no lines on my forehead.”</p>",
-            "compare_image": "shopify://shop_images/Image_30.png",
-            "country_image": "shopify://shop_images/Mask_Group_3384840c-26f5-4d6f-a1d0-a4a49195f654.png",
-            "username": "<p>Amy B.</p>",
-            "product_url": "",
-            "product_heading": "",
-            "product_text": ""
+            "image": "shopify://shop_images/Image_30.png",
+            "flag": "shopify://shop_images/Mask_Group_3384840c-26f5-4d6f-a1d0-a4a49195f654.png",
+            "username": "Amy B.",
+            "verified_customer": "Verified customer",
+            "text": "<p><strong>Amazing</strong></p><p>“I have been using my mask since 2023. It has completely evened out my skin tone and smoothed my forehead lines. I'm almost 32 with no lines on my forehead.”</p>"
           }
         },
-        "slider_7nREYk": {
+        "slider_VfF6MV": {
           "type": "slider",
           "settings": {
-            "heading": "Amazing",
-            "text": "<p>“I love my mask, I use it everyday! Just 3 min and we go on. I have been using it for 1 month and feel my skin is smoother and the tone is more uniform. I am very satisfied!</p>",
-            "compare_image": "shopify://shop_images/Diane.webp",
-            "country_image": "shopify://shop_images/canada_f.svg",
-            "username": "<p>Diane F.</p>",
-            "product_url": "",
-            "product_heading": "",
-            "product_text": ""
+            "image": "shopify://shop_images/Diane.webp",
+            "flag": "shopify://shop_images/canada_f.svg",
+            "username": "Diane F.",
+            "verified_customer": "Verified customer",
+            "text": "<p><strong>Amazing</strong></p><p>“I love my mask, I use it everyday! Just 3 min and we go on. I have been using it for 1 month and feel my skin is smoother and the tone is more uniform. I am very satisfied!</p>"
           }
         },
-        "slider_g7UTtU": {
+        "slider_pY4FnY": {
           "type": "slider",
           "settings": {
-            "heading": "No breakouts for 8 weeks",
-            "text": "<p>“I originally thought it was just helping with my breakouts but the  real surprise came when I looked at my before and after photos. Even I was shocked. My friends had been commenting on how good my skin looked, and now I see what they meant. The changes are noticeable!”</p>",
-            "compare_image": "shopify://shop_images/Michelle.webp",
-            "country_image": "shopify://shop_images/america_f.webp",
-            "username": "<p>Michelle S.</p>",
-            "product_url": "",
-            "product_heading": "",
-            "product_text": ""
+            "image": "shopify://shop_images/Michelle.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Michelle S.",
+            "verified_customer": "Verified customer",
+            "text": "<p><strong>No breakouts for 8 weeks</strong></p><p>“I originally thought it was just helping with my breakouts but the  real surprise came when I looked at my before and after photos. Even I was shocked. My friends had been commenting on how good my skin looked, and now I see what they meant. The changes are noticeable!”</p>"
           }
         },
-        "slider_3UdTjx": {
+        "slider_fWACme": {
           "type": "slider",
           "settings": {
-            "heading": "Renewed skin",
-            "text": "<p>“My Qure mask has been amazing! As someone who struggles with acne and rosacea, your LED light therapy mask has improved my skin so much that I can now feel comfortable without any makeup. I’m very happy with this product!”</p>",
-            "compare_image": "shopify://shop_images/Tiffany.webp",
-            "country_image": "shopify://shop_images/america_f.webp",
-            "username": "<p>Tiffany L.</p>",
-            "product_url": "",
-            "product_heading": "",
-            "product_text": ""
+            "image": "shopify://shop_images/Tiffany.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Tiffany L.",
+            "verified_customer": "Verified customer",
+            "text": "<p><strong>Renewed skin</strong></p><p>“My Qure mask has been amazing! As someone who struggles with acne and rosacea, your LED light therapy mask has improved my skin so much that I can now feel comfortable without any makeup. I’m very happy with this product!”</p>"
           }
         },
-        "slider_EBwfmY": {
+        "slider_MNDEh4": {
           "type": "slider",
           "disabled": true,
           "settings": {
-            "heading": "Cured my acne",
-            "text": "<p>“This is the first time in TWO YEARS that I don’t have active acne  on my face. I’ve been using my Qure for 1 month now and it has completely qured my acne. It’s gone AND it’s healing all my scars and pox marks. I was literally on the rge of suicide because of my horrible skin. This device SAVED MY LIFE!!!.”</p>",
-            "compare_image": "shopify://shop_images/BJN.webp",
-            "country_image": "shopify://shop_images/canada_f.svg",
-            "username": "<p>BJ N.</p>",
-            "product_url": "",
-            "product_heading": "",
-            "product_text": ""
+            "image": "shopify://shop_images/BJN.webp",
+            "flag": "shopify://shop_images/canada_f.svg",
+            "username": "BJ N.",
+            "verified_customer": "Verified customer",
+            "text": "<p><strong>Cured my acne</strong></p><p>“This is the first time in TWO YEARS that I don’t have active acne  on my face. I’ve been using my Qure for 1 month now and it has completely qured my acne. It’s gone AND it’s healing all my scars and pox marks. I was literally on the rge of suicide because of my horrible skin. This device SAVED MY LIFE!!!.”</p>"
           }
         },
-        "slider_LyiKBf": {
+        "slider_xwCcGg": {
           "type": "slider",
           "disabled": true,
           "settings": {
-            "heading": "Amazing!!",
-            "text": "<p>“Amazing! Has made such a massive on my acne. Still getting breakouts but they disappear way quicker. Took maybe 2 days to start working. Pics are about 3 weeks difference.”</p>",
-            "compare_image": "shopify://shop_images/Sophie.webp",
-            "country_image": "shopify://shop_images/australia_f.webp",
-            "username": "<p>Sophie R.</p>",
-            "product_url": "",
-            "product_heading": "",
-            "product_text": ""
+            "image": "shopify://shop_images/Sophie.webp",
+            "flag": "shopify://shop_images/australia_f.webp",
+            "username": "Sophie R.",
+            "verified_customer": "Verified customer",
+            "text": "<p><strong>Amazing!!</strong></p><p>“Amazing! Has made such a massive on my acne. Still getting breakouts but they disappear way quicker. Took maybe 2 days to start working. Pics are about 3 weeks difference.”</p>"
           }
         },
-        "slider_K7YBLi": {
+        "slider_xzyPTK": {
           "type": "slider",
           "settings": {
-            "heading": "Best investment for my skin",
-            "text": "<p>\"It has been amazing, so easy to use for a start. And I am already noticing massive improvements, the texture of my skin has gone from [feeling] rough and bumpy to [feeling] silky smooth...I love it, couldn't recommend it highly enough!\"</p>",
-            "compare_image": "shopify://shop_images/Saskia.webp",
-            "country_image": "shopify://shop_images/england_f.webp",
-            "username": "<p>Saskia Z.</p>",
-            "product_url": "",
-            "product_heading": "",
-            "product_text": ""
+            "image": "shopify://shop_images/Saskia.webp",
+            "flag": "shopify://shop_images/england_f.webp",
+            "username": "Saskia Z.",
+            "verified_customer": "Verified customer",
+            "text": "<p><strong>Best investment for my skin</strong></p><p>\"It has been amazing, so easy to use for a start. And I am already noticing massive improvements, the texture of my skin has gone from [feeling] rough and bumpy to [feeling] silky smooth...I love it, couldn't recommend it highly enough!\"</p>"
           }
         },
-        "slider_eeRBxf": {
+        "slider_cMhj7n": {
           "type": "slider",
           "disabled": true,
           "settings": {
-            "heading": "Saw a difference within 3 days",
-            "text": "<p>“Incredible! The item is so well made, I had cystic acne on my jaw that went away within a week of use and my skin felt very soft. I have gotten 3 other people to purchase this product and will continue to rave about it!”</p>",
-            "compare_image": "shopify://shop_images/Jovana.webp",
-            "country_image": "shopify://shop_images/canada_f.svg",
-            "username": "<p>Jovana S.</p>",
-            "product_url": "",
-            "product_heading": "",
-            "product_text": ""
+            "image": "shopify://shop_images/Jovana.webp",
+            "flag": "shopify://shop_images/canada_f.svg",
+            "username": "Jovana S.",
+            "verified_customer": "Verified customer",
+            "text": "<p><strong>Saw a difference within 3 days</strong></p><p>“Incredible! The item is so well made, I had cystic acne on my jaw that went away within a week of use and my skin felt very soft. I have gotten 3 other people to purchase this product and will continue to rave about it!”</p>"
           }
         },
-        "slider_7Ktpnh": {
+        "slider_GHrdiH": {
           "type": "slider",
           "settings": {
-            "heading": "Just wow!",
-            "text": "<p>“Easy to use. I’ve used it three times this far and the changes in my skin are amazing. Skin is glowing, pores minimized. And my wrinkles what wrinkles this 53 year old happy skin. Well worth the $$$.”</p>",
-            "compare_image": "shopify://shop_images/Carey.webp",
-            "country_image": "shopify://shop_images/america_f.webp",
-            "username": "<p>Carey C.</p>",
-            "product_url": "",
-            "product_heading": "",
-            "product_text": ""
+            "image": "shopify://shop_images/Carey.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Carey C.",
+            "verified_customer": "Verified customer",
+            "text": "<p><strong>Just wow!</strong></p><p>“Easy to use. I’ve used it three times this far and the changes in my skin are amazing. Skin is glowing, pores minimized. And my wrinkles what wrinkles this 53 year old happy skin. Well worth the $$$.”</p>"
           }
         },
-        "slider_bzTbmR": {
+        "slider_Vw7rAy": {
           "type": "slider",
           "settings": {
-            "heading": "My new best friend!",
-            "text": "<p>“Love my Qure face mask. Has helped restore confidence and reduces stress.”</p>",
-            "compare_image": "shopify://shop_images/Image_29_0d2411bf-0897-4e46-a2ef-a6ce135888d8.png",
-            "country_image": "shopify://shop_images/america-flag_f1f6c160-90c6-4ba9-8bfc-d9039a28d2af.webp",
-            "username": "<p>Alexandra L.</p>",
-            "product_url": "",
-            "product_heading": "",
-            "product_text": ""
+            "image": "shopify://shop_images/Image_29_0d2411bf-0897-4e46-a2ef-a6ce135888d8.png",
+            "flag": "shopify://shop_images/america-flag_f1f6c160-90c6-4ba9-8bfc-d9039a28d2af.webp",
+            "username": "Alexandra L.",
+            "verified_customer": "Verified customer",
+            "text": "<p><strong>My new best friend!</strong></p><p>“Love my Qure face mask. Has helped restore confidence and reduces stress.”</p>"
           }
         },
-        "slider_WWFUjn": {
+        "slider_X4K3NE": {
           "type": "slider",
           "settings": {
-            "heading": "Amazing",
-            "text": "<p>“I am very pleased with the mask. I got struck with adult acne. Using the mask daily, and using adalapene gel before bed was the only thing that worked to bring my skin al,ost back to normal. I am so thankful. And it’s my daily 3 minute spa where I just sit and relax, after working all day, and absorb the  rays.\"</p>",
-            "compare_image": "shopify://shop_images/Rita.webp",
-            "country_image": "shopify://shop_images/america_f.webp",
-            "username": "<p>Rita W.</p>",
-            "product_url": "",
-            "product_heading": "",
-            "product_text": ""
+            "image": "shopify://shop_images/Rita.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Rita W.",
+            "verified_customer": "Verified customer",
+            "text": "<p><strong>Amazing</strong></p><p>“I am very pleased with the mask. I got struck with adult acne. Using the mask daily, and using adalapene gel before bed was the only thing that worked to bring my skin al,ost back to normal. I am so thankful. And it’s my daily 3 minute spa where I just sit and relax, after working all day, and absorb the  rays.\"</p>"
           }
         }
       },
       "block_order": [
-        "slider_kNV8cA",
-        "slider_cAenwW",
-        "slider_AiXzax",
-        "slider_P7Wz9M",
-        "slider_t9L4gF",
-        "slider_3yLDfg",
-        "slider_7nREYk",
-        "slider_g7UTtU",
-        "slider_3UdTjx",
-        "slider_EBwfmY",
-        "slider_LyiKBf",
-        "slider_K7YBLi",
-        "slider_eeRBxf",
-        "slider_7Ktpnh",
-        "slider_bzTbmR",
-        "slider_WWFUjn"
+        "slider_eyGA9z",
+        "slider_HYJYjr",
+        "slider_7jpqCr",
+        "slider_wEyeMx",
+        "slider_LXdKBJ",
+        "slider_Cz7rWL",
+        "slider_VfF6MV",
+        "slider_pY4FnY",
+        "slider_fWACme",
+        "slider_MNDEh4",
+        "slider_xwCcGg",
+        "slider_xzyPTK",
+        "slider_cMhj7n",
+        "slider_GHrdiH",
+        "slider_Vw7rAy",
+        "slider_X4K3NE"
       ],
-      "name": "t:sections.trusted-reviews.name",
+      "name": "t:sections.n_trusted-reviews.name",
       "settings": {
-        "background_color": "",
-        "heading": "Results you’ll see with your own eyes",
-        "text": "",
-        "text_mobile": "",
-        "button_label": "",
-        "button_url": ""
+        "use_own_file": true,
+        "background_color": "none",
+        "text": "<h2>Results you’ll see with your own eyes</h2>",
+        "button_label": ""
       }
     },
-    "trusted_recommended_Cxt4Gj": {
-      "type": "trusted-recommended",
-      "name": "t:sections.trusted-recommended.name",
+    "n_trusted_recommended_eafAhT": {
+      "type": "n_trusted-recommended",
+      "name": "t:sections.n_trusted-recommended.name",
       "settings": {
-        "background_color": "#ffffff",
-        "heading": "Trusted and Recommended by Experts",
-        "text": "<p>“Of all the LED masks we’ve tried, this is <strong>the best on the market right now...</strong> It didn’t lose in any category...</p><p>There’s real science behind LED therapy,  <strong>Qure makes it easy</strong> to be consistent—which is what really drives results.”</p>",
-        "image_text": "",
-        "video_cover_image": "shopify://shop_images/doctor_img_bddb1870-8487-4f88-b6dd-ab063ea346f3.webp",
+        "use_own_file": true,
+        "background_color": "none",
+        "modifier": "none",
+        "heading": "<h2>Trusted and Recommended by Experts</h2>",
+        "text": "<p>“Of all the LED masks we’ve tried, this is <em>the best on the market right now...</em> It didn’t lose in any category...</p><p>There’s real science behind LED therapy,  <em>Qure makes it easy</em> to be consistent—which is what really drives results.”</p>",
+        "video_image_cover": "shopify://shop_images/doctor_img_bddb1870-8487-4f88-b6dd-ab063ea346f3.webp",
+        "text_on_image": "",
+        "wistia_url": false,
         "video_url": "https://www.youtube.com/watch?v=jwKN4SH4yz8",
-        "wistia_url": ""
+        "badge_text": "Dermatologist Reviewed"
       }
     },
-    "video_slider_G8bjzR": {
-      "type": "video-slider",
+    "n_video_slider_Bwz8K8": {
+      "type": "n_video-slider",
       "blocks": {
-        "slider_9gjKWw": {
+        "slider_AdfRpA": {
           "type": "slider",
           "settings": {
             "heading": "<p>\"This mask actively treats the entire face for clearer and more beautiful skin.\"</p>",
-            "text": "<p>Dr. Anthony Youn</p>",
-            "sub_text": "<p>Resident Doctor</p>",
-            "url": "https://www.youtube.com/watch?v=XtgmSadah48",
-            "checkbox": true,
+            "text": "<p>Dr. Anthony Youn</p><p>[checkmark]Resident Doctor</p>",
+            "youtube_url": true,
+            "video_url": "https://www.youtube.com/watch?v=XtgmSadah48",
             "image": "shopify://shop_images/trusted_rejuv_4.webp"
           }
         },
-        "slider_AjE9PU": {
+        "slider_eFnPNp": {
           "type": "slider",
           "settings": {
             "heading": "<p>“There is an overwhelming amount of data on red light therapy, and this is the mask I use daily. ”</p>",
-            "text": "<p>Dr. Berry Fairchild</p>",
-            "sub_text": "<p>Plastic Surgeon</p>",
-            "url": "cpifkaungu",
-            "checkbox": false,
+            "text": "<p>Dr. Berry Fairchild</p><p>[checkmark]Plastic Surgeon</p>",
+            "youtube_url": false,
+            "video_url": "cpifkaungu",
             "image": "shopify://shop_images/Image_22_8a5ff1cc-d62c-41d1-ba88-3b5f724065e4.png"
           }
         },
-        "slider_kGwK6t": {
+        "slider_NRQwWU": {
           "type": "slider",
           "disabled": true,
           "settings": {
             "heading": "<p>\"Qure’s at-home LED device works beneath the skin’s surface to support a smoother, firmer-looking complexion and makes a visible difference…\"</p>",
-            "text": "<p>Dr. Dylan Greeney</p>",
-            "sub_text": "<p>Board-Certified Dermatologist</p>",
-            "url": "https://www.youtube.com/watch?v=1iXBgh7WPOY",
-            "checkbox": true,
+            "text": "<p>Dr. Dylan Greeney</p><p>[checkmark]Board-Certified Dermatologist</p>",
+            "youtube_url": true,
+            "video_url": "https://www.youtube.com/watch?v=1iXBgh7WPOY",
             "image": "shopify://shop_images/trusted_rejuv_2.webp"
           }
         },
-        "slider_VwcHpm": {
+        "slider_6DMckC": {
           "type": "slider",
           "settings": {
             "heading": "<p>\"This is one of my faves from @qureskincare. It’s a high quality mask and personalizable.\"</p>",
-            "text": "<p>Dr. Luke Maxfield</p>",
-            "sub_text": "<p>Internal Medicine Doctor</p>",
-            "url": "https://www.youtube.com/watch?v=AeksxRPZyrA",
-            "checkbox": true,
+            "text": "<p>Dr. Luke Maxfield</p><p>[checkmark]Internal Medicine Doctor</p>",
+            "youtube_url": true,
+            "video_url": "https://www.youtube.com/watch?v=AeksxRPZyrA",
             "image": "shopify://shop_images/trusted_rejuv_3.webp"
           }
         },
-        "slider_xPgTYA": {
+        "slider_Wg8Mx3": {
           "type": "slider",
           "settings": {
             "heading": "<p>\"Qure has a fully customized mask which has 5 clinical-grade wavelength for aging and acne.\"</p>",
-            "text": "<p>Dr. Prem Tripathi</p>",
-            "sub_text": "<p>Board-Certified Dermatologist</p>",
-            "url": "qnxqysx3sg",
-            "checkbox": false,
+            "text": "<p>Dr. Prem Tripathi</p><p>[checkmark]Board-Certified Dermatologist</p>",
+            "youtube_url": false,
+            "video_url": "qnxqysx3sg",
             "image": "shopify://shop_images/trusted_rejuv_1.webp"
           }
         },
-        "slider_Dck8UD": {
+        "slider_C99a4U": {
           "type": "slider",
           "settings": {
             "heading": "<p>“This mask is so cool because it has BOTH red light and blue light...”</p>",
-            "text": "<p>Care Clark</p>",
-            "sub_text": "<p>Registered Nurse</p>",
-            "url": "povi0d5975",
-            "checkbox": false,
+            "text": "<p>Care Clark</p><p>[checkmark]Registered Nurse</p>",
+            "youtube_url": false,
+            "video_url": "povi0d5975",
             "image": "shopify://shop_images/Image_23_a7b81311-e1fc-46d7-b185-bd6d031d199d.png"
           }
         },
-        "slider_gPNnzc": {
+        "slider_pzKEjf": {
           "type": "slider",
           "disabled": true,
           "settings": {
             "heading": "<p>\"These wavelengths help support your skin’s natural renewal process… helping reduce the look of common signs of aging.\"</p>",
-            "text": "<p>Dr. Yaseen Arsalan</p>",
-            "sub_text": "<p>Resident Doctor</p>",
-            "url": "https://www.youtube.com/watch?v=lLkM7Q7It2A&t=154s",
-            "checkbox": true,
+            "text": "<p>Dr. Yaseen Arsalan</p><p>[checkmark]Resident Doctor</p>",
+            "youtube_url": true,
+            "video_url": "https://www.youtube.com/watch?v=lLkM7Q7It2A&t=154s",
             "image": "shopify://shop_images/trusted_rejuv_5.webp"
           }
         },
-        "slider_dgCbHR": {
+        "slider_czKKpn": {
           "type": "slider",
           "disabled": true,
           "settings": {
             "heading": "<p>\"Not your average LED mask... this is a deeper, more effective way to achieve healthy, radiant skin.\"</p>",
-            "text": "<p>Dr. Davin Lim</p>",
-            "sub_text": "<p>Resident Doctor</p>",
-            "url": "https://www.youtube.com/watch?v=lLkM7Q7It2A&t=154s",
-            "checkbox": true,
+            "text": "<p>Dr. Davin Lim</p><p>[checkmark]Resident Doctor</p>",
+            "youtube_url": true,
+            "video_url": "https://www.youtube.com/watch?v=lLkM7Q7It2A&t=154s",
             "image": "shopify://shop_images/trusted_rejuv_6.webp"
           }
         },
-        "slider_V4d9wU": {
+        "slider_EaEEqk": {
           "type": "slider",
           "settings": {
             "heading": "<p>“You can personalize the treatment for each part of your face. Genius!”</p>",
-            "text": "<p>Susie Spring</p>",
-            "sub_text": "<p>Harvard-Certified Skin Expert</p>",
-            "url": "65rmmodyl1",
-            "checkbox": false,
+            "text": "<p>Susie Spring</p><p>[checkmark]Harvard-Certified Skin Expert</p>",
+            "youtube_url": false,
+            "video_url": "65rmmodyl1",
             "image": "shopify://shop_images/Image_21_94fc9bc6-5816-421e-97e1-542ef78978ac.png"
           }
         },
-        "slider_dximBk": {
+        "slider_m4jTxn": {
           "type": "slider",
           "settings": {
             "heading": "<p>“This is a 3-minute ritual I complete every night without fail.”</p>",
-            "text": "<p>Dr. Kurren Gill</p>",
-            "sub_text": "<p>Medical Doctor</p>",
-            "url": "wp66z3ewc8",
-            "checkbox": false,
+            "text": "<p>Dr. Kurren Gill</p><p>[checkmark]Medical Doctor</p>",
+            "youtube_url": false,
+            "video_url": "wp66z3ewc8",
             "image": "shopify://shop_images/Image_24.png"
           }
         },
-        "slider_9nkTGH": {
+        "slider_LwB4ab": {
           "type": "slider",
           "settings": {
             "heading": "<p>“As a Resident Doctor, I don’t have much time to get to the clinic... this is my solution.”</p>",
-            "text": "<p>Dr. Nayiri Khatch</p>",
-            "sub_text": "<p>Medical Doctor</p>",
-            "url": "9ctpv6wao5",
-            "checkbox": false,
+            "text": "<p>Dr. Nayiri Khatch</p><p>[checkmark]Medical Doctor</p>",
+            "youtube_url": false,
+            "video_url": "9ctpv6wao5",
             "image": "shopify://shop_images/Image_25.png"
           }
         }
       },
       "block_order": [
-        "slider_9gjKWw",
-        "slider_AjE9PU",
-        "slider_kGwK6t",
-        "slider_VwcHpm",
-        "slider_xPgTYA",
-        "slider_Dck8UD",
-        "slider_gPNnzc",
-        "slider_dgCbHR",
-        "slider_V4d9wU",
-        "slider_dximBk",
-        "slider_9nkTGH"
+        "slider_AdfRpA",
+        "slider_eFnPNp",
+        "slider_NRQwWU",
+        "slider_6DMckC",
+        "slider_Wg8Mx3",
+        "slider_C99a4U",
+        "slider_pzKEjf",
+        "slider_czKKpn",
+        "slider_EaEEqk",
+        "slider_m4jTxn",
+        "slider_LwB4ab"
       ],
-      "name": "t:sections.video-slider.name",
-      "settings": {}
+      "name": "t:sections.n_video-slider.name",
+      "settings": {
+        "use_own_file": true,
+        "modifier": "three_cards",
+        "text": ""
+      }
     },
-    "how_it_works_4dPttU": {
-      "type": "how-it-works",
+    "n_how_it_works_KcAWUk": {
+      "type": "n_how-it-works",
       "blocks": {
-        "accordion_xTqqU8": {
+        "tab_Yh4Eif": {
+          "type": "tab",
+          "settings": {
+            "tab_heading": "Skin Rejuvenating",
+            "text": "The Q-Rejuvalight Pro LED mask uses 5 light wavelengths and two modes for customizable skincare. Our FDA-cleared device targets your skin's needs.",
+            "image": "shopify://shop_images/mask_aging.webp",
+            "sub_heading": "<h6>Skin Rejuvenating Mode</h6>",
+            "sub_text": "<p>On Skin Rejuvenating Mode, red and infrared wavelengths work together to help improve the appearance of skin texture and firmness.</p><p>Red light helps improve the look of skin smoothness and radiance. Deep red and infrared light work at different depths of the skin’s surface to help improve the look of wrinkles over time.</p>",
+            "color_1": "#840d43",
+            "color_text_1": "<p>Infrared <strong>(880 nm)</strong></p>",
+            "color_2": "#b80e0d",
+            "color_text_2": "<p>Deep Red <strong>(660 nm)</strong></p>",
+            "color_3": "#f5181e",
+            "color_text_3": "<p>Red <strong>(630 nm)</strong></p>",
+            "color_4": "#fd8e15",
+            "color_text_4": "<p>Amber <strong>(605 nm)</strong></p>"
+          }
+        },
+        "tab_NQBQjY": {
+          "type": "tab",
+          "settings": {
+            "tab_heading": "Skin Clearing",
+            "text": "The Q-Rejuvalight Pro LED mask uses 5 light wavelengths and two modes for customizable skincare. Our FDA-cleared device targets your skin's needs.",
+            "image": "shopify://shop_images/mask_breakout.webp",
+            "sub_heading": "<h6>Skin Clearing Mode</h6>",
+            "sub_text": "<p>Our Skin Clearing Mode combines blue and red light wavelengths. Blue (415 nm) helps with mild-to-moderate acne, while red (630 nm) helps calm and soothe the appearance of irritated skin.</p><p>Together, these wavelengths help improve the appearance of breakouts, support clearer-looking skin, and promote a balanced, healthier-looking complexion.</p>",
+            "color_1": "#2b5aa2",
+            "color_text_1": "<p>Blue <strong>(415 nm)</strong></p>",
+            "color_2": "#f5181e",
+            "color_text_2": "<p>Red <strong>(630 nm)</strong></p>",
+            "color_3": "",
+            "color_text_3": "",
+            "color_4": "",
+            "color_text_4": ""
+          }
+        },
+        "accordion_nhUHzz": {
           "type": "accordion",
           "settings": {
             "heading": "Technical specifications",
-            "text": "<p><strong>TREATMENT TIME: </strong>3 minutes</p><p><strong>CERTIFICATES: </strong>FDA, TGA, CE, UKCA</p><p><strong>OPERATION: </strong>Wireless, hands-free</p><p><strong>WAVELENGTH: </strong>415nm (Blue), 605nm (Amber), 630nm (Red), 660nm (Deep Red), 880nm (Infrared)</p><p><strong>TREATMENT TIME: </strong>3 minutes</p><p><strong>CHARGING TIME: </strong>2 hours</p><p><strong>LEDs: </strong>160 dual core</p>"
+            "text": "<p><strong>TREATMENT TIME: </strong> 3 minutes<br /><strong>CERTIFICATES: </strong> FDA, TGA, CE, UKCA<br /><strong>OPERATION: </strong>Wireless, hands-free<br /><strong>WAVELENGTH: </strong>415nm (Blue), 605nm (Amber), 630nm (Red), 660nm (Deep Red), 880nm (Infrared)<br /><strong>TREATMENT TIME: </strong> 2 hours<br /><strong>CHARGING TIME: </strong> 3 minutes<br /><strong>LEDs: </strong> 160 dual core</p>"
           }
         },
-        "accordion_tNf6Vj": {
+        "accordion_wGfm7F": {
           "type": "accordion",
           "settings": {
             "heading": "Treatment details",
-            "text": "<p><strong>USE: </strong>Use daily after cleansing, before topical skincare</p><p><strong>SKIN REJUVENATING TREATMENT: </strong>605nm (Amber), 630nm (Red), 660nm (Deep Red), 880nm (Infrared)</p><p><strong>SKIN CLEARING TREATMENT: </strong>415nm (Blue), 630nm (Red)</p><p><strong>CUSTOMIZED TREATMENT: </strong>Choose treatment modes for each facial area via app</p><p><strong>Skin Type: </strong>Suitable for all Fitzpatrick Skin Types I-IV</p>"
+            "text": "<p><strong>USE: </strong> Use daily after cleansing, before topical skincare<br /><strong>PRO-AGING TREATMENT: </strong> 415nm (Blue), 605nm (Amber), 630nm (Red), 660nm (Deep Red), 880nm (Infrared)<br /><strong>ANTI-BREAKOUT TREATMENT: </strong> 415nm (Blue), 630nm (Red)<br /><strong>CUSTOMIZED TREATMENT: </strong> Choose treatment modes for each facial area via app<br /><strong>Skin Type: </strong>Most suitable for Fitzpatrick Skin Types I-IV</p>"
           }
         }
       },
       "block_order": [
-        "accordion_xTqqU8",
-        "accordion_tNf6Vj"
+        "tab_Yh4Eif",
+        "tab_NQBQjY",
+        "accordion_nhUHzz",
+        "accordion_wGfm7F"
       ],
-      "name": "t:sections.how-it-works.name",
+      "name": "t:sections.n_how-it-works.name",
       "settings": {
-        "heading": "How it works",
-        "text": "<p>The Q-Rejuvalight Pro LED mask uses 5 light wavelengths and two modes for customizable skincare. Our FDA-cleared device targets your skin's needs.</p>",
-        "image_aging": "shopify://shop_images/mask_aging.webp",
-        "image_breakout": "shopify://shop_images/mask_breakout.webp",
-        "heading_aging_mode": "<p><strong>Skin Rejuvenating Mode</strong></p>",
-        "text_aging_mode": "<p>On Skin Rejuvenating Mode, red and infrared wavelengths work together to help improve the appearance of skin texture and firmness. <br/><br/>Red light helps improve the look of skin smoothness and radiance. Deep red and infrared light work at different depths of the skin’s surface to help improve the look of wrinkles over time.</p>",
-        "heading_breakout_mode": "<p><strong>Skin Clearing Mode</strong></p>",
-        "text_breakout_mode": "<p>Our Skin Clearing Mode combines blue and red light wavelengths. Blue (415 nm) helps with mild-to-moderate acne, while red (630 nm) helps calm and soothe the appearance of irritated skin.<br/><br/>Together, these wavelengths help improve the appearance of breakouts, support clearer-looking skin, and promote a balanced, healthier-looking complexion.</p>"
+        "use_own_file": true,
+        "heading": "<h2>How it works</h2>"
       }
     },
-    "video_review_slider_Qx3NMq": {
-      "type": "video-review-slider",
+    "n_video_slider_cLtKy8": {
+      "type": "n_video-slider",
       "blocks": {
-        "slider_Rpw9fQ": {
+        "slider_RykyWe": {
           "type": "slider",
           "settings": {
-            "youtube_url": "",
-            "video_cover_image": "shopify://shop_images/Review_2.png",
-            "wistia_url": "lats3h0xd8"
+            "heading": "",
+            "text": "",
+            "youtube_url": false,
+            "video_url": "lats3h0xd8",
+            "image": "shopify://shop_images/Review_2.png"
           }
         },
-        "slider_Byzyg7": {
+        "slider_WXXBXj": {
           "type": "slider",
           "settings": {
-            "youtube_url": "",
-            "video_cover_image": "shopify://shop_images/Review_4.png",
-            "wistia_url": "vhytqwlre4"
+            "heading": "",
+            "text": "",
+            "youtube_url": false,
+            "video_url": "vhytqwlre4",
+            "image": "shopify://shop_images/Review_4.png"
           }
         },
-        "slider_trU8ya": {
+        "slider_LhUQxg": {
           "type": "slider",
           "settings": {
-            "youtube_url": "",
-            "video_cover_image": "shopify://shop_images/Review_5.png",
-            "wistia_url": "bpfdun1ngw"
+            "heading": "",
+            "text": "",
+            "youtube_url": false,
+            "video_url": "bpfdun1ngw",
+            "image": "shopify://shop_images/Review_5.png"
           }
         },
-        "slider_BTaRFq": {
+        "slider_wcTECx": {
           "type": "slider",
           "settings": {
-            "youtube_url": "https://youtu.be/LBxbzYfGEV0?si=HgWxLn8UB-AfqbKk&t=348",
-            "video_cover_image": "shopify://shop_images/Review_3.png",
-            "wistia_url": ""
+            "heading": "",
+            "text": "",
+            "youtube_url": true,
+            "video_url": "https://youtu.be/LBxbzYfGEV0?si=HgWxLn8UB-AfqbKk&t=348",
+            "image": "shopify://shop_images/Review_3.png"
           }
         },
-        "slider_Eni939": {
+        "slider_eEmRLA": {
           "type": "slider",
           "settings": {
-            "youtube_url": "https://youtu.be/2eYXN_obpjs?si=KkWZ8jZ9R749hS9m&t=504",
-            "video_cover_image": "shopify://shop_images/Review_1.png",
-            "wistia_url": ""
+            "heading": "",
+            "text": "",
+            "youtube_url": true,
+            "video_url": "https://youtu.be/2eYXN_obpjs?si=KkWZ8jZ9R749hS9m&t=504",
+            "image": "shopify://shop_images/Review_1.png"
           }
         },
-        "slider_64URjn": {
+        "slider_YtdpTA": {
           "type": "slider",
           "settings": {
-            "youtube_url": "https://youtu.be/nIBJ6SchgPs?si=oL87lpsJ0yJ-shu5&t=117",
-            "video_cover_image": "shopify://shop_images/Review_6.png",
-            "wistia_url": ""
+            "heading": "",
+            "text": "",
+            "youtube_url": true,
+            "video_url": "https://youtu.be/nIBJ6SchgPs?si=oL87lpsJ0yJ-shu5&t=117",
+            "image": "shopify://shop_images/Review_6.png"
           }
         },
-        "slider_QGTAmt": {
+        "slider_KCBHMy": {
           "type": "slider",
           "settings": {
-            "youtube_url": "",
-            "video_cover_image": "shopify://shop_images/Review_7.png",
-            "wistia_url": "qqe1onrw3s"
+            "heading": "",
+            "text": "",
+            "youtube_url": false,
+            "video_url": "qqe1onrw3s",
+            "image": "shopify://shop_images/Review_7.png"
           }
         },
-        "slider_pAibG7": {
+        "slider_acW94e": {
           "type": "slider",
           "settings": {
-            "youtube_url": "https://www.youtube.com/watch?v=If8c-GLBAwA",
-            "video_cover_image": "shopify://shop_images/Review_8.png",
-            "wistia_url": ""
+            "heading": "",
+            "text": "",
+            "youtube_url": true,
+            "video_url": "https://www.youtube.com/watch?v=If8c-GLBAwA",
+            "image": "shopify://shop_images/Review_8.png"
           }
         },
-        "slider_AH9pKk": {
+        "slider_MRHmhy": {
           "type": "slider",
           "disabled": true,
           "settings": {
-            "youtube_url": "",
-            "wistia_url": "oofgzce5um"
+            "heading": "",
+            "text": "",
+            "youtube_url": false,
+            "video_url": "oofgzce5um"
           }
         },
-        "slider_NiNYGW": {
+        "slider_7DHqgP": {
           "type": "slider",
           "disabled": true,
           "settings": {
-            "youtube_url": "",
-            "wistia_url": "gw1rne236n"
+            "heading": "",
+            "text": "",
+            "youtube_url": false,
+            "video_url": "gw1rne236n"
           }
         },
-        "slider_bbphF3": {
+        "slider_R48Chf": {
           "type": "slider",
           "disabled": true,
           "settings": {
-            "youtube_url": "",
-            "wistia_url": "vkd8so2clv"
+            "heading": "",
+            "text": "",
+            "youtube_url": false,
+            "video_url": "vkd8so2clv"
           }
         },
-        "slider_j4Jpe7": {
+        "slider_YkP8Xp": {
           "type": "slider",
           "disabled": true,
           "settings": {
-            "youtube_url": "",
-            "wistia_url": "ltv3wi7ayy"
+            "heading": "",
+            "text": "",
+            "youtube_url": false,
+            "video_url": "ltv3wi7ayy"
           }
         },
-        "slider_FxaxVF": {
+        "slider_ewUARB": {
           "type": "slider",
           "disabled": true,
           "settings": {
-            "youtube_url": "",
-            "wistia_url": "3dk53o20xw"
+            "heading": "",
+            "text": "",
+            "youtube_url": false,
+            "video_url": "3dk53o20xw"
           }
         },
-        "slider_r8WNhq": {
+        "slider_EJt7FA": {
           "type": "slider",
           "disabled": true,
           "settings": {
-            "youtube_url": "",
-            "wistia_url": "i688q7ywip"
+            "heading": "",
+            "text": "",
+            "youtube_url": false,
+            "video_url": "i688q7ywip"
           }
         },
-        "slider_zwUJCV": {
+        "slider_YCWRQF": {
           "type": "slider",
           "disabled": true,
           "settings": {
-            "youtube_url": "",
-            "wistia_url": "nmgtj7w4at"
+            "heading": "",
+            "text": "",
+            "youtube_url": false,
+            "video_url": "nmgtj7w4at"
           }
         },
-        "slider_WEYAWp": {
+        "slider_Jgx4fg": {
           "type": "slider",
           "disabled": true,
           "settings": {
-            "youtube_url": "",
-            "wistia_url": "5kh8ymubw0"
+            "heading": "",
+            "text": "",
+            "youtube_url": false,
+            "video_url": "5kh8ymubw0"
           }
         },
-        "slider_CgGbjj": {
+        "slider_EjHmY6": {
           "type": "slider",
           "disabled": true,
           "settings": {
-            "youtube_url": "",
-            "wistia_url": "wl5y3puch1"
+            "heading": "",
+            "text": "",
+            "youtube_url": false,
+            "video_url": "wl5y3puch1"
           }
         },
-        "slider_Rinfeh": {
+        "slider_pEcwKX": {
           "type": "slider",
           "disabled": true,
           "settings": {
-            "youtube_url": "",
-            "wistia_url": "v955rlnldn"
+            "heading": "",
+            "text": "",
+            "youtube_url": false,
+            "video_url": "v955rlnldn"
           }
         },
-        "slider_NNNQeY": {
+        "slider_UxMrEr": {
           "type": "slider",
           "disabled": true,
           "settings": {
-            "youtube_url": "",
-            "wistia_url": "5vgchvxn6l"
+            "heading": "",
+            "text": "",
+            "youtube_url": false,
+            "video_url": "5vgchvxn6l"
           }
         },
-        "slider_ANweJW": {
+        "slider_DRqqnT": {
           "type": "slider",
           "disabled": true,
           "settings": {
-            "youtube_url": "",
-            "wistia_url": "65rmmodyl1"
+            "heading": "",
+            "text": "",
+            "youtube_url": false,
+            "video_url": "65rmmodyl1"
           }
         }
       },
       "block_order": [
-        "slider_Rpw9fQ",
-        "slider_Byzyg7",
-        "slider_trU8ya",
-        "slider_BTaRFq",
-        "slider_Eni939",
-        "slider_64URjn",
-        "slider_QGTAmt",
-        "slider_pAibG7",
-        "slider_AH9pKk",
-        "slider_NiNYGW",
-        "slider_bbphF3",
-        "slider_j4Jpe7",
-        "slider_FxaxVF",
-        "slider_r8WNhq",
-        "slider_zwUJCV",
-        "slider_WEYAWp",
-        "slider_CgGbjj",
-        "slider_Rinfeh",
-        "slider_NNNQeY",
-        "slider_ANweJW"
+        "slider_RykyWe",
+        "slider_WXXBXj",
+        "slider_LhUQxg",
+        "slider_wcTECx",
+        "slider_eEmRLA",
+        "slider_YtdpTA",
+        "slider_KCBHMy",
+        "slider_acW94e",
+        "slider_MRHmhy",
+        "slider_7DHqgP",
+        "slider_R48Chf",
+        "slider_YkP8Xp",
+        "slider_ewUARB",
+        "slider_EJt7FA",
+        "slider_YCWRQF",
+        "slider_Jgx4fg",
+        "slider_EjHmY6",
+        "slider_pEcwKX",
+        "slider_UxMrEr",
+        "slider_DRqqnT"
       ],
-      "name": "t:sections.video-review-slider.name",
+      "name": "t:sections.n_video-slider.name",
       "settings": {
-        "heading": "Confident skin starts here",
-        "background_color": "#f6f6f7"
+        "use_own_file": true,
+        "modifier": "none",
+        "text": "<h2>Confident skin starts here</h2>"
       }
     },
-    "carousel_mfFFcV": {
-      "type": "carousel",
+    "n_features_marquee_h4hRGq": {
+      "type": "n_features-marquee",
       "blocks": {
-        "items_GiHB6n": {
-          "type": "items",
+        "image_with_text_Hnxp4K": {
+          "type": "image_with_text",
           "settings": {
-            "heading": "Free US Shipping On Orders Over $100",
-            "image": "shopify://shop_images/guarantee.svg"
+            "icon": "shipping-order",
+            "text": "Free Shipping On<br> Orders Over 100$"
           }
         },
-        "items_WrqYEc": {
-          "type": "items",
+        "image_with_text_dBhwq7": {
+          "type": "image_with_text",
           "settings": {
-            "heading": "Dermatologist Reviewed",
-            "image": "shopify://shop_images/Guarantee_Icons.svg"
+            "icon": "reviewed",
+            "text": "Dermatologist<br> Reviewed"
           }
         },
-        "items_BjbYbB": {
-          "type": "items",
+        "image_with_text_C6aRqT": {
+          "type": "image_with_text",
           "settings": {
-            "heading": "Buy Now, Pay Later Options Available",
-            "image": "shopify://shop_images/pay-later.svg"
+            "icon": "pay-later",
+            "text": "Buy Now, Pay Later<br> Options Available"
           }
         },
-        "items_trznWr": {
-          "type": "items",
+        "image_with_text_HP7mtc": {
+          "type": "image_with_text",
           "settings": {
-            "heading": "Proven Results, Backed By Science",
-            "image": "shopify://shop_images/proven-result.svg"
+            "icon": "proven",
+            "text": "Proven Results,<br> Backed By Science"
           }
         }
       },
       "block_order": [
-        "items_GiHB6n",
-        "items_WrqYEc",
-        "items_BjbYbB",
-        "items_trznWr"
+        "image_with_text_Hnxp4K",
+        "image_with_text_dBhwq7",
+        "image_with_text_C6aRqT",
+        "image_with_text_HP7mtc"
       ],
-      "name": "carousel",
+      "name": "t:sections.n_features-marquee.name",
       "settings": {
-        "background_color": "#f6f6f7",
-        "display_mode": "both"
+        "use_own_file": true
       }
     },
-    "how_to_use_Uz9LpM": {
-      "type": "how-to-use",
+    "n_easy_steps_qtaB86": {
+      "type": "n_easy-steps",
       "blocks": {
-        "list_ELqhFc": {
-          "type": "list",
+        "items_ELqhFc": {
+          "type": "items",
           "settings": {
-            "heading": "Prepare",
-            "text": "<p>Start with clean, dry skin—no serums or moisturizers before treatment.</p>",
+            "text": "<h3>Prepare</h3><p>Start with clean, dry skin—no serums or moisturizers before treatment.</p>",
             "image": "shopify://shop_images/how_quick_1.webp",
             "image_mobile": "shopify://shop_images/how_quick_2_mob.webp"
           }
         },
-        "list_9wJPLV": {
-          "type": "list",
+        "items_9wJPLV": {
+          "type": "items",
           "settings": {
-            "heading": "Treatment",
-            "text": "<p>Open the Qure app to customize your or use the pre-set routines on the device.</p>",
+            "text": "<h3>Treatment</h3><p>Open the Qure app to customize your or use the pre-set routines on the device.</p>",
             "image": "shopify://shop_images/how_quick_2.webp",
             "image_mobile": "shopify://shop_images/how_quick_3_mob.webp"
           }
         },
-        "list_erY7DR": {
-          "type": "list",
+        "items_erY7DR": {
+          "type": "items",
           "settings": {
-            "heading": "Aftercare",
-            "text": "<p>Relax while the mask runs its 3-minute session. Afterward, follow  with your usual skincare routine.</p>",
+            "text": "<h3>Aftercare</h3><p>Relax while the mask runs its 3-minute session. Afterward, follow  with your usual skincare routine.</p>",
             "image": "shopify://shop_images/how_quick_3.webp",
             "image_mobile": "shopify://shop_images/how_quick_1_mob.webp"
           }
         }
       },
       "block_order": [
-        "list_ELqhFc",
-        "list_9wJPLV",
-        "list_erY7DR"
+        "items_ELqhFc",
+        "items_9wJPLV",
+        "items_erY7DR"
       ],
-      "name": "t:sections.how-to-use.name",
+      "name": "t:sections.n_easy-steps.name",
       "settings": {
-        "heading": "See how quick and easy it is to use",
-        "text": "",
-        "heading_mobile": "",
+        "use_own_file": true,
+        "text": "<h2>See how quick and easy it is to use</h2>",
+        "image": "shopify://shop_images/mask-use-video.webp",
+        "image_mobile": "shopify://shop_images/mask-use-video-mob.webp",
         "wistia_url": "jlz3itwzrb",
-        "button_label": "",
-        "button_url": ""
+        "button_label": ""
       }
     },
-    "banner_with_text_brh8bN": {
-      "type": "banner-with-text",
-      "name": "t:sections.banner-with-text.name",
+    "n_base_section_YgM7Rd": {
+      "type": "n_base-section",
+      "name": "t:sections.n_base-section.name",
       "settings": {
-        "heading": "Qure mobile app",
+        "use_own_file": true,
+        "modifier": "none",
+        "modifier_2": "simple-grid",
+        "background_color": "none",
+        "heading": "<h2>Qure mobile app</h2>",
         "text": "<p><strong>The only FDA-cleared LED light therapy mask with an app.</strong></p><p>Your skin is unique, so your treatment should be too.</p><p>Choose between <em>three treatment modes</em>, “Skin Rejuvenating”, “Skin Clearing” or custom treatment zones. Select a treatment mode on five different facial areas to treat and <em>target what your skin needs today</em>. </p><p>Never miss a treatment with Qure mobile app planner and phone reminders.</p>",
-        "quote": "",
-        "quote-mobile": "",
-        "image_position": "right",
-        "sub_text": "",
         "image": "shopify://shop_images/image_4.webp",
         "button_label": "",
         "button_url": "",
         "wistia_url": ""
       }
     },
-    "device_comparison_gqa6Kh": {
-      "type": "device-comparison",
-      "name": "t:sections.device-comparison.name",
-      "settings": {}
-    },
-    "compare_FyPtUj": {
-      "type": "compare",
+    "n_comparison_table_UNdXnK": {
+      "type": "n_comparison-table",
       "blocks": {
-        "heading_hNJTiA": {
-          "type": "heading",
+        "comparison_table_heading_8xY3Tw": {
+          "type": "comparison_table_heading",
           "settings": {
-            "heading_check": "",
-            "heading_image_check": "shopify://shop_images/qure_logo_41353005-84a7-4b4a-9b7d-2c32bcc97432.svg",
-            "heading_cross": "<p>Derm/<br/>Clinic Treatments</p>"
+            "heading": "Treatment Time",
+            "color": "none"
           }
         },
-        "compare_CHHtLt": {
-          "type": "compare",
+        "comparison_table_heading_BWABb3": {
+          "type": "comparison_table_heading",
           "settings": {
-            "check_text": "<p><strong>One-time</strong> investment</p>",
-            "cross_text": "<p><strong>Ongoing cost</strong> per session</p>",
-            "checkbox": false
+            "heading": "Customizable",
+            "color": "none"
           }
         },
-        "compare_pxikkB": {
-          "type": "compare",
+        "comparison_table_heading_8fUxaE": {
+          "type": "comparison_table_heading",
           "settings": {
-            "check_text": "<p>No appointments - use anytime at home</p>",
-            "cross_text": "<p>Completed according to clinic's availability</p>",
-            "checkbox": false
+            "heading": "Cordless",
+            "color": "none"
           }
         },
-        "compare_6Ttyjz": {
-          "type": "compare",
+        "comparison_table_heading_PfxQUH": {
+          "type": "comparison_table_heading",
           "settings": {
-            "check_text": "<p>Saves time with only 3 minutes a day</p>",
-            "cross_text": "<p>Requires 20-30 mins per session, plus travel time</p>",
-            "checkbox": false
+            "heading": "Wavelengths",
+            "color": "colorize"
           }
         },
-        "compare_PxMe7f": {
-          "type": "compare",
+        "comparison_table_heading_4K3CmA": {
+          "type": "comparison_table_heading",
           "settings": {
-            "check_text": "<p>Better results with more frequent treatments</p>",
-            "cross_text": "<p>Less treatments = less consistent results</p>",
-            "checkbox": false
+            "heading": "Cost",
+            "color": "none"
           }
         },
-        "compare_U7frfb": {
-          "type": "compare",
+        "comparison_table_NYenTf": {
+          "type": "comparison_table",
           "settings": {
-            "check_text": "<p>Customized approach with clinical backing</p>",
-            "cross_text": "<p>Customized approach with clinical backing</p>",
-            "checkbox": true
+            "image": "shopify://shop_images/q_rejuv_comp_1.webp",
+            "heading": "<h5>Qure<br/>Q-Rejuvalight Pro</h5>",
+            "text_1": "Quick - just 3 minutes",
+            "select_1": "checkmark",
+            "text_2": "Customizable via Qure app",
+            "select_2": "checkmark",
+            "text_3": "Wireless & battery-powered",
+            "select_3": "checkmark",
+            "text_4": "5 wavelengths",
+            "select_4": "checkmark",
+            "text_5": "Mid-range – $399",
+            "select_5": "checkmark"
+          }
+        },
+        "comparison_table_MUD8yh": {
+          "type": "comparison_table",
+          "settings": {
+            "image": "shopify://shop_images/q_rejuv_comp_2.webp",
+            "heading": "<h5>Omnilux<br/>Clear & Contour Masks</h5>",
+            "text_1": "Slow - 10+ minutes",
+            "select_1": "cross",
+            "text_2": "One mode for full face",
+            "select_2": "cross",
+            "text_3": "Wired & corded controller",
+            "select_3": "cross",
+            "text_4": "2 basic wavelengths",
+            "select_4": "checkmark",
+            "text_5": "Mid-range – <strong>$395</strong>",
+            "select_5": "cross"
+          }
+        },
+        "comparison_table_CT33hJ": {
+          "type": "comparison_table",
+          "settings": {
+            "image": "shopify://shop_images/q_rejuv_comp_3.webp",
+            "heading": "<h5>Dr Dennis Gross<br/>Spectrum Lite Face Wear</h5>",
+            "text_1": "Quick - 3 minutes",
+            "select_1": "checkmark",
+            "text_2": "Two treatment modes",
+            "select_2": "cross",
+            "text_3": "Wireless & cordfree",
+            "select_3": "checkmark",
+            "text_4": "4 basic wavelengths",
+            "select_4": "cross",
+            "text_5": "Premium – <strong>$455</strong>",
+            "select_5": "checkmark"
+          }
+        },
+        "disclaimer_NKfCrX": {
+          "type": "disclaimer",
+          "settings": {
+            "text": "Based on publicly available information. For general comparison only."
           }
         }
       },
       "block_order": [
-        "heading_hNJTiA",
-        "compare_CHHtLt",
-        "compare_pxikkB",
-        "compare_6Ttyjz",
-        "compare_PxMe7f",
-        "compare_U7frfb"
+        "comparison_table_heading_8xY3Tw",
+        "comparison_table_heading_BWABb3",
+        "comparison_table_heading_8fUxaE",
+        "comparison_table_heading_PfxQUH",
+        "comparison_table_heading_4K3CmA",
+        "comparison_table_NYenTf",
+        "comparison_table_MUD8yh",
+        "comparison_table_CT33hJ",
+        "disclaimer_NKfCrX"
       ],
-      "name": "t:sections.compare.name",
+      "name": "t:sections.n_comparison-table.name",
       "settings": {
-        "heading": "The beauty of clinical results from home - without the ‘clinical’ costs",
-        "text": "<p>It’s like going to a clinic, minus the on-going costs, the time commitment, the overpromises, the upselling and the hassle.</p>",
-        "image_compare_check": "shopify://shop_images/rejuv_vs_1.webp",
-        "image_compare_cross": "shopify://shop_images/rejuv_vs_2.webp"
+        "use_own_file": true,
+        "text": "<h2>How Q-Rejuvalight compares</h2>"
+      }
+    },
+    "n_comparison_yAAa44": {
+      "type": "n_comparison",
+      "blocks": {
+        "left_heading_9nFjpQ": {
+          "type": "left_heading",
+          "settings": {
+            "heading": "<h4>Q-Rejuvalight Pro</h4>",
+            "image": "shopify://shop_images/rejuv_vs_1.webp"
+          }
+        },
+        "left_column_DKwaXW": {
+          "type": "left_column",
+          "settings": {
+            "text": "<strong>One-time</strong> investment"
+          }
+        },
+        "left_column_mWB8JK": {
+          "type": "left_column",
+          "settings": {
+            "text": "No appointments - use anytime at home"
+          }
+        },
+        "left_column_QFfGgc": {
+          "type": "left_column",
+          "settings": {
+            "text": "Saves time with only 3 minutes a day"
+          }
+        },
+        "left_column_rWR7Ej": {
+          "type": "left_column",
+          "settings": {
+            "text": "Better results with more frequent treatments"
+          }
+        },
+        "left_column_qGUzFF": {
+          "type": "left_column",
+          "settings": {
+            "text": "Customized approach with clinical backing"
+          }
+        },
+        "text_between_tTr786": {
+          "type": "text_between",
+          "settings": {
+            "text": ""
+          }
+        },
+        "right_heading_Gf4TcU": {
+          "type": "right_heading",
+          "settings": {
+            "heading": "<h4>Derm/Clinic Treatments</h4>",
+            "image": "shopify://shop_images/rejuv_vs_2.webp"
+          }
+        },
+        "right_column_xy7tj6": {
+          "type": "right_column",
+          "settings": {
+            "text": "<strong>Ongoing cost</strong> per session"
+          }
+        },
+        "right_column_qgRV8p": {
+          "type": "right_column",
+          "settings": {
+            "text": "Completed according to clinic's availability"
+          }
+        },
+        "right_column_zrEfWw": {
+          "type": "right_column",
+          "settings": {
+            "text": "Requires 20-30 mins per session, plus travel time"
+          }
+        },
+        "right_column_YqUVYB": {
+          "type": "right_column",
+          "settings": {
+            "text": "Less treatments = less consistent results"
+          }
+        },
+        "right_column_M7JNhc": {
+          "type": "right_column",
+          "settings": {
+            "text": "Customized approach with clinical backing"
+          }
+        },
+        "disclaimer_tWGriF": {
+          "type": "disclaimer",
+          "settings": {
+            "text": "*Based on laboratory testing under controlled conditions. Performance may vary depending on water quality and usage."
+          }
+        }
+      },
+      "block_order": [
+        "left_heading_9nFjpQ",
+        "left_column_DKwaXW",
+        "left_column_mWB8JK",
+        "left_column_QFfGgc",
+        "left_column_rWR7Ej",
+        "left_column_qGUzFF",
+        "text_between_tTr786",
+        "right_heading_Gf4TcU",
+        "right_column_xy7tj6",
+        "right_column_qgRV8p",
+        "right_column_zrEfWw",
+        "right_column_YqUVYB",
+        "right_column_M7JNhc",
+        "disclaimer_tWGriF"
+      ],
+      "name": "t:sections.n_comparison.name",
+      "settings": {
+        "use_own_file": true,
+        "text": "<h2>The beauty of clinical results from home - without the ‘clinical’ costs</h2><p>It’s like going to a clinic, minus the on-going costs, the time commitment, the overpromises, the upselling and the hassle.</p>"
       }
     },
     "sticky_cta_AFkFxe": {
@@ -1157,11 +1326,15 @@
         "button-url": ""
       }
     },
-    "text_header_3LDiTg": {
-      "type": "text-header",
-      "name": "t:sections.text-header.name",
+    "n_text_VGtQXJ": {
+      "type": "n_text",
+      "name": "t:sections.n_text.name",
       "settings": {
-        "heading": "Our customer reviews"
+        "use_own_file": true,
+        "modifier": "none",
+        "text": "<h2>Confident skin starts here</h2>",
+        "button_label": "",
+        "button_url": ""
       }
     },
     "1707653061bd3707e6": {
@@ -1186,123 +1359,106 @@
       ],
       "settings": {}
     },
-    "faq_46wWyJ": {
-      "type": "faq",
+    "n_faq_6Bcjt9": {
+      "type": "n_faq",
       "blocks": {
-        "accordion_MzkneT": {
+        "accordion_QMdQMz": {
           "type": "accordion",
           "settings": {
             "heading": "What color wavelengths does Q-Rejuvalight Pro have?",
-            "text": "<p>The Q-Rejuvalight Pro has a total of 5 clinically studied wavelengths of light:<br/></p><ul><li>Infrared light (880 nm): Helps support circulation, protects existing collagen, and enhances product absorption.</li><li>Deep Red (660 nm): Supports skin recovery to help fade the look of marks and smooth texture.</li><li>Red (630 nm): Helps improve the appearance of fine lines and wrinkles while soothing visible redness.</li><li>Amber (605 nm): Helps visibly even skin tone and calm the look of redness.</li><li>Blue (415 nm): Helps reduce the look of breakouts and calm the appearance of irritation.</li></ul><p>There are two treatment modes:<br/></p><p>The Skin Rejuvenating Mode combines red, deep red, infrared, and amber wavelengths. This blend is designed to help visibly smooth, firm, and refresh the look of skin.</p><p>The Skin Clearing Mode combines red and blue wavelengths to help improve the appearance of mild-to-moderate inflammatory acne, supporting a clearer-looking complexion.<br/></p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>The Q-Rejuvalight Pro has a total of 5 clinically studied wavelengths of light:<br/></p><ul><li>Infrared light (880 nm): Helps support circulation, protects existing collagen, and enhances product absorption.</li><li>Deep Red (660 nm): Supports skin recovery to help fade the look of marks and smooth texture.</li><li>Red (630 nm): Helps improve the appearance of fine lines and wrinkles while soothing visible redness.</li><li>Amber (605 nm): Helps visibly even skin tone and calm the look of redness.</li><li>Blue (415 nm): Helps reduce the look of breakouts and calm the appearance of irritation.</li></ul><p>There are two treatment modes:<br/></p><p>The Skin Rejuvenating Mode combines red, deep red, infrared, and amber wavelengths. This blend is designed to help visibly smooth, firm, and refresh the look of skin.</p><p>The Skin Clearing Mode combines red and blue wavelengths to help improve the appearance of mild-to-moderate inflammatory acne, supporting a clearer-looking complexion.<br/></p>"
           }
         },
-        "accordion_HnKbr6": {
+        "accordion_ppXmJ8": {
           "type": "accordion",
           "settings": {
             "heading": "How quickly will I see results?",
-            "text": "<p>Every individual may respond differently to specific wavelengths of light, and results will depend on the goal you want to address.<br/><br/>Most users report visible improvements in the look of breakouts and redness sooner than expected. Smoother-looking lines, improved tone, and a firmer appearance may take longer.<br/><br/>Changes are often gradual, so we recommend taking “before and after” photos to track your results. Consistency is key for maintaining improvements over time.</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>Every individual may respond differently to specific wavelengths of light, and results will depend on the goal you want to address.<br/><br/>Most users report visible improvements in the look of breakouts and redness sooner than expected. Smoother-looking lines, improved tone, and a firmer appearance may take longer.<br/><br/>Changes are often gradual, so we recommend taking “before and after” photos to track your results. Consistency is key for maintaining improvements over time.</p>"
           }
         },
-        "accordion_wdHAce": {
+        "accordion_QkeYwi": {
           "type": "accordion",
           "settings": {
             "heading": "Is it safe for all skin types?",
-            "text": "<p>Yes — the Q-Rejuvalight Pro is designed for use across all skin types when used as directed.<br/><br/>That said, skin types V and VI (on the Fitzpatrick scale) may be more sensitive to visible light due to higher melanin levels, leading to increased photo-absorption and a small risk of pigmentation changes.<br/><br/>Because of this, we advise that those with darker skin tones or pigment-prone skin consult with their dermatologist before use to determine proper settings and usage frequency.<br/><br/>Many users with deeper skin tones have used the device safely and shared positive outcomes when protocols were followed carefully.</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>Yes — the Q-Rejuvalight Pro is designed for use across all skin types when used as directed.<br/><br/>That said, skin types V and VI (on the Fitzpatrick scale) may be more sensitive to visible light due to higher melanin levels, leading to increased photo-absorption and a small risk of pigmentation changes.<br/><br/>Because of this, we advise that those with darker skin tones or pigment-prone skin consult with their dermatologist before use to determine proper settings and usage frequency.<br/><br/>Many users with deeper skin tones have used the device safely and shared positive outcomes when protocols were followed carefully.</p>"
           }
         },
-        "accordion_qHBEtT": {
+        "accordion_QJT6yU": {
           "type": "accordion",
           "settings": {
             "heading": "How often can I use the treatment?",
-            "text": "<p>You can use the mask daily. In fact, consistent daily use is recommended for best results. <br/><br/>Each session takes just 3 minutes, and the more regularly you use it, the more noticeable the improvements in skin tone, texture, and clarity over time.</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>You can use the mask daily. In fact, consistent daily use is recommended for best results. <br/><br/>Each session takes just 3 minutes, and the more regularly you use it, the more noticeable the improvements in skin tone, texture, and clarity over time.</p>"
           }
         },
-        "accordion_8zfMR9": {
+        "accordion_XwfF8A": {
           "type": "accordion",
           "settings": {
             "heading": "When is the best time to use this mask?",
-            "text": "<p>The Q-Rejuvalight Pro Facewear can be used day or night, ideally after cleaning and/or exfoliation.<br/>After the treatment is complete, follow with your topical skincare products of choice.</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>The Q-Rejuvalight Pro Facewear can be used day or night, ideally after cleaning and/or exfoliation.<br/>After the treatment is complete, follow with your topical skincare products of choice.</p>"
           }
         },
-        "accordion_fUkzzt": {
+        "accordion_pMyiQL": {
           "type": "accordion",
           "settings": {
             "heading": "Do I need to use eye protection?",
-            "text": "<p>The Q-Rejuvalight Pro has been tested and cleared for eye safety. It has successfully passed the IEC62471 evaluation for eye safety test, which is used to determine whether a device's light output is safe for the eyes or not.<br/><br/>Regardless, we recommend closing your eyes and wearing protective eyewear during treatment. The light can be bright when powered on and some users may experience sensitivity, even when closing their eyes. <br/><br/>As part of our unwavering commitment to your safety, we decided to take the initiative to include FREE light blocking protective eyewear with our Q-Rejuvalight Pro LED mask that works seamlessly during your treatment.</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>The Q-Rejuvalight Pro has been tested and cleared for eye safety. It has successfully passed the IEC62471 evaluation for eye safety test, which is used to determine whether a device's light output is safe for the eyes or not.<br/><br/>Regardless, we recommend closing your eyes and wearing protective eyewear during treatment. The light can be bright when powered on and some users may experience sensitivity, even when closing their eyes. <br/><br/>As part of our unwavering commitment to your safety, we decided to take the initiative to include FREE light blocking protective eyewear with our Q-Rejuvalight Pro LED mask that works seamlessly during your treatment.</p>"
           }
         },
-        "accordion_cGmM9A": {
+        "accordion_zDUzWe": {
           "type": "accordion",
           "settings": {
             "heading": "Does Q-Rejuvalight Pro come with a warranty?",
-            "text": "<p>Q-Rejuvalight Pro Facewear comes with one (1) year warranty covering any manufacturer related problems resulting from everyday use of the product. However, this device is designed to last years! Proudly designed in Australia.</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>Q-Rejuvalight Pro Facewear comes with one (1) year warranty covering any manufacturer related problems resulting from everyday use of the product. However, this device is designed to last years! Proudly designed in Australia.</p>"
           }
         },
-        "accordion_WPbiCY": {
+        "accordion_pHWCFb": {
           "type": "accordion",
           "settings": {
             "heading": "Is Q-Rejuvalight Pro FDA-cleared?",
-            "text": "<p>Yes! The Q-Rejuvalight Pro LED Mask is the world’s first customizable, FDA-cleared at-home LED device designed for the treatment of wrinkles and mild-to-moderate inflammatory acne. You can find more details about the clearance on the FDA website (K230042).</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>Yes! The Q-Rejuvalight Pro LED Mask is the world’s first customizable, FDA-cleared at-home LED device designed for the treatment of wrinkles and mild-to-moderate inflammatory acne. You can find more details about the clearance on the FDA website (K230042).</p>"
           }
         }
       },
       "block_order": [
-        "accordion_MzkneT",
-        "accordion_HnKbr6",
-        "accordion_wdHAce",
-        "accordion_qHBEtT",
-        "accordion_8zfMR9",
-        "accordion_fUkzzt",
-        "accordion_cGmM9A",
-        "accordion_WPbiCY"
+        "accordion_QMdQMz",
+        "accordion_ppXmJ8",
+        "accordion_QkeYwi",
+        "accordion_QJT6yU",
+        "accordion_XwfF8A",
+        "accordion_pMyiQL",
+        "accordion_zDUzWe",
+        "accordion_pHWCFb"
       ],
-      "name": "t:sections.faq.name",
+      "name": "t:sections.n_faq.name",
       "settings": {
-        "heading": "Have questions?",
+        "use_own_file": true,
+        "heading": "<h2>Have questions?</h2>",
         "text": "Don’t see your question?",
         "button_label": "Ask us",
-        "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home",
-        "terms-conditions": false,
-        "promotional_terms_and_conditions": ""
+        "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
       }
     }
   },
   "order": [
     "announcement_bar_jkkyg7",
     "product_header_V3N3T8",
-    "slider_featured_in_KyQXpD",
-    "banner_with_text_M34aAK",
-    "led_benefits_eqJTF8",
-    "proven_results_CQ9FBU",
-    "trusted_reviews_AXrmjM",
-    "trusted_recommended_Cxt4Gj",
-    "video_slider_G8bjzR",
-    "how_it_works_4dPttU",
-    "video_review_slider_Qx3NMq",
-    "carousel_mfFFcV",
-    "how_to_use_Uz9LpM",
-    "banner_with_text_brh8bN",
-    "device_comparison_gqa6Kh",
-    "compare_FyPtUj",
+    "n_press_reviews_fxy6Uf",
+    "n_base_section_UEpGJ4",
+    "n_why_using_zc4dzf",
+    "n_progress_metrics_t4rYrV",
+    "n_trusted_reviews_LNcYzb",
+    "n_trusted_recommended_eafAhT",
+    "n_video_slider_Bwz8K8",
+    "n_how_it_works_KcAWUk",
+    "n_video_slider_cLtKy8",
+    "n_features_marquee_h4hRGq",
+    "n_easy_steps_qtaB86",
+    "n_base_section_YgM7Rd",
+    "n_comparison_table_UNdXnK",
+    "n_comparison_yAAa44",
     "sticky_cta_AFkFxe",
-    "text_header_3LDiTg",
+    "n_text_VGtQXJ",
     "1707653061bd3707e6",
-    "faq_46wWyJ"
+    "n_faq_6Bcjt9"
   ]
 }

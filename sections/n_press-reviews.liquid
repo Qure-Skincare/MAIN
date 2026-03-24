@@ -39,7 +39,7 @@
                 "spaceBetween": 30,
                 "breakpoints": {
                     "992": {
-                        "spaceBetween": 80
+                        {{ section.settings.settings }}
                     }
                 }
             }'>
@@ -78,6 +78,12 @@
             "type": "richtext",
             "id": "text",
             "label": "t:common.text"
+        },
+        {
+            "type": "text",
+            "id": "settings",
+            "label": "t:common.settings",
+            "default": "\"spaceBetween\": 80"
         }
 ],
 "blocks": [
