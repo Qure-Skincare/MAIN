@@ -87,7 +87,6 @@
         "style-color": "Style color",
         "color-switch": "Color switch",
         "color-switch-heading": "Color switch header",
-        "color": "Color",
         "bundle-tag-color": "Bundle tag color",
         "green": "Green",
         "light-green": "Light green",
@@ -230,7 +229,10 @@
         "rough-texture": "Rough texture",
         "eye-bags": "Eye bags",
         "puffiness": "Puffiness",
-        "shipping-order": "Shipping order",
+        "smooth-skin": "Smooth skin",
+        "tone-balance": "Tone balance",
+        "calms-redness": "Calms redness",
+        "skin-firming": "Skin firming",
         "rejuvalight-pro-facewear": "Q-Rejuvalight Pro Facewear",
         "micro-infusion-system": "Micro-Infusion System",
         "renew-lllt-helmet": "Q-Renew LLLT Helmet",
@@ -246,11 +248,10 @@
         "tab-list": "Tab list", 
         "tab-slider": "Tab slider",
         "tab-heading": "Tab header",
+        "tab-panel": "Tab panel",
         "percent-value-style": "Percent value style",
         "circle": "Circle",
         "line": "Line",
-        "left-header": "Left header",
-        "right-header": "Right header",
         "text-between": "Text between",
         "select": "Select",
         "flag": "Flag",
@@ -266,13 +267,13 @@
         "two-in-one": "Two in one",
         "even-looking": "Even looking",
         "smooths": "Smooths",
-        "calms-redness": "Calms redness",
         "deeply-hydrates": "Deeply hydrates",
         "guarantee": "Guarantee",
         "shipping-order": "Shipping order",
         "reverse": "Reverse",
         "colorize": "Colorize",
-        "guide": "Guide"
+        "guide": "Guide",
+        "settings": "Settings"
     },
     "blocks": {
         "block-card": {
@@ -510,6 +511,16 @@
                 }
             }
         },
+        "n_how-it-works": {
+            "name": "How it works",
+            "blocks": {
+                "tab": {
+                    "settings": {
+                        "color_text": "Color text"
+                    }
+                }
+            }
+        },
         "n_how-to-use": {
             "name": "How to use"
         },
@@ -529,7 +540,11 @@
                         "mi-painless": "MI painless",
                         "mi-seamless": "MI seamless",
                         "perfect-transforming": "Perfect transforming",
-                        "two-in-one": "Two in one"
+                        "two-in-one": "Two in one",
+                        "smooth-skin": "Smooth skin",
+                        "tone-balance": "Tone balance",
+                        "calms-redness": "Calms redness",
+                        "skin-firming": "Skin firming"
                     }
                 }
             }

@@ -45,7 +45,7 @@
 
                                         {% if block.settings.youtube_url %}
                                             {% if block.settings.video_url != blank %}
-                                                <picture data-url="{{ block.settings.video_url }}">
+                                                <picture class="lvideo" data-url="{{ block.settings.video_url }}">
                                                     {% if block.settings.image != blank %}
                                                         <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                                                     {% endif %}
@@ -123,14 +123,22 @@
                                 <div class="swiper-slide">
                                     {% if block.settings.youtube_url %}
                                         {% if block.settings.video_url != blank %}
-                                            <picture data-url="{{ block.settings.video_url }}">
+                                            <picture class="lvideo" data-url="{{ block.settings.video_url }}">
                                                 {% if block.settings.image != blank %}
                                                     <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                                                 {% endif %}
                                             </picture>
                                         {% endif %}
-                                    {% else %}
-                                        {% if block.settings.video_url != blank %}
+                                    {% elsif block.settings.video_url != blank %}
+                                        {% if block.settings.image != blank %}
+                                            <picture
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#reusableWistiaModal"
+                                                data-video-id="{{ block.settings.video_url }}"
+                                            >
+                                                <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                            </picture>
+                                        {% else %}
                                             <div class="wistia-embed-video">
                                                 <div class="wistia_responsive_padding">
                                                     <div class="wistia_responsive_wrapper">
@@ -142,15 +150,6 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        {% endif %}
-                                        {% if block.settings.video_url != blank and block.settings.image != blank %}
-                                            <picture
-                                                data-bs-toggle="modal"
-                                                data-bs-target="#reusableWistiaModal"
-                                                data-video-id="{{ block.settings.video_url }}"
-                                            >
-                                                <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
-                                            </picture>
                                         {% endif %}
                                     {% endif %}
                                 </div>
