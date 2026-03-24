@@ -756,7 +756,7 @@
           "type": "comparison_table_heading",
           "settings": {
             "heading": "Ease of Use",
-            "color": "none"
+            "color": "colorize"
           }
         },
         "comparison_table_heading_w3ziN9": {
@@ -911,7 +911,7 @@
       "settings": {
         "use_own_file": true,
         "heading": "<h2>Have questions?</h2>",
-        "text": "Don't see your question? ",
+        "text": "Don't see your question?",
         "button_label": "Ask us",
         "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
       }
