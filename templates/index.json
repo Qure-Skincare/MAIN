@@ -83,6 +83,7 @@
     },
     "index_banner_with_text_TNGNLJ": {
       "type": "index-banner-with-text",
+      "disabled": true,
       "name": "t:sections.index-banner-with-text.name",
       "settings": {
         "heading": "Get clinic-level results from home – minus the ‘clinical’ costs.",
@@ -97,7 +98,6 @@
     },
     "n_across_image_banner_tL47T8": {
       "type": "n_across-image-banner",
-      "disabled": true,
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
         "use_own_file": true,
