@@ -1,41 +1,36 @@
 {% doc %}
-Renders a products guide section for products guide page
+    Renders a products guide section for products guide page
 {% enddoc %}
 
-<link rel="stylesheet" href="https://qureskincaredns.com/sections/isolated/user-guide/section-user-guide.css">
-<div class="user_guide qure__section" style="--section-padding-top-mob: 30px;">
-    <div class="container" style="--column-gap:24px; --column-gap-mobile:12px;">
-        <div class="qure__section-header text-md-start text-center">
-            {% if section.settings.heading != blank %}
-                <h1 class="qure__section-heading mb-10" style="--heading-size: 46px; --heading-size-mob: 32px;">{{ section.settings.heading }}</h1>
-            {% endif %}
-            {% if section.settings.text != blank %}
-                {{ section.settings.text | replace: '<strong>', '<span class="fw-600">' | replace: '</strong>', '</span>' }}
-            {% endif %}
-        </div>
-        <div class="row custom__grid">
-            {% for block in section.blocks %}
-                {% if block.type == 'items' %}
-                    <div class="col-md-6 custom__block">
+<!-- GUIDES LIST -->
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/guides-list/guides-list.css" />
+{% endif %}
+<section class="guides-list">
+    <div class="container">
+        <article>
+           {{ section.settings.text }}
+            <ul>
+                {% for block in section.blocks %}
+                    {% if block.type == 'items' %}
                         {% if block.settings.link_url != blank %}
-                            <a href="{{ block.settings.link_url }}" class="guide_content-main">
-                                <div class="guide_content">
+                            <li>
+                                <a href="{{ block.settings.link_url }}">
                                     {% if block.settings.image != blank %}
-                                        <div><img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" class="img-fluid" width="90"></div>
+                                        <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                                     {% endif %}
-                                    {% if block.settings.heading != blank %}
-                                        <div class="qure__section-heading" style="--heading-size: 20px; --heading-size-mob: 18px;">{{ block.settings.heading }}</div>
-                                    {% endif %}
-                                    <span><img src="{{ 'sections.products-guide.right_icon' | t }}" alt="{{ 'sections.products-guide.right_icon.alt' | t | escape }}"></span>
-                                </div>
-                            </a>
+                                    {{ block.settings.heading }}
+                                    <i class="e-icon e-icon-chevron"></i>
+                                </a>
+                            </li>
                         {% endif %}
-                    </div>
-                {% endif %}
-            {% endfor %}
-        </div>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </article>
     </div>
-</div>
+</section>
+<!-- GUIDES LIST END -->
 
 
 {% schema %}
@@ -43,9 +38,10 @@ Renders a products guide section for products guide page
     "name": "t:sections.products-guide.name",
     "settings": [
     {
-        "type": "text",
-        "id": "heading",
-        "label": "t:common.header"
+        "type": "checkbox",
+        "id": "use_own_file",
+        "label": "t:common.use-own-file",
+        "default": false
     },
     {
         "type": "richtext",

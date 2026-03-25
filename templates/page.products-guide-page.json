@@ -79,8 +79,8 @@
         "items_qDeaFN"
       ],
       "settings": {
-        "heading": "User Guides",
-        "text": "<p><strong>Choose your product</strong> to get started.</p>"
+        "use_own_file": true,
+        "text": "<h1>User Guides</h1><p><strong>Choose your product</strong> to get started.</p>"
       }
     }
   },
