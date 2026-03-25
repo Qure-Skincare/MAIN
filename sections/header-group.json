@@ -13,7 +13,6 @@
   "sections": {
     "announcement-bar-gamification": {
       "type": "n-announcement-bar-gamification",
-      "disabled": true,
       "settings": {
         "heading": "<p><a href=\"https://qureskincare.com/pages/build-your-own\" title=\"https://qureskincare.com/pages/build-your-own\"><strong>Limited Time Easter Offer</strong></a> - Save Up To 25%</p>",
         "color": "#000000",
@@ -81,6 +80,7 @@
         "exclude-page-2",
         "exclude_page_QYnffp"
       ],
+      "disabled": true,
       "settings": {
         "delay": 3000
       }
