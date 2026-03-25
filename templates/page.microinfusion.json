@@ -11,9 +11,6 @@
   "sections": {
     "page_header_V5N4T9": {
       "type": "n-product-header",
-      "custom_css": [
-        ".vp-img > img {max-height: 50px !important; margin-bottom: 12px !important;}"
-      ],
       "blocks": {
         "gallery_sticky_video_63bnFe": {
           "type": "gallery-sticky-video",
@@ -90,6 +87,9 @@
         "jumpto_A5",
         "jumpto_A6"
       ],
+      "custom_css": [
+        ".vp-img > img {max-height: 50px !important; margin-bottom: 12px !important;}"
+      ],
       "name": "t:sections.page-header.name",
       "settings": {
         "seo_heading": "",
@@ -138,7 +138,7 @@
             "preselected": true,
             "heading": "6 Month Supply",
             "subheading": "(12 Treatments)",
-            "image": "shopify://shop_images/MI_1.5_6month_DS-01.webp",
+            "image": "shopify://shop_images/pdp_MI_6_month_DS.webp",
             "soldout": false,
             "preorder": false,
             "preorder_text": "",
@@ -158,7 +158,7 @@
             "preselected": false,
             "heading": "3 Month Supply",
             "subheading": "(6 Treatments)",
-            "image": "shopify://shop_images/MI_1.5_3month_DS-01_2.webp",
+            "image": "shopify://shop_images/pdp_MI_3_month_DS_f2cc1b71-eb12-48ae-b8b8-069bac3c498b.webp",
             "soldout": false,
             "preorder": false,
             "preorder_text": "",
@@ -178,7 +178,7 @@
             "preselected": false,
             "heading": "1 Month Supply",
             "subheading": "(2 Treatments)",
-            "image": "shopify://shop_images/MI_1.5_1month_DS.webp",
+            "image": "shopify://shop_images/pdp_MI_1_month_DS.webp",
             "soldout": false,
             "preorder": false,
             "preorder_text": "",
@@ -1191,7 +1191,9 @@
             "text_3": "Minimal downtime & virtually painless",
             "select_3": "checkmark",
             "text_4": "$20 per treatment",
-            "select_4": "checkmark"
+            "select_4": "checkmark",
+            "text_5": "",
+            "select_5": "checkmark"
           }
         },
         "comparison_table_Crr9fL": {
@@ -1206,7 +1208,9 @@
             "text_3": "Minimal downtime",
             "select_3": "checkmark",
             "text_4": "$300+ per treatment",
-            "select_4": "checkmark"
+            "select_4": "checkmark",
+            "text_5": "",
+            "select_5": "checkmark"
           }
         },
         "comparison_table_fTFnr6": {
@@ -1221,7 +1225,9 @@
             "text_3": "Potential side effects",
             "select_3": "cross",
             "text_4": "< $10 per treatment",
-            "select_4": "checkmark"
+            "select_4": "checkmark",
+            "text_5": "",
+            "select_5": "checkmark"
           }
         }
       },
