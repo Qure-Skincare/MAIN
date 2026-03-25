@@ -82,7 +82,7 @@
                                     {% endif %}
 
                                     <div class="vp-content">
-                                        <p class="mb-0">{{ block.settings.heading }}</p>
+                                        <p class="mb-0">{{ block.settings.heading | replace: '(PRE-ORDER)', '' | strip }}</p>
                                         <p class="fs-14 mb-15">{{ block.settings.subheading }}</p>
                                         <div class="vp-price">
                                             {% if product_before_price != blank %}
