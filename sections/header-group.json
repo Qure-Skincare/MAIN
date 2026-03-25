@@ -15,8 +15,10 @@
       "type": "n-announcement-bar-gamification",
       "disabled": true,
       "settings": {
-        "heading": "<p><strong>Limited Time Easter Offer</strong> - Save Up To 25%</p>",
-        "exception": ""
+        "heading": "<p><a href=\"https://qureskincare.com/pages/build-your-own\" title=\"https://qureskincare.com/pages/build-your-own\"><strong>Limited Time Easter Offer</strong></a> - Save Up To 25%</p>",
+        "color": "#000000",
+        "exception": "qure-microinfusion-offer,",
+        "days": 10
       }
     },
     "endrock-gamification-header": {
