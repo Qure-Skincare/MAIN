@@ -34,7 +34,7 @@
                     {{ section.settings.heading }}
                   {% endif %}
 
-                  <div class="e-countdown" data-deadline="" style="--colorize-color: #ff5429">
+                  <div class="e-countdown"{% if section.settings.from != blank %} data-from="{{ section.settings.from }}"{% endif %} style="--colorize-color: #ff5429">
                       <div data-key="{{ 'n-announcement-bar-gamification.settings.days' | t }}">00</div>
                       <div data-key="{{ 'n-announcement-bar-gamification.settings.hours' | t }}">00</div>
                       <div data-key="{{ 'n-announcement-bar-gamification.settings.minutes' | t }}">00</div>
@@ -76,6 +76,12 @@
       "type": "textarea", 
       "id": "exception", 
       "label": "t:common.exception" 
+    },
+    {
+          "type": "text",
+          "id": "from",
+          "label": "t:common.from",
+          "info": "Date format: YYYY-MM-DD"
     },
     {
         "type": "range",

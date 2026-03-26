@@ -37,15 +37,17 @@
       var deadlineAttr = root.getAttribute('data-deadline');
   
       var days = (typeof customDays !== 'undefined') ? customDays : 0;
-  
+
+      var from = root.getAttribute('data-from');
+
       var defaultEnd = moment().tz("America/Los_Angeles")
         .add(days, 'days')
         .add(11, 'hours')
         .add(59, 'minutes')
         .add(59, 'seconds');
-  
-      var endTime = (deadlineAttr && deadlineAttr.trim() !== '')
-        ? moment.tz(deadlineAttr, "America/Los_Angeles")
+
+      var endTime = from
+        ? moment.tz(from, "America/Los_Angeles").add(customDays, 'days').add(11, 'hours').add(59, 'minutes').add(59, 'seconds')
         : defaultEnd;
   
       function pad2(n) {
