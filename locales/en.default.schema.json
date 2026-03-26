@@ -499,7 +499,12 @@
             }
         },
         "n_easy-steps": {
-            "name": "Easy steps"
+            "name": "Easy steps",
+            "settings": {
+                "modifier-options": {
+                    "no-video": "No video"
+                }
+            }
         },
         "n_product-settings": {
             "name": "Product settings",
@@ -544,7 +549,11 @@
                         "smooth-skin": "Smooth skin",
                         "tone-balance": "Tone balance",
                         "calms-redness": "Calms redness",
-                        "skin-firming": "Skin firming"
+                        "skin-firming": "Skin firming",
+                        "neck-anti-wrinkle": "Neck anti-wrinkle",
+                        "neck-even-tone": "Neck even tone",
+                        "neck-firming": "Neck firming",
+                        "neck-radiance": "Neck radiance"
                     }
                 }
             }
