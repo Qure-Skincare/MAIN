@@ -7,13 +7,10 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "product_header_KpLxTq": {
       "type": "n-product-header",
-      "custom_css": [
-        ".hero-product {padding-top: 60px; padding-bottom: 60px;} @media screen and (max-width: 767px){.hero-product {padding-top: 40px; padding-bottom: 40px;}}"
-      ],
       "blocks": {
         "black_friday_discount_PYGjBx": {
           "type": "black-friday-discount",
@@ -32,7 +29,10 @@
         },
         "button_A9": {
           "type": "button",
-          "settings": {}
+          "settings": {
+            "hide_payments": false,
+            "hide_bottom": false
+          }
         },
         "limited_offer_A8": {
           "type": "limited-offer",
@@ -43,10 +43,6 @@
             "days": 5
           }
         },
-        "reviews-videos": {
-          "type": "reviews-videos",
-          "settings": {}
-        },
         "nextships_BtDkBp": {
           "type": "nextships",
           "disabled": true,
@@ -56,6 +52,10 @@
             "date_soldout": "28 July",
             "date_reserved": "3 August"
           }
+        },
+        "reviews-videos": {
+          "type": "reviews-videos",
+          "settings": {}
         },
         "jumpto_dAPn3y": {
           "type": "jumpto",
@@ -115,401 +115,486 @@
         "limited": false,
         "description": "<ul><li>Smoother, firmer-looking skin on the neck and chest where early signs of aging appear.</li><li>Improves the appearance of discoloration, crepey texture and wrinkles.</li><li>Visibly enhances skin tone and leaves skin with a brighter, more radiant finish.</li></ul>",
         "reserved": false,
-        "soldout": false
+        "soldout": false,
+        "button-label": "",
+        "button-url": ""
       }
     },
-    "slider_featured_in_GtC3yi": {
-      "type": "slider-featured-in",
+    "n_press_reviews_gzTQ6b": {
+      "type": "n_press-reviews",
       "blocks": {
-        "slider_PkM64E": {
-          "type": "slider",
+        "image_with_text_J34m39": {
+          "type": "image_with_text",
           "settings": {
-            "heading": "“Changes you’ll see are positive – like visibly plumper, more refreshed-looking skin and an improved appearance of tone.”",
+            "text": "<h4>“Changes you’ll see are positive – like visibly plumper, more refreshed-looking skin and an improved appearance of tone.”</h4>",
             "image": "shopify://shop_images/vogue-black_35010b3a-45a5-48d0-81c0-31a164697560.svg"
           }
         },
-        "slider_MARHYc": {
-          "type": "slider",
+        "image_with_text_iRwKwP": {
+          "type": "image_with_text",
           "settings": {
-            "heading": "“One of my favorite systems for the neck [...] It has a quick treatment time of 10 minutes, which makes it easy for someone to work into their daily routine.”",
+            "text": "<h4>“One of my favorite systems for the neck [...] It has a quick treatment time of 10 minutes, which makes it easy for someone to work into their daily routine.”</h4>",
             "image": "shopify://shop_images/elle-black_d992fb5b-e675-4ea0-8fe9-27198001a628.svg"
           }
         },
-        "slider_eqqBgw": {
-          "type": "slider",
+        "image_with_text_L88ABY": {
+          "type": "image_with_text",
           "settings": {
-            "heading": "“A foolproof pick: It’s affordable and high quality, featuring dual red and near-infrared wavelengths.”",
+            "text": "<h4>“A foolproof pick: It’s affordable and high quality, featuring dual red and near-infrared wavelengths.”</h4>",
             "image": "shopify://shop_images/bazaar_h.svg"
           }
         },
-        "slider_NbVEhm": {
-          "type": "slider",
+        "image_with_text_FPaJaT": {
+          "type": "image_with_text",
           "disabled": true,
           "settings": {
-            "heading": "“It complements the face mask and targets areas that age first. I think it is most important for your first LED treatment.”",
+            "text": "<h4>“It complements the face mask and targets areas that age first. I think it is most important for your first LED treatment.”</h4>",
             "image": "shopify://shop_images/grazia-black.svg"
           }
         }
       },
       "block_order": [
-        "slider_PkM64E",
-        "slider_MARHYc",
-        "slider_eqqBgw",
-        "slider_NbVEhm"
+        "image_with_text_J34m39",
+        "image_with_text_iRwKwP",
+        "image_with_text_L88ABY",
+        "image_with_text_FPaJaT"
       ],
-      "name": "t:sections.slider-featured-in.name",
-      "settings": {}
-    },
-    "banner_with_text_cakKCV": {
-      "type": "banner-with-text",
-      "name": "t:sections.banner-with-text.name",
+      "name": "t:sections.n_press-reviews.name",
       "settings": {
-        "heading": "All the skin firming, smoothing, clearing benefits with just 1 system",
+        "use_own_file": true,
+        "text": "<h6>FEATURED IN</h6>",
+        "settings": "\"spaceBetween\": 80"
+      }
+    },
+    "n_base_section_QFfG7z": {
+      "type": "n_base-section",
+      "name": "t:sections.n_base-section.name",
+      "settings": {
+        "use_own_file": true,
+        "modifier": "reverse",
+        "modifier_2": "none",
+        "background_color": "none",
+        "heading": "<h2>All the skin firming, smoothing, clearing benefits with just 1 system</h2>",
         "text": "<p>The Neck & Décolletage LED System uses red and near-infrared light to help <em>improve the look of firmness</em>, tone, and texture in the neck and chest area.<br/><br/>These wavelengths support the appearance of smoother, more even-looking skin and a refreshed, radiant look over time.</p>",
-        "quote": "",
-        "quote-mobile": "",
-        "image_position": "left",
-        "sub_text": "",
         "image": "shopify://shop_images/n-d-image.webp",
         "button_label": "Shop Now",
-        "button_url": "#buy_box",
+        "button_url": "#hero-product",
         "wistia_url": ""
       }
     },
-    "led_benefits_kmwUXe": {
-      "type": "led-benefits",
+    "n_why_using_pd6Va7": {
+      "type": "n_why-using",
       "blocks": {
-        "slider_igYUmW": {
-          "type": "slider",
+        "image_with_text_igYUmW": {
+          "type": "image_with_text",
           "settings": {
-            "text": "<p>Reduce the look of fine lines and wrinkles</p>",
-            "image": "shopify://shop_images/Neck_Dec_Icons.svg"
+            "icon": "neck-anti-wrinkle",
+            "text": "Reduce the look of fine lines and wrinkles"
           }
         },
-        "slider_nzJkbQ": {
-          "type": "slider",
+        "image_with_text_nzJkbQ": {
+          "type": "image_with_text",
           "settings": {
-            "text": "<p>Helps improve the look of uneven <br/>tone</p>",
-            "image": "shopify://shop_images/Neck_Dec_Icons_1.svg"
+            "icon": "neck-even-tone",
+            "text": "Helps improve the look of uneven tone"
           }
         },
-        "slider_wPpPVU": {
-          "type": "slider",
+        "image_with_text_wPpPVU": {
+          "type": "image_with_text",
           "settings": {
-            "text": "<p>Visibly refreshes for firmer-looking skin</p>",
-            "image": "shopify://shop_images/Neck_Dec_Icons_2.svg"
+            "icon": "neck-firming",
+            "text": "Visibly refreshes for firmer-looking skin"
           }
         },
-        "slider_XFzXwM": {
-          "type": "slider",
+        "image_with_text_XFzXwM": {
+          "type": "image_with_text",
           "settings": {
-            "text": "<p>Leaves skin looking smoother softer<br/> and more radiant</p>",
-            "image": "shopify://shop_images/Neck_Dec_Icons_3.svg"
+            "icon": "neck-radiance",
+            "text": "Leaves skin looking smoother softer and more radiant"
           }
         }
       },
       "block_order": [
-        "slider_igYUmW",
-        "slider_nzJkbQ",
-        "slider_wPpPVU",
-        "slider_XFzXwM"
+        "image_with_text_igYUmW",
+        "image_with_text_nzJkbQ",
+        "image_with_text_wPpPVU",
+        "image_with_text_XFzXwM"
       ],
-      "name": "t:sections.led-benefits.name",
+      "name": "t:sections.n_why-using.name",
       "settings": {
-        "background_color": "#ffffff",
-        "heading": "4 reasons why you’ll love Red Light Therapy",
-        "button_label": "",
-        "button_url": ""
+        "use_own_file": true,
+        "text": "<h2>4 reasons why you’ll love Red Light Therapy</h2>",
+        "button_label": ""
       }
     },
-    "trusted_reviews_wPwQJY": {
-      "type": "trusted-reviews",
+    "n_trusted_reviews_YnnHVE": {
+      "type": "n_trusted-reviews",
       "blocks": {
-        "slider_kiNDmW": {
+        "slider_E8dkeV": {
           "type": "slider",
           "settings": {
-            "heading": "Recommend to everyone",
-            "text": "<p>“I was shocked seeing my before and after photos!! I didn’t realise how much my skin improved. I feel so much more confident wearing open tops now. My skin looks much more even, less red and all round healthier. Happy I invested into this product.”</p>",
-            "compare_image": "shopify://shop_images/Claudia.webp",
-            "country_image": "shopify://shop_images/canada_f.webp",
-            "username": "<p>Claudia M.</p>",
-            "product_url": "",
-            "product_heading": "",
-            "product_text": ""
+            "image": "shopify://shop_images/Claudia.webp",
+            "flag": "shopify://shop_images/canada_f.webp",
+            "username": "Claudia M.",
+            "verified_customer": "Verified customer",
+            "text": "<p><strong>Recommend to everyone</strong></p><p>“I was shocked seeing my before and after photos!! I didn’t realise how much my skin improved. I feel so much more confident wearing open tops now. My skin looks much more even, less red and all round healthier. Happy I invested into this product.”</p>"
           }
         },
-        "slider_hhgf6i": {
+        "slider_X6HczN": {
           "type": "slider",
           "settings": {
-            "heading": "Visible improvements!",
-            "text": "<p>“After years in the strong Aussie sun, I wanted to try LED therapy to refresh and rejuvenate my skin. I’m so glad I did — after using it daily, I’ve noticed real improvements! My skin looks firmer, smoother, and the appearance of sunspots has visibly reduced.”</p>",
-            "compare_image": "shopify://shop_images/Sophia.webp",
-            "country_image": "shopify://shop_images/australia_f.webp",
-            "username": "<p>Sophia N.</p>",
-            "product_url": "",
-            "product_heading": "",
-            "product_text": ""
+            "image": "shopify://shop_images/Sophia.webp",
+            "flag": "shopify://shop_images/australia_f.webp",
+            "username": "Sophia N.",
+            "verified_customer": "Verified customer",
+            "text": "<p><strong>Visible improvements!</strong></p><p>“After years in the strong Aussie sun, I wanted to try LED therapy to refresh and rejuvenate my skin. I’m so glad I did — after using it daily, I’ve noticed real improvements! My skin looks firmer, smoother, and the appearance of sunspots has visibly reduced.”</p>"
           }
         },
-        "slider_qtNChf": {
+        "slider_zjPt8r": {
           "type": "slider",
           "settings": {
-            "heading": "Amazing products",
-            "text": "<p>\"I've always taken care of my face but neglected my neck and chest skin so I've made it a top priority in the past year. Since using LED regularly, the pesky fine lines in the middle of my chest [look] so much smoother and my skin looks youthful again! And I love how this system has LEDs placed in the centre of the chest unlike other system.\"</p>",
-            "compare_image": "shopify://shop_images/Ashley.webp",
-            "country_image": "shopify://shop_images/america_f.webp",
-            "username": "<p>Ashley W.</p>",
-            "product_url": "",
-            "product_heading": "",
-            "product_text": ""
+            "image": "shopify://shop_images/Ashley.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Ashley W.",
+            "verified_customer": "Verified customer",
+            "text": "<p><strong>Amazing products</strong></p><p>\"I've always taken care of my face but neglected my neck and chest skin so I've made it a top priority in the past year. Since using LED regularly, the pesky fine lines in the middle of my chest [look] so much smoother and my skin looks youthful again! And I love how this system has LEDs placed in the centre of the chest unlike other system.\"</p>"
           }
         },
-        "slider_7343tm": {
+        "slider_eH3yfT": {
           "type": "slider",
           "settings": {
-            "heading": "Clearer, more even-looking skin",
-            "text": "<p>“After dealing with breakouts and uneven tone, I'm thrilled with the results I've seen after using the Qure LED chest system. My skin looks clearer and more even, and I don’t feel the need to cover my neck and chest with makeup anymore.”</p>",
-            "compare_image": "shopify://shop_images/Josie.webp",
-            "country_image": "shopify://shop_images/australia_f.webp",
-            "username": "<p>Josie R.</p>",
-            "product_url": "",
-            "product_heading": "",
-            "product_text": ""
+            "image": "shopify://shop_images/Josie.webp",
+            "flag": "shopify://shop_images/australia_f.webp",
+            "username": "Josie R.",
+            "verified_customer": "Verified customer",
+            "text": "<p><strong>Clearer, more even-looking skin</strong></p><p>“After dealing with breakouts and uneven tone, I'm thrilled with the results I've seen after using the Qure LED chest system. My skin looks clearer and more even, and I don’t feel the need to cover my neck and chest with makeup anymore.”</p>"
           }
         },
-        "slider_mdLYBj": {
+        "slider_pLPB4j": {
           "type": "slider",
           "settings": {
-            "heading": "Visible improvement so far!",
-            "text": "<p>“After only 3 weeks of use, I’ve noticed visible improvements in the texture and tone of my skin. I had uneven tone from sun exposure, so I plan to keep using it consistently for best results. I’m already seeing a difference and couldn’t be happier!”</p>",
-            "compare_image": "shopify://shop_images/Brooke.webp",
-            "country_image": "shopify://shop_images/america_f.webp",
-            "username": "<p>Brooke B.</p>",
-            "product_url": "",
-            "product_heading": "",
-            "product_text": ""
+            "image": "shopify://shop_images/Brooke.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Brooke B.",
+            "verified_customer": "Verified customer",
+            "text": "<p><strong>Visible improvement so far!</strong></p><p>“After only 3 weeks of use, I’ve noticed visible improvements in the texture and tone of my skin. I had uneven tone from sun exposure, so I plan to keep using it consistently for best results. I’m already seeing a difference and couldn’t be happier!”</p>"
           }
         },
-        "slider_6g8PkE": {
+        "slider_n7Etry": {
           "type": "slider",
           "settings": {
-            "heading": "Smoother, refreshed-looking skin",
-            "text": "<p>“I’m so impressed with the improvement! I noticed a difference after a few weeks. The skin on my neck and chest looks smoother, more even, and refreshed. Fine lines look softer, sun spots appear lighter, and my skin feels rejuvenated. The system is easy to use — I love that I can clip the controller to my robe and multitask while using it.”</p>",
-            "compare_image": "shopify://shop_images/Mary.webp",
-            "country_image": "shopify://shop_images/america_f.webp",
-            "username": "<p>Mary R.M.</p>",
-            "product_url": "",
-            "product_heading": "",
-            "product_text": ""
+            "image": "shopify://shop_images/Mary.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Mary R.M.",
+            "verified_customer": "Verified customer",
+            "text": "<p><strong>Smoother, refreshed-looking skin</strong></p><p>“I’m so impressed with the improvement! I noticed a difference after a few weeks. The skin on my neck and chest looks smoother, more even, and refreshed. Fine lines look softer, sun spots appear lighter, and my skin feels rejuvenated. The system is easy to use — I love that I can clip the controller to my robe and multitask while using it.”</p>"
           }
         }
       },
       "block_order": [
-        "slider_kiNDmW",
-        "slider_hhgf6i",
-        "slider_qtNChf",
-        "slider_7343tm",
-        "slider_mdLYBj",
-        "slider_6g8PkE"
+        "slider_E8dkeV",
+        "slider_X6HczN",
+        "slider_zjPt8r",
+        "slider_eH3yfT",
+        "slider_pLPB4j",
+        "slider_n7Etry"
       ],
-      "name": "t:sections.trusted-reviews.name",
+      "name": "t:sections.n_trusted-reviews.name",
       "settings": {
-        "background_color": "",
-        "heading": "Results you’ll see with your own eyes",
-        "text": "",
-        "text_mobile": "",
-        "button_label": "",
-        "button_url": ""
+        "use_own_file": true,
+        "background_color": "none",
+        "text": "<h2>Results you’ll see with your own eyes</h2>",
+        "button_label": ""
       }
     },
-    "trusted_recommended_YqDQpP": {
-      "type": "trusted-recommended",
-      "name": "t:sections.trusted-recommended.name",
+    "n_trusted_recommended_aE3ndQ": {
+      "type": "n_trusted-recommended",
+      "name": "t:sections.n_trusted-recommended.name",
       "settings": {
-        "background_color": "#ffffff",
-        "heading": "Trusted and Recommended by Experts",
-        "text": "<p>“LED light targets the skin’s surface to <em><strong>help improve the look of firmness and smoothness,</strong></em> supporting a more youthful appearance over time.”</p>",
-        "image_text": "",
-        "video_cover_image": "shopify://shop_images/n-d-doctors.webp",
+        "use_own_file": true,
+        "background_color": "none",
+        "modifier": "none",
+        "heading": "<h2>Trusted and Recommended by Experts</h2>",
+        "text": "<p>“LED light targets the skin’s surface to <em>help improve the look of firmness and smoothness</em><em><strong>,</strong></em> supporting a more youthful appearance over time.”</p>",
+        "video_image_cover": "shopify://shop_images/n-d-doctors.webp",
+        "text_on_image": "",
+        "wistia_url": false,
         "video_url": "https://www.youtube.com/watch?v=W9KXAimjHCE",
-        "wistia_url": ""
+        "badge_text": "Dermatologist Reviewed"
       }
     },
-    "video_slider_mNjYim": {
-      "type": "video-slider",
+    "n_video_slider_zfehyL": {
+      "type": "n_video-slider",
       "blocks": {
-        "slider_9PfgjX": {
+        "slider_RNDiQG": {
           "type": "slider",
           "settings": {
             "heading": "<p>“Using this product consistently can help visibly improve uneven tone and discoloration over time.”</p>",
-            "text": "<p>Dr. Prem Tripathi</p>",
-            "sub_text": "<p>Board-Certified Dermatologist</p>",
-            "url": "xoh5ew7v31",
-            "checkbox": false,
+            "text": "<p>Dr. Prem Tripathi</p><p>Board-Certified Dermatologist</p>",
+            "youtube_url": false,
+            "video_url": "xoh5ew7v31",
             "image": "shopify://shop_images/trusted_img_1.webp"
           }
         },
-        "slider_bmgXhU": {
+        "slider_RQ9fYc": {
           "type": "slider",
           "settings": {
             "heading": "<p>“This product helps improve the appearance of early signs of aging like fine lines, visible redness, and uneven tone.”</p>",
-            "text": "<p>Dr. Alexandra Zeitany</p>",
-            "sub_text": "<p>Board-Certified Dermatologist</p>",
-            "url": "fn1wr66mzp",
-            "checkbox": false,
+            "text": "<p>Dr. Alexandra Zeitany</p><p>Board-Certified Dermatologist</p>",
+            "youtube_url": false,
+            "video_url": "fn1wr66mzp",
             "image": "shopify://shop_images/trusted_img_2.webp"
           }
         },
-        "slider_p99jrE": {
+        "slider_EVcMHp": {
           "type": "slider",
           "settings": {
             "heading": "<p>“I often notice tech-neck related lines from looking down at my phone - this product helps improve their appearance over time.”</p>",
-            "text": "<p>Dr. Mona Patel</p>",
-            "sub_text": "<p>Internal Medicine Doctor</p>",
-            "url": "k1wciiwksf",
-            "checkbox": false,
+            "text": "<p>Dr. Mona Patel</p><p>Internal Medicine Doctor</p>",
+            "youtube_url": false,
+            "video_url": "k1wciiwksf",
             "image": "shopify://shop_images/trusted_img_3.webp"
           }
         },
-        "slider_xx7Ghw": {
+        "slider_DkHnpi": {
           "type": "slider",
           "settings": {
             "heading": "<p>“This is a simple treatment I love and recommend. It reduces redness and fine lines.”</p>",
-            "text": "<p>Dr. Nayiri Khatch</p>",
-            "sub_text": "<p>Resident Doctor</p>",
-            "url": "9womummdjx",
-            "checkbox": false,
+            "text": "<p>Dr. Nayiri Khatch</p><p>Resident Doctor</p>",
+            "youtube_url": false,
+            "video_url": "9womummdjx",
             "image": "shopify://shop_images/trusted_img_4.webp"
           }
         }
       },
       "block_order": [
-        "slider_9PfgjX",
-        "slider_bmgXhU",
-        "slider_p99jrE",
-        "slider_xx7Ghw"
+        "slider_RNDiQG",
+        "slider_RQ9fYc",
+        "slider_EVcMHp",
+        "slider_DkHnpi"
       ],
-      "name": "t:sections.video-slider.name",
-      "settings": {}
+      "name": "t:sections.n_video-slider.name",
+      "settings": {
+        "use_own_file": true,
+        "modifier": "three_cards",
+        "text": ""
+      }
     },
-    "carousel_1Bx4ly": {
-      "type": "carousel",
+    "n_features_marquee_h4hRGq": {
+      "type": "n_features-marquee",
       "blocks": {
-        "items_4xewxx": {
-          "type": "items",
+        "image_with_text_Hnxp4K": {
+          "type": "image_with_text",
           "settings": {
-            "heading": "Free US Shipping On Orders Over $100",
-            "image": "shopify://shop_images/guarantee.svg"
+            "icon": "shipping-order",
+            "text": "Free Shipping On<br> Orders Over 100$"
           }
         },
-        "items_BUjmAT": {
-          "type": "items",
+        "image_with_text_dBhwq7": {
+          "type": "image_with_text",
           "settings": {
-            "heading": "Dermatologist Reviewed",
-            "image": "shopify://shop_images/Guarantee_Icons.svg"
+            "icon": "reviewed",
+            "text": "Dermatologist<br> Reviewed"
           }
         },
-        "items_yb9bKD": {
-          "type": "items",
+        "image_with_text_C6aRqT": {
+          "type": "image_with_text",
           "settings": {
-            "heading": "Buy Now, Pay Later Options Available",
-            "image": "shopify://shop_images/pay-later.svg"
+            "icon": "pay-later",
+            "text": "Buy Now, Pay Later<br> Options Available"
           }
         },
-        "items_TVMfzL": {
-          "type": "items",
+        "image_with_text_HP7mtc": {
+          "type": "image_with_text",
           "settings": {
-            "heading": "Proven Results, <br> Backed By Science",
-            "image": "shopify://shop_images/proven-result.svg"
+            "icon": "proven",
+            "text": "Proven Results,<br> Backed By Science"
           }
         }
       },
       "block_order": [
-        "items_4xewxx",
-        "items_BUjmAT",
-        "items_yb9bKD",
-        "items_TVMfzL"
+        "image_with_text_Hnxp4K",
+        "image_with_text_dBhwq7",
+        "image_with_text_C6aRqT",
+        "image_with_text_HP7mtc"
       ],
-      "name": "t:common.carousel",
+      "name": "t:sections.n_features-marquee.name",
       "settings": {
-        "background_color": "#f6f6f7",
-        "display_mode": "both"
+        "use_own_file": true
       }
     },
-    "product_sunil_chest_pdp_numbered_steps_QMQH3Q": {
-      "type": "product-neck-decolletage-led-numbered-steps",
+    "n_easy_steps_dCkc3p": {
+      "type": "n_easy-steps",
       "blocks": {
-        "items_AJhAWj": {
+        "items_9Bnw9n": {
           "type": "items",
           "settings": {
-            "heading": "Prepare",
-            "text": "<p>Start with clean, dry skin. Secure the system around your neck and adjust using the velcro straps.</p>",
+            "text": "<h3>Prepare</h3><p>Start with clean, dry skin. Secure the system around your neck and adjust using the velcro straps.</p>",
             "image": "shopify://shop_images/treat_aging_1.webp",
             "image_mobile": "shopify://shop_images/treat_aging_1_m.webp"
           }
         },
-        "items_Nft6nn": {
+        "items_ttwLHy": {
           "type": "items",
           "settings": {
-            "heading": "Treatment",
-            "text": "<p>Press and hold the power button on the hands-free controller to start your treatment.</p>",
+            "text": "<h3>Treatment</h3><p>Press and hold the power button on the hands-free controller to start your treatment.</p>",
             "image": "shopify://shop_images/treat_aging_2.webp",
             "image_mobile": "shopify://shop_images/treat_aging_2_m.webp"
           }
         },
-        "items_hTCXBz": {
+        "items_WEYRh7": {
           "type": "items",
           "settings": {
-            "heading": "Aftercare",
-            "text": "<p>Relax while the system runs its 10-minute session. Afterward, follow with your usual skincare routine.</p>",
+            "text": "<h3>Aftercare</h3><p>Relax while the system runs its 10-minute session. Afterward, follow with your usual skincare routine.</p>",
             "image": "shopify://shop_images/treat_aging_3.webp",
             "image_mobile": "shopify://shop_images/treat_aging_3_m.webp"
           }
-        }
-      },
-      "block_order": [
-        "items_AJhAWj",
-        "items_Nft6nn",
-        "items_hTCXBz"
-      ],
-      "name": "t:sections.numbered-steps.name",
-      "settings": {
-        "heading": "Your 10-minute LED ritual for visibly firmer-looking skin"
-      }
-    },
-    "product_info_86H7kk": {
-      "type": "product-info",
-      "blocks": {
-        "accordion_F7jTpf": {
+        },
+        "accordion_trzMMz": {
           "type": "accordion",
           "settings": {
-            "heading": "Technical specifications",
-            "text": "<p><strong>WAVELENGTH: </strong>633nm (Red), 830nm (Near-Infrared)<br/><strong>TREATMENT TIME: </strong>10 minutes<br/><strong>CHARGING TIME: </strong>4 hours<br/><strong>LEDs: </strong>55 dual core</p>"
+            "heading": "Technical Specifications",
+            "text": "<p><strong>WAVELENGTH:</strong>633nm (Red), 830nm (Near-Infrared)<br/><strong>TREATMENT TIME:</strong>10 minutes<br/><strong>CHARGING TIME:</strong>4 hours<br/><strong>LEDs:</strong>55 dual core</p>"
           }
         }
       },
       "block_order": [
-        "accordion_F7jTpf"
+        "items_9Bnw9n",
+        "items_ttwLHy",
+        "items_WEYRh7",
+        "accordion_trzMMz"
       ],
-      "name": "t:sections.product-info.name",
+      "name": "t:sections.n_easy-steps.name",
       "settings": {
-        "heading": "",
-        "text": "",
-        "button-label": "",
-        "button-url": "",
-        "image_position": "left"
+        "use_own_file": true,
+        "modifier": "no-video",
+        "text": "<h2>Your 10-minute LED ritual for visibly firmer-looking skin</h2>",
+        "wistia_url": "",
+        "button_label": ""
       }
     },
-    "device_comparison_3_QEDhV9": {
-      "type": "device-comparison-3",
-      "name": "t:sections.device-comparison-3.name",
-      "settings": {}
-    },
-    "text_header_JeNmHk": {
-      "type": "text-header",
-      "name": "t:sections.text-header.name",
+    "n_comparison_table_3jPMGi": {
+      "type": "n_comparison-table",
+      "blocks": {
+        "comparison_table_heading_RfXFfy": {
+          "type": "comparison_table_heading",
+          "settings": {
+            "heading": "Wearability",
+            "color": "none"
+          }
+        },
+        "comparison_table_heading_77Uy9H": {
+          "type": "comparison_table_heading",
+          "settings": {
+            "heading": "Hands-Free",
+            "color": "none"
+          }
+        },
+        "comparison_table_heading_gMt9BH": {
+          "type": "comparison_table_heading",
+          "settings": {
+            "heading": "Targeted Technology",
+            "color": "colorize"
+          }
+        },
+        "comparison_table_heading_x4ePgD": {
+          "type": "comparison_table_heading",
+          "settings": {
+            "heading": "Trusted by Experts",
+            "color": "none"
+          }
+        },
+        "comparison_table_heading_NzBKjn": {
+          "type": "comparison_table_heading",
+          "settings": {
+            "heading": "Value",
+            "color": "none"
+          }
+        },
+        "comparison_table_JY8Kwh": {
+          "type": "comparison_table",
+          "settings": {
+            "image": "shopify://shop_images/neck_comp_1.webp",
+            "heading": "<h3>Neck & Décolletage System</h3>",
+            "text_1": "Contoured design that stays in place, no slipping",
+            "select_1": "checkmark",
+            "text_2": "Clip-on wireless controller for total freedom",
+            "select_2": "checkmark",
+            "text_3": "Multi-depth light tech to target firmness & tone",
+            "select_3": "checkmark",
+            "text_4": "Endorsed by 50+ board-certified dermatologists",
+            "select_4": "checkmark",
+            "text_5": "Mid-range with high-end features",
+            "select_5": "checkmark"
+          }
+        },
+        "comparison_table_WWA8HN": {
+          "type": "comparison_table",
+          "settings": {
+            "image": "shopify://shop_images/neck_comp_2.webp",
+            "heading": "<h3>Contour Neck & Décolleté</h3>",
+            "text_1": "Flimsy silicone wrap that may slip or bunch",
+            "select_1": "cross",
+            "text_2": "Wired controller, best used lying down",
+            "select_2": "cross",
+            "text_3": "Basic red and near-infrared light",
+            "select_3": "checkmark",
+            "text_4": "Backed by 6 dermatologists",
+            "select_4": "cross",
+            "text_5": "Premium price, fewer features",
+            "select_5": "cross"
+          }
+        },
+        "comparison_table_Wk7XhY": {
+          "type": "comparison_table",
+          "settings": {
+            "image": "shopify://shop_images/neck_comp_3.webp",
+            "heading": "<h3>Neck & Déc Perfector</h3>",
+            "text_1": "Flimsy silicone wrap that may slip or bunch",
+            "select_1": "cross",
+            "text_2": "USB plug-in, limits movement",
+            "select_2": "cross",
+            "text_3": "Basic red and near-infrared light",
+            "select_3": "checkmark",
+            "text_4": "No dermatologist backing",
+            "select_4": "cross",
+            "text_5": "Premium price, fewer features",
+            "select_5": "cross"
+          }
+        },
+        "disclaimer_tmatyH": {
+          "type": "disclaimer",
+          "settings": {
+            "text": "Based on publicly available information. For general comparison only."
+          }
+        }
+      },
+      "block_order": [
+        "comparison_table_heading_RfXFfy",
+        "comparison_table_heading_77Uy9H",
+        "comparison_table_heading_gMt9BH",
+        "comparison_table_heading_x4ePgD",
+        "comparison_table_heading_NzBKjn",
+        "comparison_table_JY8Kwh",
+        "comparison_table_WWA8HN",
+        "comparison_table_Wk7XhY",
+        "disclaimer_tmatyH"
+      ],
+      "name": "t:sections.n_comparison-table.name",
       "settings": {
-        "heading": "Our customer reviews"
+        "use_own_file": true,
+        "text": "<h2>How Qure compares</h2>"
+      }
+    },
+    "n_text_q7bzjA": {
+      "type": "n_text",
+      "name": "t:sections.n_text.name",
+      "settings": {
+        "use_own_file": true,
+        "modifier": "none",
+        "text": "<h2>Our customer reviews</h2>",
+        "button_label": "",
+        "button_url": ""
       }
     },
     "17574113984fdd4547": {
@@ -533,110 +618,91 @@
       ],
       "settings": {}
     },
-    "faq_cMk3db": {
-      "type": "faq",
+    "n_faq_LcgpNr": {
+      "type": "n_faq",
       "blocks": {
-        "accordion_yKAXF4": {
+        "accordion_3UCfxn": {
           "type": "accordion",
           "settings": {
             "heading": "What color wavelengths does the Neck & Décolletage LED System have?",
-            "text": "<p>The Neck & Décolletage LED System uses two clinically studied wavelengths of light designed to target visible signs of aging and improve the look of firmness and tone on the neck and chest: <br/></p><ul><li>Red Light (633 nm): Reaches the skin’s surface layers to help improve the appearance of firmness and smooth texture.</li><li>Near-Infrared Light (830 nm): Penetrates deeper to support the look of elasticity and even tone.</li></ul><p> Together, these wavelengths help improve the appearance of smoother-, firmer-, more even-toned skin over time — all without heat, pain, or downtime. </p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>The Neck & Décolletage LED System uses two clinically studied wavelengths of light designed to target visible signs of aging and improve the look of firmness and tone on the neck and chest: <br/></p><ul><li>Red Light (633 nm): Reaches the skin’s surface layers to help improve the appearance of firmness and smooth texture.</li><li>Near-Infrared Light (830 nm): Penetrates deeper to support the look of elasticity and even tone.</li></ul><p> Together, these wavelengths help improve the appearance of smoother-, firmer-, more even-toned skin over time — all without heat, pain, or downtime. </p>"
           }
         },
-        "accordion_fAqa68": {
+        "accordion_aRwYxY": {
           "type": "accordion",
           "settings": {
             "heading": "How quickly will I see results?",
-            "text": "<p>Every individual may respond differently to specific wavelengths of light, and visible improvements will depend on the skin’s condition and consistency of use.<br/><br/>Most users report seeing visible improvements within 4 to 8 weeks of consistent use. More noticeable changes may continue to appear over several months.<br/><br/>Day-to-day changes can be subtle — we recommend taking before and after photos to track your progress. Results are cumulative, so consistency is key.</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>Every individual may respond differently to specific wavelengths of light, and visible improvements will depend on the skin’s condition and consistency of use.<br/><br/>Most users report seeing visible improvements within 4 to 8 weeks of consistent use. More noticeable changes may continue to appear over several months.<br/><br/>Day-to-day changes can be subtle — we recommend taking before and after photos to track your progress. Results are cumulative, so consistency is key.</p>"
           }
         },
-        "accordion_wgHydJ": {
+        "accordion_TgNixy": {
           "type": "accordion",
           "settings": {
             "heading": "Is it safe for all skin types?",
-            "text": "<p>Yes, this system is safe for all skin types. It is non-invasive and gentle on the skin. However, if you have specific skin conditions, we recommend consulting with a dermatologist before use.</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>Yes, this system is safe for all skin types. It is non-invasive and gentle on the skin. However, if you have specific skin conditions, we recommend consulting with a dermatologist before use.</p>"
           }
         },
-        "accordion_QzUiiW": {
+        "accordion_E8fgFz": {
           "type": "accordion",
           "settings": {
             "heading": "How often can I use the treatment?",
-            "text": "<p>For best results, we recommend using the system daily.</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>For best results, we recommend using the system daily.</p>"
           }
         },
-        "accordion_89RQWE": {
+        "accordion_PgnekU": {
           "type": "accordion",
           "settings": {
             "heading": "How long is one treatment?",
-            "text": "<p>Just 10 minutes! A one and a half hour charge can deliver up to 7 to 8 treatments.</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>Just 10 minutes! A one and a half hour charge can deliver up to 7 to 8 treatments.</p>"
           }
         },
-        "accordion_gPeUiw": {
+        "accordion_FFDMmU": {
           "type": "accordion",
           "settings": {
             "heading": "Can I use it on other areas of the body?",
-            "text": "<p>While it's primarily designed for the neck and chest, some users apply it to their face or other body areas such as the back and hands. Refer to the user manual for specific usage recommendations.</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>While it's primarily designed for the neck and chest, some users apply it to their face or other body areas such as the back and hands. Refer to the user manual for specific usage recommendations.</p>"
           }
         },
-        "accordion_y9NWCC": {
+        "accordion_7GWRpH": {
           "type": "accordion",
           "settings": {
             "heading": "Can I use skincare products with the system?",
-            "text": "<p>For optimal results use the device on clean, bare skin. Creating a barrier between the system and your skin with unauthorized skincare products may diminish its effectiveness or potentially cause skin reactions.</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>For optimal results use the device on clean, bare skin. Creating a barrier between the system and your skin with unauthorized skincare products may diminish its effectiveness or potentially cause skin reactions.</p>"
           }
         },
-        "accordion_gQeTYM": {
+        "accordion_AyKUVz": {
           "type": "accordion",
           "settings": {
             "heading": "Can you use this while pregnant or breastfeeding?",
-            "text": "<p>Pregnant and breastfeeding individuals should exercise caution when considering any new skincare or beauty treatment. It is generally recommended to consult with a healthcare professional, before using such devices during pregnancy or while breastfeeding.</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>Pregnant and breastfeeding individuals should exercise caution when considering any new skincare or beauty treatment. It is generally recommended to consult with a healthcare professional, before using such devices during pregnancy or while breastfeeding.</p>"
           }
         },
-        "accordion_EWgPBA": {
+        "accordion_8mgtH3": {
           "type": "accordion",
           "settings": {
             "heading": "Does the Neck & Décolletage LED System have a warranty?",
-            "text": "<p>The Neck & Décolletage LED System comes with one (1) year limited warranty covering any manufacturer related problems resulting from regular use of the product. <br/><br/>To submit a claim within the warranty period, simply get in touch with our customer support team and they’ll be happy to help! </p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>The Neck & Décolletage LED System comes with one (1) year limited warranty covering any manufacturer related problems resulting from regular use of the product. <br/><br/>To submit a claim within the warranty period, simply get in touch with our customer support team and they’ll be happy to help! </p>"
           }
         }
       },
       "block_order": [
-        "accordion_yKAXF4",
-        "accordion_fAqa68",
-        "accordion_wgHydJ",
-        "accordion_QzUiiW",
-        "accordion_89RQWE",
-        "accordion_gPeUiw",
-        "accordion_y9NWCC",
-        "accordion_gQeTYM",
-        "accordion_EWgPBA"
+        "accordion_3UCfxn",
+        "accordion_aRwYxY",
+        "accordion_TgNixy",
+        "accordion_E8fgFz",
+        "accordion_PgnekU",
+        "accordion_FFDMmU",
+        "accordion_7GWRpH",
+        "accordion_AyKUVz",
+        "accordion_8mgtH3"
       ],
-      "name": "t:sections.faq.name",
+      "name": "t:sections.n_faq.name",
       "settings": {
-        "heading": "Have questions?",
-        "text": "",
+        "use_own_file": true,
+        "heading": "<h2>Have questions?</h2>",
+        "text": "Don't see your question?",
         "button_label": "Ask us",
-        "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home",
-        "terms-conditions": false,
-        "promotional_terms_and_conditions": ""
+        "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
       }
     },
     "sticky_cta_Kmmeg7": {
@@ -653,19 +719,18 @@
   },
   "order": [
     "product_header_KpLxTq",
-    "slider_featured_in_GtC3yi",
-    "banner_with_text_cakKCV",
-    "led_benefits_kmwUXe",
-    "trusted_reviews_wPwQJY",
-    "trusted_recommended_YqDQpP",
-    "video_slider_mNjYim",
-    "carousel_1Bx4ly",
-    "product_sunil_chest_pdp_numbered_steps_QMQH3Q",
-    "product_info_86H7kk",
-    "device_comparison_3_QEDhV9",
-    "text_header_JeNmHk",
+    "n_press_reviews_gzTQ6b",
+    "n_base_section_QFfG7z",
+    "n_why_using_pd6Va7",
+    "n_trusted_reviews_YnnHVE",
+    "n_trusted_recommended_aE3ndQ",
+    "n_video_slider_zfehyL",
+    "n_features_marquee_h4hRGq",
+    "n_easy_steps_dCkc3p",
+    "n_comparison_table_3jPMGi",
+    "n_text_q7bzjA",
     "17574113984fdd4547",
-    "faq_cMk3db",
+    "n_faq_LcgpNr",
     "sticky_cta_Kmmeg7"
   ]
 }
