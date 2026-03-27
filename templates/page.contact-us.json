@@ -16,24 +16,24 @@
           "type": "contact",
           "settings": {
             "heading": "LIVE CHAT",
-            "text": "Mon - Fri<br>9AM - 5PM EST",
-            "image": "shopify://shop_images/ct-chat.svg"
+            "text": "<p>Mon - Fri<br/>9AM - 5PM EST</p>",
+            "icon": "chat"
           }
         },
         "contact_xJqBFy": {
           "type": "contact",
           "settings": {
             "heading": "CALL US",
-            "text": "+1 (240) 702-2228<br> Sat - Sun<br>9AM - 8PM EST",
-            "image": "shopify://shop_images/ct-call.svg"
+            "text": "<p>+1 (240) 702-2228<br/> Sat - Sun<br/>9AM - 8PM EST</p>",
+            "icon": "call-us"
           }
         },
         "contact_bKnnyR": {
           "type": "contact",
           "settings": {
             "heading": "EMAIL",
-            "text": "Send a Message to Customer Service below",
-            "image": "shopify://shop_images/ct-email.svg"
+            "text": "<p>Send a Message to Customer Service below</p>",
+            "icon": "email"
           }
         }
       },
@@ -44,25 +44,24 @@
       ],
       "name": "t:sections.contact-form.name",
       "settings": {
-        "heading": "Contact Us",
-        "text": "We are here to help!",
-        "button_label": "By submitting this contact form, you consent to receive text messages/SMS from Qure Skincare. To end messaging from us, you may always reply with STOP."
+        "use_own_file": true,
+        "text": "<h2>Contact Us</h2><p>We are here to help!</p>"
       }
     },
-    "contact_customer_service_KBnJVW": {
-      "type": "contact-customer-service",
-      "name": "t:sections.customer-service.name",
+    "n_text_yU7Njm": {
+      "type": "n_text",
+      "name": "t:sections.n_text.name",
       "settings": {
-        "heading": "Additional Customer Service",
-        "faq_text": "Frequently Asked Questions",
-        "faq_url": "/pages/faqs",
-        "returns_exchanges_text": "Returns and Exchanges",
-        "returns_exchanges_url": "/pages/returns-exchanges"
+        "use_own_file": true,
+        "modifier": "none",
+        "text": "<p><strong>Additional Customer Service </strong></p><p><a href=\"https://qureskincare.com/pages/faqs\">Frequently Asked Questions</a> | <a href=\"https://qureskincare.com/pages/returns-exchanges\">Returns and Exchanges</a></p>",
+        "button_label": "",
+        "button_url": ""
       }
     }
   },
   "order": [
     "contact_form_kkXb7P",
-    "contact_customer_service_KBnJVW"
+    "n_text_yU7Njm"
   ]
 }
