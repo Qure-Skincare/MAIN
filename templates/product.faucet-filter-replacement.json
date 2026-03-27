@@ -97,7 +97,7 @@
       }
     },
     "purchase-form-landing": {
-      "type": "purchase-form-landing",
+      "type": "n-purchase-form-landing",
       "blocks": {
         "subscription_6xp1uL": {
           "type": "subscription",
