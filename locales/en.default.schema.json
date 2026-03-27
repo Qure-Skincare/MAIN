@@ -273,7 +273,8 @@
         "reverse": "Reverse",
         "colorize": "Colorize",
         "guide": "Guide",
-        "settings": "Settings"
+        "settings": "Settings",
+        "single": "Single"
     },
     "blocks": {
         "block-card": {

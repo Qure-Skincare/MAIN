@@ -72,7 +72,8 @@
             {% if section.settings.text != blank %}
                 <div>
                     {{ section.settings.text 
-                    | replace: '<p>[note_green]', '<div class="c-note">' 
+                    | replace: '<p>[note_green]', '<div class="c-note">'
+                    | replace: '<p>[note_grey]', '<div class="c-note" style="--note-bg: #f6f6f7">'
                     | replace: '[/note]</p>', '</div>' 
                     | replace: '<p>[step]</p><ul>', '<ul class="e-steps-list">' 
                     | replace: '<p>[marked_list]</p><ul>', '<ul class="c-marked-list">' }}
