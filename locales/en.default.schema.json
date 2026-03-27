@@ -697,7 +697,18 @@
             "name": "Page banner"
         },
         "contact-form": {
-            "name": "Contact form"
+            "name": "Contact form",
+            "blocks": {
+                "contact": {
+                    "settings": {
+                        "icon": {
+                            "chat": "Chat",
+                            "call-us": "Call us",
+                            "email": "Email"
+                        }
+                    }
+                }
+            }
         },
         "custom-form-contact-form": {
             "name": "Contact form for custom form page"
