@@ -6,7 +6,7 @@
  {% if section.settings.use_own_file %}
     <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/why-using/why-using.css" />
  {% endif %}
-<section class="why-using">
+<section class="why-using{%  if section.settings.modifier != 'none' %} why-using--{{ section.settings.modifier }}{% endif %}">
     <div class="container">
         <article>
             {{ section.settings.text }}
@@ -37,6 +37,22 @@
         "id": "use_own_file",
         "label": "t:common.use-own-file",
         "default": false
+    },
+    {
+        "type": "select",
+        "id": "modifier",
+        "label": "t:common.modifier",
+        "default": "none",
+        "options": [
+            {
+                "value": "none",
+                "label": "t:common.none"
+            },
+            {
+                "value": "bg",
+                "label": "t:common.background-color"
+            }
+        ]
     },
     {
         "type": "richtext",
