@@ -1,0 +1,19 @@
+{% if section.settings.klaviyo_form_name != blank %}
+    <div class="treatment__step">
+        <div class="c-options-selector">
+            <button id="back-in-stock" class="btn btn--sm btn--secondary" type="button" onclick="purchase_form_notifyAvailable.showModal()">{{ 'purchase-form.settings.notify-me-when-available' | t }}</button>
+        </div>
+    </div>
+
+    <dialog class="c-dialog c-dialog--notify-available" id="purchase_form_notifyAvailable">
+        <div class="c-dialog__content">
+            <div class="klaviyo-form-{{ section.settings.klaviyo_form_name }}"></div>
+        </div>
+    </dialog>
+{% endif %}
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      loadScriptOnce('dialog', 'https://qureskincaredns.com/assets/js-new/dialog.js');
+    });
+</script>

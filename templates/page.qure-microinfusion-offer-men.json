@@ -995,7 +995,7 @@
       }
     },
     "purchase_form_Lv4fWn": {
-      "type": "purchase-form",
+      "type": "n-purchase-form",
       "blocks": {
         "nextships_5rd2bS": {
           "type": "nextships",

@@ -59,11 +59,6 @@
                             {% else %}
                             data-preselected="false"
                             {% endif %}
-                            {% comment %} {% if block.settings.soldout == true %}
-                                onclick="document.getElementById('back-in-stock-landing').classList.remove('hide')"
-                            {% else %}
-                                onclick="document.getElementById('back-in-stock-landing').classList.add('hide')"
-                            {% endif %} {% endcomment %}
                             data-variant-title="{{ product_title_tag }}"
                             data-product-price="{{ product_sale_price }}">
 
@@ -80,33 +75,22 @@
 
                                     {% unless section.settings.type == 'variant' %}
                                         <div class="c-supply-selector__price">
-                                            {% if section.settings.type != 'list' %}
-                                                <div class="e-price e-price--highlight">
-                                                    <div class="e-price__main">
-                                                        <div class="e-price__current igPrice" data-variant-id="{{ product_variant_id }}">{{ product_sale_price }}</div>
-                                                        {% if product_before_price != blank %}
-                                                            <div class="e-price__old igComparePrice" data-variant-id="{{ product_variant_id }}">{{ product_before_price }}</div>
-                                                        {% endif %}
-                                                    </div>
+                                            <div class="e-price{% if black_friday_discount_percent > 0 %} e-price--strikethrough{% endif %}">
+                                                <div class="e-price__main">
+                                                    <div class="e-price__current igPrice" data-variant-id="{{ product_variant_id }}">{{ product_sale_price }}</div>
+                                                    {% if product_before_price != blank %}
+                                                        <div class="e-price__old igComparePrice" data-variant-id="{{ product_variant_id }}">{{ product_before_price }}</div>
+                                                    {% endif %}
                                                 </div>
-                                            {% else %}
-                                                <div class="e-price{% if black_friday_discount_percent > 0 %} e-price--strikethrough{% endif %}">
-                                                    <div class="e-price__main">
-                                                        <div class="e-price__current igPrice" data-variant-id="{{ product_variant_id }}">{{ product_sale_price }}</div>
-                                                        {% if product_before_price != blank %}
-                                                            <div class="e-price__old igComparePrice" data-variant-id="{{ product_variant_id }}">{{ product_before_price }}</div>
-                                                        {% endif %}
-                                                    </div>
-                                                </div>
-                                                {% if product_black_friday_price != blank %}
-                                                    <div class="c-supply-selector__final-price">
-                                                        <div class="e-price">
-                                                            <div class="e-price__main">
-                                                                <div class="e-price__current">{{ product_black_friday_price }}</div>
-                                                            </div>
+                                            </div>
+                                            {% if product_black_friday_price != blank %}
+                                                <div class="c-supply-selector__final-price">
+                                                    <div class="e-price">
+                                                        <div class="e-price__main">
+                                                            <div class="e-price__current">{{ product_black_friday_price }}</div>
                                                         </div>
                                                     </div>
-                                                {% endif %}
+                                                </div>
                                             {% endif %}
                                         </div>
 

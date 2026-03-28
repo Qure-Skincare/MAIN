@@ -96,17 +96,17 @@ function __landing__handlerProductVariantSelector(e) {
     __landing__updateStickyButton(variant_title);
     __landing__BackInStock(soldout);
 
-    const regularPriceContainer = document.querySelector("." + __section_landing + " .total_price .regular_price");
-    const regularPriceSource = this.querySelector(".regular_price");
-    if (regularPriceContainer && regularPriceSource) {
-        regularPriceContainer.textContent = regularPriceSource.textContent;
-    }
+    // const regularPriceContainer = document.querySelector("." + __section_landing + " .total_price .regular_price");
+    // const regularPriceSource = this.querySelector(".regular_price");
+    // if (regularPriceContainer && regularPriceSource) {
+    //     regularPriceContainer.textContent = regularPriceSource.textContent;
+    // }
 
-    const salePriceContainer = document.querySelector("." + __section_landing + " .total_price .sale_price");
-    const salePriceSource = this.querySelector(".sale_price:not([style*='display: none'])");
-    if (salePriceContainer && salePriceSource) {
-        salePriceContainer.textContent = salePriceSource.textContent.trim();
-    }
+    // const salePriceContainer = document.querySelector("." + __section_landing + " .total_price .sale_price");
+    // const salePriceSource = this.querySelector(".sale_price:not([style*='display: none'])");
+    // if (salePriceContainer && salePriceSource) {
+    //     salePriceContainer.textContent = salePriceSource.textContent.trim();
+    // }
 
     if(!product_selling_plan) {
         __landing_updateButtonLabel(this);
@@ -122,10 +122,10 @@ function __landing__handlerProductVariantSelector(e) {
         }
     }
 
-    const payTodayContainer = document.querySelector("." + __section_landing + " .pay_today");
-    if (payTodayContainer) {
-        payTodayContainer.textContent = this.getAttribute("data-pay") || "";
-    }
+    // const payTodayContainer = document.querySelector("." + __section_landing + " .pay_today");
+    // if (payTodayContainer) {
+    //     payTodayContainer.textContent = this.getAttribute("data-pay") || "";
+    // }
 
     setTimeout(() => {
         purchase_form_landing_event(__section_landing, this, product_variant_id);

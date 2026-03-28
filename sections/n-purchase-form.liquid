@@ -1,0 +1,312 @@
+{% doc %}
+  Renders a purchase form section.
+{% enddoc %}
+
+{% include 'assoc-array', section: section, __parent_title: 'type', __separator: '###' %}
+
+<link rel="stylesheet" href="https://qureskincaredns.com/sections/new/treatment/treatment.css" />
+<section id="purchase-form" class="treatment {{ section.id }}">
+    <div class="container">
+        <article class="treatment__content">
+            {% if section.settings.heading != blank %}
+                <h2>{{ section.settings.heading }}</h2>
+            {% endif %}
+
+            {% if section.settings.text != blank %}
+                <p>{{ section.settings.text }}</p>
+            {% endif %}
+
+            {% if section.settings.image != blank %}
+                <picture>
+                    <img src="{{ section.settings.image | img_url: 'master' }}" alt="{{ section.settings.image.alt | escape }}" id="purchase_form_image" />
+                </picture>
+            {% endif %}
+        </article>
+        <div class="treatment__form">
+            <div class="treatment__box">
+                <div class="treatment__steps">
+                    {% render 'n-purchase-form-types' section: section, __idsArray1: __idsArray1, __idsArray2: __idsArray2, __idsArray3: __idsArray3 %}
+                    {% include 'n-purchase-form-products' section: section, __idsArray1: __idsArray1, __idsArray2: __idsArray2, __idsArray3: __idsArray3 %}
+                    {% render 'n-purchase-form-klaviyo', section: section %}
+                    {% render 'n-purchase-form-payments' section: section %}
+                </div>
+                <div class="treatment__buy">
+                    {% render 'n-product-page-buy-button', product_price: null, product_variant_id: null, section: null, product_available: true %}
+                </div>
+            </div>
+        </div>
+        <div class="treatment__extra">
+            <ul class="e-features-list">
+                <li>
+                    <i class="e-icon e-icon-guarantee"></i>
+                    {{ 'product.settings.benefits-list.guaranteed_text' | t }}
+                </li>
+                <li>
+                    <i class="e-icon e-icon-shipping-order"></i>
+                    {{ 'product.settings.benefits-list.shipping_text' | t }}
+                </li>
+                <li>
+                    <i class="e-icon e-icon-proven"></i>
+                    {{ 'product.settings.benefits-list.science_text' | t }}
+                </li>
+            </ul>
+            <div class="treatment__questions">{{ 'purchase-form.settings.n-questions_html' | t }}</div>
+        </div>
+    </div>
+</section>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        loadScriptOnce("treatment-new", "https://qureskincaredns.com/sections/new/treatment/treatment.js");
+    });
+</script>
+
+<script src="{{ 'n-purchase-form.js' | asset_url }}" data-form="{{ section.settings.form_name }}" data-section="{{ section.id }}" defer></script>
+
+{%- schema -%}
+{
+    "name":"t:sections.purchase-form.name",
+    "class":"purchase-form",
+    "settings":[
+        {
+            "type": "select",
+            "id": "type",
+            "label": "t:common.type",
+            "options": [
+                {
+                    "value": "box",
+                    "label": "t:common.box"
+                },
+                {
+                    "value": "list",
+                    "label": "t:common.list"
+                },
+                {
+                    "value": "list_bf26",
+                    "label": "t:common.list_bf26"
+                }
+            ],
+            "default": "box"
+        },
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "t:common.header"
+        },
+        {
+            "type": "text",
+            "id": "text",
+            "label": "t:common.text"
+        },
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "t:common.image"
+        },
+        {
+            "type": "text",
+            "id": "klaviyo_form_name",
+            "label": "t:common.klaviyo_form_name",
+        },
+        {
+            "type": "text",
+            "id": "form_name",
+            "label": "t:sections.purchase-form.settings.form_name",
+            "default": "purchase-form"
+        }
+    ],
+    "blocks":[
+        {
+            "type": "nextships",
+            "name": "t:common.nextships",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "date",
+                    "label": "t:common.date",
+                    "default": "25 September"
+                },
+                {
+                    "type": "range",
+                    "id": "percent",
+                    "min": 0,
+                    "max": 100,
+                    "step": 1,
+                    "unit": "%",
+                    "label": "t:common.percent",
+                    "default": 48
+                },
+                {
+                    "type": "text",
+                    "id": "date_soldout",
+                    "label": "t:common.soldout",
+                    "default": "28 July"
+                },
+                {
+                    "type": "text",
+                    "id": "date_reserved",
+                    "label": "t:common.reserved",
+                    "default": "3 August"
+                }
+            ]
+        },
+        {
+            "type": "type",
+            "limit": 3,
+            "name": "t:common.type",
+            "settings": [
+                {
+                    "type": "header",
+                    "content": "TYPE"
+                }
+            ]
+        },
+        {
+            "type": "product_type",
+            "name": "t:common.product-type",
+            "limit": 3,
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "t:common.header"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                },
+                {
+                    "type": "checkbox",
+                    "id": "preselected",
+                    "label": "t:common.preselect",
+                    "default": false
+                }
+            ]
+        },
+        {
+            "type": "product_type_accordion",
+            "name": "t:common.product-type-accordion",
+            "limit": 9,
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "t:common.header"
+                },
+                {
+                    "type": "richtext",
+                    "id": "text",
+                    "label": "t:common.text"
+                }
+            ]
+        },
+        {
+            "type": "product",
+            "name": "t:common.product",
+            "limit": 9,
+            "settings": [
+                {
+                    "type": "product",
+                    "id": "product",
+                    "label": "t:common.product"
+                },
+                {
+                    "type": "checkbox",
+                    "id": "preselected",
+                    "label": "t:common.preselect",
+                    "default": false
+                },
+                {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "t:common.header"
+                },
+                {
+                    "type": "text",
+                    "id": "subheading",
+                    "label": "t:common.subheader"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                },
+                {
+                    "type": "checkbox",
+                    "id": "soldout",
+                    "label": "t:common.soldout",
+                    "default": false
+                },
+                {
+                    "type": "checkbox",
+                    "id": "preorder",
+                    "label": "t:common.preorder",
+                    "default": false
+                },
+                {
+                    "type": "number",
+                    "id": "total_treatments",
+                    "label": "t:sections.purchase-form.blocks.product.settings.total_treatments",
+                    "info": "t:sections.purchase-form.blocks.product.settings.total_treatments_info",
+                    "default": 0
+                },
+                {
+                    "type": "number",
+                    "id": "left_items",
+                    "label": "t:sections.purchase-form.blocks.product.settings.left_items",
+                    "info": "t:sections.purchase-form.blocks.product.settings.left_items_info",
+                    "default": 0,
+                },
+                {
+                    "type": "text",
+                    "id": "preorder_text",
+                    "label": "t:sections.purchase-form.blocks.product.settings.preorder_text"
+                },
+                {
+                    "type": "text",
+                    "id": "preorder_date_soldout",
+                    "label": "t:sections.purchase-form.blocks.product.settings.preorder_date_soldout"
+                },
+                {
+                    "type": "text",
+                    "id": "preorder_date_reserved",
+                    "label": "t:sections.purchase-form.blocks.product.settings.preorder_date_reserved"
+                },
+                {
+                    "type": "range",
+                    "id": "preorder_percent",
+                    "min": 0,
+                    "max": 100,
+                    "step": 1,
+                    "unit": "%",
+                    "label": "t:common.percent",
+                    "default": 55
+                },
+                {
+                    "type": "richtext",
+                    "id": "included_text",
+                    "label": "t:sections.purchase-form.blocks.product.settings.included_text"
+                }
+            ]
+        },
+        {
+            "type": "payment_type",
+            "name": "t:common.payment",
+            "limit": 2,
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                }
+            ]
+        }
+    ],
+    "presets":[
+        {
+            "name":"t:sections.purchase-form.name"
+        }
+    ]
+}
+{%- endschema -%}
