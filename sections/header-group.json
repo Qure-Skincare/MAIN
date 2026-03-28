@@ -17,6 +17,7 @@
         "heading": "<p><a href=\"https://qureskincare.com/pages/build-your-own\" title=\"https://qureskincare.com/pages/build-your-own\"><strong>Limited Time Easter Offer</strong></a> - Save Up To 25%</p>",
         "color": "#000000",
         "exception": "qure-microinfusion-offer, qure-microinfusion-offer-listicle",
+        "from": "2026-03-25",
         "days": 10
       }
     },
