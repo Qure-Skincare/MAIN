@@ -1,0 +1,134 @@
+{% doc %}
+    Renders a top rated section.
+{% enddoc %}
+
+<!-- TOP RATED -->
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/top-rated/top-rated.css" />
+{% endif %}
+<section class="top-rated">
+    <div class="container">
+        <article>
+            <h2>{{ section.settings.heading }}</h2>
+            {% for block in section.blocks %}
+                {% if block.type == 'hover_image' %}
+                    {% if block.settings.product != blank %}
+                        {% include 'get-product-data', product_handle: block.settings.product, product_prefix: 'index-qure-products-' %}
+                    {% endif %}
+
+                    <div class="c-product-tile">
+                        {% if block.settings.hover_image != blank %}
+                            <a class="c-product-tile__image" style="--image-on-hover: url({{ block.settings.hover_image | image_url }})" href="{{ block.settings.url }}">
+                                {% if block.settings.image != blank %}
+                                    <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                {% endif %}
+                                {% if block.settings.image_text != 'none' %}
+                                    {% if block.settings.image_text == 'bestseller' %}
+                                        <div class="e-pill-badge e-pill-badge--xs e-pill-badge--fill">{{ 'sections.n_index-top-rated.settings.best-seller-text' | t }}</div>
+                                    {% elsif block.settings.image_text == 'trending' %}
+                                        <div class="e-pill-badge e-pill-badge--xs" style="--badge-base-color: #ff5429">{{ 'sections.n_index-top-rated.settings.trending-text' | t }}</div>
+                                    {% endif %}
+                                {% endif %}
+                            </a>
+                        {% endif %}
+                        {% if block.settings.rating_text != blank %}
+                            <div class="c-product-tile__rating">
+                                <div class="e-rating-stars" style="--rating:"></div>
+                                <a href="{{ block.settings.url }}">{{ block.settings.rating_text }}</a>
+                            </div>
+                        {% endif %}
+                        {% if block.settings.heading != blank %}
+                            <a class="c-product-tile__name" href="{{ block.settings.url }}">{{ block.settings.heading }}</a>
+                        {% endif %}
+                        <div class="c-product-tile__price">
+                            <div class="e-price">
+                                <div class="e-price__main">
+                                    <div class="e-price__current">{{ product_sale_price }}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </article>
+    </div>
+</section>
+<!-- TOP RATED END -->
+
+{% schema %}
+{
+    "name": "t:sections.n_index-top-rated.name",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": false
+        },
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "t:common.header"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "hover_image",
+            "name": "t:common.hover-image",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "t:common.header"
+                },
+                {
+                    "type": "product",
+                    "id": "product",
+                    "label": "t:common.product"
+                },
+                {
+                    "type": "select",
+                    "id": "image_text",
+                    "label": "t:common.image-text",
+                    "default": "none",
+                    "options": [
+                        {
+                            "value": "none",
+                            "label": "t:common.none"
+                        },
+                        {
+                            "value": "bestseller",
+                            "label": "t:sections.n_index-top-rated.blocks.hover_image.settings.select-option.best-seller.name"
+                        },
+                        {
+                            "value": "trending",
+                            "label": "t:sections.n_index-top-rated.blocks.hover_image.settings.select-option.trending.name"
+                        }
+                    ]
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                },
+                
+                {
+                    "type": "image_picker",
+                    "id": "hover_image",
+                    "label": "t:common.hover-image"
+                },
+                {
+                    "type": "url",
+                    "id": "url",
+                    "label": "t:common.link-url"
+                },
+                {
+                    "type": "text",
+                    "id": "rating_text",
+                    "label": "t:common.rating-text"
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}

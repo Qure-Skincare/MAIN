@@ -1,0 +1,86 @@
+{% doc %}
+    Renders a take quiz section.
+{% enddoc %}
+
+<!-- TAKE QUIZ -->
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/take-quiz/take-quiz.css" />
+{% endif %}
+<section class="take-quiz">
+    <div class="container">
+        <article>
+            {{ section.settings.text }}
+            <ol>
+                {% for block in section.blocks %}
+                    {% if block.type == 'take_quiz' %}
+                        <li>
+                            {{ block.settings.text }}
+                            {% if block.settings.button_label != blank and block.settings.button_url != blank %}
+                                <a class="btn btn--primary" href="{{ block.settings.button_url }}">{{ block.settings.button_label }}</a>
+                            {% endif %}
+                            {% if block.settings.sub_text != blank %}
+                                <small>
+                                    <i class="e-icon e-icon-clock"></i>
+                                    {{ block.settings.sub_text }}
+                                </small>
+                            {% endif %}
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ol>
+        </article>
+    </div>
+</section>
+<!-- TAKE QUIZ END -->
+
+{% schema %}
+{
+    "name": "t:sections.n_take-quiz.name",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": false
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "t:common.text"
+        }
+    ],
+    "blocks": [
+        {
+        "type": "take_quiz",
+        "name": "t:sections.n_take-quiz.name",
+        "settings": [
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "t:common.text"
+            },
+            {
+                "type": "text",
+                "id": "sub_text",
+                "label": "t:common.sub-text"
+            },
+            {
+                "type": "text",
+                "id": "button_label",
+                "label": "t:common.button-label"
+            },
+            {
+                "type": "url",
+                "id": "button_url",
+                "label": "t:common.button-url"
+            }
+        ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.n_take-quiz.name"
+        }
+    ]
+}
+{% endschema %}
