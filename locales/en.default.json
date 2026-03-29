@@ -9,6 +9,9 @@
  */
 {
   "sections": {
+    "n_index-quick-title-links": {
+      "new": "New"
+    },
     "n_guide_menu": {
       "contents": "Contents",
       "must-read": "Must read"

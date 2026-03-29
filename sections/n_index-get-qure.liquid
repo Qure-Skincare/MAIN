@@ -1,0 +1,96 @@
+{% doc %}
+  Renders a get section for index page
+{% enddoc %}
+
+<!-- GET QURE -->
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/get-qure/get-qure.css" />
+{% endif %}
+<section class="get-qure">
+   <div class="container">
+      <article>
+      {% if section.settings.heading != blank %}
+         <h2>{{ section.settings.heading }}</h2>
+      {% endif %}
+      {{ section.settings.text }}
+         <ul>
+            {% for block in section.blocks %}
+               {% if block.type == 'listed_deal' %}
+                  <li>
+                     {% if block.settings.image != blank and block.settings.image_mobile != blank %}
+                        <picture>
+                           <source media="(min-width: 768px)" srcset="{{ block.settings.image | image_url }}" />
+                           <img src="{{ block.settings.image_mobile | image_url }}" />
+                        </picture>
+                     {% endif %}
+                     {% if block.settings.text != blank %}
+                        <h6>{{ block.settings.text }}</h6>
+                     {% endif %}
+                     {% if block.settings.button != blank and block.settings.button_url != blank %}
+                        <a class="btn btn--primary-white" href="{{ block.settings.button_url }}">{{ block.settings.button }}</a>
+                     {% endif %}
+                  </li>
+               {% endif %}
+            {% endfor %}
+         </ul>
+      </article>
+   </div>
+</section>
+<!-- GET QURE END -->
+
+{% schema %}
+{
+  "name": "t:sections.n_index-get-qure.name",
+  "settings": [
+      {
+         "type": "checkbox",
+         "id": "use_own_file",
+         "label": "t:common.use-own-file",
+         "default": false
+      },
+      {
+         "type": "text",
+         "id": "heading",
+         "label": "t:common.header"
+      },
+      {
+         "type": "richtext",
+         "id": "text",
+         "label": "t:common.header"
+      }
+  ],
+  "blocks": [
+   {
+      "type": "listed_deal",
+      "name": "t:sections.n_index-get-qure.blocks.listed_deal.name",
+         "settings": [
+            {
+               "type": "richtext",
+               "id": "text",
+               "label": "t:common.text"
+            },
+            {
+               "type": "text",
+               "id": "button",
+               "label": "t:common.button-label"
+            },
+            {
+               "type": "url",
+               "id": "button_url",
+               "label": "t:common.button-url"
+            },
+            {
+                  "type": "image_picker",
+                  "id": "image",
+                  "label": "t:common.image"
+            },
+            {
+                  "type": "image_picker",
+                  "id": "image_mobile",
+                  "label": "t:common.image-mobile"
+            }
+         ]
+      }
+   ]
+}
+{% endschema %}

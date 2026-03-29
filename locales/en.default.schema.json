@@ -274,7 +274,8 @@
         "colorize": "Colorize",
         "guide": "Guide",
         "settings": "Settings",
-        "single": "Single"
+        "single": "Single",
+        "product-text": "Product text"
     },
     "blocks": {
         "block-card": {
@@ -600,6 +601,9 @@
                 }
             }
         },
+        "n_take-quiz": {
+            "name": "Take quiz"
+        },
         "collection": {
             "name": "Collection",
             "blocks": {
@@ -619,7 +623,7 @@
                 "doctor-position": "Doctor position"
             }
         },
-        "bf-top-products": {
+        "n_index-quick-title-links": {
             "name": "Black Friday top products"
         },
         "bf-bundle-banner": {
@@ -1117,8 +1121,19 @@
                 }
             }
         },
-        "index-mobile-category-slider": {
-            "name": "Mobile category slider"
+        "n_index-quick-links": {
+            "name": "Quick links"
+        },
+        "n_top-rated": {
+            "name": "Top rated",
+            "blocks": {
+                "product_tile": {
+                    "name": "Product tile"
+                },
+                "reviews-link": {
+                    "name": "Reviews link URL"
+                }
+            }
         },
         "page-banner": {
             "name": "Page banner"
@@ -1180,10 +1195,10 @@
                 }
             }
         },
-         "index-get-qure": {
+         "n_index-get-qure": {
             "name": "Get the Qure",
             "blocks": {
-                "listed-deal": {
+                "listed_deal": {
                     "name": "Listed deal"
                 }
             }

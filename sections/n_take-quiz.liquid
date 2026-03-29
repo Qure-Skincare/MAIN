@@ -1,0 +1,58 @@
+{% doc %}
+    Renders a take quiz section.
+{% enddoc %}
+
+<!-- TAKE QUIZ -->
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/take-quiz/take-quiz.css" />
+{% endif %}
+<section class="take-quiz">
+    <div class="container">
+        <article>
+            <h2>Unlock Your Personalized Skincare Routine</h2>
+            <p>You don’t have time for products that don’t work. We’ll prescribe you a personalized routine with clinically proven products and tips - just for your skin.</p>
+            <ol>
+                <li>
+                    <h5>Take The Quiz</h5>
+                    <p>Then get a custom skincare plan, backed by science.</p>
+                    <a class="btn btn--primary" href="#">Take The Quiz</a>
+                    <small>
+                        <i class="e-icon e-icon-clock"></i>
+                        Only takes 60 seconds
+                    </small>
+                </li>
+                <li>Here’s your personalized skincare routine...</li>
+            </ol>
+        </article>
+    </div>
+</section>
+<!-- TAKE QUIZ END -->
+
+{% schema %}
+{
+    "name": "t:sections.n_take-quiz.name",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": false
+        },
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading"
+        }
+    ],
+    "blocks": [
+        {
+
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.n_take-quiz.name"
+        }
+    ]
+}
+{% endschema %}
