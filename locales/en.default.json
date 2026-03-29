@@ -12,6 +12,12 @@
     "n_index-quick-title-links": {
       "new": "New"
     },
+    "n_index-top-rated": {
+      "settings": {
+        "best-seller-text": "Bestseller",
+        "trending-text": "Trending"
+      }
+    },
     "n_guide_menu": {
       "contents": "Contents",
       "must-read": "Must read"

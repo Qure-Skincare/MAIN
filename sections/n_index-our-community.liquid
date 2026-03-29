@@ -1,0 +1,107 @@
+{% doc %}
+    Renders a our community section.
+{% enddoc %}
+
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/have-questions/have-questions.css" />
+{% endif %}
+
+<!-- OUR COMMUNITY -->
+{% if section.settings.use_own_file %}
+<link rel="stylesheet" href="https://qureskincaredns.com/sections/new/our-community/our-community.css" />
+{% endif %}
+<section class="our-community">
+    <div class="container">
+        <article>
+            {{ section.settings.heading }}
+            {% if section.settings.button_label != blank and section.settings.button_url != blank %}
+                <a href="{{ section.settings.button_url }}" class="btn">{{ section.settings.button_label }}</a>
+            {% endif %}
+            <ul>
+                {% for block in section.blocks %}
+                    {% if block.type == 'items' %}
+                        <li>
+                            {% if block.settings.link_url != blank %}
+                                <a href="{{ block.settings.link_url }}">
+                                    {% if block.settings.image != blank %}
+                                        <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                    {% endif %}
+                                    {% if block.settings.tag != blank %}
+                                        <span>{{ block.settings.tag }}</span>
+                                    {% endif %}
+                                    {% if block.settings.heading != blank %}
+                                        <h6>{{ block.settings.heading }}</h6>
+                                    {% endif %}
+                                </a>
+                            {% endif %}
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </article>
+    </div>
+</section>
+<!-- OUR COMMUNITY END -->
+
+{% schema %}
+{
+    "name": "t:sections.n_index-our-community.name",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": false
+        },
+        {
+            "type": "richtext",
+            "id": "heading",
+            "label": "t:common.header"
+        },
+        {
+            "type": "text",
+            "id": "button_label",
+            "label": "t:common.button-label",
+            "default": "Join Our Community "
+        },
+        {
+            "type": "url",
+            "id": "button_url",
+            "label": "t:common.button-url"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "items",
+            "name": "t:common.items",
+            "settings": [
+                {
+                    "type": "url",
+                    "id": "link_url",
+                    "label": "t:common.link-url"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                },
+                {
+                    "type": "text",
+                    "id": "tag",
+                    "label": "t:common.tag"
+                },
+                {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "t:common.header"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.n_index-our-community.name"
+        }
+    ]
+}
+{% endschema %}

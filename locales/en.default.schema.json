@@ -275,7 +275,8 @@
         "guide": "Guide",
         "settings": "Settings",
         "single": "Single",
-        "product-text": "Product text"
+        "product-text": "Product text",
+        "tag": "Tag"
     },
     "blocks": {
         "block-card": {
@@ -577,6 +578,9 @@
         },
         "n_should-know": {
             "name": "Should know"
+        },
+        "n_index-our-community": {
+            "name": "Our community"
         },
         "n_science-backed": {
             "name": "Science backed",
