@@ -445,6 +445,7 @@
       "name": "t:sections.n_why-using.name",
       "settings": {
         "use_own_file": true,
+        "modifier": "none",
         "text": "<h2>5 reasons why everyone is using the Qure Micro-Infusion System</h2>",
         "button_label": ""
       }
@@ -1014,7 +1015,9 @@
       "name": "t:sections.n_science-backed.name",
       "settings": {
         "use_own_file": true,
+        "modifier": "none",
         "text": "<h2>Science-Backed Micro-Infusion Serums</h2><p>Choose the exact serum to use in your Micro-Infusion treatment, or get both and mix them together to experience a complete set of benefits that addresses your specific skin concerns.</p>",
+        "text_mobile": "",
         "left_heading": "<h4>For Dark Spots</h4>",
         "right_heading": "<h4>For Wrinkles</h4>",
         "left_image": "shopify://shop_images/Rectangle_389.png",
@@ -1141,6 +1144,7 @@
       "name": "t:sections.n_easy-steps.name",
       "settings": {
         "use_own_file": true,
+        "modifier": "none",
         "text": "<h2>See how quick and easy it is to use</h2>",
         "image": "shopify://shop_images/mi-use-video.webp",
         "image_mobile": "shopify://shop_images/mi-use-video-mob.webp",
@@ -1481,7 +1485,7 @@
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
             "preorder_percent": 73,
-            "included_text": "<ul><li>4 clinically formulated 4ml serums to treat your specific skin concerns (valued at $719)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
+            "included_text": "<ul><li>12 clinically formulated 4ml serums to treat your specific skin concerns (valued at $719)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
           }
         },
         "product_EKAAzA": {

@@ -16,24 +16,21 @@
           "type": "contact",
           "settings": {
             "heading": "LIVE CHAT",
-            "text": "<p>Mon - Fri<br/>9AM - 5PM EST</p>",
-            "icon": "chat"
+            "text": "<p>Mon - Fri<br/>9AM - 5PM EST</p>"
           }
         },
         "contact_xJqBFy": {
           "type": "contact",
           "settings": {
             "heading": "CALL US",
-            "text": "<p>+1 (240) 702-2228<br/> Sat - Sun<br/>9AM - 8PM EST</p>",
-            "icon": "call-us"
+            "text": "<p>+1 (240) 702-2228<br/> Sat - Sun<br/>9AM - 8PM EST</p>"
           }
         },
         "contact_bKnnyR": {
           "type": "contact",
           "settings": {
             "heading": "EMAIL",
-            "text": "<p>Send a Message to Customer Service below</p>",
-            "icon": "email"
+            "text": "<p>Send a Message to Customer Service below</p>"
           }
         }
       },
@@ -44,7 +41,6 @@
       ],
       "name": "t:sections.contact-form.name",
       "settings": {
-        "use_own_file": true,
         "text": "<h2>Contact Us</h2><p>We are here to help!</p>"
       }
     },
