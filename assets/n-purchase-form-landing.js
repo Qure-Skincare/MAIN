@@ -122,10 +122,10 @@ function __landing__handlerProductVariantSelector(e) {
         }
     }
 
-    // const payTodayContainer = document.querySelector("." + __section_landing + " .pay_today");
-    // if (payTodayContainer) {
-    //     payTodayContainer.textContent = this.getAttribute("data-pay") || "";
-    // }
+    const payTodayContainer = document.querySelector("." + __section_landing + " .pay_today");
+    if (payTodayContainer) {
+        payTodayContainer.textContent = this.getAttribute("data-pay") || "";
+    }
 
     setTimeout(() => {
         purchase_form_landing_event(__section_landing, this, product_variant_id);
@@ -149,9 +149,13 @@ function __landing__BackInStock(soldout) {
 function __landing__updateStickyButton(variant_title) {
     if(!variant_title)  return;
 
-    const input = document.querySelector('.sticky__input[type="radio"][data-id="' + variant_title + '"]');
+    const input = document.querySelector('.cta-bar__selector input[type="radio"][data-variant-title="' + variant_title + '"]');
     if (input) {
         input.checked = true;
+
+        //click
+        input.dispatchEvent(new Event('change', { bubbles: true }));
+        input.dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true }));
     }
 
     if (typeof selectOption === "function") {

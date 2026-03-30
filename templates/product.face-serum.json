@@ -913,7 +913,7 @@
       }
     },
     "sticky_cta_fbPDSk": {
-      "type": "sticky-button-variants",
+      "type": "n-sticky-button-variants",
       "blocks": {
         "variant_43xxGi": {
           "type": "variant",

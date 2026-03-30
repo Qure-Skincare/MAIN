@@ -1,0 +1,76 @@
+{% doc %}
+  Renders a sticky CTA section.
+{% enddoc %}
+
+{% include 'get-product-data', product_handle: product.handle, product_prefix: 'sticky-button-' %}
+
+
+<link rel="stylesheet" href="https://qureskincaredns.com/sections/new/cta-bar/cta-bar.css" />
+<section class="cta-bar">
+    <div class="container">
+        {% if section.settings.heading != blank %}
+          <h6 class="cta-bar__title">{{ section.settings.heading }}</h6>
+        {% endif %}
+        {% if section.settings.button-url != blank %}
+            <div class="cta-bar__button">
+                <a class="btn btn--primary" href="{{ section.settings.button-url }}">{% if section.settings.button-label != blank %}{{ section.settings.button-label }}{% else %}{{ 'product.settings.buy-button-label' | t }}{% endif %}</a>
+            </div>
+        {% else %}
+          <div class="cta-bar__button">
+            <form method="post" action="/cart/add" enctype="multipart/form-data">
+              <button id="sticky-cta-button" type="submit" class="btn btn--primary">{% if section.settings.button-label != blank %}{{ section.settings.button-label }}{% else %}{{ 'product.settings.buy-button-label' | t }}{% endif %}</button>
+              <input type="hidden" name="quantity" id="quantity" value="1">
+              <input type="hidden" name="id" value="{{ product_variant_id }}">
+            </form>
+          </div>
+        {% endif %}
+    </div>
+    {% if section.settings.text != blank %}
+      <div class="cta-bar__bottom">{{ section.settings.text }}</div>
+    {% endif %}
+</section>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        loadScriptOnce("cta-bar", "https://qureskincaredns.com/sections/new/cta-bar/cta-bar.js");
+    });
+</script>
+
+{%  schema  %}  
+{
+  "name": "t:sections.sticky-button.name",
+  "class": "cta-bar-position",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "t:common.header"
+    },
+    {
+      "type": "text",
+      "id": "text",
+      "label": "t:common.text"
+    },
+    {
+        "type": "checkbox",
+        "id": "limited",
+        "label": "t:common.limited",
+        "default": false
+    },
+    {
+      "type": "text",
+      "id": "button-label",
+      "label": "t:common.button-label"
+    },
+    {
+      "type": "text",
+      "id": "button-url",
+      "label": "t:common.button-url"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.sticky-button.name"
+    }
+  ]
+}
+{% endschema %}
