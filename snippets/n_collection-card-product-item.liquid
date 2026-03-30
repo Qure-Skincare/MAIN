@@ -35,7 +35,7 @@
                         <img src="{{ n_card_product.featured_image | img_url: '250x' }}" alt="{{ n_card_product.featured_image.alt | escape }}" />
                     {% endif %}
                     {% if block.settings.client != blank %}
-                        <small>{{ block.settings.client }} {{ 'sections.collection.uses' | t }}</small>
+                        <small>{{ block.settings.client }} {{ 'sections.n_collection.uses' | t }}</small>
                     {% endif %}
                     <span>{{ n_card_product_title }}</span>
                 </p>

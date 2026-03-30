@@ -68,9 +68,9 @@
         "display_mode": "both"
       }
     },
-    "collection_fXMjkJ": {
+    "n_collection_fXMjkJ": {
       "type": "n_collection",
-      "name": "t:sections.collection.name",
+      "name": "t:sections.n_collection.name",
       "settings": {
         "use_own_file": true
       }
@@ -177,7 +177,7 @@
   "order": [
     "page_banner_zUyTB8",
     "carousel_7YOxGy",
-    "collection_fXMjkJ",
+    "n_collection_fXMjkJ",
     "bundle_banner_zWkqBN",
     "trusted_reviews_mRLHtt",
     "quiz_DfRXwD"
