@@ -68,6 +68,20 @@
         "display_mode": "both"
       }
     },
+    "n_breadcrumb_fXMjkJ": {
+      "type": "n_breadcrumb",
+      "name": "t:sections.n_breadcrumb.name",
+      "settings": {
+        "use_own_file": true
+      }
+    },
+    "n_pills_nav_fXMjkJ": {
+      "type": "n_pills-nav",
+      "name": "t:sections.n_pills-nav.name",
+      "settings": {
+        "use_own_file": true
+      }
+    },
     "n_collection_fXMjkJ": {
       "type": "n_collection",
       "name": "t:sections.n_collection.name",
@@ -177,6 +191,8 @@
   "order": [
     "page_banner_zUyTB8",
     "carousel_7YOxGy",
+    "n_breadcrumb_fXMjkJ",
+    "n_pills_nav_fXMjkJ",
     "n_collection_fXMjkJ",
     "bundle_banner_zWkqBN",
     "trusted_reviews_mRLHtt",

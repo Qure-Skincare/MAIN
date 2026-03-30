@@ -1152,6 +1152,12 @@
                 }
             }
         },
+        "n_breadcrumb": {
+            "name": "Breadcrumb"
+        },
+        "n_pills-nav": {
+            "name": "Collection pills navigation"
+        },
         "page-banner": {
             "name": "Page banner"
         },

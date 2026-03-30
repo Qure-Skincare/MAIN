@@ -64,6 +64,20 @@
         "use_own_file": true
       }
     },
+    "n_breadcrumb_fXMjkJ": {
+      "type": "n_breadcrumb",
+      "name": "t:sections.n_breadcrumb.name",
+      "settings": {
+        "use_own_file": true
+      }
+    },
+    "n_pills_nav_fXMjkJ": {
+      "type": "n_pills-nav",
+      "name": "t:sections.n_pills-nav.name",
+      "settings": {
+        "use_own_file": true
+      }
+    },
     "n_collection_fXMjkJ": {
       "type": "n_collection",
       "blocks": {
@@ -281,6 +295,8 @@
   "order": [
     "n_hero_banner_ddhnmk",
     "n_features_marquee_bs",
+    "n_breadcrumb_fXMjkJ",
+    "n_pills_nav_fXMjkJ",
     "n_collection_fXMjkJ",
     "bf_bundle_bunner_mini_JhrEmz",
     "bundle_banner_zWkqBN",

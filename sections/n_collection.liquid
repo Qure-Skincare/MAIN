@@ -2,38 +2,6 @@
   Renders a collection section
 {% enddoc %}
 
-<!-- BREADCRUMB -->
-{% if section.settings.use_own_file %}
-    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/breadcrumb/breadcrumb.css" />
-{% endif %}
-<section class="breadcrumb">
-    <div class="container">
-        <a href="{{ shop.url }}">{{ 'breadcrumb.home' | t }}</a>
-        <i class="e-icon e-icon-chevron"></i>
-        <strong>{{ collection.title }}</strong>
-    </div>
-</section>
-<!-- BREADCRUMB END -->
-
-<!-- PILLS NAVIGATION -->
-{% if section.settings.use_own_file %}
-    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/pills-nav/pills-nav.css" />
-{% endif %}
-<section class="pills-nav pills-nav--left">
-    <div class="container">
-        <div class="pills-nav__header">
-            <span>{{ 'sections.n_collection.shopby' | t }}</span>
-            <div>{{ 'sections.n_collection.swipe_for_more' | t }} <i class="e-icon e-icon-arrow"></i></div>
-        </div>
-        <ul class="c-pills-nav qure_tabs">
-            {% for link in linklists['main-collection'].links %}
-                <li><button type="button" data-url="{{ link.url }}" class="filter{% if link.active %} active{% endif %}">{{ link.title }}</button></li>
-            {% endfor %}
-        </ul>
-    </div>
-</section>
-<!-- PILLS NAVIGATION END -->
- 
 <!-- BEST SELLERS -->
 {% if section.settings.use_own_file %}
     <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/best-sellers/best-sellers.css" />

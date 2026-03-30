@@ -1,0 +1,26 @@
+<!-- BREADCRUMB -->
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/breadcrumb/breadcrumb.css" />
+{% endif %}
+<section class="breadcrumb">
+    <div class="container">
+        <a href="{{ shop.url }}">{{ 'breadcrumb.home' | t }}</a>
+        <i class="e-icon e-icon-chevron"></i>
+        <strong>{{ collection.title }}</strong>
+    </div>
+</section>
+<!-- BREADCRUMB END -->
+
+{% schema %}
+{
+    "name": "t:sections.n_breadcrumb.name",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": false
+        }
+    ]
+}
+{% endschema %}
