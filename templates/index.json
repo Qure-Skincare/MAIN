@@ -409,13 +409,10 @@
         "slider_yC7yhD",
         "slider_cMYwQa"
       ],
-      "custom_css": [
-        ".trusted-reviews {background-color: #fff !important; }"
-      ],
       "name": "t:sections.n_trusted-reviews.name",
       "settings": {
         "use_own_file": true,
-        "background_color": "none",
+        "background_color": "light",
         "text": "<h2>Results you’ll see with your own eyes</h2>",
         "button_label": ""
       }
