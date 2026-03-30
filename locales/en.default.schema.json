@@ -1128,7 +1128,7 @@
         "n_index-quick-links": {
             "name": "Quick links"
         },
-        "n_top-rated": {
+        "n_index-top-rated": {
             "name": "Top rated",
             "blocks": {
                 "product_tile": {
