@@ -86,7 +86,13 @@
                                     <div class="black_friday_price">{{ product_black_friday_price }}</div>
                                 </div>
                             {% else %}
-                                <div class="qure__product-price">{{ block.settings.label_price }} <span class="igPrice">{{ product_sale_price }}</span></div>
+                                <div class="bundle_price d-flex align-items-center justify-content-start gap-3 my-3 pb-2">
+                                    {% if product_before_price != blank %}
+                                        <div class="bef_price text-decoration-line-through fs-20 igComparePrice">{{ product_before_price }}</div>
+                                    {% endif %}
+
+                                    <div class="aft_price fs-20 igPrice">{{ product_sale_price }}</div>
+                                </div>
                             {% endif %}
                         {% endif %}
                     </div>
