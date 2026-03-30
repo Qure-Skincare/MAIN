@@ -1,0 +1,17 @@
+{% doc %}
+  Renders product rating for n_collection c-product-tile (matches static HTML structure).
+
+  @param {object} product - Product object.
+
+  @example
+  {% render 'n_collection-product-rating', product: product %}
+{% enddoc %}
+
+{% assign rating_value = product.metafields.reviews.rating.value %}
+{% assign rating_count = product.metafields.reviews.rating_count.value %}
+{% assign show_rating = rating_value | slice: 0, 3 %}
+
+<div class="c-product-tile__rating">
+    <div class="e-rating-stars" style="--rating: {% if show_rating != blank %}{{ show_rating }}{% else %}0{% endif %}"></div>
+    <a href="{{ product.url }}">{% if rating_count != blank %}{{ rating_count }} Reviews{% else %}0 Reviews{% endif %}</a>
+</div>

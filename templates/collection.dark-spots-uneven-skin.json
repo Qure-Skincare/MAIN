@@ -69,9 +69,11 @@
       }
     },
     "collection_fXMjkJ": {
-      "type": "collection",
+      "type": "n_collection",
       "name": "t:sections.collection.name",
-      "settings": {}
+      "settings": {
+        "use_own_file": true
+      }
     },
     "bundle_banner_zWkqBN": {
       "type": "bundle-banner",

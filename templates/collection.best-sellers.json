@@ -59,13 +59,13 @@
         "image_with_text_CVMfzL"
       ],
       "disabled": true,
-      "name": "t:common.carousel",
+      "name": "t:sections.n_features-marquee.name",
       "settings": {
         "use_own_file": true
       }
     },
-    "collection_fXMjkJ": {
-      "type": "collection",
+    "n_collection_fXMjkJ": {
+      "type": "n_collection",
       "blocks": {
         "product_item_Ub9bKD": {
           "type": "product-item",
@@ -92,7 +92,9 @@
         "brand_item_Ub7bKD"
       ],
       "name": "t:sections.collection.name",
-      "settings": {}
+      "settings": {
+        "use_own_file": true
+      }
     },
     "bf_bundle_bunner_mini_JhrEmz": {
       "type": "bf-bundle-banner-mini",
@@ -228,54 +230,12 @@
             "product_text": "Jennifer uses...",
             "product_title": "Micro-Infusion Facial System"
           }
-        },
-        "slider_NXXEMG": {
-          "type": "slider",
-          "settings": {
-            "image": "shopify://shop_images/Image_14_e4f17107-9f08-48d2-ac29-0ad001741697.png",
-            "username": "Jennifer N.",
-            "verified_customer": "Verified customer",
-            "text": "<h6>Works better than I imagined!</h6><p>“I am really stunned by how well this product works. I have had professional micro-needling and I wanted the benefits without the downtime. I did my treatment, went to bed and woke up the next morning and was ready to go. My skin looks better than it has in years.”</p>",
-            "product_url": "https://qureskincare.com/pages/microinfusion",
-            "product_image": "shopify://shop_images/pdp_mi_1_month_dsw.webp",
-            "product_text": "Jennifer uses...",
-            "product_title": "Micro-Infusion Facial System"
-          }
-        },
-        "slider_PXXEMG": {
-          "type": "slider",
-          "settings": {
-            "image": "shopify://shop_images/Image_14_e4f17107-9f08-48d2-ac29-0ad001741697.png",
-            "username": "Jennifer N.",
-            "verified_customer": "Verified customer",
-            "text": "<h6>Works better than I imagined!</h6><p>“I am really stunned by how well this product works. I have had professional micro-needling and I wanted the benefits without the downtime. I did my treatment, went to bed and woke up the next morning and was ready to go. My skin looks better than it has in years.”</p>",
-            "product_url": "https://qureskincare.com/pages/microinfusion",
-            "product_image": "shopify://shop_images/pdp_mi_1_month_dsw.webp",
-            "product_text": "Jennifer uses...",
-            "product_title": "Micro-Infusion Facial System"
-          }
-        },
-        "slider_MXXEMG": {
-          "type": "slider",
-          "settings": {
-            "image": "shopify://shop_images/Image_14_e4f17107-9f08-48d2-ac29-0ad001741697.png",
-            "username": "Jennifer N.",
-            "verified_customer": "Verified customer",
-            "text": "<h6>Works better than I imagined!</h6><p>“I am really stunned by how well this product works. I have had professional micro-needling and I wanted the benefits without the downtime. I did my treatment, went to bed and woke up the next morning and was ready to go. My skin looks better than it has in years.”</p>",
-            "product_url": "https://qureskincare.com/pages/microinfusion",
-            "product_image": "shopify://shop_images/pdp_mi_1_month_dsw.webp",
-            "product_text": "Jennifer uses...",
-            "product_title": "Micro-Infusion Facial System"
-          }
         }
       },
       "block_order": [
         "slider_iiE4gP",
         "slider_rX8GhE",
-        "slider_87NFpA",
-        "slider_NXXEMG",
-        "slider_PXXEMG",
-        "slider_MXXEMG"
+        "slider_87NFpA"
       ],
       "name": "t:sections.n_trusted-reviews.name",
       "settings": {
@@ -285,39 +245,47 @@
         "button_label": ""
       }
     },
-    "quiz_DfRXwD": {
-      "type": "quiz",
+    "n_take_quiz_bs": {
+      "type": "n_take-quiz",
       "blocks": {
         "take_quiz_xbNNGM": {
           "type": "take_quiz",
           "settings": {
-            "heading": "Take The Quiz",
-            "text": "<p>Then get a custom skincare plan, backed by science.</p>",
-            "image_text": "<p>Only takes 60 seconds</p>",
-            "button-label": "Take The Quiz",
-            "button-url": "https://qureskincare.com/pages/skin-consultation"
+            "text": "<h5>Take The Quiz</h5><p>Then get a custom skincare plan, backed by science.</p>",
+            "sub_text": "Only takes 60 seconds",
+            "button_label": "Take The Quiz",
+            "button_url": "https://qureskincare.com/pages/skin-consultation"
+          }
+        },
+        "take_quiz_sub_bs": {
+          "type": "take_quiz",
+          "settings": {
+            "text": "<p>Here’s your personalized skincare routine…</p>",
+            "sub_text": "",
+            "button_label": "",
+            "button_url": ""
           }
         }
       },
       "block_order": [
-        "take_quiz_xbNNGM"
+        "take_quiz_xbNNGM",
+        "take_quiz_sub_bs"
       ],
       "name": "t:sections.quiz.name",
       "settings": {
-        "heading": "Unlock Your Personalized Skincare Routine",
-        "text": "<p>You don’t have time for products that don’t work. We’ll prescribe you a personalized routine with clinically proven products and tips - just for your skin.</p>",
-        "sub_text": "Here’s your personalized skincare routine…"
+        "use_own_file": true,
+        "text": "<h2>Unlock Your Personalized Skincare Routine</h2><p>You don’t have time for products that don’t work. We’ll prescribe you a personalized routine with clinically proven products and tips - just for your skin.</p>"
       }
     }
   },
   "order": [
     "n_hero_banner_ddhnmk",
     "n_features_marquee_bs",
-    "collection_fXMjkJ",
+    "n_collection_fXMjkJ",
     "bf_bundle_bunner_mini_JhrEmz",
     "bundle_banner_zWkqBN",
     "bf_bundle_banner_dTU6Q7",
     "n_trusted_reviews_kiGgwT",
-    "quiz_DfRXwD"
+    "n_take_quiz_bs"
   ]
 }

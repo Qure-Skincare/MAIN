@@ -1,0 +1,23 @@
+{% doc %}
+  Renders a collection cards snippet  for collection section
+
+  @param {integer} position - A integer value.
+  @param {object} section - A object value.
+
+  @example
+  {% include 'n_collection-cards', position: integer, section: section %}
+
+{% enddoc %}
+
+{% for block in section.blocks %}
+    {% if block.settings.position > 0 %}
+        {% if block.settings.position == position %}
+            {% case block.type %}
+                {% when 'product-item' %}
+                    {% include 'n_collection-card-product-item', block: block %}
+                {% when 'brand-item' %}
+                    {% include 'n_collection-card-brand-item', block: block %}
+            {% endcase %}
+        {% endif %}
+    {% endif %}
+{% endfor %}
