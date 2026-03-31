@@ -1,12 +1,14 @@
 {% doc %}
-Renders an article snippet descover
+    Renders an article snippet discover
 {% enddoc %}
 
-<div class="position-relative pt-30 pt-md-60 mw" style="--mw:558px;">
-    <img src="{{ 'article.snippets.discover.image' | t }}" alt="{{ 'article.snippets.discover.image.alt' | t | escape }}" class="img-fluid d-none d-md-block">
-    <img src="{{ 'article.snippets.discover.image' | t }}" alt="{{ 'article.snippets.discover.image.alt' | t | escape }}" class="img-fluid d-md-none">
-    <div class="discover_best_seller p-20 p-md-24">
-        <p>{{ 'article.snippets.discover.header_html' | t }}</p>
-        <a href="#" class="btn bg-white text-black border-0">{{ 'article.snippets.discover.button_label' | t }}</a>
-    </div>
-</div>
+<figure class="inline-promo-card">
+    <picture>
+        <source media="(min-width:768px)" srcset="{{ 'article.snippets.discover.image' | t }}" />
+        <img src="{{ 'article.snippets.discover.image' | t }}" alt="{{ 'article.snippets.discover.image.alt' | t | escape }}" />
+    </picture>
+    <figcaption>
+        {{ 'article.snippets.discover.header_html' | t }}
+        <a href="#" class="btn btn--primary-white">{{ 'article.snippets.discover.button_label' | t }}</a>
+    </figcaption>
+</figure>

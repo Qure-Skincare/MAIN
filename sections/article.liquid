@@ -1,92 +1,80 @@
 {% doc %}
-Renders an article page
+    Renders an article section
 {% enddoc %}
 
 {% capture discover %}{% render 'article-snippet-discover' %}{% endcapture %}
 {% capture subscription %}{% render 'article-snippet-subscription' %}{% endcapture %}
 {% capture community %}{% render 'article-snippet-community' %}{% endcapture %}
 
-<link rel="stylesheet" href="https://qureskincaredns.com/sections/isolated/blogs/blog.css">
-<link rel="stylesheet" href="https://qureskincaredns.com/sections/isolated/blogs/article.css">
-
-<div class="qure__section qure_blog_wrapper"
-    style="--section-padding-top: 80px; --section-padding-bottom: 80px; --section-padding-top-mob: 50px; --section-padding-bottom-mob: 50px;">
+{% assign share_url = shop.url | append: article.url %}
+<!-- POST ARTICLE -->
+<link rel="stylesheet" href="https://qureskincaredns.com/sections/new/post-article/post-article.css" />
+<section class="post-article">
     <div class="container">
-        <div class="row g-4">
-            <div class="col-md-6 pr-md-45">
-                <div class="post">
-                    <p><a href="/blogs/all">{{ 'blog.settings.blog_text' | t }}</a> > <strong>{{ blog.title }}</strong></p>
-                    <h1 class="banner-text--heading my-20">{{ article.title }}</h1>
-                    {% assign author = article.author | downcase | default: blank%}
+        <article class="post-article__article">
+            <div class="post-article__header">
+                <h1 class="post-article__title">{{ article.title }}</h1>
+                {% if article.image != blank %}
+                    <picture class="post-article__image">
+                        <source media="(min-width:768px)" srcset="{{ article.image | image_url: width: 1200 }}" />
+                        <img src="{{ article.image | image_url: width: 800 }}" alt="{{ article.image.alt | default: article.title | escape }}" />
+                    </picture>
+                {% endif %}
+                <div class="post-article__data">
+                    {% assign author = article.author | downcase | default: blank %}
                     {% if author != blank and author contains 'orlic' %}
                         <p>{{ 'article.settings.related_articles.header_author_html' | t: name: article.author }}</p>
                     {% else %}
                         <p>{{ 'article.settings.related_articles.header_html' | t }}</p>
                     {% endif %}
                     <p>{{ 'article.settings.related_articles.read_time' | t }}</p>
-                    <div class="d-flex justify-content-between align-items-center border-top pt-20 my-20">
-                        <p>{{ 'article.settings.social_media.share' | t }}</p>
-                        <p class="d-flex gap-4">
-                            <a href="#"><img src="{{ 'article.settings.social_media.facebook_icon' | t }}" alt="{{ 'article.settings.social_media.facebook_icon.alt' | t | escape }}" class="img-fluid"></a>
-                            <a href="#"><img src="{{ 'article.settings.social_media.pinterest_icon' | t }}" alt="{{ 'article.settings.social_media.pinterest_icon.alt' | t | escape }}" class="img-fluid"></a>
-                            <a href="#"><img src="{{ 'article.settings.social_media.email_icon' | t }}" alt="{{ 'article.settings.social_media.email_icon.alt' | t | escape }}" class="img-fluid"></a>
-                            <a href="#"><img src="{{ 'article.settings.social_media.whatsapp_icon' | t }}" alt="{{ 'article.settings.social_media.whatsapp_icon.alt' | t | escape }}" class="img-fluid"></a>
-                        </p>
+                </div>
+                <hr />
+                <div class="post-article__share">
+                    {{ 'article.settings.social_media.share' | t }}
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/sharer.php?u={{ share_url | url_encode }}" target="_blank" rel="noopener noreferrer" aria-label="{{ 'article.settings.social_media.facebook_icon.alt' | t | escape }}"><i class="e-icon e-icon-facebook"></i> </a>
+                        </li>
+                        <li>
+                            <a href="https://pinterest.com/pin/create/button/?url={{ share_url | url_encode }}&description={{ article.title | url_encode }}" target="_blank" rel="noopener noreferrer" aria-label="{{ 'article.settings.social_media.pinterest_icon.alt' | t | escape }}"><i class="e-icon e-icon-pinterest"></i> </a>
+                        </li>
+                        <li>
+                            <a href="mailto:?subject={{ article.title | url_encode }}&body={{ share_url | url_encode }}" aria-label="{{ 'article.settings.social_media.email_icon.alt' | t | escape }}"><i class="e-icon e-icon-email-fill"></i> </a>
+                        </li>
+                        <li>
+                            <a href="https://api.whatsapp.com/send?text={{ article.title | append: ' ' | append: share_url | url_encode }}" target="_blank" rel="noopener noreferrer" aria-label="{{ 'article.settings.social_media.whatsapp_icon.alt' | t | escape }}"><i class="e-icon e-icon-whatsapp"></i> </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="post-article__text">
+                <div class="post_details_wrapper">
+                    <div class="post_details">
+                        {{ article.content
+                            | replace: '[discover-snippet]', discover
+                            | replace: '[subscription-snippet]', subscription
+                            | replace: '[community-snippet]', community
+                        }}
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 pl-md-45">
-                {% if article.image != blank %}
-                    <div class="led_therapy_img">
-                        <img src="{{ article.image | image_url }}" alt="{{ article.image.alt | image_url }}" class="img-fluid d-none d-md-block">
-                        <img src="{{ article.image | image_url }}" alt="{{ article.image.alt | image_url }}" class="img-fluid d-md-none">
-                    </div>
-                {% endif %}
+            <div class="post-article__top-list">
+                <h6>{{ 'blog.popular.header' | t }}</h6>
+                <ul class="e-top-posts">
+                    {% render 'blog-snippet-post-popular' with blog_handle: 'skin', limit: 1 %}
+                    {% render 'blog-snippet-post-popular' with blog_handle: 'skincare', limit: 1 %}
+                    {% render 'blog-snippet-post-popular' with blog_handle: 'light-therapy', limit: 1 %}
+                    {% render 'blog-snippet-post-popular' with blog_handle: 'skin', limit: 1, offset:1 %}
+                    {% render 'blog-snippet-post-popular' with blog_handle: 'skincare', limit: 1, offset:1 %}
+                    {% render 'blog-snippet-post-popular' with blog_handle: 'skincare', limit: 1, offset:2 %}
+                    {% render 'blog-snippet-post-popular' with blog_handle: 'light-therapy', limit: 1, offset:1 %}
+                    {% render 'blog-snippet-post-popular' with blog_handle: 'light-therapy', limit: 1, offset:2 %}
+                    {% render 'blog-snippet-post-popular' with blog_handle: 'skin', limit: 1, offset:2 %}
+                    {% render 'blog-snippet-post-popular' with blog_handle: 'skin', limit: 1, offset:3 %}
+                </ul>
             </div>
-        </div>
+        </article>
     </div>
-    <div class="qure_blogs mt-30 mt-md-40">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="post_details_wrapper">
-                        <div class="post_details">
-                            {{ article.content 
-                                |  replace: '[discover-snippet]', discover 
-                                |  replace: '[subscription-snippet]', subscription 
-                                |  replace: '[community-snippet]', community 
-                            }}
-                        </div>
-                    </div>
-                </div>
-                <!-- most popular posts  -->
-                <div class="col-md-4 d-none d-md-block">
-                    <div class="most_popular_posts pl-md-55">
-                        <p class="mb-4">{{ 'blog.popular.header' | t }}</p>
-                        <div class="row gy-4">
-                            {% render 'blog-snippet-post-popular' with blog_handle: 'skin', limit: 1 %}
-                            {% render 'blog-snippet-post-popular' with blog_handle: 'skincare', limit: 1 %}
-                            {% render 'blog-snippet-post-popular' with blog_handle: 'light-therapy', limit: 1 %}
-                            {% render 'blog-snippet-post-popular' with blog_handle: 'skin', limit: 1, offset:1 %}
-                            {% render 'blog-snippet-post-popular' with blog_handle: 'skincare', limit: 1, offset:1 %}
-                            {% render 'blog-snippet-post-popular' with blog_handle: 'skincare', limit: 1, offset:2 %}
-                            {% render 'blog-snippet-post-popular' with blog_handle: 'light-therapy', limit: 1, offset:1 %}
-                            {% render 'blog-snippet-post-popular' with blog_handle: 'light-therapy', limit: 1, offset:2 %}
-                            {% render 'blog-snippet-post-popular' with blog_handle: 'skin', limit: 1, offset:2 %}
-                            {% render 'blog-snippet-post-popular' with blog_handle: 'skin', limit: 1, offset:3 %}
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- post end  -->
-
-<!-- related articles start -->
-<div class="related_articles">
-    <!-- Trusted reviews -->
-    {% render 'blog-snippet-bottom' with blog_handle: blog.handle, limit: 3, skip_title: true %}
-    <!-- Trusted reviews end-->
-</div>
-<!-- related articles end -->
+</section>
+<!-- POST ARTICLE END -->

@@ -1,0 +1,66 @@
+{% doc %}
+    Renders a blog related posts section
+{% enddoc %}
+
+{% if blog != blank and blog.articles.size > 0 %}
+    <!-- RELATED POSTS -->
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/related-posts/related-posts.css" />
+    <section class="related-posts">
+        <div class="container">
+            <h2>{{ 'blog.blog-bottom.header' | t }}</h2>
+            <div
+                class="c-swiper"
+                data-swiper='{
+                "slidesPerView": 1.2,
+                "spaceBetween": 16,
+                "loop": false,
+                "pagination": {
+                    "el": ".c-swiper-pagination",
+                    "type": "custom"
+                },
+                "navigation": {
+                    "prevEl": ".c-swiper-button-prev",
+                    "nextEl": ".c-swiper-button-next"
+                },
+                "breakpoints": {
+                    "768": {
+                        "slidesPerView": 3
+                    }
+                }
+            }'>
+                <div class="swiper-wrapper">
+                    {% for related_post in blog.articles limit: 9 %}
+                        {% if related_post.id == article.id %}{% continue %}{% endif %}
+                        <div class="swiper-slide">
+                            <div class="c-post-tile">
+                                <a href="{{ related_post.url }}" class="c-post-tile__image">
+                                    <img src="{{ related_post.image | image_url }}" alt="{{ related_post.image.alt | escape }}" />
+                                    <div class="e-pill-badge e-pill-badge--sm">#{{ blog.title }}</div>
+                                </a>
+                                <div class="c-post-tile__content">
+                                    <ul class="c-post-tile__time">
+                                        <li>{{ related_post.published_at | date: '%B %d, %Y' }}</li>
+                                        <li>{{ 'blog.choose.read_time' | t }}</li>
+                                    </ul>
+                                    <h6 class="c-post-tile__title" href="{{ related_post.url }}">{{ related_post.title | truncatewords: 8 }}</h6>
+                                    <a class="btn btn--primary" href="{{ related_post.url }}">{{ 'blog.choose.read_more' | t }}</a>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+                <div class="c-swiper-nav">
+                    <button class="c-swiper-button-prev"></button>
+                    <div class="c-swiper-pagination"></div>
+                    <button class="c-swiper-button-next"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            loadScriptOnce("wistia-popup", "https://qureskincaredns.com/assets/js-new/swiper.js");
+        });
+    </script>
+    <!-- RELATED POSTS END -->
+{% endif %}
