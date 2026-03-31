@@ -123,7 +123,7 @@
       }
     },
     "purchase-form-landing": {
-      "type": "purchase-form-landing",
+      "type": "n-purchase-form-landing",
       "blocks": {
         "nextships_4xp7uM": {
           "type": "nextships",
