@@ -107,7 +107,7 @@
       }
     },
     "purchase-form-landing": {
-      "type": "purchase-form-landing",
+      "type": "n-purchase-form-landing",
       "blocks": {
         "nextships_4xp7uM": {
           "type": "nextships",
@@ -913,7 +913,7 @@
       }
     },
     "sticky_cta_fbPDSk": {
-      "type": "sticky-button-variants",
+      "type": "n-sticky-button-variants",
       "blocks": {
         "variant_43xxGi": {
           "type": "variant",
