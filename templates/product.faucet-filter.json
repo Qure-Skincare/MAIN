@@ -341,118 +341,6 @@
         "klaviyo_form_name": ""
       }
     },
-    "purchase-form-landing-old": {
-      "type": "purchase-form-landing",
-      "blocks": {
-        "subscription_6xp1uL": {
-          "type": "subscription",
-          "settings": {
-            "subscription_onetime_text": "Faucet + 1 Filter",
-            "subscription_days_text": "Filter Refill",
-            "subscription_discount_percent": 39,
-            "product": "faucet-filter-refill",
-            "product_discount_percent": 30,
-            "onetime_text": "One Time: Faucet + 1 Filter"
-          }
-        },
-        "nextships_4xp7uM": {
-          "type": "nextships",
-          "settings": {
-            "date": "15th October",
-            "percent": 52,
-            "date_soldout": "10th September",
-            "date_reserved": "1st October"
-          }
-        },
-        "type_hHPdgJ": {
-          "type": "type",
-          "settings": {}
-        },
-        "product_type_QKQhNr": {
-          "type": "product_type",
-          "settings": {
-            "heading": "Faucet filter variants",
-            "preselected": false
-          }
-        },
-        "product_gbPf3J": {
-          "type": "product",
-          "settings": {
-            "product": "faucet-filter",
-            "product_variant_id": 45852978348271,
-            "product_selling_plan": 6190465263,
-            "popular": false,
-            "best": false,
-            "preselected": true,
-            "heading": "White",
-            "subheading": "",
-            "image": "shopify://shop_images/Img_34.png",
-            "soldout": false,
-            "preorder": false,
-            "preorder_text": "30",
-            "preorder_date_soldout": "30",
-            "preorder_date_reserved": "",
-            "preorder_percent": 55
-          }
-        },
-        "product_NEgEkN": {
-          "type": "product",
-          "settings": {
-            "product": "faucet-filter",
-            "product_variant_id": 45852978315503,
-            "product_selling_plan": 6190465263,
-            "popular": false,
-            "best": false,
-            "preselected": false,
-            "heading": "Black",
-            "subheading": "",
-            "image": "shopify://shop_images/Img_35.png",
-            "soldout": false,
-            "preorder": false,
-            "preorder_text": "",
-            "preorder_date_soldout": "",
-            "preorder_date_reserved": "",
-            "preorder_percent": 55
-          }
-        },
-        "product_DEgEkN": {
-          "type": "product",
-          "settings": {
-            "product": "faucet-filter",
-            "product_variant_id": 46852913987823,
-            "product_selling_plan": 6190465263,
-            "popular": false,
-            "best": false,
-            "preselected": false,
-            "heading": "Silver",
-            "subheading": "",
-            "image": "shopify://shop_images/Img_36.png",
-            "soldout": false,
-            "preorder": false,
-            "preorder_text": "",
-            "preorder_date_soldout": "",
-            "preorder_date_reserved": "",
-            "preorder_percent": 55
-          }
-        }
-      },
-      "block_order": [
-        "subscription_6xp1uL",
-        "nextships_4xp7uM",
-        "type_hHPdgJ",
-        "product_type_QKQhNr",
-        "product_gbPf3J",
-        "product_NEgEkN",
-        "product_DEgEkN"
-      ],
-      "disabled": true,
-      "settings": {
-        "form_name": "purchase-form-landing",
-        "hide_types": true,
-        "type": "variant",
-        "klaviyo_form_name": ""
-      }
-    },
     "n_base_section_CGMUkn": {
       "type": "n_base-section",
       "blocks": {
@@ -1175,7 +1063,7 @@
       }
     },
     "sticky_cta_9hzULB": {
-      "type": "sticky-button-variants",
+      "type": "n-sticky-button-variants",
       "blocks": {
         "variant_43xxGi": {
           "type": "variant",
@@ -1217,7 +1105,6 @@
   "order": [
     "product_header_YnMCRD",
     "purchase-form-landing",
-    "purchase-form-landing-old",
     "n_base_section_CGMUkn",
     "n_base_section_Lm3tAh",
     "n_progress_metrics_X8KGmr",
