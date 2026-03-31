@@ -26,6 +26,12 @@
             {% endfor %}
         </ul>
         <form class="contact-us__feedback" action="#">
+            {% if form.posted_successfully? %}
+                <p class="contact-us__feedback-success">{{ 'sections.contact-form.success_text' | t }}</p>
+            {% endif %}
+
+            {{ form.errors | default_errors }}
+
             <div class="contact-us__feedback-field">
                 <input type="text" class="form-control" placeholder="Name" />
             </div>

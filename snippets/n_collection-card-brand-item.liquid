@@ -1,0 +1,12 @@
+{% doc %}
+  Renders a brand card for n_collection best-sellers grid.
+
+  @param {object} block - Section block (brand-item).
+
+  @example
+  {% include 'n_collection-card-brand-item', block: block %}
+{% enddoc %}
+
+<div class="best-sellers__item">
+    <a class="best-sellers__card" href="{% if block.settings.button-url != blank %}{{ block.settings.button-url }}{% else %}#{% endif %}">{% if block.settings.image != blank %}<img src="{{ block.settings.image | img_url: '1000x' }}" alt="{{ block.settings.image.alt | escape }}" />{% endif %}</a>
+</div>

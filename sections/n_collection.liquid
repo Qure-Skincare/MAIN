@@ -1,0 +1,177 @@
+{% doc %}
+  Renders a collection section
+{% enddoc %}
+
+<!-- BEST SELLERS -->
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/best-sellers/best-sellers.css" />
+{% endif %}
+<section class="best-sellers">
+    <div class="container">
+        <div id="collection-products" class="best-sellers__list">
+            {% for product in collection.products %}
+                {% include 'n_collection-cards', position: forloop.index, section: section %}
+
+                {% include 'get-product-data', product_handle: product.handle, product_prefix: 'collection-' %}
+
+                {% if product_handle contains 'micro-infusion' %}
+                    {% assign product_url = '/pages/microinfusion' %}
+                {% endif %}
+
+                {% assign n_tile_hover_url = '' %}
+                {% for media in product_media limit: 2 %}
+                    {% if forloop.index == 2 %}
+                        {% assign n_tile_hover_url = media | img_url: '720x' | prepend: 'https:' %}
+                    {% endif %}
+                {% endfor %}
+
+                {% assign n_show_trending = false %}
+                {% assign n_show_new = false %}
+                {% assign n_show_bestseller = false %}
+                {% for tag in product_tags %}
+                    {% if tag contains 'Trending' %}
+                        {% assign n_show_trending = true %}
+                    {% endif %}
+                    {% if tag contains 'New' %}
+                        {% assign n_show_new = true %}
+                    {% endif %}
+                    {% if tag contains 'Best Seller' %}
+                        {% assign n_show_bestseller = true %}
+                    {% endif %}
+                {% endfor %}
+
+                {% if black_friday_discount_percent > 0 %}
+                    {% assign n_tile_price_display = product_black_friday_price %}
+                {% else %}
+                    {% assign n_tile_price_display = product_sale_price %}
+                {% endif %}
+
+                {% if product_available %}
+                    {% assign n_tile_button_label = 'product.settings.buy-button-label' | t %}
+                {% else %}
+                    {% assign n_tile_button_label = 'product.settings.soldout-button-label' | t %}
+                {% endif %}
+
+                <div class="best-sellers__item">
+                    <div class="c-product-tile">
+                        <a class="c-product-tile__image" {% if n_tile_hover_url != blank %}style="--image-on-hover: url({{ n_tile_hover_url }})"{% endif %} href="{{ product_url }}">
+                            {% if product_media.size > 0 %}
+                                {% for media in product_media limit: 1 %}
+                                    <img src="{{ media | img_url: '720x' }}" alt="{{ product_title | escape }}" />
+                                {% endfor %}
+                            {% elsif product.featured_image != blank %}
+                                <img src="{{ product.featured_image | img_url: '720x' }}" alt="{{ product_title | escape }}" />
+                            {% endif %}
+                            {% if n_show_trending %}
+                                <div class="e-pill-badge e-pill-badge--xs" style="--badge-base-color: #ff5429">{{ 'sections.n_collection.trending' | t }}</div>
+                            {% elsif n_show_new %}
+                                <div class="e-pill-badge e-pill-badge--xs e-pill-badge--fill" style="--badge-fill-color: #91baec">{{ 'sections.n_collection.new' | t }}</div>
+                            {% elsif n_show_bestseller %}
+                                <div class="e-pill-badge e-pill-badge--xs e-pill-badge--fill">{{ 'sections.n_collection.bestseller' | t }}</div>
+                            {% endif %}
+                        </a>
+                        {% render 'n_collection-product-rating', product: product %}
+                        <a class="c-product-tile__name" href="{{ product_url }}">{{ product_title }}</a>
+                        <div class="c-product-tile__price">
+                            <div class="e-price">
+                                <div class="e-price__main">
+                                    <div class="e-price__current">{{ n_tile_price_display }}</div>
+                                </div>
+                            </div>
+                        </div>
+                        <form class="c-product-tile__button" method="post" action="/cart/add" enctype="multipart/form-data">
+                            <button type="{% if product_available %}submit{% else %}button{% endif %}" class="btn btn--primary"{% unless product_available %} disabled{% endunless %}>{{ n_tile_button_label }}</button>
+                            <input type="hidden" name="quantity" value="1">
+                            <input type="hidden" name="id" value="{{ product_variant_id }}">
+                        </form>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<!-- BEST SELLERS END -->
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    loadScriptOnce('section-collection-block', 'https://qureskincaredns.com/shopify/js/section-collection-block.js');
+    loadScriptOnce('collection', 'https://qureskincaredns.com/shopify/js/collection.js');
+  });
+</script>
+
+{% schema %}
+{
+    "name": "t:sections.n_collection.name",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": false
+        }
+    ],
+    "blocks": [
+        {
+            "type": "product-item",
+            "name": "t:sections.n_collection.blocks.product-item.name",
+            "limit": 3,
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                },
+                {
+                    "type": "text",
+                    "id": "text",
+                    "label": "t:common.text"
+                },
+                {
+                    "type": "text",
+                    "id": "client",
+                    "label": "t:common.client"
+                },
+                {
+                    "type": "text",
+                    "id": "text_mobile",
+                    "label": "t:common.text-mobile"
+                },
+                {
+                    "type": "product",
+                    "id": "product",
+                    "label": "t:common.product"
+                },
+                {
+                    "type": "number",
+                    "id": "position",
+                    "label": "t:common.position",
+                    "default": 0
+                }
+            ]
+        },
+        {
+            "type": "brand-item",
+            "name": "t:sections.n_collection.blocks.brand-item.name",
+            "limit": 3,
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                },
+                {
+                    "type": "url",
+                    "id": "button-url",
+                    "label": "t:common.button-url"
+                },
+                {
+                    "type": "number",
+                    "id": "position",
+                    "label": "t:common.position",
+                    "default": 0
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}

@@ -115,6 +115,7 @@
         "image-after": "Image after",
         "image-mobile": "Image mobile",
         "image-position": "Image position",
+        "position": "Position",
         "right-image": "Right image",
         "right-image-mobile": "Right image mobile",
         "left-image-mobile": "Left image mobile",
@@ -276,7 +277,8 @@
         "settings": "Settings",
         "single": "Single",
         "product-text": "Product text",
-        "tag": "Tag"
+        "tag": "Tag",
+        "client": "Client"
     },
     "blocks": {
         "block-card": {
@@ -1138,6 +1140,23 @@
                     "name": "Reviews link URL"
                 }
             }
+        },
+        "n_collection": {
+            "name": "Collection",
+            "blocks": {
+                "product-item": {
+                    "name": "Product item"
+                },
+                "brand-item": {
+                    "name": "Brand item"
+                }
+            }
+        },
+        "n_breadcrumb": {
+            "name": "Breadcrumb"
+        },
+        "n_pills-nav": {
+            "name": "Collection pills navigation"
         },
         "page-banner": {
             "name": "Page banner"

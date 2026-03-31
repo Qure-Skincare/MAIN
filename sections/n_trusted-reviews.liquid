@@ -35,7 +35,7 @@
             <div class="swiper-wrapper">
                 {% for block in section.blocks %}
                     {% if block.type == 'slider' %}
-                        <div class="swiper-slide">
+                        <div class="swiper-slide{% if forloop.index == 1 %} active{% endif %}">
                             <div class="c-trusted-review-card">
                                 {% if block.settings.image != blank %}
                                     <picture>
@@ -90,7 +90,7 @@
 </section>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-        loadScriptOnce("swiper", "https://qureskincaredns.com/assets/js/swiper.js");
+        loadScriptOnce("swiper", "https://qureskincaredns.com/assets/js-new/swiper.js");
     });
 </script>
 
