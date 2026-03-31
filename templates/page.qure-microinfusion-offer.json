@@ -1031,7 +1031,7 @@
       }
     },
     "purchase_form_PwCCh6": {
-      "type": "n-purchase-form",
+      "type": "purchase-form",
       "blocks": {
         "nextships_5rd2bS": {
           "type": "nextships",

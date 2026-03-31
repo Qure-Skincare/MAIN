@@ -97,7 +97,7 @@
       }
     },
     "purchase-form-landing": {
-      "type": "n-purchase-form-landing",
+      "type": "purchase-form-landing",
       "blocks": {
         "subscription_6xp1uL": {
           "type": "subscription",
@@ -867,7 +867,7 @@
       }
     },
     "sticky_cta_BrchB7": {
-      "type": "n-sticky-button-variants",
+      "type": "sticky-button-variants",
       "blocks": {
         "variant_43xxGi": {
           "type": "variant",

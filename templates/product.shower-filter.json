@@ -107,7 +107,7 @@
       }
     },
     "purchase-form-landing": {
-      "type": "n-purchase-form-landing",
+      "type": "purchase-form-landing",
       "blocks": {
         "nextships_4xp7uM": {
           "type": "nextships",
@@ -348,6 +348,117 @@
         "form_name": "purchase-form-landing",
         "hide_types": false,
         "type": "list"
+      }
+    },
+    "purchase-form-landing-8kjhjka": {
+      "type": "purchase-form-landing",
+      "blocks": {
+        "subscription_6xp1uL": {
+          "type": "subscription",
+          "settings": {
+            "subscription_onetime_text": "Showerhead + 1 Filter",
+            "subscription_days_text": "Filter Refill",
+            "subscription_discount_percent": 50,
+            "product": "shower-filter-replacement",
+            "product_discount_percent": 30,
+            "onetime_text": "One Time: Showerhead + 1 Filter"
+          }
+        },
+        "nextships_4xp7uM": {
+          "type": "nextships",
+          "settings": {
+            "date": "25 September",
+            "percent": 55,
+            "date_soldout": "28 July",
+            "date_reserved": "3 August"
+          }
+        },
+        "type_hHPdgJ": {
+          "type": "type",
+          "settings": {}
+        },
+        "product_type_QKQhNr": {
+          "type": "product_type",
+          "settings": {
+            "heading": "Shower filter variants",
+            "preselected": false
+          }
+        },
+        "product_gbPf3J": {
+          "type": "product",
+          "settings": {
+            "product": "shower-filter",
+            "product_variant_id": 45909763522799,
+            "product_selling_plan": 6286115055,
+            "popular": false,
+            "best": false,
+            "preselected": true,
+            "heading": "White",
+            "subheading": "",
+            "image": "shopify://shop_images/variant-white-1.webp",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        },
+        "product_NEgEkN": {
+          "type": "product",
+          "settings": {
+            "product": "shower-filter",
+            "product_variant_id": 45909763490031,
+            "product_selling_plan": 6286115055,
+            "popular": false,
+            "best": false,
+            "preselected": false,
+            "heading": "Black",
+            "subheading": "",
+            "image": "shopify://shop_images/variant-black-1.webp",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        },
+        "product_RBCPe8": {
+          "type": "product",
+          "settings": {
+            "product": "shower-filter",
+            "product_variant_id": 46544976969967,
+            "product_selling_plan": 6286115055,
+            "popular": false,
+            "best": false,
+            "preselected": false,
+            "heading": "Silver",
+            "subheading": "",
+            "image": "shopify://shop_images/variant-silver-1.webp",
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        }
+      },
+      "block_order": [
+        "subscription_6xp1uL",
+        "nextships_4xp7uM",
+        "type_hHPdgJ",
+        "product_type_QKQhNr",
+        "product_gbPf3J",
+        "product_NEgEkN",
+        "product_RBCPe8"
+      ],
+      "disabled": true,
+      "settings": {
+        "form_name": "purchase-form-landing",
+        "hide_types": true,
+        "type": "variant"
       }
     },
     "n_base_section_CGMUkn": {
@@ -1123,6 +1234,7 @@
   "order": [
     "product_header_prNYyf",
     "purchase-form-landing",
+    "purchase-form-landing-8kjhjka",
     "n_base_section_CGMUkn",
     "n_base_section_Lm3tAh",
     "n_progress_metrics_X8KGmr",
