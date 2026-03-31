@@ -995,7 +995,7 @@
       }
     },
     "purchase_form_Lv4fWn": {
-      "type": "purchase-form",
+      "type": "n-purchase-form",
       "blocks": {
         "nextships_5rd2bS": {
           "type": "nextships",
@@ -1375,7 +1375,7 @@
       }
     },
     "sticky_cta_yKcXPF": {
-      "type": "sticky-button",
+      "type": "n-sticky-button",
       "name": "t:sections.sticky-button.name",
       "settings": {
         "heading": "Micro-Infusion Facial System",
