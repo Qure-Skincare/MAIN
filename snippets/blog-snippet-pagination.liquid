@@ -1,11 +1,7 @@
-{% doc %}
-Renders a set of links for paginated results. Must be used within paginate tags.
-{% enddoc %}
-
-{%- if paginate.parts.size > 0 -%}
-    <div class="blog_pagination">
-            <button class="prev" {% if paginate.previous %} onclick="window.location.href='{{ paginate.previous.url }}'"{% else %}disabled{% endif %}><i class="fa-regular fa-angle-left"></i></button>
-            <span class="page-info">{{ paginate.current_page }} / {{ paginate.pages }}</span>
-            <button class="next"{% if paginate.next %}onclick="window.location.href='{{ paginate.next.url }}'"{% else %}disabled{% endif %}><i class="fa-regular fa-angle-right"></i></button>
+{%- if paginate.pages > 1 -%}
+    <div>
+        <button type="button" {% if paginate.previous %}onclick="window.location.href='{{ paginate.previous.url }}'"{% else %}disabled="disabled"{% endif %}><i class="e-icon e-icon-chevron"></i></button>
+        <div><strong>{{ paginate.current_page }}</strong> / {{ paginate.pages }}</div>
+        <button type="button" {% if paginate.next %}onclick="window.location.href='{{ paginate.next.url }}'"{% else %}disabled="disabled"{% endif %}><i class="e-icon e-icon-chevron"></i></button>
     </div>
 {%- endif -%}

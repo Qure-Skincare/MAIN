@@ -1,51 +1,47 @@
-<link rel="stylesheet" href="https://qureskincaredns.com/sections/isolated/blogs/blog.css">
-<div class="qure__section qure_blog_wrapper blogs"
-    style="--section-padding-top: 80px; --section-padding-bottom: 80px; --section-padding-top-mob: 50px; --section-padding-bottom-mob: 50px;">
+{% assign blog_handle = blog.handle %}
+{% unless blog_handle == 'light-therapy' or blog_handle == 'skin' or blog_handle == 'skincare' or blog_handle == 'all' %}
+    {% assign blog_handle = 'all' %}
+{% endunless %}
+
+<link rel="stylesheet" href="https://qureskincaredns.com/sections/new/blog-section/blog-section.css" />
+<section class="blog-section">
     <div class="container">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-                <a href="/blogs/all">{{ 'blog.settings.blog_text' | t }}</a>
-            </li>
-            <li class="breadcrumb-item">{{ blog.title }}</li> 
-        </ol> 
-    </div>
-    <div class="qure_blogs mt-30 mt-md-40">
-        <div class="container">
-            <div class="row">
-                {% case blog.handle %}
-                    {% when 'light-therapy' %}
-                        {% render 'blog-snippet-post' with blog_handle: 'light-therapy', limit: 9 %}
-                    {% when 'skin' %}
-                        {% render 'blog-snippet-post' with blog_handle: 'skin', limit: 9 %}
-                    {% when 'skincare' %}
-                        {% render 'blog-snippet-post' with blog_handle: 'skincare', limit: 9 %}
-                    {% when 'all' %}
-                        {% render 'blog-snippet-post' with blog_handle: 'all', limit: 9 %}   
-                {% endcase %}
-                <!-- most popular posts  -->
-                <div class="col-md-4 d-none d-md-block">
-                    <div class="most_popular_posts pl-md-55">
-                        <p class="mb-4">{{ 'blog.popular.header' | t }}</p>
-                        <div class="row gy-4">
-                            {% render 'blog-snippet-post-popular' with blog_handle: 'skin', limit: 1 %}
-                            {% render 'blog-snippet-post-popular' with blog_handle: 'skincare', limit: 1 %}
-                            {% render 'blog-snippet-post-popular' with blog_handle: 'light-therapy', limit: 1 %}
-                            {% render 'blog-snippet-post-popular' with blog_handle: 'skin', limit: 1 %}
-                            {% render 'blog-snippet-post-popular' with blog_handle: 'skincare', limit: 1, offset:1 %}
-                            {% render 'blog-snippet-post-popular' with blog_handle: 'skincare', limit: 1, offset:2 %}
-                            {% render 'blog-snippet-post-popular' with blog_handle: 'light-therapy', limit: 1, offset:1 %}
-                            {% render 'blog-snippet-post-popular' with blog_handle: 'light-therapy', limit: 1, offset:2 %}
-                            {% render 'blog-snippet-post-popular' with blog_handle: 'skin', limit: 1, offset:2 %}
-                            {% render 'blog-snippet-post-popular' with blog_handle: 'skin', limit: 1, offset:3 %}
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="blog-section__sections">
+            <h2>Choose your topic</h2>
+            <ul>
+                {% for link in linklists.blog-menu.links offset: 1 limit: 3 %}
+                    <li>
+                        <a href="{{ link.url }}">
+                            <picture>
+                                {% case forloop.index %}
+                                    {% when 1 %}
+                                        <source media="(min-width:768px)" srcset="{{ 'blog.blog-post.settings.image_1' | t }}" />
+                                        <img src="{{ 'blog.blog-post.settings.image_mobile_1' | t }}" alt="{{ link.title | escape }}" width="256" height="170" />
+                                    {% when 2 %}
+                                        <source media="(min-width:768px)" srcset="{{ 'blog.blog-post.settings.image_2' | t }}" />
+                                        <img src="{{ 'blog.blog-post.settings.image_mobile_2' | t }}" alt="{{ link.title | escape }}" width="256" height="170" />
+                                    {% when 3 %}
+                                        <source media="(min-width:768px)" srcset="{{ 'blog.blog-post.settings.image_3' | t }}" />
+                                        <img src="{{ 'blog.blog-post.settings.image_mobile_3' | t }}" alt="{{ link.title | escape }}" width="256" height="170" />
+                                {% endcase %}
+                            </picture>
+                            <h6>{{ link.title }}</h6>
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
         </div>
+        <div class="blog-section__posts">
+            <h2>Articles</h2>
+            {%- paginate blogs[blog_handle].articles by 9 -%}
+                <ul>
+                    {% for article in blogs[blog_handle].articles %}
+                        {% render 'blog-snippet-post', article: article %}
+                    {% endfor %}
+                </ul>
+                {% render 'blog-snippet-pagination', paginate: paginate %}
+            {%- endpaginate -%}
+        </div>
+        {% render 'blog-snippet-post-popular' %}
     </div>
-</div>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-    loadScriptOnce('equal-height', 'https://qureskincaredns.com/assets/js/equal-height.js');
-    });
-</script>
+</section>
