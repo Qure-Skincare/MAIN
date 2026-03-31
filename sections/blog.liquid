@@ -7,7 +7,7 @@
 <section class="blog-section">
     <div class="container">
         <div class="blog-section__sections">
-            <h2>Choose your topic</h2>
+            <h2>{{ 'blog.choose.header' | t }}</h2>
             <ul>
                 {% for link in linklists.blog-menu.links offset: 1 limit: 3 %}
                     <li>
@@ -32,7 +32,7 @@
             </ul>
         </div>
         <div class="blog-section__posts">
-            <h2>Articles</h2>
+            <h2>{{ 'blog.choose.articles' | t }}</h2>
             {%- paginate blogs[blog_handle].articles by 9 -%}
                 <ul>
                     {% for article in blogs[blog_handle].articles %}
@@ -42,6 +42,20 @@
                 {% render 'blog-snippet-pagination', paginate: paginate %}
             {%- endpaginate -%}
         </div>
-        {% render 'blog-snippet-post-popular' %}
+        <div class="blog-section__top-list">
+            <h6>{{ 'blog.popular.header' | t }}</h6>
+            <ul class="e-top-posts">
+                {% render 'blog-snippet-post-popular' with blog_handle: 'skin', limit: 1 %}
+                {% render 'blog-snippet-post-popular' with blog_handle: 'skincare', limit: 1 %}
+                {% render 'blog-snippet-post-popular' with blog_handle: 'light-therapy', limit: 1 %}
+                {% render 'blog-snippet-post-popular' with blog_handle: 'skin', limit: 1 %}
+                {% render 'blog-snippet-post-popular' with blog_handle: 'skincare', limit: 1, offset:1 %}
+                {% render 'blog-snippet-post-popular' with blog_handle: 'skincare', limit: 1, offset:2 %}
+                {% render 'blog-snippet-post-popular' with blog_handle: 'light-therapy', limit: 1, offset:1 %}
+                {% render 'blog-snippet-post-popular' with blog_handle: 'light-therapy', limit: 1, offset:2 %}
+                {% render 'blog-snippet-post-popular' with blog_handle: 'skin', limit: 1, offset:2 %}
+                {% render 'blog-snippet-post-popular' with blog_handle: 'skin', limit: 1, offset:3 %}
+            </ul>
+        </div>
     </div>
 </section>

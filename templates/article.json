@@ -9,12 +9,24 @@
  */
 {
   "sections": {
+    "n_breadcrumb": {
+      "type": "n_breadcrumb",
+      "settings": {
+        "use_own_file": true
+      }
+    },
     "main": {
       "type": "article",
+      "settings": {}
+    },
+    "n_blog-related-posts": {
+      "type": "n_blog-related-posts",
       "settings": {}
     }
   },
   "order": [
-    "main"
+    "n_breadcrumb",
+    "main",
+    "n_blog-related-posts"
   ]
 }

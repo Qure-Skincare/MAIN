@@ -2,18 +2,10 @@
 Renders an article subscription snippetspnippet 
 {% enddoc %}
 
-<div class="subscribe_qure">
-    <div class="row custom__grid align-items-center" style="--column-gap:40px; --column-gap-mobile:24px;">
-        <div class="col-sm-auto custom__block">
-            <p class="fs-20 text-md-start text-center">{{ 'article.snippets.subscription.header' | t }}</p>
-        </div>
-        <div class="col custom__block">
-            <form action="">
-                <div class="sub_form">
-                    <input type="email" id="subscribe_qure" placeholder="Your Email">
-                    <button><img src="{{ 'article.snippets.subscription.button_image' | t }}" alt="{{ 'article.snippets.subscription.button_image.alt' | t | escape }}"></button>
-                </div>
-            </form>
-        </div>
-    </div>
+<div class="c-subscribe-form">
+    <p>{{ 'article.snippets.subscription.header' | t }}</p>
+    <form>
+        <input type="email" placeholder="Your Email" />
+        <button><i class="e-icon e-icon-arrow"></i></button>
+    </form>
 </div>

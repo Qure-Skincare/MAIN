@@ -730,7 +730,8 @@
     "choose": {
       "header": "Choose your topic",
       "read_time": "6 min read",
-      "read_more": "Read More"
+      "read_more": "Read More",
+      "articles": "Articles"
     },
     "popular": {
       "header": "Most Popular Posts"
