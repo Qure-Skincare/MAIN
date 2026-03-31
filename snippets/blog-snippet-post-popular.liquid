@@ -1,17 +1,95 @@
-{% doc %}
-Renders a blog-popular posts snippet 
-{% enddoc %}
-
-{% for article in blogs[blog_handle].articles limit:limit offset: offset %}
-<div class="col-12">
-    <a href="{{ article.url }}" class="popular_post d-flex gap-3">
-        <div class="popular_post_img">
-            <img src="{{ article.image | img_url }}" alt="{{ article.image.alt | escape }}" class="img-fluid">
-        </div>
-        <div class="popular_post_content">
-            <p class="pop_post_tag">#{{ blogs[blog_handle].title }}</p>
-            <p class="pop_post_title">{{ article.title | truncatewords: 8 }}</p>
-        </div>
-    </a>
+<div class="blog-section__top-list">
+    <h6>Most Popular Posts</h6>
+    <ul class="e-top-posts">
+        {% for article in blogs.skin.articles limit: 1 %}
+            <li>
+                <a href="{{ article.url }}">
+                    <img src="{{ article.image | image_url: width: 130, height: 130, crop: 'center' }}" alt="{{ article.image.alt | default: article.title | escape }}" width="130" height="130" />
+                    <span>#skin</span>
+                    <p>{{ article.title | truncate: 40 }}</p>
+                </a>
+            </li>
+        {% endfor %}
+        {% for article in blogs.skincare.articles limit: 1 %}
+            <li>
+                <a href="{{ article.url }}">
+                    <img src="{{ article.image | image_url: width: 130, height: 130, crop: 'center' }}" alt="{{ article.image.alt | default: article.title | escape }}" width="130" height="130" />
+                    <span>#skincare</span>
+                    <p>{{ article.title | truncate: 40 }}</p>
+                </a>
+            </li>
+        {% endfor %}
+        {% for article in blogs['light-therapy'].articles limit: 1 %}
+            <li>
+                <a href="{{ article.url }}">
+                    <img src="{{ article.image | image_url: width: 130, height: 130, crop: 'center' }}" alt="{{ article.image.alt | default: article.title | escape }}" width="130" height="130" />
+                    <span>#LEDlighttherapy</span>
+                    <p>{{ article.title | truncate: 40 }}</p>
+                </a>
+            </li>
+        {% endfor %}
+        {% for article in blogs.skin.articles limit: 1 offset: 1 %}
+            <li>
+                <a href="{{ article.url }}">
+                    <img src="{{ article.image | image_url: width: 130, height: 130, crop: 'center' }}" alt="{{ article.image.alt | default: article.title | escape }}" width="130" height="130" />
+                    <span>#skin</span>
+                    <p>{{ article.title | truncate: 40 }}</p>
+                </a>
+            </li>
+        {% endfor %}
+        {% for article in blogs.skincare.articles limit: 1 offset: 1 %}
+            <li>
+                <a href="{{ article.url }}">
+                    <img src="{{ article.image | image_url: width: 130, height: 130, crop: 'center' }}" alt="{{ article.image.alt | default: article.title | escape }}" width="130" height="130" />
+                    <span>#skincare</span>
+                    <p>{{ article.title | truncate: 40 }}</p>
+                </a>
+            </li>
+        {% endfor %}
+        {% for article in blogs.skincare.articles limit: 1 offset: 2 %}
+            <li>
+                <a href="{{ article.url }}">
+                    <img src="{{ article.image | image_url: width: 130, height: 130, crop: 'center' }}" alt="{{ article.image.alt | default: article.title | escape }}" width="130" height="130" />
+                    <span>#skincare</span>
+                    <p>{{ article.title | truncate: 40 }}</p>
+                </a>
+            </li>
+        {% endfor %}
+        {% for article in blogs['light-therapy'].articles limit: 1 offset: 1 %}
+            <li>
+                <a href="{{ article.url }}">
+                    <img src="{{ article.image | image_url: width: 130, height: 130, crop: 'center' }}" alt="{{ article.image.alt | default: article.title | escape }}" width="130" height="130" />
+                    <span>#LEDlighttherapy</span>
+                    <p>{{ article.title | truncate: 40 }}</p>
+                </a>
+            </li>
+        {% endfor %}
+        {% for article in blogs['light-therapy'].articles limit: 1 offset: 2 %}
+            <li>
+                <a href="{{ article.url }}">
+                    <img src="{{ article.image | image_url: width: 130, height: 130, crop: 'center' }}" alt="{{ article.image.alt | default: article.title | escape }}" width="130" height="130" />
+                    <span>#LEDlighttherapy</span>
+                    <p>{{ article.title | truncate: 40 }}</p>
+                </a>
+            </li>
+        {% endfor %}
+        {% for article in blogs.skin.articles limit: 1 offset: 2 %}
+            <li>
+                <a href="{{ article.url }}">
+                    <img src="{{ article.image | image_url: width: 130, height: 130, crop: 'center' }}" alt="{{ article.image.alt | default: article.title | escape }}" width="130" height="130" />
+                    <span>#skin</span>
+                    <p>{{ article.title | truncate: 40 }}</p>
+                </a>
+            </li>
+        {% endfor %}
+        {% for article in blogs.skin.articles limit: 1 offset: 3 %}
+            <li>
+                <a href="{{ article.url }}">
+                    <img src="{{ article.image | image_url: width: 130, height: 130, crop: 'center' }}" alt="{{ article.image.alt | default: article.title | escape }}" width="130" height="130" />
+                    <span>#skin</span>
+                    <p>{{ article.title | truncate: 40 }}</p>
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
 </div>
-{% endfor %}

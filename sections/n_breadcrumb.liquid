@@ -1,14 +1,28 @@
 <!-- BREADCRUMB -->
-{% if section.settings.use_own_file %}
-    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/breadcrumb/breadcrumb.css" />
+{% if collection or blog %}
+    {% if section.settings.use_own_file %}
+        <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/breadcrumb/breadcrumb.css" />
+    {% endif %}
+    <section class="breadcrumb">
+        <div class="container">
+            {% if collection %}
+                <a href="{{ shop.url }}">{{ 'breadcrumb.home' | t }} </a>
+                <i class="e-icon e-icon-chevron"></i>
+                <strong>{{ collection.title }}</strong>
+            {% elsif blog %}
+                <a href="/blogs/all">{{ 'blog.settings.blog_text' | t }} </a>
+                <i class="e-icon e-icon-chevron"></i>
+                {% if article %}
+                    <a href="{{ blog.url }}">{{ blog.title }} </a>
+                    <i class="e-icon e-icon-chevron"></i>
+                    <strong>{{ article.title }}</strong>
+                {% else %}
+                    <strong>{{ blog.title }}</strong>
+                {% endif %}
+            {% endif %}
+        </div>s
+    </section>
 {% endif %}
-<section class="breadcrumb">
-    <div class="container">
-        <a href="{{ shop.url }}">{{ 'breadcrumb.home' | t }}</a>
-        <i class="e-icon e-icon-chevron"></i>
-        <strong>{{ collection.title }}</strong>
-    </div>
-</section>
 <!-- BREADCRUMB END -->
 
 {% schema %}

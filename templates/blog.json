@@ -9,12 +9,19 @@
  */
 {
   "sections": {
+    "breadcrumb": {
+      "type": "n_breadcrumb",
+      "settings": {
+        "use_own_file": true
+      }
+    },
     "main": {
       "type": "blog",
       "settings": {}
     }
   },
   "order": [
+    "breadcrumb",
     "main"
   ]
 }
