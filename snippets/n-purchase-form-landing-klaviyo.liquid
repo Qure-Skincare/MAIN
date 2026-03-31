@@ -1,0 +1,9 @@
+{% if section.settings.klaviyo_form_name != blank %}
+    <button id="back-in-stock-landing" class="btn btn--sm btn--secondary" type="button" onclick="purchase_form_landing_notifyAvailable.showModal()">{{ 'purchase-form.settings.notify-me-when-available' | t }}</button>
+    <dialog class="c-dialog c-dialog--notify-available" id="purchase_form_landing_notifyAvailable">
+        <div class="c-dialog__content">
+            <div class="klaviyo-form-{{ section.settings.klaviyo_form_name }}"></div>
+        </div>
+    </dialog>
+    <script src="https://qureskincaredns.com/assets/js-new/dialog.js" defer></script>
+{% endif %}

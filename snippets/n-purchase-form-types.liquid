@@ -1,0 +1,18 @@
+{% doc %}
+  Renders a product types snippet for purchase form section.
+{% enddoc %}
+
+
+<div class="treatment__step"{% if section.settings.hide_product_types == true %} style="display:none"{% endif %}>
+    <div class="c-options-selector">
+        <p class="c-options-selector__title">{{ 'purchase-form.settings.select-type' | t }}</p>
+        <ul class="c-options-selector__list">
+            {% render 'n-purchase-form-types-item' array: __idsArray1 %}
+            {% render 'n-purchase-form-types-item' array: __idsArray2 %}
+            {% render 'n-purchase-form-types-item' array: __idsArray3 %}
+        </ul>
+    </div>
+    {% render 'n-purchase-form-accordion-item' array: __idsArray1 %}
+    {% render 'n-purchase-form-accordion-item' array: __idsArray2 %}
+    {% render 'n-purchase-form-accordion-item' array: __idsArray3 %}
+</div>

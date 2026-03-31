@@ -26,6 +26,7 @@
   {% capture button-label %}{{ default_button_label }}{% endcapture %}
 {% endif %}
 
+
 {% if product_available == false %}
   {% assign soldout = true %}
 {% endif %}
@@ -38,6 +39,8 @@
     {% assign soldout = true %}
   {% endif %}
 
+
+
   {% if block == blank %}
     {% for _block in section.blocks %}
         {% if _block.type == 'button' %}
@@ -46,6 +49,8 @@
     {% endfor %}
   {% endif %}
 {% endif %}
+
+
 
 {% if reserved == true %}
   {% capture button-label %}{{ 'product.settings.reserved-button-label' | t }}{% endcapture %}
