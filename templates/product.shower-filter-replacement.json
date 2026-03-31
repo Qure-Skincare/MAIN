@@ -97,7 +97,7 @@
       }
     },
     "purchase-form-landing": {
-      "type": "purchase-form-landing",
+      "type": "n-purchase-form-landing",
       "blocks": {
         "subscription_6xp1uL": {
           "type": "subscription",
@@ -863,7 +863,7 @@
       }
     },
     "sticky_cta_6UGJ8F": {
-      "type": "sticky-button-variants",
+      "type": "n-sticky-button-variants",
       "blocks": {
         "variant_43xxGi": {
           "type": "variant",
