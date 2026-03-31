@@ -943,7 +943,7 @@
       }
     },
     "sticky_cta_ddPFXx": {
-      "type": "sticky-button-variants",
+      "type": "n-sticky-button-variants",
       "blocks": {
         "variant_43xxGi": {
           "type": "variant",
