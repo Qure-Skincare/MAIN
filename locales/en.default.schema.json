@@ -279,7 +279,8 @@
         "product-text": "Product text",
         "tag": "Tag",
         "client": "Client",
-        "center": "Center"
+        "center": "Center",
+        "stats": "Stats"
     },
     "blocks": {
         "block-card": {
@@ -324,6 +325,9 @@
         },
         "n_pills-navigation": {
             "name": "Pills navigation"
+        },
+        "n_base-form": {
+            "name": "Base form"
         },
         "n_base-section": {
             "name": "Base section",
