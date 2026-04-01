@@ -109,7 +109,7 @@
 
                                     {% if product_discount != blank %}
                                         <div class="c-supply-selector__save">
-                                            <div class="e-pill-save">{{ product_discount }}% {{ 'purchase-form.settings.off' | t }}</div>
+                                            <div class="e-pill-save"><span class="igSavePercent" data-variant-id="{{ product_variant_id }}">{{ product_discount }}</span>% {{ 'purchase-form.settings.off' | t }}</div>
                                         </div>
                                     {% endif %}
                                 </div>
