@@ -278,7 +278,8 @@
         "single": "Single",
         "product-text": "Product text",
         "tag": "Tag",
-        "client": "Client"
+        "client": "Client",
+        "center": "Center"
     },
     "blocks": {
         "block-card": {
@@ -862,8 +863,8 @@
         "money-back-guarantee": {
             "name": "Money back guarantee"
         },
-        "affiliate-page-scrolling-banner": {
-            "name": "Scrolling banner",
+        "n_affiliate-content-creator": {
+            "name": "Content creator",
             "settings": {
                 "creator-button-label": "Creator button label",
                 "creator-button-url": "Creator button URL",
@@ -871,13 +872,27 @@
                 "influencer-button-url": "Influencer button URL"
             }
         },
-        "affiliate-page-step-by-step": {
+        "n_affiliate-page-step-by-step": {
             "name": "Step by step"
         },
-        "affiliate-page-resons-to-join": {
-            "name": "Reasons to join"
+        "n_affiliate-page-resons-to-join": {
+            "name": "Reasons to join",
+            "blocks": {
+                "text_with_image": {
+                    "settings": {
+                        "select-icon": {
+                            "earn-money": "Earn Money",
+                            "access-creatives": "Access to Creatives",
+                            "exclusive-perks": "Exclusive Perks",
+                            "social-collabs": "Social Collabs",
+                            "special-discounts": "Special Discounts",
+                            "ambassador-manager": "Dedicated Ambassador Manager"
+                        }
+                    }
+                }
+            }
         },
-        "affiliate-page-apply-form": {
+        "n_affiliate-page-apply-form": {
             "name": "Apply form"
         },
         "beauty-benefits": {

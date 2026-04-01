@@ -1,43 +1,65 @@
-<iframe id="affiliate-sign-up-form" style="border: 0; width: 100%; height: 100vh;" src="https://api.socialsnowball.io/register-form/12963/92dcd279-8f4d-4230-a1b8-2933b3ac0833"></iframe><script>!async function(){let e=document.querySelector("#affiliate-sign-up-form");window.addEventListener("message",t=>{t.origin===new URL(e.getAttribute("src")).origin&&(e.style.height=t.data.height)})}();</script>
-
-{% comment %} 
-    <form class="row custom__grid popupForm" style="--column-gap:12px; --column-gap-mobile:12px;">
-        <div class="col-md-4 custom__block">
-            <input type="text" class="form-control" placeholder="First Name">
-        </div>
-        <div class="col-md-4 custom__block">
-            <input type="text" class="form-control" placeholder="Last Name">
-        </div>
-        <div class="col-md-4 custom__block">
-            <input type="email" class="form-control" placeholder="Email address">
-        </div>
-        <div class="col-md-6 custom__block">
-            <input type="text" class="form-control" placeholder="Main IG/TT/YT (provide the link)*">
-        </div>
-        <div class="col-md-6 custom__block">
-            <input type="text" class="form-control" placeholder="Secondary IG/TT/YT (provide the link)">
-        </div>
-        <div class="col-md-12 custom__block">
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Have you tried our products? 
-            If so, which one is your favorite and why?*"></textarea>
-        </div>
-        <div class="col-md-12 custom__block">
-            <textarea class="form-control" id="exampleFormControlTextarea2" rows="3" placeholder="How did you find out about Qure Affiliate 
-            Program?"></textarea>
-        </div>
-        <div class="col-md-12 custom__block py-20">
-            <div class="form-check p-0 d-flex  align-items-md-center gap-3">
-                <label class="form-check-label fs-16">By creating account you agree to our <a
-                        href="page.affiliate-terms-and-conditions.html">Terms & Conditions.</a></label>
-            </div>
-        </div>
-        <div class="col-md-12 custom__block">
-            <div class="d-inline-block text-center w-mob-100">
-                <input type="submit"
-                    class="btn btn--primary px-50 d-block d-md-inline-block text-center contact-submit"
-                    value="Create Account">
-                <a href="" class="d-block mt-12">I already have an account</a>
-            </div>
-        </div>
-    </form> 
-{% endcomment %}
+{% liquid
+  assign ss_iframe_src = section.settings.affiliate_signup_iframe_url | strip
+  if ss_iframe_src == blank
+    assign ss_iframe_src = 'https://api.socialsnowball.io/register-form/12963/92dcd279-8f4d-4230-a1b8-2933b3ac0833'
+  endif
+%}
+<div class="apply-to-join__ss-embed" data-ss-affiliate-embed>
+  <div class="apply-to-join__ss-iframe-holder">
+    <iframe
+      id="affiliate-sign-up-form"
+      title="{{ 'sections.n_affiliate-page-apply-form.settings.create-account' | t | escape }} — Social Snowball"
+      src="{{ ss_iframe_src | escape }}"
+      loading="lazy"
+    ></iframe>
+  </div>
+</div>
+<style>
+  .apply-to-join__ss-embed {
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+  }
+  .apply-to-join__ss-iframe-holder {
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    overflow: hidden;
+    width: 100%;
+    max-height: min(90vh, 960px);
+  }
+  .apply-to-join__ss-iframe-holder iframe {
+    border: 0;
+    width: 100%;
+    display: block;
+    height: min(75vh, 820px);
+    max-height: inherit;
+  }
+</style>
+<script>
+  (function () {
+    var iframe = document.getElementById('affiliate-sign-up-form');
+    if (!iframe) return;
+    var holder = iframe.closest('.apply-to-join__ss-iframe-holder');
+    var src = iframe.getAttribute('src');
+    if (!src) return;
+    var expectedOrigin;
+    try {
+      expectedOrigin = new URL(src, window.location.href).origin;
+    } catch (err) {
+      return;
+    }
+    function capHeight(px) {
+      var softCap = Math.min(window.innerHeight * 0.9, 960);
+      return Math.min(Math.max(px, 280), softCap);
+    }
+    window.addEventListener('message', function (ev) {
+      if (ev.origin !== expectedOrigin) return;
+      var data = ev.data;
+      if (!data || typeof data !== 'object' || typeof data.height !== 'number') return;
+      var h = capHeight(data.height);
+      iframe.style.height = h + 'px';
+      if (holder) holder.style.maxHeight = h + 'px';
+    });
+  })();
+</script>
