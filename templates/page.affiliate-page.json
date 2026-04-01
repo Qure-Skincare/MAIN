@@ -9,67 +9,113 @@
  */
 {
   "sections": {
-    "affiliate_page_scrolling_banner_FR7Ryw": {
-      "type": "affiliate-page-scrolling-banner",
-      "name": "t:sections.affiliate-page-scrolling-banner.name",
+    "n_affiliate_page_scrolling_banner_FR7Ryw": {
+      "type": "n_affiliate-content-creator",
+      "blocks": {
+        "video_Hqk7G4": {
+          "type": "video",
+          "settings": {
+            "video_url_1": "hh6opekser",
+            "video_url_2": "zs3ddb0qly",
+            "video_url_3": "0yzue0kewq"
+          }
+        },
+        "video_rJd4p6": {
+          "type": "video",
+          "settings": {
+            "video_url_1": "trdbfz6uid",
+            "video_url_2": "4cq20l8zpw",
+            "video_url_3": "0e33y0v0ek"
+          }
+        },
+        "video_mfT7Vn": {
+          "type": "video",
+          "settings": {
+            "video_url_1": "d9qtjnq5y2",
+            "video_url_2": "ruvuftcy1z",
+            "video_url_3": "1c3i00qlvo"
+          }
+        },
+        "video_3d4mDJ": {
+          "type": "video",
+          "settings": {
+            "video_url_1": "vqqgjovm3v",
+            "video_url_2": "7wu0u1d3gk",
+            "video_url_3": "ivb0vcg2v8"
+          }
+        },
+        "video_7j5JZL": {
+          "type": "video",
+          "settings": {
+            "video_url_1": "4tx5o3wtrv",
+            "video_url_2": "vwtoin6sax",
+            "video_url_3": ""
+          }
+        }
+      },
+      "block_order": [
+        "video_Hqk7G4",
+        "video_rJd4p6",
+        "video_mfT7Vn",
+        "video_3d4mDJ",
+        "video_7j5JZL"
+      ],
+      "name": "t:sections.n_affiliate-content-creator.name",
       "settings": {
-        "heading": "Are you a Content Creator?",
+        "use_own_file": true,
+        "heading": "<h1>Are you a Content Creator?</h1>",
         "text": "<p>Qure is proud to support creators on their journey to sharing innovative, science-backed skincare solutions. Because everyone deserves to feel beautiful in their skin.</p><p>Join the numerous faces that help shape the future of skincare.</p><p>I'm a:</p>",
         "creator_button_label": "",
-        "creator_button_url": "#",
         "influencer_button_label": "Influencer/UGC Creator",
         "influencer_button_url": "#how-it-works",
-        "popup_heading": "",
-        "popup_text": ""
+        "popup_text": "Thank you for your interest in creating UGC content for Qure Skincare.Please contact ugc@qureskincare.com with your portfolio and we will be in touch if we have any collaboration opportunities available."
       }
     },
-    "affiliate_page_step_by_step_Hd8bTP": {
-      "type": "affiliate-page-step-by-step",
+    "n_affiliate_page_step_by_step_Hd8bTP": {
+      "type": "n_affiliate-page-step-by-step",
       "blocks": {
-        "list_Wj4Ghw": {
-          "type": "list",
+        "image_with_text_Wj4Ghw": {
+          "type": "image_with_text",
           "settings": {
-            "heading": "Apply",
-            "text": "If we're the perfect match, we'll send you an email packed with all the deets on how to make the most out of the Qure Creator Program.",
+            "text": "<h6>Apply</h6><p>If we're the perfect match, we'll send you an email packed with all the deets on how to make the most out of the Qure Creator Program.</p>",
             "image": "shopify://shop_images/w-1.webp"
           }
         },
-        "list_qzNCrg": {
-          "type": "list",
+        "image_with_text_qzNCrg": {
+          "type": "image_with_text",
           "settings": {
-            "heading": "Claim your gift",
-            "text": "Inside our partner app, Social Snowball, you can snag your first Qure product and be one step closer to the glowiest skin.",
+            "text": "<h6>Claim your gift</h6><p>Inside our partner app, Social Snowball, you can snag your first Qure product and be one step closer to the glowiest skin.</p>",
             "image": "shopify://shop_images/w-2.webp"
           }
         },
-        "list_QChDqE": {
-          "type": "list",
+        "image_with_text_QChDqE": {
+          "type": "image_with_text",
           "settings": {
-            "heading": "Share your content",
-            "text": "Time to share the secret to that radiant glow! Create your Qure review and share it with your audience on social media.",
+            "text": "<h6>Share your content</h6><p>Time to share the secret to that radiant glow! Create your Qure review and share it with your audience on social media.</p>",
             "image": "shopify://shop_images/w-3.webp"
           }
         }
       },
       "block_order": [
-        "list_Wj4Ghw",
-        "list_qzNCrg",
-        "list_QChDqE"
+        "image_with_text_Wj4Ghw",
+        "image_with_text_qzNCrg",
+        "image_with_text_QChDqE"
       ],
-      "name": "t:sections.affiliate-page-step-by-step.name",
+      "name": "t:sections.n_affiliate-page-step-by-step.name",
       "settings": {
-        "heading": "How does it work?"
+        "use_own_file": true,
+        "text": "<h2>How does it work?</h2>"
       }
     },
-    "affiliate_page_resons_to_join_xzCNLC": {
-      "type": "affiliate-page-resons-to-join",
+    "n_affiliate_page_resons_to_join_xzCNLC": {
+      "type": "n_affiliate-page-resons-to-join",
       "blocks": {
         "text_with_image_kxFpWh": {
           "type": "text_with_image",
           "settings": {
             "heading": "Earn Money",
             "text": "A competitive % commission per sale",
-            "image": "shopify://shop_images/shop-1.webp"
+            "icon": "earn-money"
           }
         },
         "text_with_image_PweVyV": {
@@ -77,7 +123,7 @@
           "settings": {
             "heading": "Access to Creatives",
             "text": "Shared creatives and graphics so you are set up for success",
-            "image": "shopify://shop_images/shop-2.webp"
+            "icon": "access-creatives"
           }
         },
         "text_with_image_hLdbir": {
@@ -85,7 +131,7 @@
           "settings": {
             "heading": "Exclusive Perks",
             "text": "Receive free products, bonuses, and first access to new products, promotions and VIP campaigns",
-            "image": "shopify://shop_images/shop-3.webp"
+            "icon": "exclusive-perks"
           }
         },
         "text_with_image_QhinG4": {
@@ -93,7 +139,7 @@
           "settings": {
             "heading": "Social Collabs",
             "text": "Opportunity to be featured on Qure Skincare social media channels and boost your exposure",
-            "image": "shopify://shop_images/shop-4.webp"
+            "icon": "social-collabs"
           }
         },
         "text_with_image_AN97WW": {
@@ -101,7 +147,7 @@
           "settings": {
             "heading": "Special Discounts",
             "text": "Exclusive discounts & offers to share with your friends, family, and followers",
-            "image": "shopify://shop_images/shop-5.webp"
+            "icon": "special-discounts"
           }
         },
         "text_with_image_fVr6mg": {
@@ -109,7 +155,7 @@
           "settings": {
             "heading": "Dedicated Ambassador Manager",
             "text": "To help you understand how to grow your following, get the most out of the program and progress at an individual level",
-            "image": "shopify://shop_images/shop-6.webp"
+            "icon": "ambassador-manager"
           }
         }
       },
@@ -121,25 +167,27 @@
         "text_with_image_AN97WW",
         "text_with_image_fVr6mg"
       ],
-      "name": "t:sections.affiliate-page-resons-to-join.name",
+      "name": "t:sections.n_affiliate-page-resons-to-join.name",
       "settings": {
-        "heading": "Why should you join?"
+        "use_own_file": true,
+        "text": "<h2>Why should you join?</h2>"
       }
     },
-    "affiliate_page_apply_form_kyLUXn": {
-      "type": "affiliate-page-apply-form",
-      "name": "t:sections.affiliate-page-apply-form.name",
+    "n_affiliate_page_apply_form_kyLUXn": {
+      "type": "n_affiliate-page-apply-form",
+      "name": "t:sections.n_affiliate-page-apply-form.name",
       "settings": {
-        "heading": "How Apply to Join the Qure Creator Program",
-        "popup_heading": "Thank you for your interest in creating UGC content for Qure Skincare.",
-        "popup_text": "Please contact ugc@qureskincare.com with your portfolio and we will be in touch if we have any collaboration opportunities available."
+        "use_own_file": true,
+        "heading": "<h2>How Apply to Join the Qure Creator Program</h2>",
+        "popup_text": "Please contact ugc@qureskincare.com with your portfolio and we will be in touch if we have any collaboration opportunities available.",
+        "affiliate_signup_iframe_url": "https://api.socialsnowball.io/register-form/12963/92dcd279-8f4d-4230-a1b8-2933b3ac0833"
       }
     }
   },
   "order": [
-    "affiliate_page_scrolling_banner_FR7Ryw",
-    "affiliate_page_step_by_step_Hd8bTP",
-    "affiliate_page_resons_to_join_xzCNLC",
-    "affiliate_page_apply_form_kyLUXn"
+    "n_affiliate_page_scrolling_banner_FR7Ryw",
+    "n_affiliate_page_step_by_step_Hd8bTP",
+    "n_affiliate_page_resons_to_join_xzCNLC",
+    "n_affiliate_page_apply_form_kyLUXn"
   ]
 }

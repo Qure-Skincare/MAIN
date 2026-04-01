@@ -1,0 +1,147 @@
+{% doc %}
+  Renders a content creator section for affiliate page
+{% enddoc %}
+
+<!-- CONTENT CREATOR -->
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/content-creator/content-creator.css" />
+{% endif %}
+<section class="content-creator">
+    <div class="container">
+        <article class="content-creator__text">
+            {{ section.settings.heading }}
+            {% if section.settings.text != blank %}
+                <div>
+                    {{ section.settings.text }}
+                </div>
+            {% endif %}
+            <ul>
+                {% if section.settings.creator_button_label != blank %}
+                    <li><button class="btn btn--primary" type="button" onclick="ugcCreator.showModal()">{{ section.settings.creator_button_label }}</button></li>
+                {% endif %}
+                {% if section.settings.influencer_button_label != blank and section.settings.influencer_button_url != blank %}
+                    <li><a class="btn btn--primary" href="{{ section.settings.influencer_button_url }}">{{ section.settings.influencer_button_label }}</a></li>
+                {% endif %}
+            </ul>
+            {% if section.settings.popup_text != blank %}
+                <dialog class="c-dialog" id="ugcCreator">
+                    <div class="c-dialog__content">
+                        {{ section.settings.popup_text }}
+                    </div>
+                    <button type="button" class="c-dialog__close" onclick="ugcCreator.close()">
+                        <i class="e-icon e-icon-cross"></i>
+                    </button>
+                </dialog>
+            {% endif %}
+        </article>
+        <ul class="content-creator__videos">
+            {% for block in section.blocks %}
+                {% if block.type == 'video' %}
+                    <li>
+                        {% if block.settings.video_url_1 != blank %}
+                            <div class="wistia-embed-video">
+                                <div class="wistia_responsive_padding">
+                                    <div class="wistia_responsive_wrapper">
+                                        <div class="wistia_embed wistia_async_{{ block.settings.video_url_1 }} seo=false videoFoam=true"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endif %}
+                        {% if block.settings.video_url_2 != blank %}
+                            <div class="wistia-embed-video">
+                                <div class="wistia_responsive_padding">
+                                    <div class="wistia_responsive_wrapper">
+                                        <div class="wistia_embed wistia_async_{{ block.settings.video_url_2 }} seo=false videoFoam=true"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endif %}
+                        {% if block.settings.video_url_3 != blank %}
+                            <div class="wistia-embed-video">
+                            <div class="wistia_responsive_padding">
+                                <div class="wistia_responsive_wrapper">
+                                    <div class="wistia_embed wistia_async_{{ block.settings.video_url_3 }} seo=false videoFoam=true"></div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endif %}
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+</section>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        loadScriptOnce("dialog", "https://qureskincaredns.com/assets/js-new/dialog.js");
+        loadScriptOnce("wistia-script", "https://fast.wistia.com/assets/external/E-v1.js");
+    });
+</script>
+<!-- CONTENT CREATOR END -->
+
+{% schema %}
+{
+  "name": "t:sections.n_affiliate-content-creator.name",
+  "settings": [
+   {
+        "type": "checkbox",
+        "id": "use_own_file",
+        "label": "t:common.use-own-file",
+        "default": false
+   },
+   {
+        "type": "richtext",
+        "id": "heading",
+        "label": "t:common.header"
+   },
+   {
+        "type": "richtext",
+        "id": "text",
+        "label": "t:common.text"
+   },
+   {
+        "type": "text",
+        "id": "creator_button_label",
+        "label": "t:sections.n_affiliate-content-creator.settings.creator-button-label"
+   },
+   {
+        "type": "text",
+        "id": "influencer_button_label",
+        "label": "t:sections.n_affiliate-content-creator.settings.influencer-button-label"
+   },
+   {
+        "type": "url",
+        "id": "influencer_button_url",
+        "label": "t:sections.n_affiliate-content-creator.settings.influencer-button-url"
+   },
+   {
+        "type": "text",
+        "id": "popup_text",
+        "label": "t:common.popup-text"
+   }
+  ],
+  "blocks": [
+    {
+        "type": "video",
+        "name": "t:common.video",
+        "settings": [
+            {
+                "type": "text",
+                "id": "video_url_1",
+                "label": "t:common.video-url"
+            },
+            {
+                "type": "text",
+                "id": "video_url_2",
+                "label": "t:common.video-url"
+            },
+            {
+                "type": "text",
+                "id": "video_url_3",
+                "label": "t:common.video-url"
+            }
+        ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,103 @@
+{% doc %}
+  Renders a how to use section for affiliate page.
+{% enddoc %}
+
+<!-- HOW TO USE -->
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/how-to-use/how-to-use.css" />
+{% endif %}
+<section class="how-to-use how-to-use--center" id="easy_steps">
+    <div class="container">
+        <article class="how-to-use__content">
+            {{ section.settings.text }}
+            <div
+                class="c-swiper"
+                data-swiper='{
+                        "slidesPerView": 1.1,
+                        "spaceBetween": 16,
+                        "loop": false,
+                        "pagination": {
+                            "el": ".c-swiper-pagination",
+                            "type": "custom"
+                        },
+                        "navigation": {
+                            "prevEl": ".c-swiper-button-prev",
+                            "nextEl": ".c-swiper-button-next"
+                        },
+                        "breakpoints": {
+                            "768": {
+                                "slidesPerView": 3,
+                                "spaceBetween": 32
+                            }
+                        }
+                    }'>
+                <div class="swiper-wrapper">
+                    {% for block in section.blocks %}
+                        {% if block.type == 'image_with_text' %}
+                            <div class="swiper-slide">
+                                <picture data-index="{{ forloop.index }}">
+                                    {% if block.settings.image != blank %}
+                                        <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                    {% endif %}
+                                </picture>
+                                {% if block.settings.text != blank %}
+                                    <article>
+                                        {{ block.settings.text }}
+                                    </article>
+                                {% endif %}
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                <div class="c-swiper-nav">
+                    <button class="c-swiper-button-prev"></button>
+                    <div class="c-swiper-pagination"></div>
+                    <button class="c-swiper-button-next"></button>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
+<!-- HOW TO USE END -->
+
+{% schema %}
+{
+    "name": "t:sections.n_affiliate-page-step-by-step.name",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": false
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "t:common.text"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "image_with_text",
+            "name": "t:common.image-with-text",
+            "settings": [
+                {
+                    "type": "richtext",
+                    "id": "text",
+                    "label": "t:common.text"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.n_how-to-use.name"
+        }
+    ]
+}
+{% endschema %}

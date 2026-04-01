@@ -111,6 +111,8 @@
         {% assign show_css = true %}
     {% when 'article' %}
         {% assign show_css = true %}
+    {% when 'page.affiliate-page' %}
+        {% assign show_css = true %}
 {%- endcase -%}
 
 {% if template == 'cart' %}

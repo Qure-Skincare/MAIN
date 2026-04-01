@@ -1,0 +1,105 @@
+{% doc %}
+  Renders a reasons to join section for affiliate page
+{% enddoc %}
+
+<!-- WHY SHOULD JOIN -->
+{% if section.settings.use_own_file %}
+  <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/why-should-join/why-should-join.css" />
+{% endif %}
+<section class="why-should-join">
+  <div class="container">
+    <article>
+      {%- if section.settings.text != blank -%}
+        {{ section.settings.text }}
+      {%- endif -%}
+      <ul>
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'text_with_image' -%}
+            <li>
+              <div>
+                {%- if block.settings.icon != blank -%}
+                  <i class="e-icon e-icon-{{ block.settings.icon }}"></i>
+                {%- endif -%}
+              </div>
+              {%- if block.settings.heading != blank -%}
+                <strong>{{ block.settings.heading }}</strong>
+              {%- endif -%}
+              {%- if block.settings.text != blank -%}
+                <small>{{ block.settings.text }}</small>
+              {%- endif -%}
+            </li>
+          {%- endif -%}
+        {%- endfor -%}
+      </ul>
+    </article>
+  </div>
+</section>
+<!-- WHY SHOULD JOIN END -->
+
+{% schema %}
+{
+  "name": "t:sections.n_affiliate-page-resons-to-join.name",
+  "settings": [
+    {
+        "type": "checkbox",
+        "id": "use_own_file",
+        "label": "t:common.use-own-file",
+        "default": false
+    },
+    {
+        "type": "richtext",
+        "id": "text",
+        "label": "t:common.text"
+    }
+  ],
+  "blocks": [
+    {
+        "type": "text_with_image",
+        "name": "t:common.text-with-image",
+        "settings": [
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "t:common.header"
+            },
+            {
+                "type": "text",
+                "id": "text",
+                "label": "t:common.text"
+            },
+            {
+                "type": "select",
+                "id": "icon",
+                "label": "t:common.icon",
+                "options": [
+                    {
+                        "value": "earn-money",
+                        "label": "t:sections.n_affiliate-page-resons-to-join.blocks.text_with_image.settings.select-icon.earn-money"
+                    },
+                    {
+                        "value": "access-creatives",
+                        "label": "t:sections.n_affiliate-page-resons-to-join.blocks.text_with_image.settings.select-icon.access-creatives"
+                    },
+                    {
+                        "value": "exclusive-perks",
+                        "label": "t:sections.n_affiliate-page-resons-to-join.blocks.text_with_image.settings.select-icon.exclusive-perks"
+                    },
+                    {
+                        "value": "social-collabs",
+                        "label": "t:sections.n_affiliate-page-resons-to-join.blocks.text_with_image.settings.select-icon.social-collabs"
+                    },
+                    {
+                        "value": "special-discounts",
+                        "label": "t:sections.n_affiliate-page-resons-to-join.blocks.text_with_image.settings.select-icon.special-discounts"
+                    },
+                    {
+                        "value": "ambassador-manager",
+                        "label": "t:sections.n_affiliate-page-resons-to-join.blocks.text_with_image.settings.select-icon.ambassador-manager"
+                    }
+                ]
+            },
+        ]
+    }
+  ]
+}
+{% endschema %}

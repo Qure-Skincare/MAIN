@@ -1,0 +1,53 @@
+{% doc %}
+  Renders an apply form section for affiliate page.
+{% enddoc %}
+
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/apply-to-join/apply-to-join.css" />
+{% endif %}
+<section class="apply-to-join apply-to-join--affiliate-ss">
+  <div class="container apply-to-join--affiliate-ss__inner">
+    {{ section.settings.heading }}
+    {% render 'socialsnowball-form-affiliate-page' %}
+  </div>
+</section>
+<style>
+  .apply-to-join--affiliate-ss {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .apply-to-join--affiliate-ss__inner {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+</style>
+
+{% schema %}
+{
+  "name": "t:sections.n_affiliate-page-apply-form.name",
+  "settings": [
+    {
+        "type": "checkbox",
+        "id": "use_own_file",
+        "label": "t:common.use-own-file",
+        "default": false
+    },
+    {
+        "type": "richtext",
+        "id": "heading",
+        "label": "t:common.header"
+    },
+    {
+        "type": "text",
+        "id": "popup_text",
+        "label": "t:common.popup-text"
+    },
+    {
+        "type": "url",
+        "id": "affiliate_signup_iframe_url",
+        "label": "Social Snowball registration form URL",
+        "info": "Paste the full iframe src from Social Snowball (https://api.socialsnowball.io/register-form/...). Leave empty to use the default Qure embed."
+    }
+  ]
+}
+{% endschema %}
