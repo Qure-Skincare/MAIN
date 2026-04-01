@@ -45,7 +45,7 @@
       "name": "t:sections.banner-with-text.name",
       "settings": {
         "heading": "Our Return Policy",
-        "text": "<p>Here’s the low-down on the terms and conditions that apply to the guarantee. You can read <a href=\"https://querskin-brand.aronwebsolutions.com/page.terms-and-conditions.html\">full T&Cs here</a>.</p><p>[ul class]</p><ul><li>30 days to return OR exchange for a  refund.</li><li>Returns first need to be approved by Qure support. </li><li>Shipping charges are non-refundable.</li><li>A Restocking Fee of $10 will be deducted from the refund.</li></ul>",
+        "text": "<p>Here’s the low-down on the terms and conditions that apply to the guarantee. You can read <a href=\"https://qureskincare.com/pages/return-policy\" title=\"https://qureskincare.com/pages/return-policy\">full T&Cs here</a>.</p><p>[ul class]</p><ul><li>30 days to return OR exchange for a  refund.</li><li>Returns first need to be approved by Qure support. </li><li>Shipping charges are non-refundable.</li><li>A Restocking Fee of $10 will be deducted from the refund.</li></ul>",
         "quote": "",
         "quote-mobile": "",
         "image_position": "left",
