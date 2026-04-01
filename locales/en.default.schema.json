@@ -311,6 +311,19 @@
                     "hero": "Hero banner",
                     "hero-reverse": "Hero reverse"
                 }
+            },
+            "blocks": {
+                "app_store": {
+                    "name": "App store badge"
+                }
+            }
+        },
+        "n_app-features": {
+            "name": "App features",
+            "blocks": {
+                "slide": {
+                    "name": "Slide"
+                }
             }
         },
         "n_hero-banner": {
@@ -358,6 +371,9 @@
                 },
                 "features_list": {
                     "name": "Features list"
+                },
+                "app_store": {
+                    "name": "App store badge"
                 }
             }
         },

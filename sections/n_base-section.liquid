@@ -6,7 +6,7 @@
  {% if section.settings.use_own_file %}
     <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/base-section/base-section.css" />
  {% endif %}
-<section class="base-section{% if section.setiings.modifier_2 != 'none' %} base-section--{{ section.settings.modifier_2 }}{% endif %}{% if section.settings.modifier != 'none' %} base-section--{{ section.settings.modifier }}{% endif %}{% if section.settings.background_color == 'grey' %} base-section--grey{% endif %}">
+<section class="base-section{% if section.settings.modifier_2 != 'none' %} base-section--{{ section.settings.modifier_2 }}{% endif %}{% if section.settings.modifier != 'none' %} base-section--{{ section.settings.modifier }}{% endif %}{% if section.settings.background_color == 'grey' %} base-section--grey{% endif %}">
     <div class="container">
         <article>
                 {{ section.settings.heading }}
@@ -21,6 +21,26 @@
                         <div class="wistia_responsive_wrapper">
                             <div class="wistia_embed wistia_async_{{ section.settings.wistia_url }} seo=false videoFoam=true"></div>
                         </div>
+                    </div>
+                </div>
+            {% endif %}
+
+            {% assign has_app_store = false %}
+            {% for block in section.blocks %}
+                {% if block.type == 'app_store' %}
+                    {% assign has_app_store = true %}
+                {% endif %}
+            {% endfor %}
+            {% if has_app_store %}
+                <div>
+                    <div class="c-app-stores c-app-stores--row">
+                        {% for block in section.blocks %}
+                            {% if block.type == 'app_store' and block.settings.link_url != blank and block.settings.image != blank %}
+                                <a href="{{ block.settings.link_url }}" target="_blank" rel="nofollow">
+                                    <img src="{{- block.settings.image | image_url -}}" alt="{{- block.settings.image.alt | escape -}}" />
+                                </a>
+                            {% endif %}
+                        {% endfor %}
                     </div>
                 </div>
             {% endif %}
@@ -427,6 +447,23 @@
                 "type": "text",
                 "id": "text",
                 "label": "t:common.text"
+            }
+        ]
+    },
+    {
+        "type": "app_store",
+        "name": "t:sections.n_base-section.blocks.app_store.name",
+        "limit": 4,
+        "settings": [
+            {
+                "type": "url",
+                "id": "link_url",
+                "label": "t:common.link-url"
+            },
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "t:common.image"
             }
         ]
     },

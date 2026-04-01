@@ -1,0 +1,118 @@
+{% doc %}
+  App features: screen swiper + caption swiper + nav (static handoff structure).
+{% enddoc %}
+
+{% liquid
+  assign slide_blocks = section.blocks | where: "type", "slide"
+%}
+
+<!-- APP FEATURES -->
+{% if section.settings.use_own_file %}
+  <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/app-features/app-features.css" />
+{% endif %}
+
+<section class="app-features">
+  <div class="container">
+    <div
+      class="c-swiper"
+      data-swiper-thumbs=".c-swiper-texts"
+      data-swiper='{
+        "slidesPerView": 3,
+        "spaceBetween": 0,
+        "centeredSlides": true,
+        "pagination": {
+          "el": ".app-features .c-swiper-pagination",
+          "type": "custom"
+        },
+        "navigation": {
+          "prevEl": ".app-features .c-swiper-button-prev",
+          "nextEl": ".app-features .c-swiper-button-next"
+        }
+      }'>
+      <div class="swiper-wrapper">
+        {% for block in slide_blocks %}
+          <div class="swiper-slide">
+            {% if block.settings.image != blank %}
+              <img src="{{ block.settings.image | image_url: width: 900 }}" alt="{{ block.settings.image.alt | escape }}" />
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div
+      class="c-swiper c-swiper-texts"
+      data-swiper='{
+        "slidesPerView": 1,
+        "spaceBetween": 16,
+        "allowTouchMove": false
+      }'>
+      <div class="swiper-wrapper">
+        {% for block in slide_blocks %}
+          <div class="swiper-slide">
+            {% if block.settings.text != blank %}
+              {{ block.settings.text }}
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="c-swiper-nav">
+      <button class="c-swiper-button-prev"></button>
+      <div class="c-swiper-pagination"></div>
+      <button class="c-swiper-button-next"></button>
+    </div>
+
+  </div>
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    loadScriptOnce("swiper", "https://qureskincaredns.com/assets/js-new/swiper.js");
+  });
+</script>
+<!-- APP FEATURES END -->
+
+{% schema %}
+{
+  "name": "t:sections.n_app-features.name",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "use_own_file",
+      "label": "t:common.use-own-file",
+      "default": false
+    }
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "t:sections.n_app-features.blocks.slide.name",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:common.image"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "t:common.text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.n_app-features.name",
+      "blocks": [
+        { "type": "slide" },
+        { "type": "slide" },
+        { "type": "slide" },
+        { "type": "slide" }
+      ]
+    }
+  ]
+}
+{% endschema %}
