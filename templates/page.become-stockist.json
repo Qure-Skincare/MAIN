@@ -9,26 +9,22 @@
  */
 {
   "sections": {
-    "page_banner_QDmRGR": {
-      "type": "page-banner",
-      "custom_css": [
-        "h2.ctm-width.ctm-color.d-none.d-md-block {font-size: var(--font-h2, 46px); list-style: var(--font-h2-lh, 52px); margin-top: 52px;}"
-      ],
-      "name": "t:sections.page-banner.name",
+    "n_across_image_banner_QDmRGR": {
+      "type": "n_across-image-banner",
+      "name": "t:sections.n_across-image-banner.name",
       "settings": {
-        "heading": "Will you be our next professional partner?",
+        "use_own_file": true,
+        "modifier": "hero",
+        "heading": "<h1>Will you be our next professional partner?</h1>",
         "text": "",
-        "sub_text": "",
-        "button": "Submit Stockist Enquiry",
-        "button_url": "#contact_form",
-        "button_mobile": "Submit Stockist Enquiry",
-        "button_url_mobile": "#contact_form",
         "image": "shopify://shop_images/stockist_banner.webp",
-        "image_mobile": "shopify://shop_images/stockist_banner_mob.webp"
+        "image_mobile": "shopify://shop_images/stockist_banner_mob.webp",
+        "button_label": "Submit Stockist Enquiry",
+        "button_url": "Shopify://shopify/section/contact_form"
       }
     },
-    "logos_Pxp2ip": {
-      "type": "logos",
+    "n_logos_Pxp2ip": {
+      "type": "n_logos",
       "blocks": {
         "carousel_YLH9Bz": {
           "type": "carousel",
@@ -75,83 +71,46 @@
         "carousel_qGnB6e",
         "carousel_YxRnWf"
       ],
-      "name": "t:sections.logos.name",
-      "settings": {}
-    },
-    "custom_form_text_block_yHhkiP": {
-      "type": "custom-form-text-block",
-      "name": "t:sections.text-block.name",
+      "name": "t:sections.n_logos.name",
       "settings": {
-        "heading": "Qure’s Professional Skincare Revolution",
-        "text": "<p>Using science-backed technology, research, and forward-focused insights, Qure creates visionary solutions, setting the new benchmark in the beauty industry.</p><p>Bringing together world-class experts with product designers and engineers, we disrupt the dermatologist industry and question how we can give power to people to teat their own skin from home with proven DIY therapies for an affordable price.</p><p>Gain maximum advantage of the industry’s consistent growth.</p><p>Join the revolution and <strong>become our professional partner.</strong></p>"
+        "use_own_file": true
       }
     },
-    "stats_grid_dzB9Jy": {
-      "type": "stats-grid",
-      "blocks": {
-        "list_UGKTCk": {
-          "type": "list",
-          "settings": {
-            "heading": "<p><strong>↑</strong> 25.1%</p>",
-            "text": "Growth of home beauty devices"
-          }
-        },
-        "list_AmLVzC": {
-          "type": "list",
-          "settings": {
-            "heading": "<p><strong>↑</strong> 5.1%</p>",
-            "text": "Growth of light therapy market"
-          }
-        },
-        "list_3byHFJ": {
-          "type": "list",
-          "settings": {
-            "heading": "<p><strong>↑</strong> 5.6%</p>",
-            "text": "Growth of blue light therapy market*"
-          }
-        },
-        "list_fejKD6": {
-          "type": "list",
-          "settings": {
-            "heading": "<p><strong>↑</strong> 4.5% </p>",
-            "text": "Growth of red light therapy market**"
-          }
-        },
-        "quote_yBhKhG": {
-          "type": "quote",
-          "settings": {
-            "text": "** Driven by demand of non-invasive skin rejuvenation treatment"
-          }
-        },
-        "quote_WEfjeE": {
-          "type": "quote",
-          "settings": {
-            "text": "* Driven by preference for non-invasive acne treatment"
-          }
-        }
-      },
-      "block_order": [
-        "list_UGKTCk",
-        "list_AmLVzC",
-        "list_3byHFJ",
-        "list_fejKD6",
-        "quote_yBhKhG",
-        "quote_WEfjeE"
-      ],
-      "name": "t:sections.stats-grid.name",
-      "settings": {}
+    "n_text_intro_yHhkiP": {
+      "type": "n_text",
+      "name": "t:sections.n_text.name",
+      "settings": {
+        "use_own_file": true,
+        "modifier": "none",
+        "text": "<h3>Qure’s Professional Skincare Revolution</h3><p>Using science-backed technology, research, and forward-focused insights, Qure creates visionary solutions, setting the new benchmark in the beauty industry.</p><p>Bringing together world-class experts with product designers and engineers, we disrupt the dermatologist industry and question how we can give power to people to teat their own skin from home with proven DIY therapies for an affordable price.</p><p>Gain maximum advantage of the industry’s consistent growth.</p><p>Join the revolution and <em>become our professional partner.</em></p>",
+        "button_label": "",
+        "button_url": ""
+      }
+    },
+    "n_text_stats_dzB9Jy": {
+      "type": "n_text",
+      "name": "t:sections.n_text.name",
+      "settings": {
+        "use_own_file": true,
+        "modifier": "stats",
+        "text": "<ul><li><span>25.1%</span> Growth of home beauty devices</li><li><span>5.1%</span> Growth of light therapy market</li><li><span>5.6%</span> Growth of blue light therapy market*</li><li><span>4.5%</span> Growth of red light therapy market**</li></ul><hr /><div class=\"footnote\"><p>** Driven by demand of non-invasive skin rejuvenation treatment</p><p>* Driven by preference for non-invasive acne treatment</p></div>",
+        "button_label": "",
+        "button_url": ""
+      }
     },
     "custom_form_contact_form_tYwEPQ": {
-      "type": "custom-form-contact-form",
-      "name": "t:sections.custom-form-contact-form.name",
-      "settings": {}
+      "type": "n_base-form",
+      "name": "t:sections.n_base-form.name",
+      "settings": {
+        "use_own_file": true
+      }
     }
   },
   "order": [
-    "page_banner_QDmRGR",
-    "logos_Pxp2ip",
-    "custom_form_text_block_yHhkiP",
-    "stats_grid_dzB9Jy",
+    "n_across_image_banner_QDmRGR",
+    "n_logos_Pxp2ip",
+    "n_text_intro_yHhkiP",
+    "n_text_stats_dzB9Jy",
     "custom_form_contact_form_tYwEPQ"
   ]
 }
