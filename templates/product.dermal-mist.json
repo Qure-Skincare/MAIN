@@ -133,7 +133,7 @@
             "heading": "6 Months",
             "subheading": "(3 bottles)",
             "image": "shopify://shop_images/derm_trio.webp",
-            "soldout": true,
+            "soldout": false,
             "preorder": false,
             "preorder_text": "",
             "preorder_date_soldout": "",
@@ -153,7 +153,7 @@
             "heading": "4 Months",
             "subheading": "(2 bottles)",
             "image": "shopify://shop_images/derm_duo.webp",
-            "soldout": true,
+            "soldout": false,
             "preorder": false,
             "preorder_text": "",
             "preorder_date_soldout": "",
@@ -173,7 +173,7 @@
             "heading": "2 Months",
             "subheading": "(1 bottle)",
             "image": "shopify://shop_images/derm_single.webp",
-            "soldout": true,
+            "soldout": false,
             "preorder": false,
             "preorder_text": "",
             "preorder_date_soldout": "",
@@ -194,7 +194,7 @@
         "form_name": "purchase-form-landing",
         "hide_types": true,
         "type": "box",
-        "klaviyo_form_name": "VFgmnQ"
+        "klaviyo_form_name": ""
       }
     },
     "n_logos_d77Mmj": {
@@ -256,6 +256,7 @@
       "settings": {
         "use_own_file": true,
         "modifier": "reverse",
+        "modifier_2": "none",
         "background_color": "none",
         "heading": "<h2>A mist to refresh skin prone to breakouts, redness and sensitivity</h2>",
         "text": "<p>Powered by hypochlorous acid (HOCl), Dermal Mist helps calm the look and feel of stressed skin and support a fresh, balanced complexion—without irritation.<br/></p><p>Perfect for skin that experiences <em>breakouts, visible redness, or post-treatment sensitivity</em>, this lightweight mist helps soothe the look of skin and protect against everyday environmental stressors.<br/></p><p>It’s fragrance-free, non-drying, and gentle enough to use anytime, anywhere, even over makeup.</p>",
@@ -390,6 +391,7 @@
       "settings": {
         "use_own_file": true,
         "modifier": "reverse",
+        "modifier_2": "none",
         "background_color": "none",
         "heading": "<h2>Powered by Hypochlorus Acid</h2>",
         "text": "<p><em>Hypochlorous Acid (HOCl)</em> is a gentle, skin-compatible ingredient commonly used in cosmetics to help refresh the skin and support a clean, balanced feel.<br/><br/>Combined with botanical extracts, this lightweight mist is designed to help soothe the look of stressed skin and provide a refreshing boost throughout the day.<br/><br/>Ideal for skin that feels sensitive, looks flushed, or needs a quick reset as part of your daily routine.</p>",
