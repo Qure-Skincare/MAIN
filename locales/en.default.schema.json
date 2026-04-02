@@ -310,7 +310,8 @@
                     "none": "None",
                     "holidays": "Holidays",
                     "hero": "Hero banner",
-                    "hero-reverse": "Hero reverse"
+                    "hero-reverse": "Hero reverse",
+                    "sm": "Small banner"
                 }
             },
             "blocks": {
@@ -318,6 +319,22 @@
                     "name": "App store badge"
                 }
             }
+        },
+        "n_our-story-proven-results-slider": {
+            "name": "Our story — proven results slider",
+            "blocks": {
+                "slide": {
+                    "name": "Result slide",
+                    "settings": {
+                        "product-image": "Product image",
+                        "product-title": "Product title",
+                        "product-url": "Product link"
+                    }
+                }
+            }
+        },
+        "n_our-story-trusted-recommended": {
+            "name": "Our story — trusted recommended"
         },
         "n_app-features": {
             "name": "App features",
