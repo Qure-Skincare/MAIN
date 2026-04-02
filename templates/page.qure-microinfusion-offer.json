@@ -62,7 +62,7 @@
         "text": "<h1>Visibly reduce the appearance of wrinkles and dark spots - without injectables.</h1><p><strong>24K gold-plated microneedles</strong> deliver <strong>targeted serums</strong> beyond your skin's barrier where traditional creams can't reach.</p>",
         "image": "shopify://shop_images/micro-infusion-hero_2_d36a18db-6067-459d-ac17-60c0ef0b8edb.webp",
         "image_mobile": "shopify://shop_images/micro-infusion-hero-mob.webp",
-        "button_url": "#purchase-form-types",
+        "button_url": "#purchase-form",
         "button_label": "Start your treatment",
         "sub_text": "<p><strong>Limited Time Offer:</strong> Save Up to 70%</p>",
         "marked_list": "",
@@ -283,7 +283,7 @@
         "heading": "<h2>Qure’s Micro-Infusion goes where your skin cream can’t…</h2>",
         "text": "<p>Its tiny, almost painless, microneedles penetrate beyond the skin’s surface increasing serum absorption and delivering powerful active ingredients exactly where they’re needed!</p>",
         "button_label": "",
-        "button_url": "#purchase-form-types",
+        "button_url": "#purchase-form",
         "wistia_url": "a1pykz2tp0"
       }
     },
@@ -1082,7 +1082,7 @@
         "text": "1,293 purchased in last 48 hours",
         "limited": false,
         "button-label": "Choose Your Supply",
-        "button-url": "#purchase-form-types"
+        "button-url": "#purchase-form"
       }
     },
     "n_guarantee_J98b9K": {
