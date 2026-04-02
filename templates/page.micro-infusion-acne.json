@@ -212,7 +212,8 @@
         "buy_button_GrUCRT": {
           "type": "buy_button",
           "settings": {
-            "button_label": "BUY NOW & SAVE UP TO 70%"
+            "button_label": "BUY NOW & SAVE UP TO 70%",
+            "button_url": "#purchase-form"
           }
         }
       },
@@ -234,7 +235,6 @@
         "text": "<p>[note_grey]“<strong>Even my esthetician is hooked!</strong>And I can now visit beauty clinics less often.”[/note]</p><p>[marked_list]</p><ul><li>Visibly improves the appearance of <strong>acne scars</strong> and smooths texture</li><li>Wake up with <strong>radiant, more even-toned</strong> skin</li><li>Minimal to no downtime, and <strong>virtually painless</strong></li><li>Easy to use <strong>5-minute</strong> treatment</li></ul>",
         "image": "shopify://shop_images/mi_serum-show.webp",
         "button_label": "",
-        "button_url": "#purchase-form",
         "wistia_url": ""
       }
     },
@@ -469,7 +469,8 @@
         "use_own_file": true,
         "modifier": "bg",
         "text": "<h2>5 reasons why everyone is using the Qure Micro-Infusion System</h2>",
-        "button_label": "BUY NOW & SAVE UP TO 70%"
+        "button_label": "BUY NOW & SAVE UP TO 70%",
+        "button_url": "#purchase-form"
       }
     },
     "n_trusted_recommended_Hp9pkA": {
@@ -654,7 +655,8 @@
         "use_own_file": true,
         "background_color": "none",
         "text": "<h2>Results you’ll see with your own eyes</h2>",
-        "button_label": "BUY NOW & SAVE UP TO 70%"
+        "button_label": "BUY NOW & SAVE UP TO 70%",
+        "button_url": "#purchase-form"
       }
     },
     "n_comparison_UGAfRr": {
@@ -908,7 +910,8 @@
         "image": "shopify://shop_images/mi-use-video.webp",
         "image_mobile": "shopify://shop_images/mi-use-video-mob.webp",
         "wistia_url": "ptw4q3aod8",
-        "button_label": "buy now & SAVE UP TO 70%"
+        "button_label": "buy now & SAVE UP TO 70%",
+        "button_url": "#purchase-form"
       }
     },
     "n_science_backed_hdPt9c": {

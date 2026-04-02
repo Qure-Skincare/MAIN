@@ -84,7 +84,7 @@
             </div>
         </div>
         {% if section.settings.button_label != blank %}
-            <button class="btn btn--primary" type="button">{{ section.settings.button_label }}</button>
+            <a href="{{ section.settings.button_url }}" class="btn btn--primary" type="button">{{ section.settings.button_label }}</a>
         {% endif %}
     </div>
 </section>
@@ -129,6 +129,11 @@
                 "type": "text",
                 "id": "button_label",
                 "label": "t:common.button-label"
+            },
+            {
+                "type": "url",
+                "id": "button_url",
+                "label": "t:common.button-url"
             }
     ],
     "blocks": [

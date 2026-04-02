@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
     "n_across_image_banner_QDmRGR": {
       "type": "n_across-image-banner",
@@ -20,7 +20,7 @@
         "image": "shopify://shop_images/stockist_banner.webp",
         "image_mobile": "shopify://shop_images/stockist_banner_mob.webp",
         "button_label": "Submit Stockist Enquiry",
-        "button_url": "Shopify://shopify/section/contact_form"
+        "button_url": "#contact_form"
       }
     },
     "n_logos_Pxp2ip": {
@@ -83,19 +83,60 @@
         "use_own_file": true,
         "modifier": "none",
         "text": "<h3>Qure’s Professional Skincare Revolution</h3><p>Using science-backed technology, research, and forward-focused insights, Qure creates visionary solutions, setting the new benchmark in the beauty industry.</p><p>Bringing together world-class experts with product designers and engineers, we disrupt the dermatologist industry and question how we can give power to people to teat their own skin from home with proven DIY therapies for an affordable price.</p><p>Gain maximum advantage of the industry’s consistent growth.</p><p>Join the revolution and <em>become our professional partner.</em></p>",
-        "button_label": "",
-        "button_url": ""
+        "button_label": ""
       }
     },
     "n_text_stats_dzB9Jy": {
       "type": "n_text",
       "name": "t:sections.n_text.name",
+      "blocks": {
+        "text_YxRnWf": {
+          "type": "text",
+          "settings": {
+            "heading": "25.1%",
+            "text": " Growth of home beauty devices"
+          }
+        },
+        "text_YxRnWt": {
+          "type": "text",
+          "settings": {
+            "heading": "5.1%",
+            "text": " Growth of light therapy market"
+          }
+        },
+        "text_YxRnat": {
+          "type": "text",
+          "settings": {
+            "heading": "5.6%",
+            "text": " Growth of blue light therapy market*"
+          }
+        },
+        "text_YxRnWx": {
+          "type": "text",
+          "settings": {
+            "heading": "4.5%",
+            "text": " Growth of red light therapy market**"
+          }
+        },
+        "popup_YxRnWf": {
+          "type": "popup",
+          "settings": {
+            "text": "<p>** Driven by demand of non-invasive skin rejuvenation treatment</p><p>* Driven by preference for non-invasive acne treatment</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_YxRnWf",
+        "text_YxRnWt",
+        "text_YxRnat",
+        "text_YxRnWx",
+        "popup_YxRnWf"
+      ],
       "settings": {
         "use_own_file": true,
         "modifier": "stats",
-        "text": "<ul><li><span>25.1%</span> Growth of home beauty devices</li><li><span>5.1%</span> Growth of light therapy market</li><li><span>5.6%</span> Growth of blue light therapy market*</li><li><span>4.5%</span> Growth of red light therapy market**</li></ul><hr /><div class=\"footnote\"><p>** Driven by demand of non-invasive skin rejuvenation treatment</p><p>* Driven by preference for non-invasive acne treatment</p></div>",
-        "button_label": "",
-        "button_url": ""
+        "text": "",
+        "button_label": ""
       }
     },
     "custom_form_contact_form_tYwEPQ": {

@@ -349,7 +349,8 @@
         "buy_button_xzUU6n": {
           "type": "buy_button",
           "settings": {
-            "button_label": "BUY NOW & SAVE UP TO 70%"
+            "button_label": "BUY NOW & SAVE UP TO 70%",
+            "button_url": "#purchase-form"
           }
         }
       },
@@ -717,7 +718,8 @@
         "use_own_file": true,
         "background_color": "none",
         "text": "<h2>Real stories, real results</h2>",
-        "button_label": "buy now SAVE UP TO 70%"
+        "button_label": "buy now SAVE UP TO 70%",
+        "button_url": "#purchase-form"
       }
     },
     "n_comparison_UfAfRr": {
@@ -972,7 +974,8 @@
         "image": "shopify://shop_images/mi-use-video.webp",
         "image_mobile": "shopify://shop_images/mi-use-video-mob.webp",
         "wistia_url": "6de5pg0r6e",
-        "button_label": "buy now & SAVE UP TO 70%"
+        "button_label": "buy now & SAVE UP TO 70%",
+        "button_url": "#purchase-form"
       }
     },
     "n_highlight_rFRFiz": {
@@ -1521,7 +1524,8 @@
         "use_own_file": true,
         "modifier": "none",
         "text": "<h2>5 reasons why everyone is using the Qure Micro-Infusion System</h2>",
-        "button_label": "BUY NOW & SAVE UP TO 70%"
+        "button_label": "BUY NOW & SAVE UP TO 70%",
+        "button_url": "#"
       }
     },
     "n_faq_RiGOh9": {
