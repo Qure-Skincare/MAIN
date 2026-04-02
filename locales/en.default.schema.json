@@ -280,7 +280,8 @@
         "tag": "Tag",
         "client": "Client",
         "center": "Center",
-        "stats": "Stats"
+        "stats": "Stats",
+        "product-type-accordion": "Product type accordion"
     },
     "blocks": {
         "block-card": {

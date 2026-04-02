@@ -1,6 +1,11 @@
 {% assign show_css = false %}
+{%- if template.suffix != blank -%}
+  {% assign template_key = template.name | append: '.' | append: template.suffix | downcase %}
+{%- else -%}
+  {% assign template_key = template.name | downcase %}
+{%- endif -%}
 
-{%- case template -%}   
+{%- case template_key -%}   
     {%- when 'page.derm-reviews' -%}
         {% assign show_css = true %}
     {%- when 'page.q-rejuvalight-pro-reviews' -%}
@@ -17,112 +22,122 @@
         {% assign show_css = true %}
     {%- when 'page.q-rejuvalight-pro-led-mask-guide' -%}
         {% assign show_css = true %}
-    {% when 'page.microinfusion-safety-guide' %}
+    {%- when 'page.microinfusion-safety-guide' -%}
         {% assign show_css = true %}
-    {% when 'page.microinfusion-safety-guide-v15' %}
+    {%- when 'page.microinfusion-safety-guide-v15' -%}
         {% assign show_css = true %}
-    {% when 'page.n-d-quickstart-guide' %}
+    {%- when 'page.n-d-quickstart-guide' -%}
         {% assign show_css = true %}
-    {% when 'page.micro-infusion-brief' %}
+    {%- when 'page.micro-infusion-brief' -%}
         {% assign show_css = true %}
-    {% when 'page.all-in-one-face-serum-creative-content-guide' %}
+    {%- when 'page.all-in-one-face-serum-creative-content-guide' -%}
         {% assign show_css = true %}
-    {% when 'page.micro-infusion-patches-content-guide' %}
+    {%- when 'page.micro-infusion-patches-content-guide' -%}
         {% assign show_css = true %}
-    {% when 'page.dermal-mist-brief' %}
+    {%- when 'page.dermal-mist-brief' -%}
         {% assign show_css = true %}
-    {% when 'page.faucet-creative-brief' %}
+    {%- when 'page.faucet-creative-brief' -%}
         {% assign show_css = true %}
-    {% when 'page.shower-creative-brief' %}
+    {%- when 'page.shower-creative-brief' -%}
         {% assign show_css = true %}
-    {% when 'page.faucet-online-guide' %}
+    {%- when 'page.faucet-online-guide' -%}
         {% assign show_css = true %}
-    {% when 'page.shower-filter-online-guide' %}
+    {%- when 'page.shower-filter-online-guide' -%}
         {% assign show_css = true %}
-    {% when 'page.q-rejuvalight-pro-welcome' %}
+    {%- when 'page.q-rejuvalight-pro-welcome' -%}
         {% assign show_css = true %}
-    {% when 'page.hairgrowth-helmet-brief' %}
+    {%- when 'page.hairgrowth-helmet-brief' -%}
         {% assign show_css = true %}
     {% when 'page.hairgrowth-helmet-guide' %}
         {% assign show_css = true %}
-    {% when 'page.hairgrowth-helmet-welcome' %}
+    {%- when 'page.hairgrowth-helmet-welcome' -%}
         {% assign show_css = true %}
-    {% when 'page.reviews' %}
+    {%- when 'page.reviews' -%}
         {% assign show_css = true %}
-    {% when 'page.all-in-one-serum-customer-reviews' %}
+    {%- when 'page.all-in-one-serum-customer-reviews' -%}
         {% assign show_css = true %}
-    {% when 'page.micro-infusion-targeted-patches-customer-reviews' %}
+    {%- when 'page.micro-infusion-targeted-patches-customer-reviews' -%}
         {% assign show_css = true %}
-    {% when 'page.neck-decolletage-led-customer-reviews' %}
+    {%- when 'page.neck-decolletage-led-customer-reviews' -%}
         {% assign show_css = true %}
-    {% when 'page.q-rejuvalight-pro-customer-reviews' %}
+    {%- when 'page.q-rejuvalight-pro-customer-reviews' -%}
         {% assign show_css = true %}
-    {% when 'page.qure-microinfusion-offer-listicle' %}
+    {%- when 'page.qure-microinfusion-offer-listicle' -%}
         {% assign show_css = true %}
-    {% when 'page.faqs' %}
+    {%- when 'page.faqs' -%}
         {% assign show_css = true %}
-    {% when 'product.silk-pillowcase' %}
+    {%- when 'product.silk-pillowcase' -%}
         {% assign show_css = true %}
-    {% when 'product.faucet-filter' %}
+    {%- when 'product.faucet-filter' -%}
         {% assign show_css = true %}
-    {% when 'product.faucet-filter-replacement' %}
+    {%- when 'product.faucet-filter-replacement' -%}
         {% assign show_css = true %}
-    {% when 'product.shower-filter' %}
+    {%- when 'product.shower-filter' -%}
         {% assign show_css = true %}
-    {% when 'product.shower-filter-replacement' %}
+    {%- when 'product.shower-filter-replacement' -%}
         {% assign show_css = true %}
-    {% when 'product.dermal-mist' %}
+    {%- when 'product.dermal-mist' -%}
         {% assign show_css = true %}
-    {% when 'page.qure-microinfusion-pro-offer' %}
+    {%- when 'page.qure-microinfusion-pro-offer' -%}
         {% assign show_css = true %}
-    {% when 'page.qure-microinfusion-offer-men' %}
+    {%- when 'page.qure-microinfusion-offer-men' -%}
         {% assign show_css = true %}
-    {% when 'product.face-serum' %}
+    {%- when 'product.face-serum' -%}
         {% assign show_css = true %}
-    {% when 'product.micro-infusion-targeted-patches' %}
+    {%- when 'product.micro-infusion-targeted-patches' -%}
         {% assign show_css = true %}
-    {% when 'page.microinfusion' %}
+    {%- when 'page.microinfusion' -%}
         {% assign show_css = true %}
-    {% when 'product.q-rejuvalight-pro-facewear' %}
+    {%- when 'product.q-rejuvalight-pro-facewear' -%}
         {% assign show_css = true %}
-    {% when 'page.products-guide-page' %}
+    {%- when 'page.products-guide-page' -%}
         {% assign show_css = true %}
-    {% when 'product.neck-decolletage-led' %}
+    {%- when 'product.neck-decolletage-led' -%}
         {% assign show_css = true %}
-    {% when 'page.micro-infusion-dark-spots' %}
+    {%- when 'page.micro-infusion-dark-spots' -%}
         {% assign show_css = true %}
-    {% when 'page.contact-us' %}
+    {%- when 'page.contact-us' -%}
         {% assign show_css = true %}
-    {% when 'page.micro-infusion-acne' %}
+    {%- when 'page.micro-infusion-acne' -%}
         {% assign show_css = true %}
-    {% when 'page.qure-microinfusion-offer' %}
+    {%- when 'page.qure-microinfusion-offer' -%}
         {% assign show_css = true %}
-    {% when 'index' %}
+    {%- when 'index' -%}
         {% assign show_css = true %}
-    {% when 'collection.best-sellers' %}
+    {%- when 'collection.best-sellers' -%}
         {% assign show_css = true %}
-    {% when 'collection.acne-breakouts' %}
+    {%- when 'collection.acne-breakouts' -%}
         {% assign show_css = true %}
-    {% when 'collection.dark-spots-uneven-skin' %}
+    {%- when 'collection.dark-spots-uneven-skin' -%}
         {% assign show_css = true %}
-    {% when 'collection.fine-lines-wrinkles' %}
+    {%- when 'collection.fine-lines-wrinkles' -%}
         {% assign show_css = true %}
-    {% when 'blog' %}
+    {%- when 'blog' -%}
         {% assign show_css = true %}
-    {% when 'article' %}
+    {%- when 'article' -%}
         {% assign show_css = true %}
-    {% when 'page.affiliate-page' %}
+    {%- when 'page.affiliate-page' -%}
         {% assign show_css = true %}
-    {% when 'page.become-stockist' %}
+    {%- when 'page.become-stockist' -%}
         {% assign show_css = true %}
-    {% when 'page.qure-skincare-app' %}
+    {%- when 'page.qure-skincare-app' -%}
+        {% assign show_css = true %}
+    {%- when 'page' -%}
+        {% assign show_css = true %}
+    {%- when 'page.terms-and-conditions' -%}
+        {% assign show_css = true %}
+    {%- when 'page.privacy-page' -%}
+        {% assign show_css = true %}
+    {%- when 'page.subscriptions' -%}
         {% assign show_css = true %}
 {%- endcase -%}
-
-{% if template == 'cart' %}
+{%- if template.name == 'page' or request.page_type == 'page' -%}
+  {% assign show_css = true %}
+{%- endif -%}
+{% if template_key == 'cart' -%}
     {% assign show_css = true %}
 {% endif %}
 
-{% if show_css == true %}
+{% if show_css %}
     <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/sections-stack/sections-stack.css" />
 {% endif %}
