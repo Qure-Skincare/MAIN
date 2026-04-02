@@ -146,7 +146,7 @@
                         {% if block.type == 'buy_button' %}
                             <div class="c-order-button">
                                 {% if block.settings.button_label != blank %}
-                                    <button class="btn btn--primary" type="button">{{ block.settings.button_label }}</button>
+                                    <a href="{{ section.settings.button_url }}" class="btn btn--primary" type="button">{{ block.settings.button_label }}</a>
                                 {% endif %}
                             </div>
                         {% endif %}
@@ -380,6 +380,11 @@
                 "type": "text",
                 "id": "button_label",
                 "label": "t:common.button-label"
+            },
+            {
+                "type": "url",
+                "id": "button_url",
+                "label": "t:common.button-url"
             }
         ]
     },
