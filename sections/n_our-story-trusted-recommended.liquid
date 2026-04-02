@@ -1,5 +1,5 @@
 {% doc %}
-  Renders a trusted recommended section
+  Trusted recommended block for Our Story: YouTube uses figure.lvideo + figcaption (handoff markup).
 {% enddoc %}
 
 <!-- BASE SECTION -->
@@ -16,7 +16,7 @@
                 {% if section.settings.video_url != blank %}
                     <figure class="watch-wistia-video" data-bs-toggle="modal" data-bs-target="#reusableWistiaModal" data-video-id="{{ section.settings.video_url }}">
                         {% if section.settings.video_image_cover != blank %}
-                                <picture>
+                            <picture>
                                 <img src="{{ section.settings.video_image_cover | image_url }}" alt="{{ section.settings.video_image_cover.alt | escape }}" />
                             </picture>
                         {% endif %}
@@ -28,10 +28,19 @@
                     </figure>
                 {% endif %}
             {% else %}
-                {% if section.settings.video_image_cover != blank %}
-                    <picture{% if section.settings.video_url != blank %} data-url="{{ section.settings.video_url }}"{% endif %}>
-                        <img src="{{ section.settings.video_image_cover | image_url }}" alt="{{ section.settings.video_image_cover.alt | escape }}" />
-                    </picture>
+                {% if section.settings.video_image_cover != blank or section.settings.video_url != blank %}
+                    <figure class="lvideo"{% if section.settings.video_url != blank %} data-url="{{ section.settings.video_url }}"{% endif %}>
+                        {% if section.settings.video_image_cover != blank %}
+                            <picture>
+                                <img src="{{ section.settings.video_image_cover | image_url }}" alt="{{ section.settings.video_image_cover.alt | escape }}" />
+                            </picture>
+                        {% endif %}
+                        {% if section.settings.text_on_image != blank %}
+                            <figcaption>
+                                {{ section.settings.text_on_image }}
+                            </figcaption>
+                        {% endif %}
+                    </figure>
                 {% endif %}
             {% endif %}
             <div>
@@ -61,7 +70,7 @@
 
 {% schema %}
 {
-"name": "t:sections.n_trusted-recommended.name",
+    "name": "t:sections.n_our-story-trusted-recommended.name",
     "settings": [
         {
             "type": "checkbox",
@@ -137,11 +146,6 @@
             "label": "t:common.badge-text",
             "default": "Dermatologist Reviewed"
         }
-],
-"presets": [
-    {
-        "name": "t:sections.n_trusted-recommended.name"
-    }
-]
+    ]
 }
 {% endschema %}
