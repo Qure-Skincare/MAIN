@@ -735,7 +735,7 @@
           "type": "image_with_text",
           "settings": {
             "icon": "shipping-order",
-            "text": "Free US Shipping over $100"
+            "text": "Free US Shipping<br>Over $100"
           }
         },
         "image_with_text_dBhwq7": {
