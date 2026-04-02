@@ -963,14 +963,15 @@
         "text": "<h2>Why choose Qure?</h2><p>With the Qure Faucet Filter, you get the best science-backed, dermatologist-approved solution to filtered water at home for better skin.</p>"
       }
     },
-    "text_header_KAyQiT": {
-      "type": "text-header",
-      "custom_css": [
-        ".qure__section-header {margin-top: 0 !important; margin-bottom: 0 !important;}"
-      ],
-      "name": "t:sections.text-header.name",
+    "n_text_VGtQXJ": {
+      "type": "n_text",
+      "name": "t:sections.n_text.name",
       "settings": {
-        "heading": "Our customer reviews"
+        "use_own_file": true,
+        "modifier": "none",
+        "text": "<h2>Our customer reviews</h2>",
+        "button_label": "",
+        "button_url": ""
       }
     },
     "17575763435227ec8e": {
@@ -1129,7 +1130,7 @@
     "n_easy_steps_ntE9Cf",
     "n_product_settings_rDjiPj",
     "n_comparison_WktgAV",
-    "text_header_KAyQiT",
+    "n_text_VGtQXJ",
     "17575763435227ec8e",
     "n_faq_CqC3HU",
     "sticky_cta_9hzULB"

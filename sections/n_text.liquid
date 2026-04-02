@@ -6,11 +6,24 @@
     <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/text-section/text-section.css" />
 {% endif %}
 
+{% assign show_article = false %}
+{% if section.settings.text != blank %}
+    {% assign show_article = true %}
+{% endif %}
+{% if section.blocks.size > 0 %}
+    {% assign show_article = true %}
+{% endif %}
+{% if section.settings.button_label != blank and section.settings.button_url != blank %}
+    {% assign show_article = true %}
+{% endif %}
+
 <section class="text-section{% if section.settings.modifier != 'none' %} text-section--{{ section.settings.modifier }}{% endif %}">
     <div class="container">
-        {% if section.settings.text != blank %}
+        {% if show_article %}
             <article>
-                {{ section.settings.text }}
+                {% if section.settings.text != blank %}
+                    {{ section.settings.text }}
+                {% endif %}
                 {% if section.settings.button_label != blank and section.settings.button_url != blank %}
                     <a class="btn btn--primary" href="{{ section.settings.button_url }}">{{ section.settings.button_label }} <i class="e-icon e-icon-arrow"></i> </a>
                 {% endif %}
@@ -50,7 +63,6 @@
         {% endif %}
     </div>
 </section>
-
 
 {% schema %}
 {

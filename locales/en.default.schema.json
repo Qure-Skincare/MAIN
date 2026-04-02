@@ -280,7 +280,8 @@
         "tag": "Tag",
         "client": "Client",
         "center": "Center",
-        "stats": "Stats"
+        "stats": "Stats",
+        "product-type-accordion": "Product type accordion"
     },
     "blocks": {
         "block-card": {
@@ -310,6 +311,19 @@
                     "holidays": "Holidays",
                     "hero": "Hero banner",
                     "hero-reverse": "Hero reverse"
+                }
+            },
+            "blocks": {
+                "app_store": {
+                    "name": "App store badge"
+                }
+            }
+        },
+        "n_app-features": {
+            "name": "App features",
+            "blocks": {
+                "slide": {
+                    "name": "Slide"
                 }
             }
         },
@@ -358,6 +372,9 @@
                 },
                 "features_list": {
                     "name": "Features list"
+                },
+                "app_store": {
+                    "name": "App store badge"
                 }
             }
         },

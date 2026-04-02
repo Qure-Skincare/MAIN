@@ -203,21 +203,21 @@
         "image_with_text_1": {
           "type": "image_with_text",
           "settings": {
-            "text": "<p>“Few beauty trends are actually worth adopting, but Qure’s take on at-home Micro-Infusion is a viral skin trend with merit.”</p>",
+            "text": "<h4>“Few beauty trends are actually worth adopting, but Qure’s take on at-home Micro-Infusion is a viral skin trend with merit.”</h4>",
             "image": "shopify://shop_images/forbes.svg"
           }
         },
         "image_with_text_2": {
           "type": "image_with_text",
           "settings": {
-            "text": "<p>“A true microneedling treatment - creating microchannels that increase collagen and elastin production and product absorption.”</p>",
+            "text": "<h4>“A true microneedling treatment - creating microchannels that increase collagen and elastin production and product absorption.”</h4>",
             "image": "shopify://shop_images/bazzar.svg"
           }
         },
         "image_with_text_3": {
           "type": "image_with_text",
           "settings": {
-            "text": "<p>“This microneedling alternative is my secret to glowing skin.”</p>",
+            "text": "<h4>“This microneedling alternative is my secret to glowing skin.”</h4>",
             "image": "shopify://shop_images/ps.svg"
           }
         }
