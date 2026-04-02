@@ -6,70 +6,144 @@
     <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/text-section/text-section.css" />
 {% endif %}
 
+{% assign show_article = false %}
+{% if section.settings.text != blank %}
+    {% assign show_article = true %}
+{% endif %}
+{% if section.blocks.size > 0 %}
+    {% assign show_article = true %}
+{% endif %}
+{% if section.settings.button_label != blank and section.settings.button_url != blank %}
+    {% assign show_article = true %}
+{% endif %}
+
 <section class="text-section{% if section.settings.modifier != 'none' %} text-section--{{ section.settings.modifier }}{% endif %}">
     <div class="container">
-        {% if section.settings.text != blank %}
+        {% if show_article %}
             <article>
-                {{ section.settings.text }}
+                {% if section.settings.text != blank %}
+                    {{ section.settings.text }}
+                {% endif %}
                 {% if section.settings.button_label != blank and section.settings.button_url != blank %}
                     <a class="btn btn--primary" href="{{ section.settings.button_url }}">{{ section.settings.button_label }} <i class="e-icon e-icon-arrow"></i> </a>
+                {% endif %}
+                {% assign has_text = false %}
+                {% assign has_popup = false %}
+                {% for block in section.blocks %}
+                    {% if block.type == 'text' %}
+                        {% assign has_text = true %}
+                    {% endif %}
+                    {% if block.type == 'popup' %}
+                        {% assign has_popup = true %}
+                    {% endif %}
+                {% endfor %}
+                {% if has_text %}
+                    <ul>
+                        {% for block in section.blocks %}
+                            {% if block.type == 'text' %}
+                                <li>
+                                    <span>{{ block.settings.heading }}</span>
+                                    {{ block.settings.text }}
+                                </li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+                {% if has_popup %}
+                    <hr />
+                    <div class="footnote">
+                        {% for block in section.blocks %}
+                            {% if block.type == 'popup' %}
+                                {{ block.settings.text }}
+                            {% endif %}
+                        {% endfor %}
+                    </div>
                 {% endif %}
             </article>
         {% endif %}
     </div>
 </section>
 
-
 {% schema %}
-    {
-        "name": "t:sections.n_text.name",
+{
+    "name": "t:sections.n_text.name",
+        "settings": [
+        {
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": false
+        },
+        {
+            "type": "select",
+            "id": "modifier",
+            "label": "t:common.modifier",
+            "default": "none",
+            "options": [
+                {
+                    "value": "none",
+                    "label": "t:common.none"
+                },
+                {
+                    "value": "guide",
+                    "label": "t:common.guide"
+                },
+                {
+                    "value": "stats",
+                    "label": "t:common.stats"
+                }
+            ]
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "t:common.text"
+        },
+        {
+            "type": "text",
+            "id": "button_label",
+            "label": "t:common.button-label"
+        },
+        {
+            "type": "url",
+            "id": "button_url",
+            "label": "t:common.button-url"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "text",
+            "name": "t:common.text",
             "settings": [
-            {
-                "type": "checkbox",
-                "id": "use_own_file",
-                "label": "t:common.use-own-file",
-                "default": false
-            },
-            {
-                "type": "select",
-                "id": "modifier",
-                "label": "t:common.modifier",
-                "default": "none",
-                "options": [
-                    {
-                        "value": "none",
-                        "label": "t:common.none"
-                    },
-                    {
-                        "value": "guide",
-                        "label": "t:common.guide"
-                    },
-                    {
-                        "value": "stats",
-                        "label": "t:common.stats"
-                    }
-                ]
-            },
-            {
-                "type": "richtext",
-                "id": "text",
-                "label": "t:common.text"
-            },
-            {
-                "type": "text",
-                "id": "button_label",
-                "label": "t:common.button-label"
-            },
-            {
-                "type": "url",
-                "id": "button_url",
-                "label": "t:common.button-url"
-            }
-        ],
-        "presets": [
-            {
-                "name": "t:sections.n_text.name"
-            }
-        ]
-    }
-    {% endschema %}
+                {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "t:common.header"
+                },
+                {
+                    "type": "text",
+                    "id": "text",
+                    "label": "t:common.text"
+                }
+            ]
+        },
+        {
+            "type": "popup",
+            "name": "t:common.popup",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "richtext",
+                    "id": "text",
+                    "label": "t:common.text"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.n_text.name"
+        }
+    ]
+}
+{% endschema %}

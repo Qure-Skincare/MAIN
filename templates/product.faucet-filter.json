@@ -399,6 +399,7 @@
       "settings": {
         "use_own_file": true,
         "modifier": "reverse",
+        "modifier_2": "none",
         "background_color": "grey",
         "heading": "<h2>Do you know what’s in your water?</h2>",
         "text": "<p>Research has shown tap water is contaminated with over 320* chemicals that your skin is absorbing daily. These micro-contaminants in water can clog pores, dry out and irritate sensitive skin.</p>",
@@ -413,6 +414,7 @@
       "settings": {
         "use_own_file": true,
         "modifier": "reverse",
+        "modifier_2": "none",
         "background_color": "none",
         "heading": "<h2>Meet the Qure Faucet Filter</h2>",
         "text": "<p>Great skin begins with the source – the water you use daily. The Qure Faucet Filter <em>effectively reduces harmful skin irritants </em>that can affect your skin's health and appearance.</p>",
@@ -490,7 +492,10 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Kim L.",
             "verified_customer": "Verified customer",
-            "text": "<h6>Source of my unclear skin</h6><p>“I didn’t realize how big impact water has on our skin... I almost got used to my skin never getting better than mediocre, but this Water Filter is a game changer in my skincare routine.”</p>"
+            "text": "<h6>Source of my unclear skin</h6><p>“I didn’t realize how big impact water has on our skin... I almost got used to my skin never getting better than mediocre, but this Water Filter is a game changer in my skincare routine.”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
           }
         },
         "slider_zGeEYy": {
@@ -500,7 +505,10 @@
             "flag": "shopify://shop_images/england_f.webp",
             "username": "Hanna L.",
             "verified_customer": "Verified customer",
-            "text": "<h6>Hydrated more than ever</h6><p>“I never had major issues with skin before I moved. Then I started to get irritation and my makeup would look cakey cause my skin always felt so dry no matter what moisturizer I used. I didn't change anything in my skincare routine except filtered water. I'm never washing my face with anything less than Q-urified water because my skin feels so much better.”</p>"
+            "text": "<h6>Hydrated more than ever</h6><p>“I never had major issues with skin before I moved. Then I started to get irritation and my makeup would look cakey cause my skin always felt so dry no matter what moisturizer I used. I didn't change anything in my skincare routine except filtered water. I'm never washing my face with anything less than Q-urified water because my skin feels so much better.”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
           }
         },
         "slider_FWwKpP": {
@@ -510,7 +518,10 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Josie K.",
             "verified_customer": "Verified customer",
-            "text": "<h6>Dryness gone</h6><p>“My skin looks much clearer thanks to Qure! I use the LED mask and water filter daily and...my complexion looks so much smoother and less red! My skin feels soft and hydrated. I can actually walk out of the house without makeup now. THANK YOU QURE!”</p>"
+            "text": "<h6>Dryness gone</h6><p>“My skin looks much clearer thanks to Qure! I use the LED mask and water filter daily and...my complexion looks so much smoother and less red! My skin feels soft and hydrated. I can actually walk out of the house without makeup now. THANK YOU QURE!”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
           }
         }
       },
@@ -724,7 +735,7 @@
           "type": "image_with_text",
           "settings": {
             "icon": "shipping-order",
-            "text": "Free Shipping On<br>Orders Over 100$"
+            "text": "Free US Shipping<br>Over $100"
           }
         },
         "image_with_text_dBhwq7": {
@@ -795,6 +806,7 @@
       "name": "t:sections.n_easy-steps.name",
       "settings": {
         "use_own_file": true,
+        "modifier": "none",
         "text": "<h2>Set up in 3 easy steps</h2>",
         "image": "shopify://shop_images/faucet_thumbnail.webp",
         "image_mobile": "shopify://shop_images/faucet_thumbnail-mob.webp",
@@ -951,14 +963,15 @@
         "text": "<h2>Why choose Qure?</h2><p>With the Qure Faucet Filter, you get the best science-backed, dermatologist-approved solution to filtered water at home for better skin.</p>"
       }
     },
-    "text_header_KAyQiT": {
-      "type": "text-header",
-      "custom_css": [
-        ".qure__section-header {margin-top: 0 !important; margin-bottom: 0 !important;}"
-      ],
-      "name": "t:sections.text-header.name",
+    "n_text_VGtQXJ": {
+      "type": "n_text",
+      "name": "t:sections.n_text.name",
       "settings": {
-        "heading": "Our customer reviews"
+        "use_own_file": true,
+        "modifier": "none",
+        "text": "<h2>Our customer reviews</h2>",
+        "button_label": "",
+        "button_url": ""
       }
     },
     "17575763435227ec8e": {
@@ -1117,7 +1130,7 @@
     "n_easy_steps_ntE9Cf",
     "n_product_settings_rDjiPj",
     "n_comparison_WktgAV",
-    "text_header_KAyQiT",
+    "n_text_VGtQXJ",
     "17575763435227ec8e",
     "n_faq_CqC3HU",
     "sticky_cta_9hzULB"

@@ -182,7 +182,8 @@
       "settings": {
         "form_name": "purchase-form-landing",
         "hide_types": true,
-        "type": "variant"
+        "type": "variant",
+        "klaviyo_form_name": ""
       }
     },
     "n_base_section_CGMUkn": {
@@ -243,6 +244,7 @@
       "settings": {
         "use_own_file": true,
         "modifier": "reverse",
+        "modifier_2": "none",
         "background_color": "grey",
         "heading": "<h2>Do you know what’s in your water?</h2>",
         "text": "<p>Research has shown tap water is contaminated with over 320* chemicals that your skin is absorbing daily. These micro-contaminants in water can clog pores, dry out and irritate sensitive skin.</p>",
@@ -257,6 +259,7 @@
       "settings": {
         "use_own_file": true,
         "modifier": "reverse",
+        "modifier_2": "none",
         "background_color": "none",
         "heading": "<h2>Maximum filtration, minimal effort</h2>",
         "text": "<p>The Qure Shower Filter is designed to <em>remove up to 99% of chlorine</em> – and other hard water nasties like copper, calcium, and lead – for healthy skin and hair.</p><p>For optimized showering that leaves you feeling (and looking) your best, swap out the filter cartridge every 3 months.</p><p>This Refill seamlessly fits the Qure Shower Filter system, providing long-lasting filtration benefits.</p>",
@@ -328,7 +331,10 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Briony R.",
             "verified_customer": "Verified customer",
-            "text": "<h6>Restored my curls!</h6><p>“When I discovered the curly girl method, I thought I had cracked the code to perfectly defined curls. Then one day my curls stopped curling, they became week, lump and shine free. I did some research and realized it was my water. I saw a big difference after only one wash - it turned out I had a bunch of build up on my hair. Thank you Qure for saving my curls!”</p>"
+            "text": "<h6>Restored my curls!</h6><p>“When I discovered the curly girl method, I thought I had cracked the code to perfectly defined curls. Then one day my curls stopped curling, they became week, lump and shine free. I did some research and realized it was my water. I saw a big difference after only one wash - it turned out I had a bunch of build up on my hair. Thank you Qure for saving my curls!”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
           }
         },
         "slider_zGeEYy": {
@@ -338,7 +344,10 @@
             "flag": "shopify://shop_images/england_f.webp",
             "username": "Hanna L.",
             "verified_customer": "Verified customer",
-            "text": "<h6>Hydrated more than ever</h6><p>“I never had major issues with skin before I moved. Then I started to get irritation and my makeup would look cakey cause my skin always felt so dry no matter what moisturizer I used. I didn't change anything in my skincare routine except filtered water. I'm never washing my face with anything less than Q-urified water because my skin feels so much better.”</p>"
+            "text": "<h6>Hydrated more than ever</h6><p>“I never had major issues with skin before I moved. Then I started to get irritation and my makeup would look cakey cause my skin always felt so dry no matter what moisturizer I used. I didn't change anything in my skincare routine except filtered water. I'm never washing my face with anything less than Q-urified water because my skin feels so much better.”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
           }
         },
         "slider_FWwKpP": {
@@ -348,7 +357,10 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Josie K.",
             "verified_customer": "Verified customer",
-            "text": "<h6>Acne and dryness gone</h6><p>“My skin has cleared up so much thanks to Qure! I use the LED mask and water filter daily and it’s cleared up my acne, and my complexion so much smoother and less red! My skin feels soft and hydrated. I can actually walk out of the house without makeup now. THANK YOU QURE!!!”</p>"
+            "text": "<h6>Acne and dryness gone</h6><p>“My skin has cleared up so much thanks to Qure! I use the LED mask and water filter daily and it’s cleared up my acne, and my complexion so much smoother and less red! My skin feels soft and hydrated. I can actually walk out of the house without makeup now. THANK YOU QURE!!!”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
           }
         },
         "slider_GbGWiZ": {
@@ -358,7 +370,10 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Adele M.",
             "verified_customer": "Verified customer",
-            "text": "<h6>Skin and hair are glowing</h6><p>“I have been using this filter for a few weeks now and my hair is SO much healthier. Much more smooth, less frizzy, looks glossier and the shedding has reduced. And actually I'm even seeing my skin look more hydrated and glowier - bonus!!”</p>"
+            "text": "<h6>Skin and hair are glowing</h6><p>“I have been using this filter for a few weeks now and my hair is SO much healthier. Much more smooth, less frizzy, looks glossier and the shedding has reduced. And actually I'm even seeing my skin look more hydrated and glowier - bonus!!”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
           }
         },
         "slider_dYqN0a": {
@@ -368,7 +383,10 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Kim L.",
             "verified_customer": "Verified customer",
-            "text": "<h6>Source of my unclear skin</h6><p>“I didn’t realize how big impact water has on our skin... I almost got used to my skin never getting better than mediocre, but this Water Filter is a game changer in my skincare routine.”</p>"
+            "text": "<h6>Source of my unclear skin</h6><p>“I didn’t realize how big impact water has on our skin... I almost got used to my skin never getting better than mediocre, but this Water Filter is a game changer in my skincare routine.”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
           }
         },
         "slider_XK19xG": {
@@ -378,7 +396,10 @@
             "flag": "shopify://shop_images/england_f_3a90e77c-3bac-43d1-84e6-3a2e91e0c7e2.webp",
             "username": "Sarah G.",
             "verified_customer": "Verified customer",
-            "text": "<h6>Brought my curls back to life!</h6><p>“I absolutely love this shower filter! The water at my place used to be awful, so I noticed a difference right after the first use. My hair isn’t as fuzzy anymore, and my curls actually come alive. It feels so much softer and healthier.”</p>"
+            "text": "<h6>Brought my curls back to life!</h6><p>“I absolutely love this shower filter! The water at my place used to be awful, so I noticed a difference right after the first use. My hair isn’t as fuzzy anymore, and my curls actually come alive. It feels so much softer and healthier.”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
           }
         },
         "slider_HkNCaH": {
@@ -388,7 +409,10 @@
             "flag": "shopify://shop_images/america-flag_f1f6c160-90c6-4ba9-8bfc-d9039a28d2af.webp",
             "username": "Adele M.",
             "verified_customer": "Verified customer",
-            "text": "<h6>In love with Qure Faucet Filter!</h6><p>“Highly recommend! When I used to wash my face before, it got irritated and very dry. I was also really struggling with acne and flare-ups. Since washing my face with this filter, my face isn’t dry anymore and my skin has visibly cleared up. I love that it filters out any impurities which are harmful for my skin.”</p>"
+            "text": "<h6>In love with Qure Faucet Filter!</h6><p>“Highly recommend! When I used to wash my face before, it got irritated and very dry. I was also really struggling with acne and flare-ups. Since washing my face with this filter, my face isn’t dry anymore and my skin has visibly cleared up. I love that it filters out any impurities which are harmful for my skin.”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
           }
         }
       },
@@ -404,7 +428,9 @@
       "name": "t:sections.n_trusted-reviews.name",
       "settings": {
         "use_own_file": true,
-        "text": "<h2>The results are crystal clear</h2>"
+        "background_color": "none",
+        "text": "<h2>The results are crystal clear</h2>",
+        "button_label": ""
       }
     },
     "n_trusted_recommended_Akm4BH": {
@@ -417,6 +443,8 @@
         "heading": "<h2>Trusted and Recommended by Experts</h2>",
         "text": "<p>“How do you <em>reduce the things in your water that may be causing issues</em> with your skin?<br/><br/>This Qure filter is incredible – it’s <em>the only filter I personally use to</em> [reduce] chlorine and anything else that’s going to make your water harsh for your skin.”</p>",
         "video_image_cover": "shopify://shop_images/doctor_img_1.png",
+        "text_on_image": "",
+        "wistia_url": false,
         "video_url": "https://www.youtube.com/watch?v=Tk39sbR8Nak&t=433s",
         "badge_text": "Dermatologist Reviewed"
       }
@@ -581,7 +609,7 @@
           "type": "image_with_text",
           "settings": {
             "icon": "shipping-order",
-            "text": "Free Shipping On<br>Orders Over 100$"
+            "text": "Free US Shipping over $100"
           }
         },
         "image_with_text_dBhwq7": {
@@ -653,10 +681,12 @@
       "name": "t:sections.n_easy-steps.name",
       "settings": {
         "use_own_file": true,
+        "modifier": "none",
         "text": "<h2>How to replace your filter refill cartridge</h2>",
         "image": "shopify://shop_images/shower-filter-refill-video.webp",
         "image_mobile": "shopify://shop_images/shower-filter-refill-video-mob.webp",
-        "wistia_url": "bwhqvtar9u"
+        "wistia_url": "bwhqvtar9u",
+        "button_label": ""
       }
     },
     "n_comparison_WktgAV": {
@@ -771,11 +801,15 @@
         "text": "<h2>Why choose Qure?</h2><p>With the Qure Faucet Filter, you get the best science-backed, dermatologist-approved solution to filtered water at home for better skin.</p>"
       }
     },
-    "text_header_gJ8yPR": {
-      "type": "text-header",
-      "name": "t:sections.text-header.name",
+    "n_text_VGtQXJ": {
+      "type": "n_text",
+      "name": "t:sections.n_text.name",
       "settings": {
-        "heading": "Our customer reviews"
+        "use_own_file": true,
+        "modifier": "none",
+        "text": "<h2>Our customer reviews</h2>",
+        "button_label": "",
+        "button_url": ""
       }
     },
     "175741161617f7c983": {
@@ -907,7 +941,7 @@
     "n_features_marquee_h4hRGq",
     "n_easy_steps_ntE9Cf",
     "n_comparison_WktgAV",
-    "text_header_gJ8yPR",
+    "n_text_VGtQXJ",
     "175741161617f7c983",
     "n_faq_CqC3HU",
     "sticky_cta_6UGJ8F"
