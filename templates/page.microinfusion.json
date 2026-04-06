@@ -109,10 +109,10 @@
         "nextships_4xp7uM": {
           "type": "nextships",
           "settings": {
-            "date": "30th April",
+            "date": "3rd May",
             "percent": 73,
             "date_soldout": "23rd March",
-            "date_reserved": "30th April"
+            "date_reserved": "3rd May"
           }
         },
         "type_hHPdgJ": {
@@ -447,7 +447,8 @@
         "use_own_file": true,
         "modifier": "none",
         "text": "<h2>5 reasons why everyone is using the Qure Micro-Infusion System</h2>",
-        "button_label": ""
+        "button_label": "",
+        "button_url": ""
       }
     },
     "n_base_section_7G7GJX": {
@@ -824,7 +825,8 @@
         "use_own_file": true,
         "background_color": "none",
         "text": "<h2>Results you’ll see with your own eyes</h2>",
-        "button_label": ""
+        "button_label": "",
+        "button_url": ""
       }
     },
     "n_trusted_recommended_ggwbdC": {
@@ -1231,7 +1233,8 @@
         "image": "shopify://shop_images/mi-use-video.webp",
         "image_mobile": "shopify://shop_images/mi-use-video-mob.webp",
         "wistia_url": "6de5pg0r6e",
-        "button_label": ""
+        "button_label": "",
+        "button_url": ""
       }
     },
     "n_comparison_table_jwRYA7": {
