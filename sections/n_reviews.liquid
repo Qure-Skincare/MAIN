@@ -119,102 +119,102 @@
 </section>
 
 {% schema %}
-    {
-        "name": "t:sections.n_reviews.name",
+{
+    "name": "t:sections.n_reviews.name",
+        "settings": [
+            {
+                "type": "checkbox",
+                "id": "use_own_file",
+                "label": "t:common.use-own-file",
+                "default": false
+            },
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "t:common.header"
+            }
+    ],
+    "blocks": [
+        {
+            "type": "review",
+            "name": "t:common.review",
+            "limit": 2,
             "settings": [
                 {
-                    "type": "checkbox",
-                    "id": "use_own_file",
-                    "label": "t:common.use-own-file",
-                    "default": false
+                    "type": "text",
+                    "id": "username",
+                    "label": "t:common.username"
+                },
+                {
+                    "type": "text",
+                    "id": "badge_text",
+                    "label": "t:common.badge-text",
+                    "default": "Verified review"
+                },
+                {
+                    "type": "text",
+                    "id": "date",
+                    "label": "t:common.date"
                 },
                 {
                     "type": "text",
                     "id": "heading",
                     "label": "t:common.header"
+                },
+                {
+                    "type": "richtext",
+                    "id": "text",
+                    "label": "t:common.text"
+                },
+                {
+                    "type": "richtext",
+                    "id": "sub_text",
+                    "label": "t:common.sub-text"
                 }
-        ],
-        "blocks": [
-            {
-                "type": "review",
-                "name": "t:common.review",
-                "limit": 2,
-                "settings": [
-                    {
-                        "type": "text",
-                        "id": "username",
-                        "label": "t:common.username"
-                    },
-                    {
-                        "type": "text",
-                        "id": "badge_text",
-                        "label": "t:common.badge-text",
-                        "default": "Verified review"
-                    },
-                    {
-                        "type": "text",
-                        "id": "date",
-                        "label": "t:common.date"
-                    },
-                    {
-                        "type": "text",
-                        "id": "heading",
-                        "label": "t:common.header"
-                    },
-                    {
-                        "type": "richtext",
-                        "id": "text",
-                        "label": "t:common.text"
-                    },
-                    {
-                        "type": "richtext",
-                        "id": "sub_text",
-                        "label": "t:common.sub-text"
-                    }
-                ]
-            },
-            {
-                "type": "review_collapsed",
-                "name": "t:common.review-collapsed",
-                "settings": [
-                    {
-                        "type": "text",
-                        "id": "username",
-                        "label": "t:common.username"
-                    },
-                    {
-                        "type": "text",
-                        "id": "badge_text",
-                        "label": "t:common.badge-text",
-                        "default": "Verified review"
-                    },
-                    {
-                        "type": "text",
-                        "id": "date",
-                        "label": "t:common.date"
-                    },
-                    {
-                        "type": "text",
-                        "id": "heading",
-                        "label": "t:common.header"
-                    },
-                    {
-                        "type": "richtext",
-                        "id": "text",
-                        "label": "t:common.text"
-                    },
-                    {
-                        "type": "richtext",
-                        "id": "sub_text",
-                        "label": "t:common.sub-text"
-                    }
-                ]
-            }
-        ],
-        "presets": [
-            {
-                "name": "t:sections.n_reviews.name"
-            }
-        ]
-    }
+            ]
+        },
+        {
+            "type": "review_collapsed",
+            "name": "t:common.review-collapsed",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "username",
+                    "label": "t:common.username"
+                },
+                {
+                    "type": "text",
+                    "id": "badge_text",
+                    "label": "t:common.badge-text",
+                    "default": "Verified review"
+                },
+                {
+                    "type": "text",
+                    "id": "date",
+                    "label": "t:common.date"
+                },
+                {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "t:common.header"
+                },
+                {
+                    "type": "richtext",
+                    "id": "text",
+                    "label": "t:common.text"
+                },
+                {
+                    "type": "richtext",
+                    "id": "sub_text",
+                    "label": "t:common.sub-text"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.n_reviews.name"
+        }
+    ]
+}
 {% endschema %}

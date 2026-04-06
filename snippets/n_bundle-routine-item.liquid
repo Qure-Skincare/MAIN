@@ -1,0 +1,46 @@
+{% doc %}
+  One product row for `n_bundle-routine`: image + title link + bundle CTA.
+
+  @param {object} block - Block (`bundle`)
+  @param {object} section - Parent section
+  @param {number} item_index - Stable index for bundle button id
+{% enddoc %}
+
+{% assign product_handle = block.settings.product | strip %}
+
+{% if product_handle != blank %}
+  {% assign product_prefix = 'nbr-' | append: section.id | append: '-' | append: block.id | append: '-' %}
+  {%- comment -%}
+    Capture `get-product-data` HTML (whitespace + script). Assigns still run globally.
+    Output is placed last inside `<li>` and compacted so flex layout matches the design section.
+  {%- endcomment -%}
+  {% capture n_bundle_routine_gpd_markup %}
+    {% include 'n_get-product-data', product_handle: product_handle, product_prefix: product_prefix %}
+  {% endcapture %}
+
+  {% if get_product_data != blank %}
+    <li {{ block.shopify_attributes }}>
+      <a href="{{ get_product_data.url }}">
+        {% if product_featured_image != blank %}
+          {{ product_featured_image | image_url: width: 600 | image_tag: loading: 'lazy', alt: product_title }}
+        {% endif %}
+      </a>
+      {% if product_title != blank %}
+        <p><a href="{{ get_product_data.url }}">{{ product_title | escape }}</a></p>
+      {% endif %}
+      {% if product_variant_id != blank %}
+        {% assign current_button_id = 'n-bundle-routine-' | append: section.id | append: '-' | append: item_index %}
+        {% render 'n_bundle-routine-buy-button',
+          product_variant_id: product_variant_id,
+          product_handle: product_handle,
+          product_title: product_title,
+          product_price_original: product_price_original,
+          product_featured_image: product_featured_image,
+          section: block,
+          button_id: current_button_id
+        %}
+      {% endif %}
+      {{- n_bundle_routine_gpd_markup | strip_newlines | strip -}}
+    </li>
+  {% endif %}
+{% endif %}

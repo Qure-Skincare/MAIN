@@ -1,0 +1,159 @@
+{% doc %}
+  Single product card + dialog for `n_we-suggest` section.
+
+  @param {object} block - Block (`suggest_card`)
+  @param {object} section - Parent section
+  @param {number} card_index - Loop index for bundle button id
+{% enddoc %}
+
+{% assign card_product = block.settings.product %}
+
+<div class="c-suggest-card" {{ block.shopify_attributes }}>
+{% if card_product != blank %}
+{% assign product_handle = card_product.handle %}
+{% assign product_prefix = 'nws-' | append: section.id | append: '-' | append: block.id | append: '-' %}
+{% include 'n_get-product-data', product_handle: product_handle, product_prefix: product_prefix %}
+
+{% if get_product_data != blank %}
+{% assign display_title = block.settings.card_title | default: product_title %}
+{% assign card_href = card_product.url | default: '#' %}
+{% assign dialog_dom_id = 'we-suggest-dialog-' | append: block.id %}
+{% assign current_button_id = 'n-we-suggest-' | append: section.id | append: '-' | append: card_index %}
+{% assign modal_button_id = current_button_id | append: '-modal' %}
+
+{% assign resolved_product_image = block.settings.product_image %}
+{% assign resolved_hover_image = block.settings.product_hover_image %}
+{% if resolved_product_image == blank and product_media.size > 0 %}
+  {% for media in product_media limit: 1 %}
+    {% assign resolved_product_image = media %}
+  {% endfor %}
+{% endif %}
+{% if resolved_hover_image == blank and product_media.size > 1 %}
+  {% for media in product_media limit: 2 %}
+    {% if forloop.index == 2 %}
+      {% assign resolved_hover_image = media %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+{% if resolved_product_image == blank %}
+  {% assign resolved_product_image = product_featured_image %}
+{% endif %}
+
+  {% render 'n_we-suggest-card-media',
+    block: block,
+    card_link_href: card_href,
+    show_hover_var: true,
+    alt_text: display_title,
+    resolved_product_image: resolved_product_image,
+    resolved_hover_image: resolved_hover_image
+  %}
+
+  {% if display_title != blank %}
+    <h4 class="c-suggest-card__title">{{ display_title | escape }}</h4>
+  {% endif %}
+
+  <div class="c-suggest-card__price">
+    <div class="e-price">
+      <div class="e-price__main">
+        <div class="e-price__current">
+          {% if product_sale_price != blank %}
+            {{ product_sale_price }}
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% if block.settings.text != blank %}
+    <div class="c-suggest-card__desc rte">
+      {{ block.settings.text }}
+      <button type="button" onclick="document.getElementById('{{ dialog_dom_id }}').showModal()">
+        {{- 'sections.skincare-plan.read-more' | t -}}
+      </button>
+    </div>
+  {% endif %}
+
+  {% if block.settings.list != blank %}
+    <div class="c-suggest-card__features">
+      <ul class="c-marked-list">
+        {{ block.settings.list | replace: '<p>', '<li>' | replace: '</p>', '</li>' }}
+      </ul>
+    </div>
+  {% endif %}
+
+  {% if product_variant_id != blank %}
+    {% render 'n_bundle-page-buy-button',
+      product_variant_id: product_variant_id,
+      product_handle: product_handle,
+      product_title: product_title,
+      product_price_original: product_price_original,
+      product_featured_image: product_featured_image,
+      section: block,
+      button_id: current_button_id
+    %}
+  {% endif %}
+
+  <div class="c-suggest-card__quot">
+    <div class="e-rating-stars" style="--rating: {{ block.settings.rating | default: 4.5 }}"></div>
+    {% if block.settings.review_heading != blank %}
+      <strong>{{ block.settings.review_heading | escape }}</strong>
+    {% endif %}
+    {% if block.settings.review_subheading != blank %}
+      <small>{{ block.settings.review_subheading | escape }}</small>
+    {% endif %}
+  </div>
+
+  <dialog class="c-dialog c-suggest-card__popup" id="{{ dialog_dom_id }}">
+    <div class="c-dialog__content">
+      {% render 'n_we-suggest-card-media',
+        block: block,
+        card_link_href: card_href,
+        show_hover_var: false,
+        alt_text: display_title,
+        resolved_product_image: resolved_product_image,
+        resolved_hover_image: resolved_hover_image
+      %}
+
+      {% if display_title != blank %}
+        <h4 class="c-suggest-card__title">{{ display_title | escape }}</h4>
+      {% endif %}
+
+      <div class="c-suggest-card__price">
+        <div class="e-price">
+          <div class="e-price__main">
+            <div class="e-price__current">
+              {% if product_sale_price != blank %}
+                {{ product_sale_price }}
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {% if block.settings.list != blank %}
+        <div class="c-suggest-card__features">
+          <ul class="c-marked-list">
+            {{ block.settings.list | replace: '<p>', '<li>' | replace: '</p>', '</li>' }}
+          </ul>
+        </div>
+      {% endif %}
+
+      {% if product_variant_id != blank %}
+        {% render 'n_bundle-page-buy-button',
+          product_variant_id: product_variant_id,
+          product_handle: product_handle,
+          product_title: product_title,
+          product_price_original: product_price_original,
+          product_featured_image: product_featured_image,
+          section: block,
+          button_id: modal_button_id
+        %}
+      {% endif %}
+    </div>
+    <button type="button" class="c-dialog__close" onclick="document.getElementById('{{ dialog_dom_id }}').close()">
+      <i class="e-icon e-icon-cross"></i>
+    </button>
+  </dialog>
+{% endif %}
+{% endif %}
+</div>
