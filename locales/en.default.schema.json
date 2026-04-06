@@ -25,6 +25,7 @@
         "compare-image": "Compare image",
         "comparison-table": "Comparison table",
         "comparison-table-heading": "Comparison table header",
+        "table": "Table",
         "show_discount": "Show discount",
         "reviews-videos": "Reviews-videos",
         "money-back": "Money Back",
@@ -648,6 +649,38 @@
         },
         "n_take-quiz": {
             "name": "Take quiz"
+        },
+        "n_skincare-lifestyle": {
+            "name": "Skincare lifestyle"
+        },
+        "n_skin-deserves": {
+            "name": "Skin deserves",
+            "settings": {
+                "complete-bundle-cta-label": "Add complete bundle to cart button label"
+            }
+        },
+        "n_we-suggest": {
+            "name": "We suggest",
+            "settings": {
+                "complete-bundle-cta-label": "Complete bundle button label"
+            },
+            "blocks": {
+                "suggest_card": {
+                    "name": "Product card",
+                    "settings": {
+                        "card-title-info": "Optional. If empty, the selected product title is used.",
+                        "product-image-fallback-info": "Optional. If empty, the first product image or media is used.",
+                        "product-hover-image-fallback-info": "Optional. If empty, the second product image is used when available.",
+                        "button-label-selected": "Button label when the product is already in the bundle"
+                    }
+                }
+            }
+        },
+        "n_skincare-routine": {
+            "name": "Skincare routine"
+        },
+        "n_bundle-routine": {
+            "name": "Bundle routine"
         },
         "collection": {
             "name": "Collection",

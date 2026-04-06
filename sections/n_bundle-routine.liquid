@@ -1,0 +1,57 @@
+{% doc %}
+  Renders a bundle routine section.
+{% enddoc %}
+
+
+<!-- BUNDLE ROUTINE -->
+{% if section.settings.use_own_file %}
+  <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/bundle-routine/bundle-routine.css">
+{% endif %}
+
+<section class="bundle-routine">
+  <div class="container">
+    <article>
+      {{ section.settings.text }}
+      <ul>
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'bundle' -%}
+            {% include 'n_bundle-routine-item', block: block, section: section, item_index: forloop.index %}
+          {%- endif -%}
+        {%- endfor -%}
+      </ul>
+    </article>
+  </div>
+</section>
+<!-- BUNDLE ROUTINE END -->
+
+{% schema %}
+{
+    "name": "t:sections.n_bundle-routine.name",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": false
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "t:common.text"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "bundle",
+            "name": "t:common.bundle",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "product",
+                    "label": "t:common.product"
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}

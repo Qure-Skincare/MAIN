@@ -1,0 +1,71 @@
+{% doc %}
+  Media column for We suggest cards (tabs: product / results / review).
+
+  @param {object} block - Section block (manual `results_image`, `review_video`)
+  @param {string} card_link_href - Product link
+  @param {boolean} show_hover_var - Sets `--image-on-hover` on the product link
+  @param {string} alt_text - Alt text for images
+  @param {object} resolved_product_image - Main product visual (picker, first media, or featured)
+  @param {object} resolved_hover_image - Hover image (picker or second product media)
+{% enddoc %}
+
+<div class="c-suggest-card__media">
+  <div class="c-suggest-card__media-content show">
+    <a
+      class="c-suggest-card__media-link"
+      {% if show_hover_var and resolved_hover_image != blank %}
+        style="--image-on-hover: url({{ resolved_hover_image | image_url: width: 1200 }})"
+      {% endif %}
+      href="{{ card_link_href }}"
+    >
+      {% if resolved_product_image != blank %}
+        {% if resolved_product_image.width != blank and resolved_product_image.height != blank %}
+          <img
+            src="{{ resolved_product_image | image_url: width: 800 }}"
+            alt="{{ alt_text | escape }}"
+            loading="lazy"
+            width="{{ resolved_product_image.width }}"
+            height="{{ resolved_product_image.height }}"
+          >
+        {% else %}
+          {{ resolved_product_image | image_url: width: 800 | image_tag: loading: 'lazy', alt: alt_text }}
+        {% endif %}
+      {% endif %}
+    </a>
+  </div>
+  {% if block.settings.results_image != blank %}
+    <div class="c-suggest-card__media-content">
+      <img
+        src="{{ block.settings.results_image | image_url }}"
+        alt="{{ alt_text | escape }}"
+        loading="lazy"
+        width="{{ block.settings.results_image.width }}"
+        height="{{ block.settings.results_image.height }}"
+      >
+    </div>
+  {% endif %}
+  {% if block.settings.review_video != blank %}
+    <div class="c-suggest-card__media-content">
+      <iframe
+        width="100%"
+        height="315"
+        src="{{ block.settings.review_video }}"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+  {% endif %}
+  <ul class="c-suggest-card__media-switcher">
+    {% if resolved_product_image != blank %}
+      <li><button class="active" type="button">{{ 'sections.skincare-plan.product' | t }}</button></li>
+    {% endif %}
+    {% if block.settings.results_image != blank %}
+      <li><button type="button">{{ 'sections.skincare-plan.results' | t }}</button></li>
+    {% endif %}
+    {% if block.settings.review_video != blank %}
+      <li><button type="button">{{ 'sections.skincare-plan.review' | t }}</button></li>
+    {% endif %}
+  </ul>
+</div>

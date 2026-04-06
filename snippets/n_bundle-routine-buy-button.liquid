@@ -1,0 +1,42 @@
+{% doc %}
+  Plain bundle CTA for `n_bundle-routine` (matches isolated markup: no suggest-card form wrapper).
+
+  @param {string} product_variant_id
+  @param {string} product_handle
+  @param {string} product_title
+  @param {number} product_price_original - cents
+  @param {object} product_featured_image
+  @param {object} section - block scope for optional labels
+  @param {string} button_id
+{% enddoc %}
+
+{% assign default_button_label = 'Add to Bundle' %}
+{% assign selected_button_label = 'Added' %}
+
+{% if section.settings.button_label != blank %}
+  {% assign default_button_label = section.settings.button_label %}
+{% endif %}
+
+{% if section.settings.button_label_selected != blank %}
+  {% assign selected_button_label = section.settings.button_label_selected %}
+{% endif %}
+
+{% unless button_id %}
+  {% assign button_id = product_handle | append: '-' | append: 'now' | date: '%s%N' %}
+{% endunless %}
+
+<button
+  type="button"
+  class="btn btn--primary bundle-add-button"
+  data-bundle-button
+  data-button-id="{{ button_id }}"
+  data-variant-id="{{ product_variant_id }}"
+  data-handle="{{ product_handle }}"
+  data-title="{{ product_title | escape }}"
+  data-price="{{ product_price_original }}"
+  data-image="{{ product_featured_image | image_url: width: 250 }}"
+  data-default-text="{{ default_button_label | escape }}"
+  data-selected-text="{{ selected_button_label | escape }}"
+>
+  {{ default_button_label }}
+</button>

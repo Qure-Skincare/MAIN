@@ -1,0 +1,302 @@
+{% doc %}
+  Renders a skin deserves section.
+{% enddoc %}
+
+
+<!-- SKIN DESERVES -->
+ {% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/skin-deserves/skin-deserves.css" />
+ {% endif %}
+<section class="skin-deserves">
+    <div class="container">
+        <article>
+            {{ section.settings.text }}
+            <table>
+                {% for block in section.blocks %}
+                    {% if block.type == 'header' %}
+                        <tr>
+                            <th>{% if block.settings.icon_1 != 'none' %}<i class="e-icon e-icon-{{ block.settings.icon_1 }}"></i>{% endif %}{% if block.settings.text_1 != blank %}{{ block.settings.text_1 }}{% endif %}</th>
+                            <th>{% if block.settings.icon_2 != 'none' %}<i class="e-icon e-icon-{{ block.settings.icon_2 }}"></i>{% endif %}{% if block.settings.text_2 != blank %}{{ block.settings.text_2 }}{% endif %}</th>
+                            <th>{% if block.settings.icon_3 != 'none' %}<i class="e-icon e-icon-{{ block.settings.icon_3 }}"></i>{% endif %}{% if block.settings.text_3 != blank %}{{ block.settings.text_3 }}{% endif %}</th>
+                            <th>{% if block.settings.icon_4 != 'none' %}<i class="e-icon e-icon-{{ block.settings.icon_4 }}"></i>{% endif %}{% if block.settings.text_4 != blank %}{{ block.settings.text_4 }}{% endif %}</th>
+                        </tr>
+                    {% endif %}
+                    {% if block.type == 'table' %}
+                        <tr>
+                            <td>{% if block.settings.icon_1 != 'none' %}<i class="e-icon e-icon-{{ block.settings.icon_1 }}"></i>{% endif %}{% if block.settings.text_1 != blank %}{{ block.settings.text_1 }}{% endif %}</td>
+                            <td>{% if block.settings.icon_2 != 'none' %}<i class="e-icon e-icon-{{ block.settings.icon_2 }}"></i>{% endif %}{% if block.settings.text_2 != blank %}{{ block.settings.text_2 }}{% endif %}</td>
+                            <td>{% if block.settings.icon_3 != 'none' %}<i class="e-icon e-icon-{{ block.settings.icon_3 }}"></i>{% endif %}{% if block.settings.text_3 != blank %}{{ block.settings.text_3 }}{% endif %}</td>
+                            <td>{% if block.settings.icon_4 != 'none' %}<i class="e-icon e-icon-{{ block.settings.icon_4 }}"></i>{% endif %}{% if block.settings.text_4 != blank %}{{ block.settings.text_4 }}{% endif %}</td>
+                        </tr>
+                    {% endif %}
+                {% endfor %}
+            </table>
+        </article>
+    </div>
+</section>
+<!-- SKIN DESERVES END -->
+
+{% schema %}
+{
+    "name": "t:sections.n_skin-deserves.name",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": false
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "t:common.text"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "header",
+            "name": "t:common.header",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "text_1",
+                    "label": "t:common.text"
+                },
+                {
+                    "type": "select",
+                    "id": "icon_1",
+                    "label": "t:common.icon",
+                    "default": "none",
+                    "options": [
+                        {
+                            "value": "checkmark-fill",
+                            "label": "t:common.checkmark"
+                        },
+                        {
+                            "value": "cross-fill",
+                            "label": "t:common.cross"
+                        },
+                        {
+                            "value": "qure",
+                            "label": "t:common.qure"
+                        },
+                        {
+                            "value": "none",
+                            "label": "t:common.none"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "id": "text_2",
+                    "label": "t:common.text"
+                },
+                {
+                    "type": "select",
+                    "id": "icon_2",
+                    "label": "t:common.icon",
+                    "default": "none",
+                    "options": [
+                        {
+                            "value": "checkmark-fill",
+                            "label": "t:common.checkmark"
+                        },
+                        {
+                            "value": "cross-fill",
+                            "label": "t:common.cross"
+                        },
+                        {
+                            "value": "qure",
+                            "label": "t:common.qure"
+                        },
+                        {
+                            "value": "none",
+                            "label": "t:common.none"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "id": "text_3",
+                    "label": "t:common.text"
+                },
+                {
+                    "type": "select",
+                    "id": "icon_3",
+                    "label": "t:common.icon",
+                    "default": "none",
+                    "options": [
+                        {
+                            "value": "checkmark-fill",
+                            "label": "t:common.checkmark"
+                        },
+                        {
+                            "value": "cross-fill",
+                            "label": "t:common.cross"
+                        },
+                        {
+                            "value": "qure",
+                            "label": "t:common.qure"
+                        },
+                        {
+                            "value": "none",
+                            "label": "t:common.none"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "id": "text_4",
+                    "label": "t:common.text"
+                },
+                {
+                    "type": "select",
+                    "id": "icon_4",
+                    "label": "t:common.icon",
+                    "default": "none",
+                    "options": [
+                        {
+                            "value": "checkmark-fill",
+                            "label": "t:common.checkmark"
+                        },
+                        {
+                            "value": "cross-fill",
+                            "label": "t:common.cross"
+                        },
+                        {
+                            "value": "qure",
+                            "label": "t:common.qure"
+                        },
+                        {
+                            "value": "none",
+                            "label": "t:common.none"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "table",
+            "name": "t:common.table",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "text_1",
+                    "label": "t:common.text"
+                },
+                {
+                    "type": "select",
+                    "id": "icon_1",
+                    "label": "t:common.icon",
+                    "default": "none",
+                    "options": [
+                        {
+                            "value": "checkmark-fill",
+                            "label": "t:common.checkmark"
+                        },
+                        {
+                            "value": "cross-fill",
+                            "label": "t:common.cross"
+                        },
+                        {
+                            "value": "qure",
+                            "label": "t:common.qure"
+                        },
+                        {
+                            "value": "none",
+                            "label": "t:common.none"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "id": "text_2",
+                    "label": "t:common.text"
+                },
+                {
+                    "type": "select",
+                    "id": "icon_2",
+                    "label": "t:common.icon",
+                    "default": "none",
+                    "options": [
+                        {
+                            "value": "checkmark-fill",
+                            "label": "t:common.checkmark"
+                        },
+                        {
+                            "value": "cross-fill",
+                            "label": "t:common.cross"
+                        },
+                        {
+                            "value": "qure",
+                            "label": "t:common.qure"
+                        },
+                        {
+                            "value": "none",
+                            "label": "t:common.none"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "id": "text_3",
+                    "label": "t:common.text"
+                },
+                {
+                    "type": "select",
+                    "id": "icon_3",
+                    "label": "t:common.icon",
+                    "default": "none",
+                    "options": [
+                        {
+                            "value": "checkmark-fill",
+                            "label": "t:common.checkmark"
+                        },
+                        {
+                            "value": "cross-fill",
+                            "label": "t:common.cross"
+                        },
+                        {
+                            "value": "qure",
+                            "label": "t:common.qure"
+                        },
+                        {
+                            "value": "none",
+                            "label": "t:common.none"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "id": "text_4",
+                    "label": "t:common.text"
+                },
+                {
+                    "type": "select",
+                    "id": "icon_4",
+                    "label": "t:common.icon",
+                    "default": "none",
+                    "options": [
+                        {
+                            "value": "checkmark-fill",
+                            "label": "t:common.checkmark"
+                        },
+                        {
+                            "value": "cross-fill",
+                            "label": "t:common.cross"
+                        },
+                        {
+                            "value": "qure",
+                            "label": "t:common.qure"
+                        },
+                        {
+                            "value": "none",
+                            "label": "t:common.none"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}

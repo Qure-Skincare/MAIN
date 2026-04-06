@@ -1,0 +1,161 @@
+{% comment %}
+  We suggest: bundle product cards with media tabs, dialog, and bundle-selection integration.
+{% endcomment %}
+
+<!-- WE SUGGEST -->
+{% if section.settings.use_own_file %}
+  <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/we-suggest/we-suggest.css">
+{% endif %}
+
+<section class="we-suggest" id="skincare_goals">
+  <div class="container">
+    {% if section.settings.heading != blank %}
+      <h2>{{ section.settings.heading | escape }}</h2>
+    {% endif %}
+
+    <div class="we-suggest__list">
+      {% for block in section.blocks %}
+        {% if block.type == 'suggest_card' %}
+          {% include 'n_we-suggest-card', block: block, section: section, card_index: forloop.index %}
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    {% if section.settings.complete_bundle_button_label != blank %}
+      <div class="skincare_plan_cta">
+        <div class="btn_wrap">
+          <form class="we-suggest__button" action="#">
+            <button class="btn btn--primary" type="button">{{ section.settings.complete_bundle_button_label | escape }}</button>
+          </form>
+        </div>
+      </div>
+    {% endif %}
+  </div>
+</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        loadScriptOnce("we-suggest", "https://qureskincaredns.com/sections/new/we-suggest/we-suggest.js");
+        loadScriptOnce("dialog", "https://qureskincaredns.com/assets/js-new/dialog.js");
+    });
+</script>
+<!-- WE SUGGEST END -->
+
+{% schema %}
+{
+  "name": "t:sections.n_we-suggest.name",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "use_own_file",
+      "label": "t:common.use-own-file",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "t:common.header",
+      "default": "Based on your goals, we suggest:"
+    },
+    {
+      "type": "text",
+      "id": "complete_bundle_button_label",
+      "label": "t:sections.n_we-suggest.settings.complete-bundle-cta-label",
+      "default": "Add Complete Bundle To Cart"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "suggest_card",
+      "name": "t:sections.n_we-suggest.blocks.suggest_card.name",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "t:common.product"
+        },
+        {
+          "type": "text",
+          "id": "card_title",
+          "label": "t:common.product-title",
+          "info": "t:sections.n_we-suggest.blocks.suggest_card.settings.card-title-info"
+        },
+        {
+          "type": "image_picker",
+          "id": "product_image",
+          "label": "t:common.product-image",
+          "info": "t:sections.n_we-suggest.blocks.suggest_card.settings.product-image-fallback-info"
+        },
+        {
+          "type": "image_picker",
+          "id": "product_hover_image",
+          "label": "t:common.hover-image",
+          "info": "t:sections.n_we-suggest.blocks.suggest_card.settings.product-hover-image-fallback-info"
+        },
+        {
+          "type": "image_picker",
+          "id": "results_image",
+          "label": "t:sections.skincare-plan.settings.results-image"
+        },
+        {
+          "type": "url",
+          "id": "review_video",
+          "label": "t:sections.skincare-plan.settings.review-video"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "t:common.text"
+        },
+        {
+          "type": "richtext",
+          "id": "list",
+          "label": "t:common.list"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "t:common.button-label",
+          "default": "Add to Bundle"
+        },
+        {
+          "type": "text",
+          "id": "button_label_selected",
+          "label": "t:sections.n_we-suggest.blocks.suggest_card.settings.button-label-selected",
+          "default": "Added!"
+        },
+        {
+          "type": "text",
+          "id": "review_heading",
+          "label": "t:common.review-header"
+        },
+        {
+          "type": "text",
+          "id": "review_subheading",
+          "label": "t:common.sub-text"
+        },
+        {
+          "type": "range",
+          "id": "rating",
+          "min": 0,
+          "max": 5,
+          "step": 0.1,
+          "label": "t:common.rating",
+          "default": 4.5
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.n_we-suggest.name",
+      "blocks": [
+        { "type": "suggest_card" },
+        { "type": "suggest_card" },
+        { "type": "suggest_card" },
+        { "type": "suggest_card" }
+      ]
+    }
+  ]
+}
+{% endschema %}

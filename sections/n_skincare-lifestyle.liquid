@@ -1,0 +1,88 @@
+{% doc %}
+  Renders a skincare lifestyle section.
+{% enddoc %}
+
+
+<!-- SKINCARE LIFESTYLE -->
+ {% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/skincare-lifestyle/skincare-lifestyle.css" />
+ {% endif %}
+<section class="skincare-lifestyle">
+    <div class="container">
+        {% if section.settings.text != blank %}
+            <article>
+                {{ section.settings.text }}
+            </article>
+        {% endif %}
+        {% for block in section.blocks %}
+            {% if block.type == 'numbered_list' %}
+                {% if block.settings.image != blank %}
+                    <picture{% if forloop.index == 1 %} class="show"{% endif %}>
+                        <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                    </picture>
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+        <ul>
+            {% for block in section.blocks %}
+                {% if block.type == 'numbered_list' %}
+                    <li>
+                        <button{% if forloop.index == 1 %} class="active"{% endif %} type="button">{{ forloop.index }}</button>
+                        {{ block.settings.text }}
+                        {% if block.settings.image != blank %}
+                            <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                        {% endif %}
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+</section>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        loadScriptOnce("skincare-lifestyle", "https://qureskincaredns.com/sections/new/skincare-lifestyle/skincare-lifestyle.js");
+    });
+</script>
+<!-- SKINCARE LIFESTYLE END -->
+
+{% schema %}
+{
+    "name": "t:sections.n_skincare-lifestyle.name",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": false
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "t:common.text"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "numbered_list",
+            "name": "t:common.numbered-list",
+            "settings": [
+                {
+                    "type": "richtext",
+                    "id": "text",
+                    "label": "t:common.text"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.n_skincare-lifestyle.name"
+        }
+    ]
+}
+{% endschema %}
