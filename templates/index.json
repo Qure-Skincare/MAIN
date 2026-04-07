@@ -85,7 +85,6 @@
     },
     "n_across_image_banner_TNGNLJ": {
       "type": "n_across-image-banner",
-      "disabled": true,
       "name": "t:sections.index-banner-with-text.name",
       "settings": {
         "use_own_file": true,
@@ -100,6 +99,7 @@
     },
     "n_across_image_banner_tL47T8": {
       "type": "n_across-image-banner",
+      "disabled": true,
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
         "use_own_file": true,
@@ -414,7 +414,8 @@
         "use_own_file": true,
         "background_color": "light",
         "text": "<h2>Results you’ll see with your own eyes</h2>",
-        "button_label": ""
+        "button_label": "",
+        "button_url": ""
       }
     },
     "n_index-top-rated": {
