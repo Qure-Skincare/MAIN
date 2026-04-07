@@ -671,7 +671,9 @@
                         "card-title-info": "Optional. If empty, the selected product title is used.",
                         "product-image-fallback-info": "Optional. If empty, the first product image or media is used.",
                         "product-hover-image-fallback-info": "Optional. If empty, the second product image is used when available.",
-                        "button-label-selected": "Button label when the product is already in the bundle"
+                        "button-label-selected": "Button label when the product is already in the bundle",
+                        "review-image": "Quote / testimonial image (optional)",
+                        "review-attribution": "Quote attribution (optional, renders as <span> before the quote image)"
                     }
                 }
             }
