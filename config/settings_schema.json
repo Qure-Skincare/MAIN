@@ -134,7 +134,6 @@
 
       { "type": "header", "content": "Shipping" },
       { "type": "text", "id": "shipping_title", "label": "Title" },
-      { "type": "image_picker", "id": "shipping_image", "label": "Image" },
       { "type": "text", "id": "shipping_icon", "label": "Icon" },
       { "type": "number", "id": "shipping_price", "label": "Price" },
       { "type": "range", "id": "shipping_price_limit", "label": "Price limit", "min": 0, "max": 1000, "step": 10, "unit": "$", "default": 200 },
@@ -142,7 +141,6 @@
       { "type": "header", "content": "Gift #1" },
       { "type": "text", "id": "cart_gift1_title", "label": "Title" },
       { "type": "product", "id": "cart_gift1_product", "label": "Product" },
-      { "type": "image_picker", "id": "cart_gift1_image", "label": "Image" },
       { "type": "select", 
         "id": "cart_gift1_icon", 
         "label": "Icon",
@@ -159,7 +157,6 @@
       { "type": "header", "content": "Gift #2" },
       { "type": "text", "id": "cart_gift2_title", "label": "Title" },
       { "type": "product", "id": "cart_gift2_product", "label": "Product" },
-      { "type": "image_picker", "id": "cart_gift2_image", "label": "Image" },
       { "type": "select", 
         "id": "cart_gift2_icon", 
         "label": "Icon",
