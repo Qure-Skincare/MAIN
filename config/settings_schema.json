@@ -148,7 +148,9 @@
           { "value": "none", "label": "None" },
           { "value": "patches", "label": "Patches" },
           { "value": "pillow", "label": "Pillow" },
-          { "value": "mist", "label": "Mist" }
+          { "value": "mist", "label": "Mist" },
+          { "value": "micro-infusion-system", "label": "Micro Infusion System" },
+          { "value": "gift", "label": "Gift" }
         ],
         "default": "pillow"
       },
@@ -164,7 +166,9 @@
           { "value": "none", "label": "None" },
           { "value": "patches", "label": "Patches" },
           { "value": "pillow", "label": "Pillow" },
-          { "value": "mist", "label": "Mist" }
+          { "value": "mist", "label": "Mist" },
+          { "value": "micro-infusion-system", "label": "Micro Infusion System" },
+          { "value": "gift", "label": "Gift" }
         ],
         "default": "pillow"
       },

@@ -103,7 +103,7 @@
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
         "use_own_file": true,
-        "modifier": "holidays",
+        "modifier": "hero",
         "heading": "<h1>Easter Offer More Glow, More Savings</h1>",
         "text": "<p>For a limited time only, save on your skincare favorites.</p>",
         "image": "shopify://shop_images/easter.webp",
