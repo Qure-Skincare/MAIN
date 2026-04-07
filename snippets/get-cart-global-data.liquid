@@ -91,7 +91,6 @@
 {% assign global_bar_shipping_limit = settings.shipping_price_limit %}
 {% assign global_bar_shipping_price = settings.shipping_price %}
 {% assign global_bar_shipping_title = settings.shipping_title %}
-{% assign global_bar_shipping_image = settings.shipping_image %}
 {% assign global_bar_shipping_icon = settings.shipping_icon %}
 
 {% assign global_bar_freegift_limit = settings.cart_freegift_price_limit %}
@@ -104,7 +103,6 @@
 {% assign global_bar_gift1_price = all_products[global_bar_gift1_handle].price | divided_by: 100 %}
 {% assign global_bar_gift1_variant_id = all_products[global_bar_gift1_handle].variants.first.id %}
 {% assign global_bar_gift1_title = settings.cart_gift1_title %}
-{% assign global_bar_gift1_image = settings.cart_gift1_image %}
 {% assign global_bar_gift1_icon = settings.cart_gift1_icon %}
 
 {% assign global_bar_gift2_limit = settings.cart_gift2_price_limit %}
@@ -112,7 +110,6 @@
 {% assign global_bar_gift2_price = all_products[settings.cart_gift2_product].price | divided_by: 100 %}
 {% assign global_bar_gift2_variant_id = all_products[global_bar_gift2_handle].variants.first.id %}
 {% assign global_bar_gift2_title = settings.cart_gift2_title %}
-{% assign global_bar_gift2_image = settings.cart_gift2_image %}
 {% assign global_bar_gift2_icon = settings.cart_gift2_icon %}
 
 {% assign global_bar_percent = 0 %}
