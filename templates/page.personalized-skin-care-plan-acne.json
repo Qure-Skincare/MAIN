@@ -9,101 +9,113 @@
  */
 {
   "sections": {
-    "banner_with_text_VkzbwN": {
-      "type": "banner-with-text",
-      "name": "t:sections.banner-with-text.name",
+    "n_base_section_eTLjLp": {
+      "type": "n_base-section",
+      "name": "t:sections.n_base-section.name",
       "settings": {
-        "heading": "Your results are in.",
+        "use_own_file": true,
+        "modifier": "none",
+        "modifier_2": "none",
+        "background_color": "none",
+        "heading": "<h2>Your results are in.</h2>",
         "text": "<p><strong>Let’s transform your breakouts!</strong></p><p>We know how confidence destroying acne can be, but with the right plan in place, you're just a few steps away from clearer, happier, healthier-looking skin. We've created a personalized routine just for you to help tackle acne and keep your skin radiant and glowing.</p>",
-        "quote": "",
-        "quote-mobile": "",
-        "image_position": "right",
-        "sub_text": "",
         "image": "shopify://shop_images/transform_aging_acne.webp",
         "button_label": "Shop Now",
         "button_url": "#skincare_goals",
         "wistia_url": ""
       }
     },
-    "skincare_plan_zhREW4": {
-      "type": "skincare-plan",
+    "n_we-suggest_yfwGg": {
+      "type": "n_we-suggest",
       "blocks": {
-        "items_KN7Ke9": {
-          "type": "items",
+        "suggest_KN7Ke9": {
+          "type": "suggest_card",
           "settings": {
             "product": "q-rejuvalight-pro-facewear",
-            "text": "A hands-free LED light therapy mask that uses clinically proven wavelengths to target multiple skin concerns.",
-            "list": "<p>FDA-cleared device designed to treat wrinkles and mild-to-moderate inflammatory acne.</p><p>Customizable treatment on 5 facial areas for your specific skin concerns.</p><p>Quick 3 minute, wireless daily treatments with convenient hands-free operation.</p>",
-            "button_label": "Add to Bundle",
-            "review_heading": "<p><strong>“I noticed results straight away!</strong></p>",
-            "review_text": "<p>Now I can’t go a day without the Q-Rejuvalight Mask.”</p>",
+            "card_title": "",
             "product_image": "shopify://shop_images/q-rej-product.webp",
             "product_hover_image": "shopify://shop_images/hov_img_1.webp",
             "results_image": "shopify://shop_images/q-rej_result_acne.webp",
-            "review_video": "https://www.youtube.com/embed/jwKN4SH4yz8?autoplay=1&mute=1"
+            "review_video": "https://www.youtube.com/embed/jwKN4SH4yz8?autoplay=1&mute=1",
+            "text": "<p>A hands-free LED light therapy mask that uses clinically proven wavelengths to target multiple skin concerns.</p>",
+            "list": "<p>FDA-cleared device designed to treat wrinkles and mild-to-moderate inflammatory acne.</p><p>Customizable treatment on 5 facial areas for your specific skin concerns.</p><p>Quick 3 minute, wireless daily treatments with convenient hands-free operation.</p>",
+            "button_label": "Add to Bundle",
+            "button_label_selected": "Added!",
+            "review_heading": "\u201cI noticed results straight away!",
+            "review_subheading": "Now I can\u2019t go a day without the Q-Rejuvalight Mask.\u201d",
+            "rating": 4.5
           }
         },
-        "items_cHtPBq": {
-          "type": "items",
+        "suggest_cHtPBq": {
+          "type": "suggest_card",
           "settings": {
             "product": "shower-filter",
-            "text": "Healthy skin starts with your water. The Qure Shower Filter helps reduce harmful impurities that damage skin and hair.",
-            "list": "<p>Reduces chlorine, heavy metals, and other impurities that can disrupt your skin barrier.</p><p>Clinically proven to increase skin and scalp moisture after just 8 weeks.</p><p>Available in three colors, with an easy-to-install design.</p>",
-            "button_label": "Add to Bundle",
-            "review_heading": "<p><strong>“This filter makes a huge difference </strong><br>in removing impurities that irritate the skin.”</p>",
-            "review_text": "<p>– Dr. Muneeb Shah, Dermatologist</p>",
-            "review_image": "shopify://shop_images/crt-1_a45e46c8-6d1d-4e86-bde1-2a1411dbe7b2.webp",
+            "card_title": "",
             "product_image": "shopify://shop_images/shower_filter_acne.webp",
             "product_hover_image": "shopify://shop_images/hov_img_2_acne.webp",
             "results_image": "shopify://shop_images/shwr_res_acne.webp",
-            "review_video": "https://www.youtube.com/embed/Jqw2lZirHz4?autoplay=1&mute=1"
+            "review_video": "https://www.youtube.com/embed/Jqw2lZirHz4?autoplay=1&mute=1",
+            "text": "<p>Healthy skin starts with your water. The Qure Shower Filter helps reduce harmful impurities that damage skin and hair.</p>",
+            "list": "<p>Reduces chlorine, heavy metals, and other impurities that can disrupt your skin barrier.</p><p>Clinically proven to increase skin and scalp moisture after just 8 weeks.</p><p>Available in three colors, with an easy-to-install design.</p>",
+            "button_label": "Add to Bundle",
+            "button_label_selected": "Added!",
+            "review_heading": "\u201cThis filter makes a huge difference in removing impurities that irritate the skin.",
+            "review_subheading": "\u2013 Dr. Muneeb Shah, Dermatologist",
+            "rating": 4.5
           }
         },
-        "items_kDMBBt": {
-          "type": "items",
+        "suggest_kDMBBt": {
+          "type": "suggest_card",
           "settings": {
             "product": "face-serum",
-            "text": "A multi-tasking formula designed to hydrate, brighten, and strengthen skin barrier in one step.",
-            "list": "<p>Hydrates and plumps with hyaluronic acid and soothing ingredients.</p><p>Deeply hydrates and evens tone with gentle, skin-renewing actives.</p><p>Lightweight, non-sticky formula that absorbs quickly and layers well.</p>",
-            "button_label": "Add to Bundle",
-            "review_heading": "<p><strong>“This product is a keeper.</strong></p>",
-            "review_text": "<p>My skin looks better than ever after just 2 weeks.”</p>",
+            "card_title": "",
             "product_image": "shopify://shop_images/all-in-prod.webp",
             "product_hover_image": "shopify://shop_images/hov_img_3.webp",
             "results_image": "shopify://shop_images/all-in-result.webp",
-            "review_video": "https://www.youtube.com/embed/PJt57LcFEQk?autoplay=1&mute=1"
+            "review_video": "https://www.youtube.com/embed/PJt57LcFEQk?autoplay=1&mute=1",
+            "text": "<p>A multi-tasking formula designed to hydrate, brighten, and strengthen skin barrier in one step.</p>",
+            "list": "<p>Hydrates and plumps with hyaluronic acid and soothing ingredients.</p><p>Deeply hydrates and evens tone with gentle, skin-renewing actives.</p><p>Lightweight, non-sticky formula that absorbs quickly and layers well.</p>",
+            "button_label": "Add to Bundle",
+            "button_label_selected": "Added!",
+            "review_heading": "\u201cThis product is a keeper.",
+            "review_subheading": "My skin looks better than ever after just 2 weeks.\u201d",
+            "rating": 4.5
           }
         },
-        "items_iH7rhd": {
-          "type": "items",
+        "suggest_iH7rhd": {
+          "type": "suggest_card",
           "settings": {
             "product": "dermal-mist",
-            "text": "A refreshing facial spray that calms irritation, purifies the skin, and accelerates skin healing. Ideal for daily use.",
-            "list": "<p>Gently purifies your skin, reducing breakout-causing bacteria without stripping or drying it out.</p><p>Helps calm inflammation and keeps your skin refreshed throughout the day.</p><p>Versatile and safe to use on your face, body and devices.</p>",
-            "button_label": "Add to Bundle",
-            "review_heading": "<p><strong>“I take this with me everywhere</strong></p>",
-            "review_text": "<p>it keeps my skin calm and hydrated all day!”</p>",
+            "card_title": "",
             "product_image": "shopify://shop_images/dermal_mist_acne.webp",
             "product_hover_image": "shopify://shop_images/hov_img_4_acne.webp",
-            "review_video": "https://www.youtube.com/embed/Ecw9o0bM6Gc?autoplay=1&mute=1"
+            "results_image": "",
+            "review_video": "https://www.youtube.com/embed/Ecw9o0bM6Gc?autoplay=1&mute=1",
+            "text": "<p>A refreshing facial spray that calms irritation, purifies the skin, and accelerates skin healing. Ideal for daily use.</p>",
+            "list": "<p>Gently purifies your skin, reducing breakout-causing bacteria without stripping or drying it out.</p><p>Helps calm inflammation and keeps your skin refreshed throughout the day.</p><p>Versatile and safe to use on your face, body and devices.</p>",
+            "button_label": "Add to Bundle",
+            "button_label_selected": "Added!",
+            "review_heading": "\u201cI take this with me everywhere",
+            "review_subheading": "it keeps my skin calm and hydrated all day!\u201d",
+            "rating": 4.5
           }
         }
       },
       "block_order": [
-        "items_KN7Ke9",
-        "items_cHtPBq",
-        "items_kDMBBt",
-        "items_iH7rhd"
+        "suggest_KN7Ke9",
+        "suggest_cHtPBq",
+        "suggest_kDMBBt",
+        "suggest_iH7rhd"
       ],
-      "name": "t:sections.skincare-plan.name",
+      "name": "t:sections.n_we-suggest.name",
       "settings": {
+        "use_own_file": true,
         "heading": "Based on your goals, we suggest:",
-        "button_label": "Add Complete Bundle To Cart",
-        "button_url": "#sticky_cta_cart"
+        "complete_bundle_button_label": "Add Complete Bundle To Cart"
       }
     },
-    "logos_kLQ3pp": {
-      "type": "logos",
+    "n_logos_Tbp3ip": {
+      "type": "n_logos",
       "blocks": {
         "carousel_YLH9Bz": {
           "type": "carousel",
@@ -150,174 +162,175 @@
         "carousel_qGnB6e",
         "carousel_YxRnWf"
       ],
-      "name": "t:sections.logos.name",
-      "settings": {}
+      "name": "t:sections.n_logos.name",
+      "settings": {
+        "use_own_file": true
+      }
     },
-    "skincare_routine_nibxW3": {
-      "type": "skincare-routine",
+    "n_skincare_routine_gsdR4E": {
+      "type": "n_skincare-routine",
       "blocks": {
-        "list_6wp7gV": {
-          "type": "list",
+        "tab_6wp7gV": {
+          "type": "tab",
           "settings": {
-            "button_label": "Morning",
-            "heading": "<p><strong>How To Use</strong></p>",
-            "text": "<p>After cleansing, mist your skin with the Dermal Mist, then (optional) apply the All-In-One Face Serum to damp skin for optimal absorption.</p>",
-            "subheading": "<p><strong>Benefits</strong></p>",
-            "subtext": "<ul><li>Hydrated, balanced skin all day</li><li>Brightened tone and lightweight moisture</li><li>Skin stays calm even post-shower</li></ul>",
-            "am_or_pm": "none",
+            "tab_heading": "Morning",
+            "text": "<p><strong>How To Use</strong></p><p>After cleansing, mist your skin with the Dermal Mist, then (optional) apply the All-In-One Face Serum to damp skin for optimal absorption.</p>",
+            "sub_text": "<p><strong>Benefits</strong></p><ul><li>Hydrated, balanced skin all day</li><li>Brightened tone and lightweight moisture</li><li>Skin stays calm even post-shower</li></ul>",
+            "am_or_pm_1": "none",
+            "am_or_pm_2": "none",
             "wistia_url": "",
             "image": "shopify://shop_images/morning_routine.webp"
           }
         },
-        "list_NdKD8n": {
-          "type": "list",
+        "tab_NdKD8n": {
+          "type": "tab",
           "settings": {
-            "button_label": "Evening",
-            "heading": "<p><strong>How To Use</strong></p>",
-            "text": "<p>Cleanse and dry your skin. Use your Q-Rejuvalight Pro on Skin Clearing Mode for a full 3-minute session. Follow with a refreshing spritz of the Dermal Mist to soothe and lock in moisture.</p>",
-            "subheading": "<p><strong>Benefits</strong></p>",
-            "subtext": "<ul><li>Supports the skin’s natural recovery process overnight</li><li>Targets mild-to-moderate acne and helps prevent future breakouts</li><li>Lightweight routine, no heavy creams needed</li></ul>",
-            "am_or_pm": "none",
+            "tab_heading": "Evening",
+            "text": "<p><strong>How To Use</strong></p><p>Cleanse and dry your skin. Use your Q-Rejuvalight Pro on Skin Clearing Mode for a full 3-minute session. Follow with a refreshing spritz of the Dermal Mist to soothe and lock in moisture.</p>",
+            "sub_text": "<p><strong>Benefits</strong></p><ul><li>Supports the skin\u2019s natural recovery process overnight</li><li>Targets mild-to-moderate acne and helps prevent future breakouts</li><li>Lightweight routine, no heavy creams needed</li></ul>",
+            "am_or_pm_1": "none",
+            "am_or_pm_2": "none",
             "wistia_url": "klt401yhji"
           }
         }
       },
       "block_order": [
-        "list_6wp7gV",
-        "list_NdKD8n"
+        "tab_6wp7gV",
+        "tab_NdKD8n"
       ],
-      "name": "t:sections.skincare-routine.name",
+      "name": "t:sections.n_skincare-routine.name",
       "settings": {
+        "use_own_file": true,
         "heading": "Meet your new skincare routine"
       }
     },
-    "trusted_reviews_Thpkzc": {
-      "type": "trusted-reviews",
+    "n_trusted_reviews_iH49CP": {
+      "type": "n_trusted-reviews",
       "blocks": {
         "slider_GxL44Y": {
           "type": "slider",
           "settings": {
-            "heading": "Can’t go a day without it",
-            "text": "<p>“Straight away I noticed results with Qure, after the first week I had no active breakouts anymore. People ask me now how have I got my skin to be hydrated, acne-free, looking bright with no redness. I'm so reliant on the Qure mask now. I don't think I can go a day without using it.”</p>",
-            "compare_image": "shopify://shop_images/anton_8weeks.webp",
-            "country_image": "shopify://shop_images/australia_f.webp",
-            "username": "<p>Anton M.</p>",
+            "image": "shopify://shop_images/anton_8weeks.webp",
+            "flag": "shopify://shop_images/australia_f.webp",
+            "username": "Anton M.",
+            "verified_customer": "Verified customer",
+            "text": "<p><strong>Can\u2019t go a day without it</strong></p><p>\u201cStraight away I noticed results with Qure, after the first week I had no active breakouts anymore. People ask me now how have I got my skin to be hydrated, acne-free, looking bright with no redness. I'm so reliant on the Qure mask now. I don't think I can go a day without using it.\u201d</p>",
             "product_url": "#",
-            "product_heading": "Anton uses...",
-            "product_text": "Q-Rejuvalight Pro LED Mask",
-            "product_image": "shopify://shop_images/q-rejuvalight-pro-led-mask.webp"
+            "product_image": "shopify://shop_images/q-rejuvalight-pro-led-mask.webp",
+            "product_text": "Anton uses...",
+            "product_title": "Q-Rejuvalight Pro LED Mask"
           }
         },
         "slider_bm3JtL": {
           "type": "slider",
           "settings": {
-            "heading": "Hydrated more than ever",
-            "text": "<p>“I never had any major issues with skin before I moved. Then I started to get irritation and my makeup would look cakey cause my skin was always so dry no matter what I used. I didn’t change anything in my skincare routine except filtered water. I’m never washing my face with anything less that Q-urified water because my skin is so much better.”</p>",
-            "compare_image": "shopify://shop_images/hanna_2weeks.webp",
-            "country_image": "shopify://shop_images/england_f.webp",
-            "username": "<p>Hanna L.</p>",
+            "image": "shopify://shop_images/hanna_2weeks.webp",
+            "flag": "shopify://shop_images/england_f.webp",
+            "username": "Hanna L.",
+            "verified_customer": "Verified customer",
+            "text": "<p><strong>Hydrated more than ever</strong></p><p>\u201cI never had any major issues with skin before I moved. Then I started to get irritation and my makeup would look cakey cause my skin was always so dry no matter what I used. I didn\u2019t change anything in my skincare routine except filtered water. I\u2019m never washing my face with anything less that Q-urified water because my skin is so much better.\u201d</p>",
             "product_url": "#",
-            "product_heading": "Hanna uses...",
-            "product_text": "Shower Filter",
-            "product_image": "shopify://shop_images/shwr_uses.webp"
+            "product_image": "shopify://shop_images/shwr_uses.webp",
+            "product_text": "Hanna uses...",
+            "product_title": "Shower Filter"
           }
         },
         "slider_mxj9Rg": {
           "type": "slider",
           "settings": {
-            "heading": "Amazing!!",
-            "text": "<p>“Amazing! Has made such a massive on my acne. Still getting breakouts but they disappear way quicker. Took maybe 2 days to start working. Pics are about 3 weeks difference.”</p>",
-            "compare_image": "shopify://shop_images/sophie_3weeks.webp",
-            "country_image": "shopify://shop_images/australia_f.webp",
-            "username": "<p>Sophie R.</p>",
+            "image": "shopify://shop_images/sophie_3weeks.webp",
+            "flag": "shopify://shop_images/australia_f.webp",
+            "username": "Sophie R.",
+            "verified_customer": "Verified customer",
+            "text": "<p><strong>Amazing!!</strong></p><p>\u201cAmazing! Has made such a massive on my acne. Still getting breakouts but they disappear way quicker. Took maybe 2 days to start working. Pics are about 3 weeks difference.\u201d</p>",
             "product_url": "#",
-            "product_heading": "Sophie uses...",
-            "product_text": "Q-Rejuvalight Pro LED Mask",
-            "product_image": "shopify://shop_images/q-rejuvalight-pro-led-mask.webp"
+            "product_image": "shopify://shop_images/q-rejuvalight-pro-led-mask.webp",
+            "product_text": "Sophie uses...",
+            "product_title": "Q-Rejuvalight Pro LED Mask"
           }
         },
         "slider_NJgemg": {
           "type": "slider",
           "settings": {
-            "heading": "Acne and dryness gone",
-            "text": "<p>“My skin has cleared up so much thanks to Qure! I use the LED mask and water filter daily and it’s cleared up my acne, and my complexion so much smoother and less red! My skin feels soft and hydrated. I can actually walk out of the house without makeup now. THANK YOU QURE!!!”</p>",
-            "compare_image": "shopify://shop_images/josie_3weeks.webp",
-            "country_image": "shopify://shop_images/america_f.webp",
-            "username": "<p>Josie K.</p>",
+            "image": "shopify://shop_images/josie_3weeks.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Josie K.",
+            "verified_customer": "Verified customer",
+            "text": "<p><strong>Acne and dryness gone</strong></p><p>\u201cMy skin has cleared up so much thanks to Qure! I use the LED mask and water filter daily and it\u2019s cleared up my acne, and my complexion so much smoother and less red! My skin feels soft and hydrated. I can actually walk out of the house without makeup now. THANK YOU QURE!!!\u201d</p>",
             "product_url": "#",
-            "product_heading": "Josie uses...",
-            "product_text": "Shower Filter",
-            "product_image": "shopify://shop_images/shwr_uses.webp"
+            "product_image": "shopify://shop_images/shwr_uses.webp",
+            "product_text": "Josie uses...",
+            "product_title": "Shower Filter"
           }
         },
         "slider_xnwryw": {
           "type": "slider",
           "settings": {
-            "heading": "My cystic acne is gone",
-            "text": "<p>“So far loving it! Had a little purging the first day using it but when it settled down, boy was it good. My cystic acne is gone. I still have some hyperpigmentation and little surface pimples that I get occasionally but no where near the pain I experienced with cystic acne.”</p>",
-            "compare_image": "shopify://shop_images/vanessa_6weeks.webp",
-            "country_image": "shopify://shop_images/australia_f.webp",
-            "username": "<p>Vanessa B.</p>",
+            "image": "shopify://shop_images/vanessa_6weeks.webp",
+            "flag": "shopify://shop_images/australia_f.webp",
+            "username": "Vanessa B.",
+            "verified_customer": "Verified customer",
+            "text": "<p><strong>My cystic acne is gone</strong></p><p>\u201cSo far loving it! Had a little purging the first day using it but when it settled down, boy was it good. My cystic acne is gone. I still have some hyperpigmentation and little surface pimples that I get occasionally but no where near the pain I experienced with cystic acne.\u201d</p>",
             "product_url": "#",
-            "product_heading": "Vanessa uses...",
-            "product_text": "All-In-One Serum",
-            "product_image": "shopify://shop_images/all-in-one-serum.webp"
+            "product_image": "shopify://shop_images/all-in-one-serum.webp",
+            "product_text": "Vanessa uses...",
+            "product_title": "All-In-One Serum"
           }
         },
         "slider_bNyYqM": {
           "type": "slider",
           "settings": {
-            "heading": "Best investment for my skin",
-            "text": "<p>“It has been amazing, so easy to use for a start. And I am already noticing massive improvements, the texture of my skin has gone from rough and bumpy to silky smooth and I have stopped breaking out since using the blue light feature. I love it, couldn’t recommend it highly enough!”</p>",
-            "compare_image": "shopify://shop_images/saskia_4weeks.webp",
-            "country_image": "shopify://shop_images/england_f.webp",
-            "username": "<p>Saskia Z.</p>",
+            "image": "shopify://shop_images/saskia_4weeks.webp",
+            "flag": "shopify://shop_images/england_f.webp",
+            "username": "Saskia Z.",
+            "verified_customer": "Verified customer",
+            "text": "<p><strong>Best investment for my skin</strong></p><p>\u201cIt has been amazing, so easy to use for a start. And I am already noticing massive improvements, the texture of my skin has gone from rough and bumpy to silky smooth and I have stopped breaking out since using the blue light feature. I love it, couldn\u2019t recommend it highly enough!\u201d</p>",
             "product_url": "#",
-            "product_heading": "Saskia uses...",
-            "product_text": "Q-Rejuvalight Pro LED Mask",
-            "product_image": "shopify://shop_images/q-rejuvalight-pro-led-mask.webp"
+            "product_image": "shopify://shop_images/q-rejuvalight-pro-led-mask.webp",
+            "product_text": "Saskia uses...",
+            "product_title": "Q-Rejuvalight Pro LED Mask"
           }
         },
         "slider_kwjaeF": {
           "type": "slider",
           "settings": {
-            "heading": "Changed my life!",
-            "text": "<p>“This product has changed my life! My skin feels brighter, clearer and way more even! I’ll use this for the rest of my life!”</p>",
-            "compare_image": "shopify://shop_images/bethany_6weeks.webp",
-            "country_image": "shopify://shop_images/canada_f.webp",
-            "username": "<p>Bethany N.</p>",
+            "image": "shopify://shop_images/bethany_6weeks.webp",
+            "flag": "shopify://shop_images/canada_f.webp",
+            "username": "Bethany N.",
+            "verified_customer": "Verified customer",
+            "text": "<p><strong>Changed my life!</strong></p><p>\u201cThis product has changed my life! My skin feels brighter, clearer and way more even! I\u2019ll use this for the rest of my life!\u201d</p>",
             "product_url": "#",
-            "product_heading": "Bethany uses...",
-            "product_text": "All-In-One Serum",
-            "product_image": "shopify://shop_images/all-in-one-serum.webp"
+            "product_image": "shopify://shop_images/all-in-one-serum.webp",
+            "product_text": "Bethany uses...",
+            "product_title": "All-In-One Serum"
           }
         },
         "slider_F4Ri4G": {
           "type": "slider",
           "settings": {
-            "heading": "Source of my unclear skin",
-            "text": "<p>“I didn’t realize how big impact water has on our skin... I almost got used to my skin never getting better than mediocre, but this Water Filter is a game changer in my skincare routine.”</p>",
-            "compare_image": "shopify://shop_images/kim_4weeks.webp",
-            "country_image": "shopify://shop_images/america_f.webp",
-            "username": "<p>Kim L.</p>",
+            "image": "shopify://shop_images/kim_4weeks.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Kim L.",
+            "verified_customer": "Verified customer",
+            "text": "<p><strong>Source of my unclear skin</strong></p><p>\u201cI didn\u2019t realize how big impact water has on our skin... I almost got used to my skin never getting better than mediocre, but this Water Filter is a game changer in my skincare routine.\u201d</p>",
             "product_url": "#",
-            "product_heading": "Kim uses...",
-            "product_text": "Shower Filter",
-            "product_image": "shopify://shop_images/neck-decolletage-led-device.webp"
+            "product_image": "shopify://shop_images/neck-decolletage-led-device.webp",
+            "product_text": "Kim uses...",
+            "product_title": "Shower Filter"
           }
         },
         "slider_pQ3wxe": {
           "type": "slider",
           "settings": {
-            "heading": "Saw a difference within 3 days",
-            "text": "<p>“Incredible! The item is so well made, I had cystic acne on my jaw that went away within a week of use and my skin felt very soft. I have gotten 3 other people to purchase this product and will continue to rave about it!”</p>",
-            "compare_image": "shopify://shop_images/jovana_6weeks.webp",
-            "country_image": "shopify://shop_images/canada_f.webp",
-            "username": "<p>Jovana S.</p>",
+            "image": "shopify://shop_images/jovana_6weeks.webp",
+            "flag": "shopify://shop_images/canada_f.webp",
+            "username": "Jovana S.",
+            "verified_customer": "Verified customer",
+            "text": "<p><strong>Saw a difference within 3 days</strong></p><p>\u201cIncredible! The item is so well made, I had cystic acne on my jaw that went away within a week of use and my skin felt very soft. I have gotten 3 other people to purchase this product and will continue to rave about it!\u201d</p>",
             "product_url": "#",
-            "product_heading": "Jovana uses...",
-            "product_text": "Q-Rejuvalight Pro LED Mask",
-            "product_image": "shopify://shop_images/q-rejuvalight-pro-led-mask.webp"
+            "product_image": "shopify://shop_images/q-rejuvalight-pro-led-mask.webp",
+            "product_text": "Jovana uses...",
+            "product_title": "Q-Rejuvalight Pro LED Mask"
           }
         }
       },
@@ -332,62 +345,61 @@
         "slider_F4Ri4G",
         "slider_pQ3wxe"
       ],
-      "name": "t:sections.trusted-reviews.name",
+      "name": "t:sections.n_trusted-reviews.name",
       "settings": {
-        "background_color": "",
-        "heading": "No promises, just proof",
-        "text": "",
-        "text_mobile": "",
+        "use_own_file": true,
+        "background_color": "none",
+        "text": "<h2>No promises, just proof</h2>",
         "button_label": "",
         "button_url": ""
       }
     },
-    "trusted_recommended_q3bf6Q": {
-      "type": "trusted-recommended",
-      "name": "t:sections.trusted-recommended.name",
+    "n_trusted_recommended_8zgaa3": {
+      "type": "n_trusted-recommended",
+      "name": "t:sections.n_trusted-recommended.name",
       "settings": {
-        "background_color": "#ffffff",
-        "heading": "Trusted and Recommended by Experts",
-        "text": "<p>“Of all the LED masks we’ve tried, this is <strong>the best on the market right now...</strong> It didn’t lose in any category...</p><p>There’s real science behind LED therapy, and<strong> Qure makes it easy</strong> to be consistent—which is what really drives results.”</p>",
-        "image_text": "",
-        "video_cover_image": "shopify://shop_images/doctor_img_bddb1870-8487-4f88-b6dd-ab063ea346f3.webp",
+        "use_own_file": true,
+        "background_color": "none",
+        "modifier": "none",
+        "heading": "<h2>Trusted and Recommended by Experts</h2>",
+        "text": "<p>\u201cOf all the LED masks we\u2019ve tried, this is\u00a0<em>the best on the market right now...</em>\u00a0It didn\u2019t lose in any category...</p><p>There\u2019s real science behind LED therapy, and\u00a0<em>Qure makes it easy</em>\u00a0to be consistent\u2014which is what really drives results.\u201d</p>",
+        "video_image_cover": "shopify://shop_images/doctor_img_bddb1870-8487-4f88-b6dd-ab063ea346f3.webp",
+        "text_on_image": "",
+        "wistia_url": false,
         "video_url": "https://www.youtube.com/watch?v=I2Fe-kP-2Jg",
-        "wistia_url": ""
+        "badge_text": "Dermatologist Reviewed"
       }
     },
-    "video_slider_GAw6w3": {
-      "type": "video-slider",
+    "n_video_slider_nfnAhc": {
+      "type": "n_video-slider",
       "blocks": {
         "slider_3mc9WE": {
           "type": "slider",
           "settings": {
-            "heading": "<p>\"Qure has a fully customized mask which has 5 clinical-grade wavelength for aging and acne.\"</p>",
-            "text": "<p>Dr. Prem Tripathi</p>",
-            "sub_text": "<p>Board-Certified Dermatologist</p>",
-            "url": "qnxqysx3sg",
-            "checkbox": false,
+            "heading": "<p>\u201cQure has a fully customized mask which has 5 clinical-grade wavelength for aging and acne.\u201d</p>",
+            "text": "<p>Dr. Prem Tripathi</p><p>[checkmark] Board-Certified Dermatologist</p>",
+            "youtube_url": false,
+            "video_url": "qnxqysx3sg",
             "image": "shopify://shop_images/trusted_rejuv_1.webp"
           }
         },
         "slider_GEyUqe": {
           "type": "slider",
           "settings": {
-            "heading": "<p>“Dermal Mist sanitizes and preps your skin, allowing other skincare products to penetrate your skin even further...”</p>",
-            "text": "<p>Dr. Shah & Dr. Maxfield</p>",
-            "sub_text": "<p>Board-Certified Dermatologists</p>",
-            "url": "k1wciiwksf",
-            "checkbox": false,
+            "heading": "<p>\u201cDermal Mist sanitizes and preps your skin, allowing other skincare products to penetrate your skin even further...\u201d</p>",
+            "text": "<p>Dr. Shah & Dr. Maxfield</p><p>[checkmark] Board-Certified Dermatologists</p>",
+            "youtube_url": false,
+            "video_url": "k1wciiwksf",
             "image": "shopify://shop_images/dr_shah_dr_max.webp"
           }
         },
         "slider_kVwQJm": {
           "type": "slider",
           "settings": {
-            "heading": "<p>\"This mask actively treats the entire face for clearer and more beautiful skin.\"</p>",
-            "text": "<p>Dr. Anthony Youn</p>",
-            "sub_text": "<p>Plastic Surgeon</p>",
-            "url": "https://www.youtube.com/watch?v=XtgmSadah48",
-            "checkbox": true,
+            "heading": "<p>\u201cThis mask actively treats the entire face for clearer and more beautiful skin.\u201d</p>",
+            "text": "<p>Dr. Anthony Youn</p><p>[checkmark] Plastic Surgeon</p>",
+            "youtube_url": true,
+            "video_url": "https://www.youtube.com/watch?v=XtgmSadah48",
             "image": "shopify://shop_images/lmv-4_a853fb86-f0f4-457c-8826-9fb296bcf093.webp"
           }
         }
@@ -397,34 +409,35 @@
         "slider_GEyUqe",
         "slider_kVwQJm"
       ],
-      "name": "t:sections.video-slider.name",
-      "settings": {}
+      "name": "t:sections.n_video-slider.name",
+      "settings": {
+        "use_own_file": true,
+        "modifier": "three_cards",
+        "text": ""
+      }
     },
-    "skincare_lifestyle_VBEPXr": {
-      "type": "skincare-lifestyle",
+    "n_skincare_lifestyle_qhHX4N": {
+      "type": "n_skincare-lifestyle",
       "blocks": {
         "numbered_list_PJLt6X": {
           "type": "numbered_list",
           "settings": {
-            "heading": "<p><strong>Cleanse and exfoliate regularly</strong></p>",
-            "text": "<p>Daily cleansing removes pore-clogging bacteria, while regular exfoliation with Beta-Hydroxy Acid (BHA) helps reduce irritation and prevents future breakouts</p>",
-            "image_mobile": "shopify://shop_images/sk_life_1_acne.webp"
+            "text": "<p><strong>Cleanse and exfoliate regularly</strong></p><p>Daily cleansing removes pore-clogging bacteria, while regular exfoliation with Beta-Hydroxy Acid (BHA) helps reduce irritation and prevents future breakouts</p>",
+            "image": "shopify://shop_images/sk_life_1_acne.webp"
           }
         },
         "numbered_list_NV3RFz": {
           "type": "numbered_list",
           "settings": {
-            "heading": "<p><strong>Keep your tools and surfaces clean</strong></p>",
-            "text": "<p>Makeup tools and your phone collect bacteria that clog pores. Cleaning them regularly can reduce the chances of breakouts and help keep your skin fresh.</p>",
-            "image_mobile": "shopify://shop_images/sk_life_2_acne.webp"
+            "text": "<p><strong>Keep your tools and surfaces clean</strong></p><p>Makeup tools and your phone collect bacteria that clog pores. Cleaning them regularly can reduce the chances of breakouts and help keep your skin fresh.</p>",
+            "image": "shopify://shop_images/sk_life_2_acne.webp"
           }
         },
         "numbered_list_YMhmcw": {
           "type": "numbered_list",
           "settings": {
-            "heading": "<p><strong>Change your pillowcase every 2-3 days</strong></p>",
-            "text": "<p>To prevent buildup of oil, sweat, and bacteria that can lead to breakouts and irritation.</p>",
-            "image_mobile": "shopify://shop_images/sk_life_3_acne.webp"
+            "text": "<p><strong>Change your pillowcase every 2-3 days</strong></p><p>To prevent buildup of oil, sweat, and bacteria that can lead to breakouts and irritation.</p>",
+            "image": "shopify://shop_images/sk_life_3_acne.webp"
           }
         }
       },
@@ -433,95 +446,133 @@
         "numbered_list_NV3RFz",
         "numbered_list_YMhmcw"
       ],
-      "name": "t:sections.skincare-lifestyle.name",
+      "name": "t:sections.n_skincare-lifestyle.name",
       "settings": {
-        "heading": "Skincare is a lifestyle",
-        "text": "Caring for your skin goes beyond the products you use. It’s about adopting habits that support your skin’s health every day. Our dermatologists recommend these expert tips to help you reach your skin goals even faster."
+        "use_own_file": true,
+        "text": "<h2>Skincare is a lifestyle</h2><p>Caring for your skin goes beyond the products you use. It\u2019s about adopting habits that support your skin\u2019s health every day. Our dermatologists recommend these expert tips to help you reach your skin goals even faster.</p>"
       }
     },
-    "comparison_real_fake_jIifqy": {
-      "type": "comparison-real-fake",
+    "n_skin_deserves_0ujHaq": {
+      "type": "n_skin-deserves",
       "blocks": {
-        "compairing_points_KyG6gw": {
-          "type": "compairing_points",
+        "table_header": {
+          "type": "header",
           "settings": {
-            "real_text": "<p>Effective and proven formulas</p>",
-            "fake_text": "<p>Show minimal improvement or change</p>"
+            "text_1": "",
+            "icon_1": "qure",
+            "text_2": "",
+            "icon_2": "none",
+            "text_3": "",
+            "icon_3": "none",
+            "text_4": "Other Products",
+            "icon_4": "none"
           }
         },
-        "compairing_points_RbBr8B": {
-          "type": "compairing_points",
+        "table_row_1": {
+          "type": "table",
           "settings": {
-            "real_text": "<p>Penetrates deep for better results</p>",
-            "fake_text": "<p>Topical products stay on the surface</p>"
+            "text_1": "Effective and proven formulas",
+            "icon_1": "none",
+            "text_2": "",
+            "icon_2": "checkmark-fill",
+            "text_3": "",
+            "icon_3": "cross-fill",
+            "text_4": "Show minimal improvement or change",
+            "icon_4": "none"
           }
         },
-        "compairing_points_393WiG": {
-          "type": "compairing_points",
+        "table_row_2": {
+          "type": "table",
           "settings": {
-            "real_text": "<p>Gentle on skin with no downtime</p>",
-            "fake_text": "<p>Can cause irritation and peeling</p>"
+            "text_1": "Penetrates deep for better results",
+            "icon_1": "none",
+            "text_2": "",
+            "icon_2": "checkmark-fill",
+            "text_3": "",
+            "icon_3": "cross-fill",
+            "text_4": "Topical products stay on the surface",
+            "icon_4": "none"
           }
         },
-        "compairing_points_cFYTbm": {
-          "type": "compairing_points",
+        "table_row_3": {
+          "type": "table",
           "settings": {
-            "real_text": "<p>Safe to use at-home</p>",
-            "fake_text": "<p>Often requires clinic visits and downtime</p>"
+            "text_1": "Gentle on skin with no downtime",
+            "icon_1": "none",
+            "text_2": "",
+            "icon_2": "checkmark-fill",
+            "text_3": "",
+            "icon_3": "cross-fill",
+            "text_4": "Can cause irritation and peeling",
+            "icon_4": "none"
           }
         },
-        "compairing_points_XXNhHY": {
-          "type": "compairing_points",
+        "table_row_4": {
+          "type": "table",
           "settings": {
-            "real_text": "<p>Backed by dermatologists</p>",
-            "fake_text": "<p>Not always tested or recommended</p>"
+            "text_1": "Safe to use at-home",
+            "icon_1": "none",
+            "text_2": "",
+            "icon_2": "checkmark-fill",
+            "text_3": "",
+            "icon_3": "cross-fill",
+            "text_4": "Often requires clinic visits and downtime",
+            "icon_4": "none"
+          }
+        },
+        "table_row_5": {
+          "type": "table",
+          "settings": {
+            "text_1": "Backed by dermatologists",
+            "icon_1": "none",
+            "text_2": "",
+            "icon_2": "checkmark-fill",
+            "text_3": "",
+            "icon_3": "cross-fill",
+            "text_4": "Not always tested or recommended",
+            "icon_4": "none"
           }
         }
       },
       "block_order": [
-        "compairing_points_KyG6gw",
-        "compairing_points_RbBr8B",
-        "compairing_points_393WiG",
-        "compairing_points_cFYTbm",
-        "compairing_points_XXNhHY"
+        "table_header",
+        "table_row_1",
+        "table_row_2",
+        "table_row_3",
+        "table_row_4",
+        "table_row_5"
       ],
-      "name": "t:sections.comparison-real-fake.name",
+      "name": "t:sections.n_skin-deserves.name",
       "settings": {
-        "heading": "Your skin deserves Qure",
-        "text": "<p>Skincare isn’t a numbers game. More products won’t help if your skin can’t use them effectively. Qure gives you the right treatment, in the right way, for results you can actually see.</p>",
-        "heading_fake": "Other Products",
-        "image_heading_real": "shopify://shop_images/qure_logo..svg"
+        "use_own_file": true,
+        "text": "<h2>Your skin deserves Qure</h2><p>Skincare isn\u2019t a numbers game. More products won\u2019t help if your skin can\u2019t use them effectively. Qure gives you the right treatment, in the right way, for results you can actually see.</p>"
       }
     },
-    "bundle_routine_wtQJJx": {
-      "type": "bundle-routine",
+    "n_bundle_routine_OctM0j": {
+      "type": "n_bundle-routine",
       "blocks": {
         "bundle_LcqBR8": {
           "type": "bundle",
           "settings": {
-            "product": "q-rejuvalight-pro-facewear",
-            "button_label": "Add to Bundle"
+            "product": "q-rejuvalight-pro-facewear"
           }
         },
         "bundle_eNrMY7": {
           "type": "bundle",
           "settings": {
-            "product": "shower-filter",
-            "button_label": "Add to Bundle"
+            "product": "shower-filter"
           }
         },
         "bundle_qwnnfe": {
           "type": "bundle",
           "settings": {
-            "product": "face-serum",
-            "button_label": "Add to Bundle"
+            "product": "face-serum"
           }
         },
         "bundle_gg4Dhb": {
           "type": "bundle",
           "settings": {
-            "product": "dermal-mist",
-            "button_label": "Add to Bundle"
+            "product": "dermal-mist"
           }
         }
       },
@@ -531,29 +582,29 @@
         "bundle_qwnnfe",
         "bundle_gg4Dhb"
       ],
-      "name": "t:sections.bundle-routine.name",
+      "name": "t:sections.n_bundle-routine.name",
       "settings": {
-        "heading": "Bundle your new routine",
-        "text": "Mix and match our targeted treatments to create a high-performance routine that fits your skin goals."
+        "use_own_file": true,
+        "text": "<h2>Bundle your new routine</h2><p>Mix and match our targeted treatments to create a high-performance routine that fits your skin goals.</p>"
       }
     },
-    "sticky_cta_nTPkm8": {
+    "sticky_cta_hd4dLE": {
       "type": "sticky-cta",
       "name": "t:sections.static-sticky-cta.name",
       "settings": {}
     }
   },
   "order": [
-    "banner_with_text_VkzbwN",
-    "skincare_plan_zhREW4",
-    "logos_kLQ3pp",
-    "skincare_routine_nibxW3",
-    "trusted_reviews_Thpkzc",
-    "trusted_recommended_q3bf6Q",
-    "video_slider_GAw6w3",
-    "skincare_lifestyle_VBEPXr",
-    "comparison_real_fake_jIifqy",
-    "bundle_routine_wtQJJx",
-    "sticky_cta_nTPkm8"
+    "n_base_section_eTLjLp",
+    "n_we-suggest_yfwGg",
+    "n_logos_Tbp3ip",
+    "n_skincare_routine_gsdR4E",
+    "n_trusted_reviews_iH49CP",
+    "n_trusted_recommended_8zgaa3",
+    "n_video_slider_nfnAhc",
+    "n_skincare_lifestyle_qhHX4N",
+    "n_skin_deserves_0ujHaq",
+    "n_bundle_routine_OctM0j",
+    "sticky_cta_hd4dLE"
   ]
 }
