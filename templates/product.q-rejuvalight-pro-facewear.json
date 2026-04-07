@@ -64,10 +64,9 @@
         },
         "limited_offer_A8": {
           "type": "limited-offer",
-          "disabled": true,
           "settings": {
-            "sum": "$100",
-            "code": "QURE100",
+            "sum": "$50",
+            "code": "QURE50",
             "days": 7
           }
         },
@@ -273,7 +272,8 @@
         "use_own_file": true,
         "modifier": "none",
         "text": "<h2>5 reasons why you’ll love LED Light Therapy</h2>",
-        "button_label": ""
+        "button_label": "",
+        "button_url": ""
       }
     },
     "n_progress_metrics_t4rYrV": {
@@ -582,7 +582,8 @@
         "use_own_file": true,
         "background_color": "none",
         "text": "<h2>Results you’ll see with your own eyes</h2>",
-        "button_label": ""
+        "button_label": "",
+        "button_url": ""
       }
     },
     "n_trusted_recommended_eafAhT": {
@@ -1121,7 +1122,8 @@
         "image": "shopify://shop_images/mask-use-video.webp",
         "image_mobile": "shopify://shop_images/mask-use-video-mob.webp",
         "wistia_url": "jlz3itwzrb",
-        "button_label": ""
+        "button_label": "",
+        "button_url": ""
       }
     },
     "n_base_section_YgM7Rd": {
