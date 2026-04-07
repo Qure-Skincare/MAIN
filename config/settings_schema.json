@@ -149,7 +149,8 @@
         "options": [
           { "value": "none", "label": "None" },
           { "value": "patches", "label": "Patches" },
-          { "value": "pillow", "label": "Pillow" }
+          { "value": "pillow", "label": "Pillow" },
+          { "value": "mist", "label": "Mist" }
         ],
         "default": "pillow"
       },
@@ -165,7 +166,8 @@
         "options": [
           { "value": "none", "label": "None" },
           { "value": "patches", "label": "Patches" },
-          { "value": "pillow", "label": "Pillow" }
+          { "value": "pillow", "label": "Pillow" },
+          { "value": "mist", "label": "Mist" }
         ],
         "default": "pillow"
       },
