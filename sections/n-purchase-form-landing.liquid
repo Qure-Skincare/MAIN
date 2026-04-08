@@ -44,6 +44,10 @@
                     {
                         "value": "list",
                         "label": "t:common.list"
+                    },
+                    {
+                        "value": "subscription",
+                        "label": "t:common.subscription"
                     }
                 ],
                 "default": "box"
@@ -230,9 +234,24 @@
                         "label": "t:common.subheader"
                     },
                     {
+                        "type": "text",
+                        "id": "text",
+                        "label": "t:common.text"
+                    },
+                    {
                         "type": "image_picker",
                         "id": "image",
                         "label": "t:common.image"
+                    },
+                    {
+                        "type": "range",
+                        "id": "product_discount_percent",
+                        "min": 0,
+                        "max": 100,
+                        "step": 1,
+                        "unit": "%",
+                        "label": "t:common.product_discount",
+                        "default": 0
                     },
                     {
                         "type": "checkbox",

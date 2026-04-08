@@ -25,6 +25,10 @@
                 {% assign block = section.blocks | where: "id", __id | first %}
                 {% if block.type == 'product' %}
 
+                    {% if block.settings.product_discount_percent != blank %}
+                        {%- assign subscription_discount_percent = block.settings.product_discount_percent -%}
+                    {% endif %}
+
                     {% include 'get-product-data', product_handle: block.settings.product, product_current_variant_id: block.settings.product_variant_id, product_prefix: 'purchase-form-landing-products-items-' %}
 
                     {% if product_id %}
@@ -33,6 +37,10 @@
                         {% assign product_type = array_count %}
                         
                         {% capture data-per %}{{ 'purchase-form.settings.buy-button-label' | t }} {% if product_discount != blank %} {{ 'purchase-form.settings.and' | t }} {{ 'purchase-form.settings.save' | t }} {{ product_discount }}%{% endif %}{% endcapture %}
+
+                        {% if block.settings.product_selling_plan > 0 %}
+                            {% capture data-per %}{{ 'purchase-form.settings.subscribe-button-label' | t }} {% if product_discount != blank %} {{ 'purchase-form.settings.and' | t }} {{ 'purchase-form.settings.save' | t }} {{ product_discount }}%{% endif %}{% endcapture %}
+                        {% endif %}
 
                         {% if block.settings.preorder == true %}
                             {% capture data-per %}{{ 'purchase-form.settings.reserve-button-label' | t }} {% if product_discount != blank %} {{ 'purchase-form.settings.and' | t }} {{ 'purchase-form.settings.save' | t }} {{ product_discount }}%{% endif %}{% endcapture %}
@@ -77,9 +85,16 @@
                                         <div class="c-supply-selector__price">
                                             <div class="e-price{% if black_friday_discount_percent > 0 %} e-price--strikethrough{% endif %}">
                                                 <div class="e-price__main">
-                                                    <div class="e-price__current igPrice" data-variant-id="{{ product_variant_id }}">{{ product_sale_price }}</div>
-                                                    {% if product_before_price != blank %}
-                                                        <div class="e-price__old igComparePrice" data-variant-id="{{ product_variant_id }}">{{ product_before_price }}</div>
+                                                    {% if product_subscription_price != blank %}
+                                                        <div class="e-price__current igSubPrice" data-variant-id="{{ product_variant_id }}">{{ product_subscription_price }}</div>
+                                                        {% if product_before_price != blank %}
+                                                            <div class="e-price__old igPrice" data-variant-id="{{ product_variant_id }}">{{ product_sale_price }}</div>
+                                                        {% endif %}
+                                                    {% else %}
+                                                        <div class="e-price__current igPrice" data-variant-id="{{ product_variant_id }}">{{ product_sale_price }}</div>
+                                                        {% if product_before_price != blank %}
+                                                            <div class="e-price__old igComparePrice" data-variant-id="{{ product_variant_id }}">{{ product_before_price }}</div>
+                                                        {% endif %}
                                                     {% endif %}
                                                 </div>
                                             </div>
@@ -94,14 +109,19 @@
                                             {% endif %}
                                         </div>
 
-                                        <div class="c-supply-selector__desc">{{ block.settings.subheading }}</div>
+                                        <div class="c-supply-selector__desc">{{ block.settings.subheading }}{% if block.settings.text != blank %}<small>{{ block.settings.text }}</small>{% endif %}</div>
 
                                         {% if product_discount != blank %}
                                             <div class="c-supply-selector__save">
                                                 {% if section.settings.type != 'list' %}
                                                     <div class="e-pill-save"><span class="igSavePercent" data-variant-id="{{ product_variant_id }}">{{ product_discount }}</span>% {{ 'purchase-form.settings.off' | t }}</div>
                                                 {% else %}
-                                                    <span class="igSavePercent" data-variant-id="{{ product_variant_id }}">{{ product_discount }}</span>% {{ 'purchase-form.settings.off' | t }}
+                                                    {% if product_subscription_price != blank %}
+                                                        <del class="igComparePrice">{{ product_before_price }}</del>
+                                                        <div class="e-pill-save"><span class="igSavePercent" data-variant-id="{{ product_variant_id }}">{{ product_discount }}</span>% {{ 'purchase-form.settings.off' | t }}</div>
+                                                    {% else %}
+                                                        <span class="igSavePercent" data-variant-id="{{ product_variant_id }}">{{ product_discount }}</span>% {{ 'purchase-form.settings.off' | t }}
+                                                    {% endif %}
                                                 {% endif %}
                                             </div>
                                         {% endif %}

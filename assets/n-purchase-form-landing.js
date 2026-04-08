@@ -95,18 +95,7 @@ function __landing__handlerProductVariantSelector(e) {
     __landing__updateSellingPlan(this, product_selling_plan, soldout, preorder);
     __landing__updateStickyButton(variant_title);
     __landing__BackInStock(soldout);
-
-    // const regularPriceContainer = document.querySelector("." + __section_landing + " .total_price .regular_price");
-    // const regularPriceSource = this.querySelector(".regular_price");
-    // if (regularPriceContainer && regularPriceSource) {
-    //     regularPriceContainer.textContent = regularPriceSource.textContent;
-    // }
-
-    // const salePriceContainer = document.querySelector("." + __section_landing + " .total_price .sale_price");
-    // const salePriceSource = this.querySelector(".sale_price:not([style*='display: none'])");
-    // if (salePriceContainer && salePriceSource) {
-    //     salePriceContainer.textContent = salePriceSource.textContent.trim();
-    // }
+    __landing__SubscriptionForm(this,product_selling_plan);
 
     if(!product_selling_plan) {
         __landing_updateButtonLabel(this);
@@ -131,6 +120,32 @@ function __landing__handlerProductVariantSelector(e) {
         purchase_form_landing_event(__section_landing, this, product_variant_id);
     }, 500)
 
+}
+
+function __landing__SubscriptionForm(element, product_selling_plan) {
+    if(__form_landing == 'purchase-form-landing-subscription') {
+        
+        __landing_updateButtonLabel(element);
+
+        const details = document.getElementById('subscription-details');
+
+        if(details) {
+            if(product_selling_plan) {
+                details.classList.remove('hide');
+            }
+            else {
+                details.classList.add('hide');
+            }
+        }
+
+        const form = document.querySelector('.' + __section_landing + ' .c-order-button form[action="/cart/add"]');
+        if (!form) return;
+
+        const sellingPlanInput = form.querySelector('input[name="selling_plan"]');
+        if (!sellingPlanInput) return;
+
+        sellingPlanInput.value = product_selling_plan;
+    }
 }
 
 function __landing__BackInStock(soldout) {
