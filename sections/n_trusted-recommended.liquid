@@ -8,11 +8,11 @@
 {% endif %}
 <section class="base-section base-section--small-media{% if section.settings.modifier == 'reverse' %} base-section--reverse{% endif %}{% if section.settings.background_color == 'grey' %} base-section--grey{% endif %}">
     <div class="container">
-        <article>
-            {% if section.settings.heading != blank %}
-                {{ section.settings.heading }}
-            {% endif %}
-            {% if section.settings.wistia_url %}
+        {% if section.settings.wistia_url %}
+            <article>
+                {% if section.settings.heading != blank %}
+                    {{ section.settings.heading }}
+                {% endif %}
                 {% if section.settings.video_url != blank %}
                     <figure class="watch-wistia-video" data-bs-toggle="modal" data-bs-target="#reusableWistiaModal" data-video-id="{{ section.settings.video_url }}">
                         {% if section.settings.video_image_cover != blank %}
@@ -27,25 +27,49 @@
                         {% endif %}
                     </figure>
                 {% endif %}
-            {% else %}
-                {% if section.settings.video_image_cover != blank %}
-                    <picture{% if section.settings.video_url != blank %} data-url="{{ section.settings.video_url }}"{% endif %}>
-                        <img src="{{ section.settings.video_image_cover | image_url }}" alt="{{ section.settings.video_image_cover.alt | escape }}" />
-                    </picture>
-                {% endif %}
-            {% endif %}
-            <div>
-                {% if section.settings.text != blank %}
-                    {{ section.settings.text }}
-                {% endif %}
-            </div>
-            {% if section.settings.badge_text != blank %}
-                <div class="e-pill-badge">
-                    <span class="e-checkmark"></span>
-                    {{ section.settings.badge_text }}
+                <div>
+                    {% if section.settings.text != blank %}
+                        {{ section.settings.text }}
+                    {% endif %}
                 </div>
-            {% endif %}
-        </article>
+                {% if section.settings.badge_text != blank %}
+                    <div class="e-pill-badge">
+                        <span class="e-checkmark"></span>
+                        {{ section.settings.badge_text }}
+                    </div>
+                {% endif %}
+            </article>
+        {% else %}
+            <article>
+                {{ section.settings.heading }}
+                {% if section.settings.video_url != blank %}
+                    <figure class="lvideo" data-url="{{ section.settings.video_url }}">
+                        {% if section.settings.video_image_cover != blank %}
+                            <picture>
+                                <img src="{{ section.settings.video_image_cover | image_url }}" alt="{{ section.settings.video_image_cover.alt | escape }}" />
+                            </picture>
+                        {% endif %}
+                        {% if section.settings.text_on_image != blank %}
+                            <figcaption>
+                                {{ section.settings.text_on_image | replace: '<p>', '' | replace: '</p>', '' }}
+                            </figcaption>
+                        {% endif %}
+                    </figure>
+                {% endif %}
+                {% if section.settings.text != blank %}
+                    <div>
+                        {{ section.settings.text }}
+                    </div>
+                {% endif %}
+                
+                {% if section.settings.badge_text != blank %}
+                    <div class="e-pill-badge">
+                    <span class="e-checkmark"></span>
+                        {{ section.settings.badge_text }}
+                    </div>
+                {% endif %}
+            </article>
+        {% endif %}
     </div>
 </section>
 <script>
@@ -82,22 +106,6 @@
                 {
                     "value": "grey",
                     "label": "t:common.grey"
-                }
-            ]
-        },
-        {
-            "type": "select",
-            "id": "modifier",
-            "label": "t:common.modifier",
-            "default": "none",
-            "options": [
-                {
-                    "value": "none",
-                    "label": "t:common.none"
-                },
-                {
-                    "value": "reverse",
-                    "label": "t:common.reverse"
                 }
             ]
         },
