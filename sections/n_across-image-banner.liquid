@@ -93,6 +93,36 @@
                     {% endif %}
                 {% endfor %}
 
+                {% assign has_buy_button = false %}
+                {% for block in section.blocks %}
+                    {% if block.type == 'buy_button' %}
+                        {% assign has_buy_button = true %}
+                    {% endif %}
+                {% endfor %}
+                {% if has_buy_button %}
+                    {% for block in section.blocks %}
+                        {% if block.type == 'buy_button' %}
+                            {% if block.settings.button_label != blank and block.settings.button_url != blank %}
+                                <form class="c-buy-block" action="{{ block.settings.button_url }}">
+                                    <button class="btn btn--primary" type="submit">{{ block.settings.button_label }}</button>
+                                    <ul class="e-features-list">
+                                        {% for block in section.blocks %}
+                                            {% if block.type == 'icon_with_text' %}
+                                                {% if block.settings.text != blank %}
+                                                    <li>
+                                                        <i class="e-icon e-icon-{{ block.settings.icon }}"></i>
+                                                        {{ block.settings.text }}
+                                                    </li>
+                                                {% endif %}
+                                            {% endif %}
+                                        {% endfor %}
+                                    </ul>
+                                </form>
+                            {% endif %}
+                        {% endif %}
+                    {% endfor %}
+                {% endif %}
+
             </article>
 
             {% for block in section.blocks %}
@@ -118,62 +148,176 @@
 
 {% schema %}
 {
-    "name": "t:sections.n_across-image-banner.name",
+"name": "t:sections.n_across-image-banner.name",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": false
+        },
+        {
+            "type": "select",
+            "id": "modifier",
+            "label": "t:common.modifier",
+            "default": "none",
+            "options": [
+                {
+                    "value": "none",
+                    "label": "t:sections.n_across-image-banner.settings.modifier-options.none"
+                },
+                {
+                    "value": "hero",
+                    "label": "t:sections.n_across-image-banner.settings.modifier-options.hero"
+                },
+                {
+                    "value": "holidays",
+                    "label": "t:sections.n_across-image-banner.settings.modifier-options.holidays"
+                },
+                {
+                    "value": "hero_reverse",
+                    "label": "t:sections.n_across-image-banner.settings.modifier-options.hero-reverse"
+                },
+                {
+                    "value": "sm",
+                    "label": "t:sections.n_across-image-banner.settings.modifier-options.sm"
+                }
+            ]
+        },
+        {
+            "type": "richtext",
+            "id": "heading",
+            "label": "t:common.header"
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "t:common.text"
+        },
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "t:common.image"
+        },
+        {
+            "type": "image_picker",
+            "id": "image_mobile",
+            "label": "t:common.image-mobile"
+        },
+        {
+            "type": "text",
+            "id": "button_label",
+            "label": "t:common.button-label"
+        },
+        {
+            "type": "url",
+            "id": "button_url",
+            "label": "t:common.button-url"
+        }
+],
+"blocks": [
+    {
+        "type": "percent_value",
+        "name": "t:common.percent-value",
+        "limit": 1,
         "settings": [
             {
-                "type": "checkbox",
-                "id": "use_own_file",
-                "label": "t:common.use-own-file",
-                "default": false
+                "type": "range",
+                "id": "percent_value",
+                "label": "t:common.percent-value",
+                "min": 0,
+                "max": 100,
+                "step": 1,
+                "unit": "%",
+                "default": 57
+            }
+        ]
+    },
+    {
+        "type": "box",
+        "name": "t:common.box",
+        "limit": 1,
+        "settings": [
+            {
+                "type": "image_picker",
+                "id": "image_1",
+                "label": "t:common.image"
             },
             {
-                "type": "select",
-                "id": "modifier",
-                "label": "t:common.modifier",
-                "default": "none",
-                "options": [
-                    {
-                        "value": "none",
-                        "label": "t:sections.n_across-image-banner.settings.modifier-options.none"
-                    },
-                    {
-                        "value": "hero",
-                        "label": "t:sections.n_across-image-banner.settings.modifier-options.hero"
-                    },
-                    {
-                        "value": "holidays",
-                        "label": "t:sections.n_across-image-banner.settings.modifier-options.holidays"
-                    },
-                    {
-                        "value": "hero_reverse",
-                        "label": "t:sections.n_across-image-banner.settings.modifier-options.hero-reverse"
-                    },
-                    {
-                        "value": "sm",
-                        "label": "t:sections.n_across-image-banner.settings.modifier-options.sm"
-                    }
-                ]
+                "type": "image_picker",
+                "id": "image_2",
+                "label": "t:common.image"
             },
             {
-                "type": "richtext",
-                "id": "heading",
-                "label": "t:common.header"
+                "type": "text",
+                "id": "badge_text",
+                "label": "t:common.badge-text"
             },
             {
                 "type": "richtext",
                 "id": "text",
                 "label": "t:common.text"
+            }
+        ]
+    },
+    {
+        "type": "image",
+        "name": "t:common.image",
+        "limit": 1,
+        "settings": [
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "t:common.image"
+            }
+        ]
+    },
+    {
+        "type": "rating",
+        "name": "t:common.rating",
+        "limit": 1,
+        "settings": [
+            {
+                "type": "richtext",
+                "id": "rating_text",
+                "label": "t:common.rating-text"
+            }
+        ]
+    },
+    {
+        "type": "disclaimer",
+        "name": "t:common.disclaimer",
+        "limit": 1,
+        "settings": [
+            {
+                "type": "text",
+                "id": "text",
+                "label": "t:common.text"
+            }
+        ]
+    },
+    {
+        "type": "app_store",
+        "name": "t:sections.n_across-image-banner.blocks.app_store.name",
+        "limit": 4,
+        "settings": [
+            {
+                "type": "url",
+                "id": "link_url",
+                "label": "t:common.link-url"
             },
             {
                 "type": "image_picker",
                 "id": "image",
                 "label": "t:common.image"
-            },
-            {
-                "type": "image_picker",
-                "id": "image_mobile",
-                "label": "t:common.image-mobile"
-            },
+            }
+        ]
+    },
+    {
+        "type": "buy_button",
+        "name": "t:common.buy-button",
+        "limit": 1,
+        "settings": [
             {
                 "type": "text",
                 "id": "button_label",
@@ -184,110 +328,40 @@
                 "id": "button_url",
                 "label": "t:common.button-url"
             }
-    ],
-    "blocks": [
-        {
-            "type": "percent_value",
-            "name": "t:common.percent-value",
-            "limit": 1,
-            "settings": [
-                {
-                    "type": "range",
-                    "id": "percent_value",
-                    "label": "t:common.percent-value",
-                    "min": 0,
-                    "max": 100,
-                    "step": 1,
-                    "unit": "%",
-                    "default": 57
-                }
-            ]
-        },
-        {
-            "type": "box",
-            "name": "t:common.box",
-            "limit": 1,
-            "settings": [
-                {
-                    "type": "image_picker",
-                    "id": "image_1",
-                    "label": "t:common.image"
-                },
-                {
-                    "type": "image_picker",
-                    "id": "image_2",
-                    "label": "t:common.image"
-                },
-                {
-                    "type": "text",
-                    "id": "badge_text",
-                    "label": "t:common.badge-text"
-                },
-                {
-                    "type": "richtext",
-                    "id": "text",
-                    "label": "t:common.text"
-                }
-            ]
-        },
-        {
-            "type": "image",
-            "name": "t:common.image",
-            "limit": 1,
-            "settings": [
-                {
-                    "type": "image_picker",
-                    "id": "image",
-                    "label": "t:common.image"
-                }
-            ]
-        },
-        {
-            "type": "rating",
-            "name": "t:common.rating",
-            "limit": 1,
-            "settings": [
-                {
-                    "type": "richtext",
-                    "id": "rating_text",
-                    "label": "t:common.rating-text"
-                }
-            ]
-        },
-        {
-            "type": "disclaimer",
-            "name": "t:common.disclaimer",
-            "limit": 1,
-            "settings": [
-                {
-                    "type": "text",
-                    "id": "text",
-                    "label": "t:common.text"
-                }
-            ]
-        },
-        {
-            "type": "app_store",
-            "name": "t:sections.n_across-image-banner.blocks.app_store.name",
-            "limit": 4,
-            "settings": [
-                {
-                    "type": "url",
-                    "id": "link_url",
-                    "label": "t:common.link-url"
-                },
-                {
-                    "type": "image_picker",
-                    "id": "image",
-                    "label": "t:common.image"
-                }
-            ]
-        }
-    ],
-    "presets": [
-        {
-            "name": "t:sections.n_across-image-banner.name"
-        }
-    ]
+        ]
+    },
+    {
+        "type": "icon_with_text",
+        "name": "t:common.icon-with-text",
+        "limit": 2,
+        "settings": [
+            {
+                "type": "select",
+                "id": "icon",
+                "label": "t:common.icon",
+                "options": [
+                    {
+                        "value": "guarantee",
+                        "label": "t:common.guarantee"
+                    },
+                    {
+                        "value": "shipping-order",
+                        "label": "t:common.shipping-order"
+                    }
+                ]
+            },
+            {
+                "type": "text",
+                "id": "text",
+                "label": "t:common.text"
+            }
+        ]
+    }
+],
+"presets": [
+    {
+        "name": "t:sections.n_across-image-banner.name"
+    }
+]
 }
 {% endschema %}
