@@ -420,11 +420,11 @@
       "settings": {
         "use_own_file": true,
         "background_color": "grey",
+        "modifier": "none",
         "heading": "<h2>Trusted and Recommended by Experts</h2>",
         "text": "<p>“Throughout my life…living in Wilmington, [my] skin was great. Then I… move to Charlotte and… every week my skin would get irritated especially after showering. Even my hair wouldn't cooperate. I was convinced it was the water I was exposed to.</p><p>Turns out, <em>there's an overwhelming amount of data that the water hardness could affect your skin</em>.”</p>",
         "video_image_cover": "shopify://shop_images/doctor_shah_desk_f278ae6e-e203-43de-a826-23ddef34c258.webp",
-        "wistia_url": false,
-        "video_url": "https://www.youtube.com/watch?v=mVdncsTAXiA",
+        "video_url": "",
         "badge_text": "Dermatologist Reviewed"
       }
     }

@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
     "n_across_image_banner_Jhry7T": {
       "type": "n_across-image-banner",
@@ -303,11 +303,11 @@
       "settings": {
         "use_own_file": true,
         "background_color": "grey",
+        "modifier": "none",
         "heading": "<h2>Trusted and Recommended by Experts</h2>",
         "text": "<p>\"...Spray your skin to sanitize it before using your Micro-Infusion device. <em>It's absolutely genius</em>.\"</p>",
         "video_image_cover": "shopify://shop_images/doctor_shah_desk.webp",
-        "wistia_url": false,
-        "video_url": "https://www.youtube.com/watch?v=mVdncsTAXiA",
+        "video_url": "",
         "badge_text": "Dermatologist Reviewed"
       }
     }

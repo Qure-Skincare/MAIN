@@ -526,11 +526,11 @@
       "settings": {
         "use_own_file": true,
         "background_color": "grey",
+        "modifier": "none",
         "heading": "<h2>Trusted and Recommended by Experts</h2>",
         "text": "<p>“This treatment is an <em>at-home</em> option for those who want to <em>avoid the hassle or cost of going to the office</em>.”</p>",
         "video_image_cover": "shopify://shop_images/doctor_shah_desk.webp",
-        "wistia_url": false,
-        "video_url": "https://www.youtube.com/watch?v=mVdncsTAXiA",
+        "video_url": "",
         "badge_text": "Dermatologist Reviewed"
       }
     }
