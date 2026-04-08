@@ -9,7 +9,7 @@
  */
 {
   "markets": {
-    "canada": {
+    "us": {
       "parent": "@default"
     },
     "australia": {
@@ -18,16 +18,16 @@
     "europe": {
       "parent": "@default"
     },
-    "germany": {
-      "parent": "@default"
-    },
-    "us": {
-      "parent": "@default"
-    },
     "israel": {
       "parent": "@default"
     },
     "united-kingdom": {
+      "parent": "@default"
+    },
+    "germany": {
+      "parent": "@default"
+    },
+    "canada": {
       "parent": "@default"
     },
     "international": {

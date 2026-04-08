@@ -335,11 +335,11 @@
       "settings": {
         "use_own_file": true,
         "background_color": "grey",
+        "modifier": "none",
         "heading": "<h2>Trusted and Recommended by Experts</h2>",
         "text": "<p>“Harsh water can definitely damage your skin on daily basis and <em>it impacts everything</em> you are doing with your skincare.”</p>",
         "video_image_cover": "shopify://shop_images/doctor-maxfield.webp",
-        "wistia_url": false,
-        "video_url": "https://www.youtube.com/watch?v=mVdncsTAXiA",
+        "video_url": "",
         "badge_text": "Dermatologist Reviewed"
       }
     }
