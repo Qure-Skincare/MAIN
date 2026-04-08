@@ -1246,6 +1246,22 @@
         "n_pills-nav": {
             "name": "Collection pills navigation"
         },
+        "n_page-exclusive-bundle-resuslts-showcase": {
+            "name": "Results showcase",
+            "blocks": {
+                "icon_with_text": {
+                    "select_options": {
+                        "one-time-money": "One-time money",
+                        "incredibly-convenient": "Incredibly convenient",
+                        "deeply-hydrates": "Deeply hydrates",
+                        "clinic-results": "Clinic-level results"
+                    }
+                }
+            }
+        },
+        "n_page-exclusive-bundle-deal-learn-more": {
+            "name": "Learn more"
+        },
         "page-banner": {
             "name": "Page banner"
         },

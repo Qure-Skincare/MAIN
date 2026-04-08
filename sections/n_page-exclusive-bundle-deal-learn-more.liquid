@@ -1,0 +1,188 @@
+{% doc %}
+  Renders a learn more section for the exclusive holiday bundle deal page.
+{% enddoc %}
+
+<!-- LEARN MORE -->
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/learn-more/learn-more.css" />
+{% endif %}
+<section class="learn-more">
+    <div class="container">
+        {{ section.settings.text }}
+        <div
+            class="c-swiper c-swiper-thumbs"
+            data-swiper='{
+                "slidesPerView": 1,
+                "spaceBetween": 16,
+                "watchSlidesProgress": true,
+                "allowTouchMove": false,
+                "breakpoints": {
+                    "768": {
+                        "slidesPerView": 4,
+                        "spaceBetween": 20,
+                        "centeredSlides": false
+                    }
+                }
+            }'>
+            <div class="swiper-wrapper">
+                {% for block in section.blocks %}
+                    {% if block.type == 'accordion' %}
+                        <div class="swiper-slide">
+                            <div class="learn-more__tile">
+                                {% if block.settings.image != blank %}
+                                    <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                {% endif %}
+                                {% if block.settings.text != blank %}
+                                    <div>
+                                        {{ block.settings.text }}
+                                    </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+        <div
+            class="c-swiper"
+            data-swiper-thumbs=".learn-more .c-swiper-thumbs"
+            data-swiper='{
+                "slidesPerView": 1,
+                "spaceBetween": 16,
+                "pagination": {
+                    "el": ".c-swiper-pagination",
+                    "type": "custom"
+                },
+                "navigation": {
+                    "prevEl": ".c-swiper-button-prev",
+                    "nextEl": ".c-swiper-button-next"
+                }
+            }'>
+            <div class="swiper-wrapper">
+                {% for block in section.blocks %}
+                    {% if block.type == 'items' %}
+                        <div class="swiper-slide">
+                            <div class="learn-more__content">
+                                {% if block.settings.text != blank %}
+                                    <article class="learn-more__content-article">
+                                        {{ block.settings.text }}
+                                    </article>
+                                {% endif %}
+                                <ul class="learn-more__content-list">
+                                    <li>
+                                        {% if block.settings.link_url_1 != blank %}
+                                            <a href="{{ block.settings.link_url_1 }}">
+                                                <img src="{{ block.settings.image_1 | image_url }}" alt="{{ block.settings.image_1.alt | escape }}" />
+                                                <strong>{{ block.settings.product_1 }}</strong>
+                                                <small>{{ 'sections.n_page-exclusive-bundle-deal-learn-more.settings.shop_now_text' | t }}</small>
+                                            </a>
+                                        {% endif %}
+                                    </li>
+                                    <li>
+                                        {% if block.settings.link_url_2 != blank %}
+                                            <a href="{{ block.settings.link_url_2 }}">
+                                                <img src="{{ block.settings.image_2 | image_url }}" alt="{{ block.settings.image_2.alt | escape }}" />
+                                                <strong>{{ block.settings.product_2 }}</strong>
+                                                <small>{{ 'sections.n_page-exclusive-bundle-deal-learn-more.settings.shop_now_text' | t }}</small>
+                                            </a>
+                                        {% endif %}
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+            <div class="c-swiper-nav">
+                <button class="c-swiper-button-prev"></button>
+                <div class="c-swiper-pagination"></div>
+                <button class="c-swiper-button-next"></button>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        loadScriptOnce("swiper", "https://qureskincaredns.com/assets/js-new/swiper.js");
+    });
+</script>
+<!-- LEARN MORE END -->
+
+
+{% schema %}
+{
+    "name": "t:sections.n_page-exclusive-bundle-deal-learn-more.name",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": false
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "t:common.text"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "accordion",
+            "name": "t:common.accordion",
+            "settings": [
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "t:common.text"
+            },
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "t:common.image"
+            }
+            ]
+        },
+        {
+            "type": "items",
+            "name": "t:common.items",
+            "settings": [
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "t:common.text"
+            },
+            {
+                "type": "text",
+                "id": "product_1",
+                "label": "t:common.product"
+            },
+            {
+                "type": "url",
+                "id": "link_url_1",
+                "label": "t:common.link-url"
+            },
+            {
+                "type": "image_picker",
+                "id": "image_1",
+                "label": "t:common.image"
+            },
+            {
+                "type": "text",
+                "id": "product_2",
+                "label": "t:common.product"
+            },
+            {
+                "type": "url",
+                "id": "link_url_2",
+                "label": "t:common.link-url"
+            },
+            {
+                "type": "image_picker",
+                "id": "image_2",
+                "label": "t:common.image"
+            }
+            ]
+        }
+    ]
+}
+{% endschema %}
