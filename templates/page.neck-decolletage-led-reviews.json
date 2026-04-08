@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "n_across_image_banner_bf3Hqe": {
       "type": "n_across-image-banner",
@@ -100,9 +100,12 @@
       "name": "t:sections.n_trusted-recommended.name",
       "settings": {
         "use_own_file": true,
+        "background_color": "none",
         "heading": "<h2>Trusted and Recommended by Experts</h2>",
         "text": "<p>\"LED light targets fibroblasts to <em>increase collagen production</em> and has anti-aging benefits especially if you are seeing wrinkles and lines on your neck...\"</p>",
         "video_image_cover": "shopify://shop_images/n-d-doctors.webp",
+        "text_on_image": "",
+        "wistia_url": true,
         "video_url": "https://www.youtube.com/watch?v=W9KXAimjHCE",
         "badge_text": "Dermatologist Reviewed"
       }
@@ -115,9 +118,9 @@
           "settings": {
             "heading": "<p>“Using a device like this consistently will fade brown spots and sun damage over time.”</p>",
             "text": "<p>Dr. Prem Tripathi</p><p>[checkmark] Board-Certified Dermatologist</p>",
+            "youtube_url": false,
             "video_url": "xoh5ew7v31",
-            "image": "shopify://shop_images/trusted_img_1.webp",
-            "youtube_url": false
+            "image": "shopify://shop_images/trusted_img_1.webp"
           }
         },
         "slider_4tVKJG": {
@@ -125,9 +128,9 @@
           "settings": {
             "heading": "<p>\"This device helps me fight early signs of aging like fine lines, redness and discoloration...\"</p>",
             "text": "<p>Dr. Alexandra Zeitany</p><p>[checkmark] Board-Certified Dermatologist</p>",
-            "image": "shopify://shop_images/trusted_img_2.webp",
+            "youtube_url": true,
             "video_url": "https://www.youtube.com/watch?v=1iXBgh7WPOY",
-            "youtube_url": true
+            "image": "shopify://shop_images/trusted_img_2.webp"
           }
         },
         "slider_heTNad": {
@@ -135,9 +138,9 @@
           "settings": {
             "heading": "<p>I personally suffer from tech neck from looking down ar my phone [...] it helps address signs of aging.</p>",
             "text": "<p>Dr. Mona Patel</p><p>[checkmark] Internal Medicine Doctor</p>",
-            "image": "shopify://shop_images/trusted_img_3.webp",
+            "youtube_url": false,
             "video_url": "k1wciiwksf",
-            "youtube_url": false
+            "image": "shopify://shop_images/trusted_img_3.webp"
           }
         },
         "slider_gwVt9z": {
@@ -145,9 +148,9 @@
           "settings": {
             "heading": "<p>“This is a simple treatment I love and recommend. It reduces redness and fine lines.”</p>",
             "text": "<p>Dr. Nayiri Khatch</p><p>[checkmark] Resident Doctor</p>",
-            "image": "shopify://shop_images/trusted_img_4.webp",
+            "youtube_url": false,
             "video_url": "9womummdjx",
-            "youtube_url": false
+            "image": "shopify://shop_images/trusted_img_4.webp"
           }
         }
       },
@@ -159,7 +162,9 @@
       ],
       "name": "t:sections.n_video-slider.name",
       "settings": {
-        "use_own_file": true
+        "use_own_file": true,
+        "modifier": "three_cards",
+        "text": ""
       }
     },
     "n_results_comparison_slider_h954zQ": {
@@ -207,12 +212,14 @@
       "settings": {
         "use_own_file": true,
         "modifier": "reverse",
+        "modifier_2": "none",
         "background_color": "grey",
         "heading": "<h2>All the skin firming, smoothing, clearing benefits with just 1 device</h2>",
         "text": "<p>The Neck & Décolletage LED System uses red and near-infrared light to gently <em>activate your skin's natural repair process</em></p><p>These wavelengths help boost collagen, reduce inflammation, and improve circulation—leading to <em>firmer, smoother, and more even-toned skin </em> over time.</p>",
         "image": "shopify://shop_images/n-d-image.webp",
         "button_label": "Shop Neck & Décolletage LED System",
-        "button_url": "#"
+        "button_url": "#",
+        "wistia_url": ""
       }
     },
     "n_expert_board_d173Bq": {
