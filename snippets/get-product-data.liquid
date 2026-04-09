@@ -102,9 +102,9 @@
         {% assign product_subscription_price_decimal = product_subscription_price_original | modulo: 1 %}
         
         {% if product_subscription_price_decimal >= 0.5 %}
-          {% comment %} {% assign product_subscription_price_original = product_subscription_price_original | ceil %} {% endcomment %}
+          {% assign product_subscription_price_original = product_subscription_price_original | ceil %}
         {% else %}
-          {% comment %} {% assign product_subscription_price_original = product_subscription_price_original | floor %} {% endcomment %}
+          {% assign product_subscription_price_original = product_subscription_price_original | floor %}
         {% endif %}
 
         {% assign product_subscription_price_original = product_subscription_price_original | times: 100 %}
