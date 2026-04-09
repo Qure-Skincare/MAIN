@@ -1,0 +1,227 @@
+{% doc %}
+    Renders a hero product section
+{% enddoc %}
+
+
+<!-- HERO PRODUCT -->
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/hero-product/hero-product.css" />
+{% endif %}
+
+<section class="hero-product" id="hero-product">
+    <div class="hero-product__container container">
+        <div class="hero-product__gallery">
+            <div
+                class="c-swiper"
+                data-swiper-thumbs="#hero-product .c-swiper-thumbs"
+                data-swiper='{
+                        "slidesPerView": 1,
+                        "spaceBetween": 16,
+                        "navigation": {
+                            "prevEl": "#hero-product .c-swiper-button-prev",
+                            "nextEl": "#hero-product .c-swiper-button-next"
+                        }
+                    }'>
+                <div class="swiper-wrapper">
+                    {% for block in section.blocks %}
+                        {% if block.type == 'image' %}
+                            {% if block.settings.image != blank %}
+                                <div class="swiper-slide">
+                                    <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                </div>
+                            {% endif %}
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="c-swiper-thumbs-nav">
+                <button class="c-swiper-button-prev"></button>
+                <div
+                    class="c-swiper c-swiper-thumbs"
+                    data-swiper='{
+                            "slidesPerView": "auto",
+                            "spaceBetween": 12
+                        }'>
+                    <div class="swiper-wrapper">
+                        {% for block in section.blocks %}
+                            {% if block.type == 'image' %}
+                                {% if block.settings.image != blank %}
+                                    <div class="swiper-slide">
+                                        <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                    </div>
+                                {% endif %}
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+                <button class="c-swiper-button-next"></button>
+            </div>
+        </div>
+        <div class="hero-product__main">
+            {% if section.settings.bundle_text != blank %}
+                <div class="e-double-tag">{{ section.settings.bundle_text | replace: '<p>', '' | replace: '</p>', '' }}</div>
+            {% endif %}
+            {{ section.settings.heading }}
+            {% if section.settings.text != blank %}
+                <article>
+                    {{ section.settings.text }}
+                </article>
+            {% endif %}
+            <div class="c-buy-block">
+                <div class="c-order-button">
+                    {% if section.settings.button_label != blank and section.settings.button_url != blank %}
+                        <a href="{{ section.settings.button_url }}" class="btn btn--primary">{{ section.settings.button_label }}</a>
+                    {% endif %}
+                </div>
+                <ul class="e-features-list">
+                    {% for block in section.blocks %}
+                        {% if block.type == 'icon_with_text' %}
+                            {% if block.settings.text != blank %}
+                                <li>
+                                    <i class="e-icon e-icon-{{ block.settings.icon }}"></i>
+                                    {{ block.settings.text }}
+                                </li>
+                            {% endif %}
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+                <div class="c-certified-box">
+                    <ul>
+                        {% for block in section.blocks %}
+                            {% if block.type == 'certified-box' %}
+                                {% if block.settings.image !=blank %}
+                                    <li><img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" /></li>
+                                {% endif %}
+                                {% if block.settings.text != blank %}
+                                    <li>{{ block.settings.text }}</li>
+                                {% endif %}
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                    {% for block in section.blocks %}
+                        {% if block.type == 'certified-box' %}
+                            {{ block.settings.sub_text }}
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        loadScriptOnce("swiper", "https://qureskincaredns.com/assets/js-new/swiper.js");
+        loadScriptOnce("countdown", "https://qureskincaredns.com/assets/js-new/countdown.js");
+        loadScriptOnce("youtube-popup", "https://qureskincaredns.com/assets/js-new/yt-popup.js");
+        loadScriptOnce("wistia-popup", "https://qureskincaredns.com/assets/js-new/wistia-popup.js");
+        loadScriptOnce("wistia-script", "https://fast.wistia.com/assets/external/E-v1.js");
+        loadScriptOnce("gallery-sticky-video", "https://qureskincaredns.com/assets/js-new/gallery-sticky-video.js");
+        loadScriptOnce("dialog", "https://qureskincaredns.com/assets/js-new/dialog.js");
+    });
+</script>
+<!-- HERO PRODUCT END -->
+
+{% schema %}
+{
+    "name": "t:sections.n_hero-product.name",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": false
+        },
+        {
+            "type": "richtext",
+            "id": "heading",
+            "label": "t:common.header"
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "t:common.text"
+        },
+        {
+            "type": "text",
+            "id": "button_label",
+            "label": "t:common.button-label",
+            "default": "SHOP & SAVE UP TO 57%"
+        },
+        {
+            "type": "url",
+            "id": "button_url",
+            "label": "t:common.button-url"
+        },
+        {
+            "type": "richtext",
+            "id": "bundle_text",
+            "label": "t:common.bundle-text"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "image",
+            "name": "t:common.image",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                }
+            ]
+        },
+        {
+            "type": "icon_with_text",
+            "name": "t:common.icon-with-text",
+            "settings": [
+                {
+                    "type": "select",
+                    "id": "icon",
+                    "label": "t:common.icon",
+                    "options": [
+                        { 
+                            "value": "shipping-order", 
+                            "label": "t:common.shipping-order" 
+                        },
+                        { 
+                            "value": "guarantee", 
+                            "label": "t:common.guarantee" 
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "id": "text",
+                    "label": "t:common.text"
+                }
+            ]
+        },
+        {
+            "type": "certified-box",
+            "name": "t:common.certified-box",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                },
+                {
+                    "type": "text",
+                    "id": "text",
+                    "label": "t:common.text"
+                },
+                {
+                    "type": "richtext",
+                    "id": "sub_text",
+                    "label": "t:common.sub-text"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.n_hero-product.name"
+        }
+    ]
+}
+{% endschema %}
