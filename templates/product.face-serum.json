@@ -289,7 +289,6 @@
     },
     "purchase-form-landing-old": {
       "type": "n-purchase-form-landing",
-      "disabled": true,
       "blocks": {
         "nextships_4xp7uM": {
           "type": "nextships",
@@ -380,6 +379,7 @@
         "product_NEgEkN",
         "product_RBCPe8"
       ],
+      "disabled": true,
       "settings": {
         "form_name": "purchase-form-landing",
         "hide_types": true,
@@ -728,7 +728,6 @@
       "settings": {
         "use_own_file": true,
         "background_color": "none",
-        "modifier": "none",
         "heading": "<h2>Trusted and Recommended by Experts</h2>",
         "text": "<p>“Qure has a really good serum. It’s probably <em>the best known peptide complex</em></p><p>It has awesome, complimenting ingredients and amazing antioxidants. It really helps to simplify and consolidate your night routine.”</p>",
         "video_image_cover": "shopify://shop_images/dr-shah-maxfield.webp",
@@ -1096,7 +1095,6 @@
     },
     "sticky_cta_fbPDSk": {
       "type": "n-sticky-button-variants",
-      "disabled": true,
       "blocks": {
         "variant_43xxGi": {
           "type": "variant",
@@ -1125,6 +1123,7 @@
         "variant_45xfGi",
         "variant_45sxGi"
       ],
+      "disabled": true,
       "name": "t:sections.sticky-button-variants.name",
       "settings": {
         "heading": "",
