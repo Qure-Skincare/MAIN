@@ -1,5 +1,5 @@
 {% if section.settings.form_name == 'purchase-form-landing-subscription' %}
-    <div class="c-pill-tabs{% if section.settings.hide_types %} hide{% endif %}">
+    <div class="{% if section.settings.hide_types %} hide{% endif %}">
         <ul class="e-pill-tabs e-pill-tabs--selector">
             {% render 'n-purchase-form-landing-types-item' array: __idsArray1 %}
             {% render 'n-purchase-form-landing-types-item' array: __idsArray2 %}
@@ -9,7 +9,7 @@
 {% else %}
     <div class="c-options-selector{% if section.settings.hide_types %} hide{% endif %}">
         <p class="c-options-selector__title">{{ 'purchase-form.settings.select-type' | t }}</p>
-        <ul>
+        <ul class="c-options-selector__list">
             {% render 'n-purchase-form-landing-types-item' array: __idsArray1 %}
             {% render 'n-purchase-form-landing-types-item' array: __idsArray2 %}
             {% render 'n-purchase-form-landing-types-item' array: __idsArray3 %}
