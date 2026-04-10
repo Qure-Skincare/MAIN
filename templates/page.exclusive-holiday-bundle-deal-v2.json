@@ -48,66 +48,6 @@
             "icon": "shipping-order",
             "text": "Free US Shipping"
           }
-        },
-        "image_CfLDcQ": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/fade-firm-bundle-advanced_720x_b69b2d64-9a8c-4684-887a-6f00a94b6d14.webp"
-          }
-        },
-        "image_y9b8KW": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/fade-firm-bundle-pro1_720x_8cf50df7-a769-4efd-b2d3-3a25bea152c6.webp"
-          }
-        },
-        "image_3xxqEX": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/fade-firm-bundle-essential_720x_223c0ae2-fd3b-4c8a-b19c-603c1d9a3ce6.webp"
-          }
-        },
-        "image_jzEfrb": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/line-refine-bundle-advanced_720x_1ea751a0-20d0-4fd5-ad80-73c68ba224e8.webp"
-          }
-        },
-        "image_fBCLRq": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/line-refine-bundle-pro1_720x_9eec438e-9fe4-4d85-873f-706cc8d5f44b.webp"
-          }
-        },
-        "image_anULCU": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/line-refine-bundle-essential_720x_b8a60a5d-d2d5-4a1b-850f-bc7761829cdc.webp"
-          }
-        },
-        "image_bVh9KW": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/water-filter-family-bundle_720x_050c964b-7ea9-4df6-b735-f1f286c30190.webp"
-          }
-        },
-        "image_q9ARa9": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/breakout-control-advanced1_720x_341f59d5-ac2e-45b4-a9e0-aad99100f6d3.webp"
-          }
-        },
-        "image_mkPA3Y": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/breakout-control-pro_720x_be544ad1-1834-46b2-a05f-f9247461daaa.webp"
-          }
-        },
-        "image_NUff7k": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/breakout-control-essential_720x_38c8717c-aa9c-46d3-903f-d87383df42f1.webp"
-          }
         }
       },
       "block_order": [
@@ -115,17 +55,7 @@
         "certified_box_4q6NDc",
         "certified_box_fPmWEU",
         "icon_with_text_KMapiD",
-        "icon_with_text_fmpmjE",
-        "image_CfLDcQ",
-        "image_y9b8KW",
-        "image_3xxqEX",
-        "image_jzEfrb",
-        "image_fBCLRq",
-        "image_anULCU",
-        "image_bVh9KW",
-        "image_q9ARa9",
-        "image_mkPA3Y",
-        "image_NUff7k"
+        "icon_with_text_fmpmjE"
       ],
       "name": "t:sections.n_hero-product.name",
       "settings": {
