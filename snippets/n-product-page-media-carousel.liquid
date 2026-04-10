@@ -63,7 +63,7 @@
                 </div>
             {% else %}
                 <div class="swiper-slide">
-                    <img src="{{ media | img_url: size }}" alt="{{ title }}" data-product-handle="{{ title | escape }}">
+                    <img src="{{ media | img_url: size }}" alt="{{ title }}"{% if thumbnails == false %} data-product-handle="{{ title | escape }}"{% endif %}>
                 </div>
             {% endif %}
         {% endif %}
