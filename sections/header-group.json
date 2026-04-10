@@ -47,6 +47,14 @@
             "icon": "shopify://shop_images/icon-cart.png"
           }
         },
+        "announcement_yBCcDb": {
+          "type": "announcement",
+          "settings": {
+            "heading": "<p>April Showers Deal 💧 FREE Faucet Filter with Shower Filter</p>",
+            "button-label": "SHOP NOW",
+            "button-url": "https://qureskincare.com/pages/qure-filters-offer"
+          }
+        },
         "announcement-3": {
           "type": "announcement",
           "settings": {
@@ -77,6 +85,7 @@
       "block_order": [
         "announcement-1",
         "announcement-2",
+        "announcement_yBCcDb",
         "announcement-3",
         "exclude_page_fAmFcE",
         "exclude-page-2",
