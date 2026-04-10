@@ -158,6 +158,7 @@
         "percent-scale-text": "Percent scale text",
         "heading-percent-scale": "Header percent scale",
         "bundle": "Bundle",
+        "bundle-text": "Bundle text",
         "wistia-url": "Wistia URL",
         "wistia-video": "Wistia video",
         "youtube-url": "YouTube URL",
@@ -282,7 +283,8 @@
         "client": "Client",
         "center": "Center",
         "stats": "Stats",
-        "product-type-accordion": "Product type accordion"
+        "product-type-accordion": "Product type accordion",
+        "certified-box": "Certified box"
     },
     "blocks": {
         "block-card": {
@@ -683,6 +685,9 @@
         },
         "n_bundle-routine": {
             "name": "Bundle routine"
+        },
+        "n_hero-product": {
+            "name": "Hero product"
         },
         "collection": {
             "name": "Collection",
