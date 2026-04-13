@@ -1,0 +1,240 @@
+{% doc %}
+  Renders a meet filters section for the qure filters offer page
+{% enddoc %}
+
+<!-- MEET FILTERS -->
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/meet-filters/meet-filters.css" />
+{% endif %}
+<section class="meet-filters">
+    <div class="container">
+        {% if section.settings.text != blank or section.settings.image != blank %}
+            <article>
+                {% if section.settings.text != blank %}
+                    {{ section.settings.text }}
+                {% endif %}
+                {% if section.settings.image != blank %}
+                    <img src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt | escape }}" />
+                {% endif %}
+            </article>
+        {% endif %}
+        <div class="c-pill-tabs">
+            <ul class="c-pill-tabs__buttons e-pill-tabs" role="tablist">
+                {% for block in section.blocks %}
+                    {% if block.type == 'tab_heading' %}
+                        <li>
+                            <button {% if forloop.index == 1 %}class="active"{% endif %} type="button" data-bs-toggle="tab" data-bs-target="#{{ block.settings.tab_heading | strip | handleize }}">{{- block.settings.tab_heading -}}</button>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            {% for block in section.blocks %}
+                {% if block.type == 'tab_heading' %}
+                    {% assign tab_handle = block.settings.tab_heading | strip | handleize %}
+                    <div class="c-pill-tabs__pane{% if forloop.index == 1 %} show{% endif %}" id="{{ tab_handle }}">
+                        {% for child_block in section.blocks %}
+                            {% assign child_tab = child_block.settings.tab_id | strip | handleize %}
+                            {% if child_tab == tab_handle %}
+                                {% if child_block.type == 'heading' %}
+                                    {% if child_block.settings.heading != blank %}
+                                        {{ child_block.settings.heading }}
+                                    {% endif %}
+                                {% endif %}
+                            {% endif %}
+                        {% endfor %}
+                        <ul>
+                            {% for child_block in section.blocks %}
+                                {% assign child_tab = child_block.settings.tab_id | strip | handleize %}
+                                {% if child_tab == tab_handle %}
+                                    {% if child_block.type == 'icon_with_text' %}
+                                        {% if child_block.settings.text != blank or child_block.settings.icon != blank %}
+                                            <li>
+                                                <i class="e-icon e-icon-{{ child_block.settings.icon }}"></i>
+                                                {{ child_block.settings.text }}
+                                            </li>
+                                        {% endif %}
+                                    {% endif %}
+                                {% endif %}
+                            {% endfor %}
+                        </ul>
+                        {% for child_block in section.blocks %}
+                            {% assign child_tab = child_block.settings.tab_id | strip | handleize %}
+                            {% if child_tab == tab_handle %}
+                                {% if child_block.type == 'image' %}
+                                    {% if child_block.settings.image != blank %}
+                                        <img src="{{ child_block.settings.image | image_url }}" alt="{{ child_block.settings.image.alt | escape }}" />
+                                    {% endif %}
+                                {% endif %}
+                            {% endif %}
+                        {% endfor %}
+                        {% for child_block in section.blocks %}
+                            {% assign child_tab = child_block.settings.tab_id | strip | handleize %}
+                            {% if child_tab == tab_handle %}
+                                {% if child_block.type == 'wistia_video' %}
+                                    {% if child_block.settings.wistia_url != blank %}
+                                        <div class="c-wistia-embed-video">
+                                            <div class="wistia_responsive_padding">
+                                                <div class="wistia_responsive_wrapper">
+                                                    <div class="wistia_embed wistia_async_{{ child_block.settings.wistia_url }} popover=true seo=false videoFoam=true">
+                                                        <div class="wistia_swatch">
+                                                            <img src="https://fast.wistia.com/embed/medias/{{ child_block.settings.wistia_url }}/swatch" alt="" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {% endif %}
+                                {% endif %}
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<!-- MEET FILTERS END -->
+
+{% schema %}
+{
+    "name": "t:sections.n_qure-filters-offer-meet-filters.name",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": false
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "t:common.text"
+        },
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "t:common.image"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "tab_heading",
+            "name": "t:common.tab-heading",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "tab_heading",
+                    "label": "t:common.tab-heading"
+                }
+            ]
+        },
+        {
+            "type": "heading",
+            "name": "t:common.header",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "tab_id",
+                    "label": "t:common.tab-id"
+                },
+                {
+                    "type": "richtext",
+                    "id": "heading",
+                    "label": "t:common.header"
+                }
+            ]
+        },
+        {
+            "type": "icon_with_text",
+            "name": "t:common.icon-with-text",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "tab_id",
+                    "label": "t:common.tab-id"
+                },
+                {
+                    "type": "select",
+                    "id": "icon",
+                    "label": "t:common.icon",
+                    "options": [
+                        {
+                            "value": "watering-can",
+                            "label": "t:common.watering-can"
+                        },
+                        {
+                            "value": "no-chlorine",
+                            "label": "t:common.no-chlorine"
+                        },
+                        {
+                            "value": "unclogs-pores",
+                            "label": "t:common.unclogs-pores"
+                        },
+                        {
+                            "value": "hydration",
+                            "label": "t:common.hydration"
+                        },
+                        {
+                            "value": "balances",
+                            "label": "t:common.balances"
+                        },
+                        {
+                            "value": "shine",
+                            "label": "t:common.shine"
+                        },
+                        {
+                            "value": "rotation",
+                            "label": "t:common.rotation"
+                        },
+                        {
+                            "value": "easy-washing",
+                            "label": "t:common.easy-washing"
+                        },
+                        {
+                            "value": "faucet",
+                            "label": "t:common.faucet"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "id": "text",
+                    "label": "t:common.text"
+                }
+            ]
+        },
+        {
+            "type": "image",
+            "name": "t:common.image",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "tab_id",
+                    "label": "t:common.tab-id"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                }
+            ]
+        },
+        {
+            "type": "wistia_video",
+            "name": "t:common.wistia-video",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "tab_id",
+                    "label": "t:common.tab-id"
+                },
+                {
+                    "type": "text",
+                    "id": "wistia_url",
+                    "label": "t:common.wistia-url"
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}

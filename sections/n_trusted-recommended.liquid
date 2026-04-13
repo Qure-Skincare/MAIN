@@ -8,7 +8,7 @@
 {% endif %}
 <section class="base-section base-section--small-media{% if section.settings.modifier == 'reverse' %} base-section--reverse{% endif %}{% if section.settings.background_color == 'grey' %} base-section--grey{% endif %}">
     <div class="container">
-        {% if section.settings.wistia_url %}
+        {% if section.settings.wistia_url == true and section.settings.video_url != blank %}
             <article>
                 {% if section.settings.heading != blank %}
                     {{ section.settings.heading }}
@@ -17,8 +17,8 @@
                     <figure class="watch-wistia-video" data-bs-toggle="modal" data-bs-target="#reusableWistiaModal" data-video-id="{{ section.settings.video_url }}">
                         {% if section.settings.video_image_cover != blank %}
                                 <picture>
-                                <img src="{{ section.settings.video_image_cover | image_url }}" alt="{{ section.settings.video_image_cover.alt | escape }}" />
-                            </picture>
+                                    <img src="{{ section.settings.video_image_cover | image_url }}" alt="{{ section.settings.video_image_cover.alt | escape }}" />
+                                </picture>
                         {% endif %}
                         {% if section.settings.text_on_image != blank %}
                             <figcaption>
@@ -39,7 +39,7 @@
                     </div>
                 {% endif %}
             </article>
-        {% else %}
+        {% elsif section.settings.wistia_url == false and section.settings.video_url != blank %}
             <article>
                 {{ section.settings.heading }}
                 {% if section.settings.video_url != blank %}
@@ -65,6 +65,25 @@
                 {% if section.settings.badge_text != blank %}
                     <div class="e-pill-badge">
                     <span class="e-checkmark"></span>
+                        {{ section.settings.badge_text }}
+                    </div>
+                {% endif %}
+            </article>
+        {% endif %}
+        {% if section.settings.video_url == blank %}
+            <article>
+                {{ section.settings.heading }}
+                <picture>
+                    <img src="{{ section.settings.video_image_cover | image_url }}" alt="{{ section.settings.video_image_cover.alt | escape }}" />
+                </picture>
+                {% if section.settings.text != blank %}
+                    <div>
+                        {{ section.settings.text }}
+                    </div>
+                {% endif %}
+                {% if section.settings.badge_text != blank %}
+                    <div class="e-pill-badge">
+                        <span class="e-checkmark"></span>
                         {{ section.settings.badge_text }}
                     </div>
                 {% endif %}
