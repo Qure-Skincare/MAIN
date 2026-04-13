@@ -1,0 +1,43 @@
+{% doc %}
+  Renders a quote section for the qure filters offer page
+{% enddoc %}
+
+<!-- TEXT SECTION -->
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/text-section/text-section.css" />
+{% endif %}
+<section class="text-section text-section--bg">
+    <div class="container">
+        <article>
+            {{ section.settings.text }}
+            {% if section.settings.image != blank %}
+                <img src="{{ section.settings.image | image_url }}" alt="Newsweek" />
+            {% endif %}
+        </article>
+    </div>
+</section>
+<!-- TEXT SECTION END -->
+
+{% schema %}
+{
+    "name": "t:sections.n_qure-filters-offer-quote.name",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": false
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "t:common.header"
+        },
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "t:common.image"
+        }
+    ]
+}
+{% endschema %}

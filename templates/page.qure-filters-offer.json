@@ -9,17 +9,6 @@
  */
 {
   "sections": {
-    "announcement_bar_FNAPqF": {
-      "type": "announcement-bar",
-      "disabled": true,
-      "name": "t:sections.announcement-bar.name",
-      "settings": {
-        "heading": "FREE Worldwide Shipping Above $100",
-        "button-label": "SHOP NOW",
-        "button-url": "#",
-        "show": false
-      }
-    },
     "clean_water_KQtjt9": {
       "type": "clean-water",
       "blocks": {
@@ -93,49 +82,49 @@
         "rating_image": "shopify://shop_images/cyan_blue_rating.svg"
       }
     },
-    "quote_zqnAHh": {
-      "type": "quote",
-      "name": "t:sections.quote.name",
+    "n_qure_filters_offer_quote_zqnAHh": {
+      "type": "n_qure-filters-offer-quote",
+      "name": "t:sections.n_qure-filters-offer-quote.name",
       "settings": {
-        "heading": "“Unfiltered water may disturb the natural balance of skin flora, exacerbating conditions such as acne, eczema and dermatitis.”",
-        "text": "Dr Gloria Lin, a board-certified dermatologist, in",
-        "image": "shopify://shop_images/newsweek.webp"
+        "use_own_file": true,
+        "text": "<h3>“Unfiltered water may disturb the natural balance of skin flora, exacerbating conditions such as acne, eczema and dermatitis.”</h3><p> </p><p>Dr Gloria Lin, a board-certified dermatologist, in</p>",
+        "image": "shopify://shop_images/newsweek_b464ea00-69e1-46c8-bb2b-79afbd4b65bf.webp"
       }
     },
-    "qure_filters_offer_slider_with_text_JgnGLR": {
-      "type": "qure-filters-offer-slider-with-text",
+    "n_qure_filters_offer_peek_card_slider_JgnGLR": {
+      "type": "n_qure-filters-offer-meet-filters-peek-card-slider",
       "blocks": {
         "carousel_JiXKEh": {
           "type": "carousel",
           "settings": {
-            "heading": "Dry, Tight Skin",
-            "text": "<p>That rough, stretched, uncomfortable feeling you cannot moisturize away.</p>",
             "image": "shopify://shop_images/dry_skin_tight.webp",
-            "tag_1": "<p>Chlorine</p>",
-            "tag_2": "<p>Minerals</p>",
-            "tag_3": "<p>Chemical Residues</p>"
+            "text": "<h6>Dry, Tight Skin</h6><p>That rough, stretched, uncomfortable feeling you cannot moisturize away.</p>",
+            "sub_text": "Caused by:",
+            "tag_1": "Chlorine",
+            "tag_2": "Minerals",
+            "tag_3": "Chemical Residues"
           }
         },
         "carousel_gMY6JG": {
           "type": "carousel",
           "settings": {
-            "heading": "Itchy, Flaky Scalp",
-            "text": "<p>The embarrassing flakes and constant tightness you cannot escape.</p>",
             "image": "shopify://shop_images/hair_scalp.webp",
-            "tag_1": "<p>Heavy Metals</p>",
-            "tag_2": "<p>Chlorine</p>",
-            "tag_3": "<p>Bacteria</p>"
+            "text": "<h6>Itchy, Flaky Scalp</h6><p>The embarrassing flakes and constant tightness you cannot escape.</p>",
+            "sub_text": "Caused by:",
+            "tag_1": "Heavy Metals",
+            "tag_2": "Chlorine",
+            "tag_3": "Bacteria"
           }
         },
         "carousel_PUe6Gj": {
           "type": "carousel",
           "settings": {
-            "heading": "Stubborn Breakouts",
-            "text": "<p>The angry, red, under-the-surface spots that never seem to fully heal.</p>",
             "image": "shopify://shop_images/stubborn_breakouts.webp",
-            "tag_1": "<p>Bacteria</p>",
-            "tag_2": "<p>Chlorine</p>",
-            "tag_3": "<p>Rust</p>"
+            "text": "<h6>Stubborn Breakouts</h6><p>The angry, red, under-the-surface spots that never seem to fully heal.</p>",
+            "sub_text": "Caused by:",
+            "tag_1": "Bacteria",
+            "tag_2": "Chlorine",
+            "tag_3": "Rust"
           }
         }
       },
@@ -144,14 +133,15 @@
         "carousel_gMY6JG",
         "carousel_PUe6Gj"
       ],
-      "name": "t:sections.qure-filters-offer-slider-with-text.name",
+      "name": "t:sections.n_qure-filters-offer-meet-filters-peek-card-slider.name",
       "settings": {
-        "heading": "The 3 biggest skin and hair issues? Blame your water.",
+        "use_own_file": true,
+        "heading": "<h2>The 3 biggest skin and hair issues? Blame your water.</h2>",
         "text": "<p>And no amount of expensive products can change that. In fact, they could just make it worse.</p>"
       }
     },
-    "logos_r79NY3": {
-      "type": "logos",
+    "n_logos_r79NY3": {
+      "type": "n_logos",
       "blocks": {
         "carousel_dAcfWA": {
           "type": "carousel",
@@ -198,34 +188,33 @@
         "carousel_gz9r8D",
         "carousel_3JNkHM"
       ],
-      "name": "t:sections.logos.name",
-      "settings": {}
+      "name": "t:sections.n_logos.name",
+      "settings": {
+        "use_own_file": true
+      }
     },
-    "fix_problem_ccFneR": {
-      "type": "fix-problem",
+    "n_text_ccFneR": {
+      "type": "n_text",
       "blocks": {
         "text_with_image_xcnLnP": {
           "type": "text_with_image",
           "settings": {
-            "heading": "Actives can’t absorb",
-            "text": "<p>Dirty water blocks actives, wasting every expensive drop you paid for.</p>",
-            "image": "shopify://shop_images/real_pblm_1.webp"
+            "image": "shopify://shop_images/real_pblm_1.webp",
+            "text": "<h6>Actives can’t absorb</h6><p>Dirty water blocks actives, wasting every expensive drop you paid for.</p>"
           }
         },
         "text_with_image_bJQ7UQ": {
           "type": "text_with_image",
           "settings": {
-            "heading": "More moisturizer won’t help",
-            "text": "<p>Moisturizer is useless if your skin’s too damaged to absorb it.</p>",
-            "image": "shopify://shop_images/real_pblm_2.webp"
+            "image": "shopify://shop_images/real_pblm_2.webp",
+            "text": "<h6>More moisturizer won’t help</h6><p>Moisturizer is useless if your skin’s too damaged to absorb it.</p>"
           }
         },
         "text_with_image_PbGjTk": {
           "type": "text_with_image",
           "settings": {
-            "heading": "Hair products barely work",
-            "text": "<p>Your water leaves hair dry and wastes your expensive hair care.</p>",
-            "image": "shopify://shop_images/real_pblm_3.webp"
+            "image": "shopify://shop_images/real_pblm_3.webp",
+            "text": "<h6>Hair products barely work</h6><p>Your water leaves hair dry and wastes your expensive hair care.</p>"
           }
         }
       },
@@ -234,220 +223,297 @@
         "text_with_image_bJQ7UQ",
         "text_with_image_PbGjTk"
       ],
-      "name": "t:sections.fix-problem.name",
+      "name": "t:sections.n_text.name",
       "settings": {
-        "heading": "More products won’t fix the real problem",
-        "text": "<p>No product can fix what dirty water keeps damaging. Until you fix the water, you are just masking the problem... and pouring money down the drain.</p>"
+        "use_own_file": true,
+        "modifier": "none",
+        "text": "<h2>More products won’t fix the real problem</h2><p>No product can fix what dirty water keeps damaging. Until you fix the water, you are just masking the problem... and pouring money down the drain.</p>",
+        "button_label": "",
+        "button_url": ""
       }
     },
-    "qure_filters_offer_qure_filters_MqbAF4": {
-      "type": "qure-filters-offer-qure-filters",
+    "n_qure_filters_offer_meet_filters_MqbAF4": {
+      "type": "n_qure-filters-offer-meet-filters",
       "blocks": {
-        "shower_text_with_image_FUeCqi": {
-          "type": "shower_text_with_image",
+        "meet_tab_heading_shower": {
+          "type": "tab_heading",
           "settings": {
-            "image": "shopify://shop_images/filter_icon1.svg",
-            "text": "<p>Filters Heavy Metals</p>"
+            "tab_heading": "Shower Filter"
           }
         },
-        "shower_text_with_image_BGCVnm": {
-          "type": "shower_text_with_image",
+        "meet_tab_heading_faucet": {
+          "type": "tab_heading",
           "settings": {
-            "image": "shopify://shop_images/filter_icon2.svg",
-            "text": "<p>Removes Chlorine</p>"
+            "tab_heading": "Faucet Filter"
           }
         },
-        "shower_text_with_image_mRTXKM": {
-          "type": "shower_text_with_image",
+        "meet_heading_shower": {
+          "type": "heading",
           "settings": {
-            "image": "shopify://shop_images/filter_icon3.svg",
-            "text": "<p>Unclogs Pores</p>"
+            "tab_id": "Shower Filter",
+            "heading": "<h6>The Qure Shower Filter</h6>"
           }
         },
-        "shower_text_with_image_V8fJKL": {
-          "type": "shower_text_with_image",
+        "meet_icon_shower_1": {
+          "type": "icon_with_text",
           "settings": {
-            "image": "shopify://shop_images/filter_icon5.svg",
-            "text": "<p>Boosts Hydration</p>"
+            "tab_id": "Shower Filter",
+            "icon": "watering-can",
+            "text": "Filters Heavy Metals"
           }
         },
-        "shower_text_with_image_V7yTEY": {
-          "type": "shower_text_with_image",
+        "meet_icon_shower_2": {
+          "type": "icon_with_text",
           "settings": {
-            "image": "shopify://shop_images/filter_icon6.svg",
-            "text": "<p>Balances pH</p>"
+            "tab_id": "Shower Filter",
+            "icon": "no-chlorine",
+            "text": "Removes Chlorine"
           }
         },
-        "shower_text_with_image_y9xjEe": {
-          "type": "shower_text_with_image",
+        "meet_icon_shower_3": {
+          "type": "icon_with_text",
           "settings": {
-            "image": "shopify://shop_images/meet_qure_icon6_fd464469-1d98-418d-9b4b-88bbe6b15cf1.svg",
-            "text": "<p>Boosts Hair Shine</p>"
+            "tab_id": "Shower Filter",
+            "icon": "unclogs-pores",
+            "text": "Unclogs Pores"
           }
         },
-        "faucet_text_with_image_TawRF8": {
-          "type": "faucet_text_with_image",
+        "meet_icon_shower_4": {
+          "type": "icon_with_text",
           "settings": {
-            "image": "shopify://shop_images/filter_icon8.svg",
-            "text": "<p>360º Rotation<br/></p>"
+            "tab_id": "Shower Filter",
+            "icon": "hydration",
+            "text": "Boosts Hydration"
           }
         },
-        "faucet_text_with_image_n9B9WU": {
-          "type": "faucet_text_with_image",
+        "meet_icon_shower_5": {
+          "type": "icon_with_text",
           "settings": {
-            "image": "shopify://shop_images/filter_icon1.svg",
-            "text": "<p>Filters Irritants</p>"
+            "tab_id": "Shower Filter",
+            "icon": "balances",
+            "text": "Balances pH"
           }
         },
-        "faucet_text_with_image_4NRwCR": {
-          "type": "faucet_text_with_image",
+        "meet_icon_shower_6": {
+          "type": "icon_with_text",
           "settings": {
-            "image": "shopify://shop_images/filter_icon2.svg",
-            "text": "<p>Removes Chlorine</p>"
+            "tab_id": "Shower Filter",
+            "icon": "shine",
+            "text": "Boosts Hair Shine"
           }
         },
-        "faucet_text_with_image_WwT4UJ": {
-          "type": "faucet_text_with_image",
+        "meet_image_shower": {
+          "type": "image",
           "settings": {
-            "image": "shopify://shop_images/filter_icon5.svg",
-            "text": "<p>Boosts Hydration</p>"
+            "tab_id": "Shower Filter",
+            "image": "shopify://shop_images/shower-1.webp"
           }
         },
-        "faucet_text_with_image_DjKEaU": {
-          "type": "faucet_text_with_image",
+        "meet_wistia_shower": {
+          "type": "wistia_video",
           "settings": {
-            "image": "shopify://shop_images/filter_icon9.svg",
-            "text": "<p>Easy Face Washing</p>"
+            "tab_id": "Shower Filter",
+            "wistia_url": "fsw2ted2a8"
           }
         },
-        "faucet_text_with_image_AQGzcn": {
-          "type": "faucet_text_with_image",
+        "meet_heading_faucet": {
+          "type": "heading",
           "settings": {
-            "image": "shopify://shop_images/filter_icon10.svg",
-            "text": "<p>Fits 99% of Faucets</p>"
+            "tab_id": "Faucet Filter",
+            "heading": "<h6>The Qure Faucet Filter</h6>"
           }
         },
-        "faucet_tab_YXiPh9": {
-          "type": "faucet_tab",
+        "meet_icon_faucet_1": {
+          "type": "icon_with_text",
           "settings": {
-            "image": "shopify://shop_images/shower-3.webp",
-            "video_cover_image": "shopify://shop_images/shower-4.webp",
-            "url": "tev066z6pv"
+            "tab_id": "Faucet Filter",
+            "icon": "rotation",
+            "text": "360º Rotation"
           }
         },
-        "shower_tab_z8Jtcg": {
-          "type": "shower_tab",
+        "meet_icon_faucet_2": {
+          "type": "icon_with_text",
           "settings": {
-            "image": "shopify://shop_images/shower-1.webp",
-            "video_cover_image": "shopify://shop_images/shower-2.webp",
-            "url": "fsw2ted2a8"
+            "tab_id": "Faucet Filter",
+            "icon": "watering-can",
+            "text": "Filters Irritants"
+          }
+        },
+        "meet_icon_faucet_3": {
+          "type": "icon_with_text",
+          "settings": {
+            "tab_id": "Faucet Filter",
+            "icon": "no-chlorine",
+            "text": "Removes Chlorine"
+          }
+        },
+        "meet_icon_faucet_4": {
+          "type": "icon_with_text",
+          "settings": {
+            "tab_id": "Faucet Filter",
+            "icon": "hydration",
+            "text": "Boosts Hydration"
+          }
+        },
+        "meet_icon_faucet_5": {
+          "type": "icon_with_text",
+          "settings": {
+            "tab_id": "Faucet Filter",
+            "icon": "easy-washing",
+            "text": "Easy Face Washing"
+          }
+        },
+        "meet_icon_faucet_6": {
+          "type": "icon_with_text",
+          "settings": {
+            "tab_id": "Faucet Filter",
+            "icon": "faucet",
+            "text": "Fits 99% of Faucets"
+          }
+        },
+        "meet_image_faucet": {
+          "type": "image",
+          "settings": {
+            "tab_id": "Faucet Filter",
+            "image": "shopify://shop_images/shower-3.webp"
+          }
+        },
+        "meet_wistia_faucet": {
+          "type": "wistia_video",
+          "settings": {
+            "tab_id": "Faucet Filter",
+            "wistia_url": "tev066z6pv"
           }
         }
       },
       "block_order": [
-        "shower_text_with_image_FUeCqi",
-        "shower_text_with_image_BGCVnm",
-        "shower_text_with_image_mRTXKM",
-        "shower_text_with_image_V8fJKL",
-        "shower_text_with_image_V7yTEY",
-        "shower_text_with_image_y9xjEe",
-        "faucet_text_with_image_TawRF8",
-        "faucet_text_with_image_n9B9WU",
-        "faucet_text_with_image_4NRwCR",
-        "faucet_text_with_image_WwT4UJ",
-        "faucet_text_with_image_DjKEaU",
-        "faucet_text_with_image_AQGzcn",
-        "faucet_tab_YXiPh9",
-        "shower_tab_z8Jtcg"
+        "meet_tab_heading_shower",
+        "meet_tab_heading_faucet",
+        "meet_heading_shower",
+        "meet_icon_shower_1",
+        "meet_icon_shower_2",
+        "meet_icon_shower_3",
+        "meet_icon_shower_4",
+        "meet_icon_shower_5",
+        "meet_icon_shower_6",
+        "meet_image_shower",
+        "meet_wistia_shower",
+        "meet_heading_faucet",
+        "meet_icon_faucet_1",
+        "meet_icon_faucet_2",
+        "meet_icon_faucet_3",
+        "meet_icon_faucet_4",
+        "meet_icon_faucet_5",
+        "meet_icon_faucet_6",
+        "meet_image_faucet",
+        "meet_wistia_faucet"
       ],
-      "name": "t:sections.qure-filters-offer-qure-filters.name",
+      "name": "t:sections.n_qure-filters-offer-meet-filters.name",
       "settings": {
-        "heading": "Meet The Qure Filters",
-        "text": "From hair to hands, protect your entire body from damaging chemicals and compounds with our unique skincare filtration system.",
-        "image": "shopify://shop_images/qr-filter_pc.webp",
-        "image_mobile": "shopify://shop_images/qr-filter_mob.webp"
+        "use_own_file": true,
+        "text": "<h2>Meet The Qure Filters</h2><p>From hair to hands, protect your entire body from damaging chemicals and compounds with our unique skincare filtration system.</p>",
+        "image": "shopify://shop_images/qr-filter_pc.webp"
       }
     },
-    "improve_skin_hydration_UDwAJ8": {
-      "type": "improve-skin-hydration",
+    "n_progress_metrics_UDwAJ8": {
+      "type": "n_progress-metrics",
       "blocks": {
-        "value_B8ER4i": {
-          "type": "value",
+        "image_before": {
+          "type": "image",
           "settings": {
-            "text": "<p>of participants wouldn’t go back to tap water.</p>",
-            "value": "97%"
+            "heading": "Before",
+            "image": "shopify://shop_images/before-gf.webp"
           }
         },
-        "value_E6RppN": {
-          "type": "value",
+        "image_after": {
+          "type": "image",
           "settings": {
-            "text": "<p>noticed less dryness after 4 weeks.</p>",
-            "value": "80%"
+            "heading": "After",
+            "image": "shopify://shop_images/after-gf.webp"
           }
         },
-        "value_izxaxF": {
-          "type": "value",
+        "percent_value_B8ER4i": {
+          "type": "percent_value",
           "settings": {
-            "text": "<p>reported reduced tightness after filtered water wash.</p>",
-            "value": "76%"
+            "percent_value": 97,
+            "text": "of participants wouldn’t go back to tap water."
+          }
+        },
+        "percent_value_E6RppN": {
+          "type": "percent_value",
+          "settings": {
+            "percent_value": 80,
+            "text": "noticed less dryness after 4 weeks."
+          }
+        },
+        "percent_value_izxaxF": {
+          "type": "percent_value",
+          "settings": {
+            "percent_value": 76,
+            "text": "reported reduced tightness after filtered water wash."
+          }
+        },
+        "disclaimer_subtext": {
+          "type": "disclaimer",
+          "settings": {
+            "text": "Tested by an independent lab, compiled by Regulatory Consultants"
           }
         }
       },
       "block_order": [
-        "value_B8ER4i",
-        "value_E6RppN",
-        "value_izxaxF"
+        "image_before",
+        "image_after",
+        "percent_value_B8ER4i",
+        "percent_value_E6RppN",
+        "percent_value_izxaxF",
+        "disclaimer_subtext"
       ],
-      "name": "t:sections.improve-skin-hydration.name",
+      "name": "t:sections.n_progress-metrics.name",
       "settings": {
-        "heading": "Clinically proven to improve skin hydration in just 4 weeks",
-        "text": "We conducted a independent user study on 30 participants to measure the influence on the level of skin hydration and appearance of wrinkles. Here’s what the results were:",
-        "sub_text": "Tested by an independent lab, compiled by Regulatory Consultants",
-        "image_before": "shopify://shop_images/before-gf.webp",
-        "image_after": "shopify://shop_images/after-gf.webp",
-        "layout": "lane"
+        "use_own_file": true,
+        "text": "<h2>Clinically proven to improve skin hydration in just 4 weeks</h2><p>We conducted a independent user study on 30 participants to measure the influence on the level of skin hydration and appearance of wrinkles. Here’s what the results were:</p>"
       }
     },
-    "trusted_reviews_b9NgPL": {
-      "type": "trusted-reviews",
+    "n_trusted_reviews_b9NgPL": {
+      "type": "n_trusted-reviews",
       "blocks": {
         "slider_6UfcXz": {
           "type": "slider",
           "settings": {
-            "heading": "Source of my unclear skin",
-            "text": "<p>“I didn’t realize how big impact water has on our skin... I almost got used to my skin never getting better than mediocre, but this Water Filter is a game changer in my skincare routine.”</p>",
-            "compare_image": "shopify://shop_images/transf_awaits1.webp",
-            "country_image": "shopify://shop_images/australia_f_f99bf3a2-cb61-46d9-97d3-56c1ef8741c8.webp",
-            "username": "<p>Kim L.</p>",
+            "image": "shopify://shop_images/transf_awaits1.webp",
+            "flag": "shopify://shop_images/australia_f_f99bf3a2-cb61-46d9-97d3-56c1ef8741c8.webp",
+            "username": "Kim L.",
+            "verified_customer": "Verified customer",
+            "text": "<h6>Source of my unclear skin</h6><p>“I didn’t realize how big impact water has on our skin... I almost got used to my skin never getting better than mediocre, but this Water Filter is a game changer in my skincare routine.”</p>",
             "product_url": "",
-            "product_heading": "",
-            "product_text": ""
+            "product_text": "",
+            "product_title": ""
           }
         },
         "slider_7mtD8L": {
           "type": "slider",
           "settings": {
-            "heading": "Hydrated more than ever",
-            "text": "<p>“I never had any major issues with skin before I moved. Then I started to get irritation and my makeup would look cakey cause my skin was always so dry no matter what moisturiser I used. I didn’t change anything in my skincare routine except filtered water. I’m never washing my face with anything less than Q-urified water because my skin is so much better.”</p>",
-            "compare_image": "shopify://shop_images/transf_awaits2.webp",
-            "country_image": "shopify://shop_images/england_f_3a90e77c-3bac-43d1-84e6-3a2e91e0c7e2.webp",
-            "username": "<p>Hanna</p>",
+            "image": "shopify://shop_images/transf_awaits2.webp",
+            "flag": "shopify://shop_images/england_f_3a90e77c-3bac-43d1-84e6-3a2e91e0c7e2.webp",
+            "username": "Hanna",
+            "verified_customer": "Verified customer",
+            "text": "<h6>Hydrated more than ever</h6><p>“I never had any major issues with skin before I moved. Then I started to get irritation and my makeup would look cakey cause my skin was always so dry no matter what moisturiser I used. I didn’t change anything in my skincare routine except filtered water. I’m never washing my face with anything less than Q-urified water because my skin is so much better.”</p>",
             "product_url": "",
-            "product_heading": "",
-            "product_text": ""
+            "product_text": "",
+            "product_title": ""
           }
         },
         "slider_KKJAJe": {
           "type": "slider",
           "settings": {
-            "heading": "Acne and dryness gone",
-            "text": "<p>“My skin has cleared up so much thanks to Qure! I use the LED mask and water filter daily and it’s cleared up my acne, and my complexion so much smoother and less red! My skin feels soft and hydrated. I can actually walk out of the house without makeup now. THANK YOU QURE!!!”</p>",
-            "compare_image": "shopify://shop_images/transf_awaits3.webp",
-            "country_image": "shopify://shop_images/america_f_f699851b-1d61-49ee-b050-b09ddc8f3346.webp",
-            "username": "<p>Josie</p>",
+            "image": "shopify://shop_images/transf_awaits3.webp",
+            "flag": "shopify://shop_images/america_f_f699851b-1d61-49ee-b050-b09ddc8f3346.webp",
+            "username": "Josie",
+            "verified_customer": "Verified customer",
+            "text": "<h6>Acne and dryness gone</h6><p>“My skin has cleared up so much thanks to Qure! I use the LED mask and water filter daily and it’s cleared up my acne, and my complexion so much smoother and less red! My skin feels soft and hydrated. I can actually walk out of the house without makeup now. THANK YOU QURE!!!”</p>",
             "product_url": "",
-            "product_heading": "",
-            "product_text": ""
+            "product_text": "",
+            "product_title": ""
           }
         }
       },
@@ -456,72 +522,82 @@
         "slider_7mtD8L",
         "slider_KKJAJe"
       ],
-      "name": "t:sections.trusted-reviews.name",
+      "name": "t:sections.n_trusted-reviews.name",
       "settings": {
-        "background_color": "",
-        "heading": "Your transformation awaits",
-        "text": "",
-        "text_mobile": "<p>See the power of Qure filter technology, now available for your shower and faucet. </p>",
+        "use_own_file": true,
+        "background_color": "none",
+        "text": "<h2>Your transformation awaits</h2>",
         "button_label": "",
         "button_url": ""
       }
     },
-    "trusted_recommended_awbjc8": {
-      "type": "trusted-recommended",
-      "name": "t:sections.trusted-recommended.name",
+    "n_trusted_recommended_awbjc8": {
+      "type": "n_trusted-recommended",
+      "name": "t:sections.n_trusted-recommended.name",
       "settings": {
-        "background_color": "#ffffff",
-        "heading": "Trusted and Recommended by Experts",
-        "text": "<p>“How do you<strong> reduce the things in your water that are causing issues</strong> with your skin?</p><p>This Qure filter is incredible –<strong> it’s the only filter I personally use</strong> to [reduce] chlorine and anything else that’s going to make your water harsh for your skin.”</p>",
-        "image_text": "",
-        "image": "shopify://shop_images/doctor_shah_desk.webp",
-        "image_mobile": "shopify://shop_images/doctor_shah_mob.webp",
+        "use_own_file": true,
+        "background_color": "none",
+        "heading": "<h2>Trusted and Recommended by Experts</h2>",
+        "text": "<p>“How do you<em> reduce the things in your water that are causing issues</em> with your skin?</p><p>This Qure filter is incredible –<em> it’s the only filter I personally use</em> to [reduce] chlorine and anything else that’s going to make your water harsh for your skin.”</p>",
+        "video_image_cover": "shopify://shop_images/doctor_shah_desk.webp",
+        "text_on_image": "",
+        "wistia_url": false,
         "video_url": "",
-        "wistia_url": ""
+        "badge_text": "Dermatologist Reviewed"
       }
     },
     "form": {
       "type": "page-qure-filters-offer-form",
       "settings": {}
     },
-    "video_review_slider_yBjMTk": {
-      "type": "video-review-slider",
+    "n_video_slider_yBjMTk": {
+      "type": "n_video-slider",
       "blocks": {
         "slider_9rpWf3": {
           "type": "slider",
           "settings": {
-            "youtube_url": "https://www.youtube.com/watch?v=-JELsZmxlAM",
-            "video_cover_image": "shopify://shop_images/shwr_fau_img1.webp",
-            "wistia_url": ""
+            "heading": "",
+            "text": "",
+            "youtube_url": true,
+            "video_url": "https://www.youtube.com/watch?v=-JELsZmxlAM",
+            "image": "shopify://shop_images/shwr_fau_img1.webp"
           }
         },
         "slider_crpnwp": {
           "type": "slider",
           "settings": {
-            "youtube_url": "",
-            "wistia_url": "yvm1h7gbig"
+            "heading": "",
+            "text": "",
+            "youtube_url": false,
+            "video_url": "yvm1h7gbig"
           }
         },
         "slider_MatYQU": {
           "type": "slider",
           "settings": {
-            "youtube_url": "",
-            "wistia_url": "altvn4hlw5"
+            "heading": "",
+            "text": "",
+            "youtube_url": false,
+            "video_url": "altvn4hlw5"
           }
         },
         "slider_piYdwq": {
           "type": "slider",
           "settings": {
-            "youtube_url": "",
-            "wistia_url": "lxde2943wj"
+            "heading": "",
+            "text": "",
+            "youtube_url": false,
+            "video_url": "lxde2943wj"
           }
         },
         "slider_WzGF3y": {
           "type": "slider",
           "settings": {
-            "youtube_url": "https://www.youtube.com/watch?v=YulGNwbRp7w",
-            "video_cover_image": "shopify://shop_images/shwr_fau_img6.webp",
-            "wistia_url": ""
+            "heading": "",
+            "text": "",
+            "youtube_url": true,
+            "video_url": "https://www.youtube.com/watch?v=YulGNwbRp7w",
+            "image": "shopify://shop_images/shwr_fau_img6.webp"
           }
         }
       },
@@ -532,134 +608,107 @@
         "slider_piYdwq",
         "slider_WzGF3y"
       ],
-      "name": "t:sections.video-review-slider.name",
+      "name": "t:sections.n_video-slider.name",
       "settings": {
-        "heading": "See why everyone's switching to filtered water",
-        "background_color": "#f6f6f7"
+        "use_own_file": true,
+        "modifier": "none",
+        "text": "<h2>See why everyone's switching to filtered water</h2>"
       }
     },
-    "comparison_real_fake_FJifqy": {
-      "type": "comparison-real-fake",
+    "n_skin_deserves_FJifqy": {
+      "type": "n_skin-deserves",
       "blocks": {
-        "compairing_points_KyG6gw": {
-          "type": "compairing_points",
+        "table_header": {
+          "type": "header",
           "settings": {
-            "real_text": "<p>Made for skin and hair care</p>",
-            "fake_text": "<p>Made for maximum profit</p>"
+            "text_1": "",
+            "icon_1": "qure",
+            "text_2": "",
+            "icon_2": "none",
+            "text_3": "",
+            "icon_3": "none",
+            "text_4": "Imitations",
+            "icon_4": "none"
           }
         },
-        "compairing_points_RbBr8B": {
-          "type": "compairing_points",
+        "table_row_1": {
+          "type": "table",
           "settings": {
-            "real_text": "<p>Protects you at the sink and the shower</p>",
-            "fake_text": "<p>Doesn’t protect your skin everywhere</p>"
+            "text_1": "Made for skin and hair care",
+            "icon_1": "none",
+            "text_2": "",
+            "icon_2": "checkmark-fill",
+            "text_3": "",
+            "icon_3": "cross-fill",
+            "text_4": "Made for maximum profit",
+            "icon_4": "none"
           }
         },
-        "compairing_points_393WiG": {
-          "type": "compairing_points",
+        "table_row_2": {
+          "type": "table",
           "settings": {
-            "real_text": "<p>Removes chemicals and heavy metals</p>",
-            "fake_text": "<p>Leaves the worst chemicals behind</p>"
+            "text_1": "Protects you at the sink and the shower",
+            "icon_1": "none",
+            "text_2": "",
+            "icon_2": "checkmark-fill",
+            "text_3": "",
+            "icon_3": "cross-fill",
+            "text_4": "Doesn’t protect your skin everywhere",
+            "icon_4": "none"
           }
         },
-        "compairing_points_cFYTbm": {
-          "type": "compairing_points",
+        "table_row_3": {
+          "type": "table",
           "settings": {
-            "real_text": "<p>Proven to calm breakouts and dryness</p>",
-            "fake_text": "<p>Feel like they should help, but don’t</p>"
+            "text_1": "Removes chemicals and heavy metals",
+            "icon_1": "none",
+            "text_2": "",
+            "icon_2": "checkmark-fill",
+            "text_3": "",
+            "icon_3": "cross-fill",
+            "text_4": "Leaves the worst chemicals behind",
+            "icon_4": "none"
           }
         },
-        "compairing_points_XXNhHY": {
-          "type": "compairing_points",
+        "table_row_4": {
+          "type": "table",
           "settings": {
-            "real_text": "<p>Makes your products work even better</p>",
-            "fake_text": "<p>Block absorption and waste your routine</p>"
+            "text_1": "Proven to calm breakouts and dryness",
+            "icon_1": "none",
+            "text_2": "",
+            "icon_2": "checkmark-fill",
+            "text_3": "",
+            "icon_3": "cross-fill",
+            "text_4": "Feel like they should help, but don’t",
+            "icon_4": "none"
+          }
+        },
+        "table_row_5": {
+          "type": "table",
+          "settings": {
+            "text_1": "Makes your products work even better",
+            "icon_1": "none",
+            "text_2": "",
+            "icon_2": "checkmark-fill",
+            "text_3": "",
+            "icon_3": "cross-fill",
+            "text_4": "Block absorption and waste your routine",
+            "icon_4": "none"
           }
         }
       },
       "block_order": [
-        "compairing_points_KyG6gw",
-        "compairing_points_RbBr8B",
-        "compairing_points_393WiG",
-        "compairing_points_cFYTbm",
-        "compairing_points_XXNhHY"
+        "table_header",
+        "table_row_1",
+        "table_row_2",
+        "table_row_3",
+        "table_row_4",
+        "table_row_5"
       ],
-      "name": "t:sections.comparison-real-fake.name",
+      "name": "t:sections.n_skin-deserves.name",
       "settings": {
-        "heading": "Your skin deserves Qure",
-        "text": "<p>When your water is working against you, no product can keep up. Qure filters are designed with your skin and hair in mind. Here’s how Qure compares to what you’re using now.</p>",
-        "heading_fake": "Imitations",
-        "image_heading_real": "shopify://shop_images/qure_logo..svg"
-      }
-    },
-    "information_about_water_BDVnVm": {
-      "type": "information-about-water",
-      "blocks": {
-        "image_with_text_4WRzK9": {
-          "type": "image_with_text",
-          "settings": {
-            "text": "<p>Limescale</p>",
-            "image": "shopify://shop_images/limescale.svg"
-          }
-        },
-        "image_with_text_YnFzbr": {
-          "type": "image_with_text",
-          "settings": {
-            "text": "<p>Heavy Metals</p>",
-            "image": "shopify://shop_images/heavy_metals.svg"
-          }
-        },
-        "image_with_text_ewmVk7": {
-          "type": "image_with_text",
-          "settings": {
-            "text": "<p>Chlorine</p>",
-            "image": "shopify://shop_images/chlorine.svg"
-          }
-        },
-        "image_with_text_hMQMaG": {
-          "type": "image_with_text",
-          "settings": {
-            "text": "<p>Micro-plastics</p>",
-            "image": "shopify://shop_images/micro-plastics_e1a12a67-f27e-4130-8ad1-1fd23ed0f736.svg"
-          }
-        },
-        "image_with_text_FUJbkd": {
-          "type": "image_with_text",
-          "settings": {
-            "text": "<p>Copper</p>",
-            "image": "shopify://shop_images/copper_cf188989-7b95-4dc3-bd08-d95422ca348a.svg"
-          }
-        },
-        "image_with_text_JmWAjP": {
-          "type": "image_with_text",
-          "settings": {
-            "text": "<p>Micro-organisms</p>",
-            "image": "shopify://shop_images/micro-organisms_8f38a0d9-d295-433e-8741-a996a57ff216.svg"
-          }
-        },
-        "image_with_text_7dnhdk": {
-          "type": "image_with_text",
-          "settings": {
-            "text": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_with_text_4WRzK9",
-        "image_with_text_YnFzbr",
-        "image_with_text_ewmVk7",
-        "image_with_text_hMQMaG",
-        "image_with_text_FUJbkd",
-        "image_with_text_JmWAjP",
-        "image_with_text_7dnhdk"
-      ],
-      "disabled": true,
-      "name": "t:sections.information-about-water.name",
-      "settings": {
-        "heading": "Do you know what’s in your water?",
-        "text": "<p><strong>Most tap water is filled with invisible contaminants that quietly damage your skin, hair, and health – without you even realizing.</strong></p><p><em>Take the quiz to find out what’s lurking in your water.</em></p>",
-        "button_label": "Get a Free Water Report",
-        "button_url": "#"
+        "use_own_file": true,
+        "text": "<h2>Your skin deserves Qure</h2><p>When your water is working against you, no product can keep up. Qure filters are designed with your skin and hair in mind. Here’s how Qure compares to what you’re using now.</p>"
       }
     },
     "featured_product_bundle_fGtC93": {
@@ -697,34 +746,28 @@
         "rating_image": "shopify://shop_images/review-stars.svg"
       }
     },
-    "faq_dyCjhg": {
-      "type": "faq",
+    "n_faq_dyCjhg": {
+      "type": "n_faq",
       "blocks": {
         "accordion_awnK68": {
           "type": "accordion",
           "settings": {
             "heading": "What’s included in this bundle?",
-            "text": "<p>This bundle includes:</p><ul><li>1 Qure Showerhead + 1 Filter</li><li>1 Qure Faucet + 1 Filter</li></ul><p>Each filter lasts 90 days (3 months) before needing to be replaced to ensure optimal filtration. When you subscribe to this bundle, 2 replacement filters (1 for Showerhead and 1 for Faucet) will auto-ship every 90 days, with a recurring charge of $70 per month.</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>This bundle includes:</p><ul><li>1 Qure Showerhead + 1 Filter</li><li>1 Qure Faucet + 1 Filter</li></ul><p>Each filter lasts 90 days (3 months) before needing to be replaced to ensure optimal filtration. When you subscribe to this bundle, 2 replacement filters (1 for Showerhead and 1 for Faucet) will auto-ship every 90 days, with a recurring charge of $70 per month.</p>"
           }
         },
         "accordion_eARGxh": {
           "type": "accordion",
           "settings": {
             "heading": "How does tap water harm my skin?",
-            "text": "<p>Facial skin is more sensitive than your skin anywhere else. Your skin barrier is like a protective shield against outside threats. But the stuff in tap water can harm it, leading to:</p><ul><li>Dry and Damaged Skin: Tap water can strip away your skin's natural oils, leaving it dry and damaged.</li><li>Skin Irritation: It might also cause skin irritation, making it sensitive and red.</li><li>Premature Aging: Chemicals in tap water may contribute to early signs of aging, like fine lines and dullness.<br/><br/></li></ul>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>Facial skin is more sensitive than your skin anywhere else. Your skin barrier is like a protective shield against outside threats. But the stuff in tap water can harm it, leading to:</p><ul><li>Dry and Damaged Skin: Tap water can strip away your skin's natural oils, leaving it dry and damaged.</li><li>Skin Irritation: It might also cause skin irritation, making it sensitive and red.</li><li>Premature Aging: Chemicals in tap water may contribute to early signs of aging, like fine lines and dullness.<br/><br/></li></ul>"
           }
         },
         "accordion_K6KtcN": {
           "type": "accordion",
           "settings": {
             "heading": "What chemicals do they filter?",
-            "text": "<p>The Qure Filter Bundle improves your tap water by reducing skin irritants that make your water “hard,” like chlorine, heavy metals, microorganisms, and more.</p><p>The filters reduce chlorine, heavy metals, microorganisms, and other common water contaminants.</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>The Qure Filter Bundle improves your tap water by reducing skin irritants that make your water “hard,” like chlorine, heavy metals, microorganisms, and more.</p><p>The filters reduce chlorine, heavy metals, microorganisms, and other common water contaminants.</p>"
           }
         },
         "accordion_UkkxRw": {
@@ -732,8 +775,6 @@
           "settings": {
             "heading": "Are they compatible with all showerhead and faucets?",
             "text": "<p>The Qure Shower Filter fits most standard screw-on showerheads, but we recommend checking  your showerheads specs to confirm. It won’t work with built-in or custom fittings without standard threads.</p><p>The Qure Faucet Filter fits 99% of standard faucets with a circular removable aerator and includes adaptors for different sizes. We recommend checking your faucet type before purchase. It won’t fit square or oval faucets, showerhead faucets, induction styles, pull-outs without detachable aerators, or non-threaded pipes under 15mm.</p>",
-            "link_url": "",
-            "link_text": "",
             "image": "shopify://shop_images/taps.webp"
           }
         },
@@ -741,18 +782,14 @@
           "type": "accordion",
           "settings": {
             "heading": "Do I need to change/replace the filters?",
-            "text": "<p>With daily use, your Qure Filters will need to be replaced at least once every three months for your skin to look and feel its best. When you subscribe to this bundle, 2 replacement filters (1 for Showerhead and 1 for Faucet) will auto-ship every 90 days, with a recurring charge of 70$ per month.</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>With daily use, your Qure Filters will need to be replaced at least once every three months for your skin to look and feel its best. When you subscribe to this bundle, 2 replacement filters (1 for Showerhead and 1 for Faucet) will auto-ship every 90 days, with a recurring charge of 70$ per month.</p>"
           }
         },
         "accordion_KU3qrq": {
           "type": "accordion",
           "settings": {
             "heading": "Will it affect water pressure?",
-            "text": "<p>Our filters are designed to maintain water pressure while effectively filtering impurities.</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>Our filters are designed to maintain water pressure while effectively filtering impurities.</p>"
           }
         }
       },
@@ -764,14 +801,13 @@
         "accordion_UA8Mgj",
         "accordion_KU3qrq"
       ],
-      "name": "t:sections.faq.name",
+      "name": "t:sections.n_faq.name",
       "settings": {
-        "heading": "Have questions?",
+        "use_own_file": true,
+        "heading": "<h2>Have questions?</h2>",
         "text": "Don’t see your question?",
         "button_label": "Ask us",
-        "button_url": "",
-        "terms-conditions": false,
-        "promotional_terms_and_conditions": ""
+        "button_url": ""
       }
     },
     "sticky_cta_SrchB9": {
@@ -806,22 +842,20 @@
     }
   },
   "order": [
-    "announcement_bar_FNAPqF",
     "clean_water_KQtjt9",
-    "quote_zqnAHh",
-    "qure_filters_offer_slider_with_text_JgnGLR",
-    "logos_r79NY3",
-    "fix_problem_ccFneR",
-    "qure_filters_offer_qure_filters_MqbAF4",
-    "improve_skin_hydration_UDwAJ8",
-    "trusted_reviews_b9NgPL",
-    "trusted_recommended_awbjc8",
+    "n_qure_filters_offer_quote_zqnAHh",
+    "n_qure_filters_offer_peek_card_slider_JgnGLR",
+    "n_logos_r79NY3",
+    "n_text_ccFneR",
+    "n_qure_filters_offer_meet_filters_MqbAF4",
+    "n_progress_metrics_UDwAJ8",
+    "n_trusted_reviews_b9NgPL",
+    "n_trusted_recommended_awbjc8",
     "form",
-    "video_review_slider_yBjMTk",
-    "comparison_real_fake_FJifqy",
-    "information_about_water_BDVnVm",
+    "n_video_slider_yBjMTk",
+    "n_skin_deserves_FJifqy",
     "featured_product_bundle_fGtC93",
-    "faq_dyCjhg",
+    "n_faq_dyCjhg",
     "sticky_cta_SrchB9"
   ]
 }

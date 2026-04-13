@@ -29,12 +29,16 @@
                 {% endif %}
                 {% assign has_text = false %}
                 {% assign has_popup = false %}
+                {% assign has_text_with_image = false %}
                 {% for block in section.blocks %}
                     {% if block.type == 'text' %}
                         {% assign has_text = true %}
                     {% endif %}
                     {% if block.type == 'popup' %}
                         {% assign has_popup = true %}
+                    {% endif %}
+                    {% if block.type == 'text_with_image' %}
+                        {% assign has_text_with_image = true %}
                     {% endif %}
                 {% endfor %}
                 {% if has_text %}
@@ -60,6 +64,20 @@
                     </div>
                 {% endif %}
             </article>
+            {% if has_text_with_image %}
+                <ul class="real-problems">
+                    {% for block in section.blocks %}
+                        {% if block.type == 'text_with_image' %}
+                            <li>
+                                {% if block.settings.image != blank %}
+                                    <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                {% endif %}
+                                {{ block.settings.text }}
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            {% endif %}
         {% endif %}
     </div>
 </section>
@@ -132,6 +150,22 @@
             "name": "t:common.popup",
             "limit": 1,
             "settings": [
+                {
+                    "type": "richtext",
+                    "id": "text",
+                    "label": "t:common.text"
+                }
+            ]
+        },
+        {
+            "type": "text_with_image",
+            "name": "t:common.text-with-image",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                },
                 {
                     "type": "richtext",
                     "id": "text",

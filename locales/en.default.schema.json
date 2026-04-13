@@ -252,6 +252,7 @@
         "tab-slider": "Tab slider",
         "tab-heading": "Tab header",
         "tab-panel": "Tab panel",
+        "tab-id": "Tab ID",
         "percent-value-style": "Percent value style",
         "circle": "Circle",
         "line": "Line",
@@ -284,7 +285,16 @@
         "center": "Center",
         "stats": "Stats",
         "product-type-accordion": "Product type accordion",
-        "certified-box": "Certified box"
+        "certified-box": "Certified box",
+        "watering-can": "Watering can",
+        "no-chlorine": "No chlorine",
+        "unclogs-pores": "Unclogs pores",
+        "hydration": "Hydration",
+        "balances": "Balances",
+        "shine": "Shine",
+        "rotation": "Rotation",
+        "easy-washing": "Easy washing",
+        "faucet": "Faucet"
     },
     "blocks": {
         "block-card": {
@@ -688,6 +698,9 @@
         },
         "n_hero-product": {
             "name": "Hero product"
+        },
+        "n_qure-filters-offer-meet-filters": {
+            "name": "Meet filters"
         },
         "collection": {
             "name": "Collection",
@@ -1266,6 +1279,27 @@
         },
         "n_page-exclusive-bundle-deal-learn-more": {
             "name": "Learn more"
+        },
+        "n_qure-filters-offer-meet-filters-peek-card-slider": {
+            "name": "Peek card slider",
+            "blocks": {
+                "carousel": {
+                    "settings": {
+                        "tag-1": {
+                            "name": "Tag-1"
+                        },
+                        "tag-2": {
+                            "name": "Tag-2"
+                        },
+                        "tag-3": {
+                            "name": "Tag-3"
+                        }
+                    }
+                }
+            }
+        },
+        "n_qure-filters-offer-quote": {
+            "name": "Quote"
         },
         "page-banner": {
             "name": "Page banner"

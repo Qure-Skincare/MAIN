@@ -1,0 +1,148 @@
+{% doc %}
+  Renders a peek card slider section for the qure filters offer page
+{% enddoc %}
+
+<!-- PEEK CARDS SLIDER -->
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/peek-cards-slider/peek-cards-slider.css" />
+{% endif %}
+<section class="peek-cards-slider">
+    <div class="container">
+        <article class="peek-cards-slider__content">
+            {{ section.settings.heading }}
+            {% if section.settings.text != blank %}
+                <div>
+                    {{ section.settings.text }}
+                </div>
+            {% endif %}
+            <div
+                class="c-swiper"
+                data-swiper='{
+                        "slidesPerView": 1.1,
+                        "spaceBetween": 16,
+                        "loop": false,
+                        "pagination": {
+                            "el": ".c-swiper-pagination",
+                            "type": "custom"
+                        },
+                        "navigation": {
+                            "prevEl": ".c-swiper-button-prev",
+                            "nextEl": ".c-swiper-button-next"
+                        },
+                        "breakpoints": {
+                            "768": {
+                                "slidesPerView": 1.75,
+                                "spaceBetween": 24
+                            }
+                        }
+                    }'>
+                <div class="swiper-wrapper">
+                    {% for block in section.blocks %}
+                        {% if block.type == 'carousel' %}
+                            <div class="swiper-slide">
+                                {% if block.settings.image != blank %}
+                                    <picture>
+                                        <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                    </picture>
+                                {% endif %}
+                                <article>
+                                    {{ block.settings.text }}
+                                    {% if block.settings.sub_text != blank %}
+                                        <hr />
+                                        <small>{{ block.settings.sub_text }}</small>
+                                    {% endif %}
+                                    <ul>
+                                        {% if block.settings.tag_1 != blank %}
+                                            <li>
+                                                <div class="e-pill-badge e-pill-badge--xxs">{{ block.settings.tag_1 }}</div>
+                                            </li>
+                                        {% endif %}
+                                        {% if block.settings.tag_2 != blank %}
+                                            <li>
+                                                <div class="e-pill-badge e-pill-badge--xxs">{{ block.settings.tag_2 }}</div>
+                                            </li>
+                                        {% endif %}
+                                        {% if block.settings.tag_3 != blank %}
+                                            <li>
+                                                <div class="e-pill-badge e-pill-badge--xxs">{{ block.settings.tag_3 }}</div>
+                                            </li>
+                                        {% endif %}
+                                    </ul>
+                                </article>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                    
+                </div>
+                <div class="c-swiper-nav">
+                    <button class="c-swiper-button-prev"></button>
+                    <div class="c-swiper-pagination"></div>
+                    <button class="c-swiper-button-next"></button>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
+<!-- PEEK CARDS SLIDER END -->
+
+{% schema %}
+{
+    "name": "t:sections.n_qure-filters-offer-meet-filters-peek-card-slider.name",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": false
+        },
+        {
+            "type": "richtext",
+            "id": "heading",
+            "label": "t:common.header"
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "t:common.text"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "carousel",
+            "name": "t:common.carousel",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                },
+                {
+                    "type": "richtext",
+                    "id": "text",
+                    "label": "t:common.text"
+                },
+                {
+                    "type": "text",
+                    "id": "sub_text",
+                    "label": "t:common.sub-text"
+                },
+                {
+                    "type": "text",
+                    "id": "tag_1",
+                    "label": "t:sections.n_qure-filters-offer-meet-filters-peek-card-slider.blocks.carousel.settings.tag-1.name"
+                },
+                {
+                    "type": "text",
+                    "id": "tag_2",
+                    "label": "t:sections.n_qure-filters-offer-meet-filters-peek-card-slider.blocks.carousel.settings.tag-2.name"
+                },
+                {
+                    "type": "text",
+                    "id": "tag_3",
+                    "label": "t:sections.n_qure-filters-offer-meet-filters-peek-card-slider.blocks.carousel.settings.tag-3.name"
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}
