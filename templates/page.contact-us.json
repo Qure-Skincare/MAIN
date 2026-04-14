@@ -9,8 +9,8 @@
  */
 {
   "sections": {
-    "contact_form_kkXb7P": {
-      "type": "contact-form",
+    "n_contact_form_kkXb7P": {
+      "type": "n_contact-form",
       "blocks": {
         "contact_bHPmTY": {
           "type": "contact",
@@ -25,7 +25,7 @@
           "settings": {
             "heading": "CALL US",
             "text": "<p>+1 (240) 702-2228<br/> Sat - Sun<br/>9AM - 8PM EST</p>",
-            "icon": "chat"
+            "icon": "call-us"
           }
         },
         "contact_bKnnyR": {
@@ -33,7 +33,7 @@
           "settings": {
             "heading": "EMAIL",
             "text": "<p>Send a Message to Customer Service below</p>",
-            "icon": "chat"
+            "icon": "email"
           }
         }
       },
@@ -42,10 +42,11 @@
         "contact_xJqBFy",
         "contact_bKnnyR"
       ],
-      "name": "t:sections.contact-form.name",
+      "name": "t:sections.n_contact-form.name",
       "settings": {
         "use_own_file": true,
-        "text": "<h2>Contact Us</h2><p>We are here to help!</p>"
+        "text": "<h2>Contact Us</h2><p>We are here to help!</p>",
+        "show_contact_info": true
       }
     },
     "n_text_yU7Njm": {
@@ -61,7 +62,7 @@
     }
   },
   "order": [
-    "contact_form_kkXb7P",
+    "n_contact_form_kkXb7P",
     "n_text_yU7Njm"
   ]
 }

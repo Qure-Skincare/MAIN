@@ -133,7 +133,7 @@
       "interior_text": "INTERIOR",
       "email_icon": "https://qureskincaredns.com/sections/isolated/interior-classy/images/email_icon.svg"
     },
-    "contact-form": {
+    "n_contact-form": {
       "success_text": "Thanks for contacting us. We'll get back to you as soon as possible.",
       "send_text": "Send",
       "topic": "Topic",

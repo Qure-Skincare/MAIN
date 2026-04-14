@@ -789,8 +789,8 @@
         "results-slider": {
             "name": "Results slider"
         },
-        "cta-cards": {
-            "name": "CTA cards"
+        "n_returns-exchanges-tiles-group": {
+            "name": "Tiles group"
         },
         "micro-infusion-lim-ed-bundle-inside-kit": {
             "name": "Inside the kit"
@@ -798,8 +798,11 @@
         "micro-infusion-lim-ed-bundle-page-banner": {
             "name": "Page banner"
         },
-        "contact-form": {
+        "n_contact-form": {
             "name": "Contact form",
+            "settings": {
+                "show_contact_info": "Show contact info"
+            },
             "blocks": {
                 "contact": {
                     "settings": {
@@ -850,8 +853,8 @@
                 }
             }
         },
-        "returns-exchanges-card-slider": {
-            "name": "Returns exchanges card slider"
+        "n_returns-exchanges-how-to-use": {
+            "name": "How to use"
         },
         "contact-info": {
             "name": "Contact information"

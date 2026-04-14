@@ -9,85 +9,80 @@
  */
 {
   "sections": {
-    "page_banner_dx4yWG": {
-      "type": "page-banner",
-      "name": "t:sections.page-banner.name",
+    "n_across_image_banner_dx4yWG": {
+      "type": "n_across-image-banner",
+      "name": "t:sections.n_across-image-banner.name",
       "settings": {
-        "heading": "Easy Returns & Exchanges",
+        "use_own_file": true,
+        "modifier": "hero",
+        "heading": "<h1>Easy Returns &amp; Exchanges</h1>",
         "text": "<p>Shop with confidence at Qure</p>",
-        "sub_text": "",
-        "button": "",
-        "button_url": "",
-        "button_mobile": "",
-        "button_url_mobile": "",
         "image": "shopify://shop_images/return-hero.webp",
-        "image_mobile": "shopify://shop_images/return-hero-mob.webp"
+        "image_mobile": "shopify://shop_images/return-hero-mob.webp",
+        "button_label": "",
+        "button_url": ""
       }
     },
-    "banner_with_text_QWDLkn": {
-      "type": "banner-with-text",
-      "name": "t:sections.banner-with-text.name",
+    "n_base_section_QWDLkn": {
+      "type": "n_base-section",
+      "name": "t:sections.n_base-section.name",
       "settings": {
-        "heading": "Simple Hassle-Free Returns",
-        "text": "<p>At Qure, we want you to feel confident with your purchase. That’s why we offer easy returns and exchanges.</p><h2>30-Day Money Back Guarantee</h2><p>Changed your mind? Returns can be initiated within 30 days upon receiving your order to qualify for our money back guarantee.</p>",
-        "quote": "",
-        "quote-mobile": "",
-        "image_position": "right",
-        "sub_text": "",
+        "use_own_file": true,
+        "modifier": "none",
+        "modifier_2": "simple-grid",
+        "background_color": "none",
+        "heading": "<h2>Simple Hassle-Free Returns</h2>",
+        "text": "<p>At Qure, we want you to feel confident with your purchase. That's why we offer easy returns and exchanges.</p><h2>30-Day Money Back Guarantee</h2><p>Changed your mind? Returns can be initiated within 30 days upon receiving your order to qualify for our money back guarantee.</p>",
         "image": "shopify://shop_images/hf-returns.webp",
         "button_label": "",
         "button_url": "",
         "wistia_url": ""
       }
     },
-    "banner_with_text_Biaw6t": {
-      "type": "banner-with-text",
-      "name": "t:sections.banner-with-text.name",
+    "n_base_section_Biaw6t": {
+      "type": "n_base-section",
+      "name": "t:sections.n_base-section.name",
       "settings": {
-        "heading": "Our Return Policy",
-        "text": "<p>Here’s the low-down on the terms and conditions that apply to the guarantee. You can read <a href=\"https://qureskincare.com/pages/return-policy\" title=\"https://qureskincare.com/pages/return-policy\">full T&Cs here</a>.</p><p>[ul class]</p><ul><li>30 days to return OR exchange for a  refund.</li><li>Returns first need to be approved by Qure support. </li><li>Shipping charges are non-refundable.</li><li>A Restocking Fee of $10 will be deducted from the refund.</li></ul>",
-        "quote": "",
-        "quote-mobile": "",
-        "image_position": "left",
-        "sub_text": "",
+        "use_own_file": true,
+        "modifier": "reverse",
+        "modifier_2": "simple-grid",
+        "background_color": "none",
+        "heading": "<h2>Our Return Policy</h2>",
+        "text": "<p>Here's the low-down on the terms and conditions that apply to the guarantee. You can read <a href=\"https://qureskincare.com/pages/return-policy\" title=\"https://qureskincare.com/pages/return-policy\">full T&amp;Cs here</a>.</p><ul><li>30 days to return OR exchange for a  refund.</li><li>Returns first need to be approved by Qure support. </li><li>Shipping charges are non-refundable.</li><li>A Restocking Fee of $10 will be deducted from the refund.</li></ul>",
         "image": "shopify://shop_images/FKP_1182v1_3_aabb1a9b-3572-4265-b230-36e35bfe6471.png",
         "button_label": "",
         "button_url": "",
         "wistia_url": ""
       }
     },
-    "returns_exchanges_card_slider_CxHGKn": {
-      "type": "returns-exchanges-card-slider",
+    "n_returns_exchanges_how_to_use_CxHGKn": {
+      "type": "n_returns-exchanges-how-to-use",
       "blocks": {
         "carousel_t68QTM": {
           "type": "carousel",
           "settings": {
-            "heading": "Go to the returns portal",
-            "text": "<p><a href=\"https://qureskincare.return.richpanel.com/create\" title=\"https://qureskincare.return.richpanel.com/create\">Click here to visit our returns & exchanges portal page.</a> Enter your order number and either your shipping code or email address.&lt;</p>",
+            "text": "<h6>Go to the returns portal</h6><p><a href=\"https://qureskincare.return.richpanel.com/create\" title=\"https://qureskincare.return.richpanel.com/create\">Click here to visit our returns & exchanges portal page.</a> Enter your order number and either your shipping code or email address.</p>",
             "image": "shopify://shop_images/1_1_892353e6-f97a-4808-a986-a51211d67d44.png"
           }
         },
         "carousel_diyRPj": {
           "type": "carousel",
           "settings": {
-            "heading": "Choose what’s next",
-            "text": "<p>Pick whether it’s a return or exchange and answer a few questions. You’ll be asked to provide a photo of the item(s). </p>",
+            "text": "<h6>Choose what's next</h6><p>Pick whether it's a return or exchange and answer a few questions. You'll be asked to provide a photo of the item(s). </p>",
             "image": "shopify://shop_images/2_042e02c4-c22e-4779-8c24-5fe840789d9f.png"
           }
         },
         "carousel_x38Xbp": {
           "type": "carousel",
           "settings": {
-            "heading": "Get an RMA Number",
-            "text": "<p>If approved, you will be provided the return instructions and a Return Merchandise Authorization (RMA) number from our team via email. This is required for all successful returns.</p>",
+            "text": "<h6>Get an RMA Number</h6><p>If approved, you will be provided the return instructions and a Return Merchandise Authorization (RMA) number from our team via email. This is required for all successful returns.</p>",
             "image": "shopify://shop_images/2_1_af9c3c62-8f70-45f4-a35a-23c6f3d0cfbc.png"
           }
         },
         "carousel_7kaUiC": {
           "type": "carousel",
           "settings": {
-            "heading": "Pack and ship",
-            "text": "<p>Securely pack item(s) in a box and ship them! We encourage you to use a trackable shipping service. Please allow up to 7-14 business days for your return to be processed.</p>",
+            "text": "<h6>Pack and ship</h6><p>Securely pack item(s) in a box and ship them! We encourage you to use a trackable shipping service. Please allow up to 7-14 business days for your return to be processed.</p>",
             "image": "shopify://shop_images/2_2.png"
           }
         }
@@ -100,105 +95,95 @@
       ],
       "name": "t:sections.returns-exchanges-card-slider.name",
       "settings": {
-        "heading": "How to return or exchange",
+        "use_own_file": true,
+        "heading": "<h2>How to return or exchange</h2>",
         "button_label": "Start a return",
         "button_url": "https://qureskincare.return.richpanel.com/create"
       }
     },
-    "contact_info_8NGQjJ": {
-      "type": "contact-info",
+    "n_contact_form_QRzxPJ": {
+      "type": "n_contact-form",
       "blocks": {
-        "information_box_jPVptc": {
-          "type": "information_box",
+        "contact_4UF8J4": {
+          "type": "contact",
           "settings": {
             "heading": "LIVE CHAT",
-            "text": "Mon - Fri9AM - 5PM EST",
-            "text_mobile": "Mon - Fri9AM - 5PM EST",
-            "image": "shopify://shop_images/ct-chat.svg"
+            "text": "<p>Mon - Fri<br>9AM - 5PM EST</p>",
+            "icon": "chat"
           }
         },
-        "information_box_BPpnp3": {
-          "type": "information_box",
+        "contact_zR4DXb": {
+          "type": "contact",
           "settings": {
             "heading": "CALL US",
-            "text": "Sat - Sun<br>9AM - 5PM EST",
-            "text_mobile": "1 (240) 702-2228 <br>Sat - Sun<br>9AM - 5PM EST",
-            "image": "shopify://shop_images/ct-call.svg"
+            "text": "<p>Sat - Sun<br>9AM - 5PM EST</p>",
+            "icon": "call-us"
           }
         },
-        "information_box_KxLT9q": {
-          "type": "information_box",
+        "contact_bxUjEV": {
+          "type": "contact",
           "settings": {
             "heading": "EMAIL",
-            "text": "Mon - Sun<br>24 hr support",
-            "text_mobile": "Send a Message to Customer Service below",
-            "image": "shopify://shop_images/ct-email.svg"
+            "text": "<p>Mon - Sun<br>24 hr support</p>",
+            "icon": "email"
           }
         }
       },
       "block_order": [
-        "information_box_jPVptc",
-        "information_box_BPpnp3",
-        "information_box_KxLT9q"
+        "contact_4UF8J4",
+        "contact_zR4DXb",
+        "contact_bxUjEV"
       ],
-      "name": "t:sections.contact-info.name",
+      "name": "t:sections.n_contact-form.name",
       "settings": {
-        "heading": "Have questions?",
-        "text": "<p>If you have a question about your order please contact our customer service team by visiting our <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Help Center</a>.<br/>For more information on our warranty please visit our warranty policy.</p>"
+        "use_own_file": true,
+        "text": "<h2>Have questions?</h2><p>If you have a question about your order please contact our customer service team by visiting our <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Help Center</a>.<br/>For more information on our warranty please visit our warranty policy.</p>",
+        "show_contact_info": false
       }
     },
-    "page_banner_UXq7yQ": {
-      "type": "page-banner",
-      "name": "t:sections.page-banner.name",
+    "n_across_image_banner_UXq7yQ": {
+      "type": "n_across-image-banner",
+      "name": "t:sections.n_across-image-banner.name",
       "settings": {
-        "heading": "Feeling good in your skin is so much more than skin deep.",
+        "use_own_file": true,
+        "modifier": "sm",
+        "heading": "<h2>Feeling good in your skin is so much more than skin deep.</h2>",
         "text": "",
-        "sub_text": "",
-        "button": "",
-        "button_url": "",
-        "button_mobile": "",
-        "button_url_mobile": "",
         "image": "shopify://shop_images/skin-d.webp",
-        "image_mobile": "shopify://shop_images/skin-m.webp"
+        "image_mobile": "shopify://shop_images/skin-m.webp",
+        "button_label": "",
+        "button_url": ""
       }
     },
-    "faq_MUkQJi": {
-      "type": "faq",
+    "n_faq_MUkQJi": {
+      "type": "n_faq",
       "blocks": {
         "accordion_APCfec": {
           "type": "accordion",
           "settings": {
             "heading": "I used a promo code on my purchase. Will I get a new code?",
-            "text": "<p>Orders placed with a promo code that discounts the order are only eligible for a store credit in a form of voucher(s).</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>Orders placed with a promo code that discounts the order are only eligible for a store credit in a form of voucher(s).</p>"
           }
         },
         "accordion_KEh83z": {
           "type": "accordion",
           "settings": {
             "heading": "What should I do if I received the wrong item?",
-            "text": "<p>If you received a product different from the one that you ordered, please <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Help Center</a>  and we’ll be sure to make this right!</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>If you received a product different from the one that you ordered, please <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Help Center</a>  and we'll be sure to make this right!</p>"
           }
         },
         "accordion_ALTiK3": {
           "type": "accordion",
           "settings": {
             "heading": "How long does it take to process my return?",
-            "text": "<p>Once your return package has arrived with us, please allow up to 7-14 business days for your return to be processed. Credit card refunds usually take 5-10 business days to appear on your statement.</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>Once your return package has arrived with us, please allow up to 7-14 business days for your return to be processed. Credit card refunds usually take 5-10 business days to appear on your statement.</p>"
           }
         },
         "accordion_YENJ43": {
           "type": "accordion",
           "settings": {
             "heading": "Is there a restocking fee?",
-            "text": "<p>Yes, a return fee will be deducted from the refund to cover the warehouse cost to return the product. This fee amounts to $10 for all products. Customer service agents can provide a more exact cost if the returned product is subject to a shipping fee.</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>Yes, a return fee will be deducted from the refund to cover the warehouse cost to return the product. This fee amounts to $10 for all products. Customer service agents can provide a more exact cost if the returned product is subject to a shipping fee.</p>"
           }
         }
       },
@@ -208,18 +193,17 @@
         "accordion_ALTiK3",
         "accordion_YENJ43"
       ],
-      "name": "t:sections.faq.name",
+      "name": "t:sections.n_faq.name",
       "settings": {
-        "heading": "Have questions?",
-        "text": "",
+        "use_own_file": true,
+        "heading": "<h2>Have questions?</h2>",
+        "text": "Don't see your question?",
         "button_label": "Ask us",
-        "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home",
-        "terms-conditions": false,
-        "promotional_terms_and_conditions": ""
+        "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
       }
     },
-    "returns_exchanges_cta_cards_gXEULM": {
-      "type": "returns-exchanges-cta-cards",
+    "n_returns_exchanges_tiles_group_gXEULM": {
+      "type": "n_returns-exchanges-tiles-group",
       "blocks": {
         "information_box_mpcxQt": {
           "type": "information_box",
@@ -253,18 +237,19 @@
       ],
       "name": "t:sections.cta-cards.name",
       "settings": {
-        "heading": "More Help at Your Fingertips"
+        "use_own_file": true,
+        "heading": "<h2>More Help at Your Fingertips</h2>"
       }
     }
   },
   "order": [
-    "page_banner_dx4yWG",
-    "banner_with_text_QWDLkn",
-    "banner_with_text_Biaw6t",
-    "returns_exchanges_card_slider_CxHGKn",
-    "contact_info_8NGQjJ",
-    "page_banner_UXq7yQ",
-    "faq_MUkQJi",
-    "returns_exchanges_cta_cards_gXEULM"
+    "n_across_image_banner_dx4yWG",
+    "n_base_section_QWDLkn",
+    "n_base_section_Biaw6t",
+    "n_returns_exchanges_how_to_use_CxHGKn",
+    "n_contact_form_QRzxPJ",
+    "n_across_image_banner_UXq7yQ",
+    "n_faq_MUkQJi",
+    "n_returns_exchanges_tiles_group_gXEULM"
   ]
 }

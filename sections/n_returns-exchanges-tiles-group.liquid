@@ -1,0 +1,72 @@
+{% doc %}
+    Renders a tiles group section for returns-echanges page.
+{% enddoc %}
+
+<!-- WHY USING -->
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/tiles-group/tiles-group.css" />
+{% endif %}
+<section class="tiles-group">
+    <div class="container">
+        <article>
+            {{ section.settings.heading }}
+            <ul>
+                {% for block in section.blocks %}
+                    {% if block.type == 'information_box' %}
+                        <li>
+                            {% if block.settings.image != blank %}
+                                <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                            {% endif %}
+                            {% if block.settings.button_label != blank and block.settings.button_url != blank %}
+                                <a class="btn btn--primary-white" href="{{ block.settings.button_url }}">{{ block.settings.button_label }}</a>
+                            {% endif %}
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </article>
+    </div>
+</section>
+<!-- WHY USING END -->
+
+{% schema %}
+    {
+        "name": "t:sections.n_returns-exchanges-tiles-group.name",
+        "settings": [
+            {
+                "type": "checkbox",
+                "id": "use_own_file",
+                "label": "t:common.use-own-file",
+                "default": false
+            },
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "t:common.header"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "information_box",
+                "name": "t:common.information-box",
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "button_label",
+                        "label": "t:common.button-label"
+                    },
+                    {
+                        "type": "url",
+                        "id": "button_url",
+                        "label": "t:common.button-url"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image"
+                    }
+                ]
+            }
+        ]
+    }
+    {% endschema %}

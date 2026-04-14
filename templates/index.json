@@ -80,7 +80,7 @@
       ],
       "disabled": true,
       "settings": {
-        "use_own_file": false
+        "use_own_file": true
       }
     },
     "n_across_image_banner_TNGNLJ": {
@@ -95,21 +95,6 @@
         "image_mobile": "shopify://shop_images/hero-mob.webp",
         "button_label": "Shop All Best Sellers",
         "button_url": "shopify://collections/best-sellers"
-      }
-    },
-    "n_across_image_banner_tL47T8": {
-      "type": "n_across-image-banner",
-      "disabled": true,
-      "name": "t:sections.n_across-image-banner.name",
-      "settings": {
-        "use_own_file": true,
-        "modifier": "hero",
-        "heading": "<h1>Easter Offer More Glow, More Savings</h1>",
-        "text": "<p>For a limited time only, save on your skincare favorites.</p>",
-        "image": "shopify://shop_images/easter.webp",
-        "image_mobile": "shopify://shop_images/easter-mob.webp",
-        "button_label": "Bundle & Save Up To 25%",
-        "button_url": "https://qureskincare.com/pages/build-your-own"
       }
     },
     "n_index-quick-title-links": {
@@ -180,47 +165,6 @@
       ],
       "settings": {
         "use_own_file": true
-      }
-    },
-    "n_across_image_banner_second_TNGNLJ": {
-      "type": "n_across-image-banner",
-      "blocks": {
-        "disclaimer_1": {
-          "type": "disclaimer",
-          "settings": {
-            "text": "*To support breast cancer research to prevent, detect, stop and treat breast cancer, Qure will donate $3 from every order to the National Breast Cancer Foundation."
-          }
-        }
-      },
-      "block_order": [
-        "disclaimer_1"
-      ],
-      "disabled": true,
-      "name": "t:sections.index-banner-with-text-second.name",
-      "settings": {
-        "use_own_file": true,
-        "modifier": "hero",
-        "heading": "<h1>Get clinic-level results from home – minus the ‘clinical’ costs.</h1>",
-        "text": "",
-        "image": "shopify://shop_images/promo-banner.webp",
-        "image_mobile": "shopify://shop_images/promo-banner-mob.webp",
-        "button_label": "Shop All Best Sellers",
-        "button_url": "shopify://collections/best-sellers"
-      }
-    },
-    "n_across_image_banner_bundle_eEa7XN": {
-      "type": "n_across-image-banner",
-      "disabled": true,
-      "name": "t:sections.bundle-banner.name",
-      "settings": {
-        "use_own_file": true,
-        "modifier": "none",
-        "heading": "<h2>Save up to 55% on Exclusive Bundles</h2>",
-        "text": "<p>Everything your skin needs, bundled for less. Shop our exclusive sets while they last.</p>",
-        "image": "shopify://shop_images/bundle.webp",
-        "image_mobile": "shopify://shop_images/bundle-mob.webp",
-        "button_label": "Shop & Save 55%",
-        "button_url": "https://qureskincare.com/pages/exclusive-holiday-bundle-deal-new"
       }
     },
     "n_press_reviews_KgaUTN": {
@@ -587,7 +531,6 @@
       "settings": {
         "use_own_file": true,
         "background_color": "none",
-        "modifier": "none",
         "heading": "<h2>Trusted and Recommended by Experts</h2>",
         "text": "<p>“This treatment is an at-home option for those who want to <em>avoid the hassle or cost of going to the office”.</em></p>",
         "video_image_cover": "shopify://shop_images/shah-maxfield.webp",
@@ -798,43 +741,6 @@
         "text": "<h2>Unlock Your Personalized Skincare Routine</h2><p>You don’t have time for products that don’t work. We’ll prescribe you a personalized routine with clinically proven products and tips - just for your skin.</p>"
       }
     },
-    "n_base_section_index_read_story": {
-      "type": "n_base-section",
-      "disabled": true,
-      "name": "t:sections.index-read-our-story.name",
-      "settings": {
-        "use_own_file": true,
-        "modifier": "reverse",
-        "modifier_2": "none",
-        "background_color": "none",
-        "heading": "<h2>Feeling good in your skin is not a privilege – it’s a right</h2>",
-        "text": "<p>At Qure, we're redefining beauty boundaries by making professional clinical treatments accessible to everyone from the comfort of peoples home—without the clinical price tag.</p>",
-        "image": "shopify://shop_images/collage.webp",
-        "button_label": "Read Our Story",
-        "button_url": "https://qureskincare.com/pages/our-story",
-        "wistia_url": ""
-      }
-    },
-    "1768836404997c6fa7": {
-      "type": "apps",
-      "blocks": {
-        "bookx_app_blocks_YVMFC3": {
-          "type": "shopify://apps/bookx/blocks/app-blocks/865cd10f-9515-4d8b-8e41-efece9c83f71",
-          "settings": {
-            "bookeasy-app-id": "htGfwdi1vmeEiPRv6XLQuo",
-            "bookeasy-app-title": "booking",
-            "bookeasy-app-subtitle": "booking",
-            "bookeasy-app-description": "",
-            "bookeasy-app-alignment": "flex-start"
-          }
-        }
-      },
-      "block_order": [
-        "bookx_app_blocks_YVMFC3"
-      ],
-      "disabled": true,
-      "settings": {}
-    },
     "n_index_our_community_BGarba": {
       "type": "n_index-our-community",
       "blocks": {
@@ -883,10 +789,7 @@
   "order": [
     "n_index-quick-links",
     "n_across_image_banner_TNGNLJ",
-    "n_across_image_banner_tL47T8",
     "n_index-quick-title-links",
-    "n_across_image_banner_second_TNGNLJ",
-    "n_across_image_banner_bundle_eEa7XN",
     "n_press_reviews_KgaUTN",
     "n_trusted_reviews_ecfpDp",
     "n_index-top-rated",
@@ -897,8 +800,6 @@
     "n_base_section_MqEdEN",
     "n_our_advisors_LPVVBm",
     "n_take-quiz_wdnen7",
-    "n_base_section_index_read_story",
-    "1768836404997c6fa7",
     "n_index_our_community_BGarba"
   ]
 }
