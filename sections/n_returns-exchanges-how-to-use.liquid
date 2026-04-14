@@ -1,0 +1,111 @@
+{% doc %}
+  Renders a card slider section for returns-exchanges page.
+{% enddoc %}
+
+<!-- HOW TO USE -->
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/how-to-use/how-to-use.css" />
+{% endif %}
+<section class="how-to-use how-to-use--center how-to-use--bg" id="easy_steps">
+    <div class="container">
+        <article class="how-to-use__content">
+            {{ section.settings.heading }}
+            <div
+                class="c-swiper"
+                data-swiper='{
+                        "slidesPerView": 1.05,
+                        "spaceBetween": 16,
+                        "loop": false,
+                        "pagination": {
+                            "el": ".c-swiper-pagination",
+                            "type": "custom"
+                        },
+                        "navigation": {
+                            "prevEl": ".c-swiper-button-prev",
+                            "nextEl": ".c-swiper-button-next"
+                        },
+                        "breakpoints": {
+                            "768": {
+                                "slidesPerView": 4,
+                                "spaceBetween": 32
+                            }
+                        }
+                    }'>
+                <div class="swiper-wrapper">
+                    {% for block in section.blocks %}
+                        {% if block.type == 'carousel' %}
+                            <div class="swiper-slide">
+                                {% if block.settings.image != blank %}
+                                    <picture data-index="{{ forloop.index }}">
+                                        <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                    </picture>
+                                {% endif %}
+                                {% if block.settings.text != blank %}
+                                    <article>
+                                        {{ block.settings.text }}
+                                    </article>
+                                {% endif %}
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                <div class="c-swiper-nav">
+                    <button class="c-swiper-button-prev"></button>
+                    <div class="c-swiper-pagination"></div>
+                    <button class="c-swiper-button-next"></button>
+                </div>
+            </div>
+            {% if section.settings.button_label != blank and section.settings.button_url != blank %}
+                <a class="btn btn--primary" href="{{ section.settings.button_url }}">{{ section.settings.button_label }}</a>
+            {% endif %}
+        </article>
+    </div>
+</section>
+<!-- HOW TO USE END -->
+
+{% schema %}
+    {
+      "name": "t:sections.n_returns-exchanges-how-to-use.name",
+      "settings": [
+        {
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": false
+        },
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "t:common.header"
+        },
+        {
+            "type": "text",
+            "id": "button_label",
+            "label": "t:common.button-label"
+        },
+        {
+            "type": "url",
+            "id": "button_url",
+            "label": "t:common.button-url"
+        }
+      ],
+      "blocks": [
+        {
+            "type": "carousel",
+            "name": "t:common.carousel",
+            "settings": [
+                {
+                    "type": "richtext",
+                    "id": "text",
+                    "label": "t:common.text"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                }
+            ]
+        }
+      ]
+    }
+    {% endschema %}
