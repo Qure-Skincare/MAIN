@@ -35,8 +35,13 @@
             <div class="swiper-wrapper">
                 {% for item in source %}
                     {% include 'get-product-data', product_handle: item.product.value.handle, product_prefix: 'product-page-cross-sell-' %}
+                    {% assign feature_image = item.feature_image.value %}
                     <div class="swiper-slide">
-                        <img src="{{ product_featured_image | img_url: '240x' }}" alt="{{ product_title | escape }}" />
+                        {% if feature_image != blank %}
+                            <img src="{{ feature_image | img_url: '240x' }}" alt="{{ product_title | escape }}" />
+                        {% else %}
+                            <img src="{{ product_featured_image | img_url: '240x' }}" alt="{{ product_title | escape }}" />
+                        {% endif %}
                         <a href="{{ product_url }}" aria-label="{{ product_handle | escape }}">{{ product_title }}</a>
 
                         {% if product_available == true %}
