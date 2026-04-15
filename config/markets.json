@@ -35,6 +35,9 @@
     },
     "asia": {
       "parent": "@default"
+    },
+    "uae": {
+      "parent": "@default"
     }
   }
 }
