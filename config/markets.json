@@ -32,6 +32,9 @@
     },
     "international": {
       "parent": "@default"
+    },
+    "asia": {
+      "parent": "@default"
     }
   }
 }
