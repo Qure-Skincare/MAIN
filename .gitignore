@@ -21,8 +21,5 @@ release
 
 # Claude Code
 CLAUDE.md
-CLAUDE.local.md
 .claude/
-.theme_ids/
-sections/skills.md
-templates/template_skill.md
+.mcp.json
