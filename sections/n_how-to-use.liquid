@@ -6,7 +6,7 @@
  {% if section.settings.use_own_file %}
     <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/how-to-use/how-to-use.css" />
  {% endif %}
-<section class="how-to-use" id="easy_steps">
+<section class="how-to-use{% if section.settings.modifier != 'none' %} how-to-use--{{ section.settings.modifier }}{% endif %}" id="easy_steps">
     <div class="container">
         <article class="how-to-use__content">
             {{ section.settings.heading }}
@@ -15,49 +15,97 @@
                     {{ section.settings.text }}
                 </div>
             {% endif %}
-            <div
-                class="c-swiper"
-                data-swiper='{
-                "slidesPerView": 1.75,
-                "spaceBetween": 24,
-                "loop": false,
-                "enableOn": "desktop",
-                "pagination": {
-                    "el": ".c-swiper-pagination",
-                    "type": "custom"
-                },
-                "navigation": {
-                    "prevEl": ".c-swiper-button-prev",
-                    "nextEl": ".c-swiper-button-next"
-                }
-            }'>
-                <div class="swiper-wrapper">
-                    {% for block in section.blocks %}
-                        {% if block.type == 'image_with_text' %}
-                            <div class="swiper-slide">
-                                <picture data-index="{{ forloop.index }}">
-                                    {% if block.settings.image != blank %}
-                                        <source media="(min-width:768px)" srcset="{{ block.settings.image | image_url }}" />
+            {% if section.settings.modifier == 'center' %}
+                <div
+                    class="c-swiper"
+                    data-swiper='{
+                            "slidesPerView": 1.05,
+                            "spaceBetween": 16,
+                            "loop": false,
+                            "pagination": {
+                                "el": ".c-swiper-pagination",
+                                "type": "custom"
+                            },
+                            "navigation": {
+                                "prevEl": ".c-swiper-button-prev",
+                                "nextEl": ".c-swiper-button-next"
+                            },
+                            "breakpoints": {
+                                "768": {
+                                    "slidesPerView": 4,
+                                    "spaceBetween": 32
+                                }
+                            }
+                        }'>
+                    <div class="swiper-wrapper">
+                        {% for block in section.blocks %}
+                            {% if block.type == 'image_with_text' %}
+                                <div class="swiper-slide">
+                                    <picture data-index="{{ forloop.index }}">
+                                        {% if block.settings.image != blank %}
+                                            <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                        {% endif %}
+                                    </picture>
+                                    {% if block.settings.text != blank %}
+                                        <article>
+                                            {{ block.settings.text }}
+                                        </article>
                                     {% endif %}
-                                    {% if block.settings.image_mobile != blank %}
-                                        <img src="{{ block.settings.image_mobile | image_url }}" alt="{{ block.settings.image_mobile.alt | escape }}" />
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                    <div class="c-swiper-nav">
+                        <button class="c-swiper-button-prev"></button>
+                        <div class="c-swiper-pagination"></div>
+                        <button class="c-swiper-button-next"></button>
+                    </div>
+                </div>
+            {% else %}
+                <div
+                    class="c-swiper"
+                    data-swiper='{
+                    "slidesPerView": 1.75,
+                    "spaceBetween": 24,
+                    "loop": false,
+                    "enableOn": "desktop",
+                    "pagination": {
+                        "el": ".c-swiper-pagination",
+                        "type": "custom"
+                    },
+                    "navigation": {
+                        "prevEl": ".c-swiper-button-prev",
+                        "nextEl": ".c-swiper-button-next"
+                    }
+                }'>
+                    <div class="swiper-wrapper">
+                        {% for block in section.blocks %}
+                            {% if block.type == 'image_with_text' %}
+                                <div class="swiper-slide">
+                                    <picture data-index="{{ forloop.index }}">
+                                        {% if block.settings.image != blank %}
+                                            <source media="(min-width:768px)" srcset="{{ block.settings.image | image_url }}" />
+                                        {% endif %}
+                                        {% if block.settings.image_mobile != blank %}
+                                            <img src="{{ block.settings.image_mobile | image_url }}" alt="{{ block.settings.image_mobile.alt | escape }}" />
+                                        {% endif %}
+                                    </picture>
+                                    {% if block.settings.text != blank %}
+                                        <article>
+                                            {{ block.settings.text }}
+                                        </article>
                                     {% endif %}
-                                </picture>
-                                {% if block.settings.text != blank %}
-                                    <article>
-                                        {{ block.settings.text }}
-                                    </article>
-                                {% endif %}
-                            </div>
-                        {% endif %}
-                    {% endfor %}
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                    <div class="c-swiper-nav">
+                        <button class="c-swiper-button-prev"></button>
+                        <div class="c-swiper-pagination"></div>
+                        <button class="c-swiper-button-next"></button>
+                    </div>
                 </div>
-                <div class="c-swiper-nav">
-                    <button class="c-swiper-button-prev"></button>
-                    <div class="c-swiper-pagination"></div>
-                    <button class="c-swiper-button-next"></button>
-                </div>
-            </div>
+            {% endif %}
         </article>
     </div>
 </section>
@@ -72,6 +120,22 @@
             "id": "use_own_file",
             "label": "t:common.use-own-file",
             "default": false
+        },
+        {
+            "type": "select",
+            "id": "modifier",
+            "label": "t:common.modifier",
+            "default": "none",
+            "options": [
+                {
+                    "value": "none",
+                    "label": "t:common.none"
+                },
+                {
+                    "value": "center",
+                    "label": "t:common.center"
+                }
+            ]
         },
         {
             "type": "richtext",
