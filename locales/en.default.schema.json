@@ -85,6 +85,7 @@
         "popup-header": "Popup header",
         "popup-text": "Popup text",
         "popup-quote": "Popup quote",
+        "popup-id": "Popup ID",
         "style-color": "Style color",
         "color-switch": "Color switch",
         "color-switch-heading": "Color switch header",
@@ -294,7 +295,9 @@
         "shine": "Shine",
         "rotation": "Rotation",
         "easy-washing": "Easy washing",
-        "faucet": "Faucet"
+        "faucet": "Faucet",
+        "save": "Save"
+
     },
     "blocks": {
         "block-card": {
@@ -906,8 +909,31 @@
         "card-slider": {
             "name": "Card slider"
         },
-        "exclusive-offer": {
-            "name": "Exclusive offer"
+        "n_page-led-mask-offer-2-exclusive-bundle": {
+            "name": "Exclusive bundle",
+            "settings": {
+                "badge": "Tag / badge (above heading)",
+                "tabs_heading": "Heading above tab buttons"
+            },
+            "blocks": {
+                "product": {
+                    "name": "Product (tab)",
+                    "settings": {
+                        "tab_id": "Tab ID (HTML id)",
+                        "tab_id_info": "Must match across blocks that belong to the same tab (e.g. first-pane). Used as the tab panel id.",
+                        "free": "FREE"
+                    }
+                },
+                "pill_badge": {
+                    "name": "Pill badge",
+                    "settings": {
+                        "small": "Small (tab button). Off = large pill inside tab panel."
+                    }
+                },
+                "tab_text": {
+                    "name": "Bullet text (tab)"
+                }
+            }
         },
         "feature-tabs": {
             "name": "Feature tabs",

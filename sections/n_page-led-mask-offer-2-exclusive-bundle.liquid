@@ -1,0 +1,299 @@
+{% doc %}
+  Renders a exclusive bundle section on page led-mask-offer-2
+{% enddoc %}
+{%- if section.settings.use_own_file -%}
+  <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/exclusive-bundle/exclusive-bundle.css" />
+{%- endif -%}
+
+{%- liquid
+  assign tab_ids_csv = ''
+  for block in section.blocks
+    if block.type == 'product' and block.settings.product != blank
+      assign tid = block.settings.tab_id | strip
+      if tid == blank
+        assign tid = block.id
+      endif
+      assign needle = ',' | append: tid | append: ','
+      assign haystack = ',' | append: tab_ids_csv
+      unless haystack contains needle
+        assign tab_ids_csv = tab_ids_csv | append: tid | append: ','
+      endunless
+    endif
+  endfor
+  assign tab_ids = tab_ids_csv | split: ','
+-%}
+
+<!-- EXCLUSIVE BUNDLE -->
+<section class="exclusive-bundle" data-section-id="{{ section.id }}" {{ section.shopify_attributes }}>
+  <div class="container">
+    <article>
+      {%- if section.settings.badge != blank -%}
+        <div class="e-double-tag">{{ section.settings.badge | replace: '<p>', '' | replace: '</p>', '' }}</div>
+      {%- endif -%}
+      {%- if section.settings.heading != blank -%}
+        <h2>{{ section.settings.heading | replace: '<p>', '' | replace: '</p>', '' }}</h2>
+      {%- endif -%}
+      <div class="exclusive-bundle__tabs">
+        {%- if section.settings.tabs_heading != blank -%}
+          {{ section.settings.tabs_heading }}
+        {%- endif -%}
+
+        {%- if tab_ids_csv != blank -%}
+          <div class="exclusive-bundle__tabs-buttons" role="tablist">
+            {%- assign tab_btn_index = 0 -%}
+            {%- for tab_id in tab_ids -%}
+              {%- if tab_id == blank -%}{%- continue -%}{%- endif -%}
+              {%- if tab_btn_index > 0 -%}
+                <i class="e-icon e-icon-plus"></i>
+              {%- endif -%}
+              {%- assign tab_btn_index = tab_btn_index | plus: 1 -%}
+
+              {%- assign btn_product = blank -%}
+              {%- assign btn_handle = blank -%}
+              {%- assign btn_product_block = blank -%}
+              {%- for block in section.blocks -%}
+                {%- if block.type == 'product' -%}
+                  {%- assign bid = block.settings.tab_id | strip -%}
+                  {%- if bid == blank -%}{%- assign bid = block.id -%}{%- endif -%}
+                  {%- if bid == tab_id and block.settings.product != blank -%}
+                    {%- assign btn_handle = block.settings.product -%}
+                    {%- assign btn_product = all_products[btn_handle] -%}
+                    {%- assign btn_product_block = block -%}
+                    {%- break -%}
+                  {%- endif -%}
+                {%- endif -%}
+              {%- endfor -%}
+
+              <button
+                type="button"
+                class="{% if tab_btn_index == 1 %}active{% endif %}"
+                role="tab"
+                data-bs-toggle="tab"
+                data-bs-target="#{{ tab_id | escape }}"
+              >
+                {%- for block in section.blocks -%}
+                  {%- if block.type == 'pill_badge' -%}
+                    {%- assign pid = block.settings.tab_id | strip -%}
+                    {%- if pid == tab_id and block.settings.small -%}
+                      <div class="e-pill-badge e-pill-badge--fill e-pill-badge--sm" {{ block.shopify_attributes }}>
+                        {{ block.settings.text | replace: '<p>', '' | replace: '</p>', '' }}
+                      </div>
+                    {%- endif -%}
+                  {%- endif -%}
+                {%- endfor -%}
+                {%- if btn_product_block != blank -%}
+                  <span {{ btn_product_block.shopify_attributes }}>
+                {%- endif -%}
+                {%- if btn_product != blank and btn_product.featured_image != blank -%}
+                  <img
+                    src="{{ btn_product.featured_image | image_url: width: 120 }}"
+                    alt="{{ btn_product.featured_image.alt | default: btn_product.title | escape }}"
+                    loading="lazy"
+                    width="{{ btn_product.featured_image.width }}"
+                    height="{{ btn_product.featured_image.height }}"
+                  />
+                {%- endif -%}
+                {%- if btn_product != blank -%}
+                  {{- btn_product.title | escape -}}
+                {%- endif -%}
+                {%- if btn_product_block != blank -%}
+                  </span>
+                {%- endif -%}
+              </button>
+            {%- endfor -%}
+          </div>
+
+          {%- assign pane_index = 0 -%}
+          {%- for tab_id in tab_ids -%}
+            {%- if tab_id == blank -%}{%- continue -%}{%- endif -%}
+            {%- assign pane_index = pane_index | plus: 1 -%}
+
+            {%- assign pane_block = blank -%}
+            {%- assign pane_handle = blank -%}
+            {%- for block in section.blocks -%}
+              {%- if block.type == 'product' -%}
+                {%- assign bid = block.settings.tab_id | strip -%}
+                {%- if bid == blank -%}{%- assign bid = block.id -%}{%- endif -%}
+                {%- if bid == tab_id and block.settings.product != blank -%}
+                  {%- assign pane_block = block -%}
+                  {%- assign pane_handle = block.settings.product -%}
+                  {%- break -%}
+                {%- endif -%}
+              {%- endif -%}
+            {%- endfor -%}
+
+            {%- assign pane_product = blank -%}
+            {%- if pane_handle != blank -%}
+              {%- assign pane_product = all_products[pane_handle] -%}
+            {%- endif -%}
+
+            {%- if pane_index > 1 -%}
+              <i class="e-icon e-icon-plus"></i>
+            {%- endif -%}
+
+            <div
+              class="exclusive-bundle__tabs-pane{% if pane_index == 1 %} show{% endif %}"
+              id="{{ tab_id | escape }}"
+              role="tabpanel"
+            >
+              {%- for block in section.blocks -%}
+                {%- if block.type == 'pill_badge' -%}
+                  {%- assign pid = block.settings.tab_id | strip -%}
+                  {%- if pid == tab_id and block.settings.small != true -%}
+                    <div class="e-pill-badge e-pill-badge--fill" {{ block.shopify_attributes }}>
+                      {{ block.settings.text | replace: '<p>', '' | replace: '</p>', '' }}
+                    </div>
+                  {%- endif -%}
+                {%- endif -%}
+              {%- endfor -%}
+
+              {%- if pane_product != blank -%}
+                <div {% if pane_block != blank %}{{ pane_block.shopify_attributes }}{% endif %}>
+                  {%- if pane_product.featured_image != blank -%}
+                    <img
+                      src="{{ pane_product.featured_image | image_url: width: 800 }}"
+                      alt="{{ pane_product.featured_image.alt | default: pane_product.title | escape }}"
+                      loading="lazy"
+                      width="{{ pane_product.featured_image.width }}"
+                      height="{{ pane_product.featured_image.height }}"
+                    />
+                  {%- endif -%}
+                  <h6>{{ pane_product.title | escape }}</h6>
+                  {%- assign price_wrap = 'e-price' -%}
+                  {%- if pane_block != blank and pane_block.settings.free -%}
+                    {%- assign price_wrap = 'e-price e-price--highlight' -%}
+                  {%- endif -%}
+                  <div class="{{ price_wrap }}">
+                    <div class="e-price__main">
+                      {%- if pane_block != blank and pane_block.settings.free -%}
+                        <div class="e-price__current">{{ 'sections.n_page-led-mask-offer-2-exclusive-bundle.free_price_label' | t }}</div>
+                        {%- if pane_product.price -%}
+                          <div class="e-price__old">{{ pane_product.price | money_without_trailing_zeros }}</div>
+                        {%- endif -%}
+                      {%- else -%}
+                        <div class="e-price__current">{{ pane_product.price | money_without_trailing_zeros }}</div>
+                      {%- endif -%}
+                    </div>
+                  </div>
+                </div>
+              {%- endif -%}
+
+              <ul>
+                {%- for block in section.blocks -%}
+                  {%- if block.type == 'tab_text' -%}
+                    {%- assign tid = block.settings.tab_id | strip -%}
+                    {%- if tid == tab_id and block.settings.text != blank -%}
+                      <li {{ block.shopify_attributes }}>
+                        <i class="e-icon e-icon-checkmark"></i>
+                        {{ block.settings.text | replace: '<p>', '' | replace: '</p>', '' }}
+                      </li>
+                    {%- endif -%}
+                  {%- endif -%}
+                {%- endfor -%}
+              </ul>
+            </div>
+          {%- endfor -%}
+        {%- endif -%}
+      </div>
+    </article>
+  </div>
+</section>
+<!-- EXCLUSIVE BUNDLE END -->
+
+{% schema %}
+{
+  "name": "t:sections.n_page-led-mask-offer-2-exclusive-bundle.name",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "use_own_file",
+      "label": "t:common.use-own-file",
+      "default": true
+    },
+    {
+      "type": "richtext",
+      "id": "badge",
+      "label": "t:sections.n_page-led-mask-offer-2-exclusive-bundle.settings.badge"
+    },
+    {
+      "type": "richtext",
+      "id": "heading",
+      "label": "t:common.header"
+    },
+    {
+      "type": "richtext",
+      "id": "tabs_heading",
+      "label": "t:sections.n_page-led-mask-offer-2-exclusive-bundle.settings.tabs_heading"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "product",
+      "name": "t:sections.n_page-led-mask-offer-2-exclusive-bundle.blocks.product.name",
+      "limit": 6,
+      "settings": [
+        {
+          "type": "text",
+          "id": "tab_id",
+          "label": "t:sections.n_page-led-mask-offer-2-exclusive-bundle.blocks.product.settings.tab_id",
+          "default": "first-pane",
+          "info": "t:sections.n_page-led-mask-offer-2-exclusive-bundle.blocks.product.settings.tab_id_info"
+        },
+        {
+          "type": "product",
+          "id": "product",
+          "label": "t:common.product"
+        },
+        {
+          "type": "checkbox",
+          "id": "free",
+          "label": "t:sections.n_page-led-mask-offer-2-exclusive-bundle.blocks.product.settings.free",
+          "default": false
+        }
+      ]
+    },
+    {
+      "type": "pill_badge",
+      "name": "t:sections.n_page-led-mask-offer-2-exclusive-bundle.blocks.pill_badge.name",
+      "limit": 8,
+      "settings": [
+        {
+          "type": "text",
+          "id": "tab_id",
+          "label": "t:sections.n_page-led-mask-offer-2-exclusive-bundle.blocks.product.settings.tab_id",
+          "default": "first-pane"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "t:common.text"
+        },
+        {
+          "type": "checkbox",
+          "id": "small",
+          "label": "t:sections.n_page-led-mask-offer-2-exclusive-bundle.blocks.pill_badge.settings.small",
+          "default": false
+        }
+      ]
+    },
+    {
+      "type": "tab_text",
+      "name": "t:sections.n_page-led-mask-offer-2-exclusive-bundle.blocks.tab_text.name",
+      "limit": 30,
+      "settings": [
+        {
+          "type": "text",
+          "id": "tab_id",
+          "label": "t:sections.n_page-led-mask-offer-2-exclusive-bundle.blocks.product.settings.tab_id",
+          "default": "first-pane"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "t:common.text"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

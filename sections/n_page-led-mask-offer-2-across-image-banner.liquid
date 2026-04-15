@@ -1,0 +1,122 @@
+{% doc %}
+  Renders a across image banner section on page led-mask-offer-2
+{% enddoc %}
+
+<!-- ACROSS IMAGE BANNER -->
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/across-image-banner/across-image-banner.css" />
+{% endif %}
+<section class="across-image-banner across-image-banner--hero">
+    <picture>
+        {% if section.settings.image != blank %}
+            <source media="(min-width: 768px)" srcset="{{ section.settings.image | image_url }}" />
+        {% endif %}
+        {% if section.settings.image_mobile != blank %}
+            <img src="{{ section.settings.image_mobile | image_url }}" />
+        {% endif %}
+    </picture>
+    <div class="container">
+        <article>
+            <div class="c-inline-product-box">
+                {% if section.settings.rating_text != blank %}
+                    <div class="c-rating">
+                        <div class="e-rating-stars" style="--rating: 4.8"></div>
+                        <a href="#">{{ section.settings.rating_text | replace: '<p>', '' | replace: '</p>', '' }}</a>
+                    </div>
+                {% endif %}
+                {{ section.settings.heading }}
+                <div class="c-special-offer">
+                    <div class="e-price">
+                        <div class="e-price__main">
+                            {% if section.settings.price_after != blank %}
+                                <div class="e-price__current">{{ section.settings.price_after }}</div>
+                            {% endif %}
+                            {% if section.settings.price != blank %}
+                                <div class="e-price__old">{{ section.settings.price }}</div>
+                            {% endif %}
+                        </div>
+                    </div>
+                    {% if section.settings.save != blank %}
+                        <div class="e-pill-save">{{ section.settings.save }}</div>
+                    {% endif %}
+                </div>
+                {{ section.settings.text }}
+                {% if section.settings.button_label != blank and section.settings.button_url != blank %}
+                    <form class="c-buy-block" action="{{ section.settings.button_url }}">
+                        <div class="c-order-button">
+                            <button class="btn btn--primary" type="button">
+                                {{ section.settings.button_label }}
+                                <i class="e-icon e-icon-arrow"></i>
+                            </button>
+                        </div>
+                    </form>
+                {% endif %}
+            </div>
+        </article>
+    </div>
+</section>
+<!-- ACROSS IMAGE BANNER END -->
+
+{% schema %}
+{
+"name": "t:sections.n_across-image-banner.name",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": false
+        },
+        {
+            "type": "richtext",
+            "id": "heading",
+            "label": "t:common.header"
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "t:common.text"
+        },
+        {
+            "type": "richtext",
+            "id": "rating_text",
+            "label": "t:common.rating-text"
+        },
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "t:common.image"
+        },
+        {
+            "type": "image_picker",
+            "id": "image_mobile",
+            "label": "t:common.image-mobile"
+        },
+        {
+            "type": "text",
+            "id": "price",
+            "label": "t:common.price"
+        },
+        {
+            "type": "text",
+            "id": "price_after",
+            "label": "t:common.price-after"
+        },
+        {
+            "type": "text",
+            "id": "save",
+            "label": "t:common.save"
+        },
+        {
+            "type": "text",
+            "id": "button_label",
+            "label": "t:common.button-label"
+        },
+        {
+            "type": "url",
+            "id": "button_url",
+            "label": "t:common.button-url"
+        }
+    ]
+}
+{% endschema %}

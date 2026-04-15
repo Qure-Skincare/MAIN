@@ -320,13 +320,6 @@
             "percent_value": 83,
             "text": "of participants note a reduction of acne breakouts*"
           }
-        },
-        "button_FcKfgR": {
-          "type": "button",
-          "settings": {
-            "button_label": "Explore the research behind LED light therapy",
-            "button_url": "#"
-          }
         }
       },
       "block_order": [
@@ -335,8 +328,7 @@
         "compare_image_G4hXEw",
         "percent_value_RDyn8J",
         "percent_value_NaHEKW",
-        "percent_value_caFMF9",
-        "button_FcKfgR"
+        "percent_value_caFMF9"
       ],
       "name": "t:sections.n_progress-metrics.name",
       "settings": {
@@ -592,7 +584,6 @@
       "settings": {
         "use_own_file": true,
         "background_color": "none",
-        "modifier": "none",
         "heading": "<h2>Trusted and Recommended by Experts</h2>",
         "text": "<p>“Of all the LED masks we’ve tried, this is <em>the best on the market right now...</em> It didn’t lose in any category...</p><p>There’s real science behind LED therapy,  <em>Qure makes it easy</em> to be consistent—which is what really drives results.”</p>",
         "video_image_cover": "shopify://shop_images/doctor_img_bddb1870-8487-4f88-b6dd-ab063ea346f3.webp",
