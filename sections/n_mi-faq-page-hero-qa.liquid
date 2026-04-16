@@ -1,0 +1,99 @@
+{% doc %}
+    Renders a hero qa section for microinfusion faq page 2.
+{% enddoc %}
+
+<!-- HERO QA -->
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/hero-qa/hero-qa.css" />
+{% endif %}
+<section class="hero-qa">
+    <div class="container">
+        <article>
+            {{ section.settings.heading }}
+            <div>
+                {{ section.settings.text }}
+                <ul>
+                    {% for block in section.blocks %}
+                        {% if block.type == 'icon_with_text' %}
+                            <li>
+                                <i class="e-icon e-icon-{{ block.settings.icon }}"></i>
+                                {{ block.settings.text }}
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
+            <picture>
+                {% if section.settings.image != blank %}
+                    <source media="(min-width: 768px)" srcset="{{ section.settings.image | image_url }}" />
+                {% endif %}
+                {% if section.settings.image_mobile != blank %}
+                    <img src="{{ section.settings.image_mobile | image_url }}" alt="{{ section.settings.image_mobile.alt | escape }}" loading="lazy" />
+                {% endif %}
+            </picture>
+        </article>
+    </div>
+</section>
+<!-- HERO QA END -->
+
+{% schema %}
+{
+    "name": "t:sections.n_mi-faq-page-hero-qa.name",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": false
+        },
+        {
+            "type": "richtext",
+            "id": "heading",
+            "label": "t:common.header"
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "t:common.text"
+        },
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "t:common.image"
+        },
+        {
+            "type": "image_picker",
+            "id": "image_mobile",
+            "label": "t:common.image-mobile"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "icon_with_text",
+            "name": "t:common.icon-with-text",
+            "settings": [
+                {
+                    "type": "select",
+                    "id": "icon",
+                    "label": "t:common.icon",
+                    "options": [
+                        {
+                            "value": "eye",
+                            "label": "t:common.eye"
+                        },
+                        {
+                            "value": "share",
+                            "label": "t:common.share"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "id": "text",
+                    "label": "t:common.text"
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}

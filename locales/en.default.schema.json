@@ -298,8 +298,9 @@
         "easy-washing": "Easy washing",
         "faucet": "Faucet",
         "save": "Save",
-        "am-or-pm": "AM or PM"
-
+        "am-or-pm": "AM or PM",
+        "eye": "Eye",
+        "share": "Share"
     },
     "blocks": {
         "block-card": {
@@ -739,6 +740,34 @@
                     }
                 }
             }
+        },
+        "n_mi-faq-page-qa": {
+            "name": "Page QA",
+            "settings": {
+                "modifier-options": {
+                    "updated-info": "Updated info",
+                    "img-to-left": "Image to left"
+                }
+            },
+            "blocks": {
+                "cta_box": {
+                    "name": "CTA box"
+                }
+            }
+        },
+        "n_mi-faq-page-qa-img-mobile": {
+            "name": "Page QA with mobile image",
+            "settings": {
+                "modifier-options": {
+                    "img-to-top": "Image to top"
+                }
+            }
+        },
+        "n_mi-faq-page-hero-qa": {
+            "name": "Hero QA"
+        },
+        "n_mi-faq-page-set-up-qa": {
+            "name": "Set up QA"
         },
         "bf-bundle-banner": {
             "name": "Black Friday bundle banner"
