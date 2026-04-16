@@ -136,7 +136,7 @@
             "popular": false,
             "best": false,
             "preselected": true,
-            "heading": "6 Month Supply",
+            "heading": "6 Month Supply <br> PRE-ORDER",
             "subheading": "(12 Treatments)",
             "text": "",
             "image": "shopify://shop_images/pdp_MI_6_month_DS.webp",
@@ -854,8 +854,8 @@
           "type": "product",
           "settings": {
             "product": "faucet-filter",
-            "description": "Cleanse with filtered water to help reduce potential irritants and remove unwanted impurities from your skin and water.",
             "variant_title": "black",
+            "description": "Cleanse with filtered water to help reduce potential irritants and remove unwanted impurities from your skin and water.",
             "am_or_pm_1": "am",
             "am_or_pm_2": "pm"
           }
@@ -864,8 +864,8 @@
           "type": "product",
           "settings": {
             "product": "q-rejuvalight-pro-facewear-3",
-            "description": "Daily multi wavelength LED treatment helps calm the skin and support the natural recovery process after treatments.",
             "variant_title": "",
+            "description": "Daily multi wavelength LED treatment helps calm the skin and support the natural recovery process after treatments.",
             "am_or_pm_1": "am",
             "am_or_pm_2": "pm"
           }
@@ -874,8 +874,8 @@
           "type": "product",
           "settings": {
             "product": "dermal-mist",
-            "description": "Kills bacteria and prepares skin for a safer Micro-Infusion treatment.",
             "variant_title": "",
+            "description": "Kills bacteria and prepares skin for a safer Micro-Infusion treatment.",
             "am_or_pm_1": "am",
             "am_or_pm_2": "pm"
           }
@@ -884,8 +884,8 @@
           "type": "product",
           "settings": {
             "product": "micro-infusion-1-month-bundle-for-dark-spots",
-            "description": "Activates your skin’s renewal process and helps improve the look of fine lines, texture, and uneven tone.",
             "variant_title": "",
+            "description": "Activates your skin’s renewal process and helps improve the look of fine lines, texture, and uneven tone.",
             "am_or_pm_1": "pm",
             "am_or_pm_2": "none"
           }
