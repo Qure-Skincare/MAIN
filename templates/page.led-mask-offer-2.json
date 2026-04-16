@@ -24,9 +24,9 @@
           "type": "exclusive-offer",
           "settings": {
             "product": "",
-            "image_product1": "shopify://shop_images/led_mask_q.webp",
+            "image_product1": "shopify://shop_images/Img_50.png",
             "product2": "",
-            "image_product2": "shopify://shop_images/neckandd.webp",
+            "image_product2": "shopify://shop_images/Frame_1073714744.png",
             "text": "<p>Buy the Q-Rejuvalight Pro and get the Neck & Décolletage LED System for FREE (value $299)</p>"
           }
         }
@@ -865,7 +865,7 @@
         "background_color": "none",
         "heading": "<h2>Qure mobile app</h2>",
         "text": "<p><strong>The only FDA-cleared LED light therapy mask with an app.</strong></p><p>Your skin is unique, so your treatment should be too.</p><p>Choose between <em>three treatment modes</em>, “Skin Rejuvenating”, “Skin Clearing” or custom treatment zones. Select a treatment mode on five different facial areas to <em>treat and target what your skin needs today. </em></p><p>Never miss a treatment with Qure mobile app planner and phone reminders.</p>",
-        "image": "shopify://shop_images/qure_mobile_app.webp",
+        "image": "shopify://shop_images/image_4_1_20deb982-a801-424d-9d27-b8bc39b864d2.png",
         "button_label": "",
         "button_url": "",
         "wistia_url": ""
