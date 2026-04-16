@@ -218,6 +218,7 @@
         "blue": "Blue",
         "red": "Red",
         "step-by-step": "Step by step",
+        "step": "Step",
         "bottom": "Bottom",
         "faq-item": "FAQ item",
         "image-faq": "Image FAQ",
@@ -296,7 +297,8 @@
         "rotation": "Rotation",
         "easy-washing": "Easy washing",
         "faucet": "Faucet",
-        "save": "Save"
+        "save": "Save",
+        "am-or-pm": "AM or PM"
 
     },
     "blocks": {
@@ -726,6 +728,9 @@
         },
         "n_index-quick-title-links": {
             "name": "Black Friday top products"
+        },
+        "n_page-microinfusion-complete-system": {
+            "name": "Complete system"
         },
         "bf-bundle-banner": {
             "name": "Black Friday bundle banner"

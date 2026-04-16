@@ -1858,6 +1858,88 @@
         "button-label": "Choose Your Supply",
         "button-url": "#purchase-form"
       }
+    },
+    "n_page_microinfusion_complete_system_iQkQkY": {
+      "type": "n_page-microinfusion-complete-system",
+      "blocks": {
+        "product_9xenph": {
+          "type": "product",
+          "settings": {
+            "product": "faucet-filter",
+            "description": "Cleanse with filtered water to help reduce potential irritants and remove unwanted impurities from your skin and water.",
+            "am_or_pm_1": "am",
+            "am_or_pm_2": "pm"
+          }
+        },
+        "product_qWcjFL": {
+          "type": "product",
+          "settings": {
+            "product": "q-rejuvalight-pro-facewear-3",
+            "description": "Daily multi wavelength LED treatment helps calm the skin and support the natural recovery process after treatments.",
+            "am_or_pm_1": "am",
+            "am_or_pm_2": "pm"
+          }
+        },
+        "product_FrdUhJ": {
+          "type": "product",
+          "settings": {
+            "product": "dermal-mist",
+            "description": "Kills bacteria and prepares skin for a safer Micro-Infusion treatment.",
+            "am_or_pm_1": "am",
+            "am_or_pm_2": "pm"
+          }
+        },
+        "product_6FTp6r": {
+          "type": "product",
+          "settings": {
+            "product": "micro-infusion-1-month-bundle-for-dark-spots",
+            "description": "Activates your skin’s renewal process and helps improve the look of fine lines, texture, and uneven tone.",
+            "am_or_pm_1": "pm",
+            "am_or_pm_2": "none"
+          }
+        },
+        "step_wG8cci": {
+          "type": "step",
+          "settings": {
+            "step": "Restrict"
+          }
+        },
+        "step_r6W9JW": {
+          "type": "step",
+          "settings": {
+            "step": "Revive"
+          }
+        },
+        "step_enPgP6": {
+          "type": "step",
+          "settings": {
+            "step": "Ready"
+          }
+        },
+        "step_r9c4xG": {
+          "type": "step",
+          "settings": {
+            "step": "Rejuvenate"
+          }
+        }
+      },
+      "block_order": [
+        "product_9xenph",
+        "product_qWcjFL",
+        "product_FrdUhJ",
+        "product_6FTp6r",
+        "step_wG8cci",
+        "step_r6W9JW",
+        "step_enPgP6",
+        "step_r9c4xG"
+      ],
+      "name": "t:sections.n_page-microinfusion-complete-system.name",
+      "settings": {
+        "use_own_file": true,
+        "heading": "<h2>Complete the Qure system</h2>",
+        "button_label": "Add Full System to Cart",
+        "quote": "30-Day Money-Back Guarantee • Free US Shipping"
+      }
     }
   },
   "order": [
@@ -1868,6 +1950,7 @@
     "n_base_section_7G7GJX",
     "n_progress_metrics_tJV9Dz",
     "n_trusted_reviews_QdnRnJ",
+    "n_page_microinfusion_complete_system_iQkQkY",
     "n_trusted_recommended_ggwbdC",
     "n_video_slider_jhg9Jg",
     "n_features_marquee_h4hRGq",

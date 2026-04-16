@@ -1,0 +1,269 @@
+{% doc %}
+  Renders a complete system section for micro-infusion page
+{% enddoc %}
+
+<!-- COMPLETE SYSTEM WORK -->
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/complete-system/complete-system.css" />
+{% endif %}
+<section class="complete-system">
+    <div class="container">
+        <article class="complete-system__content">
+            {{ section.settings.heading }}
+            <ol class="complete-system__scale c-swiper-steps">
+                {% for block in section.blocks %}
+                    {% if block.type == 'step' %}
+                        <li><span>{{ block.settings.step }}</span></li>
+                    {% endif %}
+                {% endfor %}
+            </ol>
+            <div class="complete-system__items">
+                <div
+                    class="c-swiper"
+                    data-swiper='{
+                            "slidesPerView": 1.4,
+                            "spaceBetween": 16,
+                            "loop": false,
+                            "pagination": {
+                                "el": ".c-swiper-pagination",
+                                "type": "custom"
+                            },
+                            "navigation": {
+                                "prevEl": ".c-swiper-button-prev",
+                                "nextEl": ".c-swiper-button-next"
+                            },
+                            "steps-selector": ".c-swiper-steps",
+                            "watchSlidesProgress": true,
+                            "breakpoints": {
+                                "768": {
+                                    "slidesPerView": 2,
+                                    "spaceBetween": 24
+                                },
+                                "992": {
+                                    "slidesPerView": 4
+                                }
+                            }
+                        }'>
+                    <div class="swiper-wrapper">
+                        {% for block in section.blocks %}
+                            {% if block.type == 'product' %}
+                                {%- liquid
+                                  assign product = block.settings.product
+                                  if product != blank and product.id == blank
+                                    assign product = all_products[block.settings.product]
+                                  endif
+                                -%}
+                                {% if product != blank %}
+                                {% assign product_url = product.url %}
+                                {% assign product_title = product.title %}
+                                {% assign product_media = product.media %}
+                                {% assign n_tile_price_display = product.price | money %}
+                                {% assign n_tile_hover_url = '' %}
+                                {% if product.media.size > 1 %}
+                                    {% assign n_tile_hover_url = product.media[1] | img_url: '720x' | prepend: 'https:' %}
+                                {% endif %}
+                                <div class="swiper-slide">
+                                    <div class="c-product-tile">
+                                        <a class="c-product-tile__image" {% if n_tile_hover_url != blank %}style="--image-on-hover: url({{ n_tile_hover_url }})"{% endif %} href="{{ product_url }}">
+                                            {% if product_media.size > 0 %}
+                                                {% for media in product_media limit: 1 %}
+                                                    <img src="{{ media | img_url: '720x' }}" alt="{{ product_title | escape }}" />
+                                                {% endfor %}
+                                            {% elsif product.featured_image != blank %}
+                                                <img src="{{ product.featured_image | img_url: '720x' }}" alt="{{ product_title | escape }}" />
+                                            {% endif %}
+                                            {%- if block.settings.am_or_pm_1 != 'none' -%}
+                                                <div class="c-product-tile__time">
+                                                  <div class="e-pill-badge e-pill-badge--sm">
+                                                    <i class="e-icon e-icon-{{ block.settings.am_or_pm_1 }}"></i>
+                                                    {% if block.settings.am_or_pm_1 == 'am' %} {{ 'sections.n_page-microinfusion-complete-system.settings.am_text' | t }}{% elsif block.settings.am_or_pm_1 == 'pm' %} {{ 'sections.n_page-microinfusion-complete-system.settings.pm_text' | t }}{% endif %}
+                                                  </div>
+                                                  {%- if block.settings.am_or_pm_2 != 'none' -%}
+                                                    <div class="e-pill-badge e-pill-badge--sm">
+                                                      <i class="e-icon e-icon-{{ block.settings.am_or_pm_2 }}"></i>
+                                                      {% if block.settings.am_or_pm_2 == 'am' %} {{ 'sections.n_page-microinfusion-complete-system.settings.am_text' | t }}{% elsif block.settings.am_or_pm_2 == 'pm' %} {{ 'sections.n_page-microinfusion-complete-system.settings.pm_text' | t }}{% endif %}
+                                                    </div>
+                                                  {%- endif -%}
+                                                </div>
+                                            {%- endif -%}
+                                        </a>
+
+                                        {% render 'n_collection-product-rating', product: product %}
+                                        
+                                        <a class="c-product-tile__name" href="{{ product_url }}">{{ product_title }}</a>
+                                        {% if block.settings.description != blank %}
+                                            <p class="c-product-tile__desc">{{ block.settings.description }}</p>
+                                        {% endif %}
+                                        <div class="c-product-tile__price">
+                                            <div class="e-price">
+                                                <div class="e-price__main">
+                                                    <div class="e-price__current">{{ n_tile_price_display }}</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                {% endif %}
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                    <div class="c-swiper-nav">
+                        <button class="c-swiper-button-prev"></button>
+                        <div class="c-swiper-pagination"></div>
+                        <button class="c-swiper-button-next"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="c-buy-block">
+                {% if section.settings.button_label != blank %}
+                    {% assign complete_system_first_item = true %}
+                    {% capture complete_system_cart_items %}
+                        {% for block in section.blocks %}
+                            {% if block.type == 'product' and block.settings.product != blank %}
+                                {%- liquid
+                                  assign cart_product = block.settings.product
+                                  if cart_product != blank and cart_product.id == blank
+                                    assign cart_product = all_products[block.settings.product]
+                                  endif
+                                -%}
+                                {% if cart_product != blank %}
+                                {% assign complete_system_variant = cart_product.selected_or_first_available_variant %}
+                                {% if complete_system_variant.available %}
+                                    {% unless complete_system_first_item %},{% endunless %}
+                                    {"id":{{ complete_system_variant.id }},"quantity":1}
+                                    {% assign complete_system_first_item = false %}
+                                {% endif %}
+                                {% endif %}
+                            {% endif %}
+                        {% endfor %}
+                    {% endcapture %}
+                    <div class="c-order-button">
+                        <button
+                            class="btn btn--primary js-add-bundle"
+                            type="button"
+                            data-cart-items='[{{ complete_system_cart_items | strip }}]'
+                            {% if complete_system_first_item %}disabled{% endif %}
+                        >
+                            {{ section.settings.button_label }}
+                        </button>
+                    </div>
+                {% endif %}
+                
+                {% if section.settings.quote != blank %}
+                    <small>{{ section.settings.quote }}</small>
+                {% endif %}
+            </div>
+        </article>
+    </div>
+</section>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    loadScriptOnce('n_add-bundle', '{{ 'n_add-bundle.js' | asset_url }}');
+  });
+</script>
+<!-- COMPLETE SYSTEM WORK END -->
+
+{% schema %}
+{
+    "name": "t:sections.n_page-microinfusion-complete-system.name",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": false
+        },
+        {
+            "type": "richtext",
+            "id": "heading",
+            "label": "t:common.header"
+        },
+        {
+            "type": "text",
+            "id": "button_label",
+            "label": "t:common.button-label",
+            "default": "Add Full System to Cart"
+        },
+        {
+            "type": "text",
+            "id": "quote",
+            "label": "t:common.quote",
+            "default": "30-Day Money-Back Guarantee &bull; Free US Shipping"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "step",
+            "name": "t:common.step",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "step",
+                    "label": "t:common.step"
+                }
+            ]
+        },
+        {
+            "type": "product",
+            "name": "t:common.product",
+            "settings": [
+                {
+                    "type": "product",
+                    "id": "product",
+                    "label": "t:common.product"
+                },
+                {
+                    "type": "text",
+                    "id": "description",
+                    "label": "t:common.description"
+                },
+                {
+                    "type": "select",
+                    "id": "am_or_pm_1",
+                    "label": "t:common.am-or-pm",
+                    "default": "none",
+                    "options": [
+                        { 
+                        "value": "am", 
+                        "label": "t:common.am" 
+                        },
+                        { 
+                        "value": "pm", 
+                        "label": "t:common.pm" 
+                        },
+                        { 
+                        "value": "none", 
+                        "label": "t:common.none" 
+                        }
+                    ]
+                },
+                {
+                    "type": "select",
+                    "id": "am_or_pm_2",
+                    "label": "t:common.am-or-pm",
+                    "default": "none",
+                    "options": [
+                        { 
+                        "value": "am",
+                        "label": "t:common.am" 
+                        },
+                        { 
+                        "value": "pm", 
+                        "label": "t:common.pm" 
+                        },
+                        { 
+                        "value": "none", 
+                        "label": "t:common.none" 
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.n_page-microinfusion-complete-system.name"
+        }
+    ]
+}
+{% endschema %}
