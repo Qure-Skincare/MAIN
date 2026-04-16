@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "product_header_U6RBGz": {
       "type": "n-product-header",
@@ -145,18 +145,20 @@
             "preselected": true
           }
         },
-        "product_x3jeL8": {
+        "product_RBCPe8": {
           "type": "product",
           "settings": {
-            "product": "micro-infusion-targeted-patches",
+            "product": "micro-infusion-targeted-patches-3-month-supply-24-pairs-1",
             "product_variant_id": 0,
             "product_selling_plan": 0,
             "popular": false,
-            "best": false,
-            "preselected": false,
-            "heading": "1 Months",
-            "subheading": "(1 box, 8 pairs)",
-            "image": "shopify://shop_images/8-pairs.webp",
+            "best": true,
+            "preselected": true,
+            "heading": "3 Months",
+            "subheading": "(3 boxes, 24 pairs)",
+            "text": "",
+            "image": "shopify://shop_images/24-pairs.webp",
+            "product_discount_percent": 0,
             "soldout": false,
             "preorder": false,
             "preorder_text": "",
@@ -176,7 +178,9 @@
             "preselected": false,
             "heading": "2 Months",
             "subheading": "(2 boxes, 16 pairs)",
+            "text": "",
             "image": "shopify://shop_images/16-pairs.webp",
+            "product_discount_percent": 0,
             "soldout": false,
             "preorder": false,
             "preorder_text": "",
@@ -185,18 +189,20 @@
             "preorder_percent": 55
           }
         },
-        "product_RBCPe8": {
+        "product_x3jeL8": {
           "type": "product",
           "settings": {
-            "product": "micro-infusion-targeted-patches-3-month-supply-24-pairs-1",
+            "product": "micro-infusion-targeted-patches",
             "product_variant_id": 0,
             "product_selling_plan": 0,
             "popular": false,
-            "best": true,
-            "preselected": true,
-            "heading": "3 Months",
-            "subheading": "(3 boxes, 24 pairs)",
-            "image": "shopify://shop_images/24-pairs.webp",
+            "best": false,
+            "preselected": false,
+            "heading": "1 Months",
+            "subheading": "(1 box, 8 pairs)",
+            "text": "",
+            "image": "shopify://shop_images/8-pairs.webp",
+            "product_discount_percent": 0,
             "soldout": false,
             "preorder": false,
             "preorder_text": "",
@@ -216,19 +222,20 @@
             "preselected": false
           }
         },
-        "product_AJPQaQ": {
+        "product_eiY89h": {
           "type": "product",
           "settings": {
-            "product": "micro-infusion-targeted-patches",
+            "product": "micro-infusion-targeted-patches-3-month-supply-24-pairs-1",
             "product_variant_id": 0,
-            "product_selling_plan": 8441692399,
+            "product_selling_plan": 8441757935,
             "popular": false,
-            "best": false,
-            "preselected": false,
-            "heading": "1 Months",
-            "subheading": "(1 box, 8 pairs)",
-            "product_discount_percent": 10,
-            "image": "shopify://shop_images/8-pairs.webp",
+            "best": true,
+            "preselected": true,
+            "heading": "3 Months",
+            "subheading": "(3 boxes, 24 pairs)",
+            "text": "Ships every 3 months",
+            "image": "shopify://shop_images/24-pairs.webp",
+            "product_discount_percent": 20,
             "soldout": false,
             "preorder": false,
             "preorder_text": "",
@@ -248,8 +255,9 @@
             "preselected": false,
             "heading": "2 Months",
             "subheading": "(2 boxes, 16 pairs)",
-            "product_discount_percent": 20,
+            "text": "Ships every 2 months",
             "image": "shopify://shop_images/16-pairs.webp",
+            "product_discount_percent": 11,
             "soldout": false,
             "preorder": false,
             "preorder_text": "",
@@ -258,19 +266,20 @@
             "preorder_percent": 55
           }
         },
-        "product_eiY89h": {
+        "product_AJPQaQ": {
           "type": "product",
           "settings": {
-            "product": "micro-infusion-targeted-patches-3-month-supply-24-pairs-1",
+            "product": "micro-infusion-targeted-patches",
             "product_variant_id": 0,
-            "product_selling_plan": 8441757935,
+            "product_selling_plan": 8441692399,
             "popular": false,
-            "best": true,
-            "preselected": true,
-            "heading": "3 Months",
-            "subheading": "(3 boxes, 24 pairs)",
-            "product_discount_percent": 30,
-            "image": "shopify://shop_images/24-pairs.webp",
+            "best": false,
+            "preselected": false,
+            "heading": "1 Months",
+            "subheading": "(1 box, 8 pairs)",
+            "text": "Ships every 1 month",
+            "image": "shopify://shop_images/8-pairs.webp",
+            "product_discount_percent": 10,
             "soldout": false,
             "preorder": false,
             "preorder_text": "",
@@ -302,7 +311,6 @@
     },
     "purchase-form-landing-old": {
       "type": "n-purchase-form-landing",
-      "disabled": true,
       "blocks": {
         "nextships_4xp7uM": {
           "type": "nextships",
@@ -335,7 +343,9 @@
             "preselected": true,
             "heading": "3 Months",
             "subheading": "(3 boxes, 24 pairs)",
+            "text": "",
             "image": "shopify://shop_images/24-pairs.webp",
+            "product_discount_percent": 0,
             "soldout": false,
             "preorder": false,
             "preorder_text": "",
@@ -355,7 +365,9 @@
             "preselected": false,
             "heading": "2 Months",
             "subheading": "(2 boxes, 16 pairs)",
+            "text": "",
             "image": "shopify://shop_images/16-pairs.webp",
+            "product_discount_percent": 0,
             "soldout": false,
             "preorder": false,
             "preorder_text": "",
@@ -375,7 +387,9 @@
             "preselected": false,
             "heading": "1 Months",
             "subheading": "(1 box, 8 pairs)",
+            "text": "",
             "image": "shopify://shop_images/8-pairs.webp",
+            "product_discount_percent": 0,
             "soldout": false,
             "preorder": false,
             "preorder_text": "",
@@ -393,6 +407,7 @@
         "product_NEgEkN",
         "product_RBCPe8"
       ],
+      "disabled": true,
       "settings": {
         "form_name": "purchase-form-landing",
         "hide_types": true,
@@ -417,7 +432,8 @@
       "name": "t:sections.n_press-reviews.name",
       "settings": {
         "use_own_file": true,
-        "text": "<h6>FEATURED IN</h6>"
+        "text": "<h6>FEATURED IN</h6>",
+        "settings": "\"spaceBetween\": 80"
       }
     },
     "n_base_section_VwYqRn": {
@@ -497,7 +513,10 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Katie.",
             "verified_customer": "Verified customer",
-            "text": "<p><strong>Dark circles less visible</strong></p><p>“Didn't expect it to work but they proved me wrong. It looks much more clear in person than the photos. My dark circles and puffiness are less visible. There's no pain at all they're comfortable while wearing to sleep.\"</p>"
+            "text": "<p><strong>Dark circles less visible</strong></p><p>“Didn't expect it to work but they proved me wrong. It looks much more clear in person than the photos. My dark circles and puffiness are less visible. There's no pain at all they're comfortable while wearing to sleep.\"</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
           }
         },
         "slider_JGB4Pf": {
@@ -507,7 +526,10 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Shannon",
             "verified_customer": "Verified customer",
-            "text": "<p><strong>Love these patches!</strong></p><p>“I found these as a targeted solution for the look of my laugh lines. These impressed me so much that now I want to tape them all over my face to target the appearance of all of my wrinkles. They’ve become an essential part of my skincare routine, and I highly recommend them.”</p>"
+            "text": "<p><strong>Love these patches!</strong></p><p>“I found these as a targeted solution for the look of my laugh lines. These impressed me so much that now I want to tape them all over my face to target the appearance of all of my wrinkles. They’ve become an essential part of my skincare routine, and I highly recommend them.”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
           }
         },
         "slider_dkEYKb": {
@@ -517,7 +539,10 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Cassandra",
             "verified_customer": "Verified customer",
-            "text": "<p><strong>Can see the difference after one use!</strong></p><p>“I did the patches last night and I swear just after one use I already see a change. The difference in the look of my under-eye is wild!”</p>"
+            "text": "<p><strong>Can see the difference after one use!</strong></p><p>“I did the patches last night and I swear just after one use I already see a change. The difference in the look of my under-eye is wild!”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
           }
         },
         "slider_dcA9hX": {
@@ -527,7 +552,10 @@
             "flag": "shopify://shop_images/england_f.webp",
             "username": "Mary",
             "verified_customer": "Verified customer",
-            "text": "<p><strong>Love these patches!</strong></p><p>“I started to see fine lines around my eyes and I think these patches work wonders! I wear them overnight and they didn't come off. I'VE SEEN A HUGE DIFFERENCE, leaving my skin looking smoother and firmer after just a few uses. Highly recommend!”</p>"
+            "text": "<p><strong>Love these patches!</strong></p><p>“I started to see fine lines around my eyes and I think these patches work wonders! I wear them overnight and they didn't come off. I'VE SEEN A HUGE DIFFERENCE, leaving my skin looking smoother and firmer after just a few uses. Highly recommend!”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
           }
         },
         "slider_RE87Ba": {
@@ -537,7 +565,10 @@
             "flag": "shopify://shop_images/usa_flag.svg",
             "username": "Lisa N.",
             "verified_customer": "Verified customer",
-            "text": "<p><strong>Thin skin feels hydrated</strong></p><p>“I just tried out the Qure Micro-Infusion Patches for one night and let me tell you, my skin felt so hydrated and refreshed when I woke up. I could even see a subtle improvement in the look of my fine lines already. I can only imagine how much better it'll look with consistent use! For now, I can definitely say my skin looks smoother.”</p>"
+            "text": "<p><strong>Thin skin feels hydrated</strong></p><p>“I just tried out the Qure Micro-Infusion Patches for one night and let me tell you, my skin felt so hydrated and refreshed when I woke up. I could even see a subtle improvement in the look of my fine lines already. I can only imagine how much better it'll look with consistent use! For now, I can definitely say my skin looks smoother.”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
           }
         },
         "slider_4Kw7gB": {
@@ -547,7 +578,10 @@
             "flag": "shopify://shop_images/australia_f_69a48b5f-3193-49ab-a443-904ca676d1db.webp",
             "username": "Harper",
             "verified_customer": "Verified customer",
-            "text": "<p><strong>Plumped up wrinkles</strong></p><p>“I've been using these patches once a week. I'm absolutely stoked with the results. I'm already noticing a gradual improvement in the look of my laugh lines. I'm really looking forward to seeing even more changes as I keep using them in my routine.”</p>"
+            "text": "<p><strong>Plumped up wrinkles</strong></p><p>“I've been using these patches once a week. I'm absolutely stoked with the results. I'm already noticing a gradual improvement in the look of my laugh lines. I'm really looking forward to seeing even more changes as I keep using them in my routine.”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
           }
         },
         "slider_FfKpMC": {
@@ -557,7 +591,10 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Lucy",
             "verified_customer": "Verified customer",
-            "text": "<p><strong>Reduced my dark circles</strong></p><p>“My under eye area is usually very sensitive and I was hesitant about these patches because they have little cones and I was afraid they would irritate my skin. They turned out to do wonders for the look of my dark circles and I don't think I look tired anymore! I used them 2x a week...The shipping was very fast too!”</p>"
+            "text": "<p><strong>Reduced my dark circles</strong></p><p>“My under eye area is usually very sensitive and I was hesitant about these patches because they have little cones and I was afraid they would irritate my skin. They turned out to do wonders for the look of my dark circles and I don't think I look tired anymore! I used them 2x a week...The shipping was very fast too!”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
           }
         },
         "slider_BNfBXy": {
@@ -567,7 +604,10 @@
             "flag": "shopify://shop_images/england_f.webp",
             "username": "Damiano",
             "verified_customer": "Verified customer",
-            "text": "<p><strong>Tired under-eye</strong></p><p>“After struggling with puffy eyes and dark circles, I turned to eye patches for a solution. The results were remarkable. The puffiness visibly reduced, and the dark circles lightened with a more even tone. The patches provided a fresh, revitalized look, giving my eyes a much-needed boost. These are now a staple in my skincare routine!”</p>"
+            "text": "<p><strong>Tired under-eye</strong></p><p>“After struggling with puffy eyes and dark circles, I turned to eye patches for a solution. The results were remarkable. The puffiness visibly reduced, and the dark circles lightened with a more even tone. The patches provided a fresh, revitalized look, giving my eyes a much-needed boost. These are now a staple in my skincare routine!”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
           }
         },
         "slider_MPRNXq": {
@@ -577,7 +617,10 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Andrea",
             "verified_customer": "Verified customer",
-            "text": "<p><strong>Blown away by the results</strong></p><p>“I am loving these new micro-infusion patches. I put these patches anywhere I have concerns, number 11’s, under eyes, marionette lines, forehead- you choose! You can put these on clean skin and leave on at least 2-3 hours, but I sleep in them over night! I do them once a week and I am blown away by the results!\"</p>"
+            "text": "<p><strong>Blown away by the results</strong></p><p>“I am loving these new micro-infusion patches. I put these patches anywhere I have concerns, number 11’s, under eyes, marionette lines, forehead- you choose! You can put these on clean skin and leave on at least 2-3 hours, but I sleep in them over night! I do them once a week and I am blown away by the results!\"</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
           }
         },
         "slider_EcK9zM": {
@@ -587,7 +630,10 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Denise",
             "verified_customer": "Verified customer",
-            "text": "<p><strong>I’m loving the results so far</strong></p><p>\"I’m loving the results so far and look forward to continuing!\"</p>"
+            "text": "<p><strong>I’m loving the results so far</strong></p><p>\"I’m loving the results so far and look forward to continuing!\"</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
           }
         }
       },
@@ -608,7 +654,8 @@
         "use_own_file": true,
         "background_color": "none",
         "text": "<h2>Results you’ll see with your own eyes</h2>",
-        "button_label": ""
+        "button_label": "",
+        "button_url": ""
       }
     },
     "n_how_to_use_Pw4TER": {
@@ -747,11 +794,13 @@
       "name": "t:sections.n_easy-steps.name",
       "settings": {
         "use_own_file": true,
+        "modifier": "none",
         "text": "<h2>See how quick and easy they are to use</h2>",
         "image": "shopify://shop_images/patches-use-video.webp",
         "image_mobile": "shopify://shop_images/patches-use-video-mob.webp",
         "wistia_url": "xnr8wpyi8i",
-        "button_label": ""
+        "button_label": "",
+        "button_url": ""
       }
     },
     "n_features_marquee_h4hRGq": {
@@ -1042,7 +1091,10 @@
       "name": "t:sections.n_text.name",
       "settings": {
         "use_own_file": true,
-        "text": "<h2>Our customer reviews</h2>"
+        "modifier": "none",
+        "text": "<h2>Our customer reviews</h2>",
+        "button_label": "",
+        "button_url": ""
       }
     },
     "175741252380d3b57f": {
@@ -1123,7 +1175,6 @@
     },
     "sticky_cta_ddPFXx": {
       "type": "n-sticky-button-variants",
-      "disabled": true,
       "blocks": {
         "variant_43xxGi": {
           "type": "variant",
@@ -1152,6 +1203,7 @@
         "variant_45xfGi",
         "variant_45sxGi"
       ],
+      "disabled": true,
       "name": "t:sections.sticky-button-variants.name",
       "settings": {
         "heading": "",
