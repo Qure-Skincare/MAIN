@@ -1,0 +1,75 @@
+{% doc %}
+    Renders a qa section (with mobile image) for microinfusion faq page 2.
+{% enddoc %}
+
+<!-- QA SECTION -->
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/qa-section/qa-section.css" />
+{% endif %}
+<section class="qa-section{% if section.settings.modifier != 'none' %} qa-section--{{ section.settings.modifier }}{% endif %}">
+    <div class="container">
+        <article>
+            {{ section.settings.heading }}
+            <picture>
+                {% if section.settings.image != blank %}
+                    <source media="(min-width:767px)" srcset="{{ section.settings.image | image_url }}" />
+                {% endif %}
+                {% if section.settings.image_mobile != blank %}
+                    <img src="{{ section.settings.image_mobile | image_url }}" alt="{{ section.settings.image_mobile.alt | escape }}" loading="lazy" />
+                {% endif %}
+            </picture>
+            {{ section.settings.text }}
+        </article>
+    </div>
+</section>
+<!-- QA SECTION END -->
+
+{% schema %}
+{
+    "name": "t:sections.n_mi-faq-page-qa-img-mobile.name",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": false
+        },
+        {
+            "type": "select",
+            "id": "modifier",
+            "label": "t:common.modifier",
+            "default": "none",
+            "options": [
+                {
+                    "value": "none",
+                    "label": "t:common.none"
+                },
+                {
+                    "value": "img-to-top",
+                    "label": "t:sections.n_mi-faq-page-qa-img-mobile.settings.modifier-options.img-to-top"
+                }
+            ]
+        },
+        {
+            "type": "richtext",
+            "id": "heading",
+            "label": "t:common.header"
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "t:common.text"
+        },
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "t:common.image"
+        },
+        {
+            "type": "image_picker",
+            "id": "image_mobile",
+            "label": "t:common.image-mobile"
+        }
+    ]
+}
+{% endschema %}
