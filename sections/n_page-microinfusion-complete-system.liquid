@@ -57,20 +57,43 @@
                                 {% assign product_url = product.url %}
                                 {% assign product_title = product.title %}
                                 {% assign product_media = product.media %}
-                                {% assign n_tile_price_display = product.price | money %}
+                                {% assign requested_variant_title = block.settings.variant_title | strip | downcase %}
+                                {% assign complete_system_variant = product.selected_or_first_available_variant %}
+                                {% if requested_variant_title != blank %}
+                                    {% for variant in product.variants %}
+                                        {% assign variant_title_normalized = variant.title | strip | downcase %}
+                                        {% if variant_title_normalized == requested_variant_title %}
+                                            {% assign complete_system_variant = variant %}
+                                            {% break %}
+                                        {% endif %}
+                                    {% endfor %}
+                                {% endif %}
+                                {% if complete_system_variant == blank and product.variants.size > 0 %}
+                                    {% assign complete_system_variant = product.variants.first %}
+                                {% endif %}
+                                {% assign n_tile_price_display = complete_system_variant.price | default: product.price | money %}
                                 {% assign n_tile_hover_url = '' %}
                                 {% if product.media.size > 1 %}
                                     {% assign n_tile_hover_url = product.media[1] | img_url: '720x' | prepend: 'https:' %}
                                 {% endif %}
                                 <div class="swiper-slide">
-                                    <div class="c-product-tile">
+                                    <div
+                                        class="c-product-tile"
+                                        data-complete-item
+                                        data-product-id="{{ product.id }}"
+                                        data-selected-variant-id="{{ complete_system_variant.id }}"
+                                    >
                                         <a class="c-product-tile__image" {% if n_tile_hover_url != blank %}style="--image-on-hover: url({{ n_tile_hover_url }})"{% endif %} href="{{ product_url }}">
                                             {% if product_media.size > 0 %}
-                                                {% for media in product_media limit: 1 %}
-                                                    <img src="{{ media | img_url: '720x' }}" alt="{{ product_title | escape }}" />
-                                                {% endfor %}
+                                                {% if complete_system_variant.featured_image != blank %}
+                                                    <img data-variant-image src="{{ complete_system_variant.featured_image | img_url: '720x' }}" alt="{{ product_title | escape }}" width="720" height="720" />
+                                                {% else %}
+                                                    {% for media in product_media limit: 1 %}
+                                                        <img data-variant-image src="{{ media | img_url: '720x' }}" alt="{{ product_title | escape }}" width="720" height="720" />
+                                                    {% endfor %}
+                                                {% endif %}
                                             {% elsif product.featured_image != blank %}
-                                                <img src="{{ product.featured_image | img_url: '720x' }}" alt="{{ product_title | escape }}" />
+                                                <img data-variant-image src="{{ product.featured_image | img_url: '720x' }}" alt="{{ product_title | escape }}" width="720" height="720" />
                                             {% endif %}
                                             {%- if block.settings.am_or_pm_1 != 'none' -%}
                                                 <div class="c-product-tile__time">
@@ -97,7 +120,7 @@
                                         <div class="c-product-tile__price">
                                             <div class="e-price">
                                                 <div class="e-price__main">
-                                                    <div class="e-price__current">{{ n_tile_price_display }}</div>
+                                                    <div class="e-price__current" data-variant-price>{{ n_tile_price_display }}</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -127,7 +150,17 @@
                                   endif
                                 -%}
                                 {% if cart_product != blank %}
+                                {% assign requested_variant_title = block.settings.variant_title | strip | downcase %}
                                 {% assign complete_system_variant = cart_product.selected_or_first_available_variant %}
+                                {% if requested_variant_title != blank %}
+                                    {% for variant in cart_product.variants %}
+                                        {% assign variant_title_normalized = variant.title | strip | downcase %}
+                                        {% if variant_title_normalized == requested_variant_title %}
+                                            {% assign complete_system_variant = variant %}
+                                            {% break %}
+                                        {% endif %}
+                                    {% endfor %}
+                                {% endif %}
                                 {% if complete_system_variant.available %}
                                     {% unless complete_system_first_item %},{% endunless %}
                                     {"id":{{ complete_system_variant.id }},"quantity":1}
@@ -159,6 +192,7 @@
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     loadScriptOnce('n_add-bundle', '{{ 'n_add-bundle.js' | asset_url }}');
+    loadScriptOnce('n_microinfusion-complete-system', '{{ 'n_microinfusion-complete-system.js' | asset_url }}');
   });
 </script>
 <!-- COMPLETE SYSTEM WORK END -->
@@ -211,6 +245,12 @@
                     "type": "product",
                     "id": "product",
                     "label": "t:common.product"
+                },
+                {
+                    "type": "text",
+                    "id": "variant_title",
+                    "label": "t:sections.n_page-microinfusion-complete-system.blocks.product.settings.variant_title",
+                    "info": "t:sections.n_page-microinfusion-complete-system.blocks.product.settings.variant_title_info"
                 },
                 {
                     "type": "text",
