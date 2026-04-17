@@ -519,7 +519,7 @@
           "type": "percent_value",
           "settings": {
             "percent_value": 70,
-            "text": "<p>of participants say their fine lines looked smoother.</p>"
+            "text": "of participants say their fine lines looked smoother."
           }
         },
         "percent_value_jJpTkf": {
@@ -1560,7 +1560,7 @@
           "settings": {
             "date": "9th May",
             "percent": 55,
-            "date_soldout": "23rd March",
+            "date_soldout": "16th April",
             "date_reserved": "9th May"
           }
         },
