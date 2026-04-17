@@ -17,6 +17,14 @@
         <div class="container">
             <article>
 
+                {% for block in section.blocks %}
+                    {% if block.type == 'badge' %}
+                        {% if block.settings.badge_text != blank %}
+                            <div class="e-pill-badge e-pill-badge--xs">{{ block.settings.badge_text }}</div>
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+
                 {% if section.settings.heading != blank %}
                     {{ section.settings.heading }}
                 {% endif %}
@@ -354,6 +362,18 @@
                 "type": "text",
                 "id": "text",
                 "label": "t:common.text"
+            }
+        ]
+    },
+    {
+        "type": "badge",
+        "name": "t:common.badge",
+        "limit": 1,
+        "settings": [
+            {
+                "type": "text",
+                "id": "badge_text",
+                "label": "t:common.badge-text"
             }
         ]
     }
