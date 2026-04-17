@@ -143,7 +143,7 @@
             "product_discount_percent": 0,
             "soldout": false,
             "preorder": true,
-            "preorder_text": "Your Delivery Timeline: next batch ships 17th May: Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
+            "preorder_text": "Your Delivery Timeline: next batch ships 17th May: <br>Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
             "preorder_date_soldout": "16th April",
             "preorder_date_reserved": "17th May",
             "preorder_percent": 93
@@ -165,7 +165,7 @@
             "product_discount_percent": 0,
             "soldout": false,
             "preorder": true,
-            "preorder_text": "Your Delivery Timeline: next batch ships 17th May: Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
+            "preorder_text": "Your Delivery Timeline: next batch ships 17th May: <br>Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
             "preorder_date_soldout": "16th April",
             "preorder_date_reserved": "17th May",
             "preorder_percent": 93
