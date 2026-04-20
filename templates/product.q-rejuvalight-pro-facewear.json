@@ -773,7 +773,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Technical specifications",
-            "text": "<p><strong>TREATMENT TIME: </strong> 3 minutes<br /><strong>CERTIFICATES: </strong> FDA, TGA, CE, UKCA<br /><strong>OPERATION: </strong>Wireless, hands-free<br /><strong>WAVELENGTH: </strong>415nm (Blue), 605nm (Amber), 630nm (Red), 660nm (Deep Red), 880nm (Infrared)<br /><strong>TREATMENT TIME: </strong> 2 hours<br /><strong>CHARGING TIME: </strong> 3 minutes<br /><strong>LEDs: </strong> 160 dual core</p>"
+            "text": "<p><strong>TREATMENT TIME: </strong> 3 minutes<br/><strong>CERTIFICATES: </strong> FDA, TGA, CE, UKCA<br/><strong>OPERATION: </strong>Wireless, hands-free<br/><strong>WAVELENGTH: </strong>415nm (Blue), 605nm (Amber), 630nm (Red), 660nm (Deep Red), 880nm (Infrared)<br/><strong>TREATMENT TIME: </strong> 3 minutes<br/><strong>CHARGING TIME: </strong> 2 hours <br/><strong>LEDs: </strong> 160 dual core</p>"
           }
         },
         "accordion_wGfm7F": {
