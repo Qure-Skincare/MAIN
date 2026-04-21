@@ -248,7 +248,7 @@
           "settings": {
             "image": "shopify://shop_images/6_aa559435-67ea-4abf-a608-b4bc6120687e.svg",
             "heading": "<p><strong>Supports hair follicles</strong></p>",
-            "text": "<p>Low-level lasers reach deep into the scalp to energize dormant follicles, a critical step for those experiencing the early stages of androgenetic alopecia. This clinically tested technology works with the hair growth cycle to support fuller-looking hair over time, making it an effective approach for managing mild to moderate thinning.</p>"
+            "text": "<p>Low-level lasers reach deep into the scalp to energize dormant follicles. As hormones shift, follicles can become less active — Q-Renew works with your hair </p>"
           }
         },
         "section_gxTc4q": {
@@ -256,7 +256,7 @@
           "settings": {
             "image": "shopify://shop_images/8_cc4881c0-6c79-41b3-a3cd-887524f4a85d.svg",
             "heading": "<p><strong>Improves thickness</strong></p>",
-            "text": "<p>LED light supports circulation and nutrient delivery around the follicle, which is essential for combating the miniaturization of hair strands often seen in alopecia. Over time, this helps new strands grow in stronger-looking and more resilient, with clinical studies showing a significant increase in hair width and density.</p><p><br/></p>"
+            "text": "<p>LED light supports circulation and nutrient delivery around the follicle. Over time, this helps new strands grow in stronger and more resilient — counteracting</p><p><br/></p>"
           }
         },
         "section_BTCCyz": {
@@ -264,7 +264,7 @@
           "settings": {
             "image": "shopify://shop_images/7_b652c035-154f-446a-8c7f-dbda4f7cf104.svg",
             "heading": "<p><strong>Reduces visible shedding</strong></p>",
-            "text": "<p>By working with your natural growth cycle, light therapy may help prolong the active growth (anagen) phase, counteracting the shortened growth cycle characteristic of androgenetic alopecia. The result is fewer hairs lost daily, creating fuller-looking coverage and helping you feel more confident about your hair.</p>"
+            "text": "<p>Light therapy may help prolong the active growth phase of follicles. The result is fewer hairs lost daily and fuller-looking coverage — even when hormones are fluctuating.</p>"
           }
         }
       },
@@ -275,7 +275,7 @@
       ],
       "name": "t:sections.hair-growth-helmet-feature-carousel.name",
       "settings": {
-        "heading": "How LLLT Combats Androgenetic Alopecia",
+        "heading": "Why Q-Renew works — especially during hormonal changes",
         "button_label": "Get Started",
         "button_url": "#helmet-home"
       }
