@@ -10,7 +10,7 @@
 {
   "sections": {
     "header": {
-      "type": "product-hair-growth-helmet-header",
+      "type": "n_product-hair-growth-helmet-header",
       "blocks": {
         "price": {
           "type": "price",
@@ -97,7 +97,7 @@
       }
     },
     "hair_growth_helmet_image_slider_9KL6Kj": {
-      "type": "hair-growth-helmet-image-slider",
+      "type": "n_hair-growth-helmet-image-slider",
       "blocks": {
         "slider_UGthBb": {
           "type": "slider",
@@ -175,7 +175,7 @@
       }
     },
     "hair_growth_helmet_banner_with_modal_BnqA3f": {
-      "type": "hair-growth-helmet-banner-with-modal",
+      "type": "n_hair-growth-helmet-banner-with-modal",
       "blocks": {
         "image_T8NGCT": {
           "type": "image",
@@ -278,7 +278,7 @@
       }
     },
     "hair_growth_helmet_feature_carousel_HtN8C4": {
-      "type": "hair-growth-helmet-feature-carousel",
+      "type": "n_hair-growth-helmet-feature-carousel",
       "blocks": {
         "section_mJmezX": {
           "type": "section",
@@ -318,7 +318,7 @@
       }
     },
     "results_slider_DKCtmR": {
-      "type": "results-slider",
+      "type": "n_results-slider",
       "blocks": {
         "slider_nk3MnN": {
           "type": "slider",
@@ -501,7 +501,7 @@
       }
     },
     "hair_growth_helmet_usage_guide_HQaYec": {
-      "type": "hair-growth-helmet-usage-guide",
+      "type": "n_hair-growth-helmet-usage-guide",
       "blocks": {
         "slider_NB9ieE": {
           "type": "slider",
@@ -589,7 +589,7 @@
       }
     },
     "hair_growth_helmet_product_comparison_CxQNNe": {
-      "type": "hair-growth-helmet-product-comparison",
+      "type": "n_hair-growth-helmet-product-comparison",
       "blocks": {
         "heading_prof_NxTFnH": {
           "type": "heading_prof",
