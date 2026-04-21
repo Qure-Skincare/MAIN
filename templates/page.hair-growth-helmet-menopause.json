@@ -33,7 +33,7 @@
           "type": "money-back",
           "settings": {
             "heading": "Money Back Guarantee",
-            "text": "Hair growth isn't instant. That's why we offer a money-back guarantee. If you don't see real results, get a full refund - no questions asked.",
+            "text": "Hair growth during hormonal changes takes time. That's why we offer a money-back guarantee. If you don't see real results, get a full refund — no questions asked.",
             "image": "shopify://shop_images/moneyback_1.webp"
           }
         },
@@ -238,6 +238,43 @@
         "heading": "<h2>Powerful light technology for healthier-looking hair</h2>",
         "text": "<p>Backed by decades of light therapy research, Q-Renew uses medical-grade lasers and LEDs to help encourage the appearance of active growth — even through hormonal changes. No gimmicks, no miracle claims — just real technology that works.</p>",
         "button_label": "Explore The Features"
+      }
+    },
+    "n_expert_reviews_ip7VfA": {
+      "type": "n_expert-reviews",
+      "blocks": {
+        "slider_8xYUNd": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/maxfield_cd1969a0-a2b0-4c5a-81bc-3c16f63273f7.webp",
+            "text": "<p>“I look for two things in a device like this: LED and lasers. These two together helps gives you much stronger activation.”</p><p>– Dr. Maxfield</p>"
+          }
+        },
+        "slider_EhQ9CU": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/shah_354ce7dc-671d-4ddc-a59b-7bf69b8fa81c.webp",
+            "text": "<p>“I highly advocate low level light therapy devices that you wear externally for early hair loss. And when combined with a medication like minoxidil, the benefits and results are amplified.”</p><p>– Dr. Shah</p>"
+          }
+        },
+        "disclaimer_FKRXGg": {
+          "type": "disclaimer",
+          "settings": {
+            "text": "Board Certified Dermatologist"
+          }
+        }
+      },
+      "block_order": [
+        "slider_8xYUNd",
+        "slider_EhQ9CU",
+        "disclaimer_FKRXGg"
+      ],
+      "name": "t:sections.n_expert-reviews.name",
+      "settings": {
+        "use_own_file": true,
+        "text": "<h2>Trusted and Recommended by Experts</h2>",
+        "wistia_url": "8kldazu7xg",
+        "button_label": "<p><strong>Watch:</strong> Doctorly</p>"
       }
     },
     "hair_growth_helmet_feature_carousel_HtN8C4": {
@@ -452,6 +489,7 @@
         "accordion_rQ3dFk",
         "accordion_LPeTme"
       ],
+      "disabled": true,
       "name": "t:sections.faq.name",
       "settings": {
         "heading": "Your Androgenetic Alopecia Questions Answered",
@@ -696,6 +734,15 @@
     "faq_8dzUGE": {
       "type": "faq",
       "blocks": {
+        "accordion_e73Grk": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Can Q-Renew help with hair changes during menopause?",
+            "text": "<p>leading to finer strands, increased shedding, and reduced scalp coverage — a pattern that commonly presents as female pattern hair loss (androgenetic alopecia).</p><p>The Q-Renew LLLT Helmet is indicated for the promotion of hair growth in females with androgenetic alopecia who have Ludwig-Savin Classifications of I-II, which encompasses the thinning patterns many women experience during hormonal changes.</p><p>In a 16-week consumer use study with consistent use, participants showed visible improvements in hair thickness, density, and overall hair quality. Results may vary. If unsure whether the device is suitable for you, consult your healthcare provider.</p><p><strong>Do not use if pregnant or breastfeeding.</strong></p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
         "accordion_aJd9jV": {
           "type": "accordion",
           "settings": {
@@ -770,6 +817,7 @@
         }
       },
       "block_order": [
+        "accordion_e73Grk",
         "accordion_aJd9jV",
         "accordion_EAdrMB",
         "accordion_WVdct6",
@@ -794,6 +842,7 @@
     "header",
     "hair_growth_helmet_image_slider_9KL6Kj",
     "hair_growth_helmet_banner_with_modal_BnqA3f",
+    "n_expert_reviews_ip7VfA",
     "hair_growth_helmet_feature_carousel_HtN8C4",
     "results_slider_DKCtmR",
     "carousel_jHy7Zp",
