@@ -428,8 +428,8 @@
         "accordion_PTLUG3": {
           "type": "accordion",
           "settings": {
-            "heading": " What is androgenetic alopecia and how can LLLT help?",
-            "text": "<p>Androgenetic alopecia is a common, genetic form of hair loss affecting up to 50% of males and females. LLLT (low-level light therapy) is an FDA-cleared treatment that uses red light and laser energy to stimulate hair follicles, promoting regrowth and improving hair density.</p>",
+            "heading": "Crown Thinning",
+            "text": "<p>For many women going through menopause, the crown is one of the first areas to show noticeable change. As oestrogen and progesterone levels drop, the hair growth cycle can shorten — follicles in this area may shrink and produce finer strands, making the scalp more visible at the top of the head.</p><p><strong>HOW Q-RENEW HELPS</strong></p><p>By delivering light energy deep into the scalp, Q-Renew supports follicle activity in the crown area, helping to reduce visible thinning and improve overall coverage.</p>",
             "link_url": "",
             "link_text": ""
           }
@@ -437,8 +437,8 @@
         "accordion_NKwfPK": {
           "type": "accordion",
           "settings": {
-            "heading": "Is the Q-Renew helmet effective for both men and women?",
-            "text": "<p>Yes, the Q-Renew helmet is FDA-cleared for both men (Norwood-Hamilton scale IIa-V) and women (Ludwig-Savin scale I-II) with androgenetic alopecia.</p>",
+            "heading": "Widening Part Line",
+            "text": "<p>A widening part is one of the most common — and distressing — signs of hormone-related hair changes. As follicles along the central scalp miniaturize, the part gradually becomes more visible and coverage feels thinner day by day.</p><p><strong>HOW Q-RENEW HELPS</strong></p><p>Q-Renew's lasers are precisely distributed across the scalp, targeting the central line where thinning is most visible. By stimulating follicles along the part, it helps encourage thicker strands and a fuller-looking part over time.</p>",
             "link_url": "",
             "link_text": ""
           }
@@ -446,8 +446,8 @@
         "accordion_YEffqy": {
           "type": "accordion",
           "settings": {
-            "heading": "How long does it take to see results?",
-            "text": "<p>With consistent daily use, most users start to see visible results within 12-16 weeks. Results can vary based on individual factors and the severity of hair loss.</p>",
+            "heading": "Reduced Volume & Flatness",
+            "text": "<p>During and after menopause, many women notice their hair losing its body and bounce. This happens as follicles produce finer strands due to hormonal shifts, leaving hair looking flat, limp, and without its natural fullness.</p><p><strong>HOW Q-RENEW HELPS</strong></p><p>By supporting follicle function across the entire scalp, Q-Renew encourages the appearance of thicker, stronger hair. The result is healthier density, giving hair more lift, movement, and natural fullness.</p>",
             "link_url": "",
             "link_text": ""
           }
@@ -455,8 +455,8 @@
         "accordion_NHBERr": {
           "type": "accordion",
           "settings": {
-            "heading": "Is LLLT safe for androgenetic alopecia treatment?",
-            "text": "<p>Yes, LLLT is a non-invasive, pain-free treatment with a well-established safety profile. The Q-Renew helmet is FDA-cleared and includes built-in safety features.</p>",
+            "heading": "Increased Daily Shedding",
+            "text": "<p>Noticing more hair in the shower, on your pillow, or in your brush? During the hormonal transition of menopause, oestrogen levels fall and more follicles can shift into the resting phase simultaneously, increasing daily shedding.</p><p><strong>HOW Q-RENEW HELPS</strong></p><p>Q-Renew works with your natural hair cycle, helping to extend the active growth phase. Many users first notice reduced shedding before seeing new density — setting the stage for stronger, fuller hair over time.</p>",
             "link_url": "",
             "link_text": ""
           }
@@ -464,18 +464,17 @@
         "accordion_rQ3dFk": {
           "type": "accordion",
           "settings": {
-            "heading": "Can I use Q-Renew with other hair loss treatments?",
-            "text": "<p>The Q-Renew helmet can be used as a standalone treatment or in conjunction with other hair loss treatments. We recommend consulting with your doctor to create a comprehensive treatment plan.</p>",
+            "heading": "Weaker, More Fragile Strands",
+            "text": "<p>Hormonal changes during menopause can affect the structure of each hair strand, making it finer, more prone to breakage, and unable to grow as long as before. Hair that feels weaker or snaps easily is a common concern at this stage.</p><p><strong>HOW Q-RENEW HELPS</strong></p><p>Q-Renew delivers light energy to the root, encouraging stronger hair fiber production over time. With consistent use, strands can grow in thicker and more resilient, reducing breakage and restoring a healthier look and feel.</p>",
             "link_url": "",
             "link_text": ""
           }
         },
         "accordion_LPeTme": {
           "type": "accordion",
-          "disabled": true,
           "settings": {
-            "heading": "Can red light therapy for hair loss help reduce shedding?",
-            "text": "<p>Excessive daily shedding can feel constant and discouraging, with hair collecting in the shower, on your pillow, or in your brush. This often happens when follicles exit the growth phase too early—a process commonly influenced by stress, hormonal changes, or genetic factors.</p><p><strong>Red light therapy for hair loss</strong> works in sync with the natural hair growth cycle by supporting follicles during the active growth phase. With consistent use, many people notice a reduced appearance of excessive shedding before seeing improvements in overall density—helping create the foundation for stronger, fuller-looking hair over time.</p>",
+            "heading": "Temple Thinning & Hairline Changes",
+            "text": "<p>Thinning around the temples and hairline is another common effect of hormonal changes. The delicate hairs in this area are particularly sensitive to oestrogen fluctuations, and are often among the first to weaken or slow in growth.</p><p><strong>HOW Q-RENEW HELPS</strong></p><p>Q-Renew provides full-front coverage, delivering light directly to the temples and hairline to support follicle activity in these sensitive zones and encourage the appearance of a fuller hairline.</p>",
             "link_url": "",
             "link_text": ""
           }
@@ -489,12 +488,11 @@
         "accordion_rQ3dFk",
         "accordion_LPeTme"
       ],
-      "disabled": true,
       "name": "t:sections.faq.name",
       "settings": {
-        "heading": "Your Androgenetic Alopecia Questions Answered",
-        "text": "Have a concern we didn’t cover?",
-        "button_label": "Ask us",
+        "heading": "Discover the routine made for your stage of life.  Menopause can affect hair in different ways. Choose the concern that feels most familiar:",
+        "text": "",
+        "button_label": "",
         "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home",
         "terms-conditions": false,
         "promotional_terms_and_conditions": ""
