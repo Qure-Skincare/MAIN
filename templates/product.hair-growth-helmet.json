@@ -719,6 +719,7 @@
       ],
       "name": "t:sections.n_hair-growth-helmet-product-comparison.name",
       "settings": {
+        "use_own_file": true,
         "heading": "How It Compares"
       }
     },
@@ -919,9 +920,9 @@
       "settings": {
         "use_own_file": true,
         "heading": "<h2>Have questions?</h2>",
-        "text": "",
+        "text": "Don't see your question?",
         "button_label": "Ask us",
-        "button_url": ""
+        "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
       }
     }
   },

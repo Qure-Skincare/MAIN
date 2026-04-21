@@ -769,9 +769,9 @@
       "settings": {
         "use_own_file": true,
         "heading": "<h2>Have questions?</h2>",
-        "text": "",
+        "text": "Don't see your question?",
         "button_label": "Ask us",
-        "button_url": ""
+        "button_url": "#"
       }
     }
   },
