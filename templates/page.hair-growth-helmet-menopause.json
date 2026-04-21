@@ -452,6 +452,7 @@
         "accordion_rQ3dFk",
         "accordion_LPeTme"
       ],
+      "disabled": true,
       "name": "t:sections.faq.name",
       "settings": {
         "heading": "Your Androgenetic Alopecia Questions Answered",
@@ -696,6 +697,15 @@
     "faq_8dzUGE": {
       "type": "faq",
       "blocks": {
+        "accordion_e73Grk": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Can Q-Renew help with hair changes during menopause?",
+            "text": "<p>leading to finer strands, increased shedding, and reduced scalp coverage — a pattern that commonly presents as female pattern hair loss (androgenetic alopecia).</p><p>The Q-Renew LLLT Helmet is indicated for the promotion of hair growth in females with androgenetic alopecia who have Ludwig-Savin Classifications of I-II, which encompasses the thinning patterns many women experience during hormonal changes.</p><p>In a 16-week consumer use study with consistent use, participants showed visible improvements in hair thickness, density, and overall hair quality. Results may vary. If unsure whether the device is suitable for you, consult your healthcare provider.</p><p><strong>Do not use if pregnant or breastfeeding.</strong></p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
         "accordion_aJd9jV": {
           "type": "accordion",
           "settings": {
@@ -770,6 +780,7 @@
         }
       },
       "block_order": [
+        "accordion_e73Grk",
         "accordion_aJd9jV",
         "accordion_EAdrMB",
         "accordion_WVdct6",
