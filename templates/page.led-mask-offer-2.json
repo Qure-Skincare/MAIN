@@ -728,6 +728,111 @@
         "use_own_file": true
       }
     },
+    "n_comparison_Tyz6F4": {
+      "type": "n_comparison",
+      "blocks": {
+        "left_heading_Tyz6": {
+          "type": "left_heading",
+          "settings": {
+            "heading": "<h4>Q-Rejuvalight Pro at home</h4>",
+            "image": "shopify://shop_images/clinical-1.webp"
+          }
+        },
+        "right_heading_Tyz6": {
+          "type": "right_heading",
+          "settings": {
+            "heading": "<h4>Derm/Clinic Treatments</h4>",
+            "image": "shopify://shop_images/clinical-2.webp"
+          }
+        },
+        "text_between_Tyz6": {
+          "type": "text_between",
+          "settings": {
+            "text": "VS"
+          }
+        },
+        "left_column_J6mUxQ": {
+          "type": "left_column",
+          "settings": {
+            "text": "One-time investment"
+          }
+        },
+        "left_column_YBGw3L": {
+          "type": "left_column",
+          "settings": {
+            "text": "No appointments - use anytime at home"
+          }
+        },
+        "left_column_h9TznP": {
+          "type": "left_column",
+          "settings": {
+            "text": "Saves time with only 3 minutes a day"
+          }
+        },
+        "left_column_nxG6c3": {
+          "type": "left_column",
+          "settings": {
+            "text": "Better results with more frequent treatments"
+          }
+        },
+        "left_column_QKYEhk": {
+          "type": "left_column",
+          "settings": {
+            "text": "Customized approach with clinical backing"
+          }
+        },
+        "right_column_J6mUxQ": {
+          "type": "right_column",
+          "settings": {
+            "text": "Ongoing cost per session"
+          }
+        },
+        "right_column_YBGw3L": {
+          "type": "right_column",
+          "settings": {
+            "text": "Completed according to clinic's availability"
+          }
+        },
+        "right_column_h9TznP": {
+          "type": "right_column",
+          "settings": {
+            "text": "Requires 20-30 mins per session, plus travel time"
+          }
+        },
+        "right_column_nxG6c3": {
+          "type": "right_column",
+          "settings": {
+            "text": "Less treatments = less consistent results"
+          }
+        },
+        "right_column_QKYEhk": {
+          "type": "right_column",
+          "settings": {
+            "text": "Customized approach with clinical backing"
+          }
+        }
+      },
+      "block_order": [
+        "left_heading_Tyz6",
+        "right_heading_Tyz6",
+        "text_between_Tyz6",
+        "left_column_J6mUxQ",
+        "left_column_YBGw3L",
+        "left_column_h9TznP",
+        "left_column_nxG6c3",
+        "left_column_QKYEhk",
+        "right_column_J6mUxQ",
+        "right_column_YBGw3L",
+        "right_column_h9TznP",
+        "right_column_nxG6c3",
+        "right_column_QKYEhk"
+      ],
+      "name": "t:sections.n_comparison.name",
+      "settings": {
+        "use_own_file": true,
+        "text": "<h2>The beauty of clinical results from home - without the ‘clinical’ costs</h2><p>It’s like going to a clinic, minus the on-going costs, the time commitment, the overpromises, the upselling and the hassle.</p>"
+      }
+    },
     "n_easy_steps_FWp4Aw": {
       "type": "n_easy-steps",
       "blocks": {
@@ -965,111 +1070,6 @@
         "text": ""
       }
     },
-    "n_comparison_Tyz6F4": {
-      "type": "n_comparison",
-      "blocks": {
-        "left_heading_Tyz6": {
-          "type": "left_heading",
-          "settings": {
-            "heading": "<h4>Q-Rejuvalight Pro at home</h4>",
-            "image": "shopify://shop_images/clinical-1.webp"
-          }
-        },
-        "right_heading_Tyz6": {
-          "type": "right_heading",
-          "settings": {
-            "heading": "<h4>Derm/Clinic Treatments</h4>",
-            "image": "shopify://shop_images/clinical-2.webp"
-          }
-        },
-        "text_between_Tyz6": {
-          "type": "text_between",
-          "settings": {
-            "text": "VS"
-          }
-        },
-        "left_column_J6mUxQ": {
-          "type": "left_column",
-          "settings": {
-            "text": "One-time investment"
-          }
-        },
-        "left_column_YBGw3L": {
-          "type": "left_column",
-          "settings": {
-            "text": "No appointments - use anytime at home"
-          }
-        },
-        "left_column_h9TznP": {
-          "type": "left_column",
-          "settings": {
-            "text": "Saves time with only 3 minutes a day"
-          }
-        },
-        "left_column_nxG6c3": {
-          "type": "left_column",
-          "settings": {
-            "text": "Better results with more frequent treatments"
-          }
-        },
-        "left_column_QKYEhk": {
-          "type": "left_column",
-          "settings": {
-            "text": "Customized approach with clinical backing"
-          }
-        },
-        "right_column_J6mUxQ": {
-          "type": "right_column",
-          "settings": {
-            "text": "Ongoing cost per session"
-          }
-        },
-        "right_column_YBGw3L": {
-          "type": "right_column",
-          "settings": {
-            "text": "Completed according to clinic's availability"
-          }
-        },
-        "right_column_h9TznP": {
-          "type": "right_column",
-          "settings": {
-            "text": "Requires 20-30 mins per session, plus travel time"
-          }
-        },
-        "right_column_nxG6c3": {
-          "type": "right_column",
-          "settings": {
-            "text": "Less treatments = less consistent results"
-          }
-        },
-        "right_column_QKYEhk": {
-          "type": "right_column",
-          "settings": {
-            "text": "Customized approach with clinical backing"
-          }
-        }
-      },
-      "block_order": [
-        "left_heading_Tyz6",
-        "right_heading_Tyz6",
-        "text_between_Tyz6",
-        "left_column_J6mUxQ",
-        "left_column_YBGw3L",
-        "left_column_h9TznP",
-        "left_column_nxG6c3",
-        "left_column_QKYEhk",
-        "right_column_J6mUxQ",
-        "right_column_YBGw3L",
-        "right_column_h9TznP",
-        "right_column_nxG6c3",
-        "right_column_QKYEhk"
-      ],
-      "name": "t:sections.n_comparison.name",
-      "settings": {
-        "use_own_file": true,
-        "text": "<h2>The beauty of clinical results from home - without the ‘clinical’ costs</h2><p>It’s like going to a clinic, minus the on-going costs, the time commitment, the overpromises, the upselling and the hassle.</p>"
-      }
-    },
     "n_page_led_mask_offer_2_across_image_banner_a4L3QA": {
       "type": "n_page-led-mask-offer-2-across-image-banner",
       "name": "t:sections.n_page-led-mask-offer-2-across-image-banner.name",
@@ -1115,13 +1115,13 @@
     "n_page_led_mask_offer_2_exclusive_bundle_3KybCF",
     "page_led_mask_offer_2_led_mask_offer_QgKWfH",
     "n_features_marquee_4YPxHy",
+    "n_comparison_Tyz6F4",
     "n_easy_steps_FWp4Aw",
     "n_how_it_works_4DFck3",
     "n_base_section_mw6Bby",
     "n_base_section_m7aRWE",
     "n_trusted_recommended_iD3xKn",
     "n_video_slider_VtYK7L",
-    "n_comparison_Tyz6F4",
     "n_page_led_mask_offer_2_across_image_banner_a4L3QA",
     "n_page-led-mask-offer-2-faq_led_mask_offer_2",
     "sticky_cta_xhjAY4"

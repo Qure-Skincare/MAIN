@@ -29,7 +29,7 @@
       "settings": {}
     },
     "footer-gdpr": {
-      "type": "footer-gdpr",
+      "type": "n-footer-gdpr",
       "settings": {}
     },
     "footer-wistia": {

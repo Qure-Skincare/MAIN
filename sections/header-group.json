@@ -49,6 +49,7 @@
         },
         "announcement_yBCcDb": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "heading": "<p>Buy a Shower Filter, Get a <strong>FREE Faucet Filter</strong></p>",
             "button-label": "SHOP NOW",

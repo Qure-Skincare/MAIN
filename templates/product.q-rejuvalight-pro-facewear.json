@@ -773,14 +773,14 @@
           "type": "accordion",
           "settings": {
             "heading": "Technical specifications",
-            "text": "<p><strong>TREATMENT TIME: </strong> 3 minutes<br /><strong>CERTIFICATES: </strong> FDA, TGA, CE, UKCA<br /><strong>OPERATION: </strong>Wireless, hands-free<br /><strong>WAVELENGTH: </strong>415nm (Blue), 605nm (Amber), 630nm (Red), 660nm (Deep Red), 880nm (Infrared)<br /><strong>TREATMENT TIME: </strong> 2 hours<br /><strong>CHARGING TIME: </strong> 3 minutes<br /><strong>LEDs: </strong> 160 dual core</p>"
+            "text": "<p><strong>TREATMENT TIME: </strong> 3 minutes<br/><strong>CERTIFICATES: </strong> FDA, TGA, CE, UKCA<br/><strong>OPERATION: </strong>Wireless, hands-free<br/><strong>WAVELENGTH: </strong>415nm (Blue), 605nm (Amber), 630nm (Red), 660nm (Deep Red), 880nm (Infrared)<br/><strong>TREATMENT TIME: </strong> 3 minutes<br/><strong>CHARGING TIME: </strong> 2 hours <br/><strong>LEDs: </strong> 160 dual core</p>"
           }
         },
         "accordion_wGfm7F": {
           "type": "accordion",
           "settings": {
             "heading": "Treatment details",
-            "text": "<p><strong>USE: </strong> Use daily after cleansing, before topical skincare<br /><strong>PRO-AGING TREATMENT: </strong> 415nm (Blue), 605nm (Amber), 630nm (Red), 660nm (Deep Red), 880nm (Infrared)<br /><strong>ANTI-BREAKOUT TREATMENT: </strong> 415nm (Blue), 630nm (Red)<br /><strong>CUSTOMIZED TREATMENT: </strong> Choose treatment modes for each facial area via app<br /><strong>Skin Type: </strong>Most suitable for Fitzpatrick Skin Types I-IV</p>"
+            "text": "<p><strong>USE: </strong> Use daily after cleansing, before topical skincare<br/><strong>SKIN REJUVENATING TREATMENT: </strong> 415nm (Blue), 605nm (Amber), 630nm (Red), 660nm (Deep Red), 880nm (Infrared)<br/><strong>SKIN CLEARING TREATMENT: </strong> 415nm (Blue), 630nm (Red)<br/><strong>CUSTOMIZED TREATMENT: </strong> Choose treatment modes for each facial area via app<br/><strong>Skin Type: </strong>Most suitable for Fitzpatrick Skin Types I-IV</p>"
           }
         }
       },

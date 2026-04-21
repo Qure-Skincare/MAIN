@@ -143,7 +143,7 @@
             "product_discount_percent": 0,
             "soldout": false,
             "preorder": true,
-            "preorder_text": "Your Delivery Timeline: next batch ships 17th May: <br>Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
+            "preorder_text": "Your Delivery Timeline: next batch ships 17th May: Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
             "preorder_date_soldout": "16th April",
             "preorder_date_reserved": "17th May",
             "preorder_percent": 93
@@ -299,9 +299,9 @@
             "product_discount_percent": 0,
             "soldout": false,
             "preorder": true,
-            "preorder_text": "",
-            "preorder_date_soldout": "",
-            "preorder_date_reserved": "",
+            "preorder_text": "Your Delivery Timeline: next batch ships 17th May: <br>Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
+            "preorder_date_soldout": "16th April",
+            "preorder_date_reserved": "17th May",
             "preorder_percent": 92
           }
         },
@@ -519,7 +519,7 @@
           "type": "percent_value",
           "settings": {
             "percent_value": 70,
-            "text": "<p>of participants say their fine lines looked smoother.</p>"
+            "text": "of participants say their fine lines looked smoother."
           }
         },
         "percent_value_jJpTkf": {
@@ -1560,7 +1560,7 @@
           "settings": {
             "date": "9th May",
             "percent": 55,
-            "date_soldout": "23rd March",
+            "date_soldout": "16th April",
             "date_reserved": "9th May"
           }
         },
@@ -1737,10 +1737,10 @@
             "soldout": false,
             "preorder": true,
             "total_treatments": 12,
-            "left_items": 98,
-            "preorder_text": "",
-            "preorder_date_soldout": "",
-            "preorder_date_reserved": "",
+            "left_items": 0,
+            "preorder_text": "Your Delivery Timeline: next batch ships 17th May:<br> Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
+            "preorder_date_soldout": "16th April",
+            "preorder_date_reserved": "17th May",
             "preorder_percent": 93,
             "included_text": "<ul><li>12 clinically formulated 4ml serums to treat your specific skin concerns (valued at $719)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
           }
