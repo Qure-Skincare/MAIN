@@ -301,7 +301,11 @@
         "save": "Save",
         "am-or-pm": "AM or PM",
         "eye": "Eye",
-        "share": "Share"
+        "share": "Share",
+        "one-year": "One year",
+        "hide-payments": "Hide payments",
+        "hide-bottom": "Hide bottom",
+        "hide-payments-methods": "Hide payments methods"
     },
     "blocks": {
         "block-card": {
@@ -1215,6 +1219,9 @@
         },
         "product-header": {
             "name": "Product header"
+        },
+        "n_product-header": {
+            "name": "N Product header"
         },
         "page-header": {
             "name": "Page header"

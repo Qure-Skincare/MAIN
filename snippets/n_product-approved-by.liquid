@@ -1,0 +1,36 @@
+{% doc %}
+  Renders a product approved by snippet for the product-header section
+
+  @param {object} - A section object.
+  @param {object} - A block object.
+
+  @example
+  {% render 'n-product-approved-by', section: '', block: '' %}
+{% enddoc %}
+
+{% if block == blank %}
+    {% for _block in section.blocks %}
+        {% if _block.type == 'approved-by' %}
+            {% assign block = _block %}
+        {% endif %}
+    {% endfor %}
+{% endif %}
+
+{% if block != blank %}
+    <div class="c-approved-by">
+        <ul>
+            {% if block.settings.image_1 != blank and block.settings.image_2 != blank %}
+                <li><img src="{{ block.settings.image_1 | image_url }}" alt="{{ block.settings.image_1.alt | escape }}" /></li>
+                <li><img src="{{ block.settings.image_2 | image_url }}" alt="{{ block.settings.image_2.alt | escape }}" /></li>
+            {% else %}
+                <li><img src="https://qureskincaredns.com/sections/new/hero-section/images/approved-by-1.webp" alt="Dr. Shah" /></li>
+                <li><img src="https://qureskincaredns.com/sections/new/hero-section/images/approved-by-2.webp" alt="Dr. Maxfield" /></li>
+            {% endif %}
+        </ul>
+        {% if block.settings.text != blank %}
+            {{ block.settings.text }}
+        {% else %}
+            <p>{{ 'product.settings.approved-by.text_html' | t }}</p>
+        {% endif %}
+    </div>
+{% endif %}

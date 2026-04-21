@@ -29,14 +29,19 @@
             "image_product2": "shopify://shop_images/Frame_1073714744.png",
             "text": "<p>Buy the Q-Rejuvalight Pro and get the Neck & Décolletage LED System for FREE (value $299)</p>"
           }
+        },
+        "approved_by_zN3pYg": {
+          "type": "approved-by",
+          "settings": {}
         }
       },
       "block_order": [
         "description_iSDNaK",
         "link_iPBNaS",
-        "exclusive-offer_iaSzaK"
+        "exclusive-offer_iaSzaK",
+        "approved_by_zN3pYg"
       ],
-      "name": "t:sections.page-header.name",
+      "name": "t:sections.n_product-header.name",
       "settings": {
         "seo_heading": "",
         "heading": "Feel Confident Makeup-Free with Q-Rejuvalight Pro",
