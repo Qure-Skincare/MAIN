@@ -240,6 +240,43 @@
         "button_label": "Explore The Features"
       }
     },
+    "n_expert_reviews_ip7VfA": {
+      "type": "n_expert-reviews",
+      "blocks": {
+        "slider_8xYUNd": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/maxfield_cd1969a0-a2b0-4c5a-81bc-3c16f63273f7.webp",
+            "text": "<p>“I look for two things in a device like this: LED and lasers. These two together helps gives you much stronger activation.”</p><p>– Dr. Maxfield</p>"
+          }
+        },
+        "slider_EhQ9CU": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/shah_354ce7dc-671d-4ddc-a59b-7bf69b8fa81c.webp",
+            "text": "<p>“I highly advocate low level light therapy devices that you wear externally for early hair loss. And when combined with a medication like minoxidil, the benefits and results are amplified.”</p><p>– Dr. Shah</p>"
+          }
+        },
+        "disclaimer_FKRXGg": {
+          "type": "disclaimer",
+          "settings": {
+            "text": "Board Certified Dermatologist"
+          }
+        }
+      },
+      "block_order": [
+        "slider_8xYUNd",
+        "slider_EhQ9CU",
+        "disclaimer_FKRXGg"
+      ],
+      "name": "t:sections.n_expert-reviews.name",
+      "settings": {
+        "use_own_file": true,
+        "text": "<h2>Trusted and Recommended by Experts</h2>",
+        "wistia_url": "8kldazu7xg",
+        "button_label": "<p><strong>Watch:</strong> Doctorly</p>"
+      }
+    },
     "hair_growth_helmet_feature_carousel_HtN8C4": {
       "type": "hair-growth-helmet-feature-carousel",
       "blocks": {
@@ -805,6 +842,7 @@
     "header",
     "hair_growth_helmet_image_slider_9KL6Kj",
     "hair_growth_helmet_banner_with_modal_BnqA3f",
+    "n_expert_reviews_ip7VfA",
     "hair_growth_helmet_feature_carousel_HtN8C4",
     "results_slider_DKCtmR",
     "carousel_jHy7Zp",
