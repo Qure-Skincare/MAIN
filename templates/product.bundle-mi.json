@@ -11,7 +11,11 @@
   "sections": {
     "product-bundle": {
       "type": "product-bundle",
-      "settings": {}
+      "settings": {
+        "heading": "",
+        "reserved": false,
+        "soldout": false
+      }
     },
     "n_press_reviews_DDaUTN": {
       "type": "n_press-reviews",
@@ -115,7 +119,7 @@
       "name": "t:sections.n_why-using.name",
       "settings": {
         "use_own_file": true,
-        "modifier": "bg",
+        "modifier": "none",
         "text": "",
         "button_label": "",
         "button_url": ""
@@ -451,10 +455,10 @@
     },
     "n_you_may_also_like_uZi1bC": {
       "type": "n_product-you-may-also-like",
+      "name": "t:sections.n_product-you-may-also-like.name",
       "settings": {
         "use_own_file": true
-      },
-      "name": "t:sections.n_product-you-may-also-like.name"
+      }
     }
   },
   "order": [
