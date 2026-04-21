@@ -9,8 +9,8 @@
  */
 {
   "sections": {
-    "header": {
-      "type": "product-hair-growth-helmet-header",
+    "n_header": {
+      "type": "n_product-hair-growth-helmet-header",
       "blocks": {
         "price": {
           "type": "price",
@@ -84,8 +84,9 @@
         "jumpto_how-to-use",
         "jumpto_faqs"
       ],
-      "name": "t:sections.product-hair-growth-helmet-header.name",
+      "name": "t:sections.n_product-hair-growth-helmet-header.name",
       "settings": {
+        "use_own_file": true,
         "seo_heading": "Backed by Dermatologists",
         "heading": "Q-Renew LLLT Helmet",
         "rating": true,
@@ -96,8 +97,8 @@
         "soldout": false
       }
     },
-    "hair_growth_helmet_image_slider_9KL6Kj": {
-      "type": "hair-growth-helmet-image-slider",
+    "n_hair_growth_helmet_image_slider_9KL6Kj": {
+      "type": "n_hair-growth-helmet-image-slider",
       "blocks": {
         "slider_V86bzz": {
           "type": "slider",
@@ -184,14 +185,15 @@
       ],
       "name": "t:sections.hair-growth-helmet-image-slider.name",
       "settings": {
+        "use_own_file": true,
         "heading": "<h2>See the change, feel the difference</h2>",
         "text": "<p>Join real people experiencing real transformations with consistent use of Q-Renew.</p>",
         "button_label": "Read the Study",
         "button_url": "#backed-by-real-results"
       }
     },
-    "hair_growth_helmet_banner_with_modal_BnqA3f": {
-      "type": "hair-growth-helmet-banner-with-modal",
+    "n_hair_growth_helmet_banner_with_modal_BnqA3f": {
+      "type": "n_hair-growth-helmet-banner-with-modal",
       "blocks": {
         "image_T8NGCT": {
           "type": "image",
@@ -249,8 +251,9 @@
         "image_with_text_LeDnMR",
         "text_Mfzghk"
       ],
-      "name": "t:sections.hair-growth-helmet-banner-with-modal.name",
+      "name": "t:sections.n_hair-growth-helmet-banner-with-modal.name",
       "settings": {
+        "use_own_file": true,
         "heading": "<h2>Powerful light technology for healthier-looking hair</h2>",
         "text": "<p>Backed by decades of light therapy research, the Q-Renew LLLT Helmet uses medical-grade lasers and LEDs to help encourage the appearance of active growth. No gimmicks, no miracle claims — just real technology that works.</p>",
         "button_label": "Explore The Features"
@@ -293,8 +296,8 @@
         "button_label": "<p><strong>Watch:</strong> Doctorly</p>"
       }
     },
-    "hair_growth_helmet_feature_carousel_HtN8C4": {
-      "type": "hair-growth-helmet-feature-carousel",
+    "n_hair_growth_helmet_feature_carousel_HtN8C4": {
+      "type": "n_hair-growth-helmet-feature-carousel",
       "blocks": {
         "section_mJmezX": {
           "type": "section",
@@ -326,8 +329,9 @@
         "section_gxTc4q",
         "section_BTCCyz"
       ],
-      "name": "t:sections.hair-growth-helmet-feature-carousel.name",
+      "name": "t:sections.n_hair-growth-helmet-feature-carousel.name",
       "settings": {
+        "use_own_file": true,
         "heading": "Why Q-Renew works",
         "button_label": "Get Started",
         "button_url": "#helmet-home"
@@ -488,52 +492,51 @@
         "heading": "<h2>Backed<strong> </strong>by real results</h2>"
       }
     },
-    "carousel_jHy7Zp": {
-      "type": "carousel",
+    "n_features_marquee_jHy7Zp": {
+      "type": "n_features-marquee",
       "blocks": {
-        "items_NHKMPi": {
-          "type": "items",
+        "image_with_text_NHKMPi": {
+          "type": "image_with_text",
           "settings": {
-            "heading": "Free US Shipping On Orders Over $100",
-            "image": "shopify://shop_images/guarantee.svg"
+            "icon": "shipping-order",
+            "text": "Free US Shipping On Orders Over $100"
           }
         },
-        "items_qd3AjU": {
-          "type": "items",
+        "image_with_text_qd3AjU": {
+          "type": "image_with_text",
           "settings": {
-            "heading": "Dermatologist Reviewed",
-            "image": "shopify://shop_images/Guarantee_Icons.svg"
+            "icon": "reviewed",
+            "text": "Dermatologist Reviewed"
           }
         },
-        "items_ANgYcm": {
-          "type": "items",
+        "image_with_text_ANgYcm": {
+          "type": "image_with_text",
           "settings": {
-            "heading": "Buy Now, Pay Later Options Available",
-            "image": "shopify://shop_images/pay-later.svg"
+            "icon": "pay-later",
+            "text": "Buy Now, Pay Later Options Available"
           }
         },
-        "items_wpmqpr": {
-          "type": "items",
+        "image_with_text_wpmqpr": {
+          "type": "image_with_text",
           "settings": {
-            "heading": "Proven Results, Backed By Science",
-            "image": "shopify://shop_images/proven-result.svg"
+            "icon": "proven",
+            "text": "Proven Results, Backed By Science"
           }
         }
       },
       "block_order": [
-        "items_NHKMPi",
-        "items_qd3AjU",
-        "items_ANgYcm",
-        "items_wpmqpr"
+        "image_with_text_NHKMPi",
+        "image_with_text_qd3AjU",
+        "image_with_text_ANgYcm",
+        "image_with_text_wpmqpr"
       ],
-      "name": "t:common.carousel",
+      "name": "t:sections.n_features-marquee.name",
       "settings": {
-        "background_color": "#f6f6f7",
-        "display_mode": "both"
+        "use_own_file": true
       }
     },
-    "hair_growth_helmet_usage_guide_HQaYec": {
-      "type": "hair-growth-helmet-usage-guide",
+    "n_hair_growth_helmet_usage_guide_HQaYec": {
+      "type": "n_hair-growth-helmet-usage-guide",
       "blocks": {
         "slider_NB9ieE": {
           "type": "slider",
@@ -568,15 +571,16 @@
         "slider_jrXtEm",
         "slider_wYcAtU"
       ],
-      "name": "t:sections.hair-growth-helmet-usage-guide.name",
+      "name": "t:sections.n_hair-growth-helmet-usage-guide.name",
       "settings": {
+        "use_own_file": true,
         "heading": "<h2>Support hair health in just 12 minutes a day</h2>",
         "video_url": "wvoucso35j",
         "youtube_url": false
       }
     },
-    "hair_growth_helmet_product_comparison_CxQNNe": {
-      "type": "hair-growth-helmet-product-comparison",
+    "n_hair_growth_helmet_product_comparison_CxQNNe": {
+      "type": "n_hair-growth-helmet-product-comparison",
       "blocks": {
         "heading_prof_NxTFnH": {
           "type": "heading_prof",
@@ -713,41 +717,49 @@
         "compare_hair_growth_pQVjnm",
         "compare_red_light_hat_bUHcLm"
       ],
-      "name": "t:sections.hair-growth-helmet-product-comparison.name",
+      "name": "t:sections.n_hair-growth-helmet-product-comparison.name",
       "settings": {
         "heading": "How It Compares"
       }
     },
-    "video_review_slider_p78WDL": {
-      "type": "video-review-slider",
+    "n_video_slider_p78WDL": {
+      "type": "n_video-slider",
       "blocks": {
         "slider_QGDTJm": {
           "type": "slider",
           "settings": {
-            "youtube_url": "",
-            "wistia_url": "hr1ahbnrgn"
+            "heading": "",
+            "text": "",
+            "youtube_url": false,
+            "video_url": "hr1ahbnrgn"
           }
         },
         "slider_QgKh3p": {
           "type": "slider",
           "settings": {
-            "youtube_url": "",
-            "wistia_url": "cp1yzbnyd4"
+            "heading": "",
+            "text": "",
+            "youtube_url": false,
+            "video_url": "cp1yzbnyd4"
           }
         },
         "slider_CRV373": {
           "type": "slider",
           "settings": {
-            "youtube_url": "",
-            "wistia_url": "yx9d5s1s0w"
+            "heading": "",
+            "text": "",
+            "youtube_url": false,
+            "video_url": "yx9d5s1s0w"
           }
         },
         "slider_jeLq7G": {
           "type": "slider",
           "settings": {
-            "youtube_url": "https://youtu.be/nv5oKEULitQ?si=lLgvFaReEu4qh9uq",
-            "video_cover_image": "shopify://shop_images/Review_14.png",
-            "wistia_url": ""
+            "heading": "",
+            "text": "",
+            "youtube_url": true,
+            "video_url": "https://youtu.be/nv5oKEULitQ?si=lLgvFaReEu4qh9uq",
+            "image": "shopify://shop_images/Review_14.png"
           }
         }
       },
@@ -757,10 +769,11 @@
         "slider_CRV373",
         "slider_jeLq7G"
       ],
-      "name": "t:sections.video-review-slider.name",
+      "name": "t:sections.n_video-slider.name",
       "settings": {
-        "heading": "Confidence starts here - at the roots",
-        "background_color": "#F6F6F7"
+        "use_own_file": true,
+        "modifier": "none",
+        "text": "<h2>Confidence starts here - at the roots</h2>"
       }
     },
     "1773337341b2168cc6": {
@@ -784,133 +797,105 @@
       ],
       "settings": {}
     },
-    "faq_8dzUGE": {
-      "type": "faq",
+    "n_faq_8dzUGE": {
+      "type": "n_faq",
       "blocks": {
         "accordion_aJd9jV": {
           "type": "accordion",
           "settings": {
             "heading": "How does the Qure Q-Renew LLLT Helmet work?",
-            "text": "<p>The Q-Renew LLLT Helmet uses a combination of low-level laser therapy (LLLT) and red LED light therapy to help support hair follicle activity and promote healthier-looking, fuller hair. The lasers deliver focused light to the scalp, while LEDs provide broader coverage to support overall scalp exposure.</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>The Q-Renew LLLT Helmet uses a combination of low-level laser therapy (LLLT) and red LED light therapy to help support hair follicle activity and promote healthier-looking, fuller hair. The lasers deliver focused light to the scalp, while LEDs provide broader coverage to support overall scalp exposure.</p>"
           }
         },
         "accordion_EAdrMB": {
           "type": "accordion",
           "settings": {
             "heading": "How often can I use this treatment?",
-            "text": "<p>Use the helmet once per day, 5–7 times per week. Consistent weekly use is recommended for best results.<br/><br/>Each treatment lasts 12 minutes and ends automatically.</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>Use the helmet once per day, 5–7 times per week. Consistent weekly use is recommended for best results.<br/><br/>Each treatment lasts 12 minutes and ends automatically.</p>"
           }
         },
         "accordion_WVdct6": {
           "type": "accordion",
           "settings": {
             "heading": "How quickly will I see the results?",
-            "text": "<p>Hair growth takes time. In a 16-week consumer use study with consistent use, participants showed visible improvements in hair thickness, density, and overall hair quality. Clinical measurements demonstrated increases in hair growth rate, average hair thickness, and total hair width after 16 weeks.<br/><br/>Results are gradual and become more noticeable with continued use. Individual results may vary.</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>Hair growth takes time. In a 16-week consumer use study with consistent use, participants showed visible improvements in hair thickness, density, and overall hair quality. Clinical measurements demonstrated increases in hair growth rate, average hair thickness, and total hair width after 16 weeks.<br/><br/>Results are gradual and become more noticeable with continued use. Individual results may vary.</p>"
           }
         },
         "accordion_ErmUaV": {
           "type": "accordion",
           "settings": {
             "heading": "Do I need to wash my hair before use?",
-            "text": "<p>Your hair does not need to be freshly washed, but it must be clean, completely dry, and free from any styling products, oils, serums, sprays, fibers, or topical treatments on the scalp. This ensures proper light exposure and consistent performance.</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>Your hair does not need to be freshly washed, but it must be clean, completely dry, and free from any styling products, oils, serums, sprays, fibers, or topical treatments on the scalp. This ensures proper light exposure and consistent performance.</p>"
           }
         },
         "accordion_JyVe8h": {
           "type": "accordion",
           "settings": {
             "heading": "Can I use it with hair products?",
-            "text": "<p>No. Use only on clean, completely dry hair with no styling products, oils, serums, sprays, fibers, or topical treatments on the scalp. Products can interfere with light delivery and reduce treatment consistency.</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>No. Use only on clean, completely dry hair with no styling products, oils, serums, sprays, fibers, or topical treatments on the scalp. Products can interfere with light delivery and reduce treatment consistency.</p>"
           }
         },
         "accordion_BD8Yxr": {
           "type": "accordion",
           "settings": {
             "heading": "Should I use it on wet or dry hair?",
-            "text": "<p>Always use on dry hair. Do not use on wet or damp hair.</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>Always use on dry hair. Do not use on wet or damp hair.</p>"
           }
         },
         "accordion_4P8e4c": {
           "type": "accordion",
           "settings": {
             "heading": "What happens if I miss sessions?",
-            "text": "<p>If you miss a session, resume your regular schedule. Hair growth support depends on consistency over time. Occasional missed sessions will not undo progress, but regular use is associated with stronger visible results.</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>If you miss a session, resume your regular schedule. Hair growth support depends on consistency over time. Occasional missed sessions will not undo progress, but regular use is associated with stronger visible results.</p>"
           }
         },
         "accordion_4xbifb": {
           "type": "accordion",
           "settings": {
             "heading": "Can I use it while it is charging?",
-            "text": "<p>No. The helmet will not operate while charging. Always unplug before use.</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>No. The helmet will not operate while charging. Always unplug before use.</p>"
           }
         },
         "accordion_mkVbPN": {
           "type": "accordion",
           "settings": {
             "heading": "How long does it take to charge?",
-            "text": "<p>A full charge takes about 4 hours. The helmet is powered by a rechargeable 3.7V, 5000mAh lithium-ion battery.</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>A full charge takes about 4 hours. The helmet is powered by a rechargeable 3.7V, 5000mAh lithium-ion battery.</p>"
           }
         },
         "accordion_mAjjJj": {
           "type": "accordion",
           "settings": {
             "heading": "Is Q-Renew LLLT Helmet safe and FDA cleared?",
-            "text": "<p>Yes. The Q-Renew LLLT Helmet is FDA-cleared for the promotion of hair growth in males who have Norwood-Hamilton classifications of IIa–V, and in females with androgenetic alopecia who have Ludwig-Savin Classifications of I–II, and in both, Fitzpatrick Classification of Skin Phototypes I to IV.<br/><br/>It is also Included on the Australian Register of Therapeutic Goods (ARTG 522231) as a Class IIa medical device.<br/><br/>The device includes built-in safety sensors that activate the lights only when properly positioned on the head and automatically pause when removed. Maximum operating temperature is 35°C (95°F). Review all contraindications before use.</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>Yes. The Q-Renew LLLT Helmet is FDA-cleared for the promotion of hair growth in males who have Norwood-Hamilton classifications of IIa–V, and in females with androgenetic alopecia who have Ludwig-Savin Classifications of I–II, and in both, Fitzpatrick Classification of Skin Phototypes I to IV.<br/><br/>It is also Included on the Australian Register of Therapeutic Goods (ARTG 522231) as a Class IIa medical device.<br/><br/>The device includes built-in safety sensors that activate the lights only when properly positioned on the head and automatically pause when removed. Maximum operating temperature is 35°C (95°F). Review all contraindications before use.</p>"
           }
         },
         "accordion_M7qFY8": {
           "type": "accordion",
           "settings": {
             "heading": "Who is it not recommended for?",
-            "text": "<p>Do not use this product if you are under 18, pregnant, breastfeeding, photosensitive, on light-sensitizing medications, prone to light-triggered headaches or seizures, or have open wounds or infections on the scalp.</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>Do not use this product if you are under 18, pregnant, breastfeeding, photosensitive, on light-sensitizing medications, prone to light-triggered headaches or seizures, or have open wounds or infections on the scalp.</p>"
           }
         },
         "accordion_wkhUtP": {
           "type": "accordion",
           "settings": {
             "heading": "Can I travel with it?",
-            "text": "<p>Yes. The helmet is lightweight, wireless, and rechargeable via USB-C, making it suitable for travel.</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>Yes. The helmet is lightweight, wireless, and rechargeable via USB-C, making it suitable for travel.</p>"
           }
         },
         "accordion_c3YiLp": {
           "type": "accordion",
           "settings": {
             "heading": "Does it work for postpartum shedding?",
-            "text": "<p>Postpartum shedding is commonly linked to temporary hormonal shifts after pregnancy, which can cause more hairs than usual to move into the resting phase at the same time.<br/><br/>While the Q-Renew LLLT Helmet has not been specifically studied in a clinical trial focused solely on postpartum shedding, it is designed to support overall hair follicle activity and encourage the appearance of hairs in the active growth phase.<br/><br/>The device uses low-level laser and red light therapy to help support hair density, thickness, and overall hair quality. In a 16-week consumer use study with consistent use, participants showed visible improvements in hair thickness, density, total hair width, and measured increases in hair growth rate.<br/><br/>Because postpartum shedding is typically temporary and hormone-related, results may vary depending on your individual hair cycle and overall health. If unsure whether the device is suitable for you, consult your healthcare provider.<br/><br/>Do not use if pregnant or breastfeeding.</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>Postpartum shedding is commonly linked to temporary hormonal shifts after pregnancy, which can cause more hairs than usual to move into the resting phase at the same time.<br/><br/>While the Q-Renew LLLT Helmet has not been specifically studied in a clinical trial focused solely on postpartum shedding, it is designed to support overall hair follicle activity and encourage the appearance of hairs in the active growth phase.<br/><br/>The device uses low-level laser and red light therapy to help support hair density, thickness, and overall hair quality. In a 16-week consumer use study with consistent use, participants showed visible improvements in hair thickness, density, total hair width, and measured increases in hair growth rate.<br/><br/>Because postpartum shedding is typically temporary and hormone-related, results may vary depending on your individual hair cycle and overall health. If unsure whether the device is suitable for you, consult your healthcare provider.<br/><br/>Do not use if pregnant or breastfeeding.</p>"
           }
         },
         "accordion_fgq9EN": {
           "type": "accordion",
           "settings": {
             "heading": "Does Q-Renew LLLT Helmet come with a warranty?",
-            "text": "<p>Yes, the Q-Renew LLLT Helmet comes with a 2 years of protection plus 1 extra year at no added cost. </p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>Yes, the Q-Renew LLLT Helmet comes with a 2 years of protection plus 1 extra year at no added cost. </p>"
           }
         }
       },
@@ -930,29 +915,28 @@
         "accordion_c3YiLp",
         "accordion_fgq9EN"
       ],
-      "name": "t:sections.faq.name",
+      "name": "t:sections.n_faq.name",
       "settings": {
-        "heading": "Have questions?",
+        "use_own_file": true,
+        "heading": "<h2>Have questions?</h2>",
         "text": "",
         "button_label": "Ask us",
-        "button_url": "",
-        "terms-conditions": false,
-        "promotional_terms_and_conditions": ""
+        "button_url": ""
       }
     }
   },
   "order": [
-    "header",
-    "hair_growth_helmet_image_slider_9KL6Kj",
-    "hair_growth_helmet_banner_with_modal_BnqA3f",
+    "n_header",
+    "n_hair_growth_helmet_image_slider_9KL6Kj",
+    "n_hair_growth_helmet_banner_with_modal_BnqA3f",
     "n_expert_reviews_AR8UbM",
-    "hair_growth_helmet_feature_carousel_HtN8C4",
+    "n_hair_growth_helmet_feature_carousel_HtN8C4",
     "n_product_result_8nCd9m",
-    "carousel_jHy7Zp",
-    "hair_growth_helmet_usage_guide_HQaYec",
-    "hair_growth_helmet_product_comparison_CxQNNe",
-    "video_review_slider_p78WDL",
+    "n_features_marquee_jHy7Zp",
+    "n_hair_growth_helmet_usage_guide_HQaYec",
+    "n_hair_growth_helmet_product_comparison_CxQNNe",
+    "n_video_slider_p78WDL",
     "1773337341b2168cc6",
-    "faq_8dzUGE"
+    "n_faq_8dzUGE"
   ]
 }

@@ -494,7 +494,7 @@
         "accordion_cXNxrR",
         "accordion_aU7Aba"
       ],
-      "name": "t:sections.before-after-accordion.name",
+      "name": "t:sections.n_before-after-accordion.name",
       "settings": {
         "use_own_file": true,
         "image": "shopify://shop_images/uneven-skin-texture.webp",
@@ -535,7 +535,7 @@
         "accordion_QddmKc",
         "accordion_FjVPdm"
       ],
-      "name": "t:sections.before-after-accordion.name",
+      "name": "t:sections.n_before-after-accordion.name",
       "settings": {
         "use_own_file": true,
         "image": "shopify://shop_images/fine-line-wrinkles.webp",
@@ -576,7 +576,7 @@
         "accordion_fBfpNm",
         "accordion_pFJtgW"
       ],
-      "name": "t:sections.before-after-accordion.name",
+      "name": "t:sections.n_before-after-accordion.name",
       "settings": {
         "use_own_file": true,
         "image": "shopify://shop_images/dark-spots.webp",

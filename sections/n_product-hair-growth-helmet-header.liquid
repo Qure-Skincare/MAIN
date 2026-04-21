@@ -3,14 +3,16 @@
 {% enddoc %}
 
 {% if template.name == 'page' %}
-    {% include 'get-product-data', product_handle: 'hair-growth-helmet' %}
+    {% include 'n_get-product-data', product_handle: 'hair-growth-helmet' %}
     {% assign carousel_media = page.metafields.custom.carousel_media.value %}
 {% else %}
-    {% include 'get-product-data' %}
+    {% include 'n_get-product-data' %}
     {% assign carousel_media = product.metafields.custom.carousel_media.value %}
 {% endif %}
 
-<link rel="stylesheet" href="https://qureskincaredns.com/alex/sections/isolated/helmet-home/helmet-home.css" />
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/alex/sections/isolated/helmet-home/helmet-home.css" />
+{% endif %}
 <style>
     .save_perc {
         display:none;
@@ -46,13 +48,13 @@
                                 </div>
                             </div>
                         {% else %}
-                            {% include 'product-page-blocks-render', allowed_types: 'price' %}
+                            {% include 'n-product-page-blocks-render', allowed_types: 'price' %}
                         {% endif %}
                     </div>
 
                     {{ 'sections.hair-growth-helmet.header.benefits_html' | t }}
 
-                    {% include 'product-page-blocks-render', allowed_types: 'description,button' %}
+                    {% include 'n-product-page-blocks-render', allowed_types: 'description,button' %}
 
                     {% if section.settings.reserved == true %}
                         <div class="helmet-home__ordering">
@@ -84,8 +86,8 @@
                         {{ 'sections.hair-growth-helmet.header.info_html' | t }}
                     </div>
 
-                    {% render 'product-page-collapsed', product: product, page: page, class: 'helmet-home__according' %}
-                    {% include 'product-page-blocks-render', allowed_types: 'money-back' %}
+                    {% render 'n-product-page-collapsed', product: product, page: page, class: 'helmet-home__according' %}
+                    {% include 'n-product-page-blocks-render', allowed_types: 'money-back' %}
 
                     <div class="helmet-home__jump-to">
                         <h6>{{ 'product.settings.jumpto.header' | t }}</h6>
@@ -113,20 +115,20 @@
                         <h1 class="helmet-home__header-title">{{ section.settings.heading }}</h1>
                     {% endif %}
 
-                    {% include 'product-page-blocks-render', allowed_types: 'price' %}             
+                    {% include 'n-product-page-blocks-render', allowed_types: 'price' %}             
                 </div>
                 <div class="helmet-home__gallery">
                     <div class="swiper helmet-home__gallery-main" id="helmet-gallery">
                         <div class="swiper-wrapper">
                             {% if carousel_media != blank %}
-                                {% render 'product-page-media-carousel', input_media_carousel: carousel_media, classname: 'slide-image', size: '720x' %}
+                                {% render 'n-product-page-media-carousel', input_media_carousel: carousel_media, classname: 'slide-image', size: '720x' %}
                             {% endif %}
                         </div>
                     </div>
                     <div class="swiper helmet-home__gallery-thumbs d-md-none" id="helmet-gallery-thumbs">
                         <div class="swiper-wrapper">
                             {% if product.metafields.custom.carousel_media.value != blank %}
-                                {% render 'product-page-media-carousel', input_media_carousel: carousel_media, classname: 'slide-thumbnail', size: '240x', thumbnails: true %}
+                                {% render 'n-product-page-media-carousel', input_media_carousel: carousel_media, classname: 'slide-thumbnail', size: '240x', thumbnails: true %}
                             {% endif %}
                         </div>
                     </div>
@@ -280,8 +282,14 @@
 
 {% schema %}
 {
-    "name": "t:sections.product-hair-growth-helmet-header.name",
+    "name": "t:sections.n_product-hair-growth-helmet-header.name",
     "settings": [
+        {
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": false
+        },
         {
             "type": "text",
             "id": "seo_heading",

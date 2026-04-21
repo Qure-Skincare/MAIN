@@ -10,7 +10,7 @@
 {
   "sections": {
     "main": {
-      "type": "page-products-guide-page",
+      "type": "n_page-products-guide-page",
       "blocks": {
         "items_xBGDDp": {
           "type": "items",
