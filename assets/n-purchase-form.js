@@ -129,6 +129,10 @@ document.addEventListener('DOMContentLoaded', function() {
             el.textContent = this.getAttribute("data-pay");
         });
 
+        document.querySelectorAll('.' + __section + " .c-buy-block .pay_today").forEach(el => {
+            el.textContent = this.getAttribute("data-pay");
+        });
+
         const chosenImg = document.querySelector('.' + __section + " #purchase_form_image");
 
         if(this.getAttribute("data-image")) {
