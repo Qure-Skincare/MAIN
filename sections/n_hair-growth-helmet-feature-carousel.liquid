@@ -2,7 +2,9 @@
     Renders a feature carousel section for hair growth helmet page.
 {% enddoc %}
 
-<link rel="stylesheet" href="https://qureskincaredns.com/alex/sections/isolated/why-carousel/why-carousel.css" />
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/alex/sections/isolated/why-carousel/why-carousel.css" />
+{% endif %}
 <div class="qure__section why-carousel" id="why-carousel">
     <div class="container">
         <div class="why-carousel__content">
@@ -58,8 +60,14 @@
 
 {%  schema  %}
 {
-  "name": "t:sections.hair-growth-helmet-feature-carousel.name",
+  "name": "t:sections.n_hair-growth-helmet-feature-carousel.name",
   "settings": [
+    {
+        "type": "checkbox",
+        "id": "use_own_file",
+        "label": "t:common.use-own-file",
+        "default": false
+    },
     {
         "type": "text",
         "id": "heading",

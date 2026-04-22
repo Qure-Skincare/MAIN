@@ -119,7 +119,7 @@
         "carousel_A33Mxb",
         "carousel_FVFUFG"
       ],
-      "name": "t:sections.logos.name",
+      "name": "t:sections.n_logos.name",
       "settings": {
         "use_own_file": true
       }
