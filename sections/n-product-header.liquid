@@ -4,7 +4,9 @@
 
 {% include 'get-product-data' %}
 
-<link rel="stylesheet" href="https://qureskincaredns.com/sections/new/hero-product/hero-product.css" />
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/hero-product/hero-product.css" />
+{% endif %}
 <section class="hero-product" id="hero-product">
     <div class="hero-product__container container">
         <div class="hero-product__gallery">
@@ -101,6 +103,12 @@
             "type": "url",
             "id": "button-url",
             "label": "t:common.button-url"
+        },
+        {
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": false
         }
     ],
     "blocks": [

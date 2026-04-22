@@ -95,7 +95,8 @@
         "reserved": false,
         "soldout": false,
         "button-label": "",
-        "button-url": ""
+        "button-url": "",
+        "use_own_file": true
       }
     },
     "purchase-form-landing": {
@@ -320,7 +321,6 @@
       "settings": {
         "use_own_file": true,
         "background_color": "none",
-        "modifier": "none",
         "heading": "<h2>Trusted and Recommended by Experts</h2>",
         "text": "<p>“Dermal Mist is great for use after the gym, but the best use of hypocholorus acid is in combination with Qure’s Micro-Infusion. <em>Dermal Mist preps your skin, allowing  ingredients placed on top to penetrate your skin even further.</em>”</p>",
         "video_image_cover": "shopify://shop_images/dr_shah_max.webp",
