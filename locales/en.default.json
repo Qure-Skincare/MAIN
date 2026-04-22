@@ -309,7 +309,33 @@
         "low-stock-text": "Due to high demand, this offer is only available while stock lasts.",
         "order-today": " Order today to lock in your deal and get FREE Shipping",
         "button-label": "Shop Now & Save $299",
-        "guarantee-text": "90-Day Money-Back Guarantee",
+        "guarantee-text": "1-Year Guarantee",
+        "shipping-text": "Free US Shipping over $100",
+        "free": "FREE",
+        "discount-text": "% OFF",
+        "sold": "Sold",
+        "percent": "82%"
+      }
+    },
+    "n_page-led-mask-offer-2-led-mask-form": {
+      "settings": {
+        "limited": "EXCLUSIVE OFFER",
+        "header": "Q-Rejuvalight Pro LED Mask",
+        "subheader": "+ FREE Neck & Décolletage LED System",
+        "warranty": "1 Year Warranty",
+        "fda": "FDA Cleared",
+        "text": "Elevate your LED routine with full face and neck coverage for consistent all-over results.",
+        "included": "What’s Included:",
+        "product1-header": "Q-Rejuvalight Pro LED Mask",
+        "product1-description": "FDA-cleared device that treats acne, fine lines, wrinkles and dark spots.",
+        "product2-header": "Neck & Décolletage LED System",
+        "product2-description": "Clinically studied wavelengths shown to visibly smooth and firm.",
+        "instant-saving": "INSTANT SAVINGS:",
+        "low-stock": "Low Stock",
+        "low-stock-text": "Due to high demand, this offer is only available while stock lasts.",
+        "order-today": " Order today to lock in your deal and get FREE Shipping",
+        "button-label": "Shop Now & Save $299",
+        "guarantee-text": "1-Year Guarantee",
         "shipping-text": "Free US Shipping over $100",
         "free": "FREE",
         "discount-text": "% OFF",
@@ -417,7 +443,8 @@
         "recommended_html": "<strong>50+ Board Certified Dermatologists</strong> recommend Qure to their patients. <a href='https://qureskincare.com/pages/derm-reviews' class='text-black text-decoration-underline'>See More</a>.",
         "guaranteed_text": "30-Day Money-Back Guarantee",
         "guaranteed_text_90": "90-Day Money-Back Guarantee",
-        "shipping_text": "Free US Shipping over $100"
+        "shipping_text": "Free US Shipping over $100",
+        "one-year_text": "1-Year Guarantee"
       },
       "saveup-offer": {
         "heading_html": "<p>Save up to <strong>57%</strong> with our curated bundles</p>",
@@ -479,6 +506,9 @@
       },
       "reviews-videos": {
         "header": "Hear What People Are Saying About Qure"
+      },
+      "approved-by": {
+        "text_html": "Approved by <strong>Dr. Shah</strong> & <strong>Dr. Maxfield</strong>"
       }
     }
   },

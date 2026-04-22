@@ -117,7 +117,8 @@
         "reserved": false,
         "soldout": false,
         "button-label": "",
-        "button-url": ""
+        "button-url": "",
+        "use_own_file": true
       }
     },
     "n_press_reviews_gzTQ6b": {
@@ -332,7 +333,6 @@
       "settings": {
         "use_own_file": true,
         "background_color": "none",
-        "modifier": "none",
         "heading": "<h2>Trusted and Recommended by Experts</h2>",
         "text": "<p>“LED light targets the skin’s surface to <em>help improve the look of firmness and smoothness</em><em><strong>,</strong></em> supporting a more youthful appearance over time.”</p>",
         "video_image_cover": "shopify://shop_images/n-d-doctors.webp",
