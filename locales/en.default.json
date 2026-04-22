@@ -287,7 +287,7 @@
         "dermatologist": "Dermatologist Reviewed",
         "shipping": "Free US Shipping over $100",
         "science": "Backed by Science",
-        "discount_text": "OFF",
+        "discount_text": "42% OFF",
         "more_details_html": "<strong class='fw-600'>Skip pause/modify or cancel anytime.</strong> <br> <a href='/pages/subscriptions' class='text-black text-decoration-underline'> See more details</a>."
       }
     },
@@ -312,7 +312,7 @@
         "guarantee-text": "1-Year Guarantee",
         "shipping-text": "Free US Shipping over $100",
         "free": "FREE",
-        "discount-text": "% OFF",
+        "discount-text": "42% OFF",
         "sold": "Sold",
         "percent": "82%"
       }
@@ -338,7 +338,7 @@
         "guarantee-text": "1-Year Guarantee",
         "shipping-text": "Free US Shipping over $100",
         "free": "FREE",
-        "discount-text": "% OFF",
+        "discount-text": "42% OFF",
         "sold": "Sold",
         "percent": "82%"
       }
