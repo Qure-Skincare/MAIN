@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "page_header_6BFNQx": {
       "type": "n-product-header",
@@ -27,23 +27,18 @@
             "image_product1": "shopify://shop_images/Img_50.png",
             "product2": "neck-decolletage-led",
             "image_product2": "shopify://shop_images/Frame_1073714744.png",
-            "text": "<p>Buy the Q-Rejuvalight Pro and get the Neck & Décolletage LED System for FREE (value $299)</p>"
+            "text": "<p>Buy the Q-Rejuvalight Pro and get the Neck & Décolletage LED System for FREE (value $299)</p>",
+            "guarantee_period": "year"
           }
-        },
-        "approved_by_zN3pYg": {
-          "type": "approved-by",
-          "settings": {}
         }
       },
       "block_order": [
         "description_iSDNaK",
         "link_iPBNaS",
-        "exclusive-offer_iaSzaK",
-        "approved_by_zN3pYg"
+        "exclusive-offer_iaSzaK"
       ],
-      "name": "t:sections.n_product-header.name",
+      "name": "t:sections.page-header.name",
       "settings": {
-        "use_own_file": true,
         "seo_heading": "",
         "heading": "Feel Confident Makeup-Free with Q-Rejuvalight Pro",
         "rating": false,
@@ -51,6 +46,7 @@
         "description": "<ul><li>FDA-cleared device designed to treat wrinkles and mild-to-moderate inflammatory acne.</li><li>Quick & convenient 3-minute wireless treatments</li><li>Customize, track & schedule treatments with app</li></ul>",
         "reserved": false,
         "soldout": false,
+        "approved": true,
         "button-label": "Shop Now & Save $299",
         "button-url": "#buy-form"
       }
@@ -678,7 +674,7 @@
         "txt_t2_f",
         "txt_t2_g"
       ],
-      "name": "t:sections.n_page-led-mask-offer-2-exclusive-bundle.name",
+      "name": "Exclusive bundle",
       "settings": {
         "use_own_file": true,
         "badge": "<p><strong>Exclusive</strong> Bundle</p>",
@@ -687,8 +683,8 @@
       }
     },
     "page_led_mask_offer_2_led_mask_offer_QgKWfH": {
-      "type": "n_page-led-mask-offer-2-led-mask-form",
-      "name": "t:sections.n_page-led-mask-offer-2-led-mask-form.name",
+      "type": "page-led-mask-offer-2-led-mask-form",
+      "name": "t:sections.led-mask-offer.name",
       "settings": {}
     },
     "n_features_marquee_4YPxHy": {
@@ -1095,7 +1091,7 @@
     },
     "n_page-led-mask-offer-2-faq_led_mask_offer_2": {
       "type": "n_page-led-mask-offer-2-faq",
-      "name": "t:sections.n_page-led-mask-offer-2-faq.name",
+      "name": "t:sections.n_faq.name",
       "settings": {
         "use_own_file": true
       }

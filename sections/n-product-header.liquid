@@ -13,6 +13,9 @@
             {% render 'n-product-page-slider-sticky-video', section: section %}
         </div>
         <div class="hero-product__main">
+
+            {% render 'n-product-page-approved', section: section %}
+
             {%- if product != blank -%}
                 {% if section.settings.rating != blank %}
                     {% render 'n-product-rating', product: product %}
@@ -96,6 +99,12 @@
             "type": "url",
             "id": "button-url",
             "label": "t:common.button-url"
+        },
+        {
+            "type": "checkbox",
+            "id": "approved",
+            "label": "t:common.approved-by",
+            "default": false
         }
     ],
     "blocks": [
@@ -224,6 +233,22 @@
                     "type": "richtext",
                     "id": "text",
                     "label": "t:common.text"
+                },
+                {
+                    "type": "select",
+                    "id": "guarantee_period",
+                    "label": "t:common.guarantee_period",
+                    "options": [
+                        {
+                            "value": "30",
+                            "label": "t:common.30_days"
+                        },
+                        {
+                            "value": "year",
+                            "label": "t:common.year"
+                        }
+                    ],
+                    "default": "30"
                 }
             ]
         },
