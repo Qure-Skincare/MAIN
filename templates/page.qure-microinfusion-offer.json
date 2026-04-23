@@ -72,7 +72,7 @@
     "n_trusted_recommended_MlYLp4": {
       "type": "n_trusted-recommended",
       "disabled": true,
-      "name": "t:sections.n_trusted-recommended.name",
+      "name": "t:sections.trusted-recommended.name",
       "settings": {
         "use_own_file": true,
         "background_color": "none",
@@ -127,7 +127,7 @@
         "accordion_iqfLXM",
         "accordion_QkymPk"
       ],
-      "name": "t:sections.n_our-advisors.name",
+      "name": "t:sections.our-advisors.name",
       "settings": {
         "use_own_file": true,
         "text": "<h2>Trusted and Recommended by Skin Experts</h2>"
@@ -135,7 +135,7 @@
     },
     "n_base_section_3uBXrT": {
       "type": "n_base-section",
-      "name": "t:sections.n_base-section.name",
+      "name": "t:sections.banner-with-text.name",
       "settings": {
         "use_own_file": true,
         "modifier": "reverse",
@@ -190,7 +190,7 @@
         "content_XrJqFM",
         "content_cQLdrN"
       ],
-      "name": "t:sections.n_achievement-goals.name",
+      "name": "t:sections.beauty-benefits.name",
       "settings": {
         "use_own_file": true,
         "heading": "<h2>Achieve your skincare goals</h2>"
@@ -273,7 +273,7 @@
         "text_with_progress_3wQ6gt"
       ],
       "disabled": true,
-      "name": "t:sections.n_base-section.name",
+      "name": "t:sections.banner-with-text.name",
       "settings": {
         "use_own_file": true,
         "modifier": "reverse",
@@ -363,7 +363,7 @@
         "buy_button_xzUU6n"
       ],
       "disabled": true,
-      "name": "t:sections.n_base-section.name",
+      "name": "t:sections.banner-with-text.name",
       "settings": {
         "use_own_file": true,
         "modifier": "none",
@@ -545,7 +545,7 @@
         "slider_fy9Whb",
         "slider_eMVGVa"
       ],
-      "name": "t:sections.n_video-slider.name",
+      "name": "t:sections.video-slider.name",
       "settings": {
         "use_own_file": true,
         "modifier": "three_cards",
@@ -712,7 +712,7 @@
         "slider_6tprhW",
         "slider_9NRFNC"
       ],
-      "name": "t:sections.n_trusted-reviews.name",
+      "name": "t:sections.trusted-reviews.name",
       "settings": {
         "use_own_file": true,
         "background_color": "none",
@@ -821,7 +821,7 @@
         "right_column_5"
       ],
       "disabled": true,
-      "name": "t:sections.n_comparison.name",
+      "name": "t:sections.compare.name",
       "settings": {
         "use_own_file": true,
         "text": "<h2>Typically a more hygienic option than re-usable at-home rollers when used as directed</h2><p>Unlike at-home needle roller devices, Micro-Infusion requires little to no downtime, is virtually painless, and minimizes risk of infection and irritation.</p>"
@@ -926,7 +926,7 @@
         "comparison_table_3",
         "disclaimer_1"
       ],
-      "name": "t:sections.n_comparison-table.name",
+      "name": "t:sections.device-comparison-1.name",
       "settings": {
         "use_own_file": true,
         "text": "<h2>Get a professional-inspired glow from home without the clinic visit</h2>"
@@ -965,7 +965,7 @@
         "list_q4irTP",
         "list_MRCUbi"
       ],
-      "name": "t:sections.n_easy-steps.name",
+      "name": "t:sections.how-to-use.name",
       "settings": {
         "use_own_file": true,
         "modifier": "none",

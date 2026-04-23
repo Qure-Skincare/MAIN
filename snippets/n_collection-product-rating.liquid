@@ -13,5 +13,5 @@
 
 <div class="c-product-tile__rating">
     <div class="e-rating-stars" style="--rating: {% if show_rating != blank %}{{ show_rating }}{% else %}0{% endif %}"></div>
-    <a href="{{ product.url }}">{% if rating_count != blank %}{{ rating_count }} {{ 'sections.n_collection.reviews' | t }}{% else %}0 {{ 'sections.n_collection.reviews' | t }}{% endif %}</a>
+    <a href="{{ product.url }}">{% if rating_count != blank %}{{ rating_count }} Reviews{% else %}0 Reviews{% endif %}</a>
 </div>

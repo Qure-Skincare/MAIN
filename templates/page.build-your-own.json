@@ -316,6 +316,83 @@
         "heading": "Skincare"
       }
     },
+    "bf_bundle_bunner_mini_JhrEmz": {
+      "type": "bf-bundle-banner-mini",
+      "blocks": {
+        "image_rATyPJ": {
+          "type": "image",
+          "settings": {
+            "percent_value": "57%",
+            "image": "shopify://shop_images/bundle-mini-1.webp"
+          }
+        },
+        "image_dicxDW": {
+          "type": "image",
+          "settings": {
+            "percent_value": "",
+            "image": "shopify://shop_images/bundle-mini-2.webp"
+          }
+        },
+        "image_wCgyfh": {
+          "type": "image",
+          "settings": {
+            "percent_value": "",
+            "image": "shopify://shop_images/bundle-mini-3.webp"
+          }
+        }
+      },
+      "block_order": [
+        "image_rATyPJ",
+        "image_dicxDW",
+        "image_wCgyfh"
+      ],
+      "disabled": true,
+      "name": "t:sections.bf-bundle-banner-mini.name",
+      "settings": {
+        "heading": "<h3>Save Up to 57%</h3>",
+        "text": "<p>Your Favorite Products, Perfectly Bundled</p>",
+        "button_url": "https://qureskincare.com/pages/exclusive-holiday-bundle-deal-new",
+        "button_label": "Shop Bundles Now"
+      }
+    },
+    "bf_bundle_banner_dTU6Q7": {
+      "type": "bf-bundle-banner",
+      "blocks": {
+        "carousel_rRrz43": {
+          "type": "carousel",
+          "settings": {
+            "heading": "<h3>Celebrating the [logo] Community</h3>",
+            "text": "<p>Every purchase* enters you to <strong>win</strong> <strong>a 2025 Range Rover Evoque</strong></p>",
+            "percent_value": "",
+            "image": "shopify://shop_images/bundle-2.webp",
+            "image_mobile": "shopify://shop_images/bundle-2-mob.webp",
+            "button_label": "Shop To Enter",
+            "button_url": "https://qureskincare.com/pages/car-giveaway",
+            "sub_text": ""
+          }
+        },
+        "carousel_bjazym": {
+          "type": "carousel",
+          "settings": {
+            "heading": "<h3>Your Holiday Glow Starts Here</h3>",
+            "text": "<p>Our signature treatment in one carry-on approved set.</p>",
+            "percent_value": "68%",
+            "image": "shopify://shop_images/bundle-1.webp",
+            "image_mobile": "shopify://shop_images/bundle-1-mob.webp",
+            "button_label": "Get Yours Now",
+            "button_url": "https://qureskincare.com/products/micro-infusion-limited-edition-bundle-1",
+            "sub_text": "<p><strong>Limited availability:</strong> Under 100 cases remaining</p>"
+          }
+        }
+      },
+      "block_order": [
+        "carousel_rRrz43",
+        "carousel_bjazym"
+      ],
+      "disabled": true,
+      "name": "t:sections.bf-bundle-banner.name",
+      "settings": {}
+    },
     "trusted_reviews_mRLHtt": {
       "type": "trusted-reviews",
       "blocks": {
@@ -377,6 +454,31 @@
         "button_url": ""
       }
     },
+    "quiz_DfRXwD": {
+      "type": "quiz",
+      "blocks": {
+        "take_quiz_xbNNGM": {
+          "type": "take_quiz",
+          "settings": {
+            "heading": "Take The Quiz",
+            "text": "<p>Then get a custom skincare plan, backed by science.</p>",
+            "image_text": "<p>Only takes 60 seconds</p>",
+            "button-label": "Take The Quiz",
+            "button-url": "https://qureskincare.com/pages/skin-consultation"
+          }
+        }
+      },
+      "block_order": [
+        "take_quiz_xbNNGM"
+      ],
+      "disabled": true,
+      "name": "t:sections.quiz.name",
+      "settings": {
+        "heading": "Unlock Your Personalized Skincare Routine",
+        "text": "<p>You don’t have time for products that don’t work. We’ll prescribe you a personalized routine with clinically proven products and tips - just for your skin.</p>",
+        "sub_text": "Here’s your personalized skincare routine…"
+      }
+    },
     "sticky-cta-build-your-own": {
       "type": "sticky-cta-build-your-own",
       "name": "t:sections.static-sticky-cta.name",
@@ -391,7 +493,10 @@
     "byo_fXMjk2",
     "byo_fXMjk3",
     "byo_fXMjk4",
+    "bf_bundle_bunner_mini_JhrEmz",
+    "bf_bundle_banner_dTU6Q7",
     "trusted_reviews_mRLHtt",
+    "quiz_DfRXwD",
     "sticky-cta-build-your-own"
   ]
 }

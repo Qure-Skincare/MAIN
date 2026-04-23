@@ -2,9 +2,7 @@
     Renders a results slider section.
 {% enddoc %}
 
-{% if section.settings.use_own_file %}
-    <link rel="stylesheet" href="https://qureskincaredns.com/alex/sections/isolated/section-half-slider/section-half-slider.css">
-{% endif %}
+<link rel="stylesheet" href="https://qureskincaredns.com/alex/sections/isolated/section-half-slider/section-half-slider.css">
 <div class="section-half-slider backed-by-real-results" id="backed-by-real-results">
     <div class="section-half-slider__content">
         <div class="section-half-slider__header">
@@ -76,14 +74,8 @@
 
 {%  schema  %}
 {
-  "name": "t:sections.n_results-slider.name",
+  "name": "t:sections.results-slider.name",
   "settings": [
-    {
-        "type": "checkbox",
-        "id": "use_own_file",
-        "label": "t:common.use-own-file",
-        "default": false
-    },
     {
         "type": "richtext",
         "id": "heading",
@@ -136,7 +128,7 @@
   ],
   "presets": [
     {
-        "name": "t:sections.n_results-slider.name"
+        "name": "t:sections.results-slider.name"
     }
   ]
 }

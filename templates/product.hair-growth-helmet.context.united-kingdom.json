@@ -11,5 +11,13 @@
   "context": {
     "market": "united-kingdom"
   },
-  "parent": "product.hair-growth-helmet.json"
+  "parent": "product.hair-growth-helmet.json",
+  "sections": {
+    "header": {
+      "settings": {
+        "soldout": true
+      },
+      "blocks": {}
+    }
+  }
 }

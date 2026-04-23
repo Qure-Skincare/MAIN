@@ -320,26 +320,8 @@
         "announcement-bar": {
             "name": "Announcement bar"
         },
-        "n_404": {
-            "name": "404"
-        },
         "n_accordion-tiles": {
             "name": "Accordion tiles"
-        },
-        "n_before-after-accordion": {
-            "name": "Before after accordion"
-        },
-        "n_blog-related-posts": {
-            "name": "Blog related posts"
-        },
-        "n_our-advisors": {
-            "name": "Our advisors"
-        },
-        "n_page-led-mask-offer-2-across-image-banner": {
-            "name": "LED mask offer — banner"
-        },
-        "n_page-led-mask-offer-2-faq": {
-            "name": "LED mask offer — FAQ"
         },
         "n_across-image-banner": {
             "name": "Across image banner",
@@ -552,9 +534,6 @@
                     "grey": "Grey"
                 }
             }
-        },
-        "n_product-you-may-also-like": {
-            "name": "Product you may also like"
         },
         "n_why-it-works": {
             "name": "Why it works",
@@ -806,22 +785,22 @@
         "bf-page-banner": {
             "name": "Black Friday page banner"
         },
-        "n_product-hair-growth-helmet-header": {
+        "product-hair-growth-helmet-header": {
             "name": "Helmet header"
         },
-        "n_hair-growth-helmet-image-slider": {
+        "hair-growth-helmet-image-slider": {
             "name": "Image slider for hair growth helmet"
         },
-        "n_hair-growth-helmet-banner-with-modal": {
+        "hair-growth-helmet-banner-with-modal": {
             "name": "Banner with modal for hair growth helmet"
         },
-        "n_hair-growth-helmet-feature-carousel": {
+        "hair-growth-helmet-feature-carousel": {
             "name": "Feature carousel for hair growth helmet"
         },
-        "n_hair-growth-helmet-usage-guide": {
+        "hair-growth-helmet-usage-guide": {
             "name": "Usage guide for hair growth helmet"
         },
-        "n_hair-growth-helmet-product-comparison": {
+        "hair-growth-helmet-product-comparison": {
             "name": "Product comparison for hair growth helmet",
             "blocks": {
                 "header-prof": {
@@ -853,7 +832,7 @@
                 }    
             }
         },
-        "n_results-slider": {
+        "results-slider": {
             "name": "Results slider"
         },
         "n_returns-exchanges-tiles-group": {
