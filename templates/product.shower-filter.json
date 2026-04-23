@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
     "product_header_prNYyf": {
       "type": "n-product-header",
@@ -95,7 +95,6 @@
       ],
       "name": "t:sections.product-header.name",
       "settings": {
-        "use_own_file": true,
         "seo_heading": "SHOWER FILTER",
         "heading": "Save your hair and skin from dryness and irritation",
         "rating": true,
@@ -104,7 +103,8 @@
         "reserved": false,
         "soldout": false,
         "button-label": "",
-        "button-url": ""
+        "button-url": "",
+        "use_own_file": true
       }
     },
     "purchase-form-landing": {
@@ -605,7 +605,6 @@
       "settings": {
         "use_own_file": true,
         "background_color": "none",
-        "modifier": "none",
         "heading": "<h2>Trusted and Recommended by Experts</h2>",
         "text": "<p>“How do you <em>reduce the things in your water that may be causing issues</em> with your skin?<br/><br/>This Qure filter is incredible – it’s <em>the only filter I personally use to</em> [reduce] chlorine and anything else that’s going to make your water harsh for your skin.”</p>",
         "video_image_cover": "shopify://shop_images/doctor_img_1.png",
