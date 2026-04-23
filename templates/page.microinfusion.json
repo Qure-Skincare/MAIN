@@ -375,8 +375,7 @@
         "form_name": "purchase-form-landing",
         "hide_types": false,
         "type": "box",
-        "klaviyo_form_name": "",
-        "guarantee_period": "90"
+        "klaviyo_form_name": ""
       }
     },
     "n_press_reviews_3zGerf": {
@@ -1814,8 +1813,7 @@
         "text": "All orders are one-time purchases. No extra charges, and no hidden fees.",
         "image": "shopify://shop_images/tami-cropped.webp",
         "klaviyo_form_name": "",
-        "form_name": "purchase-form-second",
-        "guarantee_period": "90"
+        "form_name": "purchase-form-second"
       }
     },
     "n_text_YpMGMC": {

@@ -31,7 +31,7 @@
                     {% render 'n-purchase-form-payments' section: section %}
                 </div>
                 <div class="treatment__buy">
-                    {% render 'n-product-page-buy-button', product_price: null, product_variant_id: null, section: section, product_available: true %}
+                    {% render 'n-product-page-buy-button', product_price: null, product_variant_id: null, section: null, product_available: true %}
                 </div>
             </div>
         </div>
@@ -112,22 +112,6 @@
             "id": "form_name",
             "label": "t:sections.purchase-form.settings.form_name",
             "default": "purchase-form"
-        },
-        {
-            "type": "select",
-            "id": "guarantee_period",
-            "label": "t:common.guarantee_period",
-            "options": [
-                {
-                    "value": "30",
-                    "label": "t:common.30_days"
-                },
-                {
-                    "value": "90",
-                    "label": "t:common.90_days"
-                }
-            ],
-            "default": "30"
         }
     ],
     "blocks":[
