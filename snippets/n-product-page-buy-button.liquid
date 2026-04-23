@@ -66,9 +66,9 @@
         <button type="{% if soldout %}button{% else %}submit{% endif %}" class="btn btn--primary add-cart-button{% if skip_black_friday_label == true %} skip_black_friday_label{% endif %}"{% if soldout %} disabled{% endif %}{% if close_modal %} data-bs-toggle="modal"{% endif %}>{{ button-label }}</button>
         <input type="hidden" name="quantity" id="quantity" value="1">
         <input type="hidden" name="selling_plan" id="selling_plan" value="">
-        <input type="hidden" name="id" value="{{ product_variant_id }}">
+        <input type="hidden" name="id" value="{{ product_variant_id }}">    
       </form>
-      
+
       {% unless block.settings.hide_payments %}
           <div class="e-pay-options">
               {{ 'product.settings.buy-button-bottom.heading_html' | t: product_price_divided: product_price_divided }}

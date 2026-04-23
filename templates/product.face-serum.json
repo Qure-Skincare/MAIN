@@ -94,8 +94,7 @@
         "jumpto_hQdAPf"
       ],
       "name": "t:sections.product-header.name",
-      "settings": { 
-        "use_own_file": true,
+      "settings": {
         "seo_heading": "ANTI-AGING & ALL-IN-ONE SERUM",
         "heading": "Embrace ageless confidence with All-In-One Face Serum",
         "rating": true,

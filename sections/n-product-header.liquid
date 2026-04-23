@@ -4,9 +4,7 @@
 
 {% include 'get-product-data' %}
 
-{% if section.settings.use_own_file %}
-    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/hero-product/hero-product.css" />
-{% endif %}
+<link rel="stylesheet" href="https://qureskincaredns.com/sections/new/hero-product/hero-product.css" />
 <section class="hero-product" id="hero-product">
     <div class="hero-product__container container">
         <div class="hero-product__gallery">
@@ -23,15 +21,10 @@
                 {% render 'n-page-rating', section: section %}
             {%- endif -%}
 
+
             {% if section.settings.seo_heading != blank %}
                 <p>{{ section.settings.seo_heading }}</p>
             {% endif %}
-
-            {% for block in section.blocks %}
-                {% if block.type == 'approved-by' %}
-                    {% render 'n_product-approved-by', section: section, block: block %}
-                {% endif %}
-            {% endfor %}
 
             {% if section.settings.heading != blank %}
                 <h1>{{ section.settings.heading }}</h1>
@@ -53,7 +46,7 @@
 
 {% schema %}
 {
-    "name": "t:sections.n_product-header.name",
+    "name": "t:sections.product-header.name",
     "settings": [
         {
             "type": "text",
@@ -103,12 +96,6 @@
             "type": "url",
             "id": "button-url",
             "label": "t:common.button-url"
-        },
-        {
-            "type": "checkbox",
-            "id": "use_own_file",
-            "label": "t:common.use-own-file",
-            "default": false
         }
     ],
     "blocks": [
@@ -273,19 +260,13 @@
                 {
                     "type": "checkbox",
                     "id": "hide_payments",
-                    "label": "t:common.hide-payments",
+                    "label": "t:common.hide_payments",
                     "default": false
                 },
                 {
                     "type": "checkbox",
                     "id": "hide_bottom",
-                    "label": "t:common.hide-bottom",
-                    "default": false
-                },
-                {
-                    "type": "checkbox",
-                    "id": "hide_payments_methods",
-                    "label": "t:common.hide-payments-methods",
+                    "label": "t:common.hide_bottom",
                     "default": false
                 }
             ]
@@ -367,17 +348,11 @@
                     "label": "t:common.video-url"
                 }
             ]
-        },
-        {
-            "type": "approved-by",
-            "name": "t:common.approved-by",
-            "limit": 1,
-            "settings": []
         }
     ],
     "presets": [
         {
-        "name": "t:sections.n_product-header.name"
+        "name": "t:sections.product-header.name"
         }
     ]
 }

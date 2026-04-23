@@ -301,11 +301,7 @@
         "save": "Save",
         "am-or-pm": "AM or PM",
         "eye": "Eye",
-        "share": "Share",
-        "one-year": "One year",
-        "hide-payments": "Hide payments",
-        "hide-bottom": "Hide bottom",
-        "hide-payments-methods": "Hide payments methods"
+        "share": "Share"
     },
     "blocks": {
         "block-card": {
@@ -1045,9 +1041,6 @@
         "led-mask-offer": {
             "name": "LED mask offer"
         },
-        "n_page-led-mask-offer-2-led-mask-form": {
-            "name": "N LED mask offer"
-        },
         "benefits-with-icons": {
             "name": "Benefits with icons"
         },
@@ -1243,9 +1236,6 @@
         },
         "product-header": {
             "name": "Product header"
-        },
-        "n_product-header": {
-            "name": "N Product header"
         },
         "page-header": {
             "name": "Page header"
