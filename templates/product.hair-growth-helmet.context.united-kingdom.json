@@ -13,7 +13,7 @@
   },
   "parent": "product.hair-growth-helmet.json",
   "sections": {
-    "header": {
+    "n_header": {
       "settings": {
         "soldout": true
       },
