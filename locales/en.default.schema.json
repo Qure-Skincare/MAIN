@@ -323,6 +323,24 @@
         "announcement-bar": {
             "name": "Announcement bar"
         },
+        "n_404": {
+            "name": "404"
+        },
+        "n_before-after-accordion": {
+            "name": "Before after accordion"
+        },
+        "n_blog-related-posts": {
+            "name": "Blog related posts"
+        },
+        "n_our-advisors": {
+            "name": "Our advisors"
+        },
+        "n_page-led-mask-offer-2-across-image-banner": {
+            "name": "LED mask offer — banner"
+        },
+        "n_page-led-mask-offer-2-faq": {
+            "name": "LED mask offer — FAQ"
+        },
         "n_accordion-tiles": {
             "name": "Accordion tiles"
         },
@@ -537,6 +555,9 @@
                     "grey": "Grey"
                 }
             }
+        },
+        "n_product-you-may-also-like": {
+            "name": "Product you may also like"
         },
         "n_why-it-works": {
             "name": "Why it works",
@@ -788,20 +809,67 @@
         "bf-page-banner": {
             "name": "Black Friday page banner"
         },
+        "n_product-hair-growth-helmet-header": {
+            "name": "N Helmet header"
+        },
         "product-hair-growth-helmet-header": {
             "name": "Helmet header"
+        },
+        "n_hair-growth-helmet-image-slider": {
+            "name": "N Image slider for hair growth helmet"
         },
         "hair-growth-helmet-image-slider": {
             "name": "Image slider for hair growth helmet"
         },
+        "n_hair-growth-helmet-banner-with-modal": {
+            "name": "N Banner with modal for hair growth helmet"
+        },
         "hair-growth-helmet-banner-with-modal": {
             "name": "Banner with modal for hair growth helmet"
+        },
+        "n_hair-growth-helmet-feature-carousel": {
+            "name": "N Feature carousel for hair growth helmet"
         },
         "hair-growth-helmet-feature-carousel": {
             "name": "Feature carousel for hair growth helmet"
         },
+        "n_hair-growth-helmet-usage-guide": {
+            "name": "N Usage guide for hair growth helmet"
+        },
         "hair-growth-helmet-usage-guide": {
             "name": "Usage guide for hair growth helmet"
+        },
+        "n_hair-growth-helmet-product-comparison": {
+            "name": "N Product comparison for hair growth helmet",
+            "blocks": {
+                "header-prof": {
+                    "name": "Header for iRestore Professional"
+                },
+                "header-hair-growth": {
+                    "name": "Header for CurrentBody Hair Growth Helmet"
+                },
+                "header-red-light-hat": {
+                    "name": "Header for HigherDose Red Light Hat"
+                },    
+                "text-prof": {
+                    "name": "Text for iRestore Professional"
+                },
+                "text-hair-growth": {
+                    "name": "Text for CurrentBody Hair Growth Helmet"
+                },
+                "text-red-light-hat": {
+                    "name": "Text for HigherDose Red Light Hat"
+                },
+                "compare-prof": {
+                    "name": "Compare iRestore Professional"
+                },
+                "compare-hair-growth": {
+                    "name": "Compare CurrentBody Hair Growth Helmet"
+                },
+                "compare-red-light-hat": {
+                    "name": "Compare HigherDose Red Light Hat"
+                }    
+            }
         },
         "hair-growth-helmet-product-comparison": {
             "name": "Product comparison for hair growth helmet",
@@ -837,6 +905,9 @@
         },
         "results-slider": {
             "name": "Results slider"
+        },
+        "n_results-slider": {
+            "name": "N Results slider"
         },
         "n_returns-exchanges-tiles-group": {
             "name": "Tiles group"
