@@ -46,9 +46,9 @@
         "description": "<ul><li>FDA-cleared device designed to treat wrinkles and mild-to-moderate inflammatory acne.</li><li>Quick & convenient 3-minute wireless treatments</li><li>Customize, track & schedule treatments with app</li></ul>",
         "reserved": false,
         "soldout": false,
-        "approved": true,
         "button-label": "Shop Now & Save $299",
-        "button-url": "#buy-form"
+        "button-url": "#buy-form",
+        "approved": true
       }
     },
     "n_logos_GdDRJU": {
@@ -677,7 +677,7 @@
       "name": "Exclusive bundle",
       "settings": {
         "use_own_file": true,
-        "badge": "<p><strong>Exclusive</strong> Bundle</p>",
+        "badge": "<p><strong>Mother's Day</strong> Offer</p>",
         "heading": "<p>Experience face and neck rejuvenation in one bundle</p>",
         "tabs_heading": "<p>Includes 2 LED Devices:</p>"
       }
