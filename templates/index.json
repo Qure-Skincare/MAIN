@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "n_index-quick-links": {
       "type": "n_index-quick-links",
@@ -79,13 +79,14 @@
         "slider_EhyeaX"
       ],
       "disabled": true,
+      "name": "t:sections.n_index-quick-links.name",
       "settings": {
         "use_own_file": true
-      },
-      "name": "t:sections.n_index-quick-links.name"
+      }
     },
     "n_across_image_banner_TNGNLJ": {
       "type": "n_across-image-banner",
+      "disabled": true,
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
         "use_own_file": true,
@@ -111,7 +112,6 @@
       "block_order": [
         "badge_NVnWab"
       ],
-      "disabled": true,
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
         "use_own_file": true,
@@ -121,7 +121,7 @@
         "image": "shopify://shop_images/mothers-day.webp",
         "image_mobile": "shopify://shop_images/mothers-day-mob.webp",
         "button_label": "Buy Now & Save $299",
-        "button_url": "#"
+        "button_url": "https://qureskincare.com/pages/q-rejuvalight-pro-offer"
       }
     },
     "n_index-quick-title-links": {
@@ -190,10 +190,10 @@
         "item5",
         "item4"
       ],
+      "name": "t:sections.n_index-quick-title-links.name",
       "settings": {
         "use_own_file": true
-      },
-      "name": "t:sections.n_index-quick-title-links.name"
+      }
     },
     "n_press_reviews_KgaUTN": {
       "type": "n_press-reviews",
@@ -448,11 +448,11 @@
         "hover_image_hm3rHW",
         "hover_image_kQWMy8"
       ],
+      "name": "t:sections.n_index-top-rated.name",
       "settings": {
         "use_own_file": true,
         "heading": "Top Rated Products"
-      },
-      "name": "t:sections.n_index-top-rated.name"
+      }
     },
     "n_index-get-qure": {
       "type": "n_index-get-qure",
