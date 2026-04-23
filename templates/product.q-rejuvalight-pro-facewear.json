@@ -141,7 +141,6 @@
       ],
       "name": "t:sections.product-header.name",
       "settings": {
-        "use_own_file": true,
         "seo_heading": "RED LIGHT MASK Q-REJUVALIGHT PRO",
         "heading": "Unlock your best skin yet with our LED Face Mask",
         "rating": true,
