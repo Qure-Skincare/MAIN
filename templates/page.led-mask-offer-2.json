@@ -38,6 +38,7 @@
       ],
       "name": "t:sections.page-header.name",
       "settings": {
+        "use_own_file": true,
         "seo_heading": "",
         "heading": "Feel Confident Makeup-Free with Q-Rejuvalight Pro",
         "rating": false,

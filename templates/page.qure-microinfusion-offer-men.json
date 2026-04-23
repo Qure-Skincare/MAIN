@@ -76,6 +76,7 @@
       ],
       "name": "t:sections.page-header.name",
       "settings": {
+        "use_own_file": true,
         "seo_heading": "",
         "heading": "The go-to skin treatment for the ultimate confidence booster",
         "rating": false,

@@ -84,6 +84,7 @@
       ],
       "name": "t:sections.page-header.name",
       "settings": {
+        "use_own_file": true,
         "seo_heading": "",
         "heading": "Visibly fade dark spots with this 5-minute treatment",
         "rating": false,

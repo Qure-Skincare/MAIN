@@ -76,6 +76,7 @@
       ],
       "name": "t:sections.page-header.name",
       "settings": {
+        "use_own_file": true,
         "seo_heading": "",
         "heading": "Refresh your skin and visibly smooth the look of acne scars",
         "rating": false,

@@ -85,6 +85,7 @@
       ],
       "name": "t:sections.product-header.name",
       "settings": {
+        "use_own_file": true,
         "seo_heading": "FAUCET FILTER REFILL CARTRIDGER",
         "heading": "Keep the good skin flowing with the Faucet Filter Refill",
         "rating": true,
