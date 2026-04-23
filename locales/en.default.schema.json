@@ -10,6 +10,9 @@
  
  {
     "common": {
+        "guarantee_period": "Guarantee period",
+        "30_days": "30 days",
+        "90_days": "90 days",
         "color": "Color",
         "exception": "Exception",
         "klaviyo_form_name": "Klaviyo form",
