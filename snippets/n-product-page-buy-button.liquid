@@ -93,17 +93,7 @@
         <ul class="e-features-list">
             <li>
                 <i class="e-icon e-icon-guarantee"></i>
-
-                {% if section.settings.guarantee_period != blank %}
-                  {% case section.settings.guarantee_period %}
-                    {% when '90' %}
-                      {{ 'product.settings.buy-button-bottom.guaranteed_text_90' | t }}
-                    {% else %}
-                      {{ 'product.settings.buy-button-bottom.guaranteed_text' | t }}
-                  {% endcase %}
-                {% else %}
-                  {{ 'product.settings.buy-button-bottom.guaranteed_text' | t }}
-                {% endif %}
+                {{ 'product.settings.buy-button-bottom.guaranteed_text' | t }}
             </li>
             <li>
                 <i class="e-icon e-icon-shipping-order"></i>
