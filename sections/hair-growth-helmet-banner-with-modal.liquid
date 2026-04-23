@@ -2,9 +2,7 @@
     Renders a banner with Modal section for hair growth helmet page.
 {% enddoc %}
 
-{% if section.settings.use_own_file %}
-    <link rel="stylesheet" href="https://qureskincaredns.com/alex/sections/isolated/across-image-banner/across-image-banner.css" />
-{% endif %}
+<link rel="stylesheet" href="https://qureskincaredns.com/alex/sections/isolated/across-image-banner/across-image-banner.css" />
 <div class="qure__section across-image-banner" id="light-technology">
     <picture class="across-image-banner__image">
         <source media="(min-width:768px)" srcset="https://qureskincaredns.com/alex/sections/isolated/across-image-banner/images/pixels.webp" />
@@ -102,14 +100,8 @@
 
 {%  schema  %}
 {
-  "name": "t:sections.n_hair-growth-helmet-banner-with-modal.name",
+  "name": "t:sections.hair-growth-helmet-banner-with-modal.name",
   "settings": [
-    {
-        "type": "checkbox",
-        "id": "use_own_file",
-        "label": "t:common.use-own-file",
-        "default": false
-    },
     {
         "type": "richtext",
         "id": "heading",

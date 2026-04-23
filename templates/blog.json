@@ -13,8 +13,7 @@
       "type": "n_breadcrumb",
       "settings": {
         "use_own_file": true
-      },
-      "name": "t:sections.n_breadcrumb.name"
+      }
     },
     "main": {
       "type": "blog",

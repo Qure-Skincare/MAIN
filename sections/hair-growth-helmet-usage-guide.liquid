@@ -2,10 +2,7 @@
     Renders an usage guide section for hair growth helmet page.
 {% enddoc %}
 
-{% if section.settings.use_own_file %}
-    <link rel="stylesheet" href="https://qureskincaredns.com/alex/sections/isolated/across-slider/across-slider.css">
-{% endif %}
-
+<link rel="stylesheet" href="https://qureskincaredns.com/alex/sections/isolated/across-slider/across-slider.css">
 <div class="across-slider steps-to-use" id="steps-to-use">
     <div class="across-slider__content">
         <div class="across-slider__header container">
@@ -101,14 +98,8 @@
 
 {%  schema  %}
 {
-  "name": "t:sections.n_hair-growth-helmet-usage-guide.name",
+  "name": "t:sections.hair-growth-helmet-usage-guide.name",
   "settings": [
-    {
-        "type": "checkbox",
-        "id": "use_own_file",
-        "label": "t:common.use-own-file",
-        "default": false
-    },
     {
         "type": "richtext",
         "id": "heading",

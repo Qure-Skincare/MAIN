@@ -37,8 +37,7 @@ function installNAddBundleTouchPrimaryPress(btn) {
 
   btn.addEventListener('touchstart', applyPress, { passive: true });
   btn.addEventListener('touchcancel', clearPress, { passive: true });
-  // Do not clear on `blur`: on phones the drawer / focus change often fires blur
-  // immediately after tap and strips the “desktop hover” look before it is visible.
+  btn.addEventListener('blur', clearPress);
 
   document.addEventListener(
     'touchstart',
@@ -74,9 +73,7 @@ function initNAddBundle() {
       btn.dataset.nAddBundleBusy = '1';
       var done = function () {
         delete btn.dataset.nAddBundleBusy;
-        // Touch devices: do not clear inline “hover” colors here — `blur` used to
-        // wipe them instantly; `done` used to clear as soon as the request finished.
-        // Colors stay like desktop :hover until a tap outside (document listener).
+        if (typeof btn._nBundleClearPress === 'function') btn._nBundleClearPress();
       };
       if (window.CartDrawer && typeof window.CartDrawer.addToCartJson === 'function') {
         Promise.resolve(window.CartDrawer.addToCartJson(items)).then(done).catch(done);

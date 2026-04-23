@@ -1,66 +1,71 @@
 /*
  * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
+  * IMPORTANT: The contents of this file are auto-generated.
+   *
+    * This file may be updated by the Shopify admin theme editor
+     * or related systems. Please exercise caution as any changes
+      * made to this file may be overwritten.
+       * ------------------------------------------------------------
+        */
 {
   "sections": {
-    "n_hero_banner_zUyTB8": {
-      "type": "n_hero-banner",
-      "name": "t:sections.n_hero-banner.name",
+    "page_banner_zUyTB8": {
+      "type": "page-banner",
+      "name": "t:sections.page-banner.name",
       "settings": {
-        "use_own_file": true,
-        "modifier": "holidays",
-        "text": "<h1>Breakouts & Acne</h1>",
+        "heading": "Breakouts & Acne",
+        "text": "",
+        "sub_text": "",
+        "button": "",
+        "button_url": "",
+        "button_mobile": "",
+        "button_url_mobile": "",
         "image": "shopify://shop_images/best-seller-banner.webp",
         "image_mobile": "shopify://shop_images/best-seller-banner-mob.webp"
       }
     },
-    "n_features_marquee_7YOxGy": {
-      "type": "n_features-marquee",
+    "carousel_7YOxGy": {
+      "type": "carousel",
       "blocks": {
-        "image_with_text_3xewxx": {
-          "type": "image_with_text",
+        "items_3xewxx": {
+          "type": "items",
           "settings": {
-            "icon": "shipping-order",
-            "text": "Free Shipping On Orders Over $100"
+            "heading": "Free Shipping On Orders Over $100",
+            "image": "shopify://shop_images/guarantee.svg"
           }
         },
-        "image_with_text_AUjmAT": {
-          "type": "image_with_text",
+        "items_AUjmAT": {
+          "type": "items",
           "settings": {
-            "icon": "reviewed",
-            "text": "Dermatologist Reviewed"
+            "heading": "Dermatologist Reviewed",
+            "image": "shopify://shop_images/sheild.svg"
           }
         },
-        "image_with_text_Ub9bKD": {
-          "type": "image_with_text",
+        "items_Ub9bKD": {
+          "type": "items",
           "settings": {
-            "icon": "pay-later",
-            "text": "Buy Now, Pay Later Options Available"
+            "heading": "Buy Now, Pay Later Options Available",
+            "image": "shopify://shop_images/pay-later.svg"
           }
         },
-        "image_with_text_CVMfzL": {
-          "type": "image_with_text",
+        "items_CVMfzL": {
+          "type": "items",
           "settings": {
-            "icon": "proven",
-            "text": "Proven Results, <br /> Backed By Science"
+            "heading": "Proven Results, <br> Backed By Science",
+            "image": "shopify://shop_images/proven-result.svg"
           }
         }
       },
       "block_order": [
-        "image_with_text_3xewxx",
-        "image_with_text_AUjmAT",
-        "image_with_text_Ub9bKD",
-        "image_with_text_CVMfzL"
+        "items_3xewxx",
+        "items_AUjmAT",
+        "items_Ub9bKD",
+        "items_CVMfzL"
       ],
-      "name": "t:sections.n_features-marquee.name",
+      "name": "t:common.carousel",
       "settings": {
-        "use_own_file": true
+        "background_color": "#f6f6f7",
+        "display_mode": "both"
       }
     },
     "n_breadcrumb_fXMjkJ": {
@@ -84,65 +89,62 @@
         "use_own_file": true
       }
     },
-    "n_base_section_zWkqBN": {
-      "type": "n_base-section",
-      "name": "t:sections.n_base-section.name",
+    "bundle_banner_zWkqBN": {
+      "type": "bundle-banner",
+      "name": "t:sections.bundle-banner.name",
       "settings": {
-        "use_own_file": true,
-        "modifier": "none",
-        "modifier_2": "none",
-        "background_color": "none",
-        "heading": "<h2>Save up to 55% on Exclusive Bundles</h2>",
-        "text": "<p>Everything your skin needs, bundled for less.</p><p>Everything your skin needs, bundled for less. Shop our exclusive sets while they last.</p>",
-        "image": "shopify://shop_images/bundle_d5ea1950-0efe-439d-9833-c4e123bcdab1.webp",
-        "button_label": "Shop & Save 55%",
+        "heading": "Save up to 55% on Exclusive Bundles",
+        "text": "<p>Everything your skin needs, bundled for less.</p>",
+        "text_mobile": "<p>Everything your skin needs, bundled for less. Shop our exclusive sets while they last.</p>",
+        "button": "Shop & Save 55%",
         "button_url": "#",
-        "wistia_url": ""
+        "image": "shopify://shop_images/bundle_d5ea1950-0efe-439d-9833-c4e123bcdab1.webp",
+        "image_mobile": "shopify://shop_images/bundle-mob_163c3466-44ba-4c09-b638-e81576c90ecb.webp"
       }
     },
-    "n_trusted_reviews_mRLHtt": {
-      "type": "n_trusted-reviews",
+    "trusted_reviews_mRLHtt": {
+      "type": "trusted-reviews",
       "blocks": {
         "slider_iCfR9d": {
           "type": "slider",
           "settings": {
-            "image": "shopify://shop_images/ellie-v.webp",
-            "flag": "shopify://shop_images/america_f.webp",
-            "username": "Ellie V.",
-            "verified_customer": "Verified customer",
-            "text": "<h6>My skin returned to life!</h6><p>“I just turned 57 years. My skin was extremely dry and while using this product my skin RETURNED to LIFE! I am so impressed with it! You will not regret in purchasing it. I really see the change in my skin. Outstanding job QURE!”</p>",
+            "heading": "My skin returned to life!",
+            "text": "<p>“I just turned 57 years. My skin was extremely dry and while using this product my skin RETURNED to LIFE! I am so impressed with it! You will not regret in purchasing it. I really see the change in my skin. Outstanding job QURE!”</p>",
+            "compare_image": "shopify://shop_images/ellie-v.webp",
+            "country_image": "shopify://shop_images/america_f.webp",
+            "username": "<p>Ellie V.</p>",
             "product_url": "#",
-            "product_image": "shopify://shop_images/micro-infusion-facial-system_f0e75ccc-2fd2-48d6-aea7-fe662896adaa.webp",
-            "product_text": "Ellie uses...",
-            "product_title": "Micro-Infusion Facial System"
+            "product_heading": "Ellie uses...",
+            "product_text": "Micro-Infusion Facial System",
+            "product_image": "shopify://shop_images/micro-infusion-facial-system_f0e75ccc-2fd2-48d6-aea7-fe662896adaa.webp"
           }
         },
         "slider_xqHC8P": {
           "type": "slider",
           "settings": {
-            "image": "shopify://shop_images/anton-m.webp",
-            "flag": "shopify://shop_images/australia_f.webp",
-            "username": "Anton M.",
-            "verified_customer": "Verified customer",
-            "text": "<h6>Can’t go a day without it</h6><p>“Straight away I noticed results with Qure, after the first week I had no active breakouts anymore. People ask me now how have I got my skin to be hydrated, acne-free, looking bright with no redness. I'm so reliant on the Qure mask now. I don't think I can go a day without using it.”</p>",
+            "heading": "Can’t go a day without it",
+            "text": "<p>“Straight away I noticed results with Qure, after the first week I had no active breakouts anymore. People ask me now how have I got my skin to be hydrated, acne-free, looking bright with no redness. I'm so reliant on the Qure mask now. I don't think I can go a day without using it.”</p>",
+            "compare_image": "shopify://shop_images/anton-m.webp",
+            "country_image": "shopify://shop_images/australia_f.webp",
+            "username": "<p>Anton M.</p>",
             "product_url": "#",
-            "product_image": "shopify://shop_images/q-rejuvalight-pro-led-mask.webp",
-            "product_text": "Anton uses...",
-            "product_title": "Q-Rejuvalight Pro LED Mask"
+            "product_heading": "Anton uses...",
+            "product_text": "Q-Rejuvalight Pro LED Mask",
+            "product_image": "shopify://shop_images/q-rejuvalight-pro-led-mask.webp"
           }
         },
         "slider_ea3hLd": {
           "type": "slider",
           "settings": {
-            "image": "shopify://shop_images/jennifer-n.webp",
-            "flag": "shopify://shop_images/america_f.webp",
-            "username": "Jennifer N.",
-            "verified_customer": "Verified customer",
-            "text": "<h6>Works better than I imagined!</h6><p>“I am really stunned by how well this product works. I have had professional micro-needling and I wanted the benefits without the downtime. I did my treatment, went to bed and woke up the next morning and was ready to go. My skin looks better than it has in years.”</p>",
+            "heading": "Works better than I imagined!",
+            "text": "<p>“I am really stunned by how well this product works. I have had professional micro-needling and I wanted the benefits without the downtime. I did my treatment, went to bed and woke up the next morning and was ready to go. My skin looks better than it has in years.”</p>",
+            "compare_image": "shopify://shop_images/jennifer-n.webp",
+            "country_image": "shopify://shop_images/america_f.webp",
+            "username": "<p>Jennifer N.</p>",
             "product_url": "#",
-            "product_image": "shopify://shop_images/micro-infusion-facial-system_f0e75ccc-2fd2-48d6-aea7-fe662896adaa.webp",
-            "product_text": "Jennifer uses...",
-            "product_title": "Micro-Infusion Facial System"
+            "product_heading": "Jennifer uses...",
+            "product_text": "Micro-Infusion Facial System",
+            "product_image": "shopify://shop_images/micro-infusion-facial-system_f0e75ccc-2fd2-48d6-aea7-fe662896adaa.webp"
           }
         }
       },
@@ -151,56 +153,49 @@
         "slider_xqHC8P",
         "slider_ea3hLd"
       ],
-      "name": "t:sections.n_trusted-reviews.name",
+      "name": "t:sections.trusted-reviews.name",
       "settings": {
-        "use_own_file": true,
-        "background_color": "light",
-        "text": "<h2>Results you’ll see with your own eyes</h2>",
+        "background_color": "#ffffff",
+        "heading": "Results you’ll see with your own eyes",
+        "text": "",
+        "text_mobile": "",
         "button_label": "",
         "button_url": ""
       }
     },
-    "n_take_quiz_DfRXwD": {
-      "type": "n_take-quiz",
+    "quiz_DfRXwD": {
+      "type": "quiz",
       "blocks": {
         "take_quiz_xbNNGM": {
           "type": "take_quiz",
           "settings": {
-            "text": "<h5>Take The Quiz</h5><p>Then get a custom skincare plan, backed by science.</p>",
-            "sub_text": "Only takes 60 seconds",
-            "button_label": "Take The Quiz",
-            "button_url": ""
-          }
-        },
-        "take_quiz_sub_DfRXwD": {
-          "type": "take_quiz",
-          "settings": {
-            "text": "<p>Here’s your personalized skincare routine…</p>",
-            "sub_text": "",
-            "button_label": "",
-            "button_url": ""
+            "heading": "Take The Quiz",
+            "text": "<p>Then get a custom skincare plan, backed by science.</p>",
+            "image_text": "<p>Only takes 60 seconds</p>",
+            "button-label": "Take The Quiz",
+            "button-url": ""
           }
         }
       },
       "block_order": [
-        "take_quiz_xbNNGM",
-        "take_quiz_sub_DfRXwD"
+        "take_quiz_xbNNGM"
       ],
-      "name": "t:sections.n_take-quiz.name",
+      "name": "t:sections.quiz.name",
       "settings": {
-        "use_own_file": true,
-        "text": "<h2>Unlock Your Personalized Skincare Routine</h2><p>You don’t have time for products that don’t work. We’ll prescribe you a personalized routine with clinically proven products and tips - just for your skin.</p>"
+        "heading": "Unlock Your Personalized Skincare Routine",
+        "text": "<p>You don’t have time for products that don’t work. We’ll prescribe you a personalized routine with clinically proven products and tips - just for your skin.</p>",
+        "sub_text": "Here’s your personalized skincare routine…"
       }
     }
   },
   "order": [
-    "n_hero_banner_zUyTB8",
-    "n_features_marquee_7YOxGy",
+    "page_banner_zUyTB8",
+    "carousel_7YOxGy",
     "n_breadcrumb_fXMjkJ",
     "n_pills_nav_fXMjkJ",
     "n_collection_fXMjkJ",
-    "n_base_section_zWkqBN",
-    "n_trusted_reviews_mRLHtt",
-    "n_take_quiz_DfRXwD"
+    "bundle_banner_zWkqBN",
+    "trusted_reviews_mRLHtt",
+    "quiz_DfRXwD"
   ]
 }

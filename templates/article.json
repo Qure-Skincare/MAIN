@@ -13,8 +13,7 @@
       "type": "n_breadcrumb",
       "settings": {
         "use_own_file": true
-      },
-      "name": "t:sections.n_breadcrumb.name"
+      }
     },
     "main": {
       "type": "article",
@@ -22,8 +21,7 @@
     },
     "n_blog-related-posts": {
       "type": "n_blog-related-posts",
-      "settings": {},
-      "name": "t:sections.n_blog-related-posts.name"
+      "settings": {}
     }
   },
   "order": [

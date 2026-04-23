@@ -672,7 +672,7 @@
         "txt_t2_f",
         "txt_t2_g"
       ],
-      "name": "t:sections.n_page-led-mask-offer-2-exclusive-bundle.name",
+      "name": "Exclusive bundle",
       "settings": {
         "use_own_file": true,
         "badge": "<p><strong>Exclusive</strong> Bundle</p>",
@@ -1089,7 +1089,7 @@
     },
     "n_page-led-mask-offer-2-faq_led_mask_offer_2": {
       "type": "n_page-led-mask-offer-2-faq",
-      "name": "t:sections.n_page-led-mask-offer-2-faq.name",
+      "name": "t:sections.n_faq.name",
       "settings": {
         "use_own_file": true
       }

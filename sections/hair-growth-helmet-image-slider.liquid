@@ -2,10 +2,7 @@
     Renders an image slider section for hair growth helmet page.
 {% enddoc %}
 
-{% if section.settings.use_own_file %}
-    <link rel="stylesheet" href="https://qureskincaredns.com/alex/sections/isolated/section-half-slider/section-half-slider.css">
-{% endif %}
-
+<link rel="stylesheet" href="https://qureskincaredns.com/alex/sections/isolated/section-half-slider/section-half-slider.css">
 <div class="section-half-slider see-the-change" id="see-the-change">
     <div class="section-half-slider__content">
         <div class="section-half-slider__header">
@@ -61,14 +58,8 @@
 
 {%  schema  %}
 {
-  "name": "t:sections.n_hair-growth-helmet-image-slider.name",
+  "name": "t:sections.hair-growth-helmet-image-slider.name",
   "settings": [
-    {
-        "type": "checkbox",
-        "id": "use_own_file",
-        "label": "t:common.use-own-file",
-        "default": false
-    },
     {
         "type": "richtext",
         "id": "heading",
