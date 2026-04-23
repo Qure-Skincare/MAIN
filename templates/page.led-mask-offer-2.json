@@ -29,14 +29,19 @@
             "image_product2": "shopify://shop_images/Frame_1073714744.png",
             "text": "<p>Buy the Q-Rejuvalight Pro and get the Neck & Décolletage LED System for FREE (value $299)</p>"
           }
+        },
+        "approved_by_zN3pYg": {
+          "type": "approved-by",
+          "settings": {}
         }
       },
       "block_order": [
         "description_iSDNaK",
         "link_iPBNaS",
-        "exclusive-offer_iaSzaK"
+        "exclusive-offer_iaSzaK",
+        "approved_by_zN3pYg"
       ],
-      "name": "t:sections.page-header.name",
+      "name": "t:sections.n_product-header.name",
       "settings": {
         "use_own_file": true,
         "seo_heading": "",
@@ -682,8 +687,8 @@
       }
     },
     "page_led_mask_offer_2_led_mask_offer_QgKWfH": {
-      "type": "page-led-mask-offer-2-led-mask-form",
-      "name": "t:sections.led-mask-offer.name",
+      "type": "n_page-led-mask-offer-2-led-mask-form",
+      "name": "t:sections.n_page-led-mask-offer-2-led-mask-form.name",
       "settings": {}
     },
     "n_features_marquee_4YPxHy": {

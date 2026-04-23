@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
     "page_header_jUJySS": {
       "type": "n-product-header",
@@ -84,7 +84,6 @@
       ],
       "name": "t:sections.page-header.name",
       "settings": {
-        "use_own_file": true,
         "seo_heading": "",
         "heading": "Visibly fade dark spots with this 5-minute treatment",
         "rating": false,
@@ -93,7 +92,8 @@
         "reserved": false,
         "soldout": false,
         "button-label": "Get Smoother, Glowing Skin",
-        "button-url": "#purchase-form"
+        "button-url": "#purchase-form",
+        "use_own_file": true
       }
     },
     "n_press_reviews_y63L78": {
@@ -488,7 +488,6 @@
       "settings": {
         "use_own_file": true,
         "background_color": "none",
-        "modifier": "none",
         "heading": "<h2>Trusted and Recommended by Experts</h2>",
         "text": "<p>“This treatment is an at-home option for those who want to <em>avoid the hassle or cost of going to the office”.</em></p>",
         "video_image_cover": "shopify://shop_images/shah-maxfield.webp",
