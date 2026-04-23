@@ -559,7 +559,7 @@
         "take_quiz_step2_V6p9"
       ],
       "disabled": true,
-      "name": "t:sections.index-quiz.name",
+      "name": "t:sections.n_take-quiz.name",
       "settings": {
         "use_own_file": true,
         "text": "<h2>Need help finding your new routine?</h2><p>You don’t have time for products that don’t work. We’ll prescribe you a personalized routine with clinically proven products and tips - just for your skin.</p>"

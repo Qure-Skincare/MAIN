@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
     "n_index-quick-links": {
       "type": "n_index-quick-links",
@@ -81,11 +81,12 @@
       "disabled": true,
       "settings": {
         "use_own_file": true
-      }
+      },
+      "name": "t:sections.n_index-quick-links.name"
     },
     "n_across_image_banner_TNGNLJ": {
       "type": "n_across-image-banner",
-      "name": "t:sections.index-banner-with-text.name",
+      "name": "t:sections.n_across-image-banner.name",
       "settings": {
         "use_own_file": true,
         "modifier": "hero",
@@ -191,7 +192,8 @@
       ],
       "settings": {
         "use_own_file": true
-      }
+      },
+      "name": "t:sections.n_index-quick-title-links.name"
     },
     "n_press_reviews_KgaUTN": {
       "type": "n_press-reviews",
@@ -239,7 +241,7 @@
         "image_with_text_4",
         "image_with_text_5"
       ],
-      "name": "t:sections.slider-featured-in.name",
+      "name": "t:sections.n_press-reviews.name",
       "settings": {
         "use_own_file": true,
         "text": "<h6>FEATURED IN</h6>",
@@ -449,7 +451,8 @@
       "settings": {
         "use_own_file": true,
         "heading": "Top Rated Products"
-      }
+      },
+      "name": "t:sections.n_index-top-rated.name"
     },
     "n_index-get-qure": {
       "type": "n_index-get-qure",
@@ -501,7 +504,7 @@
         "listed_deal_DyxiXX",
         "listed_deal_kzdUNH"
       ],
-      "name": "t:sections.index-get-qure.name",
+      "name": "t:sections.n_index-get-qure.name",
       "settings": {
         "use_own_file": true,
         "heading": "Get the Qure",
@@ -553,7 +556,7 @@
     },
     "n_trusted_recommended_KHYLQ9": {
       "type": "n_trusted-recommended",
-      "name": "t:sections.trusted-recommended.name",
+      "name": "t:sections.n_trusted-recommended.name",
       "settings": {
         "use_own_file": true,
         "background_color": "none",
@@ -664,7 +667,7 @@
         "slider_wX7Rab",
         "slider_dFKXa3"
       ],
-      "name": "t:sections.video-slider.name",
+      "name": "t:sections.n_video-slider.name",
       "settings": {
         "use_own_file": true,
         "modifier": "three_cards",
@@ -673,7 +676,7 @@
     },
     "n_base_section_MqEdEN": {
       "type": "n_base-section",
-      "name": "t:sections.banner-with-text.name",
+      "name": "t:sections.n_base-section.name",
       "settings": {
         "use_own_file": true,
         "modifier": "reverse",
@@ -729,7 +732,7 @@
         "accordion_iMxgiG",
         "accordion_JkR3Rq"
       ],
-      "name": "t:sections.our-advisors.name",
+      "name": "t:sections.n_our-advisors.name",
       "settings": {
         "use_own_file": true,
         "text": "<h2>Meet our board of advisors</h2><p>At Qure Skincare, we are proud to have a team of esteemed Dermatologists guiding our mission to deliver high-quality skincare solutions.</p>"
@@ -761,7 +764,7 @@
         "take_quiz_Pkcafw",
         "take_quiz_883ih8"
       ],
-      "name": "t:sections.quiz.name",
+      "name": "t:sections.n_take-quiz.name",
       "settings": {
         "use_own_file": true,
         "text": "<h2>Unlock Your Personalized Skincare Routine</h2><p>You don’t have time for products that don’t work. We’ll prescribe you a personalized routine with clinically proven products and tips - just for your skin.</p>"
