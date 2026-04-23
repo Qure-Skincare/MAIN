@@ -37,7 +37,6 @@ function installNAddBundleTouchPrimaryPress(btn) {
 
   btn.addEventListener('touchstart', applyPress, { passive: true });
   btn.addEventListener('touchcancel', clearPress, { passive: true });
-  btn.addEventListener('blur', clearPress);
 
   document.addEventListener(
     'touchstart',
@@ -73,7 +72,6 @@ function initNAddBundle() {
       btn.dataset.nAddBundleBusy = '1';
       var done = function () {
         delete btn.dataset.nAddBundleBusy;
-        if (typeof btn._nBundleClearPress === 'function') btn._nBundleClearPress();
       };
       if (window.CartDrawer && typeof window.CartDrawer.addToCartJson === 'function') {
         Promise.resolve(window.CartDrawer.addToCartJson(items)).then(done).catch(done);

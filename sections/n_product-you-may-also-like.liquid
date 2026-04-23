@@ -1,0 +1,114 @@
+<!-- BASE SLIDER -->
+{%- if section.settings.use_own_file -%}
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/base-slider/base-slider.css" />
+{%- endif -%}
+
+<section class="base-slider">
+    <div class="container">
+        <h2>{{ 'product.settings.you-may-also-like.header' | t }}</h2>
+        <div
+            class="c-swiper"
+            data-swiper='{
+                    "slidesPerView": 1.05,
+                    "spaceBetween": 16,
+                    "loop": false,
+                    "pagination": {
+                        "el": ".c-swiper-pagination",
+                        "type": "custom"
+                    },
+                    "navigation": {
+                        "prevEl": ".c-swiper-button-prev",
+                        "nextEl": ".c-swiper-button-next"
+                    },
+                    "breakpoints": {
+                        "768": {
+                            "slidesPerView": 2
+                        },
+                        "992": {
+                            "slidesPerView": 4
+                        }
+                    }
+                }'>
+            <div class="swiper-wrapper">
+                {%- if collections['upsell-bundle'].products.size > 0 -%}
+                    {% assign time_seed = 'now' | date: '%s' %}
+                    {% assign random1 = time_seed | modulo: collections['upsell-bundle'].products.size %}
+                    {% assign random2 = time_seed | plus: 1 | modulo: collections['upsell-bundle'].products.size %}
+                    {% assign random3 = time_seed | plus: 2 | modulo: collections['upsell-bundle'].products.size %}
+                    {% assign random4 = time_seed | plus: 3 | modulo: collections['upsell-bundle'].products.size %}
+                    {% assign random_indices = random1 | append: ',' | append: random2 | append: ',' | append: random3 | append: ',' | append: random4 %}
+                    {% assign indices_array = random_indices | split: ',' %}
+                    {% for index in indices_array %}
+                        {% assign product = collections['upsell-bundle'].products[index] %}
+                        {%- if product != blank -%}
+                            {% include 'n_get-product-data', product_handle: product.handle, product_prefix: 'you-may-also-like-' %}
+                            {% if product_handle contains 'micro-infusion' %}
+                                {% assign product_url = '/pages/microinfusion' %}
+                            {% endif %}
+
+                            {%- liquid
+                                assign tile_main_image = blank
+                                assign tile_hover_image = blank
+                                for media in product.media limit: 2
+                                if forloop.first
+                                    assign tile_main_image = media | image_url: width: 400, height: 400, crop: 'center'
+                                    assign tile_hover_image = tile_main_image
+                                else
+                                    assign tile_hover_image = media | image_url: width: 400, height: 400, crop: 'center'
+                                endif
+                                endfor
+                                if tile_main_image == blank and product.featured_media != blank
+                                assign tile_main_image = product.featured_media | image_url: width: 400, height: 400, crop: 'center'
+                                assign tile_hover_image = tile_main_image
+                                endif
+                            -%}
+
+                <div class="swiper-slide">
+                    <div class="c-product-tile">
+                        <a class="c-product-tile__image" style="--image-on-hover: url('{{ tile_hover_image }}')" href="{{ product_url }}">
+                            <img src="{{ tile_main_image }}" alt="{{ product_title | escape }}" />
+                        </a>
+                        {% render 'n_collection-product-rating', product: product %}
+                        <a class="c-product-tile__name" href="{{ product_url }}">{{ product_title | escape }}</a>
+                        <div class="c-product-tile__price">
+                            <div class="e-price">
+                                <div class="e-price__main">
+                                    <div class="e-price__current">{{ product_sale_price }}</div>
+                                </div>
+                            </div>
+                        </div>
+                        {% render 'n_product-page-buy-button', product_variant_id: product_variant_id, product_available: product_available, section: section %}
+                    </div>
+                </div>
+                        {%- endif -%}
+                    {% endfor %}
+                {%- endif -%}
+            </div>
+            <div class="c-swiper-nav">
+                <button class="c-swiper-button-prev"></button>
+                <div class="c-swiper-pagination"></div>
+                <button class="c-swiper-button-next"></button>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        loadScriptOnce("n_add-bundle", "{{ 'n_add-bundle.js' | asset_url }}");
+    });
+</script>
+<!-- BASE SLIDER END -->
+
+{% schema %}
+{
+    "name": "t:sections.n_product-you-may-also-like.name",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": true
+        }
+    ]
+}
+{% endschema %}
