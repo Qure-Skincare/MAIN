@@ -14,10 +14,10 @@
     "announcement-bar-gamification": {
       "type": "n-announcement-bar-gamification",
       "settings": {
-        "heading": "<p><strong>Limited Time Mother’s Day Offer - Save $299</strong></p>",
+        "heading": "<p><a href=\"https://qureskincare.com/pages/q-rejuvalight-pro-offer\" title=\"https://qureskincare.com/pages/q-rejuvalight-pro-offer\"><strong>Limited Time Mother’s Day Offer </strong></a><strong>- </strong>Save $299</p>",
         "color": "#000000",
         "exception": "qure-microinfusion-offer, qure-microinfusion-offer-listicle",
-        "from": "2026-03-25",
+        "from": "2026-04-23",
         "days": 14
       }
     },
