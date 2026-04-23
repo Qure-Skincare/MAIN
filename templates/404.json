@@ -7,13 +7,14 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
     "main": {
       "type": "n_404",
       "settings": {
         "use_own_file": true
-      }
+      },
+      "name": "t:sections.n_404.name"
     }
   },
   "order": [
