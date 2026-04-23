@@ -85,6 +85,7 @@
       ],
       "name": "t:sections.product-header.name",
       "settings": {
+        "use_own_file": true,
         "seo_heading": "QURE FAUCET FILTER",
         "heading": "Clearer-looking skin, on tap, with Qure Faucet Filter",
         "rating": true,

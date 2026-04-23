@@ -111,6 +111,7 @@
       ],
       "name": "t:sections.product-header.name",
       "settings": {
+        "use_own_file": true,
         "seo_heading": "MICRO-INFUSION DART PATCHES",
         "heading": "Smooth and firm the look of skin with Micro-Infusion Targeted Patches",
         "rating": true,

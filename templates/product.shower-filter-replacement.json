@@ -85,6 +85,7 @@
       ],
       "name": "t:sections.product-header.name",
       "settings": {
+        "use_own_file": true,
         "seo_heading": "SHOWER FILTER REFILL CARTRIDGE",
         "heading": "Keep your skin & hair protected with the Shower Filter Refill",
         "rating": true,
