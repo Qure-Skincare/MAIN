@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
     "product-bundle": {
       "type": "product-bundle",
@@ -31,282 +31,275 @@
         "soldout": false
       }
     },
-    "slider_featured_in_DDaUTN": {
-      "type": "slider-featured-in",
+    "n_press_reviews_DDaUTN": {
+      "type": "n_press-reviews",
       "blocks": {
-        "slider_rczj6t": {
-          "type": "slider",
+        "image_with_text_rczj6t": {
+          "type": "image_with_text",
           "settings": {
-            "heading": "“The professional grade is the perfect addition to any at-home skincare routine.”",
+            "text": "<h4>“The professional grade is the perfect addition to any at-home skincare routine.”</h4>",
             "image": "shopify://shop_images/vogue-black_4651a572-6206-4c65-a29d-e5edf1697ad2.svg"
           }
         },
-        "slider_WhtWNQ": {
-          "type": "slider",
+        "image_with_text_WhtWNQ": {
+          "type": "image_with_text",
           "settings": {
-            "heading": "“My skin actually seems considerable brighter and smoother! It’s simple, fast, and effective enough to become a daily habit.”",
+            "text": "<h4>“My skin actually seems considerable brighter and smoother! It’s simple, fast, and effective enough to become a daily habit.”</h4>",
             "image": "shopify://shop_images/women-health.svg"
           }
         },
-        "slider_rwJFRA": {
-          "type": "slider",
+        "image_with_text_rwJFRA": {
+          "type": "image_with_text",
           "settings": {
-            "heading": "“The results are blatant — my glow after using the treatment speaks for itself. You'll notice hydrated, radiant, and healthy-looking skin.”",
+            "text": "<h4>“The results are blatant — my glow after using the treatment speaks for itself. You'll notice hydrated, radiant, and healthy-looking skin.”</h4>",
             "image": "shopify://shop_images/Popsugar_logo.svg"
           }
         },
-        "slider_GcMQyX": {
-          "type": "slider",
+        "image_with_text_GcMQyX": {
+          "type": "image_with_text",
           "settings": {
-            "heading": "“The combination of colors allows you to customize which lights are used, maximizing its benefits to help your skin...”",
+            "text": "<h4>“The combination of colors allows you to customize which lights are used, maximizing its benefits to help your skin...”</h4>",
             "image": "shopify://shop_images/cosmopolitan_adf408aa-05b0-45c0-9349-a0f1f360ba73.svg"
           }
         },
-        "slider_xNnbxX": {
-          "type": "slider",
+        "image_with_text_xNnbxX": {
+          "type": "image_with_text",
           "settings": {
-            "heading": "“Q-Rejuvalight Pro harnesses the power of lights from blue to infrared to address nearly every skincare concern you could imagine.”",
+            "text": "<h4>“Q-Rejuvalight Pro harnesses the power of lights from blue to infrared to address nearly every skincare concern you could imagine.”</h4>",
             "image": "shopify://shop_images/gq.svg"
           }
         }
       },
       "block_order": [
-        "slider_rczj6t",
-        "slider_WhtWNQ",
-        "slider_rwJFRA",
-        "slider_GcMQyX",
-        "slider_xNnbxX"
+        "image_with_text_rczj6t",
+        "image_with_text_WhtWNQ",
+        "image_with_text_rwJFRA",
+        "image_with_text_GcMQyX",
+        "image_with_text_xNnbxX"
       ],
-      "name": "t:sections.slider-featured-in.name",
-      "settings": {}
+      "name": "t:sections.n_press-reviews.name",
+      "settings": {
+        "use_own_file": true,
+        "text": "<h6>FEATURED IN</h6>",
+        "settings": "\"slidesPerView\": 5, \"spaceBetween\": 50"
+      }
     },
-    "led_benefits_fCGiVb": {
-      "type": "led-benefits",
+    "n_why_using_fCGiVb": {
+      "type": "n_why-using",
       "blocks": {
-        "slider_cXKh7n": {
-          "type": "slider",
+        "image_with_text_cXKh7n": {
+          "type": "image_with_text",
           "settings": {
-            "text": "<p>Saves time, money and<br/> hassle compared to in-clinic treatments</p>",
-            "image": "shopify://shop_images/Micro-Infusion_Icons_11.svg"
+            "icon": "save-money",
+            "text": "Saves time, money and hassle compared to in-clinic treatments"
           }
         },
-        "slider_8tVPKT": {
-          "type": "slider",
+        "image_with_text_8tVPKT": {
+          "type": "image_with_text",
           "settings": {
-            "text": "<p>Quick & easy 5-minute <br/>DIY facial from the convenience of home</p>",
-            "image": "shopify://shop_images/Micro-Infusion_Icons_12.svg"
+            "icon": "mi-quick",
+            "text": "Quick & easy 5-minute DIY facial from the convenience of home"
           }
         },
-        "slider_6JbaLe": {
-          "type": "slider",
+        "image_with_text_6JbaLe": {
+          "type": "image_with_text",
           "settings": {
-            "text": "<p>Virtually painless, little to <br/>no downtime</p>",
-            "image": "shopify://shop_images/Micro-Infusion_Icons_13.svg"
+            "icon": "mi-painless",
+            "text": "Virtually painless, little to no downtime"
           }
         },
-        "slider_g8TypW": {
-          "type": "slider",
+        "image_with_text_g8TypW": {
+          "type": "image_with_text",
           "settings": {
-            "text": "<p>2-in-1 system refreshes the<br/> look of skin for a visible<br/> glow.</p>",
-            "image": "shopify://shop_images/Micro-Infusion_Icons_14.svg"
+            "icon": "two-in-one",
+            "text": "2-in-1 system refreshes the look of skin for a visible glow."
           }
         },
-        "slider_kR8RRD": {
-          "type": "slider",
+        "image_with_text_kR8RRD": {
+          "type": "image_with_text",
           "settings": {
-            "text": "<p>Perfect for transforming <br/>dull-looking skin before events</p>",
-            "image": "shopify://shop_images/Micro-Infusion_Icons_15.svg"
+            "icon": "perfect-transforming",
+            "text": "Perfect for transforming dull-looking skin before events"
           }
         }
       },
       "block_order": [
-        "slider_cXKh7n",
-        "slider_8tVPKT",
-        "slider_6JbaLe",
-        "slider_g8TypW",
-        "slider_kR8RRD"
+        "image_with_text_cXKh7n",
+        "image_with_text_8tVPKT",
+        "image_with_text_6JbaLe",
+        "image_with_text_g8TypW",
+        "image_with_text_kR8RRD"
       ],
-      "name": "t:sections.led-benefits.name",
+      "name": "t:sections.n_why-using.name",
       "settings": {
-        "background_color": "#ffffff",
-        "heading": "",
+        "use_own_file": true,
+        "modifier": "none",
+        "text": "",
         "button_label": "",
         "button_url": ""
       }
     },
-    "banner_with_text_YiQnbm": {
-      "type": "banner-with-text",
-      "name": "t:sections.banner-with-text.name",
+    "n_base_section_YiQnbm": {
+      "type": "n_base-section",
+      "name": "t:sections.n_base-section.name",
       "settings": {
-        "heading": "Qure’s Micro-Infusion goes where your skin cream can’t…",
+        "use_own_file": true,
+        "modifier": "reverse",
+        "modifier_2": "simple-grid",
+        "background_color": "none",
+        "heading": "<h2>Qure’s Micro-Infusion goes where your skin cream can’t…</h2>",
         "text": "<p>Its tiny, almost painless, 24K gold-plated, EO-sterilized (ethylene oxide) 0.5 mm microneedles gently press onto the skin’s surface to help<em> improve the feel of firmness</em>, smooth texture, and <em>reduce the look of fine lines and wrinkles</em>.<br/><br/>The invisible micro-channels then deliver science-backed serums onto the skin’s surface, <em>tailored to address specific skin goals</em> — enhancing absorption and helping active ingredients work more effectively where they’re applied.</p>",
-        "quote": "",
-        "quote-mobile": "",
-        "image_position": "left",
-        "sub_text": "",
         "button_label": "",
         "button_url": "",
         "wistia_url": "a1pykz2tp0"
       }
     },
-    "proven_results_dPwVBB": {
-      "type": "proven-results",
+    "n_progress_metrics_dPwVBB": {
+      "type": "n_progress-metrics",
       "blocks": {
-        "slider_AD9wkG": {
-          "type": "slider",
+        "compare_image_AD9wkG": {
+          "type": "compare_image",
           "settings": {
-            "heading": "<p>Proven to visually improve</p>",
-            "text": "",
             "image": "shopify://shop_images/no_hype_1.webp",
-            "button_label": "",
-            "button_label_image": "Fine Lines & Wrinkles"
+            "text": "<p>Proven to visually improve</p><p>[span]<strong>Fine Lines & Wrinkles</strong>[/span]</p>"
           }
         },
-        "slider_WNCAcc": {
-          "type": "slider",
+        "compare_image_WNCAcc": {
+          "type": "compare_image",
           "settings": {
-            "heading": "<p>Proven to visually improve</p>",
-            "text": "",
             "image": "shopify://shop_images/no_hype_2.webp",
-            "button_label": "",
-            "button_label_image": "Large Pores & Skin Texture"
+            "text": "<p>Proven to visually improve</p><p>[span]<strong>Large Pores & Skin Texture</strong>[/span]</p>"
           }
         },
-        "slider_TeAbMa": {
-          "type": "slider",
+        "compare_image_TeAbMa": {
+          "type": "compare_image",
           "settings": {
-            "heading": "<p>Proven to visually improve</p>",
-            "text": "",
             "image": "shopify://shop_images/no_hype_3.webp",
-            "button_label": "",
-            "button_label_image": "Dark Spots & Texture"
+            "text": "<p>Proven to visually improve</p><p>[span]<strong>Dark Spots & Texture</strong>[/span]</p>"
           }
         },
-        "text_with_progress_yJEpjQ": {
-          "type": "text_with_progress",
+        "percent_value_yJEpjQ": {
+          "type": "percent_value",
           "settings": {
-            "text": "<p>of participants say their fine lines looked smoother.</p>",
-            "percent_value": "70%"
+            "percent_value": 70,
+            "text": "<p>of participants say their fine lines looked smoother.</p>"
           }
         },
-        "text_with_progress_zkn33e": {
-          "type": "text_with_progress",
+        "percent_value_zkn33e": {
+          "type": "percent_value",
           "settings": {
-            "text": "<p>noticed results the next day after their first Micro-Infusion treatment. </p>",
-            "percent_value": "93%"
+            "percent_value": 93,
+            "text": "<p>noticed results the next day after their first Micro-Infusion treatment. </p>"
           }
         },
-        "text_with_progress_U9P3MQ": {
-          "type": "text_with_progress",
+        "percent_value_U9P3MQ": {
+          "type": "percent_value",
           "settings": {
-            "text": "<p>of participants say their skin looked brighter and more even toned.</p>",
-            "percent_value": "70%"
+            "percent_value": 70,
+            "text": "<p>of participants say their skin looked brighter and more even toned.</p>"
           }
         }
       },
       "block_order": [
-        "slider_AD9wkG",
-        "slider_WNCAcc",
-        "slider_TeAbMa",
-        "text_with_progress_yJEpjQ",
-        "text_with_progress_zkn33e",
-        "text_with_progress_U9P3MQ"
+        "compare_image_AD9wkG",
+        "compare_image_WNCAcc",
+        "compare_image_TeAbMa",
+        "percent_value_yJEpjQ",
+        "percent_value_zkn33e",
+        "percent_value_U9P3MQ"
       ],
-      "name": "t:sections.proven-results.name",
+      "name": "t:sections.n_progress-metrics.name",
       "settings": {
-        "heading": "No hype, just evidence",
-        "text": "<p>The results speak for themselves. In an independent user study, participants' skin was measured and showed proven visible improvement after just 6 treatments.<br/><br/><em>Tested by an independent lab, compiled by Regulatory Consultants</em></p>",
-        "button_label": "",
-        "button_url": ""
+        "use_own_file": true,
+        "text": "<h2>No hype, just evidence</h2><p>The results speak for themselves. In an independent user study, participants' skin was measured and showed proven visible improvement after just 6 treatments.<br/><br/><em>Tested by an independent lab, compiled by Regulatory Consultants</em></p>"
       }
     },
-    "carousel_PYn3Tz": {
-      "type": "carousel",
+    "n_features_marquee_PYn3Tz": {
+      "type": "n_features-marquee",
       "blocks": {
-        "items_hHPVNj": {
-          "type": "items",
+        "image_with_text_hHPVNj": {
+          "type": "image_with_text",
           "settings": {
-            "heading": "Free Shipping On Orders Over $100",
-            "image": "shopify://shop_images/guarantee.svg"
+            "icon": "shipping-order",
+            "text": "Free Shipping On Orders Over $100"
           }
         },
-        "items_g9N6kD": {
-          "type": "items",
+        "image_with_text_g9N6kD": {
+          "type": "image_with_text",
           "settings": {
-            "heading": "Dermatologist Reviewed",
-            "image": "shopify://shop_images/Guarantee_Icons.svg"
+            "icon": "reviewed",
+            "text": "Dermatologist Reviewed"
           }
         },
-        "items_nbazx3": {
-          "type": "items",
+        "image_with_text_nbazx3": {
+          "type": "image_with_text",
           "settings": {
-            "heading": "Buy Now, Pay Later Options Available",
-            "image": "shopify://shop_images/pay-later.svg"
+            "icon": "pay-later",
+            "text": "Buy Now, Pay Later Options Available"
           }
         },
-        "items_m8hFgq": {
-          "type": "items",
+        "image_with_text_m8hFgq": {
+          "type": "image_with_text",
           "settings": {
-            "heading": "Proven Results,  Backed By Science",
-            "image": "shopify://shop_images/proven-result.svg"
+            "icon": "proven",
+            "text": "Proven Results,  Backed By Science"
           }
         }
       },
       "block_order": [
-        "items_hHPVNj",
-        "items_g9N6kD",
-        "items_nbazx3",
-        "items_m8hFgq"
+        "image_with_text_hHPVNj",
+        "image_with_text_g9N6kD",
+        "image_with_text_nbazx3",
+        "image_with_text_m8hFgq"
       ],
-      "name": "t:common.carousel",
+      "name": "t:sections.n_features-marquee.name",
       "settings": {
-        "background_color": "#f6f6f7",
-        "display_mode": "both"
+        "use_own_file": true
       }
     },
-    "trusted_reviews_mRLHtt": {
-      "type": "trusted-reviews",
+    "n_trusted_reviews_mRLHtt": {
+      "type": "n_trusted-reviews",
       "blocks": {
         "slider_iCfR9d": {
           "type": "slider",
           "settings": {
-            "heading": "My skin returned to life!",
-            "text": "<p>“I just turned 57 years. My skin was extremely dry and while using this product my skin RETURNED to LIFE! I am so impressed with it! You will not regret in purchasing it. I really see the change in my skin. Outstanding job QURE!”</p>",
-            "compare_image": "shopify://shop_images/ellie-v.webp",
-            "country_image": "shopify://shop_images/america_f.webp",
-            "username": "<p>Ellie V.</p>",
+            "image": "shopify://shop_images/ellie-v.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Ellie V.",
+            "verified_customer": "Verified customer",
+            "text": "<h6>My skin returned to life!</h6><p>“I just turned 57 years. My skin was extremely dry and while using this product my skin RETURNED to LIFE! I am so impressed with it! You will not regret in purchasing it. I really see the change in my skin. Outstanding job QURE!”</p>",
             "product_url": "#",
-            "product_heading": "Ellie uses...",
-            "product_text": "Micro-Infusion Facial System",
-            "product_image": "shopify://shop_images/micro-infusion-facial-system_f0e75ccc-2fd2-48d6-aea7-fe662896adaa.webp"
+            "product_image": "shopify://shop_images/micro-infusion-facial-system_f0e75ccc-2fd2-48d6-aea7-fe662896adaa.webp",
+            "product_text": "Ellie uses...",
+            "product_title": "Micro-Infusion Facial System"
           }
         },
         "slider_xqHC8P": {
           "type": "slider",
           "settings": {
-            "heading": "Can’t go a day without it",
-            "text": "<p>“Straight away I noticed results with Qure, after the first week I had no active breakouts anymore. People ask me now how have I got my skin to be hydrated, acne-free, looking bright with no redness. I'm so reliant on the Qure mask now. I don't think I can go a day without using it.”</p>",
-            "compare_image": "shopify://shop_images/anton-m.webp",
-            "country_image": "shopify://shop_images/australia_f.webp",
-            "username": "<p>Anton M.</p>",
+            "image": "shopify://shop_images/anton-m.webp",
+            "flag": "shopify://shop_images/australia_f.webp",
+            "username": "Anton M.",
+            "verified_customer": "Verified customer",
+            "text": "<h6>Can’t go a day without it</h6><p>“Straight away I noticed results with Qure, after the first week I had no active breakouts anymore. People ask me now how have I got my skin to be hydrated, acne-free, looking bright with no redness. I'm so reliant on the Qure mask now. I don't think I can go a day without using it.”</p>",
             "product_url": "#",
-            "product_heading": "Anton uses...",
-            "product_text": "Q-Rejuvalight Pro LED Mask",
-            "product_image": "shopify://shop_images/q-rejuvalight-pro-led-mask.webp"
+            "product_image": "shopify://shop_images/q-rejuvalight-pro-led-mask.webp",
+            "product_text": "Anton uses...",
+            "product_title": "Q-Rejuvalight Pro LED Mask"
           }
         },
         "slider_ea3hLd": {
           "type": "slider",
           "settings": {
-            "heading": "Works better than I imagined!",
-            "text": "<p>“I am really stunned by how well this product works. I have had professional micro-needling and I wanted the benefits without the downtime. I did my treatment, went to bed and woke up the next morning and was ready to go. My skin looks better than it has in years.”</p>",
-            "compare_image": "shopify://shop_images/jennifer-n.webp",
-            "country_image": "shopify://shop_images/america_f.webp",
-            "username": "<p>Jennifer N.</p>",
+            "image": "shopify://shop_images/jennifer-n.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Jennifer N.",
+            "verified_customer": "Verified customer",
+            "text": "<h6>Works better than I imagined!</h6><p>“I am really stunned by how well this product works. I have had professional micro-needling and I wanted the benefits without the downtime. I did my treatment, went to bed and woke up the next morning and was ready to go. My skin looks better than it has in years.”</p>",
             "product_url": "#",
-            "product_heading": "Jennifer uses...",
-            "product_text": "Micro-Infusion Facial System",
-            "product_image": "shopify://shop_images/micro-infusion-facial-system_f0e75ccc-2fd2-48d6-aea7-fe662896adaa.webp"
+            "product_image": "shopify://shop_images/micro-infusion-facial-system_f0e75ccc-2fd2-48d6-aea7-fe662896adaa.webp",
+            "product_text": "Jennifer uses...",
+            "product_title": "Micro-Infusion Facial System"
           }
         }
       },
@@ -315,82 +308,183 @@
         "slider_xqHC8P",
         "slider_ea3hLd"
       ],
-      "name": "t:sections.trusted-reviews.name",
+      "name": "t:sections.n_trusted-reviews.name",
       "settings": {
-        "background_color": "#ffffff",
-        "heading": "Results you’ll see with your own eyes",
-        "text": "",
-        "text_mobile": "",
+        "use_own_file": true,
+        "background_color": "light",
+        "text": "<h2>Results you’ll see with your own eyes</h2>",
         "button_label": "",
         "button_url": ""
       }
     },
-    "how_to_use_xxxaxK": {
-      "type": "how-to-use",
+    "n_easy_steps_xxxaxK": {
+      "type": "n_easy-steps",
       "blocks": {
-        "list_npLGNp": {
-          "type": "list",
+        "items_npLGNp": {
+          "type": "items",
           "settings": {
-            "heading": "Prepare",
-            "text": "<p>Twist open the Micro-Infusion device and fill with one ampule of serum.</p>",
+            "text": "<h3>Prepare</h3><p>Twist open the Micro-Infusion device and fill with one ampule of serum.</p>",
             "image": "shopify://shop_images/mixed_mi_1.webp",
             "image_mobile": "shopify://shop_images/mi-1-mob_10d274d3-9488-48b7-bc9c-4f36e48e9ce1.webp"
           }
         },
-        "list_iaNLwp": {
-          "type": "list",
+        "items_iaNLwp": {
+          "type": "items",
           "settings": {
-            "heading": "Treatment",
-            "text": "<p>Start at the centre of the face and work your way outward to cover the full face.</p>",
+            "text": "<h3>Treatment</h3><p>Start at the centre of the face and work your way outward to cover the full face.</p>",
             "image": "shopify://shop_images/mixed_mi_2.webp",
             "image_mobile": "shopify://shop_images/mi-2-mob_0692c2e6-eb84-4d03-ac7a-f8f386d88f25.webp"
           }
         },
-        "list_aQHPpP": {
-          "type": "list",
+        "items_aQHPpP": {
+          "type": "items",
           "settings": {
-            "heading": "Aftercare",
-            "text": "<p>Once treatment is completed, place lid back on the needle head. Twist the lid off and dispose safely.</p>",
+            "text": "<h3>Aftercare</h3><p>Once treatment is completed, place lid back on the needle head. Twist the lid off and dispose safely.</p>",
             "image": "shopify://shop_images/mixed_mi_3.webp",
             "image_mobile": "shopify://shop_images/mi-3-mob_474650ff-a9f7-4ec8-b784-d9c7da333689.webp"
           }
         }
       },
       "block_order": [
-        "list_npLGNp",
-        "list_iaNLwp",
-        "list_aQHPpP"
+        "items_npLGNp",
+        "items_iaNLwp",
+        "items_aQHPpP"
       ],
-      "name": "t:sections.how-to-use.name",
+      "name": "t:sections.n_easy-steps.name",
       "settings": {
-        "heading": "See how quick and easy it is to use",
-        "text": "",
-        "heading_mobile": "",
+        "use_own_file": true,
+        "modifier": "none",
+        "text": "<h2>See how quick and easy it is to use</h2>",
+        "image": "shopify://shop_images/mi-use-video.webp",
+        "image_mobile": "shopify://shop_images/mi-use-video-mob.webp",
         "wistia_url": "8ymvdqzx92",
         "button_label": "",
         "button_url": ""
       }
     },
-    "device_comparison_1_JCGw3B": {
-      "type": "device-comparison-1",
-      "name": "t:sections.device-comparison-1.name",
-      "settings": {}
+    "n_comparison_table_JCGw3B": {
+      "type": "n_comparison-table",
+      "blocks": {
+        "comparison_table_heading_1": {
+          "type": "comparison_table_heading",
+          "settings": {
+            "heading": "Results in",
+            "color": "none"
+          }
+        },
+        "comparison_table_heading_2": {
+          "type": "comparison_table_heading",
+          "settings": {
+            "heading": "Customized",
+            "color": "none"
+          }
+        },
+        "comparison_table_heading_3": {
+          "type": "comparison_table_heading",
+          "settings": {
+            "heading": "Skin Safe",
+            "color": "colorize"
+          }
+        },
+        "comparison_table_heading_4": {
+          "type": "comparison_table_heading",
+          "settings": {
+            "heading": "Cost",
+            "color": "none"
+          }
+        },
+        "comparison_table_1": {
+          "type": "comparison_table",
+          "settings": {
+            "image": "shopify://shop_images/micro-infusion-system.webp",
+            "heading": "<h3>Qure <br/>Micro-Infusion System</h3>",
+            "text_1": "As little as 1-2 days",
+            "select_1": "checkmark",
+            "text_2": "Tailored to your needs",
+            "select_2": "checkmark",
+            "text_3": "Minimal downtime & virtually painless",
+            "select_3": "checkmark",
+            "text_4": "$20 per treatment",
+            "select_4": "checkmark",
+            "text_5": "",
+            "select_5": "checkmark"
+          }
+        },
+        "comparison_table_2": {
+          "type": "comparison_table",
+          "settings": {
+            "image": "shopify://shop_images/clinic-treatment.webp",
+            "heading": "<h3>Micro-Infusion<br/>Clinic Treatment</h3>",
+            "text_1": "As little as 1-2 days",
+            "select_1": "checkmark",
+            "text_2": "Tailored to your needs",
+            "select_2": "checkmark",
+            "text_3": "Minimal downtime",
+            "select_3": "checkmark",
+            "text_4": "$300+ per treatment",
+            "select_4": "checkmark",
+            "text_5": "",
+            "select_5": "checkmark"
+          }
+        },
+        "comparison_table_3": {
+          "type": "comparison_table",
+          "settings": {
+            "image": "shopify://shop_images/home-treatment.webp",
+            "heading": "<h3>Derma Roller<br/>At-Home Treatment</h3>",
+            "text_1": "A few days",
+            "select_1": "cross",
+            "text_2": "Not customized",
+            "select_2": "cross",
+            "text_3": "Potential side effects",
+            "select_3": "cross",
+            "text_4": "< $10 per treatment",
+            "select_4": "checkmark",
+            "text_5": "",
+            "select_5": "checkmark"
+          }
+        },
+        "disclaimer_1": {
+          "type": "disclaimer",
+          "settings": {
+            "text": "Based on publicly available information. For general comparison only."
+          }
+        }
+      },
+      "block_order": [
+        "comparison_table_heading_1",
+        "comparison_table_heading_2",
+        "comparison_table_heading_3",
+        "comparison_table_heading_4",
+        "comparison_table_1",
+        "comparison_table_2",
+        "comparison_table_3",
+        "disclaimer_1"
+      ],
+      "name": "t:sections.n_comparison-table.name",
+      "settings": {
+        "use_own_file": true,
+        "text": "<h2>Get a professional-inspired glow from home without the clinic visit</h2>"
+      }
     },
-    "you_may_also_like_uZi1bC": {
-      "type": "product-you-may-also-like",
-      "settings": {}
+    "n_you_may_also_like_uZi1bC": {
+      "type": "n_product-you-may-also-like",
+      "name": "t:sections.n_product-you-may-also-like.name",
+      "settings": {
+        "use_own_file": true
+      }
     }
   },
   "order": [
     "product-bundle",
-    "slider_featured_in_DDaUTN",
-    "led_benefits_fCGiVb",
-    "banner_with_text_YiQnbm",
-    "proven_results_dPwVBB",
-    "carousel_PYn3Tz",
-    "trusted_reviews_mRLHtt",
-    "how_to_use_xxxaxK",
-    "device_comparison_1_JCGw3B",
-    "you_may_also_like_uZi1bC"
+    "n_press_reviews_DDaUTN",
+    "n_why_using_fCGiVb",
+    "n_base_section_YiQnbm",
+    "n_progress_metrics_dPwVBB",
+    "n_features_marquee_PYn3Tz",
+    "n_trusted_reviews_mRLHtt",
+    "n_easy_steps_xxxaxK",
+    "n_comparison_table_JCGw3B",
+    "n_you_may_also_like_uZi1bC"
   ]
 }

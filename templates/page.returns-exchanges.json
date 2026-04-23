@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
     "n_across_image_banner_dx4yWG": {
       "type": "n_across-image-banner",
@@ -93,7 +93,7 @@
         "carousel_x38Xbp",
         "carousel_7kaUiC"
       ],
-      "name": "t:sections.returns-exchanges-card-slider.name",
+      "name": "t:sections.n_returns-exchanges-how-to-use.name",
       "settings": {
         "use_own_file": true,
         "heading": "<h2>How to return or exchange</h2>",
@@ -235,7 +235,7 @@
         "information_box_QpDtde",
         "information_box_hA9MP7"
       ],
-      "name": "t:sections.cta-cards.name",
+      "name": "t:sections.n_returns-exchanges-tiles-group.name",
       "settings": {
         "use_own_file": true,
         "heading": "<h2>More Help at Your Fingertips</h2>"

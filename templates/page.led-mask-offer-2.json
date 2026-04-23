@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
     "page_header_6BFNQx": {
       "type": "n-product-header",
@@ -672,7 +672,7 @@
         "txt_t2_f",
         "txt_t2_g"
       ],
-      "name": "Exclusive bundle",
+      "name": "t:sections.n_page-led-mask-offer-2-exclusive-bundle.name",
       "settings": {
         "use_own_file": true,
         "badge": "<p><strong>Exclusive</strong> Bundle</p>",
@@ -1089,7 +1089,7 @@
     },
     "n_page-led-mask-offer-2-faq_led_mask_offer_2": {
       "type": "n_page-led-mask-offer-2-faq",
-      "name": "t:sections.n_faq.name",
+      "name": "t:sections.n_page-led-mask-offer-2-faq.name",
       "settings": {
         "use_own_file": true
       }
