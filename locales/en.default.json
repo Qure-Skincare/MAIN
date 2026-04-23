@@ -366,6 +366,9 @@
         "header": "Jump To"
       }
     },
+    "approved": {
+      "text_html": "<p>Approved by <strong>Dr. Shah</strong> &amp; <strong>Dr. Maxfield</strong></p>"
+    },
     "exclusive-offer": {
       "header_html": "<div class='eo-header'><span>EXCLUSIVE</span><span> OFFER</span></div>",
       "n_header_html": "<div class='e-double-tag'><strong>Exclusive</strong> Promo</div>",
@@ -417,6 +420,7 @@
         "recommended_html": "<strong>50+ Board Certified Dermatologists</strong> recommend Qure to their patients. <a href='https://qureskincare.com/pages/derm-reviews' class='text-black text-decoration-underline'>See More</a>.",
         "guaranteed_text": "30-Day Money-Back Guarantee",
         "guaranteed_text_90": "90-Day Money-Back Guarantee",
+        "guaranteed_text_year": "1-Year Guarantee",
         "shipping_text": "Free US Shipping over $100"
       },
       "saveup-offer": {
