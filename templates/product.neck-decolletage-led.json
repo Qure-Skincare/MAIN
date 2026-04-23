@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
     "product_header_KpLxTq": {
       "type": "n-product-header",
@@ -109,7 +109,6 @@
       ],
       "name": "t:sections.product-header.name",
       "settings": {
-        "use_own_file": true,
         "seo_heading": "RED LIGHT NECK & CHEST MASK",
         "heading": "Smooth and firm the look of skin with the Neck & Décolletage LED System",
         "rating": true,
@@ -118,7 +117,8 @@
         "reserved": false,
         "soldout": false,
         "button-label": "",
-        "button-url": ""
+        "button-url": "",
+        "use_own_file": true
       }
     },
     "n_press_reviews_gzTQ6b": {
@@ -333,7 +333,6 @@
       "settings": {
         "use_own_file": true,
         "background_color": "none",
-        "modifier": "none",
         "heading": "<h2>Trusted and Recommended by Experts</h2>",
         "text": "<p>“LED light targets the skin’s surface to <em>help improve the look of firmness and smoothness</em><em><strong>,</strong></em> supporting a more youthful appearance over time.”</p>",
         "video_image_cover": "shopify://shop_images/n-d-doctors.webp",
