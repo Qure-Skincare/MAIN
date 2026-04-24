@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "page_header_V5N4T9": {
       "type": "n-product-header",
@@ -92,7 +92,6 @@
       ],
       "name": "t:sections.page-header.name",
       "settings": {
-        "use_own_file": true,
         "seo_heading": "",
         "heading": "Refresh the look of dull skin with the Micro-Infusion Facial System",
         "rating": false,
@@ -101,7 +100,8 @@
         "reserved": false,
         "soldout": false,
         "button-label": "",
-        "button-url": ""
+        "button-url": "",
+        "approved": false
       }
     },
     "purchase-form-landing": {
@@ -375,7 +375,8 @@
         "form_name": "purchase-form-landing",
         "hide_types": false,
         "type": "box",
-        "klaviyo_form_name": ""
+        "klaviyo_form_name": "",
+        "guarantee_period": "90"
       }
     },
     "n_press_reviews_3zGerf": {
@@ -1813,7 +1814,8 @@
         "text": "All orders are one-time purchases. No extra charges, and no hidden fees.",
         "image": "shopify://shop_images/tami-cropped.webp",
         "klaviyo_form_name": "",
-        "form_name": "purchase-form-second"
+        "form_name": "purchase-form-second",
+        "guarantee_period": "30"
       }
     },
     "n_text_YpMGMC": {
