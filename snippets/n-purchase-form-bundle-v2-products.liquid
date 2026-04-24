@@ -1,0 +1,17 @@
+{%- for __id in __idsArray1 -%}
+    {% assign block = section.blocks | where: "id", __id | first %}
+    {% if block.type == 'product_type' %}
+        {% assign product_type_title = block.settings.heading | strip_newlines | strip | replace: ' ', '' | replace: ',', '_' | downcase %}
+    {% endif %}
+{%- endfor -%}
+
+<div id="bundles-tabContent">
+    <template id="{{ section.settings.form_name }}-source-{{ section.id }}-{{ product_type_title }}">
+        <div class="bundles__content">
+        {% include 'n-purchase-form-bundle-v2-products-item' array: __idsArray1, type: 1 %}
+        {% include 'n-purchase-form-bundle-v2-products-item' array: __idsArray2, type: 2 %}
+        {% include 'n-purchase-form-bundle-v2-products-item' array: __idsArray3, type: 3 %}
+        </div>
+    </template>
+    <div id="{{ section.settings.form_name }}-body-{{ section.id }}"></div>
+</div>

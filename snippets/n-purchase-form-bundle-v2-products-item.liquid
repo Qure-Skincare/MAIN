@@ -1,0 +1,118 @@
+{% if array != blank %}
+    {%- for __id in array -%}
+        {% assign block = section.blocks | where: "id", __id | first %}
+        {% if block.type == 'product_type' %}
+            {% assign product_type_block = block %}
+            {% assign product_type_title = block.settings.heading | strip_newlines | strip | replace: ' ', '' | replace: ',', '_' | downcase %}
+        {% endif %}
+        {% if block.type == 'product' %}
+            <script>
+                window.get_form_bundle_products_data = window.get_form_bundle_products_data || {};
+                window.get_form_bundle_products_data['{{ block.settings.product }}'] = {{ type }};
+            </script>
+        {% endif %}
+    {%- endfor -%}
+
+    {% render 'n-purchase-form-bundle-v2-products-item-header', type: type, block: product_type_block %}
+
+    {% assign array_count = array.size %}
+
+    {%- for __id in array -%}
+        {% assign block = section.blocks | where: "id", __id | first %}
+        {% if block.type == 'product' %}
+            {% include 'get-product-data', product_handle: block.settings.product, product_prefix: 'purchase-form-bundle-products-items-' %}
+
+            {% if product_id %}
+                {% assign product_title_tag = block.settings.heading | strip_html | strip_newlines | strip | replace: ' ', '' | replace: ',', '_' | downcase %}
+                {% assign array_count = array_count |  minus: 1 %}
+                {% assign product_type = array_count %}
+                {% capture product_dialog %}{{ block.id }}_dialog{% endcapture %}
+                
+                {% capture data-per %}{{ 'purchase-form.settings.buy-button-label' | t }} {% if product_discount != blank %} {{ 'purchase-form.settings.and' | t }} {{ 'purchase-form.settings.save' | t }} {{ product_discount }}%{% endif %}{% endcapture %}
+
+                {% if block.settings.preorder == true %}
+                    {% capture data-per %}{{ 'purchase-form.settings.reserve-button-label' | t }} {% if product_discount != blank %} {{ 'purchase-form.settings.and' | t }} {{ 'purchase-form.settings.save' | t }} {{ product_discount }}%{% endif %}{% endcapture %}
+                {% endif %}
+
+                {% if block.settings.soldout == true %}
+                    {% capture data-per %}{{ 'purchase-form.settings.soldout-button-label' | t }}{% endcapture %}
+                {% endif %}
+
+                {% capture button-label %}{{ 'product.settings.buy-button-label' | t }}{% endcapture %}
+
+                {% if block.settings.reserved == true %}
+                    {% capture button-label %}{{ 'product.settings.reserved-button-label' | t }}{% endcapture %}
+                {% endif %}
+                
+                {% if block.settings.soldout == true %}
+                    {% capture button-label %}{{ 'product.settings.soldout-button-label' | t }}{% endcapture %}
+                {% endif %}
+
+                <div id="{{ product_handle }}" class="bundles__item custom__block">
+                    <div class="c-bundle-card">
+                        <div class="c-bundle-card__image" onclick="{{ product_dialog }}.showModal()">
+                            {% if product_discount != blank %}
+                                <div class="e-pill-save">{{ 'purchase-form-bundle.settings.discount-text' | t }} {{ product_discount }}%</div>
+                            {% endif %}
+
+                            {% if block.settings.image != blank %}
+                                <img src="{{ block.settings.image | image_url }}" alt="{{ product_title | escape }}" />
+                            {% endif %}
+                        </div>
+                        <article class="c-bundle-card__main">
+                            <div class="c-rating">
+                                <div class="e-rating-stars" style="--rating: 4.8"></div>
+                                <span>{{ 'purchase-form-bundle.settings.rated' | t }} <strong>{{ product_rating | default: 4.8 }}</strong>/5</span>
+                            </div>
+                            <h6>{{ product_title }}</h6>
+                            <div class="e-price e-price--highlight">
+                                <div class="e-price__main">
+                                    <div class="e-price__current igPrice">{{ product_sale_price }}</div>
+                                    {% if product_before_price != blank %}
+                                        <div class="e-price__old igComparePrice">{{ product_before_price }}</div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </article>
+                        <div class="c-order-button">
+                            <button class="btn btn--primary add-cart-button" type="button" onclick="{{ product_dialog }}.showModal()">{{ button-label }}</button>
+                            <div class="e-pay-options">
+                                Buy Now, Pay Later available
+                                <ul>
+                                    <li><img src="https://qureskincaredns.com/assets/images/klarna.svg" alt="Klarna" /></li>
+                                    <li><img src="https://qureskincaredns.com/assets/images/sezzle.svg" alt="Sezzle" /></li>
+                                    <li><img src="https://qureskincaredns.com/assets/images/afterpay.svg" alt="Afterpay" /></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <dialog class="c-dialog" id="{{ product_dialog }}">
+                            <div class="c-dialog__content">
+                                <div class="c-bundle-card__gallery">
+                                    {% capture element_id %}#{{ product_dialog }}{% endcapture %}
+                                    {% render 'n-product-page-slider', product: get_product_data, page: blank, element_id: element_id, slidesPerView: 1, spaceBetween: 16 %}
+                                    {% render 'n-product-page-slider-thumbs', product: get_product_data, page: blank, slidesPerView: '3', spaceBetween: 12 %}
+                                </div>
+                                <article class="c-bundle-card__main">
+                                    <h6>{{ product_title }}</h6>
+                                    <div class="e-price e-price--highlight">
+                                        <div class="e-price__main">
+                                            <div class="e-price__current igPrice">{{ product_sale_price }}</div>
+                                            {% if product_before_price != blank %}
+                                                <div class="e-price__old igComparePrice">{{ product_before_price }}</div>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                </article>
+                                {% render 'n-purchase-form-bundle-v2-products-item-bottom', product_handle: product_handle, product_sale_price: product_sale_price, product_before_price: product_before_price, product_variants: product_variants, product_bundle_list: product_bundle_list, block: block %}
+                                {% render 'n-product-page-buy-button', product_price: null, product_variant_id: product_variant_id, section: block, product_available: product_available, is_modal: true %}
+                            </div>
+                            <button class="c-dialog__close" type="button" onclick="{{ product_dialog }}.close()">
+                                <i class="e-icon e-icon-cross"></i>
+                            </button>
+                        </dialog>
+                    </div>
+                </div>
+            {% endif %}
+        {% endif %}
+    {%- endfor -%}
+{% endif %}
