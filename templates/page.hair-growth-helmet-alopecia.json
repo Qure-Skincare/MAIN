@@ -97,8 +97,8 @@
         "soldout": false
       }
     },
-    "n_hair_growth_helmet_image_slider_9KL6Kj": {
-      "type": "n_hair-growth-helmet-image-slider",
+    "n_hair_growth_helmet_peek_cards_slider_9KL6Kj": {
+      "type": "n_hair-growth-helmet-peek-cards-slider",
       "blocks": {
         "slider_UGthBb": {
           "type": "slider",
@@ -167,7 +167,7 @@
         "slider_7LQiLd",
         "slider_KhCe6h"
       ],
-      "name": "t:sections.n_hair-growth-helmet-image-slider.name",
+      "name": "t:sections.n_hair-growth-helmet-peek-cards-slider.name",
       "settings": {
         "use_own_file": true,
         "heading": "<h2>See the change, feel the difference</h2>",
@@ -238,6 +238,8 @@
       "name": "t:sections.n_hair-growth-helmet-banner-with-modal.name",
       "settings": {
         "use_own_file": true,
+        "image": "shopify://shop_images/pixels.webp",
+        "image_mobile": "shopify://shop_images/pixels.webp",
         "heading": "<h2>Advanced Light Therapy for Androgenetic Alopecia</h2>",
         "text": "<p>The Q-Renew LLLT Helmet utilizes the power of low-level light therapy (LLLT), a scientifically-backed technology for treating androgenetic alopecia. It delivers a precise combination of red light and laser therapy to stimulate dormant hair follicles and support the natural hair growth cycle.</p>",
         "button_label": "Explore The Features"
@@ -279,71 +281,148 @@
       "name": "t:sections.n_hair-growth-helmet-feature-carousel.name",
       "settings": {
         "use_own_file": true,
-        "heading": "How LLLT Combats Androgenetic Alopecia",
+        "heading": "<h2>How LLLT Combats Androgenetic Alopecia</h2>",
         "button_label": "Get Started",
         "button_url": "#helmet-home"
       }
     },
-    "n_results_slider_DKCtmR": {
-      "type": "n_results-slider",
+    "n_hair_growth_helmet_product_result_DKCtmR": {
+      "type": "n_hair-growth-helmet-product-result",
       "blocks": {
-        "slider_nk3MnN": {
-          "type": "slider",
+        "tab_content_NCAG4f": {
+          "type": "tab_content",
           "settings": {
-            "image": "shopify://shop_images/backed-real-results-1.webp",
-            "text": "<p>Proven to visually improve <em>Thinning Crown</em></p>"
+            "section_id": "User Results",
+            "text": "<p>In a user study, participants reported fuller-looking hair and healthier-feeling scalps after 16 weeks of regular treatments with Q-Renew.</p>"
           }
         },
-        "slider_4eTEbC": {
-          "type": "slider",
+        "percent_value_EMKxHA": {
+          "type": "percent_value",
           "settings": {
-            "image": "shopify://shop_images/backed-real-results-2.webp",
-            "text": "<p>Proven to visually improve <em>Receding Hairline</em></p>"
-          }
-        },
-        "slider_ffYVxx": {
-          "type": "slider",
-          "settings": {
-            "image": "shopify://shop_images/backed-real-results-3.webp",
-            "text": "<p>Proven to visually improve <em>Temporal Thinning</em></p>"
-          }
-        },
-        "text_with_progress_cdXLi9": {
-          "type": "text_with_progress",
-          "settings": {
-            "percent_value": "100%",
+            "section_id": "User Results",
+            "percent_value_style": "circle",
+            "percent_value": 100,
             "text": "reported an improvement in overall hair quality*"
           }
         },
-        "text_with_progress_F4bjaQ": {
-          "type": "text_with_progress",
+        "percent_value_6hhBpr": {
+          "type": "percent_value",
           "settings": {
-            "percent_value": "89%",
+            "section_id": "User Results",
+            "percent_value_style": "circle",
+            "percent_value": 89,
             "text": "experienced fuller-looking, more voluminous hair*"
           }
         },
-        "text_with_progress_Bf4pzi": {
-          "type": "text_with_progress",
+        "percent_value_C4mrkd": {
+          "type": "percent_value",
           "settings": {
-            "percent_value": "82%",
+            "section_id": "User Results",
+            "percent_value_style": "circle",
+            "percent_value": 82,
             "text": "reported thicker-looking hair with consistent use*"
+          }
+        },
+        "tab_slider_qgUzTL": {
+          "type": "tab_slider",
+          "settings": {
+            "section_id": "User Results",
+            "image": "shopify://shop_images/backed-real-results-1.webp",
+            "text": "<p>Proven to visually improve</p><p>[span]Thinning Crown[/span]</p>"
+          }
+        },
+        "tab_slider_qzjEkj": {
+          "type": "tab_slider",
+          "settings": {
+            "section_id": "User Results",
+            "image": "shopify://shop_images/backed-real-results-2.webp",
+            "text": "<p>Proven to visually improve</p><p>[span]Receding Hairline[/span]</p>"
+          }
+        },
+        "tab_slider_n9k7JT": {
+          "type": "tab_slider",
+          "settings": {
+            "section_id": "User Results",
+            "image": "shopify://shop_images/backed-real-results-3.webp",
+            "text": "<p>Proven to visually improve</p><p>[span]Temporal Thinning[/span]</p>"
+          }
+        },
+        "disclaimer_NVyLbg": {
+          "type": "disclaimer",
+          "settings": {
+            "section_id": "User Results",
+            "text": "Results based on a 16-week self reported user study. Individual results may vary."
+          }
+        },
+        "tab_content_LQ7aRQ": {
+          "type": "tab_content",
+          "settings": {
+            "section_id": "Clinical Data",
+            "text": "<p>Over the course of a 16 week user study, regular use of the hair growth helmet was shown to support measurable improvements in multiple aspects of hair health.</p><p>Using HairMetrix® trichoscopy and phototrichogram analysis, researchers observed increases in hair growth rate, individual hair thickness, and total hair width per cm², which together contribute to the look of fuller, denser hair.</p><p><strong>After 16 weeks, participants experienced:</strong></p>"
+          }
+        },
+        "percent_value_petBdr": {
+          "type": "percent_value",
+          "settings": {
+            "section_id": "Clinical Data",
+            "percent_value_style": "line",
+            "percent_value": 27,
+            "text": "increase in hair growth rate"
+          }
+        },
+        "percent_value_CzjkRi": {
+          "type": "percent_value",
+          "settings": {
+            "section_id": "Clinical Data",
+            "percent_value_style": "line",
+            "percent_value": 19,
+            "text": "increase in total hair width per cm²"
+          }
+        },
+        "percent_value_iTNjNW": {
+          "type": "percent_value",
+          "settings": {
+            "section_id": "Clinical Data",
+            "percent_value_style": "line",
+            "percent_value": 12,
+            "text": "increase in average hair thickness"
+          }
+        },
+        "image_YFX4Bm": {
+          "type": "image",
+          "settings": {
+            "section_id": "Clinical Data",
+            "image": "shopify://shop_images/clinical-data.webp"
+          }
+        },
+        "disclaimer_WrVpBq": {
+          "type": "disclaimer",
+          "settings": {
+            "section_id": "Clinical Data",
+            "text": "Measured using HairMetrix® Trichoscopy/Phototrichogram analysis during a 16-week self-user study."
           }
         }
       },
       "block_order": [
-        "slider_nk3MnN",
-        "slider_4eTEbC",
-        "slider_ffYVxx",
-        "text_with_progress_cdXLi9",
-        "text_with_progress_F4bjaQ",
-        "text_with_progress_Bf4pzi"
+        "tab_content_NCAG4f",
+        "percent_value_EMKxHA",
+        "percent_value_6hhBpr",
+        "percent_value_C4mrkd",
+        "tab_slider_qgUzTL",
+        "tab_slider_qzjEkj",
+        "tab_slider_n9k7JT",
+        "disclaimer_NVyLbg",
+        "tab_content_LQ7aRQ",
+        "percent_value_petBdr",
+        "percent_value_CzjkRi",
+        "percent_value_iTNjNW",
+        "image_YFX4Bm",
+        "disclaimer_WrVpBq"
       ],
-      "name": "t:sections.n_results-slider.name",
+      "name": "t:sections.n_hair-growth-helmet-product-result.name",
       "settings": {
         "use_own_file": true,
-        "heading": "<h2>Backed by real results</h2>",
-        "text": "<p>The Q-Renew LLLT Helmet is clinically proven to be effective for treating androgenetic alopecia. In a 16-week user study, participants with androgenetic alopecia reported significant improvements in hair growth and scalp health.</p>",
-        "sub_text": "<p>These results highlight how consistent <strong>red light therapy for hair loss</strong> can help support visible improvements in hair appearance and scalp health over time.<br/><br/>*Based on a Qure user study. Individual results may vary.</p>"
+        "heading": "<h2>Backed by real results</h2>"
       }
     },
     "n_features_marquee_jHy7Zp": {
@@ -459,8 +538,7 @@
         "slider_NB9ieE": {
           "type": "slider",
           "settings": {
-            "heading": "<h6>1. Prepare</h6>",
-            "text": "<p>Start with clean, dry hair and place the helmet comfortably on your head.</p>",
+            "text": "<h6>1. Prepare</h6><p>Start with clean, dry hair and place the helmet comfortably on your head.</p>",
             "image": "shopify://shop_images/steps-to-use-1.webp",
             "image_mobile": "shopify://shop_images/steps-to-use-1-mob.webp"
           }
@@ -468,8 +546,7 @@
         "slider_jrXtEm": {
           "type": "slider",
           "settings": {
-            "heading": "<h6>2. Treatment</h6>",
-            "text": "<p>Press start, select your zone, and relax for 12 minutes while the lights work.</p>",
+            "text": "<h6>2. Treatment</h6><p>Press start, select your zone, and relax for 12 minutes while the lights work.</p>",
             "image": "shopify://shop_images/steps-to-use-2.webp",
             "image_mobile": "shopify://shop_images/steps-to-use-2-mob.webp"
           }
@@ -477,8 +554,7 @@
         "slider_wYcAtU": {
           "type": "slider",
           "settings": {
-            "heading": "<h6>3. Aftercare</h6>",
-            "text": "<p>The helmet shuts off automatically; remove and store until your next session.</p>",
+            "text": "<h6>3. Aftercare</h6><p>The helmet shuts off automatically; remove and store until your next session.</p>",
             "image": "shopify://shop_images/steps-to-use-3.webp",
             "image_mobile": "shopify://shop_images/steps-to-use-3-mob.webp"
           }
@@ -777,10 +853,10 @@
   },
   "order": [
     "n_header",
-    "n_hair_growth_helmet_image_slider_9KL6Kj",
+    "n_hair_growth_helmet_peek_cards_slider_9KL6Kj",
     "n_hair_growth_helmet_banner_with_modal_BnqA3f",
     "n_hair_growth_helmet_feature_carousel_HtN8C4",
-    "n_results_slider_DKCtmR",
+    "n_hair_growth_helmet_product_result_DKCtmR",
     "n_features_marquee_jHy7Zp",
     "n_faq_VwkhRa",
     "n_hair_growth_helmet_usage_guide_HQaYec",

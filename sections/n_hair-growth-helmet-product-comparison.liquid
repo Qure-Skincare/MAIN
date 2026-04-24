@@ -2,6 +2,7 @@
     Renders a product comparison section for hair growth helmet page.
 {% enddoc %}
 
+<!-- HOW IT COMPARES -->
 {% if section.settings.use_own_file %}
     <link rel="stylesheet" href="https://qureskincaredns.com/alex/sections/isolated/how-compares/how-compares.css" />
 {% endif %}
@@ -43,7 +44,7 @@
                                             <span>{{ block.settings.description_2 }}</span>
                                         {% endif %}
                                         {% if block.settings.heading_2 != blank %}
-                                            {{ block.settings.heading_2}}
+                                            {{ block.settings.heading_2 }}
                                         {% endif %}
                                         {% if block.settings.text_2 != blank %}
                                             {{ block.settings.text_2 }}
@@ -74,17 +75,17 @@
                     <div class="how-compares__table">
                         <div class="table-header">&nbsp;</div>
                         {% for block in section.blocks %}
-                            {% if block.type== 'heading_prof' %}
+                            {% if block.type == 'heading_prof' %}
                                 <div class="table-header">
                                     {% if block.settings.left_image != blank %}
                                         <img class="table-header-image" src="{{ block.settings.left_image | image_url }}" alt="{{ block.settings.left_image.alt | escape }}" />
                                     {% endif %}
                                     {% if block.settings.left_heading != blank %}
                                         <div class="table-header-name">
-                                            {{ block.settings.left_heading 
+                                            {{ block.settings.left_heading
                                             | replace: '<p>', ''
                                             | replace: '</p>', ''
-                                            | replace: '[qure-logo]', '<img class="qure-logo" src="https://qureskincaredns.com/assets/images/qure_logo..svg" />' 
+                                            | replace: '[qure-logo]', '<i class="e-icon e-icon-qure"></i>'
                                             }}
                                         </div>
                                     {% endif %}
@@ -98,9 +99,9 @@
                                             {{ block.settings.right_heading
                                             | replace: '<p>', ''
                                             | replace: '</p>', ''
-                                            | replace: '[irestore-prof-logo]', '<img src="https://qureskincaredns.com/alex/sections/isolated/how-compares/images/irestore.webp" />'
-                                            | replace: '[currentbody-logo]', '<img src="https://qureskincaredns.com/alex/sections/isolated/how-compares/images/currentbody.webp" />' 
-                                            | replace: '[red-light-hat-logo]', '<img src="https://qureskincaredns.com/alex/sections/isolated/how-compares/images/higherdose.webp" />'
+                                            | replace: '[irestore-prof-logo]', '<img src="sections/new/how-compares/images/irestore.webp" alt="" />'
+                                            | replace: '[currentbody-logo]', '<img src="sections/new/how-compares/images/currentbody.webp" alt="" />'
+                                            | replace: '[red-light-hat-logo]', '<img src="sections/new/how-compares/images/higherdose.webp" alt="" />'
                                             }}
                                         </div>
                                     {% endif %}
@@ -115,7 +116,7 @@
                                 {% if block.settings.left_text_1 != blank %}
                                     <div class="table-data">
                                         <div class="table-data-benefit">
-                                            <i class="fa fa-check-circle"></i>
+                                            <i class="e-icon e-icon-checkmark"></i>
                                             {{ block.settings.left_text_1 }}
                                         </div>
                                     </div>
@@ -123,7 +124,7 @@
                                 {% if block.settings.right_text_1 != blank %}
                                     <div class="table-data">
                                         <div class="table-data-benefit">
-                                            <i class="fa fa-times-circle"></i>
+                                            <i class="e-icon e-icon-cross"></i>
                                             {{ block.settings.right_text_1 }}
                                         </div>
                                     </div>
@@ -134,7 +135,7 @@
                                 {% if block.settings.left_text_2 != blank %}
                                     <div class="table-data">
                                         <div class="table-data-benefit">
-                                            <i class="fa fa-check-circle"></i>
+                                            <i class="e-icon e-icon-checkmark"></i>
                                             {{ block.settings.left_text_2 }}
                                         </div>
                                     </div>
@@ -142,7 +143,7 @@
                                 {% if block.settings.right_text_2 != blank %}
                                     <div class="table-data">
                                         <div class="table-data-benefit">
-                                            <i class="fa fa-times-circle"></i>
+                                            <i class="e-icon e-icon-cross"></i>
                                             {{ block.settings.right_text_2 }}
                                         </div>
                                     </div>
@@ -153,7 +154,7 @@
                                 {% if block.settings.left_text_3 != blank %}
                                     <div class="table-data">
                                         <div class="table-data-benefit">
-                                            <i class="fa fa-check-circle"></i>
+                                            <i class="e-icon e-icon-checkmark"></i>
                                             {{ block.settings.left_text_3 }}
                                         </div>
                                     </div>
@@ -161,7 +162,7 @@
                                 {% if block.settings.right_text_3 != blank %}
                                     <div class="table-data">
                                         <div class="table-data-benefit">
-                                            <i class="fa fa-times-circle"></i>
+                                            <i class="e-icon e-icon-cross"></i>
                                             {{ block.settings.right_text_3 }}
                                         </div>
                                     </div>
@@ -172,7 +173,7 @@
                                 {% if block.settings.left_text_4 != blank %}
                                     <div class="table-data">
                                         <div class="table-data-benefit">
-                                            <i class="fa fa-check-circle"></i>
+                                            <i class="e-icon e-icon-checkmark"></i>
                                             {{ block.settings.left_text_4 }}
                                         </div>
                                     </div>
@@ -180,17 +181,17 @@
                                 {% if block.settings.right_text_4 != blank %}
                                     <div class="table-data">
                                         <div class="table-data-benefit">
-                                            <i class="fa fa-times-circle"></i>
+                                            <i class="e-icon e-icon-cross"></i>
                                             {{ block.settings.right_text_4 }}
                                         </div>
                                     </div>
-                                {% endif %}       
+                                {% endif %}
                             {% endif %}
                         {% endfor %}
                     </div>
                 </div>
             </div>
-            <div class="how-compares__data-item" data-option="hair-growth" style="display: none;">
+            <div class="how-compares__data-item" data-option="hair-growth" style="display: none">
                 <div class="how-compares__data-content">
                     <div class="how-compares__parameters">
                         <ul>
@@ -212,7 +213,7 @@
                                             <span>{{ block.settings.description_2 }}</span>
                                         {% endif %}
                                         {% if block.settings.heading_2 != blank %}
-                                            {{ block.settings.heading_2}}
+                                            {{ block.settings.heading_2 }}
                                         {% endif %}
                                         {% if block.settings.text_2 != blank %}
                                             {{ block.settings.text_2 }}
@@ -243,17 +244,17 @@
                     <div class="how-compares__table">
                         <div class="table-header">&nbsp;</div>
                         {% for block in section.blocks %}
-                            {% if block.type== 'heading_hair_growth' %}
+                            {% if block.type == 'heading_hair_growth' %}
                                 <div class="table-header">
                                     {% if block.settings.left_image != blank %}
                                         <img class="table-header-image" src="{{ block.settings.left_image | image_url }}" alt="{{ block.settings.left_image.alt | escape }}" />
                                     {% endif %}
                                     {% if block.settings.left_heading != blank %}
                                         <div class="table-header-name">
-                                            {{ block.settings.left_heading 
+                                            {{ block.settings.left_heading
                                             | replace: '<p>', ''
                                             | replace: '</p>', ''
-                                            | replace: '[qure-logo]', '<img class="qure-logo" src="https://qureskincaredns.com/assets/images/qure_logo..svg" />' 
+                                            | replace: '[qure-logo]', '<i class="e-icon e-icon-qure"></i>'
                                             }}
                                         </div>
                                     {% endif %}
@@ -267,9 +268,9 @@
                                             {{ block.settings.right_heading
                                             | replace: '<p>', ''
                                             | replace: '</p>', ''
-                                            | replace: '[irestore-prof-logo]', '<img src="https://qureskincaredns.com/alex/sections/isolated/how-compares/images/irestore.webp" />'
-                                            | replace: '[currentbody-logo]', '<img src="https://qureskincaredns.com/alex/sections/isolated/how-compares/images/currentbody.webp" />' 
-                                            | replace: '[red-light-hat-logo]', '<img src="https://qureskincaredns.com/alex/sections/isolated/how-compares/images/higherdose.webp" />'
+                                            | replace: '[irestore-prof-logo]', '<img src="sections/new/how-compares/images/irestore.webp" alt="" />'
+                                            | replace: '[currentbody-logo]', '<img src="sections/new/how-compares/images/currentbody.webp" alt="" />'
+                                            | replace: '[red-light-hat-logo]', '<img src="sections/new/how-compares/images/higherdose.webp" alt="" />'
                                             }}
                                         </div>
                                     {% endif %}
@@ -284,7 +285,7 @@
                                 {% if block.settings.left_text_1 != blank %}
                                     <div class="table-data">
                                         <div class="table-data-benefit">
-                                            <i class="fa fa-check-circle"></i>
+                                            <i class="e-icon e-icon-checkmark"></i>
                                             {{ block.settings.left_text_1 }}
                                         </div>
                                     </div>
@@ -292,7 +293,7 @@
                                 {% if block.settings.right_text_1 != blank %}
                                     <div class="table-data">
                                         <div class="table-data-benefit">
-                                            <i class="fa fa-times-circle"></i>
+                                            <i class="e-icon e-icon-cross"></i>
                                             {{ block.settings.right_text_1 }}
                                         </div>
                                     </div>
@@ -303,7 +304,7 @@
                                 {% if block.settings.left_text_2 != blank %}
                                     <div class="table-data">
                                         <div class="table-data-benefit">
-                                            <i class="fa fa-check-circle"></i>
+                                            <i class="e-icon e-icon-checkmark"></i>
                                             {{ block.settings.left_text_2 }}
                                         </div>
                                     </div>
@@ -311,7 +312,7 @@
                                 {% if block.settings.right_text_2 != blank %}
                                     <div class="table-data">
                                         <div class="table-data-benefit">
-                                            <i class="fa fa-times-circle"></i>
+                                            <i class="e-icon e-icon-cross"></i>
                                             {{ block.settings.right_text_2 }}
                                         </div>
                                     </div>
@@ -322,7 +323,7 @@
                                 {% if block.settings.left_text_3 != blank %}
                                     <div class="table-data">
                                         <div class="table-data-benefit">
-                                            <i class="fa fa-check-circle"></i>
+                                            <i class="e-icon e-icon-checkmark"></i>
                                             {{ block.settings.left_text_3 }}
                                         </div>
                                     </div>
@@ -330,7 +331,7 @@
                                 {% if block.settings.right_text_3 != blank %}
                                     <div class="table-data">
                                         <div class="table-data-benefit">
-                                            <i class="fa fa-times-circle"></i>
+                                            <i class="e-icon e-icon-cross"></i>
                                             {{ block.settings.right_text_3 }}
                                         </div>
                                     </div>
@@ -341,7 +342,7 @@
                                 {% if block.settings.left_text_4 != blank %}
                                     <div class="table-data">
                                         <div class="table-data-benefit">
-                                            <i class="fa fa-check-circle"></i>
+                                            <i class="e-icon e-icon-checkmark"></i>
                                             {{ block.settings.left_text_4 }}
                                         </div>
                                     </div>
@@ -349,17 +350,17 @@
                                 {% if block.settings.right_text_4 != blank %}
                                     <div class="table-data">
                                         <div class="table-data-benefit">
-                                            <i class="fa fa-times-circle"></i>
+                                            <i class="e-icon e-icon-cross"></i>
                                             {{ block.settings.right_text_4 }}
                                         </div>
                                     </div>
-                                {% endif %}       
+                                {% endif %}
                             {% endif %}
                         {% endfor %}
                     </div>
                 </div>
             </div>
-            <div class="how-compares__data-item" data-option="red-light-hat" style="display: none;">
+            <div class="how-compares__data-item" data-option="red-light-hat" style="display: none">
                 <div class="how-compares__data-content">
                     <div class="how-compares__parameters">
                         <ul>
@@ -381,7 +382,7 @@
                                             <span>{{ block.settings.description_2 }}</span>
                                         {% endif %}
                                         {% if block.settings.heading_2 != blank %}
-                                            {{ block.settings.heading_2}}
+                                            {{ block.settings.heading_2 }}
                                         {% endif %}
                                         {% if block.settings.text_2 != blank %}
                                             {{ block.settings.text_2 }}
@@ -412,17 +413,17 @@
                     <div class="how-compares__table">
                         <div class="table-header">&nbsp;</div>
                         {% for block in section.blocks %}
-                            {% if block.type== 'heading_red_light_hat' %}
+                            {% if block.type == 'heading_red_light_hat' %}
                                 <div class="table-header">
                                     {% if block.settings.left_image != blank %}
                                         <img class="table-header-image" src="{{ block.settings.left_image | image_url }}" alt="{{ block.settings.left_image.alt | escape }}" />
                                     {% endif %}
                                     {% if block.settings.left_heading != blank %}
                                         <div class="table-header-name">
-                                            {{ block.settings.left_heading 
+                                            {{ block.settings.left_heading
                                             | replace: '<p>', ''
                                             | replace: '</p>', ''
-                                            | replace: '[qure-logo]', '<img class="qure-logo" src="https://qureskincaredns.com/assets/images/qure_logo..svg" />' 
+                                            | replace: '[qure-logo]', '<i class="e-icon e-icon-qure"></i>'
                                             }}
                                         </div>
                                     {% endif %}
@@ -436,9 +437,9 @@
                                             {{ block.settings.right_heading
                                             | replace: '<p>', ''
                                             | replace: '</p>', ''
-                                            | replace: '[irestore-prof-logo]', '<img src="https://qureskincaredns.com/alex/sections/isolated/how-compares/images/irestore.webp" />'
-                                            | replace: '[currentbody-logo]', '<img src="https://qureskincaredns.com/alex/sections/isolated/how-compares/images/currentbody.webp" />' 
-                                            | replace: '[red-light-hat-logo]', '<img src="https://qureskincaredns.com/alex/sections/isolated/how-compares/images/higherdose.webp" />'
+                                            | replace: '[irestore-prof-logo]', '<img src="sections/new/how-compares/images/irestore.webp" alt="" />'
+                                            | replace: '[currentbody-logo]', '<img src="sections/new/how-compares/images/currentbody.webp" alt="" />'
+                                            | replace: '[red-light-hat-logo]', '<img src="sections/new/how-compares/images/higherdose.webp" alt="" />'
                                             }}
                                         </div>
                                     {% endif %}
@@ -453,7 +454,7 @@
                                 {% if block.settings.left_text_1 != blank %}
                                     <div class="table-data">
                                         <div class="table-data-benefit">
-                                            <i class="fa fa-check-circle"></i>
+                                            <i class="e-icon e-icon-checkmark"></i>
                                             {{ block.settings.left_text_1 }}
                                         </div>
                                     </div>
@@ -461,7 +462,7 @@
                                 {% if block.settings.right_text_1 != blank %}
                                     <div class="table-data">
                                         <div class="table-data-benefit">
-                                            <i class="fa fa-times-circle"></i>
+                                            <i class="e-icon e-icon-cross"></i>
                                             {{ block.settings.right_text_1 }}
                                         </div>
                                     </div>
@@ -472,7 +473,7 @@
                                 {% if block.settings.left_text_2 != blank %}
                                     <div class="table-data">
                                         <div class="table-data-benefit">
-                                            <i class="fa fa-check-circle"></i>
+                                            <i class="e-icon e-icon-checkmark"></i>
                                             {{ block.settings.left_text_2 }}
                                         </div>
                                     </div>
@@ -480,7 +481,7 @@
                                 {% if block.settings.right_text_2 != blank %}
                                     <div class="table-data">
                                         <div class="table-data-benefit">
-                                            <i class="fa fa-times-circle"></i>
+                                            <i class="e-icon e-icon-cross"></i>
                                             {{ block.settings.right_text_2 }}
                                         </div>
                                     </div>
@@ -491,7 +492,7 @@
                                 {% if block.settings.left_text_3 != blank %}
                                     <div class="table-data">
                                         <div class="table-data-benefit">
-                                            <i class="fa fa-check-circle"></i>
+                                            <i class="e-icon e-icon-checkmark"></i>
                                             {{ block.settings.left_text_3 }}
                                         </div>
                                     </div>
@@ -499,7 +500,7 @@
                                 {% if block.settings.right_text_3 != blank %}
                                     <div class="table-data">
                                         <div class="table-data-benefit">
-                                            <i class="fa fa-times-circle"></i>
+                                            <i class="e-icon e-icon-cross"></i>
                                             {{ block.settings.right_text_3 }}
                                         </div>
                                     </div>
@@ -510,7 +511,7 @@
                                 {% if block.settings.left_text_4 != blank %}
                                     <div class="table-data">
                                         <div class="table-data-benefit">
-                                            <i class="fa fa-check-circle"></i>
+                                            <i class="e-icon e-icon-checkmark"></i>
                                             {{ block.settings.left_text_4 }}
                                         </div>
                                     </div>
@@ -518,24 +519,26 @@
                                 {% if block.settings.right_text_4 != blank %}
                                     <div class="table-data">
                                         <div class="table-data-benefit">
-                                            <i class="fa fa-times-circle"></i>
+                                            <i class="e-icon e-icon-cross"></i>
                                             {{ block.settings.right_text_4 }}
                                         </div>
                                     </div>
-                                {% endif %}       
+                                {% endif %}
                             {% endif %}
                         {% endfor %}
                     </div>
                 </div>
             </div>
         </div>
+        <div class="how-compares__declaimer">Comparison based on publicly available product information and for general comparison only. Features may vary by model.</div>
     </div>
 </div>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-        loadScriptOnce('how-compares', 'https://qureskincaredns.com/alex/sections/isolated/how-compares/how-compares.js');
+        loadScriptOnce("how-compares", "https://qureskincaredns.com/sections/new/how-compares/how-compares.js");
     });
 </script>
+<!-- HOW IT COMPARES END -->
 
 {%  schema  %}
 {
