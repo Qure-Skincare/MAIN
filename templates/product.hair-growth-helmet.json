@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "n_header": {
       "type": "n_product-hair-growth-helmet-header",
@@ -33,7 +33,7 @@
           "type": "money-back",
           "settings": {
             "heading": "Money Back Guarantee",
-            "text": "Hair growth isn't instant. That's why we offer a money-back guarantee. If you don't see real results, get a full refund - no questions asked.",
+            "text": "Hair growth isn’t instant. That’s why we offer a money-back guarantee. If you don’t see real results, get a full refund – no questions asked.",
             "image": "shopify://shop_images/moneyback_1.webp"
           }
         },
