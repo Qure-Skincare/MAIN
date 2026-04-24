@@ -10,7 +10,7 @@
  {
   "sections": {
     "n_header": {
-      "type": "n_product-hair-growth-helmet-header",
+      "type": "product-hair-growth-helmet-header",
       "blocks": {
         "price": {
           "type": "price",
