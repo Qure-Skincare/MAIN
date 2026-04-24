@@ -63,53 +63,57 @@
 <div class="c-buy-block">
     <div class="c-order-button">
       <form method="post" action="/cart/add" enctype="multipart/form-data"{% if static %} data-static="true"{% endif %}>
-        <button type="{% if soldout %}button{% else %}submit{% endif %}" class="btn btn--primary add-cart-button{% if skip_black_friday_label == true %} skip_black_friday_label{% endif %}"{% if soldout %} disabled{% endif %}{% if close_modal %} data-bs-toggle="modal"{% endif %}>{{ button-label }}</button>
+        <button type="{% if soldout %}button{% else %}submit{% endif %}" class="btn btn--primary add-cart-button{% if skip_black_friday_label == true %} skip_black_friday_label{% endif %}"{% if soldout %} disabled{% endif %}>{{ button-label }}</button>
         <input type="hidden" name="quantity" id="quantity" value="1">
         <input type="hidden" name="selling_plan" id="selling_plan" value="">
         <input type="hidden" name="id" value="{{ product_variant_id }}">    
       </form>
 
-      {% unless block.settings.hide_payments %}
-          <div class="e-pay-options">
-              {{ 'product.settings.buy-button-bottom.heading_html' | t: product_price_divided: product_price_divided }}
-              <ul>
-                  <li><img src="https://qureskincaredns.com/assets/images/klarna.svg" alt="Klarna" /></li>
-                  <li><img src="https://qureskincaredns.com/assets/images/sezzle.svg" alt="Sezzle" /></li>
-                  <li><img src="https://qureskincaredns.com/assets/images/afterpay.svg" alt="Afterpay" /></li>
-              </ul>
-          </div>
+      {% unless is_modal %}
+        {% unless block.settings.hide_payments %}
+            <div class="e-pay-options">
+                {{ 'product.settings.buy-button-bottom.heading_html' | t: product_price_divided: product_price_divided }}
+                <ul>
+                    <li><img src="https://qureskincaredns.com/assets/images/klarna.svg" alt="Klarna" /></li>
+                    <li><img src="https://qureskincaredns.com/assets/images/sezzle.svg" alt="Sezzle" /></li>
+                    <li><img src="https://qureskincaredns.com/assets/images/afterpay.svg" alt="Afterpay" /></li>
+                </ul>
+            </div>
+        {% endunless %}
       {% endunless %}
     </div>
 
-    {% unless block.settings.hide_bottom %}
-        <div class="c-certified-box">
-            <ul>
-                <li><img src="https://qureskincaredns.com/sections/isolated/targeted-patches/images/crt-1.webp" alt="Certified Dermatologists" /></li>
-                <li><img src="https://qureskincaredns.com/sections/isolated/targeted-patches/images/crt-2.webp" alt="Certified Dermatologists" /></li>
-                <li>+50</li>
-            </ul>
-            <p>{{ 'product.settings.buy-button-bottom.recommended_html' | t }}</p>
-        </div>
-        <ul class="e-features-list">
-            <li>
-                <i class="e-icon e-icon-guarantee"></i>
+    {% unless is_modal %}
+      {% unless block.settings.hide_bottom %}
+          <div class="c-certified-box">
+              <ul>
+                  <li><img src="https://qureskincaredns.com/sections/isolated/targeted-patches/images/crt-1.webp" alt="Certified Dermatologists" /></li>
+                  <li><img src="https://qureskincaredns.com/sections/isolated/targeted-patches/images/crt-2.webp" alt="Certified Dermatologists" /></li>
+                  <li>+50</li>
+              </ul>
+              <p>{{ 'product.settings.buy-button-bottom.recommended_html' | t }}</p>
+          </div>
+          <ul class="e-features-list">
+              <li>
+                  <i class="e-icon e-icon-guarantee"></i>
 
-                {% if section.settings.guarantee_period != blank %}
-                  {% case section.settings.guarantee_period %}
-                    {% when '90' %}
-                      {{ 'product.settings.buy-button-bottom.guaranteed_text_90' | t }}
-                    {% else %}
-                      {{ 'product.settings.buy-button-bottom.guaranteed_text' | t }}
-                  {% endcase %}
-                {% else %}
-                  {{ 'product.settings.buy-button-bottom.guaranteed_text' | t }}
-                {% endif %}
-            </li>
-            <li>
-                <i class="e-icon e-icon-shipping-order"></i>
-                {{ 'product.settings.buy-button-bottom.shipping_text' | t }}
-            </li>
-        </ul>
+                  {% if section.settings.guarantee_period != blank %}
+                    {% case section.settings.guarantee_period %}
+                      {% when '90' %}
+                        {{ 'product.settings.buy-button-bottom.guaranteed_text_90' | t }}
+                      {% else %}
+                        {{ 'product.settings.buy-button-bottom.guaranteed_text' | t }}
+                    {% endcase %}
+                  {% else %}
+                    {{ 'product.settings.buy-button-bottom.guaranteed_text' | t }}
+                  {% endif %}
+              </li>
+              <li>
+                  <i class="e-icon e-icon-shipping-order"></i>
+                  {{ 'product.settings.buy-button-bottom.shipping_text' | t }}
+              </li>
+          </ul>
+      {% endunless %}
     {% endunless %}
 </div>
 

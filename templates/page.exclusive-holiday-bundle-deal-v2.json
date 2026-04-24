@@ -216,7 +216,7 @@
       }
     },
     "purchase_form_bundle_v2": {
-      "type": "purchase-form-bundle-v2",
+      "type": "n-purchase-form-bundle-v2",
       "blocks": {
         "type_hHPdgJ": {
           "type": "type",
@@ -367,169 +367,6 @@
         "text": "",
         "hide_types": true,
         "form_name": "purchase-form-bundle-v2"
-      }
-    },
-    "purchase_form_bundle_Lj9cVS": {
-      "type": "purchase-form-bundle",
-      "blocks": {
-        "type_hHPdgJ": {
-          "type": "type",
-          "settings": {}
-        },
-        "product_type_QKQhNr": {
-          "type": "product_type",
-          "settings": {
-            "heading": "Dark Spots & Hyperpigmentation",
-            "preselected": true
-          }
-        },
-        "product_Ykma4b": {
-          "type": "product",
-          "settings": {
-            "product": "fade-firm-bundle-pro1",
-            "preselected": false,
-            "soldout": false,
-            "reserved": false
-          }
-        },
-        "product_8hJgNj": {
-          "type": "product",
-          "settings": {
-            "product": "fade-firm-bundle-advanced",
-            "preselected": false,
-            "soldout": false,
-            "reserved": false
-          }
-        },
-        "product_BJXNMB": {
-          "type": "product",
-          "settings": {
-            "product": "fade-firm-bundle-essential",
-            "preselected": false,
-            "soldout": false,
-            "reserved": false
-          }
-        },
-        "type_aJwQ9q": {
-          "type": "type",
-          "settings": {}
-        },
-        "product_type_VLXcAn": {
-          "type": "product_type",
-          "settings": {
-            "heading": "Signs of Aging",
-            "preselected": false
-          }
-        },
-        "product_eiHVrp": {
-          "type": "product",
-          "settings": {
-            "product": "line-refine-bundle-pro1",
-            "preselected": false,
-            "soldout": false,
-            "reserved": false
-          }
-        },
-        "product_xJpDep": {
-          "type": "product",
-          "settings": {
-            "product": "line-refine-bundle-advanced",
-            "preselected": false,
-            "soldout": false,
-            "reserved": false
-          }
-        },
-        "product_xwqzya": {
-          "type": "product",
-          "settings": {
-            "product": "line-refine-bundle-essential",
-            "preselected": false,
-            "soldout": false,
-            "reserved": false
-          }
-        },
-        "product_eAgqK8": {
-          "type": "product",
-          "disabled": true,
-          "settings": {
-            "product": "micro-infusion-limited-edition-bundle-1",
-            "preselected": false,
-            "soldout": false,
-            "reserved": false
-          }
-        },
-        "type_yDwWmt": {
-          "type": "type",
-          "settings": {}
-        },
-        "product_type_YrPQrV": {
-          "type": "product_type",
-          "settings": {
-            "heading": "Acne & Redness",
-            "preselected": false
-          }
-        },
-        "product_KKbDAE": {
-          "type": "product",
-          "settings": {
-            "product": "breakout-control-pro",
-            "preselected": false,
-            "soldout": false,
-            "reserved": false
-          }
-        },
-        "product_gia3hC": {
-          "type": "product",
-          "settings": {
-            "product": "breakout-control-advanced1",
-            "preselected": false,
-            "soldout": false,
-            "reserved": false
-          }
-        },
-        "product_gNjH9L": {
-          "type": "product",
-          "settings": {
-            "product": "breakout-control-essential",
-            "preselected": false,
-            "soldout": false,
-            "reserved": false
-          }
-        },
-        "product_e9YBCe": {
-          "type": "product",
-          "settings": {
-            "product": "water-filter-family-bundle",
-            "preselected": false,
-            "soldout": false,
-            "reserved": false
-          }
-        }
-      },
-      "block_order": [
-        "type_hHPdgJ",
-        "product_type_QKQhNr",
-        "product_Ykma4b",
-        "product_8hJgNj",
-        "product_BJXNMB",
-        "type_aJwQ9q",
-        "product_type_VLXcAn",
-        "product_eiHVrp",
-        "product_xJpDep",
-        "product_xwqzya",
-        "product_eAgqK8",
-        "type_yDwWmt",
-        "product_type_YrPQrV",
-        "product_KKbDAE",
-        "product_gia3hC",
-        "product_gNjH9L",
-        "product_e9YBCe"
-      ],
-      "disabled": true,
-      "settings": {
-        "heading": "Choose Your Bundle",
-        "text": "Long term healthy skin and better self-esteem starts here.",
-        "form_name": "purchase-form-bundle"
       }
     },
     "n_take_quiz_V6p9AW": {
@@ -1132,7 +969,6 @@
     "n_press_reviews_bundle_v2",
     "n_page-exclusive-bundle-resuslts-showcase",
     "purchase_form_bundle_v2",
-    "purchase_form_bundle_Lj9cVS",
     "n_take_quiz_V6p9AW",
     "n_trusted_reviews_bundle_v2",
     "n_features_marquee_bundle_v2",

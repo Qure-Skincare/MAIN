@@ -1,0 +1,72 @@
+<div class="c-bundle-card__switcher">
+    <ul class="c-bundle-card__switcher-buttons">
+        <li><button type="button" class="active">{{ 'purchase-form-bundle.settings.included-text' | t }}</button></li>
+        <li><button type="button">{{ 'purchase-form-bundle.settings.how-to-use-text' | t }}</button></li>
+    </ul>
+    <div class="c-bundle-card__switcher-content show">
+        <ul class="c-bundle-card__kit-content">
+            {% if product_bundle_list != blank %}
+
+                {% assign total_price = 0 %}
+                {% assign total_compare_at_price = 0 %}
+
+                {% for bundle_product in product_bundle_list %}
+                    {% assign target = bundle_product.handle %}
+
+                    {% if target contains 'month-bundle' %}
+                        {% assign target = 'month_bundle' %}
+                    {% endif %}
+
+                    {% assign total_compare_at_price = total_compare_at_price | plus: bundle_product.compare_at_price %}
+                    {% assign bundle_url = bundle_product.handle | prepend: '/products/'  %}
+
+                    {% if bundle_product.variants.size > 1 %}
+                        <li class="included_product">
+                            <a href="{{ bundle_url }}" target="_blank"><img class="variantImage" src="{{ bundle_product.featured_image | img_url: '240x' }}" alt="{{ bundle_product.title | escape }}" /></a>
+                            <p><a href="{{ bundle_url }}" target="_blank">{{ bundle_product.title }}</a></p>
+                            {% if bundle_product.compare_at_price %}
+                                <small>(Regular price - {{ bundle_product.compare_at_price | money_without_trailing_zeros }})</small>
+                            {% else %}
+                                <small>(Regular price - {{ bundle_product.price | money_without_trailing_zeros }})</small>
+                            {% endif %}
+                            <form action="#">
+                                <select name="kit-item-options" class="variant-select">
+                                    {% for bundle_variant in bundle_product.variants %}
+                                        {% for variant in product_variants %}
+                                            {%- assign ext_variant = bundle_variant.title | append: ' / ' | append: bundle_variant.title -%}
+                                            {% if variant.title == bundle_variant.title %}
+                                                <option {% if variant.metafields.custom.bundle_not_available == true %}disabled{% endif %} value="{{ bundle_variant.title | escape }}" data-handle="{{ product_handle }}" data-image="{{ bundle_variant.featured_image | img_url: '250x' }}" data-variant-id="{{ variant.id }}" data-variant-text="{{ variant.metafields.custom.bundle_text }}">{{ bundle_variant.title }}</option>
+                                            {% endif %}
+                                            {% if variant.title == ext_variant %}
+                                                <option {% if variant.metafields.custom.bundle_not_available == true %}disabled{% endif %} value="{{ bundle_variant.title | escape }}" data-handle="{{ product_handle }}" data-image="{{ bundle_variant.featured_image | img_url: '250x' }}" data-variant-id="{{ variant.id }}" data-bundle-variant-title="{{ bundle_variant.title }}" data-variant-text="{{ variant.metafields.custom.bundle_text }}">{{ bundle_variant.title }}</option>
+                                            {% endif %}
+                                        {% endfor %}
+                                    {% endfor %}  
+                                </select>
+                            </form>
+                        </li>
+                    {% else %}
+                        <li>
+                            <a href="{{ bundle_url }}" target="_blank"><img src="{{ bundle_product.featured_image | img_url: '240x' }}" alt="{{ bundle_product.title | escape }}" /></a>
+                            <p><a href="{{ bundle_url }}" target="_blank">{{ bundle_product.title }}</a></p>
+                            {% if bundle_product.compare_at_price %}
+                                <small>(Regular price - {{ bundle_product.compare_at_price | money_without_trailing_zeros }})</small>
+                            {% else %}
+                                <small>(Regular price - {{ bundle_product.price | money_without_trailing_zeros }})</small>
+                            {% endif %}
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            {% endif %}
+        </ul>
+    </div>
+    <div class="c-bundle-card__switcher-content">
+        <div class="c-bundle-card__how-use">
+            {% render 'n-purchase-form-bundle-v2-products-item-bottom-text', product_handle: product_handle %}
+        </div>
+    </div>
+</div>
+<div class="c-bundle-card__amount">
+    <div class="c-bundle-card__amount-total">Total value {{ product_before_price }}</div>
+    <div class="c-bundle-card__amount-current">Only {{ product_sale_price }}</div>
+</div>

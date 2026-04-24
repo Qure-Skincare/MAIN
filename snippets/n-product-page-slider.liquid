@@ -22,6 +22,7 @@
             "nextEl": "{{ element_id }} .c-swiper-button-next"
         }
     }'>
+
     <div class="swiper-wrapper">
         {% if product.metafields.custom.carousel_media.value != blank %}
             {% render 'n-product-page-media-carousel', input_media_carousel: product.metafields.custom.carousel_media.value, size: '720x' %}
