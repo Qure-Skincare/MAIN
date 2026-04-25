@@ -11,21 +11,6 @@
 {% endif %}
 
 <div class="helmet-home__moneyback">
-<<<<<<< HEAD
-    <div class="c-moneyback">
-        {% if block.settings.image != blank %}
-            <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
-        {% else %}
-            <img src="https://qureskincaredns.com/sections/isolated/micro-infusion-pdp/images/{{ 'product.settings.money-back.image' | t }}" alt="moneyback">
-        {% endif %}
-        {% if block.settings.heading != blank %}
-            <strong>{{ block.settings.heading }}</strong>
-        {% else %}
-            <strong>{{ 'product.settings.money-back.header' | t }}</strong>
-        {% endif %}
-        <p>{{ 'product.settings.money-back.text' | t }}</p>
-    </div>
-=======
     {% if block.settings.image != blank %}
         <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
     {% else %}
@@ -37,5 +22,4 @@
         <strong>{{ 'product.settings.money-back.header' | t }}</strong>
     {% endif %}
     <p>{{ block.settings.text }}</p>
->>>>>>> production
 </div>

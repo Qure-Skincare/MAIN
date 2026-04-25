@@ -33,7 +33,7 @@
           "type": "money-back",
           "settings": {
             "heading": "Money Back Guarantee",
-            "text": "Hair growth during hormonal changes takes time. That's why we offer a money-back guarantee. If you don't see real results, get a full refund — no questions asked.",
+            "text": "Hair growth isn’t instant. That’s why we offer a money-back guarantee. If you don’t see real results, get a full refund – no questions asked.",
             "image": "shopify://shop_images/moneyback_1.webp"
           }
         },
@@ -330,7 +330,7 @@
           "type": "tab_content",
           "settings": {
             "section_id": "User Results",
-            "text": "<p>In a user study, participants reported fuller-looking hair and healthier-feeling scalps after 16 weeks of regular treatments with Q-Renew.</p>"
+            "text": "<p>In a user study, participants reported fuller-looking hair and healthier-feeling scalps after 16 weeks of regular treatments.</p>"
           }
         },
         "percent_value_EMKxHA": {
@@ -388,7 +388,7 @@
           "type": "disclaimer",
           "settings": {
             "section_id": "User Results",
-            "text": "Results based on a 16-week self reported user study. Individual results may vary."
+            "text": "*Based on a Qure user study. Individual results may vary."
           }
         },
         "tab_content_LQ7aRQ": {
