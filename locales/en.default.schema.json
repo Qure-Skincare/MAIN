@@ -305,7 +305,8 @@
         "save": "Save",
         "am-or-pm": "AM or PM",
         "eye": "Eye",
-        "share": "Share"
+        "share": "Share",
+        "benefits": "Benefits"
     },
     "blocks": {
         "block-card": {
@@ -816,11 +817,8 @@
         "product-hair-growth-helmet-header": {
             "name": "Helmet header"
         },
-        "n_hair-growth-helmet-image-slider": {
-            "name": "N Image slider for hair growth helmet"
-        },
-        "hair-growth-helmet-image-slider": {
-            "name": "Image slider for hair growth helmet"
+        "n_hair-growth-helmet-peek-cards-slider": {
+            "name": "N Peek cards slider"
         },
         "n_hair-growth-helmet-banner-with-modal": {
             "name": "N Banner with modal for hair growth helmet"

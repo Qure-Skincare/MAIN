@@ -6,7 +6,7 @@
 {% if section.settings.use_own_file %}
     <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/expert-reviews/expert-reviews.css" />
 {% endif %}
-<section class="expert-reviews expert-reviews--old-page">
+<section class="expert-reviews">
     <div class="container">
         {{ section.settings.text }}
         {% if section.settings.wistia_url != blank %}
@@ -26,7 +26,6 @@
                         <div>{{ section.settings.button_label | replace: '<p>', '' | replace: '</p>', '' }}</div>
                     </div>
                 {% endif %}
-                
             </div>
         {% endif %}
         
