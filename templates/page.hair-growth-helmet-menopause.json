@@ -565,7 +565,7 @@
         "heading": "<h2>Discover the routine made for your stage of life. Menopause can affect hair in different ways. Choose the concern that feels most familiar:</h2>",
         "text": "",
         "button_label": "",
-        "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
+        "button_url": ""
       }
     },
     "hair_growth_helmet_usage_guide_HQaYec": {
@@ -889,9 +889,9 @@
       "settings": {
         "use_own_file": true,
         "heading": "<h2>Have questions?</h2>",
-        "text": "",
+        "text": "Don't see your question?",
         "button_label": "Ask us",
-        "button_url": ""
+        "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
       }
     }
   },
