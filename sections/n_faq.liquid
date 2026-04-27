@@ -9,6 +9,9 @@
 <div class="have-questions" id="faq">
     <div class="container">
         {{ section.settings.heading }}
+        {% if section.settings.sub_text != blank %}
+            <article>{{ section.settings.sub_text }}</article>
+        {% endif %}
         <div class="c-accordion c-accordion--lines">
             <div class="c-accordion__list">
                 {% for block in section.blocks %}
@@ -58,6 +61,11 @@
             "id": "text",
             "label": "t:common.text",
             "default": "Don't see your question? "
+        },
+        {
+            "type": "richtext",
+            "id": "sub_text",
+            "label": "t:common.sub-text"
         },
         {
             "type": "text",
