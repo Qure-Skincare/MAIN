@@ -1164,7 +1164,7 @@
           "settings": {
             "heading": "Dark Spots",
             "image": "shopify://shop_images/Dark_Spots_4.png",
-            "preselected": true
+            "preselected": false
           }
         },
         "product_type_accordion_SQKQhNr": {
@@ -1247,7 +1247,7 @@
           "settings": {
             "heading": "Wrinkles",
             "image": "shopify://shop_images/Wrinkles_2.png",
-            "preselected": false
+            "preselected": true
           }
         },
         "product_type_accordion_SVLXcAn": {
@@ -1269,7 +1269,7 @@
           "settings": {
             "product": "micro-infusion-6-month-bundle-for-wrinkles",
             "preselected": true,
-            "heading": "6 Month Supply promo",
+            "heading": "6 Month Supply Promo",
             "subheading": "(12 Treatments)",
             "image": "shopify://shop_images/MI_6_month_W.webp",
             "soldout": false,
