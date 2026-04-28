@@ -306,7 +306,9 @@
         "am-or-pm": "AM or PM",
         "eye": "Eye",
         "share": "Share",
-        "benefits": "Benefits"
+        "benefits": "Benefits",
+        "hide_payments": "Hide payments",
+        "hide_bottom": "Hide bottom"
     },
     "blocks": {
         "block-card": {
@@ -1130,6 +1132,9 @@
         },
         "n_affiliate-page-apply-form": {
             "name": "Apply form"
+        },
+        "n_accordion-tiles-square": {
+            "name": "Accordion tiles square"
         },
         "beauty-benefits": {
             "name": "Beauty benefits"
