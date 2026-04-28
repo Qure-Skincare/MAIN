@@ -125,7 +125,7 @@
           "settings": {
             "heading": "Dark Spots",
             "image": "shopify://shop_images/Dark_Spots_6.png",
-            "preselected": true
+            "preselected": false
           }
         },
         "product_gbPf3J": {
@@ -203,7 +203,7 @@
           "settings": {
             "heading": "Wrinkles",
             "image": "shopify://shop_images/Frame_1073714897.png",
-            "preselected": false
+            "preselected": true
           }
         },
         "product_nyJ9n7": {
@@ -215,7 +215,7 @@
             "popular": false,
             "best": false,
             "preselected": true,
-            "heading": "6 Month Supply PRE-ORDER",
+            "heading": "6 Month Supply",
             "subheading": "(12 Treatments)",
             "text": "",
             "image": "shopify://shop_images/PDP_MI_6_month_W.webp",
@@ -237,7 +237,7 @@
             "popular": false,
             "best": false,
             "preselected": false,
-            "heading": "3 Month Supply PRE-ORDER",
+            "heading": "3 Month Supply",
             "subheading": "(6 Treatments)",
             "text": "",
             "image": "shopify://shop_images/PDP_MI_3_month_W.webp",
@@ -1933,6 +1933,7 @@
         "use_own_file": true,
         "heading": "<h2>Have questions?</h2>",
         "text": "Don’t see your question?",
+        "sub_text": "",
         "button_label": "Ask us",
         "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
       }
