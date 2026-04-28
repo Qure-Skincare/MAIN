@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "n_hero_section_xMcaXr": {
       "type": "n_hero-section",
@@ -1269,7 +1269,7 @@
           "settings": {
             "product": "micro-infusion-6-month-bundle-for-wrinkles",
             "preselected": true,
-            "heading": "6 Month Supply promo PRE-ORDER",
+            "heading": "6 Month Supply promo PR",
             "subheading": "(12 Treatments)",
             "image": "shopify://shop_images/MI_6_month_W.webp",
             "soldout": false,
@@ -1438,7 +1438,8 @@
         "text": "All orders are one-time purchases. No extra charges, and no hidden fees.",
         "image": "shopify://shop_images/tami-cropped.webp",
         "klaviyo_form_name": "",
-        "form_name": "purchase-form-second"
+        "form_name": "purchase-form-second",
+        "guarantee_period": "30"
       }
     },
     "n_should_know_8jabz8": {
@@ -1610,6 +1611,7 @@
         "use_own_file": true,
         "heading": "<h2>Have questions?</h2>",
         "text": "Don’t see your question?",
+        "sub_text": "",
         "button_label": "Ask us",
         "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
       }
