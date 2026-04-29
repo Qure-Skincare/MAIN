@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "announcement_bar_jkkyg7": {
       "type": "announcement-bar",
@@ -59,14 +59,15 @@
             "image_product1": "shopify://shop_images/Img_16.png",
             "product2": "neck-decolletage-led",
             "image_product2": "shopify://shop_images/ndBox.webp",
-            "text": "<p>Buy the Q-Rejuvalight Pro and get the Neck & Décolletage LED System for FREE (value $299)</p>"
+            "text": "<p>Buy the Q-Rejuvalight Pro and get the Neck & Décolletage LED System for FREE (value $299)</p>",
+            "guarantee_period": "30"
           }
         },
         "limited_offer_A8": {
           "type": "limited-offer",
           "settings": {
-            "sum": "$50",
-            "code": "QURE50",
+            "sum": "$100",
+            "code": "QURE100",
             "days": 5
           }
         },
@@ -141,7 +142,6 @@
       ],
       "name": "t:sections.product-header.name",
       "settings": {
-        "use_own_file": true,
         "seo_heading": "RED LIGHT MASK Q-REJUVALIGHT PRO",
         "heading": "Unlock your best skin yet with our LED Face Mask",
         "rating": true,
@@ -150,7 +150,8 @@
         "reserved": false,
         "soldout": false,
         "button-label": "",
-        "button-url": ""
+        "button-url": "",
+        "approved": false
       }
     },
     "n_press_reviews_fxy6Uf": {
@@ -1478,6 +1479,7 @@
         "use_own_file": true,
         "heading": "<h2>Have questions?</h2>",
         "text": "Don’t see your question?",
+        "sub_text": "",
         "button_label": "Ask us",
         "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
       }
