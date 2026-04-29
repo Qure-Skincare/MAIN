@@ -131,6 +131,10 @@
                     {% endfor %}
                 {% endif %}
 
+                {% if section.settings.sub_text != blank %}
+                    <small>{{ section.settings.sub_text | replace : '<p>', '' | replace : '</p>', '' }}</small>
+                {% endif %}
+
             </article>
 
             {% for block in section.blocks %}
@@ -201,6 +205,11 @@
             "type": "richtext",
             "id": "text",
             "label": "t:common.text"
+        },
+        {
+            "type": "richtext",
+            "id": "sub_text",
+            "label": "t:common.sub-text"
         },
         {
             "type": "image_picker",
