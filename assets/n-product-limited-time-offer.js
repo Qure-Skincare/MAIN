@@ -23,7 +23,7 @@
         return;
       }
   
-      var root = document.querySelector('.e-countdown');
+      var root = document.querySelector('.c-limited-offer .e-countdown');
       if (!root) return;
   
       var children = root.querySelectorAll(':scope > div[data-key]');
@@ -36,7 +36,9 @@
   
       var deadlineAttr = root.getAttribute('data-deadline');
   
-      var days = (typeof customDays !== 'undefined') ? customDays : 0;
+      var offerDaysAttr = root.getAttribute('data-offer-days');
+      var parsedOffer = offerDaysAttr != null && offerDaysAttr !== '' ? parseInt(offerDaysAttr, 10) : NaN;
+      var days = !isNaN(parsedOffer) ? Math.max(0, parsedOffer - 1) : (typeof customDays !== 'undefined' ? customDays : 0);
   
       var defaultEnd = moment().tz("America/Los_Angeles")
         .add(days, 'days')
