@@ -137,10 +137,11 @@
       "block_order": [
         "badge_NVnWab"
       ],
+      "disabled": true,
+      "name": "t:sections.n_across-image-banner.name",
       "settings": {
-        "disabled": true,
         "use_own_file": true,
-        "modifier": "holidays",
+        "modifier": "holidays-secondary",
         "heading": "<h1>Simplify Your Routine Before&nbsp;Summer</h1>",
         "text": "<p>Stock Up On <strong>All-In-One Face Serum</strong>:<br />Clinically Backed Ingredients that Help With 5+ Skin Concerns</p>",
         "sub_text": "<p><em>Limited time offer.</em> Valid for US and UK orders only.</p>",
