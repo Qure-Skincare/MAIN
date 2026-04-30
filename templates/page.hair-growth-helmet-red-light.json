@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "n_header": {
       "type": "product-hair-growth-helmet-header",
@@ -86,14 +86,13 @@
       ],
       "name": "t:sections.n_product-hair-growth-helmet-header.name",
       "settings": {
-        "use_own_file": true,
         "seo_heading": "Backed by Dermatologists",
         "heading": "Red Light Therapy for Hair Loss Using an FDA-Cleared LLLT Helmet",
         "rating": true,
         "limited": false,
         "description": "<p>Targeted <strong>red light therapy for hair loss</strong> combines LED light and medical-grade lasers to support scalp health and promote the appearance of thicker-looking hair in just 12 minutes per session.</p>",
         "whitelist": false,
-        "reserved": false,
+        "reserved": true,
         "soldout": false
       }
     },
@@ -238,11 +237,11 @@
       "name": "t:sections.n_hair-growth-helmet-banner-with-modal.name",
       "settings": {
         "use_own_file": true,
-        "image": "shopify://shop_images/pixels.webp",
-        "image_mobile": "shopify://shop_images/pixels.webp",
         "heading": "<h2>Powerful light technology for fuller-looking hair</h2>",
         "text": "<p>Backed by decades of light therapy research, the Q-Renew LLLT Helmet uses clinically-proven lasers and LEDs to reactivate hair follicles. No gimmicks, no miracle claims — just real technology that works.</p>",
-        "button_label": "Explore The Features"
+        "button_label": "Explore The Features",
+        "image": "shopify://shop_images/pixels.webp",
+        "image_mobile": "shopify://shop_images/pixels.webp"
       }
     },
     "n_hair_growth_helmet_feature_carousel_HtN8C4": {
@@ -527,6 +526,7 @@
         "use_own_file": true,
         "heading": "<h2>Red Light Therapy: Common Hair Concerns</h2>",
         "text": "Have a concern we didn't cover?",
+        "sub_text": "",
         "button_label": "Ask us",
         "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
       }
@@ -537,6 +537,7 @@
         "slider_NB9ieE": {
           "type": "slider",
           "settings": {
+            "heading": "",
             "text": "<h6>1. Prepare</h6><p>Start with clean, dry hair and place the helmet comfortably on your head.</p>",
             "image": "shopify://shop_images/steps-to-use-1.webp",
             "image_mobile": "shopify://shop_images/steps-to-use-1-mob.webp"
@@ -545,6 +546,7 @@
         "slider_jrXtEm": {
           "type": "slider",
           "settings": {
+            "heading": "",
             "text": "<h6>2. Treatment</h6><p>Press start, select your zone, and relax for 12 minutes while the lights work.</p>",
             "image": "shopify://shop_images/steps-to-use-2.webp",
             "image_mobile": "shopify://shop_images/steps-to-use-2-mob.webp"
@@ -553,6 +555,7 @@
         "slider_wYcAtU": {
           "type": "slider",
           "settings": {
+            "heading": "",
             "text": "<h6>3. Aftercare</h6><p>The helmet shuts off automatically; remove and store until your next session.</p>",
             "image": "shopify://shop_images/steps-to-use-3.webp",
             "image_mobile": "shopify://shop_images/steps-to-use-3-mob.webp"
@@ -568,8 +571,7 @@
       "settings": {
         "use_own_file": true,
         "heading": "<h2>Restore your hair health in just 12 minutes a day</h2>",
-        "video_url": "wvoucso35j",
-        "youtube_url": false
+        "video_url": "wvoucso35j"
       }
     },
     "n_hair_growth_helmet_product_comparison_CxQNNe": {
@@ -791,6 +793,7 @@
         "use_own_file": true,
         "heading": "<h2>Have questions?</h2>",
         "text": "Don't see your question?",
+        "sub_text": "",
         "button_label": "Ask us",
         "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
       }
