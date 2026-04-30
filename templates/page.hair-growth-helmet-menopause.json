@@ -92,7 +92,7 @@
         "limited": false,
         "description": "<p>Targeted LED light therapy and medical-grade lasers designed to support scalp health during hormonal changes. Helps encourage the appearance of thicker, fuller-looking hair with <strong>just 12 minutes per session</strong>.</p>",
         "whitelist": false,
-        "reserved": false,
+        "reserved": true,
         "soldout": false
       }
     },
@@ -563,6 +563,7 @@
         "use_own_file": true,
         "heading": "<h2>Discover the routine made for your stage of life. Menopause can affect hair in different ways. Choose the concern that feels most familiar:</h2>",
         "text": "",
+        "sub_text": "",
         "button_label": "",
         "button_url": ""
       }
@@ -573,6 +574,7 @@
         "slider_NB9ieE": {
           "type": "slider",
           "settings": {
+            "heading": "",
             "text": "<h6>1. Prepare</h6><p>Start with clean, dry hair and place the helmet comfortably on your head.</p>",
             "image": "shopify://shop_images/steps-to-use-1.webp",
             "image_mobile": "shopify://shop_images/steps-to-use-1-mob.webp"
@@ -581,6 +583,7 @@
         "slider_jrXtEm": {
           "type": "slider",
           "settings": {
+            "heading": "",
             "text": "<h6>2. Treatment</h6><p>Press start, select your zone, and relax for 12 minutes while the lights work.</p>",
             "image": "shopify://shop_images/steps-to-use-2.webp",
             "image_mobile": "shopify://shop_images/steps-to-use-2-mob.webp"
@@ -589,6 +592,7 @@
         "slider_wYcAtU": {
           "type": "slider",
           "settings": {
+            "heading": "",
             "text": "<h6>3. Aftercare</h6><p>The helmet shuts off automatically; remove and store until your next session.</p>",
             "image": "shopify://shop_images/steps-to-use-3.webp",
             "image_mobile": "shopify://shop_images/steps-to-use-3-mob.webp"
@@ -888,6 +892,7 @@
         "use_own_file": true,
         "heading": "<h2>Have questions?</h2>",
         "text": "Don't see your question?",
+        "sub_text": "",
         "button_label": "Ask us",
         "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
       }
