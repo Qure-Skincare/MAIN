@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "product_header_kHW3Cn": {
       "type": "n-product-header",
@@ -94,8 +94,7 @@
         "jumpto_hQdAPf"
       ],
       "name": "t:sections.product-header.name",
-      "settings": { 
-        "use_own_file": true,
+      "settings": {
         "seo_heading": "ANTI-AGING & ALL-IN-ONE SERUM",
         "heading": "Embrace ageless confidence with All-In-One Face Serum",
         "rating": true,
@@ -104,7 +103,8 @@
         "reserved": false,
         "soldout": false,
         "button-label": "",
-        "button-url": ""
+        "button-url": "",
+        "approved": false
       }
     },
     "purchase-form-landing": {
@@ -127,7 +127,7 @@
           "type": "product_type",
           "settings": {
             "heading": "One time purchase",
-            "preselected": true
+            "preselected": false
           }
         },
         "product_RBCPe8": {
@@ -204,7 +204,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Subscribe & Save",
-            "preselected": false
+            "preselected": true
           }
         },
         "product_eiY89h": {
@@ -291,7 +291,8 @@
         "form_name": "purchase-form-landing-subscription",
         "hide_types": false,
         "type": "list",
-        "klaviyo_form_name": ""
+        "klaviyo_form_name": "",
+        "guarantee_period": "30"
       }
     },
     "purchase-form-landing-old": {
@@ -397,7 +398,8 @@
         "form_name": "purchase-form-landing",
         "hide_types": true,
         "type": "box",
-        "klaviyo_form_name": ""
+        "klaviyo_form_name": "",
+        "guarantee_period": "30"
       }
     },
     "n_logos_r846Fz": {
@@ -1152,6 +1154,7 @@
         "use_own_file": true,
         "heading": "<h2>Have questions?</h2>",
         "text": "Don't see your question?",
+        "sub_text": "",
         "button_label": "Ask us",
         "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
       }
