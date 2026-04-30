@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "n_header": {
       "type": "product-hair-growth-helmet-header",
@@ -86,14 +86,13 @@
       ],
       "name": "t:sections.n_product-hair-growth-helmet-header.name",
       "settings": {
-        "use_own_file": true,
         "seo_heading": "Backed by Dermatologists",
         "heading": "FDA-Cleared Red Light Therapy for Androgenetic Alopecia",
         "rating": true,
         "limited": false,
         "description": "<p>The Q-Renew LLLT Helmet is a clinically-proven, non-invasive solution for androgenetic alopecia. It combines medical-grade lasers and LED lights to stimulate hair follicles and promote hair regrowth in both men and women.</p>",
         "whitelist": false,
-        "reserved": false,
+        "reserved": true,
         "soldout": false
       }
     },
@@ -238,11 +237,11 @@
       "name": "t:sections.n_hair-growth-helmet-banner-with-modal.name",
       "settings": {
         "use_own_file": true,
-        "image": "shopify://shop_images/pixels.webp",
-        "image_mobile": "shopify://shop_images/pixels.webp",
         "heading": "<h2>Advanced Light Therapy for Androgenetic Alopecia</h2>",
         "text": "<p>The Q-Renew LLLT Helmet utilizes the power of low-level light therapy (LLLT), a scientifically-backed technology for treating androgenetic alopecia. It delivers a precise combination of red light and laser therapy to stimulate dormant hair follicles and support the natural hair growth cycle.</p>",
-        "button_label": "Explore The Features"
+        "button_label": "Explore The Features",
+        "image": "shopify://shop_images/pixels.webp",
+        "image_mobile": "shopify://shop_images/pixels.webp"
       }
     },
     "n_hair_growth_helmet_feature_carousel_HtN8C4": {
@@ -528,6 +527,7 @@
         "use_own_file": true,
         "heading": "<h2>Your Androgenetic Alopecia Questions Answered</h2>",
         "text": "Have a concern we didn’t cover?",
+        "sub_text": "",
         "button_label": "Ask us",
         "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
       }
@@ -538,6 +538,7 @@
         "slider_NB9ieE": {
           "type": "slider",
           "settings": {
+            "heading": "",
             "text": "<h6>1. Prepare</h6><p>Start with clean, dry hair and place the helmet comfortably on your head.</p>",
             "image": "shopify://shop_images/steps-to-use-1.webp",
             "image_mobile": "shopify://shop_images/steps-to-use-1-mob.webp"
@@ -546,6 +547,7 @@
         "slider_jrXtEm": {
           "type": "slider",
           "settings": {
+            "heading": "",
             "text": "<h6>2. Treatment</h6><p>Press start, select your zone, and relax for 12 minutes while the lights work.</p>",
             "image": "shopify://shop_images/steps-to-use-2.webp",
             "image_mobile": "shopify://shop_images/steps-to-use-2-mob.webp"
@@ -554,6 +556,7 @@
         "slider_wYcAtU": {
           "type": "slider",
           "settings": {
+            "heading": "",
             "text": "<h6>3. Aftercare</h6><p>The helmet shuts off automatically; remove and store until your next session.</p>",
             "image": "shopify://shop_images/steps-to-use-3.webp",
             "image_mobile": "shopify://shop_images/steps-to-use-3-mob.webp"
@@ -569,8 +572,7 @@
       "settings": {
         "use_own_file": true,
         "heading": "<h2>Restore your hair health in just 12 minutes a day</h2>",
-        "video_url": "wvoucso35j",
-        "youtube_url": false
+        "video_url": "wvoucso35j"
       }
     },
     "n_video_slider_3h9U8Q": {
@@ -846,6 +848,7 @@
         "use_own_file": true,
         "heading": "<h2>Have questions?</h2>",
         "text": "Don't see your question?",
+        "sub_text": "",
         "button_label": "Ask us",
         "button_url": "#"
       }
