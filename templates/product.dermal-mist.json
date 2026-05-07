@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "product_header_c7eEXx": {
       "type": "n-product-header",
@@ -96,7 +96,7 @@
         "soldout": false,
         "button-label": "",
         "button-url": "",
-        "use_own_file": true
+        "approved": false
       }
     },
     "purchase-form-landing": {
@@ -133,7 +133,9 @@
             "preselected": true,
             "heading": "6 Months",
             "subheading": "(3 bottles)",
+            "text": "",
             "image": "shopify://shop_images/derm_trio.webp",
+            "product_discount_percent": 0,
             "soldout": false,
             "preorder": false,
             "preorder_text": "",
@@ -153,7 +155,9 @@
             "preselected": false,
             "heading": "4 Months",
             "subheading": "(2 bottles)",
+            "text": "",
             "image": "shopify://shop_images/derm_duo.webp",
+            "product_discount_percent": 0,
             "soldout": false,
             "preorder": false,
             "preorder_text": "",
@@ -173,7 +177,9 @@
             "preselected": false,
             "heading": "2 Months",
             "subheading": "(1 bottle)",
+            "text": "",
             "image": "shopify://shop_images/derm_single.webp",
+            "product_discount_percent": 0,
             "soldout": false,
             "preorder": false,
             "preorder_text": "",
@@ -195,7 +201,8 @@
         "form_name": "purchase-form-landing",
         "hide_types": true,
         "type": "box",
-        "klaviyo_form_name": ""
+        "klaviyo_form_name": "",
+        "guarantee_period": "30"
       }
     },
     "n_logos_d77Mmj": {
@@ -311,6 +318,7 @@
       "name": "t:sections.n_how-to-use.name",
       "settings": {
         "use_own_file": true,
+        "modifier": "none",
         "heading": "<h2>Bacteria defense that fits your day</h2>",
         "text": "<p>Fresh, comfortable skin wherever you are. Dermal Mist comes in two sizes: a 100 ml bottle for consistent at-home use, and a 15 ml travel size for easy, on-the-go refreshment.</p><p><strong>Use it in 4 ways.</strong></p>"
       }
@@ -687,6 +695,7 @@
         "use_own_file": true,
         "heading": "<h2>Have questions?</h2>",
         "text": "Don't see your question?",
+        "sub_text": "",
         "button_label": "Ask us",
         "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
       }
