@@ -9,6 +9,7 @@
   {% render 'n-product-bundle-collapsed-item' input: product.metafields.custom.key_benefits, index: 'first', title: 'Key Benefits' %}
 {% enddoc %}
 
+{% capture marked_list %}{% render 'n_product-marked-list' %}{% endcapture %}
 
 {% if input != blank %}
     {% assign included_json = input.value | parse_json %}
@@ -21,13 +22,20 @@
                   {% when 'list' %}
                     <ul>
                       {% for list_item in item.children %}
-                        <li>{{ list_item.children[0].value }}</li>
+                        <li>{{ list_item.children[0].value 
+                          | replace: '[hr]', '<hr />' 
+                          | replace: '[br]', '<br />' 
+                          | replace: '[marked_list]', marked_list
+                          }}</li>
                       {% endfor %}
                     </ul>
                   {% when 'paragraph' %}
                     <p>
                       {% for paragraph_item in item.children %}
-                        {{ paragraph_item.value }}
+                        {{ paragraph_item.value 
+                        | replace: '[hr]', '<hr />' 
+                        | replace: '[br]', '<br />' 
+                        | replace: '[marked_list]', marked_list }}
                       {% endfor %}
                     </p>
                 {% endcase %}
